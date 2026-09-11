@@ -1,0 +1,1253 @@
+[
+  {
+    "id": "exchange_9461b713f444",
+    "result": "청웅수 갑각",
+    "resultJa": "青熊 獣 の甲 殻",
+    "required": "구룡 발톱",
+    "requiredJa": "狗 竜 の爪",
+    "unlock": "여단★3 - 못된 악동 기원호를 수렵하라 村★3「 悪戯 好きの奇猿狐を狩 猟 せよ」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_f5f1000deea9",
+    "result": "청웅수 털",
+    "resultJa": "青熊 獣 の毛",
+    "required": "구룡 가죽",
+    "requiredJa": "狗 竜 の皮",
+    "unlock": "여단★3 - 못된 악동 기원호를 수렵하라 村★3「 悪戯 好きの奇猿狐を狩 猟 せよ」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_9065aab54c79",
+    "result": "수괴수 발톱",
+    "resultJa": "水 獣 の爪",
+    "required": "도스람포스 발톱",
+    "requiredJa": "ドスランポスの爪",
+    "unlock": "여단★3 - 못된 악동 기원호를 수렵하라 村★3「 悪戯 好きの奇猿狐を狩 猟 せよ」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_84ee57517d14",
+    "result": "해면질 가죽",
+    "resultJa": "海綿質の皮",
+    "required": "도스람포스 가죽",
+    "requiredJa": "ドスランポスの皮",
+    "unlock": "여단★3 - 못된 악동 기원호를 수렵하라 村★3「 悪戯 好きの奇猿狐を狩 猟 せよ」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_3be8644a899a",
+    "result": "극채색날개",
+    "resultJa": "極彩色の羽",
+    "required": "기원호 털",
+    "requiredJa": "奇猿狐の毛",
+    "unlock": "여단★3 - 못된 악동 기원호를 수렵하라 村★3「 悪戯 好きの奇猿狐を狩 猟 せよ」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_b8d5e4a6225a",
+    "result": "이상한 부리",
+    "resultJa": "へんなクチバシ",
+    "required": "기원호 귀",
+    "requiredJa": "奇猿狐の耳",
+    "unlock": "여단★3 - 못된 악동 기원호를 수렵하라 村★3「 悪戯 好きの奇猿狐を狩 猟 せよ」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_4fdc033b16fd",
+    "result": "토사룡 갑각",
+    "resultJa": "土砂 竜 の甲 殻",
+    "required": "고무질 가죽",
+    "requiredJa": "ゴム質の皮",
+    "unlock": "여단★4 - 침묵, 교활, 암살자의 모든 것 村★4「沈 黙 、狡猾、暗殺者の調べ」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_35b9373f3870",
+    "result": "토사룡 두갑각",
+    "resultJa": "土砂 竜 の頭 殻",
+    "required": "독괴조 머리",
+    "requiredJa": "毒怪鳥の頭",
+    "unlock": "여단★4 - 침묵, 교활, 암살자의 모든 것 村★4「沈 黙 、狡猾、暗殺者の調べ」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_e47ebda22a39",
+    "result": "잠구룡 가죽",
+    "resultJa": "潜口 竜 の皮",
+    "required": "암룡 갑각",
+    "requiredJa": "岩 竜 の甲 殻",
+    "unlock": "여단★5 - 검은 기운은 땅을 좀먹고… 村★5「 黒 く蝕み地を染めん」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_9853374c8ff0",
+    "result": "선명한 체액",
+    "resultJa": "鮮やかな体液",
+    "required": "암룡 날개",
+    "requiredJa": "岩 竜 の翼",
+    "unlock": "여단★5 - 검은 기운은 땅을 좀먹고… 村★5「 黒 く蝕み地を染めん」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_637d06552c77",
+    "result": "낫게 갑각",
+    "resultJa": "鎌蟹の甲 殻",
+    "required": "교사룡 갑각",
+    "requiredJa": "絞蛇 竜 の甲 殻",
+    "unlock": "여단★5 - 검은 기운은 땅을 좀먹고… 村★5「 黒 く蝕み地を染めん」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_d0276a1acd92",
+    "result": "낫게 집게",
+    "resultJa": "鎌蟹の鋏",
+    "required": "섬뜩한 부리",
+    "requiredJa": "寒 気 立つクチバシ",
+    "unlock": "여단★5 - 검은 기운은 땅을 좀먹고… 村★5「 黒 く蝕み地を染めん」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_450325b385c9",
+    "result": "폭추룡 골수",
+    "resultJa": "爆鎚 竜 の骨 髄",
+    "required": "개룡 두갑각",
+    "requiredJa": "鎧 竜 の頭 殻",
+    "unlock": "여단★5 - 천공산의 지배자들 村★5「天空山の支配者たち」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_7015bedcc39d",
+    "result": "폭추룡 내열갑각",
+    "resultJa": "爆鎚 竜 の耐熱 殻",
+    "required": "개룡 갑각",
+    "requiredJa": "鎧 竜 の甲 殻",
+    "unlock": "여단★5 - 천공산의 지배자들 村★5「天空山の支配者たち」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_cabd951876a3",
+    "result": "신룡 검은털",
+    "resultJa": "迅 竜 の 黒 毛",
+    "required": "뇌랑룡 갑각",
+    "requiredJa": "雷狼 竜 の甲 殻",
+    "unlock": "여단★5 - 천공산의 지배자들 村★5「天空山の支配者たち」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_b2d2693b222d",
+    "result": "신룡 골수",
+    "resultJa": "迅 竜 の骨 髄",
+    "required": "뇌랑룡 역린",
+    "requiredJa": "雷狼 竜 の逆鱗",
+    "unlock": "여단★5 - 천공산의 지배자들 村★5「天空山の支配者たち」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_1b9a5d02a853",
+    "result": "신룡 칼날개",
+    "resultJa": "迅 竜 の刃翼",
+    "required": "뇌랑룡 발톱",
+    "requiredJa": "雷狼 竜 の爪",
+    "unlock": "여단★5 - 천공산의 지배자들 村★5「天空山の支配者たち」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_ec67bd394a76",
+    "result": "미추룡 이끼갑각",
+    "resultJa": "尾槌 竜 の苔甲",
+    "required": "화룡 갑각",
+    "requiredJa": "火 竜 の甲 殻",
+    "unlock": "여단★6 - 고난도: 하늘을 누비고 오라 또는 집회소★3 - 고난도: 모래를 가르는 암선 村★6「高難度：天を廻りて 戻 り 来 よ」 または 集 会 所★3「高難度：砂を渡るは錆びた岩船」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_82cd824acee8",
+    "result": "미추룡 뿔",
+    "resultJa": "尾槌 竜 の鱗",
+    "required": "화룡 꼬리",
+    "requiredJa": "火 竜 の尻尾",
+    "unlock": "여단★6 - 고난도: 하늘을 누비고 오라 또는 집회소★3 - 고난도: 모래를 가르는 암선 村★6「高難度：天を廻りて 戻 り 来 よ」 または 集 会 所★3「高難度：砂を渡るは錆びた岩船」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_6b979eb2e990",
+    "result": "용암룡 비늘",
+    "resultJa": "溶岩 竜 の鱗",
+    "required": "굉룡 비늘",
+    "requiredJa": "轟 竜 の鱗",
+    "unlock": "여단★6 - 고난도: 하늘을 누비고 오라 또는 집회소★3 - 고난도: 모래를 가르는 암선 村★6「高難度：天を廻りて 戻 り 来 よ」 または 集 会 所★3「高難度：砂を渡るは錆びた岩船」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_363deb36c03a",
+    "result": "용암룡 지느러미",
+    "resultJa": "溶岩 竜 のヒレ",
+    "required": "굉룡 이빨",
+    "requiredJa": "轟 竜 の牙",
+    "unlock": "여단★6 - 고난도: 하늘을 누비고 오라 또는 집회소★3 - 고난도: 모래를 가르는 암선 村★6「高難度：天を廻りて 戻 り 来 よ」 または 集 会 所★3「高難度：砂を渡るは錆びた岩船」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_f34f122789dd",
+    "result": "각룡 갑각",
+    "resultJa": "角 竜 の甲 殻",
+    "required": "쇄룡 갑각",
+    "requiredJa": "砕竜の甲 殻",
+    "unlock": "여단★6 - 고난도: 쇄룡 폭동 정보 村★6「高難度：暴動情報、 砕竜 在り！」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_4a425ab9eba5",
+    "result": "양질의 비틀린뿔",
+    "resultJa": "上質なねじれた角",
+    "required": "쇄룡 두갑각",
+    "requiredJa": "砕竜の頭 殻",
+    "unlock": "여단★6 - 고난도: 쇄룡 폭동 정보 村★6「高難度：暴動情報、 砕竜 在り！」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_a6418ef9c36d",
+    "result": "노산룡 갑각",
+    "resultJa": "老山龍の甲 殻",
+    "required": "호산룡 붉은비늘",
+    "requiredJa": "豪山龍の紅鱗",
+    "unlock": "여단★6 - 고난도: 멀리서 다가오는 호산 村★6「高難度：遠離に見やる豪の山」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_41c8738dde6a",
+    "result": "노산룡 큰발톱",
+    "resultJa": "老山龍の大爪",
+    "required": "호산룡 완갑",
+    "requiredJa": "豪山龍の腕甲",
+    "unlock": "여단★6 - 고난도: 멀리서 다가오는 호산 村★6「高難度：遠離に見やる豪の山」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_024fb068b01f",
+    "result": "노산룡 뿔",
+    "resultJa": "老山龍の角",
+    "required": "대지의 용옥",
+    "requiredJa": "大地の龍玉",
+    "unlock": "여단★6 - 고난도: 멀리서 다가오는 호산 村★6「高難度：遠離に見やる豪の山」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_506a50ba5297",
+    "result": "염비룡 견갑각",
+    "resultJa": "炎妃龍の堅 殻",
+    "required": "창화룡 견갑각",
+    "requiredJa": "蒼火 竜 の堅 殻",
+    "unlock": "여단★6 - 고난도: 광기 어린 흑굉룡 村★6「高難度：狂威の 黒 轟 竜 」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_7b8259013fc7",
+    "result": "염비룡 갈기",
+    "resultJa": "炎妃龍のたてがみ",
+    "required": "창화룡 날개",
+    "requiredJa": "蒼火 竜 の翼",
+    "unlock": "여단★6 - 고난도: 광기 어린 흑굉룡 村★6「高難度：狂威の 黒 轟 竜 」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_b1aeb7adcaa4",
+    "result": "랑고스타 얇은날개",
+    "resultJa": "ランゴスタの薄羽",
+    "required": "비갑충 견갑각",
+    "requiredJa": "飛甲虫の堅 殻",
+    "unlock": "집회소★4 - 자기주장이 강한 자들 集 会 所★4「自己主張の激しい者たち」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_8acc2818191b",
+    "result": "사토룡 지느러미+",
+    "resultJa": "砂 竜 の上ヒレ",
+    "required": "구룡 첨예발톱",
+    "requiredJa": "狗 竜 の尖爪",
+    "unlock": "집회소★4 - 자기주장이 강한 자들 集 会 所★4「自己主張の激しい者たち」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_f1332493d77d",
+    "result": "사토룡 비늘+",
+    "resultJa": "砂 竜 の上鱗",
+    "required": "구룡 가죽+",
+    "requiredJa": "狗 竜 の上皮",
+    "unlock": "집회소★4 - 자기주장이 강한 자들 集 会 所★4「自己主張の激しい者たち」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_88e7552cff2a",
+    "result": "방패게 견갑각",
+    "resultJa": "盾蟹の堅 殻",
+    "required": "도모수 억센털",
+    "requiredJa": "桃毛 獣 の剛毛",
+    "unlock": "집회소★4 - 자기주장이 강한 자들 集 会 所★4「自己主張の激しい者たち」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_bfd4db9620cc",
+    "result": "방패게 첨예발톱",
+    "resultJa": "盾蟹の尖爪",
+    "required": "도모수 첨예발톱",
+    "requiredJa": "桃毛 獣 の尖爪",
+    "unlock": "집회소★4 - 자기주장이 강한 자들 集 会 所★4「自己主張の激しい者たち」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_2c6b95ae806d",
+    "result": "등어룡 가죽+",
+    "resultJa": "灯魚 竜 の上皮",
+    "required": "자화룡 비늘+",
+    "requiredJa": "雌火 竜 の上鱗",
+    "unlock": "집회소★5 - 화려한 매혹색과 홍색 集 会 所★5「華麗なる魅惑色と 桜 色」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_f92e3585b82b",
+    "result": "등어룡 가시+",
+    "resultJa": "灯魚 竜 の上棘",
+    "required": "자화룡 가시+",
+    "requiredJa": "雌火 竜 の上棘",
+    "unlock": "집회소★5 - 화려한 매혹색과 홍색 集 会 所★5「華麗なる魅惑色と 桜 色」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_8849f0ec0dc6",
+    "result": "적갑수 견갑각",
+    "resultJa": "赤甲 獣 の堅 殻",
+    "required": "백토수 억센털",
+    "requiredJa": "白兎 獣 の剛毛",
+    "unlock": "집회소★5 - 화려한 매혹색과 홍색 集 会 所★5「華麗なる魅惑色と 桜 色」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_0a988a1e29a4",
+    "result": "호박색예리이빨",
+    "resultJa": "琥珀色の 鋭 牙",
+    "required": "교사룡 소리갑각+",
+    "requiredJa": "絞蛇 竜 の上鳴甲",
+    "unlock": "집회소★5 - 화려한 매혹색과 홍색 集 会 所★5「華麗なる魅惑色と 桜 色」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_a70574dec9d4",
+    "result": "빙아룡 모피+",
+    "resultJa": "氷牙 竜 の上毛皮",
+    "required": "교사룡 가죽+",
+    "requiredJa": "絞蛇 竜 の上皮",
+    "unlock": "집회소★5 - 화려한 매혹색과 홍색 集 会 所★5「華麗なる魅惑色と 桜 色」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_9f643e28628c",
+    "result": "눈사자 억센털",
+    "resultJa": "雪獅子の剛毛",
+    "required": "괴상어 가죽+",
+    "requiredJa": "化け鮫の上皮",
+    "unlock": "집회소★5 - 화려한 매혹색과 홍색 集 会 所★5「華麗なる魅惑色と 桜 色」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_e229225969c8",
+    "result": "눈사자 수염",
+    "resultJa": "雪獅子の髭",
+    "required": "괴상어 비늘+",
+    "requiredJa": "化け鮫の上鱗",
+    "unlock": "집회소★5 - 화려한 매혹색과 홍색 集 会 所★5「華麗なる魅惑色と 桜 色」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_33882dbfa944",
+    "result": "눈사자 예리이빨",
+    "resultJa": "雪獅子の 鋭 牙",
+    "required": "괴상어 지느러미+",
+    "requiredJa": "化け鮫の上ヒレ",
+    "unlock": "집회소★5 - 화려한 매혹색과 홍색 集 会 所★5「華麗なる魅惑色と 桜 色」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_8bc02784b84a",
+    "result": "해룡 전기갑각+",
+    "resultJa": "海 竜 の高電 殻",
+    "required": "흑개룡 두갑각",
+    "requiredJa": "黒鎧 竜 の頭 殻",
+    "unlock": "집회소★6 - 고난도: 검은 용들의 협공 集 会 所★6「高難度： 黒 き 竜 たちの 挟撃 」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_f783bfb5fa69",
+    "result": "해룡 창옥",
+    "resultJa": "海 竜 の蒼玉",
+    "required": "개룡 연수",
+    "requiredJa": "鎧 竜 の延 髄",
+    "unlock": "집회소★6 - 고난도: 검은 용들의 협공 集 会 所★6「高難度： 黒 き 竜 たちの 挟撃 」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_1ac9ba4a685e",
+    "result": "염과룡 견갑각",
+    "resultJa": "炎戈 竜 の堅 殻",
+    "required": "흑굉룡 견갑각",
+    "requiredJa": "黒轟 竜 の堅 殻",
+    "unlock": "집회소★6 - 고난도: 검은 용들의 협공 集 会 所★6「高難度： 黒 き 竜 たちの 挟撃 」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_f2d2a0b4a80e",
+    "result": "염과룡 지느러미+",
+    "resultJa": "炎戈 竜 の上ヒレ",
+    "required": "흑굉룡 첨예발톱",
+    "requiredJa": "黒轟 竜 の尖爪",
+    "unlock": "집회소★6 - 고난도: 검은 용들의 협공 集 会 所★6「高難度： 黒 き 竜 たちの 挟撃 」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_82855365385b",
+    "result": "하룡 가죽+",
+    "resultJa": "霞龍の上皮",
+    "required": "강철의 용비늘",
+    "requiredJa": "鋼の龍鱗",
+    "unlock": "집회소★7 - 고난도: 헌터는 청명을 꿈꾼다 集 会 所★7「高難度：狩人は天晴の夢を見る」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_20513a608211",
+    "result": "하룡 보옥",
+    "resultJa": "霞龍の 宝 玉",
+    "required": "강룡 보옥",
+    "requiredJa": "鋼龍の 宝 玉",
+    "unlock": "집회소★7 - 고난도: 헌터는 청명을 꿈꾼다 集 会 所★7「高難度：狩人は天晴の夢を見る」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_cd7d7c803133",
+    "result": "하룡 보옥",
+    "resultJa": "霞龍の 宝 玉",
+    "required": "희망의 증표",
+    "requiredJa": "希望の証",
+    "unlock": "집회소★7 - 고난도: 헌터는 청명을 꿈꾼다 集 会 所★7「高難度：狩人は天晴の夢を見る」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_4f9e61a7cbf8",
+    "result": "하룡 꼬리",
+    "resultJa": "霞龍の尻尾",
+    "required": "강룡 꼬리",
+    "requiredJa": "鋼龍の尻尾",
+    "unlock": "집회소★7 - 고난도: 헌터는 청명을 꿈꾼다 集 会 所★7「高難度：狩人は天晴の夢を見る」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_943627528a43",
+    "result": "하룡 꼬리",
+    "resultJa": "霞龍の尻尾",
+    "required": "희망의 증표",
+    "requiredJa": "希望の証",
+    "unlock": "집회소★7 - 고난도: 헌터는 청명을 꿈꾼다 集 会 所★7「高難度：狩人は天晴の夢を見る」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_d5336d341383",
+    "result": "비악룡 체액",
+    "resultJa": "浮岳龍の体液",
+    "required": "호산룡 붉은비늘+",
+    "requiredJa": "豪山龍の上紅鱗",
+    "unlock": "집회소★7 - 고난도: 담대한 용기의 증명 集 会 所★7「高難度：豪勇の証明」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_f951642e4407",
+    "result": "신룡나무",
+    "resultJa": "神龍木",
+    "required": "거친 첨예용뿔",
+    "requiredJa": "荒 々 しい龍尖角",
+    "unlock": "집회소★7 - 고난도: 담대한 용기의 증명 集 会 所★7「高難度：豪勇の証明」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_df2a8d8ed8b7",
+    "result": "신룡나무",
+    "resultJa": "神龍木",
+    "required": "희망의 증표",
+    "requiredJa": "希望の証",
+    "unlock": "집회소★7 - 고난도: 담대한 용기의 증명 集 会 所★7「高難度：豪勇の証明」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_8fe69678a27b",
+    "result": "신룡이끼",
+    "resultJa": "神龍苔",
+    "required": "호산룡 완갑+",
+    "requiredJa": "豪山龍の上腕甲",
+    "unlock": "집회소★7 - 고난도: 담대한 용기의 증명 集 会 所★7「高難度：豪勇の証明」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_ca65419b1382",
+    "result": "붕룡 분쇄턱",
+    "resultJa": "崩 竜 の削顎",
+    "required": "패룡 큰이빨",
+    "requiredJa": "覇 竜 の大牙",
+    "unlock": "집회소★7 - 고난도: 미쳐 날뛰는 아캄토름 集 会 所★7「高難度： 横 行覇道アカムトルム」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_314010d814ec",
+    "result": "붕룡 분쇄턱",
+    "resultJa": "崩 竜 の削顎",
+    "required": "희망의 증표",
+    "requiredJa": "希望の証",
+    "unlock": "집회소★7 - 고난도: 미쳐 날뛰는 아캄토름 集 会 所★7「高難度： 横 行覇道アカムトルム」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_d56d6f747118",
+    "result": "붕룡 견갑각",
+    "resultJa": "崩 竜 の堅 殻",
+    "required": "패룡 견갑각",
+    "requiredJa": "覇 竜 の堅 殻",
+    "unlock": "집회소★7 - 고난도: 미쳐 날뛰는 아캄토름 集 会 所★7「高難度： 横 行覇道アカムトルム」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_0eb21db0a5b3",
+    "result": "붕룡 보옥",
+    "resultJa": "崩 竜 の 宝 玉",
+    "required": "패룡 보옥",
+    "requiredJa": "覇 竜 の 宝 玉",
+    "unlock": "집회소★7 - 고난도: 미쳐 날뛰는 아캄토름 集 会 所★7「高難度： 横 行覇道アカムトルム」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_cb44b9e5af24",
+    "result": "붕룡 보옥",
+    "resultJa": "崩 竜 の 宝 玉",
+    "required": "희망의 증표",
+    "requiredJa": "希望の証",
+    "unlock": "집회소★7 - 고난도: 미쳐 날뛰는 아캄토름 集 会 所★7「高難度： 横 行覇道アカムトルム」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_740eccbe5486",
+    "result": "성채게 집게",
+    "resultJa": "砦蟹の鋏",
+    "required": "금사자 노발",
+    "requiredJa": "金獅子の怒 髪",
+    "unlock": "집회소★7 - 고난도: 노한 금사자 수렵! 集 会 所★7「高難度：怒 髪 の金獅子狩 猟 ！」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_180464e8a870",
+    "result": "성채게 집게",
+    "resultJa": "砦蟹の鋏",
+    "required": "희망의 증표G",
+    "requiredJa": "希望の証G",
+    "unlock": "집회소★7 - 고난도: 노한 금사자 수렵! 集 会 所★7「高難度：怒 髪 の金獅子狩 猟 ！」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_bab963424e5e",
+    "result": "성채게 견갑각",
+    "resultJa": "砦蟹の堅甲",
+    "required": "금사자 투혼",
+    "requiredJa": "金獅子の 闘 魂",
+    "unlock": "집회소★7 - 고난도: 노한 금사자 수렵! 集 会 所★7「高難度：怒 髪 の金獅子狩 猟 ！」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_45ddf613b5db",
+    "result": "성채게 견갑각",
+    "resultJa": "砦蟹の堅甲",
+    "required": "희망의 증표G",
+    "requiredJa": "希望の証G",
+    "unlock": "집회소★7 - 고난도: 노한 금사자 수렵! 集 会 所★7「高難度：怒 髪 の金獅子狩 猟 ！」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_cab161f818cb",
+    "result": "성채게 첨예발톱",
+    "resultJa": "砦蟹の尖爪",
+    "required": "악마의 금뿔",
+    "requiredJa": "羅刹の金角",
+    "unlock": "집회소★7 - 고난도: 노한 금사자 수렵! 集 会 所★7「高難度：怒 髪 の金獅子狩 猟 ！」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_58343ef975f6",
+    "result": "성채게 첨예발톱",
+    "resultJa": "砦蟹の尖爪",
+    "required": "희망의 증표G",
+    "requiredJa": "希望の証G",
+    "unlock": "집회소★7 - 고난도: 노한 금사자 수렵! 集 会 所★7「高難度：怒 髪 の金獅子狩 猟 ！」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_54eaaa65455a",
+    "result": "대해룡 갑피",
+    "resultJa": "大海龍の甲皮",
+    "required": "공폭룡 검은가죽",
+    "requiredJa": "恐暴 竜 の 黒 皮",
+    "unlock": "집회소★7 - 고난도: 공포와 폭동의 사냥 集 会 所★7「高難度：恐怖と暴動の2頭狩り」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_5a34e0f8e93d",
+    "result": "휘어진 용뿔",
+    "resultJa": "湾曲した龍角",
+    "required": "공폭룡 큰이빨",
+    "requiredJa": "恐暴 竜 の大牙",
+    "unlock": "집회소★7 - 고난도: 공포와 폭동의 사냥 集 会 所★7「高難度：恐怖と暴動の2頭狩り」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_ac6991f634fd",
+    "result": "휘어진 용뿔",
+    "resultJa": "湾曲した龍角",
+    "required": "희망의 증표G",
+    "requiredJa": "希望の証G",
+    "unlock": "집회소★7 - 고난도: 공포와 폭동의 사냥 集 会 所★7「高難度：恐怖と暴動の2頭狩り」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_71519953677e",
+    "result": "신비의 발광체",
+    "resultJa": "神秘の 発 光体",
+    "required": "공폭룡 보옥",
+    "requiredJa": "恐暴 竜 の 宝 玉",
+    "unlock": "집회소★7 - 고난도: 공포와 폭동의 사냥 集 会 所★7「高難度：恐怖と暴動の2頭狩り」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_6274bd961b1e",
+    "result": "신비의 발광체",
+    "resultJa": "神秘の 発 光体",
+    "required": "희망의 증표G",
+    "requiredJa": "希望の証G",
+    "unlock": "집회소★7 - 고난도: 공포와 폭동의 사냥 集 会 所★7「高難度：恐怖と暴動の2頭狩り」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_ce48b2de787f",
+    "result": "황흑룡 역린",
+    "resultJa": "煌 黒 龍の逆鱗",
+    "required": "사왕룡 꼬리비늘",
+    "requiredJa": "蛇王龍の尾鱗",
+    "unlock": "집회소★7 - 고난도: 천고불후를 읊는 왕 集 会 所★7「千古不易を謳う王」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_4e95e1894794",
+    "result": "황흑룡 익막",
+    "resultJa": "煌 黒 龍の翼膜",
+    "required": "사왕룡 예안",
+    "requiredJa": "蛇王龍の睨眼",
+    "unlock": "집회소★7 - 고난도: 천고불후를 읊는 왕 集 会 所★7「千古不易を謳う王」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_1c8acdf87f6f",
+    "result": "하늘을 관통할 뿔",
+    "resultJa": "天をつらぬく角",
+    "required": "천검의 용옥",
+    "requiredJa": "天 剣 の龍玉",
+    "unlock": "집회소★7 - 고난도: 천고불후를 읊는 왕 集 会 所★7「千古不易を謳う王」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_7e82cb067f4f",
+    "result": "하늘을 관통할 뿔",
+    "resultJa": "天をつらぬく角",
+    "required": "희망의 증표G",
+    "requiredJa": "希望の証G",
+    "unlock": "집회소★7 - 고난도: 천고불후를 읊는 왕 集 会 所★7「千古不易を謳う王」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_3a12c42c8bbd",
+    "result": "풍아룡 예리발톱",
+    "resultJa": "風牙竜の鋭爪",
+    "required": "뇌랑룡 첨예발톱",
+    "requiredJa": "雷狼竜の尖爪",
+    "unlock": "여단★9 - 낙뢰는 갑옷을 뚫는 창인가? 村★9「雷霆は鎧を穿つ矛となるか？」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_3f82ddb58b7e",
+    "result": "빙쇄룡 견갑",
+    "resultJa": "氷砕竜の堅甲",
+    "required": "흑룅룡 예리이빨",
+    "requiredJa": "黒轟竜の鋭牙",
+    "unlock": "여단★10 - 백일의 왕 村★10「白日の王」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_5a0645c702cb",
+    "result": "염비룡 중갑각",
+    "resultJa": "炎妃龍の重殻",
+    "required": "염왕룡 중갑각",
+    "requiredJa": "炎王龍の重殻",
+    "unlock": "여단★10 - 고난도: 지옥에서 온 숙적들 村★10「高難度：ジゴクから 来 た宿敵達」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_bb89358b8f84",
+    "result": "염비룡 꼬리",
+    "resultJa": "炎妃龍の尻尾",
+    "required": "염왕룡 질긴꼬리",
+    "requiredJa": "炎王龍の靭尾",
+    "unlock": "여단★10 - 고난도: 지옥에서 온 숙적들 村★10「高難度：ジゴクから 来 た宿敵達」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_63e69399064c",
+    "result": "노산룡 푸른큰발톱",
+    "resultJa": "老山龍の蒼大爪",
+    "required": "강룡 강발톱",
+    "requiredJa": "鋼龍の剛爪",
+    "unlock": "여단★10 - 고난도: 지옥에서 온 숙적들 村★10「高難度：ジゴクから 来 た宿敵達」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_4ac702ae961c",
+    "result": "채조 두툼비늘",
+    "resultJa": "彩鳥の厚鱗",
+    "required": "기원호 억센털+",
+    "requiredJa": "奇猿狐の豪剛毛",
+    "unlock": "G★1 - 고난도: 산만한 두 녀석 G★1「高難度：落ち着きのない２頭組」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_c834c1805bc4",
+    "result": "극채색농염날개",
+    "resultJa": "極彩色の艷羽根",
+    "required": "기원호 지옥귀",
+    "requiredJa": "奇猿狐の地獄耳",
+    "unlock": "G★1 - 고난도: 산만한 두 녀석 G★1「高難度：落ち着きのない２頭組」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_796606719856",
+    "result": "홍채조 강날개",
+    "resultJa": "紅彩鳥の剛翼",
+    "required": "독괴조 보라강날개",
+    "requiredJa": "毒怪鳥の紫剛翼",
+    "unlock": "G★1 - 고난도: 산만한 두 녀석 G★1「高難度：落ち着きのない２頭組」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_7467488db512",
+    "result": "등어룡 두툼가죽",
+    "resultJa": "灯魚竜の厚皮",
+    "required": "사토룡 보라비늘",
+    "requiredJa": "砂竜の紫鱗",
+    "unlock": "G★1 - 고난도: 수컷 벌레, 총집합! G★1「高難度：雄の虫、大集合！」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_1d89f9d135f5",
+    "result": "등어룡 비밀가시",
+    "resultJa": "灯魚竜の秘棘",
+    "required": "사토룡 홍지느러미",
+    "requiredJa": "砂竜の桃ヒレ",
+    "unlock": "G★1 - 고난도: 수컷 벌레, 총집합! G★1「高難度：雄の虫、大集合！」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_68fe9adc3074",
+    "result": "랑고스타 절단날개",
+    "resultJa": "ランゴスタの斬羽",
+    "required": "비갑충 절단날개",
+    "requiredJa": "飛甲虫の斬羽",
+    "unlock": "G★1 - 고난도: 수컷 벌레, 총집합! G★1「高難度：雄の虫、大集合！」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_5ba4a5d7f000",
+    "result": "청웅수 중갑각",
+    "resultJa": "青熊獣の重殻",
+    "required": "철갑충 중갑각",
+    "requiredJa": "徹甲虫の重殻",
+    "unlock": "G★1 - 고난도: 수컷 벌레, 총집합! G★1「高難度：雄の虫、大集合！」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_71b39e03d8d6",
+    "result": "잠구룡 중갑각",
+    "resultJa": "潜口竜の重殻",
+    "required": "자화룡 두툼비늘",
+    "requiredJa": "雌火竜の厚鱗",
+    "unlock": "G★1 - 고난도: 4개의 집게 공격!? G★1「高難度：4本のハサミ 撃 ち！？」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_cfa55572601b",
+    "result": "찬란한 체액",
+    "resultJa": "光り輝く体液",
+    "required": "자화룡 중갑각",
+    "requiredJa": "雌火竜の重殻",
+    "unlock": "G★1 - 고난도: 4개의 집게 공격!? G★1「高難度：4本のハサミ 撃 ち！？」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_e67649a8e756",
+    "result": "낫게 붉은발톱",
+    "resultJa": "鎌蟹の朱爪",
+    "required": "방패게 보라발톱",
+    "requiredJa": "盾蟹の紫爪",
+    "unlock": "G★1 - 고난도: 4개의 집게 공격!? G★1「高難度：4本のハサミ 撃 ち！？」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_9010edc0c95e",
+    "result": "호박색중이빨",
+    "resultJa": "琥珀色の重牙",
+    "required": "교사룡 중소리갑각",
+    "requiredJa": "絞蛇竜の重鳴甲",
+    "unlock": "G★1 - 고난도: 깨어진 정적 G★1「高難度：破られた 静 寂」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_7a7644307872",
+    "result": "빙아룡 두툼모피",
+    "resultJa": "氷牙竜の厚毛皮",
+    "required": "교사룡 두툼가죽",
+    "requiredJa": "絞蛇竜の厚皮",
+    "unlock": "G★1 - 고난도: 깨어진 정적 G★1「高難度：破られた 静 寂」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_cd9a62f09e64",
+    "result": "염과룡 중갑각",
+    "resultJa": "炎戈竜の重殻",
+    "required": "홍화룡 두툼비늘",
+    "requiredJa": "桜火竜の厚鱗",
+    "unlock": "G★1 - 사막에 핀 두 그루의 벚나무 G★1「砂に 咲 き誇る二本 桜」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_c38afc6b836a",
+    "result": "염과룡 지느러미++",
+    "resultJa": "炎戈竜の特上ビレ",
+    "required": "홍화룡 중갑각",
+    "requiredJa": "桜火竜の重殻",
+    "unlock": "G★1 - 사막에 핀 두 그루의 벚나무 G★1「砂に 咲 き誇る二本 桜」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_3ed78da55b85",
+    "result": "빙쇄룡 중갑각",
+    "resultJa": "氷砕竜の重殻",
+    "required": "영지주 중갑각",
+    "requiredJa": "影蜘蛛の重殻",
+    "unlock": "G★1 - 사막에 핀 두 그루의 벚나무 G★1「砂に 咲 き誇る二本 桜」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_874d329fa631",
+    "result": "토사룡 중갑각",
+    "resultJa": "土砂竜の重殻",
+    "required": "진주색염피",
+    "requiredJa": "真珠色の艷皮",
+    "unlock": "G★1 - 푸루푸루 연속 수렵 G★1「フルフル連 続 狩 猟」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_07c84bc80a38",
+    "result": "토사룡 중두갑각",
+    "resultJa": "土砂竜の重頭殻",
+    "required": "특선알비노",
+    "requiredJa": "特選アルビノ",
+    "unlock": "G★1 - 푸루푸루 연속 수렵 G★1「フルフル連 続 狩 猟」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_32f065369b78",
+    "result": "풍아룡 강발톱",
+    "resultJa": "風牙竜の剛爪",
+    "required": "귀와 강발톱",
+    "requiredJa": "鬼蛙の剛爪",
+    "unlock": "G★1 - 푸루푸루 연속 수렵 G★1「フルフル連 続 狩 猟」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_dcc44751b167",
+    "result": "적갑수 중갑각",
+    "resultJa": "赤甲獣の重殻",
+    "required": "백토수 억센털+",
+    "requiredJa": "白兎獣の豪剛毛",
+    "unlock": "G★1 - 푸루푸루 연속 수렵 G★1「フルフル連 続 狩 猟」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_302537299f82",
+    "result": "해룡 두툼비늘",
+    "resultJa": "海竜の厚鱗",
+    "required": "화룡 두툼비늘",
+    "requiredJa": "火竜の厚鱗",
+    "unlock": "G★2 - 천궁의 호적수 G★2「天穹の好敵手」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_51e323f39822",
+    "result": "해룡 뇌전기갑각",
+    "resultJa": "海竜の雷電殻",
+    "required": "화룡 강날개",
+    "requiredJa": "火竜の剛翼",
+    "unlock": "G★2 - 천궁의 호적수 G★2「天穹の好敵手」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_ab552c87018c",
+    "result": "해룡 푸른천린",
+    "resultJa": "海竜の蒼天鱗",
+    "required": "화룡 천린",
+    "requiredJa": "火竜の天鱗",
+    "unlock": "G★2 - 천궁의 호적수 G★2「天穹の好敵手」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_a8ab5af2a129",
+    "result": "백해룡 뇌전기갑각",
+    "resultJa": "白海竜の雷電殻",
+    "required": "창화룡 중갑각",
+    "requiredJa": "蒼火竜の重殻",
+    "unlock": "G★2 - 천궁의 호적수 G★2「天穹の好敵手」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_9056fc722567",
+    "result": "백해룡 강뿔",
+    "resultJa": "白海竜の剛角",
+    "required": "창화룡 질긴꼬리",
+    "requiredJa": "蒼火竜の靭尾",
+    "unlock": "G★2 - 천궁의 호적수 G★2「天穹の好敵手」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_c25f1a1a413d",
+    "result": "신룡 검은털+",
+    "resultJa": "迅竜の豪黒毛",
+    "required": "뇌랑룡 뇌전기털",
+    "requiredJa": "雷狼竜の雷電毛",
+    "unlock": "G★2 - 고난도: 산벚나무, 봄 번개 G★2「高難度：山 桜 、春 乱 るる 稲 光」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_773ca2a236d6",
+    "result": "신룡 강칼날개",
+    "resultJa": "迅竜の剛刃翼",
+    "required": "뇌랑룡 강발톱",
+    "requiredJa": "雷狼竜の剛爪",
+    "unlock": "G★2 - 고난도: 산벚나무, 봄 번개 G★2「高難度：山 桜 、春 乱 るる 稲 光」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_a7daf4461eaa",
+    "result": "신룡 천린",
+    "resultJa": "迅竜の天鱗",
+    "required": "뇌랑룡 천옥",
+    "requiredJa": "雷狼竜の天玉",
+    "unlock": "G★2 - 고난도: 산벚나무, 봄 번개 G★2「高難度：山 桜 、春 乱 るる 稲 光」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_0a21edde7e0d",
+    "result": "미추룡 중갑각",
+    "resultJa": "尾槌竜の重殻",
+    "required": "중갑충 중갑각",
+    "requiredJa": "重甲虫の重殻",
+    "unlock": "G★2 - 고난도: 녹색 광자들 G★2「高難度：翠色の狂演者たち」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_68ce99d886f1",
+    "result": "미추룡 강뿔",
+    "resultJa": "尾槌竜の剛角",
+    "required": "중갑충 중턱",
+    "requiredJa": "重甲虫の重顎",
+    "unlock": "G★2 - 고난도: 녹색 광자들 G★2「高難度：翠色の狂演者たち」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_0f4ea0ef2bf0",
+    "result": "도볼스톤",
+    "resultJa": "ドボルストーン",
+    "required": "특농축중갑진액",
+    "requiredJa": "特濃重甲エキス",
+    "unlock": "G★2 - 고난도: 녹색 광자들 G★2「高難度：翠色の狂演者たち」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_e08da08adf8d",
+    "result": "폭추룡 중갑각",
+    "resultJa": "爆鎚竜の重殻",
+    "required": "개룡 중갑각",
+    "requiredJa": "鎧竜の重殻",
+    "unlock": "G★2 - 고난도: 녹색 광자들 G★2「高難度：翠色の狂演者たち」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_7e6599622cda",
+    "result": "폭추룡 천각",
+    "resultJa": "爆鎚竜の天殻",
+    "required": "개룡 천각",
+    "requiredJa": "鎧竜の天殻",
+    "unlock": "G★2 - 고난도: 녹색 광자들 G★2「高難度：翠色の狂演者たち」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_75d58332f3e4",
+    "result": "용암룡 두툼비늘",
+    "resultJa": "溶岩竜の厚鱗",
+    "required": "흑굉룡 두툼비늘",
+    "requiredJa": "黒 轟 竜 の厚鱗",
+    "unlock": "G★2 - 흑폭풍에 흔들리는 땅 G★2「高難度： 黒 き暴風に 揺 るる地 」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_b3cdb6a93345",
+    "result": "용암룡 지느러미++",
+    "resultJa": "溶岩竜の特上ビレ",
+    "required": "흑굉룡 강발톱",
+    "requiredJa": "黒 轟 竜 の剛爪",
+    "unlock": "G★2 - 흑폭풍에 흔들리는 땅 G★2「高難度： 黒 き暴風に 揺 るる地 」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_97b110819ec4",
+    "result": "강추룡 중내열갑각",
+    "resultJa": "鋼鎚 竜 の重耐熱 殻",
+    "required": "흑개룡 중두갑각",
+    "requiredJa": "黒 鎧 竜 の重頭 殻",
+    "unlock": "G★2 - 흑폭풍에 흔들리는 땅 G★2「高難度： 黒 き暴風に 揺 るる地 」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_72c0dc5bfb0c",
+    "result": "대해룡 비늘",
+    "resultJa": "大海龍の鱗",
+    "required": "혼돈의 용비늘",
+    "requiredJa": "渾沌の 竜 鱗",
+    "unlock": "G★3 - 하늘을 보듯 그들을 보라 G★3「天見るごとく 触 を見し」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_9bcbf7f1869d",
+    "result": "대해룡 갑옷털",
+    "resultJa": "大海龍の鎧毛",
+    "required": "이율의 혼돈날개",
+    "requiredJa": "二律を纏う 乱 翼",
+    "unlock": "G★3 - 하늘을 보듯 그들을 보라 G★3「天見るごとく 触 を見し」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_5ce908788a5c",
+    "result": "심연의 용옥",
+    "resultJa": "深淵の龍玉",
+    "required": "배반하는 쌍역린",
+    "requiredJa": "背反する 双 逆鱗",
+    "unlock": "G★3 - 하늘을 보듯 그들을 보라 G★3「天見るごとく 触 を見し」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_d30a70f7eb4a",
+    "result": "봉산룡 중암갑각",
+    "resultJa": "峯山龍の重岩 殻",
+    "required": "금사자 흑황모",
+    "requiredJa": "金獅子の 黒 荒毛",
+    "unlock": "G★3 - 고난도: 험준한 물가에서 G★3「高難度：峻烈の岸 辺 にて」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_ec9f46660e6c",
+    "result": "봉산룡 중완갑",
+    "resultJa": "峯山龍の重腕甲",
+    "required": "황금의 황모",
+    "requiredJa": "黄 金の煌毛",
+    "unlock": "G★3 - 고난도: 험준한 물가에서 G★3「高難度：峻烈の岸 辺 にて」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_52d061aa6fae",
+    "result": "거룩한 용이빨",
+    "resultJa": "神 々 しい龍牙",
+    "required": "금사자 강뿔",
+    "requiredJa": "金獅子の剛角",
+    "unlock": "G★3 - 고난도: 험준한 물가에서 G★3「高難度：峻烈の岸 辺 にて」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_ddbf3351a128",
+    "result": "비악룡 지느러미",
+    "resultJa": "浮岳龍のヒレ",
+    "required": "하룡 강날개",
+    "requiredJa": "霞龍の剛翼",
+    "unlock": "G★3 - 고난도: 안개인가 구름인가 G★3「高難度：霞か雲か古きぞ出ずる」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_dd848bfe49fa",
+    "result": "태고의 용이끼",
+    "resultJa": "太古の龍苔",
+    "required": "하룡 가죽++",
+    "requiredJa": "霞龍の特上皮",
+    "unlock": "G★3 - 고난도: 안개인가 구름인가 G★3「高難度：霞か雲か古きぞ出ずる」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_c728eb2aebe8",
+    "result": "태고의 용나무",
+    "resultJa": "太古の龍木",
+    "required": "하룡 질긴꼬리",
+    "requiredJa": "霞龍の靭尾",
+    "unlock": "G★3 - 고난도: 안개인가 구름인가 G★3「高難度：霞か雲か古きぞ出ずる」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_965a46a2d884",
+    "result": "월신룡 투명칼날개",
+    "resultJa": "月迅 竜 の透刃翼",
+    "required": "대굉룡 강폭파발톱 패왕의 증표",
+    "requiredJa": "大轟 竜 の剛爆爪 覇王の証",
+    "unlock": "G★3 - 괴천와해 G★3「 壊 天瓦解」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_0607e2dc5b9e",
+    "result": "농월의 파편",
+    "resultJa": "朧月の欠片",
+    "required": "경이의 대폭심 패왕의 증표",
+    "requiredJa": "驚異の大爆心 覇王の証",
+    "unlock": "G★3 - 괴천와해 G★3「 壊 天瓦解」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_38ace85a3a23",
+    "result": "남룡 견갑각",
+    "resultJa": "嵐龍の堅 殻",
+    "required": "패룡 중갑각",
+    "requiredJa": "覇 竜 の重 殻",
+    "unlock": "G★3 - 벗겨지는 재앙의 외투 G★3「高難度： 剥 蝕する原渦の外套」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_1c817d34defc",
+    "result": "남룡 비막",
+    "resultJa": "嵐龍の飛膜",
+    "required": "패룡 중가시 패왕의 증표",
+    "requiredJa": "覇 竜 の重棘 覇王の証",
+    "unlock": "G★3 - 벗겨지는 재앙의 외투 G★3「高難度： 剥 蝕する原渦の外套」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_b3a72ad2bd30",
+    "result": "천공의 용옥",
+    "resultJa": "天空の龍玉",
+    "required": "패도옥 패왕의 증표",
+    "requiredJa": "覇導玉 覇王の証",
+    "unlock": "G★3 - 벗겨지는 재앙의 외투 G★3「高難度： 剥 蝕する原渦の外套」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_100c0dd6d575",
+    "result": "황흑룡 천린",
+    "resultJa": "煌 黒 龍の天鱗",
+    "required": "사황룡 두툼철가죽",
+    "requiredJa": "蛇帝龍の厚鋼皮",
+    "unlock": "G★3 - 불멸을 구가하는 황제 G★3「高難度：不朽不滅を謳う帝」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_8813e657b521",
+    "result": "황흑룡 흉조",
+    "resultJa": "煌 黒 龍の凶爪",
+    "required": "사황룡 강고리발톱 패왕의 증표",
+    "requiredJa": "蛇帝龍の剛鉤爪 覇王の証",
+    "unlock": "G★3 - 불멸을 구가하는 황제 G★3「高難度：不朽不滅を謳う帝」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_2dba6b6e56b8",
+    "result": "유리색용신옥",
+    "resultJa": "瑠璃色の龍神玉",
+    "required": "천검의 용신옥 패왕의 증표",
+    "requiredJa": "天 剣 の龍神玉 覇王の証",
+    "unlock": "G★3 - 불멸을 구가하는 황제 G★3「高難度：不朽不滅を謳う帝」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_7696c11a9b5f",
+    "result": "명해룡 뇌전기갑각",
+    "resultJa": "冥海 竜 の雷電 殻",
+    "required": "쇄룡 격멸주먹 패왕의 증표G",
+    "requiredJa": "砕竜 の 撃 滅拳 覇王の証G",
+    "unlock": "G★3 - 흩날리는 연폭의 꽃 G★3「高難度： 乱 れ 咲 く連爆の華」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_ab66eb0ed0db",
+    "result": "명해룡 뇌혼",
+    "resultJa": "冥海 竜 の雷魂",
+    "required": "불멸의 노심갑각 패왕의 증표G",
+    "requiredJa": "不滅の 炉 心 殻 覇王の証G",
+    "unlock": "G★3 - 흩날리는 연폭의 꽃 G★3「高難度： 乱 れ 咲 く連爆の華」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_4fbc7e41577b",
+    "result": "노산룡 중갑각",
+    "resultJa": "老山龍の重 殻",
+    "required": "붕룡 중갑각",
+    "requiredJa": "崩 竜 の重 殻",
+    "unlock": "G★3 - 고난도: 백은의 땅은 붕괴된다 G★3「高難度：白銀の地は崩 壊 す」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_cccb3974d347",
+    "result": "노산룡 두툼비늘",
+    "resultJa": "老山龍の厚鱗",
+    "required": "붕룡 두툼배비늘 패왕의 증표G",
+    "requiredJa": "崩 竜 の厚腹鱗 覇王の証G",
+    "unlock": "G★3 - 고난도: 백은의 땅은 붕괴된다 G★3「高難度：白銀の地は崩 壊 す」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_ff0e27e8cbfd",
+    "result": "노산룡 천린",
+    "resultJa": "老山龍の天鱗",
+    "required": "붕천옥 패왕의 증표G",
+    "requiredJa": "崩天玉 覇王の証G",
+    "unlock": "G★3 - 고난도: 백은의 땅은 붕괴된다 G★3「高難度：白銀の地は崩 壊 す」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_9c9d6a82a6aa",
+    "result": "연흑룡 검은비늘",
+    "resultJa": "煉 黒 龍の 黒 鱗",
+    "required": "거극룡 요새비늘",
+    "requiredJa": "巨戟龍の塞鱗",
+    "unlock": "G★3 - 고난도: 퇴폐의 늪 G★3「高難度： 頽廃 の沼」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_ccf0490fa5ad",
+    "result": "연흑룡 작열핵",
+    "resultJa": "煉 黒 龍の灼熱核",
+    "required": "거극룡 전투발톱 패왕의 증표G",
+    "requiredJa": "巨戟龍の 戦 爪 覇王の証G",
+    "unlock": "G★3 - 고난도: 퇴폐의 늪 G★3「高難度： 頽廃 の沼」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  },
+  {
+    "id": "exchange_17417d2da706",
+    "result": "광염의 대룡옥",
+    "resultJa": "光炎の大龍玉",
+    "required": "전화의 용신옥 패왕의 증표G",
+    "requiredJa": "戦 火の龍神玉 覇王の証G",
+    "unlock": "G★3 - 고난도: 퇴폐의 늪 G★3「高難度： 頽廃 の沼」",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/exchange.htm"
+  }
+]

@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#121821" />
+  <title>MH4G 장비 · 스킬 시뮬레이터</title>
+  <link rel="stylesheet" href="./css/app.css?v=0.7.1" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">MH4G</div>
+        <div>
+          <strong>장비 DB</strong>
+          <span>Skill Simulator</span>
+        </div>
+      </div>
+
+      <nav id="mainNav" class="nav">
+        <button data-page="simulator" class="nav-main active">⚒ 스킬 시뮬레이터</button>
+        <button data-page="source" data-source-view="main" class="nav-main">⌂ 메인</button>
+        <button data-page="source" data-source-view="history" class="nav-main">◷ 이력</button>
+
+        <div class="nav-group">
+          <button class="nav-main nav-with-chevron nav-group-toggle" data-submenu="weaponSubNav"><span>⚔ 무기</span><span class="nav-chevron">⌄</span></button>
+          <div id="weaponSubNav" class="nav-submenu"></div>
+        </div>
+
+        <div class="nav-group">
+          <button class="nav-main nav-with-chevron nav-group-toggle" data-submenu="bladeArmorSubNav"><span>🛡 검사방어구</span><span class="nav-chevron">⌄</span></button>
+          <div id="bladeArmorSubNav" class="nav-submenu">
+            <button data-route="armor-set" data-hunter="blade">셋트</button>
+            <button data-route="armor-detail" data-hunter="blade" data-rank="low">하위상세(1~4)</button>
+            <button data-route="armor-detail" data-hunter="blade" data-rank="high">상위상세(5~7)</button>
+            <button data-route="armor-detail" data-hunter="blade" data-rank="g">G급상세(8~10)</button>
+          </div>
+        </div>
+
+        <div class="nav-group">
+          <button class="nav-main nav-with-chevron nav-group-toggle" data-submenu="gunnerArmorSubNav"><span>🎯 거너방어구</span><span class="nav-chevron">⌄</span></button>
+          <div id="gunnerArmorSubNav" class="nav-submenu">
+            <button data-route="armor-set" data-hunter="gunner">셋트</button>
+            <button data-route="armor-detail" data-hunter="gunner" data-rank="low">하위상세(1~4)</button>
+            <button data-route="armor-detail" data-hunter="gunner" data-rank="high">상위상세(5~7)</button>
+            <button data-route="armor-detail" data-hunter="gunner" data-rank="g">G급상세(8~10)</button>
+          </div>
+        </div>
+        <button data-route="armor-other" class="nav-main">🧥 기타방어구</button>
+
+        <div class="nav-group">
+          <button class="nav-main nav-with-chevron nav-group-toggle" data-submenu="decoSubNav"><span>◆ 장신구</span><span class="nav-chevron">⌄</span></button>
+          <div id="decoSubNav" class="nav-submenu">
+            <button data-route="decoration-view" data-deco-view="type">종류별</button>
+            <button data-route="decoration-view" data-deco-view="slot">소켓별</button>
+          </div>
+        </div>
+
+        <button data-page="skill" class="nav-main">✦ 스킬</button>
+        <button data-page="meal" class="nav-main">🍖 식사</button>
+
+        <div class="nav-group">
+          <button class="nav-main nav-with-chevron nav-group-toggle" data-submenu="monsterSubNav"><span>🐲 몬스터</span><span class="nav-chevron">⌄</span></button>
+          <div id="monsterSubNav" class="nav-submenu">
+            <button data-route="monster-view" data-monster-view="summary">육질표요약</button>
+            <button data-route="monster-view" data-monster-view="detail">육질표상세</button>
+            <button data-route="monster-view" data-monster-view="rewards">갈무리보수확률</button>
+            <button data-route="monster-view" data-monster-view="materials">몬스터소재요약</button>
+          </div>
+        </div>
+
+        <div class="nav-group">
+          <button class="nav-main nav-with-chevron nav-group-toggle" data-submenu="dragonSubNav"><span>🏪 용인족 도매상</span><span class="nav-chevron">⌄</span></button>
+          <div id="dragonSubNav" class="nav-submenu">
+            <button data-route="dragon-view" data-dragon-view="exchange">교환소재</button>
+            <button data-route="dragon-view" data-dragon-view="sell">판매물품</button>
+            <button data-route="dragon-view" data-dragon-view="increase">아이템증식</button>
+          </div>
+        </div>
+
+        <button data-page="item" class="nav-main">▤ 아이템</button>
+        <button data-page="compose" class="nav-main">⚗ 조합서</button>
+
+        <div class="nav-group">
+          <button class="nav-main nav-with-chevron nav-group-toggle" data-submenu="questSubNav"><span>📜 퀘스트</span><span class="nav-chevron">⌄</span></button>
+          <div id="questSubNav" class="nav-submenu">
+            <button data-route="quest-view" data-quest-view="key">키퀘스트</button>
+            <button data-route="quest-view" data-quest-view="village-summary">여단요약</button>
+            <button data-route="quest-view" data-quest-view="village-detail">여단상세</button>
+            <button data-route="quest-view" data-quest-view="hub-summary">집회소요약</button>
+            <button data-route="quest-view" data-quest-view="hub-detail">집회소상세</button>
+            <button data-route="quest-view" data-quest-view="g-summary">G급요약</button>
+            <button data-route="quest-view" data-quest-view="g-detail">G급상세</button>
+          </div>
+        </div>
+
+        <button data-page="data" class="nav-main">▣ 데이터 관리</button>
+      </nav>
+
+      <div class="sidebar-footer">
+        <span id="datasetBadge" class="badge warning">데이터 확인 중</span>
+        <small>Source: flashkiller MH4G DB</small>
+      </div>
+    </aside>
+
+    <main class="content">
+      <header class="topbar">
+        <div class="topbar-left">
+          <button id="sidebarToggle" class="sidebar-toggle" type="button" title="좌측 메뉴 접기/펼치기" aria-label="좌측 메뉴 접기/펼치기">☰</button>
+          <div>
+            <div class="version-line"><span class="version-badge">v0.7.1</span><span class="version-note">검색 드롭다운 키보드 조작</span></div>
+            <h1 id="pageTitle">스킬 시뮬레이터</h1>
+            <p id="pageSubtitle">방어구 + 호석 + 장식주 조합을 계산합니다.</p>
+          </div>
+        </div>
+      </header>
+        <div class="global-filter-state" hidden aria-hidden="true">
+          <label id="hunterTypeWrap">
+            <select id="hunterType">
+              <option value="blade">검사</option>
+              <option value="gunner">거너</option>
+              <option value="both" selected>전체</option>
+            </select>
+          </label>
+          <label id="rankFilterWrap">
+            <select id="rankFilter">
+              <option value="all" selected>전체</option>
+              <option value="low">하위</option>
+              <option value="high">상위</option>
+              <option value="g">G급</option>
+            </select>
+          </label>
+        </div>
+
+      <section id="page-simulator" class="page active">
+        <div id="dataNotice" class="notice">
+          <strong>실제 MH4G 데이터 적용:</strong>
+          <span>수동 장비를 직접 구성하고, 아래의 원하는 스킬 · 자동 조합 검색 패널에서 스킬 선택과 조합 검색을 한 번에 사용할 수 있습니다.</span>
+        </div>
+
+        <div class="grid manual-builder-grid">
+          <section class="panel manual-panel">
+            <div class="panel-title">
+              <div>
+                <h2>수동 장비 계산</h2>
+                <p class="muted">세트를 먼저 불러온 뒤 각 파츠와 장식주를 개별 변경할 수 있습니다.</p>
+              </div>
+            </div>
+
+            <div class="set-picker-box compact-set-picker">
+              <span class="equipment-label">방어구 세트</span>
+              <div id="armorSetPicker" class="search-select"></div>
+            </div>
+
+            <div id="manualEquipmentBuilder" class="manual-equipment-builder"></div>
+
+            <div class="build-save-box">
+              <div class="build-save-title">장비 결과 저장 / 불러오기</div>
+              <div class="build-save-controls">
+                <input id="buildName" placeholder="세팅 이름 (예: 대검 발도 집중)" />
+                <button id="saveBuild" class="primary">현재 세팅 저장</button>
+                <select id="savedBuildSelect"><option value="">저장한 세팅</option></select>
+                <button id="loadBuild" class="ghost">불러오기</button>
+                <button id="deleteBuild" class="ghost danger">삭제</button>
+              </div>
+            </div>
+          </section>
+
+          <section class="panel result-panel manual-result-panel">
+            <div class="panel-title">
+              <h2>현재 장비 결과</h2>
+              <button id="calculateManual" class="ghost small">다시 계산</button>
+            </div>
+            <div id="manualResult" class="result-empty">무기와 방어구를 선택하세요.</div>
+          </section>
+        </div>
+
+        <section class="panel search-panel auto-search-panel skill-auto-panel">
+          <div class="skill-auto-target">
+            <div class="panel-title">
+              <div>
+                <h2>원하는 스킬 · 자동 조합 검색</h2>
+                <p class="muted">원하는 발동 스킬을 선택한 뒤 같은 영역에서 바로 장비 조합을 검색합니다.</p>
+              </div>
+              <button id="clearTargets" class="ghost small">스킬 초기화</button>
+            </div>
+            <div class="skill-auto-controls">
+              <div class="field skill-target-field">
+                <label>스킬 추가</label>
+                <div class="row searchable-row">
+                  <div id="targetSkillPicker" class="search-select"></div>
+                  <button id="addTargetSkill">추가</button>
+                </div>
+              </div>
+              <div class="search-options compact-skill-options">
+                <label><input id="allowDecorations" type="checkbox" checked /> 장식주 사용</label>
+                <label><input id="includeTorsoUp" type="checkbox" checked /> 몸통배가 고려</label>
+                <label>결과 수
+                  <select id="resultLimit">
+                    <option>10</option><option selected>20</option><option>50</option>
+                  </select>
+                </label>
+                <button id="runSearch" class="primary large">조합 검색</button>
+              </div>
+            </div>
+            <div id="targetSkills" class="chip-list empty-state">선택된 스킬이 없습니다.</div>
+          </div>
+          <div class="skill-auto-results">
+            <div id="searchStats" class="muted search-stats"></div>
+            <div id="searchResults" class="build-results">
+              <div class="result-empty">원하는 스킬을 선택한 뒤 조합 검색을 눌러주세요.</div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section id="page-armor" class="page">
+        <div class="toolbar">
+          <input id="armorSearch" class="search-input" placeholder="방어구명 또는 스킬 검색" />
+          <select id="armorPartFilter">
+            <option value="all">전체 부위</option>
+            <option value="head">머리</option>
+            <option value="body">몸통</option>
+            <option value="arms">팔</option>
+            <option value="waist">허리</option>
+            <option value="legs">다리</option>
+          </select>
+        </div>
+        <div class="muted result-info">등급은 해당 방어구를 최초로 제작할 수 있는 진행도 기준입니다. RARE4는 하위/상위가 혼재해 소재 입수 시점까지 반영했습니다.</div>
+        <div class="panel table-panel"><div id="armorTable"></div></div>
+      </section>
+
+      <section id="page-weapon" class="page">
+        <div class="toolbar weapon-toolbar">
+          <select id="weaponTypeFilter" aria-label="무기 종류"><option value="all">전체 무기</option></select>
+          <input id="weaponSearch" class="search-input" placeholder="무기명·속성·파생 검색" />
+          <select id="weaponTreeFilter"><option value="all">전체 파생</option></select>
+        </div>
+        <div id="weaponResultInfo" class="muted result-info"></div>
+        <div id="weaponTrees" class="weapon-tree-list"></div>
+      </section>
+
+      <section id="page-decoration" class="page">
+        <div class="toolbar">
+          <input id="decoSearch" class="search-input" placeholder="장식주명·스킬·효과 검색 (예: 회심)" />
+        </div>
+        <div class="panel table-panel"><div id="decoTable"></div></div>
+      </section>
+
+      <section id="page-skill" class="page">
+        <div class="toolbar">
+          <input id="skillSearch" class="search-input" placeholder="스킬명 또는 발동 스킬 검색" />
+        </div>
+        <div class="panel table-panel"><div id="skillTable"></div></div>
+      </section>
+
+      <section id="page-item" class="page">
+        <div class="toolbar">
+          <input id="itemSearch" class="search-input" placeholder="아이템명·입수방법·효과 검색" />
+        </div>
+        <div class="panel table-panel"><div id="itemTable"></div></div>
+      </section>
+
+
+      <section id="page-source" class="page">
+        <div class="panel"><div id="sourceContent"></div></div>
+      </section>
+
+      <section id="page-armor-set" class="page">
+        <div class="toolbar">
+          <input id="armorSetSearch" class="search-input" placeholder="세트명·스킬 검색" />
+        </div>
+        <div class="panel table-panel"><div id="armorSetTable"></div></div>
+      </section>
+
+      <section id="page-weapon-summary" class="page">
+        <div class="toolbar">
+          <input id="weaponSummarySearch" class="search-input" placeholder="무기종류·속성·무기명 검색" />
+          <select id="weaponSummaryType"><option value="all">전체 무기</option></select>
+        </div>
+        <div class="panel table-panel"><div id="weaponSummaryTable"></div></div>
+      </section>
+
+      <section id="page-melody" class="page">
+        <div class="toolbar">
+          <input id="melodySearch" class="search-input" placeholder="음색·선율효과·무기명 검색" />
+        </div>
+        <div class="panel table-panel"><div id="melodyTable"></div></div>
+      </section>
+
+      <section id="page-meal" class="page">
+        <div class="notice"><strong>식사효과:</strong> 두 식재료의 ★ 합계에 따라 체력·공격력·방어력·내성 효과가 달라지고, 신선 식재료는 스태미너 최대치 보너스에 영향을 줍니다.</div>
+        <div class="toolbar">
+          <input id="mealSearch" class="search-input" placeholder="식재료·식사효과·야옹스킬 검색" />
+          <select id="mealIngredientFilter"><option value="all">전체 식재료</option></select>
+        </div>
+        <div id="mealGrid" class="card-grid"></div>
+      </section>
+
+      <section id="page-monster" class="page">
+        <div class="toolbar">
+          <input id="monsterSearch" class="search-input" placeholder="몬스터명·소재명·특성 검색" />
+          <select id="monsterSelect"><option value="all">전체 몬스터</option></select>
+          <select id="monsterRankFilter">
+            <option value="all">전체 등급</option><option value="low">하위</option><option value="high">상위</option><option value="g">G급</option><option value="extreme">극한</option>
+          </select>
+        </div>
+        <div id="monsterContent"></div>
+      </section>
+
+      <section id="page-dragon" class="page">
+        <div class="toolbar">
+          <input id="dragonSearch" class="search-input" placeholder="아이템·퀘스트·시장 검색" />
+        </div>
+        <div class="panel table-panel"><div id="dragonTable"></div></div>
+      </section>
+
+      <section id="page-compose" class="page">
+        <div class="toolbar">
+          <input id="composeSearch" class="search-input" placeholder="결과 아이템·소재 검색" />
+        </div>
+        <div class="panel table-panel"><div id="composeTable"></div></div>
+      </section>
+
+      <section id="page-quest" class="page">
+        <div class="toolbar">
+          <input id="questSearch" class="search-input" placeholder="퀘스트명·목표·장소 검색" />
+          <select id="questLevelFilter"><option value="all">전체 ★</option></select>
+          <label class="toolbar-check"><input type="checkbox" id="questKeyOnly" /> 키퀘만</label>
+        </div>
+        <div class="panel table-panel"><div id="questTable"></div></div>
+      </section>
+
+      <section id="page-data" class="page">
+        <div class="grid data-grid">
+          <section class="panel">
+            <h2>데이터 현황</h2>
+            <div id="dataSummary"></div>
+          </section>
+          <section class="panel">
+            <h2>JSON 가져오기</h2>
+            <p class="muted">기본 data/*.json 대신 브라우저 메모리에 임시 로드합니다.</p>
+            <label class="file-drop">
+              <input id="jsonImport" type="file" accept=".json,application/json" multiple />
+              <strong>JSON 파일 선택</strong>
+              <span>armors / weapons / skills / decorations / items 및 확장 DB JSON</span>
+            </label>
+            <div id="importStatus" class="muted"></div>
+          </section>
+          <section class="panel wide">
+            <h2>원본 데이터 수집 방법</h2>
+            <pre><code>tools\update_db.bat
+
+또는
+python tools/crawl_source.py
+python tools/extract_tables.py
+python tools/build_database.py --publish</code></pre>
+            <p>자세한 내용은 README.md와 tools/README.md를 확인하세요.</p>
+          </section>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script type="module" src="./js/app.js?v=0.7.1"></script>
+</body>
+</html>

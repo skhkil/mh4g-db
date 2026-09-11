@@ -1,0 +1,2537 @@
+[
+  {
+    "id": "deco_adbe62e8572e",
+    "name": "폭사주【1】",
+    "nameJa": "爆師珠【1】",
+    "slots": 1,
+    "materials": "양상원주×1 수수께끼의 점균×2 구룡 가죽×1",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_b49d70f154bd": 2
+    }
+  },
+  {
+    "id": "deco_ca02ee1f52be",
+    "name": "고적주【1】",
+    "nameJa": "鼓笛珠【1】",
+    "slots": 1,
+    "materials": "양상원주×1 교사룡 소리갑각×1 뿔피리×1",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_b273e25bfef2": 2
+    }
+  },
+  {
+    "id": "deco_22fe4680024a",
+    "name": "포술주【1】",
+    "nameJa": "砲術珠【1】",
+    "slots": 1,
+    "materials": "양상원주×1 얼음결정×2 대형나무통폭탄G×2",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_78219e43d710": 2
+    }
+  },
+  {
+    "id": "deco_4b6bdfaf44a1",
+    "name": "제화주【1】",
+    "nameJa": "制火珠【1】",
+    "slots": 1,
+    "materials": "양상원주×1 화염주머니×2 용골【대】×3",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_d565a104e42c": 2
+    }
+  },
+  {
+    "id": "deco_25b50c969496",
+    "name": "제수주【1】",
+    "nameJa": "制水珠【1】",
+    "slots": 1,
+    "materials": "양상원주×1 물주머니×2 용골【대】×3",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_5d84527a2efe": 2
+    }
+  },
+  {
+    "id": "deco_922bb8180a0c",
+    "name": "제뢰주【1】",
+    "nameJa": "制雷珠【1】",
+    "slots": 1,
+    "materials": "양상원주×1 뇌랑룡 전기갑각×1 용골【대】×1",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_fdb5eae206c1": 2
+    }
+  },
+  {
+    "id": "deco_38d77a489ef2",
+    "name": "제빙주【1】",
+    "nameJa": "制氷珠【1】",
+    "slots": 1,
+    "materials": "양상원주×1 백토수 얼음발톱×2 용골【대】×3",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_6443ad676ced": 2
+    }
+  },
+  {
+    "id": "deco_3f38ef33d006",
+    "name": "제룡주【1】",
+    "nameJa": "制龍珠【1】",
+    "slots": 1,
+    "materials": "양상원주×1 고대의 용골×1 첨룡골×2",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_3bdc830a2d1a": 2
+    }
+  },
+  {
+    "id": "deco_888f4c1862ed",
+    "name": "은총주【1】",
+    "nameJa": "神護珠【1】",
+    "slots": 1,
+    "materials": "유리원주×1 금화룡 견갑각×2 여단티켓×1",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_bcf68a1ff0a1": 2
+    }
+  },
+  {
+    "id": "deco_0b25ee831ab2",
+    "name": "체력주【1】",
+    "nameJa": "体力珠【1】",
+    "slots": 1,
+    "materials": "수광원주×1 순충 갑각×1",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_a45ea58ebcb0": 2
+    }
+  },
+  {
+    "id": "deco_4aed2014e461",
+    "name": "공복주【1】",
+    "nameJa": "無食珠【1】",
+    "slots": 1,
+    "materials": "수광원주×1 철갑충 뿔×1 잘 익은 고기×1",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_27df943493ca": 2
+    }
+  },
+  {
+    "id": "deco_0cefbc960938",
+    "name": "식탐주【1】",
+    "nameJa": "食漢珠【1】",
+    "slots": 1,
+    "materials": "수광원주×1 거대한 뼈×1",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_810ef03516ac": 2
+    }
+  },
+  {
+    "id": "deco_f7d64131a410",
+    "name": "애육주【1】",
+    "nameJa": "肉好珠【1】",
+    "slots": 1,
+    "materials": "금강원주×1 공폭룡 두갑각×2 개구리기름×1",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_a9c0c630697b": 2
+    }
+  },
+  {
+    "id": "deco_5f758cfa3385",
+    "name": "연마주【1】",
+    "nameJa": "研磨珠【1】",
+    "slots": 1,
+    "materials": "수광원주×1 구룡 발톱×1 마카라이트광석×1",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_e43cf9f6c27e": 2
+    }
+  },
+  {
+    "id": "deco_5b4494aac616",
+    "name": "가관주【1】",
+    "nameJa": "加貫珠【1】",
+    "slots": 1,
+    "materials": "양상원주×1 드래그라이트광석×2",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_336a703d8409": 2
+    }
+  },
+  {
+    "id": "deco_712b111bdd4c",
+    "name": "가산주【1】",
+    "nameJa": "加散珠【1】",
+    "slots": 1,
+    "materials": "양상원주×1 잠구룡 가죽×2",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_b574c850f7d0": 2
+    }
+  },
+  {
+    "id": "deco_98b345a9795b",
+    "name": "가류주【1】",
+    "nameJa": "加榴珠【1】",
+    "slots": 1,
+    "materials": "양상원주×1 화룡 갑각×2",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_725792be8c4d": 2
+    }
+  },
+  {
+    "id": "deco_467800503d2a",
+    "name": "가참주【1】",
+    "nameJa": "加斬珠【1】",
+    "slots": 1,
+    "materials": "수광원주×1 백토수 털×2",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_920c69390d1f": 2
+    }
+  },
+  {
+    "id": "deco_d8299e3e435a",
+    "name": "점사주【1】",
+    "nameJa": "点射珠【1】",
+    "slots": 1,
+    "materials": "수광원주×1 수수께끼의 머리뼈×2",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_e0cef00c6709": 2
+    }
+  },
+  {
+    "id": "deco_a92266e583b4",
+    "name": "면병주【1】",
+    "nameJa": "眠 瓶 珠【1】",
+    "slots": 1,
+    "materials": "양상원주×1 수면주머니×1",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_05675302032e": 2
+    }
+  },
+  {
+    "id": "deco_4486b7fea1b5",
+    "name": "독병주【1】",
+    "nameJa": "毒 瓶 珠【1】",
+    "slots": 1,
+    "materials": "양상원주×1 독주머니×1",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_e6862626576e": 2
+    }
+  },
+  {
+    "id": "deco_131160258b32",
+    "name": "접병주【1】",
+    "nameJa": "接 瓶 珠【1】",
+    "slots": 1,
+    "materials": "양상원주×1 수괴수 발톱×1 해면질 가죽×1",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_21996a7e8a32": 2
+    }
+  },
+  {
+    "id": "deco_8ba5ac646bf2",
+    "name": "멸병주【1】",
+    "nameJa": "減 瓶 珠【1】",
+    "slots": 1,
+    "materials": "양상원주×1 힘드러어×2 용골【대】×1",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_8b8905a42a60": 2
+    }
+  },
+  {
+    "id": "deco_86c9e5c86ffd",
+    "name": "가폭주【1】",
+    "nameJa": "加爆珠【1】",
+    "slots": 1,
+    "materials": "수라원주×1 쇄룡 흑요갑×2 화약초×4",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_934580b17bc3": 2
+    }
+  },
+  {
+    "id": "deco_3d328b07cbbc",
+    "name": "폭병주【1】",
+    "nameJa": "爆 瓶 珠【1】",
+    "slots": 1,
+    "materials": "수라원주×1 쇄룡 견갑각×2 수수께끼의 점균×1",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_ea86e4db2ddb": 2
+    }
+  },
+  {
+    "id": "deco_e60e154d0a9f",
+    "name": "설치주【1】",
+    "nameJa": "罠師珠【1】",
+    "slots": 1,
+    "materials": "양상원주×1 두꺼운 가죽×1 마비덫×1",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_6365d7eb75b5": 2
+    }
+  },
+  {
+    "id": "deco_35de360263fa",
+    "name": "제절주【1】",
+    "nameJa": "制絶珠【1】",
+    "slots": 1,
+    "materials": "양상원주×1 우두머리의 목도리×1 청웅수 털×2",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_8d7ad8b7839d": 2
+    }
+  },
+  {
+    "id": "deco_6e7b568df860",
+    "name": "내방주【1】",
+    "nameJa": "耐防珠【1】",
+    "slots": 1,
+    "materials": "수광원주×1 인내씨앗×2 증강제×2",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_58aa2edfa0fa": 2
+    }
+  },
+  {
+    "id": "deco_30cd86494f60",
+    "name": "방범주【1】",
+    "nameJa": "防 盗 珠【1】",
+    "slots": 1,
+    "materials": "수광원주×1 아이룰루×3",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_75d2b8654cf4": 2
+    }
+  },
+  {
+    "id": "deco_f6e83c7316e8",
+    "name": "항점주【1】",
+    "nameJa": "抗粘珠【1】",
+    "slots": 1,
+    "materials": "양상원주×1 백토수 복갑×1 드래그라이트광석×2",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_4c363fb8e85d": 2
+    }
+  },
+  {
+    "id": "deco_bb9527b01f5f",
+    "name": "항진주【1】",
+    "nameJa": "抗震珠【1】",
+    "slots": 1,
+    "materials": "양상원주×1 위압적인 머리뼈×1 끈적뚜기×2",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_65856e9fd388": 2
+    }
+  },
+  {
+    "id": "deco_1b35fa74ec06",
+    "name": "내서주【1】",
+    "nameJa": "耐暑珠【1】",
+    "slots": 1,
+    "materials": "수광원주×1 얼음결정×3",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_32348dadc980": 2
+    }
+  },
+  {
+    "id": "deco_b794e309bd85",
+    "name": "내한주【1】",
+    "nameJa": "耐寒珠【1】",
+    "slots": 1,
+    "materials": "수광원주×1 상어비늘×2",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_d419d4fb59a3": 2
+    }
+  },
+  {
+    "id": "deco_eefe578daed1",
+    "name": "섭취주【1】",
+    "nameJa": "茸好珠【1】",
+    "slots": 1,
+    "materials": "금강원주×1 도모수 억센털+×4 중후한 뼈×1",
+    "rank": "g",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_21bbc3dfb2f7": 2,
+      "skill_a9c0c630697b": -1
+    }
+  },
+  {
+    "id": "deco_098025fa7d72",
+    "name": "절식주【1】",
+    "nameJa": "節食珠【1】",
+    "slots": 1,
+    "materials": "금강원주×1 사토룡 지느러미++×1 예리한 발톱×2",
+    "rank": "g",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_f6ae1efeaf6d": 2,
+      "skill_9c165ef0be95": -1
+    }
+  },
+  {
+    "id": "deco_7f903e51a70a",
+    "name": "잠행주【1】",
+    "nameJa": "忍脚珠【1】",
+    "slots": 1,
+    "materials": "수광원주×1 켈비 푸른뿔×2",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_640d40323052": 2
+    }
+  },
+  {
+    "id": "deco_1ae2a056bac7",
+    "name": "연소주【1】",
+    "nameJa": "燃 焼 珠【1】",
+    "slots": 1,
+    "materials": "양상원주×1 수수께끼의 점균×2 염과룡 견갑각×2",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_4f483f174bc9": 2
+    }
+  },
+  {
+    "id": "deco_138453da2025",
+    "name": "균구주【1】",
+    "nameJa": "菌究珠【1】",
+    "slots": 1,
+    "materials": "금강원주×1 적갑수 견갑각×1 쇄룡 견흑요갑×2",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_d6ea8f6b4907": 2
+    }
+  },
+  {
+    "id": "deco_35b256b51e99",
+    "name": "박사주【1】",
+    "nameJa": "博士珠【1】",
+    "slots": 1,
+    "materials": "수광원주×1 조합서① 입문편×1 환조 날개×1",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_b95d60db9423": 2
+    }
+  },
+  {
+    "id": "deco_a7648e0c0ae7",
+    "name": "탄제주【1】",
+    "nameJa": "弾製珠【1】",
+    "slots": 1,
+    "materials": "수광원주×1 미니금붕어×1",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_6f397d16f0cd": 2
+    }
+  },
+  {
+    "id": "deco_1f1d4b96e0da",
+    "name": "지속주【1】",
+    "nameJa": "持 続 珠【1】",
+    "slots": 1,
+    "materials": "수광원주×1 익사룡 가죽×1",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_719784872b09": 2
+    }
+  },
+  {
+    "id": "deco_351a171ae731",
+    "name": "운반주【1】",
+    "nameJa": "運搬珠【1】",
+    "slots": 1,
+    "materials": "수광원주×1 질주진액×1",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_a17db9b54aef": 2
+    }
+  },
+  {
+    "id": "deco_8eaffdbd64a1",
+    "name": "채집주【1】",
+    "nameJa": "採取珠【1】",
+    "slots": 1,
+    "materials": "수광원주×1 페피포펌프킨×2",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_a64199ed5d30": 2
+    }
+  },
+  {
+    "id": "deco_a97370b58248",
+    "name": "속집주【1】",
+    "nameJa": "速集珠【1】",
+    "slots": 1,
+    "materials": "수광원주×1 페피포펌프킨×1 용골【소】×2",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_55748660f9ee": 2
+    }
+  },
+  {
+    "id": "deco_ea8c40d6640c",
+    "name": "축복주【1】",
+    "nameJa": "祝福珠【1】",
+    "slots": 1,
+    "materials": "수광원주×1 철광석×2",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_9c165ef0be95": 2
+    }
+  },
+  {
+    "id": "deco_4a25314bede8",
+    "name": "헌터주【1】",
+    "nameJa": "狩人珠【1】",
+    "slots": 1,
+    "materials": "수광원주×1 회어×1 날고기×2",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_837350925f0a": 2
+    }
+  },
+  {
+    "id": "deco_c378f7f717a0",
+    "name": "점밀주【1】",
+    "nameJa": "蜜占珠【1】",
+    "slots": 1,
+    "materials": "수라원주×1 청웅수 갑각×4 도모수 첨예발톱×1",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_a6713dfa141b": 2
+    }
+  },
+  {
+    "id": "deco_6e5af30e849b",
+    "name": "천리주【1】",
+    "nameJa": "千里珠【1】",
+    "slots": 1,
+    "materials": "수광원주×1 극채색날개×1",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_b98410ce2063": 2
+    }
+  },
+  {
+    "id": "deco_0e05af369afa",
+    "name": "관찰주【1】",
+    "nameJa": "観察珠【1】",
+    "slots": 1,
+    "materials": "수광원주×1 수피룡 가죽×1 쌍안경×1",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_9beb5b0d63dc": 2
+    }
+  },
+  {
+    "id": "deco_b653be280e90",
+    "name": "명지시주【1】",
+    "nameJa": "名采配珠【1】",
+    "slots": 1,
+    "materials": "수라원주×1 동반자티켓×3 우두머리의 목도리×2",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_a0f8884ccb05": 2
+    }
+  },
+  {
+    "id": "deco_d38e1e20ea18",
+    "name": "탑승주【1】",
+    "nameJa": "乗 慣珠【1】",
+    "slots": 1,
+    "materials": "금강원주×1 기원호 중장골×2 랑고스타 절단날개×2",
+    "rank": "g",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_56899bd6d661": 2
+    }
+  },
+  {
+    "id": "deco_53099c2c7724",
+    "name": "항상주【1】",
+    "nameJa": "抗傷珠【1】",
+    "slots": 1,
+    "materials": "유리원주×1 천인룡 비인×1 사토룡 지느러미+×2",
+    "rank": "g",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_03a65ac27189": 2
+    }
+  },
+  {
+    "id": "deco_3bb04e130fd1",
+    "name": "공격주【1】",
+    "nameJa": "攻 撃 珠【1】",
+    "slots": 1,
+    "materials": "수광원주×1 재기 비늘×2 괴력씨앗×1",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_2a9c189a93d7": 1,
+      "skill_2a87c14e4abc": -1
+    }
+  },
+  {
+    "id": "deco_3bb6db7b5c57",
+    "name": "달인주【1】",
+    "nameJa": "達人珠【1】",
+    "slots": 1,
+    "materials": "수광원주×1 뾰족한 이빨×2 철광석×1",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_25c2859f7595": 1,
+      "skill_3bdc830a2d1a": -1
+    }
+  },
+  {
+    "id": "deco_03c62c4ab548",
+    "name": "특공주【1】",
+    "nameJa": "特攻珠【1】",
+    "slots": 1,
+    "materials": "양상원주×1 비갑충 날개×3 게네포스 마비이빨×3",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_dd358f9bd4d7": 1,
+      "skill_1826606ac13c": -1
+    }
+  },
+  {
+    "id": "deco_75234c761608",
+    "name": "속공주【1】",
+    "nameJa": "属攻珠【1】",
+    "slots": 1,
+    "materials": "수라원주×1 황흑룡 역린×3",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_1826606ac13c": 1,
+      "skill_dd358f9bd4d7": -1
+    }
+  },
+  {
+    "id": "deco_c9437a9b091b",
+    "name": "화염주【1】",
+    "nameJa": "火炎珠【1】",
+    "slots": 1,
+    "materials": "양상원주×1 자화룡 비늘×2",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_b483bb71c31d": 1,
+      "skill_96039668e096": -1
+    }
+  },
+  {
+    "id": "deco_e591d6ea11a5",
+    "name": "유수주【1】",
+    "nameJa": "流水珠【1】",
+    "slots": 1,
+    "materials": "양상원주×1 수괴수 발톱×1",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_96039668e096": 1,
+      "skill_e2bd81d7e74c": -1
+    }
+  },
+  {
+    "id": "deco_d5597c2d86f0",
+    "name": "뇌광주【1】",
+    "nameJa": "雷光珠【1】",
+    "slots": 1,
+    "materials": "양상원주×1 물컹물컹한 가죽×1 뇌광충×2",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_e2bd81d7e74c": 1,
+      "skill_d2eae745f55d": -1
+    }
+  },
+  {
+    "id": "deco_d7da24d864db",
+    "name": "빙결주【1】",
+    "nameJa": "氷結珠【1】",
+    "slots": 1,
+    "materials": "양상원주×1 괴상어 가죽×2",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_d2eae745f55d": 1,
+      "skill_b483bb71c31d": -1
+    }
+  },
+  {
+    "id": "deco_eccadcb44e6f",
+    "name": "파룡주【1】",
+    "nameJa": "破龍珠【1】",
+    "slots": 1,
+    "materials": "양상원주×1 호산룡 붉은비늘×2",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_c21e79dfed09": 1,
+      "skill_dd358f9bd4d7": -1
+    }
+  },
+  {
+    "id": "deco_9caec4c68ab9",
+    "name": "통격주【1】",
+    "nameJa": "痛 撃 珠【1】",
+    "slots": 1,
+    "materials": "양상원주×1 화룡 익막×1 자화룡 가시×1",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_aa8a7d803517": 1,
+      "skill_a45ea58ebcb0": -1
+    }
+  },
+  {
+    "id": "deco_d3262c89a0b2",
+    "name": "중격주【1】",
+    "nameJa": "重 撃 珠【1】",
+    "slots": 1,
+    "materials": "양상원주×1 미추룡 이끼갑각×1 개룡 갑각×2",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_91feda75c5e9": 1,
+      "skill_25c2859f7595": -1
+    }
+  },
+  {
+    "id": "deco_5e497479613e",
+    "name": "속치주【1】",
+    "nameJa": "属会 珠【1】",
+    "slots": 1,
+    "materials": "금강원주×1 창화룡 중갑각×2",
+    "rank": "g",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_1ae21921a72f": 1,
+      "skill_2a9c189a93d7": -1
+    }
+  },
+  {
+    "id": "deco_14d9ae92c00c",
+    "name": "특치주【1】",
+    "nameJa": "特 会 珠【1】",
+    "slots": 1,
+    "materials": "금강원주×1 해지주 중갑각×2",
+    "rank": "g",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_8f6ae043151b": 1,
+      "skill_2a9c189a93d7": -1
+    }
+  },
+  {
+    "id": "deco_b88cababaff8",
+    "name": "단축주【1】",
+    "nameJa": "短縮珠【1】",
+    "slots": 1,
+    "materials": "양상원주×1 귀와 발톱×1 토사룡 갑각×2",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_04fd12814adf": 1,
+      "skill_122ffa46b9a4": -1
+    }
+  },
+  {
+    "id": "deco_cf0ff7b19a24",
+    "name": "전개주【1】",
+    "nameJa": "全開珠【1】",
+    "slots": 1,
+    "materials": "양상원주×1 뇌랑룡 뿔×1 흑식룡 촉각×2",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_d5d5017546d7": 1,
+      "skill_640d40323052": -1
+    }
+  },
+  {
+    "id": "deco_dfe132d40c98",
+    "name": "KO주【1】",
+    "nameJa": "KO珠【1】",
+    "slots": 1,
+    "materials": "양상원주×1 용골+×2 초식룡 두갑각×1",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_da9fb11eb79b": 1,
+      "skill_04fd12814adf": -1
+    }
+  },
+  {
+    "id": "deco_9fc261ec32f5",
+    "name": "탈기주【1】",
+    "nameJa": "奪 気 珠【1】",
+    "slots": 1,
+    "materials": "양상원주×1 도모수 발톱×1 용골【중】×1",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_ca1537907883": 1,
+      "skill_410c93e16f86": -1
+    }
+  },
+  {
+    "id": "deco_8e52f83e71bf",
+    "name": "저력주【1】",
+    "nameJa": "底力珠【1】",
+    "slots": 1,
+    "materials": "양상원주×1 미추룡 이끼갑각×2",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_05e4b277d6b9": 1,
+      "skill_bcf68a1ff0a1": -1
+    }
+  },
+  {
+    "id": "deco_69b853976831",
+    "name": "역경주【1】",
+    "nameJa": "逆境珠【1】",
+    "slots": 1,
+    "materials": "양상원주×1 중갑충 원형꼬리×1",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_9a0f4d876162": 1,
+      "skill_0a24dffb8259": -1
+    }
+  },
+  {
+    "id": "deco_c0f7591f031b",
+    "name": "투혼주【1】",
+    "nameJa": "闘魂珠【1】",
+    "slots": 1,
+    "materials": "금강원주×1 쇄룡 견갑각×2 토사룡 두갑각×2",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_a71c734bea26": 1,
+      "skill_9c891ceddf5d": -1
+    }
+  },
+  {
+    "id": "deco_563a37c3112d",
+    "name": "무결주【1】",
+    "nameJa": "無傷珠【1】",
+    "slots": 1,
+    "materials": "금강원주×1 옥랑룡 첨예뿔×2 옥랑룡 견갑각×2",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_28dc80245370": 1,
+      "skill_6aac09f1f9a7": -1
+    }
+  },
+  {
+    "id": "deco_f97c54effcbd",
+    "name": "방어주【1】",
+    "nameJa": "防御珠【1】",
+    "slots": 1,
+    "materials": "수광원주×1 청웅수 갑각×1 인내씨앗×2",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_2a87c14e4abc": 1,
+      "skill_2a9c189a93d7": -1
+    }
+  },
+  {
+    "id": "deco_389ea17a025a",
+    "name": "속내주【1】",
+    "nameJa": "属耐珠【1】",
+    "slots": 1,
+    "materials": "유리원주×1 황흑룡 역린×2",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_28cbe0a71742": 1,
+      "skill_a45ea58ebcb0": -1
+    }
+  },
+  {
+    "id": "deco_09aedf43b650",
+    "name": "내화주【1】",
+    "nameJa": "耐火珠【1】",
+    "slots": 1,
+    "materials": "수광원주×1 화약초×5",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_d565a104e42c": 1,
+      "skill_5d84527a2efe": -1
+    }
+  },
+  {
+    "id": "deco_b488cd0d47fd",
+    "name": "내수주【1】",
+    "nameJa": "耐水珠【1】",
+    "slots": 1,
+    "materials": "수광원주×1 예리어×5",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_5d84527a2efe": 1,
+      "skill_fdb5eae206c1": -1
+    }
+  },
+  {
+    "id": "deco_45394c1aa3a0",
+    "name": "내뢰주【1】",
+    "nameJa": "耐雷珠【1】",
+    "slots": 1,
+    "materials": "수광원주×1 뇌광충×3",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_fdb5eae206c1": 1,
+      "skill_6443ad676ced": -1
+    }
+  },
+  {
+    "id": "deco_4778c1448821",
+    "name": "내빙주【1】",
+    "nameJa": "耐氷珠【1】",
+    "slots": 1,
+    "materials": "수광원주×1 얼음결정×5",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_6443ad676ced": 1,
+      "skill_d565a104e42c": -1
+    }
+  },
+  {
+    "id": "deco_d1d631b3deda",
+    "name": "내룡주【1】",
+    "nameJa": "耐龍珠【1】",
+    "slots": 1,
+    "materials": "수광원주×1 용살열매×2",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_3bdc830a2d1a": 1,
+      "skill_37a4e4eddec0": -1
+    }
+  },
+  {
+    "id": "deco_f1e625608a8f",
+    "name": "가호주【1】",
+    "nameJa": "加護珠【1】",
+    "slots": 1,
+    "materials": "양상원주×1 자화룡 갑각×2",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_bcf68a1ff0a1": 1
+    }
+  },
+  {
+    "id": "deco_f60d6e9351f0",
+    "name": "조복주【1】",
+    "nameJa": "早復珠【1】",
+    "slots": 1,
+    "materials": "수광원주×1 재기 가죽×2",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_6aac09f1f9a7": 1,
+      "skill_9914f3bb006d": -1
+    }
+  },
+  {
+    "id": "deco_55aa2f540f04",
+    "name": "치유주【1】",
+    "nameJa": "治癒珠【1】",
+    "slots": 1,
+    "materials": "양상원주×1 기원호 장골×1 켈비 뿔×2",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_0a24dffb8259": 1,
+      "skill_6aac09f1f9a7": -1
+    }
+  },
+  {
+    "id": "deco_0b5a8d744377",
+    "name": "강주주【1】",
+    "nameJa": "強走珠【1】",
+    "slots": 1,
+    "materials": "양상원주×1 수괴수 발톱×1 강주약그레이트×2",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_410c93e16f86": 1,
+      "skill_27df943493ca": -1
+    }
+  },
+  {
+    "id": "deco_12bff86c7a78",
+    "name": "체술주【1】",
+    "nameJa": "体術珠【1】",
+    "slots": 1,
+    "materials": "양상원주×1 뾰족한 부리×1 이오스 비늘×2",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_122ffa46b9a4": 1,
+      "skill_410c93e16f86": -1
+    }
+  },
+  {
+    "id": "deco_07a2ecd08e13",
+    "name": "조기주【1】",
+    "nameJa": "早 気 珠【1】",
+    "slots": 1,
+    "materials": "양상원주×1 뇌랑룡 갑각×1 용골【중】×2",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_bf24a5d55721": 1,
+      "skill_977515684794": -1
+    }
+  },
+  {
+    "id": "deco_7978b780bc35",
+    "name": "근성주【1】",
+    "nameJa": "根性珠【1】",
+    "slots": 1,
+    "materials": "금강원주×1 금사자 검은털×2 금사자 예리이빨×1",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_0b8715ba4a76": 1,
+      "skill_b95d60db9423": -1
+    }
+  },
+  {
+    "id": "deco_682e0ee0ba6e",
+    "name": "육식주【1】",
+    "nameJa": "肉食珠【1】",
+    "slots": 1,
+    "materials": "금강원주×1 공폭룡 두갑각×2",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_a9c0c630697b": 1,
+      "skill_27df943493ca": -1
+    }
+  },
+  {
+    "id": "deco_f882a4b2b907",
+    "name": "검호주【1】",
+    "nameJa": "剣豪珠【1】",
+    "slots": 1,
+    "materials": "양상원주×1 고룡의 피×1",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_a3c4d7818b03": 1,
+      "skill_dc306dbb4ef6": -1
+    }
+  },
+  {
+    "id": "deco_1d6bccc4c531",
+    "name": "참철주【1】",
+    "nameJa": "斬 鉄 珠【1】",
+    "slots": 1,
+    "materials": "양상원주×1 암룡 날개×1 뇌랑룡 갑각×1",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_82680c9bf0f3": 1,
+      "skill_dc306dbb4ef6": -1
+    }
+  },
+  {
+    "id": "deco_517e1ce484ca",
+    "name": "발도주【1】",
+    "nameJa": "抜刀珠【1】",
+    "slots": 1,
+    "materials": "양상원주×1 각룡 갑각×2 뇌랑룡 뿔×1",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_89c345412fe4": 1,
+      "skill_25c2859f7595": -1
+    }
+  },
+  {
+    "id": "deco_c47041f806b5",
+    "name": "발타주【1】",
+    "nameJa": "抜打珠【1】",
+    "slots": 1,
+    "materials": "양상원주×1 폭추룡 내열갑각×1 용골+×2",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_dbf4116422c9": 1,
+      "skill_82680c9bf0f3": -1
+    }
+  },
+  {
+    "id": "deco_12cc9d250b9c",
+    "name": "철벽주【1】",
+    "nameJa": "鉄壁珠【1】",
+    "slots": 1,
+    "materials": "양상원주×1 토사룡 갑각×2",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_9c891ceddf5d": 1,
+      "skill_122ffa46b9a4": -1
+    }
+  },
+  {
+    "id": "deco_35c6988b4f0f",
+    "name": "강벽주【1】",
+    "nameJa": "強壁珠【1】",
+    "slots": 1,
+    "materials": "양상원주×1 홍련석×2",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_fd6b9f4f574f": 1,
+      "skill_410c93e16f86": -1
+    }
+  },
+  {
+    "id": "deco_4462d29eb61f",
+    "name": "강탄주【1】",
+    "nameJa": "強弾珠【1】",
+    "slots": 1,
+    "materials": "양상원주×1 용골+×2 팍튀어×5",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_a9d9b5fe31e4": 1,
+      "skill_d83820844b4d": -1
+    }
+  },
+  {
+    "id": "deco_481c109f4cf4",
+    "name": "관통주【1】",
+    "nameJa": "貫通珠【1】",
+    "slots": 1,
+    "materials": "양상원주×1 위압적인 머리뼈×1 도스헤라클레스×2",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_36177c02fa41": 1,
+      "skill_d83820844b4d": -1
+    }
+  },
+  {
+    "id": "deco_5edc3b6ce744",
+    "name": "산탄주【1】",
+    "nameJa": "散 弾 珠【1】",
+    "slots": 1,
+    "materials": "양상원주×1 얼음결정×3 용의 이빨×5",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_abda96911e59": 1,
+      "skill_d83820844b4d": -1
+    }
+  },
+  {
+    "id": "deco_c20242452649",
+    "name": "가탄주【1】",
+    "nameJa": "加 弾 珠【1】",
+    "slots": 1,
+    "materials": "수광원주×1 용골【중】×2",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_a72479f3ae09": 1,
+      "skill_2d4c948c0c23": -1
+    }
+  },
+  {
+    "id": "deco_a68b2eec9f93",
+    "name": "가확주【1】",
+    "nameJa": "加 拡 珠【1】",
+    "slots": 1,
+    "materials": "양상원주×1 폭추룡 내열갑각×2",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_4cc00ebe37cb": 1,
+      "skill_2d4c948c0c23": -1
+    }
+  },
+  {
+    "id": "deco_9f49f5f007bd",
+    "name": "속사주【1】",
+    "nameJa": "速射珠【1】",
+    "slots": 1,
+    "materials": "양상원주×1 굉룡 이빨×2 뇌랑룡 발톱×2",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_77ad65f34cd9": 1,
+      "skill_2d4c948c0c23": -1
+    }
+  },
+  {
+    "id": "deco_2f59b58d3cc3",
+    "name": "조전주【1】",
+    "nameJa": "早 填 珠【1】",
+    "slots": 1,
+    "materials": "양상원주×1 카브레라이트광석×3",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_2d4c948c0c23": 1,
+      "skill_d83820844b4d": -1
+    }
+  },
+  {
+    "id": "deco_1b572aba2a71",
+    "name": "억반주【1】",
+    "nameJa": "抑反珠【1】",
+    "slots": 1,
+    "materials": "양상원주×1 토사룡 두갑각×1 수괴수 발톱×1",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_d83820844b4d": 1,
+      "skill_2d4c948c0c23": -1
+    }
+  },
+  {
+    "id": "deco_d28c0d2fd3d5",
+    "name": "비병주【1】",
+    "nameJa": "痺 瓶 珠【1】",
+    "slots": 1,
+    "materials": "양상원주×1 마비주머니×1",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_596acdbdc84d": 1,
+      "skill_2a9c189a93d7": -1
+    }
+  },
+  {
+    "id": "deco_222f9a66d153",
+    "name": "강병주【1】",
+    "nameJa": "強瓶珠【1】",
+    "slots": 1,
+    "materials": "양상원주×1 철갑충 갑각×1 니트로버섯×5",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_5c22c482d71c": 1,
+      "skill_25c2859f7595": -1
+    }
+  },
+  {
+    "id": "deco_40a1e7925f5e",
+    "name": "회피주【1】",
+    "nameJa": "回避珠【1】",
+    "slots": 1,
+    "materials": "양상원주×1 백토수 복갑×2 킬러비틀×2",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_977515684794": 1,
+      "skill_a45ea58ebcb0": -1
+    }
+  },
+  {
+    "id": "deco_bc65f0fb79b7",
+    "name": "도약주【1】",
+    "nameJa": "跳躍珠【1】",
+    "slots": 1,
+    "materials": "양상원주×1 신룡 검은털×2 비갑충 날개×2",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_4b9bc9c6f953": 1,
+      "skill_a45ea58ebcb0": -1
+    }
+  },
+  {
+    "id": "deco_8137125c85a3",
+    "name": "속납주【1】",
+    "nameJa": "速納珠【1】",
+    "slots": 1,
+    "materials": "양상원주×1 먹보다랑어×1 갑충 배주머니×1",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_63c2bbb3a506": 1,
+      "skill_e43cf9f6c27e": -1
+    }
+  },
+  {
+    "id": "deco_5674926fb82f",
+    "name": "흡입주【1】",
+    "nameJa": "早食珠【1】",
+    "slots": 1,
+    "materials": "양상원주×1 잠구룡 가죽×1 청웅수 갑각×2",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_9914f3bb006d": 1,
+      "skill_0a24dffb8259": -1
+    }
+  },
+  {
+    "id": "deco_ee70a66c7fbe",
+    "name": "내절주【1】",
+    "nameJa": "耐絶珠【1】",
+    "slots": 1,
+    "materials": "수광원주×1 조룡종 이빨×3",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_8d7ad8b7839d": 1,
+      "skill_38ca304494f3": -1
+    }
+  },
+  {
+    "id": "deco_8b0e6d11cdfd",
+    "name": "내비주【1】",
+    "nameJa": "耐痺珠【1】",
+    "slots": 1,
+    "materials": "수광원주×1 비갑충 갑각×2",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_38ca304494f3": 1,
+      "skill_37a4e4eddec0": -1
+    }
+  },
+  {
+    "id": "deco_35b6410fcf98",
+    "name": "내면주【1】",
+    "nameJa": "耐眠珠【1】",
+    "slots": 1,
+    "materials": "수광원주×1 영지주 갑각×2",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_56d47db4267b": 1,
+      "skill_4c363fb8e85d": -1
+    }
+  },
+  {
+    "id": "deco_12a00157a66f",
+    "name": "내독주【1】",
+    "nameJa": "耐毒珠【1】",
+    "slots": 1,
+    "materials": "수광원주×1 이오스 독니×2",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_37a4e4eddec0": 1,
+      "skill_8d7ad8b7839d": -1
+    }
+  },
+  {
+    "id": "deco_ccc3407fbdcc",
+    "name": "내점주【1】",
+    "nameJa": "耐粘珠【1】",
+    "slots": 1,
+    "materials": "수광원주×1 초식룡 갑각×2",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_4c363fb8e85d": 1,
+      "skill_56d47db4267b": -1
+    }
+  },
+  {
+    "id": "deco_e97a2c697b2c",
+    "name": "항광주【1】",
+    "nameJa": "抗傷珠【1】",
+    "slots": 1,
+    "materials": "금강원주×1 이율의 혼돈날개×2 극룡옥×1",
+    "rank": "g",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_f743b97156ed": 1,
+      "skill_977515684794": -1
+    }
+  },
+  {
+    "id": "deco_d38534329908",
+    "name": "내진주【1】",
+    "nameJa": "耐震珠【1】",
+    "slots": 1,
+    "materials": "수광원주×1 개구리기름×1",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_65856e9fd388": 1,
+      "skill_56d47db4267b": -1
+    }
+  },
+  {
+    "id": "deco_106c6fbf1424",
+    "name": "방음주【1】",
+    "nameJa": "防音珠【1】",
+    "slots": 1,
+    "materials": "양상원주×1 자화룡 익막×1 백토수 귀×2",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_4d4485c17552": 1,
+      "skill_bcf68a1ff0a1": -1
+    }
+  },
+  {
+    "id": "deco_cc0b20e16156",
+    "name": "방풍주【1】",
+    "nameJa": "防風珠【1】",
+    "slots": 1,
+    "materials": "양상원주×1 뇌랑룡 발톱×1 드래그라이트광석×2",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_9d982d6cb255": 1,
+      "skill_bbe11654094a": -1
+    }
+  },
+  {
+    "id": "deco_f7135b2e4d85",
+    "name": "우애주【1】",
+    "nameJa": "友愛珠【1】",
+    "slots": 1,
+    "materials": "수광원주×1 괴조 익막×1",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_411e538f7c2f": 1,
+      "skill_640d40323052": -1
+    }
+  },
+  {
+    "id": "deco_234554e0e2c9",
+    "name": "균학주【1】",
+    "nameJa": "菌 学 珠【1】",
+    "slots": 1,
+    "materials": "금강원주×1 적갑수 견갑각×2",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_d6ea8f6b4907": 1,
+      "skill_640d40323052": -1
+    }
+  },
+  {
+    "id": "deco_b25bed1c825e",
+    "name": "강체주【1】",
+    "nameJa": "剛体珠【1】",
+    "slots": 1,
+    "materials": "금강원주×1 흑룡 갑각×2 수수께끼의 점균×1",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_77b3da4beed3": 1,
+      "skill_2a87c14e4abc": -1
+    }
+  },
+  {
+    "id": "deco_4655ac3aa1b2",
+    "name": "집밀주【1】",
+    "nameJa": "蜜集珠【1】",
+    "slots": 1,
+    "materials": "수광원주×1 청웅수 갑각×2",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_a6713dfa141b": 1,
+      "skill_9c165ef0be95": -1
+    }
+  },
+  {
+    "id": "deco_c306342ec5a6",
+    "name": "호석주【1】",
+    "nameJa": "護石珠【1】",
+    "slots": 1,
+    "materials": "금강원주×1 유니언광석×3 화룡 황액×1",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_aa5ff5179f47": 1
+    }
+  },
+  {
+    "id": "deco_baff566bfaef",
+    "name": "운수주【1】",
+    "nameJa": "運 気 珠【1】",
+    "slots": 1,
+    "materials": "수라원주×1 조룡옥×1 은알×2",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_bbe11654094a": 1,
+      "skill_9c165ef0be95": -1
+    }
+  },
+  {
+    "id": "deco_80ddfa590c4a",
+    "name": "포획주【1】",
+    "nameJa": "捕獲珠【1】",
+    "slots": 1,
+    "materials": "수라원주×1 용기의 증표×1 뇌랑룡 전기털×1",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_771a2a6d9d1e": 1,
+      "skill_bbe11654094a": -1
+    }
+  },
+  {
+    "id": "deco_638ebd5d6d54",
+    "name": "박피주【1】",
+    "nameJa": "皮 剥 珠【1】",
+    "slots": 1,
+    "materials": "수라원주×1 공폭룡 검은가죽×1",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_20267c0a62e3": 1,
+      "skill_bbe11654094a": -1
+    }
+  },
+  {
+    "id": "deco_d94be8cae34e",
+    "name": "지시주【1】",
+    "nameJa": "采配珠【1】",
+    "slots": 1,
+    "materials": "수광원주×1 동반자티켓×2 발바닥스탬프×2",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_a0f8884ccb05": 1,
+      "skill_719784872b09": -1
+    }
+  },
+  {
+    "id": "deco_fd7ef4562cc4",
+    "name": "호령주【1】",
+    "nameJa": "号令珠【1】",
+    "slots": 1,
+    "materials": "수광원주×1 동반자티켓×3 증강제×2 비약×2",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_ab2b0a823a8a": 1,
+      "skill_a64199ed5d30": -1
+    }
+  },
+  {
+    "id": "deco_b0d61e082525",
+    "name": "해방주【2】",
+    "nameJa": "解放珠【2】",
+    "slots": 2,
+    "materials": "금강원주×1 키린 가죽+×1 키린 얼음뿔×1",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_c9fb5f168064": 1,
+      "skill_dd358f9bd4d7": -1
+    }
+  },
+  {
+    "id": "deco_a7415783f329",
+    "name": "장인주【2】",
+    "nameJa": "匠珠【2】",
+    "slots": 2,
+    "materials": "양상원주×1 거친 용뿔×1 염과룡 견갑각×2",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_dc306dbb4ef6": 1,
+      "skill_82680c9bf0f3": -1
+    }
+  },
+  {
+    "id": "deco_89d57c7465e8",
+    "name": "장전주【2】",
+    "nameJa": "装 填 珠【2】",
+    "slots": 2,
+    "materials": "양상원주×1 호산룡 완갑×1 굉룡 발톱×2",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_cb5bba6091b7": 1,
+      "skill_2d4c948c0c23": -1
+    }
+  },
+  {
+    "id": "deco_eb0a8967bc94",
+    "name": "공격주【2】",
+    "nameJa": "攻 撃 珠【2】",
+    "slots": 2,
+    "materials": "양상원주×1 화룡 날개발톱×2 귀인약×1",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_2a9c189a93d7": 3,
+      "skill_2a87c14e4abc": -1
+    }
+  },
+  {
+    "id": "deco_5e2c6a8bcfe8",
+    "name": "달인주【2】",
+    "nameJa": "達人珠【2】",
+    "slots": 2,
+    "materials": "양상원주×1 신룡 칼날개×1 영지주 발톱×2",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_25c2859f7595": 3,
+      "skill_3bdc830a2d1a": -1
+    }
+  },
+  {
+    "id": "deco_058994cb0fc5",
+    "name": "특공주【2】",
+    "nameJa": "特攻珠【2】",
+    "slots": 2,
+    "materials": "수라원주×1 알비노 설로인×1 몬스터의 농즙×2",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_dd358f9bd4d7": 3,
+      "skill_1826606ac13c": -1
+    }
+  },
+  {
+    "id": "deco_1be530fda38f",
+    "name": "화염주【2】",
+    "nameJa": "火炎珠【2】",
+    "slots": 2,
+    "materials": "수라원주×1 폭염주머니×1 적갑수 견갑각×2",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_b483bb71c31d": 3,
+      "skill_96039668e096": -1
+    }
+  },
+  {
+    "id": "deco_b7ad3d0ff794",
+    "name": "유수주【2】",
+    "nameJa": "流水珠【2】",
+    "slots": 2,
+    "materials": "수라원주×1 중갑진액×1 수룡 비늘×2",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_96039668e096": 3,
+      "skill_e2bd81d7e74c": -1
+    }
+  },
+  {
+    "id": "deco_ff40c8fa2aeb",
+    "name": "뇌광주【2】",
+    "nameJa": "雷光珠【2】",
+    "slots": 2,
+    "materials": "수라원주×1 전격주머니×1 뇌랑룡 견갑각×1",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_e2bd81d7e74c": 3,
+      "skill_d2eae745f55d": -1
+    }
+  },
+  {
+    "id": "deco_181a237f2f51",
+    "name": "빙결주【2】",
+    "nameJa": "氷結珠【2】",
+    "slots": 2,
+    "materials": "수라원주×1 동결주머니×1 백토수 견복갑×2",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_d2eae745f55d": 3,
+      "skill_b483bb71c31d": -1
+    }
+  },
+  {
+    "id": "deco_34ee383abeed",
+    "name": "파룡주【2】",
+    "nameJa": "破龍珠【2】",
+    "slots": 2,
+    "materials": "수라원주×1 고대의 용골×2 화룡 견갑각×2",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_c21e79dfed09": 3,
+      "skill_dd358f9bd4d7": -1
+    }
+  },
+  {
+    "id": "deco_31e778459f79",
+    "name": "전개주【2】",
+    "nameJa": "全開珠【2】",
+    "slots": 2,
+    "materials": "유리원주×1 흑식룡 첨예촉각×1 눈사자 억센털×2",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_d5d5017546d7": 3,
+      "skill_640d40323052": -1
+    }
+  },
+  {
+    "id": "deco_0dbdaa9c92a9",
+    "name": "KO주【2】",
+    "nameJa": "KO珠【2】",
+    "slots": 2,
+    "materials": "양상원주×1 각룡 갑각×2 왕사슴호랑나비×2",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_da9fb11eb79b": 3,
+      "skill_04fd12814adf": -1
+    }
+  },
+  {
+    "id": "deco_c0b242953fb7",
+    "name": "탈기주【2】",
+    "nameJa": "奪 気 珠【2】",
+    "slots": 2,
+    "materials": "양상원주×1 하룡 가죽+×1 여단티켓×1",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_ca1537907883": 3,
+      "skill_410c93e16f86": -1
+    }
+  },
+  {
+    "id": "deco_8fa937554773",
+    "name": "저력주【2】",
+    "nameJa": "底力珠【2】",
+    "slots": 2,
+    "materials": "수라원주×1 괴상어 비늘+×3 백토수 큰귀×1",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_05e4b277d6b9": 3,
+      "skill_bcf68a1ff0a1": -1
+    }
+  },
+  {
+    "id": "deco_bd02d4358e52",
+    "name": "역경주【2】",
+    "nameJa": "逆境珠【2】",
+    "slots": 2,
+    "materials": "수라원주×1 개룡 견갑각×1 흑랑조 귀×1",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_9a0f4d876162": 3,
+      "skill_0a24dffb8259": -1
+    }
+  },
+  {
+    "id": "deco_43345301e78e",
+    "name": "투혼주【2】",
+    "nameJa": "闘魂珠【2】",
+    "slots": 2,
+    "materials": "금강원주×1 쇄룡 강철주먹×2 뇌랑룡 전기털+×1",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_a71c734bea26": 3,
+      "skill_9c891ceddf5d": -1
+    }
+  },
+  {
+    "id": "deco_8d09c2123623",
+    "name": "무결주【2】",
+    "nameJa": "無傷珠【2】",
+    "slots": 2,
+    "materials": "금강원주×1 옥랑룡 첨예발톱×2 사왕룡 강철가죽×2",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_28dc80245370": 3,
+      "skill_6aac09f1f9a7": -1
+    }
+  },
+  {
+    "id": "deco_92a193ad77d9",
+    "name": "방어주【2】",
+    "nameJa": "防御珠【2】",
+    "slots": 2,
+    "materials": "양상원주×1 폭추룡 내열갑각×1 경화약×2",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_2a87c14e4abc": 3,
+      "skill_2a9c189a93d7": -1
+    }
+  },
+  {
+    "id": "deco_89e2b64d055a",
+    "name": "조복주【2】",
+    "nameJa": "早復珠【2】",
+    "slots": 2,
+    "materials": "양상원주×1 괴조 갑각×1 알비노진액×2",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_6aac09f1f9a7": 3,
+      "skill_9914f3bb006d": -1
+    }
+  },
+  {
+    "id": "deco_689b17f2e2ec",
+    "name": "치유주【2】",
+    "nameJa": "治癒珠【2】",
+    "slots": 2,
+    "materials": "수라원주×1 기원호 견장골×1 고대의 비약×1",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_0a24dffb8259": 3,
+      "skill_6aac09f1f9a7": -1
+    }
+  },
+  {
+    "id": "deco_65dd38f8557a",
+    "name": "체술주【2】",
+    "nameJa": "体術珠【2】",
+    "slots": 2,
+    "materials": "유리원주×1 흑개룡 견갑각×1 이오스 가죽+×2",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_122ffa46b9a4": 3,
+      "skill_410c93e16f86": -1
+    }
+  },
+  {
+    "id": "deco_a7b78c1600b3",
+    "name": "조기주【2】",
+    "nameJa": "早 気 珠【2】",
+    "slots": 2,
+    "materials": "수라원주×1 뇌랑룡 첨예발톱×1 첨룡골×2",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_bf24a5d55721": 3,
+      "skill_977515684794": -1
+    }
+  },
+  {
+    "id": "deco_656be03d0eb4",
+    "name": "근성주【2】",
+    "nameJa": "根性珠【2】",
+    "slots": 2,
+    "materials": "금강원주×1 금사자 투혼×1 금사자 첨예뿔×3",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_0b8715ba4a76": 3,
+      "skill_b95d60db9423": -1
+    }
+  },
+  {
+    "id": "deco_3eb824acfd13",
+    "name": "발도주【2】",
+    "nameJa": "抜刀珠【2】",
+    "slots": 2,
+    "materials": "유리원주×1 쇄룡 견흑요갑×1 도암룡 견갑각×1",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_89c345412fe4": 3,
+      "skill_25c2859f7595": -1
+    }
+  },
+  {
+    "id": "deco_e5c4a9e0a201",
+    "name": "철벽주【2】",
+    "nameJa": "鉄壁珠【2】",
+    "slots": 2,
+    "materials": "양상원주×1 염과룡 지느러미+×1 염과룡 견갑각×3",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_9c891ceddf5d": 3,
+      "skill_122ffa46b9a4": -1
+    }
+  },
+  {
+    "id": "deco_324927653d55",
+    "name": "강벽주【2】",
+    "nameJa": "強壁珠【2】",
+    "slots": 2,
+    "materials": "수라원주×1 쇄룡 견흑요갑×1 옥염석×3",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_fd6b9f4f574f": 3,
+      "skill_410c93e16f86": -1
+    }
+  },
+  {
+    "id": "deco_3af4d6c488f8",
+    "name": "가탄주【2】",
+    "nameJa": "加 弾 珠【2】",
+    "slots": 2,
+    "materials": "양상원주×1 용골+×2 으뜸갈치×2",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_a72479f3ae09": 3,
+      "skill_2d4c948c0c23": -1
+    }
+  },
+  {
+    "id": "deco_3e5f94e06089",
+    "name": "조전주【2】",
+    "nameJa": "早 填 珠【2】",
+    "slots": 2,
+    "materials": "양상원주×1 신룡 칼날개×2 라이트크리스털×2",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_2d4c948c0c23": 3,
+      "skill_d83820844b4d": -1
+    }
+  },
+  {
+    "id": "deco_ef4de66ba399",
+    "name": "비병주【2】",
+    "nameJa": "痺 瓶 珠【2】",
+    "slots": 2,
+    "materials": "수라원주×1 매혹색유피×1 마비주머니×1",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_596acdbdc84d": 3,
+      "skill_2a9c189a93d7": -1
+    }
+  },
+  {
+    "id": "deco_4f40c62fc702",
+    "name": "강병주【2】",
+    "nameJa": "強瓶珠【2】",
+    "slots": 2,
+    "materials": "수라원주×1 철갑충 견갑각×1 폭추룡 골수×1",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_5c22c482d71c": 3,
+      "skill_25c2859f7595": -1
+    }
+  },
+  {
+    "id": "deco_cc6713940e3c",
+    "name": "회피주【2】",
+    "nameJa": "回避珠【2】",
+    "slots": 2,
+    "materials": "유리원주×1 교사룡 가죽+×2 백토수 억센털×2",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_977515684794": 3,
+      "skill_a45ea58ebcb0": -1
+    }
+  },
+  {
+    "id": "deco_58154942f77f",
+    "name": "도약주【2】",
+    "nameJa": "跳躍珠【2】",
+    "slots": 2,
+    "materials": "명왕원주×1 천인룡 섬렬발톱×2 백토수 지옥귀×2",
+    "rank": "g",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_4b9bc9c6f953": 3,
+      "skill_a45ea58ebcb0": -1
+    }
+  },
+  {
+    "id": "deco_1ee2b0397247",
+    "name": "속납주【2】",
+    "nameJa": "速納珠【2】",
+    "slots": 2,
+    "materials": "수라원주×1 도암룡 견갑각×2 양질의 배주머니×2",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_63c2bbb3a506": 3,
+      "skill_e43cf9f6c27e": -1
+    }
+  },
+  {
+    "id": "deco_ed6b46e4e044",
+    "name": "내비주【2】",
+    "nameJa": "耐痺珠【2】",
+    "slots": 2,
+    "materials": "양상원주×1 도스게네포스 가죽×2 몬스터의 체액×2",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_38ca304494f3": 3,
+      "skill_37a4e4eddec0": -1
+    }
+  },
+  {
+    "id": "deco_4967920add1a",
+    "name": "내면주【2】",
+    "nameJa": "耐眠珠【2】",
+    "slots": 2,
+    "materials": "양상원주×1 영지주 협각×1 따뜻한 모피×2",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_56d47db4267b": 3,
+      "skill_4c363fb8e85d": -1
+    }
+  },
+  {
+    "id": "deco_e1ba3e1002fa",
+    "name": "내독주【2】",
+    "nameJa": "耐毒珠【2】",
+    "slots": 2,
+    "materials": "양상원주×1 도스이오스 가죽×2 울음주머니×2",
+    "rank": "low",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_37a4e4eddec0": 3,
+      "skill_8d7ad8b7839d": -1
+    }
+  },
+  {
+    "id": "deco_e0fdda818ad5",
+    "name": "방풍주【2】",
+    "nameJa": "防風珠【2】",
+    "slots": 2,
+    "materials": "수라원주×1 강룡 익막×1 카브레라이트광석×3",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_9d982d6cb255": 3,
+      "skill_bbe11654094a": -1
+    }
+  },
+  {
+    "id": "deco_22f6ccce7088",
+    "name": "우애주【2】",
+    "nameJa": "友愛珠【2】",
+    "slots": 2,
+    "materials": "수라원주×1 청괴조 견갑각×1 생명의 약×2",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_411e538f7c2f": 3,
+      "skill_640d40323052": -1
+    }
+  },
+  {
+    "id": "deco_77bae2aa2cfc",
+    "name": "호령주【2】",
+    "nameJa": "号令珠【2】",
+    "slots": 2,
+    "materials": "유리원주×1 동반자티켓×4 땅애벌레×2",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_ab2b0a823a8a": 3,
+      "skill_a64199ed5d30": -1
+    }
+  },
+  {
+    "id": "deco_a0d31e851bdc",
+    "name": "각성주【3】",
+    "nameJa": "覚醒珠【3】",
+    "slots": 3,
+    "materials": "금강원주×1 키린 서리꼬리×2 키린 푸른뿔×1",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_c9fb5f168064": 2,
+      "skill_dd358f9bd4d7": -2
+    }
+  },
+  {
+    "id": "deco_77a0721d76ba",
+    "name": "장인주【3】",
+    "nameJa": "匠珠【3】",
+    "slots": 3,
+    "materials": "유리원주×1 사왕룡 갈고리발톱×1 공폭룡 보옥×1",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_dc306dbb4ef6": 2,
+      "skill_82680c9bf0f3": -2
+    }
+  },
+  {
+    "id": "deco_576c353e3e34",
+    "name": "장전주【3】",
+    "nameJa": "装 填 珠【3】",
+    "slots": 3,
+    "materials": "유리원주×1 호산룡 완갑+×1 용옥×1",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_cb5bba6091b7": 2,
+      "skill_2d4c948c0c23": -2
+    }
+  },
+  {
+    "id": "deco_e8f9a60e80e3",
+    "name": "진각성주【3】",
+    "nameJa": "真 覚醒珠【3】",
+    "slots": 3,
+    "materials": "명왕원주×1 중갑충 단월꼬리×2 대룡옥×1",
+    "rank": "g",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_c9fb5f168064": 3,
+      "skill_dd358f9bd4d7": -2
+    }
+  },
+  {
+    "id": "deco_fbed3381ee9a",
+    "name": "명장주【3】",
+    "nameJa": "名匠珠【3】",
+    "slots": 3,
+    "materials": "명왕원주×1 화룡 강날개×2 대룡옥×1",
+    "rank": "g",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_dc306dbb4ef6": 3,
+      "skill_82680c9bf0f3": -2
+    }
+  },
+  {
+    "id": "deco_d4f906a6cf40",
+    "name": "증전주【3】",
+    "nameJa": "増填 珠【3】",
+    "slots": 3,
+    "materials": "명왕원주×1 개룡 중두갑각×2 퓨어크리스털×1",
+    "rank": "g",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_cb5bba6091b7": 3,
+      "skill_2d4c948c0c23": -2
+    }
+  },
+  {
+    "id": "deco_7f3581d0ac23",
+    "name": "속공주【3】",
+    "nameJa": "属攻珠【3】",
+    "slots": 3,
+    "materials": "유리원주×1 사왕룡 갈고리발톱×2 뇌랑룡 전기갑각+×1",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_1826606ac13c": 4,
+      "skill_dd358f9bd4d7": -2
+    }
+  },
+  {
+    "id": "deco_8f1bfbc1515e",
+    "name": "통격주【3】",
+    "nameJa": "痛 撃 珠【3】",
+    "slots": 3,
+    "materials": "유리원주×1 패룡 큰이빨×1 화룡 홍옥×1",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_aa8a7d803517": 4,
+      "skill_a45ea58ebcb0": -2
+    }
+  },
+  {
+    "id": "deco_0d56e05786d0",
+    "name": "중격주【3】",
+    "nameJa": "重 撃 珠【3】",
+    "slots": 3,
+    "materials": "유리원주×1 붕룡 견갑각×1 자화룡 홍옥×1",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_91feda75c5e9": 4,
+      "skill_25c2859f7595": -2
+    }
+  },
+  {
+    "id": "deco_4e3313249023",
+    "name": "단축주【3】",
+    "nameJa": "短縮珠【3】",
+    "slots": 3,
+    "materials": "유리원주×1 호산룡 견갑암각×1 교사룡 견갑각×2",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_04fd12814adf": 4,
+      "skill_122ffa46b9a4": -2
+    }
+  },
+  {
+    "id": "deco_e08f49b3c5f0",
+    "name": "속내주【3】",
+    "nameJa": "属耐珠【3】",
+    "slots": 3,
+    "materials": "유리원주×1 하늘을 관통할 뿔×1",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_28cbe0a71742": 4,
+      "skill_a45ea58ebcb0": -2
+    }
+  },
+  {
+    "id": "deco_55b21c25274c",
+    "name": "강주주【3】",
+    "nameJa": "強走珠【3】",
+    "slots": 3,
+    "materials": "유리원주×1 흑랑조 비늘+×1 독괴조 보라날개×2",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_410c93e16f86": 4,
+      "skill_27df943493ca": -2
+    }
+  },
+  {
+    "id": "deco_607d1ac717e2",
+    "name": "검호주【3】",
+    "nameJa": "剣豪珠【3】",
+    "slots": 3,
+    "materials": "유리원주×1 붕룡 견갑각×2 굉룡 턱×1",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_a3c4d7818b03": 4,
+      "skill_dc306dbb4ef6": -2
+    }
+  },
+  {
+    "id": "deco_e1d08866e93f",
+    "name": "참철주【3】",
+    "nameJa": "斬 鉄 珠【3】",
+    "slots": 3,
+    "materials": "유리원주×1 도암룡 날개×1 알비노 늑골×1",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_82680c9bf0f3": 4,
+      "skill_dc306dbb4ef6": -2
+    }
+  },
+  {
+    "id": "deco_f3c2c150cb5b",
+    "name": "발타주【3】",
+    "nameJa": "抜打珠【3】",
+    "slots": 3,
+    "materials": "유리원주×1 옥랑룡 첨예뿔×1 괴상어 가죽+×1",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_dbf4116422c9": 4,
+      "skill_82680c9bf0f3": -2
+    }
+  },
+  {
+    "id": "deco_9452ecf8437f",
+    "name": "강탄주【3】",
+    "nameJa": "強弾珠【3】",
+    "slots": 3,
+    "materials": "유리원주×1 도암룡 견갑각×2 첨룡골×2",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_a9d9b5fe31e4": 4,
+      "skill_d83820844b4d": -2
+    }
+  },
+  {
+    "id": "deco_60d28a96c25b",
+    "name": "관통주【3】",
+    "nameJa": "貫通珠【3】",
+    "slots": 3,
+    "materials": "유리원주×1 흑개룡 두갑각×1 희귀풍뎅이×2",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_36177c02fa41": 4,
+      "skill_d83820844b4d": -2
+    }
+  },
+  {
+    "id": "deco_fe391d0ef31b",
+    "name": "산탄주【3】",
+    "nameJa": "散 弾 珠【3】",
+    "slots": 3,
+    "materials": "유리원주×1 흑개룡 견갑각×1 유니언광석×2",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_abda96911e59": 4,
+      "skill_d83820844b4d": -2
+    }
+  },
+  {
+    "id": "deco_458e4e587e6c",
+    "name": "속사주【3】",
+    "nameJa": "速射珠【3】",
+    "slots": 3,
+    "materials": "유리원주×1 붕룡 분쇄턱×2 화룡 역린×1",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_77ad65f34cd9": 4,
+      "skill_2d4c948c0c23": -2
+    }
+  },
+  {
+    "id": "deco_c842376ee26b",
+    "name": "억반주【3】",
+    "nameJa": "抑反珠【3】",
+    "slots": 3,
+    "materials": "유리원주×1 괴상어 가죽+×2 흑개룡 견갑각×2",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_d83820844b4d": 4,
+      "skill_2d4c948c0c23": -1
+    }
+  },
+  {
+    "id": "deco_5c12be572ffe",
+    "name": "흡입주【3】",
+    "nameJa": "早食珠【3】",
+    "slots": 3,
+    "materials": "유리원주×1 공폭룡 큰이빨×2 굉룡 예리이빨×2",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_9914f3bb006d": 4,
+      "skill_0a24dffb8259": -2
+    }
+  },
+  {
+    "id": "deco_59e213356cff",
+    "name": "항광주【3】",
+    "nameJa": "抗狂珠【3】",
+    "slots": 3,
+    "materials": "명왕원주×1 상극의 변이뿔×1 혼돈의 용비늘×3",
+    "rank": "g",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_f743b97156ed": 4,
+      "skill_977515684794": -2
+    }
+  },
+  {
+    "id": "deco_eae3f509d1df",
+    "name": "방음주【3】",
+    "nameJa": "防音珠【3】",
+    "slots": 3,
+    "materials": "유리원주×1 하룡 보옥×1 진주색 유피×1",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_4d4485c17552": 4,
+      "skill_bcf68a1ff0a1": -2
+    }
+  },
+  {
+    "id": "deco_d6a56c066ac2",
+    "name": "강체주【3】",
+    "nameJa": "剛体珠【3】",
+    "slots": 3,
+    "materials": "금강원주×1 흑룡 익막×1 키린 가죽+×1",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_77b3da4beed3": 4,
+      "skill_2a87c14e4abc": -2
+    }
+  },
+  {
+    "id": "deco_43f453d12925",
+    "name": "운수주【3】",
+    "nameJa": "運 気 珠【3】",
+    "slots": 3,
+    "materials": "금강원주×1 금화룡 가시+×2 금알×2",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_bbe11654094a": 4,
+      "skill_9c165ef0be95": -2
+    }
+  },
+  {
+    "id": "deco_d5a0db1be9bb",
+    "name": "포획주【3】",
+    "nameJa": "捕獲珠【3】",
+    "slots": 3,
+    "materials": "금강원주×1 용기의 증표G×2 뇌랑룡 역린×1",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_771a2a6d9d1e": 4,
+      "skill_bbe11654094a": -1
+    }
+  },
+  {
+    "id": "deco_cc651c88b3d4",
+    "name": "박피주【3】",
+    "nameJa": "皮 剥 珠【3】",
+    "slots": 3,
+    "materials": "금강원주×1 사왕룡 강철가죽×1 대지의 용옥×1",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_20267c0a62e3": 4,
+      "skill_bbe11654094a": -1
+    }
+  },
+  {
+    "id": "deco_850aede44d53",
+    "name": "공격주【3】",
+    "nameJa": "攻 撃 珠【3】",
+    "slots": 3,
+    "materials": "수라원주×1 흑식룡 치명발톱×1 귀인약그레이트×2",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_2a9c189a93d7": 5,
+      "skill_2a87c14e4abc": -1
+    }
+  },
+  {
+    "id": "deco_1250d8f65e29",
+    "name": "달인주【3】",
+    "nameJa": "達人珠【3】",
+    "slots": 3,
+    "materials": "유리원주×1 패룡 큰가시×1 교사룡 견갑각×2",
+    "rank": "high",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_25c2859f7595": 5,
+      "skill_3bdc830a2d1a": -1
+    }
+  },
+  {
+    "id": "deco_450bdc3f034d",
+    "name": "방어주【3】",
+    "nameJa": "防御珠【3】",
+    "slots": 2,
+    "materials": "금강원주×1 순충 중갑각×4 중룡골×2",
+    "rank": "g",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_s.htm",
+    "skills": {
+      "skill_2a87c14e4abc": 5,
+      "skill_2a9c189a93d7": -1
+    }
+  },
+  {
+    "id": "deco_0fba1f518265",
+    "name": "속치주【2】",
+    "nameJa": "属会 珠【2】",
+    "slots": 2,
+    "materials": "명왕원주×1 강룡 중갑각×2 창화룡 질긴꼬리×1",
+    "rank": "g",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_t.htm",
+    "skills": {
+      "skill_1ae21921a72f": 3,
+      "skill_2a9c189a93d7": -1
+    }
+  },
+  {
+    "id": "deco_b76e93428cae",
+    "name": "특치주【2】",
+    "nameJa": "特 会 珠【2】",
+    "slots": 2,
+    "materials": "명왕원주×1 하룡 가죽++×2 영지주 비밀가시×1",
+    "rank": "g",
+    "source": "https://flashkiller.cafe24.com/mh4g/accessory/accessory_t.htm",
+    "skills": {
+      "skill_8f6ae043151b": 3,
+      "skill_2a9c189a93d7": -1
+    }
+  }
+]

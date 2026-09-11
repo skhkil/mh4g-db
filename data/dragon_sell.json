@@ -1,0 +1,394 @@
+[
+  {
+    "id": "dragon_sell_19ac07f7d31b",
+    "line": "사냥에 꼭 필요한 물건",
+    "name": "약초",
+    "nameJa": "薬草",
+    "points": "24",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/sell.htm"
+  },
+  {
+    "id": "dragon_sell_a704ac9b19bd",
+    "line": "사냥에 꼭 필요한 물건",
+    "name": "해독초",
+    "nameJa": "げどく草",
+    "points": "24",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/sell.htm"
+  },
+  {
+    "id": "dragon_sell_c1b7d0d8d9db",
+    "line": "사냥에 꼭 필요한 물건",
+    "name": "바늘열매",
+    "nameJa": "ハリの 実",
+    "points": "26",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/sell.htm"
+  },
+  {
+    "id": "dragon_sell_716ee7005c46",
+    "line": "사냥에 꼭 필요한 물건",
+    "name": "접착초",
+    "nameJa": "ネンチャク草",
+    "points": "28",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/sell.htm"
+  },
+  {
+    "id": "dragon_sell_4d89ba75c8bc",
+    "line": "사냥에 꼭 필요한 물건",
+    "name": "잠자리채",
+    "nameJa": "虫あみ",
+    "points": "96",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/sell.htm"
+  },
+  {
+    "id": "dragon_sell_4041877f97f9",
+    "line": "사냥에 꼭 필요한 물건",
+    "name": "천리안의 약",
+    "nameJa": "千里眼の 薬",
+    "points": "360",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/sell.htm"
+  },
+  {
+    "id": "dragon_sell_1032c654ad3d",
+    "line": "사냥에 꼭 필요한 물건",
+    "name": "돌멩이",
+    "nameJa": "石ころ",
+    "points": "12",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/sell.htm"
+  },
+  {
+    "id": "dragon_sell_b58718ddba18",
+    "line": "사냥에 꼭 필요한 물건",
+    "name": "속·충육꿀+",
+    "nameJa": "速の上虫餌",
+    "points": "144",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/sell.htm"
+  },
+  {
+    "id": "dragon_sell_77a0b3425a7b",
+    "line": "사냥에 편리한 물건",
+    "name": "부메랑",
+    "nameJa": "ブ ー メラン",
+    "points": "180",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/sell.htm"
+  },
+  {
+    "id": "dragon_sell_fdf6e08c2db0",
+    "line": "사냥에 편리한 물건",
+    "name": "연기옥",
+    "nameJa": "けむり玉",
+    "points": "120",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/sell.htm"
+  },
+  {
+    "id": "dragon_sell_6440dac812ac",
+    "line": "사냥에 편리한 물건",
+    "name": "발사나무통폭탄",
+    "nameJa": "打上げタル爆 弾",
+    "points": "180",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/sell.htm"
+  },
+  {
+    "id": "dragon_sell_c209f75d028d",
+    "line": "사냥에 편리한 물건",
+    "name": "아이룰루폭탄",
+    "nameJa": "マタタビ爆 弾",
+    "points": "148",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/sell.htm"
+  },
+  {
+    "id": "dragon_sell_075c49384a0f",
+    "line": "사냥에 편리한 물건",
+    "name": "곡괭이",
+    "nameJa": "ピッケル",
+    "points": "192",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/sell.htm"
+  },
+  {
+    "id": "dragon_sell_2b158a150ca9",
+    "line": "사냥에 편리한 물건",
+    "name": "지움열매",
+    "nameJa": "ウチケシの 実",
+    "points": "240",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/sell.htm"
+  },
+  {
+    "id": "dragon_sell_808ba57575af",
+    "line": "사냥에 편리한 물건",
+    "name": "얼음결정",
+    "nameJa": "氷結晶",
+    "points": "216",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/sell.htm"
+  },
+  {
+    "id": "dragon_sell_2a8c5c160399",
+    "line": "사냥에 편리한 물건",
+    "name": "체·충육꿀+",
+    "nameJa": "体の上虫餌",
+    "points": "144",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/sell.htm"
+  },
+  {
+    "id": "dragon_sell_43c23dc27c94",
+    "line": "희귀한 곤충",
+    "name": "광충",
+    "nameJa": "光蟲",
+    "points": "115",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/sell.htm"
+  },
+  {
+    "id": "dragon_sell_44a804d47753",
+    "line": "희귀한 곤충",
+    "name": "불사충",
+    "nameJa": "不死虫",
+    "points": "384",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/sell.htm"
+  },
+  {
+    "id": "dragon_sell_f795696d8baa",
+    "line": "희귀한 곤충",
+    "name": "화약초",
+    "nameJa": "火 薬 草",
+    "points": "52",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/sell.htm"
+  },
+  {
+    "id": "dragon_sell_39b90c2664c2",
+    "line": "희귀한 곤충",
+    "name": "아이룰루",
+    "nameJa": "マタタビ",
+    "points": "16",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/sell.htm"
+  },
+  {
+    "id": "dragon_sell_f7ba7a1bb116",
+    "line": "희귀한 곤충",
+    "name": "푸른버섯",
+    "nameJa": "アオキノコ",
+    "points": "28",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/sell.htm"
+  },
+  {
+    "id": "dragon_sell_d02ee90a3941",
+    "line": "희귀한 곤충",
+    "name": "거미집",
+    "nameJa": "クモの 巣",
+    "points": "72",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/sell.htm"
+  },
+  {
+    "id": "dragon_sell_af14ce8d9cfc",
+    "line": "희귀한 곤충",
+    "name": "확산열매",
+    "nameJa": "カクサンの 実",
+    "points": "72",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/sell.htm"
+  },
+  {
+    "id": "dragon_sell_6e9b9d43a4c3",
+    "line": "희귀한 곤충",
+    "name": "역·충육꿀+(불)",
+    "nameJa": "力の上虫餌 ・ 火",
+    "points": "192",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/sell.htm"
+  },
+  {
+    "id": "dragon_sell_b79c62a4651b",
+    "line": "특이한 물건",
+    "name": "폭뚜기",
+    "nameJa": "ボンバッタ",
+    "points": "72",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/sell.htm"
+  },
+  {
+    "id": "dragon_sell_3bc8a55c89c2",
+    "line": "특이한 물건",
+    "name": "씁쓸충",
+    "nameJa": "にが虫",
+    "points": "24",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/sell.htm"
+  },
+  {
+    "id": "dragon_sell_075febbef42a",
+    "line": "특이한 물건",
+    "name": "고추",
+    "nameJa": "トウガラシ",
+    "points": "52",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/sell.htm"
+  },
+  {
+    "id": "dragon_sell_75776f3334ab",
+    "line": "특이한 물건",
+    "name": "페인트열매",
+    "nameJa": "ペイントの 実",
+    "points": "72",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/sell.htm"
+  },
+  {
+    "id": "dragon_sell_5a35281a163d",
+    "line": "특이한 물건",
+    "name": "숫돌",
+    "nameJa": "砥石",
+    "points": "96",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/sell.htm"
+  },
+  {
+    "id": "dragon_sell_44bb94c68835",
+    "line": "특이한 물건",
+    "name": "미끼파뤼",
+    "nameJa": "釣りフィ ー バエ",
+    "points": "36",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/sell.htm"
+  },
+  {
+    "id": "dragon_sell_82ade58a04f6",
+    "line": "특이한 물건",
+    "name": "조룡종 이빨",
+    "nameJa": "鳥 竜 種の牙",
+    "points": "96",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/sell.htm"
+  },
+  {
+    "id": "dragon_sell_77cf6cac78ef",
+    "line": "특이한 물건",
+    "name": "역·충육꿀+",
+    "nameJa": "力の上虫餌",
+    "points": "144",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/sell.htm"
+  },
+  {
+    "id": "dragon_sell_20c08ae59b74",
+    "line": "예사롭지 않은 물건",
+    "name": "날고기",
+    "nameJa": "生肉",
+    "points": "60",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/sell.htm"
+  },
+  {
+    "id": "dragon_sell_d761fcc798cd",
+    "line": "예사롭지 않은 물건",
+    "name": "소재옥",
+    "nameJa": "素材玉",
+    "points": "120",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/sell.htm"
+  },
+  {
+    "id": "dragon_sell_169007c9f82a",
+    "line": "예사롭지 않은 물건",
+    "name": "비료옥",
+    "nameJa": "こやし玉",
+    "points": "144",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/sell.htm"
+  },
+  {
+    "id": "dragon_sell_2d7df6b99960",
+    "line": "예사롭지 않은 물건",
+    "name": "귀환옥",
+    "nameJa": "モドリ玉",
+    "points": "180",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/sell.htm"
+  },
+  {
+    "id": "dragon_sell_4d3fb1e14576",
+    "line": "예사롭지 않은 물건",
+    "name": "벌꿀",
+    "nameJa": "ハチミツ",
+    "points": "108",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/sell.htm"
+  },
+  {
+    "id": "dragon_sell_e60de7e160f7",
+    "line": "예사롭지 않은 물건",
+    "name": "폭약",
+    "nameJa": "爆 薬",
+    "points": "108",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/sell.htm"
+  },
+  {
+    "id": "dragon_sell_4163caeaf478",
+    "line": "예사롭지 않은 물건",
+    "name": "켈비 뿔",
+    "nameJa": "ケルビの角",
+    "points": "288",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/sell.htm"
+  },
+  {
+    "id": "dragon_sell_e2e481a8bec6",
+    "line": "예사롭지 않은 물건",
+    "name": "체·충육꿀+(물)",
+    "nameJa": "体の上虫餌 ・ 水",
+    "points": "192",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/sell.htm"
+  },
+  {
+    "id": "dragon_sell_235a99baf1ba",
+    "line": "특별한 물건",
+    "name": "역·충육꿀(불)",
+    "nameJa": "力の虫餌 ・ 火",
+    "points": "120",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/sell.htm"
+  },
+  {
+    "id": "dragon_sell_5938e69e4b44",
+    "line": "특별한 물건",
+    "name": "체·충육꿀(물)",
+    "nameJa": "体の虫餌 ・ 水",
+    "points": "120",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/sell.htm"
+  },
+  {
+    "id": "dragon_sell_ed23724df76c",
+    "line": "특별한 물건",
+    "name": "속·충육꿀(번개)",
+    "nameJa": "速の虫餌 ・ 雷",
+    "points": "120",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/sell.htm"
+  },
+  {
+    "id": "dragon_sell_910bb7c74abe",
+    "line": "특별한 물건",
+    "name": "속·충육꿀(얼음)",
+    "nameJa": "速の虫餌 ・ 氷",
+    "points": "120",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/sell.htm"
+  },
+  {
+    "id": "dragon_sell_0cc0b3d054f8",
+    "line": "특별한 물건",
+    "name": "체·충육꿀(파룡)",
+    "nameJa": "体の虫餌 ・ 破龍",
+    "points": "120",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/sell.htm"
+  },
+  {
+    "id": "dragon_sell_c5fbeb87b906",
+    "line": "특별한 물건",
+    "name": "숫돌",
+    "nameJa": "砥石",
+    "points": "96",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/sell.htm"
+  },
+  {
+    "id": "dragon_sell_efc1e209a26a",
+    "line": "특별한 물건",
+    "name": "곡괭이그레이트",
+    "nameJa": "ピッケルグレ ー ト",
+    "points": "288",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/sell.htm"
+  },
+  {
+    "id": "dragon_sell_83dab5c267d9",
+    "line": "특별한 물건",
+    "name": "잠자리채그레이트",
+    "nameJa": "虫あみグレ ー ト",
+    "points": "144",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/sell.htm"
+  },
+  {
+    "id": "dragon_sell_43e6d42f1780",
+    "line": "※1 은 다운로드 컨텐츠 DL특전으로 추가, ※2 는 여단★8 '차가 운 하늘 아래의 홍백전!?' 클리어 후 추가.",
+    "name": "※1 은 다운로드 컨텐츠 DL특전으로 추가, ※2 는 여단★8 '차가 운 하늘 아래의 홍백전!?' 클리어 후 추가.",
+    "nameJa": "※1 은 다운로드 컨텐츠 DL특전으로 추가, ※2 는 여단★8 '차가 운 하늘 아래의 홍백전!?' 클리어 후 추가.",
+    "points": "※1 은 다운로드 컨텐츠 DL특전으로 추가, ※2 는 여단★8 '차가 운 하늘 아래의 홍백전!?' 클리어 후 추가.",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/sell.htm"
+  }
+]

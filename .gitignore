@@ -1,0 +1,5 @@
+tools/raw_html/
+tools/crawl_manifest.json
+tools/raw_tables.json
+__pycache__/
+*.pyc

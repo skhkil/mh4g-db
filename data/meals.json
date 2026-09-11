@@ -1,0 +1,1034 @@
+[
+  {
+    "id": "meal_1cd27a050288",
+    "ingredient1": "고기",
+    "ingredient2": "고기",
+    "method": "볶기",
+    "effect": "공격력",
+    "skills": [
+      "추첨스킬1",
+      "추첨스킬2"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_7db10bcd0906",
+    "ingredient1": "고기",
+    "ingredient2": "고기",
+    "method": "삶기",
+    "effect": "공격력",
+    "skills": [
+      "추첨스킬4",
+      "추첨스킬5"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_f629088bce87",
+    "ingredient1": "고기",
+    "ingredient2": "고기",
+    "method": "찌기",
+    "effect": "공격력",
+    "skills": [
+      "추첨스킬7",
+      "추첨스킬8"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_102ba83f2c88",
+    "ingredient1": "고기",
+    "ingredient2": "고기",
+    "method": "튀기기",
+    "effect": "공격력",
+    "skills": [
+      "추첨스킬10",
+      "추첨스킬11"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_c9af3c2bb572",
+    "ingredient1": "고기",
+    "ingredient2": "어패",
+    "method": "볶기",
+    "effect": "공격력",
+    "skills": [
+      "야옹연마술",
+      "추첨스킬1"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_47788468c70f",
+    "ingredient1": "고기",
+    "ingredient2": "어패",
+    "method": "삶기",
+    "effect": "공격력",
+    "skills": [
+      "야옹KO술",
+      "추첨스킬4"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_e6aebb07b3da",
+    "ingredient1": "고기",
+    "ingredient2": "어패",
+    "method": "찌기",
+    "effect": "공격력",
+    "skills": [
+      "야옹특수공격술",
+      "추첨스킬7"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_a5195b695ee4",
+    "ingredient1": "고기",
+    "ingredient2": "어패",
+    "method": "튀기기",
+    "effect": "공격력",
+    "skills": [
+      "야옹체술",
+      "추첨스킬10"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_1fe1f6a61efa",
+    "ingredient1": "고기",
+    "ingredient2": "곡물",
+    "method": "볶기",
+    "effect": "공격력",
+    "skills": [
+      "야옹오뚝이술[소]",
+      "추첨스킬1"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_ac756a95059f",
+    "ingredient1": "고기",
+    "ingredient2": "곡물",
+    "method": "삶기",
+    "effect": "공격력",
+    "skills": [
+      "야옹몸단장",
+      "추첨스킬4"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_5a99ab621393",
+    "ingredient1": "고기",
+    "ingredient2": "곡물",
+    "method": "찌기",
+    "effect": "공격력",
+    "skills": [
+      "야옹도주술",
+      "추첨스킬7"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_e6215f201903",
+    "ingredient1": "고기",
+    "ingredient2": "곡물",
+    "method": "튀기기",
+    "effect": "공격력",
+    "skills": [
+      "야옹탈출술",
+      "추첨스킬10"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_68632244cb09",
+    "ingredient1": "고기",
+    "ingredient2": "야채",
+    "method": "볶기",
+    "effect": "공격력",
+    "skills": [
+      "야옹번개속성진압",
+      "추첨스킬1"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_3eef94a1ec09",
+    "ingredient1": "고기",
+    "ingredient2": "야채",
+    "method": "삶기",
+    "effect": "공격력",
+    "skills": [
+      "야옹얼음속성진압",
+      "추첨스킬4"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_76194c7f84b8",
+    "ingredient1": "고기",
+    "ingredient2": "야채",
+    "method": "찌기",
+    "effect": "공격력",
+    "skills": [
+      "야옹불속성진압",
+      "추첨스킬7"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_54301949e6ac",
+    "ingredient1": "고기",
+    "ingredient2": "야채",
+    "method": "튀기기",
+    "effect": "공격력",
+    "skills": [
+      "야옹물속성진압",
+      "추첨스킬10"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_85e503e0a495",
+    "ingredient1": "고기",
+    "ingredient2": "유제품",
+    "method": "볶기",
+    "effect": "공격력",
+    "skills": [
+      "야옹사격술",
+      "추첨스킬1"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_ee4017fca133",
+    "ingredient1": "고기",
+    "ingredient2": "유제품",
+    "method": "삶기",
+    "effect": "공격력",
+    "skills": [
+      "야옹폭격",
+      "추첨스킬4"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_32fcbad67950",
+    "ingredient1": "고기",
+    "ingredient2": "유제품",
+    "method": "찌기",
+    "effect": "공격력",
+    "skills": [
+      "야옹포격술",
+      "추첨스킬7"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_bc07db394abc",
+    "ingredient1": "고기",
+    "ingredient2": "유제품",
+    "method": "튀기기",
+    "effect": "공격력",
+    "skills": [
+      "야옹조합술[소]",
+      "추첨스킬10"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_b1f9590c3d3f",
+    "ingredient1": "고기",
+    "ingredient2": "술",
+    "method": "볶기",
+    "effect": "공격력",
+    "skills": [
+      "야옹화약술",
+      "추첨스킬1"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_0ed24511034d",
+    "ingredient1": "고기",
+    "ingredient2": "술",
+    "method": "삶기",
+    "effect": "공격력",
+    "skills": [
+      "야옹재난대처능력",
+      "추첨스킬3"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_4e63504ba36b",
+    "ingredient1": "고기",
+    "ingredient2": "술",
+    "method": "찌기",
+    "effect": "공격력",
+    "skills": [
+      "야옹투척술",
+      "추첨스킬5"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_f32f9adb8d29",
+    "ingredient1": "고기",
+    "ingredient2": "술",
+    "method": "튀기기",
+    "effect": "공격력",
+    "skills": [
+      "야옹휴식술",
+      "추첨스킬7"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_300eb2070ab6",
+    "ingredient1": "어패",
+    "ingredient2": "어패",
+    "method": "볶기",
+    "effect": "불내성",
+    "skills": [
+      "추첨스킬1",
+      "추첨스킬2"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_fb158d46c82e",
+    "ingredient1": "어패",
+    "ingredient2": "어패",
+    "method": "삶기",
+    "effect": "물내성",
+    "skills": [
+      "추첨스킬4",
+      "추첨스킬5"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_86c527aa56c6",
+    "ingredient1": "어패",
+    "ingredient2": "어패",
+    "method": "찌기",
+    "effect": "번개내성",
+    "skills": [
+      "추첨스킬7",
+      "추첨스킬8"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_9d30d9e90fbf",
+    "ingredient1": "어패",
+    "ingredient2": "어패",
+    "method": "튀기기",
+    "effect": "얼음내성",
+    "skills": [
+      "추첨스킬10",
+      "추첨스킬11"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_bb27926856f9",
+    "ingredient1": "어패",
+    "ingredient2": "곡물",
+    "method": "볶기",
+    "effect": "방어력",
+    "skills": [
+      "야옹의료술",
+      "추첨스킬1"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_ded3914da178",
+    "ingredient1": "어패",
+    "ingredient2": "곡물",
+    "method": "삶기",
+    "effect": "방어력",
+    "skills": [
+      "야옹!약한놈덤벼!",
+      "추첨스킬4"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_78c1fc6ba889",
+    "ingredient1": "어패",
+    "ingredient2": "곡물",
+    "method": "찌기",
+    "effect": "방어력",
+    "skills": [
+      "야옹방어술[소]",
+      "야옹오뚝이술[대]"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_da2eae93adc7",
+    "ingredient1": "어패",
+    "ingredient2": "곡물",
+    "method": "튀기기",
+    "effect": "방어력",
+    "skills": [
+      "야옹방어술[대]",
+      "추첨스킬10"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_1ff2a9014550",
+    "ingredient1": "어패",
+    "ingredient2": "야채",
+    "method": "볶기",
+    "effect": "불내성",
+    "skills": [
+      "야옹탐험술",
+      "야옹동반자지도술",
+      "추첨스킬1"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_812fc96ce125",
+    "ingredient1": "어패",
+    "ingredient2": "야채",
+    "method": "삶기",
+    "effect": "물내성",
+    "skills": [
+      "야옹탐험술",
+      "야옹동반자지도술",
+      "추첨스킬4"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_9a8b47e778a2",
+    "ingredient1": "어패",
+    "ingredient2": "야채",
+    "method": "찌기",
+    "effect": "번개내성",
+    "skills": [
+      "야옹탐험술",
+      "야옹동반자지도술",
+      "추첨스킬7"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_56d0ba6f397e",
+    "ingredient1": "어패",
+    "ingredient2": "야채",
+    "method": "튀기기",
+    "effect": "얼음내성",
+    "skills": [
+      "야옹탐험술",
+      "야옹동반자지도술",
+      "추첨스킬10"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_2aae57fbd87e",
+    "ingredient1": "어패",
+    "ingredient2": "유제품",
+    "method": "볶기",
+    "effect": "물내성",
+    "skills": [
+      "야옹채집술",
+      "야옹도구절약술",
+      "야옹매달리기킹"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_dbe8d5999aa4",
+    "ingredient1": "어패",
+    "ingredient2": "유제품",
+    "method": "삶기",
+    "effect": "얼음내성",
+    "skills": [
+      "야옹채집술",
+      "야옹담력",
+      "야옹도주술"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_188b10dd71ed",
+    "ingredient1": "어패",
+    "ingredient2": "유제품",
+    "method": "찌기",
+    "effect": "물내성",
+    "skills": [
+      "야옹운반킹",
+      "야옹도주술",
+      "야옹착지술"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_509283c69391",
+    "ingredient1": "어패",
+    "ingredient2": "유제품",
+    "method": "튀기기",
+    "effect": "얼음내성",
+    "skills": [
+      "야옹낚시달인",
+      "야옹매달리기킹",
+      "야옹착지술"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_e92c21343fc7",
+    "ingredient1": "어패",
+    "ingredient2": "술",
+    "method": "볶기",
+    "effect": "효과없음",
+    "skills": [
+      "야옹비경탐험술",
+      "추첨스킬1",
+      "추첨스킬2"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_8c237891adde",
+    "ingredient1": "어패",
+    "ingredient2": "술",
+    "method": "삶기",
+    "effect": "효과없음",
+    "skills": [
+      "야옹!다덤벼!",
+      "추첨스킬3",
+      "추첨스킬4"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_12c476be64ec",
+    "ingredient1": "어패",
+    "ingredient2": "술",
+    "method": "찌기",
+    "effect": "효과없음",
+    "skills": [
+      "야옹철저준비",
+      "야옹카리스마",
+      "추첨스킬5"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_fd2cb518d00e",
+    "ingredient1": "어패",
+    "ingredient2": "술",
+    "method": "튀기기",
+    "effect": "효과없음",
+    "skills": [
+      "야옹조합술[대]",
+      "야옹조합술[소]",
+      "추첨스킬7"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_a9e070cc8b67",
+    "ingredient1": "곡물",
+    "ingredient2": "곡물",
+    "method": "볶기",
+    "effect": "방어력",
+    "skills": [
+      "추첨스킬1",
+      "추첨스킬2"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_d6c32b2ef92e",
+    "ingredient1": "곡물",
+    "ingredient2": "곡물",
+    "method": "삶기",
+    "effect": "방어력",
+    "skills": [
+      "추첨스킬4",
+      "추첨스킬5"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_71c0872a49cb",
+    "ingredient1": "곡물",
+    "ingredient2": "곡물",
+    "method": "찌기",
+    "effect": "방어력",
+    "skills": [
+      "추첨스킬7",
+      "추첨스킬8"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_e274047f395f",
+    "ingredient1": "곡물",
+    "ingredient2": "곡물",
+    "method": "튀기기",
+    "effect": "방어력",
+    "skills": [
+      "추첨스킬10",
+      "추첨스킬11"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_5771bcabfc7a",
+    "ingredient1": "곡물",
+    "ingredient2": "야채",
+    "method": "볶기",
+    "effect": "방어력",
+    "skills": [
+      "야옹불속성진압",
+      "추첨스킬1"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_7ed27d9d3a39",
+    "ingredient1": "곡물",
+    "ingredient2": "야채",
+    "method": "삶기",
+    "effect": "방어력",
+    "skills": [
+      "야옹물속성진압",
+      "추첨스킬4"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_315e173b6ccb",
+    "ingredient1": "곡물",
+    "ingredient2": "야채",
+    "method": "찌기",
+    "effect": "방어력",
+    "skills": [
+      "야옹번개속성진압",
+      "추첨스킬7"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_b4d61abc6359",
+    "ingredient1": "곡물",
+    "ingredient2": "야채",
+    "method": "튀기기",
+    "effect": "방어력",
+    "skills": [
+      "야옹얼음속성진압",
+      "추첨스킬10"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_8930d8e2039e",
+    "ingredient1": "곡물",
+    "ingredient2": "유제품",
+    "method": "볶기",
+    "effect": "방어력",
+    "skills": [
+      "야옹천리안술",
+      "추첨스킬1"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_641e0f0e1c67",
+    "ingredient1": "곡물",
+    "ingredient2": "유제품",
+    "method": "삶기",
+    "effect": "방어력",
+    "skills": [
+      "야옹조합술[대]",
+      "추첨스킬4"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_d8a0f94defa4",
+    "ingredient1": "곡물",
+    "ingredient2": "유제품",
+    "method": "찌기",
+    "effect": "방어력",
+    "skills": [
+      "야옹비료옥달인",
+      "추첨스킬7"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_211eca10d845",
+    "ingredient1": "곡물",
+    "ingredient2": "유제품",
+    "method": "튀기기",
+    "effect": "방어력",
+    "skills": [
+      "야옹장화술",
+      "추첨스킬10"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_b544cc67f010",
+    "ingredient1": "곡물",
+    "ingredient2": "술",
+    "method": "볶기",
+    "effect": "방어력",
+    "skills": [
+      "야옹버티기술",
+      "추첨스킬1"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_d73c252cf2c1",
+    "ingredient1": "곡물",
+    "ingredient2": "술",
+    "method": "삶기",
+    "effect": "방어력",
+    "skills": [
+      "야옹낙법술",
+      "추첨스킬3"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_2d5171b04768",
+    "ingredient1": "곡물",
+    "ingredient2": "술",
+    "method": "찌기",
+    "effect": "방어력",
+    "skills": [
+      "야옹불면술",
+      "추첨스킬5"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_95f0867df6a9",
+    "ingredient1": "곡물",
+    "ingredient2": "술",
+    "method": "튀기기",
+    "effect": "방어력",
+    "skills": [
+      "야옹근성",
+      "추첨스킬7"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_87c5322f150f",
+    "ingredient1": "야채",
+    "ingredient2": "야채",
+    "method": "볶기",
+    "effect": "효과없음",
+    "skills": [
+      "추첨스킬1",
+      "추첨스킬2",
+      "추첨스킬3"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_c2069cea4ada",
+    "ingredient1": "야채",
+    "ingredient2": "야채",
+    "method": "삶기",
+    "effect": "효과없음",
+    "skills": [
+      "추첨스킬4",
+      "추첨스킬5",
+      "추첨스킬6"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_d02d375a8a25",
+    "ingredient1": "야채",
+    "ingredient2": "야채",
+    "method": "찌기",
+    "effect": "효과없음",
+    "skills": [
+      "추첨스킬7",
+      "추첨스킬8",
+      "추첨스킬9"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_912a39b29085",
+    "ingredient1": "야채",
+    "ingredient2": "야채",
+    "method": "튀기기",
+    "effect": "효과없음",
+    "skills": [
+      "추첨스킬10",
+      "추첨스킬11",
+      "추첨스킬12"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_e60bf659b837",
+    "ingredient1": "야채",
+    "ingredient2": "유제품",
+    "method": "볶기",
+    "effect": "불내성",
+    "skills": [
+      "야옹불속성진압",
+      "야옹몸단장"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_4091fc43e8c2",
+    "ingredient1": "야채",
+    "ingredient2": "유제품",
+    "method": "삶기",
+    "effect": "물내성",
+    "skills": [
+      "야옹물속성진압",
+      "야옹몸단장"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_2f3cbcfdbf05",
+    "ingredient1": "야채",
+    "ingredient2": "유제품",
+    "method": "찌기",
+    "effect": "번개내성",
+    "skills": [
+      "야옹번개속성진압",
+      "야옹몸단장"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_7fa71b262fce",
+    "ingredient1": "야채",
+    "ingredient2": "유제품",
+    "method": "튀기기",
+    "effect": "얼음내성",
+    "skills": [
+      "야옹얼음속성진압",
+      "야옹몸단장"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_fc213d1aed67",
+    "ingredient1": "야채",
+    "ingredient2": "술",
+    "method": "볶기",
+    "effect": "용내성",
+    "skills": [
+      "야옹용속성진압",
+      "야옹탈출술"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_0123261be0d9",
+    "ingredient1": "야채",
+    "ingredient2": "술",
+    "method": "삶기",
+    "effect": "용내성",
+    "skills": [
+      "야옹탐험술",
+      "야옹도주술"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_2efcd12909c2",
+    "ingredient1": "야채",
+    "ingredient2": "술",
+    "method": "찌기",
+    "effect": "용내성",
+    "skills": [
+      "야옹불속성진압",
+      "야옹번개속성진압",
+      "야옹물속성진압"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_79954081e09e",
+    "ingredient1": "야채",
+    "ingredient2": "술",
+    "method": "튀기기",
+    "effect": "용내성",
+    "skills": [
+      "야옹근성",
+      "야옹포격술",
+      "야옹도구절약술"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_504adc2efbd1",
+    "ingredient1": "유제품",
+    "ingredient2": "유제품",
+    "method": "볶기",
+    "effect": "효과없음",
+    "skills": [
+      "야옹보너스술",
+      "추첨스킬1"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_6635928ad1b1",
+    "ingredient1": "유제품",
+    "ingredient2": "유제품",
+    "method": "삶기",
+    "effect": "효과없음",
+    "skills": [
+      "야옹보너스술",
+      "추첨스킬4"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_ebf187090e58",
+    "ingredient1": "유제품",
+    "ingredient2": "유제품",
+    "method": "찌기",
+    "effect": "효과없음",
+    "skills": [
+      "야옹보너스술",
+      "추첨스킬7"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_8e01f272020f",
+    "ingredient1": "유제품",
+    "ingredient2": "유제품",
+    "method": "튀기기",
+    "effect": "효과없음",
+    "skills": [
+      "야옹보너스술",
+      "추첨스킬10"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_d9f960980a41",
+    "ingredient1": "유제품",
+    "ingredient2": "술",
+    "method": "볶기",
+    "effect": "취함",
+    "skills": [
+      "복고양이의 행운",
+      "복고양이의 악운",
+      "추첨스킬1"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_ffe912f8a808",
+    "ingredient1": "유제품",
+    "ingredient2": "술",
+    "method": "삶기",
+    "effect": "취함",
+    "skills": [
+      "야옹해체술[소]",
+      "복고양이의 악운",
+      "추첨스킬3"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_ab6478229962",
+    "ingredient1": "유제품",
+    "ingredient2": "술",
+    "method": "찌기",
+    "effect": "취함",
+    "skills": [
+      "야옹단기최면술",
+      "추첨스킬5"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_d9ac2b578700",
+    "ingredient1": "유제품",
+    "ingredient2": "술",
+    "method": "튀기기",
+    "effect": "취함",
+    "skills": [
+      "야옹발차기술",
+      "추첨스킬7"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_32544e41fbce",
+    "ingredient1": "술",
+    "ingredient2": "술",
+    "method": "볶기",
+    "effect": "취함",
+    "skills": [
+      "복고양이의 악운",
+      "추첨스킬1",
+      "추첨스킬2"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_d79e67714339",
+    "ingredient1": "술",
+    "ingredient2": "술",
+    "method": "삶기",
+    "effect": "취함",
+    "skills": [
+      "복고양이의 악운",
+      "추첨스킬3",
+      "추첨스킬4"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_bfa76cf3f811",
+    "ingredient1": "술",
+    "ingredient2": "술",
+    "method": "찌기",
+    "effect": "취함",
+    "skills": [
+      "복고양이의 악운",
+      "추첨스킬5",
+      "추첨스킬6"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  },
+  {
+    "id": "meal_ef3edc71b547",
+    "ingredient1": "술",
+    "ingredient2": "술",
+    "method": "튀기기",
+    "effect": "취함",
+    "skills": [
+      "복고양이의 악운",
+      "추첨스킬7",
+      "추첨스킬8"
+    ],
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/meal.htm"
+  }
+]

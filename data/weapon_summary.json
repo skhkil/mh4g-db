@@ -1,0 +1,938 @@
+[
+  {
+    "id": "weapon_summary_e8339186c99d",
+    "weaponType": "대검",
+    "attribute": "무속성",
+    "normal": "집행인의 대검 각왕검 아티라트 패왕검 크네엠캄 인검【협객】",
+    "awaken": "-",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_e8c60c9d1a0e",
+    "weaponType": "대검",
+    "attribute": "불속성",
+    "normal": "휘왕검 리오레우스 황염검 리오레우스 풀파우라블레이드 플레임밀라블레이드",
+    "awaken": "그랜드블레이즈 절애검 타이타니아스 페일카이저 검은띠블레이드",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_c9fa7d39d496",
+    "weaponType": "대검",
+    "attribute": "물속성",
+    "normal": "캐터랙트블레이드+ 와와라블레이드 대해류검 가노토토스",
+    "awaken": "-",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_ed80e5212502",
+    "weaponType": "대검",
+    "attribute": "번개속성",
+    "normal": "블러드푸루머넌트 아왕·갈바르크 귀신금봉【원마왕】 소뢰검【키린황제】 천마의 검",
+    "awaken": "-",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_9c39b0f14a11",
+    "weaponType": "대검",
+    "attribute": "얼음속성",
+    "normal": "순간냉동참다랑어 폭설검【키린신】 붕천검 엔테온캄 다오라디그리펙 엘다올디글",
+    "awaken": "그랜드시저 유니버스크롬",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_925d5952e9ab",
+    "weaponType": "대검",
+    "attribute": "용속성",
+    "normal": "THE오리진 랑아대검【변옥】 멸검 다크딩 블랙밀라블레이드 이터널그리프 에피타프이디온 샤인or다크 밀라안세스시아",
+    "awaken": "G블레이드",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_26dc8eca72da",
+    "weaponType": "대검",
+    "attribute": "폭파",
+    "normal": "쇄광의 격검 테스카델솔",
+    "awaken": "荒蝦蟇の出刃【沸崩】 절충대검【신위】 볼간히쳐 캡틴J바스타드",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_bd5b9802f4e2",
+    "weaponType": "대검",
+    "attribute": "독",
+    "normal": "크롬헤븐 브륜힐데 교검【대사두】 그랑샴쉬르",
+    "awaken": "흑랑왕 엔게투",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_729fe93ec186",
+    "weaponType": "대검",
+    "attribute": "수면",
+    "normal": "망각의 오스트라콘",
+    "awaken": "네그르발스큐라",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_a3f74bca8fcf",
+    "weaponType": "대검",
+    "attribute": "마비",
+    "normal": "",
+    "awaken": "무명대검【고체】 사제검 레브리마듈라 천지·굉단검",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_0c7034686d1e",
+    "weaponType": "태도",
+    "attribute": "무속성",
+    "normal": "자자미슬라이서 패강도 크네탄캄",
+    "awaken": "-",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_933453e7be00",
+    "weaponType": "태도",
+    "attribute": "불속성",
+    "normal": "모노브로스사이드 비룡도【춘】 비룡도【꽃축제】 샹글라마 참로도【스사노오】 밀라포티아",
+    "awaken": "에우로스 해적사냥꾼의 혼",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_7e205dd265da",
+    "weaponType": "태도",
+    "attribute": "물속성",
+    "normal": "알파르도 샤르두바라다발+ 특선태도어의 머리칼 호참도【대혈모지】 업물·구십구아환",
+    "awaken": "아틀란티카 이터널게이트 EX호도【스사노오】",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_654ee372e850",
+    "weaponType": "태도",
+    "attribute": "번개속성",
+    "normal": "팔계통귀참극도 아왕·발그리오 귀신체도【아수라】 뇌도 진라이+",
+    "awaken": "체인블레이드",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_8719acccd479",
+    "weaponType": "태도",
+    "attribute": "얼음속성",
+    "normal": "크레센트바이스 설일문자【은세계】 붕천도 우코트온캄 다오라스톰 엘다올레이드",
+    "awaken": "철쇄아D",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_5f8eddecc023",
+    "weaponType": "태도",
+    "attribute": "용속성",
+    "normal": "THE디카로그 진·랑아도【적멸】 밀라자게스파논 메멘토노스 카오스or로 패왕검",
+    "awaken": "멸도 신슬레이브",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_8682e42a30e5",
+    "weaponType": "태도",
+    "attribute": "폭파",
+    "normal": "쇄광의 효도 제왕도【태양불꽃】 속보대전용검【공호】",
+    "awaken": "극상대황물【철적】 절충호도【아왕】",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_da3f87f71480",
+    "weaponType": "태도",
+    "attribute": "독",
+    "normal": "흑랑장군의 대도",
+    "awaken": "칠성검【천권】 팬텀미라쥬",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_e72c11d9799c",
+    "weaponType": "태도",
+    "attribute": "수면",
+    "normal": "다크매터 참죄의 엘가레이온",
+    "awaken": "-",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_8b8fae78509c",
+    "weaponType": "태도",
+    "attribute": "마비",
+    "normal": "패러지그드에지 용목의 고태도【신참】",
+    "awaken": "사황제도 네포스마듈라",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_086d868df545",
+    "weaponType": "한손검",
+    "attribute": "무속성",
+    "normal": "흑주검 아니마",
+    "awaken": "-",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_e0cd383ea608",
+    "weaponType": "한손검",
+    "attribute": "불속성",
+    "normal": "아뉴라솔 염마신검 이플리트",
+    "awaken": "데젤벤트 마스터 소드G",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_577f6bf701da",
+    "weaponType": "한손검",
+    "attribute": "물속성",
+    "normal": "글로트랑 정통십자페리스케리스 호숭검【팔중원】",
+    "awaken": "마스터오디세이 EX호검【폭풍신검】",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_e76b2969ddc0",
+    "weaponType": "한손검",
+    "attribute": "번개속성",
+    "normal": "백설검네오디니스 뇌신검 리그인드라 뇌신보검 키린 금괴수곤【금주】 뇌검 코로드라이트 이나즈마워크스",
+    "awaken": "검은띠소드",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_e09804374b22",
+    "weaponType": "한손검",
+    "attribute": "얼음속성",
+    "normal": "자길킬아크자르 설신보검 키린 붕천사 키크키온캄 미스트랄다오라 슈톨엘다올",
+    "awaken": "오리클로매티어",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_545b1874c8f5",
+    "weaponType": "한손검",
+    "attribute": "용속성",
+    "normal": "THE셜록 랑아검【욕옥】 진·흑룡검 봉룡검【아절일문】 사도신기【봉인해제】 라이즈or토르 조룡영검 날이 부러진 검",
+    "awaken": "-",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_de672fe321a3",
+    "weaponType": "한손검",
+    "attribute": "폭파",
+    "normal": "쇄광의 항검 진·흑멸룡검 테오엠블럼",
+    "awaken": "절충검【호왕】 마스터블레이드",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_95debc39b8af",
+    "weaponType": "한손검",
+    "attribute": "독",
+    "normal": "루나틱로즈 데들리포이즌 게리오프랑키스카+",
+    "awaken": "리벤지나이프",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_c18ff775799b",
+    "weaponType": "한손검",
+    "attribute": "수면",
+    "normal": "모탈하트 가노시언스파이크+ 파멸의 그리스",
+    "awaken": "도스트라이크대거",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_9339b9f59459",
+    "weaponType": "한손검",
+    "attribute": "마비",
+    "normal": "패럴라이즈론드 쿠도라바르간 자길진제게 메라루툴",
+    "awaken": "사제사 에스카마듈라",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_1663fd27d364",
+    "weaponType": "쌍검",
+    "attribute": "무속성",
+    "normal": "패예조 크네암캄 브로스케이오스 범마인아류격투술",
+    "awaken": "-",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_f76082c92fde",
+    "weaponType": "쌍검",
+    "attribute": "불속성",
+    "normal": "고암수룡 쌍인 얀쿡크 메기드브레이커 염염도 이그나틀 홍린폭염인",
+    "awaken": "지쌍검 무스아블 대해적J에지 기간트피스톨",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_f4d3ae2a9960",
+    "weaponType": "쌍검",
+    "attribute": "물속성",
+    "normal": "쌍성검 길드나이트 상어이빨 브리자길 대선파크로스엔드 전선무인 렘제이드",
+    "awaken": "-",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_48803f690dea",
+    "weaponType": "쌍검",
+    "attribute": "번개속성",
+    "normal": "백뇌쌍검 네오크루소 랑아쌍인【뇌옥】 쌍뢰보검【키린아】 투신귀【대악환】",
+    "awaken": "-",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_ab235247a43a",
+    "weaponType": "쌍검",
+    "attribute": "얼음속성",
+    "normal": "글레이스소울 상어이빨 브리자길 울크스그랑디네 축제음악·환수조 붕천인 야카온캄 빙염마검 빌마크스 트윈엘더",
+    "awaken": "태풍",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_983de5b20587",
+    "weaponType": "쌍검",
+    "attribute": "용속성",
+    "normal": "THE샹그릴라 랑아쌍인【뇌옥】 쌍룡검【지극】 진·쌍멸룡인【황혼】 봉룡검【극절일문】 헤븐or헬",
+    "awaken": "멸쌍인 다크브링거",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_3f5d98eb8773",
+    "weaponType": "쌍검",
+    "attribute": "폭파",
+    "normal": "쇄광의 쌍섬 진·쌍멸룡인【황혼】 빙염마검 빌마크스 트윈엘더 홍린폭염인",
+    "awaken": "절충조【호인】",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_8a96f05b6942",
+    "weaponType": "쌍검",
+    "attribute": "독",
+    "normal": "하쌍검 오나즈치 메기드브레이커",
+    "awaken": "흑랑공주의 원앙선",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_e34ab37d6061",
+    "weaponType": "쌍검",
+    "attribute": "수면",
+    "normal": "전선무인 렘제이드 영결의 크라비스",
+    "awaken": "파라다이스그린",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_4007c051bc94",
+    "weaponType": "쌍검",
+    "attribute": "마비",
+    "normal": "막식 킬로넥스 아이루경메라루경 축제음악·환수조 기면안산자【상봉】",
+    "awaken": "갑인 인섹트로드 사제극 벨름마듈라",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_dfe6d9ca730a",
+    "weaponType": "해머",
+    "attribute": "무속성",
+    "normal": "공방근제·오오나구리",
+    "awaken": "-",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_3535424e4bc3",
+    "weaponType": "해머",
+    "attribute": "불속성",
+    "normal": "근위대기계추【격철】 성멸의 즈바로그 창화추 리오프로기오 밀라가르즈일러",
+    "awaken": "미스터리어스조",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_2aa11b306c77",
+    "weaponType": "해머",
+    "attribute": "물속성",
+    "normal": "초경천추 볼다밀 얼음조각 호파추【왜무자】",
+    "awaken": "가이아오리지온 폴트마르크",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_a43ec0190b8d",
+    "weaponType": "해머",
+    "attribute": "번개속성",
+    "normal": "블리드풀블로우 귀신추【금귀】 아왕·발브레이크 기가선더워크",
+    "awaken": "석권【우】 귀현",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_e57cadb85802",
+    "weaponType": "해머",
+    "attribute": "얼음속성",
+    "normal": "빙철 허벅 화추 브라이니클 붕천퇴 테르온캄 휴페르다오라 코로살엘다올",
+    "awaken": "-",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_b75e5df78043",
+    "weaponType": "해머",
+    "attribute": "용속성",
+    "normal": "랑아추【식옥】 THE어스 밀라데모리샤 크레스트·코어 파르메테오·코어 버스or데스 밀라안세스루인",
+    "awaken": "멸추 블러드 발진, 격룡추고래!",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_e4c904c4440a",
+    "weaponType": "해머",
+    "attribute": "폭파",
+    "normal": "쇄광의 멸추 테스카데르토레",
+    "awaken": "절충추【호붕】 사제추 크발마듈라",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_b582c9b10ff3",
+    "weaponType": "해머",
+    "attribute": "독",
+    "normal": "다이다라보라스 두추 게리오박치기 베네·판타스틱 마신추 엑스밴드",
+    "awaken": "흑랑적의 다단철퇴",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_aedcbd5858eb",
+    "weaponType": "해머",
+    "attribute": "수면",
+    "normal": "넬슈트로레이드 금계의 데스모테리온",
+    "awaken": "메테오헤드 검은띠해머",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_640b66696e18",
+    "weaponType": "해머",
+    "attribute": "마비",
+    "normal": "궤추 바늘천개 갑추 고그마다그마 금고양이크래셔",
+    "awaken": "대격추 볼보당가",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_a330f5609b31",
+    "weaponType": "수렵피리",
+    "attribute": "무속성",
+    "normal": "두드려울리기 패중적 크네하우캄",
+    "awaken": "-",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_18c0fa6213c7",
+    "weaponType": "수렵피리",
+    "attribute": "불속성",
+    "normal": "루나리코더 인플레임기그",
+    "awaken": "수렵피리의 달인",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_a92e827cdc66",
+    "weaponType": "수렵피리",
+    "attribute": "물속성",
+    "normal": "케차·울·할라 아쟈라스트롬 기자자미할스 카엘크래프트",
+    "awaken": "은수저",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_71485d57ea21",
+    "weaponType": "수렵피리",
+    "attribute": "번개속성",
+    "normal": "진·왕아금【천록】 블루트플루트 전전태고【뇌굉】 블리츠워크스",
+    "awaken": "-",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_76d80dc203bb",
+    "weaponType": "수렵피리",
+    "attribute": "얼음속성",
+    "normal": "빙적 페노미널 마기아리아로드 붕천적 이코카온캄 바포물다오라 카른엘다올",
+    "awaken": "린포르찬도",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_48e16ac2c70c",
+    "weaponType": "수렵피리",
+    "attribute": "용속성",
+    "normal": "THE그레고리아 랑아금【이옥】 밀라메너스아기카 이터널오르골 그리or테라 밀라안세스아브로스",
+    "awaken": "-",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_ebcf62673ae6",
+    "weaponType": "수렵피리",
+    "attribute": "폭파",
+    "normal": "쇄광의 양령 테오올페스 밀라메너스소울",
+    "awaken": "절충고【호무】 응원단피리【메가폰】",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_a45af59f54f3",
+    "weaponType": "수렵피리",
+    "attribute": "독",
+    "normal": "흑랑사의 샤미센 마인의 오카리나",
+    "awaken": "프라이멀콩가",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_7cbed1765a2d",
+    "weaponType": "수렵피리",
+    "attribute": "수면",
+    "normal": "라라바이건록 암흑의 테르프시코라",
+    "awaken": "-",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_6b75295858e1",
+    "weaponType": "수렵피리",
+    "attribute": "마비",
+    "normal": "파라미티콜 용목의 고적【신가】 여왕적 란고스타",
+    "awaken": "사제현 크로프마듈라",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_19e312373dd7",
+    "weaponType": "랜스",
+    "attribute": "무속성",
+    "normal": "레이징템페스트 견창 다이자자미",
+    "awaken": "-",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_a494f1d2fb69",
+    "weaponType": "랜스",
+    "attribute": "불속성",
+    "normal": "프로미넌스소울 디바인소울 백창 킬슐라잔 크림슨브로스 특수대전용창【백호】",
+    "awaken": "로스트바벨",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_c4c78069da49",
+    "weaponType": "랜스",
+    "attribute": "물속성",
+    "normal": "케류케이온 기창 프슐라 샤크카이저 해류창 에스메랄다 화이트커스터로프",
+    "awaken": "-",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_08656fe617a3",
+    "weaponType": "랜스",
+    "attribute": "번개속성",
+    "normal": "기가드릴랜스 아왕·파르크라노스 귀신천창 라잔 뇌창【뇌신】",
+    "awaken": "-",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_61ddcbeede5b",
+    "weaponType": "랜스",
+    "attribute": "얼음속성",
+    "normal": "빙창 자보아자길 붕천창 케르케온캄 세이버투스 레굴루스다오라 테리오스엘다올",
+    "awaken": "이디오크라운",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_acf00f5f7543",
+    "weaponType": "랜스",
+    "attribute": "용속성",
+    "normal": "THE패러딘 랑아창【노옥】 진·흑룡창 네오안드레이아 스카이스크레이버 세이지or데블 조룡령창",
+    "awaken": "네로어트로시스",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_5817d0ad432c",
+    "weaponType": "랜스",
+    "attribute": "폭파",
+    "normal": "쇄광의 분창 진·흑멸룡창 테오엑시스",
+    "awaken": "절충창【호옥】",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_4b00ddf92062",
+    "weaponType": "랜스",
+    "attribute": "독",
+    "normal": "중화창 그라비모스 흑랑군의 방천극",
+    "awaken": "-",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_c963f488a687",
+    "weaponType": "랜스",
+    "attribute": "수면",
+    "normal": "다크루드 천애의 게걸드",
+    "awaken": "-",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_09c5a4d28a65",
+    "weaponType": "랜스",
+    "attribute": "마비",
+    "normal": "아스크레피오스 찰르크·아도크",
+    "awaken": "크리스타리자시온 사제창 탄드마듈라",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_4385c8992833",
+    "weaponType": "건랜스",
+    "attribute": "무속성",
+    "normal": "바이올렛버스트 패포창 크네아페캄",
+    "awaken": "-",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_7ecf636c67b3",
+    "weaponType": "건랜스",
+    "attribute": "불속성",
+    "normal": "나나솔레유",
+    "awaken": "-",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_4e8f8cfbb7b6",
+    "weaponType": "건랜스",
+    "attribute": "물속성",
+    "normal": "호숭총창【천진일고】",
+    "awaken": "존스로커",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_b0289867f30a",
+    "weaponType": "건랜스",
+    "attribute": "번개속성",
+    "normal": "진·왕아총창【진천】",
+    "awaken": "귀신총창 드래기건 볼틱워크스",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_3c5123bf48be",
+    "weaponType": "건랜스",
+    "attribute": "얼음속성",
+    "normal": "다오라템페스터 엘다올프리지아",
+    "awaken": "울크스아바랑거",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_5da0bb6ea2ed",
+    "weaponType": "건랜스",
+    "attribute": "용속성",
+    "normal": "THE포트리스 진·흑룡총창",
+    "awaken": "랑아총창【탐옥】 월or워",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_babfe3a07bca",
+    "weaponType": "건랜스",
+    "attribute": "폭파",
+    "normal": "-",
+    "awaken": "염마멸룡총창",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_e42fd6622743",
+    "weaponType": "건랜스",
+    "attribute": "독",
+    "normal": "황룡총창 티아멧",
+    "awaken": "-",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_4ead63161693",
+    "weaponType": "건랜스",
+    "attribute": "수면",
+    "normal": "전조의 프로페티어",
+    "awaken": "면총창 휴프노스",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_9e47250ca2a8",
+    "weaponType": "건랜스",
+    "attribute": "마비",
+    "normal": "프라골베레노 복복아이료시카",
+    "awaken": "-",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_127a584fd82d",
+    "weaponType": "슬래시액스",
+    "attribute": "무속성",
+    "normal": "-",
+    "awaken": "-",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_3aef96eed416",
+    "weaponType": "슬래시액스",
+    "attribute": "불속성",
+    "normal": "광염부 리오엑시드 홍련부 헬제스티",
+    "awaken": "쿠쿠·다그당가",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_85a48c2c06d5",
+    "weaponType": "슬래시액스",
+    "attribute": "물속성",
+    "normal": "이루루얀카슈 해왕부 나발디드",
+    "awaken": "기원부 와차르내커 호준검부【산진견】",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_d672c893eca6",
+    "weaponType": "슬래시액스",
+    "attribute": "번개속성",
+    "normal": "뇌공보부 키린 밀라안세스포스",
+    "awaken": "명뇌검부 엔시드",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_92824ba48291",
+    "weaponType": "슬래시액스",
+    "attribute": "얼음속성",
+    "normal": "노치스디아볼로 쟈나프다오라 특보대전용부【선호】 발자엘다올",
+    "awaken": "기가게일프로스트 박인보부 키린",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_0cf0519341d6",
+    "weaponType": "슬래시액스",
+    "attribute": "용속성",
+    "normal": "랑아검부【폭옥】 THE클로저",
+    "awaken": "진·흑룡검부 알트로열",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_53d8f6f5f024",
+    "weaponType": "슬래시액스",
+    "attribute": "폭파",
+    "normal": "쇄광의 검부",
+    "awaken": "사검부 옵타마듈라 진·흑멸룡검부 테오캐슬",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_5b08686279bc",
+    "weaponType": "슬래시액스",
+    "attribute": "독",
+    "normal": "스테아라이즈완드",
+    "awaken": "홍창검부【광소】",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_0fcfa89191cb",
+    "weaponType": "슬래시액스",
+    "attribute": "수면",
+    "normal": "사집의 컨키스터",
+    "awaken": "-",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_6e9db11848d4",
+    "weaponType": "슬래시액스",
+    "attribute": "마비",
+    "normal": "대호구 자보아라기 셀름캇체",
+    "awaken": "홍검부 버밀리언",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_ec697de62609",
+    "weaponType": "차지액스",
+    "attribute": "무속성",
+    "normal": "-",
+    "awaken": "패단부 크넨캄 각왕순부 지오브로스",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_461f79d39468",
+    "weaponType": "차지액스",
+    "attribute": "불속성",
+    "normal": "루나에스트오레",
+    "awaken": "금화롱은의 순부 차지폭스",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_04c3f8a5d328",
+    "weaponType": "차지액스",
+    "attribute": "물속성",
+    "normal": "호류순부【면진견】 맥시멈인섹트",
+    "awaken": "해왕기 나발레가리아",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_3bf936669373",
+    "weaponType": "차지액스",
+    "attribute": "번개속성",
+    "normal": "디바알큐레 밀라안세스블로우",
+    "awaken": "귀신순부【금강야차】",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_968c38cbb366",
+    "weaponType": "차지액스",
+    "attribute": "얼음속성",
+    "normal": "자·보아·파나",
+    "awaken": "다오라담무 그랜드스타액스 엘다올카스카",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_6928056612f1",
+    "weaponType": "차지액스",
+    "attribute": "용속성",
+    "normal": "진·흑룡순부",
+    "awaken": "THE세이버 부스트or폴",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_c0dcfcea0f0d",
+    "weaponType": "차지액스",
+    "attribute": "폭파",
+    "normal": "-",
+    "awaken": "쇄광의 순부 테오노바 진·흑멸룡순부",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_2839b982f39b",
+    "weaponType": "차지액스",
+    "attribute": "독",
+    "normal": "-",
+    "awaken": "홍검창순【운작】 베로보그사이즈",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_aa49812b7cd4",
+    "weaponType": "차지액스",
+    "attribute": "수면",
+    "normal": "-",
+    "awaken": "체르노보그사이즈 대상의 네이디아",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_d2b6ffbde724",
+    "weaponType": "차지액스",
+    "attribute": "마비",
+    "normal": "-",
+    "awaken": "데저트로즈",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_1630824a5a86",
+    "weaponType": "조충곤",
+    "attribute": "무속성",
+    "normal": "허밋시저즈",
+    "awaken": "-",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_bd70ae573b86",
+    "weaponType": "조충곤",
+    "attribute": "불속성",
+    "normal": "여염봉【마원】",
+    "awaken": "성진의 황룡극",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_90701a619063",
+    "weaponType": "조충곤",
+    "attribute": "물속성",
+    "normal": "여의봉【선원】 메두사미러",
+    "awaken": "카니발할파",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_3fb8ba0a2afa",
+    "weaponType": "조충곤",
+    "attribute": "번개속성",
+    "normal": "밀라안세스로드 클리마택트 알라딘의 지팡이",
+    "awaken": "천뢰보곤【키린황제】",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_1e2bf3306e15",
+    "weaponType": "조충곤",
+    "attribute": "얼음속성",
+    "normal": "환빙곤【키린】 붕천장 키키리온캄",
+    "awaken": "핀블웨틀 삼드라다오라 삼드라엘다올",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_a8b4b0736beb",
+    "weaponType": "조충곤",
+    "attribute": "용속성",
+    "normal": "진·흑룡곤【천황】",
+    "awaken": "THE미라클 그리프or원더",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_673063584368",
+    "weaponType": "조충곤",
+    "attribute": "폭파",
+    "normal": "쇄광의 흑요저",
+    "awaken": "사제홀 페단마듈라 염마멸룡곤【겁염】",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_baba3128ec10",
+    "weaponType": "조충곤",
+    "attribute": "독",
+    "normal": "리퍼즈스트로크",
+    "awaken": "헤이즈캐스터",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_79dcf105a669",
+    "weaponType": "조충곤",
+    "attribute": "수면",
+    "normal": "-",
+    "awaken": "나이트메어",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_2a5f53bf6a23",
+    "weaponType": "조충곤",
+    "attribute": "마비",
+    "normal": "패럴라이즈바인",
+    "awaken": "옐로우베릴",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_0651ec755a3e",
+    "weaponType": "활",
+    "attribute": "무속성",
+    "normal": "크리스탈루드 절충궁【호익】 흑랑전의 오오유미 반역궁 카마레기온 마궁 그리모왈",
+    "awaken": "강각왕궁 디아혼",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_ffe2f3eec948",
+    "weaponType": "활",
+    "attribute": "불속성",
+    "normal": "강중궁 기간트마키아 흑카부토",
+    "awaken": "숙명을 고하는 우라누스",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_a2f04c2c8208",
+    "weaponType": "활",
+    "attribute": "물속성",
+    "normal": "황금궁 골트·레이 오오무라사키바사미II 대나무궁【가구야】 용두금",
+    "awaken": "호령궁【옥조명】",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_87e9d5698305",
+    "weaponType": "활",
+    "attribute": "번개속성",
+    "normal": "볼드보이드웹 성스러운 활G",
+    "awaken": "아왕·베로발 뇌공궁【대성】",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_3498b93ea8c0",
+    "weaponType": "활",
+    "attribute": "얼음속성",
+    "normal": "헤일스톰 붕천궁 아이카온캄 알나스엘다올",
+    "awaken": "플루크투스 사지탈다오라",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_d758add8aed4",
+    "weaponType": "활",
+    "attribute": "용속성",
+    "normal": "진·랑아궁【감죄】 섬멸과 파괴의 강궁II 데자이어or디스페어 승리와 영광의 용궁",
+    "awaken": "패멸궁 크넬레라캄",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  },
+  {
+    "id": "weapon_summary_9100f6126143",
+    "weaponType": "활",
+    "attribute": "폭파",
+    "normal": "대녹각파탄궁 사제궁 나겔마듈라 용기와 희망의 처궁II",
+    "awaken": "파멸과 재액의 홍련궁",
+    "source": "https://flashkiller.cafe24.com/mh4g/weapon/weapon_pro.htm"
+  }
+]

@@ -1,0 +1,3202 @@
+[
+  {
+    "id": "monster_c75c911722c8",
+    "species": "갑충종",
+    "name": "아르셀타스",
+    "materialName": "철갑충",
+    "materialJa": "徹甲虫",
+    "weakspots": {
+      "cut": "머리",
+      "impact": "머리",
+      "shot": "머리"
+    },
+    "elements": {
+      "fire": "○",
+      "water": "△",
+      "thunder": "◎",
+      "ice": "△",
+      "dragon": "×"
+    },
+    "ailments": {
+      "poison": "○",
+      "sleep": "◎",
+      "paralysis": "◎",
+      "blast": "◎"
+    },
+    "traps": {
+      "pitfall": "○",
+      "shock": "○",
+      "flash": "○",
+      "sonic": "×",
+      "meat": "×"
+    },
+    "special": {
+      "roar": "-",
+      "wind": "-",
+      "tremor": "-",
+      "bind": "○"
+    },
+    "traits": "방어다운",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_30b571e90ca7",
+    "species": "갑충종",
+    "name": "아르셀타스 아종",
+    "materialName": "부갑충",
+    "materialJa": "斧甲虫",
+    "weakspots": {
+      "cut": "머리",
+      "impact": "머리",
+      "shot": "머리"
+    },
+    "elements": {
+      "fire": "△",
+      "water": "△",
+      "thunder": "△",
+      "ice": "○",
+      "dragon": "×"
+    },
+    "ailments": {
+      "poison": "○",
+      "sleep": "◎",
+      "paralysis": "◎",
+      "blast": "◎"
+    },
+    "traps": {
+      "pitfall": "○",
+      "shock": "○",
+      "flash": "○",
+      "sonic": "×",
+      "meat": "×"
+    },
+    "special": {
+      "roar": "-",
+      "wind": "-",
+      "tremor": "-",
+      "bind": "○"
+    },
+    "traits": "마비",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_110cd565db40",
+    "species": "갑충종",
+    "name": "게넬·셀타스",
+    "materialName": "중갑충",
+    "materialJa": "重甲虫",
+    "weakspots": {
+      "cut": "머리",
+      "impact": "머리",
+      "shot": "머리"
+    },
+    "elements": {
+      "fire": "◎",
+      "water": "×",
+      "thunder": "▲",
+      "ice": "○",
+      "dragon": "×"
+    },
+    "ailments": {
+      "poison": "◎",
+      "sleep": "△",
+      "paralysis": "△",
+      "blast": "◎"
+    },
+    "traps": {
+      "pitfall": "△",
+      "shock": "○",
+      "flash": "○",
+      "sonic": "×",
+      "meat": "×"
+    },
+    "special": {
+      "roar": "－",
+      "wind": "－",
+      "tremor": "○",
+      "bind": "－"
+    },
+    "traits": "물, 기절, 악취",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_b92f48e6e514",
+    "species": "갑충종",
+    "name": "게넬·셀타스 아종",
+    "materialName": "포갑충",
+    "materialJa": "砲甲虫",
+    "weakspots": {
+      "cut": "머리",
+      "impact": "머리",
+      "shot": "머리"
+    },
+    "elements": {
+      "fire": "×",
+      "water": "▲",
+      "thunder": "▲",
+      "ice": "○",
+      "dragon": "×"
+    },
+    "ailments": {
+      "poison": "◎",
+      "sleep": "△",
+      "paralysis": "△",
+      "blast": "◎"
+    },
+    "traps": {
+      "pitfall": "△",
+      "shock": "○",
+      "flash": "○",
+      "sonic": "×",
+      "meat": "×"
+    },
+    "special": {
+      "roar": "－",
+      "wind": "－",
+      "tremor": "○",
+      "bind": "－"
+    },
+    "traits": "물, 기절, 악취",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_f8b0910be458",
+    "species": "협각종",
+    "name": "네르스큐라",
+    "materialName": "영지주",
+    "materialJa": "影蜘蛛",
+    "weakspots": {
+      "cut": "배",
+      "impact": "머리",
+      "shot": "가시"
+    },
+    "elements": {
+      "fire": "○",
+      "water": "×",
+      "thunder": "▲",
+      "ice": "▲",
+      "dragon": "×"
+    },
+    "ailments": {
+      "poison": "△",
+      "sleep": "△",
+      "paralysis": "◎",
+      "blast": "◎"
+    },
+    "traps": {
+      "pitfall": "○",
+      "shock": "○",
+      "flash": "○",
+      "sonic": "×",
+      "meat": "×"
+    },
+    "special": {
+      "roar": "－",
+      "wind": "－",
+      "tremor": "○",
+      "bind": "－"
+    },
+    "traits": "독, 수면",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_e536a661d09d",
+    "species": "협각종",
+    "name": "네르스큐라 아종",
+    "materialName": "해지주",
+    "materialJa": "骸蜘蛛",
+    "weakspots": {
+      "cut": "배",
+      "impact": "머리",
+      "shot": "머리"
+    },
+    "elements": {
+      "fire": "△",
+      "water": "×",
+      "thunder": "×",
+      "ice": "▲",
+      "dragon": "×"
+    },
+    "ailments": {
+      "poison": "△",
+      "sleep": "△",
+      "paralysis": "◎",
+      "blast": "◎"
+    },
+    "traps": {
+      "pitfall": "○",
+      "shock": "○",
+      "flash": "○",
+      "sonic": "×",
+      "meat": "×"
+    },
+    "special": {
+      "roar": "－",
+      "wind": "－",
+      "tremor": "○",
+      "bind": "－"
+    },
+    "traits": "독, 마비",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_6f965be06141",
+    "species": "어룡종",
+    "name": "도스가레오스",
+    "materialName": "사룡",
+    "materialJa": "砂 竜",
+    "weakspots": {
+      "cut": "목",
+      "impact": "목",
+      "shot": "목"
+    },
+    "elements": {
+      "fire": "▲",
+      "water": "△",
+      "thunder": "△",
+      "ice": "◎",
+      "dragon": "▲"
+    },
+    "ailments": {
+      "poison": "○",
+      "sleep": "◎",
+      "paralysis": "◎",
+      "blast": "○"
+    },
+    "traps": {
+      "pitfall": "○",
+      "shock": "○",
+      "flash": "×",
+      "sonic": "○",
+      "meat": "×"
+    },
+    "special": {
+      "roar": "－",
+      "wind": "－",
+      "tremor": "－",
+      "bind": "－"
+    },
+    "traits": "마비, 물",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_a73b98d0b944",
+    "species": "조룡종",
+    "name": "도스재기",
+    "materialName": "구룡",
+    "materialJa": "狗 竜",
+    "weakspots": {
+      "cut": "머리",
+      "impact": "머리",
+      "shot": "머리"
+    },
+    "elements": {
+      "fire": "◎",
+      "water": "○",
+      "thunder": "○",
+      "ice": "○",
+      "dragon": "▲"
+    },
+    "ailments": {
+      "poison": "○",
+      "sleep": "◎",
+      "paralysis": "◎",
+      "blast": "◎"
+    },
+    "traps": {
+      "pitfall": "○",
+      "shock": "○",
+      "flash": "○",
+      "sonic": "×",
+      "meat": "○"
+    },
+    "special": {
+      "roar": "－",
+      "wind": "－",
+      "tremor": "－",
+      "bind": "－"
+    },
+    "traits": "",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_c2d60b6b13b7",
+    "species": "조룡종",
+    "name": "도스람포스",
+    "materialName": "-",
+    "materialJa": "-",
+    "weakspots": {
+      "cut": "머리",
+      "impact": "머리",
+      "shot": "머리"
+    },
+    "elements": {
+      "fire": "◎",
+      "water": "◎",
+      "thunder": "◎",
+      "ice": "◎",
+      "dragon": "▲"
+    },
+    "ailments": {
+      "poison": "◎",
+      "sleep": "◎",
+      "paralysis": "◎",
+      "blast": "◎"
+    },
+    "traps": {
+      "pitfall": "○",
+      "shock": "○",
+      "flash": "○",
+      "sonic": "×",
+      "meat": "○"
+    },
+    "special": {
+      "roar": "－",
+      "wind": "－",
+      "tremor": "－",
+      "bind": "○"
+    },
+    "traits": "빠름",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_5b731f22ec27",
+    "species": "조룡종",
+    "name": "도스게네포스",
+    "materialName": "-",
+    "materialJa": "-",
+    "weakspots": {
+      "cut": "머리",
+      "impact": "머리",
+      "shot": "머리"
+    },
+    "elements": {
+      "fire": "○",
+      "water": "○",
+      "thunder": "◎",
+      "ice": "◎",
+      "dragon": "▲"
+    },
+    "ailments": {
+      "poison": "○",
+      "sleep": "◎",
+      "paralysis": "○",
+      "blast": "◎"
+    },
+    "traps": {
+      "pitfall": "○",
+      "shock": "○",
+      "flash": "○",
+      "sonic": "×",
+      "meat": "○"
+    },
+    "special": {
+      "roar": "－",
+      "wind": "－",
+      "tremor": "－",
+      "bind": "○"
+    },
+    "traits": "마비",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_3a5d33386ba9",
+    "species": "조룡종",
+    "name": "도스이오스",
+    "materialName": "-",
+    "materialJa": "-",
+    "weakspots": {
+      "cut": "몸",
+      "impact": "몸",
+      "shot": "몸"
+    },
+    "elements": {
+      "fire": "○",
+      "water": "◎",
+      "thunder": "◎",
+      "ice": "▲",
+      "dragon": "▲"
+    },
+    "ailments": {
+      "poison": "△",
+      "sleep": "◎",
+      "paralysis": "◎",
+      "blast": "◎"
+    },
+    "traps": {
+      "pitfall": "○",
+      "shock": "○",
+      "flash": "○",
+      "sonic": "×",
+      "meat": "○"
+    },
+    "special": {
+      "roar": "－",
+      "wind": "－",
+      "tremor": "－",
+      "bind": "－"
+    },
+    "traits": "독, 빠름",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_eb48d5e7dc99",
+    "species": "조룡종",
+    "name": "얀쿡크",
+    "materialName": "괴조",
+    "materialJa": "怪鳥",
+    "weakspots": {
+      "cut": "날개",
+      "impact": "머리",
+      "shot": "머리"
+    },
+    "elements": {
+      "fire": "▲",
+      "water": "○",
+      "thunder": "◎",
+      "ice": "◎",
+      "dragon": "▲"
+    },
+    "ailments": {
+      "poison": "◎",
+      "sleep": "◎",
+      "paralysis": "◎",
+      "blast": "△"
+    },
+    "traps": {
+      "pitfall": "○",
+      "shock": "○",
+      "flash": "○",
+      "sonic": "○",
+      "meat": "×"
+    },
+    "special": {
+      "roar": "－",
+      "wind": "소",
+      "tremor": "-",
+      "bind": "-"
+    },
+    "traits": "불",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_52db24e076e3",
+    "species": "조룡종",
+    "name": "얀쿡크 아종",
+    "materialName": "청괴조",
+    "materialJa": "青 怪鳥",
+    "weakspots": {
+      "cut": "배",
+      "impact": "배",
+      "shot": "머리"
+    },
+    "elements": {
+      "fire": "▲",
+      "water": "◎",
+      "thunder": "◎",
+      "ice": "○",
+      "dragon": "▲"
+    },
+    "ailments": {
+      "poison": "○",
+      "sleep": "○",
+      "paralysis": "○",
+      "blast": "△"
+    },
+    "traps": {
+      "pitfall": "○",
+      "shock": "○",
+      "flash": "○",
+      "sonic": "○",
+      "meat": "×"
+    },
+    "special": {
+      "roar": "－",
+      "wind": "소",
+      "tremor": "-",
+      "bind": "-"
+    },
+    "traits": "불",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_7909ff36357b",
+    "species": "조룡종",
+    "name": "게리오스",
+    "materialName": "독괴조",
+    "materialJa": "毒怪鳥",
+    "weakspots": {
+      "cut": "꼬리",
+      "impact": "머리",
+      "shot": "꼬리"
+    },
+    "elements": {
+      "fire": "◎",
+      "water": "▲",
+      "thunder": "×",
+      "ice": "○",
+      "dragon": "△"
+    },
+    "ailments": {
+      "poison": "△",
+      "sleep": "◎",
+      "paralysis": "◎",
+      "blast": "◎"
+    },
+    "traps": {
+      "pitfall": "○",
+      "shock": "×",
+      "flash": "×",
+      "sonic": "×",
+      "meat": "×"
+    },
+    "special": {
+      "roar": "－",
+      "wind": "소",
+      "tremor": "－",
+      "bind": "－"
+    },
+    "traits": "독, 기절",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_d50064f75286",
+    "species": "조룡종",
+    "name": "게리오스 아종",
+    "materialName": "독괴조",
+    "materialJa": "毒怪鳥",
+    "weakspots": {
+      "cut": "꼬리",
+      "impact": "머리",
+      "shot": "꼬리"
+    },
+    "elements": {
+      "fire": "◎",
+      "water": "▲",
+      "thunder": "×",
+      "ice": "○",
+      "dragon": "△"
+    },
+    "ailments": {
+      "poison": "△",
+      "sleep": "◎",
+      "paralysis": "◎",
+      "blast": "◎"
+    },
+    "traps": {
+      "pitfall": "○",
+      "shock": "×",
+      "flash": "×",
+      "sonic": "×",
+      "meat": "×"
+    },
+    "special": {
+      "roar": "－",
+      "wind": "소",
+      "tremor": "－",
+      "bind": "－"
+    },
+    "traits": "독, 기절",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_f0f14f5de096",
+    "species": "조룡종",
+    "name": "얀가루루가",
+    "materialName": "흑랑조",
+    "materialJa": "黒 狼鳥",
+    "weakspots": {
+      "cut": "머리",
+      "impact": "머리",
+      "shot": "머리"
+    },
+    "elements": {
+      "fire": "▲",
+      "water": "◎",
+      "thunder": "▲",
+      "ice": "○",
+      "dragon": "△"
+    },
+    "ailments": {
+      "poison": "×",
+      "sleep": "○",
+      "paralysis": "○",
+      "blast": "◎"
+    },
+    "traps": {
+      "pitfall": "△",
+      "shock": "○",
+      "flash": "○",
+      "sonic": "×",
+      "meat": "×"
+    },
+    "special": {
+      "roar": "소",
+      "wind": "소",
+      "tremor": "-",
+      "bind": "-"
+    },
+    "traits": "불, 독",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_8527604e7797",
+    "species": "갑각종",
+    "name": "다이묘자자미",
+    "materialName": "방패게",
+    "materialJa": "盾蟹",
+    "weakspots": {
+      "cut": "머리",
+      "impact": "머리",
+      "shot": "머리"
+    },
+    "elements": {
+      "fire": "◎",
+      "water": "▲",
+      "thunder": "◎",
+      "ice": "△",
+      "dragon": "×"
+    },
+    "ailments": {
+      "poison": "◎",
+      "sleep": "◎",
+      "paralysis": "◎",
+      "blast": "○"
+    },
+    "traps": {
+      "pitfall": "○",
+      "shock": "○",
+      "flash": "×",
+      "sonic": "○",
+      "meat": "×"
+    },
+    "special": {
+      "roar": "-",
+      "wind": "소",
+      "tremor": "-",
+      "bind": "○"
+    },
+    "traits": "물",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_bcafff125175",
+    "species": "갑각종",
+    "name": "다이묘자자미 아종",
+    "materialName": "방패게",
+    "materialJa": "盾蟹",
+    "weakspots": {
+      "cut": "머리",
+      "impact": "머리",
+      "shot": "머리"
+    },
+    "elements": {
+      "fire": "△",
+      "water": "▲",
+      "thunder": "○",
+      "ice": "◎",
+      "dragon": "×"
+    },
+    "ailments": {
+      "poison": "◎",
+      "sleep": "◎",
+      "paralysis": "◎",
+      "blast": "○"
+    },
+    "traps": {
+      "pitfall": "○",
+      "shock": "○",
+      "flash": "×",
+      "sonic": "○",
+      "meat": "×"
+    },
+    "special": {
+      "roar": "-",
+      "wind": "소",
+      "tremor": "-",
+      "bind": "○"
+    },
+    "traits": "물",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_50c2282faebf",
+    "species": "아수종",
+    "name": "케차와차",
+    "materialName": "기원호",
+    "materialJa": "奇猿狐",
+    "weakspots": {
+      "cut": "머리",
+      "impact": "머리",
+      "shot": "머리"
+    },
+    "elements": {
+      "fire": "◎",
+      "water": "×",
+      "thunder": "○",
+      "ice": "△",
+      "dragon": "×"
+    },
+    "ailments": {
+      "poison": "◎",
+      "sleep": "◎",
+      "paralysis": "◎",
+      "blast": "○"
+    },
+    "traps": {
+      "pitfall": "○",
+      "shock": "○",
+      "flash": "△",
+      "sonic": "△",
+      "meat": "×"
+    },
+    "special": {
+      "roar": "소",
+      "wind": "소",
+      "tremor": "○",
+      "bind": "－"
+    },
+    "traits": "물",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_e7725cd9e750",
+    "species": "아수종",
+    "name": "케차와차 아종",
+    "materialName": "백원호",
+    "materialJa": "白猿狐",
+    "weakspots": {
+      "cut": "머리",
+      "impact": "머리",
+      "shot": "머리"
+    },
+    "elements": {
+      "fire": "×",
+      "water": "◎",
+      "thunder": "▲",
+      "ice": "△",
+      "dragon": "×"
+    },
+    "ailments": {
+      "poison": "◎",
+      "sleep": "◎",
+      "paralysis": "◎",
+      "blast": "○"
+    },
+    "traps": {
+      "pitfall": "○",
+      "shock": "○",
+      "flash": "△",
+      "sonic": "△",
+      "meat": "×"
+    },
+    "special": {
+      "roar": "소",
+      "wind": "소",
+      "tremor": "○",
+      "bind": "－"
+    },
+    "traits": "불",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_e0026a2106a0",
+    "species": "아수종",
+    "name": "울크스스",
+    "materialName": "백토수",
+    "materialJa": "白兎 獣",
+    "weakspots": {
+      "cut": "꼬리",
+      "impact": "머리",
+      "shot": "머리"
+    },
+    "elements": {
+      "fire": "◎",
+      "water": "×",
+      "thunder": "○",
+      "ice": "×",
+      "dragon": "×"
+    },
+    "ailments": {
+      "poison": "○",
+      "sleep": "○",
+      "paralysis": "◎",
+      "blast": "◎"
+    },
+    "traps": {
+      "pitfall": "○",
+      "shock": "○",
+      "flash": "○",
+      "sonic": "○",
+      "meat": "×"
+    },
+    "special": {
+      "roar": "－",
+      "wind": "－",
+      "tremor": "○",
+      "bind": "-"
+    },
+    "traits": "얼음, 눈사람상태",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_70c20bccbbb7",
+    "species": "아수종",
+    "name": "바바콩가",
+    "materialName": "도모수",
+    "materialJa": "桃毛 獣",
+    "weakspots": {
+      "cut": "머리",
+      "impact": "머리",
+      "shot": "머리"
+    },
+    "elements": {
+      "fire": "○",
+      "water": "▲",
+      "thunder": "▲",
+      "ice": "△",
+      "dragon": "×"
+    },
+    "ailments": {
+      "poison": "◎",
+      "sleep": "○",
+      "paralysis": "○",
+      "blast": "○"
+    },
+    "traps": {
+      "pitfall": "○",
+      "shock": "○",
+      "flash": "○",
+      "sonic": "×",
+      "meat": "○"
+    },
+    "special": {
+      "roar": "소",
+      "wind": "－",
+      "tremor": "○",
+      "bind": "－"
+    },
+    "traits": "불, 독, 마비, 폭발 , 악취",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_e7d539be6cbe",
+    "species": "아수종",
+    "name": "바바콩가 아종",
+    "materialName": "녹모수",
+    "materialJa": "緑 毛 獣",
+    "weakspots": {
+      "cut": "꼬리",
+      "impact": "머리",
+      "shot": "머리"
+    },
+    "elements": {
+      "fire": "▲",
+      "water": "▲",
+      "thunder": "▲",
+      "ice": "○",
+      "dragon": "×"
+    },
+    "ailments": {
+      "poison": "○",
+      "sleep": "○",
+      "paralysis": "△",
+      "blast": "○"
+    },
+    "traps": {
+      "pitfall": "○",
+      "shock": "○",
+      "flash": "○",
+      "sonic": "×",
+      "meat": "○"
+    },
+    "special": {
+      "roar": "소",
+      "wind": "－",
+      "tremor": "○",
+      "bind": "－"
+    },
+    "traits": "불, 독, 마비 , 폭발, 악취",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_ccd85a66ac50",
+    "species": "아수종",
+    "name": "라잔",
+    "materialName": "금사자",
+    "materialJa": "金獅子",
+    "weakspots": {
+      "cut": "머리",
+      "impact": "머리",
+      "shot": "머리"
+    },
+    "elements": {
+      "fire": "×",
+      "water": "▲",
+      "thunder": "×",
+      "ice": "◎",
+      "dragon": "×"
+    },
+    "ailments": {
+      "poison": "◎",
+      "sleep": "○",
+      "paralysis": "△",
+      "blast": "△"
+    },
+    "traps": {
+      "pitfall": "△",
+      "shock": "○",
+      "flash": "○",
+      "sonic": "×",
+      "meat": "×"
+    },
+    "special": {
+      "roar": "@2",
+      "wind": "－",
+      "tremor": "○",
+      "bind": "○"
+    },
+    "traits": "번개, 지진",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_5d2b261ab356",
+    "species": "아수종",
+    "name": "격앙 라잔",
+    "materialName": "금사자",
+    "materialJa": "金獅子",
+    "weakspots": {
+      "cut": "머리",
+      "impact": "머리",
+      "shot": "머리"
+    },
+    "elements": {
+      "fire": "×",
+      "water": "▲",
+      "thunder": "×",
+      "ice": "◎",
+      "dragon": "×"
+    },
+    "ailments": {
+      "poison": "◎",
+      "sleep": "○",
+      "paralysis": "△",
+      "blast": "△"
+    },
+    "traps": {
+      "pitfall": "△",
+      "shock": "○",
+      "flash": "○",
+      "sonic": "×",
+      "meat": "×"
+    },
+    "special": {
+      "roar": "@2",
+      "wind": "－",
+      "tremor": "○",
+      "bind": "○"
+    },
+    "traits": "번개, 지진",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_eda79317399f",
+    "species": "양서종",
+    "name": "테츠카브라",
+    "materialName": "귀와",
+    "materialJa": "鬼蛙",
+    "weakspots": {
+      "cut": "@3",
+      "impact": "@3",
+      "shot": "@3"
+    },
+    "elements": {
+      "fire": "×",
+      "water": "◎",
+      "thunder": "○",
+      "ice": "△",
+      "dragon": "▲"
+    },
+    "ailments": {
+      "poison": "◎",
+      "sleep": "○",
+      "paralysis": "○",
+      "blast": "◎"
+    },
+    "traps": {
+      "pitfall": "○",
+      "shock": "○",
+      "flash": "○",
+      "sonic": "×",
+      "meat": "×"
+    },
+    "special": {
+      "roar": "소",
+      "wind": "－",
+      "tremor": "○",
+      "bind": "-"
+    },
+    "traits": "지진, 얼음",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_3c60c91411b5",
+    "species": "양서종",
+    "name": "테츠카브라 아종",
+    "materialName": "황귀와",
+    "materialJa": "荒鬼蛙",
+    "weakspots": {
+      "cut": "@3",
+      "impact": "@3",
+      "shot": "@3"
+    },
+    "elements": {
+      "fire": "×",
+      "water": "▲",
+      "thunder": "○",
+      "ice": "◎",
+      "dragon": "▲"
+    },
+    "ailments": {
+      "poison": "◎",
+      "sleep": "○",
+      "paralysis": "○",
+      "blast": "△"
+    },
+    "traps": {
+      "pitfall": "○",
+      "shock": "○",
+      "flash": "○",
+      "sonic": "×",
+      "meat": "×"
+    },
+    "special": {
+      "roar": "소",
+      "wind": "－",
+      "tremor": "○",
+      "bind": "-"
+    },
+    "traits": "",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_29a248ddb29e",
+    "species": "양서종",
+    "name": "자보아자길",
+    "materialName": "괴상어",
+    "materialJa": "化け鮫",
+    "weakspots": {
+      "cut": "배",
+      "impact": "배",
+      "shot": "배"
+    },
+    "elements": {
+      "fire": "○",
+      "water": "×",
+      "thunder": "○",
+      "ice": "×",
+      "dragon": "▲"
+    },
+    "ailments": {
+      "poison": "◎",
+      "sleep": "○",
+      "paralysis": "○",
+      "blast": "△"
+    },
+    "traps": {
+      "pitfall": "○",
+      "shock": "○",
+      "flash": "○",
+      "sonic": "×",
+      "meat": "×"
+    },
+    "special": {
+      "roar": "대",
+      "wind": "－",
+      "tremor": "○",
+      "bind": "○"
+    },
+    "traits": "얼음, 눈사람상태",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_9e327e259893",
+    "species": "양서종",
+    "name": "자보아자길 아종",
+    "materialName": "호상어",
+    "materialJa": "虎鮫",
+    "weakspots": {
+      "cut": "배",
+      "impact": "배",
+      "shot": "배"
+    },
+    "elements": {
+      "fire": "▲",
+      "water": "×",
+      "thunder": "○",
+      "ice": "◎",
+      "dragon": "▲"
+    },
+    "ailments": {
+      "poison": "◎",
+      "sleep": "○",
+      "paralysis": "△",
+      "blast": "△"
+    },
+    "traps": {
+      "pitfall": "○",
+      "shock": "○",
+      "flash": "○",
+      "sonic": "×",
+      "meat": "×"
+    },
+    "special": {
+      "roar": "대",
+      "wind": "－",
+      "tremor": "○",
+      "bind": "○"
+    },
+    "traits": "",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_1fc09bb9ad41",
+    "species": "사룡종",
+    "name": "가라라아자라",
+    "materialName": "교사룡",
+    "materialJa": "絞蛇 竜",
+    "weakspots": {
+      "cut": "머리",
+      "impact": "머리",
+      "shot": "머리"
+    },
+    "elements": {
+      "fire": "△",
+      "water": "○",
+      "thunder": "△",
+      "ice": "◎",
+      "dragon": "▲"
+    },
+    "ailments": {
+      "poison": "△",
+      "sleep": "○",
+      "paralysis": "△",
+      "blast": "○"
+    },
+    "traps": {
+      "pitfall": "○",
+      "shock": "○",
+      "flash": "○",
+      "sonic": "×",
+      "meat": "△"
+    },
+    "special": {
+      "roar": "대",
+      "wind": "－",
+      "tremor": "-",
+      "bind": "○"
+    },
+    "traits": "마비, 기절",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_29c487f90914",
+    "species": "사룡종",
+    "name": "가라라아자라 아종",
+    "materialName": "수사룡",
+    "materialJa": "水蛇 竜",
+    "weakspots": {
+      "cut": "앞발",
+      "impact": "앞발",
+      "shot": "앞발"
+    },
+    "elements": {
+      "fire": "◎",
+      "water": "△",
+      "thunder": "▲",
+      "ice": "×",
+      "dragon": "△"
+    },
+    "ailments": {
+      "poison": "△",
+      "sleep": "○",
+      "paralysis": "△",
+      "blast": "○"
+    },
+    "traps": {
+      "pitfall": "○",
+      "shock": "○",
+      "flash": "○",
+      "sonic": "×",
+      "meat": "△"
+    },
+    "special": {
+      "roar": "대",
+      "wind": "－",
+      "tremor": "-",
+      "bind": "○"
+    },
+    "traits": "마비, 기절, 물",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_836ee95f0ec6",
+    "species": "수룡종",
+    "name": "브라키디오스",
+    "materialName": "쇄룡",
+    "materialJa": "砕竜",
+    "weakspots": {
+      "cut": "머리",
+      "impact": "머리",
+      "shot": "머리"
+    },
+    "elements": {
+      "fire": "×",
+      "water": "○",
+      "thunder": "▲",
+      "ice": "△",
+      "dragon": "▲"
+    },
+    "ailments": {
+      "poison": "△",
+      "sleep": "○",
+      "paralysis": "○",
+      "blast": "△"
+    },
+    "traps": {
+      "pitfall": "○",
+      "shock": "○",
+      "flash": "○",
+      "sonic": "×",
+      "meat": "×"
+    },
+    "special": {
+      "roar": "소",
+      "wind": "－",
+      "tremor": "－",
+      "bind": "－"
+    },
+    "traits": "폭발",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_4668124f544d",
+    "species": "수룡종",
+    "name": "임계 브라키디오스",
+    "materialName": "쇄룡",
+    "materialJa": "砕竜",
+    "weakspots": {
+      "cut": "머리",
+      "impact": "머리",
+      "shot": "꼬리"
+    },
+    "elements": {
+      "fire": "×",
+      "water": "△",
+      "thunder": "▲",
+      "ice": "○",
+      "dragon": "▲"
+    },
+    "ailments": {
+      "poison": "△",
+      "sleep": "○",
+      "paralysis": "○",
+      "blast": "△"
+    },
+    "traps": {
+      "pitfall": "×",
+      "shock": "×",
+      "flash": "○",
+      "sonic": "×",
+      "meat": "×"
+    },
+    "special": {
+      "roar": "대",
+      "wind": "－",
+      "tremor": "－",
+      "bind": "－"
+    },
+    "traits": "폭발",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_5256532a45a4",
+    "species": "수룡종",
+    "name": "이블조",
+    "materialName": "공폭룡",
+    "materialJa": "恐暴 竜",
+    "weakspots": {
+      "cut": "머리",
+      "impact": "머리",
+      "shot": "머리"
+    },
+    "elements": {
+      "fire": "△",
+      "water": "△",
+      "thunder": "○",
+      "ice": "△",
+      "dragon": "○"
+    },
+    "ailments": {
+      "poison": "◎",
+      "sleep": "△",
+      "paralysis": "△",
+      "blast": "○"
+    },
+    "traps": {
+      "pitfall": "○",
+      "shock": "○",
+      "flash": "○",
+      "sonic": "×",
+      "meat": "○"
+    },
+    "special": {
+      "roar": "대",
+      "wind": "－",
+      "tremor": "○",
+      "bind": "○"
+    },
+    "traits": "용, 방어다운, @4",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_7f7c2c902368",
+    "species": "수룡종",
+    "name": "광폭 이블조",
+    "materialName": "공폭룡",
+    "materialJa": "恐暴 竜",
+    "weakspots": {
+      "cut": "흉부",
+      "impact": "흉부",
+      "shot": "흉부"
+    },
+    "elements": {
+      "fire": "○",
+      "water": "○",
+      "thunder": "◎",
+      "ice": "○",
+      "dragon": "○"
+    },
+    "ailments": {
+      "poison": "◎",
+      "sleep": "△",
+      "paralysis": "△",
+      "blast": "○"
+    },
+    "traps": {
+      "pitfall": "○",
+      "shock": "○",
+      "flash": "○",
+      "sonic": "×",
+      "meat": "○"
+    },
+    "special": {
+      "roar": "대",
+      "wind": "－",
+      "tremor": "○",
+      "bind": "○"
+    },
+    "traits": "용, 방어다운, @4",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_04b2a735f5f0",
+    "species": "비룡종",
+    "name": "푸루푸루",
+    "materialName": "-",
+    "materialJa": "-",
+    "weakspots": {
+      "cut": "목",
+      "impact": "머리",
+      "shot": "머리"
+    },
+    "elements": {
+      "fire": "◎",
+      "water": "▲",
+      "thunder": "×",
+      "ice": "▲",
+      "dragon": "▲"
+    },
+    "ailments": {
+      "poison": "○",
+      "sleep": "◎",
+      "paralysis": "△",
+      "blast": "○"
+    },
+    "traps": {
+      "pitfall": "○",
+      "shock": "○",
+      "flash": "×",
+      "sonic": "×",
+      "meat": "×"
+    },
+    "special": {
+      "roar": "대",
+      "wind": "소",
+      "tremor": "－",
+      "bind": "○"
+    },
+    "traits": "번개, 마비",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_ea8ac9827112",
+    "species": "비룡종",
+    "name": "푸루푸루 아종",
+    "materialName": "-",
+    "materialJa": "-",
+    "weakspots": {
+      "cut": "목",
+      "impact": "머리",
+      "shot": "머리"
+    },
+    "elements": {
+      "fire": "▲",
+      "water": "◎",
+      "thunder": "×",
+      "ice": "▲",
+      "dragon": "▲"
+    },
+    "ailments": {
+      "poison": "○",
+      "sleep": "◎",
+      "paralysis": "△",
+      "blast": "○"
+    },
+    "traps": {
+      "pitfall": "○",
+      "shock": "○",
+      "flash": "×",
+      "sonic": "×",
+      "meat": "×"
+    },
+    "special": {
+      "roar": "대",
+      "wind": "소",
+      "tremor": "－",
+      "bind": "○"
+    },
+    "traits": "번개, 마비",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_85fcc1c0a529",
+    "species": "비룡종",
+    "name": "바살모스",
+    "materialName": "암룡",
+    "materialJa": "岩 竜",
+    "weakspots": {
+      "cut": "배",
+      "impact": "배",
+      "shot": "배"
+    },
+    "elements": {
+      "fire": "▲",
+      "water": "△",
+      "thunder": "▲",
+      "ice": "▲",
+      "dragon": "△"
+    },
+    "ailments": {
+      "poison": "◎",
+      "sleep": "◎",
+      "paralysis": "◎",
+      "blast": "○"
+    },
+    "traps": {
+      "pitfall": "○",
+      "shock": "○",
+      "flash": "○",
+      "sonic": "×",
+      "meat": "×"
+    },
+    "special": {
+      "roar": "@1",
+      "wind": "－",
+      "tremor": "○",
+      "bind": "－"
+    },
+    "traits": "불, 독, 수면",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_e5d10185951f",
+    "species": "비룡종",
+    "name": "바살모스 아종",
+    "materialName": "도암룡",
+    "materialJa": "桃岩 竜",
+    "weakspots": {
+      "cut": "배",
+      "impact": "배",
+      "shot": "배"
+    },
+    "elements": {
+      "fire": "▲",
+      "water": "△",
+      "thunder": "▲",
+      "ice": "△",
+      "dragon": "▲"
+    },
+    "ailments": {
+      "poison": "◎",
+      "sleep": "◎",
+      "paralysis": "◎",
+      "blast": "○"
+    },
+    "traps": {
+      "pitfall": "○",
+      "shock": "○",
+      "flash": "○",
+      "sonic": "×",
+      "meat": "×"
+    },
+    "special": {
+      "roar": "@1",
+      "wind": "－",
+      "tremor": "○",
+      "bind": "－"
+    },
+    "traits": "불, 독",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_fa70bc20a669",
+    "species": "비룡종",
+    "name": "그라비모스",
+    "materialName": "개룡",
+    "materialJa": "鎧 竜",
+    "weakspots": {
+      "cut": "배",
+      "impact": "배",
+      "shot": "배"
+    },
+    "elements": {
+      "fire": "×",
+      "water": "◎",
+      "thunder": "▲",
+      "ice": "△",
+      "dragon": "○"
+    },
+    "ailments": {
+      "poison": "○",
+      "sleep": "◎",
+      "paralysis": "◎",
+      "blast": "○"
+    },
+    "traps": {
+      "pitfall": "○",
+      "shock": "○",
+      "flash": "○",
+      "sonic": "×",
+      "meat": "×"
+    },
+    "special": {
+      "roar": "@1",
+      "wind": "-",
+      "tremor": "○",
+      "bind": "－"
+    },
+    "traits": "불, 수면",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_eb863199a36f",
+    "species": "비룡종",
+    "name": "그라비모스 아종",
+    "materialName": "흑개룡",
+    "materialJa": "黒 鎧 竜",
+    "weakspots": {
+      "cut": "배",
+      "impact": "배",
+      "shot": "배"
+    },
+    "elements": {
+      "fire": "×",
+      "water": "◎",
+      "thunder": "▲",
+      "ice": "×",
+      "dragon": "×"
+    },
+    "ailments": {
+      "poison": "○",
+      "sleep": "◎",
+      "paralysis": "◎",
+      "blast": "○"
+    },
+    "traps": {
+      "pitfall": "○",
+      "shock": "○",
+      "flash": "○",
+      "sonic": "×",
+      "meat": "×"
+    },
+    "special": {
+      "roar": "@1",
+      "wind": "-",
+      "tremor": "○",
+      "bind": "－"
+    },
+    "traits": "불, 수면",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_0a437979cefc",
+    "species": "비룡종",
+    "name": "리오레이아",
+    "materialName": "자화룡",
+    "materialJa": "雌火 竜",
+    "weakspots": {
+      "cut": "머리",
+      "impact": "머리",
+      "shot": "머리"
+    },
+    "elements": {
+      "fire": "×",
+      "water": "▲",
+      "thunder": "○",
+      "ice": "▲",
+      "dragon": "◎"
+    },
+    "ailments": {
+      "poison": "△",
+      "sleep": "○",
+      "paralysis": "○",
+      "blast": "○"
+    },
+    "traps": {
+      "pitfall": "○",
+      "shock": "○",
+      "flash": "○",
+      "sonic": "×",
+      "meat": "△"
+    },
+    "special": {
+      "roar": "소",
+      "wind": "대",
+      "tremor": "－",
+      "bind": "○"
+    },
+    "traits": "불, 독",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_074d46bb4fb2",
+    "species": "비룡종",
+    "name": "리오레이아 아종",
+    "materialName": "홍화룡",
+    "materialJa": "桜 火 竜",
+    "weakspots": {
+      "cut": "배",
+      "impact": "다리",
+      "shot": "배"
+    },
+    "elements": {
+      "fire": "×",
+      "water": "▲",
+      "thunder": "○",
+      "ice": "▲",
+      "dragon": "○"
+    },
+    "ailments": {
+      "poison": "△",
+      "sleep": "○",
+      "paralysis": "○",
+      "blast": "○"
+    },
+    "traps": {
+      "pitfall": "○",
+      "shock": "○",
+      "flash": "○",
+      "sonic": "×",
+      "meat": "△"
+    },
+    "special": {
+      "roar": "소",
+      "wind": "대",
+      "tremor": "－",
+      "bind": "○"
+    },
+    "traits": "불, 독",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_573e9e80d879",
+    "species": "비룡종",
+    "name": "리오레이아 희소종",
+    "materialName": "금화룡",
+    "materialJa": "金火 竜",
+    "weakspots": {
+      "cut": "등",
+      "impact": "등",
+      "shot": "다리"
+    },
+    "elements": {
+      "fire": "×",
+      "water": "○",
+      "thunder": "◎",
+      "ice": "▲",
+      "dragon": "×"
+    },
+    "ailments": {
+      "poison": "△",
+      "sleep": "○",
+      "paralysis": "○",
+      "blast": "◎"
+    },
+    "traps": {
+      "pitfall": "○",
+      "shock": "○",
+      "flash": "○",
+      "sonic": "×",
+      "meat": "×"
+    },
+    "special": {
+      "roar": "대",
+      "wind": "대",
+      "tremor": "－",
+      "bind": "○"
+    },
+    "traits": "불, 독",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_4987998fc593",
+    "species": "비룡종",
+    "name": "리오레우스",
+    "materialName": "화룡",
+    "materialJa": "火 竜",
+    "weakspots": {
+      "cut": "머리",
+      "impact": "머리",
+      "shot": "머리"
+    },
+    "elements": {
+      "fire": "×",
+      "water": "▲",
+      "thunder": "○",
+      "ice": "▲",
+      "dragon": "◎"
+    },
+    "ailments": {
+      "poison": "△",
+      "sleep": "○",
+      "paralysis": "○",
+      "blast": "○"
+    },
+    "traps": {
+      "pitfall": "○",
+      "shock": "○",
+      "flash": "○",
+      "sonic": "×",
+      "meat": "△"
+    },
+    "special": {
+      "roar": "소",
+      "wind": "대",
+      "tremor": "－",
+      "bind": "○"
+    },
+    "traits": "불, 독",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_919b97d0f10a",
+    "species": "비룡종",
+    "name": "리오레우스 아종",
+    "materialName": "창화룡",
+    "materialJa": "蒼火 竜",
+    "weakspots": {
+      "cut": "머리",
+      "impact": "머리",
+      "shot": "배"
+    },
+    "elements": {
+      "fire": "×",
+      "water": "▲",
+      "thunder": "▲",
+      "ice": "○",
+      "dragon": "◎"
+    },
+    "ailments": {
+      "poison": "△",
+      "sleep": "○",
+      "paralysis": "○",
+      "blast": "○"
+    },
+    "traps": {
+      "pitfall": "○",
+      "shock": "○",
+      "flash": "○",
+      "sonic": "×",
+      "meat": "△"
+    },
+    "special": {
+      "roar": "소",
+      "wind": "대",
+      "tremor": "－",
+      "bind": "○"
+    },
+    "traits": "불, 독",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_fcaa117bd72e",
+    "species": "비룡종",
+    "name": "리오레우스 희소종",
+    "materialName": "은화룡",
+    "materialJa": "銀火 竜",
+    "weakspots": {
+      "cut": "등",
+      "impact": "등",
+      "shot": "다리"
+    },
+    "elements": {
+      "fire": "×",
+      "water": "◎",
+      "thunder": "◎",
+      "ice": "○",
+      "dragon": "×"
+    },
+    "ailments": {
+      "poison": "△",
+      "sleep": "○",
+      "paralysis": "○",
+      "blast": "◎"
+    },
+    "traps": {
+      "pitfall": "○",
+      "shock": "○",
+      "flash": "○",
+      "sonic": "×",
+      "meat": "×"
+    },
+    "special": {
+      "roar": "대",
+      "wind": "대",
+      "tremor": "－",
+      "bind": "○"
+    },
+    "traits": "불, 독",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_38986e1e13fb",
+    "species": "비룡종",
+    "name": "티가렉스",
+    "materialName": "굉룡",
+    "materialJa": "轟 竜",
+    "weakspots": {
+      "cut": "머리",
+      "impact": "머리",
+      "shot": "머리"
+    },
+    "elements": {
+      "fire": "×",
+      "water": "△",
+      "thunder": "○",
+      "ice": "▲",
+      "dragon": "△"
+    },
+    "ailments": {
+      "poison": "◎",
+      "sleep": "○",
+      "paralysis": "○",
+      "blast": "○"
+    },
+    "traps": {
+      "pitfall": "○",
+      "shock": "○",
+      "flash": "○",
+      "sonic": "×",
+      "meat": "○"
+    },
+    "special": {
+      "roar": "대",
+      "wind": "대",
+      "tremor": "-",
+      "bind": "-"
+    },
+    "traits": "@4",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_1b5ef2a7a699",
+    "species": "비룡종",
+    "name": "티가렉스 아종",
+    "materialName": "흑굉룡",
+    "materialJa": "黒 轟 竜",
+    "weakspots": {
+      "cut": "머리",
+      "impact": "머리",
+      "shot": "머리"
+    },
+    "elements": {
+      "fire": "×",
+      "water": "○",
+      "thunder": "△",
+      "ice": "△",
+      "dragon": "△"
+    },
+    "ailments": {
+      "poison": "◎",
+      "sleep": "○",
+      "paralysis": "○",
+      "blast": "○"
+    },
+    "traps": {
+      "pitfall": "○",
+      "shock": "○",
+      "flash": "○",
+      "sonic": "×",
+      "meat": "○"
+    },
+    "special": {
+      "roar": "대",
+      "wind": "대",
+      "tremor": "-",
+      "bind": "-"
+    },
+    "traits": "@4",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_3233eb8b7b15",
+    "species": "비룡종",
+    "name": "티가렉스 희소종",
+    "materialName": "대굉룡",
+    "materialJa": "大轟 竜",
+    "weakspots": {
+      "cut": "꼬리",
+      "impact": "꼬리",
+      "shot": "꼬리"
+    },
+    "elements": {
+      "fire": "×",
+      "water": "○",
+      "thunder": "▲",
+      "ice": "△",
+      "dragon": "▲"
+    },
+    "ailments": {
+      "poison": "○",
+      "sleep": "△",
+      "paralysis": "△",
+      "blast": "△"
+    },
+    "traps": {
+      "pitfall": "○",
+      "shock": "○",
+      "flash": "○",
+      "sonic": "×",
+      "meat": "×"
+    },
+    "special": {
+      "roar": "대",
+      "wind": "대",
+      "tremor": "-",
+      "bind": "-"
+    },
+    "traits": "폭발",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_ff9d2a8a319c",
+    "species": "비룡종",
+    "name": "모노블로스",
+    "materialName": "일각룡",
+    "materialJa": "一角 竜",
+    "weakspots": {
+      "cut": "꼬리",
+      "impact": "목",
+      "shot": "꼬리"
+    },
+    "elements": {
+      "fire": "▲",
+      "water": "×",
+      "thunder": "○",
+      "ice": "○",
+      "dragon": "×"
+    },
+    "ailments": {
+      "poison": "○",
+      "sleep": "○",
+      "paralysis": "◎",
+      "blast": "◎"
+    },
+    "traps": {
+      "pitfall": "○",
+      "shock": "○",
+      "flash": "○",
+      "sonic": "○",
+      "meat": "×"
+    },
+    "special": {
+      "roar": "대",
+      "wind": "대",
+      "tremor": "○",
+      "bind": "-"
+    },
+    "traits": "",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_82779af5a16a",
+    "species": "비룡종",
+    "name": "모노블로스 아종",
+    "materialName": "백일각룡",
+    "materialJa": "白一角 竜",
+    "weakspots": {
+      "cut": "꼬리",
+      "impact": "목",
+      "shot": "꼬리"
+    },
+    "elements": {
+      "fire": "▲",
+      "water": "×",
+      "thunder": "○",
+      "ice": "○",
+      "dragon": "×"
+    },
+    "ailments": {
+      "poison": "○",
+      "sleep": "○",
+      "paralysis": "◎",
+      "blast": "◎"
+    },
+    "traps": {
+      "pitfall": "○",
+      "shock": "○",
+      "flash": "○",
+      "sonic": "○",
+      "meat": "×"
+    },
+    "special": {
+      "roar": "대",
+      "wind": "대",
+      "tremor": "○",
+      "bind": "-"
+    },
+    "traits": "",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_321e6889c047",
+    "species": "비룡종",
+    "name": "디아블로스",
+    "materialName": "각룡",
+    "materialJa": "角 竜",
+    "weakspots": {
+      "cut": "배",
+      "impact": "배",
+      "shot": "꼬리"
+    },
+    "elements": {
+      "fire": "▲",
+      "water": "△",
+      "thunder": "△",
+      "ice": "○",
+      "dragon": "△"
+    },
+    "ailments": {
+      "poison": "◎",
+      "sleep": "○",
+      "paralysis": "◎",
+      "blast": "◎"
+    },
+    "traps": {
+      "pitfall": "○",
+      "shock": "○",
+      "flash": "○",
+      "sonic": "○",
+      "meat": "×"
+    },
+    "special": {
+      "roar": "대",
+      "wind": "대",
+      "tremor": "-",
+      "bind": "-"
+    },
+    "traits": "",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_d6784e726b19",
+    "species": "비룡종",
+    "name": "디아블로스 아종",
+    "materialName": "흑각룡",
+    "materialJa": "黒角竜",
+    "weakspots": {
+      "cut": "배",
+      "impact": "배",
+      "shot": "꼬리"
+    },
+    "elements": {
+      "fire": "▲",
+      "water": "△",
+      "thunder": "△",
+      "ice": "○",
+      "dragon": "△"
+    },
+    "ailments": {
+      "poison": "◎",
+      "sleep": "○",
+      "paralysis": "◎",
+      "blast": "◎"
+    },
+    "traps": {
+      "pitfall": "○",
+      "shock": "○",
+      "flash": "○",
+      "sonic": "○",
+      "meat": "×"
+    },
+    "special": {
+      "roar": "대",
+      "wind": "대",
+      "tremor": "-",
+      "bind": "-"
+    },
+    "traits": "",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_749d9a97f1ed",
+    "species": "비룡종",
+    "name": "셀레기오스",
+    "materialName": "천인룡",
+    "materialJa": "千刃 竜",
+    "weakspots": {
+      "cut": "배",
+      "impact": "배",
+      "shot": "배"
+    },
+    "elements": {
+      "fire": "▲",
+      "water": "▲",
+      "thunder": "○",
+      "ice": "△",
+      "dragon": "▲"
+    },
+    "ailments": {
+      "poison": "△",
+      "sleep": "○",
+      "paralysis": "○",
+      "blast": "○"
+    },
+    "traps": {
+      "pitfall": "○",
+      "shock": "○",
+      "flash": "○",
+      "sonic": "×",
+      "meat": "△"
+    },
+    "special": {
+      "roar": "소",
+      "wind": "-",
+      "tremor": "-",
+      "bind": "○"
+    },
+    "traits": "열상",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_08adaa2710ea",
+    "species": "비룡종",
+    "name": "아캄토름",
+    "materialName": "패룡",
+    "materialJa": "覇 竜",
+    "weakspots": {
+      "cut": "머리",
+      "impact": "머리",
+      "shot": "머리"
+    },
+    "elements": {
+      "fire": "×",
+      "water": "△",
+      "thunder": "○",
+      "ice": "×",
+      "dragon": "◎"
+    },
+    "ailments": {
+      "poison": "△",
+      "sleep": "△",
+      "paralysis": "△",
+      "blast": "○"
+    },
+    "traps": {
+      "pitfall": "×",
+      "shock": "×",
+      "flash": "○",
+      "sonic": "△",
+      "meat": "×"
+    },
+    "special": {
+      "roar": "대",
+      "wind": "-",
+      "tremor": "○",
+      "bind": "○"
+    },
+    "traits": "불, 용, 방어다운",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_26ee0bc57b51",
+    "species": "비룡종",
+    "name": "우캄루바스",
+    "materialName": "붕룡",
+    "materialJa": "崩 竜",
+    "weakspots": {
+      "cut": "머리",
+      "impact": "배",
+      "shot": "머리"
+    },
+    "elements": {
+      "fire": "○",
+      "water": "▲",
+      "thunder": "○",
+      "ice": "×",
+      "dragon": "△"
+    },
+    "ailments": {
+      "poison": "△",
+      "sleep": "△",
+      "paralysis": "△",
+      "blast": "○"
+    },
+    "traps": {
+      "pitfall": "×",
+      "shock": "×",
+      "flash": "×",
+      "sonic": "○",
+      "meat": "×"
+    },
+    "special": {
+      "roar": "대",
+      "wind": "-",
+      "tremor": "○",
+      "bind": "-"
+    },
+    "traits": "불, 용, 방어다운",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_714e59cec38c",
+    "species": "아룡종",
+    "name": "진오우거",
+    "materialName": "뇌랑룡",
+    "materialJa": "雷狼 竜",
+    "weakspots": {
+      "cut": "머리",
+      "impact": "머리",
+      "shot": "머리"
+    },
+    "elements": {
+      "fire": "△",
+      "water": "○",
+      "thunder": "×",
+      "ice": "○",
+      "dragon": "▲"
+    },
+    "ailments": {
+      "poison": "○",
+      "sleep": "△",
+      "paralysis": "△",
+      "blast": "◎"
+    },
+    "traps": {
+      "pitfall": "○",
+      "shock": "△",
+      "flash": "○",
+      "sonic": "×",
+      "meat": "×"
+    },
+    "special": {
+      "roar": "소",
+      "wind": "대",
+      "tremor": "－",
+      "bind": "○"
+    },
+    "traits": "번개",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_c7cfbdbf07a7",
+    "species": "아룡종",
+    "name": "진오우거 아종",
+    "materialName": "옥랑룡",
+    "materialJa": "獄狼 竜",
+    "weakspots": {
+      "cut": "머리",
+      "impact": "머리",
+      "shot": "머리"
+    },
+    "elements": {
+      "fire": "▲",
+      "water": "○",
+      "thunder": "○",
+      "ice": "△",
+      "dragon": "×"
+    },
+    "ailments": {
+      "poison": "○",
+      "sleep": "△",
+      "paralysis": "△",
+      "blast": "◎"
+    },
+    "traps": {
+      "pitfall": "○",
+      "shock": "○",
+      "flash": "○",
+      "sonic": "×",
+      "meat": "×"
+    },
+    "special": {
+      "roar": "소",
+      "wind": "대",
+      "tremor": "－",
+      "bind": "○"
+    },
+    "traits": "용",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_d25a2a548008",
+    "species": "고룡종",
+    "name": "키린",
+    "materialName": "-",
+    "materialJa": "-",
+    "weakspots": {
+      "cut": "머리",
+      "impact": "머리",
+      "shot": "머리"
+    },
+    "elements": {
+      "fire": "△",
+      "water": "△",
+      "thunder": "×",
+      "ice": "▲",
+      "dragon": "▲"
+    },
+    "ailments": {
+      "poison": "△",
+      "sleep": "◎",
+      "paralysis": "×",
+      "blast": "○"
+    },
+    "traps": {
+      "pitfall": "×",
+      "shock": "×",
+      "flash": "×",
+      "sonic": "×",
+      "meat": "×"
+    },
+    "special": {
+      "roar": "－",
+      "wind": "－",
+      "tremor": "－",
+      "bind": "－"
+    },
+    "traits": "번개, 마비",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_1d8445bb59ea",
+    "species": "고룡종",
+    "name": "키린 아종",
+    "materialName": "-",
+    "materialJa": "-",
+    "weakspots": {
+      "cut": "머리",
+      "impact": "머리",
+      "shot": "머리"
+    },
+    "elements": {
+      "fire": "△",
+      "water": "△",
+      "thunder": "▲",
+      "ice": "×",
+      "dragon": "▲"
+    },
+    "ailments": {
+      "poison": "△",
+      "sleep": "◎",
+      "paralysis": "×",
+      "blast": "○"
+    },
+    "traps": {
+      "pitfall": "×",
+      "shock": "×",
+      "flash": "×",
+      "sonic": "×",
+      "meat": "×"
+    },
+    "special": {
+      "roar": "－",
+      "wind": "－",
+      "tremor": "－",
+      "bind": "－"
+    },
+    "traits": "얼음",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_40f881ac5baa",
+    "species": "고룡종",
+    "name": "샤가르마가라",
+    "materialName": "천회룡",
+    "materialJa": "天廻龍",
+    "weakspots": {
+      "cut": "머리",
+      "impact": "머리",
+      "shot": "머리"
+    },
+    "elements": {
+      "fire": "◎",
+      "water": "×",
+      "thunder": "△",
+      "ice": "▲",
+      "dragon": "◎"
+    },
+    "ailments": {
+      "poison": "○",
+      "sleep": "△",
+      "paralysis": "○",
+      "blast": "◎"
+    },
+    "traps": {
+      "pitfall": "×",
+      "shock": "×",
+      "flash": "○",
+      "sonic": "×",
+      "meat": "×"
+    },
+    "special": {
+      "roar": "대",
+      "wind": "－",
+      "tremor": "○",
+      "bind": "○"
+    },
+    "traits": "지진, 광룡",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_610734916c89",
+    "species": "고룡종",
+    "name": "크샬다오라",
+    "materialName": "강룡",
+    "materialJa": "鋼龍",
+    "weakspots": {
+      "cut": "머리",
+      "impact": "배",
+      "shot": "머리"
+    },
+    "elements": {
+      "fire": "▲",
+      "water": "▲",
+      "thunder": "◎",
+      "ice": "×",
+      "dragon": "◎"
+    },
+    "ailments": {
+      "poison": "◎",
+      "sleep": "◎",
+      "paralysis": "○",
+      "blast": "◎"
+    },
+    "traps": {
+      "pitfall": "×",
+      "shock": "×",
+      "flash": "○",
+      "sonic": "×",
+      "meat": "×"
+    },
+    "special": {
+      "roar": "소",
+      "wind": "용",
+      "tremor": "－",
+      "bind": "－"
+    },
+    "traits": "얼음, 눈사람",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_ff0a7a4c8d9d",
+    "species": "고룡종",
+    "name": "녹슨크샬다오라",
+    "materialName": "풍상룡",
+    "materialJa": "風翔龍",
+    "weakspots": {
+      "cut": "머리",
+      "impact": "배",
+      "shot": "머리"
+    },
+    "elements": {
+      "fire": "▲",
+      "water": "◎",
+      "thunder": "▲",
+      "ice": "×",
+      "dragon": "◎"
+    },
+    "ailments": {
+      "poison": "◎",
+      "sleep": "◎",
+      "paralysis": "○",
+      "blast": "◎"
+    },
+    "traps": {
+      "pitfall": "×",
+      "shock": "×",
+      "flash": "○",
+      "sonic": "×",
+      "meat": "×"
+    },
+    "special": {
+      "roar": "소",
+      "wind": "용",
+      "tremor": "－",
+      "bind": "－"
+    },
+    "traits": "얼음, 눈사람",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_65eb49a7b36b",
+    "species": "고룡종",
+    "name": "테오·테스카토르",
+    "materialName": "염왕룡",
+    "materialJa": "炎王龍",
+    "weakspots": {
+      "cut": "머리",
+      "impact": "머리",
+      "shot": "꼬리"
+    },
+    "elements": {
+      "fire": "×",
+      "water": "○",
+      "thunder": "▲",
+      "ice": "○",
+      "dragon": "◎"
+    },
+    "ailments": {
+      "poison": "○",
+      "sleep": "○",
+      "paralysis": "△",
+      "blast": "△"
+    },
+    "traps": {
+      "pitfall": "×",
+      "shock": "×",
+      "flash": "○",
+      "sonic": "×",
+      "meat": "×"
+    },
+    "special": {
+      "roar": "소",
+      "wind": "용",
+      "tremor": "-",
+      "bind": "-"
+    },
+    "traits": "불, 기절, 폭발, 분진(열)",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_425a7cfad71b",
+    "species": "고룡종",
+    "name": "오나즈치",
+    "materialName": "하룡",
+    "materialJa": "霞龍",
+    "weakspots": {
+      "cut": "머리",
+      "impact": "머리",
+      "shot": "머리"
+    },
+    "elements": {
+      "fire": "◎",
+      "water": "×",
+      "thunder": "△",
+      "ice": "×",
+      "dragon": "○"
+    },
+    "ailments": {
+      "poison": "△",
+      "sleep": "△",
+      "paralysis": "△",
+      "blast": "○"
+    },
+    "traps": {
+      "pitfall": "×",
+      "shock": "×",
+      "flash": "○",
+      "sonic": "×",
+      "meat": "×"
+    },
+    "special": {
+      "roar": "-",
+      "wind": "대",
+      "tremor": "-",
+      "bind": "-"
+    },
+    "traits": "독",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_be54494a9c03",
+    "species": "고룡종",
+    "name": "다렌·모란",
+    "materialName": "호산룡",
+    "materialJa": "豪山龍",
+    "weakspots": {
+      "cut": "-",
+      "impact": "-",
+      "shot": "-"
+    },
+    "elements": {
+      "fire": "×",
+      "water": "▲",
+      "thunder": "○",
+      "ice": "×",
+      "dragon": "○"
+    },
+    "ailments": {
+      "poison": "×",
+      "sleep": "×",
+      "paralysis": "×",
+      "blast": "○"
+    },
+    "traps": {
+      "pitfall": "×",
+      "shock": "×",
+      "flash": "×",
+      "sonic": "×",
+      "meat": "×"
+    },
+    "special": {
+      "roar": "대",
+      "wind": "-",
+      "tremor": "○",
+      "bind": "-"
+    },
+    "traits": "물",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_409708ecde3b",
+    "species": "고룡종",
+    "name": "다라·아마듈라",
+    "materialName": "사왕룡",
+    "materialJa": "蛇王龍",
+    "weakspots": {
+      "cut": "머리",
+      "impact": "머리",
+      "shot": "머리"
+    },
+    "elements": {
+      "fire": "▲",
+      "water": "▲",
+      "thunder": "○",
+      "ice": "○",
+      "dragon": "◎"
+    },
+    "ailments": {
+      "poison": "×",
+      "sleep": "×",
+      "paralysis": "×",
+      "blast": "○"
+    },
+    "traps": {
+      "pitfall": "×",
+      "shock": "×",
+      "flash": "×",
+      "sonic": "×",
+      "meat": "×"
+    },
+    "special": {
+      "roar": "대",
+      "wind": "-",
+      "tremor": "-",
+      "bind": "-"
+    },
+    "traits": "분진(열)",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_fd07105d4890",
+    "species": "고룡종",
+    "name": "다라·아마듈라 아종",
+    "materialName": "사제룡",
+    "materialJa": "蛇帝龍",
+    "weakspots": {
+      "cut": "머리",
+      "impact": "머리",
+      "shot": "머리"
+    },
+    "elements": {
+      "fire": "▲",
+      "water": "▲",
+      "thunder": "○",
+      "ice": "○",
+      "dragon": "◎"
+    },
+    "ailments": {
+      "poison": "×",
+      "sleep": "×",
+      "paralysis": "×",
+      "blast": "○"
+    },
+    "traps": {
+      "pitfall": "×",
+      "shock": "×",
+      "flash": "×",
+      "sonic": "×",
+      "meat": "×"
+    },
+    "special": {
+      "roar": "대",
+      "wind": "-",
+      "tremor": "-",
+      "bind": "-"
+    },
+    "traits": "분진(열)",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_f6da870b0ad3",
+    "species": "고룡종",
+    "name": "고그마지오스",
+    "materialName": "거극룡",
+    "materialJa": "巨戟龍",
+    "weakspots": {
+      "cut": "머리",
+      "impact": "머리",
+      "shot": "머리"
+    },
+    "elements": {
+      "fire": "◎",
+      "water": "▲",
+      "thunder": "△",
+      "ice": "▲",
+      "dragon": "◎"
+    },
+    "ailments": {
+      "poison": "×",
+      "sleep": "×",
+      "paralysis": "×",
+      "blast": "○"
+    },
+    "traps": {
+      "pitfall": "×",
+      "shock": "×",
+      "flash": "×",
+      "sonic": "×",
+      "meat": "×"
+    },
+    "special": {
+      "roar": "대",
+      "wind": "－",
+      "tremor": "－",
+      "bind": "－"
+    },
+    "traits": "중류, 불",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_c28a3c80b825",
+    "species": "?",
+    "name": "고어·마가라",
+    "materialName": "흑식룡",
+    "materialJa": "黒 蝕 竜",
+    "weakspots": {
+      "cut": "머리",
+      "impact": "머리",
+      "shot": "머리"
+    },
+    "elements": {
+      "fire": "◎",
+      "water": "×",
+      "thunder": "△",
+      "ice": "▲",
+      "dragon": "▲"
+    },
+    "ailments": {
+      "poison": "◎",
+      "sleep": "△",
+      "paralysis": "○",
+      "blast": "○"
+    },
+    "traps": {
+      "pitfall": "○",
+      "shock": "○",
+      "flash": "×",
+      "sonic": "×",
+      "meat": "×"
+    },
+    "special": {
+      "roar": "대",
+      "wind": "대",
+      "tremor": "○",
+      "bind": "○"
+    },
+    "traits": "광룡상태",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_e9a394deb403",
+    "species": "?",
+    "name": "혼돈의 고어·마가라",
+    "materialName": "흑식룡",
+    "materialJa": "黒 蝕 竜",
+    "weakspots": {
+      "cut": "머리",
+      "impact": "머리",
+      "shot": "머리"
+    },
+    "elements": {
+      "fire": "◎",
+      "water": "×",
+      "thunder": "△",
+      "ice": "▲",
+      "dragon": "◎"
+    },
+    "ailments": {
+      "poison": "◎",
+      "sleep": "△",
+      "paralysis": "○",
+      "blast": "○"
+    },
+    "traps": {
+      "pitfall": "○",
+      "shock": "○",
+      "flash": "×",
+      "sonic": "×",
+      "meat": "×"
+    },
+    "special": {
+      "roar": "대",
+      "wind": "대",
+      "tremor": "○",
+      "bind": "○"
+    },
+    "traits": "광룡상태",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_0168790e9024",
+    "species": "고룡종",
+    "name": "밀라보레아스",
+    "materialName": "흑룡",
+    "materialJa": "黒 龍",
+    "weakspots": {
+      "cut": "머리",
+      "impact": "머리",
+      "shot": "머리"
+    },
+    "elements": {
+      "fire": "△",
+      "water": "×",
+      "thunder": "△",
+      "ice": "×",
+      "dragon": "◎"
+    },
+    "ailments": {
+      "poison": "△",
+      "sleep": "△",
+      "paralysis": "△",
+      "blast": "△"
+    },
+    "traps": {
+      "pitfall": "×",
+      "shock": "×",
+      "flash": "×",
+      "sonic": "×",
+      "meat": "×"
+    },
+    "special": {
+      "roar": "대",
+      "wind": "대",
+      "tremor": "○",
+      "bind": "－"
+    },
+    "traits": "불, 폭발",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_237f47a54bf5",
+    "species": "고룡종",
+    "name": "밀라보레아스 (조룡)",
+    "materialName": "조룡",
+    "materialJa": "祖龍",
+    "weakspots": {
+      "cut": "머리",
+      "impact": "머리",
+      "shot": "머리"
+    },
+    "elements": {
+      "fire": "△",
+      "water": "×",
+      "thunder": "△",
+      "ice": "×",
+      "dragon": "◎"
+    },
+    "ailments": {
+      "poison": "?",
+      "sleep": "?",
+      "paralysis": "?",
+      "blast": "?"
+    },
+    "traps": {
+      "pitfall": "×",
+      "shock": "×",
+      "flash": "×",
+      "sonic": "×",
+      "meat": "×"
+    },
+    "special": {
+      "roar": "대",
+      "wind": "대",
+      "tremor": "○",
+      "bind": "－"
+    },
+    "traits": "?",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_a569b811a29b",
+    "species": "고룡종",
+    "name": "밀라보레아스 (홍룡)",
+    "materialName": "흑룡",
+    "materialJa": "黒 龍",
+    "weakspots": {
+      "cut": "머리",
+      "impact": "머리",
+      "shot": "머리"
+    },
+    "elements": {
+      "fire": "×",
+      "water": "△",
+      "thunder": "△",
+      "ice": "×",
+      "dragon": "◎"
+    },
+    "ailments": {
+      "poison": "△",
+      "sleep": "△",
+      "paralysis": "△",
+      "blast": "△"
+    },
+    "traps": {
+      "pitfall": "×",
+      "shock": "×",
+      "flash": "×",
+      "sonic": "×",
+      "meat": "×"
+    },
+    "special": {
+      "roar": "대",
+      "wind": "대",
+      "tremor": "○",
+      "bind": "－"
+    },
+    "traits": "불, 폭발",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_77906b127b97",
+    "species": "고룡종",
+    "name": "밀라보레아스 (홍염룡)",
+    "materialName": "흑룡",
+    "materialJa": "黒 龍",
+    "weakspots": {
+      "cut": "머리",
+      "impact": "머리",
+      "shot": "머리"
+    },
+    "elements": {
+      "fire": "×",
+      "water": "△",
+      "thunder": "△",
+      "ice": "×",
+      "dragon": "◎"
+    },
+    "ailments": {
+      "poison": "?",
+      "sleep": "?",
+      "paralysis": "?",
+      "blast": "?"
+    },
+    "traps": {
+      "pitfall": "×",
+      "shock": "×",
+      "flash": "×",
+      "sonic": "×",
+      "meat": "×"
+    },
+    "special": {
+      "roar": "대",
+      "wind": "대",
+      "tremor": "○",
+      "bind": "－"
+    },
+    "traits": "?",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_ef059c27f26d",
+    "species": "@1 : 발견시 포효만 대, 그 외에는 소.",
+    "name": "@1 : 발견시 포효만 대, 그 외에는 소.",
+    "materialName": "@1 : 발견시 포효만 대, 그 외에는 소.",
+    "materialJa": "@1 : 발견시 포효만 대, 그 외에는 소.",
+    "weakspots": {
+      "cut": "@1 : 발견시 포효만 대, 그 외에는 소.",
+      "impact": "@1 : 발견시 포효만 대, 그 외에는 소.",
+      "shot": "@1 : 발견시 포효만 대, 그 외에는 소."
+    },
+    "elements": {
+      "fire": "@1 : 발견시 포효만 대, 그 외에는 소.",
+      "water": "@1 : 발견시 포효만 대, 그 외에는 소.",
+      "thunder": "@1 : 발견시 포효만 대, 그 외에는 소.",
+      "ice": "@1 : 발견시 포효만 대, 그 외에는 소.",
+      "dragon": "@1 : 발견시 포효만 대, 그 외에는 소."
+    },
+    "ailments": {
+      "poison": "@1 : 발견시 포효만 대, 그 외에는 소.",
+      "sleep": "@1 : 발견시 포효만 대, 그 외에는 소.",
+      "paralysis": "@1 : 발견시 포효만 대, 그 외에는 소.",
+      "blast": "@1 : 발견시 포효만 대, 그 외에는 소."
+    },
+    "traps": {
+      "pitfall": "@1 : 발견시 포효만 대, 그 외에는 소.",
+      "shock": "@1 : 발견시 포효만 대, 그 외에는 소.",
+      "flash": "@1 : 발견시 포효만 대, 그 외에는 소.",
+      "sonic": "@1 : 발견시 포효만 대, 그 외에는 소.",
+      "meat": "@1 : 발견시 포효만 대, 그 외에는 소."
+    },
+    "special": {
+      "roar": "@1 : 발견시 포효만 대, 그 외에는 소.",
+      "wind": "@1 : 발견시 포효만 대, 그 외에는 소.",
+      "tremor": "@1 : 발견시 포효만 대, 그 외에는 소.",
+      "bind": "@1 : 발견시 포효만 대, 그 외에는 소."
+    },
+    "traits": "@1 : 발견시 포효만 대, 그 외에는 소.",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_e8752f306372",
+    "species": "@2 : 탑승중의 표효는 탑승하고 있는 헌터에게만 포효(대) 가 적용. 그 외에는 소",
+    "name": "@2 : 탑승중의 표효는 탑승하고 있는 헌터에게만 포효(대) 가 적용. 그 외에는 소",
+    "materialName": "@2 : 탑승중의 표효는 탑승하고 있는 헌터에게만 포효(대) 가 적용. 그 외에는 소",
+    "materialJa": "@2 : 탑승중의 표효는 탑승하고 있는 헌터에게만 포효(대) 가 적용. 그 외에는 소",
+    "weakspots": {
+      "cut": "@2 : 탑승중의 표효는 탑승하고 있는 헌터에게만 포효(대) 가 적용. 그 외에는 소",
+      "impact": "@2 : 탑승중의 표효는 탑승하고 있는 헌터에게만 포효(대) 가 적용. 그 외에는 소",
+      "shot": "@2 : 탑승중의 표효는 탑승하고 있는 헌터에게만 포효(대) 가 적용. 그 외에는 소"
+    },
+    "elements": {
+      "fire": "@2 : 탑승중의 표효는 탑승하고 있는 헌터에게만 포효(대) 가 적용. 그 외에는 소",
+      "water": "@2 : 탑승중의 표효는 탑승하고 있는 헌터에게만 포효(대) 가 적용. 그 외에는 소",
+      "thunder": "@2 : 탑승중의 표효는 탑승하고 있는 헌터에게만 포효(대) 가 적용. 그 외에는 소",
+      "ice": "@2 : 탑승중의 표효는 탑승하고 있는 헌터에게만 포효(대) 가 적용. 그 외에는 소",
+      "dragon": "@2 : 탑승중의 표효는 탑승하고 있는 헌터에게만 포효(대) 가 적용. 그 외에는 소"
+    },
+    "ailments": {
+      "poison": "@2 : 탑승중의 표효는 탑승하고 있는 헌터에게만 포효(대) 가 적용. 그 외에는 소",
+      "sleep": "@2 : 탑승중의 표효는 탑승하고 있는 헌터에게만 포효(대) 가 적용. 그 외에는 소",
+      "paralysis": "@2 : 탑승중의 표효는 탑승하고 있는 헌터에게만 포효(대) 가 적용. 그 외에는 소",
+      "blast": "@2 : 탑승중의 표효는 탑승하고 있는 헌터에게만 포효(대) 가 적용. 그 외에는 소"
+    },
+    "traps": {
+      "pitfall": "@2 : 탑승중의 표효는 탑승하고 있는 헌터에게만 포효(대) 가 적용. 그 외에는 소",
+      "shock": "@2 : 탑승중의 표효는 탑승하고 있는 헌터에게만 포효(대) 가 적용. 그 외에는 소",
+      "flash": "@2 : 탑승중의 표효는 탑승하고 있는 헌터에게만 포효(대) 가 적용. 그 외에는 소",
+      "sonic": "@2 : 탑승중의 표효는 탑승하고 있는 헌터에게만 포효(대) 가 적용. 그 외에는 소",
+      "meat": "@2 : 탑승중의 표효는 탑승하고 있는 헌터에게만 포효(대) 가 적용. 그 외에는 소"
+    },
+    "special": {
+      "roar": "@2 : 탑승중의 표효는 탑승하고 있는 헌터에게만 포효(대) 가 적용. 그 외에는 소",
+      "wind": "@2 : 탑승중의 표효는 탑승하고 있는 헌터에게만 포효(대) 가 적용. 그 외에는 소",
+      "tremor": "@2 : 탑승중의 표효는 탑승하고 있는 헌터에게만 포효(대) 가 적용. 그 외에는 소",
+      "bind": "@2 : 탑승중의 표효는 탑승하고 있는 헌터에게만 포효(대) 가 적용. 그 외에는 소"
+    },
+    "traits": "@2 : 탑승중의 표효는 탑승하고 있는 헌터에게만 포효(대) 가 적용. 그 외에는 소",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_0d4961fa502b",
+    "species": "@3 : 하얗게 되었을때의 꼬리",
+    "name": "@3 : 하얗게 되었을때의 꼬리",
+    "materialName": "@3 : 하얗게 되었을때의 꼬리",
+    "materialJa": "@3 : 하얗게 되었을때의 꼬리",
+    "weakspots": {
+      "cut": "@3 : 하얗게 되었을때의 꼬리",
+      "impact": "@3 : 하얗게 되었을때의 꼬리",
+      "shot": "@3 : 하얗게 되었을때의 꼬리"
+    },
+    "elements": {
+      "fire": "@3 : 하얗게 되었을때의 꼬리",
+      "water": "@3 : 하얗게 되었을때의 꼬리",
+      "thunder": "@3 : 하얗게 되었을때의 꼬리",
+      "ice": "@3 : 하얗게 되었을때의 꼬리",
+      "dragon": "@3 : 하얗게 되었을때의 꼬리"
+    },
+    "ailments": {
+      "poison": "@3 : 하얗게 되었을때의 꼬리",
+      "sleep": "@3 : 하얗게 되었을때의 꼬리",
+      "paralysis": "@3 : 하얗게 되었을때의 꼬리",
+      "blast": "@3 : 하얗게 되었을때의 꼬리"
+    },
+    "traps": {
+      "pitfall": "@3 : 하얗게 되었을때의 꼬리",
+      "shock": "@3 : 하얗게 되었을때의 꼬리",
+      "flash": "@3 : 하얗게 되었을때의 꼬리",
+      "sonic": "@3 : 하얗게 되었을때의 꼬리",
+      "meat": "@3 : 하얗게 되었을때의 꼬리"
+    },
+    "special": {
+      "roar": "@3 : 하얗게 되었을때의 꼬리",
+      "wind": "@3 : 하얗게 되었을때의 꼬리",
+      "tremor": "@3 : 하얗게 되었을때의 꼬리",
+      "bind": "@3 : 하얗게 되었을때의 꼬리"
+    },
+    "traits": "@3 : 하얗게 되었을때의 꼬리",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  },
+  {
+    "id": "monster_0414bead2da7",
+    "species": "@4 : 이블조, 광폭 이블조, 티가렉스, 티가렉스 아종의 바위날리기 시, 특정 지형에 따라 해당 지역의 속성 공격이 추가된다.",
+    "name": "@4 : 이블조, 광폭 이블조, 티가렉스, 티가렉스 아종의 바위날리기 시, 특정 지형에 따라 해당 지역의 속성 공격이 추가된다.",
+    "materialName": "@4 : 이블조, 광폭 이블조, 티가렉스, 티가렉스 아종의 바위날리기 시, 특정 지형에 따라 해당 지역의 속성 공격이 추가된다.",
+    "materialJa": "@4 : 이블조, 광폭 이블조, 티가렉스, 티가렉스 아종의 바위날리기 시, 특정 지형에 따라 해당 지역의 속성 공격이 추가된다.",
+    "weakspots": {
+      "cut": "@4 : 이블조, 광폭 이블조, 티가렉스, 티가렉스 아종의 바위날리기 시, 특정 지형에 따라 해당 지역의 속성 공격이 추가된다.",
+      "impact": "@4 : 이블조, 광폭 이블조, 티가렉스, 티가렉스 아종의 바위날리기 시, 특정 지형에 따라 해당 지역의 속성 공격이 추가된다.",
+      "shot": "@4 : 이블조, 광폭 이블조, 티가렉스, 티가렉스 아종의 바위날리기 시, 특정 지형에 따라 해당 지역의 속성 공격이 추가된다."
+    },
+    "elements": {
+      "fire": "@4 : 이블조, 광폭 이블조, 티가렉스, 티가렉스 아종의 바위날리기 시, 특정 지형에 따라 해당 지역의 속성 공격이 추가된다.",
+      "water": "@4 : 이블조, 광폭 이블조, 티가렉스, 티가렉스 아종의 바위날리기 시, 특정 지형에 따라 해당 지역의 속성 공격이 추가된다.",
+      "thunder": "@4 : 이블조, 광폭 이블조, 티가렉스, 티가렉스 아종의 바위날리기 시, 특정 지형에 따라 해당 지역의 속성 공격이 추가된다.",
+      "ice": "@4 : 이블조, 광폭 이블조, 티가렉스, 티가렉스 아종의 바위날리기 시, 특정 지형에 따라 해당 지역의 속성 공격이 추가된다.",
+      "dragon": "@4 : 이블조, 광폭 이블조, 티가렉스, 티가렉스 아종의 바위날리기 시, 특정 지형에 따라 해당 지역의 속성 공격이 추가된다."
+    },
+    "ailments": {
+      "poison": "@4 : 이블조, 광폭 이블조, 티가렉스, 티가렉스 아종의 바위날리기 시, 특정 지형에 따라 해당 지역의 속성 공격이 추가된다.",
+      "sleep": "@4 : 이블조, 광폭 이블조, 티가렉스, 티가렉스 아종의 바위날리기 시, 특정 지형에 따라 해당 지역의 속성 공격이 추가된다.",
+      "paralysis": "@4 : 이블조, 광폭 이블조, 티가렉스, 티가렉스 아종의 바위날리기 시, 특정 지형에 따라 해당 지역의 속성 공격이 추가된다.",
+      "blast": "@4 : 이블조, 광폭 이블조, 티가렉스, 티가렉스 아종의 바위날리기 시, 특정 지형에 따라 해당 지역의 속성 공격이 추가된다."
+    },
+    "traps": {
+      "pitfall": "@4 : 이블조, 광폭 이블조, 티가렉스, 티가렉스 아종의 바위날리기 시, 특정 지형에 따라 해당 지역의 속성 공격이 추가된다.",
+      "shock": "@4 : 이블조, 광폭 이블조, 티가렉스, 티가렉스 아종의 바위날리기 시, 특정 지형에 따라 해당 지역의 속성 공격이 추가된다.",
+      "flash": "@4 : 이블조, 광폭 이블조, 티가렉스, 티가렉스 아종의 바위날리기 시, 특정 지형에 따라 해당 지역의 속성 공격이 추가된다.",
+      "sonic": "@4 : 이블조, 광폭 이블조, 티가렉스, 티가렉스 아종의 바위날리기 시, 특정 지형에 따라 해당 지역의 속성 공격이 추가된다.",
+      "meat": "@4 : 이블조, 광폭 이블조, 티가렉스, 티가렉스 아종의 바위날리기 시, 특정 지형에 따라 해당 지역의 속성 공격이 추가된다."
+    },
+    "special": {
+      "roar": "@4 : 이블조, 광폭 이블조, 티가렉스, 티가렉스 아종의 바위날리기 시, 특정 지형에 따라 해당 지역의 속성 공격이 추가된다.",
+      "wind": "@4 : 이블조, 광폭 이블조, 티가렉스, 티가렉스 아종의 바위날리기 시, 특정 지형에 따라 해당 지역의 속성 공격이 추가된다.",
+      "tremor": "@4 : 이블조, 광폭 이블조, 티가렉스, 티가렉스 아종의 바위날리기 시, 특정 지형에 따라 해당 지역의 속성 공격이 추가된다.",
+      "bind": "@4 : 이블조, 광폭 이블조, 티가렉스, 티가렉스 아종의 바위날리기 시, 특정 지형에 따라 해당 지역의 속성 공격이 추가된다."
+    },
+    "traits": "@4 : 이블조, 광폭 이블조, 티가렉스, 티가렉스 아종의 바위날리기 시, 특정 지형에 따라 해당 지역의 속성 공격이 추가된다.",
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm"
+  }
+]

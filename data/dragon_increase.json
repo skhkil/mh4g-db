@@ -1,0 +1,432 @@
+[
+  {
+    "id": "increase_0508e760e330",
+    "market": "폿케마을 농장",
+    "name": "약초",
+    "nameJa": "薬 草",
+    "rare": 1,
+    "successRate": "95%",
+    "points": "5",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/increase.htm"
+  },
+  {
+    "id": "increase_697b8dcce585",
+    "market": "폿케마을 농장",
+    "name": "해독초",
+    "nameJa": "げどく草",
+    "rare": 1,
+    "successRate": "95%",
+    "points": "5",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/increase.htm"
+  },
+  {
+    "id": "increase_0619c87ccb46",
+    "market": "폿케마을 농장",
+    "name": "넝쿨의 잎",
+    "nameJa": "ツタの葉",
+    "rare": 1,
+    "successRate": "95%",
+    "points": "10",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/increase.htm"
+  },
+  {
+    "id": "increase_b37fa051df7b",
+    "market": "폿케마을 농장",
+    "name": "수면초",
+    "nameJa": "ネムリ草",
+    "rare": 1,
+    "successRate": "95%",
+    "points": "10",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/increase.htm"
+  },
+  {
+    "id": "increase_92dd0615331b",
+    "market": "폿케마을 농장",
+    "name": "접착초",
+    "nameJa": "ネンチャク草",
+    "rare": 1,
+    "successRate": "95%",
+    "points": "10",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/increase.htm"
+  },
+  {
+    "id": "increase_8f97ee229500",
+    "market": "폿케마을 농장",
+    "name": "페인트열매",
+    "nameJa": "ペイントの 実",
+    "rare": 1,
+    "successRate": "95%",
+    "points": "10",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/increase.htm"
+  },
+  {
+    "id": "increase_0023024a4338",
+    "market": "폿케마을 농장",
+    "name": "바늘열매",
+    "nameJa": "ハリの 実",
+    "rare": 1,
+    "successRate": "95%",
+    "points": "5",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/increase.htm"
+  },
+  {
+    "id": "increase_d0d1891bbb79",
+    "market": "폿케마을 농장",
+    "name": "관통열매",
+    "nameJa": "ツラヌキの 実",
+    "rare": 1,
+    "successRate": "95%",
+    "points": "10",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/increase.htm"
+  },
+  {
+    "id": "increase_33da77e7da63",
+    "market": "폿케마을 농장",
+    "name": "아이룰루",
+    "nameJa": "マタタビ",
+    "rare": 1,
+    "successRate": "95%",
+    "points": "5",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/increase.htm"
+  },
+  {
+    "id": "increase_007868a4b960",
+    "market": "폿케마을 농장",
+    "name": "화약초",
+    "nameJa": "火 薬 草",
+    "rare": 2,
+    "successRate": "80%",
+    "points": "20",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/increase.htm"
+  },
+  {
+    "id": "increase_bbf2cb7c395f",
+    "market": "폿케마을 농장",
+    "name": "괴력씨앗",
+    "nameJa": "怪力の種",
+    "rare": 2,
+    "successRate": "80%",
+    "points": "80",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/increase.htm"
+  },
+  {
+    "id": "increase_34012d6a9182",
+    "market": "폿케마을 농장",
+    "name": "인내씨앗",
+    "nameJa": "忍耐の種",
+    "rare": 2,
+    "successRate": "80%",
+    "points": "80",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/increase.htm"
+  },
+  {
+    "id": "increase_ee8ccd10a8c6",
+    "market": "폿케마을 농장",
+    "name": "지움열매",
+    "nameJa": "ウチケシの 実",
+    "rare": 2,
+    "successRate": "80%",
+    "points": "80",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/increase.htm"
+  },
+  {
+    "id": "increase_d5b0d56a9aa1",
+    "market": "폿케마을 농장",
+    "name": "팍튀호두",
+    "nameJa": "はじけクルミ",
+    "rare": 2,
+    "successRate": "80%",
+    "points": "20",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/increase.htm"
+  },
+  {
+    "id": "increase_7e7e755fe686",
+    "market": "폿케마을 농장",
+    "name": "고추",
+    "nameJa": "トウガラシ",
+    "rare": 2,
+    "successRate": "80%",
+    "points": "10",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/increase.htm"
+  },
+  {
+    "id": "increase_d8c094a38229",
+    "market": "폿케마을 농장",
+    "name": "확산열매",
+    "nameJa": "カクサンの 実",
+    "rare": 2,
+    "successRate": "80%",
+    "points": "20",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/increase.htm"
+  },
+  {
+    "id": "increase_8cbc37083c04",
+    "market": "폿케마을 농장",
+    "name": "용살열매",
+    "nameJa": "龍殺しの 実",
+    "rare": 4,
+    "successRate": "60%",
+    "points": "100",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/increase.htm"
+  },
+  {
+    "id": "increase_1fd5591f04e8",
+    "market": "폿케마을 농장",
+    "name": "낙양초의 뿌리",
+    "nameJa": "落陽草の根",
+    "rare": 2,
+    "successRate": "80%",
+    "points": "20",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/increase.htm"
+  },
+  {
+    "id": "increase_b003d6feebd8",
+    "market": "코코트 버섯마을",
+    "name": "푸른버섯",
+    "nameJa": "アオキノコ",
+    "rare": 2,
+    "successRate": "80%",
+    "points": "5",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/increase.htm"
+  },
+  {
+    "id": "increase_53a0659021d5",
+    "market": "코코트 버섯마을",
+    "name": "니트로버섯",
+    "nameJa": "ニトロダケ",
+    "rare": 2,
+    "successRate": "80%",
+    "points": "20",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/increase.htm"
+  },
+  {
+    "id": "increase_2ac880e0dfb8",
+    "market": "코코트 버섯마을",
+    "name": "독광대버섯",
+    "nameJa": "毒テングダケ",
+    "rare": 2,
+    "successRate": "80%",
+    "points": "10",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/increase.htm"
+  },
+  {
+    "id": "increase_c8a8687e848b",
+    "market": "코코트 버섯마을",
+    "name": "녹초버섯",
+    "nameJa": "クタビレタケ",
+    "rare": 2,
+    "successRate": "80%",
+    "points": "10",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/increase.htm"
+  },
+  {
+    "id": "increase_e43e031588d3",
+    "market": "코코트 버섯마을",
+    "name": "두근두근버섯",
+    "nameJa": "ドキドキノコ",
+    "rare": 3,
+    "successRate": "70%",
+    "points": "30",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/increase.htm"
+  },
+  {
+    "id": "increase_04f5c6b812a2",
+    "market": "코코트 버섯마을",
+    "name": "마비버섯",
+    "nameJa": "マヒダケ",
+    "rare": 3,
+    "successRate": "70%",
+    "points": "20",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/increase.htm"
+  },
+  {
+    "id": "increase_8cc402229369",
+    "market": "코코트 버섯마을",
+    "name": "만드라고라",
+    "nameJa": "マンドラゴラ",
+    "rare": 3,
+    "successRate": "70%",
+    "points": "300",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/increase.htm"
+  },
+  {
+    "id": "increase_1f5bc366cb8b",
+    "market": "모가 양봉장",
+    "name": "폭뚜기",
+    "nameJa": "ボンバッタ",
+    "rare": 1,
+    "successRate": "95%",
+    "points": "10",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/increase.htm"
+  },
+  {
+    "id": "increase_2254bd0efe6e",
+    "market": "모가 양봉장",
+    "name": "씁쓸충",
+    "nameJa": "にが虫",
+    "rare": 1,
+    "successRate": "95%",
+    "points": "20",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/increase.htm"
+  },
+  {
+    "id": "increase_8f12e0023acd",
+    "market": "모가 양봉장",
+    "name": "광충",
+    "nameJa": "光蟲",
+    "rare": 2,
+    "successRate": "80%",
+    "points": "80",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/increase.htm"
+  },
+  {
+    "id": "increase_f538ea2503ae",
+    "market": "모가 양봉장",
+    "name": "벌꿀",
+    "nameJa": "ハチミツ",
+    "rare": 2,
+    "successRate": "80%",
+    "points": "40",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/increase.htm"
+  },
+  {
+    "id": "increase_92d567e1f006",
+    "market": "모가 양봉장",
+    "name": "불사충",
+    "nameJa": "不死虫",
+    "rare": 4,
+    "successRate": "60%",
+    "points": "100",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/increase.htm"
+  },
+  {
+    "id": "increase_22667c21d2d8",
+    "market": "모가 양봉장",
+    "name": "뇌광충",
+    "nameJa": "雷光虫",
+    "rare": 4,
+    "successRate": "60%",
+    "points": "100",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/increase.htm"
+  },
+  {
+    "id": "increase_d1d89a34c4db",
+    "market": "돈도르마 시장",
+    "name": "증강제",
+    "nameJa": "増強剤",
+    "rare": 2,
+    "successRate": "80%",
+    "points": "150",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/increase.htm"
+  },
+  {
+    "id": "increase_ac2fe0557fa2",
+    "market": "돈도르마 시장",
+    "name": "비료옥",
+    "nameJa": "こやし玉",
+    "rare": 2,
+    "successRate": "80%",
+    "points": "150",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/increase.htm"
+  },
+  {
+    "id": "increase_0be691d46a24",
+    "market": "돈도르마 시장",
+    "name": "빈 뼈",
+    "nameJa": "カラ骨",
+    "rare": 2,
+    "successRate": "80%",
+    "points": "20",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/increase.htm"
+  },
+  {
+    "id": "increase_344a71689e8d",
+    "market": "돈도르마 시장",
+    "name": "용의 이빨",
+    "nameJa": "竜 の牙",
+    "rare": 3,
+    "successRate": "70%",
+    "points": "30",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/increase.htm"
+  },
+  {
+    "id": "increase_3190c84b9219",
+    "market": "돈도르마 시장",
+    "name": "용의 발톱",
+    "nameJa": "竜の爪",
+    "rare": 3,
+    "successRate": "70%",
+    "points": "40",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/increase.htm"
+  },
+  {
+    "id": "increase_0d805d5b42f0",
+    "market": "돈도르마 시장",
+    "name": "게네포스 마비이빨",
+    "nameJa": "ゲネポスの麻痺牙",
+    "rare": 4,
+    "successRate": "60%",
+    "points": "100",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/increase.htm"
+  },
+  {
+    "id": "increase_5c4c240bab73",
+    "market": "돈도르마 시장",
+    "name": "이오스 독니",
+    "nameJa": "イ ー オスの毒牙",
+    "rare": 4,
+    "successRate": "60%",
+    "points": "100",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/increase.htm"
+  },
+  {
+    "id": "increase_9040d7ae8aeb",
+    "market": "돈도르마 시장",
+    "name": "※ 충육꿀(화염)",
+    "nameJa": "虫餌 ・ 火炎",
+    "rare": 4,
+    "successRate": "60%",
+    "points": "50",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/increase.htm"
+  },
+  {
+    "id": "increase_7a7ee9056658",
+    "market": "돈도르마 시장",
+    "name": "※ 충육꿀(유수)",
+    "nameJa": "虫餌 ・ 流水",
+    "rare": 4,
+    "successRate": "60%",
+    "points": "50",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/increase.htm"
+  },
+  {
+    "id": "increase_26055f1eae90",
+    "market": "돈도르마 시장",
+    "name": "※ 충육꿀(뇌광)",
+    "nameJa": "虫餌 ・ 雷光",
+    "rare": 4,
+    "successRate": "60%",
+    "points": "50",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/increase.htm"
+  },
+  {
+    "id": "increase_d00daf91021a",
+    "market": "돈도르마 시장",
+    "name": "※ 충육꿀(빙결)",
+    "nameJa": "虫餌 ・ 氷結",
+    "rare": 4,
+    "successRate": "60%",
+    "points": "50",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/increase.htm"
+  },
+  {
+    "id": "increase_5579b7c22fe8",
+    "market": "돈도르마 시장",
+    "name": "※ 충육꿀(파룡)",
+    "nameJa": "虫餌 ・ 破龍",
+    "rare": 4,
+    "successRate": "60%",
+    "points": "50",
+    "source": "https://flashkiller.cafe24.com/mh4g/dragonstore/increase.htm"
+  }
+]

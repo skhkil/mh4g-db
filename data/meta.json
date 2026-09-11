@@ -1,0 +1,33 @@
+{
+  "version": "0.7.1",
+  "demo": false,
+  "source": "https://flashkiller.cafe24.com/mh4g/main.htm",
+  "counts": {
+    "armors": 2876,
+    "armor_sets": 550,
+    "decorations": 199,
+    "skills": 143,
+    "weapons": 2314,
+    "weapon_summary": 117,
+    "melodies": 40,
+    "items": 524,
+    "meals": 84,
+    "monster_summary": 80,
+    "monster_details": 76,
+    "monster_rewards": 4542,
+    "dragon_exchange": 139,
+    "dragon_sell": 49,
+    "dragon_increase": 43,
+    "compositions": 168,
+    "quests": 427
+  },
+  "activationCount": 276,
+  "weaponTreeCount": 302,
+  "sharpnessCount": 1291,
+  "sharpnessConfidence": {
+    "high": 1260,
+    "low": 28,
+    "medium": 3
+  },
+  "note": "실제 MH4G 데이터. 시뮬레이터 세트/파츠/무기 검색은 DB 메뉴의 타입·등급 상태와 독립적으로 동작."
+}
