@@ -1,5 +1,5 @@
-import {loadSimulatorData,loadFullData,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.2";
-import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.2";
+import {loadSimulatorData,loadFullData,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.3";
+import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.3";
 
 let data={skills:[],armors:[],armorSets:[],decorations:[],weapons:[],weaponSummary:[],melodies:[],items:[],meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],siteInfo:{},meta:{}};
 let targets=[];
@@ -812,7 +812,8 @@ function renderSummary(){
   ];
   const sharp=data.weapons.filter(w=>w.sharpness).length,trees=new Set(data.weapons.map(w=>w.tree).filter(Boolean)).size;
   $("#dataSummary").innerHTML=`<div class="summary-list">${vals.map(([n,v])=>`<div class="summary-item"><strong>${Number(v||0).toLocaleString()}</strong><span>${n}</span></div>`).join("")}</div><p class="muted">무기 파생 ${trees.toLocaleString()}개 · 예리도 데이터 ${sharp.toLocaleString()}개 · 수렵피리 음색그룹 ${data.melodies.length.toLocaleString()}개<br>데이터 버전: ${esc(data.meta?.version||"unknown")}<br>원본: ${esc(data.meta?.source||"-")}<br>${esc(data.meta?.note||"")}</p>`;
-  const isDemo=Boolean(data.meta?.demo);$("#datasetBadge").textContent=isDemo?"샘플 데이터":`실데이터 v${data.meta?.version||""}`;$("#datasetBadge").className=`badge ${isDemo?"warning":"good"}`;
+  const badge=$("#datasetBadge");
+  if(badge){const isDemo=Boolean(data.meta?.demo);badge.textContent=isDemo?"샘플 데이터":`실데이터 v${data.meta?.version||""}`;badge.className=`badge ${isDemo?"warning":"good"}`;}
 }
 function updateHeaderFilterVisibility(){
   const typePages=new Set(["simulator","armor","armor-set","weapon"]),rankPages=new Set(["simulator","armor","armor-set","weapon","decoration"]);

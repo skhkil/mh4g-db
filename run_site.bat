@@ -6,5 +6,5 @@ if errorlevel 1 (
   pause
   exit /b 1
 )
-echo Starting MH4G Simulator v0.7.2...
+echo Starting MH4G Simulator v0.7.3...
 python run_site.py
