@@ -1,4 +1,6 @@
-const FILES = {
+const DATA_VERSION = "0.7.2";
+
+const FULL_FILES = {
   skills:"./data/skills.json",
   armors:"./data/armors.json",
   armorSets:"./data/armor_sets.json",
@@ -20,19 +22,60 @@ const FILES = {
   meta:"./data/meta.json"
 };
 
-export async function loadData(){
-  const out={};
-  for(const [k,url] of Object.entries(FILES)){
+// 시뮬레이터 첫 화면에 필요한 필드만 담은 경량 데이터.
+// 전체 DB 화면을 열 때는 FULL_FILES의 원본 JSON을 지연 로딩한다.
+const SIMULATOR_FILES = {
+  skills:"./data/skills.json",
+  armors:"./data/sim_armors.json",
+  armorSets:"./data/sim_armor_sets.json",
+  decorations:"./data/decorations.json",
+  weapons:"./data/sim_weapons.json",
+  meta:"./data/meta.json"
+};
+
+export const FULL_DATA_KEYS = Object.freeze(Object.keys(FULL_FILES));
+const requestCache = new Map();
+
+function emptyValue(key){
+  return (key==="meta"||key==="siteInfo")?{}:[];
+}
+function versioned(url){
+  return `${url}?v=${DATA_VERSION}`;
+}
+async function fetchJson(key,url){
+  const cacheKey=`${key}:${url}`;
+  if(requestCache.has(cacheKey)) return requestCache.get(cacheKey);
+  const promise=(async()=>{
     try{
-      const r=await fetch(url,{cache:"no-store"});
+      // 버전 쿼리로 새 배포는 갱신하고, 같은 버전은 브라우저 캐시를 적극 사용한다.
+      const r=await fetch(versioned(url),{cache:"force-cache"});
       if(!r.ok) throw new Error(`${r.status}`);
-      out[k]=await r.json();
+      return await r.json();
     }catch(e){
       console.error("load failed",url,e);
-      out[k]=(k==="meta"||k==="siteInfo")?{}:[];
+      return emptyValue(key);
     }
-  }
-  return out;
+  })();
+  requestCache.set(cacheKey,promise);
+  return promise;
+}
+async function loadMap(fileMap,keys=Object.keys(fileMap)){
+  const selected=keys.filter(k=>fileMap[k]);
+  const rows=await Promise.all(selected.map(async k=>[k,await fetchJson(k,fileMap[k])]));
+  return Object.fromEntries(rows);
+}
+
+export function loadSimulatorData(){
+  return loadMap(SIMULATOR_FILES);
+}
+
+export function loadFullData(keys=FULL_DATA_KEYS){
+  return loadMap(FULL_FILES,keys);
+}
+
+// 이전 코드 호환용: 인자가 없으면 전체 데이터를 병렬 로딩한다.
+export function loadData(){
+  return loadFullData();
 }
 
 export function classifyImported(name,json){

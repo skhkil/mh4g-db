@@ -1007,6 +1007,22 @@ def derive_melodies(weapons):
             rec["weapons"].append(w["name"])
     return list(groups.values())
 
+SIM_ARMOR_KEYS = ["id","name","nameJa","part","hunterType","rank","defense","slots","torsoUp","resistances","materials","skills"]
+SIM_WEAPON_KEYS = ["id","name","nameJa","weaponType","attack","element","affinity","slots","rank","tree"]
+SIM_ARMOR_SET_KEYS = ["id","name","hunterType","rank","pieces","slots","skills"]
+
+def compact_rows(rows, keys):
+    return [{k: row.get(k) for k in keys} for row in rows]
+
+def write_simulator_compact(target_dir, armors, weapons, armor_sets):
+    compact = {
+        "sim_armors.json": compact_rows(armors, SIM_ARMOR_KEYS),
+        "sim_weapons.json": compact_rows(weapons, SIM_WEAPON_KEYS),
+        "sim_armor_sets.json": compact_rows(armor_sets, SIM_ARMOR_SET_KEYS),
+    }
+    for filename, rows in compact.items():
+        (target_dir / filename).write_text(json.dumps(rows, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+
 def attach_skill_ids(records, skill_defs):
     by_name = {s["name"]:s["id"] for s in skill_defs}
     missing = Counter()
@@ -1075,7 +1091,7 @@ def main():
     armor_rank_counts = dict(Counter(a.get("rank") for a in armors))
     armor_rank_basis_counts = dict(Counter(a.get("rankBasis", "") for a in armors))
     report = {
-        "version":"0.7.1", "counts":counts, "activationCount":activation_count,
+        "version":"0.7.2", "counts":counts, "activationCount":activation_count,
         "weaponTreeCount":weapon_tree_count, "sharpnessCount":sharpness_count, "sharpnessConfidence":sharpness_confidence,
         "torsoUpArmorCount":sum(1 for a in armors if a.get("torsoUp")),
         "armorRankCounts":armor_rank_counts, "armorRankBasisCounts":armor_rank_basis_counts,
@@ -1104,8 +1120,9 @@ def main():
         for name in datasets:
             shutil.copy2(NORMALIZED / f"{name}.json", PROJECT_DATA / f"{name}.json")
         shutil.copy2(NORMALIZED / "site_info.json", PROJECT_DATA / "site_info.json")
+        write_simulator_compact(PROJECT_DATA, armors, weapons, armor_sets)
         meta = {
-            "version":"0.7.1", "demo":False, "source":SOURCE_ROOT + "main.htm",
+            "version":"0.7.2", "demo":False, "source":SOURCE_ROOT + "main.htm",
             "counts":counts, "activationCount":activation_count,
             "weaponTreeCount":weapon_tree_count, "sharpnessCount":sharpness_count, "sharpnessConfidence":sharpness_confidence,
             "note":"사용자 수집본 raw_tables.json을 CP949 복구/정규화해 생성한 실제 MH4G 데이터. RARE4 방어구는 최초 제작 가능 진행도 기준으로 재판정함.",

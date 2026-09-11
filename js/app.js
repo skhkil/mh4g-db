@@ -1,5 +1,5 @@
-import {loadData,classifyImported} from "./data-loader.js?v=0.7.1";
-import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.1";
+import {loadSimulatorData,loadFullData,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.2";
+import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.2";
 
 let data={skills:[],armors:[],armorSets:[],decorations:[],weapons:[],weaponSummary:[],melodies:[],items:[],meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],siteInfo:{},meta:{}};
 let targets=[];
@@ -21,6 +21,19 @@ let monsterView="summary";
 let dragonView="exchange";
 let questView="key";
 
+// v0.7.2: 반복 배열 검색과 옵션 재생성을 줄이기 위한 인덱스/캐시
+let skillById=new Map(),armorById=new Map(),weaponById=new Map(),decorationByIdMap=new Map(),armorSetById=new Map();
+const optionCache={armorByPart:new Map(),weaponByType:new Map(),armorSets:null,skillPicker:null,activation:null,weaponTypes:null};
+function rebuildIndexes(){
+  skillById=new Map((data.skills||[]).map(x=>[x.id,x]));
+  armorById=new Map((data.armors||[]).map(x=>[x.id,x]));
+  weaponById=new Map((data.weapons||[]).map(x=>[x.id,x]));
+  decorationByIdMap=new Map((data.decorations||[]).map(x=>[x.id,x]));
+  armorSetById=new Map((data.armorSets||[]).map(x=>[x.id,x]));
+  optionCache.armorByPart.clear();optionCache.weaponByType.clear();
+  optionCache.armorSets=null;optionCache.skillPicker=null;optionCache.activation=null;optionCache.weaponTypes=null;
+}
+
 const $=s=>document.querySelector(s);
 const $$=s=>[...document.querySelectorAll(s)];
 const esc=s=>String(s??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#039;"}[m]));
@@ -38,7 +51,7 @@ const SKILL_SEARCH_ALIASES={
 };
 function cleanEffectText(text=""){return String(text||"").replace(/�+/g,"·").replace(/\s+/g," ").trim()}
 function shortEffect(text="",max=54){const t=cleanEffectText(text);return t.length>max?t.slice(0,max-1)+"…":t}
-function skillDefinition(id){return data.skills.find(s=>s.id===id)||null}
+function skillDefinition(id){return skillById.get(id)||null}
 function skillName(id){return skillDefinition(id)?.name||id}
 function skillSearchCorpus(skillOrId){
   const s=typeof skillOrId==="string"?skillDefinition(skillOrId):skillOrId;if(!s)return "";
@@ -50,16 +63,20 @@ function decorationSearchCorpus(d){
   return `${d.name||""} ${d.nameJa||""} ${allSkillNames} ${positiveEffects} ${d.materials||""}`;
 }
 function activationOptions(){
+  if(optionCache.activation)return optionCache.activation;
   const rows=[];
   for(const skill of data.skills){
     for(const a of skill.activations||[]){
       if(Number(a.points)>0) rows.push({value:a.id,skillId:skill.id,label:`${a.name} (${a.points}P · ${skill.name})`,name:a.name,points:a.points,category:skill.name,meta:shortEffect(a.description),search:`${skillSearchCorpus(skill)} ${a.name} ${a.points}`});
     }
   }
-  return rows.sort((a,b)=>a.name.localeCompare(b.name,"ko"));
+  optionCache.activation=rows.sort((a,b)=>a.name.localeCompare(b.name,"ko"));
+  return optionCache.activation;
 }
 function skillPickerOptions(){
-  return data.skills.map(s=>({value:s.id,label:s.name,search:skillSearchCorpus(s)})).sort((a,b)=>a.label.localeCompare(b.label,"ko"));
+  if(optionCache.skillPicker)return optionCache.skillPicker;
+  optionCache.skillPicker=data.skills.map(s=>({value:s.id,label:s.name,search:skillSearchCorpus(s)})).sort((a,b)=>a.label.localeCompare(b.label,"ko"));
+  return optionCache.skillPicker;
 }
 function currentSkillStatus(skillId,points){
   const def=skillDefinition(skillId),value=Number(points||0);
@@ -82,6 +99,7 @@ function mountSearchSelect(selector,options,{value="",placeholder="검색 또는
   const root=typeof selector==="string"?$(selector):selector;
   if(!root) return;
   const selected=options.find(o=>o.value===value);
+  for(const o of options) if(!o._searchLower) o._searchLower=`${o.label} ${o.search||""}`.toLowerCase();
   root.innerHTML=`<div class="search-select-control"><input class="search-select-input" autocomplete="off" role="combobox" aria-autocomplete="list" aria-expanded="false" placeholder="${esc(placeholder)}" value="${esc(selected?.label||"")}"/><button type="button" class="search-select-toggle" title="목록 펼치기">⌄</button></div><div class="search-select-menu" role="listbox"></div>`;
   const input=root.querySelector(".search-select-input"),menu=root.querySelector(".search-select-menu"),toggle=root.querySelector(".search-select-toggle");
   root.dataset.value=value||"";
@@ -107,7 +125,7 @@ function mountSearchSelect(selector,options,{value="",placeholder="검색 또는
   const draw=(query="",{preserveHighlight=false}={})=>{
     closePickers(root);
     const q=query.trim().toLowerCase();
-    filtered=options.filter(o=>!q||`${o.label} ${o.search||""}`.toLowerCase().includes(q)).slice(0,120);
+    filtered=options.filter(o=>!q||o._searchLower.includes(q)).slice(0,120);
     menu.innerHTML=`<button type="button" class="search-select-option empty-option" data-value="">${esc(emptyLabel)}</button>`+
       (filtered.length?filtered.map((o,i)=>`<button type="button" class="search-select-option ${o.value===root.dataset.value?"selected":""}" data-value="${esc(o.value)}" data-index="${i}" role="option"><span class="search-select-label">${esc(o.label)}</span>${o.meta?`<small>${esc(o.meta)}</small>`:""}</button>`).join(""):'<div class="search-select-noresult">검색 결과 없음</div>');
     menu.classList.add("open");root.classList.add("open");input.setAttribute('aria-expanded','true');
@@ -174,11 +192,15 @@ function fillSelectors(){
     $("#weaponSummaryType").innerHTML='<option value="all">전체 무기</option>'+WEAPON_TYPES.map(t=>`<option value="${esc(t)}">${esc(t)}</option>`).join("");
     $("#weaponSummaryType").value=WEAPON_TYPES.includes(old)?old:"all";
   }
-  if($("#mealIngredientFilter")){
-    const ingredients=[...new Set(data.meals.flatMap(x=>[x.ingredient1,x.ingredient2]))].filter(Boolean);
-    $("#mealIngredientFilter").innerHTML='<option value="all">전체 식재료</option>'+ingredients.map(x=>`<option value="${esc(x)}">${esc(x)}</option>`).join("");
-  }
+  populateMealIngredientFilter();
   populateMonsterSelect();populateQuestLevels();
+}
+function populateMealIngredientFilter(){
+  const el=$("#mealIngredientFilter");if(!el)return;
+  const old=el.value||"all";
+  const ingredients=[...new Set((data.meals||[]).flatMap(x=>[x.ingredient1,x.ingredient2]))].filter(Boolean);
+  el.innerHTML='<option value="all">전체 식재료</option>'+ingredients.map(x=>`<option value="${esc(x)}">${esc(x)}</option>`).join("");
+  el.value=ingredients.includes(old)?old:"all";
 }
 function charm(){
   const skills={};
@@ -225,21 +247,28 @@ function weaponEligible(w){
   const typeOk=hunter==="both"||(hunter==="gunner"?isRanged:!isRanged);
   return typeOk&&rankEligible(w);
 }
-function selectedArmors(){return PARTS.map(p=>data.armors.find(a=>a.id===uiState.manual[p])).filter(Boolean)}
-function selectedWeapon(){return data.weapons.find(w=>w.id===uiState.manualWeapon)||null}
+function selectedArmors(){return PARTS.map(p=>armorById.get(uiState.manual[p])).filter(Boolean)}
+function selectedWeapon(){return weaponById.get(uiState.manualWeapon)||null}
 // 시뮬레이터는 DB 메뉴의 숨겨진 타입/등급 상태와 완전히 독립적으로 동작한다.
 function armorPickerOptions(part){
-  return data.armors.filter(a=>a.part===part).sort((a,b)=>a.name.localeCompare(b.name,"ko")).map(a=>({value:a.id,label:a.name,meta:`${hunterName(a.hunterType)} · ${rankName(a.rank)} · ${slotsText(a.slots)} · DEF ${a.defense}`,search:`${a.name} ${a.nameJa||""} ${hunterName(a.hunterType)} ${rankName(a.rank)} ${Object.keys(a.skills||{}).map(skillName).join(" ")} ${a.materials||""}`}));
+  if(optionCache.armorByPart.has(part))return optionCache.armorByPart.get(part);
+  const opts=data.armors.filter(a=>a.part===part).sort((a,b)=>a.name.localeCompare(b.name,"ko")).map(a=>({value:a.id,label:a.name,meta:`${hunterName(a.hunterType)} · ${rankName(a.rank)} · ${slotsText(a.slots)} · DEF ${a.defense}`,search:`${a.name} ${a.nameJa||""} ${hunterName(a.hunterType)} ${rankName(a.rank)} ${Object.keys(a.skills||{}).map(skillName).join(" ")} ${a.materials||""}`}));
+  optionCache.armorByPart.set(part,opts);return opts;
 }
 function manualWeaponTypeOptions(){
-  return WEAPON_TYPES.filter(t=>data.weapons.some(w=>w.weaponType===t));
+  if(optionCache.weaponTypes)return optionCache.weaponTypes;
+  optionCache.weaponTypes=WEAPON_TYPES.filter(t=>data.weapons.some(w=>w.weaponType===t));return optionCache.weaponTypes;
 }
 function weaponPickerOptions(){
   const type=uiState.manualWeaponType||"all";
-  return data.weapons.filter(w=>type==="all"||w.weaponType===type).sort((a,b)=>a.weaponType.localeCompare(b.weaponType,"ko")||a.name.localeCompare(b.name,"ko")).map(w=>({value:w.id,label:`[${w.weaponType}] ${w.name}`,meta:`${rankName(w.rank)} · ${slotsText(w.slots)} · ATK ${w.attack??"-"}`,search:`${w.name} ${w.nameJa||""} ${w.weaponType} ${rankName(w.rank)} ${w.tree||""} ${w.element||""}`}));
+  if(optionCache.weaponByType.has(type))return optionCache.weaponByType.get(type);
+  const opts=data.weapons.filter(w=>type==="all"||w.weaponType===type).sort((a,b)=>a.weaponType.localeCompare(b.weaponType,"ko")||a.name.localeCompare(b.name,"ko")).map(w=>({value:w.id,label:`[${w.weaponType}] ${w.name}`,meta:`${rankName(w.rank)} · ${slotsText(w.slots)} · ATK ${w.attack??"-"}`,search:`${w.name} ${w.nameJa||""} ${w.weaponType} ${rankName(w.rank)} ${w.tree||""} ${w.element||""}`}));
+  optionCache.weaponByType.set(type,opts);return opts;
 }
 function armorSetPickerOptions(){
-  return data.armorSets.slice().sort((a,b)=>a.name.localeCompare(b.name,"ko")).map(s=>({value:s.id,label:s.name,meta:`${hunterName(s.hunterType)} · ${rankName(s.rank)} · 슬롯 ${Number(s.slots||0)}칸`,search:`${s.name} ${hunterName(s.hunterType)} ${rankName(s.rank)} ${Object.keys(s.skills||{}).map(skillName).join(" ")}`}));
+  if(optionCache.armorSets)return optionCache.armorSets;
+  optionCache.armorSets=data.armorSets.slice().sort((a,b)=>a.name.localeCompare(b.name,"ko")).map(s=>({value:s.id,label:s.name,meta:`${hunterName(s.hunterType)} · ${rankName(s.rank)} · 슬롯 ${Number(s.slots||0)}칸`,search:`${s.name} ${hunterName(s.hunterType)} ${rankName(s.rank)} ${Object.keys(s.skills||{}).map(skillName).join(" ")}`}));
+  return optionCache.armorSets;
 }
 function simulatorSearchHunterType(){
   const type=selectedWeapon()?.weaponType || (uiState.manualWeaponType!=="all"?uiState.manualWeaponType:"");
@@ -248,9 +277,9 @@ function simulatorSearchHunterType(){
 function containerCapacity(container){
   if(container==="weapon")return Number(selectedWeapon()?.slots||0);
   if(container==="charm")return Number(uiState.charmSlots||0);
-  const a=data.armors.find(x=>x.id===uiState.manual[container]);return Number(a?.slots||0);
+  const a=armorById.get(uiState.manual[container]);return Number(a?.slots||0);
 }
-function decorationById(id){return data.decorations.find(d=>d.id===id)}
+function decorationById(id){return decorationByIdMap.get(id)}
 function skillPointEntries(points={}){
   return Object.entries(points||{}).filter(([,v])=>Number(v)!==0).sort((a,b)=>{
     const dv=Math.abs(Number(b[1]))-Math.abs(Number(a[1]));
@@ -285,7 +314,7 @@ function torsoUpMultiplier(){
 function containerSkillPoints(container,{effective=true}={}){
   let points={};
   if(container==="charm") points={...charm().skills};
-  else if(container!=="weapon") points={...(data.armors.find(a=>a.id===uiState.manual[container])?.skills||{})};
+  else if(container!=="weapon") points={...(armorById.get(uiState.manual[container])?.skills||{})};
   if(effective&&container==="body"){
     const mul=torsoUpMultiplier();
     if(mul>1) points=scalePointMap(points,mul);
@@ -330,12 +359,13 @@ function decoPickerOptions(container){
   const remain=containerCapacity(container)-usedDecorationSlots(container);
   return data.decorations.filter(d=>Number(d.slots||0)>0&&Number(d.slots||0)<=remain).sort((a,b)=>Number(a.slots)-Number(b.slots)||a.name.localeCompare(b.name,"ko")).map(d=>({value:d.id,label:d.name,meta:`${d.slots}칸 · ${Object.entries(d.skills||{}).map(([k,v])=>`${skillName(k)} ${v>0?"+":""}${v}`).join(", ")}`,search:decorationSearchCorpus(d)}));
 }
+function refreshManualContainer(container){mountDecorationEditor(container);refreshManualSkillPointDisplays()}
 function addManualDecoration(container,id){
   if(!id)return;const d=decorationById(id);if(!d)return;
   if(usedDecorationSlots(container)+Number(d.slots||0)>containerCapacity(container))return;
-  uiState.manualDecorations[container].push(id);renderManualSelectors();renderManualResult();
+  uiState.manualDecorations[container].push(id);refreshManualContainer(container);renderManualResult();
 }
-function removeManualDecoration(container,index){uiState.manualDecorations[container].splice(index,1);renderManualSelectors();renderManualResult()}
+function removeManualDecoration(container,index){uiState.manualDecorations[container].splice(index,1);refreshManualContainer(container);renderManualResult()}
 function decorationEditorHtml(container){
   const cap=containerCapacity(container),used=usedDecorationSlots(container),list=uiState.manualDecorations[container]||[];
   const chips=list.map((id,i)=>{const d=decorationById(id);return `<span class="deco-chip">${esc(d?.name||id)} <small>${d?.slots||0}</small><button type="button" data-remove-deco="${container}:${i}">×</button></span>`}).join("");
@@ -349,16 +379,22 @@ function mountDecorationEditor(container){
   if(containerCapacity(container)>usedDecorationSlots(container))mountSearchSelect(`#deco-picker-${container}`,decoPickerOptions(container),{placeholder:"장식주·스킬효과 검색",emptyLabel:"취소",onChange:v=>addManualDecoration(container,v)});
 }
 function applyArmorSet(id){
-  uiState.manualSet=id||"";const set=data.armorSets.find(s=>s.id===id);if(!set){renderManualSelectors();renderManualResult();return}
+  uiState.manualSet=id||"";const set=armorSetById.get(id);if(!set){renderManualSelectors();renderManualResult();return}
   for(const p of PARTS){uiState.manual[p]=set.pieces?.find(x=>x.part===p)?.id||"";uiState.manualDecorations[p]=[]}
   renderManualSelectors();renderManualResult();
 }
 function equipmentCard(label,container,pickerId,extra=""){
   return `<div class="manual-equipment-card"><div class="manual-equipment-main"><span class="equipment-label">${label}</span><div id="${pickerId}" class="search-select"></div>${extra}${skillPointsHtml(containerSkillPoints(container),"equipment-skill-points","스킬 없음",container==="body"&&torsoUpMultiplier()>1?` · 몸통×${torsoUpMultiplier()}`:"")}</div><div id="deco-editor-${container}" class="manual-deco-editor"></div></div>`;
 }
+function mountManualWeaponSearch(){
+  const wopts=weaponPickerOptions();
+  mountSearchSelect("#manual-weapon",wopts,{value:uiState.manualWeapon,placeholder:`무기 검색 (${wopts.length}개)`,emptyLabel:"무기 선택 안 함",onChange:v=>{
+    uiState.manualWeapon=v;uiState.manualDecorations.weapon=[];refreshManualContainer("weapon");renderManualResult();
+  }});
+}
 function renderManualSelectors(){
-  for(const p of PARTS){if(uiState.manual[p]&&!data.armors.some(a=>a.id===uiState.manual[p]&&a.part===p))uiState.manual[p]=""}
-  if(uiState.manualWeapon&&!data.weapons.some(w=>w.id===uiState.manualWeapon&&(uiState.manualWeaponType==="all"||w.weaponType===uiState.manualWeaponType)))uiState.manualWeapon="";
+  for(const p of PARTS){if(uiState.manual[p]&&(!armorById.has(uiState.manual[p])||armorById.get(uiState.manual[p])?.part!==p))uiState.manual[p]=""}
+  if(uiState.manualWeapon&&(!weaponById.has(uiState.manualWeapon)||(uiState.manualWeaponType!=="all"&&selectedWeapon()?.weaponType!==uiState.manualWeaponType)))uiState.manualWeapon="";
   MANUAL_CONTAINERS.forEach(pruneDecorations);
   const setOpts=armorSetPickerOptions();
   if(uiState.manualSet&&!setOpts.some(x=>x.value===uiState.manualSet))uiState.manualSet="";
@@ -381,22 +417,24 @@ function renderManualSelectors(){
       if(current&&uiState.manualWeaponType!=="all"&&current.weaponType!==uiState.manualWeaponType){
         uiState.manualWeapon="";uiState.manualDecorations.weapon=[];
       }
-      renderManualSelectors();renderManualResult();
+      mountManualWeaponSearch();refreshManualContainer("weapon");renderManualResult();
     };
   }
-  const wopts=weaponPickerOptions();
-  mountSearchSelect("#manual-weapon",wopts,{value:uiState.manualWeapon,placeholder:`무기 검색 (${wopts.length}개)`,emptyLabel:"무기 선택 안 함",onChange:v=>{uiState.manualWeapon=v;uiState.manualDecorations.weapon=[];renderManualSelectors();renderManualResult()}});
+  mountManualWeaponSearch();
   for(const p of PARTS){
     const opts=armorPickerOptions(p);
-    mountSearchSelect(`#manual-${p}`,opts,{value:uiState.manual[p],placeholder:`${PART_NAMES[p]} 검색 (${opts.length}개)`,emptyLabel:`선택 안 함 (${opts.length}개)`,onChange:v=>{uiState.manual[p]=v;uiState.manualDecorations[p]=[];renderManualSelectors();renderManualResult()}});
+    mountSearchSelect(`#manual-${p}`,opts,{value:uiState.manual[p],placeholder:`${PART_NAMES[p]} 검색 (${opts.length}개)`,emptyLabel:`선택 안 함 (${opts.length}개)`,onChange:v=>{
+      uiState.manual[p]=v;uiState.manualDecorations[p]=[];refreshManualContainer(p);renderManualResult();
+    }});
   }
   mountSearchSelect("#charmSkill1Picker",skillPickerOptions(),{value:uiState.charmSkill1,placeholder:"스킬 검색",emptyLabel:"없음",onChange:v=>{uiState.charmSkill1=v;renderManualResult()}});
   mountSearchSelect("#charmSkill2Picker",skillPickerOptions(),{value:uiState.charmSkill2,placeholder:"스킬 검색",emptyLabel:"없음",onChange:v=>{uiState.charmSkill2=v;renderManualResult()}});
   $("#charmPoint1").oninput=e=>{uiState.charmPoint1=Number(e.target.value||0);renderManualResult()};
   $("#charmPoint2").oninput=e=>{uiState.charmPoint2=Number(e.target.value||0);renderManualResult()};
-  $("#charmSlots").value=String(uiState.charmSlots||0);$("#charmSlots").onchange=e=>{uiState.charmSlots=Number(e.target.value||0);pruneDecorations("charm");renderManualSelectors();renderManualResult()};
+  $("#charmSlots").value=String(uiState.charmSlots||0);$("#charmSlots").onchange=e=>{uiState.charmSlots=Number(e.target.value||0);pruneDecorations("charm");refreshManualContainer("charm");renderManualResult()};
   MANUAL_CONTAINERS.forEach(mountDecorationEditor);
 }
+
 function renderSkillResult(calc){
   const active=calc.activated.length?calc.activated.map(a=>{const st=currentSkillStatus(a.skillId,a.points);return `<span class="skill-active ${a.threshold<0?"skill-negative":""}" title="${esc(st.effect)}">${esc(a.name)}</span>`}).join(""):'<span class="muted">발동 스킬 없음</span>';
   const rows=Object.entries(calc.points).sort((a,b)=>{
@@ -424,7 +462,7 @@ function manualLoadoutSummary(){
   };
   const gear=[`<div><b>무기</b><span>${esc(w?.name||"-")} ${w?`<small>${slotsText(w.slots)}</small>`:""}</span>${skillCell("weapon")}</div>`];
   for(const p of PARTS){
-    const a=data.armors.find(x=>x.id===uiState.manual[p]);
+    const a=armorById.get(uiState.manual[p]);
     gear.push(`<div><b>${PART_NAMES[p]}</b><span>${esc(a?.name||"-")} ${a?`<small>${slotsText(a.slots)}</small>`:""}</span>${skillCell(p)}</div>`);
   }
   const decoCount=manualDecorationPlacements().length;
@@ -512,7 +550,7 @@ function renderWeaponSubNav(){
   box.innerHTML=types.map(t=>`<button type="button" class="weapon-sub-btn" data-weapon-type="${esc(t)}">${esc(t)}</button>`).join("")+
     `<button type="button" class="weapon-sub-btn sub-special" data-special-page="melody">　┗ 선율표</button>`+
     `<button type="button" class="weapon-sub-btn sub-special" data-special-page="weapon-summary">속성별 무기요약</button>`;
-  box.querySelectorAll('[data-weapon-type]').forEach(b=>b.onclick=e=>{e.stopPropagation();armorViewMode="all";openPage("weapon");$("#weaponTypeFilter").value=b.dataset.weaponType;renderWeaponTreeFilter();renderWeaponTrees();syncWeaponSubActive()});
+  box.querySelectorAll('[data-weapon-type]').forEach(b=>b.onclick=e=>{e.stopPropagation();armorViewMode="all";$("#weaponTypeFilter").value=b.dataset.weaponType;syncWeaponSubActive();openPage("weapon")});
   box.querySelectorAll('[data-special-page]').forEach(b=>b.onclick=e=>{e.stopPropagation();openPage(b.dataset.specialPage)});
 }
 function syncWeaponSubActive(){const t=$("#weaponTypeFilter")?.value||"all";$$('[data-weapon-type]').forEach(b=>b.classList.toggle('active',b.dataset.weaponType===t))}
@@ -781,6 +819,35 @@ function updateHeaderFilterVisibility(){
   $("#hunterTypeWrap").classList.toggle("hidden-filter",!typePages.has(currentPage));
   $("#rankFilterWrap").classList.toggle("hidden-filter",!rankPages.has(currentPage));
 }
+const loadedFullKeys=new Set(["skills","decorations","meta"]);
+let pageLoadToken=0;
+function dataKeysForPage(page){
+  if(page==="source")return ["siteInfo"];
+  if(page==="armor")return ["armors"];
+  if(page==="armor-set")return ["armorSets"];
+  if(page==="weapon")return ["weapons"];
+  if(page==="weapon-summary")return ["weaponSummary"];
+  if(page==="melody")return ["melodies"];
+  if(page==="meal")return ["meals"];
+  if(page==="monster")return monsterView==="summary"?["monsterSummary"]:monsterView==="detail"?["monsterDetails"]:["monsterRewards"];
+  if(page==="dragon")return dragonView==="exchange"?["dragonExchange"]:dragonView==="sell"?["dragonSell"]:["dragonIncrease"];
+  if(page==="item")return ["items"];
+  if(page==="compose")return ["compositions"];
+  if(page==="quest")return ["quests"];
+  if(page==="data")return FULL_DATA_KEYS;
+  return [];
+}
+async function ensureFullData(keys){
+  const missing=[...new Set(keys)].filter(k=>!loadedFullKeys.has(k));
+  if(!missing.length)return false;
+  const patch=await loadFullData(missing);
+  Object.assign(data,patch);missing.forEach(k=>loadedFullKeys.add(k));
+  if(missing.some(k=>["skills","armors","armorSets","decorations","weapons"].includes(k)))rebuildIndexes();
+  if(missing.includes("meals"))populateMealIngredientFilter();
+  if(missing.some(k=>["monsterSummary","monsterDetails","monsterRewards"].includes(k)))populateMonsterSelect();
+  if(missing.includes("quests"))populateQuestLevels();
+  return true;
+}
 function renderPageData(page){
   if(page==="source")renderSourcePage();
   else if(page==="armor")renderArmorTable();
@@ -797,7 +864,7 @@ function renderPageData(page){
   else if(page==="compose")renderCompose();
   else if(page==="quest")renderQuest();
 }
-function openPage(page){
+async function openPage(page){
   currentPage=page;
   $$('.nav-main[data-page]').forEach(x=>x.classList.toggle('active',x.dataset.page===page&&(!x.dataset.sourceView||x.dataset.sourceView===sourceView)));
   $$('.page').forEach(p=>p.classList.remove('active'));
@@ -807,9 +874,18 @@ function openPage(page){
   const title=dynamic||titles[page]||["MH4G DB",""];
   $("#pageTitle").textContent=title[0];$("#pageSubtitle").textContent=title[1];
   updateHeaderFilterVisibility();
+  const token=++pageLoadToken;
+  const keys=dataKeysForPage(page);
+  if(keys.some(k=>!loadedFullKeys.has(k))){
+    $("#pageSubtitle").textContent=`${title[1]} · 데이터 불러오는 중…`;
+    await ensureFullData(keys);
+    if(token!==pageLoadToken||currentPage!==page)return;
+    $("#pageSubtitle").textContent=title[1];
+  }
+  if(page==="data")renderSummary();
   renderPageData(page);
 }
-function renderAll(){fillSelectors();renderSavedBuilds();renderManualSelectors();renderTargets();renderManualResult();renderSummary();updateHeaderFilterVisibility();if(currentPage!=="simulator"&&currentPage!=="data")renderPageData(currentPage)}
+function renderAll(){fillSelectors();renderSavedBuilds();renderManualSelectors();renderTargets();renderManualResult();renderSummary();updateHeaderFilterVisibility()}
 
 function bind(){
   document.addEventListener('click',()=>closePickers());
@@ -832,13 +908,11 @@ function bind(){
   $("#saveBuild").onclick=saveCurrentBuild;$("#loadBuild").onclick=loadSelectedBuild;$("#deleteBuild").onclick=deleteSelectedBuild;$("#savedBuildSelect").onchange=loadSelectedBuild;
 
   $("#hunterType").onchange=()=>{
-    renderManualSelectors();renderManualResult();
     if(currentPage==="armor")renderArmorTable();
     if(currentPage==="armor-set"){renderArmorSetTable();const t=pageTitleForState("armor-set");$("#pageTitle").textContent=t[0]}
     if(currentPage==="weapon"){renderWeaponTreeFilter();renderWeaponTrees()}
   };
   $("#rankFilter").onchange=()=>{
-    renderManualSelectors();renderManualResult();
     if(currentPage==="armor")renderArmorTable();
     if(currentPage==="armor-set")renderArmorSetTable();
     if(currentPage==="weapon"){renderWeaponTreeFilter();renderWeaponTrees()}
@@ -859,7 +933,7 @@ function bind(){
   $("#composeSearch").oninput=renderCompose;
   $("#questSearch").oninput=renderQuest;$("#questLevelFilter").onchange=renderQuest;$("#questKeyOnly").onchange=renderQuest;
 
-  $("#jsonImport").onchange=async e=>{const lines=[];for(const f of e.target.files){try{const json=JSON.parse(await f.text()),type=classifyImported(f.name,json);if(type){data[type]=json;lines.push(`${f.name} → ${type} ${Array.isArray(json)?json.length:"객체"}건`)}else lines.push(`${f.name} → 유형 판별 실패`)}catch{lines.push(`${f.name} → JSON 오류`)}}data.meta={...data.meta,demo:false,version:"browser-import"};$("#importStatus").innerHTML=lines.map(esc).join("<br>");renderAll()};
+  $("#jsonImport").onchange=async e=>{const lines=[];for(const f of e.target.files){try{const json=JSON.parse(await f.text()),type=classifyImported(f.name,json);if(type){data[type]=json;lines.push(`${f.name} → ${type} ${Array.isArray(json)?json.length:"객체"}건`)}else lines.push(`${f.name} → 유형 판별 실패`)}catch{lines.push(`${f.name} → JSON 오류`)}}data.meta={...data.meta,demo:false,version:"browser-import"};rebuildIndexes();$("#importStatus").innerHTML=lines.map(esc).join("<br>");renderAll()};
 }
 
-data=await loadData();bind();renderAll();
+Object.assign(data,await loadSimulatorData());rebuildIndexes();bind();renderAll();

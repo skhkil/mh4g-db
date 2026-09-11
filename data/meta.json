@@ -1,5 +1,5 @@
 {
-  "version": "0.7.1",
+  "version": "0.7.2",
   "demo": false,
   "source": "https://flashkiller.cafe24.com/mh4g/main.htm",
   "counts": {
@@ -29,5 +29,5 @@
     "low": 28,
     "medium": 3
   },
-  "note": "실제 MH4G 데이터. 시뮬레이터 세트/파츠/무기 검색은 DB 메뉴의 타입·등급 상태와 독립적으로 동작."
+  "note": "실제 MH4G 데이터. v0.7.2는 시뮬레이터용 경량 데이터/병렬 로딩/지연 로딩과 검색 인덱스 캐시를 적용."
 }
