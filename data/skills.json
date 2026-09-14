@@ -1867,7 +1867,7 @@
   {
     "id": "skill_725792be8c4d",
     "name": "유탄추가",
-    "nameJa": "徹甲榴弾追加",
+    "nameJa": "榴弾追加",
     "activations": [
       {
         "id": "activation_2e2cbdf141ee",
@@ -2469,7 +2469,7 @@
   {
     "id": "skill_122ffa46b9a4",
     "name": "체술",
-    "nameJa": "気 術",
+    "nameJa": "体術",
     "activations": [
       {
         "id": "activation_85948bb2847c",

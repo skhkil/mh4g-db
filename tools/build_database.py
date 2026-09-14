@@ -1008,7 +1008,7 @@ def derive_melodies(weapons):
             rec["weapons"].append(w["name"])
     return list(groups.values())
 
-SIM_ARMOR_KEYS = ["id","name","nameJa","part","hunterType","rank","defense","slots","torsoUp","resistances","materials","skills"]
+SIM_ARMOR_KEYS = ["id","name","nameJa","nameEn","part","hunterType","rank","defense","slots","torsoUp","resistances","materials","skills"]
 SIM_WEAPON_KEYS = ["id","name","nameJa","weaponType","attack","element","affinity","slots","rank","tree"]
 SIM_ARMOR_SET_KEYS = ["id","name","hunterType","rank","pieces","slots","skills"]
 

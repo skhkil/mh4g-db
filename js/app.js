@@ -252,7 +252,7 @@ function selectedWeapon(){return weaponById.get(uiState.manualWeapon)||null}
 // 시뮬레이터는 DB 메뉴의 숨겨진 타입/등급 상태와 완전히 독립적으로 동작한다.
 function armorPickerOptions(part){
   if(optionCache.armorByPart.has(part))return optionCache.armorByPart.get(part);
-  const opts=data.armors.filter(a=>a.part===part).sort((a,b)=>a.name.localeCompare(b.name,"ko")).map(a=>({value:a.id,label:a.name,meta:`${hunterName(a.hunterType)} · ${rankName(a.rank)} · ${slotsText(a.slots)} · DEF ${a.defense}`,search:`${a.name} ${a.nameJa||""} ${hunterName(a.hunterType)} ${rankName(a.rank)} ${Object.keys(a.skills||{}).map(skillName).join(" ")} ${a.materials||""}`}));
+  const opts=data.armors.filter(a=>a.part===part).sort((a,b)=>a.name.localeCompare(b.name,"ko")).map(a=>{const sub=[a.nameJa,a.nameEn].filter(Boolean).join(" · ");return {value:a.id,label:a.name,meta:`${sub?sub+" · ":""}${hunterName(a.hunterType)} · ${rankName(a.rank)} · ${slotsText(a.slots)} · DEF ${a.defense}`,search:`${a.name} ${a.nameJa||""} ${a.nameEn||""} ${hunterName(a.hunterType)} ${rankName(a.rank)} ${Object.keys(a.skills||{}).map(skillName).join(" ")} ${a.materials||""}`}});
   optionCache.armorByPart.set(part,opts);return opts;
 }
 function manualWeaponTypeOptions(){
@@ -498,9 +498,13 @@ async function runSearch(){
 }
 
 function renderTable(el,headers,rows){$(el).innerHTML=`<table class="data-table"><thead><tr>${headers.map(h=>`<th>${h}</th>`).join("")}</tr></thead><tbody>${rows.length?rows.join(""):`<tr><td colspan="${headers.length}" class="result-empty">검색 결과 없음</td></tr>`}</tbody></table>`}
+function localizedNameSub(x){
+  const names=[x?.nameJa,x?.nameEn].filter(Boolean);
+  return names.length?`<small>${names.map(esc).join(" · ")}</small>`:"";
+}
 function renderArmorTable(){
   const q=$("#armorSearch").value.trim().toLowerCase(),part=$("#armorPartFilter").value;
-  const rows=data.armors.filter(a=>(part==="all"||a.part===part)&&armorEligible(a)&&(armorViewMode!=="other"||(a.source||"").endsWith("/armor/etc.htm"))).filter(a=>!q||`${a.name} ${a.nameJa||""} ${Object.keys(a.skills||{}).map(skillName).join(" ")} ${a.materials||""}`.toLowerCase().includes(q)).map(a=>`<tr><td>${esc(a.name)}</td><td>${hunterName(a.hunterType)}</td><td>${PART_NAMES[a.part]||a.part}</td><td>${a.rare||"-"}</td><td>${a.defense||0} / ${a.maxDefense||a.defense||0}</td><td class="slots">${slotsText(a.slots)}</td><td>${a.torsoUp?"몸통배가":Object.entries(a.skills||{}).map(([k,v])=>`${esc(skillName(k))} ${v>0?"+":""}${v}`).join(", ")}</td><td>${resistText(a.resistances)}</td><td>${rankName(a.rank)}</td></tr>`);
+  const rows=data.armors.filter(a=>(part==="all"||a.part===part)&&armorEligible(a)&&(armorViewMode!=="other"||(a.source||"").endsWith("/armor/etc.htm"))).filter(a=>!q||`${a.name} ${a.nameJa||""} ${a.nameEn||""} ${Object.keys(a.skills||{}).map(skillName).join(" ")} ${a.materials||""}`.toLowerCase().includes(q)).map(a=>`<tr><td><strong>${esc(a.name)}</strong>${localizedNameSub(a)}</td><td>${hunterName(a.hunterType)}</td><td>${PART_NAMES[a.part]||a.part}</td><td>${a.rare||"-"}</td><td>${a.defense||0} / ${a.maxDefense||a.defense||0}</td><td class="slots">${slotsText(a.slots)}</td><td>${a.torsoUp?"몸통배가":Object.entries(a.skills||{}).map(([k,v])=>`${esc(skillName(k))} ${v>0?"+":""}${v}`).join(", ")}</td><td>${resistText(a.resistances)}</td><td>${rankName(a.rank)}</td></tr>`);
   renderTable("#armorTable",["명칭","타입","부위","RARE","방어(초기/최대)","슬롯","스킬","내성","등급"],rows);
 }
 

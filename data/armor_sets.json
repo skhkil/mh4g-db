@@ -2711,7 +2711,7 @@
     "slots": 2,
     "skills": {
       "skill_2a9c189a93d7": -8,
-      "skill_dd358f9bd4d7": 20,
+      "skill_dd358f9bd4d7": 10,
       "skill_63c2bbb3a506": 10,
       "skill_38ca304494f3": 10
     },
@@ -2860,7 +2860,7 @@
     "slots": 5,
     "skills": {
       "skill_2a9c189a93d7": 10,
-      "skill_e43cf9f6c27e": 11,
+      "skill_e43cf9f6c27e": 10,
       "skill_719784872b09": -8,
       "skill_8d7ad8b7839d": 10
     },
@@ -3159,8 +3159,8 @@
     "slots": 5,
     "skills": {
       "skill_2a9c189a93d7": 15,
-      "skill_b98410ce2063": 6,
-      "skill_38ca304494f3": -7,
+      "skill_b98410ce2063": 8,
+      "skill_38ca304494f3": -9,
       "skill_8d7ad8b7839d": 10,
       "skill_dc306dbb4ef6": 4
     },
@@ -3614,7 +3614,7 @@
       "skill_a45ea58ebcb0": 9,
       "skill_b95d60db9423": 10,
       "skill_27df943493ca": 10,
-      "skill_56d47db4267b": -6
+      "skill_56d47db4267b": -10
     },
     "resistances": {
       "fire": 10,
@@ -4573,8 +4573,8 @@
     "resistances": {
       "fire": 15,
       "water": 0,
-      "thunder": 0,
-      "ice": -10,
+      "thunder": -10,
+      "ice": 0,
       "dragon": -20
     }
   },
@@ -5325,7 +5325,7 @@
       "skill_bf24a5d55721": 5,
       "skill_c9fb5f168064": 10,
       "skill_89c345412fe4": 4,
-      "skill_fd6b9f4f574f": 11
+      "skill_fd6b9f4f574f": 10
     },
     "resistances": {
       "fire": 0,
@@ -6585,8 +6585,8 @@
     "resistances": {
       "fire": -20,
       "water": 20,
-      "thunder": 15,
-      "ice": 0,
+      "thunder": 0,
+      "ice": 15,
       "dragon": -30
     }
   },
@@ -6638,8 +6638,8 @@
     "resistances": {
       "fire": -20,
       "water": 20,
-      "thunder": 15,
-      "ice": 0,
+      "thunder": 0,
+      "ice": 15,
       "dragon": -30
     }
   },
@@ -6682,7 +6682,7 @@
     "skills": {
       "skill_d5d5017546d7": 11,
       "skill_a71c734bea26": 10,
-      "skill_410c93e16f86": -7,
+      "skill_410c93e16f86": -8,
       "skill_dc306dbb4ef6": 3
     },
     "resistances": {
@@ -7236,11 +7236,11 @@
     "maxDefense": 510,
     "slots": 7,
     "skills": {
+      "skill_eb815d46e71f": 3,
       "skill_4d4485c17552": 10,
-      "skill_9914f3bb006d": 15,
       "skill_e43cf9f6c27e": -10,
-      "skill_2a9c189a93d7": 10,
-      "skill_eb815d46e71f": 2
+      "skill_9914f3bb006d": 15,
+      "skill_2a9c189a93d7": 10
     },
     "resistances": {
       "fire": 15,
@@ -7294,8 +7294,8 @@
     "resistances": {
       "fire": -15,
       "water": 10,
-      "thunder": -5,
-      "ice": 10,
+      "thunder": 10,
+      "ice": -5,
       "dragon": -30
     }
   },
@@ -7585,7 +7585,7 @@
     ],
     "defense": 340,
     "maxDefense": 505,
-    "slots": 7,
+    "slots": 8,
     "skills": {
       "skill_c9fb5f168064": 4,
       "skill_25c2859f7595": 10,
@@ -7688,7 +7688,7 @@
     ],
     "defense": 420,
     "maxDefense": 525,
-    "slots": 7,
+    "slots": 6,
     "skills": {
       "skill_4d4485c17552": 10,
       "skill_91feda75c5e9": 10,
@@ -7738,7 +7738,7 @@
     ],
     "defense": 420,
     "maxDefense": 525,
-    "slots": 7,
+    "slots": 6,
     "skills": {
       "skill_4d4485c17552": 10,
       "skill_91feda75c5e9": 10,
@@ -8108,8 +8108,8 @@
     "resistances": {
       "fire": 15,
       "water": 5,
-      "thunder": -20,
-      "ice": 0,
+      "thunder": 0,
+      "ice": -20,
       "dragon": -20
     }
   },
@@ -8158,8 +8158,8 @@
     "resistances": {
       "fire": 15,
       "water": 5,
-      "thunder": -20,
-      "ice": 0,
+      "thunder": 0,
+      "ice": -20,
       "dragon": -20
     }
   },
@@ -8351,7 +8351,6 @@
       "skill_ed1944192c5e": 4,
       "skill_a71c734bea26": 10,
       "skill_56899bd6d661": 10,
-      "skill_d419d4fb59a3": 2,
       "skill_77b3da4beed3": 4,
       "skill_1a5ea8610123": 4
     },
@@ -8509,11 +8508,11 @@
     "maxDefense": 430,
     "slots": 7,
     "skills": {
+      "skill_0a0d7a1a0dde": 1,
       "skill_78219e43d710": 15,
       "skill_fd6b9f4f574f": 10,
       "skill_63c2bbb3a506": 10,
-      "skill_9c165ef0be95": -14,
-      "skill_dc306dbb4ef6": 1
+      "skill_9c165ef0be95": -14
     },
     "resistances": {
       "fire": -10,
@@ -8670,7 +8669,7 @@
       "skill_f743b97156ed": 5,
       "skill_0669fcda6735": 2,
       "skill_3ab130560c8a": 2,
-      "skill_3745b2a425cd": 2,
+      "skill_0a0d7a1a0dde": 2,
       "skill_dfbf20468c93": 1,
       "skill_4b980fd1a16e": 2
     },
@@ -11278,10 +11277,10 @@
       "skill_771a2a6d9d1e": 5
     },
     "resistances": {
-      "fire": -20,
-      "water": 15,
-      "thunder": -5,
-      "ice": -15,
+      "fire": -19,
+      "water": 14,
+      "thunder": -8,
+      "ice": -10,
       "dragon": 15
     }
   },
@@ -11330,8 +11329,8 @@
       "skill_78219e43d710": 5
     },
     "resistances": {
-      "fire": 15,
-      "water": -5,
+      "fire": 12,
+      "water": -4,
       "thunder": -15,
       "ice": -20,
       "dragon": 15
@@ -11690,14 +11689,14 @@
       "skill_bbe11654094a": -10,
       "skill_91feda75c5e9": 10,
       "skill_1ae21921a72f": 6,
-      "skill_a3c4d7818b03": 6
+      "skill_a3c4d7818b03": 7
     },
     "resistances": {
       "fire": -25,
       "water": 20,
       "thunder": -15,
       "ice": 10,
-      "dragon": -30
+      "dragon": -20
     }
   },
   {
@@ -13695,10 +13694,10 @@
       "skill_8245ec7f462a": 10
     },
     "resistances": {
-      "fire": -12,
+      "fire": 0,
       "water": -10,
-      "thunder": 12,
-      "ice": 12,
+      "thunder": 0,
+      "ice": 0,
       "dragon": -10
     }
   },
@@ -13847,7 +13846,7 @@
       "skill_0a24dffb8259": -13
     },
     "resistances": {
-      "fire": 6,
+      "fire": 10,
       "water": -35,
       "thunder": -20,
       "ice": 0,
@@ -14402,7 +14401,7 @@
       "fire": 5,
       "water": 5,
       "thunder": 5,
-      "ice": -75,
+      "ice": -15,
       "dragon": 15
     }
   },
@@ -14996,7 +14995,7 @@
       "fire": 15,
       "water": 0,
       "thunder": -5,
-      "ice": -5,
+      "ice": -10,
       "dragon": 15
     }
   },
@@ -15189,13 +15188,13 @@
     "skills": {
       "skill_e2bd81d7e74c": 13,
       "skill_0a24dffb8259": 10,
-      "skill_8d7ad8b7839d": -4
+      "skill_8d7ad8b7839d": -5
     },
     "resistances": {
       "fire": -15,
       "water": 10,
       "thunder": 10,
-      "ice": 10,
+      "ice": 15,
       "dragon": 10
     }
   },
@@ -15337,7 +15336,7 @@
     "skills": {
       "skill_771a2a6d9d1e": 10,
       "skill_4d4485c17552": 10,
-      "skill_9c165ef0be95": -10,
+      "skill_9c165ef0be95": -11,
       "skill_38ca304494f3": 10
     },
     "resistances": {
@@ -15878,7 +15877,7 @@
     ],
     "defense": 60,
     "maxDefense": 260,
-    "slots": 2,
+    "slots": 3,
     "skills": {
       "skill_2a9c189a93d7": 15,
       "skill_b483bb71c31d": 7,
@@ -16131,7 +16130,7 @@
     "maxDefense": 260,
     "slots": 6,
     "skills": {
-      "skill_2a9c189a93d7": 10,
+      "skill_2a9c189a93d7": 11,
       "skill_25c2859f7595": -5,
       "skill_6aac09f1f9a7": 12
     },
@@ -17342,7 +17341,7 @@
       "water": 5,
       "thunder": 5,
       "ice": 5,
-      "dragon": 0
+      "dragon": 15
     }
   },
   {
@@ -17635,7 +17634,7 @@
       "skill_b98410ce2063": 10,
       "skill_32348dadc980": 10,
       "skill_27df943493ca": 10,
-      "skill_8d7ad8b7839d": -5,
+      "skill_8d7ad8b7839d": -7,
       "skill_2a87c14e4abc": 8
     },
     "resistances": {
@@ -18393,7 +18392,7 @@
       "fire": -20,
       "water": 10,
       "thunder": 10,
-      "ice": 10,
+      "ice": 15,
       "dragon": 10
     }
   },
@@ -18534,7 +18533,7 @@
     "maxDefense": 260,
     "slots": 8,
     "skills": {
-      "skill_2d4c948c0c23": -4,
+      "skill_2d4c948c0c23": -6,
       "skill_cb5bba6091b7": 5,
       "skill_e0cef00c6709": 5,
       "skill_d83820844b4d": 10,
@@ -18741,11 +18740,11 @@
     "maxDefense": 265,
     "slots": 8,
     "skills": {
-      "skill_91feda75c5e9": 6,
-      "skill_d2eae745f55d": 10,
+      "skill_91feda75c5e9": 5,
+      "skill_d2eae745f55d": 9,
       "skill_9914f3bb006d": 5,
       "skill_27df943493ca": -12,
-      "skill_a9c0c630697b": 8
+      "skill_a9c0c630697b": 10
     },
     "resistances": {
       "fire": -15,
@@ -19141,7 +19140,7 @@
     ],
     "defense": 145,
     "maxDefense": 320,
-    "slots": 9,
+    "slots": 8,
     "skills": {
       "skill_2a9c189a93d7": 20,
       "skill_05e4b277d6b9": 10,
@@ -19597,8 +19596,8 @@
     "resistances": {
       "fire": 5,
       "water": -15,
-      "thunder": 5,
-      "ice": -20,
+      "thunder": -20,
+      "ice": 5,
       "dragon": 25
     }
   },
@@ -20646,7 +20645,7 @@
     ],
     "defense": 205,
     "maxDefense": 290,
-    "slots": 7,
+    "slots": 8,
     "skills": {
       "skill_aa8a7d803517": 10,
       "skill_36177c02fa41": 10,
@@ -20656,8 +20655,8 @@
     "resistances": {
       "fire": 15,
       "water": -30,
-      "thunder": 5,
-      "ice": -15,
+      "thunder": -15,
+      "ice": 5,
       "dragon": 25
     }
   },
@@ -20958,8 +20957,8 @@
     "resistances": {
       "fire": 20,
       "water": 10,
-      "thunder": -15,
-      "ice": 5,
+      "thunder": 5,
+      "ice": -15,
       "dragon": -15
     }
   },
@@ -21008,8 +21007,8 @@
     "resistances": {
       "fire": 20,
       "water": 10,
-      "thunder": -15,
-      "ice": 5,
+      "thunder": 5,
+      "ice": -15,
       "dragon": -15
     }
   },
@@ -21356,7 +21355,7 @@
     "maxDefense": 290,
     "slots": 6,
     "skills": {
-      "skill_d6ea8f6b4907": 13,
+      "skill_d6ea8f6b4907": 10,
       "skill_c9fb5f168064": 6,
       "skill_2d4c948c0c23": 15,
       "skill_d419d4fb59a3": -9,
@@ -22272,7 +22271,6 @@
       "skill_ed1944192c5e": 4,
       "skill_a71c734bea26": 10,
       "skill_56899bd6d661": 10,
-      "skill_d419d4fb59a3": 2,
       "skill_77b3da4beed3": 4,
       "skill_1a5ea8610123": 4
     },
@@ -22734,11 +22732,11 @@
         "name": "브나하X풋"
       }
     ],
-    "defense": 195,
+    "defense": 190,
     "maxDefense": 195,
     "slots": 5,
     "skills": {
-      "skill_2a9c189a93d7": -10,
+      "skill_2a9c189a93d7": -8,
       "skill_dd358f9bd4d7": 15,
       "skill_63c2bbb3a506": 10,
       "skill_38ca304494f3": 10,
@@ -23861,7 +23859,7 @@
       "skill_c9fb5f168064": 4,
       "skill_a45ea58ebcb0": 15,
       "skill_0a24dffb8259": 10,
-      "skill_6aac09f1f9a7": -9,
+      "skill_6aac09f1f9a7": -8,
       "skill_b483bb71c31d": 15
     },
     "resistances": {
@@ -25099,10 +25097,10 @@
       "skill_2d4c948c0c23": 10
     },
     "resistances": {
-      "fire": -15,
-      "water": 20,
-      "thunder": 0,
-      "ice": -10,
+      "fire": -14,
+      "water": 19,
+      "thunder": -3,
+      "ice": -5,
       "dragon": 20
     }
   },
@@ -25151,8 +25149,8 @@
       "skill_78219e43d710": 5
     },
     "resistances": {
-      "fire": 20,
-      "water": 0,
+      "fire": 17,
+      "water": 1,
       "thunder": -10,
       "ice": -15,
       "dragon": 20
@@ -25518,7 +25516,7 @@
       "water": 25,
       "thunder": -10,
       "ice": 15,
-      "dragon": -25
+      "dragon": -15
     }
   },
   {
@@ -27308,12 +27306,11 @@
     "slots": 8,
     "skills": {
       "skill_4d4485c17552": 15,
-      "skill_cb5bba6091b7": 2,
+      "skill_cb5bba6091b7": 4,
       "skill_96039668e096": 15,
       "skill_bcf68a1ff0a1": -10,
       "skill_91feda75c5e9": 10,
-      "skill_410c93e16f86": 10,
-      "skill_dc306dbb4ef6": 2
+      "skill_410c93e16f86": 10
     },
     "resistances": {
       "fire": 5,
@@ -27358,7 +27355,7 @@
     ],
     "defense": 345,
     "maxDefense": 368,
-    "slots": 10,
+    "slots": 11,
     "skills": {
       "skill_410c93e16f86": -7,
       "skill_91feda75c5e9": 10,
@@ -27519,10 +27516,10 @@
       "skill_c7afd72b9998": 10
     },
     "resistances": {
-      "fire": -7,
+      "fire": 5,
       "water": -5,
-      "thunder": 17,
-      "ice": 17,
+      "thunder": 5,
+      "ice": 5,
       "dragon": -5
     }
   },

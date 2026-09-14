@@ -20,6 +20,15 @@
     "weaponSortPresent": true,
     "weaponFilterHandlersPresent": true,
     "sourceScaleIndependentSharpnessSort": true,
-    "dataVersion": "0.7.5"
+    "dataVersion": "0.7.5",
+    "armorTotal": 2876,
+    "armorExternalMapped": 2842,
+    "armorNameJaFilled": 995,
+    "armorNameJaCorrected": 37,
+    "armorRemainingUnresolved": 34,
+    "armorValueFieldsChanged": 296,
+    "armorProtectedMaxDefenseChanges": 0,
+    "armorProtectedUpgradeDefenseChanges": 0,
+    "armorPostMergeSafeConsensusDiffs": 0
   }
 }

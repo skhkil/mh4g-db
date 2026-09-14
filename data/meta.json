@@ -29,7 +29,7 @@
     "low": 4,
     "medium": 3
   },
-  "note": "실제 MH4G 데이터. v0.7.5에서 수렵피리 선율표 위치, 무기 정렬/속성 필터를 개선하고, 기존에 누락/부분 누락이던 근접무기 예리도 595건을 공개 MH4U Database와 교차매칭하여 보강함.",
+  "note": "실제 MH4G 데이터. v0.7.5에서 무기 예리도 보강 및 UI 개선에 더해, Athena + MH4U DB 3자 교차검증으로 방어구의 일본명 누락/오류와 확정 수치 오류를 보정함. maxDefense/upgradeDefense는 수정하지 않음.",
   "sharpnessAudit": {
     "meleeTotal": 1859,
     "present": 1859,
@@ -140,5 +140,28 @@
       "verified-alias": 26
     },
     "policy": "기존 완전 예리도 1,264건은 유지하고 누락/부분 누락 595건만 보강"
+  },
+  "armorCrosscheck": {
+    "sources": [
+      "Athena Data",
+      "MonsterHunter4UDatabase"
+    ],
+    "mapped": 2842,
+    "nameJaFilled": 995,
+    "nameJaCorrected": 37,
+    "remainingUnresolved": 34,
+    "valueChangesByField": {
+      "skills": 31,
+      "resistances.thunder": 56,
+      "resistances.ice": 76,
+      "slots": 7,
+      "resistances.fire": 17,
+      "resistances.water": 12,
+      "gender": 77,
+      "resistances.dragon": 15,
+      "defense": 5
+    },
+    "protectedDefenseProgressionChanges": 0,
+    "policy": "maxDefense/upgradeDefense 제외. Athena와 MH4U가 동일한 값일 때만 자동 수정."
   }
 }
