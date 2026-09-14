@@ -1,5 +1,5 @@
-import {loadSimulatorData,loadFullData,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.6";
-import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.6";
+import {loadSimulatorData,loadFullData,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7";
+import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7";
 
 let data={skills:[],armors:[],armorSets:[],decorations:[],weapons:[],weaponSummary:[],melodies:[],items:[],meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],siteInfo:{},meta:{}};
 let targets=[];
@@ -796,29 +796,48 @@ function renderCompose(){
   renderTable("#composeTable",["No.","조합 결과","소재 A","소재 B","성공확률","생산수"],rows);
 }
 
-function questTypeForView(){
-  if(questView.startsWith("village"))return "village";
-  if(questView.startsWith("hub"))return "hub";
-  if(questView.startsWith("g-"))return "g";
-  return "all";
+function questMatchesView(q){
+  if(questView==="key")return ["village","hub","g"].includes(q.questType);
+  if(questView.startsWith("village"))return q.questType==="village";
+  if(questView.startsWith("hub"))return q.questType==="hub";
+  if(questView.startsWith("g-"))return q.questType==="g";
+  if(questView==="event-all")return q.questType==="event";
+  if(questView==="event-low")return q.questType==="event"&&q.eventGroup==="low";
+  if(questView==="event-high")return q.questType==="event"&&q.eventGroup==="high";
+  if(questView==="event-g")return q.questType==="event"&&q.eventGroup==="g";
+  if(questView==="event-episodic")return q.questType==="event"&&q.eventGroup==="episodic";
+  if(questView==="challenge")return q.questType==="challenge";
+  return true;
 }
 function populateQuestLevels(){
   const el=$("#questLevelFilter");if(!el)return;
-  const old=el.value||"all",type=questTypeForView();
-  const levels=[...new Set(data.quests.filter(q=>type==="all"||q.questType===type).map(q=>q.level))].sort();
+  const old=el.value||"all";
+  const levels=[...new Set(data.quests.filter(questMatchesView).map(q=>q.level))].sort((a,b)=>String(a).localeCompare(String(b),"ko",{numeric:true}));
   el.innerHTML='<option value="all">전체 ★</option>'+levels.map(x=>`<option value="${esc(x)}">${esc(x)}</option>`).join("");
   el.value=levels.includes(old)?old:"all";
 }
 function renderQuest(){
   populateQuestLevels();
-  const qtext=$("#questSearch").value.trim().toLowerCase(),type=questTypeForView(),level=$("#questLevelFilter").value;
-  const keyOnly=questView==="key"||$("#questKeyOnly").checked;
-  const list=data.quests.filter(q=>(type==="all"||q.questType===type)&&(level==="all"||q.level===level)&&(!keyOnly||q.key)&&(!qtext||`${q.name} ${q.nameJa} ${q.objective} ${q.location} ${q.note}`.toLowerCase().includes(qtext)));
+  const qtext=$("#questSearch").value.trim().toLowerCase(),level=$("#questLevelFilter").value;
+  const eventView=questView.startsWith("event-")||questView==="challenge";
+  const keyBox=$("#questKeyOnly"),keyLabel=keyBox?.closest("label");
+  if(keyLabel)keyLabel.style.display=eventView?"none":"";
+  const keyOnly=!eventView&&(questView==="key"||keyBox?.checked);
+  const list=data.quests.filter(q=>questMatchesView(q)&&(level==="all"||q.level===level)&&(!keyOnly||q.key)&&(!qtext||`${q.name||""} ${q.nameJa||""} ${q.nameEn||""} ${q.objective||""} ${q.objectiveEn||""} ${q.subObjective||""} ${q.subObjectiveEn||""} ${q.location||""} ${q.eventSeries||""} ${q.note||""}`.toLowerCase().includes(qtext)));
+  if(eventView){
+    const rows=list.map(q=>`<tr><td>${esc(q.questTypeLabel||q.questType)}</td><td>${esc(q.level)}</td><td><strong>${esc(q.name)}</strong>${localizedNameSub(q)}</td><td class="wrap-cell">${esc(q.objective||"-")}</td><td>${esc(q.location||"-")}</td><td>${esc(q.fee||"-")}</td><td>${esc(q.reward||"-")}</td><td>${esc(q.hrp||"-")}</td><td>${esc(q.time||"-")}</td><td class="wrap-cell">${esc(q.subObjective||"-")}</td><td>${esc(q.subReward||"-")}</td><td>${esc(q.subHrp||"-")}</td><td class="wrap-cell">${esc(q.conditions||"-")}</td><td class="wrap-cell">${esc(q.note||"")}</td></tr>`);
+    renderTable("#questTable",["구분","레벨","퀘스트","클리어 조건","장소","계약금","보수금","HRP","시간","서브퀘스트","서브 보수","서브 HRP","특수조건","비고"],rows);
+    return;
+  }
   const detail=questView.endsWith("detail")||questView==="key";
-  const rows=list.map(q=>detail?`<tr><td>${esc(q.questTypeLabel)}</td><td>${esc(q.level)}</td><td>${q.key?"○":""}</td><td><strong>${esc(q.name)}</strong><small>${esc(q.nameJa||"")}</small></td><td class="wrap-cell">${esc(q.objective)}</td><td>${esc(q.location)}</td><td>${esc(q.fee)}</td><td>${esc(q.reward)}</td><td>${esc(q.time)}</td><td>${esc(q.conditions)}</td><td>${esc(q.note)}</td></tr>`:`<tr><td>${esc(q.level)}</td><td>${q.key?"○":""}</td><td><strong>${esc(q.name)}</strong></td><td class="wrap-cell">${esc(q.objective)}</td><td>${esc(q.location)}</td><td>${esc(q.note)}</td></tr>`);
+  const rows=list.map(q=>detail?`<tr><td>${esc(q.questTypeLabel)}</td><td>${esc(q.level)}</td><td>${q.key?"○":""}</td><td><strong>${esc(q.name)}</strong>${localizedNameSub(q)}</td><td class="wrap-cell">${esc(q.objective)}</td><td>${esc(q.location)}</td><td>${esc(q.fee)}</td><td>${esc(q.reward)}</td><td>${esc(q.time)}</td><td>${esc(q.conditions)}</td><td>${esc(q.note)}</td></tr>`:`<tr><td>${esc(q.level)}</td><td>${q.key?"○":""}</td><td><strong>${esc(q.name)}</strong>${localizedNameSub(q)}</td><td class="wrap-cell">${esc(q.objective)}</td><td>${esc(q.location)}</td><td>${esc(q.note)}</td></tr>`);
   renderTable("#questTable",detail?["구분","레벨","키","퀘스트","클리어 조건","장소","계약금","보수금","시간","특수조건","비고"]:["레벨","키","퀘스트","클리어 조건","장소","비고"],rows);
 }
 
+function eventViewTitleText(view){
+  if(view.startsWith("event-")||view==="challenge")return "이벤트 퀘스트의 한글명과 일본어/영어 원문, 목표·보수·HRP·서브퀘스트 정보를 조회합니다.";
+  return "키퀘·클리어 조건·장소·보수 정보를 조회합니다.";
+}
 function pageTitleForState(page){
   if(page==="source") return sourceView==="history"?["이력","원본 MH4G DB 업데이트 이력"]:["메인","원본 MH4G DB 안내"];
   if(page==="armor-set") return [`${hunterName($("#hunterType").value)} 방어구 세트`,"5부위 세트의 방어·슬롯·스킬 합계를 조회합니다."];
@@ -835,8 +854,8 @@ function pageTitleForState(page){
   }
   if(page==="compose") return ["조합서","아이템 조합식과 성공확률·생산수를 조회합니다."];
   if(page==="quest"){
-    const t={key:"키퀘스트","village-summary":"여단요약","village-detail":"여단상세","hub-summary":"집회소요약","hub-detail":"집회소상세","g-summary":"G급요약","g-detail":"G급상세"}[questView];
-    return [`퀘스트 · ${t}`,"키퀘·클리어 조건·장소·보수 정보를 조회합니다."];
+    const t={key:"키퀘스트","village-summary":"여단요약","village-detail":"여단상세","hub-summary":"집회소요약","hub-detail":"집회소상세","g-summary":"G급요약","g-detail":"G급상세","event-all":"이벤트 전체","event-low":"이벤트 하위","event-high":"이벤트 상위","event-g":"이벤트 G급","event-episodic":"에피소드","challenge":"다운로드 챌린지"}[questView];
+    return [`퀘스트 · ${t||"전체"}`,eventViewTitleText(questView)];
   }
   return null;
 }

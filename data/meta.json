@@ -1,5 +1,5 @@
 {
-  "version": "0.7.6",
+  "version": "0.7.7",
   "demo": false,
   "source": "https://flashkiller.cafe24.com/mh4g/main.htm",
   "counts": {
@@ -19,7 +19,7 @@
     "dragon_sell": 49,
     "dragon_increase": 43,
     "compositions": 168,
-    "quests": 427
+    "quests": 547
   },
   "activationCount": 276,
   "weaponTreeCount": 302,
@@ -29,7 +29,7 @@
     "low": 4,
     "medium": 3
   },
-  "note": "실제 MH4G 데이터. v0.7.6에서 한국어 주표기를 유지한 채 무기/방어구/장식주/스킬/아이템에 일본어·영어 보조표기 및 다국어 검색을 확장함. 한국어+일본어가 한 필드에 섞였던 무기 7개는 언어 필드를 분리했고, 신규 fuzzy 추측 매칭은 사용하지 않음.",
+  "note": "실제 MH4G 데이터. v0.7.7에서 로컬라이즈된 이벤트 퀘스트 78개, 에피소드 18개, 다운로드 챌린지 24개를 추가하고 한국어 주표기 + 일본어/영어 보조표기를 적용함. 이벤트 한글명은 비공식 번역이며, 비교 DB에 없는 챌린지 대상은 추측하지 않음.",
   "sharpnessAudit": {
     "meleeTotal": 1859,
     "present": 1859,
@@ -175,5 +175,20 @@
     "audit": "tools/core_localization_v0.7.6.json",
     "mixedWeaponPrimaryNormalized": 7,
     "primaryKoreanWordingChanges": 0
+  },
+  "eventQuestUpdate": {
+    "localizedEventRegular": 78,
+    "episodic": 18,
+    "downloadChallenge": 24,
+    "added": 120,
+    "baseQuestCount": 427,
+    "finalQuestCount": 547,
+    "policy": "Localized MH4U DLC only. Korean titles/objectives are unofficial project translations. Unknown Challenge targets are left explicitly unconfirmed rather than guessed.",
+    "sources": [
+      "user-supplied MH4U mh4u.db",
+      "Monster Hunter Wiki MH4U: Event Quests",
+      "Capcom MH4U Official Web Manual"
+    ],
+    "athena": "User-supplied Athena Data.zip contains no quest dataset usable for event-quest cross-check."
   }
 }

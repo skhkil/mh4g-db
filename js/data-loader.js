@@ -1,4 +1,4 @@
-const DATA_VERSION = "0.7.6";
+const DATA_VERSION = "0.7.7";
 
 const FULL_FILES = {
   skills:"./data/skills.json",

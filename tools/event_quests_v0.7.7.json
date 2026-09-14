@@ -1,0 +1,28 @@
+{
+  "version": "0.7.7",
+  "baseQuests": 427,
+  "eventRegular": 78,
+  "episodic": 18,
+  "challenge": 24,
+  "finalQuests": 547,
+  "groups": {
+    "low": 6,
+    "high": 27,
+    "g": 45,
+    "episodic": 18
+  },
+  "challengeConfirmedTargets": 17,
+  "challengeUnconfirmedTargets": 7,
+  "screenshotsHighEnglishTitlesCovered": true,
+  "screenshotAliases": {
+    "Kirin Aquisition": "Kirin Acquisition (canonical localized title)"
+  },
+  "knownSourceConflicts": [
+    "Fan Club: Remobra Removal sub HRP: localized reference 420 vs supplied MH4U DB 240 -> localized reference used",
+    "Sand Blasted: localized reference has no subquest vs supplied MH4U DB horn-break subquest -> localized reference used",
+    "Today's Special: Meat sub HRP: localized reference 20 vs supplied MH4U DB 300 -> localized reference used",
+    "Super Sonic Seregios: localized reference target is Frenzied Seregios and sub HRP 70; supplied DB omits Frenzied and has sub HRP 0 -> localized reference used",
+    "Fire Fight: localized reference HRP 1200 + tail subquest; supplied DB has HRP 1800 and missing sub goal -> localized reference used",
+    "Twilight of the Gods: localized reference reward 28200/fee2900; supplied named DB row conflicts (19200/2000) -> localized reference used"
+  ]
+}

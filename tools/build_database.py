@@ -17,7 +17,7 @@ REPORT = GEN / "report.json"
 PROJECT_DATA = ROOT.parent / "data"
 
 SOURCE_ROOT = "https://flashkiller.cafe24.com/mh4g/"
-APP_VERSION = "0.7.6"
+APP_VERSION = "0.7.7"
 PART_MAP = {"머리":"head", "몸통":"body", "팔":"arms", "허리":"waist", "다리":"legs"}
 
 RANK_ORDER = {"low": 0, "high": 1, "g": 2}
