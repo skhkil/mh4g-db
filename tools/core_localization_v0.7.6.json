@@ -1,0 +1,476 @@
+{
+  "version": "0.7.6",
+  "policy": {
+    "primary": "Korean is canonical. Seven legacy weapon names that contained Korean + trailing Japanese in one field are split into Korean name + Japanese nameJa without changing the Korean wording.",
+    "secondary": [
+      "Japanese",
+      "English"
+    ],
+    "matching": "Exact normalized Japanese match only, plus the existing v0.7.5 verified weapon alias candidate set (26 total; 23 actually used after mixed-name normalization). Skill activation English uses exact parent skill-tree mapping + activation points.",
+    "guessing": "No new fuzzy/heuristic name matches are written."
+  },
+  "source": [
+    "user-supplied MonsterHunter4UDatabase mh4u.db",
+    "existing v0.7.5 verified weapon aliases",
+    "user-supplied Athena Data.zip Japanese/English localization rows"
+  ],
+  "summary": {
+    "weapons": {
+      "total": 2314,
+      "nameEnFilled": 2268,
+      "methods": {
+        "MH4U Japanese exact": 2245,
+        "v0.7.5 verified alias": 23
+      },
+      "unresolved": 46
+    },
+    "decorations": {
+      "total": 199,
+      "nameEnFilled": 199,
+      "unresolved": 0
+    },
+    "items": {
+      "total": 524,
+      "nameEnFilled": 515,
+      "unresolved": 9
+    },
+    "skillTrees": {
+      "total": 143,
+      "nameEnFilled": 143,
+      "unresolved": 0
+    },
+    "skillActivations": {
+      "total": 276,
+      "nameEnFilled": 276,
+      "unresolved": 0
+    },
+    "armorExisting": {
+      "total": 2876,
+      "nameEnFilled": 2850
+    },
+    "mixedPrimaryFieldsNormalized": 7,
+    "primaryKoreanWordingChanges": 0
+  },
+  "unresolved": {
+    "weapons": [
+      {
+        "id": "weapon_b984df26d523",
+        "name": "버스터소드+",
+        "nameJa": "スタ ー ソ ー ド改",
+        "weaponType": "대검"
+      },
+      {
+        "id": "weapon_37e77aa0af48",
+        "name": "에인션트블레이드",
+        "nameJa": "エンシェントプレ ー ド",
+        "weaponType": "대검"
+      },
+      {
+        "id": "weapon_a3ef5a4639eb",
+        "name": "카이제르베어러",
+        "nameJa": "カイゼルべアラ ー",
+        "weaponType": "차지액스"
+      },
+      {
+        "id": "weapon_5a8e9f7a0c0d",
+        "name": "건곤의 화룡곤",
+        "nameJa": "乾坤の화룡棍",
+        "weaponType": "조충곤"
+      },
+      {
+        "id": "weapon_823a6df7de06",
+        "name": "양의의 염룡곤",
+        "nameJa": "両 義の炎 竜 棍",
+        "weaponType": "조충곤"
+      },
+      {
+        "id": "weapon_fcef504a1f5f",
+        "name": "옥노 류제츠+",
+        "nameJa": "獄弩リュウゼツ)改",
+        "weaponType": "라이트보우건"
+      },
+      {
+        "id": "weapon_ea3e74abe865",
+        "name": "셸개틀링",
+        "nameJa": "シェルガドリング",
+        "weaponType": "라이트보우건"
+      },
+      {
+        "id": "weapon_713a11a8be8d",
+        "name": "블러트푸루시린지",
+        "nameJa": "ブラットフルシリンジ",
+        "weaponType": "라이트보우건"
+      },
+      {
+        "id": "weapon_0e9ecf6ce706",
+        "name": "블러트푸루아네스시",
+        "nameJa": "ブラットフルアネスシ",
+        "weaponType": "라이트보우건"
+      },
+      {
+        "id": "weapon_0be03f694cdc",
+        "name": "강빙봉노",
+        "nameJa": "鋼氷峰弩",
+        "weaponType": "라이트보우건"
+      },
+      {
+        "id": "weapon_73dc0be2a3e4",
+        "name": "황포 다라그롭스",
+        "nameJa": "帝砲ダラグロプス",
+        "weaponType": "헤비보우건"
+      },
+      {
+        "id": "weapon_86e6e2f1cfc4",
+        "name": "사황포 오뷰마듈라",
+        "nameJa": "蛇帝砲オピュマデュラ",
+        "weaponType": "헤비보우건"
+      },
+      {
+        "id": "weapon_3ff244ca0156",
+        "name": "혈심이 스플라티카",
+        "nameJa": "血深沼スプラティカ",
+        "weaponType": "활"
+      },
+      {
+        "id": "weapon_a1fdd89e3de9",
+        "name": "진�낭아궁【멸죄】",
+        "nameJa": "真・ 狼牙弓【減罪】",
+        "weaponType": "활"
+      },
+      {
+        "id": "weapon_c8041307aad5",
+        "name": "활【까마귀】",
+        "nameJa": "ユミ【鳥】",
+        "weaponType": "활"
+      },
+      {
+        "id": "weapon_13b42c42be75",
+        "name": "앙크of체커",
+        "nameJa": "ンクofチェッカー",
+        "weaponType": "한손검"
+      },
+      {
+        "id": "weapon_d64ee0b549a7",
+        "name": "쿠드라�파르칸",
+        "nameJa": "クドラ ・ バルガン",
+        "weaponType": "한손검"
+      },
+      {
+        "id": "weapon_689bacc889a8",
+        "name": "라이트닝베인",
+        "nameJa": "ライトニングペイン",
+        "weaponType": "한손검"
+      },
+      {
+        "id": "weapon_0b78ef14e6dd",
+        "name": "스케일소드",
+        "nameJa": "ケイルソ ー ド",
+        "weaponType": "한손검"
+      },
+      {
+        "id": "weapon_b3fdbaff97d9",
+        "name": "조스클리버",
+        "nameJa": "ジョ ー ズクリ ー パ ー",
+        "weaponType": "쌍검"
+      },
+      {
+        "id": "weapon_a6f6d2201b01",
+        "name": "조스클리버+",
+        "nameJa": "ジョ ー ズクリ ー パ ー 改",
+        "weaponType": "쌍검"
+      },
+      {
+        "id": "weapon_4b08a33e346f",
+        "name": "쿨클리버",
+        "nameJa": "ク ー ルクリ ー パ ー",
+        "weaponType": "쌍검"
+      },
+      {
+        "id": "weapon_e3ab37d78e7f",
+        "name": "프로즌클리버",
+        "nameJa": "フロ ー ズンクリ ー パ ー",
+        "weaponType": "쌍검"
+      },
+      {
+        "id": "weapon_86abd29aa525",
+        "name": "뇌쌍검 트윈크루스",
+        "nameJa": "雷 双 刃ツインクルス",
+        "weaponType": "쌍검"
+      },
+      {
+        "id": "weapon_e3cad963a306",
+        "name": "가노스마체테",
+        "nameJa": "ガノマスマチェ ー テ",
+        "weaponType": "쌍검"
+      },
+      {
+        "id": "weapon_7af1fd7bd878",
+        "name": "블리드배싱",
+        "nameJa": "ブリ ー ドパッシング",
+        "weaponType": "해머"
+      },
+      {
+        "id": "weapon_c44160bb6812",
+        "name": "왕추 카미나리",
+        "nameJa": "鎚カミナリ",
+        "weaponType": "해머"
+      },
+      {
+        "id": "weapon_997726104d8f",
+        "name": "굉추【호환】",
+        "nameJa": "轟鎚【虎丸】",
+        "weaponType": "해머"
+      },
+      {
+        "id": "weapon_00bf4d3230f6",
+        "name": "충추【호해】",
+        "nameJa": "衝鎚【虎咳】",
+        "weaponType": "해머"
+      },
+      {
+        "id": "weapon_fd8a28f9e7e4",
+        "name": "그래비톤해머",
+        "nameJa": "グラヴィトンハンマ ー",
+        "weaponType": "해머"
+      },
+      {
+        "id": "weapon_22aa25e0415a",
+        "name": "패티푸시",
+        "nameJa": "ァッティプッシュ",
+        "weaponType": "해머"
+      },
+      {
+        "id": "weapon_7688f0317bc8",
+        "name": "젬헤드",
+        "nameJa": "ジェム＝へッド",
+        "weaponType": "해머"
+      },
+      {
+        "id": "weapon_1e4a7d978be1",
+        "name": "검은고양이스탬프",
+        "nameJa": "くろネコスタンプ",
+        "weaponType": "해머"
+      },
+      {
+        "id": "weapon_83cc41892dee",
+        "name": "업추 다그다",
+        "nameJa": "業槌ダグザ",
+        "weaponType": "해머"
+      },
+      {
+        "id": "weapon_4a0163b9095b",
+        "name": "테오크라테르",
+        "nameJa": "テオ ・ クラテル",
+        "weaponType": "해머"
+      },
+      {
+        "id": "weapon_6d0a2f06c199",
+        "name": "테오크라리아",
+        "nameJa": "テオ ・ クラリア",
+        "weaponType": "해머"
+      },
+      {
+        "id": "weapon_4d1c2eebf5e4",
+        "name": "샤미센【까마귀】",
+        "nameJa": "シャミセン【鳥】",
+        "weaponType": "수렵피리"
+      },
+      {
+        "id": "weapon_6866b3954216",
+        "name": "황현 다라블루트",
+        "nameJa": "帝弦ダラプル ー ト",
+        "weaponType": "수렵피리"
+      },
+      {
+        "id": "weapon_f14252052f31",
+        "name": "비애의 중창",
+        "nameJa": "悲哀の重槍",
+        "weaponType": "랜스"
+      },
+      {
+        "id": "weapon_573cfb3c1e07",
+        "name": "스카이스크레이퍼",
+        "nameJa": "スカイスクレイバ ー",
+        "weaponType": "랜스"
+      },
+      {
+        "id": "weapon_f4b48c6bf940",
+        "name": "창귀총창포",
+        "nameJa": "蒼鬼銃槍砲",
+        "weaponType": "건랜스"
+      },
+      {
+        "id": "weapon_011e19a2597b",
+        "name": "창귀총창포【귀존】",
+        "nameJa": "蒼鬼銃槍砲【鬼拵】",
+        "weaponType": "건랜스"
+      },
+      {
+        "id": "weapon_dd60cf2d2820",
+        "name": "호숭총창【호오리】",
+        "nameJa": "豪嵩銃槍【天津日高】",
+        "weaponType": "건랜스"
+      },
+      {
+        "id": "weapon_b2d8ff38e034",
+        "name": "붕총창 파시캄루바스",
+        "nameJa": "崩銃槍バシカムルバス",
+        "weaponType": "건랜스"
+      },
+      {
+        "id": "weapon_04d18d385171",
+        "name": "엘다오르블리지아",
+        "nameJa": "エルダオル＝プリジア",
+        "weaponType": "건랜스"
+      },
+      {
+        "id": "weapon_31b8173ba25a",
+        "name": "홍창검부",
+        "nameJa": "桜 蒼 剣 斧",
+        "weaponType": "슬래시액스"
+      }
+    ],
+    "decorations": [],
+    "items": [
+      {
+        "id": "item_3483ea42d15f",
+        "name": "고급충육꿀(화염)",
+        "nameJa": "高級虫餌 ・ 火炎"
+      },
+      {
+        "id": "item_b732549740bc",
+        "name": "고급충육꿀(유수)",
+        "nameJa": "高級虫餌 ・ 流水"
+      },
+      {
+        "id": "item_ab9c77e91330",
+        "name": "고급충육꿀(뇌광)",
+        "nameJa": "高級虫餌 ・ 雷光"
+      },
+      {
+        "id": "item_6f8b703bb434",
+        "name": "고급충육꿀(빙결)",
+        "nameJa": "高級虫餌 ・ 氷結"
+      },
+      {
+        "id": "item_8633e1693f61",
+        "name": "고급충육꿀(파룡)",
+        "nameJa": "高級虫餌 ・ 破龍"
+      },
+      {
+        "id": "item_93ba183fc30f",
+        "name": "중룡골",
+        "nameJa": "重龍骨"
+      },
+      {
+        "id": "item_9c676836c72d",
+        "name": "포졸의 일기",
+        "nameJa": "-"
+      },
+      {
+        "id": "item_de1d9ce2dacc",
+        "name": "태고의 악보",
+        "nameJa": "お祭り太鼓の譜面"
+      },
+      {
+        "id": "item_4f7656d42255",
+        "name": "전격G티켓",
+        "nameJa": "デンゲキGチケット"
+      }
+    ],
+    "skillTrees": [],
+    "skillActivations": []
+  },
+  "athenaCrosscheck": {
+    "decorations": {
+      "matched": 199,
+      "englishAgreement": 199,
+      "englishDifferences": []
+    },
+    "skillTrees": {
+      "matched": 139,
+      "englishAgreement": 139,
+      "englishDifferences": []
+    },
+    "policy": "MH4U English remains canonical for this pass; Athena is used as an independent localization cross-check. Differences are recorded, not guessed away."
+  },
+  "mixedWeaponPrimaryNormalization": [
+    {
+      "id": "weapon_4a29d9b2bfee",
+      "before": {
+        "name": "왕아노【야뢰】 王牙弩【野雷】",
+        "nameJa": ""
+      },
+      "after": {
+        "name": "왕아노【야뢰】",
+        "nameJa": "王牙弩【野雷】"
+      }
+    },
+    {
+      "id": "weapon_0900425cc680",
+      "before": {
+        "name": "봉룡검【절일문】 封龍 剣 【絶一門】",
+        "nameJa": ""
+      },
+      "after": {
+        "name": "봉룡검【절일문】",
+        "nameJa": "封龍剣【絶一門】"
+      }
+    },
+    {
+      "id": "weapon_a09c69551f05",
+      "before": {
+        "name": "봉룡검【원절일문】封龍剣【怨絶一門】",
+        "nameJa": ""
+      },
+      "after": {
+        "name": "봉룡검【원절일문】",
+        "nameJa": "封龍剣【怨絶一門】"
+      }
+    },
+    {
+      "id": "weapon_172a639ba74a",
+      "before": {
+        "name": "파룡검【사절일문】封龍剣【邪絶一門】",
+        "nameJa": ""
+      },
+      "after": {
+        "name": "파룡검【사절일문】",
+        "nameJa": "破龍剣【邪絶一門】"
+      }
+    },
+    {
+      "id": "weapon_c794cee0f43b",
+      "before": {
+        "name": "봉룡검【초절일문】 封龍 剣 【超絶一門】",
+        "nameJa": ""
+      },
+      "after": {
+        "name": "봉룡검【초절일문】",
+        "nameJa": "封龍剣【超絶一門】"
+      }
+    },
+    {
+      "id": "weapon_65fe5731363d",
+      "before": {
+        "name": "봉룡검【진절일문】 封龍 剣 【 真 絶一門】",
+        "nameJa": ""
+      },
+      "after": {
+        "name": "봉룡검【진절일문】",
+        "nameJa": "封龍剣【真絶一門】"
+      }
+    },
+    {
+      "id": "weapon_ad82de641bdc",
+      "before": {
+        "name": "봉룡검【극절일문】 封龍 剣 【極絶一門】",
+        "nameJa": ""
+      },
+      "after": {
+        "name": "봉룡검【극절일문】",
+        "nameJa": "封龍剣【極絶一門】"
+      }
+    }
+  ]
+}

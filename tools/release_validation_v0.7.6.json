@@ -1,0 +1,56 @@
+{
+  "version": "0.7.6",
+  "checks": {
+    "allDataJsonParse": true,
+    "decorations.jsonOnlyNameEnAdded": true,
+    "items.jsonOnlyNameEnAdded": true,
+    "armors.jsonUnchanged": true,
+    "sim_armors.jsonUnchanged": true,
+    "skillsOnlyEnglishAdded": true,
+    "weaponsOnlyEnglishAnd7LanguageSplits": true,
+    "simWeaponsOnlyEnglishAnd7LanguageSplits": true,
+    "coverage": {
+      "armorNameEn": 2850,
+      "weaponNameEn": 2268,
+      "simWeaponNameEn": 2268,
+      "decorationNameEn": 199,
+      "itemNameEn": 515,
+      "skillTreeNameEn": 143,
+      "skillActivationNameEn": 276
+    },
+    "foreignCharsInPrimaryNames": {
+      "weapons.json": [],
+      "armors.json": [],
+      "decorations.json": [],
+      "skills.json": [],
+      "items.json": []
+    },
+    "versionRefs": {
+      "appImports": true,
+      "dataLoader": true,
+      "index": true
+    },
+    "uiLocalizationHooks": {
+      "weapon": true,
+      "decoration": true,
+      "skill": true,
+      "item": true
+    },
+    "athenaCrosscheck": {
+      "decorations": {
+        "matched": 199,
+        "englishAgreement": 199,
+        "englishDifferences": []
+      },
+      "skillTrees": {
+        "matched": 139,
+        "englishAgreement": 139,
+        "englishDifferences": []
+      },
+      "policy": "MH4U English remains canonical for this pass; Athena is used as an independent localization cross-check. Differences are recorded, not guessed away."
+    },
+    "mixedWeaponNormalizationCount": 7,
+    "passed": true
+  },
+  "errors": []
+}

@@ -1,5 +1,5 @@
-import {loadSimulatorData,loadFullData,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.5";
-import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.5";
+import {loadSimulatorData,loadFullData,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.6";
+import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.6";
 
 let data={skills:[],armors:[],armorSets:[],decorations:[],weapons:[],weaponSummary:[],melodies:[],items:[],meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],siteInfo:{},meta:{}};
 let targets=[];
@@ -55,19 +55,19 @@ function skillDefinition(id){return skillById.get(id)||null}
 function skillName(id){return skillDefinition(id)?.name||id}
 function skillSearchCorpus(skillOrId){
   const s=typeof skillOrId==="string"?skillDefinition(skillOrId):skillOrId;if(!s)return "";
-  return [s.name,s.nameJa,SKILL_SEARCH_ALIASES[s.name]||"",...(s.activations||[]).flatMap(a=>[a.name,a.nameJa,a.description,Number(a.points)>0?`+${a.points}`:String(a.points)])].map(cleanEffectText).join(" ");
+  return [s.name,s.nameJa,s.nameEn,SKILL_SEARCH_ALIASES[s.name]||"",...(s.activations||[]).flatMap(a=>[a.name,a.nameJa,a.nameEn,a.description,Number(a.points)>0?`+${a.points}`:String(a.points)])].map(cleanEffectText).join(" ");
 }
 function decorationSearchCorpus(d){
   const positiveEffects=Object.entries(d.skills||{}).filter(([,v])=>Number(v)>0).map(([k])=>skillSearchCorpus(k)).join(" ");
   const allSkillNames=Object.keys(d.skills||{}).map(skillName).join(" ");
-  return `${d.name||""} ${d.nameJa||""} ${allSkillNames} ${positiveEffects} ${d.materials||""}`;
+  return `${d.name||""} ${d.nameJa||""} ${d.nameEn||""} ${allSkillNames} ${positiveEffects} ${d.materials||""}`;
 }
 function activationOptions(){
   if(optionCache.activation)return optionCache.activation;
   const rows=[];
   for(const skill of data.skills){
     for(const a of skill.activations||[]){
-      if(Number(a.points)>0) rows.push({value:a.id,skillId:skill.id,label:`${a.name} (${a.points}P · ${skill.name})`,name:a.name,points:a.points,category:skill.name,meta:shortEffect(a.description),search:`${skillSearchCorpus(skill)} ${a.name} ${a.points}`});
+      if(Number(a.points)>0){const sub=[a.nameJa,a.nameEn].filter(Boolean).join(" · ");rows.push({value:a.id,skillId:skill.id,label:`${a.name} (${a.points}P · ${skill.name})`,name:a.name,points:a.points,category:skill.name,meta:[sub,shortEffect(a.description)].filter(Boolean).join(" · "),search:`${skillSearchCorpus(skill)} ${a.name} ${a.nameJa||""} ${a.nameEn||""} ${a.points}`});}
     }
   }
   optionCache.activation=rows.sort((a,b)=>a.name.localeCompare(b.name,"ko"));
@@ -75,7 +75,7 @@ function activationOptions(){
 }
 function skillPickerOptions(){
   if(optionCache.skillPicker)return optionCache.skillPicker;
-  optionCache.skillPicker=data.skills.map(s=>({value:s.id,label:s.name,search:skillSearchCorpus(s)})).sort((a,b)=>a.label.localeCompare(b.label,"ko"));
+  optionCache.skillPicker=data.skills.map(s=>({value:s.id,label:s.name,meta:[s.nameJa,s.nameEn].filter(Boolean).join(" · "),search:skillSearchCorpus(s)})).sort((a,b)=>a.label.localeCompare(b.label,"ko"));
   return optionCache.skillPicker;
 }
 function currentSkillStatus(skillId,points){
@@ -262,7 +262,7 @@ function manualWeaponTypeOptions(){
 function weaponPickerOptions(){
   const type=uiState.manualWeaponType||"all";
   if(optionCache.weaponByType.has(type))return optionCache.weaponByType.get(type);
-  const opts=data.weapons.filter(w=>type==="all"||w.weaponType===type).sort((a,b)=>a.weaponType.localeCompare(b.weaponType,"ko")||a.name.localeCompare(b.name,"ko")).map(w=>({value:w.id,label:`[${w.weaponType}] ${w.name}`,meta:`${rankName(w.rank)} · ${slotsText(w.slots)} · ATK ${w.attack??"-"}`,search:`${w.name} ${w.nameJa||""} ${w.weaponType} ${rankName(w.rank)} ${w.tree||""} ${w.element||""}`}));
+  const opts=data.weapons.filter(w=>type==="all"||w.weaponType===type).sort((a,b)=>a.weaponType.localeCompare(b.weaponType,"ko")||a.name.localeCompare(b.name,"ko")).map(w=>{const sub=[w.nameJa,w.nameEn].filter(Boolean).join(" · ");return {value:w.id,label:`[${w.weaponType}] ${w.name}`,meta:`${sub?sub+" · ":""}${rankName(w.rank)} · ${slotsText(w.slots)} · ATK ${w.attack??"-"}`,search:`${w.name} ${w.nameJa||""} ${w.nameEn||""} ${w.weaponType} ${rankName(w.rank)} ${w.tree||""} ${w.element||""}`}});
   optionCache.weaponByType.set(type,opts);return opts;
 }
 function armorSetPickerOptions(){
@@ -357,7 +357,7 @@ function manualDecorationPlacements(){
 }
 function decoPickerOptions(container){
   const remain=containerCapacity(container)-usedDecorationSlots(container);
-  return data.decorations.filter(d=>Number(d.slots||0)>0&&Number(d.slots||0)<=remain).sort((a,b)=>Number(a.slots)-Number(b.slots)||a.name.localeCompare(b.name,"ko")).map(d=>({value:d.id,label:d.name,meta:`${d.slots}칸 · ${Object.entries(d.skills||{}).map(([k,v])=>`${skillName(k)} ${v>0?"+":""}${v}`).join(", ")}`,search:decorationSearchCorpus(d)}));
+  return data.decorations.filter(d=>Number(d.slots||0)>0&&Number(d.slots||0)<=remain).sort((a,b)=>Number(a.slots)-Number(b.slots)||a.name.localeCompare(b.name,"ko")).map(d=>{const sub=[d.nameJa,d.nameEn].filter(Boolean).join(" · ");return {value:d.id,label:d.name,meta:`${sub?sub+" · ":""}${d.slots}칸 · ${Object.entries(d.skills||{}).map(([k,v])=>`${skillName(k)} ${v>0?"+":""}${v}`).join(", ")}`,search:decorationSearchCorpus(d)}});
 }
 function refreshManualContainer(container){mountDecorationEditor(container);refreshManualSkillPointDisplays()}
 function addManualDecoration(container,id){
@@ -499,7 +499,8 @@ async function runSearch(){
 
 function renderTable(el,headers,rows){$(el).innerHTML=`<table class="data-table"><thead><tr>${headers.map(h=>`<th>${h}</th>`).join("")}</tr></thead><tbody>${rows.length?rows.join(""):`<tr><td colspan="${headers.length}" class="result-empty">검색 결과 없음</td></tr>`}</tbody></table>`}
 function localizedNameSub(x){
-  const names=[x?.nameJa,x?.nameEn].filter(Boolean);
+  const main=String(x?.name||"").trim();
+  const names=[x?.nameJa,x?.nameEn].map(v=>String(v||"").trim()).filter((v,i,a)=>v&&v!==main&&a.indexOf(v)===i);
   return names.length?`<small>${names.map(esc).join(" · ")}</small>`:"";
 }
 function renderArmorTable(){
@@ -634,7 +635,7 @@ function weaponTableColumns(type){
 function weaponCell(w,col){
   if(col.key==="name"){
     const prefix=w.treePrefix?`<span class="tree-prefix">${esc(w.treePrefix)}</span>`:"";
-    return `${prefix}${w.isFinal?'<span class="final-mark">■</span> ':''}<strong>${esc(w.name)}</strong>${w.nameJa?`<small>${esc(w.nameJa)}</small>`:""}`;
+    return `${prefix}${w.isFinal?'<span class="final-mark">■</span> ':''}<strong>${esc(w.name)}</strong>${localizedNameSub(w)}`;
   }
   if(col.key==="attack") return w.attack??"-";
   if(col.key==="element") return esc(w.element||"-");
@@ -653,7 +654,7 @@ function renderWeaponTrees(){
   const q=$("#weaponSearch").value.trim().toLowerCase(),tree=$("#weaponTreeFilter").value;
   const element=$("#weaponElementFilter")?.value||"all",sortMode=$("#weaponSort")?.value||"tree";
   const cmp=weaponComparator(sortMode);
-  let rows=weaponFilteredBase().filter(w=>(tree==="all"||w.tree===tree)&&(element==="all"||weaponElementCategory(w)===element)&&(!q||`${w.name} ${w.nameJa||""} ${w.element||""} ${w.tree||""} ${weaponExtra(w)} ${(w.craft||[]).map(c=>c.materials).join(" ")}`.toLowerCase().includes(q)));
+  let rows=weaponFilteredBase().filter(w=>(tree==="all"||w.tree===tree)&&(element==="all"||weaponElementCategory(w)===element)&&(!q||`${w.name} ${w.nameJa||""} ${w.nameEn||""} ${w.element||""} ${w.tree||""} ${weaponExtra(w)} ${(w.craft||[]).map(c=>c.materials).join(" ")}`.toLowerCase().includes(q)));
   const groups=new Map();for(const w of rows){const k=w.tree||"기타";if(!groups.has(k))groups.set(k,[]);groups.get(k).push(w)}
   for(const list of groups.values())list.sort(cmp);
   const ordered=[...groups.entries()].sort((a,b)=>sortMode==="tree"?((a[1][0]?.treeOrder??9999)-(b[1][0]?.treeOrder??9999)||a[0].localeCompare(b[0],"ko")):(cmp(a[1][0],b[1][0])||a[0].localeCompare(b[0],"ko")));
@@ -672,17 +673,17 @@ function renderDecoTable(){
   const q=$("#decoSearch").value.trim().toLowerCase(),rank=$("#rankFilter").value;
   const list=data.decorations.filter(d=>(rank==="all"||d.rank===rank)&&(!q||decorationSearchCorpus(d).toLowerCase().includes(q)));
   list.sort((a,b)=>decoView==="slot"?(a.slots-b.slots||a.name.localeCompare(b.name,"ko")):(Object.keys(a.skills||{}).map(skillName).join("").localeCompare(Object.keys(b.skills||{}).map(skillName).join(""),"ko")||a.name.localeCompare(b.name,"ko")));
-  const rows=list.map(d=>`<tr><td>${esc(d.name)}</td><td>${d.slots}</td><td>${Object.entries(d.skills||{}).map(([k,v])=>`${esc(skillName(k))} ${v>0?"+":""}${v}`).join(", ")}</td><td>${rankName(d.rank)}</td><td>${esc(d.materials||"")}</td></tr>`);
+  const rows=list.map(d=>`<tr><td><strong>${esc(d.name)}</strong>${localizedNameSub(d)}</td><td>${d.slots}</td><td>${Object.entries(d.skills||{}).map(([k,v])=>`${esc(skillName(k))} ${v>0?"+":""}${v}`).join(", ")}</td><td>${rankName(d.rank)}</td><td>${esc(d.materials||"")}</td></tr>`);
   renderTable("#decoTable",["장식주","필요 슬롯","스킬 포인트","등급","생산 소재"],rows);
 }
 function renderSkillTable(){
   const q=$("#skillSearch").value.trim().toLowerCase();
-  const rows=data.skills.filter(s=>!q||skillSearchCorpus(s).toLowerCase().includes(q)).map(s=>`<tr><td>${esc(s.name)}</td><td>${(s.activations||[]).map(a=>`${a.points>0?"+":""}${a.points} → <strong>${esc(a.name)}</strong>`).join("<br>")}</td><td>${(s.activations||[]).map(a=>a.description?`<div><strong>${esc(a.name)}</strong>: ${esc(cleanEffectText(a.description))}</div>`:"").filter(Boolean).join("")}</td></tr>`);
+  const rows=data.skills.filter(s=>!q||skillSearchCorpus(s).toLowerCase().includes(q)).map(s=>`<tr><td><strong>${esc(s.name)}</strong>${localizedNameSub(s)}</td><td>${(s.activations||[]).map(a=>`${a.points>0?"+":""}${a.points} → <strong>${esc(a.name)}</strong>${localizedNameSub(a)}`).join("<br>")}</td><td>${(s.activations||[]).map(a=>a.description?`<div><strong>${esc(a.name)}</strong>: ${esc(cleanEffectText(a.description))}</div>`:"").filter(Boolean).join("")}</td></tr>`);
   renderTable("#skillTable",["스킬 계통","발동 조건","효과 및 비고"],rows);
 }
 function renderItemTable(){
   const q=$("#itemSearch").value.trim().toLowerCase();
-  const rows=data.items.filter(i=>!q||`${i.name} ${i.nameJa||""} ${i.acquire||""} ${i.note||""}`.toLowerCase().includes(q)).map(i=>`<tr><td>${esc(i.name)}</td><td>${i.rare||"-"}</td><td>${i.maxStack||"-"}</td><td>${esc(i.buyPrice||"-")}</td><td>${esc(i.sellPrice||"-")}</td><td>${esc(i.acquire||"")}</td><td>${esc(i.note||"")}</td></tr>`);
+  const rows=data.items.filter(i=>!q||`${i.name} ${i.nameJa||""} ${i.nameEn||""} ${i.acquire||""} ${i.note||""}`.toLowerCase().includes(q)).map(i=>`<tr><td><strong>${esc(i.name)}</strong>${localizedNameSub(i)}</td><td>${i.rare||"-"}</td><td>${i.maxStack||"-"}</td><td>${esc(i.buyPrice||"-")}</td><td>${esc(i.sellPrice||"-")}</td><td>${esc(i.acquire||"")}</td><td>${esc(i.note||"")}</td></tr>`);
   renderTable("#itemTable",["아이템","RARE","소지수","구매","판매","입수","효과/비고"],rows);
 }
 

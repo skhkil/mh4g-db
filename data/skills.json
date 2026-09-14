@@ -9,10 +9,12 @@
         "points": 10,
         "name": "KO술",
         "nameJa": "KO術",
-        "description": "기절치를 가진 공격의 기절치가 통상의 1.1배로 늘어난다. 조충곤의 엽충에 의한 타격에는 효과가 없다."
+        "description": "기절치를 가진 공격의 기절치가 통상의 1.1배로 늘어난다. 조충곤의 엽충에 의한 타격에는 효과가 없다.",
+        "nameEn": "Knockout King"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "KO"
   },
   {
     "id": "skill_fd6b9f4f574f",
@@ -24,10 +26,12 @@
         "points": 10,
         "name": "가드강화",
         "nameJa": "ガ ー ド 強 化",
-        "description": "평소 가드할 수 없는 공격도 가드할 수 있게 된다. 또, 특정 공격을 가드했을 때 일부 아이템 사용불가 상태나 방어력 DOWN 상태가 되지 않는다."
+        "description": "평소 가드할 수 없는 공격도 가드할 수 있게 된다. 또, 특정 공격을 가드했을 때 일부 아이템 사용불가 상태나 방어력 DOWN 상태가 되지 않는다.",
+        "nameEn": "Guard Boost"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Guard Up"
   },
   {
     "id": "skill_9c891ceddf5d",
@@ -39,24 +43,28 @@
         "points": -10,
         "name": "가드성능-1",
         "nameJa": "ガ ー ド性能-1",
-        "description": "가드한 공격의 위력이 10 오르며, 리액션이 커지기 쉬워진다."
+        "description": "가드한 공격의 위력이 10 오르며, 리액션이 커지기 쉬워진다.",
+        "nameEn": "Guard -1"
       },
       {
         "id": "activation_9ba1947bed9c",
         "points": 10,
         "name": "가드성능+1",
         "nameJa": "ガ ー ド性能+1",
-        "description": "가드한 공격의 위력을 10 완화시키며, 리액션이 적어지기 쉬워진다."
+        "description": "가드한 공격의 위력을 10 완화시키며, 리액션이 적어지기 쉬워진다.",
+        "nameEn": "Guard +1"
       },
       {
         "id": "activation_8d15197e2387",
         "points": 15,
         "name": "가드성능+2",
         "nameJa": "ガ ー ド性能+2",
-        "description": "가드한 공격의 위력을 20 완화시키며, 리액션이 적어지기 쉬워진다."
+        "description": "가드한 공격의 위력을 20 완화시키며, 리액션이 적어지기 쉬워진다.",
+        "nameEn": "Guard +2"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Guard"
   },
   {
     "id": "skill_bcf68a1ff0a1",
@@ -68,17 +76,20 @@
         "points": -10,
         "name": "악령의 가호",
         "nameJa": "悪霊の加護",
-        "description": "플레이어가 받는 데미지를 1/4 의 확률로 1.3 배로 증가시킨다."
+        "description": "플레이어가 받는 데미지를 1/4 의 확률로 1.3 배로 증가시킨다.",
+        "nameEn": "Demonic Blessing"
       },
       {
         "id": "activation_5b286e97a651",
         "points": 10,
         "name": "정령의 가호",
         "nameJa": "精 霊 の加護",
-        "description": "플레이어가 받는 데미지를 1/4 의 확률로 0.7 배로 감소시킨다."
+        "description": "플레이어가 받는 데미지를 1/4 의 확률로 0.7 배로 감소시킨다.",
+        "nameEn": "Divine Blessing"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Protection"
   },
   {
     "id": "skill_3ab130560c8a",
@@ -90,10 +101,12 @@
         "points": 10,
         "name": "무자비",
         "nameJa": "無慈悲",
-        "description": "「약점특효」＋「통찰력+2」의 효과"
+        "description": "「약점특효」＋「통찰력+2」의 효과",
+        "nameEn": "Ruthlessness"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Brutality"
   },
   {
     "id": "skill_5c22c482d71c",
@@ -105,10 +118,12 @@
         "points": 10,
         "name": "강격병추가",
         "nameJa": "強撃ビン追加",
-        "description": "슬래시액스, 차지액스, 활 사용 시 강격병을 사용할 수 있게 된다."
+        "description": "슬래시액스, 차지액스, 활 사용 시 강격병을 사용할 수 있게 된다.",
+        "nameEn": "Use Power Coat"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Power C+"
   },
   {
     "id": "skill_43cd18168b4b",
@@ -120,10 +135,12 @@
         "points": 10,
         "name": "강타",
         "nameJa": "強 打",
-        "description": "「KO술」＋「스태미나강탈」의 효과"
+        "description": "「KO술」＋「스태미나강탈」의 효과",
+        "nameEn": "Heavy Hitter"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Brawn"
   },
   {
     "id": "skill_75d2b8654cf4",
@@ -135,10 +152,12 @@
         "points": 10,
         "name": "강탈무효",
         "nameJa": "盗み無 効",
-        "description": "메라루, 게리오스 등에게 아이템을 뺏기지 않는다."
+        "description": "메라루, 게리오스 등에게 아이템을 뺏기지 않는다.",
+        "nameEn": "Anti-Theft"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Anti-Theft"
   },
   {
     "id": "skill_28dc80245370",
@@ -150,10 +169,12 @@
         "points": 10,
         "name": "풀차지",
         "nameJa": "フルチャ ー ジ",
-        "description": "체력게이지가 최대일 때 공격력이 상승한다. (기본공격력+20)"
+        "description": "체력게이지가 최대일 때 공격력이 상승한다. (기본공격력+20)",
+        "nameEn": "Peak Performance"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Unscathed"
   },
   {
     "id": "skill_a3c4d7818b03",
@@ -165,17 +186,20 @@
         "points": -10,
         "name": "미숙",
         "nameJa": "未熟",
-        "description": "평소 공격 시 튕기지 않는 부위에도 1/3 확률로 공격이 튕겨져 버린다."
+        "description": "평소 공격 시 튕기지 않는 부위에도 1/3 확률로 공격이 튕겨져 버린다.",
+        "nameEn": "Blind Eye"
       },
       {
         "id": "activation_9cc18f2c84e7",
         "points": 10,
         "name": "심안",
         "nameJa": "心眼",
-        "description": "공격이 튕겨도, 튕겨나가는 모션을 취하지 않는다. 단, 예리도의 감소량은 변화가 없다."
+        "description": "공격이 튕겨도, 튕겨나가는 모션을 취하지 않는다. 단, 예리도의 감소량은 변화가 없다.",
+        "nameEn": "Mind's Eye"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Fencing"
   },
   {
     "id": "skill_ed1944192c5e",
@@ -187,10 +211,12 @@
         "points": 10,
         "name": "무투가",
         "nameJa": "舞踏家",
-        "description": "「회피거리UP」＋「풀차지」의 효과"
+        "description": "「회피거리UP」＋「풀차지」의 효과",
+        "nameEn": "Fleet Feet"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Prudence"
   },
   {
     "id": "skill_6365d7eb75b5",
@@ -202,10 +228,12 @@
         "points": 10,
         "name": "함정꾼",
         "nameJa": "罠師",
-        "description": "독고기, 마비고기, 수면고기, 그물, 구멍함정, 마비덫의 조합성공률이 100%가 되며, 함정류/대형폭탄류의 설치 속도가 빨라진다."
+        "description": "독고기, 마비고기, 수면고기, 그물, 구멍함정, 마비덫의 조합성공률이 100%가 되며, 함정류/대형폭탄류의 설치 속도가 빨라진다.",
+        "nameEn": "Trap Master"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "SpeedSetup"
   },
   {
     "id": "skill_55748660f9ee",
@@ -217,10 +245,12 @@
         "points": 10,
         "name": "고속수집",
         "nameJa": "高速 収 集",
-        "description": "갈무리, 채집, 곤충채집, 채굴 속도가 빨라진다."
+        "description": "갈무리, 채집, 곤충채집, 채굴 속도가 빨라진다.",
+        "nameEn": "Speed Gatherer"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Spd Gather"
   },
   {
     "id": "skill_2a9c189a93d7",
@@ -232,52 +262,60 @@
         "points": -20,
         "name": "공격력DOWN【대】",
         "nameJa": "攻 撃 力DOWN【大】",
-        "description": "기본공격력-15"
+        "description": "기본공격력-15",
+        "nameEn": "Attack Down (L)"
       },
       {
         "id": "activation_3199d75e1240",
         "points": -15,
         "name": "공격력DOWN【중】",
         "nameJa": "攻 撃 力DOWN【中】",
-        "description": "기본공격력-10"
+        "description": "기본공격력-10",
+        "nameEn": "Attack Down (M)"
       },
       {
         "id": "activation_8f1c08fd0e2d",
         "points": -10,
         "name": "공격력DOWN【소】",
         "nameJa": "攻 撃 力DOWN【小】",
-        "description": "기본공격력-5"
+        "description": "기본공격력-5",
+        "nameEn": "Attack Down (S)"
       },
       {
         "id": "activation_3fc58a9eb487",
         "points": 10,
         "name": "공격력UP【소】",
         "nameJa": "攻 撃 力UP【小】",
-        "description": "기본공격력+10"
+        "description": "기본공격력+10",
+        "nameEn": "Attack Up (S)"
       },
       {
         "id": "activation_cb58e870209a",
         "points": 15,
         "name": "공격력UP【중】",
         "nameJa": "攻 撃 力UP【中】",
-        "description": "기본공격력+15"
+        "description": "기본공격력+15",
+        "nameEn": "Attack Up (M)"
       },
       {
         "id": "activation_484b9b072f8e",
         "points": 20,
         "name": "공격력UP【대】",
         "nameJa": "攻 撃 力UP【大】",
-        "description": "기본공격력+20"
+        "description": "기본공격력+20",
+        "nameEn": "Attack Up (L)"
       },
       {
         "id": "activation_2c3efbf657f7",
         "points": 25,
         "name": "공격력UP【초】",
         "nameJa": "攻 撃 力UP【超】",
-        "description": "기본공격력+25"
+        "description": "기본공격력+25",
+        "nameEn": "Attack Up (XL)"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Attack"
   },
   {
     "id": "skill_9beb5b0d63dc",
@@ -289,10 +327,12 @@
         "points": 10,
         "name": "포획판단",
         "nameJa": "捕獲の見極め",
-        "description": "대형 몬스터의 포획가능 타이밍 감지 가능.(페인트 볼 또는 자동마킹 필요, 미니맵 상에서 대형 몬스터 마커 점멸.)"
+        "description": "대형 몬스터의 포획가능 타이밍 감지 가능.(페인트 볼 또는 자동마킹 필요, 미니맵 상에서 대형 몬스터 마커 점멸.)",
+        "nameEn": "Capture Guru"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Perception"
   },
   {
     "id": "skill_36177c02fa41",
@@ -304,10 +344,12 @@
         "points": 10,
         "name": "관통탄�관통살UP",
         "nameJa": "貫通 弾・ 貫通矢UP",
-        "description": "관통탄과 관통화살의 공격력이 1.1배로 증가한다."
+        "description": "관통탄과 관통화살의 공격력이 1.1배로 증가한다.",
+        "nameEn": "Pierce/Pierce Up"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Pierce Up"
   },
   {
     "id": "skill_336a703d8409",
@@ -319,17 +361,20 @@
         "points": 10,
         "name": "관통탄LV1추가",
         "nameJa": "貫通 弾 LV1追加",
-        "description": "레벨 1의 관통탄이 사용 가능하게 된다."
+        "description": "레벨 1의 관통탄이 사용 가능하게 된다.",
+        "nameEn": "Use Lv1 Pierce S"
       },
       {
         "id": "activation_1122bc4aaf45",
         "points": 15,
         "name": "관통탄전LV추가",
         "nameJa": "貫通 弾 全LV追加",
-        "description": "모든 레벨의 관통탄이 사용 가능하게 된다."
+        "description": "모든 레벨의 관통탄이 사용 가능하게 된다.",
+        "nameEn": "Use Any Pierce S"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Pierce S+"
   },
   {
     "id": "skill_f743b97156ed",
@@ -341,10 +386,12 @@
         "points": 10,
         "name": "무아지경",
         "nameJa": "無我の境地",
-        "description": "광룡 바이러스에 감염되었을 때, 광룡게이지 감소량이 5 증가. 극복한 경우, 회심률이 기존 15%에서 30%로 상승."
+        "description": "광룡 바이러스에 감염되었을 때, 광룡게이지 감소량이 5 증가. 극복한 경우, 회심률이 기존 15%에서 30%로 상승.",
+        "nameEn": "Antivirus"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Frenzy Res"
   },
   {
     "id": "skill_411e538f7c2f",
@@ -356,17 +403,20 @@
         "points": 10,
         "name": "광역화+1",
         "nameJa": "広域化+1",
-        "description": "약초, 회복약, 해독약, 괴력씨앗, 인내씨앗, 지움열매를 사용했을 때, 같은 지역에 있는 동료 또는 동반자에게 1/2의 효과가 발동."
+        "description": "약초, 회복약, 해독약, 괴력씨앗, 인내씨앗, 지움열매를 사용했을 때, 같은 지역에 있는 동료 또는 동반자에게 1/2의 효과가 발동.",
+        "nameEn": "Wide-Range +1"
       },
       {
         "id": "activation_9015d412bdcb",
         "points": 15,
         "name": "광역화+2",
         "nameJa": "広域化+2",
-        "description": "약초, 회복약, 해독약, 괴력씨앗, 인내씨앗, 지움열매를 사용했을 때, 같은 지역에 있는 동료 또는 동반자에게 같은 효과가 발동."
+        "description": "약초, 회복약, 해독약, 괴력씨앗, 인내씨앗, 지움열매를 사용했을 때, 같은 지역에 있는 동료 또는 동반자에게 같은 효과가 발동.",
+        "nameEn": "Wide-Range +2"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Wide-Range"
   },
   {
     "id": "skill_0b8715ba4a76",
@@ -378,10 +428,12 @@
         "points": 10,
         "name": "근성",
         "nameJa": "根性",
-        "description": "체력이 64 이상 남아있는 경우, 64를 넘어서는 데미지를 받아도 약간의 체력이 남는다. 힘이 다하기 전까진 1회만 발동된다."
+        "description": "체력이 64 이상 남아있는 경우, 64를 넘어서는 데미지를 받아도 약간의 체력이 남는다. 힘이 다하기 전까진 1회만 발동된다.",
+        "nameEn": "Guts"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Guts"
   },
   {
     "id": "skill_bf24a5d55721",
@@ -393,17 +445,20 @@
         "points": -10,
         "name": "스태미나회복지연",
         "nameJa": "スタミナ回復 遅 延",
-        "description": "시간경과에 의한 스테미너 회복속도가 통상의 0.75배가 된다."
+        "description": "시간경과에 의한 스테미너 회복속도가 통상의 0.75배가 된다.",
+        "nameEn": "Stam Recov Down"
       },
       {
         "id": "activation_66925c9e7e2f",
         "points": 10,
         "name": "스태미나급속회복",
         "nameJa": "スタミナ急速回復",
-        "description": "시간경과에 의한 스테미너 회복속도가 통상의 2배가 된다."
+        "description": "시간경과에 의한 스테미너 회복속도가 통상의 2배가 된다.",
+        "nameEn": "Stam Recov Up"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Stam Recov"
   },
   {
     "id": "skill_8e9aa57c53f3",
@@ -415,10 +470,12 @@
         "points": 10,
         "name": "축복",
         "nameJa": "祝福",
-        "description": "「체력회복량UP」＋「정령의 가호」의 효과"
+        "description": "「체력회복량UP」＋「정령의 가호」의 효과",
+        "nameEn": "Benediction"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Prayer"
   },
   {
     "id": "skill_8d7ad8b7839d",
@@ -430,24 +487,28 @@
         "points": -10,
         "name": "기절배가",
         "nameJa": "気絶倍加",
-        "description": "기절 상태의 지속시간이 2배로 늘어난다. 또 기절 상태에서 회복하기 위한 입력회수가 2배로 늘어난다."
+        "description": "기절 상태의 지속시간이 2배로 늘어난다. 또 기절 상태에서 회복하기 위한 입력회수가 2배로 늘어난다.",
+        "nameEn": "Double Stun"
       },
       {
         "id": "activation_bc49930522da",
         "points": 10,
         "name": "기절확률반감",
         "nameJa": "気絶確率半減",
-        "description": "기절 상태가 되었을 때, 1/2 확률로 기절 상태를 무효화 한다."
+        "description": "기절 상태가 되었을 때, 1/2 확률로 기절 상태를 무효화 한다.",
+        "nameEn": "Halve Stun"
       },
       {
         "id": "activation_62d33b59c6aa",
         "points": 15,
         "name": "기절무효",
         "nameJa": "気絶無 効",
-        "description": "기절 상태가 되지 않는다."
+        "description": "기절 상태가 되지 않는다.",
+        "nameEn": "Negate Stun"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Stun"
   },
   {
     "id": "skill_640d40323052",
@@ -459,17 +520,20 @@
         "points": -10,
         "name": "도발",
         "nameJa": "挑 発",
-        "description": "대형 몬스터의 표적이 되기 쉽다."
+        "description": "대형 몬스터의 표적이 되기 쉽다.",
+        "nameEn": "Taunt"
       },
       {
         "id": "activation_f5d12ab077f6",
         "points": 10,
         "name": "은밀",
         "nameJa": "隠密",
-        "description": "대형 몬스터의 표적이 되기 어렵다. (되지 않는 것은 아님)"
+        "description": "대형 몬스터의 표적이 되기 어렵다. (되지 않는 것은 아님)",
+        "nameEn": "Sneak"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Sense"
   },
   {
     "id": "skill_63c2bbb3a506",
@@ -481,10 +545,12 @@
         "points": 10,
         "name": "납도술",
         "nameJa": "納刀術",
-        "description": "무기를 집어넣는 속도가 빨라진다."
+        "description": "무기를 집어넣는 속도가 빨라진다.",
+        "nameEn": "Quick Sheath"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Sheathing"
   },
   {
     "id": "skill_4c363fb8e85d",
@@ -496,10 +562,12 @@
         "points": 10,
         "name": "진흙&눈무효",
         "nameJa": "泥＆雪無 効",
-        "description": "눈사람 상태나 흙투성이 상태가 되지 않는다."
+        "description": "눈사람 상태나 흙투성이 상태가 되지 않는다.",
+        "nameEn": "Negate Mud/Snow"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Mud/Snow"
   },
   {
     "id": "skill_32348dadc980",
@@ -511,17 +579,20 @@
         "points": -10,
         "name": "더위배가",
         "nameJa": "暑さ倍加",
-        "description": "더운 지역, 용암지대 위, 특정 몬스터가 사용하는 분진에 의한 데미지가 2배가 된다."
+        "description": "더운 지역, 용암지대 위, 특정 몬스터가 사용하는 분진에 의한 데미지가 2배가 된다.",
+        "nameEn": "Heat Surge"
       },
       {
         "id": "activation_6df58a06eed6",
         "points": 10,
         "name": "더위무효",
         "nameJa": "暑さ無 効",
-        "description": "더운 지역, 용암지대 위, 특정 몬스터가 사용하는 분진에 의한 데미지를 무효화 한다."
+        "description": "더운 지역, 용암지대 위, 특정 몬스터가 사용하는 분진에 의한 데미지를 무효화 한다.",
+        "nameEn": "Heat Cancel"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Heat Res"
   },
   {
     "id": "skill_5e95610da13d",
@@ -533,10 +604,12 @@
         "points": 10,
         "name": "점착무효",
         "nameJa": "粘着無 効",
-        "description": "구속상태를 무효화 한다."
+        "description": "구속상태를 무효화 한다.",
+        "nameEn": "Negate Tar"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Sticky Res"
   },
   {
     "id": "skill_65856e9fd388",
@@ -548,10 +621,12 @@
         "points": 10,
         "name": "내진",
         "nameJa": "耐震",
-        "description": "대형 몬스터가 일으키는 진동에 의한 흔들림을 무효화한다."
+        "description": "대형 몬스터가 일으키는 진동에 의한 흔들림을 무효화한다.",
+        "nameEn": "Tremor Res"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Tremor Res"
   },
   {
     "id": "skill_d419d4fb59a3",
@@ -563,17 +638,20 @@
         "points": -10,
         "name": "추위배가",
         "nameJa": "寒さ倍加",
-        "description": "추위에 의한 스테미너 최대치 감소효과가 2배가 된다."
+        "description": "추위에 의한 스테미너 최대치 감소효과가 2배가 된다.",
+        "nameEn": "Cold Surge"
       },
       {
         "id": "activation_d59c46b9ce0c",
         "points": 10,
         "name": "추위무효",
         "nameJa": "寒さ無 効",
-        "description": "추위에 의한 스테미너 최대치 감소효과를 무효화 한다."
+        "description": "추위에 의한 스테미너 최대치 감소효과를 무효화 한다.",
+        "nameEn": "Cold Cancel"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Cold Res"
   },
   {
     "id": "skill_25c2859f7595",
@@ -585,52 +663,60 @@
         "points": -20,
         "name": "통찰력-3",
         "nameJa": "見切り-3",
-        "description": "회심률이 15% 하락."
+        "description": "회심률이 15% 하락.",
+        "nameEn": "Critical Eye -3"
       },
       {
         "id": "activation_63c429ff56d7",
         "points": -15,
         "name": "통찰력-2",
         "nameJa": "見切り-2",
-        "description": "회심률이 10% 하락."
+        "description": "회심률이 10% 하락.",
+        "nameEn": "Critical Eye -2"
       },
       {
         "id": "activation_c16836ce5961",
         "points": -10,
         "name": "통찰력-1",
         "nameJa": "見切り-1",
-        "description": "회심률이 5% 하락."
+        "description": "회심률이 5% 하락.",
+        "nameEn": "Critical Eye -1"
       },
       {
         "id": "activation_b52cf31f2c5a",
         "points": 10,
         "name": "통찰력+1",
         "nameJa": "見切り+1",
-        "description": "회심률이 10% 증가."
+        "description": "회심률이 10% 증가.",
+        "nameEn": "Critical Eye +1"
       },
       {
         "id": "activation_ba7c45983660",
         "points": 15,
         "name": "통찰력+2",
         "nameJa": "見切り+2",
-        "description": "회심률이 15% 증가."
+        "description": "회심률이 15% 증가.",
+        "nameEn": "Critical Eye +2"
       },
       {
         "id": "activation_76fd04010ed6",
         "points": 20,
         "name": "통찰력+3",
         "nameJa": "見切り+3",
-        "description": "회심률이 20% 증가."
+        "description": "회심률이 20% 증가.",
+        "nameEn": "Critical Eye +3"
       },
       {
         "id": "activation_f4f9de4fae13",
         "points": 30,
         "name": "통찰력마스터",
         "nameJa": "見切りマスタ ー",
-        "description": "회심률이 30% 증가."
+        "description": "회심률이 30% 증가.",
+        "nameEn": "Critical God"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Expert"
   },
   {
     "id": "skill_0a0d7a1a0dde",
@@ -642,10 +728,12 @@
         "points": 10,
         "name": "명검",
         "nameJa": "真打",
-        "description": "「예리도레벨+1」＋「공격력UP【대】」의 효과. 공격력DOWN【소】【중】【대】은 모두 무효화됨."
+        "description": "「예리도레벨+1」＋「공격력UP【대】」의 효과. 공격력DOWN【소】【중】【대】은 모두 무효화됨.",
+        "nameEn": "Honed Blade"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Edgemaster"
   },
   {
     "id": "skill_37a4e4eddec0",
@@ -657,17 +745,20 @@
         "points": -10,
         "name": "독배가",
         "nameJa": "毒倍加",
-        "description": "독, 맹독 상태가 되었을 때, 일정시간 받는 데미지량이 2배가 된다."
+        "description": "독, 맹독 상태가 되었을 때, 일정시간 받는 데미지량이 2배가 된다.",
+        "nameEn": "Double Poison"
       },
       {
         "id": "activation_c55530d7701b",
         "points": 10,
         "name": "독무효",
         "nameJa": "毒無 効",
-        "description": "독, 맹독 상태가 되지 않는다."
+        "description": "독, 맹독 상태가 되지 않는다.",
+        "nameEn": "Negate Poison"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Poison"
   },
   {
     "id": "skill_e6862626576e",
@@ -679,10 +770,12 @@
         "points": 10,
         "name": "독병추가",
         "nameJa": "毒ビン追加",
-        "description": "슬래시액스, 차지액스, 활 사용 시 독병을 사용할 수 있게 된다."
+        "description": "슬래시액스, 차지액스, 활 사용 시 독병을 사용할 수 있게 된다.",
+        "nameEn": "Use Poison Coat"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Poison C+"
   },
   {
     "id": "skill_38ca304494f3",
@@ -694,17 +787,20 @@
         "points": -10,
         "name": "마비배가",
         "nameJa": "麻痺倍加",
-        "description": "마비 상태의 지속시간이 2배로 늘어난다."
+        "description": "마비 상태의 지속시간이 2배로 늘어난다.",
+        "nameEn": "Double Paralysis"
       },
       {
         "id": "activation_8f12e615c96a",
         "points": 10,
         "name": "마비무효",
         "nameJa": "麻痺無 効",
-        "description": "마비 상태가 되지 않는다."
+        "description": "마비 상태가 되지 않는다.",
+        "nameEn": "Negate Paralysis"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Paralysis"
   },
   {
     "id": "skill_596acdbdc84d",
@@ -716,10 +812,12 @@
         "points": 10,
         "name": "마비병추가",
         "nameJa": "麻痺ビン追加",
-        "description": "슬래시액스, 차지액스, 활 사용 시 마비병을 사용할 수 있게 된다."
+        "description": "슬래시액스, 차지액스, 활 사용 시 마비병을 사용할 수 있게 된다.",
+        "nameEn": "Use Para Coat"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Para C+"
   },
   {
     "id": "skill_810ef03516ac",
@@ -731,17 +829,20 @@
         "points": 10,
         "name": "배부름",
         "nameJa": "まんぷく",
-        "description": "설익은 고기, 잘 익은 고기, 탄고기, 쿨미트, 핫미트, 휴대 식량을 먹었을 경우, 스테미너 최대치가 추가로 25 증가한다."
+        "description": "설익은 고기, 잘 익은 고기, 탄고기, 쿨미트, 핫미트, 휴대 식량을 먹었을 경우, 스테미너 최대치가 추가로 25 증가한다.",
+        "nameEn": "Gourmand"
       },
       {
         "id": "activation_3f562d19d926",
         "points": 15,
         "name": "주워먹기",
         "nameJa": "拾い食い",
-        "description": "「배부름」효과에, 대응 아이템※1 사용 시 스테미너 최대치가 증가하는 경우가 발생한다."
+        "description": "「배부름」효과에, 대응 아이템※1 사용 시 스테미너 최대치가 증가하는 경우가 발생한다.",
+        "nameEn": "Scavenger"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Gluttony"
   },
   {
     "id": "skill_ca1537907883",
@@ -753,10 +854,12 @@
         "points": 10,
         "name": "스태미나강탈",
         "nameJa": "スタミナ奪取",
-        "description": "멸기치를 가진 공격의 멸기치가 통상의 1.2배로 늘어난다."
+        "description": "멸기치를 가진 공격의 멸기치가 통상의 1.2배로 늘어난다.",
+        "nameEn": "Stamina Thief"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Stam Drain"
   },
   {
     "id": "skill_8b8905a42a60",
@@ -768,10 +871,12 @@
         "points": 10,
         "name": "멸기병추가",
         "nameJa": "減 気 ビン追加",
-        "description": "슬래시액스, 차지액스, 활 사용 시 멸기병을 사용할 수 있게 된다."
+        "description": "슬래시액스, 차지액스, 활 사용 시 멸기병을 사용할 수 있게 된다.",
+        "nameEn": "Use Exhaust Coat"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Exhaust C+"
   },
   {
     "id": "skill_5d84527a2efe",
@@ -783,24 +888,28 @@
         "points": -10,
         "name": "물내성약화",
         "nameJa": "水耐性弱化",
-        "description": "물내성이 20 하락"
+        "description": "물내성이 20 하락",
+        "nameEn": "Water Res -20"
       },
       {
         "id": "activation_db93121551c0",
         "points": 10,
         "name": "물내성【소】",
         "nameJa": "水耐性【小】",
-        "description": "물내성이 15 상승"
+        "description": "물내성이 15 상승",
+        "nameEn": "Water Res +15"
       },
       {
         "id": "activation_0d81b18e3434",
         "points": 15,
         "name": "물내성【대】",
         "nameJa": "水耐性【大】",
-        "description": "물내성이 20 상승"
+        "description": "물내성이 20 상승",
+        "nameEn": "Water Res +20"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Water Res"
   },
   {
     "id": "skill_96039668e096",
@@ -812,31 +921,36 @@
         "points": -10,
         "name": "물속성공격DOWN",
         "nameJa": "水 属 性攻 撃 弱化",
-        "description": "무기�탄의 물속성치를 0.75배로 하락시킨다. 소수점 이하는 버림."
+        "description": "무기�탄의 물속성치를 0.75배로 하락시킨다. 소수점 이하는 버림.",
+        "nameEn": "Water Atk Down"
       },
       {
         "id": "activation_528db1be9472",
         "points": 10,
         "name": "물속성공격UP+1",
         "nameJa": "水 属 性攻 撃強 化+1",
-        "description": "무기�탄의 물속성치를 1.05배 하고 거기에 40을 가산한다. 소수점 이하는 버림."
+        "description": "무기�탄의 물속성치를 1.05배 하고 거기에 40을 가산한다. 소수점 이하는 버림.",
+        "nameEn": "Water Atk +1"
       },
       {
         "id": "activation_4ac2530457a8",
         "points": 15,
         "name": "물속성공격UP+2",
         "nameJa": "水 属 性攻 撃強 化+2",
-        "description": "무기�탄의 물속성치를 1.10배 하고 거기에 60을 가산한다. 소수점 이하는 버림."
+        "description": "무기�탄의 물속성치를 1.10배 하고 거기에 60을 가산한다. 소수점 이하는 버림.",
+        "nameEn": "Water Atk +2"
       },
       {
         "id": "activation_a971b4562f3c",
         "points": 20,
         "name": "물속성공격UP+3",
         "nameJa": "水 属 性攻 撃強 化+3",
-        "description": "무기�탄의 물속성치를 1.15배 하고 거기에 90을 가산한다. 소수점 이하는 버림."
+        "description": "무기�탄의 물속성치를 1.15배 하고 거기에 90을 가산한다. 소수점 이하는 버림.",
+        "nameEn": "Water Atk +3"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Water Atk"
   },
   {
     "id": "skill_d83820844b4d",
@@ -848,45 +962,52 @@
         "points": -20,
         "name": "반동경감-3",
         "nameJa": "反動 軽 減-3",
-        "description": "사격 시의 반동 계산 시, 3단계 반동이 증가된다. 속사의 반동에는 효과가 없다."
+        "description": "사격 시의 반동 계산 시, 3단계 반동이 증가된다. 속사의 반동에는 효과가 없다.",
+        "nameEn": "Recoil Down -3"
       },
       {
         "id": "activation_144b64520a99",
         "points": -15,
         "name": "반동경감-2",
         "nameJa": "反動 軽 減-2",
-        "description": "사격 시의 반동 계산 시, 2단계 반동이 증가된다. 속사의 반동에는 효과가 없다."
+        "description": "사격 시의 반동 계산 시, 2단계 반동이 증가된다. 속사의 반동에는 효과가 없다.",
+        "nameEn": "Recoil Down -2"
       },
       {
         "id": "activation_ddc23f62a406",
         "points": -10,
         "name": "반동경감-1",
         "nameJa": "反動 軽 減-1",
-        "description": "사격 시의 반동 계산 시, 1단계 반동이 증가된다. 속사의 반동에는 효과가 없다."
+        "description": "사격 시의 반동 계산 시, 1단계 반동이 증가된다. 속사의 반동에는 효과가 없다.",
+        "nameEn": "Recoil Down -1"
       },
       {
         "id": "activation_d5be84e16bf4",
         "points": 10,
         "name": "반동경감+1",
         "nameJa": "反動 軽 減+1",
-        "description": "사격 시의 반동 계산 시, 1단계 반동이 경감된다. 속사의 반동에는 효과가 없다."
+        "description": "사격 시의 반동 계산 시, 1단계 반동이 경감된다. 속사의 반동에는 효과가 없다.",
+        "nameEn": "Recoil Down +1"
       },
       {
         "id": "activation_06f7afb17ae4",
         "points": 15,
         "name": "반동경감+2",
         "nameJa": "反動 軽 減+2",
-        "description": "사격 시의 반동 계산 시, 2단계 반동이 경감된다. 속사의 반동에는 효과가 없다."
+        "description": "사격 시의 반동 계산 시, 2단계 반동이 경감된다. 속사의 반동에는 효과가 없다.",
+        "nameEn": "Recoil Down +2"
       },
       {
         "id": "activation_77e5f84db06d",
         "points": 20,
         "name": "반동경감+3",
         "nameJa": "反動 軽 減+3",
-        "description": "사격 시의 반동 계산 시, 3단계 반동이 경감된다. 속사의 반동에는 효과가 없다."
+        "description": "사격 시의 반동 계산 시, 3단계 반동이 경감된다. 속사의 반동에는 효과가 없다.",
+        "nameEn": "Recoil Down +3"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Recoil"
   },
   {
     "id": "skill_dbf4116422c9",
@@ -898,10 +1019,12 @@
         "points": 10,
         "name": "발도술【힘】",
         "nameJa": "抜刀術【力】",
-        "description": "절단 속성의 무기로 발도 공격 시 멸기치와 기절치가 추가된다."
+        "description": "절단 속성의 무기로 발도 공격 시 멸기치와 기절치가 추가된다.",
+        "nameEn": "Punishing Draw"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "PunishDraw"
   },
   {
     "id": "skill_89c345412fe4",
@@ -913,10 +1036,12 @@
         "points": 10,
         "name": "발도술【기술】",
         "nameJa": "抜刀術【技】",
-        "description": "발도 공격 시 회심률이 100% 가 된다."
+        "description": "발도 공격 시 회심률이 100% 가 된다.",
+        "nameEn": "Critical Draw"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Crit Draw"
   },
   {
     "id": "skill_2a87c14e4abc",
@@ -928,52 +1053,60 @@
         "points": -20,
         "name": "방어력DOWN【대】",
         "nameJa": "防御力DOWN【大】",
-        "description": "방어력x0.9-10, 단 1 이하로는 내려가지 않는다."
+        "description": "방어력x0.9-10, 단 1 이하로는 내려가지 않는다.",
+        "nameEn": "Defense Down (L)"
       },
       {
         "id": "activation_d5099913df57",
         "points": -15,
         "name": "방어력DOWN【중】",
         "nameJa": "防御力DOWN【中】",
-        "description": "방어력x0.95-10, 단 1 이하로는 내려가지 않는다."
+        "description": "방어력x0.95-10, 단 1 이하로는 내려가지 않는다.",
+        "nameEn": "Defense Down (M)"
       },
       {
         "id": "activation_becf1af16e2d",
         "points": -10,
         "name": "방어력DOWN【소】",
         "nameJa": "防御力DOWN【小】",
-        "description": "방어력-10, 단 1 이하로는 내려가지 않는다."
+        "description": "방어력-10, 단 1 이하로는 내려가지 않는다.",
+        "nameEn": "Defense Down (S)"
       },
       {
         "id": "activation_956181a0b873",
         "points": 10,
         "name": "방어력UP【소】",
         "nameJa": "防御力UP【小】",
-        "description": "방어력+15"
+        "description": "방어력+15",
+        "nameEn": "Defense Up (S)"
       },
       {
         "id": "activation_0d6aab6a05b1",
         "points": 15,
         "name": "방어력UP【중】",
         "nameJa": "防御力UP【中】",
-        "description": "방어력x1.03+20, 소수점 이하 방어력은 버림"
+        "description": "방어력x1.03+20, 소수점 이하 방어력은 버림",
+        "nameEn": "Defense Up (M)"
       },
       {
         "id": "activation_79451f3a7422",
         "points": 20,
         "name": "방어력UP【대】",
         "nameJa": "防御力UP【大】",
-        "description": "방어력x1.05+25, 소수점 이하 방어력은 버림"
+        "description": "방어력x1.05+25, 소수점 이하 방어력은 버림",
+        "nameEn": "Defense Up (L)"
       },
       {
         "id": "activation_0ed3d02fd92a",
         "points": 25,
         "name": "방어력UP【초】",
         "nameJa": "防御力UP【超】",
-        "description": "방어력x1.08+30, 소수점 이하 방어력은 버림"
+        "description": "방어력x1.08+30, 소수점 이하 방어력은 버림",
+        "nameEn": "Defense Up (XL)"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Defense"
   },
   {
     "id": "skill_21bbc3dfb2f7",
@@ -985,10 +1118,12 @@
         "points": 10,
         "name": "버섯마니아",
         "nameJa": "キノコ大好き",
-        "description": "버섯을 먹을 수 있게 되며, 버섯을 먹었을 때 유효한 효과를 얻을 수 있게 된다. 효과는 ※3 참고. 광역화는 본래 효과와 동일."
+        "description": "버섯을 먹을 수 있게 되며, 버섯을 먹었을 때 유효한 효과를 얻을 수 있게 된다. 효과는 ※3 참고. 광역화는 본래 효과와 동일.",
+        "nameEn": "Mushromancer"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Mycology"
   },
   {
     "id": "skill_fdb5eae206c1",
@@ -1000,24 +1135,28 @@
         "points": -10,
         "name": "번개내성약화",
         "nameJa": "雷耐性弱化",
-        "description": "번개내성이 20 하락"
+        "description": "번개내성이 20 하락",
+        "nameEn": "Thunder Res -20"
       },
       {
         "id": "activation_d1532f12df77",
         "points": 10,
         "name": "번개내성【소】",
         "nameJa": "雷耐性【小】",
-        "description": "번개내성이 15 상승"
+        "description": "번개내성이 15 상승",
+        "nameEn": "Thunder Res +15"
       },
       {
         "id": "activation_b3478569f8c9",
         "points": 15,
         "name": "번개내성【대】",
         "nameJa": "雷耐性【大】",
-        "description": "번개내성이 20 상승"
+        "description": "번개내성이 20 상승",
+        "nameEn": "Thunder Res +20"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "ThunderRes"
   },
   {
     "id": "skill_e2bd81d7e74c",
@@ -1029,31 +1168,36 @@
         "points": -10,
         "name": "번개속성공격DOWN",
         "nameJa": "雷 属 性攻 撃 弱化",
-        "description": "무기�탄의 번개속성치를 0.75배로 하락시킨다. 소수점 이하는 버림."
+        "description": "무기�탄의 번개속성치를 0.75배로 하락시킨다. 소수점 이하는 버림.",
+        "nameEn": "Thunder Atk Down"
       },
       {
         "id": "activation_1f706151d0ee",
         "points": 10,
         "name": "번개속성공격UP+1",
         "nameJa": "雷 属 性攻 撃強 化+1",
-        "description": "무기�탄의 번개속성치를 1.05배 하고 거기에 40을 가산한다. 소수점 이하는 버림."
+        "description": "무기�탄의 번개속성치를 1.05배 하고 거기에 40을 가산한다. 소수점 이하는 버림.",
+        "nameEn": "Thunder Atk +1"
       },
       {
         "id": "activation_f033cf11c619",
         "points": 15,
         "name": "번개속성공격UP+2",
         "nameJa": "雷 属 性攻 撃強 化+2",
-        "description": "무기�탄의 번개속성치를 1.10배 하고 거기에 60을 가산한다. 소수점 이하는 버림."
+        "description": "무기�탄의 번개속성치를 1.10배 하고 거기에 60을 가산한다. 소수점 이하는 버림.",
+        "nameEn": "Thunder Atk +2"
       },
       {
         "id": "activation_c89a922d6f64",
         "points": 20,
         "name": "번개속성공격UP+3",
         "nameJa": "雷 属 性攻 撃強 化+3",
-        "description": "무기�탄의 번개속성치를 1.15배 하고 거기에 90을 가산한다. 소수점 이하는 버림."
+        "description": "무기�탄의 번개속성치를 1.15배 하고 거기에 90을 가산한다. 소수점 이하는 버림.",
+        "nameEn": "Thunder Atk +3"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "ThunderAtk"
   },
   {
     "id": "skill_a6713dfa141b",
@@ -1065,10 +1209,12 @@
         "points": 10,
         "name": "허니헌터",
         "nameJa": "ハニ ー ハンタ ー",
-        "description": "벌꿀을 채취할 수 있는 벌집채집포인트나 올타로스 처치 시 떨어트리는 것에서 벌꿀과 로얄벌꿀을 채집했을 때 2개 이상 획득할 수 있다."
+        "description": "벌꿀을 채취할 수 있는 벌집채집포인트나 올타로스 처치 시 떨어트리는 것에서 벌꿀과 로얄벌꿀을 채집했을 때 2개 이상 획득할 수 있다.",
+        "nameEn": "Honey Hunter"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Honey"
   },
   {
     "id": "skill_7717a3d7e05e",
@@ -1080,10 +1226,12 @@
         "points": 10,
         "name": "베기술【힘】",
         "nameJa": "居合術【力】",
-        "description": "「발도술【힘】」＋「납도술」의 효과"
+        "description": "「발도술【힘】」＋「납도술」의 효과",
+        "nameEn": "Sheath Control"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Readiness"
   },
   {
     "id": "skill_9c165ef0be95",
@@ -1095,31 +1243,36 @@
         "points": -15,
         "name": "악마의변덕",
         "nameJa": "悪魔の 気 まぐれ",
-        "description": "곡괭이, 잠자리채, 피리계 아이템, 부메랑이 1/2 확률로 부서지기 쉽다."
+        "description": "곡괭이, 잠자리채, 피리계 아이템, 부메랑이 1/2 확률로 부서지기 쉽다.",
+        "nameEn": "Devil's Whim"
       },
       {
         "id": "activation_dd5b21205a4f",
         "points": -10,
         "name": "악령의변덕",
         "nameJa": "悪霊の 気 まぐれ",
-        "description": "곡괭이, 잠자리채, 피리계 아이템, 부메랑이 1/4 확률로 부서지기 쉽다."
+        "description": "곡괭이, 잠자리채, 피리계 아이템, 부메랑이 1/4 확률로 부서지기 쉽다.",
+        "nameEn": "Spectre's Whim"
       },
       {
         "id": "activation_a98e081fb052",
         "points": 10,
         "name": "정령의변덕",
         "nameJa": "精 霊 の 気 まぐれ",
-        "description": "곡괭이, 잠자리채, 부메랑이 망가질 상황에서 1/4 확률로 부서지지 않는다. 피리계 아이템은 1/3의 확률로 부서지지 않는다."
+        "description": "곡괭이, 잠자리채, 부메랑이 망가질 상황에서 1/4 확률로 부서지지 않는다. 피리계 아이템은 1/3의 확률로 부서지지 않는다.",
+        "nameEn": "Spirit's Whim"
       },
       {
         "id": "activation_e0184c65cfd1",
         "points": 15,
         "name": "신의변덕",
         "nameJa": "神の 気 まぐれ",
-        "description": "곡괭이, 잠자리채, 피리계 아이템, 부메랑이 망가질 상황에서 1/2 확률로 부서지지 않는다."
+        "description": "곡괭이, 잠자리채, 피리계 아이템, 부메랑이 망가질 상황에서 1/2 확률로 부서지지 않는다.",
+        "nameEn": "Divine Whim"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Whim"
   },
   {
     "id": "skill_2ba74f432225",
@@ -1131,10 +1284,12 @@
         "points": 10,
         "name": "끈적끈적검법",
         "nameJa": "ネバネバ 剣 法",
-        "description": "「불굴」＋「러너」＋「스태미나강탈」의 효과"
+        "description": "「불굴」＋「러너」＋「스태미나강탈」의 효과",
+        "nameEn": "Pro Dirty Fencer"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "D. Fencing"
   },
   {
     "id": "skill_41614695fa79",
@@ -1146,10 +1301,12 @@
         "points": 10,
         "name": "역린",
         "nameJa": "逆鱗",
-        "description": "「근성」＋「재난대처능력+2」의 효과"
+        "description": "「근성」＋「재난대처능력+2」의 효과",
+        "nameEn": "Wrath Awoken"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Fury"
   },
   {
     "id": "skill_d565a104e42c",
@@ -1161,24 +1318,28 @@
         "points": -10,
         "name": "불내성약화",
         "nameJa": "火耐性弱化",
-        "description": "화내성이 20 하락"
+        "description": "화내성이 20 하락",
+        "nameEn": "Fire Res -20"
       },
       {
         "id": "activation_d7f8559c8729",
         "points": 10,
         "name": "불내성【소】",
         "nameJa": "火耐性【小】",
-        "description": "불내성이 15 상승"
+        "description": "불내성이 15 상승",
+        "nameEn": "Fire Res +15"
       },
       {
         "id": "activation_10709871655d",
         "points": 15,
         "name": "불내성【대】",
         "nameJa": "火耐性【大】",
-        "description": "불내성이 20 상승"
+        "description": "불내성이 20 상승",
+        "nameEn": "Fire Res +20"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Fire Res"
   },
   {
     "id": "skill_b483bb71c31d",
@@ -1190,31 +1351,36 @@
         "points": -10,
         "name": "불속성공격DOWN",
         "nameJa": "火 属 性攻 撃 弱化",
-        "description": "무기�탄의 불속성치를 0.75배로 하락시킨다. 소수점 이하는 버림."
+        "description": "무기�탄의 불속성치를 0.75배로 하락시킨다. 소수점 이하는 버림.",
+        "nameEn": "Fire Atk Down"
       },
       {
         "id": "activation_f7b98c0ddb37",
         "points": 10,
         "name": "불속성공격UP+1",
         "nameJa": "火 属 性攻 撃強 化+1",
-        "description": "무기�탄의 불속성치를 1.05배 하고 거기에 40을 가산한다. 소수점 이하는 버림."
+        "description": "무기�탄의 불속성치를 1.05배 하고 거기에 40을 가산한다. 소수점 이하는 버림.",
+        "nameEn": "Fire Atk +1"
       },
       {
         "id": "activation_94c32c8b2424",
         "points": 15,
         "name": "불속성공격UP+2",
         "nameJa": "火 属 性攻 撃強 化+2",
-        "description": "무기�탄의 불속성치를 1.10배 하고 거기에 60을 가산한다. 소수점 이하는 버림."
+        "description": "무기�탄의 불속성치를 1.10배 하고 거기에 60을 가산한다. 소수점 이하는 버림.",
+        "nameEn": "Fire Atk +2"
       },
       {
         "id": "activation_7e0aabaa64e0",
         "points": 20,
         "name": "불속성공격UP+3",
         "nameJa": "火 属 性攻 撃強 化+3",
-        "description": "무기�탄의 불속성치를 1.15배 하고 거기에 90을 가산한다. 소수점 이하는 버림."
+        "description": "무기�탄의 불속성치를 1.15배 하고 거기에 90을 가산한다. 소수점 이하는 버림.",
+        "nameEn": "Fire Atk +3"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Fire Atk"
   },
   {
     "id": "skill_c6c048ecdc6b",
@@ -1226,10 +1392,12 @@
         "points": 10,
         "name": "암약",
         "nameJa": "暗躍",
-        "description": "「장전수UP」＋「조합성공률+20%」＋「은밀」의 효과"
+        "description": "「장전수UP」＋「조합성공률+20%」＋「은밀」의 효과",
+        "nameEn": "Clandestine"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Covert"
   },
   {
     "id": "skill_8245ec7f462a",
@@ -1241,10 +1409,12 @@
         "points": 10,
         "name": "비기",
         "nameJa": "奥 義",
-        "description": "「각성」＋「속성공격강화」＋「상태이상공격+1」의 효과"
+        "description": "「각성」＋「속성공격강화」＋「상태이상공격+1」의 효과",
+        "nameEn": "Enlightened Blade"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Arcana"
   },
   {
     "id": "skill_c7afd72b9998",
@@ -1256,10 +1426,12 @@
         "points": 10,
         "name": "탄도강화",
         "nameJa": "弾 導 強 化",
-        "description": "탄이나 화살의 위력이 올라가는 적정거리가 관통탄, 관통화살은 앞뒤로, 그 이외의 탄이나 화살은 뒤쪽으로 늘어난다."
+        "description": "탄이나 화살의 위력이 올라가는 적정거리가 관통탄, 관통화살은 앞뒤로, 그 이외의 탄이나 화살은 뒤쪽으로 늘어난다.",
+        "nameEn": "Trajectory"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Dead Eye"
   },
   {
     "id": "skill_3745b2a425cd",
@@ -1271,10 +1443,12 @@
         "points": 10,
         "name": "강탄",
         "nameJa": "剛 弾",
-        "description": "「통상탄�연사살UP」＋「산탄�확산살UP」＋「관통탄�관통살UP」의 효과"
+        "description": "「통상탄�연사살UP」＋「산탄�확산살UP」＋「관통탄�관통살UP」의 효과",
+        "nameEn": "Silver Bullet"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "SteadyHand"
   },
   {
     "id": "skill_abda96911e59",
@@ -1286,10 +1460,12 @@
         "points": 10,
         "name": "산탄�확산살UP",
         "nameJa": "散 弾・拡 散矢UP",
-        "description": "보우건 : 산탄의 공격력이 1.2배로 증가, 활 : 확산화살의 공격력이 1.3배로 증가."
+        "description": "보우건 : 산탄의 공격력이 1.2배로 증가, 활 : 확산화살의 공격력이 1.3배로 증가.",
+        "nameEn": "Pellet/Spread Up"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Pellet Up"
   },
   {
     "id": "skill_b574c850f7d0",
@@ -1301,17 +1477,20 @@
         "points": 10,
         "name": "산탄LV1추가",
         "nameJa": "散 弾 LV1追加",
-        "description": "레벨 1의 산탄이 사용 가능하게 된다."
+        "description": "레벨 1의 산탄이 사용 가능하게 된다.",
+        "nameEn": "Use Lv1 Pellet S"
       },
       {
         "id": "activation_c75118622e84",
         "points": 15,
         "name": "산탄전LV추가",
         "nameJa": "散 弾 全LV追加",
-        "description": "모든 레벨의 산탄이 사용 가능하게 된다."
+        "description": "모든 레벨의 산탄이 사용 가능하게 된다.",
+        "nameEn": "Use Any Pellet S"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Pellet S+"
   },
   {
     "id": "skill_82438dbfdbd2",
@@ -1323,10 +1502,12 @@
         "points": 10,
         "name": "호법",
         "nameJa": "護法",
-        "description": "「독무효」＋「기절무효」＋「마비무효」＋「수면무효」의 효과"
+        "description": "「독무효」＋「기절무효」＋「마비무효」＋「수면무효」의 효과",
+        "nameEn": "Wellness"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Status Res"
   },
   {
     "id": "skill_d6ea8f6b4907",
@@ -1338,17 +1519,20 @@
         "points": 10,
         "name": "세균연구가",
         "nameJa": "細菌 研 究家",
-        "description": "비료옥을 맞은 몬스터가 반드시 지역이동을 한다. 비료옥의 조합성공률이 100%가 된다. 일부 아이템 사용 불가 상태무효. 폭파 상태무효."
+        "description": "비료옥을 맞은 몬스터가 반드시 지역이동을 한다. 비료옥의 조합성공률이 100%가 된다. 일부 아이템 사용 불가 상태무효. 폭파 상태무효.",
+        "nameEn": "Bio Researcher"
       },
       {
         "id": "activation_f8fa88c75dcf",
         "points": 15,
         "name": "바이오닥터",
         "nameJa": "バイオドクタ ー",
-        "description": "비료옥을 맞은 몬스터가 반드시 지역이동을 한다. 비료옥의 조합성공률이 100%가 된다. 일부 아이템 사용 불가 상태무효. 폭파 상태무효. 광룡바이러스 활성화 시 지속시간이 0.8배로 짧아짐."
+        "description": "비료옥을 맞은 몬스터가 반드시 지역이동을 한다. 비료옥의 조합성공률이 100%가 된다. 일부 아이템 사용 불가 상태무효. 폭파 상태무효. 광룡바이러스 활성화 시 지속시간이 0.8배로 짧아짐.",
+        "nameEn": "Bio Master"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Biology"
   },
   {
     "id": "skill_77ad65f34cd9",
@@ -1360,10 +1544,12 @@
         "points": 10,
         "name": "연발수+1",
         "nameJa": "連 発数 +1",
-        "description": "라이트보우건으로 속사 가능한 탄환의 연발 수에 1발이 추가된다. 연발수가 늘어나도 공격력보정이나 반동의 크기에는 변화가 없다."
+        "description": "라이트보우건으로 속사 가능한 탄환의 연발 수에 1발이 추가된다. 연발수가 늘어나도 공격력보정이나 반동의 크기에는 변화가 없다.",
+        "nameEn": "Bonus Shot"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Rapid Fire"
   },
   {
     "id": "skill_1826606ac13c",
@@ -1375,17 +1561,20 @@
         "points": -10,
         "name": "속성공격약화",
         "nameJa": "属性攻 撃 弱化",
-        "description": "무기�탄의 불�물�번개�얼음�용속성의 속성치가 0.90배로 하락한다."
+        "description": "무기�탄의 불�물�번개�얼음�용속성의 속성치가 0.90배로 하락한다.",
+        "nameEn": "Element Atk Down"
       },
       {
         "id": "activation_a5a48fa709d7",
         "points": 10,
         "name": "속성공격강화",
         "nameJa": "属性攻 撃強 化",
-        "description": "무기�탄의 불�물�번개�얼음�용속성의 속성치가 1.10배로 상승한다."
+        "description": "무기�탄의 불�물�번개�얼음�용속성의 속성치가 1.10배로 상승한다.",
+        "nameEn": "Element Atk Up"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Elemental"
   },
   {
     "id": "skill_28cbe0a71742",
@@ -1397,10 +1586,12 @@
         "points": 10,
         "name": "속성대미지무효",
         "nameJa": "属性やられ無 効",
-        "description": "모든 속성(불, 물, 전기, 얼음, 용)의 데미지를 무효화 한다."
+        "description": "모든 속성(불, 물, 전기, 얼음, 용)의 데미지를 무효화 한다.",
+        "nameEn": "Blightproof"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Blight Res"
   },
   {
     "id": "skill_1ae21921a72f",
@@ -1412,10 +1603,12 @@
         "points": 10,
         "name": "치명타격【속성】",
         "nameJa": "会 心 撃 【 属 性】",
-        "description": "크리티컬 공격 시, 속성 데미지를 높인다. 대검 1.2배, 한손검/쌍검/궁 1.35배, 라이트보우건/헤비보우건 1.3배 그 이외 1.25배."
+        "description": "크리티컬 공격 시, 속성 데미지를 높인다. 대검 1.2배, 한손검/쌍검/궁 1.35배, 라이트보우건/헤비보우건 1.3배 그 이외 1.25배.",
+        "nameEn": "Elemental Crit"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "CritElemnt"
   },
   {
     "id": "skill_c9fb5f168064",
@@ -1427,10 +1620,12 @@
         "points": 10,
         "name": "각성",
         "nameJa": "覚醒",
-        "description": "무속성 무기의 숨겨진 속성을 해방하는 스킬. (무기 란의 괄호 안 속성이 활성화)"
+        "description": "무속성 무기의 숨겨진 속성을 해방하는 스킬. (무기 란의 괄호 안 속성이 활성화)",
+        "nameEn": "Awaken"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "FreeElemnt"
   },
   {
     "id": "skill_56d47db4267b",
@@ -1442,17 +1637,20 @@
         "points": -10,
         "name": "수면배가",
         "nameJa": "睡眠倍加",
-        "description": "수면 상태의 지속시간이 2배로 늘어난다."
+        "description": "수면 상태의 지속시간이 2배로 늘어난다.",
+        "nameEn": "Double Sleep"
       },
       {
         "id": "activation_1a2fe0e2bef0",
         "points": 10,
         "name": "수면무효",
         "nameJa": "睡眠無 効",
-        "description": "수면 상태가 되지 않는다."
+        "description": "수면 상태가 되지 않는다.",
+        "nameEn": "Negate Sleep"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Sleep"
   },
   {
     "id": "skill_05675302032e",
@@ -1464,10 +1662,12 @@
         "points": 10,
         "name": "수면병추가",
         "nameJa": "睡眠ビン追加",
-        "description": "슬래시액스, 차지액스, 활 사용 시 수면병을 사용할 수 있게 된다."
+        "description": "슬래시액스, 차지액스, 활 사용 시 수면병을 사용할 수 있게 된다.",
+        "nameEn": "Use Sleep Coat"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Sleep C+"
   },
   {
     "id": "skill_410c93e16f86",
@@ -1479,17 +1679,20 @@
         "points": -10,
         "name": "느림보",
         "nameJa": "鈍足",
-        "description": "대쉬나 랜스의 돌진, 쌍검의 귀인화 등, 조금씩 스테미너가 감소되는 타입의 행동에 따른 스테미너 소비량이 2배가 된다."
+        "description": "대쉬나 랜스의 돌진, 쌍검의 귀인화 등, 조금씩 스테미너가 감소되는 타입의 행동에 따른 스테미너 소비량이 2배가 된다.",
+        "nameEn": "Short Sprinter"
       },
       {
         "id": "activation_02d3ad5baff0",
         "points": 10,
         "name": "러너",
         "nameJa": "ランナ ー",
-        "description": "대쉬나 랜스의 돌진, 쌍검의 귀인화 등, 조금씩 스테미너가 감소되는 타입의 행동에 따른 스테미너 소비량이 반감된다."
+        "description": "대쉬나 랜스의 돌진, 쌍검의 귀인화 등, 조금씩 스테미너가 감소되는 타입의 행동에 따른 스테미너 소비량이 반감된다.",
+        "nameEn": "Marathon Runner"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Stamina"
   },
   {
     "id": "skill_9914f3bb006d",
@@ -1501,24 +1704,28 @@
         "points": -10,
         "name": "슬로라이프",
         "nameJa": "スロ ー ライフ",
-        "description": "날고기, 설익은 고기, 잘 익은 고기, 탄고기, 쿨미트, 핫미트, 회어, 먹보다랑어, 도스먹보다랑어 아이템을 먹는 동작이 느려진다."
+        "description": "날고기, 설익은 고기, 잘 익은 고기, 탄고기, 쿨미트, 핫미트, 회어, 먹보다랑어, 도스먹보다랑어 아이템을 먹는 동작이 느려진다.",
+        "nameEn": "Slow Eater"
       },
       {
         "id": "activation_fee4214f3f7c",
         "points": 10,
         "name": "흡입+1",
         "nameJa": "早食い+1",
-        "description": "날고기, 설익은 고기, 잘 익은 고기, 탄고기, 쿨미트, 핫미트, 회어, 먹보다랑어, 도스먹보다랑어 아이템을 먹는 동작이 빨라진다."
+        "description": "날고기, 설익은 고기, 잘 익은 고기, 탄고기, 쿨미트, 핫미트, 회어, 먹보다랑어, 도스먹보다랑어 아이템을 먹는 동작이 빨라진다.",
+        "nameEn": "Speed Eating +1"
       },
       {
         "id": "activation_027df9142df9",
         "points": 15,
         "name": "흡입+2",
         "nameJa": "早食い+2",
-        "description": "「흡입+1」효과에, 대응 아이템※2 사용 시 동작도 빨라진다."
+        "description": "「흡입+1」효과에, 대응 아이템※2 사용 시 동작도 빨라진다.",
+        "nameEn": "Speed Eating +2"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Eating"
   },
   {
     "id": "skill_168a39d9eb1b",
@@ -1530,10 +1737,12 @@
         "points": 10,
         "name": "그루메",
         "nameJa": "グルメ",
-        "description": "「흡입+2」＋「고기마니아」＋「버섯좋아」의 효과"
+        "description": "「흡입+2」＋「고기마니아」＋「버섯좋아」의 효과",
+        "nameEn": "Alloy Stomach"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "PowerEater"
   },
   {
     "id": "skill_e234157c2fe5",
@@ -1545,10 +1754,12 @@
         "points": 10,
         "name": "실드마스터",
         "nameJa": "盾使い",
-        "description": "「가드강화」＋「스태미나급속회복」의 효과"
+        "description": "「가드강화」＋「스태미나급속회복」의 효과",
+        "nameEn": "Shield Bearer"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Stalwart"
   },
   {
     "id": "skill_6443ad676ced",
@@ -1560,24 +1771,28 @@
         "points": -10,
         "name": "얼음내성약화",
         "nameJa": "氷耐性弱化",
-        "description": "얼음내성이 20 하락"
+        "description": "얼음내성이 20 하락",
+        "nameEn": "Ice Res -20"
       },
       {
         "id": "activation_d2f07655f596",
         "points": 10,
         "name": "얼음내성【소】",
         "nameJa": "氷耐性【小】",
-        "description": "얼음내성이 15 5상승"
+        "description": "얼음내성이 15 5상승",
+        "nameEn": "Ice Res +15"
       },
       {
         "id": "activation_1cb4967c5b4b",
         "points": 15,
         "name": "얼음내성【대】",
         "nameJa": "氷耐性【大】",
-        "description": "얼음내성이 20 상승"
+        "description": "얼음내성이 20 상승",
+        "nameEn": "Ice Res +20"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Ice Res"
   },
   {
     "id": "skill_d2eae745f55d",
@@ -1589,31 +1804,36 @@
         "points": -10,
         "name": "얼음속성공격DOWN",
         "nameJa": "氷 属 性攻 撃 弱化",
-        "description": "무기�탄의 얼음속성치를 0.75배로 하락시킨다. 소수점 이하는 버림."
+        "description": "무기�탄의 얼음속성치를 0.75배로 하락시킨다. 소수점 이하는 버림.",
+        "nameEn": "Ice Atk Down"
       },
       {
         "id": "activation_c8324f71fa7c",
         "points": 10,
         "name": "얼음속성공격UP+1",
         "nameJa": "氷 属 性攻 撃強 化+1",
-        "description": "무기�탄의 얼음속성치를 1.05배 하고 거기에 40을 가산한다. 소수점 이하는 버림."
+        "description": "무기�탄의 얼음속성치를 1.05배 하고 거기에 40을 가산한다. 소수점 이하는 버림.",
+        "nameEn": "Ice Atk +1"
       },
       {
         "id": "activation_76d4b67a1f55",
         "points": 15,
         "name": "얼음속성공격UP+2",
         "nameJa": "氷 属 性攻 撃強 化+2",
-        "description": "무기�탄의 얼음속성치를 1.10배 하고 거기에 60을 가산한다. 소수점 이하는 버림."
+        "description": "무기�탄의 얼음속성치를 1.10배 하고 거기에 60을 가산한다. 소수점 이하는 버림.",
+        "nameEn": "Ice Atk +2"
       },
       {
         "id": "activation_a0a17e9fa248",
         "points": 20,
         "name": "얼음속성공격UP+3",
         "nameJa": "氷 属 性攻 撃強 化+3",
-        "description": "무기�탄의 얼음속성치를 1.15배 하고 거기에 90을 가산한다. 소수점 이하는 버림."
+        "description": "무기�탄의 얼음속성치를 1.15배 하고 거기에 90을 가산한다. 소수점 이하는 버림.",
+        "nameEn": "Ice Atk +3"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Ice Atk"
   },
   {
     "id": "skill_9a0f4d876162",
@@ -1625,10 +1845,12 @@
         "points": 10,
         "name": "불굴",
         "nameJa": "不屈",
-        "description": "1회 수레를 탈 경우 공격력이 1.1배, 방어력이 15% 상승. 2회 이상 수레를 탈 경우 공격력이 1.2배, 방어력이 30% 상승."
+        "description": "1회 수레를 탈 경우 공격력이 1.1배, 방어력이 15% 상승. 2회 이상 수레를 탈 경우 공격력이 1.2배, 방어력이 30% 상승.",
+        "nameEn": "Fortify"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Survivor"
   },
   {
     "id": "skill_4f483f174bc9",
@@ -1640,10 +1862,12 @@
         "points": 10,
         "name": "연린",
         "nameJa": "燃鱗",
-        "description": "캐릭터가 횃불을 가지고 있을 때와 동일한 효과를 가진다."
+        "description": "캐릭터가 횃불을 가지고 있을 때와 동일한 효과를 가진다.",
+        "nameEn": "Flame Aura"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Flame Aura"
   },
   {
     "id": "skill_e43cf9f6c27e",
@@ -1655,17 +1879,20 @@
         "points": -10,
         "name": "숫돌사용저속화",
         "nameJa": "砥石使用低速化",
-        "description": "숫돌을 사용했을 때 연마동작이 통상의 4회에서 5회로 연장된다."
+        "description": "숫돌을 사용했을 때 연마동작이 통상의 4회에서 5회로 연장된다.",
+        "nameEn": "Slow Sharpening"
       },
       {
         "id": "activation_52072945bb22",
         "points": 10,
         "name": "숫돌사용고속화",
         "nameJa": "砥石使用高速化",
-        "description": "숫돌을 사용했을 때 연마동작이 통상의 4회에서 1회로 단축된다."
+        "description": "숫돌을 사용했을 때 연마동작이 통상의 4회에서 1회로 단축된다.",
+        "nameEn": "Speed Sharpening"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Sharpener"
   },
   {
     "id": "skill_03a65ac27189",
@@ -1677,17 +1904,20 @@
         "points": -10,
         "name": "열상배가",
         "nameJa": "裂傷倍加",
-        "description": "열상 상태의 지속시간이 2배로 늘어난다."
+        "description": "열상 상태의 지속시간이 2배로 늘어난다.",
+        "nameEn": "Double Bleeding"
       },
       {
         "id": "activation_1836cf4fa9ce",
         "points": 10,
         "name": "열상무효",
         "nameJa": "裂傷無 効",
-        "description": "열상 상태가 되지 않는다."
+        "description": "열상 상태가 되지 않는다.",
+        "nameEn": "Negate Bleeding"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Bleeding"
   },
   {
     "id": "skill_82680c9bf0f3",
@@ -1699,17 +1929,20 @@
         "points": -10,
         "name": "무딤",
         "nameJa": "なまくら",
-        "description": "공격 시 예리도 소모가 두배로 늘어난다. 대검이나 차지액스의 가드, 건랜스의 포격�용격포, 차지액스의 속성해방베기에도 유효."
+        "description": "공격 시 예리도 소모가 두배로 늘어난다. 대검이나 차지액스의 가드, 건랜스의 포격�용격포, 차지액스의 속성해방베기에도 유효.",
+        "nameEn": "Blunt Edge"
       },
       {
         "id": "activation_5371bf744dab",
         "points": 10,
         "name": "예리",
         "nameJa": "業物",
-        "description": "공격 시 예리도 소모가 반으로 줄어든다. 대검이나 차지액스의 가드, 건랜스의 포격�용격포, 차지액스의 속성해방베기에도 유효. 또 공격이 튕기지 않을 경우 1/2 확률로 예리도를 소모하지 않는다."
+        "description": "공격 시 예리도 소모가 반으로 줄어든다. 대검이나 차지액스의 가드, 건랜스의 포격�용격포, 차지액스의 속성해방베기에도 유효. 또 공격이 튕기지 않을 경우 1/2 확률로 예리도를 소모하지 않는다.",
+        "nameEn": "Razor Sharp"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Sharpness"
   },
   {
     "id": "skill_0669fcda6735",
@@ -1721,10 +1954,12 @@
         "points": 10,
         "name": "철벽",
         "nameJa": "鉄壁",
-        "description": "「방어력UP【대】」＋「철면피」의 효과"
+        "description": "「방어력UP【대】」＋「철면피」의 효과",
+        "nameEn": "Iron Wall"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Resilience"
   },
   {
     "id": "skill_77b3da4beed3",
@@ -1736,10 +1971,12 @@
         "points": 10,
         "name": "금강체",
         "nameJa": "金剛体",
-        "description": "「귀마개」＋「풍압【소】무효」의 효과 + 강한 공격에 대해서도 쓰러지지 않는 행동을 취하게 된다"
+        "description": "「귀마개」＋「풍압【소】무효」의 효과 + 강한 공격에 대해서도 쓰러지지 않는 행동을 취하게 된다",
+        "nameEn": "Rock Steady"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Unshakable"
   },
   {
     "id": "skill_3bdc830a2d1a",
@@ -1751,24 +1988,28 @@
         "points": -10,
         "name": "용내성약화",
         "nameJa": "龍耐性弱化",
-        "description": "용내성이 20 하락"
+        "description": "용내성이 20 하락",
+        "nameEn": "Dragon Res -20"
       },
       {
         "id": "activation_0ded0ce0ef68",
         "points": 10,
         "name": "용내성【소】",
         "nameJa": "龍耐性【小】",
-        "description": "용내성이 15 상승"
+        "description": "용내성이 15 상승",
+        "nameEn": "Dragon Res +15"
       },
       {
         "id": "activation_c005a207af3f",
         "points": 15,
         "name": "용내성【대】",
         "nameJa": "龍耐性【大】",
-        "description": "용내성이 20 상승"
+        "description": "용내성이 20 상승",
+        "nameEn": "Dragon Res +20"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Dragon Res"
   },
   {
     "id": "skill_c21e79dfed09",
@@ -1780,31 +2021,36 @@
         "points": -10,
         "name": "용속성공격DOWN",
         "nameJa": "龍 属 性攻 撃 弱化",
-        "description": "무기�탄의 용속성치를 0.75배로 하락시킨다. 소수점 이하는 버림."
+        "description": "무기�탄의 용속성치를 0.75배로 하락시킨다. 소수점 이하는 버림.",
+        "nameEn": "Dragon Atk Down"
       },
       {
         "id": "activation_7f33327eac67",
         "points": 10,
         "name": "용속성공격UP+1",
         "nameJa": "龍 属 性攻 撃強 化+1",
-        "description": "무기�탄의 용속성치를 1.05배 하고 거기에 40을 가산한다. 소수점 이하는 버림."
+        "description": "무기�탄의 용속성치를 1.05배 하고 거기에 40을 가산한다. 소수점 이하는 버림.",
+        "nameEn": "Dragon Atk +1"
       },
       {
         "id": "activation_33cb8e28df50",
         "points": 15,
         "name": "용속성공격UP+2",
         "nameJa": "龍 属 性攻 撃強 化+2",
-        "description": "무기�탄의 용속성치를 1.10배 하고 거기에 60을 가산한다. 소수점 이하는 버림."
+        "description": "무기�탄의 용속성치를 1.10배 하고 거기에 60을 가산한다. 소수점 이하는 버림.",
+        "nameEn": "Dragon Atk +2"
       },
       {
         "id": "activation_9982d90798af",
         "points": 20,
         "name": "용속성공격UP+3",
         "nameJa": "龍 属 性攻 撃強 化+3",
-        "description": "무기�탄의 용속성치를 1.15배 하고 거기에 90을 가산한다. 소수점 이하는 버림."
+        "description": "무기�탄의 용속성치를 1.15배 하고 거기에 90을 가산한다. 소수점 이하는 버림.",
+        "nameEn": "Dragon Atk +3"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Dragon Atk"
   },
   {
     "id": "skill_a17db9b54aef",
@@ -1816,10 +2062,12 @@
         "points": 10,
         "name": "운반의 달인",
         "nameJa": "運搬の達人",
-        "description": "운반아이템을 운반 시 속도가 상승하며, 다소 높은 곳에서 떨어져도 운반아이템을 떨어트리지 않게 된다."
+        "description": "운반아이템을 운반 시 속도가 상승하며, 다소 높은 곳에서 떨어져도 운반아이템을 떨어트리지 않게 된다.",
+        "nameEn": "Pro Transporter"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Transportr"
   },
   {
     "id": "skill_bbe11654094a",
@@ -1831,38 +2079,44 @@
         "points": -15,
         "name": "재난",
         "nameJa": "災難",
-        "description": "메인보수로 나오는 아이템의 보수 결정 후, 다음 아이템 보수가 나올 확률이 보통의 22/32 에서 8/32로 내려간다."
+        "description": "메인보수로 나오는 아이템의 보수 결정 후, 다음 아이템 보수가 나올 확률이 보통의 22/32 에서 8/32로 내려간다.",
+        "nameEn": "Horrible Luck"
       },
       {
         "id": "activation_61a7e529b586",
         "points": -10,
         "name": "불운",
         "nameJa": "不運",
-        "description": "메인보수로 나오는 아이템의 보수 결정 후, 다음 아이템 보수가 나올 확률이 보통의 22/32 에서 16/32로 내려간다."
+        "description": "메인보수로 나오는 아이템의 보수 결정 후, 다음 아이템 보수가 나올 확률이 보통의 22/32 에서 16/32로 내려간다.",
+        "nameEn": "Bad Luck"
       },
       {
         "id": "activation_b0cc7150939a",
         "points": 10,
         "name": "행운",
         "nameJa": "幸運",
-        "description": "메인보수로 나오는 아이템의 보수 결정 후, 다음 아이템 보수가 나올 확률이 보통의 22/32 에서 25/32로 올라간다."
+        "description": "메인보수로 나오는 아이템의 보수 결정 후, 다음 아이템 보수가 나올 확률이 보통의 22/32 에서 25/32로 올라간다.",
+        "nameEn": "Good Luck"
       },
       {
         "id": "activation_1d7730735f1a",
         "points": 15,
         "name": "강운",
         "nameJa": "強運",
-        "description": "메인보수로 나오는 아이템의 보수 결정 후, 다음 아이템 보수가 나올 확률이 보통의 22/32 에서 28/32로 올라간다."
+        "description": "메인보수로 나오는 아이템의 보수 결정 후, 다음 아이템 보수가 나올 확률이 보통의 22/32 에서 28/32로 올라간다.",
+        "nameEn": "Great Luck"
       },
       {
         "id": "activation_e652c3eb6ecf",
         "points": 20,
         "name": "격운",
         "nameJa": "激運",
-        "description": "메인보수로 나오는 아이템의 보수 결정 후, 다음 아이템 보수가 나올 확률이 보통의 22/32 에서 31/32로 올라간다."
+        "description": "메인보수로 나오는 아이템의 보수 결정 후, 다음 아이템 보수가 나올 확률이 보통의 22/32 에서 31/32로 올라간다.",
+        "nameEn": "Miraculous Luck"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Fate"
   },
   {
     "id": "skill_725792be8c4d",
@@ -1874,17 +2128,20 @@
         "points": 10,
         "name": "철갑류탄LV1추가",
         "nameJa": "徹甲榴 弾 LV1追加",
-        "description": "레벨 1의 철갑류탄이 사용 가능하게 된다."
+        "description": "레벨 1의 철갑류탄이 사용 가능하게 된다.",
+        "nameEn": "Use Lv1 Crag S"
       },
       {
         "id": "activation_85b84e4b676a",
         "points": 15,
         "name": "철갑류탄전LV추가",
         "nameJa": "徹甲榴 弾 全LV追加",
-        "description": "모든 레벨의 철갑류탄이 사용 가능하게 된다."
+        "description": "모든 레벨의 철갑류탄이 사용 가능하게 된다.",
+        "nameEn": "Use Any Crag S"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Crag S+"
   },
   {
     "id": "skill_a9c0c630697b",
@@ -1896,10 +2153,12 @@
         "points": 10,
         "name": "고기마니아",
         "nameJa": "お肉大好き",
-        "description": "날고기를 먹을 수 있게 되며, 스테미너 최대치를 50 증가시킨다. 설익은 고기, 잘 익은 고기, 쿨미트, 핫미트를 먹으면 1분간 강주효과가 붙는다."
+        "description": "날고기를 먹을 수 있게 되며, 스테미너 최대치를 50 증가시킨다. 설익은 고기, 잘 익은 고기, 쿨미트, 핫미트를 먹으면 1분간 강주효과가 붙는다.",
+        "nameEn": "Meat Lover"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Carnivore"
   },
   {
     "id": "skill_eb815d46e71f",
@@ -1911,10 +2170,12 @@
         "points": 10,
         "name": "정신력",
         "nameJa": "精神力",
-        "description": "「집중」＋「고기마니아」의 효과"
+        "description": "「집중」＋「고기마니아」의 효과",
+        "nameEn": "Bloodthirst"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Ferocity"
   },
   {
     "id": "skill_0263df444797",
@@ -1926,10 +2187,12 @@
         "points": 10,
         "name": "오토가드",
         "nameJa": "オ ー トガ ー ド",
-        "description": "발도 중, 가드를 하는 것이 가능한 상황이라면, 가드상태가 아니어도 몬스터의 공격을 자동으로 가드한다."
+        "description": "발도 중, 가드를 하는 것이 가능한 상황이라면, 가드상태가 아니어도 몬스터의 공격을 자동으로 가드한다.",
+        "nameEn": "Auto-Guard"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Auto-Guard"
   },
   {
     "id": "skill_d5d5017546d7",
@@ -1941,17 +2204,20 @@
         "points": 10,
         "name": "힘의해방+1",
         "nameJa": "力の解放+1",
-        "description": "발동 조건이 성립되면 90초간 회심률 30% 상승, 스테미너 소비량이 1/2 로 감소."
+        "description": "발동 조건이 성립되면 90초간 회심률 30% 상승, 스테미너 소비량이 1/2 로 감소.",
+        "nameEn": "Latent Power +1"
       },
       {
         "id": "activation_49396cb07717",
         "points": 15,
         "name": "힘의해방+2",
         "nameJa": "力の解放+2",
-        "description": "발동 조건이 성립되면 90초간 회심률 50% 상승, 스테미너 소비량이 1/4 로 감소."
+        "description": "발동 조건이 성립되면 90초간 회심률 50% 상승, 스테미너 소비량이 1/4 로 감소.",
+        "nameEn": "Latent Power +2"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Gloves Off"
   },
   {
     "id": "skill_dc306dbb4ef6",
@@ -1963,10 +2229,12 @@
         "points": 10,
         "name": "예리도레벨+1",
         "nameJa": "斬れ味レベル+1",
-        "description": "무기의 예리도 레벨을 한 단계 늘린다.(예리도 게이지가 +50) 단, 예리도 게이지의 최대치인 500 을 넘을 수 없다."
+        "description": "무기의 예리도 레벨을 한 단계 늘린다.(예리도 게이지가 +50) 단, 예리도 게이지의 최대치인 500 을 넘을 수 없다.",
+        "nameEn": "Sharpness +1"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Handicraft"
   },
   {
     "id": "skill_2d4c948c0c23",
@@ -1978,45 +2246,52 @@
         "points": -20,
         "name": "장전속도-3",
         "nameJa": "装 填 速度-3",
-        "description": "보우건 : 리로드가 3단계분 느려지게 된다. 앉아쏘기에는 영향이 없다. 활 : 병을 장착하는 속도가 통상보다 1.30 배로 느려지게 된다."
+        "description": "보우건 : 리로드가 3단계분 느려지게 된다. 앉아쏘기에는 영향이 없다. 활 : 병을 장착하는 속도가 통상보다 1.30 배로 느려지게 된다.",
+        "nameEn": "Reload Speed -3"
       },
       {
         "id": "activation_e7bd27645ce5",
         "points": -15,
         "name": "장전속도-2",
         "nameJa": "装 填 速度-2",
-        "description": "보우건 : 리로드가 2단계분 느려지게 된다. 앉아쏘기에는 영향이 없다. 활 : 병을 장착하는 속도가 통상보다 1.20 배로 느려지게 된다."
+        "description": "보우건 : 리로드가 2단계분 느려지게 된다. 앉아쏘기에는 영향이 없다. 활 : 병을 장착하는 속도가 통상보다 1.20 배로 느려지게 된다.",
+        "nameEn": "Reload Speed -2"
       },
       {
         "id": "activation_eac8643e38c0",
         "points": -10,
         "name": "장전속도-1",
         "nameJa": "装 填 速度-1",
-        "description": "보우건 : 리로드가 1단계분 느려지게 된다. 앉아쏘기에는 영향이 없다. 활 : 병을 장착하는 속도가 통상보다 1.10 배로 느려지게 된다."
+        "description": "보우건 : 리로드가 1단계분 느려지게 된다. 앉아쏘기에는 영향이 없다. 활 : 병을 장착하는 속도가 통상보다 1.10 배로 느려지게 된다.",
+        "nameEn": "Reload Speed -1"
       },
       {
         "id": "activation_9ac9a32da689",
         "points": 10,
         "name": "장전속도+1",
         "nameJa": "装 填 速度+1",
-        "description": "보우건 : 리로드가 1단계분 빨라지게 된다. 앉아쏘기에는 영향이 없다. 활 : 병을 장착하는 속도가 통상보다 0.75 배로 빨라지게 된다."
+        "description": "보우건 : 리로드가 1단계분 빨라지게 된다. 앉아쏘기에는 영향이 없다. 활 : 병을 장착하는 속도가 통상보다 0.75 배로 빨라지게 된다.",
+        "nameEn": "Reload Speed +1"
       },
       {
         "id": "activation_63f1c6e6c322",
         "points": 15,
         "name": "장전속도+2",
         "nameJa": "装 填 速度+2",
-        "description": "보우건 : 리로드가 2단계분 빨라지게 된다. 앉아쏘기에는 영향이 없다. 활 : 병을 교체하는 것만으로 자동 장착이 된다."
+        "description": "보우건 : 리로드가 2단계분 빨라지게 된다. 앉아쏘기에는 영향이 없다. 활 : 병을 교체하는 것만으로 자동 장착이 된다.",
+        "nameEn": "Reload Speed +2"
       },
       {
         "id": "activation_ee2f0ee61061",
         "points": 20,
         "name": "장전속도+3",
         "nameJa": "装 填 速度+3",
-        "description": "보우건 : 리로드가 3단계분 빨라지게 된다. 앉아쏘기에는 영향이 없다. 활 : 장전속도+2와 같다."
+        "description": "보우건 : 리로드가 3단계분 빨라지게 된다. 앉아쏘기에는 영향이 없다. 활 : 장전속도+2와 같다.",
+        "nameEn": "Reload Speed +3"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Reload Spd"
   },
   {
     "id": "skill_cb5bba6091b7",
@@ -2028,10 +2303,12 @@
         "points": 10,
         "name": "장전수UP",
         "nameJa": "装 填数 UP",
-        "description": "각 탄환의 최대 장전수와 활의 차지단계가 1 증가한다. 라이트보우건의 속사대응 탄, 건랜스의 포격, 차지액스의 장전수에도 효과기 있다. 헤비보우건의 앉아쏘기에는 효과가 없다."
+        "description": "각 탄환의 최대 장전수와 활의 차지단계가 1 증가한다. 라이트보우건의 속사대응 탄, 건랜스의 포격, 차지액스의 장전수에도 효과기 있다. 헤비보우건의 앉아쏘기에는 효과가 없다.",
+        "nameEn": "Load Up"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Loading"
   },
   {
     "id": "skill_4b980fd1a16e",
@@ -2043,10 +2320,12 @@
         "points": 10,
         "name": "증수",
         "nameJa": "増収",
-        "description": "「강운」＋「포획달인」의 효과"
+        "description": "「강운」＋「포획달인」의 효과",
+        "nameEn": "Bounty Hunter"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Avarice"
   },
   {
     "id": "skill_05e4b277d6b9",
@@ -2058,24 +2337,28 @@
         "points": -10,
         "name": "걱정이태산",
         "nameJa": "心配性",
-        "description": "체력이 최대치의 40% 이하가 되면 공격력이 0.75배로 하락, 방어력이 21 상승한다."
+        "description": "체력이 최대치의 40% 이하가 되면 공격력이 0.75배로 하락, 방어력이 21 상승한다.",
+        "nameEn": "Worrywart"
       },
       {
         "id": "activation_3e562b8dff26",
         "points": 10,
         "name": "재난대처능력+1",
         "nameJa": "火事場力+1",
-        "description": "체력이 최대치의 40% 이하가 되면 방어력이 45 상승한다."
+        "description": "체력이 최대치의 40% 이하가 되면 방어력이 45 상승한다.",
+        "nameEn": "Adrenaline +1"
       },
       {
         "id": "activation_c48cc2a4e927",
         "points": 15,
         "name": "재난대처능력+2",
         "nameJa": "火事場力+2",
-        "description": "체력이 최대치의 40% 이하가 되면 공격력이 1.3배로 상승, 방어력이 45 상승한다."
+        "description": "체력이 최대치의 40% 이하가 되면 공격력이 1.3배로 상승, 방어력이 45 상승한다.",
+        "nameEn": "Adrenaline +2"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Potential"
   },
   {
     "id": "skill_f6ae1efeaf6d",
@@ -2087,10 +2370,12 @@
         "points": 10,
         "name": "만족감",
         "nameJa": "満 足感",
-        "description": "먹는 아이템 사용 시, 일정 확률로 소비되지 않는다."
+        "description": "먹는 아이템 사용 시, 일정 확률로 소비되지 않는다.",
+        "nameEn": "Rationer"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "LightEater"
   },
   {
     "id": "skill_21996a7e8a32",
@@ -2102,10 +2387,12 @@
         "points": 10,
         "name": "접격병추가",
         "nameJa": "接 撃 ビン追加",
-        "description": "슬래시액스, 차지액스, 활 사용 시 접격병을 사용할 수 있게 된다."
+        "description": "슬래시액스, 차지액스, 활 사용 시 접격병을 사용할 수 있게 된다.",
+        "nameEn": "Use C.Range Coat"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "C.Range C+"
   },
   {
     "id": "skill_e0cef00c6709",
@@ -2117,31 +2404,36 @@
         "points": -15,
         "name": "흔들림억제-2",
         "nameJa": "ブレ抑制-2",
-        "description": "탄도의 흔들림이 '대'가 된다."
+        "description": "탄도의 흔들림이 '대'가 된다.",
+        "nameEn": "Steadiness -2"
       },
       {
         "id": "activation_7a89449a8d6d",
         "points": -10,
         "name": "흔들림억제-1",
         "nameJa": "ブレ抑制-1",
-        "description": "탄도의 흔들림이 '소'의 경우 '대'로, '없음'의 경우 '소'가 된다."
+        "description": "탄도의 흔들림이 '소'의 경우 '대'로, '없음'의 경우 '소'가 된다.",
+        "nameEn": "Steadiness -1"
       },
       {
         "id": "activation_8c40c2b333af",
         "points": 10,
         "name": "흔들림억제+1",
         "nameJa": "ブレ抑制+1",
-        "description": "탄도의 흔들림이 '대'의 경우 '소'로, '소'의 경우 '없음'이 된다."
+        "description": "탄도의 흔들림이 '대'의 경우 '소'로, '소'의 경우 '없음'이 된다.",
+        "nameEn": "Steadiness +1"
       },
       {
         "id": "activation_0b9af3bdaa23",
         "points": 15,
         "name": "흔들림억제+2",
         "nameJa": "ブレ抑制+2",
-        "description": "탄도의 흔들림이 없어진다."
+        "description": "탄도의 흔들림이 없어진다.",
+        "nameEn": "Steadiness +2"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Precision"
   },
   {
     "id": "skill_b95d60db9423",
@@ -2153,31 +2445,36 @@
         "points": -15,
         "name": "조합성공률-20%",
         "nameJa": "調合成功率-20%",
-        "description": "조합성공률이 20% 내려간다."
+        "description": "조합성공률이 20% 내려간다.",
+        "nameEn": "Combination -20%"
       },
       {
         "id": "activation_120b42dbc255",
         "points": -10,
         "name": "조합성공률-10%",
         "nameJa": "調合成功率-10%",
-        "description": "조합성공률이 10% 내려간다."
+        "description": "조합성공률이 10% 내려간다.",
+        "nameEn": "Combination -10%"
       },
       {
         "id": "activation_df1ff94633a1",
         "points": 10,
         "name": "조합성공률+20%",
         "nameJa": "調合成功率+20%",
-        "description": "조합성공률이 20% 올라간다. (조합서 1~3권을 들고 다니는 효과)"
+        "description": "조합성공률이 20% 올라간다. (조합서 1~3권을 들고 다니는 효과)",
+        "nameEn": "Combination +20%"
       },
       {
         "id": "activation_38567af82ebd",
         "points": 15,
         "name": "조합성공률+45%",
         "nameJa": "調合成功率+45%",
-        "description": "조합성공률이 45% 올라간다. (조합서를 들고 다니지 않아도 모든 조합성공률이 100%)"
+        "description": "조합성공률이 45% 올라간다. (조합서를 들고 다니지 않아도 모든 조합성공률이 100%)",
+        "nameEn": "Combination +45%"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Combo Rate"
   },
   {
     "id": "skill_6f397d16f0cd",
@@ -2189,10 +2486,12 @@
         "points": 10,
         "name": "최대수생산",
         "nameJa": "最大 数 生産",
-        "description": "보우건의 탄 등, 조합 시 생산수 변동이 있는 경우, 항상 최대 생산수만큼 생산한다."
+        "description": "보우건의 탄 등, 조합 시 생산수 변동이 있는 경우, 항상 최대 생산수만큼 생산한다.",
+        "nameEn": "Combination Pro"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Combo Plus"
   },
   {
     "id": "skill_91feda75c5e9",
@@ -2204,10 +2503,12 @@
         "points": 10,
         "name": "파괴왕",
         "nameJa": "破 壊 王",
-        "description": "공격을 했을 때, 부위에 주는 데미지만 1.3배로 상승하여 몬스터가 비틀거리기 쉽게 한다. 부위파괴가능한 부위를 공격한 경우에는 부위파괴가 쉬워지지만, 이미 부위파괴가 완료된 경우라면 효과가 없다. 또 대거룡폭탄 이외의 폭탄에는 효과가 적용되지 않는다."
+        "description": "공격을 했을 때, 부위에 주는 데미지만 1.3배로 상승하여 몬스터가 비틀거리기 쉽게 한다. 부위파괴가능한 부위를 공격한 경우에는 부위파괴가 쉬워지지만, 이미 부위파괴가 완료된 경우라면 효과가 없다. 또 대거룡폭탄 이외의 폭탄에는 효과가 적용되지 않는다.",
+        "nameEn": "Partbreaker"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Destroyer"
   },
   {
     "id": "skill_bd1967124e25",
@@ -2219,10 +2520,12 @@
         "points": 10,
         "name": "속�물강화",
         "nameJa": "属物 強 化",
-        "description": "「속성공격강화」＋「아이템사용강화」의 효과"
+        "description": "「속성공격강화」＋「아이템사용강화」의 효과",
+        "nameEn": "Elementality"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Amplify"
   },
   {
     "id": "skill_a0f8884ccb05",
@@ -2234,10 +2537,12 @@
         "points": 10,
         "name": "지시to동반자",
         "nameJa": "オトモへの采配",
-        "description": "동반자의 공격력, 방어력이 1.1배 상승한다."
+        "description": "동반자의 공격력, 방어력이 1.1배 상승한다.",
+        "nameEn": "Palico Rally"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "TeamPlayer"
   },
   {
     "id": "skill_dafef2d56749",
@@ -2249,10 +2554,12 @@
         "points": 10,
         "name": "동반자지휘관",
         "nameJa": "オトモ指揮官",
-        "description": "「지시to동반자」＋「호령to동반자」의 효과"
+        "description": "「지시to동반자」＋「호령to동반자」의 효과",
+        "nameEn": "Palico Hero"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Commander"
   },
   {
     "id": "skill_257801ee04a9",
@@ -2264,10 +2571,12 @@
         "points": 10,
         "name": "트랩마스터",
         "nameJa": "トラップマスタ ー",
-        "description": "「보머」＋「함정꾼」의 효과"
+        "description": "「보머」＋「함정꾼」의 효과",
+        "nameEn": "Explosive Trapper"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Mechanic"
   },
   {
     "id": "skill_04fd12814adf",
@@ -2279,17 +2588,20 @@
         "points": -10,
         "name": "잡념",
         "nameJa": "雑念",
-        "description": "대검, 해머, 활의 차지공격에 필요한 시간이 1.2배로 길어진다. 태도, 쌍검, 슬래시액스, 차지액스의 게이지 증가량이 0.8배로 감소한다."
+        "description": "대검, 해머, 활의 차지공격에 필요한 시간이 1.2배로 길어진다. 태도, 쌍검, 슬래시액스, 차지액스의 게이지 증가량이 0.8배로 감소한다.",
+        "nameEn": "Distraction"
       },
       {
         "id": "activation_95c7cfa892c7",
         "points": 10,
         "name": "집중",
         "nameJa": "集中",
-        "description": "대검, 해머, 활의 차지공격에 필요한 시간이 0.8배로 짧아진다. 태도, 쌍검, 슬래시액스, 차지액스의 게이지 증가량이 1.2배로 증가한다."
+        "description": "대검, 해머, 활의 차지공격에 필요한 시간이 0.8배로 짧아진다. 태도, 쌍검, 슬래시액스, 차지액스의 게이지 증가량이 1.2배로 증가한다.",
+        "nameEn": "Focus"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "FastCharge"
   },
   {
     "id": "skill_68f9d1b72bff",
@@ -2301,10 +2613,12 @@
         "points": 10,
         "name": "심검일체",
         "nameJa": "心 剣 一体",
-        "description": "「심안」＋「예리」의 효과"
+        "description": "「심안」＋「예리」의 효과",
+        "nameEn": "Steady Hand"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Edge Lore"
   },
   {
     "id": "skill_920c69390d1f",
@@ -2316,10 +2630,12 @@
         "points": 10,
         "name": "참렬탄추가",
         "nameJa": "斬裂 弾 追加",
-        "description": "참렬탄이 사용 가능하게 된다."
+        "description": "참렬탄이 사용 가능하게 된다.",
+        "nameEn": "Use Slicing S"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Slicing S+"
   },
   {
     "id": "skill_a64199ed5d30",
@@ -2331,31 +2647,36 @@
         "points": -10,
         "name": "채집-1",
         "nameJa": "採取-1",
-        "description": "채집포인트에서 채집 후, 다음 채집할 수 있는 확률이 통상의 25/32 에서 21/32 로 상승한다."
+        "description": "채집포인트에서 채집 후, 다음 채집할 수 있는 확률이 통상의 25/32 에서 21/32 로 상승한다.",
+        "nameEn": "Gathering -1"
       },
       {
         "id": "activation_7cafc5e7651a",
         "points": 10,
         "name": "채집+1",
         "nameJa": "採取+1",
-        "description": "채집포인트에서 채집 후, 다음 채집할 수 있는 확률이 통상의 25/32 에서 27/32 로 상승한다."
+        "description": "채집포인트에서 채집 후, 다음 채집할 수 있는 확률이 통상의 25/32 에서 27/32 로 상승한다.",
+        "nameEn": "Gathering +1"
       },
       {
         "id": "activation_233dae3c858f",
         "points": 15,
         "name": "채집+2",
         "nameJa": "採取+2",
-        "description": "채집포인트에서 채집 후, 다음 채집할 수 있는 확률이 통상의 25/32 에서 29/32 로 상승한다."
+        "description": "채집포인트에서 채집 후, 다음 채집할 수 있는 확률이 통상의 25/32 에서 29/32 로 상승한다.",
+        "nameEn": "Gathering +2"
       },
       {
         "id": "activation_2b766c61e49b",
         "points": 20,
         "name": "채집마스터",
         "nameJa": "採取マスタ ー",
-        "description": "채집포인트에서 채집 후, 다음 채집할 수 있는 확률이 통상의 25/32 에서 31/32 로 상승한다."
+        "description": "채집포인트에서 채집 후, 다음 채집할 수 있는 확률이 통상의 25/32 에서 31/32 로 상승한다.",
+        "nameEn": "Gathering God"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Gathering"
   },
   {
     "id": "skill_20267c0a62e3",
@@ -2367,24 +2688,28 @@
         "points": 10,
         "name": "채취철인",
         "nameJa": "剥ぎ取り 鉄 人",
-        "description": "갈무리 행동 시, 공격을 받아도 중단하지 않게 된다."
+        "description": "갈무리 행동 시, 공격을 받아도 중단하지 않게 된다.",
+        "nameEn": "Carving Pro"
       },
       {
         "id": "activation_cb51380cdde3",
         "points": 15,
         "name": "채취명인",
         "nameJa": "剥ぎ取り名人",
-        "description": "채취철인의 효과 + 갈무리 회수가 1회 증가한다."
+        "description": "채취철인의 효과 + 갈무리 회수가 1회 증가한다.",
+        "nameEn": "Carving Celebrity"
       },
       {
         "id": "activation_4b35a7c60eb5",
         "points": 20,
         "name": "채취마스터",
         "nameJa": "剥ぎ取りマスタ ー",
-        "description": "채취명인의 효과 + 25/32 확률로 갈무리 회수가 1회 증가한다."
+        "description": "채취명인의 효과 + 25/32 확률로 갈무리 회수가 1회 증가한다.",
+        "nameEn": "Carving God"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Carving"
   },
   {
     "id": "skill_b98410ce2063",
@@ -2396,17 +2721,20 @@
         "points": 10,
         "name": "탐지",
         "nameJa": "探知",
-        "description": "퀘스트 시작 시 반드시, 이후 5분마다 2/3 확률로 30초간만 「자동마킹」효과가 발생한다. 대형 몬스터를 페인트볼로 마킹했을 때, 페인트볼의 지속시간만큼 「자동마킹」효과가 발생한다."
+        "description": "퀘스트 시작 시 반드시, 이후 5분마다 2/3 확률로 30초간만 「자동마킹」효과가 발생한다. 대형 몬스터를 페인트볼로 마킹했을 때, 페인트볼의 지속시간만큼 「자동마킹」효과가 발생한다.",
+        "nameEn": "Detect"
       },
       {
         "id": "activation_696d7df56e39",
         "points": 15,
         "name": "자동마킹",
         "nameJa": "自動マ ー キング",
-        "description": "대형 몬스터가 항상 마킹되어, 맵 상에 날개펼침/접음 상태, 몬스터의 방향이 상세하게 아이콘으로 표시된다. 청색:미발견, 황색:경계상태, 적색:발견상태."
+        "description": "대형 몬스터가 항상 마킹되어, 맵 상에 날개펼침/접음 상태, 몬스터의 방향이 상세하게 아이콘으로 표시된다. 청색:미발견, 황색:경계상태, 적색:발견상태.",
+        "nameEn": "Autotracker"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Psychic"
   },
   {
     "id": "skill_4d4485c17552",
@@ -2418,17 +2746,20 @@
         "points": 10,
         "name": "귀마개",
         "nameJa": "耳栓",
-        "description": "대형 몬스터의 포효 중 포효【소】를 무효화."
+        "description": "대형 몬스터의 포효 중 포효【소】를 무효화.",
+        "nameEn": "Earplugs"
       },
       {
         "id": "activation_d0f2dd65e3b9",
         "points": 15,
         "name": "고급귀마개",
         "nameJa": "高級耳栓",
-        "description": "대형 몬스터의 포효를 모두 무효화. 데미지를 동반하는 포효(티가렉스 등) 시 데미지 범위 내인 경우, 데미지는 받음."
+        "description": "대형 몬스터의 포효를 모두 무효화. 데미지를 동반하는 포효(티가렉스 등) 시 데미지 범위 내인 경우, 데미지는 받음.",
+        "nameEn": "HG Earplugs"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Hearing"
   },
   {
     "id": "skill_a45ea58ebcb0",
@@ -2440,31 +2771,36 @@
         "points": -15,
         "name": "체력-30",
         "nameJa": "体力-30",
-        "description": "체력 게이지의 최대치가 30 감소"
+        "description": "체력 게이지의 최대치가 30 감소",
+        "nameEn": "Health -30"
       },
       {
         "id": "activation_98e5a0f4ad24",
         "points": -10,
         "name": "체력-10",
         "nameJa": "体力-10",
-        "description": "체력 게이지의 최대치가 10 감소"
+        "description": "체력 게이지의 최대치가 10 감소",
+        "nameEn": "Health -10"
       },
       {
         "id": "activation_ecd51c0c22b2",
         "points": 10,
         "name": "체력+20",
         "nameJa": "体力+20",
-        "description": "체력 게이지의 최대치가 20 증가"
+        "description": "체력 게이지의 최대치가 20 증가",
+        "nameEn": "Health +20"
       },
       {
         "id": "activation_9d5dc5d41cf6",
         "points": 15,
         "name": "체력+50",
         "nameJa": "体力+50",
-        "description": "체력 게이지의 최대치가 50 증가"
+        "description": "체력 게이지의 최대치가 50 증가",
+        "nameEn": "Health +50"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Health"
   },
   {
     "id": "skill_122ffa46b9a4",
@@ -2476,31 +2812,36 @@
         "points": -15,
         "name": "체술-2",
         "nameJa": "体術-2",
-        "description": "회피행동이나 가드 같은 한 번에 스테미너가 소비되는 타입의 행동에 따른 스테미너 소비량이 통상의 1.35배가 된다."
+        "description": "회피행동이나 가드 같은 한 번에 스테미너가 소비되는 타입의 행동에 따른 스테미너 소비량이 통상의 1.35배가 된다.",
+        "nameEn": "Constitution -2"
       },
       {
         "id": "activation_8bb20b7f3c93",
         "points": -10,
         "name": "체술-1",
         "nameJa": "体術-1",
-        "description": "회피행동이나 가드 같은 한 번에 스테미너가 소비되는 타입의 행동에 따른 스테미너 소비량이 통상의 1.2배가 된다."
+        "description": "회피행동이나 가드 같은 한 번에 스테미너가 소비되는 타입의 행동에 따른 스테미너 소비량이 통상의 1.2배가 된다.",
+        "nameEn": "Constitution -1"
       },
       {
         "id": "activation_3f3cc9c6f6d9",
         "points": 10,
         "name": "체술+1",
         "nameJa": "体術+1",
-        "description": "회피행동이나 가드 같은 한 번에 스테미너가 소비되는 타입의 행동에 따른 스테미너 소비량이 통상의 0.75배가 된다. 또한 대형 몬스터를 향해서 긴급회피가 가능해지게 되며, 긴급회피거리가 큰 폭으로 증가한다."
+        "description": "회피행동이나 가드 같은 한 번에 스테미너가 소비되는 타입의 행동에 따른 스테미너 소비량이 통상의 0.75배가 된다. 또한 대형 몬스터를 향해서 긴급회피가 가능해지게 되며, 긴급회피거리가 큰 폭으로 증가한다.",
+        "nameEn": "Constitution +1"
       },
       {
         "id": "activation_112f1f799138",
         "points": 15,
         "name": "체술+2",
         "nameJa": "体術+2",
-        "description": "회피행동이나 가드 같은 한 번에 스테미너가 소비되는 타입의 행동에 따른 스테미너 소비량이 통상의 0.5배가 된다. 또한 대형 몬스터를 향해서 긴급회피가 가능해지게 되며, 긴급회피거리가 큰 폭으로 증가한다."
+        "description": "회피행동이나 가드 같은 한 번에 스테미너가 소비되는 타입의 행동에 따른 스테미너 소비량이 통상의 0.5배가 된다. 또한 대형 몬스터를 향해서 긴급회피가 가능해지게 되며, 긴급회피거리가 큰 폭으로 증가한다.",
+        "nameEn": "Constitution +2"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Constitutn"
   },
   {
     "id": "skill_56899bd6d661",
@@ -2512,24 +2853,28 @@
         "points": -10,
         "name": "초보탑승자",
         "nameJa": "乗り下手",
-        "description": "탑승이 발생하는 공격을 맞췄을 때 증가하는 탑승 축적치가 0.9배로 감소하며, 탑승상태에서 공격했을 때 게이지 증가량이 0.9배로 감소."
+        "description": "탑승이 발생하는 공격을 맞췄을 때 증가하는 탑승 축적치가 0.9배로 감소하며, 탑승상태에서 공격했을 때 게이지 증가량이 0.9배로 감소.",
+        "nameEn": "Saddle Sore"
       },
       {
         "id": "activation_821faee50ac6",
         "points": 10,
         "name": "탑승명인",
         "nameJa": "乗り名人",
-        "description": "탑승이 발생하는 공격을 맞췄을 때 증가하는 탑승 축적치가 1.25배로 증가하며, 탑승상태에서 공격했을 때 게이지 증가량이 1.25배로 증가."
+        "description": "탑승이 발생하는 공격을 맞췄을 때 증가하는 탑승 축적치가 1.25배로 증가하며, 탑승상태에서 공격했을 때 게이지 증가량이 1.25배로 증가.",
+        "nameEn": "Mounting Master"
       },
       {
         "id": "activation_85574de614d7",
         "points": 15,
         "name": "탑승마스터",
         "nameJa": "乗 りマスタ ー",
-        "description": "탑승이 발생하는 공격을 맞췄을 때 증가하는 탑승 축적치가 1.4배로 증가하며, 탑승상태에서 공격했을 때 게이지 증가량이 1.4배로 증가."
+        "description": "탑승이 발생하는 공격을 맞췄을 때 증가하는 탑승 축적치가 1.4배로 증가하며, 탑승상태에서 공격했을 때 게이지 증가량이 1.4배로 증가.",
+        "nameEn": "Rodeo God"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Mounting"
   },
   {
     "id": "skill_aa8a7d803517",
@@ -2541,10 +2886,12 @@
         "points": 10,
         "name": "약점특효",
         "nameJa": "弱点特 効",
-        "description": "육질이 45 이상인 부위에 공격을 성공했을 때, 육질에 +5 의 보정이 들어간다."
+        "description": "육질이 45 이상인 부위에 공격을 성공했을 때, 육질에 +5 의 보정이 들어간다.",
+        "nameEn": "Weakness Exploit"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Tenderizer"
   },
   {
     "id": "skill_a9d9b5fe31e4",
@@ -2556,10 +2903,12 @@
         "points": 10,
         "name": "통상탄�연사살UP",
         "nameJa": "通常 弾・ 連射矢UP",
-        "description": "통상탄과 연사화살의 공격력이 1.1배로 증가한다."
+        "description": "통상탄과 연사화살의 공격력이 1.1배로 증가한다.",
+        "nameEn": "Normal/Rapid Up"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Normal Up"
   },
   {
     "id": "skill_a72479f3ae09",
@@ -2571,10 +2920,12 @@
         "points": 10,
         "name": "통상탄전LV추가",
         "nameJa": "通常 弾 全LV追加",
-        "description": "모든 레벨의 통상탄이 사용 가능하게 된다."
+        "description": "모든 레벨의 통상탄이 사용 가능하게 된다.",
+        "nameEn": "Use Any Normal S"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Normal S+"
   },
   {
     "id": "skill_a71c734bea26",
@@ -2586,17 +2937,20 @@
         "points": 10,
         "name": "도전자+1",
         "nameJa": "挑 戦 者+1",
-        "description": "같은 지역내에 있는 대형 몬스터가 분노 시, 3초 후에 공격력이 소폭(기본공격력+10)으로 올라가고, 회심률이 10% 상승한다."
+        "description": "같은 지역내에 있는 대형 몬스터가 분노 시, 3초 후에 공격력이 소폭(기본공격력+10)으로 올라가고, 회심률이 10% 상승한다.",
+        "nameEn": "Challenger +1"
       },
       {
         "id": "activation_2702594cc53b",
         "points": 15,
         "name": "도전자+2",
         "nameJa": "挑 戦 者+2",
-        "description": "같은 지역내에 있는 대형 몬스터가 분노 시, 3초 후에 공격력이 최대폭(기본공격력+25)으로 올라가고, 회심률이 20% 상승한다."
+        "description": "같은 지역내에 있는 대형 몬스터가 분노 시, 3초 후에 공격력이 최대폭(기본공격력+25)으로 올라가고, 회심률이 20% 상승한다.",
+        "nameEn": "Challenger +2"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Spirit"
   },
   {
     "id": "skill_dd358f9bd4d7",
@@ -2608,24 +2962,28 @@
         "points": -10,
         "name": "상태이상공격약화",
         "nameJa": "状態異常攻 撃 弱化",
-        "description": "무기�탄�병의 독, 마비, 수면, 포획용마취의 속성치가 0.9배로 하락한다."
+        "description": "무기�탄�병의 독, 마비, 수면, 포획용마취의 속성치가 0.9배로 하락한다.",
+        "nameEn": "Status Atk Down"
       },
       {
         "id": "activation_f4049f2eb52a",
         "points": 10,
         "name": "상태이상공격+1",
         "nameJa": "状態異常攻 撃 +1",
-        "description": "무기�탄�병의 독, 마비, 수면, 포획용마취의 속성치가 1.1배+10으로 상승한다."
+        "description": "무기�탄�병의 독, 마비, 수면, 포획용마취의 속성치가 1.1배+10으로 상승한다.",
+        "nameEn": "Status Atk +1"
       },
       {
         "id": "activation_28bb20a3658b",
         "points": 15,
         "name": "상태이상공격+2",
         "nameJa": "状態異常攻 撃 +2",
-        "description": "무기�탄�병의 독, 마비, 수면, 포획용마취의 속성치가 1.2배+10으로 상승한다."
+        "description": "무기�탄�병의 독, 마비, 수면, 포획용마취의 속성치가 1.2배+10으로 상승한다.",
+        "nameEn": "Status Atk +2"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Status"
   },
   {
     "id": "skill_8f6ae043151b",
@@ -2637,10 +2995,12 @@
         "points": 10,
         "name": "치명타격【특수】",
         "nameJa": "会 心 撃 【特殊】",
-        "description": "크리티컬 공격 시, 상태이상치를 높인다. 대검 1.15배, 궁 1.5배, 그 이외 1.2배."
+        "description": "크리티컬 공격 시, 상태이상치를 높인다. 대검 1.15배, 궁 1.5배, 그 이외 1.2배.",
+        "nameEn": "Status Crit"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "CritStatus"
   },
   {
     "id": "skill_78219e43d710",
@@ -2652,24 +3012,28 @@
         "points": 10,
         "name": "포술사",
         "nameJa": "砲術師",
-        "description": "발리스타, 대포, 건랜스 포격�용격포의 공격력이 1.1배, 유탄병의 차지액스 속성해방베기와 철갑유탄의 공격력이 1.15배로 상승한다."
+        "description": "발리스타, 대포, 건랜스 포격�용격포의 공격력이 1.1배, 유탄병의 차지액스 속성해방베기와 철갑유탄의 공격력이 1.15배로 상승한다.",
+        "nameEn": "Artillery Novice"
       },
       {
         "id": "activation_7b3aef21db72",
         "points": 15,
         "name": "포술왕",
         "nameJa": "砲術王",
-        "description": "발리스타, 대포, 건랜스 포격�용격포의 공격력이 1.2배, 유탄병의 차지액스 속성해방베기와 철갑유탄의 공격력이 1.3배로 상승한다. 건랜스 용격포 사용 후 냉각시간이 통상 120 초에서 90 초로 단축."
+        "description": "발리스타, 대포, 건랜스 포격�용격포의 공격력이 1.2배, 유탄병의 차지액스 속성해방베기와 철갑유탄의 공격력이 1.3배로 상승한다. 건랜스 용격포 사용 후 냉각시간이 통상 120 초에서 90 초로 단축.",
+        "nameEn": "Artillery Expert"
       },
       {
         "id": "activation_86fea7c0cc2a",
         "points": 20,
         "name": "포술마스터",
         "nameJa": "砲術マスタ ー",
-        "description": "발리스타, 대포, 건랜스 포격�용격포의 공격력이 1.3배, 유탄병의 차지액스 속성해방베기와 철갑유탄의 공격력이 1.4배로 상승한다. 건랜스 용격포 사용 후 냉각시간이 통상 120 초에서 80 초로 단축."
+        "description": "발리스타, 대포, 건랜스 포격�용격포의 공격력이 1.3배, 유탄병의 차지액스 속성해방베기와 철갑유탄의 공격력이 1.4배로 상승한다. 건랜스 용격포 사용 후 냉각시간이 통상 120 초에서 80 초로 단축.",
+        "nameEn": "Artillery God"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Artillery"
   },
   {
     "id": "skill_771a2a6d9d1e",
@@ -2681,24 +3045,28 @@
         "points": 10,
         "name": "포획달인",
         "nameJa": "捕獲達人",
-        "description": "포획보수의 아이템 수가 1마리 당 3개 확정 출현한다."
+        "description": "포획보수의 아이템 수가 1마리 당 3개 확정 출현한다.",
+        "nameEn": "Capture Expert"
       },
       {
         "id": "activation_1eccc96a2232",
         "points": 15,
         "name": "포획명인",
         "nameJa": "捕獲名人",
-        "description": "포획보수의 아이템 수가 1마리 당 3~4개로 출현한다."
+        "description": "포획보수의 아이템 수가 1마리 당 3~4개로 출현한다.",
+        "nameEn": "Capture Master"
       },
       {
         "id": "activation_f97f696f7e46",
         "points": 20,
         "name": "포획마스터",
         "nameJa": "捕獲マスタ ー",
-        "description": "포획보수의 아이템 수가 1마리 당 4개 확정 출현한다."
+        "description": "포획보수의 아이템 수가 1마리 당 4개 확정 출현한다.",
+        "nameEn": "Capture God"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Tranquilzr"
   },
   {
     "id": "skill_b49d70f154bd",
@@ -2710,10 +3078,12 @@
         "points": 10,
         "name": "보머",
         "nameJa": "ボマ ー",
-        "description": "폭탄계 데미지가 1.3배로 상승하며, 폭탄계 아이템의 조합률이 100%가 된다. 폭파속성의 축적치가 1.2배가 된다. 속성공격강화와 중복된 경우, 배율부분만 효과가 걸린다. 배율의 상한치는 1.2배. 식사스킬「야옹화약술」과 중복된 경우, 폭파속성치의 배율 상한이 1.25배가 된다."
+        "description": "폭탄계 데미지가 1.3배로 상승하며, 폭탄계 아이템의 조합률이 100%가 된다. 폭파속성의 축적치가 1.2배가 된다. 속성공격강화와 중복된 경우, 배율부분만 효과가 걸린다. 배율의 상한치는 1.2배. 식사스킬「야옹화약술」과 중복된 경우, 폭파속성치의 배율 상한이 1.25배가 된다.",
+        "nameEn": "Bombardier"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Bomb Boost"
   },
   {
     "id": "skill_ea86e4db2ddb",
@@ -2725,10 +3095,12 @@
         "points": 10,
         "name": "폭파병추가",
         "nameJa": "爆破ビン追加",
-        "description": "슬래시액스, 차지액스, 활 사용 시 폭파병을 사용할 수 있게 된다."
+        "description": "슬래시액스, 차지액스, 활 사용 시 폭파병을 사용할 수 있게 된다.",
+        "nameEn": "Use Blast Coat"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Blast C+"
   },
   {
     "id": "skill_934580b17bc3",
@@ -2740,10 +3112,12 @@
         "points": 10,
         "name": "폭파탄추가",
         "nameJa": "爆破 弾 追加",
-        "description": "폭파탄이 사용 가능하게 된다."
+        "description": "폭파탄이 사용 가능하게 된다.",
+        "nameEn": "Use Blast S"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Blast S+"
   },
   {
     "id": "skill_9d982d6cb255",
@@ -2755,17 +3129,20 @@
         "points": 10,
         "name": "풍압【소】무효",
         "nameJa": "風 圧 【小】無 効",
-        "description": "거의 모든 풍압을 경감한다."
+        "description": "거의 모든 풍압을 경감한다.",
+        "nameEn": "Windproof (Lo)"
       },
       {
         "id": "activation_24cb0508de14",
         "points": 15,
         "name": "풍압【대】무효",
         "nameJa": "風 圧 【大】無 効",
-        "description": "거의 모든 풍압 영향을 받지 않음. 용풍압을 받으면 뒤로 쓰러지지 않고 귀를 막는 행동을 하며, 귀를 막는 시간은 풍압【대】수준."
+        "description": "거의 모든 풍압 영향을 받지 않음. 용풍압을 받으면 뒤로 쓰러지지 않고 귀를 막는 행동을 하며, 귀를 막는 시간은 풍압【대】수준.",
+        "nameEn": "Windproof (Hi)"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Wind Res"
   },
   {
     "id": "skill_b273e25bfef2",
@@ -2777,10 +3154,12 @@
         "points": 10,
         "name": "피리명인",
         "nameJa": "笛吹き名人",
-        "description": "뿔피리, 회복피리, 해독피리, 귀인피리, 경화피리가 부서질 때, 1/2 확률로 부서지지 않는다. 수렵피리의 선율효과 지속시간이 늘어나며, 체력회복량이 랜덤으로 발생하는 연주를 했을 때, 높은 회복량이 나오는 확률이 높아진다."
+        "description": "뿔피리, 회복피리, 해독피리, 귀인피리, 경화피리가 부서질 때, 1/2 확률로 부서지지 않는다. 수렵피리의 선율효과 지속시간이 늘어나며, 체력회복량이 랜덤으로 발생하는 연주를 했을 때, 높은 회복량이 나오는 확률이 높아진다.",
+        "nameEn": "Horn Maestro"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Maestro"
   },
   {
     "id": "skill_58aa2edfa0fa",
@@ -2792,10 +3171,12 @@
         "points": 10,
         "name": "철면피",
         "nameJa": "鉄面皮",
-        "description": "방어력DOWN 상태를 무효화 한다. (빨간 방패 X)"
+        "description": "방어력DOWN 상태를 무효화 한다. (빨간 방패 X)",
+        "nameEn": "Iron Skin"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Def Lock"
   },
   {
     "id": "skill_27df943493ca",
@@ -2807,31 +3188,36 @@
         "points": -15,
         "name": "배고픔배가【대】",
         "nameJa": "腹減り倍加【大】",
-        "description": "시간 경과에 의한 스태미나 감소 시간이 0.5 배가 된다. (일반 6분 → 배고픔배가【대】 스킬발동 시 3분)"
+        "description": "시간 경과에 의한 스태미나 감소 시간이 0.5 배가 된다. (일반 6분 → 배고픔배가【대】 스킬발동 시 3분)",
+        "nameEn": "Double Hunger"
       },
       {
         "id": "activation_0d57f53beb0d",
         "points": -10,
         "name": "배고픔배가【소】",
         "nameJa": "腹減り倍加【小】",
-        "description": "시간 경과에 의한 스태미나 감소 시간이 0.75 배가 된다. (일반 6분 → 배고픔배가【소】 스킬발동 시 4분 30초)"
+        "description": "시간 경과에 의한 스태미나 감소 시간이 0.75 배가 된다. (일반 6분 → 배고픔배가【소】 스킬발동 시 4분 30초)",
+        "nameEn": "Raise Hunger"
       },
       {
         "id": "activation_e765339ccec7",
         "points": 10,
         "name": "배고픔반감",
         "nameJa": "腹減り半減",
-        "description": "시간 경과에 의한 스태미나 감소 시간이 두 배가 된다. (일반 6분 → 배고픔반감 스킬발동 시 12분)"
+        "description": "시간 경과에 의한 스태미나 감소 시간이 두 배가 된다. (일반 6분 → 배고픔반감 스킬발동 시 12분)",
+        "nameEn": "Halve Hunger"
       },
       {
         "id": "activation_481c0dc7cf44",
         "points": 15,
         "name": "배고픔무효",
         "nameJa": "腹減り無 効",
-        "description": "시간 경과에 의한 스태미나 감소가 발생되지 않는다. 추위에 의한 스태미나 감소는 막을 수 없다."
+        "description": "시간 경과에 의한 스태미나 감소가 발생되지 않는다. 추위에 의한 스태미나 감소는 막을 수 없다.",
+        "nameEn": "Negate Hunger"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Hunger"
   },
   {
     "id": "skill_837350925f0a",
@@ -2843,10 +3229,12 @@
         "points": 10,
         "name": "헌터생활",
         "nameJa": "ハンタ ー 生活",
-        "description": "퀘스트 중 낚시와 고기굽기가 능숙해지며 지도가 없어도 맵이 모두 표시됨. 황금떡밥/폭떡밥/회떡밥의 조합성공률이 100%."
+        "description": "퀘스트 중 낚시와 고기굽기가 능숙해지며 지도가 없어도 맵이 모두 표시됨. 황금떡밥/폭떡밥/회떡밥의 조합성공률이 100%.",
+        "nameEn": "Outdoorsman"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Ranger"
   },
   {
     "id": "skill_ab2b0a823a8a",
@@ -2858,10 +3246,12 @@
         "points": 10,
         "name": "호령to동반자",
         "nameJa": "オトモへの 号 令",
-        "description": "동반자가 땅 속에서 휴식 중 액션 '구호(かけごえ)' 행동을 하면 동반자의 체력을 모두 회복시켜 호출한다. 사용 후 10분간 재사용 불가."
+        "description": "동반자가 땅 속에서 휴식 중 액션 '구호(かけごえ)' 행동을 하면 동반자의 체력을 모두 회복시켜 호출한다. 사용 후 10분간 재사용 불가.",
+        "nameEn": "Palico Cheer"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "TeamLeader"
   },
   {
     "id": "skill_1a5ea8610123",
@@ -2873,10 +3263,12 @@
         "points": 10,
         "name": "부적마니아",
         "nameJa": "お守りマニア",
-        "description": "「채취+2」＋「부적헌터」의 효과"
+        "description": "「채취+2」＋「부적헌터」의 효과",
+        "nameEn": "Pack Rat"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Hoarding"
   },
   {
     "id": "skill_aa5ff5179f47",
@@ -2888,24 +3280,28 @@
         "points": 10,
         "name": "부적수집",
         "nameJa": "お守り 収 集",
-        "description": "채굴 시 부적이 입수되는 상황에, 20% 확률로 한 번에 두 개를 얻을 수 있다."
+        "description": "채굴 시 부적이 입수되는 상황에, 20% 확률로 한 번에 두 개를 얻을 수 있다.",
+        "nameEn": "Charm Collector"
       },
       {
         "id": "activation_c4d71a55e27d",
         "points": 15,
         "name": "부적헌터",
         "nameJa": "お守りハンタ ー",
-        "description": "채굴 시 부적이 입수되는 상황에, 30% 확률로 한 번에 두 개를 얻을 수 있다."
+        "description": "채굴 시 부적이 입수되는 상황에, 30% 확률로 한 번에 두 개를 얻을 수 있다.",
+        "nameEn": "Charm Chaser"
       },
       {
         "id": "activation_eec18d4bdb0a",
         "points": 20,
         "name": "부적마스터",
         "nameJa": "お守りマスタ ー",
-        "description": "채굴 시 부적이 입수되는 상황에, 50% 확률로 한 번에 두 개를 얻을 수 있다."
+        "description": "채굴 시 부적이 입수되는 상황에, 50% 확률로 한 번에 두 개를 얻을 수 있다.",
+        "nameEn": "Charm God"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Charmer"
   },
   {
     "id": "skill_4cc00ebe37cb",
@@ -2917,17 +3313,20 @@
         "points": 10,
         "name": "확산탄LV1추가",
         "nameJa": "拡散 弾 LV1追加",
-        "description": "레벨 1의 확산탄이 사용 가능하게 된다."
+        "description": "레벨 1의 확산탄이 사용 가능하게 된다.",
+        "nameEn": "Use Lv1 Clust S"
       },
       {
         "id": "activation_daed1e3d3cce",
         "points": 15,
         "name": "확산탄전LV추가",
         "nameJa": "拡散 弾 全LV追加",
-        "description": "모든 레벨의 확산탄이 사용 가능하게 된다."
+        "description": "모든 레벨의 확산탄이 사용 가능하게 된다.",
+        "nameEn": "Use Any Clust S"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Clust S+"
   },
   {
     "id": "skill_0a24dffb8259",
@@ -2939,17 +3338,20 @@
         "points": -10,
         "name": "체력회복량DOWN",
         "nameJa": "体力回復量DOWN",
-        "description": "체력을 회복하는 아이템을 사용했을 때 회복량이 통상보다 0.75배로 감소한다. 동료의 '생명의 약' 사용 또는 광역화 스킬이나 피리 아이템에 의한 회복에도 영향이 있다."
+        "description": "체력을 회복하는 아이템을 사용했을 때 회복량이 통상보다 0.75배로 감소한다. 동료의 '생명의 약' 사용 또는 광역화 스킬이나 피리 아이템에 의한 회복에도 영향이 있다.",
+        "nameEn": "Recovery Down"
       },
       {
         "id": "activation_6fa0f31c5297",
         "points": 10,
         "name": "체력회복량UP",
         "nameJa": "体力回復量UP",
-        "description": "체력을 회복하는 아이템을 사용했을 때 회복량이 통상보다 1.25배로 증가한다. 동료의 '생명의 약' 사용 또는 광역화 스킬이나 피리 아이템에 의한 회복에도 영향이 있다."
+        "description": "체력을 회복하는 아이템을 사용했을 때 회복량이 통상보다 1.25배로 증가한다. 동료의 '생명의 약' 사용 또는 광역화 스킬이나 피리 아이템에 의한 회복에도 영향이 있다.",
+        "nameEn": "Recovery Up"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Rec Level"
   },
   {
     "id": "skill_6aac09f1f9a7",
@@ -2961,31 +3363,36 @@
         "points": -15,
         "name": "회복속도-2",
         "nameJa": "回復速度-2",
-        "description": "데미지를 받았을 때 표시되는 붉은 게이지 부분의 회복속도가 통상의 1/4배로 오른다."
+        "description": "데미지를 받았을 때 표시되는 붉은 게이지 부분의 회복속도가 통상의 1/4배로 오른다.",
+        "nameEn": "Recovery Spd -2"
       },
       {
         "id": "activation_b137f09b3dde",
         "points": -10,
         "name": "회복속도-1",
         "nameJa": "回復速度-1",
-        "description": "데미지를 받았을 때 표시되는 붉은 게이지 부분의 회복속도가 통상의 1/2배로 오른다."
+        "description": "데미지를 받았을 때 표시되는 붉은 게이지 부분의 회복속도가 통상의 1/2배로 오른다.",
+        "nameEn": "Recovery Spd -1"
       },
       {
         "id": "activation_9cfbb8978575",
         "points": 10,
         "name": "회복속도+1",
         "nameJa": "回復速度+1",
-        "description": "데미지를 받았을 때 표시되는 붉은 게이지 부분의 회복속도가 통상의 2배로 오른다."
+        "description": "데미지를 받았을 때 표시되는 붉은 게이지 부분의 회복속도가 통상의 2배로 오른다.",
+        "nameEn": "Recovery Spd +1"
       },
       {
         "id": "activation_6f952e817a40",
         "points": 15,
         "name": "회복속도+2",
         "nameJa": "回復速度+2",
-        "description": "데미지를 받았을 때 표시되는 붉은 게이지 부분의 회복속도가 통상의 4배로 오른다."
+        "description": "데미지를 받았을 때 표시되는 붉은 게이지 부분의 회복속도가 통상의 4배로 오른다.",
+        "nameEn": "Recovery Spd +2"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Rec Speed"
   },
   {
     "id": "skill_4b9bc9c6f953",
@@ -2997,10 +3404,12 @@
         "points": 10,
         "name": "회피거리UP",
         "nameJa": "回避距離UP",
-        "description": "긴급회피 이외의 회피행동의 이동거리가 1.5배로 늘어난다. 한손검의 특정 공격 후 ↓+A로 나오는 후방으로의 회피동작에도 영향이 있다."
+        "description": "긴급회피 이외의 회피행동의 이동거리가 1.5배로 늘어난다. 한손검의 특정 공격 후 ↓+A로 나오는 후방으로의 회피동작에도 영향이 있다.",
+        "nameEn": "Evade Extender"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Evade Dist"
   },
   {
     "id": "skill_977515684794",
@@ -3012,31 +3421,36 @@
         "points": -10,
         "name": "회피성능DOWN",
         "nameJa": "回避性能DOWN",
-        "description": "회피행동의 무적시간이 통상의 0.2초에서 0.1초로 줄어든다. 한손검의 특정 공격 후 ↓+A로 나오는 후방으로의 회피동작에도 영향이 있다."
+        "description": "회피행동의 무적시간이 통상의 0.2초에서 0.1초로 줄어든다. 한손검의 특정 공격 후 ↓+A로 나오는 후방으로의 회피동작에도 영향이 있다.",
+        "nameEn": "Evasion Down"
       },
       {
         "id": "activation_c476b077515f",
         "points": 10,
         "name": "회피성능+1",
         "nameJa": "回避性能+1",
-        "description": "회피행동의 무적시간이 통상의 0.2초에서 0.33초로 늘어난다. 한손검의 특정 공격 후 ↓+A로 나오는 후방으로의 회피동작에도 영향이 있다."
+        "description": "회피행동의 무적시간이 통상의 0.2초에서 0.33초로 늘어난다. 한손검의 특정 공격 후 ↓+A로 나오는 후방으로의 회피동작에도 영향이 있다.",
+        "nameEn": "Evasion +1"
       },
       {
         "id": "activation_a397a200a871",
         "points": 15,
         "name": "회피성능+2",
         "nameJa": "回避性能+2",
-        "description": "회피행동의 무적시간이 통상의 0.2초에서 0.4초로 늘어난다. 한손검의 특정 공격 후 ↓+A로 나오는 후방으로의 회피동작에도 영향이 있다."
+        "description": "회피행동의 무적시간이 통상의 0.2초에서 0.4초로 늘어난다. 한손검의 특정 공격 후 ↓+A로 나오는 후방으로의 회피동작에도 영향이 있다.",
+        "nameEn": "Evasion +2"
       },
       {
         "id": "activation_79862eebc13d",
         "points": 20,
         "name": "회피성능+3",
         "nameJa": "回避性能+3",
-        "description": "회피행동의 무적시간이 통상의 0.2초에서 0.6초로 늘어난다. 한손검의 특정 공격 후 ↓+A로 나오는 후방으로의 회피동작에도 영향이 있다."
+        "description": "회피행동의 무적시간이 통상의 0.2초에서 0.6초로 늘어난다. 한손검의 특정 공격 후 ↓+A로 나오는 후방으로의 회피동작에도 영향이 있다.",
+        "nameEn": "Evasion +3"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Evasion"
   },
   {
     "id": "skill_dfbf20468c93",
@@ -3048,10 +3462,12 @@
         "points": 10,
         "name": "곡예사",
         "nameJa": "軽業師",
-        "description": "「회피성능+1」＋「체술+1」의 효과"
+        "description": "「회피성능+1」＋「체술+1」의 효과",
+        "nameEn": "Acrobat"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "Nimbleness"
   },
   {
     "id": "skill_719784872b09",
@@ -3063,16 +3479,19 @@
         "points": -10,
         "name": "아이템사용약화",
         "nameJa": "アイテム使用弱化",
-        "description": "강주약, 강주약G, 괴력씨앗, 인내씨앗, 괴력의 환약, 인내의 환약, 귀인피리, 경화피리, 활력제, 쿨드링크, 핫드링크, 쿨미트, 핫미트, 천리안의 약, 두근두근버섯, 귀인탄, 경화탄, 모스저키의 효과시간이 통상의 2/3 배로 줄어든다."
+        "description": "강주약, 강주약G, 괴력씨앗, 인내씨앗, 괴력의 환약, 인내의 환약, 귀인피리, 경화피리, 활력제, 쿨드링크, 핫드링크, 쿨미트, 핫미트, 천리안의 약, 두근두근버섯, 귀인탄, 경화탄, 모스저키의 효과시간이 통상의 2/3 배로 줄어든다.",
+        "nameEn": "Item Use Down"
       },
       {
         "id": "activation_0be1e15f0aed",
         "points": 10,
         "name": "아이템사용강화",
         "nameJa": "アイテム使用 強 化",
-        "description": "강주약, 강주약G, 괴력씨앗, 인내씨앗, 괴력의 환약, 인내의 환약, 귀인피리, 경화피리, 활력제, 쿨드링크, 핫드링크, 쿨미트, 핫미트, 천리안의 약, 두근두근버섯, 귀인탄, 경화탄, 모스저키의 효과시간이 통상의 1.5배로 늘어난다."
+        "description": "강주약, 강주약G, 괴력씨앗, 인내씨앗, 괴력의 환약, 인내의 환약, 귀인피리, 경화피리, 활력제, 쿨드링크, 핫드링크, 쿨미트, 핫미트, 천리안의 약, 두근두근버섯, 귀인탄, 경화탄, 모스저키의 효과시간이 통상의 1.5배로 늘어난다.",
+        "nameEn": "Item Use Up"
       }
     ],
-    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/skill/skill.htm",
+    "nameEn": "LastingPwr"
   }
 ]

@@ -10,7 +10,8 @@
     "acquire": "채취·조합·도구점",
     "availability": "",
     "note": "체력을 30 회복. 광역화 대응 아이템.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Potion"
   },
   {
     "id": "item_e55087ceac63",
@@ -23,7 +24,8 @@
     "acquire": "조합",
     "availability": "",
     "note": "체력을 50 회복.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Mega Potion"
   },
   {
     "id": "item_54a789b25e89",
@@ -36,7 +38,8 @@
     "acquire": "조합",
     "availability": "",
     "note": "최대 체력을 10 상승.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Nutrients"
   },
   {
     "id": "item_b7a065410fe0",
@@ -49,7 +52,8 @@
     "acquire": "조합",
     "availability": "",
     "note": "최대 체력을 20 상승.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Mega Nutrients"
   },
   {
     "id": "item_d9941d5a4841",
@@ -62,7 +66,8 @@
     "acquire": "채취·도구점·지급품",
     "availability": "",
     "note": "독 상태를 회복. 광역화 대응 아이템.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Antidote"
   },
   {
     "id": "item_ff8d352afef0",
@@ -75,7 +80,8 @@
     "acquire": "조합·지급품",
     "availability": "",
     "note": "5분간 HP 의 붉은 게이지 회복 속도가 2배가 된다.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Immunizer"
   },
   {
     "id": "item_c2def1a9fc22",
@@ -88,7 +94,8 @@
     "acquire": "조합·지급품",
     "availability": "",
     "note": "3분간 스태미너 소비 무효. 스태미너+25.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Dash Juice"
   },
   {
     "id": "item_4f3a64b2c9b0",
@@ -101,7 +108,8 @@
     "acquire": "조합·지급품",
     "availability": "",
     "note": "6분간 스태미너 소비 무효. 스태미너+50.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Mega Dash Juice"
   },
   {
     "id": "item_600dd9e34571",
@@ -114,7 +122,8 @@
     "acquire": "조합",
     "availability": "",
     "note": "기본공격력+5. 죽을때까지 지속.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Demondrug"
   },
   {
     "id": "item_9273d922b518",
@@ -127,7 +136,8 @@
     "acquire": "조합",
     "availability": "",
     "note": "기본공격력+7. 죽을때까지 지속.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Mega Demondrug"
   },
   {
     "id": "item_55ece2287453",
@@ -140,7 +150,8 @@
     "acquire": "조합",
     "availability": "",
     "note": "20초간 기본공격력+25.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Might Pill"
   },
   {
     "id": "item_4742bab63766",
@@ -153,7 +164,8 @@
     "acquire": "조합",
     "availability": "",
     "note": "방어력+15. 죽을때까지 지속.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Armorskin"
   },
   {
     "id": "item_9d095e1b4b86",
@@ -166,7 +178,8 @@
     "acquire": "조합",
     "availability": "",
     "note": "방어력+25. 죽을때까지 지속.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Mega Armorskin"
   },
   {
     "id": "item_7c954b2189e8",
@@ -179,7 +192,8 @@
     "acquire": "조합",
     "availability": "",
     "note": "20초간 슈퍼아머 상태 및 방어력+1.3배.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Adamant Pill"
   },
   {
     "id": "item_36ada6f92dcb",
@@ -192,7 +206,8 @@
     "acquire": "조합·도구점·지급품",
     "availability": "",
     "note": "10분간 더위 무효. 더위【대】지역에서는 지속시간감소.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Cool Drink"
   },
   {
     "id": "item_9116bb9abab2",
@@ -205,7 +220,8 @@
     "acquire": "조합·도구점·지급품",
     "availability": "",
     "note": "10분간 추위 무효. 추위【대】지역에서는 지속시간감소.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Hot Drink"
   },
   {
     "id": "item_cfb6a6cf4199",
@@ -218,7 +234,8 @@
     "acquire": "조합·산채할아버지(몬스터의 간)",
     "availability": "",
     "note": "쿨드링크 효과 + 스태미너 최대치+50.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Frozen Berry"
   },
   {
     "id": "item_332c1f911904",
@@ -231,7 +248,8 @@
     "acquire": "조합·도구점·지급품",
     "availability": "",
     "note": "진흙 상태, 눈사람 상태를 제거.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Cleanser"
   },
   {
     "id": "item_654532f8a554",
@@ -244,7 +262,8 @@
     "acquire": "조합·도구점·지급품",
     "availability": "",
     "note": "악취 상태, 폭파당한 상태를 제거.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Deodorant"
   },
   {
     "id": "item_8e1216d3b9ba",
@@ -257,7 +276,8 @@
     "acquire": "도구점",
     "availability": "",
     "note": "10초간 대형몬스터의 위치가 맵에 표시된다.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Psychoserum"
   },
   {
     "id": "item_3279192c3ce4",
@@ -270,7 +290,8 @@
     "acquire": "조합",
     "availability": "",
     "note": "독 상태를 제거하고 체력을 10 회복한다.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Herbal Medicine"
   },
   {
     "id": "item_37d4dfe3dda0",
@@ -283,7 +304,8 @@
     "acquire": "조합·산채할아버지",
     "availability": "",
     "note": "최대 체력을 최대치(150)까지 상승시키고 체력을 전부 회복한다.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Max Potion"
   },
   {
     "id": "item_16ac5cb2c40a",
@@ -296,7 +318,8 @@
     "acquire": "조합",
     "availability": "",
     "note": "비약 효과 + 최대 스태미너도 최대치(150)까지 상승시킨다.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Ancient Potion"
   },
   {
     "id": "item_7a38ebcef836",
@@ -309,7 +332,8 @@
     "acquire": "조합·지급품",
     "availability": "",
     "note": "스태미너+25. 졸음상태를 제거.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Energy Drink"
   },
   {
     "id": "item_ce0cee6826e3",
@@ -322,7 +346,8 @@
     "acquire": "조합·산채할아버지",
     "availability": "",
     "note": "같은 지역 내에 있는 동료 전원의 체력을 50 회복한다.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Lifepowder"
   },
   {
     "id": "item_61a841cfc639",
@@ -335,7 +360,8 @@
     "acquire": "갈무리·보수",
     "availability": "",
     "note": "다른 함정고기들처럼 설치가 가능하다. 아래 함정고기들의 원 재료가 된다.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Raw Meat"
   },
   {
     "id": "item_8d76b8967dc8",
@@ -348,7 +374,8 @@
     "acquire": "조합",
     "availability": "",
     "note": "설치한 후 대형몬스터가 먹으면, 대형몬스터의 독 상태 축적치가 쌓인다.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Poisoned Meat"
   },
   {
     "id": "item_3336d575b2fb",
@@ -361,7 +388,8 @@
     "acquire": "조합",
     "availability": "",
     "note": "설치한 후 대형몬스터가 먹으면, 대형몬스터의 마비 상태 축적치가 쌓인다.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Tinged Meat"
   },
   {
     "id": "item_1735ec390aab",
@@ -374,7 +402,8 @@
     "acquire": "조합",
     "availability": "",
     "note": "설치한 후 대형몬스터가 먹으면, 대형몬스터의 수면 상태 축적치가 쌓인다.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Drugged Meat"
   },
   {
     "id": "item_40539f74568f",
@@ -387,7 +416,8 @@
     "acquire": "고기굽기",
     "availability": "",
     "note": "스태미너 최대치+25.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Rare Steak"
   },
   {
     "id": "item_459b84915fd2",
@@ -400,7 +430,8 @@
     "acquire": "고기굽기·보수",
     "availability": "",
     "note": "스태미너 최대치+50.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Well-done Steak"
   },
   {
     "id": "item_b9a28a8e8d50",
@@ -413,7 +444,8 @@
     "acquire": "고기굽기",
     "availability": "",
     "note": "50% 확률로 스태미너 최대치+25.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Burnt Meat"
   },
   {
     "id": "item_4bea86200776",
@@ -426,7 +458,8 @@
     "acquire": "조합",
     "availability": "",
     "note": "쿨드링크 효과 + 스태미너 최대치+50.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Chilled Meat"
   },
   {
     "id": "item_198bdc30ed6d",
@@ -439,7 +472,8 @@
     "acquire": "조합",
     "availability": "",
     "note": "핫드링크 효과 + 스태미너 최대치+50.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Hot Meat"
   },
   {
     "id": "item_6a998f5641b3",
@@ -452,7 +486,8 @@
     "acquire": "길드스토어",
     "availability": "",
     "note": "체력의 붉은 게이지를 모두 회복하고, 일정시간동안 붉은 게이지의 회복속도가 상승.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Mosswine Jerky"
   },
   {
     "id": "item_5bc387b6ce3e",
@@ -465,7 +500,8 @@
     "acquire": "조합·도스먹보다랑어",
     "availability": "",
     "note": "절단속성의 고정 데미지. 사용 시 일정 확률로 파괴된다.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Boomerang"
   },
   {
     "id": "item_740b00a046e1",
@@ -478,7 +514,8 @@
     "acquire": "조합·지급품",
     "availability": "",
     "note": "몬스터에게 던져서 맞추면 맵 상에서 몬스터의 위치를 알 수 있게 된다.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Paintball"
   },
   {
     "id": "item_1a871688e3ee",
@@ -491,7 +528,8 @@
     "acquire": "조합",
     "availability": "",
     "note": "던진 후 터진 위치를 보고 있는 몬스터들의 눈이 일정시간 보이지 않게 된다.(푸루푸루 등은 무효)",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Flash Bomb"
   },
   {
     "id": "item_1fe99b53bd68",
@@ -504,7 +542,8 @@
     "acquire": "조합",
     "availability": "",
     "note": "던진 후 터진 위치의 몬스터가 땅속/물속에 있는 경우 튀어오른다. 또는 잠시동안 멍해진다.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Sonic Bomb"
   },
   {
     "id": "item_1e70de260684",
@@ -517,7 +556,8 @@
     "acquire": "조합·지급품",
     "availability": "",
     "note": "던져서 몬스터를 맞추면 다른 맵으로 이동하게 된다. 몬스터가 짓누르고 있을 경우 탈출할 수 있다.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Dung Bomb"
   },
   {
     "id": "item_6a8fc18a4283",
@@ -530,7 +570,8 @@
     "acquire": "조합·지급품",
     "availability": "",
     "note": "던져서 안개를 생성하며, 몬스터에게 타겟이 되지 않은 경우엔 플레이어를 탐지하지 못한다.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Smoke Bomb"
   },
   {
     "id": "item_722ae6c24fdd",
@@ -543,7 +584,8 @@
     "acquire": "조합·지급품",
     "availability": "",
     "note": "던져서 독안개를 생성하며, 독안개 주변에 있는 몬스터는 독 축적치가 쌓인다.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Poison Smoke Bomb"
   },
   {
     "id": "item_98e291dbab19",
@@ -556,7 +598,8 @@
     "acquire": "조합",
     "availability": "",
     "note": "던져서 캠프로 이동한다.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Farcaster"
   },
   {
     "id": "item_427283422dd0",
@@ -569,7 +612,8 @@
     "acquire": "조합·지급품",
     "availability": "",
     "note": "몬스터가 포획 가능한 상태가 되었을 때, 함정에 걸린 몬스터에게 2회 던져서 맞추면 포획할 수 있다.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Tranq Bomb"
   },
   {
     "id": "item_0cf64fef532d",
@@ -582,7 +626,8 @@
     "acquire": "조합",
     "availability": "",
     "note": "구멍 형태의 함정. 포획 시 필요.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Pitfall Trap"
   },
   {
     "id": "item_968c8f69bbd7",
@@ -595,7 +640,8 @@
     "acquire": "조합",
     "availability": "",
     "note": "전기덫 형태의 함정. 포획 시 필요.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Shock Trap"
   },
   {
     "id": "item_d0dc12f50205",
@@ -608,7 +654,8 @@
     "acquire": "도구점·조합",
     "availability": "",
     "note": "작은 나무통 폭탄. 설치 후 일정시간이 지나면 폭발한다.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Barrel Bomb S"
   },
   {
     "id": "item_7eb1e6cebe82",
@@ -621,7 +668,8 @@
     "acquire": "조합",
     "availability": "",
     "note": "소형나무통폭탄보다 데미지가 높다. 성질은 같음.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Barrel Bomb S+"
   },
   {
     "id": "item_a77d3d2d6829",
@@ -634,7 +682,8 @@
     "acquire": "도구점·조합",
     "availability": "",
     "note": "큰 나무통 폭탄. 설치 후엔 돌멩이나 화살 같은 던지는 종류로 맞춰야 터진다. 때려도 터진다.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Barrel Bomb L"
   },
   {
     "id": "item_6b061b5ddbbe",
@@ -647,7 +696,8 @@
     "acquire": "조합",
     "availability": "",
     "note": "대형나무통폭탄보다 데미지가 높다. 성질은 같음.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Barrel Bomb L+"
   },
   {
     "id": "item_dfdaa943bf29",
@@ -660,7 +710,8 @@
     "acquire": "도구점·조합",
     "availability": "",
     "note": "작은 나무통 폭탄. 설치 후 일정시간이 지나면 날아가서 폭발한다.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Bounce Bomb"
   },
   {
     "id": "item_096bdf47c226",
@@ -673,7 +724,8 @@
     "acquire": "조합",
     "availability": "",
     "note": "발사나무통폭탄보다 데미지가 높다. 성질은 같음.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Bounce Bomb+"
   },
   {
     "id": "item_cd7901fa5dea",
@@ -686,7 +738,8 @@
     "acquire": "조합",
     "availability": "",
     "note": "아이루 계 종족들이 환장하는 폭탄. 마취에 걸린듯 정신을 못차린다.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Felvine Bomb"
   },
   {
     "id": "item_7eab20ebfb37",
@@ -699,7 +752,8 @@
     "acquire": "JUMP 퀘스트",
     "availability": "",
     "note": "발사나무통폭탄과 성능은 동일.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "JUMP Barrel Bomb"
   },
   {
     "id": "item_85b4f04be08f",
@@ -712,7 +766,8 @@
     "acquire": "조합·도구점·지급품",
     "availability": "",
     "note": "채굴포인트에서 채굴할 수 있다. 잘 깨진다.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Old Pickaxe"
   },
   {
     "id": "item_f6619e2401a0",
@@ -725,7 +780,8 @@
     "acquire": "조합·도구점",
     "availability": "",
     "note": "채굴포인트에서 채굴할 수 있다. 낡은 곡괭이보다 덜 깨진다.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Iron Pickaxe"
   },
   {
     "id": "item_00b5e79ed2f4",
@@ -738,7 +794,8 @@
     "acquire": "조합·도구점",
     "availability": "",
     "note": "채굴포인트에서 채굴할 수 있다. 곡괭이보다 덜 깨진다.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Mega Pickaxe"
   },
   {
     "id": "item_ce756cf0d6bb",
@@ -751,7 +808,8 @@
     "acquire": "조합·도구점·지급품",
     "availability": "",
     "note": "채집포인트에서 채집할 수 있다. 잘 깨진다.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Old Bug Net"
   },
   {
     "id": "item_c09fdc17cb8a",
@@ -764,7 +822,8 @@
     "acquire": "조합·도구점",
     "availability": "",
     "note": "채집포인트에서 채집할 수 있다. 낡은 잠자리채보다 덜 깨진다.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Bug Net"
   },
   {
     "id": "item_b5b81e492433",
@@ -777,7 +836,8 @@
     "acquire": "조합·도구점",
     "availability": "",
     "note": "채집포인트에서 채집할 수 있다. 잠자리채보다 깨질 확률이 적다.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Mega Bug Net"
   },
   {
     "id": "item_cff8ee795b78",
@@ -790,7 +850,8 @@
     "acquire": "채굴·채취·도구점·지급품",
     "availability": "",
     "note": "근접형 무기의 예리도를 회복할 수 있다. 149/450(?) 회복.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Whetstone"
   },
   {
     "id": "item_937a318716cc",
@@ -803,7 +864,8 @@
     "acquire": "도구점",
     "availability": "",
     "note": "피리계열 조합의 기본이 되는 아이템. 필드에서 사용 시, 몬스터의 타겟이 될 수 있다.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Field Horn"
   },
   {
     "id": "item_ab050b8a2091",
@@ -816,7 +878,8 @@
     "acquire": "조합",
     "availability": "",
     "note": "같은 지역 내에 있는 동료 전원의 체력을 20 회복한다. 일정 확률로 파괴된다.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Health Horn"
   },
   {
     "id": "item_3117be456d1f",
@@ -829,7 +892,8 @@
     "acquire": "조합",
     "availability": "",
     "note": "같은 지역 내에 있는 동료 전원의 독 상태를 회복한다. 일정 확률로 파괴된다.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Antidote Horn"
   },
   {
     "id": "item_b5d034a14b57",
@@ -842,7 +906,8 @@
     "acquire": "조합",
     "availability": "",
     "note": "같은 지역 내에 있는 동료 전원에게 괴력씨앗을 사용한 효과를 준다. 일정 확률로 파괴된다.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Demon Horn"
   },
   {
     "id": "item_e1ff55ca9370",
@@ -855,7 +920,8 @@
     "acquire": "조합",
     "availability": "",
     "note": "같은 지역 내에 있는 동료 전원에게 인내씨앗을 사용한 효과를 준다. 일정 확률로 파괴된다.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Armor Horn"
   },
   {
     "id": "item_fcfe3f9ba515",
@@ -868,7 +934,8 @@
     "acquire": "도구점",
     "availability": "",
     "note": "조합 성공 확률 업",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Book of Combos 1"
   },
   {
     "id": "item_490a69e91946",
@@ -881,7 +948,8 @@
     "acquire": "도구점",
     "availability": "",
     "note": "조합서①을 함께 가지고 있어야 조합 성공 확률 업",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Book of Combos 2"
   },
   {
     "id": "item_ff141be0a1fa",
@@ -894,7 +962,8 @@
     "acquire": "도구점",
     "availability": "",
     "note": "조합서①②을 함께 가지고 있어야 조합 성공 확률 업",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Book of Combos 3"
   },
   {
     "id": "item_58c090f0a41b",
@@ -907,7 +976,8 @@
     "acquire": "도구점",
     "availability": "",
     "note": "조합서①②③을 함께 가지고 있어야 조합 성공 확률 업",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Book of Combos 4"
   },
   {
     "id": "item_e04033983f9d",
@@ -920,7 +990,8 @@
     "acquire": "도구점",
     "availability": "",
     "note": "조합서①②③④을 함께 가지고 있어야 조합 성공 확률 업",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Book of Combos 5"
   },
   {
     "id": "item_4c9cde75f5d7",
@@ -933,7 +1004,8 @@
     "acquire": "조합·용인족 증식",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Catalyst"
   },
   {
     "id": "item_a6713dfa141b",
@@ -946,7 +1018,8 @@
     "acquire": "채집·용인족 증식",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Honey"
   },
   {
     "id": "item_df6ca304cd16",
@@ -959,7 +1032,8 @@
     "acquire": "조합",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Gunpowder"
   },
   {
     "id": "item_dcdb409fbf47",
@@ -972,7 +1046,8 @@
     "acquire": "조합",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Lifecrystals"
   },
   {
     "id": "item_aeef33ae54c5",
@@ -985,7 +1060,8 @@
     "acquire": "조합·도구점",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Tranquilizer"
   },
   {
     "id": "item_7e9c72b1acd2",
@@ -998,7 +1074,8 @@
     "acquire": "도구점",
     "availability": "",
     "note": "기본공격력+6、힘의 발톱과 중복 가능",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Powercharm"
   },
   {
     "id": "item_96a29a340496",
@@ -1011,7 +1088,8 @@
     "acquire": "조합",
     "availability": "",
     "note": "기본공격력+9、힘의 부적과 중복 가능",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Powertalon"
   },
   {
     "id": "item_bc6fafcc3fb4",
@@ -1024,7 +1102,8 @@
     "acquire": "도구점",
     "availability": "",
     "note": "방어력+12、방어의 발톱과 중복 가능",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Armorcharm"
   },
   {
     "id": "item_495a97e2aa47",
@@ -1037,7 +1116,8 @@
     "acquire": "조합",
     "availability": "",
     "note": "방어력+18、방어의 부적과 중복 가능",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Armortalon"
   },
   {
     "id": "item_bdda24b301c9",
@@ -1050,7 +1130,8 @@
     "acquire": "조합",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Bomb Casing"
   },
   {
     "id": "item_5cd92f4ede75",
@@ -1063,7 +1144,8 @@
     "acquire": "채집",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Dung"
   },
   {
     "id": "item_8d043b3b8ee9",
@@ -1076,7 +1158,8 @@
     "acquire": "채집",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Spider Web"
   },
   {
     "id": "item_b3d80c054349",
@@ -1089,7 +1172,8 @@
     "acquire": "도구점",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Trap Tool"
   },
   {
     "id": "item_4c852071f6e8",
@@ -1102,7 +1186,8 @@
     "acquire": "도구점",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Small Barrel"
   },
   {
     "id": "item_224a2363e493",
@@ -1115,7 +1200,8 @@
     "acquire": "도구점",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Large Barrel"
   },
   {
     "id": "item_506294112ac4",
@@ -1128,7 +1214,8 @@
     "acquire": "도구점",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "BBQ Spit"
   },
   {
     "id": "item_cc6aec541e44",
@@ -1141,7 +1228,8 @@
     "acquire": "도구점",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Binoculars"
   },
   {
     "id": "item_31f615480646",
@@ -1154,7 +1242,8 @@
     "acquire": "조합",
     "availability": "",
     "note": "조합을 실패하면 이것이 된다.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Garbage"
   },
   {
     "id": "item_5968efb30e10",
@@ -1167,7 +1256,8 @@
     "acquire": "",
     "availability": "",
     "note": "미니맵 전체를 볼 수 있게 된다.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Map"
   },
   {
     "id": "item_45eb135ad9b1",
@@ -1180,7 +1270,8 @@
     "acquire": "",
     "availability": "",
     "note": "체력을 30 회복",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "First-aid Med"
   },
   {
     "id": "item_e71a888a5839",
@@ -1193,7 +1284,8 @@
     "acquire": "",
     "availability": "",
     "note": "체력을 50 회복",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "First-aid Med+"
   },
   {
     "id": "item_56f09275ff8e",
@@ -1206,7 +1298,8 @@
     "acquire": "",
     "availability": "",
     "note": "스태미너 최대치+25.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Ration"
   },
   {
     "id": "item_f5c26aea6949",
@@ -1219,7 +1312,8 @@
     "acquire": "",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Portable Spit"
   },
   {
     "id": "item_8dbc7a24da1b",
@@ -1232,7 +1326,8 @@
     "acquire": "",
     "availability": "",
     "note": "근접형 무기의 예리도를 회복할 수 있다. 149/450(?) 회복.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Mini Whetstone"
   },
   {
     "id": "item_cb67183be0ce",
@@ -1245,7 +1340,8 @@
     "acquire": "",
     "availability": "",
     "note": "전기덫 형태의 함정. 포획 시 필요.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "EZ Shock Trap"
   },
   {
     "id": "item_0eaf735e7ddf",
@@ -1258,7 +1354,8 @@
     "acquire": "",
     "availability": "",
     "note": "던진 후 터진 위치를 보고 있는 몬스터들의 눈이 일정시간 보이지 않게 된다.(푸루푸루 등은 무효)",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "EZ Flash Bomb"
   },
   {
     "id": "item_39d1614fac06",
@@ -1271,7 +1368,8 @@
     "acquire": "",
     "availability": "",
     "note": "던진 후 터진 위치의 몬스터가 땅속/물속에 있는 경우 튀어오른다. 또는 잠시동안 멍해진다.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "EZ Sonic Bomb"
   },
   {
     "id": "item_ded2ddc68411",
@@ -1284,7 +1382,8 @@
     "acquire": "",
     "availability": "",
     "note": "최대 체력을 최대치(150)까지 상승시키고 체력을 전부 회복한다.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "EZ Max Potion"
   },
   {
     "id": "item_61db250880ab",
@@ -1297,7 +1396,8 @@
     "acquire": "",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "EZ Dust of Life"
   },
   {
     "id": "item_45c3488434c3",
@@ -1310,7 +1410,8 @@
     "acquire": "",
     "availability": "",
     "note": "구멍 형태의 함정. 포획 시 필요.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "EZ Pitfall Trap"
   },
   {
     "id": "item_64ca2152bf7e",
@@ -1323,7 +1424,8 @@
     "acquire": "",
     "availability": "",
     "note": "대형나무통폭탄보다 데미지가 높다. 성질은 같음.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "EZ Barrel Bomb L"
   },
   {
     "id": "item_82b768e1fc57",
@@ -1336,7 +1438,8 @@
     "acquire": "",
     "availability": "",
     "note": "거치된 보우건에서 발리스타 탄을 발사할 수 있다.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Ballista Ammo"
   },
   {
     "id": "item_de0db753bc9a",
@@ -1349,7 +1452,8 @@
     "acquire": "",
     "availability": "",
     "note": "거치된 보우건에서 구속용 발리스타 탄을 발사할 수 있다.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Ballista Binder"
   },
   {
     "id": "item_4146cd96e0f6",
@@ -1362,7 +1466,8 @@
     "acquire": "",
     "availability": "",
     "note": "거치된 보우건에서 구속용 발리스타 탄을 발사할 수 있다. 한 번 쓰면 사라진다.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "One-shot Binder"
   },
   {
     "id": "item_590ae85ffd3b",
@@ -1375,7 +1480,8 @@
     "acquire": "",
     "availability": "",
     "note": "거치된 대포에서 대포탄을 발사할 수 있다.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Cannon Ammo"
   },
   {
     "id": "item_9f335d80de56",
@@ -1388,7 +1494,8 @@
     "acquire": "",
     "availability": "",
     "note": "거대종의 머리나 등에 설치할 수 있는 폭탄.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Anti-dragon Bomb"
   },
   {
     "id": "item_fb967feaf6d8",
@@ -1401,7 +1508,8 @@
     "acquire": "",
     "availability": "",
     "note": "각종 재료와 혼합하여 사용하는 아이템. 그냥 사용하면 약간의 데미지만 준다.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Throwing Knife"
   },
   {
     "id": "item_dd6aac57c9c7",
@@ -1414,7 +1522,8 @@
     "acquire": "",
     "availability": "",
     "note": "횃불을 켜고 다닐 경우, 소형 몬스터가 달려들지 못하게 된다. 아이루/메라루는 춤을 춘다.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Torch"
   },
   {
     "id": "item_ef4dad220062",
@@ -1427,7 +1536,8 @@
     "acquire": "잡화상에서 구매 가능.",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Normal S Lv2"
   },
   {
     "id": "item_b16c974e8549",
@@ -1440,7 +1550,8 @@
     "acquire": "잡화상에서 구매 가능.",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Normal S Lv3"
   },
   {
     "id": "item_646c55cd21d8",
@@ -1453,7 +1564,8 @@
     "acquire": "잡화상에서 구매 가능.",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Pierce S Lv1"
   },
   {
     "id": "item_aa98b539637a",
@@ -1466,7 +1578,8 @@
     "acquire": "잡화상에서 구매 가능.",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Pierce S Lv2"
   },
   {
     "id": "item_c61659c1984e",
@@ -1479,7 +1592,8 @@
     "acquire": "잡화상에서 구매 가능.",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Pierce S Lv3"
   },
   {
     "id": "item_dea61d203de6",
@@ -1492,7 +1606,8 @@
     "acquire": "잡화상에서 구매 가능.",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Pellet S Lv1"
   },
   {
     "id": "item_9a050b8d770d",
@@ -1505,7 +1620,8 @@
     "acquire": "잡화상에서 구매 가능.",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Pellet S Lv2"
   },
   {
     "id": "item_e97daa36c862",
@@ -1518,7 +1634,8 @@
     "acquire": "잡화상에서 구매 가능.",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Pellet S Lv3"
   },
   {
     "id": "item_436fc1830545",
@@ -1531,7 +1648,8 @@
     "acquire": "잡화상에서 구매 가능.",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Crag S Lv1"
   },
   {
     "id": "item_428b3be4aee5",
@@ -1544,7 +1662,8 @@
     "acquire": "",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Crag S Lv2"
   },
   {
     "id": "item_4c9833b4b8d2",
@@ -1557,7 +1676,8 @@
     "acquire": "",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Crag S Lv3"
   },
   {
     "id": "item_2c5b8ea239dd",
@@ -1570,7 +1690,8 @@
     "acquire": "잡화상에서 구매 가능.",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Clust S Lv1"
   },
   {
     "id": "item_baf998c560b5",
@@ -1583,7 +1704,8 @@
     "acquire": "",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Clust S Lv2"
   },
   {
     "id": "item_1617dc0b1213",
@@ -1596,7 +1718,8 @@
     "acquire": "",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Clust S Lv3"
   },
   {
     "id": "item_1831ad44af70",
@@ -1609,7 +1732,8 @@
     "acquire": "잡화상에서 구매 가능.",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Flaming S"
   },
   {
     "id": "item_df75a31e55fe",
@@ -1622,7 +1746,8 @@
     "acquire": "잡화상에서 구매 가능.",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Water S"
   },
   {
     "id": "item_ecd507a20a2b",
@@ -1635,7 +1760,8 @@
     "acquire": "잡화상에서 구매 가능.",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Thunder S"
   },
   {
     "id": "item_37fd5d6eb875",
@@ -1648,7 +1774,8 @@
     "acquire": "잡화상에서 구매 가능.",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Freeze S"
   },
   {
     "id": "item_19cdd40c6e7a",
@@ -1661,7 +1788,8 @@
     "acquire": "",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Dragon S"
   },
   {
     "id": "item_cce2d8786747",
@@ -1674,7 +1802,8 @@
     "acquire": "잡화상에서 구매 가능.",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Poison S Lv1"
   },
   {
     "id": "item_5cc1f6511d38",
@@ -1687,7 +1816,8 @@
     "acquire": "",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Poison S Lv2"
   },
   {
     "id": "item_fe42293cfd28",
@@ -1700,7 +1830,8 @@
     "acquire": "잡화상에서 구매 가능.",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Para S Lv1"
   },
   {
     "id": "item_ac024f7ba48b",
@@ -1713,7 +1844,8 @@
     "acquire": "",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Para S Lv2"
   },
   {
     "id": "item_fd765cc75f55",
@@ -1726,7 +1858,8 @@
     "acquire": "잡화상에서 구매 가능.",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Sleep S Lv1"
   },
   {
     "id": "item_beef3a2d127b",
@@ -1739,7 +1872,8 @@
     "acquire": "",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Sleep S Lv2"
   },
   {
     "id": "item_2e0dad39afc2",
@@ -1752,7 +1886,8 @@
     "acquire": "잡화상에서 구매 가능.",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Exhaust S Lv1"
   },
   {
     "id": "item_087a70fc83da",
@@ -1765,7 +1900,8 @@
     "acquire": "",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Exhaust S Lv2"
   },
   {
     "id": "item_176d00e51b91",
@@ -1778,7 +1914,8 @@
     "acquire": "잡화상에서 구매 가능.",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Slicing S"
   },
   {
     "id": "item_ed570eafc24b",
@@ -1791,7 +1928,8 @@
     "acquire": "잡화상에서 구매 가능.",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "WyvernFire"
   },
   {
     "id": "item_dc1a643d14ac",
@@ -1804,7 +1942,8 @@
     "acquire": "잡화상에서 구매 가능.",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Blast S"
   },
   {
     "id": "item_0ef78e889181",
@@ -1817,7 +1956,8 @@
     "acquire": "잡화상에서 구매 가능.",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Recover S Lv1"
   },
   {
     "id": "item_63a93cfa3257",
@@ -1830,7 +1970,8 @@
     "acquire": "",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Recover S Lv2"
   },
   {
     "id": "item_1b8af17d2d24",
@@ -1843,7 +1984,8 @@
     "acquire": "",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Demon S"
   },
   {
     "id": "item_34e78f7055a3",
@@ -1856,7 +1998,8 @@
     "acquire": "",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Armor S"
   },
   {
     "id": "item_539fa9e50360",
@@ -1869,7 +2012,8 @@
     "acquire": "",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Paint S"
   },
   {
     "id": "item_64c85fa2eaad",
@@ -1882,7 +2026,8 @@
     "acquire": "",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Tranq S"
   },
   {
     "id": "item_67c022b4810d",
@@ -1895,7 +2040,8 @@
     "acquire": "잡화상에서 구매 가능.",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Empty Phial"
   },
   {
     "id": "item_d23378a9e054",
@@ -1908,7 +2054,8 @@
     "acquire": "잡화상에서 구매 가능.",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Power Coating"
   },
   {
     "id": "item_dacfab4da488",
@@ -1921,7 +2068,8 @@
     "acquire": "잡화상에서 구매 가능.",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "C.Range Coating"
   },
   {
     "id": "item_d6ef20f99ca0",
@@ -1934,7 +2082,8 @@
     "acquire": "잡화상에서 구매 가능.",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Poison Coating"
   },
   {
     "id": "item_10eb437d952e",
@@ -1947,7 +2096,8 @@
     "acquire": "잡화상에서 구매 가능.",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Para Coating"
   },
   {
     "id": "item_329924fafe5a",
@@ -1960,7 +2110,8 @@
     "acquire": "잡화상에서 구매 가능.",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Sleep Coating"
   },
   {
     "id": "item_04623812a4fe",
@@ -1973,7 +2124,8 @@
     "acquire": "잡화상에서 구매 가능.",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Exhaust Coating"
   },
   {
     "id": "item_b54a477a22f9",
@@ -1986,7 +2138,8 @@
     "acquire": "잡화상에서 구매 가능.",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Blast Coating"
   },
   {
     "id": "item_e4123174e3d8",
@@ -1999,7 +2152,8 @@
     "acquire": "잡화상에서 구매 가능.",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Paint Coating"
   },
   {
     "id": "item_c938ec5ea444",
@@ -2012,7 +2166,8 @@
     "acquire": "채집, 잡화상",
     "availability": "",
     "note": "체력을 25 회복, 스킬「광역화+1~+2」의 대상 아이템",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Herb"
   },
   {
     "id": "item_fbb4e129bab8",
@@ -2025,7 +2180,8 @@
     "acquire": "채집, 잡화상",
     "availability": "",
     "note": "확률적으로 독 상태를 회복한다.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Antidote Herb"
   },
   {
     "id": "item_251aed386ec0",
@@ -2038,7 +2194,8 @@
     "acquire": "채집",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Ivy"
   },
   {
     "id": "item_9fe7bc78e4a0",
@@ -2051,7 +2208,8 @@
     "acquire": "채집",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Sleep Herb"
   },
   {
     "id": "item_741b577f72b1",
@@ -2064,7 +2222,8 @@
     "acquire": "채집",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Sap Plant"
   },
   {
     "id": "item_2e67c6057156",
@@ -2077,7 +2236,8 @@
     "acquire": "채집",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Felvine"
   },
   {
     "id": "item_618ceb8f46a3",
@@ -2090,7 +2250,8 @@
     "acquire": "채집",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Fire Herb"
   },
   {
     "id": "item_9209f9e54197",
@@ -2103,7 +2264,8 @@
     "acquire": "채집",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Gloamgrass Root"
   },
   {
     "id": "item_47ad78ba53e4",
@@ -2116,7 +2278,8 @@
     "acquire": "채집",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Gloamgrass Bud"
   },
   {
     "id": "item_b8f7120511ca",
@@ -2129,7 +2292,8 @@
     "acquire": "채집",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Hot Pepper"
   },
   {
     "id": "item_75e3903cd7d6",
@@ -2142,7 +2306,8 @@
     "acquire": "채집, 푸기 구출",
     "availability": "",
     "note": "탐색지에서 풀 개체를 채집하면 가끔 획득.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Cathangea Seed"
   },
   {
     "id": "item_5b5204702054",
@@ -2155,7 +2320,8 @@
     "acquire": "채집, 푸기 구출",
     "availability": "",
     "note": "보물 매립지에서 꽃 채집",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Cathangea"
   },
   {
     "id": "item_15d77b8d5774",
@@ -2168,7 +2334,8 @@
     "acquire": "채집, 푸기 구출",
     "availability": "",
     "note": "보물 매립지에서 꽃 채집",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Cathangea Elixir"
   },
   {
     "id": "item_a7867c6acf3f",
@@ -2181,7 +2348,8 @@
     "acquire": "채집",
     "availability": "",
     "note": "버섯마니아 시 , 먹으면 회복약 효과",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Blue Mushroom"
   },
   {
     "id": "item_7f553e0e08dd",
@@ -2194,7 +2362,8 @@
     "acquire": "채집",
     "availability": "",
     "note": "버섯마니아 시, 먹으면 귀인약 효과",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Nitroshroom"
   },
   {
     "id": "item_070f362893bf",
@@ -2207,7 +2376,8 @@
     "acquire": "채집",
     "availability": "",
     "note": "버섯마니아 시, 먹으면 영양제 효과",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Toadstool"
   },
   {
     "id": "item_ed56364f5585",
@@ -2220,7 +2390,8 @@
     "acquire": "채집",
     "availability": "",
     "note": "버섯마니아 시, 먹으면 강주약 효과",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Mopeshroom"
   },
   {
     "id": "item_8257cc5a7241",
@@ -2233,7 +2404,8 @@
     "acquire": "채집",
     "availability": "",
     "note": "버섯마니아 시, 먹으면 경화약 효과",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Parashroom"
   },
   {
     "id": "item_583bad9f58fa",
@@ -2246,7 +2418,8 @@
     "acquire": "채집",
     "availability": "",
     "note": "버섯마니아 시, 먹으면 푸른버섯 ~만드라고라를 먹었을 때의 효과들 중 랜덤.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Exciteshroom"
   },
   {
     "id": "item_5237fb1479f2",
@@ -2259,7 +2432,8 @@
     "acquire": "채집",
     "availability": "",
     "note": "버섯마니아 시, 먹으면 비약 효과",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Dragon Toadstool"
   },
   {
     "id": "item_bc087f7807b6",
@@ -2272,7 +2446,8 @@
     "acquire": "채집",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Huskberry"
   },
   {
     "id": "item_e167cc087b62",
@@ -2285,7 +2460,8 @@
     "acquire": "채집, 용인족 상인",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Paintberry"
   },
   {
     "id": "item_07d4d46e9225",
@@ -2298,7 +2474,8 @@
     "acquire": "채집, 용인족 상인",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Needleberry"
   },
   {
     "id": "item_cda24b4df7a0",
@@ -2311,7 +2488,8 @@
     "acquire": "채집, 용인족 상인",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Latchberry"
   },
   {
     "id": "item_fc3de8cfddaa",
@@ -2324,7 +2502,8 @@
     "acquire": "",
     "availability": "",
     "note": "3분간 기본 공격력 +10",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Might Seed"
   },
   {
     "id": "item_6168885ac9db",
@@ -2337,7 +2516,8 @@
     "acquire": "",
     "availability": "",
     "note": "3분간 방어력 +20",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Adamant Seed"
   },
   {
     "id": "item_cccd2e790bc7",
@@ -2350,7 +2530,8 @@
     "acquire": "",
     "availability": "",
     "note": "불, 물, 번개, 얼음, 용속성으로 당한 상태를 회복, 광룡 바이러스 감염 게이지를 감소시킨다.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Nulberry"
   },
   {
     "id": "item_080c01e0bd5d",
@@ -2363,7 +2544,8 @@
     "acquire": "",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Scatternut"
   },
   {
     "id": "item_49cd59b03169",
@@ -2376,7 +2558,8 @@
     "acquire": "",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Bomberry"
   },
   {
     "id": "item_26b1840344fe",
@@ -2389,7 +2572,8 @@
     "acquire": "",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Dragonfell Berry"
   },
   {
     "id": "item_d67abb81c27e",
@@ -2402,7 +2586,8 @@
     "acquire": "용인족 상인",
     "availability": "",
     "note": "용인족 상인에게 증식 의뢰를 할 때 보수로 가끔 입수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Bumblepumpkin"
   },
   {
     "id": "item_b3a3182ef286",
@@ -2415,7 +2600,8 @@
     "acquire": "채취, 채굴",
     "availability": "하위",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Stone"
   },
   {
     "id": "item_a86a937adb56",
@@ -2428,7 +2614,8 @@
     "acquire": "채굴",
     "availability": "하위",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Iron Ore"
   },
   {
     "id": "item_829d3591a0d0",
@@ -2441,7 +2628,8 @@
     "acquire": "채굴",
     "availability": "하위",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Earth Crystal"
   },
   {
     "id": "item_8f142f2db297",
@@ -2454,7 +2642,8 @@
     "acquire": "채굴",
     "availability": "하위",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Machalite Ore"
   },
   {
     "id": "item_693fc7b0ed4b",
@@ -2467,7 +2656,8 @@
     "acquire": "채굴",
     "availability": "하위",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Dragonite Ore"
   },
   {
     "id": "item_590eca115900",
@@ -2480,7 +2670,8 @@
     "acquire": "채굴(빙해 , 천공산)",
     "availability": "하위",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Lightcrystal"
   },
   {
     "id": "item_3f24bc845010",
@@ -2493,7 +2684,8 @@
     "acquire": "채굴(빙해), 자보아자길",
     "availability": "하위",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Ice Crystal"
   },
   {
     "id": "item_94bcbdc4d067",
@@ -2506,7 +2698,8 @@
     "acquire": "채굴(지저화산)",
     "availability": "하위",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Firestone"
   },
   {
     "id": "item_7e7563c1aba7",
@@ -2519,7 +2712,8 @@
     "acquire": "채굴(천공산)",
     "availability": "하위",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Gossamite Ore"
   },
   {
     "id": "item_33a5cd509d37",
@@ -2532,7 +2726,8 @@
     "acquire": "채굴(탐색, 길드퀘)",
     "availability": "상위",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Heavenly Crystal"
   },
   {
     "id": "item_6f1301567966",
@@ -2545,7 +2740,8 @@
     "acquire": "채굴",
     "availability": "상위",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Carbalite Ore"
   },
   {
     "id": "item_fc9752fd5432",
@@ -2558,7 +2754,8 @@
     "acquire": "채굴(빙해 , 천공산)",
     "availability": "상위",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Novacrystal"
   },
   {
     "id": "item_dfe22fd0ad9d",
@@ -2571,7 +2768,8 @@
     "acquire": "채굴",
     "availability": "상위",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Fucium Ore"
   },
   {
     "id": "item_05a0a5d02783",
@@ -2584,7 +2782,8 @@
     "acquire": "채굴(지저화산)",
     "availability": "상위",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Firecell Stone"
   },
   {
     "id": "item_ecfef79bb435",
@@ -2597,7 +2796,8 @@
     "acquire": "채굴(천공산)",
     "availability": "상위",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Yoldspar Ore"
   },
   {
     "id": "item_c7113b7b7d0e",
@@ -2610,7 +2810,8 @@
     "acquire": "채굴(탐색, 길드퀘)",
     "availability": "G급",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Meteor Crystal"
   },
   {
     "id": "item_fe4f2a32f3ec",
@@ -2623,7 +2824,8 @@
     "acquire": "채굴",
     "availability": "G급",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Eltalite Ore"
   },
   {
     "id": "item_4356e2f02662",
@@ -2636,7 +2838,8 @@
     "acquire": "채굴",
     "availability": "G급",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Meldspar Ore"
   },
   {
     "id": "item_53b42555459e",
@@ -2649,7 +2852,8 @@
     "acquire": "채굴(지저화산)",
     "availability": "G급",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Allfire Stone"
   },
   {
     "id": "item_d689931faa86",
@@ -2662,7 +2866,8 @@
     "acquire": "채굴(빙해 , 천공산)",
     "availability": "G급",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Purecrystal"
   },
   {
     "id": "item_b64ad25cc204",
@@ -2675,7 +2880,8 @@
     "acquire": "채굴(천공산)",
     "availability": "G급",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Cosmicite Ore"
   },
   {
     "id": "item_18044312acae",
@@ -2688,7 +2894,8 @@
     "acquire": "보수",
     "availability": "G급",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Armor Stone"
   },
   {
     "id": "item_0b565c582941",
@@ -2701,7 +2908,8 @@
     "acquire": "채굴 또는 갈무리",
     "availability": "하위",
     "note": "쿤추로부터 갈무리 시 획득 가능",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Armor Sphere"
   },
   {
     "id": "item_df88020e3e4b",
@@ -2714,7 +2922,8 @@
     "acquire": "채굴 또는 갈무리",
     "availability": "하위",
     "note": "쿤추로부터 갈무리 시 획득 가능",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Armor Sphere+"
   },
   {
     "id": "item_f5a602148841",
@@ -2727,7 +2936,8 @@
     "acquire": "채굴",
     "availability": "상위",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Adv Armor Sphere"
   },
   {
     "id": "item_c45692a5d317",
@@ -2740,7 +2950,8 @@
     "acquire": "채굴, 보수",
     "availability": "상위",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Hard Armor Sphere"
   },
   {
     "id": "item_7b1f20a42e5b",
@@ -2753,7 +2964,8 @@
     "acquire": "채굴, 보수",
     "availability": "상위",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Heavy Armor Sphere"
   },
   {
     "id": "item_09bd9ff6f629",
@@ -2766,7 +2978,8 @@
     "acquire": "보수",
     "availability": "상위",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "True Armor Sphere"
   },
   {
     "id": "item_c90a07fc7197",
@@ -2779,7 +2992,8 @@
     "acquire": "채굴, 보수",
     "availability": "G급",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Strong Armor Sphere"
   },
   {
     "id": "item_9517903c8d04",
@@ -2792,7 +3006,8 @@
     "acquire": "길드퀘스트 보수",
     "availability": "G급",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Divine Armor Sphere"
   },
   {
     "id": "item_c74984635700",
@@ -2805,7 +3020,8 @@
     "acquire": "채굴(탐색, 길드퀘)",
     "availability": "하위",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Rusted Fragment"
   },
   {
     "id": "item_4b514d4e7fcb",
@@ -2818,7 +3034,8 @@
     "acquire": "채굴(탐색, 길드퀘)",
     "availability": "상위",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Ancient Fragment"
   },
   {
     "id": "item_4b5fc7385e65",
@@ -2831,7 +3048,8 @@
     "acquire": "채굴(탐색, 길드퀘)",
     "availability": "G급",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Distorted Fragment"
   },
   {
     "id": "item_6a4d6a12ffb3",
@@ -2844,7 +3062,8 @@
     "acquire": "보수",
     "availability": "하위",
     "note": "광룡바이러스에 걸린 몬스터 퇴치 시 보수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Frenzy Shard"
   },
   {
     "id": "item_8ba0451005e8",
@@ -2857,7 +3076,8 @@
     "acquire": "보수",
     "availability": "하위",
     "note": "광룡바이러스에 걸린 몬스터 퇴치 시 보수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Frenzy Crystal"
   },
   {
     "id": "item_2d18b647f10a",
@@ -2870,7 +3090,8 @@
     "acquire": "보수",
     "availability": "상위",
     "note": "광룡바이러스에 걸린 몬스터 퇴치 시 보수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Vile Frenzy Crystal"
   },
   {
     "id": "item_9d0dd20d8347",
@@ -2883,7 +3104,8 @@
     "acquire": "보수",
     "availability": "G급",
     "note": "광룡바이러스에 걸린 몬스터 퇴치 시 보수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Pure Frenzy Crystal"
   },
   {
     "id": "item_ef8dd8aea459",
@@ -2896,7 +3118,8 @@
     "acquire": "채집",
     "availability": "하위",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Worm"
   },
   {
     "id": "item_5ce06143241d",
@@ -2909,7 +3132,8 @@
     "acquire": "채집",
     "availability": "하위",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Mega Fishing Fly"
   },
   {
     "id": "item_ca92314fb4c9",
@@ -2922,7 +3146,8 @@
     "acquire": "채집(빙해)",
     "availability": "하위",
     "note": "자보아자길을 낚을 때 사용한다.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Frog"
   },
   {
     "id": "item_f95bfdf10417",
@@ -2935,7 +3160,8 @@
     "acquire": "조합",
     "availability": "하위",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Sushifish Bait"
   },
   {
     "id": "item_7ff86ea33d67",
@@ -2948,7 +3174,8 @@
     "acquire": "조합",
     "availability": "하위",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Burst Bait"
   },
   {
     "id": "item_ed08b6233646",
@@ -2961,7 +3188,8 @@
     "acquire": "조합",
     "availability": "하위",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Goldenfish Bait"
   },
   {
     "id": "item_5e6abfa1a2ef",
@@ -2974,7 +3202,8 @@
     "acquire": "낚시·투망 머신",
     "availability": "하위",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Whetfish"
   },
   {
     "id": "item_5717b29a68df",
@@ -2987,7 +3216,8 @@
     "acquire": "낚시·투망 머신",
     "availability": "하위",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Sushifish"
   },
   {
     "id": "item_0f9297a40397",
@@ -3000,7 +3230,8 @@
     "acquire": "낚시·투망 머신",
     "availability": "하위",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Sleepyfish"
   },
   {
     "id": "item_5e9f331a84f6",
@@ -3013,7 +3244,8 @@
     "acquire": "낚시·투망 머신",
     "availability": "하위",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Pin Tuna"
   },
   {
     "id": "item_2155718ff3b6",
@@ -3026,7 +3258,8 @@
     "acquire": "낚시(빙해)",
     "availability": "하위",
     "note": "빙해 2 에서만 입수 가능",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Speartuna"
   },
   {
     "id": "item_db3fbe932218",
@@ -3039,7 +3272,8 @@
     "acquire": "낚시·투망 머신",
     "availability": "하위",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Popfish"
   },
   {
     "id": "item_cb0a46985417",
@@ -3052,7 +3286,8 @@
     "acquire": "낚시·투망 머신",
     "availability": "하위",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Scatterfish"
   },
   {
     "id": "item_c4a76a205d27",
@@ -3065,7 +3300,8 @@
     "acquire": "낚시·투망 머신",
     "availability": "하위",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Burst Arowana"
   },
   {
     "id": "item_a9f468d83421",
@@ -3078,7 +3314,8 @@
     "acquire": "낚시·투망 머신",
     "availability": "하위",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Bomb Arowana"
   },
   {
     "id": "item_ca5f91476ef3",
@@ -3091,7 +3328,8 @@
     "acquire": "낚시",
     "availability": "하위",
     "note": "먹으면 부메랑, 마카라이트광석, 갑옥, 화석뼈, 강철알 중 하나 획득",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Glutton Tuna"
   },
   {
     "id": "item_710df833c83b",
@@ -3104,7 +3342,8 @@
     "acquire": "낚시",
     "availability": "하위",
     "note": "먹으면 귀인피리, 경화피리, 황금석 덩어리, 뇌광충, 은알, 금알, 증식곡괭이 중 하나 획득",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Gastronome Tuna"
   },
   {
     "id": "item_6c4ce86551ab",
@@ -3117,7 +3356,8 @@
     "acquire": "낚시·투망 머신",
     "availability": "하위",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Small Goldenfish"
   },
   {
     "id": "item_4795b1f944a4",
@@ -3130,7 +3370,8 @@
     "acquire": "낚시·투망 머신",
     "availability": "하위",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Wanchovy"
   },
   {
     "id": "item_d85b31a11323",
@@ -3143,7 +3384,8 @@
     "acquire": "낚시(상위)",
     "availability": "상위",
     "note": "유적평원 베이스캠프, 빙해 2 에서 입수 가능",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Ancient Fish"
   },
   {
     "id": "item_991cd4d8b3a1",
@@ -3156,7 +3398,8 @@
     "acquire": "낚시퀘 보수",
     "availability": "하위",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Blue Cutthroat"
   },
   {
     "id": "item_2910aa48f3d9",
@@ -3169,7 +3412,8 @@
     "acquire": "돈도르마 중앙광장 낚시터",
     "availability": "하위",
     "note": "돈벌이용 아이템",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Coinperch S"
   },
   {
     "id": "item_e4520083fb76",
@@ -3182,7 +3426,8 @@
     "acquire": "돈도르마 중앙광장 낚시터",
     "availability": "하위",
     "note": "돈벌이용 아이템",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Coinperch M"
   },
   {
     "id": "item_4ca37f96b063",
@@ -3195,7 +3440,8 @@
     "acquire": "돈도르마 중앙광장 낚시터",
     "availability": "하위",
     "note": "돈벌이용 아이템",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Coinperch L"
   },
   {
     "id": "item_dccb4341d280",
@@ -3208,7 +3454,8 @@
     "acquire": "돈도르마 중앙광장 낚시터",
     "availability": "상위",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Dundorma Tuna"
   },
   {
     "id": "item_dbbd5eccc22a",
@@ -3221,7 +3468,8 @@
     "acquire": "돈도르마 중앙광장 낚시터",
     "availability": "상위",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Cathangeafish"
   },
   {
     "id": "item_bdd95c8d622e",
@@ -3234,7 +3482,8 @@
     "acquire": "돈도르마 중앙광장 낚시터",
     "availability": "하위",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Cathangeafish Fry"
   },
   {
     "id": "item_42e0b2ed47d7",
@@ -3247,7 +3496,8 @@
     "acquire": "채집, 채취",
     "availability": "하위",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Insect Husk"
   },
   {
     "id": "item_66dce833ed03",
@@ -3260,7 +3510,8 @@
     "acquire": "채집, 용인족 증식",
     "availability": "하위",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Stinkhopper"
   },
   {
     "id": "item_0bbfdcb19898",
@@ -3273,7 +3524,8 @@
     "acquire": "채집",
     "availability": "하위",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Snakebee Larva"
   },
   {
     "id": "item_b8e5057953d0",
@@ -3286,7 +3538,8 @@
     "acquire": "채집, 용인족 증식",
     "availability": "하위",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Godbug"
   },
   {
     "id": "item_1bdd21586b39",
@@ -3299,7 +3552,8 @@
     "acquire": "채집, 용인족 증식",
     "availability": "하위",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Bitterbug"
   },
   {
     "id": "item_975a35732b7f",
@@ -3312,7 +3566,8 @@
     "acquire": "채집, 용인족 증식",
     "availability": "하위",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Flashbug"
   },
   {
     "id": "item_221bb3fb3cd8",
@@ -3325,7 +3580,8 @@
     "acquire": "채집, 용인족 증식",
     "availability": "하위",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Thunderbug"
   },
   {
     "id": "item_b0cf7cb3f2bf",
@@ -3338,7 +3594,8 @@
     "acquire": "채집",
     "availability": "하위",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Glueglopper"
   },
   {
     "id": "item_706ebc21b871",
@@ -3351,7 +3608,8 @@
     "acquire": "채집",
     "availability": "상위",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Killer Beetle"
   },
   {
     "id": "item_f4a9500b933b",
@@ -3364,7 +3622,8 @@
     "acquire": "채집",
     "availability": "상위",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Hercudrome"
   },
   {
     "id": "item_93560a69787e",
@@ -3377,7 +3636,8 @@
     "acquire": "보수, 진오우가 등에서",
     "availability": "하위",
     "note": "발을 공격해서 옆으로 넘어졌을 때 등 쪽에서 채취 가능, 잠자리채류 아이템 필요",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Fulgurbug"
   },
   {
     "id": "item_da2704a70170",
@@ -3390,7 +3650,8 @@
     "acquire": "보수, 진오우가 아종 등에서",
     "availability": "상위",
     "note": "발을 공격해서 옆으로 넘어졌을 때 등 쪽에서 채취 가능, 잠자리채류 아이템 필요",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Dracophage Bug"
   },
   {
     "id": "item_54ae5510c450",
@@ -3403,7 +3664,8 @@
     "acquire": "채집",
     "availability": "상위",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Rare Scarab"
   },
   {
     "id": "item_3f8cdddebca5",
@@ -3416,7 +3678,8 @@
     "acquire": "채집(상위탐색)",
     "availability": "상위",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Great Hornfly"
   },
   {
     "id": "item_4a9632d58262",
@@ -3429,7 +3692,8 @@
     "acquire": "바람의 헌터 보수",
     "availability": "상위",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Butterfly Beetle"
   },
   {
     "id": "item_4f6183665c7e",
@@ -3442,7 +3706,8 @@
     "acquire": "채집( G급탐색)",
     "availability": "G급",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Great Elder Hornfly"
   },
   {
     "id": "item_84fa2a59dd99",
@@ -3455,7 +3720,8 @@
     "acquire": "바람의 헌터 보수",
     "availability": "G급",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Elder Bfly Beetle"
   },
   {
     "id": "item_4f2838814bcb",
@@ -3468,7 +3734,8 @@
     "acquire": "채집",
     "availability": "G급",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Flutterfly"
   },
   {
     "id": "item_ca6b777dbf0c",
@@ -3481,7 +3748,8 @@
     "acquire": "채집",
     "availability": "G급",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Emperor Hopper"
   },
   {
     "id": "item_9c00ef00ff69",
@@ -3494,7 +3762,8 @@
     "acquire": "",
     "availability": "",
     "note": "파워+1 / 불속성+1 물속성-2",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Power Nectar: Fire"
   },
   {
     "id": "item_2cd04732d5ba",
@@ -3507,7 +3776,8 @@
     "acquire": "",
     "availability": "",
     "note": "파워+1 / 불속성+2 물속성-3",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Power Nectar: Fire+"
   },
   {
     "id": "item_1f8f13cff274",
@@ -3520,7 +3790,8 @@
     "acquire": "",
     "availability": "",
     "note": "파워+2 스피드-1 / 불속성-1",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Power+ Nectar"
   },
   {
     "id": "item_74dcb562e885",
@@ -3533,7 +3804,8 @@
     "acquire": "",
     "availability": "",
     "note": "파워+2 / 불속성+1 스피드-3",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Power+ Nectar: Fire"
   },
   {
     "id": "item_bcf0d1cd10f6",
@@ -3546,7 +3818,8 @@
     "acquire": "",
     "availability": "",
     "note": "파워+5 모든 속성-1",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Power++ Nectar"
   },
   {
     "id": "item_4745b1ad3bf0",
@@ -3559,7 +3832,8 @@
     "acquire": "",
     "availability": "",
     "note": "스태미나+1 / 물속성+1 번개속성-2",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Stam Nectar: Water"
   },
   {
     "id": "item_b633067593fc",
@@ -3572,7 +3846,8 @@
     "acquire": "",
     "availability": "",
     "note": "스태미나+1 / 용속성+1 불속성-2",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Stam Nectar: Dragon"
   },
   {
     "id": "item_0c199cfd5dfd",
@@ -3585,7 +3860,8 @@
     "acquire": "",
     "availability": "",
     "note": "스태미나+1 / 용속성+2 불속성-3",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Stam Nectar: Dragon+"
   },
   {
     "id": "item_8203ad9d45bd",
@@ -3598,7 +3874,8 @@
     "acquire": "",
     "availability": "",
     "note": "스태미나+2 파워-1 / 물속성-1",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Stamina+ Nectar"
   },
   {
     "id": "item_6bc9d47e8202",
@@ -3611,7 +3888,8 @@
     "acquire": "",
     "availability": "",
     "note": "스태미나+2 / 물속성+1 파워-3",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Stam+ Nectar: Water"
   },
   {
     "id": "item_19b6fe7143d0",
@@ -3624,7 +3902,8 @@
     "acquire": "",
     "availability": "",
     "note": "스태미나+5 모든 속성-1",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Stamina++ Nectar"
   },
   {
     "id": "item_8308f845711a",
@@ -3637,7 +3916,8 @@
     "acquire": "",
     "availability": "",
     "note": "스피드+1 / 물속성+2 번개속성-3",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Speed Nectar: Water+"
   },
   {
     "id": "item_4d6521e7e455",
@@ -3650,7 +3930,8 @@
     "acquire": "",
     "availability": "",
     "note": "스피드+1 / 번개속성+1 얼음속성-2",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Spd Nectar: Thunder"
   },
   {
     "id": "item_9345b5d0e5ac",
@@ -3663,7 +3944,8 @@
     "acquire": "",
     "availability": "",
     "note": "스피드+1 / 번개속성+2 얼음속성-3",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Spd Nectar: Thunder+"
   },
   {
     "id": "item_c7e1343e769f",
@@ -3676,7 +3958,8 @@
     "acquire": "",
     "availability": "",
     "note": "스피드+1 / 얼음속성+1 용속성-2",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Speed Nectar: Ice"
   },
   {
     "id": "item_c9c3b2376a25",
@@ -3689,7 +3972,8 @@
     "acquire": "",
     "availability": "",
     "note": "스피드+1 / 얼음속성+2 용속성-3",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Speed Nectar: Ice+"
   },
   {
     "id": "item_ed1be396b82d",
@@ -3702,7 +3986,8 @@
     "acquire": "",
     "availability": "",
     "note": "스피드+2 스태미나-1 / 번개속성-1",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Speed+ Nectar"
   },
   {
     "id": "item_facfc82d9008",
@@ -3715,7 +4000,8 @@
     "acquire": "",
     "availability": "",
     "note": "스피드+2 / 번개속성+1 스태미나-3",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Spd+ Nectar: Thunder"
   },
   {
     "id": "item_ae5ea6b8cad4",
@@ -3728,7 +4014,8 @@
     "acquire": "",
     "availability": "",
     "note": "스피드+5 모든 속성-1",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Speed++ Nectar"
   },
   {
     "id": "item_716ca89f2384",
@@ -3741,7 +4028,8 @@
     "acquire": "",
     "availability": "",
     "note": "불속성+2 물속성-1 / 얼음속성-1",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Nectar: Fire+"
   },
   {
     "id": "item_71e75b567e58",
@@ -3754,7 +4042,8 @@
     "acquire": "",
     "availability": "",
     "note": "물속성+2 번개속성-1 / 용속성-1",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Nectar: Water+"
   },
   {
     "id": "item_181f0ca727fb",
@@ -3767,7 +4056,8 @@
     "acquire": "",
     "availability": "",
     "note": "번개속성+2 스피드-1 / 얼음속성-1",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Nectar: Thunder+"
   },
   {
     "id": "item_940a9cb1e21b",
@@ -3780,7 +4070,8 @@
     "acquire": "",
     "availability": "",
     "note": "얼음속성+2 스태미나-1 / 용속성-1",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Nectar: Ice+"
   },
   {
     "id": "item_703a546c5d0a",
@@ -3793,7 +4084,8 @@
     "acquire": "",
     "availability": "",
     "note": "용속성+2 파워-1 / 불속성-1",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Nectar: Dragon+"
   },
   {
     "id": "item_3483ea42d15f",
@@ -3871,7 +4163,8 @@
     "acquire": "",
     "availability": "하위",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Bone Husk"
   },
   {
     "id": "item_4920157876c8",
@@ -3884,7 +4177,8 @@
     "acquire": "",
     "availability": "하위",
     "note": "아프토노스, 가구아(하위)",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Monster Bone S"
   },
   {
     "id": "item_eb551f3702e5",
@@ -3897,7 +4191,8 @@
     "acquire": "",
     "availability": "하위",
     "note": "리노프로스(하위), 즈와로포스",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Monster Bone M"
   },
   {
     "id": "item_45dac90311e6",
@@ -3910,7 +4205,8 @@
     "acquire": "",
     "availability": "상위",
     "note": "가레오스(상위)",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Monster Bone L"
   },
   {
     "id": "item_19480d0428de",
@@ -3923,7 +4219,8 @@
     "acquire": "",
     "availability": "하위",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Mystery Bone"
   },
   {
     "id": "item_d4110b0095a5",
@@ -3936,7 +4233,8 @@
     "acquire": "",
     "availability": "하위",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Unknown Skull"
   },
   {
     "id": "item_a4eda339a44c",
@@ -3949,7 +4247,8 @@
     "acquire": "",
     "availability": "하위",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Monster Bone+"
   },
   {
     "id": "item_ceb692c59e38",
@@ -3962,7 +4261,8 @@
     "acquire": "보수",
     "availability": "상위",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Monster Keenbone"
   },
   {
     "id": "item_b9c38f0f747b",
@@ -3975,7 +4275,8 @@
     "acquire": "",
     "availability": "상위",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Monster Hardbone"
   },
   {
     "id": "item_19c5eaea3a54",
@@ -3988,7 +4289,8 @@
     "acquire": "",
     "availability": "상위",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Elder Dragon Bone"
   },
   {
     "id": "item_93ba183fc30f",
@@ -4014,7 +4316,8 @@
     "acquire": "보수",
     "availability": "G급",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Lrg ElderDragon Bone"
   },
   {
     "id": "item_67106866b156",
@@ -4027,7 +4330,8 @@
     "acquire": "",
     "availability": "상위",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Avian Finebone"
   },
   {
     "id": "item_4a7a3d81c377",
@@ -4040,7 +4344,8 @@
     "acquire": "",
     "availability": "G급",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Avian Stoutbone"
   },
   {
     "id": "item_5ed5ced47a6f",
@@ -4053,7 +4358,8 @@
     "acquire": "갈무리",
     "availability": "하위",
     "note": "포포, 콩가",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Brute Bone"
   },
   {
     "id": "item_0e6aada4f05c",
@@ -4066,7 +4372,8 @@
     "acquire": "갈무리",
     "availability": "하위",
     "note": "포포",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Jumbo Bone"
   },
   {
     "id": "item_b891515d834f",
@@ -4079,7 +4386,8 @@
     "acquire": "",
     "availability": "상위",
     "note": "테츠카브라",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Stoutbone"
   },
   {
     "id": "item_bf13a6bc33f0",
@@ -4092,7 +4400,8 @@
     "acquire": "",
     "availability": "G급",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Massive Bone"
   },
   {
     "id": "item_7ae7127971bf",
@@ -4105,7 +4414,8 @@
     "acquire": "",
     "availability": "하위",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Wyvern Fang"
   },
   {
     "id": "item_e982312a3844",
@@ -4118,7 +4428,8 @@
     "acquire": "",
     "availability": "하위",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Wyvern Claw"
   },
   {
     "id": "item_c0a2150058b0",
@@ -4131,7 +4442,8 @@
     "acquire": "채취",
     "availability": "상위",
     "note": "상위 맵 중 뼈 무더기에서 채집 시 입수 가능",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Dragonbone Relic"
   },
   {
     "id": "item_d660eb09ffdd",
@@ -4144,7 +4456,8 @@
     "acquire": "채취",
     "availability": "G급",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Dragonbone Artifact"
   },
   {
     "id": "item_25b0f533f862",
@@ -4157,7 +4470,8 @@
     "acquire": "격투대회 퀘스트 보수",
     "availability": "격투대회",
     "note": "챌린지 퀘스트를 A랭크 이상으로 클리어 시 확률보수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Pinnacle Coin"
   },
   {
     "id": "item_629fff406671",
@@ -4170,7 +4484,8 @@
     "acquire": "격투대회 퀘스트 보수",
     "availability": "격투대회",
     "note": "챌린지 퀘스트를 A랭크 이상으로 클리어 시 확률보수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Hunter King Coin"
   },
   {
     "id": "item_820b89fc9311",
@@ -4183,7 +4498,8 @@
     "acquire": "격투대회 퀘스트 보수",
     "availability": "격투대회",
     "note": "케차와차 타임어택 챌린지 퀘스트 클리어 시 보수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Beast Coin"
   },
   {
     "id": "item_374139509817",
@@ -4196,7 +4512,8 @@
     "acquire": "격투대회 퀘스트 보수",
     "availability": "격투대회",
     "note": "비룡계열 타임어택 챌린지 퀘스트 클리어 시 보수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Flying Coin"
   },
   {
     "id": "item_341a3018ba84",
@@ -4209,7 +4526,8 @@
     "acquire": "격투대회 퀘스트 보수",
     "availability": "격투대회",
     "note": "얀쿡 타임어택 챌린지 퀘스트 클리어 시 보수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Bird Coin"
   },
   {
     "id": "item_a1f229c21aa4",
@@ -4222,7 +4540,8 @@
     "acquire": "격투대회 퀘스트 보수",
     "availability": "격투대회",
     "note": "진오우거 아종 타임어택 챌린지 퀘스트 클리어 시 보수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Fang Coin"
   },
   {
     "id": "item_68a48f1ebe30",
@@ -4235,7 +4554,8 @@
     "acquire": "격투대회 퀘스트 보수",
     "availability": "격투대회",
     "note": "이블조 타임어택 챌린지 퀘스트 클리어 시 보수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Brute Coin"
   },
   {
     "id": "item_01f37e870f1c",
@@ -4248,7 +4568,8 @@
     "acquire": "격투대회 퀘스트 보수",
     "availability": "격투대회",
     "note": "아르셀타스와 게넬셀타스 타임어택 챌린지 퀘스트 클리어 시 보수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Vermin Coin"
   },
   {
     "id": "item_8bdf4303155a",
@@ -4261,7 +4582,8 @@
     "acquire": "격투대회 퀘스트 보수",
     "availability": "격투대회",
     "note": "자보아자길 타임어택 챌린지 퀘스트 클리어 시 보수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Toad Coin"
   },
   {
     "id": "item_32c1096c26c4",
@@ -4274,7 +4596,8 @@
     "acquire": "격투대회 퀘스트 보수",
     "availability": "격투대회",
     "note": "리오레이아 아종+리오레우스 아종 또는 그라비모스+그라비모스 아종 퀘스트 클리어 시 보수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Ace Hunter Coin"
   },
   {
     "id": "item_1d10d75831bd",
@@ -4287,7 +4610,8 @@
     "acquire": "격투대회 퀘스트 보수",
     "availability": "격투대회",
     "note": "다이묘자자미?",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Daimyo Coin"
   },
   {
     "id": "item_20a1762bd171",
@@ -4300,7 +4624,8 @@
     "acquire": "식사 시 일정 회수별로 입수",
     "availability": "",
     "note": "식사가 무료가 된다. 식재가 모두 신선한 상태가 된다.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Voucher"
   },
   {
     "id": "item_937798189eac",
@@ -4313,7 +4638,8 @@
     "acquire": "식사 시 일정 회수별로 입수",
     "availability": "",
     "note": "식사가 무료가 된다. 식재가 모두 신선한 상태가 된다. 오늘의 추첨 스킬이 반드시 발동된다.",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Gourmet Voucher"
   },
   {
     "id": "item_e33f29c86f57",
@@ -4326,7 +4652,8 @@
     "acquire": "이벤트 퀘스트 보수",
     "availability": "하위",
     "note": "몬헌부·가브라스 수렵전선 다운로드 이벤트 퀘스트 클리어 시 보수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Fan Club Invite"
   },
   {
     "id": "item_40ebb199ead9",
@@ -4339,7 +4666,8 @@
     "acquire": "이벤트 퀘스트 보수",
     "availability": "하위",
     "note": "유니클로·아이디어를 찾아서 다운로드 이벤트 퀘스트 클리어 시 보수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Monqlo Ticket"
   },
   {
     "id": "item_cf69d4a3a72f",
@@ -4352,7 +4680,8 @@
     "acquire": "이벤트 퀘스트 보수",
     "availability": "상위",
     "note": "유니클로·끝없는 도전 다운로드 이벤트 퀘스트 클리어 시 보수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Uniqlo Ticket"
   },
   {
     "id": "item_f3d9eeccbdf3",
@@ -4365,7 +4694,8 @@
     "acquire": "이벤트 퀘스트 보수",
     "availability": "상위",
     "note": "캡진·마스코트 대결! 다운로드 이벤트 퀘스트 클리어 시 보수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Capcom MH Sp. Issue"
   },
   {
     "id": "item_8977ff5e808f",
@@ -4378,7 +4708,8 @@
     "acquire": "이벤트 퀘스트 보수",
     "availability": "상위",
     "note": "몬헌부·홍팀 백팀 응원가 다운로드 이벤트 퀘스트 클리어 시 보수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Fan Club Certificate"
   },
   {
     "id": "item_0c9affd49572",
@@ -4391,7 +4722,8 @@
     "acquire": "이벤트 퀘스트 보수",
     "availability": "G급",
     "note": "몬헌부·사막의 응원 특훈 다운로드 이벤트 퀘스트 클리어 시 보수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Fan Club Cheer"
   },
   {
     "id": "item_ab860a346b6b",
@@ -4404,7 +4736,8 @@
     "acquire": "이벤트 퀘스트 보수",
     "availability": "G급",
     "note": "몬헌부·격투장 열혈 특훈 다운로드 이벤트 퀘스트 클리어 시 보수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Fan Club Newsletter"
   },
   {
     "id": "item_b3aff12b3e86",
@@ -4417,7 +4750,8 @@
     "acquire": "이벤트 퀘스트 보수",
     "availability": "상위",
     "note": "젤다의 전설·힘, 지혜, 용기 다운로드 이벤트 퀘스트 클리어 시 보수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Triforce"
   },
   {
     "id": "item_6421af3ef215",
@@ -4430,7 +4764,8 @@
     "acquire": "이벤트 퀘스트 보수",
     "availability": "상위",
     "note": "젤다의 전설·결전의 불꽃 다운로드 이벤트 퀘스트 클리어 시 보수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Goddess's Fire"
   },
   {
     "id": "item_a99723f25fbe",
@@ -4443,7 +4778,8 @@
     "acquire": "이벤트 퀘스트 보수",
     "availability": "상위",
     "note": "마리오·버섯 사랑 브라더스 다운로드 이벤트 퀘스트 클리어 시 보수 버섯마니아 스킬 활성 상태에서 먹으면 회복약그레이트 효과",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Super Mushroom"
   },
   {
     "id": "item_6f7e1c1fcb37",
@@ -4456,7 +4792,8 @@
     "acquire": "이벤트 퀘스트 보수",
     "availability": "G급",
     "note": "패미통 ·특별취재, 천회룡! 다운로드 이벤트 퀘스트 클리어 시 보수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Famitsu Ticket"
   },
   {
     "id": "item_9c676836c72d",
@@ -4482,7 +4819,8 @@
     "acquire": "이벤트 퀘스트 보수",
     "availability": "G급",
     "note": "헌터 일지 괴조편 다운로드 이벤트 퀘스트 클리어 시 보수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Fake Catalog"
   },
   {
     "id": "item_ae0c44459ddc",
@@ -4495,7 +4833,8 @@
     "acquire": "이벤트 퀘스트 보수",
     "availability": "G급",
     "note": "록맨 ·평화를 되찾아라 다운로드 이벤트 퀘스트 클리어 시 보수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "E-Tank"
   },
   {
     "id": "item_5653b881bf70",
@@ -4508,7 +4847,8 @@
     "acquire": "이벤트 퀘스트 보수",
     "availability": "G급",
     "note": "소닉 ·천인룡을 향한 질주 다운로드 이벤트 퀘스트 클리어 시 보수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Gold Ring"
   },
   {
     "id": "item_45210bc7df49",
@@ -4521,7 +4861,8 @@
     "acquire": "이벤트 퀘스트 보수",
     "availability": "상위",
     "note": "동물의 숲·낚시대회 개최! 다운로드 이벤트 퀘스트 클리어 시 보수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Design Pattern"
   },
   {
     "id": "item_fbff628baa97",
@@ -4534,7 +4875,8 @@
     "acquire": "이벤트 퀘스트 보수",
     "availability": "G급",
     "note": "메트로이드·해지주의 위협 다운로드 이벤트 퀘스트 클리어 시 보수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Defense Module"
   },
   {
     "id": "item_21dc1c5b196e",
@@ -4547,7 +4889,8 @@
     "acquire": "이벤트 퀘스트 보수",
     "availability": "G급",
     "note": "메트로이드·특수 임무 다운로드 이벤트 퀘스트 클리어 시 보수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Weapon Data"
   },
   {
     "id": "item_25394879eca8",
@@ -4560,7 +4903,8 @@
     "acquire": "이벤트 퀘스트 보수",
     "availability": "하위",
     "note": "사막에 울려라, 승리의 징 다운로드 이벤트 퀘스트 클리어 시 보수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "D.Mohran Ticket"
   },
   {
     "id": "item_7a5b186aa8dc",
@@ -4573,7 +4917,8 @@
     "acquire": "이벤트 퀘스트 보수",
     "availability": "상위",
     "note": "사왕의 분노는 하늘을 뒤엎고 다운로드 이벤트 퀘스트 클리어 시 보수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Dalamadur Ticket"
   },
   {
     "id": "item_443756fd0574",
@@ -4586,7 +4931,8 @@
     "acquire": "이벤트 퀘스트 보수",
     "availability": "상위",
     "note": "이렇게 반가운 키린이라니 다운로드 이벤트 퀘스트 클리어 시 보수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Oroshi Kirin Ticket"
   },
   {
     "id": "item_393929c792da",
@@ -4599,7 +4945,8 @@
     "acquire": "이벤트 퀘스트 보수",
     "availability": "상위",
     "note": "대자연에 울리는 수렵 찬가 다운로드 이벤트 퀘스트 클리어 시 보수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Viper & Toad Ticket"
   },
   {
     "id": "item_6a79da8b7cfb",
@@ -4612,7 +4959,8 @@
     "acquire": "이벤트 퀘스트 보수",
     "availability": "상위",
     "note": "금빛 맹수, 나란히 서다 다운로드 이벤트 퀘스트 클리어 시 보수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Rajang Ticket"
   },
   {
     "id": "item_a9df08b2aae2",
@@ -4625,7 +4973,8 @@
     "acquire": "이벤트 퀘스트 보수",
     "availability": "하위",
     "note": "USJ·화룡들의 춤 다운로드 이벤트 퀘스트 클리어 시 보수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Studio Pass"
   },
   {
     "id": "item_862198c3337a",
@@ -4638,7 +4987,8 @@
     "acquire": "이벤트 퀘스트 보수",
     "availability": "상위",
     "note": "USJ·자보아자길 3D 다운로드 이벤트 퀘스트 클리어 시 보수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Platinum Pass"
   },
   {
     "id": "item_cc595578d0f3",
@@ -4651,7 +5001,8 @@
     "acquire": "이벤트 퀘스트 보수",
     "availability": "상위",
     "note": "USJ·창과 금의 뜨거운 경연! 다운로드 이벤트 퀘스트 클리어 시 보수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Gold Studio Pass"
   },
   {
     "id": "item_7d753e8fc48b",
@@ -4664,7 +5015,8 @@
     "acquire": "이벤트 퀘스트 보수",
     "availability": "G급",
     "note": "USJ·창과 금의 향연! 다운로드 이벤트 퀘스트 클리어 시 보수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Special Pass"
   },
   {
     "id": "item_f4512fc70066",
@@ -4677,7 +5029,8 @@
     "acquire": "이벤트 퀘스트 보수",
     "availability": "G급",
     "note": "USJ·티가렉스 3D 다운로드 이벤트 퀘스트 클리어 시 보수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Wonderful Pass"
   },
   {
     "id": "item_de1d9ce2dacc",
@@ -4703,7 +5056,8 @@
     "acquire": "이벤트 퀘스트 보수",
     "availability": "G급",
     "note": "그녀들의 진검승부 에피소드 퀘스트 클리어 시 보수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Guild Clerk Ticket"
   },
   {
     "id": "item_3f44553dee76",
@@ -4716,7 +5070,8 @@
     "acquire": "이벤트 퀘스트 보수",
     "availability": "G급",
     "note": "용이 전하는 옛노래 에피소드 퀘스트 클리어 시 보수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Jumbo Ticket"
   },
   {
     "id": "item_fcef389e8f0f",
@@ -4729,7 +5084,8 @@
     "acquire": "이벤트 퀘스트 보수",
     "availability": "G급",
     "note": "보고 말하고 듣는 건 원숭이 다운로드 이벤트 퀘스트 클리어 시 보수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Hunter's Ticket"
   },
   {
     "id": "item_bea9a7939ec5",
@@ -4742,7 +5098,8 @@
     "acquire": "이벤트 퀘스트 보수",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Shakalaka Ticket"
   },
   {
     "id": "item_28a890159ced",
@@ -4755,7 +5112,8 @@
     "acquire": "이벤트 퀘스트 보수",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Instructor's Ticket"
   },
   {
     "id": "item_88cce141bb35",
@@ -4768,7 +5126,8 @@
     "acquire": "이벤트 퀘스트 보수",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "大罪人の人相書き"
   },
   {
     "id": "item_fb5874533d47",
@@ -4781,7 +5140,8 @@
     "acquire": "이벤트 퀘스트 보수",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Clockwork Blueprint"
   },
   {
     "id": "item_ab83d1b940fc",
@@ -4794,7 +5154,8 @@
     "acquire": "여단 퀘스트 보수",
     "availability": "하위",
     "note": "여단 ★6 퀘스트 클리어 시 확률 보수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Commendation"
   },
   {
     "id": "item_6bcd0ce55ea6",
@@ -4807,7 +5168,8 @@
     "acquire": "집회소 퀘스트 보수",
     "availability": "상위",
     "note": "집회소 ★7 퀘스트 클리어 시 확률 보수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Commendation G"
   },
   {
     "id": "item_0d03c7de5e2a",
@@ -4820,7 +5182,8 @@
     "acquire": "집회소 퀘스트 보수",
     "availability": "상위",
     "note": "집회소 ★7 퀘스트 고난도: 천의 검 퀘스트 클리어 시 보수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Accolade"
   },
   {
     "id": "item_e4e64a7c5447",
@@ -4833,7 +5196,8 @@
     "acquire": "집회소 퀘스트 보수",
     "availability": "상위",
     "note": "집회소 ★7 퀘스트 고난도: 천고불후를 읊는 왕 퀘스트 클리어 시 보수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Accolade G"
   },
   {
     "id": "item_bd4f78c1a747",
@@ -4846,7 +5210,8 @@
     "acquire": "대장로전 퀘스트 보수",
     "availability": "G급",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Conqueror's Seal"
   },
   {
     "id": "item_b3cec994cd98",
@@ -4859,7 +5224,8 @@
     "acquire": "대장로전 퀘스트 보수",
     "availability": "G급",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Conqueror's Seal G"
   },
   {
     "id": "item_df0dd8178be6",
@@ -4872,7 +5238,8 @@
     "acquire": "여단 퀘스트 보수",
     "availability": "상위",
     "note": "여단 ★6, 여단 긴급 퀘스트 클리어 시 확률 보수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Caravan Ticket"
   },
   {
     "id": "item_a2c630d1643b",
@@ -4885,7 +5252,8 @@
     "acquire": "여단 퀘스트 보수",
     "availability": "G급",
     "note": "여단 ★ 10, 여단 긴급 퀘스트 클리어 시 확률 보수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Caravan Ticket G"
   },
   {
     "id": "item_50c480890c24",
@@ -4898,7 +5266,8 @@
     "acquire": "여단 퀘스트 보수",
     "availability": "G급",
     "note": "여단 ★ 10, 여단 긴급 퀘스트 클리어 시 확률 보수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Ace Ticket"
   },
   {
     "id": "item_c85fb1235419",
@@ -4911,7 +5280,8 @@
     "acquire": "따끈따끈섬 또는 마이하우스",
     "availability": "하위",
     "note": "퀘스트 소비(성공 또는 실패 & 아이루 출전) 가 일정 횟수를 넘어서면 메인동반자로부터 입수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Palico Ticket"
   },
   {
     "id": "item_1e8f587f3876",
@@ -4924,7 +5294,8 @@
     "acquire": "따끈따끈섬 관리인",
     "availability": "하위",
     "note": "몬냥대에 필요한 식량 충전이 일정 횟수를 넘어서면 따끈따끈섬 관리인으로부터 입수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Meownster Ticket"
   },
   {
     "id": "item_9ba10ab7e18c",
@@ -4937,7 +5308,8 @@
     "acquire": "길드퀘스트 보수(달인급)",
     "availability": "상위",
     "note": "달인급 레벨(76 이상)의 길드퀘스트 클리어 시 확률 보수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Quester's Ticket"
   },
   {
     "id": "item_353481446a3c",
@@ -4950,7 +5322,8 @@
     "acquire": "길드퀘스트 보수(달인급)",
     "availability": "상위",
     "note": "크샬다오라가 등장하는 길드퀘스트 중 레벨 76 이상을 클리어 시 확률 보수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Kushala Daora Ticket"
   },
   {
     "id": "item_53efc5d4b44c",
@@ -4963,7 +5336,8 @@
     "acquire": "길드퀘스트 보수(달인급)",
     "availability": "상위",
     "note": "테오·테스카토르가 등장하는 길드퀘스트 중 레벨 76 이상을 클리어 시 확률 보수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Teostra Ticket"
   },
   {
     "id": "item_3ff9f436a7a7",
@@ -4976,7 +5350,8 @@
     "acquire": "아이루 또는 메라루",
     "availability": "하위",
     "note": "아이루·메마루 퇴치 시 떨어트리는 물건 획득",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Pawprint Stamp"
   },
   {
     "id": "item_0cc070c03ba6",
@@ -4989,7 +5364,8 @@
     "acquire": "여단 퀘스트 보수",
     "availability": "G급",
     "note": "교역선 선장과 관련된 퀘스트 클리어 시 확률 보수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Argosy Ticket"
   },
   {
     "id": "item_7c778c631c8f",
@@ -5002,7 +5378,8 @@
     "acquire": "길드마스터",
     "availability": "",
     "note": "퀘스트 클리어 또는 멀티플레이 성공 or 실패 시 일정 횟수를 넘어서면 길드마스터로부터 입수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "VE Ticket"
   },
   {
     "id": "item_63b58507fa51",
@@ -5015,7 +5392,8 @@
     "acquire": "길드마스터",
     "availability": "",
     "note": "퀘스트 클리어 또는 멀티플레이 성공 or 실패 시 일정 횟수를 넘어서면 길드마스터로부터 입수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "VE Deluxe Ticket"
   },
   {
     "id": "item_7f791302cad2",
@@ -5028,7 +5406,8 @@
     "acquire": "길드마스터",
     "availability": "",
     "note": "멀티플레이 성공 or 실패 시 일정 횟수를 넘어서면 길드마스터로부터 입수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "VE Bronze Ticket"
   },
   {
     "id": "item_be11a458810c",
@@ -5041,7 +5420,8 @@
     "acquire": "길드마스터",
     "availability": "",
     "note": "멀티플레이 성공 or 실패 시 일정 횟수를 넘어서면 길드마스터로부터 입수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "VE Silver Ticket"
   },
   {
     "id": "item_3193a897bf03",
@@ -5054,7 +5434,8 @@
     "acquire": "길드마스터",
     "availability": "상위",
     "note": "멀티플레이 성공 or 실패 시 일정 횟수를 넘어서면 길드마스터로부터 입수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "VE Golden Ticket"
   },
   {
     "id": "item_418b52c1b1f8",
@@ -5067,7 +5448,8 @@
     "acquire": "길드마스터",
     "availability": "G급",
     "note": "멀티플레이 성공 or 실패 시 일정 횟수를 넘어서면 길드마스터로부터 입수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "VE Cosmic Ticket"
   },
   {
     "id": "item_2fcfdac24ea3",
@@ -5080,7 +5462,8 @@
     "acquire": "이벤트 퀘스트 보수",
     "availability": "하위",
     "note": "하위 다운로드 이벤트 퀘스트 클리어 시 확률 보수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Bronze Guild Ticket"
   },
   {
     "id": "item_fe8dd74cfa10",
@@ -5093,7 +5476,8 @@
     "acquire": "이벤트 퀘스트 보수",
     "availability": "상위",
     "note": "상위 다운로드 이벤트 퀘스트 클리어 시 확률 보수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Silver Guild Ticket"
   },
   {
     "id": "item_2b159c1d18ff",
@@ -5106,7 +5490,8 @@
     "acquire": "이벤트 퀘스트 보수",
     "availability": "상위",
     "note": "상위 ★7 이상 다운로드 퀘스트 클리어 시 확률 보수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Gold Guild Ticket"
   },
   {
     "id": "item_64f8e301f2c3",
@@ -5119,7 +5504,8 @@
     "acquire": "이벤트 퀘스트 보수",
     "availability": "G급",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Immenseness Ticket"
   },
   {
     "id": "item_a024b69f3b5f",
@@ -5132,7 +5518,8 @@
     "acquire": "이벤트 퀘스트 보수",
     "availability": "G급",
     "note": "G★2 이상 다운로드 이벤트 퀘스트 클리어 시 확률 보수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Immenseness Ticket S"
   },
   {
     "id": "item_06c19f8c7cfd",
@@ -5145,7 +5532,8 @@
     "acquire": "보수",
     "availability": "",
     "note": "알 운반 퀘스트 클리어 시 확률 보수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Steel Egg"
   },
   {
     "id": "item_4fdfec79a75e",
@@ -5158,7 +5546,8 @@
     "acquire": "보수, 도스먹보다랑어",
     "availability": "",
     "note": "알 운반 퀘스트 클리어 시 확률 보수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Silver Egg"
   },
   {
     "id": "item_ae73549752e1",
@@ -5171,7 +5560,8 @@
     "acquire": "보수, 도스먹보다랑어",
     "availability": "",
     "note": "알 운반 퀘스트 클리어 시 확률 보수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Golden Egg"
   },
   {
     "id": "item_2fde20393e45",
@@ -5184,7 +5574,8 @@
     "acquire": "도스먹보다랑어",
     "availability": "",
     "note": "조합소재",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Slickaxe"
   },
   {
     "id": "item_5089e1d40c05",
@@ -5197,7 +5588,8 @@
     "acquire": "",
     "availability": "",
     "note": "채집 및 같은종 2마리 이상 대형 몬스터 수렵 퀘스트 클리어용 지급품",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Paw Pass Ticket"
   },
   {
     "id": "item_d3a44dd17ce7",
@@ -5210,7 +5602,8 @@
     "acquire": "이벤트 퀘스트 보수",
     "availability": "",
     "note": "콜라보레이션 퀘스트 전용(한글버전 미확정)",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Treasure J Ticket"
   },
   {
     "id": "item_b04d6984dcef",
@@ -5223,7 +5616,8 @@
     "acquire": "이벤트 퀘스트 보수",
     "availability": "",
     "note": "콜라보레이션 퀘스트 전용(한글버전 미확정)",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Pirate J Ticket"
   },
   {
     "id": "item_3573a2442471",
@@ -5236,7 +5630,8 @@
     "acquire": "이벤트 퀘스트 보수",
     "availability": "",
     "note": "콜라보레이션 퀘스트 전용(한글버전 미확정)",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "50 Belly Wanted Poster"
   },
   {
     "id": "item_77665ac97313",
@@ -5249,7 +5644,8 @@
     "acquire": "이벤트 퀘스트 보수",
     "availability": "",
     "note": "콜라보레이션 퀘스트 전용(한글버전 미확정)",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Kerron Star"
   },
   {
     "id": "item_ac62354a5ce1",
@@ -5262,7 +5658,8 @@
     "acquire": "이벤트 퀘스트 보수",
     "availability": "",
     "note": "콜라보레이션 퀘스트 전용(한글버전 미확정)",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Magazine Ticket"
   },
   {
     "id": "item_7a60c644d22d",
@@ -5275,7 +5672,8 @@
     "acquire": "이벤트 퀘스트 보수",
     "availability": "",
     "note": "콜라보레이션 퀘스트 전용(한글버전 미확정)",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Armament Invitation"
   },
   {
     "id": "item_351afbec24f3",
@@ -5288,7 +5686,8 @@
     "acquire": "이벤트 퀘스트 보수",
     "availability": "",
     "note": "콜라보레이션 퀘스트 전용(한글버전 미확정)",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Ancient Demon Fang"
   },
   {
     "id": "item_09bcdd5e2167",
@@ -5301,7 +5700,8 @@
     "acquire": "이벤트 퀘스트 보수",
     "availability": "",
     "note": "콜라보레이션 퀘스트 전용(한글버전 미확정)",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Medal Voucher L"
   },
   {
     "id": "item_0a30dbaaa783",
@@ -5314,7 +5714,8 @@
     "acquire": "이벤트 퀘스트 보수",
     "availability": "",
     "note": "콜라보레이션 퀘스트 전용(한글버전 미확정)",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Amulet Keepsake"
   },
   {
     "id": "item_3734a8f9ed86",
@@ -5327,7 +5728,8 @@
     "acquire": "이벤트 퀘스트 보수",
     "availability": "",
     "note": "콜라보레이션 퀘스트 전용(한글버전 미확정)",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Legend J Pirate Hat"
   },
   {
     "id": "item_6d33b4474f57",
@@ -5340,7 +5742,8 @@
     "acquire": "이벤트 퀘스트 보수",
     "availability": "",
     "note": "콜라보레이션 퀘스트 전용(한글버전 미확정)",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "100m+ Wanted Poster"
   },
   {
     "id": "item_2ff1d1907a37",
@@ -5353,7 +5756,8 @@
     "acquire": "이벤트 퀘스트 보수",
     "availability": "",
     "note": "콜라보레이션 퀘스트 전용(한글버전 미확정)",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Interpol Badge"
   },
   {
     "id": "item_555a48843489",
@@ -5366,7 +5770,8 @@
     "acquire": "이벤트 퀘스트 보수",
     "availability": "",
     "note": "콜라보레이션 퀘스트 전용(한글버전 미확정)",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Val Habar Ticket"
   },
   {
     "id": "item_ae682d27dbef",
@@ -5379,7 +5784,8 @@
     "acquire": "이벤트 퀘스트 보수",
     "availability": "",
     "note": "콜라보레이션 퀘스트 전용(한글버전 미확정)",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Hades Stardust"
   },
   {
     "id": "item_d662d8ae1ac4",
@@ -5392,7 +5798,8 @@
     "acquire": "이벤트 퀘스트 보수",
     "availability": "",
     "note": "콜라보레이션 퀘스트 전용(한글버전 미확정)",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Goddess's Melody"
   },
   {
     "id": "item_e734ae3f8919",
@@ -5405,7 +5812,8 @@
     "acquire": "이벤트 퀘스트 보수",
     "availability": "",
     "note": "콜라보레이션 퀘스트 전용(한글버전 미확정)",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Goddess's Embrace"
   },
   {
     "id": "item_304131d43ea7",
@@ -5418,7 +5826,8 @@
     "acquire": "이벤트 퀘스트 보수",
     "availability": "",
     "note": "콜라보레이션 퀘스트 전용(한글버전 미확정)",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Chivalrous Artwork"
   },
   {
     "id": "item_9ed61544a59d",
@@ -5431,7 +5840,8 @@
     "acquire": "이벤트 퀘스트 보수",
     "availability": "",
     "note": "콜라보레이션 퀘스트 전용(한글버전 미확정)",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Anklet Memento"
   },
   {
     "id": "item_9e72f88fdb8f",
@@ -5444,7 +5854,8 @@
     "acquire": "이벤트 퀘스트 보수",
     "availability": "",
     "note": "콜라보레이션 퀘스트 전용(한글버전 미확정)",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Enbure Ticket"
   },
   {
     "id": "item_1e14b9552adf",
@@ -5457,7 +5868,8 @@
     "acquire": "이벤트 퀘스트 보수",
     "availability": "",
     "note": "콜라보레이션 퀘스트 전용(한글버전 미확정)",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Sunday Ticket"
   },
   {
     "id": "item_adaaced4228d",
@@ -5470,7 +5882,8 @@
     "acquire": "이벤트 퀘스트 보수",
     "availability": "",
     "note": "콜라보레이션 퀘스트 전용(한글버전 미확정)",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Ezono Ticket"
   },
   {
     "id": "item_56a1327dbb9a",
@@ -5483,7 +5896,8 @@
     "acquire": "이벤트 퀘스트 보수",
     "availability": "",
     "note": "콜라보레이션 퀘스트 전용(한글버전 미확정)",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Dengeki Ticket"
   },
   {
     "id": "item_4f7656d42255",
@@ -5509,7 +5923,8 @@
     "acquire": "가구아가 떨어트림",
     "availability": "",
     "note": "가구아의 뒤에서 약한 공격을 하면 알을 낳는다. 산나물할아버지에게 가져다 주면 응급약으로 교환",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Gargwa Egg"
   },
   {
     "id": "item_3da1b8567a35",
@@ -5522,7 +5937,8 @@
     "acquire": "가구아가 떨어트림",
     "availability": "",
     "note": "가구아의 뒤에서 약한 공격을 하면 알을 낳는다. 산나물할아버지에게 가져다 주면 비약으로 교환",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Gold Gargwa Egg"
   },
   {
     "id": "item_cf6705892df6",
@@ -5535,7 +5951,8 @@
     "acquire": "채집(천공산 8번)",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Wyvern Egg"
   },
   {
     "id": "item_38ca5770bc25",
@@ -5548,7 +5965,8 @@
     "acquire": "채집(지저동굴 8번)",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Herbivore Egg"
   },
   {
     "id": "item_5cedc93581f7",
@@ -5561,7 +5979,8 @@
     "acquire": "채집(지저동굴 3번)",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Sootstone Ore"
   },
   {
     "id": "item_e4d931fae0f9",
@@ -5574,7 +5993,8 @@
     "acquire": "채집(지저화산 9번)",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Powderstone"
   },
   {
     "id": "item_5356c0eccb07",
@@ -5587,7 +6007,8 @@
     "acquire": "채집(구사막<밤> 8번)",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Meteor Chunk"
   },
   {
     "id": "item_9631a1ea4d41",
@@ -5600,7 +6021,8 @@
     "acquire": "채집",
     "availability": "",
     "note": "40z, 40pts , 버섯마니아 스킬 활성 상태에서 먹으면 휴대식량 효과",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Unique Mushroom"
   },
   {
     "id": "item_de98c2eb4124",
@@ -5613,7 +6035,8 @@
     "acquire": "채집",
     "availability": "",
     "note": "300z 40pts , 버섯마니아 스킬 활성 상태에서 먹으면 강주약그레이트 효과",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Choice Mushroom"
   },
   {
     "id": "item_80977cea56fa",
@@ -5626,7 +6049,8 @@
     "acquire": "배부른 올타로스 퇴치 시(배가 파란색)",
     "availability": "",
     "note": "50z, 200pts , 버섯마니아 스킬 활성 상태에서 먹으면 고대의 비약 효과",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Ripened Mushroom"
   },
   {
     "id": "item_85cdf170d74a",
@@ -5639,7 +6063,8 @@
     "acquire": "낚시",
     "availability": "",
     "note": "500z, 0pts",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Goldenfish"
   },
   {
     "id": "item_7be84b427a79",
@@ -5652,7 +6077,8 @@
     "acquire": "낚시",
     "availability": "",
     "note": "1500z, 0pts",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Silverfish"
   },
   {
     "id": "item_77c7721f175c",
@@ -5665,7 +6091,8 @@
     "acquire": "채집",
     "availability": "",
     "note": "80z, 40pts",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Royal Rhino"
   },
   {
     "id": "item_33611b4a481d",
@@ -5678,7 +6105,8 @@
     "acquire": "채굴(지저동굴)",
     "availability": "",
     "note": "50z, 20pts",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Sulfur Crystal"
   },
   {
     "id": "item_b24f901ac8b1",
@@ -5691,7 +6119,8 @@
     "acquire": "채굴(천공산 8번, 지저동굴/화산 비경)",
     "availability": "",
     "note": "1000z, 0pts",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Auristone Chunk"
   },
   {
     "id": "item_d9a322096268",
@@ -5704,7 +6133,8 @@
     "acquire": "채집",
     "availability": "",
     "note": "60z, 20pts",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Crystal Bone"
   },
   {
     "id": "item_fcceaf8c5241",
@@ -5717,7 +6147,8 @@
     "acquire": "채굴(빙해)",
     "availability": "",
     "note": "60z, 30pts",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Bloodstone"
   },
   {
     "id": "item_a088028be6c8",
@@ -5730,7 +6161,8 @@
     "acquire": "채굴(지저화산)",
     "availability": "",
     "note": "60z, 40pts",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Coal"
   },
   {
     "id": "item_6c289e7d4d52",
@@ -5743,7 +6175,8 @@
     "acquire": "채집",
     "availability": "",
     "note": "60z, 20pts",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Fossilized Bone"
   },
   {
     "id": "item_04744d505812",
@@ -5756,7 +6189,8 @@
     "acquire": "채집(천공산)",
     "availability": "",
     "note": "100z, 40pts",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Mistentoe"
   },
   {
     "id": "item_7d6d9be64025",
@@ -5769,7 +6203,8 @@
     "acquire": "채집(구사막)",
     "availability": "",
     "note": "40z, 60pts",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Tropical Berry"
   },
   {
     "id": "item_09ba4094114c",
@@ -5782,7 +6217,8 @@
     "acquire": "채집(빙해 4번)",
     "availability": "",
     "note": "200z, 0pts",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Decayed Scale"
   },
   {
     "id": "item_fea6ac9819aa",
@@ -5795,7 +6231,8 @@
     "acquire": "채집, 채굴(탐색, 길드퀘스트)",
     "availability": "",
     "note": "0z, 300pts",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Tiny Spall"
   },
   {
     "id": "item_4e2dc5e2d1b5",
@@ -5808,7 +6245,8 @@
     "acquire": "채집, 채굴(탐색, 길드퀘스트)",
     "availability": "",
     "note": "0z, 500pts",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Lucky Spall"
   },
   {
     "id": "item_5467c292ac01",
@@ -5821,7 +6259,8 @@
     "acquire": "채집, 채굴(탐색, 길드퀘스트)",
     "availability": "",
     "note": "0z, 1000pts",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Miracle Spall"
   },
   {
     "id": "item_938ba0fc6a91",
@@ -5834,7 +6273,8 @@
     "acquire": "채취(켈비)",
     "availability": "",
     "note": "50z, 50pts",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "White Liver"
   },
   {
     "id": "item_dcac632d9d98",
@@ -5847,7 +6287,8 @@
     "acquire": "채취(즈와로포스)",
     "availability": "",
     "note": "60z, 40pts",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Slagtoth Oil"
   },
   {
     "id": "item_5382829a4b9a",
@@ -5860,7 +6301,8 @@
     "acquire": "채취(야오자미)",
     "availability": "",
     "note": "10z, 90pts",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Carapaceon Brains"
   },
   {
     "id": "item_cb80ff5a8d75",
@@ -5873,7 +6315,8 @@
     "acquire": "채취(야오자미)",
     "availability": "",
     "note": "50z, 150pts",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Carapaceon Brains+"
   },
   {
     "id": "item_2f3c48a81849",
@@ -5886,7 +6329,8 @@
     "acquire": "메라루가 떨어트림",
     "availability": "",
     "note": "80z, 0pts",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Secret Stash"
   },
   {
     "id": "item_7adac1ee72c2",
@@ -5899,7 +6343,8 @@
     "acquire": "아이루가 떨어트림",
     "availability": "",
     "note": "0z, 80pts",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Round Acorn"
   },
   {
     "id": "item_312ff51657c5",
@@ -5912,7 +6357,8 @@
     "acquire": "배부른 올타로스 퇴치 시(배가 금색)",
     "availability": "",
     "note": "4 00z, 100pts",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Fine Stomach"
   },
   {
     "id": "item_935bdcadc07d",
@@ -5925,7 +6371,8 @@
     "acquire": "배부른 올타로스 퇴치 시(배가 금색)",
     "availability": "",
     "note": "8 00z, 100pts",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Luminous Stomach"
   },
   {
     "id": "item_f54824ef72b7",
@@ -5938,7 +6385,8 @@
     "acquire": "채취(델크스)",
     "availability": "",
     "note": "30z, 10pts",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Monster Guts"
   },
   {
     "id": "item_65b21d9734bb",
@@ -5951,7 +6399,8 @@
     "acquire": "채취(가레오스)",
     "availability": "",
     "note": "90z, 10pts",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Piscine Liver"
   },
   {
     "id": "item_1cd35fde1b1d",
@@ -5964,7 +6413,8 @@
     "acquire": "채취(포포)",
     "availability": "",
     "note": "60z, 40pts",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Popo Tongue"
   },
   {
     "id": "item_36f2cd6fba7d",
@@ -5977,7 +6427,8 @@
     "acquire": "가구아가 떨어트림",
     "availability": "",
     "note": "0z, 30pts",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Gargwa Guano"
   },
   {
     "id": "item_cfe82b1a194d",
@@ -5990,7 +6441,8 @@
     "acquire": "바바콩가, 바바콩가 아종",
     "availability": "",
     "note": "0z, 180pts",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Territorial Dung"
   },
   {
     "id": "item_99daef20e0ec",
@@ -6003,7 +6455,8 @@
     "acquire": "바바콩가, 바바콩가 아종",
     "availability": "",
     "note": "0z, 320pts",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Territorial Dung+"
   },
   {
     "id": "item_620ddcb0bd3b",
@@ -6016,7 +6469,8 @@
     "acquire": "다이묘자자미가 떨어트림",
     "availability": "",
     "note": "0z, 300pts",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Crab Pearl"
   },
   {
     "id": "item_223b1290b8c5",
@@ -6029,7 +6483,8 @@
     "acquire": "다이묘자자미가 떨어트림",
     "availability": "",
     "note": "0z, 450pts",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Crab Pearl+"
   },
   {
     "id": "item_5febbb34d594",
@@ -6042,7 +6497,8 @@
     "acquire": "갑충종이 떨어트림",
     "availability": "",
     "note": "0z, 220pts",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Drone Substance"
   },
   {
     "id": "item_ee5393a7be76",
@@ -6055,7 +6511,8 @@
     "acquire": "갑충종이 떨어트림",
     "availability": "",
     "note": "0z, 400pts",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Queen Substance"
   },
   {
     "id": "item_af866cbd03c5",
@@ -6068,7 +6525,8 @@
     "acquire": "양서종이 떨어트림",
     "availability": "",
     "note": "0z, 200pts",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Toad Tear"
   },
   {
     "id": "item_e6ceb52c6820",
@@ -6081,7 +6539,8 @@
     "acquire": "양서종이 떨어트림",
     "availability": "",
     "note": "0z, 350pts",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Large Toad Tear"
   },
   {
     "id": "item_313aca229596",
@@ -6094,7 +6553,8 @@
     "acquire": "X 룡종이 떨어트림",
     "availability": "",
     "note": "0z, 250pts",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Wyvern Tear"
   },
   {
     "id": "item_1b84006d44d8",
@@ -6107,7 +6567,8 @@
     "acquire": "X룡종이 떨어트림",
     "availability": "",
     "note": "0z, 450pts",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Large Wyvern Tear"
   },
   {
     "id": "item_07f13a734558",
@@ -6120,7 +6581,8 @@
     "acquire": "아수종이 떨어트림",
     "availability": "",
     "note": "0z, 150pts",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Beast Tear"
   },
   {
     "id": "item_8e5db727e558",
@@ -6133,7 +6595,8 @@
     "acquire": "아수종이 떨어트림",
     "availability": "",
     "note": "0z, 280pts",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Large Beast Tear"
   },
   {
     "id": "item_6e4f6f87a384",
@@ -6146,7 +6609,8 @@
     "acquire": "고룡종이 떨어트림",
     "availability": "",
     "note": "0z, 300pts",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Dragon Treasure"
   },
   {
     "id": "item_f3dd8d7cf281",
@@ -6159,7 +6623,8 @@
     "acquire": "고룡종이 떨어트림",
     "availability": "",
     "note": "0z, 500pts",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Old Dragon Treasure"
   },
   {
     "id": "item_f4e0b68dfe83",
@@ -6172,7 +6637,8 @@
     "acquire": "몬냥대 퀘스트 보수",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Humble Scrap"
   },
   {
     "id": "item_78049e2e01e3",
@@ -6185,7 +6651,8 @@
     "acquire": "몬냥대 퀘스트 보수",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Handsome Scrap"
   },
   {
     "id": "item_32678d1b06c9",
@@ -6198,7 +6665,8 @@
     "acquire": "몬냥대 퀘스트 보수",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Gargwa Scrap"
   },
   {
     "id": "item_8682853ab45a",
@@ -6211,7 +6679,8 @@
     "acquire": "몬냥대 퀘스트 보수",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Arzuros Scrap"
   },
   {
     "id": "item_1836fcef682e",
@@ -6224,7 +6693,8 @@
     "acquire": "몬냥대 퀘스트 보수",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Kecha Wacha Scrap"
   },
   {
     "id": "item_2cc794c63b7d",
@@ -6237,7 +6707,8 @@
     "acquire": "몬냥대 퀘스트 보수",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Yian Kut-Ku Scrap"
   },
   {
     "id": "item_98d291c3cbc4",
@@ -6250,7 +6721,8 @@
     "acquire": "몬냥대 퀘스트 보수",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Bnahabra Scrap"
   },
   {
     "id": "item_c8dd4c73ee66",
@@ -6263,7 +6735,8 @@
     "acquire": "몬냥대 퀘스트 보수",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Bulldrome Scrap"
   },
   {
     "id": "item_9f8006cb60e3",
@@ -6276,7 +6749,8 @@
     "acquire": "몬냥대 퀘스트 보수",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Rhenoplos Scrap"
   },
   {
     "id": "item_4861c439663f",
@@ -6289,7 +6763,8 @@
     "acquire": "몬냥대 퀘스트 보수",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Great Jaggi Scrap"
   },
   {
     "id": "item_9a493f393409",
@@ -6302,7 +6777,8 @@
     "acquire": "몬냥대 퀘스트 보수",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Nerscylla Scrap"
   },
   {
     "id": "item_b78b02030933",
@@ -6315,7 +6791,8 @@
     "acquire": "몬냥대 퀘스트 보수",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Zamtrios Scrap"
   },
   {
     "id": "item_f290e8a2547f",
@@ -6328,7 +6805,8 @@
     "acquire": "몬냥대 퀘스트 보수",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Lagombi Scrap"
   },
   {
     "id": "item_08aa3d7ebf14",
@@ -6341,7 +6819,8 @@
     "acquire": "몬냥대 퀘스트 보수",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Tetsucabra Scrap"
   },
   {
     "id": "item_d96854cb5cf0",
@@ -6354,7 +6833,8 @@
     "acquire": "몬냥대 퀘스트 보수",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Barroth Scrap"
   },
   {
     "id": "item_7a393111db87",
@@ -6367,7 +6847,8 @@
     "acquire": "몬냥대 퀘스트 보수",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Slagtoth Scrap"
   },
   {
     "id": "item_bfbabd2a29bf",
@@ -6380,7 +6861,8 @@
     "acquire": "몬냥대 퀘스트 보수",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Volvidon Scrap"
   },
   {
     "id": "item_0765e095bf03",
@@ -6393,7 +6875,8 @@
     "acquire": "몬냥대 퀘스트 보수",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Tigrex Scrap"
   },
   {
     "id": "item_bd8b7b7d78fa",
@@ -6406,7 +6889,8 @@
     "acquire": "몬냥대 퀘스트 보수",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Great Baggi Scrap"
   },
   {
     "id": "item_c812d93c4a5c",
@@ -6419,7 +6903,8 @@
     "acquire": "몬냥대 퀘스트 보수",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Nibelsnarf Scrap"
   },
   {
     "id": "item_be1a2044da72",
@@ -6432,7 +6917,8 @@
     "acquire": "몬냥대 퀘스트 보수",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Seltas Queen Scrap"
   },
   {
     "id": "item_e42d4cb143c7",
@@ -6445,7 +6931,8 @@
     "acquire": "몬냥대 퀘스트 보수",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Uragaan Scrap"
   },
   {
     "id": "item_0b72462e114a",
@@ -6458,7 +6945,8 @@
     "acquire": "몬냥대 퀘스트 보수",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Great Wroggi Scrap"
   },
   {
     "id": "item_cf989732bc28",
@@ -6471,7 +6959,8 @@
     "acquire": "몬냥대 퀘스트 보수",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Diablos Scrap"
   },
   {
     "id": "item_f42480bc1e89",
@@ -6484,7 +6973,8 @@
     "acquire": "몬냥대 퀘스트 보수",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Rathian Scrap"
   },
   {
     "id": "item_930790e5b6f1",
@@ -6497,7 +6987,8 @@
     "acquire": "몬냥대 퀘스트 보수",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Khezu Scrap"
   },
   {
     "id": "item_45e00149b81c",
@@ -6510,7 +7001,8 @@
     "acquire": "몬냥대 퀘스트 보수",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Duramboros Scrap"
   },
   {
     "id": "item_4ecbd185c1d5",
@@ -6523,7 +7015,8 @@
     "acquire": "몬냥대 퀘스트 보수",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Zinogre Scrap"
   },
   {
     "id": "item_f0e16fb4ec27",
@@ -6536,7 +7029,8 @@
     "acquire": "몬냥대 퀘스트 보수",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Rathalos Scrap"
   },
   {
     "id": "item_1a7f756701e8",
@@ -6549,7 +7043,8 @@
     "acquire": "몬냥대 퀘스트 보수",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Agnaktor Scrap"
   },
   {
     "id": "item_6b5dd2980f3d",
@@ -6562,7 +7057,8 @@
     "acquire": "몬냥대 퀘스트 보수",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Najarala Scrap"
   },
   {
     "id": "item_c8845ce9bd8f",
@@ -6575,7 +7071,8 @@
     "acquire": "몬냥대 퀘스트 보수",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Gore Magala Scrap"
   },
   {
     "id": "item_9971f5e19324",
@@ -6588,7 +7085,8 @@
     "acquire": "몬냥대 퀘스트 보수",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Shagaru Magala Scrap"
   },
   {
     "id": "item_25c9eabd6b8a",
@@ -6601,7 +7099,8 @@
     "acquire": "몬냥대 퀘스트 보수",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Teostra Scrap"
   },
   {
     "id": "item_160c5b0d2495",
@@ -6614,7 +7113,8 @@
     "acquire": "몬냥대 퀘스트 보수",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Deviljho Scrap"
   },
   {
     "id": "item_9916b89aaf91",
@@ -6627,7 +7127,8 @@
     "acquire": "몬냥대 퀘스트 보수",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Akantor Scrap"
   },
   {
     "id": "item_d21d87b0fc61",
@@ -6640,7 +7141,8 @@
     "acquire": "몬냥대 퀘스트 보수",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Alatreon Scrap"
   },
   {
     "id": "item_869796c0450e",
@@ -6653,7 +7155,8 @@
     "acquire": "몬냥대 퀘스트 보수",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Kushala Daora Scrap"
   },
   {
     "id": "item_147dfff7443a",
@@ -6666,7 +7169,8 @@
     "acquire": "몬냥대 퀘스트 보수",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Kirin Scrap"
   },
   {
     "id": "item_bd4cbc5218ad",
@@ -6679,7 +7183,8 @@
     "acquire": "몬냥대 퀘스트 보수",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Gigginox Scrap"
   },
   {
     "id": "item_9e5c752af99a",
@@ -6692,7 +7197,8 @@
     "acquire": "몬냥대 퀘스트 보수",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Rajang Scrap"
   },
   {
     "id": "item_1f3dea3525f2",
@@ -6705,7 +7211,8 @@
     "acquire": "몬냥대 퀘스트 보수",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Brach Scrap"
   },
   {
     "id": "item_e86bf06b2981",
@@ -6718,7 +7225,8 @@
     "acquire": "몬냥대 퀘스트 보수",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Barioth Scrap"
   },
   {
     "id": "item_89469edb145e",
@@ -6731,7 +7239,8 @@
     "acquire": "몬냥대 퀘스트 보수",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Amatsu Scrap"
   },
   {
     "id": "item_ce95098ba1e9",
@@ -6744,7 +7253,8 @@
     "acquire": "몬냥대 퀘스트 보수",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Dah'ren Mohran Scrap"
   },
   {
     "id": "item_d291c0b6a21e",
@@ -6757,7 +7267,8 @@
     "acquire": "몬냥대 퀘스트 보수",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Jhen Mohran Scrap"
   },
   {
     "id": "item_7a2db029c826",
@@ -6770,7 +7281,8 @@
     "acquire": "몬냥대 퀘스트 보수",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Dalamadur Scrap"
   },
   {
     "id": "item_34e2d8d25a08",
@@ -6783,7 +7295,8 @@
     "acquire": "투망 머신",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Royal Ludroth Scrap"
   },
   {
     "id": "item_1a6873947abb",
@@ -6796,7 +7309,8 @@
     "acquire": "투망 머신",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Plesioth Scrap"
   },
   {
     "id": "item_8c6f4209e7e8",
@@ -6809,6 +7323,7 @@
     "acquire": "투망 머신",
     "availability": "",
     "note": "",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Lagiacrus Scrap"
   }
 ]

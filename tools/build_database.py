@@ -17,7 +17,7 @@ REPORT = GEN / "report.json"
 PROJECT_DATA = ROOT.parent / "data"
 
 SOURCE_ROOT = "https://flashkiller.cafe24.com/mh4g/"
-APP_VERSION = "0.7.5"
+APP_VERSION = "0.7.6"
 PART_MAP = {"머리":"head", "몸통":"body", "팔":"arms", "허리":"waist", "다리":"legs"}
 
 RANK_ORDER = {"low": 0, "high": 1, "g": 2}
@@ -1009,7 +1009,7 @@ def derive_melodies(weapons):
     return list(groups.values())
 
 SIM_ARMOR_KEYS = ["id","name","nameJa","nameEn","part","hunterType","rank","defense","slots","torsoUp","resistances","materials","skills"]
-SIM_WEAPON_KEYS = ["id","name","nameJa","weaponType","attack","element","affinity","slots","rank","tree"]
+SIM_WEAPON_KEYS = ["id","name","nameJa","nameEn","weaponType","attack","element","affinity","slots","rank","tree"]
 SIM_ARMOR_SET_KEYS = ["id","name","hunterType","rank","pieces","slots","skills"]
 
 def compact_rows(rows, keys):

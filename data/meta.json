@@ -1,5 +1,5 @@
 {
-  "version": "0.7.5",
+  "version": "0.7.6",
   "demo": false,
   "source": "https://flashkiller.cafe24.com/mh4g/main.htm",
   "counts": {
@@ -29,7 +29,7 @@
     "low": 4,
     "medium": 3
   },
-  "note": "실제 MH4G 데이터. v0.7.5에서 무기 예리도 보강 및 UI 개선에 더해, Athena + MH4U DB 3자 교차검증으로 방어구의 일본명 누락/오류와 확정 수치 오류를 보정함. maxDefense/upgradeDefense는 수정하지 않음.",
+  "note": "실제 MH4G 데이터. v0.7.6에서 한국어 주표기를 유지한 채 무기/방어구/장식주/스킬/아이템에 일본어·영어 보조표기 및 다국어 검색을 확장함. 한국어+일본어가 한 필드에 섞였던 무기 7개는 언어 필드를 분리했고, 신규 fuzzy 추측 매칭은 사용하지 않음.",
   "sharpnessAudit": {
     "meleeTotal": 1859,
     "present": 1859,
@@ -163,5 +163,17 @@
     },
     "protectedDefenseProgressionChanges": 0,
     "policy": "maxDefense/upgradeDefense 제외. Athena와 MH4U가 동일한 값일 때만 자동 수정."
+  },
+  "localization": {
+    "policy": "Korean primary + Japanese/English secondary; no new fuzzy matches",
+    "armorNameEn": 2850,
+    "weaponNameEn": 2268,
+    "decorationNameEn": 199,
+    "skillTreeNameEn": 143,
+    "skillActivationNameEn": 276,
+    "itemNameEn": 515,
+    "audit": "tools/core_localization_v0.7.6.json",
+    "mixedWeaponPrimaryNormalized": 7,
+    "primaryKoreanWordingChanges": 0
   }
 }

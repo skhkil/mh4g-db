@@ -70,3 +70,15 @@ python tools/audit_sharpness.py
 
 외부 DB 출처:
 `https://github.com/kamegami13/MonsterHunter4UDatabase`
+
+
+## v0.7.6 핵심 다국어 보강
+
+`build_database.py --publish`로 원본 JSON을 다시 생성한 뒤에는 다음 순서로 보강합니다.
+
+```bash
+python enrich_armor_localization.py --project <project> --athena <Data.zip>
+python enrich_core_localization.py --project <project> --mh4u <mh4u.db> --athena <Data.zip>
+```
+
+`enrich_core_localization.py`는 한국어 `name`을 보호하고, 일본명 exact-match와 기존 검증 alias만 사용합니다. 결과는 `core_localization_v0.7.6.json`에 기록됩니다.
