@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#121821" />
   <title>MH4G 장비 · 스킬 시뮬레이터</title>
-  <link rel="stylesheet" href="./css/app.css?v=0.7.3" />
+  <link rel="stylesheet" href="./css/app.css?v=0.7.5" />
 </head>
 <body>
   <div class="app-shell">
@@ -227,6 +227,30 @@
           <select id="weaponTypeFilter" aria-label="무기 종류"><option value="all">전체 무기</option></select>
           <input id="weaponSearch" class="search-input" placeholder="무기명·속성·파생 검색" />
           <select id="weaponTreeFilter"><option value="all">전체 파생</option></select>
+          <select id="weaponElementFilter" aria-label="속성/특수 필터">
+            <option value="all">전체 속성</option>
+            <option value="none">무속성</option>
+            <option value="fire">불</option>
+            <option value="water">물</option>
+            <option value="thunder">번개</option>
+            <option value="ice">얼음</option>
+            <option value="dragon">용</option>
+            <option value="poison">독</option>
+            <option value="paralysis">마비</option>
+            <option value="sleep">수면</option>
+            <option value="blast">폭파</option>
+          </select>
+          <select id="weaponSort" aria-label="무기 정렬">
+            <option value="tree">파생 순서</option>
+            <option value="attack-desc">공격력 높은순</option>
+            <option value="attack-asc">공격력 낮은순</option>
+            <option value="sharpness-desc">예리도(기본) 높은순</option>
+            <option value="sharpness-plus-desc">예리도(+1) 높은순</option>
+            <option value="element-desc">속성값 높은순</option>
+            <option value="affinity-desc">회심 높은순</option>
+            <option value="slots-desc">슬롯 많은순</option>
+            <option value="name">이름순</option>
+          </select>
         </div>
         <div id="weaponResultInfo" class="muted result-info"></div>
         <div id="weaponTrees" class="weapon-tree-list"></div>
@@ -354,6 +378,6 @@ python tools/build_database.py --publish</code></pre>
     </main>
   </div>
 
-  <script type="module" src="./js/app.js?v=0.7.3"></script>
+  <script type="module" src="./js/app.js?v=0.7.5"></script>
 </body>
 </html>

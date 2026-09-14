@@ -1,0 +1,80 @@
+{
+  "version": "0.7.4",
+  "json": {
+    "data/armor_sets.json": "ok",
+    "data/armors.json": "ok",
+    "data/compositions.json": "ok",
+    "data/decorations.json": "ok",
+    "data/dragon_exchange.json": "ok",
+    "data/dragon_increase.json": "ok",
+    "data/dragon_sell.json": "ok",
+    "data/items.json": "ok",
+    "data/meals.json": "ok",
+    "data/melodies.json": "ok",
+    "data/meta.json": "ok",
+    "data/monster_details.json": "ok",
+    "data/monster_rewards.json": "ok",
+    "data/monster_summary.json": "ok",
+    "data/quests.json": "ok",
+    "data/sim_armor_sets.json": "ok",
+    "data/sim_armors.json": "ok",
+    "data/sim_weapons.json": "ok",
+    "data/site_info.json": "ok",
+    "data/skills.json": "ok",
+    "data/weapon_summary.json": "ok",
+    "data/weapons.json": "ok",
+    "tools/armor_rank_audit.json": "ok",
+    "tools/sharpness_audit.json": "ok"
+  },
+  "javascript": {
+    "js/app.js": "ok",
+    "js/data-loader.js": "ok",
+    "js/engine.js": "ok"
+  },
+  "python": {
+    "run_site.py": "ok",
+    "tools/audit_sharpness.py": "ok",
+    "tools/build_database.py": "ok",
+    "tools/crawl_source.py": "ok",
+    "tools/extract_tables.py": "ok"
+  },
+  "simulatorSync": {
+    "sim_armors.json": {
+      "ok": true,
+      "rows": 2876,
+      "sourceRows": 2876
+    },
+    "sim_weapons.json": {
+      "ok": true,
+      "rows": 2314,
+      "sourceRows": 2314
+    },
+    "sim_armor_sets.json": {
+      "ok": true,
+      "rows": 550,
+      "sourceRows": 550
+    }
+  },
+  "versionChecks": {
+    "meta": true,
+    "data-loader": true,
+    "index-css": true,
+    "index-app": true,
+    "app-loader": true,
+    "app-engine": true,
+    "build": true,
+    "run_site": true
+  },
+  "errors": [],
+  "summary": {
+    "jsonFiles": 24,
+    "jsFiles": 3,
+    "pythonFiles": 5,
+    "allJsonValid": true,
+    "allJsValid": true,
+    "allPythonValid": true,
+    "allSimSynced": true,
+    "allVersionChecks": true,
+    "errorCount": 0
+  }
+}

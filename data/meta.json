@@ -1,5 +1,5 @@
 {
-  "version": "0.7.2",
+  "version": "0.7.4",
   "demo": false,
   "source": "https://flashkiller.cafe24.com/mh4g/main.htm",
   "counts": {
@@ -29,5 +29,102 @@
     "low": 28,
     "medium": 3
   },
-  "note": "실제 MH4G 데이터. v0.7.2는 시뮬레이터용 경량 데이터/병렬 로딩/지연 로딩과 검색 인덱스 캐시를 적용."
+  "note": "실제 MH4G 데이터. v0.7.4에서 근접무기 예리도를 전수 감사하고 시뮬레이터 경량 데이터를 원본 DB와 재동기화함. 원본 게이지가 없는 항목은 추측해 채우지 않음.",
+  "sharpnessAudit": {
+    "meleeTotal": 1859,
+    "present": 1291,
+    "complete": 1264,
+    "partial": 27,
+    "missing": 568,
+    "byType": {
+      "대검": {
+        "total": 200,
+        "present": 140,
+        "complete": 138,
+        "partial": 2,
+        "missing": 60,
+        "invalidBars": 0
+      },
+      "태도": {
+        "total": 180,
+        "present": 92,
+        "complete": 88,
+        "partial": 4,
+        "missing": 88,
+        "invalidBars": 0
+      },
+      "한손검": {
+        "total": 203,
+        "present": 174,
+        "complete": 173,
+        "partial": 1,
+        "missing": 29,
+        "invalidBars": 0
+      },
+      "쌍검": {
+        "total": 186,
+        "present": 110,
+        "complete": 106,
+        "partial": 4,
+        "missing": 76,
+        "invalidBars": 0
+      },
+      "해머": {
+        "total": 197,
+        "present": 120,
+        "complete": 118,
+        "partial": 2,
+        "missing": 77,
+        "invalidBars": 0
+      },
+      "수렵피리": {
+        "total": 149,
+        "present": 147,
+        "complete": 142,
+        "partial": 5,
+        "missing": 2,
+        "invalidBars": 0
+      },
+      "랜스": {
+        "total": 174,
+        "present": 123,
+        "complete": 120,
+        "partial": 3,
+        "missing": 51,
+        "invalidBars": 0
+      },
+      "건랜스": {
+        "total": 179,
+        "present": 145,
+        "complete": 143,
+        "partial": 2,
+        "missing": 34,
+        "invalidBars": 0
+      },
+      "슬래시액스": {
+        "total": 156,
+        "present": 89,
+        "complete": 87,
+        "partial": 2,
+        "missing": 67,
+        "invalidBars": 0
+      },
+      "차지액스": {
+        "total": 100,
+        "present": 92,
+        "complete": 91,
+        "partial": 1,
+        "missing": 8,
+        "invalidBars": 0
+      },
+      "조충곤": {
+        "total": 135,
+        "present": 59,
+        "complete": 58,
+        "partial": 1,
+        "missing": 76,
+        "invalidBars": 0
+      }
+    }
+  }
 }

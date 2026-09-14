@@ -17,6 +17,7 @@ REPORT = GEN / "report.json"
 PROJECT_DATA = ROOT.parent / "data"
 
 SOURCE_ROOT = "https://flashkiller.cafe24.com/mh4g/"
+APP_VERSION = "0.7.4"
 PART_MAP = {"머리":"head", "몸통":"body", "팔":"arms", "허리":"waist", "다리":"legs"}
 
 RANK_ORDER = {"low": 0, "high": 1, "g": 2}
@@ -1014,6 +1015,41 @@ SIM_ARMOR_SET_KEYS = ["id","name","hunterType","rank","pieces","slots","skills"]
 def compact_rows(rows, keys):
     return [{k: row.get(k) for k in keys} for row in rows]
 
+def summarize_sharpness(weapons):
+    melee_types = [WEAPON_TYPES[f"w{i}.htm"] for i in range(1, 12)]
+    by_type = {}
+    missing_names = []
+    partial_names = []
+    complete = partial = present = missing = 0
+    for wt in melee_types:
+        rows = [w for w in weapons if w.get("weaponType") == wt]
+        wt_present = wt_complete = wt_partial = 0
+        for w in rows:
+            sh = w.get("sharpness")
+            if not sh:
+                missing_names.append({"id": w.get("id"), "weaponType": wt, "name": w.get("name"), "nameJa": w.get("nameJa", "")})
+                continue
+            wt_present += 1
+            is_complete = all((sh.get(side) or {}).get("segments") for side in ("normal", "plus"))
+            if is_complete:
+                wt_complete += 1
+            else:
+                wt_partial += 1
+                partial_names.append({
+                    "id": w.get("id"), "weaponType": wt, "name": w.get("name"), "nameJa": w.get("nameJa", ""),
+                    "normal": bool((sh.get("normal") or {}).get("segments")),
+                    "plus": bool((sh.get("plus") or {}).get("segments")),
+                    "confidence": sh.get("confidence", ""),
+                })
+        wt_missing = len(rows) - wt_present
+        by_type[wt] = {"total": len(rows), "present": wt_present, "complete": wt_complete, "partial": wt_partial, "missing": wt_missing}
+        present += wt_present; complete += wt_complete; partial += wt_partial; missing += wt_missing
+    return {
+        "meleeTotal": present + missing, "present": present, "complete": complete, "partial": partial, "missing": missing,
+        "byType": by_type, "missingWeapons": missing_names, "partialWeapons": partial_names,
+    }
+
+
 def write_simulator_compact(target_dir, armors, weapons, armor_sets):
     compact = {
         "sim_armors.json": compact_rows(armors, SIM_ARMOR_KEYS),
@@ -1088,11 +1124,13 @@ def main():
     weapon_tree_count = len({w.get("tree") for w in weapons if w.get("tree")})
     sharpness_count = sum(1 for w in weapons if w.get("sharpness"))
     sharpness_confidence = dict(Counter(w.get("sharpness", {}).get("confidence") for w in weapons if w.get("sharpness")))
+    sharpness_audit = summarize_sharpness(weapons)
     armor_rank_counts = dict(Counter(a.get("rank") for a in armors))
     armor_rank_basis_counts = dict(Counter(a.get("rankBasis", "") for a in armors))
     report = {
-        "version":"0.7.2", "counts":counts, "activationCount":activation_count,
+        "version":APP_VERSION, "counts":counts, "activationCount":activation_count,
         "weaponTreeCount":weapon_tree_count, "sharpnessCount":sharpness_count, "sharpnessConfidence":sharpness_confidence,
+        "sharpnessAudit":sharpness_audit,
         "torsoUpArmorCount":sum(1 for a in armors if a.get("torsoUp")),
         "armorRankCounts":armor_rank_counts, "armorRankBasisCounts":armor_rank_basis_counts,
         "missingArmorSkillNames":dict(missing_a), "missingDecorationSkillNames":dict(missing_d),
@@ -1122,9 +1160,10 @@ def main():
         shutil.copy2(NORMALIZED / "site_info.json", PROJECT_DATA / "site_info.json")
         write_simulator_compact(PROJECT_DATA, armors, weapons, armor_sets)
         meta = {
-            "version":"0.7.2", "demo":False, "source":SOURCE_ROOT + "main.htm",
+            "version":APP_VERSION, "demo":False, "source":SOURCE_ROOT + "main.htm",
             "counts":counts, "activationCount":activation_count,
             "weaponTreeCount":weapon_tree_count, "sharpnessCount":sharpness_count, "sharpnessConfidence":sharpness_confidence,
+            "sharpnessAudit": {k:v for k,v in sharpness_audit.items() if k not in {"missingWeapons", "partialWeapons"}},
             "note":"사용자 수집본 raw_tables.json을 CP949 복구/정규화해 생성한 실제 MH4G 데이터. RARE4 방어구는 최초 제작 가능 진행도 기준으로 재판정함.",
         }
         (PROJECT_DATA / "meta.json").write_text(json.dumps(meta, ensure_ascii=False, indent=2), encoding="utf-8")

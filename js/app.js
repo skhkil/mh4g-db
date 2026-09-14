@@ -1,5 +1,5 @@
-import {loadSimulatorData,loadFullData,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.3";
-import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.3";
+import {loadSimulatorData,loadFullData,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.5";
+import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.5";
 
 let data={skills:[],armors:[],armorSets:[],decorations:[],weapons:[],weaponSummary:[],melodies:[],items:[],meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],siteInfo:{},meta:{}};
 let targets=[];
@@ -547,13 +547,59 @@ function renderCraft(w){
 function renderWeaponSubNav(){
   const box=$("#weaponSubNav");if(!box)return;
   const types=WEAPON_TYPES.filter(t=>data.weapons.some(w=>w.weaponType===t));
-  box.innerHTML=types.map(t=>`<button type="button" class="weapon-sub-btn" data-weapon-type="${esc(t)}">${esc(t)}</button>`).join("")+
-    `<button type="button" class="weapon-sub-btn sub-special" data-special-page="melody">　┗ 선율표</button>`+
-    `<button type="button" class="weapon-sub-btn sub-special" data-special-page="weapon-summary">속성별 무기요약</button>`;
+  const buttons=[];
+  for(const t of types){
+    buttons.push(`<button type="button" class="weapon-sub-btn" data-weapon-type="${esc(t)}">${esc(t)}</button>`);
+    if(t==="수렵피리") buttons.push(`<button type="button" class="weapon-sub-btn sub-special melody-under-horn" data-special-page="melody">┗ 선율표</button>`);
+  }
+  buttons.push(`<button type="button" class="weapon-sub-btn sub-special weapon-summary-link" data-special-page="weapon-summary">속성별 무기요약</button>`);
+  box.innerHTML=buttons.join("");
   box.querySelectorAll('[data-weapon-type]').forEach(b=>b.onclick=e=>{e.stopPropagation();armorViewMode="all";$("#weaponTypeFilter").value=b.dataset.weaponType;syncWeaponSubActive();openPage("weapon")});
   box.querySelectorAll('[data-special-page]').forEach(b=>b.onclick=e=>{e.stopPropagation();openPage(b.dataset.specialPage)});
 }
 function syncWeaponSubActive(){const t=$("#weaponTypeFilter")?.value||"all";$$('[data-weapon-type]').forEach(b=>b.classList.toggle('active',b.dataset.weaponType===t))}
+const WEAPON_ELEMENT_FILTERS={
+  fire:"불",water:"물",thunder:"번개",ice:"얼음",dragon:"용",
+  poison:"독",paralysis:"마비",sleep:"수면",blast:"폭파"
+};
+const SHARPNESS_RANK={red:0,orange:1,yellow:2,green:3,blue:4,white:5,purple:6};
+function weaponElementCategory(w){
+  const text=String(w?.element||"").replace(/[()]/g," ");
+  if(!text.trim())return "none";
+  for(const [key,word] of Object.entries(WEAPON_ELEMENT_FILTERS)) if(new RegExp(`${word}\\s*\\d+`).test(text)) return key;
+  return "none";
+}
+function weaponElementValue(w){
+  if(weaponElementCategory(w)==="none")return 0;
+  const nums=String(w?.element||"").match(/\d+/g)||[];
+  return nums.length?Math.max(...nums.map(Number)):0;
+}
+function sharpnessKey(w,plus=false){
+  const bar=plus?w?.sharpness?.plus:w?.sharpness?.normal;
+  if(!bar?.segments?.length)return [-1,0,0];
+  let top=-1,topLen=0;
+  for(const seg of bar.segments){
+    const rank=SHARPNESS_RANK[seg.color]??-1,len=Number(seg.length)||0;
+    if(len>0&&rank>=top){top=rank;topLen=len;}
+  }
+  return [top,topLen,Number(bar.total)||bar.segments.reduce((sum,x)=>sum+(Number(x.length)||0),0)];
+}
+function compareTupleDesc(a,b){for(let i=0;i<Math.max(a.length,b.length);i++){const d=(b[i]||0)-(a[i]||0);if(d)return d}return 0}
+function weaponComparator(mode){
+  return (a,b)=>{
+    let d=0;
+    if(mode==="attack-desc")d=(Number(b.attack)||0)-(Number(a.attack)||0);
+    else if(mode==="attack-asc")d=(Number(a.attack)||0)-(Number(b.attack)||0);
+    else if(mode==="sharpness-desc")d=compareTupleDesc(sharpnessKey(a,false),sharpnessKey(b,false));
+    else if(mode==="sharpness-plus-desc")d=compareTupleDesc(sharpnessKey(a,true),sharpnessKey(b,true));
+    else if(mode==="element-desc")d=weaponElementValue(b)-weaponElementValue(a);
+    else if(mode==="affinity-desc")d=(Number(b.affinity)||0)-(Number(a.affinity)||0);
+    else if(mode==="slots-desc")d=(Number(b.slots)||0)-(Number(a.slots)||0);
+    else if(mode==="name")d=String(a.name||"").localeCompare(String(b.name||""),"ko");
+    else d=(a.rowOrder??0)-(b.rowOrder??0);
+    return d||String(a.name||"").localeCompare(String(b.name||""),"ko");
+  };
+}
 function weaponFilteredBase(){
   const type=$("#weaponTypeFilter").value;
   // 무기 DB 화면의 종류 필터는 상단 전역 필터와 독립적으로 동작한다.
@@ -600,15 +646,20 @@ function weaponRow(w,cols){
 }
 function renderWeaponTrees(){
   const q=$("#weaponSearch").value.trim().toLowerCase(),tree=$("#weaponTreeFilter").value;
-  let rows=weaponFilteredBase().filter(w=>(tree==="all"||w.tree===tree)&&(!q||`${w.name} ${w.nameJa||""} ${w.element||""} ${w.tree||""} ${weaponExtra(w)} ${(w.craft||[]).map(c=>c.materials).join(" ")}`.toLowerCase().includes(q)));
+  const element=$("#weaponElementFilter")?.value||"all",sortMode=$("#weaponSort")?.value||"tree";
+  const cmp=weaponComparator(sortMode);
+  let rows=weaponFilteredBase().filter(w=>(tree==="all"||w.tree===tree)&&(element==="all"||weaponElementCategory(w)===element)&&(!q||`${w.name} ${w.nameJa||""} ${w.element||""} ${w.tree||""} ${weaponExtra(w)} ${(w.craft||[]).map(c=>c.materials).join(" ")}`.toLowerCase().includes(q)));
   const groups=new Map();for(const w of rows){const k=w.tree||"기타";if(!groups.has(k))groups.set(k,[]);groups.get(k).push(w)}
-  const ordered=[...groups.entries()].sort((a,b)=>(a[1][0]?.treeOrder??9999)-(b[1][0]?.treeOrder??9999)||a[0].localeCompare(b[0],"ko"));
-  $("#weaponResultInfo").textContent=`${rows.length.toLocaleString()}개 무기 · ${ordered.length.toLocaleString()}개 파생`;
+  for(const list of groups.values())list.sort(cmp);
+  const ordered=[...groups.entries()].sort((a,b)=>sortMode==="tree"?((a[1][0]?.treeOrder??9999)-(b[1][0]?.treeOrder??9999)||a[0].localeCompare(b[0],"ko")):(cmp(a[1][0],b[1][0])||a[0].localeCompare(b[0],"ko")));
+  const elementLabel=$("#weaponElementFilter")?.selectedOptions?.[0]?.textContent||"전체 속성";
+  const sortLabel=$("#weaponSort")?.selectedOptions?.[0]?.textContent||"파생 순서";
+  $("#weaponResultInfo").textContent=`${rows.length.toLocaleString()}개 무기 · ${ordered.length.toLocaleString()}개 파생 · ${elementLabel} · ${sortLabel}`;
   $("#weaponTrees").innerHTML=ordered.length?ordered.map(([name,list],i)=>{
-    const sorted=list.sort((a,b)=>(a.rowOrder??0)-(b.rowOrder??0));
+    const sorted=list;
     const type=sorted[0]?.weaponType||"";
     const cols=weaponTableColumns(type);
-    return `<details class="weapon-tree-group" ${(q||tree!=="all"||i===0)?"open":""}><summary><span>${esc(name)}</span><span class="tree-meta">${esc(type)} · ${list.length}개</span></summary><div class="weapon-tree-table-wrap"><table class="data-table weapon-data-table ${RANGED_TYPES.has(type)?"ranged-table":"melee-table"}"><thead><tr>${cols.map(c=>`<th class="${esc(c.className||"")}">${esc(c.label)}</th>`).join("")}</tr></thead><tbody>${sorted.map(w=>weaponRow(w,cols)).join("")}</tbody></table></div></details>`;
+    return `<details class="weapon-tree-group" ${(q||tree!=="all"||element!=="all"||sortMode!=="tree"||i===0)?"open":""}><summary><span>${esc(name)}</span><span class="tree-meta">${esc(type)} · ${list.length}개</span></summary><div class="weapon-tree-table-wrap"><table class="data-table weapon-data-table ${RANGED_TYPES.has(type)?"ranged-table":"melee-table"}"><thead><tr>${cols.map(c=>`<th class="${esc(c.className||"")}">${esc(c.label)}</th>`).join("")}</tr></thead><tbody>${sorted.map(w=>weaponRow(w,cols)).join("")}</tbody></table></div></details>`;
   }).join(""):'<div class="panel result-empty">검색 결과 없음</div>';
   syncWeaponSubActive();
 }
@@ -923,7 +974,7 @@ function bind(){
 
   $("#armorSearch").oninput=renderArmorTable;$("#armorPartFilter").onchange=renderArmorTable;
   $("#armorSetSearch").oninput=renderArmorSetTable;
-  $("#weaponSearch").oninput=renderWeaponTrees;$("#weaponTypeFilter").onchange=()=>{renderWeaponTreeFilter();renderWeaponTrees()};$("#weaponTreeFilter").onchange=renderWeaponTrees;
+  $("#weaponSearch").oninput=renderWeaponTrees;$("#weaponTypeFilter").onchange=()=>{renderWeaponTreeFilter();renderWeaponTrees()};$("#weaponTreeFilter").onchange=renderWeaponTrees;$("#weaponElementFilter").onchange=renderWeaponTrees;$("#weaponSort").onchange=renderWeaponTrees;
   $("#weaponSummarySearch").oninput=renderWeaponSummary;$("#weaponSummaryType").onchange=renderWeaponSummary;
   $("#melodySearch").oninput=renderMelodyTable;
   $("#decoSearch").oninput=renderDecoTable;$("#skillSearch").oninput=renderSkillTable;
