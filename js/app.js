@@ -582,7 +582,8 @@ function sharpnessKey(w,plus=false){
     const rank=SHARPNESS_RANK[seg.color]??-1,len=Number(seg.length)||0;
     if(len>0&&rank>=top){top=rank;topLen=len;}
   }
-  return [top,topLen,Number(bar.total)||bar.segments.reduce((sum,x)=>sum+(Number(x.length)||0),0)];
+  const total=Number(bar.total)||bar.segments.reduce((sum,x)=>sum+(Number(x.length)||0),0);
+  return [top,total?topLen/total:0];
 }
 function compareTupleDesc(a,b){for(let i=0;i<Math.max(a.length,b.length);i++){const d=(b[i]||0)-(a[i]||0);if(d)return d}return 0}
 function weaponComparator(mode){

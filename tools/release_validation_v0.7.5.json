@@ -1,0 +1,25 @@
+{
+  "version": "0.7.5",
+  "status": "pass",
+  "checks": {
+    "weaponTotal": 2314,
+    "meleeTotal": 1859,
+    "sharpnessComplete": 1859,
+    "sharpnessPartial": 0,
+    "sharpnessMissing": 0,
+    "invalidBars": 0,
+    "rangedWithSharpness": 0,
+    "mergedSharpnessRecords": 595,
+    "exactMatches": 569,
+    "verifiedAliasMatches": 26,
+    "changedSharpnessRecordsVsCheckpoint": 595,
+    "changedPreviouslyCompleteSharpnessRecords": 0,
+    "nonSharpnessWeaponFieldChanges": 0,
+    "melodyNestedUnderHuntingHorn": true,
+    "weaponElementFilterPresent": true,
+    "weaponSortPresent": true,
+    "weaponFilterHandlersPresent": true,
+    "sourceScaleIndependentSharpnessSort": true,
+    "dataVersion": "0.7.5"
+  }
+}

@@ -49,3 +49,24 @@ tools/
 `build_database.py`는 방어구의 `rank`를 단순 RARE 구간이 아니라 **최초 제작 가능 진행도**로 계산합니다.
 RARE4는 하위/상위가 혼재하므로 S 계열 여부, 원본 소재 입수 등급, 확인된 하위 예외를 조합해 판정합니다.
 재생성 시에도 같은 규칙이 적용됩니다.
+
+
+## v0.7.5 외부 MH4U 예리도 보강
+
+기존 원본에서 예리도가 완전 누락되거나 한쪽만 남아 있던 근접무기 595건은 공개 `MonsterHunter4UDatabase` SQLite DB로 보강했습니다.
+
+재현 방법:
+```text
+python tools/merge_mh4u_sharpness.py /path/to/mh4u.db
+python tools/audit_sharpness.py
+```
+
+병합 규칙:
+- 기존 완전 예리도는 덮어쓰지 않음
+- 일본명 + 무기종 exact-match 우선
+- exact-match가 불가능했던 원본 일본명 오타/손상 26건은 명시적 verified alias 사용
+- 추측/보간 금지
+- 병합 상세 내역은 `mh4u_sharpness_merge.json`에 기록
+
+외부 DB 출처:
+`https://github.com/kamegami13/MonsterHunter4UDatabase`

@@ -39,6 +39,7 @@ def main():
     partial_weapons = []
     invalid_weapons = []
     confidence = Counter()
+    methods = Counter()
 
     for wt in MELEE_TYPES:
         rows = [w for w in weapons if w.get("weaponType") == wt]
@@ -50,6 +51,7 @@ def main():
                 continue
             present += 1
             confidence[sh.get("confidence", "unknown")] += 1
+            methods[sh.get("method", "unknown")] += 1
             normal_ok = bar_ok(sh.get("normal"))
             plus_ok = bar_ok(sh.get("plus"))
             if normal_ok and plus_ok:
@@ -82,10 +84,10 @@ def main():
     ]
 
     report = {
-        "version": "0.7.4",
+        "version": "0.7.5",
         "sourceFile": "data/weapons.json",
         "rawTablesAvailable": (ROOT / "raw_tables.json").exists(),
-        "policy": "원본 게이지가 없는 항목은 추측/보간하지 않음",
+        "policy": "v0.7.5에서 원본 누락/부분 누락 595건을 MH4U DB로 보강. 기존 완전 데이터는 유지하고 추측값은 사용하지 않음",
         "weaponTotal": len(weapons),
         "meleeTotal": melee_total,
         "sharpnessPresent": present,
@@ -93,6 +95,7 @@ def main():
         "sharpnessPartial": partial,
         "sharpnessMissing": missing,
         "confidence": dict(confidence),
+        "methods": dict(methods),
         "byType": by_type,
         "rangedWithSharpness": ranged_with_sharpness,
         "invalidBars": invalid_weapons,
@@ -103,7 +106,7 @@ def main():
     print(json.dumps({
         "weaponTotal": report["weaponTotal"], "meleeTotal": melee_total,
         "present": present, "complete": complete, "partial": partial, "missing": missing,
-        "confidence": dict(confidence), "invalidBars": len(invalid_weapons),
+        "confidence": dict(confidence), "methods": dict(methods), "invalidBars": len(invalid_weapons),
         "rangedWithSharpness": len(ranged_with_sharpness), "output": str(OUT),
     }, ensure_ascii=False, indent=2))
     if invalid_weapons or ranged_with_sharpness:
