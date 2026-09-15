@@ -1,0 +1,34 @@
+{
+  "version": "0.7.7-chat4-monster8-recovery",
+  "monsters": 76,
+  "seregios": {
+    "bestPart": "배",
+    "primaryElements": [
+      "thunder"
+    ],
+    "maxValues": {
+      "cut": 60.0,
+      "impact": 55.0,
+      "shot": 55.0,
+      "thunder": 25.0
+    },
+    "bestParts": {
+      "cut": [
+        "배"
+      ],
+      "impact": [
+        "배"
+      ],
+      "shot": [
+        "배"
+      ],
+      "thunder": [
+        "머리"
+      ]
+    }
+  },
+  "notes": [
+    "runtime badge comparison removed",
+    "app initialization and click binding restored from last known working hitzone_fit baseline"
+  ]
+}
