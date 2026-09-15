@@ -1,7 +1,7 @@
-import {loadSimulatorData,loadFullData,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7";
-import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7";
+import {loadSimulatorData,loadFullData,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-itemxref1";
+import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-itemxref1";
 
-let data={skills:[],armors:[],armorSets:[],decorations:[],weapons:[],weaponSummary:[],melodies:[],items:[],meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],siteInfo:{},meta:{}};
+let data={skills:[],armors:[],armorSets:[],decorations:[],weapons:[],weaponSummary:[],melodies:[],items:[],itemReferences:{},meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],siteInfo:{},meta:{}};
 let targets=[];
 let currentPage="simulator";
 const BUILD_STORAGE_KEY="mh4g-builds-v1";
@@ -20,9 +20,10 @@ let decoView="type";
 let monsterView="detail";
 let dragonView="exchange";
 let questView="key";
+let selectedItemId="";
 
 // v0.7.2: 반복 배열 검색과 옵션 재생성을 줄이기 위한 인덱스/캐시
-let skillById=new Map(),armorById=new Map(),weaponById=new Map(),decorationByIdMap=new Map(),armorSetById=new Map();
+let skillById=new Map(),armorById=new Map(),weaponById=new Map(),decorationByIdMap=new Map(),armorSetById=new Map(),itemByName=new Map();
 const optionCache={armorByPart:new Map(),weaponByType:new Map(),armorSets:null,skillPicker:null,activation:null,weaponTypes:null};
 function rebuildIndexes(){
   skillById=new Map((data.skills||[]).map(x=>[x.id,x]));
@@ -30,6 +31,7 @@ function rebuildIndexes(){
   weaponById=new Map((data.weapons||[]).map(x=>[x.id,x]));
   decorationByIdMap=new Map((data.decorations||[]).map(x=>[x.id,x]));
   armorSetById=new Map((data.armorSets||[]).map(x=>[x.id,x]));
+  itemByName=new Map((data.items||[]).map(x=>[x.name,x]));
   optionCache.armorByPart.clear();optionCache.weaponByType.clear();
   optionCache.armorSets=null;optionCache.skillPicker=null;optionCache.activation=null;optionCache.weaponTypes=null;
 }
@@ -524,6 +526,7 @@ function renderTable(el,headers,rows){
   const root=$(el);
   root.innerHTML=`<table class="data-table"><thead><tr>${headers.map(h=>`<th>${h}</th>`).join("")}</tr></thead><tbody>${rows.length?rows.join(""):`<tr><td colspan="${headers.length}" class="result-empty">검색 결과 없음</td></tr>`}</tbody></table>`;
   decorateResponsiveTables(root);
+  bindInlineItemLinks(root);
 }
 function localizedNameSub(x){
   const main=String(x?.name||"").trim();
@@ -571,10 +574,32 @@ function weaponFeatureColumns(type){
   ];
   return [];
 }
+function itemLink(name,label=name){
+  const key=String(name||"").trim();
+  if(!key||!itemByName.has(key))return esc(label||key||"-");
+  return `<button type="button" class="inline-item-link" data-open-item="${esc(key)}">${esc(label||key)}</button>`;
+}
+function materialLinks(text){
+  const raw=String(text||""); if(!raw)return "-";
+  const re=/(.*?)([×*]\s*\d+)(?=\s|$)/g;let out="",last=0,m;
+  while((m=re.exec(raw))){
+    const prefix=m[1],count=m[2],leading=(prefix.match(/^\s*/)||[""])[0],name=prefix.slice(leading.length).trim();
+    out+=esc(raw.slice(last,m.index))+esc(leading)+(itemByName.has(name)?itemLink(name):esc(name))+esc(count);last=re.lastIndex;
+  }
+  out+=esc(raw.slice(last));
+  return out||esc(raw);
+}
+async function openItemByName(name){
+  await ensureFullData(["items","itemReferences"]);
+  const item=itemByName.get(String(name||"").trim());if(!item)return;
+  await openPage("item");$("#itemSearch").value=item.name;renderItemTable();renderItemDetail(item.id);
+}
+function bindInlineItemLinks(root=document){root.querySelectorAll?.('[data-open-item]').forEach(b=>{if(b.dataset.itemBound)return;b.dataset.itemBound="1";b.onclick=()=>openItemByName(b.dataset.openItem)})}
+
 function renderCraft(w){
   const craft=w.craft||[];
   if(!craft.length)return '<span class="muted">-</span>';
-  return `<div class="craft-list">${craft.map(c=>`<div class="craft-line"><span class="craft-method">${esc(c.method||"소재")}</span><span class="craft-materials">${esc(c.materials||"-")}</span></div>`).join("")}</div>`;
+  return `<div class="craft-list">${craft.map(c=>`<div class="craft-line"><span class="craft-method">${esc(c.method||"소재")}</span><span class="craft-materials">${materialLinks(c.materials||"-")}</span></div>`).join("")}</div>`;
 }
 function renderWeaponSubNav(){
   const box=$("#weaponSubNav");if(!box)return;
@@ -695,13 +720,14 @@ function renderWeaponTrees(){
     return `<details class="weapon-tree-group" ${(q||tree!=="all"||element!=="all"||sortMode!=="tree"||i===0)?"open":""}><summary><span>${esc(name)}</span><span class="tree-meta">${esc(type)} · ${list.length}개</span></summary><div class="weapon-tree-table-wrap"><table class="data-table weapon-data-table ${RANGED_TYPES.has(type)?"ranged-table":"melee-table"}"><thead><tr>${cols.map(c=>`<th class="${esc(c.className||"")}">${esc(c.label)}</th>`).join("")}</tr></thead><tbody>${sorted.map(w=>weaponRow(w,cols)).join("")}</tbody></table></div></details>`;
   }).join(""):'<div class="panel result-empty">검색 결과 없음</div>';
   decorateResponsiveTables($("#weaponTrees"));
+  bindInlineItemLinks($("#weaponTrees"));
   syncWeaponSubActive();
 }
 function renderDecoTable(){
   const q=$("#decoSearch").value.trim().toLowerCase(),rank=$("#rankFilter").value;
   const list=data.decorations.filter(d=>(rank==="all"||d.rank===rank)&&(!q||decorationSearchCorpus(d).toLowerCase().includes(q)));
   list.sort((a,b)=>decoView==="slot"?(a.slots-b.slots||a.name.localeCompare(b.name,"ko")):(Object.keys(a.skills||{}).map(skillName).join("").localeCompare(Object.keys(b.skills||{}).map(skillName).join(""),"ko")||a.name.localeCompare(b.name,"ko")));
-  const rows=list.map(d=>`<tr><td><strong>${esc(d.name)}</strong>${localizedNameSub(d)}</td><td>${d.slots}</td><td>${Object.entries(d.skills||{}).map(([k,v])=>`${esc(skillName(k))} ${v>0?"+":""}${v}`).join(", ")}</td><td>${rankName(d.rank)}</td><td>${esc(d.materials||"")}</td></tr>`);
+  const rows=list.map(d=>`<tr><td><strong>${esc(d.name)}</strong>${localizedNameSub(d)}</td><td>${d.slots}</td><td>${Object.entries(d.skills||{}).map(([k,v])=>`${esc(skillName(k))} ${v>0?"+":""}${v}`).join(", ")}</td><td>${rankName(d.rank)}</td><td>${materialLinks(d.materials||"")}</td></tr>`);
   renderTable("#decoTable",["장식주","필요 슬롯","스킬 포인트","등급","생산 소재"],rows);
 }
 function renderSkillTable(){
@@ -709,10 +735,81 @@ function renderSkillTable(){
   const rows=data.skills.filter(s=>!q||skillSearchCorpus(s).toLowerCase().includes(q)).map(s=>`<tr><td><strong>${esc(s.name)}</strong>${localizedNameSub(s)}</td><td>${(s.activations||[]).map(a=>`${a.points>0?"+":""}${a.points} → <strong>${esc(a.name)}</strong>${localizedNameSub(a)}`).join("<br>")}</td><td>${(s.activations||[]).map(a=>a.description?`<div><strong>${esc(a.name)}</strong>: ${esc(cleanEffectText(a.description))}</div>`:"").filter(Boolean).join("")}</td></tr>`);
   renderTable("#skillTable",["스킬 계통","발동 조건","효과 및 비고"],rows);
 }
+function itemRefEntry(item){return data.itemReferences?.items?.[item?.id]||{acquire:[],uses:[]}}
+function itemReferenceCorpus(item){
+  const ref=itemRefEntry(item),bits=[];
+  for(const x of ref.acquire||[])bits.push(x.type,x.monster,x.method,x.name,x.required,x.materialA,x.materialB,x.line,x.market,x.objective,x.location,x.unlock);
+  for(const x of ref.uses||[])bits.push(x.type,x.name,x.weaponType,x.result,x.method,x.materials,x.unlock);
+  return bits.filter(Boolean).join(" ");
+}
+function refButton(label,type,attrs={}){
+  const dataAttrs=Object.entries(attrs).filter(([,v])=>v!==undefined&&v!==null&&String(v)!=="").map(([k,v])=>` data-nav-${k}="${esc(String(v))}"`).join("");
+  return `<button type="button" class="xref-link" data-item-nav="${esc(type)}"${dataAttrs}>${esc(label)}</button>`;
+}
+function acquireRefHtml(x){
+  if(x.type==="monster")return `<li>${refButton(x.monster||"몬스터","monster",{monster:x.monster,item:selectedItemName()})}<span>${esc([x.method,x.count,x.rank?rankName(x.rank):"",x.probability].filter(Boolean).join(" · "))}</span></li>`;
+  if(x.type==="quest")return `<li>${refButton(`${x.level||""} ${x.name||"퀘스트"}`.trim(),"quest",{name:x.name,questtype:x.questType})}<span>${esc([x.location,x.objective].filter(Boolean).join(" · "))}</span></li>`;
+  if(x.type==="compose")return `<li>${refButton(`조합 No.${x.no}: ${x.materialA} + ${x.materialB}`,"compose",{name:selectedItemName()})}<span>${esc([x.successRate,x.yield?`생산 ${x.yield}`:""].filter(Boolean).join(" · "))}</span></li>`;
+  if(x.type==="exchange")return `<li>${refButton(`용인 교환: ${x.required} → ${selectedItemName()}`,"dragon",{view:"exchange",name:selectedItemName()})}<span>${esc(x.unlock||"")}</span></li>`;
+  if(x.type==="dragonSell")return `<li>${refButton(`용인 판매: ${x.line||"목록"}`,"dragon",{view:"sell",name:selectedItemName()})}<span>${esc(x.points?`${x.points} 여단P`:"")}</span></li>`;
+  if(x.type==="dragonIncrease")return `<li>${refButton(`용인 증식: ${x.market||"시장"}`,"dragon",{view:"increase",name:selectedItemName()})}<span>${esc([x.successRate,x.points?`${x.points} 여단P`:""].filter(Boolean).join(" · "))}</span></li>`;
+  return `<li><span>${esc(x.type||"입수처")}</span></li>`;
+}
+function useRefHtml(x){
+  if(x.type==="weapon")return `<li>${refButton(`${x.weaponType||"무기"} · ${x.name}`,"weapon",{name:x.name,weapontype:x.weaponType})}<span>${esc([x.method,x.count?`×${x.count}`:""].filter(Boolean).join(" · "))}</span></li>`;
+  if(x.type==="armor")return `<li>${refButton(x.name||"방어구","armor",{name:x.name})}<span>${esc([PART_NAMES[x.part]||x.part,x.hunterType?hunterName(x.hunterType):"",x.count?`×${x.count}`:""].filter(Boolean).join(" · "))}</span></li>`;
+  if(x.type==="decoration")return `<li>${refButton(x.name||"장식주","decoration",{name:x.name})}<span>${esc([x.slots?`${x.slots}슬롯`:"",x.count?`×${x.count}`:""].filter(Boolean).join(" · "))}</span></li>`;
+  if(x.type==="compose")return `<li>${refButton(`조합 재료 → ${x.result}`,"compose",{name:x.result})}<span>${esc(x.successRate||"")}</span></li>`;
+  if(x.type==="exchange")return `<li>${refButton(`용인 교환 재료 → ${x.result}`,"dragon",{view:"exchange",name:x.result})}<span>${esc(x.unlock||"")}</span></li>`;
+  return `<li><span>${esc(x.type||"사용처")}</span></li>`;
+}
+function selectedItemName(){return data.items.find(x=>x.id===selectedItemId)?.name||""}
+function xrefGroup(title,items,renderer){
+  if(!items?.length)return `<section class="xref-group empty"><h4>${esc(title)} <span>0</span></h4><p class="muted">현재 DB에서 연결된 항목이 없습니다.</p></section>`;
+  return `<details class="xref-group" open><summary><strong>${esc(title)}</strong><span>${items.length.toLocaleString()}건</span></summary><ul>${items.map(renderer).join("")}</ul></details>`;
+}
+function renderItemDetail(id){
+  const host=$("#itemDetail"); if(!host)return;
+  const item=data.items.find(x=>x.id===id); if(!item){host.hidden=true;host.innerHTML="";return}
+  selectedItemId=id;
+  const ref=itemRefEntry(item),acq=ref.acquire||[],uses=ref.uses||[];
+  const acqGroups=[
+    ["퀘스트 보수",acq.filter(x=>x.type==="quest")],["몬스터 갈무리/보수",acq.filter(x=>x.type==="monster")],
+    ["조합",acq.filter(x=>x.type==="compose")],["용인족 도매상",acq.filter(x=>["exchange","dragonSell","dragonIncrease"].includes(x.type))]
+  ].filter(([,v])=>v.length);
+  const useGroups=[
+    ["무기 생산/강화",uses.filter(x=>x.type==="weapon")],["방어구 생산",uses.filter(x=>x.type==="armor")],
+    ["장식주 생산",uses.filter(x=>x.type==="decoration")],["조합 재료",uses.filter(x=>x.type==="compose")],["용인 교환 재료",uses.filter(x=>x.type==="exchange")]
+  ].filter(([,v])=>v.length);
+  host.hidden=false;
+  host.innerHTML=`<section class="panel item-detail-card"><div class="item-detail-head"><div><span class="item-detail-kicker">아이템 상세 · 역참조</span><h2>${esc(item.name)}</h2>${localizedNameSub(item)}</div><button type="button" class="item-detail-close" aria-label="상세 닫기">×</button></div><div class="item-detail-meta"><span>RARE <strong>${item.rare||"-"}</strong></span><span>소지 <strong>${item.maxStack||"-"}</strong></span><span>구매 <strong>${esc(item.buyPrice||"-")}</strong></span><span>판매 <strong>${esc(item.sellPrice||"-")}</strong></span><span>입수 연결 <strong>${acq.length.toLocaleString()}</strong></span><span>사용 연결 <strong>${uses.length.toLocaleString()}</strong></span></div>${item.acquire||item.note?`<div class="item-detail-note">${item.acquire?`<p><b>기본 입수</b> ${esc(item.acquire)}</p>`:""}${item.note?`<p><b>효과/비고</b> ${esc(item.note)}</p>`:""}</div>`:""}<div class="item-xref-columns"><div><h3>어디서 얻나</h3>${acqGroups.length?acqGroups.map(([t,v])=>xrefGroup(t,v,acquireRefHtml)).join(""):'<p class="muted xref-empty">현재 구조화 데이터에서 확인되는 입수처가 없습니다.</p>'}</div><div><h3>어디에 쓰나</h3>${useGroups.length?useGroups.map(([t,v])=>xrefGroup(t,v,useRefHtml)).join(""):'<p class="muted xref-empty">현재 구조화 데이터에서 확인되는 사용처가 없습니다.</p>'}</div></div><p class="xref-footnote">※ 역참조는 현재 프로젝트의 퀘스트·몬스터 보수·조합·용인족 도매상·무기·방어구·장식주 데이터를 연결해 표시합니다.</p></section>`;
+  host.querySelector('.item-detail-close').onclick=()=>{selectedItemId="";host.hidden=true;host.innerHTML=""};
+  host.querySelectorAll('[data-item-nav]').forEach(b=>b.onclick=()=>followItemReference(b));
+  host.scrollIntoView({behavior:"smooth",block:"start"});
+}
+async function followItemReference(btn){
+  const type=btn.dataset.itemNav,name=btn.dataset.navName||"";
+  if(type==="weapon"){
+    await openPage("weapon"); $("#weaponTypeFilter").value=btn.dataset.navWeapontype||"all"; $("#weaponSearch").value=name; renderWeaponTreeFilter();renderWeaponTrees();
+  }else if(type==="armor"){
+    await openPage("armor"); $("#hunterType").value="both";$("#rankFilter").value="all";$("#armorPartFilter").value="all";$("#armorSearch").value=name;renderArmorTable();
+  }else if(type==="decoration"){
+    await openPage("decoration");$("#rankFilter").value="all";$("#decoSearch").value=name;renderDecoTable();
+  }else if(type==="compose"){
+    await openPage("compose");$("#composeSearch").value=name;renderCompose();
+  }else if(type==="dragon"){
+    dragonView=btn.dataset.navView||"exchange";await openPage("dragon");$("#dragonSearch").value=name;renderDragon();
+  }else if(type==="monster"){
+    monsterView="rewards";await openPage("monster");const mon=btn.dataset.navMonster||"";if([...$("#monsterSelect").options].some(o=>o.value===mon))$("#monsterSelect").value=mon;$("#monsterSearch").value=btn.dataset.navItem||selectedItemName();$("#monsterRankFilter").value="all";renderMonster();
+  }else if(type==="quest"){
+    const qt=btn.dataset.navQuesttype||"";questView=qt==="event"?"event-all":qt==="challenge"?"challenge":qt==="village"?"village-detail":qt==="hub"?"hub-detail":qt==="g"?"g-detail":"key";await openPage("quest");$("#questSearch").value=name;$("#questLevelFilter").value="all";$("#questKeyOnly").checked=false;renderQuest();
+  }
+}
 function renderItemTable(){
   const q=$("#itemSearch").value.trim().toLowerCase();
-  const rows=data.items.filter(i=>!q||`${i.name} ${i.nameJa||""} ${i.nameEn||""} ${i.acquire||""} ${i.note||""}`.toLowerCase().includes(q)).map(i=>`<tr><td><strong>${esc(i.name)}</strong>${localizedNameSub(i)}</td><td>${i.rare||"-"}</td><td>${i.maxStack||"-"}</td><td>${esc(i.buyPrice||"-")}</td><td>${esc(i.sellPrice||"-")}</td><td>${esc(i.acquire||"")}</td><td>${esc(i.note||"")}</td></tr>`);
+  const rows=data.items.filter(i=>!q||`${i.name} ${i.nameJa||""} ${i.nameEn||""} ${i.acquire||""} ${i.note||""} ${itemReferenceCorpus(i)}`.toLowerCase().includes(q)).map(i=>{const ref=itemRefEntry(i),count=(ref.acquire?.length||0)+(ref.uses?.length||0);return `<tr><td><button type="button" class="item-name-link" data-item-id="${esc(i.id)}"><strong>${esc(i.name)}</strong>${localizedNameSub(i)}</button></td><td>${i.rare||"-"}</td><td>${i.maxStack||"-"}</td><td>${esc(i.buyPrice||"-")}</td><td>${esc(i.sellPrice||"-")}</td><td>${esc(i.acquire||"")}</td><td>${esc(i.note||"")}${count?`<small class="xref-count">연결 ${count.toLocaleString()}건</small>`:""}</td></tr>`});
   renderTable("#itemTable",["아이템","RARE","소지수","구매","판매","입수","효과/비고"],rows);
+  $("#itemTable").querySelectorAll('[data-item-id]').forEach(b=>b.onclick=()=>renderItemDetail(b.dataset.itemId));
 }
 
 function renderSourcePage(){
@@ -787,15 +884,16 @@ function filteredRewards(){
   return data.monsterRewards.filter(x=>monsterMatchName(x.monster)&&(rank==="all"||x.rank===rank)&&(!q||`${x.monster} ${x.method} ${x.item}`.toLowerCase().includes(q)));
 }
 function renderMonsterRewardsView(){
-  const rows=filteredRewards().map(x=>`<tr><td>${esc(x.monster)}</td><td>${esc(x.method||"-")} ${esc(x.count||"")}</td><td>${rankName(x.rank)==="extreme"?"극한":rankName(x.rank)}</td><td>${esc(x.item)}</td><td>${esc(x.probability)}</td></tr>`);
+  const rows=filteredRewards().map(x=>`<tr><td>${esc(x.monster)}</td><td>${esc(x.method||"-")} ${esc(x.count||"")}</td><td>${rankName(x.rank)==="extreme"?"극한":rankName(x.rank)}</td><td>${itemLink(x.item)}</td><td>${esc(x.probability)}</td></tr>`);
   $("#monsterContent").innerHTML='<div class="panel table-panel"><div id="monsterRewardsTable"></div></div>';
   renderTable("#monsterRewardsTable",["몬스터","입수방법","등급","아이템","확률"],rows);
 }
 function renderMonsterMaterialsView(){
   const rewards=filteredRewards(),groups=new Map();
   for(const x of rewards){const k=`${x.monster}|${x.rank}`;if(!groups.has(k))groups.set(k,{monster:x.monster,rank:x.rank,items:new Map()});const g=groups.get(k);if(!g.items.has(x.item))g.items.set(x.item,new Set());g.items.get(x.item).add(x.method||"입수")}
-  const cards=[...groups.values()].map(g=>`<section class="panel material-card"><h3>${esc(g.monster)} <small>${g.rank==="extreme"?"극한":rankName(g.rank)}</small></h3><div class="material-chip-list">${[...g.items.entries()].map(([item,methods])=>`<span class="material-chip"><strong>${esc(item)}</strong><small>${esc([...methods].join(" · "))}</small></span>`).join("")}</div></section>`);
+  const cards=[...groups.values()].map(g=>`<section class="panel material-card"><h3>${esc(g.monster)} <small>${g.rank==="extreme"?"극한":rankName(g.rank)}</small></h3><div class="material-chip-list">${[...g.items.entries()].map(([item,methods])=>`<span class="material-chip"><strong>${itemLink(item)}</strong><small>${esc([...methods].join(" · "))}</small></span>`).join("")}</div></section>`);
   $("#monsterContent").innerHTML=cards.length?`<div class="card-grid">${cards.join("")}</div>`:'<div class="panel result-empty">검색 결과 없음</div>';
+  bindInlineItemLinks($("#monsterContent"));
 }
 function renderMonster(){
   $("#monsterRankFilter").style.display=["rewards","materials"].includes(monsterView)?"":"none";
@@ -808,20 +906,20 @@ function renderMonster(){
 function renderDragon(){
   const q=$("#dragonSearch").value.trim().toLowerCase();
   if(dragonView==="exchange"){
-    const rows=data.dragonExchange.filter(x=>!q||`${x.result} ${x.required} ${x.unlock}`.toLowerCase().includes(q)).map(x=>`<tr><td>${esc(x.result)}</td><td>${esc(x.required)}</td><td class="wrap-cell">${esc(x.unlock)}</td></tr>`);
+    const rows=data.dragonExchange.filter(x=>!q||`${x.result} ${x.required} ${x.unlock}`.toLowerCase().includes(q)).map(x=>`<tr><td>${itemLink(x.result)}</td><td>${itemLink(x.required)}</td><td class="wrap-cell">${esc(x.unlock)}</td></tr>`);
     renderTable("#dragonTable",["교환 아이템","필요 아이템","해금 조건/퀘스트"],rows);
   }else if(dragonView==="sell"){
-    const rows=data.dragonSell.filter(x=>!q||`${x.line} ${x.name}`.toLowerCase().includes(q)).map(x=>`<tr><td>${esc(x.line)}</td><td>${esc(x.name)}</td><td>${esc(x.points)}</td></tr>`);
+    const rows=data.dragonSell.filter(x=>!q||`${x.line} ${x.name}`.toLowerCase().includes(q)).map(x=>`<tr><td>${esc(x.line)}</td><td>${itemLink(x.name)}</td><td>${esc(x.points)}</td></tr>`);
     renderTable("#dragonTable",["목록","물품","필요 여단P"],rows);
   }else{
-    const rows=data.dragonIncrease.filter(x=>!q||`${x.market} ${x.name}`.toLowerCase().includes(q)).map(x=>`<tr><td>${esc(x.market)}</td><td>${esc(x.name)}</td><td>${x.rare}</td><td>${esc(x.successRate)}</td><td>${esc(x.points)}</td></tr>`);
+    const rows=data.dragonIncrease.filter(x=>!q||`${x.market} ${x.name}`.toLowerCase().includes(q)).map(x=>`<tr><td>${esc(x.market)}</td><td>${itemLink(x.name)}</td><td>${x.rare}</td><td>${esc(x.successRate)}</td><td>${esc(x.points)}</td></tr>`);
     renderTable("#dragonTable",["시장","아이템","RARE","성공률","필요 여단P"],rows);
   }
 }
 
 function renderCompose(){
   const q=$("#composeSearch").value.trim().toLowerCase();
-  const rows=data.compositions.filter(x=>!q||`${x.result} ${x.materialA} ${x.materialB}`.toLowerCase().includes(q)).map(x=>`<tr><td>${x.no}</td><td><strong>${esc(x.result)}</strong></td><td>${esc(x.materialA)}</td><td>${esc(x.materialB)}</td><td>${esc(x.successRate)}</td><td>${esc(x.yield)}</td></tr>`);
+  const rows=data.compositions.filter(x=>!q||`${x.result} ${x.materialA} ${x.materialB}`.toLowerCase().includes(q)).map(x=>`<tr><td>${x.no}</td><td><strong>${itemLink(x.result)}</strong></td><td>${itemLink(x.materialA)}</td><td>${itemLink(x.materialB)}</td><td>${esc(x.successRate)}</td><td>${esc(x.yield)}</td></tr>`);
   renderTable("#composeTable",["No.","조합 결과","소재 A","소재 B","성공확률","생산수"],rows);
 }
 
@@ -931,14 +1029,15 @@ function dataKeysForPage(page){
   if(page==="source")return ["siteInfo"];
   if(page==="armor")return ["armors"];
   if(page==="armor-set")return ["armorSets"];
-  if(page==="weapon")return ["weapons"];
+  if(page==="weapon")return ["weapons","items"];
   if(page==="weapon-summary")return ["weaponSummary"];
+  if(page==="decoration")return ["decorations","items"];
   if(page==="melody")return ["melodies"];
   if(page==="meal")return ["meals"];
-  if(page==="monster")return monsterView==="detail"?["monsterDetails"]:["monsterRewards"];
-  if(page==="dragon")return dragonView==="exchange"?["dragonExchange"]:dragonView==="sell"?["dragonSell"]:["dragonIncrease"];
-  if(page==="item")return ["items"];
-  if(page==="compose")return ["compositions"];
+  if(page==="monster")return monsterView==="detail"?["monsterDetails"]:["monsterRewards","items"];
+  if(page==="dragon")return dragonView==="exchange"?["dragonExchange","items"]:dragonView==="sell"?["dragonSell","items"]:["dragonIncrease","items"];
+  if(page==="item")return ["items","itemReferences"];
+  if(page==="compose")return ["compositions","items"];
   if(page==="quest")return ["quests"];
   if(page==="data")return FULL_DATA_KEYS;
   return [];
@@ -948,7 +1047,7 @@ async function ensureFullData(keys){
   if(!missing.length)return false;
   const patch=await loadFullData(missing);
   Object.assign(data,patch);missing.forEach(k=>loadedFullKeys.add(k));
-  if(missing.some(k=>["skills","armors","armorSets","decorations","weapons"].includes(k)))rebuildIndexes();
+  if(missing.some(k=>["skills","armors","armorSets","decorations","weapons","items"].includes(k)))rebuildIndexes();
   if(missing.includes("meals"))populateMealIngredientFilter();
   if(missing.some(k=>["monsterSummary","monsterDetails","monsterRewards"].includes(k)))populateMonsterSelect();
   if(missing.includes("quests"))populateQuestLevels();

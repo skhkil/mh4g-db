@@ -1,0 +1,40 @@
+{
+  "version": "0.7.7-chat4-itemxref1",
+  "generated": "2026-09-15",
+  "itemCount": 524,
+  "indexedCount": 347,
+  "acquireReferences": 989,
+  "usageReferences": 5315,
+  "acquireByType": {
+    "compose": 157,
+    "dragonSell": 45,
+    "dragonIncrease": 36,
+    "monster": 706,
+    "quest": 45
+  },
+  "usageByType": {
+    "compose": 316,
+    "decoration": 92,
+    "weapon": 1753,
+    "armor": 3143,
+    "exchange": 11
+  },
+  "spotChecks": {
+    "길드티켓S": {
+      "acquire": 3,
+      "uses": 53
+    },
+    "뱀·개구리티켓": {
+      "acquire": 1,
+      "uses": 10
+    },
+    "회복약": {
+      "acquire": 1,
+      "uses": 2
+    },
+    "철광석": {
+      "acquire": 2,
+      "uses": 177
+    }
+  }
+}

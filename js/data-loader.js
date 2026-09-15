@@ -1,4 +1,4 @@
-const DATA_VERSION = "0.7.7-chat4-navfix1";
+const DATA_VERSION = "0.7.7-chat4-itemxref1";
 
 const FULL_FILES = {
   skills:"./data/skills.json",
@@ -9,6 +9,7 @@ const FULL_FILES = {
   weaponSummary:"./data/weapon_summary.json",
   melodies:"./data/melodies.json",
   items:"./data/items.json",
+  itemReferences:"./data/item_references.json",
   meals:"./data/meals.json",
   monsterSummary:"./data/monster_summary.json",
   monsterDetails:"./data/monster_details.json",
