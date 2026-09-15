@@ -1,4 +1,4 @@
-const DATA_VERSION = "0.7.7-chat4-monster9-elementbadge-pcfix";
+const DATA_VERSION = "0.7.7-chat4-monster10-part-elementbadges";
 
 const FULL_FILES = {
   skills:"./data/skills.json",

@@ -41,30 +41,24 @@
     "nameEn": "Seltas",
     "hitzoneHighlights": {
       "bestPart": "배",
-      "primaryElements": [
-        "thunder"
+      "topElementParts": [
+        "배",
+        "머리",
+        "뿔"
       ],
-      "primaryElement": "thunder",
-      "maxValues": {
-        "cut": 65.0,
-        "impact": 55.0,
-        "shot": 80.0,
-        "thunder": 35.0
+      "partBestElements": {
+        "뿔": "thunder",
+        "머리": "thunder",
+        "배": "thunder",
+        "발톱": "thunder",
+        "다리": "thunder"
       },
-      "bestParts": {
-        "cut": [
-          "배"
-        ],
-        "impact": [
-          "머리",
-          "배"
-        ],
-        "shot": [
-          "배"
-        ],
-        "thunder": [
-          "배"
-        ]
+      "partBestValues": {
+        "뿔": 20.0,
+        "머리": 25.0,
+        "배": 35.0,
+        "발톱": 15.0,
+        "다리": 15.0
       }
     }
   },
@@ -110,30 +104,24 @@
     "nameEn": "Desert Seltas",
     "hitzoneHighlights": {
       "bestPart": "배",
-      "primaryElements": [
-        "ice"
+      "topElementParts": [
+        "배",
+        "머리",
+        "뿔"
       ],
-      "primaryElement": "ice",
-      "maxValues": {
-        "cut": 60.0,
-        "impact": 50.0,
-        "shot": 75.0,
-        "ice": 25.0
+      "partBestElements": {
+        "뿔": "ice",
+        "머리": "ice",
+        "배": "ice",
+        "발톱": "ice",
+        "다리": "ice"
       },
-      "bestParts": {
-        "cut": [
-          "배"
-        ],
-        "impact": [
-          "머리",
-          "배"
-        ],
-        "shot": [
-          "배"
-        ],
-        "ice": [
-          "배"
-        ]
+      "partBestValues": {
+        "뿔": 15.0,
+        "머리": 20.0,
+        "배": 25.0,
+        "발톱": 10.0,
+        "다리": 10.0
       }
     }
   },
@@ -179,29 +167,24 @@
     "nameEn": "Seltas Queen",
     "hitzoneHighlights": {
       "bestPart": "머리",
-      "primaryElements": [
-        "fire"
+      "topElementParts": [
+        "머리",
+        "하판",
+        "턱"
       ],
-      "primaryElement": "fire",
-      "maxValues": {
-        "cut": 80.0,
-        "impact": 60.0,
-        "shot": 80.0,
-        "fire": 30.0
+      "partBestElements": {
+        "머리": "fire",
+        "상판": "fire",
+        "하판": "fire",
+        "턱": "ice",
+        "꼬리끝": "ice"
       },
-      "bestParts": {
-        "cut": [
-          "머리"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "fire": [
-          "머리"
-        ]
+      "partBestValues": {
+        "머리": 30.0,
+        "상판": 15.0,
+        "하판": 25.0,
+        "턱": 20.0,
+        "꼬리끝": 20.0
       }
     }
   },
@@ -247,29 +230,24 @@
     "nameEn": "Desert Seltas Queen",
     "hitzoneHighlights": {
       "bestPart": "머리",
-      "primaryElements": [
-        "ice"
+      "topElementParts": [
+        "머리",
+        "상판",
+        "턱"
       ],
-      "primaryElement": "ice",
-      "maxValues": {
-        "cut": 80.0,
-        "impact": 60.0,
-        "shot": 80.0,
-        "ice": 25.0
+      "partBestElements": {
+        "머리": "ice",
+        "상판": "ice",
+        "하판": "ice",
+        "턱": "ice",
+        "꼬리끝": "ice"
       },
-      "bestParts": {
-        "cut": [
-          "머리"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "ice": [
-          "머리"
-        ]
+      "partBestValues": {
+        "머리": 25.0,
+        "상판": 20.0,
+        "하판": 15.0,
+        "턱": 20.0,
+        "꼬리끝": 20.0
       }
     }
   },
@@ -315,30 +293,28 @@
     "nameEn": "Nerscylla",
     "hitzoneHighlights": {
       "bestPart": "독침",
-      "primaryElements": [
-        "fire"
+      "topElementParts": [
+        "독침",
+        "흉부",
+        "다리공통"
       ],
-      "primaryElement": "fire",
-      "maxValues": {
-        "cut": 65.0,
-        "impact": 65.0,
-        "shot": 65.0,
-        "fire": 25.0
+      "partBestElements": {
+        "머리": "fire",
+        "독침": "thunder",
+        "흉부": "fire",
+        "배": "thunder",
+        "앞발톱": "thunder",
+        "다리공통": "fire",
+        "다리끝": "fire"
       },
-      "bestParts": {
-        "cut": [
-          "배"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "독침"
-        ],
-        "fire": [
-          "독침",
-          "흉부"
-        ]
+      "partBestValues": {
+        "머리": 15.0,
+        "독침": 35.0,
+        "흉부": 25.0,
+        "배": 20.0,
+        "앞발톱": 10.0,
+        "다리공통": 20.0,
+        "다리끝": 10.0
       }
     }
   },
@@ -384,31 +360,28 @@
     "nameEn": "Shrouded Nerscylla",
     "hitzoneHighlights": {
       "bestPart": "독침",
-      "primaryElements": [
-        "fire"
+      "topElementParts": [
+        "독침",
+        "흉부",
+        "다리공통"
       ],
-      "primaryElement": "fire",
-      "maxValues": {
-        "cut": 65.0,
-        "impact": 65.0,
-        "shot": 45.0,
-        "fire": 15.0
+      "partBestElements": {
+        "머리": "ice",
+        "독침": "ice",
+        "흉부": "ice",
+        "배": "fire",
+        "앞발톱": "ice",
+        "다리공통": "ice",
+        "다리끝": "fire"
       },
-      "bestParts": {
-        "cut": [
-          "배"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "fire": [
-          "독침",
-          "흉부",
-          "배"
-        ]
+      "partBestValues": {
+        "머리": 15.0,
+        "독침": 25.0,
+        "흉부": 25.0,
+        "배": 15.0,
+        "앞발톱": 5.0,
+        "다리공통": 20.0,
+        "다리끝": 10.0
       }
     }
   },
@@ -454,30 +427,28 @@
     "nameEn": "Cephadrome",
     "hitzoneHighlights": {
       "bestPart": "머리",
-      "primaryElements": [
-        "ice"
+      "topElementParts": [
+        "머리",
+        "배",
+        "꼬리"
       ],
-      "primaryElement": "ice",
-      "maxValues": {
-        "cut": 65.0,
-        "impact": 60.0,
-        "shot": 80.0,
-        "ice": 30.0
+      "partBestElements": {
+        "머리": "ice",
+        "목": "ice",
+        "등/지느러미": "thunder",
+        "배": "ice",
+        "날개": "ice",
+        "다리": "ice",
+        "꼬리": "ice"
       },
-      "bestParts": {
-        "cut": [
-          "목"
-        ],
-        "impact": [
-          "목"
-        ],
-        "shot": [
-          "목",
-          "등/지느러미"
-        ],
-        "ice": [
-          "머리"
-        ]
+      "partBestValues": {
+        "머리": 30.0,
+        "목": 15.0,
+        "등/지느러미": 20.0,
+        "배": 20.0,
+        "날개": 15.0,
+        "다리": 15.0,
+        "꼬리": 20.0
       }
     }
   },
@@ -523,30 +494,17 @@
     "nameEn": "Great Jaggi",
     "hitzoneHighlights": {
       "bestPart": "머리",
-      "primaryElements": [
-        "fire"
+      "topElementParts": [
+        "머리",
+        "몸통"
       ],
-      "primaryElement": "fire",
-      "maxValues": {
-        "cut": 75.0,
-        "impact": 75.0,
-        "shot": 60.0,
-        "fire": 30.0
+      "partBestElements": {
+        "머리": "fire",
+        "몸통": "fire"
       },
-      "bestParts": {
-        "cut": [
-          "머리"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "fire": [
-          "머리",
-          "몸통"
-        ]
+      "partBestValues": {
+        "머리": 30.0,
+        "몸통": 30.0
       }
     }
   },
@@ -592,44 +550,17 @@
     "nameEn": "Velocidrome",
     "hitzoneHighlights": {
       "bestPart": "머리",
-      "primaryElements": [
-        "fire",
-        "water",
-        "thunder",
-        "ice"
+      "topElementParts": [
+        "머리",
+        "몸통"
       ],
-      "primaryElement": "ice",
-      "maxValues": {
-        "cut": 85.0,
-        "impact": 85.0,
-        "shot": 80.0,
-        "fire": 30.0,
-        "water": 30.0,
-        "thunder": 30.0,
-        "ice": 40.0
+      "partBestElements": {
+        "머리": "ice",
+        "몸통": "ice"
       },
-      "bestParts": {
-        "cut": [
-          "머리"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "fire": [
-          "머리"
-        ],
-        "water": [
-          "머리"
-        ],
-        "thunder": [
-          "머리"
-        ],
-        "ice": [
-          "머리"
-        ]
+      "partBestValues": {
+        "머리": 40.0,
+        "몸통": 30.0
       }
     }
   },
@@ -675,34 +606,17 @@
     "nameEn": "Gendrome",
     "hitzoneHighlights": {
       "bestPart": "머리",
-      "primaryElements": [
-        "thunder",
-        "ice"
+      "topElementParts": [
+        "머리",
+        "몸통"
       ],
-      "primaryElement": "ice",
-      "maxValues": {
-        "cut": 75.0,
-        "impact": 80.0,
-        "shot": 70.0,
-        "thunder": 30.0,
-        "ice": 40.0
+      "partBestElements": {
+        "머리": "ice",
+        "몸통": "ice"
       },
-      "bestParts": {
-        "cut": [
-          "머리"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "thunder": [
-          "머리"
-        ],
-        "ice": [
-          "머리"
-        ]
+      "partBestValues": {
+        "머리": 40.0,
+        "몸통": 30.0
       }
     }
   },
@@ -748,34 +662,17 @@
     "nameEn": "Iodrome",
     "hitzoneHighlights": {
       "bestPart": "머리",
-      "primaryElements": [
-        "water",
-        "thunder"
+      "topElementParts": [
+        "머리",
+        "몸통"
       ],
-      "primaryElement": "water",
-      "maxValues": {
-        "cut": 56.0,
-        "impact": 56.0,
-        "shot": 60.0,
-        "water": 30.0,
-        "thunder": 30.0
+      "partBestElements": {
+        "머리": "water",
+        "몸통": "water"
       },
-      "bestParts": {
-        "cut": [
-          "몸통"
-        ],
-        "impact": [
-          "몸통"
-        ],
-        "shot": [
-          "몸통"
-        ],
-        "water": [
-          "머리"
-        ],
-        "thunder": [
-          "머리"
-        ]
+      "partBestValues": {
+        "머리": 30.0,
+        "몸통": 25.0
       }
     }
   },
@@ -821,34 +718,28 @@
     "nameEn": "Yian Kut-Ku",
     "hitzoneHighlights": {
       "bestPart": "목",
-      "primaryElements": [
-        "thunder",
-        "ice"
+      "topElementParts": [
+        "목",
+        "머리",
+        "날개"
       ],
-      "primaryElement": "ice",
-      "maxValues": {
-        "cut": 80.0,
-        "impact": 75.0,
-        "shot": 80.0,
-        "thunder": 30.0,
-        "ice": 40.0
+      "partBestElements": {
+        "머리": "ice",
+        "목": "ice",
+        "배": "ice",
+        "등": "ice",
+        "날개": "thunder",
+        "다리": "thunder",
+        "꼬리": "ice"
       },
-      "bestParts": {
-        "cut": [
-          "날개"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "thunder": [
-          "목"
-        ],
-        "ice": [
-          "목"
-        ]
+      "partBestValues": {
+        "머리": 30.0,
+        "목": 40.0,
+        "배": 20.0,
+        "등": 20.0,
+        "날개": 25.0,
+        "다리": 5.0,
+        "꼬리": 20.0
       }
     }
   },
@@ -894,34 +785,28 @@
     "nameEn": "Blue Yian Kut-Ku",
     "hitzoneHighlights": {
       "bestPart": "목",
-      "primaryElements": [
-        "water",
-        "thunder"
+      "topElementParts": [
+        "목",
+        "머리",
+        "배"
       ],
-      "primaryElement": "water",
-      "maxValues": {
-        "cut": 70.0,
-        "impact": 70.0,
-        "shot": 70.0,
-        "water": 35.0,
-        "thunder": 30.0
+      "partBestElements": {
+        "머리": "water",
+        "목": "water",
+        "배": "water",
+        "등": "water",
+        "날개": "thunder",
+        "다리": "water",
+        "꼬리": "water"
       },
-      "bestParts": {
-        "cut": [
-          "배"
-        ],
-        "impact": [
-          "배"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "water": [
-          "목"
-        ],
-        "thunder": [
-          "목"
-        ]
+      "partBestValues": {
+        "머리": 30.0,
+        "목": 35.0,
+        "배": 20.0,
+        "등": 20.0,
+        "날개": 20.0,
+        "다리": 5.0,
+        "꼬리": 20.0
       }
     }
   },
@@ -967,29 +852,28 @@
     "nameEn": "Gypceros",
     "hitzoneHighlights": {
       "bestPart": "머리",
-      "primaryElements": [
-        "fire"
+      "topElementParts": [
+        "머리",
+        "목",
+        "배"
       ],
-      "primaryElement": "fire",
-      "maxValues": {
-        "cut": 70.0,
-        "impact": 65.0,
-        "shot": 80.0,
-        "fire": 30.0
+      "partBestElements": {
+        "머리": "fire",
+        "목": "fire",
+        "배": "fire",
+        "등": "fire",
+        "날개": "fire",
+        "다리": "fire",
+        "꼬리": "fire"
       },
-      "bestParts": {
-        "cut": [
-          "꼬리"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "꼬리"
-        ],
-        "fire": [
-          "머리"
-        ]
+      "partBestValues": {
+        "머리": 30.0,
+        "목": 20.0,
+        "배": 20.0,
+        "등": 10.0,
+        "날개": 20.0,
+        "다리": 10.0,
+        "꼬리": 20.0
       }
     }
   },
@@ -1035,29 +919,28 @@
     "nameEn": "Purple Gypceros",
     "hitzoneHighlights": {
       "bestPart": "머리",
-      "primaryElements": [
-        "fire"
+      "topElementParts": [
+        "머리",
+        "목",
+        "배"
       ],
-      "primaryElement": "fire",
-      "maxValues": {
-        "cut": 70.0,
-        "impact": 65.0,
-        "shot": 80.0,
-        "fire": 30.0
+      "partBestElements": {
+        "머리": "fire",
+        "목": "fire",
+        "배": "fire",
+        "등": "fire",
+        "날개": "fire",
+        "다리": "fire",
+        "꼬리": "fire"
       },
-      "bestParts": {
-        "cut": [
-          "꼬리"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "꼬리"
-        ],
-        "fire": [
-          "머리"
-        ]
+      "partBestValues": {
+        "머리": 30.0,
+        "목": 20.0,
+        "배": 20.0,
+        "등": 10.0,
+        "날개": 20.0,
+        "다리": 10.0,
+        "꼬리": 20.0
       }
     }
   },
@@ -1103,29 +986,28 @@
     "nameEn": "Yian Garuga",
     "hitzoneHighlights": {
       "bestPart": "등",
-      "primaryElements": [
-        "water"
+      "topElementParts": [
+        "등",
+        "머리",
+        "배"
       ],
-      "primaryElement": "water",
-      "maxValues": {
-        "cut": 65.0,
-        "impact": 60.0,
-        "shot": 50.0,
-        "water": 50.0
+      "partBestElements": {
+        "머리": "water",
+        "목": "water",
+        "배": "water",
+        "등": "water",
+        "날개": "water",
+        "다리": "water",
+        "꼬리": "water"
       },
-      "bestParts": {
-        "cut": [
-          "머리"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "water": [
-          "등"
-        ]
+      "partBestValues": {
+        "머리": 20.0,
+        "목": 15.0,
+        "배": 20.0,
+        "등": 50.0,
+        "날개": 15.0,
+        "다리": 10.0,
+        "꼬리": 15.0
       }
     }
   },
@@ -1170,37 +1052,31 @@
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
     "nameEn": "Daimyo Hermitaur",
     "hitzoneHighlights": {
-      "bestPart": "집게다리",
-      "primaryElements": [
-        "fire",
-        "thunder"
+      "bestPart": "머리",
+      "topElementParts": [
+        "머리",
+        "집게다리",
+        "등껍질(파괴)"
       ],
-      "primaryElement": "fire",
-      "maxValues": {
-        "cut": 50.0,
-        "impact": 60.0,
-        "shot": 40.0,
-        "fire": 35.0,
-        "thunder": 35.0
+      "partBestElements": {
+        "머리": "thunder",
+        "몸통": "thunder",
+        "등껍질": "thunder",
+        "다리": "fire",
+        "집게다리": "fire",
+        "집게팔": "fire",
+        "등껍질(파괴)": "fire",
+        "집게다리(파괴)": "fire"
       },
-      "bestParts": {
-        "cut": [
-          "머리"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "fire": [
-          "집게다리",
-          "등껍질(파괴)",
-          "집게다리(파괴)"
-        ],
-        "thunder": [
-          "머리"
-        ]
+      "partBestValues": {
+        "머리": 35.0,
+        "몸통": 20.0,
+        "등껍질": 25.0,
+        "다리": 15.0,
+        "집게다리": 35.0,
+        "집게팔": 15.0,
+        "등껍질(파괴)": 35.0,
+        "집게다리(파괴)": 35.0
       }
     }
   },
@@ -1246,32 +1122,30 @@
     "nameEn": "Plum Daimyo Hermitaur",
     "hitzoneHighlights": {
       "bestPart": "머리",
-      "primaryElements": [
-        "ice"
+      "topElementParts": [
+        "머리",
+        "앞다리",
+        "뒷다리"
       ],
-      "primaryElement": "ice",
-      "maxValues": {
-        "cut": 50.0,
-        "impact": 60.0,
-        "shot": 40.0,
-        "ice": 35.0
+      "partBestElements": {
+        "머리": "ice",
+        "목": "ice",
+        "등": "ice",
+        "배": "ice",
+        "앞다리": "ice",
+        "날개": "ice",
+        "뒷다리": "ice",
+        "꼬리": "ice"
       },
-      "bestParts": {
-        "cut": [
-          "머리"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "ice": [
-          "머리",
-          "앞다리",
-          "뒷다리",
-          "꼬리"
-        ]
+      "partBestValues": {
+        "머리": 35.0,
+        "목": 20.0,
+        "등": 25.0,
+        "배": 15.0,
+        "앞다리": 35.0,
+        "날개": 15.0,
+        "뒷다리": 35.0,
+        "꼬리": 35.0
       }
     }
   },
@@ -1317,29 +1191,26 @@
     "nameEn": "Kecha Wacha",
     "hitzoneHighlights": {
       "bestPart": "머리",
-      "primaryElements": [
-        "fire"
+      "topElementParts": [
+        "머리",
+        "앞발톱",
+        "몸통"
       ],
-      "primaryElement": "fire",
-      "maxValues": {
-        "cut": 70.0,
-        "impact": 65.0,
-        "shot": 60.0,
-        "fire": 30.0
+      "partBestElements": {
+        "머리": "fire",
+        "몸통": "fire",
+        "앞발톱": "fire",
+        "앞다리": "fire",
+        "뒷다리": "fire",
+        "꼬리": "fire"
       },
-      "bestParts": {
-        "cut": [
-          "머리"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "fire": [
-          "머리"
-        ]
+      "partBestValues": {
+        "머리": 30.0,
+        "몸통": 15.0,
+        "앞발톱": 20.0,
+        "앞다리": 10.0,
+        "뒷다리": 10.0,
+        "꼬리": 15.0
       }
     }
   },
@@ -1385,29 +1256,24 @@
     "nameEn": "Ash Kecha Wacha",
     "hitzoneHighlights": {
       "bestPart": "머리",
-      "primaryElements": [
-        "water"
+      "topElementParts": [
+        "머리",
+        "몸통",
+        "꼬리"
       ],
-      "primaryElement": "water",
-      "maxValues": {
-        "cut": 70.0,
-        "impact": 65.0,
-        "shot": 60.0,
-        "water": 30.0
+      "partBestElements": {
+        "머리": "water",
+        "몸통": "water",
+        "앞다리": "water",
+        "뒷다리": "water",
+        "꼬리": "water"
       },
-      "bestParts": {
-        "cut": [
-          "머리"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "water": [
-          "머리"
-        ]
+      "partBestValues": {
+        "머리": 30.0,
+        "몸통": 15.0,
+        "앞다리": 10.0,
+        "뒷다리": 10.0,
+        "꼬리": 15.0
       }
     }
   },
@@ -1453,30 +1319,26 @@
     "nameEn": "Lagombi",
     "hitzoneHighlights": {
       "bestPart": "머리",
-      "primaryElements": [
-        "fire"
+      "topElementParts": [
+        "머리",
+        "상반신",
+        "등(꼬리)"
       ],
-      "primaryElement": "fire",
-      "maxValues": {
-        "cut": 63.0,
-        "impact": 63.0,
-        "shot": 50.0,
-        "fire": 30.0
+      "partBestElements": {
+        "머리": "fire",
+        "상반신": "fire",
+        "배": "fire",
+        "등(꼬리)": "fire",
+        "앞다리": "fire",
+        "뒷다리": "fire"
       },
-      "bestParts": {
-        "cut": [
-          "등(꼬리)"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "fire": [
-          "머리",
-          "상반신"
-        ]
+      "partBestValues": {
+        "머리": 30.0,
+        "상반신": 30.0,
+        "배": 10.0,
+        "등(꼬리)": 20.0,
+        "앞다리": 10.0,
+        "뒷다리": 10.0
       }
     }
   },
@@ -1522,31 +1384,20 @@
     "nameEn": "Congalala",
     "hitzoneHighlights": {
       "bestPart": "머리",
-      "primaryElements": [
-        "fire"
+      "topElementParts": [
+        "머리",
+        "앞다리",
+        "뒷다리"
       ],
-      "primaryElement": "fire",
-      "maxValues": {
-        "cut": 65.0,
-        "impact": 75.0,
-        "shot": 60.0,
-        "fire": 25.0
+      "partBestElements": {
+        "머리": "fire",
+        "앞다리": "fire",
+        "뒷다리": "fire"
       },
-      "bestParts": {
-        "cut": [
-          "머리",
-          "앞다리",
-          "뒷다리"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "fire": [
-          "머리"
-        ]
+      "partBestValues": {
+        "머리": 25.0,
+        "앞다리": 15.0,
+        "뒷다리": 15.0
       }
     }
   },
@@ -1592,32 +1443,20 @@
     "nameEn": "Emerald Congalala",
     "hitzoneHighlights": {
       "bestPart": "머리",
-      "primaryElements": [
-        "ice"
+      "topElementParts": [
+        "머리",
+        "앞다리",
+        "뒷다리"
       ],
-      "primaryElement": "ice",
-      "maxValues": {
-        "cut": 45.0,
-        "impact": 65.0,
-        "shot": 60.0,
-        "ice": 15.0
+      "partBestElements": {
+        "머리": "ice",
+        "앞다리": "ice",
+        "뒷다리": "ice"
       },
-      "bestParts": {
-        "cut": [
-          "머리",
-          "뒷다리"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "ice": [
-          "머리",
-          "앞다리",
-          "뒷다리"
-        ]
+      "partBestValues": {
+        "머리": 15.0,
+        "앞다리": 15.0,
+        "뒷다리": 15.0
       }
     }
   },
@@ -1663,29 +1502,24 @@
     "nameEn": "Rajang",
     "hitzoneHighlights": {
       "bestPart": "머리",
-      "primaryElements": [
-        "ice"
+      "topElementParts": [
+        "머리",
+        "꼬리",
+        "몸통"
       ],
-      "primaryElement": "ice",
-      "maxValues": {
-        "cut": 60.0,
-        "impact": 60.0,
-        "shot": 60.0,
-        "ice": 30.0
+      "partBestElements": {
+        "머리": "ice",
+        "몸통": "ice",
+        "앞다리": "ice",
+        "뒷다리": "ice",
+        "꼬리": "ice"
       },
-      "bestParts": {
-        "cut": [
-          "머리"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "ice": [
-          "머리"
-        ]
+      "partBestValues": {
+        "머리": 30.0,
+        "몸통": 15.0,
+        "앞다리": 15.0,
+        "뒷다리": 15.0,
+        "꼬리": 20.0
       }
     }
   },
@@ -1731,29 +1565,24 @@
     "nameEn": "Furious Rajang",
     "hitzoneHighlights": {
       "bestPart": "머리",
-      "primaryElements": [
-        "ice"
+      "topElementParts": [
+        "머리",
+        "꼬리",
+        "몸통"
       ],
-      "primaryElement": "ice",
-      "maxValues": {
-        "cut": 60.0,
-        "impact": 60.0,
-        "shot": 60.0,
-        "ice": 30.0
+      "partBestElements": {
+        "머리": "ice",
+        "몸통": "ice",
+        "앞다리": "ice",
+        "뒷다리": "ice",
+        "꼬리": "ice"
       },
-      "bestParts": {
-        "cut": [
-          "머리"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "ice": [
-          "머리"
-        ]
+      "partBestValues": {
+        "머리": 30.0,
+        "몸통": 15.0,
+        "앞다리": 15.0,
+        "뒷다리": 15.0,
+        "꼬리": 20.0
       }
     }
   },
@@ -1799,29 +1628,24 @@
     "nameEn": "Tetsucabra",
     "hitzoneHighlights": {
       "bestPart": "머리",
-      "primaryElements": [
-        "water"
+      "topElementParts": [
+        "머리",
+        "이빨",
+        "몸통"
       ],
-      "primaryElement": "water",
-      "maxValues": {
-        "cut": 56.0,
-        "impact": 56.0,
-        "shot": 60.0,
-        "water": 30.0
+      "partBestElements": {
+        "머리": "water",
+        "이빨": "water",
+        "몸통": "water",
+        "앞다리": "water",
+        "뒷다리": "water"
       },
-      "bestParts": {
-        "cut": [
-          "머리"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "water": [
-          "머리"
-        ]
+      "partBestValues": {
+        "머리": 30.0,
+        "이빨": 25.0,
+        "몸통": 20.0,
+        "앞다리": 20.0,
+        "뒷다리": 15.0
       }
     }
   },
@@ -1867,30 +1691,24 @@
     "nameEn": "Berserk Tetsucabra",
     "hitzoneHighlights": {
       "bestPart": "머리",
-      "primaryElements": [
-        "ice"
+      "topElementParts": [
+        "머리",
+        "이빨",
+        "앞다리"
       ],
-      "primaryElement": "ice",
-      "maxValues": {
-        "cut": 52.0,
-        "impact": 52.0,
-        "shot": 55.0,
-        "ice": 30.0
+      "partBestElements": {
+        "머리": "ice",
+        "이빨": "ice",
+        "몸통": "ice",
+        "앞다리": "ice",
+        "뒷다리": "ice"
       },
-      "bestParts": {
-        "cut": [
-          "머리"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "ice": [
-          "머리",
-          "이빨"
-        ]
+      "partBestValues": {
+        "머리": 30.0,
+        "이빨": 30.0,
+        "몸통": 15.0,
+        "앞다리": 20.0,
+        "뒷다리": 20.0
       }
     }
   },
@@ -1936,34 +1754,28 @@
     "nameEn": "Zamtrios",
     "hitzoneHighlights": {
       "bestPart": "팽창시 배",
-      "primaryElements": [
-        "fire",
-        "thunder"
+      "topElementParts": [
+        "팽창시 배",
+        "머리",
+        "지느러미"
       ],
-      "primaryElement": "fire",
-      "maxValues": {
-        "cut": 75.0,
-        "impact": 66.0,
-        "shot": 60.0,
-        "fire": 30.0,
-        "thunder": 30.0
+      "partBestElements": {
+        "머리": "fire",
+        "몸통": "fire",
+        "팽창시 배": "fire",
+        "지느러미": "fire",
+        "앞다리": "fire",
+        "뒷다리": "fire",
+        "꼬리": "fire"
       },
-      "bestParts": {
-        "cut": [
-          "팽창시 배"
-        ],
-        "impact": [
-          "팽창시 배"
-        ],
-        "shot": [
-          "팽창시 배"
-        ],
-        "fire": [
-          "팽창시 배"
-        ],
-        "thunder": [
-          "팽창시 배"
-        ]
+      "partBestValues": {
+        "머리": 20.0,
+        "몸통": 15.0,
+        "팽창시 배": 30.0,
+        "지느러미": 20.0,
+        "앞다리": 20.0,
+        "뒷다리": 15.0,
+        "꼬리": 20.0
       }
     }
   },
@@ -2009,29 +1821,28 @@
     "nameEn": "Tigerstripe Zamtrios",
     "hitzoneHighlights": {
       "bestPart": "팽창시 배",
-      "primaryElements": [
-        "ice"
+      "topElementParts": [
+        "팽창시 배",
+        "머리",
+        "몸통"
       ],
-      "primaryElement": "ice",
-      "maxValues": {
-        "cut": 65.0,
-        "impact": 58.0,
-        "shot": 55.0,
-        "ice": 30.0
+      "partBestElements": {
+        "머리": "ice",
+        "몸통": "ice",
+        "팽창시 배": "ice",
+        "지느러미": "ice",
+        "앞다리": "ice",
+        "뒷다리": "ice",
+        "꼬리": "ice"
       },
-      "bestParts": {
-        "cut": [
-          "팽창시 배"
-        ],
-        "impact": [
-          "팽창시 배"
-        ],
-        "shot": [
-          "팽창시 배"
-        ],
-        "ice": [
-          "팽창시 배"
-        ]
+      "partBestValues": {
+        "머리": 25.0,
+        "몸통": 20.0,
+        "팽창시 배": 30.0,
+        "지느러미": 20.0,
+        "앞다리": 15.0,
+        "뒷다리": 15.0,
+        "꼬리": 20.0
       }
     }
   },
@@ -2077,29 +1888,28 @@
     "nameEn": "Najarala",
     "hitzoneHighlights": {
       "bestPart": "앞다리",
-      "primaryElements": [
-        "ice"
+      "topElementParts": [
+        "앞다리",
+        "등",
+        "몸통"
       ],
-      "primaryElement": "ice",
-      "maxValues": {
-        "cut": 85.0,
-        "impact": 80.0,
-        "shot": 75.0,
-        "ice": 35.0
+      "partBestElements": {
+        "머리": "ice",
+        "목": "ice",
+        "몸통": "ice",
+        "등": "ice",
+        "앞다리": "ice",
+        "뒷다리": "ice",
+        "꼬리": "ice"
       },
-      "bestParts": {
-        "cut": [
-          "머리"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "ice": [
-          "앞다리"
-        ]
+      "partBestValues": {
+        "머리": 15.0,
+        "목": 15.0,
+        "몸통": 25.0,
+        "등": 30.0,
+        "앞다리": 35.0,
+        "뒷다리": 15.0,
+        "꼬리": 10.0
       }
     }
   },
@@ -2145,30 +1955,28 @@
     "nameEn": "Tidal Najarala",
     "hitzoneHighlights": {
       "bestPart": "등",
-      "primaryElements": [
-        "fire"
+      "topElementParts": [
+        "등",
+        "몸통",
+        "앞다리"
       ],
-      "primaryElement": "fire",
-      "maxValues": {
-        "cut": 55.0,
-        "impact": 55.0,
-        "shot": 60.0,
-        "fire": 35.0
+      "partBestElements": {
+        "머리": "fire",
+        "목": "fire",
+        "몸통": "fire",
+        "등": "fire",
+        "앞다리": "fire",
+        "뒷다리": "thunder",
+        "꼬리": "fire"
       },
-      "bestParts": {
-        "cut": [
-          "등",
-          "앞다리"
-        ],
-        "impact": [
-          "등"
-        ],
-        "shot": [
-          "앞다리"
-        ],
-        "fire": [
-          "등"
-        ]
+      "partBestValues": {
+        "머리": 10.0,
+        "목": 10.0,
+        "몸통": 25.0,
+        "등": 35.0,
+        "앞다리": 15.0,
+        "뒷다리": 15.0,
+        "꼬리": 10.0
       }
     }
   },
@@ -2214,29 +2022,28 @@
     "nameEn": "Brachydios",
     "hitzoneHighlights": {
       "bestPart": "뿔",
-      "primaryElements": [
-        "water"
+      "topElementParts": [
+        "뿔",
+        "머리",
+        "몸통"
       ],
-      "primaryElement": "water",
-      "maxValues": {
-        "cut": 70.0,
-        "impact": 65.0,
-        "shot": 50.0,
-        "water": 25.0
+      "partBestElements": {
+        "뿔": "water",
+        "머리": "water",
+        "몸통": "water",
+        "앞다리": "water",
+        "뒷다리": "water",
+        "꼬리": "water",
+        "꼬리끝": "water"
       },
-      "bestParts": {
-        "cut": [
-          "머리"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "water": [
-          "뿔"
-        ]
+      "partBestValues": {
+        "뿔": 25.0,
+        "머리": 20.0,
+        "몸통": 15.0,
+        "앞다리": 10.0,
+        "뒷다리": 10.0,
+        "꼬리": 15.0,
+        "꼬리끝": 5.0
       }
     }
   },
@@ -2282,21 +2089,9 @@
     "nameEn": "Raging Brachydios",
     "hitzoneHighlights": {
       "bestPart": "",
-      "primaryElements": [
-        "ice"
-      ],
-      "maxValues": {
-        "cut": 0,
-        "impact": 0,
-        "shot": 0,
-        "ice": 0
-      },
-      "bestParts": {
-        "cut": [],
-        "impact": [],
-        "shot": [],
-        "ice": []
-      }
+      "topElementParts": [],
+      "partBestElements": {},
+      "partBestValues": {}
     }
   },
   {
@@ -2341,34 +2136,17 @@
     "nameEn": "Deviljho",
     "hitzoneHighlights": {
       "bestPart": "몸통",
-      "primaryElements": [
-        "thunder",
-        "dragon"
+      "topElementParts": [
+        "몸통",
+        "꼬리"
       ],
-      "primaryElement": "thunder",
-      "maxValues": {
-        "cut": 38.0,
-        "impact": 35.0,
-        "shot": 30.0,
-        "thunder": 25.0,
-        "dragon": 25.0
+      "partBestElements": {
+        "몸통": "thunder",
+        "꼬리": "thunder"
       },
-      "bestParts": {
-        "cut": [
-          "꼬리"
-        ],
-        "impact": [
-          "꼬리"
-        ],
-        "shot": [
-          "꼬리"
-        ],
-        "thunder": [
-          "몸통"
-        ],
-        "dragon": [
-          "몸통"
-        ]
+      "partBestValues": {
+        "몸통": 25.0,
+        "꼬리": 20.0
       }
     }
   },
@@ -2414,29 +2192,24 @@
     "nameEn": "Savage Deviljho",
     "hitzoneHighlights": {
       "bestPart": "꼬리",
-      "primaryElements": [
-        "thunder"
+      "topElementParts": [
+        "꼬리",
+        "등",
+        "뒷다리"
       ],
-      "primaryElement": "thunder",
-      "maxValues": {
-        "cut": 69.0,
-        "impact": 69.0,
-        "shot": 55.0,
-        "thunder": 35.0
+      "partBestElements": {
+        "가슴": "thunder",
+        "등": "thunder",
+        "앞다리": "thunder",
+        "뒷다리": "thunder",
+        "꼬리": "thunder"
       },
-      "bestParts": {
-        "cut": [
-          "가슴"
-        ],
-        "impact": [
-          "가슴"
-        ],
-        "shot": [
-          "가슴"
-        ],
-        "thunder": [
-          "꼬리"
-        ]
+      "partBestValues": {
+        "가슴": 25.0,
+        "등": 30.0,
+        "앞다리": 25.0,
+        "뒷다리": 30.0,
+        "꼬리": 35.0
       }
     }
   },
@@ -2482,29 +2255,26 @@
     "nameEn": "Khezu",
     "hitzoneHighlights": {
       "bestPart": "머리",
-      "primaryElements": [
-        "fire"
+      "topElementParts": [
+        "머리",
+        "목",
+        "몸통"
       ],
-      "primaryElement": "fire",
-      "maxValues": {
-        "cut": 75.0,
-        "impact": 70.0,
-        "shot": 80.0,
-        "fire": 30.0
+      "partBestElements": {
+        "머리": "fire",
+        "목": "fire",
+        "몸통": "fire",
+        "날개": "fire",
+        "다리": "fire",
+        "꼬리": "fire"
       },
-      "bestParts": {
-        "cut": [
-          "목"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "fire": [
-          "머리"
-        ]
+      "partBestValues": {
+        "머리": 30.0,
+        "목": 25.0,
+        "몸통": 25.0,
+        "날개": 20.0,
+        "다리": 15.0,
+        "꼬리": 20.0
       }
     }
   },
@@ -2550,29 +2320,26 @@
     "nameEn": "Red Khezu",
     "hitzoneHighlights": {
       "bestPart": "머리",
-      "primaryElements": [
-        "water"
+      "topElementParts": [
+        "머리",
+        "목",
+        "몸통"
       ],
-      "primaryElement": "water",
-      "maxValues": {
-        "cut": 75.0,
-        "impact": 70.0,
-        "shot": 70.0,
-        "water": 30.0
+      "partBestElements": {
+        "머리": "water",
+        "목": "water",
+        "몸통": "water",
+        "날개": "water",
+        "다리": "water",
+        "꼬리": "water"
       },
-      "bestParts": {
-        "cut": [
-          "목"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "water": [
-          "머리"
-        ]
+      "partBestValues": {
+        "머리": 30.0,
+        "목": 25.0,
+        "몸통": 25.0,
+        "날개": 20.0,
+        "다리": 15.0,
+        "꼬리": 20.0
       }
     }
   },
@@ -2618,42 +2385,28 @@
     "nameEn": "Basarios",
     "hitzoneHighlights": {
       "bestPart": "머리",
-      "primaryElements": [
-        "water",
-        "dragon"
+      "topElementParts": [
+        "머리",
+        "목아래",
+        "등"
       ],
-      "primaryElement": "dragon",
-      "maxValues": {
-        "cut": 28.0,
-        "impact": 26.0,
-        "shot": 30.0,
-        "water": 15.0,
-        "dragon": 18.0
+      "partBestElements": {
+        "머리": "dragon",
+        "목아래": "dragon",
+        "등": "dragon",
+        "날개": "dragon",
+        "다리": "water",
+        "꼬리아래": "dragon",
+        "꼬리끝": "dragon"
       },
-      "bestParts": {
-        "cut": [
-          "꼬리끝"
-        ],
-        "impact": [
-          "다리"
-        ],
-        "shot": [
-          "다리"
-        ],
-        "water": [
-          "머리",
-          "목아래",
-          "등",
-          "날개",
-          "꼬리아래"
-        ],
-        "dragon": [
-          "머리",
-          "목아래",
-          "등",
-          "날개",
-          "꼬리아래"
-        ]
+      "partBestValues": {
+        "머리": 18.0,
+        "목아래": 18.0,
+        "등": 18.0,
+        "날개": 18.0,
+        "다리": 10.0,
+        "꼬리아래": 18.0,
+        "꼬리끝": 15.0
       }
     }
   },
@@ -2699,42 +2452,28 @@
     "nameEn": "Ruby Basarios",
     "hitzoneHighlights": {
       "bestPart": "머리",
-      "primaryElements": [
-        "water",
-        "ice"
+      "topElementParts": [
+        "머리",
+        "목아래",
+        "등"
       ],
-      "primaryElement": "ice",
-      "maxValues": {
-        "cut": 28.0,
-        "impact": 26.0,
-        "shot": 30.0,
-        "water": 13.0,
-        "ice": 18.0
+      "partBestElements": {
+        "머리": "ice",
+        "목아래": "ice",
+        "등": "ice",
+        "날개": "ice",
+        "다리": "ice",
+        "꼬리아래": "ice",
+        "꼬리끝": "ice"
       },
-      "bestParts": {
-        "cut": [
-          "꼬리끝"
-        ],
-        "impact": [
-          "다리"
-        ],
-        "shot": [
-          "다리"
-        ],
-        "water": [
-          "머리",
-          "목아래",
-          "등",
-          "날개",
-          "꼬리아래"
-        ],
-        "ice": [
-          "머리",
-          "목아래",
-          "등",
-          "날개",
-          "꼬리아래"
-        ]
+      "partBestValues": {
+        "머리": 18.0,
+        "목아래": 18.0,
+        "등": 18.0,
+        "날개": 18.0,
+        "다리": 13.0,
+        "꼬리아래": 18.0,
+        "꼬리끝": 15.0
       }
     }
   },
@@ -2780,29 +2519,26 @@
     "nameEn": "Gravios",
     "hitzoneHighlights": {
       "bestPart": "등",
-      "primaryElements": [
-        "water"
+      "topElementParts": [
+        "등",
+        "목",
+        "다리"
       ],
-      "primaryElement": "water",
-      "maxValues": {
-        "cut": 45.0,
-        "impact": 45.0,
-        "shot": 40.0,
-        "water": 35.0
+      "partBestElements": {
+        "머리": "dragon",
+        "목": "water",
+        "등": "water",
+        "날개": "water",
+        "다리": "water",
+        "꼬리": "water"
       },
-      "bestParts": {
-        "cut": [
-          "등"
-        ],
-        "impact": [
-          "등"
-        ],
-        "shot": [
-          "등"
-        ],
-        "water": [
-          "등"
-        ]
+      "partBestValues": {
+        "머리": 30.0,
+        "목": 30.0,
+        "등": 35.0,
+        "날개": 20.0,
+        "다리": 30.0,
+        "꼬리": 30.0
       }
     }
   },
@@ -2848,33 +2584,24 @@
     "nameEn": "Black Gravios",
     "hitzoneHighlights": {
       "bestPart": "목",
-      "primaryElements": [
-        "water"
+      "topElementParts": [
+        "목",
+        "꼬리",
+        "다리"
       ],
-      "primaryElement": "water",
-      "maxValues": {
-        "cut": 26.0,
-        "impact": 30.0,
-        "shot": 26.0,
-        "water": 30.0
+      "partBestElements": {
+        "머리": "water",
+        "목": "water",
+        "날개": "water",
+        "다리": "water",
+        "꼬리": "water"
       },
-      "bestParts": {
-        "cut": [
-          "머리",
-          "날개"
-        ],
-        "impact": [
-          "목",
-          "다리",
-          "꼬리"
-        ],
-        "shot": [
-          "날개"
-        ],
-        "water": [
-          "목",
-          "꼬리"
-        ]
+      "partBestValues": {
+        "머리": 15.0,
+        "목": 30.0,
+        "날개": 15.0,
+        "다리": 25.0,
+        "꼬리": 30.0
       }
     }
   },
@@ -2920,29 +2647,28 @@
     "nameEn": "Rathian",
     "hitzoneHighlights": {
       "bestPart": "머리",
-      "primaryElements": [
-        "dragon"
+      "topElementParts": [
+        "머리",
+        "등",
+        "꼬리"
       ],
-      "primaryElement": "dragon",
-      "maxValues": {
-        "cut": 90.0,
-        "impact": 80.0,
-        "shot": 70.0,
-        "dragon": 35.0
+      "partBestElements": {
+        "머리": "dragon",
+        "목": "dragon",
+        "배": "thunder",
+        "등": "dragon",
+        "날개": "dragon",
+        "다리": "dragon",
+        "꼬리": "dragon"
       },
-      "bestParts": {
-        "cut": [
-          "머리"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "dragon": [
-          "머리"
-        ]
+      "partBestValues": {
+        "머리": 35.0,
+        "목": 20.0,
+        "배": 20.0,
+        "등": 25.0,
+        "날개": 20.0,
+        "다리": 10.0,
+        "꼬리": 25.0
       }
     }
   },
@@ -2988,36 +2714,30 @@
     "nameEn": "Pink Rathian",
     "hitzoneHighlights": {
       "bestPart": "머리",
-      "primaryElements": [
-        "thunder",
-        "dragon"
+      "topElementParts": [
+        "머리",
+        "꼬리끝",
+        "배"
       ],
-      "primaryElement": "dragon",
-      "maxValues": {
-        "cut": 70.0,
-        "impact": 70.0,
-        "shot": 60.0,
-        "thunder": 20.0,
-        "dragon": 25.0
+      "partBestElements": {
+        "머리": "dragon",
+        "목": "dragon",
+        "배": "thunder",
+        "등": "dragon",
+        "날개": "dragon",
+        "다리": "thunder",
+        "꼬리": "dragon",
+        "꼬리끝": "dragon"
       },
-      "bestParts": {
-        "cut": [
-          "배"
-        ],
-        "impact": [
-          "다리"
-        ],
-        "shot": [
-          "배"
-        ],
-        "thunder": [
-          "배",
-          "꼬리끝"
-        ],
-        "dragon": [
-          "머리",
-          "꼬리끝"
-        ]
+      "partBestValues": {
+        "머리": 25.0,
+        "목": 15.0,
+        "배": 20.0,
+        "등": 20.0,
+        "날개": 20.0,
+        "다리": 5.0,
+        "꼬리": 20.0,
+        "꼬리끝": 25.0
       }
     }
   },
@@ -3063,29 +2783,28 @@
     "nameEn": "Gold Rathian",
     "hitzoneHighlights": {
       "bestPart": "목",
-      "primaryElements": [
-        "thunder"
+      "topElementParts": [
+        "목",
+        "날개",
+        "등"
       ],
-      "primaryElement": "thunder",
-      "maxValues": {
-        "cut": 55.0,
-        "impact": 50.0,
-        "shot": 45.0,
-        "thunder": 30.0
+      "partBestElements": {
+        "목": "thunder",
+        "배": "thunder",
+        "등": "thunder",
+        "날개": "thunder",
+        "다리": "thunder",
+        "꼬리": "thunder",
+        "꼬리끝": "thunder"
       },
-      "bestParts": {
-        "cut": [
-          "등"
-        ],
-        "impact": [
-          "등"
-        ],
-        "shot": [
-          "다리"
-        ],
-        "thunder": [
-          "목"
-        ]
+      "partBestValues": {
+        "목": 30.0,
+        "배": 15.0,
+        "등": 20.0,
+        "날개": 25.0,
+        "다리": 10.0,
+        "꼬리": 10.0,
+        "꼬리끝": 10.0
       }
     }
   },
@@ -3131,29 +2850,28 @@
     "nameEn": "Rathalos",
     "hitzoneHighlights": {
       "bestPart": "날개",
-      "primaryElements": [
-        "dragon"
+      "topElementParts": [
+        "날개",
+        "등",
+        "머리"
       ],
-      "primaryElement": "dragon",
-      "maxValues": {
-        "cut": 65.0,
-        "impact": 65.0,
-        "shot": 55.0,
-        "dragon": 35.0
+      "partBestElements": {
+        "머리": "dragon",
+        "목": "dragon",
+        "배": "thunder",
+        "등": "dragon",
+        "날개": "dragon",
+        "다리": "dragon",
+        "꼬리": "dragon"
       },
-      "bestParts": {
-        "cut": [
-          "머리"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "dragon": [
-          "날개"
-        ]
+      "partBestValues": {
+        "머리": 20.0,
+        "목": 10.0,
+        "배": 20.0,
+        "등": 25.0,
+        "날개": 35.0,
+        "다리": 10.0,
+        "꼬리": 20.0
       }
     }
   },
@@ -3199,29 +2917,30 @@
     "nameEn": "Azure Rathalos",
     "hitzoneHighlights": {
       "bestPart": "다리",
-      "primaryElements": [
-        "dragon"
+      "topElementParts": [
+        "다리",
+        "머리",
+        "등"
       ],
-      "primaryElement": "dragon",
-      "maxValues": {
-        "cut": 65.0,
-        "impact": 60.0,
-        "shot": 65.0,
-        "dragon": 30.0
+      "partBestElements": {
+        "머리": "dragon",
+        "목": "dragon",
+        "배": "ice",
+        "등": "dragon",
+        "날개": "dragon",
+        "다리": "dragon",
+        "꼬리": "dragon",
+        "꼬리끝": "dragon"
       },
-      "bestParts": {
-        "cut": [
-          "머리"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "배"
-        ],
-        "dragon": [
-          "다리"
-        ]
+      "partBestValues": {
+        "머리": 20.0,
+        "목": 15.0,
+        "배": 15.0,
+        "등": 20.0,
+        "날개": 15.0,
+        "다리": 30.0,
+        "꼬리": 20.0,
+        "꼬리끝": 20.0
       }
     }
   },
@@ -3267,34 +2986,28 @@
     "nameEn": "Silver Rathalos",
     "hitzoneHighlights": {
       "bestPart": "목",
-      "primaryElements": [
-        "water",
-        "thunder"
+      "topElementParts": [
+        "목",
+        "날개",
+        "등"
       ],
-      "primaryElement": "water",
-      "maxValues": {
-        "cut": 55.0,
-        "impact": 50.0,
-        "shot": 45.0,
-        "water": 35.0,
-        "thunder": 30.0
+      "partBestElements": {
+        "목": "water",
+        "배": "water",
+        "등": "water",
+        "날개": "water",
+        "다리": "water",
+        "꼬리": "water",
+        "꼬리끝": "water"
       },
-      "bestParts": {
-        "cut": [
-          "등"
-        ],
-        "impact": [
-          "등"
-        ],
-        "shot": [
-          "다리"
-        ],
-        "water": [
-          "목"
-        ],
-        "thunder": [
-          "목"
-        ]
+      "partBestValues": {
+        "목": 35.0,
+        "배": 15.0,
+        "등": 20.0,
+        "날개": 25.0,
+        "다리": 10.0,
+        "꼬리": 10.0,
+        "꼬리끝": 10.0
       }
     }
   },
@@ -3340,29 +3053,28 @@
     "nameEn": "Tigrex",
     "hitzoneHighlights": {
       "bestPart": "등",
-      "primaryElements": [
-        "thunder"
+      "topElementParts": [
+        "등",
+        "머리",
+        "목"
       ],
-      "primaryElement": "thunder",
-      "maxValues": {
-        "cut": 70.0,
-        "impact": 65.0,
-        "shot": 60.0,
-        "thunder": 25.0
+      "partBestElements": {
+        "머리": "thunder",
+        "목": "thunder",
+        "배": "thunder",
+        "등": "thunder",
+        "앞다리": "thunder",
+        "뒷다리": "thunder",
+        "꼬리": "thunder"
       },
-      "bestParts": {
-        "cut": [
-          "머리"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "thunder": [
-          "등"
-        ]
+      "partBestValues": {
+        "머리": 20.0,
+        "목": 20.0,
+        "배": 15.0,
+        "등": 25.0,
+        "앞다리": 20.0,
+        "뒷다리": 10.0,
+        "꼬리": 15.0
       }
     }
   },
@@ -3408,29 +3120,28 @@
     "nameEn": "Brute Tigrex",
     "hitzoneHighlights": {
       "bestPart": "머리",
-      "primaryElements": [
-        "water"
+      "topElementParts": [
+        "머리",
+        "등",
+        "목"
       ],
-      "primaryElement": "water",
-      "maxValues": {
-        "cut": 75.0,
-        "impact": 70.0,
-        "shot": 60.0,
-        "water": 25.0
+      "partBestElements": {
+        "머리": "water",
+        "목": "water",
+        "배": "water",
+        "등": "water",
+        "앞다리": "water",
+        "뒷다리": "water",
+        "꼬리": "water"
       },
-      "bestParts": {
-        "cut": [
-          "머리"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "water": [
-          "머리"
-        ]
+      "partBestValues": {
+        "머리": 25.0,
+        "목": 15.0,
+        "배": 15.0,
+        "등": 20.0,
+        "앞다리": 15.0,
+        "뒷다리": 10.0,
+        "꼬리": 10.0
       }
     }
   },
@@ -3476,31 +3187,28 @@
     "nameEn": "Molten Tigrex",
     "hitzoneHighlights": {
       "bestPart": "꼬리",
-      "primaryElements": [
-        "water"
+      "topElementParts": [
+        "꼬리",
+        "뒷다리",
+        "머리파괴후"
       ],
-      "primaryElement": "water",
-      "maxValues": {
-        "cut": 55.0,
-        "impact": 55.0,
-        "shot": 45.0,
-        "water": 20.0
+      "partBestElements": {
+        "머리파괴후": "water",
+        "목": "water",
+        "배": "water",
+        "등": "water",
+        "꼬리": "water",
+        "앞다리": "water",
+        "뒷다리": "water"
       },
-      "bestParts": {
-        "cut": [
-          "앞다리"
-        ],
-        "impact": [
-          "앞다리"
-        ],
-        "shot": [
-          "머리파괴후",
-          "앞다리"
-        ],
-        "water": [
-          "꼬리",
-          "뒷다리"
-        ]
+      "partBestValues": {
+        "머리파괴후": 15.0,
+        "목": 10.0,
+        "배": 15.0,
+        "등": 10.0,
+        "꼬리": 20.0,
+        "앞다리": 10.0,
+        "뒷다리": 20.0
       }
     }
   },
@@ -3546,36 +3254,30 @@
     "nameEn": "Monoblos",
     "hitzoneHighlights": {
       "bestPart": "목",
-      "primaryElements": [
-        "thunder",
-        "ice"
+      "topElementParts": [
+        "목",
+        "꼬리끝",
+        "머리"
       ],
-      "primaryElement": "thunder",
-      "maxValues": {
-        "cut": 60.0,
-        "impact": 70.0,
-        "shot": 80.0,
-        "thunder": 30.0,
-        "ice": 25.0
+      "partBestElements": {
+        "머리": "ice",
+        "목": "thunder",
+        "등/날개": "ice",
+        "배": "thunder",
+        "날개갈퀴": "thunder",
+        "다리": "fire",
+        "꼬리": "thunder",
+        "꼬리끝": "thunder"
       },
-      "bestParts": {
-        "cut": [
-          "꼬리끝"
-        ],
-        "impact": [
-          "목"
-        ],
-        "shot": [
-          "꼬리끝"
-        ],
-        "thunder": [
-          "목",
-          "꼬리끝"
-        ],
-        "ice": [
-          "머리",
-          "등/날개"
-        ]
+      "partBestValues": {
+        "머리": 25.0,
+        "목": 30.0,
+        "등/날개": 25.0,
+        "배": 25.0,
+        "날개갈퀴": 20.0,
+        "다리": 15.0,
+        "꼬리": 25.0,
+        "꼬리끝": 30.0
       }
     }
   },
@@ -3621,36 +3323,30 @@
     "nameEn": "White Monoblos",
     "hitzoneHighlights": {
       "bestPart": "목",
-      "primaryElements": [
-        "thunder",
-        "ice"
+      "topElementParts": [
+        "목",
+        "꼬리끝",
+        "머리"
       ],
-      "primaryElement": "thunder",
-      "maxValues": {
-        "cut": 60.0,
-        "impact": 70.0,
-        "shot": 80.0,
-        "thunder": 30.0,
-        "ice": 25.0
+      "partBestElements": {
+        "머리": "ice",
+        "목": "thunder",
+        "등/날개": "ice",
+        "배": "thunder",
+        "날개갈퀴": "thunder",
+        "다리": "fire",
+        "꼬리": "thunder",
+        "꼬리끝": "thunder"
       },
-      "bestParts": {
-        "cut": [
-          "꼬리끝"
-        ],
-        "impact": [
-          "목"
-        ],
-        "shot": [
-          "꼬리끝"
-        ],
-        "thunder": [
-          "목",
-          "꼬리끝"
-        ],
-        "ice": [
-          "머리",
-          "등/날개"
-        ]
+      "partBestValues": {
+        "머리": 25.0,
+        "목": 30.0,
+        "등/날개": 25.0,
+        "배": 25.0,
+        "날개갈퀴": 20.0,
+        "다리": 15.0,
+        "꼬리": 25.0,
+        "꼬리끝": 30.0
       }
     }
   },
@@ -3696,29 +3392,30 @@
     "nameEn": "Diablos",
     "hitzoneHighlights": {
       "bestPart": "꼬리끝",
-      "primaryElements": [
-        "ice"
+      "topElementParts": [
+        "꼬리끝",
+        "등/날개",
+        "머리"
       ],
-      "primaryElement": "ice",
-      "maxValues": {
-        "cut": 68.0,
-        "impact": 75.0,
-        "shot": 60.0,
-        "ice": 30.0
+      "partBestElements": {
+        "머리": "ice",
+        "목": "ice",
+        "등/날개": "ice",
+        "배": "ice",
+        "날개갈퀴": "ice",
+        "다리": "ice",
+        "꼬리": "ice",
+        "꼬리끝": "ice"
       },
-      "bestParts": {
-        "cut": [
-          "배"
-        ],
-        "impact": [
-          "배"
-        ],
-        "shot": [
-          "꼬리"
-        ],
-        "ice": [
-          "꼬리끝"
-        ]
+      "partBestValues": {
+        "머리": 20.0,
+        "목": 15.0,
+        "등/날개": 25.0,
+        "배": 10.0,
+        "날개갈퀴": 20.0,
+        "다리": 8.0,
+        "꼬리": 15.0,
+        "꼬리끝": 30.0
       }
     }
   },
@@ -3764,29 +3461,30 @@
     "nameEn": "Black Diablos",
     "hitzoneHighlights": {
       "bestPart": "꼬리끝",
-      "primaryElements": [
-        "ice"
+      "topElementParts": [
+        "꼬리끝",
+        "등/날개",
+        "머리"
       ],
-      "primaryElement": "ice",
-      "maxValues": {
-        "cut": 68.0,
-        "impact": 75.0,
-        "shot": 60.0,
-        "ice": 30.0
+      "partBestElements": {
+        "머리": "ice",
+        "목": "ice",
+        "등/날개": "ice",
+        "배": "ice",
+        "날개갈퀴": "ice",
+        "다리": "ice",
+        "꼬리": "ice",
+        "꼬리끝": "ice"
       },
-      "bestParts": {
-        "cut": [
-          "배"
-        ],
-        "impact": [
-          "배"
-        ],
-        "shot": [
-          "꼬리"
-        ],
-        "ice": [
-          "꼬리끝"
-        ]
+      "partBestValues": {
+        "머리": 20.0,
+        "목": 15.0,
+        "등/날개": 25.0,
+        "배": 10.0,
+        "날개갈퀴": 20.0,
+        "다리": 8.0,
+        "꼬리": 15.0,
+        "꼬리끝": 30.0
       }
     }
   },
@@ -3832,29 +3530,30 @@
     "nameEn": "Seregios",
     "hitzoneHighlights": {
       "bestPart": "머리",
-      "primaryElements": [
-        "thunder"
+      "topElementParts": [
+        "머리",
+        "배",
+        "뒷다리"
       ],
-      "primaryElement": "thunder",
-      "maxValues": {
-        "cut": 60.0,
-        "impact": 55.0,
-        "shot": 55.0,
-        "thunder": 25.0
+      "partBestElements": {
+        "머리": "thunder",
+        "목": "thunder",
+        "등": "thunder",
+        "배": "thunder",
+        "앞다리": "thunder",
+        "날개": "thunder",
+        "뒷다리": "thunder",
+        "꼬리": "thunder"
       },
-      "bestParts": {
-        "cut": [
-          "배"
-        ],
-        "impact": [
-          "배"
-        ],
-        "shot": [
-          "배"
-        ],
-        "thunder": [
-          "머리"
-        ]
+      "partBestValues": {
+        "머리": 25.0,
+        "목": 15.0,
+        "등": 15.0,
+        "배": 20.0,
+        "앞다리": 15.0,
+        "날개": 15.0,
+        "뒷다리": 20.0,
+        "꼬리": 10.0
       }
     }
   },
@@ -3900,29 +3599,24 @@
     "nameEn": "Akantor",
     "hitzoneHighlights": {
       "bestPart": "꼬리",
-      "primaryElements": [
-        "dragon"
+      "topElementParts": [
+        "꼬리",
+        "머리",
+        "앞다리"
       ],
-      "primaryElement": "dragon",
-      "maxValues": {
-        "cut": 50.0,
-        "impact": 55.0,
-        "shot": 65.0,
-        "dragon": 30.0
+      "partBestElements": {
+        "머리": "dragon",
+        "목": "dragon",
+        "앞다리": "dragon",
+        "뒷다리": "dragon",
+        "꼬리": "dragon"
       },
-      "bestParts": {
-        "cut": [
-          "머리"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "dragon": [
-          "꼬리"
-        ]
+      "partBestValues": {
+        "머리": 25.0,
+        "목": 20.0,
+        "앞다리": 25.0,
+        "뒷다리": 20.0,
+        "꼬리": 30.0
       }
     }
   },
@@ -3968,35 +3662,28 @@
     "nameEn": "Ukanlos",
     "hitzoneHighlights": {
       "bestPart": "머리",
-      "primaryElements": [
-        "fire",
-        "thunder"
+      "topElementParts": [
+        "머리",
+        "앞다리",
+        "꼬리"
       ],
-      "primaryElement": "fire",
-      "maxValues": {
-        "cut": 50.0,
-        "impact": 50.0,
-        "shot": 70.0,
-        "fire": 25.0,
-        "thunder": 25.0
+      "partBestElements": {
+        "머리": "fire",
+        "등": "fire",
+        "배": "fire",
+        "앞다리": "thunder",
+        "뒷다리": "dragon",
+        "아랫배": "fire",
+        "꼬리": "fire"
       },
-      "bestParts": {
-        "cut": [
-          "머리"
-        ],
-        "impact": [
-          "배"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "fire": [
-          "머리",
-          "꼬리"
-        ],
-        "thunder": [
-          "앞다리"
-        ]
+      "partBestValues": {
+        "머리": 25.0,
+        "등": 15.0,
+        "배": 20.0,
+        "앞다리": 25.0,
+        "뒷다리": 20.0,
+        "아랫배": 20.0,
+        "꼬리": 25.0
       }
     }
   },
@@ -4042,34 +3729,24 @@
     "nameEn": "Zinogre",
     "hitzoneHighlights": {
       "bestPart": "꼬리끝",
-      "primaryElements": [
-        "water",
-        "ice"
+      "topElementParts": [
+        "꼬리끝",
+        "머리",
+        "앞다리"
       ],
-      "primaryElement": "ice",
-      "maxValues": {
-        "cut": 65.0,
-        "impact": 65.0,
-        "shot": 70.0,
-        "water": 15.0,
-        "ice": 20.0
+      "partBestElements": {
+        "머리": "ice",
+        "몸통": "water",
+        "앞다리": "ice",
+        "꼬리": "water",
+        "꼬리끝": "ice"
       },
-      "bestParts": {
-        "cut": [
-          "머리"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "water": [
-          "꼬리끝"
-        ],
-        "ice": [
-          "꼬리끝"
-        ]
+      "partBestValues": {
+        "머리": 15.0,
+        "몸통": 10.0,
+        "앞다리": 15.0,
+        "꼬리": 10.0,
+        "꼬리끝": 20.0
       }
     }
   },
@@ -4115,38 +3792,26 @@
     "nameEn": "Stygian Zinogre",
     "hitzoneHighlights": {
       "bestPart": "앞다리",
-      "primaryElements": [
-        "water",
-        "thunder"
+      "topElementParts": [
+        "앞다리",
+        "뒷다리",
+        "어깨"
       ],
-      "primaryElement": "thunder",
-      "maxValues": {
-        "cut": 40.0,
-        "impact": 40.0,
-        "shot": 35.0,
-        "water": 20.0,
-        "thunder": 30.0
+      "partBestElements": {
+        "몸통": "thunder",
+        "앞다리": "thunder",
+        "뒷다리": "thunder",
+        "어깨": "thunder",
+        "꼬리": "thunder",
+        "꼬리끝": "thunder"
       },
-      "bestParts": {
-        "cut": [
-          "뒷다리"
-        ],
-        "impact": [
-          "뒷다리"
-        ],
-        "shot": [
-          "몸통",
-          "뒷다리",
-          "어깨"
-        ],
-        "water": [
-          "앞다리",
-          "뒷다리",
-          "어깨"
-        ],
-        "thunder": [
-          "앞다리"
-        ]
+      "partBestValues": {
+        "몸통": 15.0,
+        "앞다리": 30.0,
+        "뒷다리": 25.0,
+        "어깨": 25.0,
+        "꼬리": 20.0,
+        "꼬리끝": 25.0
       }
     }
   },
@@ -4192,36 +3857,22 @@
     "nameEn": "Kirin",
     "hitzoneHighlights": {
       "bestPart": "몸통",
-      "primaryElements": [
-        "fire",
-        "water"
+      "topElementParts": [
+        "몸통",
+        "하반신",
+        "머리"
       ],
-      "primaryElement": "fire",
-      "maxValues": {
-        "cut": 50.0,
-        "impact": 50.0,
-        "shot": 45.0,
-        "fire": 15.0,
-        "water": 15.0
+      "partBestElements": {
+        "머리": "fire",
+        "몸통": "fire",
+        "앞다리": "fire",
+        "하반신": "fire"
       },
-      "bestParts": {
-        "cut": [
-          "머리"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "fire": [
-          "몸통",
-          "하반신"
-        ],
-        "water": [
-          "몸통",
-          "하반신"
-        ]
+      "partBestValues": {
+        "머리": 5.0,
+        "몸통": 15.0,
+        "앞다리": 5.0,
+        "하반신": 15.0
       }
     }
   },
@@ -4267,36 +3918,22 @@
     "nameEn": "Oroshi Kirin",
     "hitzoneHighlights": {
       "bestPart": "몸통",
-      "primaryElements": [
-        "fire",
-        "water"
+      "topElementParts": [
+        "몸통",
+        "하반신",
+        "머리"
       ],
-      "primaryElement": "fire",
-      "maxValues": {
-        "cut": 50.0,
-        "impact": 50.0,
-        "shot": 45.0,
-        "fire": 15.0,
-        "water": 15.0
+      "partBestElements": {
+        "머리": "fire",
+        "몸통": "fire",
+        "앞다리": "fire",
+        "하반신": "fire"
       },
-      "bestParts": {
-        "cut": [
-          "머리"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "fire": [
-          "몸통",
-          "하반신"
-        ],
-        "water": [
-          "몸통",
-          "하반신"
-        ]
+      "partBestValues": {
+        "머리": 5.0,
+        "몸통": 15.0,
+        "앞다리": 5.0,
+        "하반신": 15.0
       }
     }
   },
@@ -4341,36 +3978,31 @@
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
     "nameEn": "Shagaru Magala",
     "hitzoneHighlights": {
-      "bestPart": "날개다리",
-      "primaryElements": [
-        "fire",
-        "dragon"
+      "bestPart": "머리",
+      "topElementParts": [
+        "머리",
+        "날개다리",
+        "목"
       ],
-      "primaryElement": "fire",
-      "maxValues": {
-        "cut": 65.0,
-        "impact": 60.0,
-        "shot": 60.0,
-        "fire": 30.0,
-        "dragon": 30.0
+      "partBestElements": {
+        "머리": "dragon",
+        "목": "dragon",
+        "몸통": "fire",
+        "날개": "dragon",
+        "날개다리": "fire",
+        "앞다리": "fire",
+        "뒷다리": "fire",
+        "꼬리": "dragon"
       },
-      "bestParts": {
-        "cut": [
-          "머리"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "fire": [
-          "날개다리"
-        ],
-        "dragon": [
-          "머리",
-          "날개다리"
-        ]
+      "partBestValues": {
+        "머리": 30.0,
+        "목": 20.0,
+        "몸통": 10.0,
+        "날개": 20.0,
+        "날개다리": 30.0,
+        "앞다리": 10.0,
+        "뒷다리": 10.0,
+        "꼬리": 15.0
       }
     }
   },
@@ -4416,34 +4048,22 @@
     "nameEn": "Kushala Daora",
     "hitzoneHighlights": {
       "bestPart": "꼬리",
-      "primaryElements": [
-        "thunder",
-        "dragon"
+      "topElementParts": [
+        "꼬리",
+        "목",
+        "등"
       ],
-      "primaryElement": "dragon",
-      "maxValues": {
-        "cut": 45.0,
-        "impact": 40.0,
-        "shot": 40.0,
-        "thunder": 30.0,
-        "dragon": 40.0
+      "partBestElements": {
+        "목": "dragon",
+        "등": "thunder",
+        "날개": "dragon",
+        "꼬리": "dragon"
       },
-      "bestParts": {
-        "cut": [
-          "목"
-        ],
-        "impact": [
-          "목"
-        ],
-        "shot": [
-          "꼬리"
-        ],
-        "thunder": [
-          "꼬리"
-        ],
-        "dragon": [
-          "꼬리"
-        ]
+      "partBestValues": {
+        "목": 35.0,
+        "등": 20.0,
+        "날개": 20.0,
+        "꼬리": 40.0
       }
     }
   },
@@ -4489,36 +4109,26 @@
     "nameEn": "Rusted Kushala Daora",
     "hitzoneHighlights": {
       "bestPart": "꼬리",
-      "primaryElements": [
-        "water",
-        "dragon"
+      "topElementParts": [
+        "꼬리",
+        "배",
+        "등"
       ],
-      "primaryElement": "water",
-      "maxValues": {
-        "cut": 30.0,
-        "impact": 40.0,
-        "shot": 35.0,
-        "water": 40.0,
-        "dragon": 35.0
+      "partBestElements": {
+        "배": "water",
+        "등": "water",
+        "날개": "dragon",
+        "앞다리": "water",
+        "뒷다리": "water",
+        "꼬리": "water"
       },
-      "bestParts": {
-        "cut": [
-          "배",
-          "앞다리",
-          "꼬리"
-        ],
-        "impact": [
-          "배"
-        ],
-        "shot": [
-          "꼬리"
-        ],
-        "water": [
-          "꼬리"
-        ],
-        "dragon": [
-          "꼬리"
-        ]
+      "partBestValues": {
+        "배": 25.0,
+        "등": 20.0,
+        "날개": 20.0,
+        "앞다리": 20.0,
+        "뒷다리": 15.0,
+        "꼬리": 40.0
       }
     }
   },
@@ -4564,30 +4174,26 @@
     "nameEn": "Teostra",
     "hitzoneHighlights": {
       "bestPart": "꼬리",
-      "primaryElements": [
-        "dragon"
+      "topElementParts": [
+        "꼬리",
+        "앞다리",
+        "뒷다리"
       ],
-      "primaryElement": "dragon",
-      "maxValues": {
-        "cut": 55.0,
-        "impact": 55.0,
-        "shot": 65.0,
-        "dragon": 25.0
+      "partBestElements": {
+        "배": "dragon",
+        "등": "dragon",
+        "날개": "dragon",
+        "앞다리": "water",
+        "뒷다리": "ice",
+        "꼬리": "dragon"
       },
-      "bestParts": {
-        "cut": [
-          "뒷다리",
-          "꼬리"
-        ],
-        "impact": [
-          "뒷다리"
-        ],
-        "shot": [
-          "꼬리"
-        ],
-        "dragon": [
-          "꼬리"
-        ]
+      "partBestValues": {
+        "배": 10.0,
+        "등": 10.0,
+        "날개": 10.0,
+        "앞다리": 15.0,
+        "뒷다리": 15.0,
+        "꼬리": 25.0
       }
     }
   },
@@ -4633,31 +4239,28 @@
     "nameEn": "Chameleos",
     "hitzoneHighlights": {
       "bestPart": "머리",
-      "primaryElements": [
-        "fire"
+      "topElementParts": [
+        "머리",
+        "배",
+        "등"
       ],
-      "primaryElement": "fire",
-      "maxValues": {
-        "cut": 45.0,
-        "impact": 50.0,
-        "shot": 30.0,
-        "fire": 40.0
+      "partBestElements": {
+        "머리": "fire",
+        "배": "fire",
+        "등": "fire",
+        "앞다리": "fire",
+        "뒷다리": "fire",
+        "날개": "fire",
+        "꼬리": "fire"
       },
-      "bestParts": {
-        "cut": [
-          "머리"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리",
-          "날개"
-        ],
-        "fire": [
-          "머리",
-          "배"
-        ]
+      "partBestValues": {
+        "머리": 40.0,
+        "배": 40.0,
+        "등": 30.0,
+        "앞다리": 20.0,
+        "뒷다리": 30.0,
+        "날개": 15.0,
+        "꼬리": 15.0
       }
     }
   },
@@ -4703,35 +4306,28 @@
     "nameEn": "Dah'ren Mohran",
     "hitzoneHighlights": {
       "bestPart": "입안",
-      "primaryElements": [
-        "thunder",
-        "dragon"
+      "topElementParts": [
+        "입안",
+        "배",
+        "등의약점"
       ],
-      "primaryElement": "thunder",
-      "maxValues": {
-        "cut": 90.0,
-        "impact": 80.0,
-        "shot": 60.0,
-        "thunder": 25.0,
-        "dragon": 22.0
+      "partBestElements": {
+        "입안": "thunder",
+        "뿔/등": "thunder",
+        "몸통": "thunder",
+        "다리": "thunder",
+        "배": "thunder",
+        "등의약점": "thunder",
+        "분사구": "thunder"
       },
-      "bestParts": {
-        "cut": [
-          "입안"
-        ],
-        "impact": [
-          "입안"
-        ],
-        "shot": [
-          "입안"
-        ],
-        "thunder": [
-          "입안"
-        ],
-        "dragon": [
-          "배",
-          "등의약점"
-        ]
+      "partBestValues": {
+        "입안": 25.0,
+        "뿔/등": 15.0,
+        "몸통": 8.0,
+        "다리": 15.0,
+        "배": 22.0,
+        "등의약점": 22.0,
+        "분사구": 20.0
       }
     }
   },
@@ -4777,30 +4373,22 @@
     "nameEn": "Dalamadur",
     "hitzoneHighlights": {
       "bestPart": "등칼날 흑가시 발톱",
-      "primaryElements": [
-        "dragon"
+      "topElementParts": [
+        "등칼날 흑가시 발톱",
+        "머리약점",
+        "하반신하부"
       ],
-      "primaryElement": "dragon",
-      "maxValues": {
-        "cut": 160.0,
-        "impact": 150.0,
-        "shot": 50.0,
-        "dragon": 40.0
+      "partBestElements": {
+        "머리약점": "dragon",
+        "등칼날 흑가시 발톱": "dragon",
+        "상반신": "dragon",
+        "하반신하부": "dragon"
       },
-      "bestParts": {
-        "cut": [
-          "머리약점"
-        ],
-        "impact": [
-          "머리약점"
-        ],
-        "shot": [
-          "머리약점",
-          "등칼날 흑가시 발톱"
-        ],
-        "dragon": [
-          "등칼날 흑가시 발톱"
-        ]
+      "partBestValues": {
+        "머리약점": 30.0,
+        "등칼날 흑가시 발톱": 40.0,
+        "상반신": 5.0,
+        "하반신하부": 15.0
       }
     }
   },
@@ -4846,29 +4434,24 @@
     "nameEn": "Shah Dalamadur",
     "hitzoneHighlights": {
       "bestPart": "머리약점",
-      "primaryElements": [
-        "dragon"
+      "topElementParts": [
+        "머리약점",
+        "하반신상부",
+        "하반신하부"
       ],
-      "primaryElement": "dragon",
-      "maxValues": {
-        "cut": 160.0,
-        "impact": 150.0,
-        "shot": 56.0,
-        "dragon": 30.0
+      "partBestElements": {
+        "머리약점": "dragon",
+        "흉부": "dragon",
+        "상반신": "dragon",
+        "하반신하부": "dragon",
+        "하반신상부": "dragon"
       },
-      "bestParts": {
-        "cut": [
-          "머리약점"
-        ],
-        "impact": [
-          "머리약점"
-        ],
-        "shot": [
-          "흉부"
-        ],
-        "dragon": [
-          "머리약점"
-        ]
+      "partBestValues": {
+        "머리약점": 30.0,
+        "흉부": 5.0,
+        "상반신": 5.0,
+        "하반신하부": 10.0,
+        "하반신상부": 15.0
       }
     }
   },
@@ -4914,44 +4497,22 @@
     "nameEn": "Gogmazios",
     "hitzoneHighlights": {
       "bestPart": "목",
-      "primaryElements": [
-        "fire",
-        "dragon"
+      "topElementParts": [
+        "목",
+        "배",
+        "앞다리"
       ],
-      "primaryElement": "fire",
-      "maxValues": {
-        "cut": 40.0,
-        "impact": 40.0,
-        "shot": 45.0,
-        "fire": 5.0,
-        "dragon": 5.0
+      "partBestElements": {
+        "목": "fire",
+        "배": "fire",
+        "앞다리": "fire",
+        "뒷다리": "fire"
       },
-      "bestParts": {
-        "cut": [
-          "목",
-          "배",
-          "앞다리"
-        ],
-        "impact": [
-          "뒷다리"
-        ],
-        "shot": [
-          "목",
-          "배",
-          "앞다리"
-        ],
-        "fire": [
-          "목",
-          "배",
-          "앞다리",
-          "뒷다리"
-        ],
-        "dragon": [
-          "목",
-          "배",
-          "앞다리",
-          "뒷다리"
-        ]
+      "partBestValues": {
+        "목": 5.0,
+        "배": 5.0,
+        "앞다리": 5.0,
+        "뒷다리": 5.0
       }
     }
   },
@@ -4997,29 +4558,30 @@
     "nameEn": "Gore Magala",
     "hitzoneHighlights": {
       "bestPart": "날개다리",
-      "primaryElements": [
-        "fire"
+      "topElementParts": [
+        "날개다리",
+        "머리",
+        "목"
       ],
-      "primaryElement": "fire",
-      "maxValues": {
-        "cut": 75.0,
-        "impact": 70.0,
-        "shot": 65.0,
-        "fire": 30.0
+      "partBestElements": {
+        "머리": "dragon",
+        "목": "fire",
+        "몸통": "fire",
+        "날개": "fire",
+        "날개다리": "fire",
+        "앞다리": "fire",
+        "뒷다리": "fire",
+        "꼬리": "fire"
       },
-      "bestParts": {
-        "cut": [
-          "머리"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "fire": [
-          "날개다리"
-        ]
+      "partBestValues": {
+        "머리": 30.0,
+        "목": 15.0,
+        "몸통": 10.0,
+        "날개": 15.0,
+        "날개다리": 30.0,
+        "앞다리": 10.0,
+        "뒷다리": 10.0,
+        "꼬리": 10.0
       }
     }
   },
@@ -5065,24 +4627,9 @@
     "nameEn": "Chaotic Gore Magala",
     "hitzoneHighlights": {
       "bestPart": "",
-      "primaryElements": [
-        "fire",
-        "dragon"
-      ],
-      "maxValues": {
-        "cut": 0,
-        "impact": 0,
-        "shot": 0,
-        "fire": 0,
-        "dragon": 0
-      },
-      "bestParts": {
-        "cut": [],
-        "impact": [],
-        "shot": [],
-        "fire": [],
-        "dragon": []
-      }
+      "topElementParts": [],
+      "partBestElements": {},
+      "partBestValues": {}
     }
   },
   {
@@ -5127,21 +4674,9 @@
     "nameEn": "Fatalis",
     "hitzoneHighlights": {
       "bestPart": "",
-      "primaryElements": [
-        "dragon"
-      ],
-      "maxValues": {
-        "cut": 0,
-        "impact": 0,
-        "shot": 0,
-        "dragon": 0
-      },
-      "bestParts": {
-        "cut": [],
-        "impact": [],
-        "shot": [],
-        "dragon": []
-      }
+      "topElementParts": [],
+      "partBestElements": {},
+      "partBestValues": {}
     }
   },
   {
@@ -5186,21 +4721,9 @@
     "nameEn": "White Fatalis",
     "hitzoneHighlights": {
       "bestPart": "",
-      "primaryElements": [
-        "dragon"
-      ],
-      "maxValues": {
-        "cut": 0,
-        "impact": 0,
-        "shot": 0,
-        "dragon": 0
-      },
-      "bestParts": {
-        "cut": [],
-        "impact": [],
-        "shot": [],
-        "dragon": []
-      }
+      "topElementParts": [],
+      "partBestElements": {},
+      "partBestValues": {}
     }
   },
   {
@@ -5245,29 +4768,32 @@
     "nameEn": "Crimson Fatalis",
     "hitzoneHighlights": {
       "bestPart": "머리",
-      "primaryElements": [
-        "dragon"
+      "topElementParts": [
+        "머리",
+        "목",
+        "꼬리"
       ],
-      "primaryElement": "dragon",
-      "maxValues": {
-        "cut": 70.0,
-        "impact": 75.0,
-        "shot": 65.0,
-        "dragon": 30.0
+      "partBestElements": {
+        "머리": "dragon",
+        "목": "dragon",
+        "등": "dragon",
+        "날개": "ice",
+        "가슴": "ice",
+        "배": "ice",
+        "팔": "ice",
+        "다리": "ice",
+        "꼬리": "dragon"
       },
-      "bestParts": {
-        "cut": [
-          "머리"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "dragon": [
-          "머리"
-        ]
+      "partBestValues": {
+        "머리": 30.0,
+        "목": 25.0,
+        "등": 15.0,
+        "날개": 18.0,
+        "가슴": 15.0,
+        "배": 15.0,
+        "팔": 15.0,
+        "다리": 15.0,
+        "꼬리": 20.0
       }
     }
   },
@@ -5313,29 +4839,32 @@
     "nameEn": "Crimson Fatalis",
     "hitzoneHighlights": {
       "bestPart": "머리",
-      "primaryElements": [
-        "dragon"
+      "topElementParts": [
+        "머리",
+        "목",
+        "꼬리"
       ],
-      "primaryElement": "dragon",
-      "maxValues": {
-        "cut": 70.0,
-        "impact": 75.0,
-        "shot": 65.0,
-        "dragon": 30.0
+      "partBestElements": {
+        "머리": "dragon",
+        "목": "dragon",
+        "등": "dragon",
+        "날개": "ice",
+        "가슴": "ice",
+        "배": "ice",
+        "팔": "ice",
+        "다리": "ice",
+        "꼬리": "dragon"
       },
-      "bestParts": {
-        "cut": [
-          "머리"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "dragon": [
-          "머리"
-        ]
+      "partBestValues": {
+        "머리": 30.0,
+        "목": 25.0,
+        "등": 15.0,
+        "날개": 18.0,
+        "가슴": 15.0,
+        "배": 15.0,
+        "팔": 15.0,
+        "다리": 15.0,
+        "꼬리": 20.0
       }
     }
   }

@@ -1,34 +1,2988 @@
-{
-  "version": "0.7.7-chat4-monster8-recovery",
-  "monsters": 76,
-  "seregios": {
+[
+  {
+    "monster": "아르셀타스",
     "bestPart": "배",
-    "primaryElements": [
-      "thunder"
+    "topElementParts": [
+      "배",
+      "머리",
+      "뿔"
     ],
-    "maxValues": {
-      "cut": 60.0,
-      "impact": 55.0,
-      "shot": 55.0,
-      "thunder": 25.0
-    },
-    "bestParts": {
-      "cut": [
-        "배"
-      ],
-      "impact": [
-        "배"
-      ],
-      "shot": [
-        "배"
-      ],
-      "thunder": [
-        "머리"
-      ]
-    }
+    "parts": [
+      {
+        "part": "뿔",
+        "element": "thunder",
+        "value": 20.0
+      },
+      {
+        "part": "머리",
+        "element": "thunder",
+        "value": 25.0
+      },
+      {
+        "part": "배",
+        "element": "thunder",
+        "value": 35.0
+      },
+      {
+        "part": "발톱",
+        "element": "thunder",
+        "value": 15.0
+      },
+      {
+        "part": "다리",
+        "element": "thunder",
+        "value": 15.0
+      }
+    ]
   },
-  "notes": [
-    "runtime badge comparison removed",
-    "app initialization and click binding restored from last known working hitzone_fit baseline"
-  ]
-}
+  {
+    "monster": "아르셀타스 아종",
+    "bestPart": "배",
+    "topElementParts": [
+      "배",
+      "머리",
+      "뿔"
+    ],
+    "parts": [
+      {
+        "part": "뿔",
+        "element": "ice",
+        "value": 15.0
+      },
+      {
+        "part": "머리",
+        "element": "ice",
+        "value": 20.0
+      },
+      {
+        "part": "배",
+        "element": "ice",
+        "value": 25.0
+      },
+      {
+        "part": "발톱",
+        "element": "ice",
+        "value": 10.0
+      },
+      {
+        "part": "다리",
+        "element": "ice",
+        "value": 10.0
+      }
+    ]
+  },
+  {
+    "monster": "게넬·셀타스",
+    "bestPart": "머리",
+    "topElementParts": [
+      "머리",
+      "하판",
+      "턱"
+    ],
+    "parts": [
+      {
+        "part": "머리",
+        "element": "fire",
+        "value": 30.0
+      },
+      {
+        "part": "상판",
+        "element": "fire",
+        "value": 15.0
+      },
+      {
+        "part": "하판",
+        "element": "fire",
+        "value": 25.0
+      },
+      {
+        "part": "턱",
+        "element": "ice",
+        "value": 20.0
+      },
+      {
+        "part": "꼬리끝",
+        "element": "ice",
+        "value": 20.0
+      }
+    ]
+  },
+  {
+    "monster": "게넬·셀타스 아종",
+    "bestPart": "머리",
+    "topElementParts": [
+      "머리",
+      "상판",
+      "턱"
+    ],
+    "parts": [
+      {
+        "part": "머리",
+        "element": "ice",
+        "value": 25.0
+      },
+      {
+        "part": "상판",
+        "element": "ice",
+        "value": 20.0
+      },
+      {
+        "part": "하판",
+        "element": "ice",
+        "value": 15.0
+      },
+      {
+        "part": "턱",
+        "element": "ice",
+        "value": 20.0
+      },
+      {
+        "part": "꼬리끝",
+        "element": "ice",
+        "value": 20.0
+      }
+    ]
+  },
+  {
+    "monster": "네르스큐라",
+    "bestPart": "독침",
+    "topElementParts": [
+      "독침",
+      "흉부",
+      "다리공통"
+    ],
+    "parts": [
+      {
+        "part": "머리",
+        "element": "fire",
+        "value": 15.0
+      },
+      {
+        "part": "독침",
+        "element": "thunder",
+        "value": 35.0
+      },
+      {
+        "part": "흉부",
+        "element": "fire",
+        "value": 25.0
+      },
+      {
+        "part": "배",
+        "element": "thunder",
+        "value": 20.0
+      },
+      {
+        "part": "앞발톱",
+        "element": "thunder",
+        "value": 10.0
+      },
+      {
+        "part": "다리공통",
+        "element": "fire",
+        "value": 20.0
+      },
+      {
+        "part": "다리끝",
+        "element": "fire",
+        "value": 10.0
+      }
+    ]
+  },
+  {
+    "monster": "네르스큐라 아종",
+    "bestPart": "독침",
+    "topElementParts": [
+      "독침",
+      "흉부",
+      "다리공통"
+    ],
+    "parts": [
+      {
+        "part": "머리",
+        "element": "ice",
+        "value": 15.0
+      },
+      {
+        "part": "독침",
+        "element": "ice",
+        "value": 25.0
+      },
+      {
+        "part": "흉부",
+        "element": "ice",
+        "value": 25.0
+      },
+      {
+        "part": "배",
+        "element": "fire",
+        "value": 15.0
+      },
+      {
+        "part": "앞발톱",
+        "element": "ice",
+        "value": 5.0
+      },
+      {
+        "part": "다리공통",
+        "element": "ice",
+        "value": 20.0
+      },
+      {
+        "part": "다리끝",
+        "element": "fire",
+        "value": 10.0
+      }
+    ]
+  },
+  {
+    "monster": "도스가레오스",
+    "bestPart": "머리",
+    "topElementParts": [
+      "머리",
+      "배",
+      "꼬리"
+    ],
+    "parts": [
+      {
+        "part": "머리",
+        "element": "ice",
+        "value": 30.0
+      },
+      {
+        "part": "목",
+        "element": "ice",
+        "value": 15.0
+      },
+      {
+        "part": "등/지느러미",
+        "element": "thunder",
+        "value": 20.0
+      },
+      {
+        "part": "배",
+        "element": "ice",
+        "value": 20.0
+      },
+      {
+        "part": "날개",
+        "element": "ice",
+        "value": 15.0
+      },
+      {
+        "part": "다리",
+        "element": "ice",
+        "value": 15.0
+      },
+      {
+        "part": "꼬리",
+        "element": "ice",
+        "value": 20.0
+      }
+    ]
+  },
+  {
+    "monster": "도스재기",
+    "bestPart": "머리",
+    "topElementParts": [
+      "머리",
+      "몸통"
+    ],
+    "parts": [
+      {
+        "part": "머리",
+        "element": "fire",
+        "value": 30.0
+      },
+      {
+        "part": "몸통",
+        "element": "fire",
+        "value": 30.0
+      }
+    ]
+  },
+  {
+    "monster": "도스람포스",
+    "bestPart": "머리",
+    "topElementParts": [
+      "머리",
+      "몸통"
+    ],
+    "parts": [
+      {
+        "part": "머리",
+        "element": "ice",
+        "value": 40.0
+      },
+      {
+        "part": "몸통",
+        "element": "ice",
+        "value": 30.0
+      }
+    ]
+  },
+  {
+    "monster": "도스게네포스",
+    "bestPart": "머리",
+    "topElementParts": [
+      "머리",
+      "몸통"
+    ],
+    "parts": [
+      {
+        "part": "머리",
+        "element": "ice",
+        "value": 40.0
+      },
+      {
+        "part": "몸통",
+        "element": "ice",
+        "value": 30.0
+      }
+    ]
+  },
+  {
+    "monster": "도스이오스",
+    "bestPart": "머리",
+    "topElementParts": [
+      "머리",
+      "몸통"
+    ],
+    "parts": [
+      {
+        "part": "머리",
+        "element": "water",
+        "value": 30.0
+      },
+      {
+        "part": "몸통",
+        "element": "water",
+        "value": 25.0
+      }
+    ]
+  },
+  {
+    "monster": "얀쿡크",
+    "bestPart": "목",
+    "topElementParts": [
+      "목",
+      "머리",
+      "날개"
+    ],
+    "parts": [
+      {
+        "part": "머리",
+        "element": "ice",
+        "value": 30.0
+      },
+      {
+        "part": "목",
+        "element": "ice",
+        "value": 40.0
+      },
+      {
+        "part": "배",
+        "element": "ice",
+        "value": 20.0
+      },
+      {
+        "part": "등",
+        "element": "ice",
+        "value": 20.0
+      },
+      {
+        "part": "날개",
+        "element": "thunder",
+        "value": 25.0
+      },
+      {
+        "part": "다리",
+        "element": "thunder",
+        "value": 5.0
+      },
+      {
+        "part": "꼬리",
+        "element": "ice",
+        "value": 20.0
+      }
+    ]
+  },
+  {
+    "monster": "얀쿡크 아종",
+    "bestPart": "목",
+    "topElementParts": [
+      "목",
+      "머리",
+      "배"
+    ],
+    "parts": [
+      {
+        "part": "머리",
+        "element": "water",
+        "value": 30.0
+      },
+      {
+        "part": "목",
+        "element": "water",
+        "value": 35.0
+      },
+      {
+        "part": "배",
+        "element": "water",
+        "value": 20.0
+      },
+      {
+        "part": "등",
+        "element": "water",
+        "value": 20.0
+      },
+      {
+        "part": "날개",
+        "element": "thunder",
+        "value": 20.0
+      },
+      {
+        "part": "다리",
+        "element": "water",
+        "value": 5.0
+      },
+      {
+        "part": "꼬리",
+        "element": "water",
+        "value": 20.0
+      }
+    ]
+  },
+  {
+    "monster": "게리오스",
+    "bestPart": "머리",
+    "topElementParts": [
+      "머리",
+      "목",
+      "배"
+    ],
+    "parts": [
+      {
+        "part": "머리",
+        "element": "fire",
+        "value": 30.0
+      },
+      {
+        "part": "목",
+        "element": "fire",
+        "value": 20.0
+      },
+      {
+        "part": "배",
+        "element": "fire",
+        "value": 20.0
+      },
+      {
+        "part": "등",
+        "element": "fire",
+        "value": 10.0
+      },
+      {
+        "part": "날개",
+        "element": "fire",
+        "value": 20.0
+      },
+      {
+        "part": "다리",
+        "element": "fire",
+        "value": 10.0
+      },
+      {
+        "part": "꼬리",
+        "element": "fire",
+        "value": 20.0
+      }
+    ]
+  },
+  {
+    "monster": "게리오스 아종",
+    "bestPart": "머리",
+    "topElementParts": [
+      "머리",
+      "목",
+      "배"
+    ],
+    "parts": [
+      {
+        "part": "머리",
+        "element": "fire",
+        "value": 30.0
+      },
+      {
+        "part": "목",
+        "element": "fire",
+        "value": 20.0
+      },
+      {
+        "part": "배",
+        "element": "fire",
+        "value": 20.0
+      },
+      {
+        "part": "등",
+        "element": "fire",
+        "value": 10.0
+      },
+      {
+        "part": "날개",
+        "element": "fire",
+        "value": 20.0
+      },
+      {
+        "part": "다리",
+        "element": "fire",
+        "value": 10.0
+      },
+      {
+        "part": "꼬리",
+        "element": "fire",
+        "value": 20.0
+      }
+    ]
+  },
+  {
+    "monster": "얀가루루가",
+    "bestPart": "등",
+    "topElementParts": [
+      "등",
+      "머리",
+      "배"
+    ],
+    "parts": [
+      {
+        "part": "머리",
+        "element": "water",
+        "value": 20.0
+      },
+      {
+        "part": "목",
+        "element": "water",
+        "value": 15.0
+      },
+      {
+        "part": "배",
+        "element": "water",
+        "value": 20.0
+      },
+      {
+        "part": "등",
+        "element": "water",
+        "value": 50.0
+      },
+      {
+        "part": "날개",
+        "element": "water",
+        "value": 15.0
+      },
+      {
+        "part": "다리",
+        "element": "water",
+        "value": 10.0
+      },
+      {
+        "part": "꼬리",
+        "element": "water",
+        "value": 15.0
+      }
+    ]
+  },
+  {
+    "monster": "다이묘자자미",
+    "bestPart": "머리",
+    "topElementParts": [
+      "머리",
+      "집게다리",
+      "등껍질(파괴)"
+    ],
+    "parts": [
+      {
+        "part": "머리",
+        "element": "thunder",
+        "value": 35.0
+      },
+      {
+        "part": "몸통",
+        "element": "thunder",
+        "value": 20.0
+      },
+      {
+        "part": "등껍질",
+        "element": "thunder",
+        "value": 25.0
+      },
+      {
+        "part": "다리",
+        "element": "fire",
+        "value": 15.0
+      },
+      {
+        "part": "집게다리",
+        "element": "fire",
+        "value": 35.0
+      },
+      {
+        "part": "집게팔",
+        "element": "fire",
+        "value": 15.0
+      },
+      {
+        "part": "등껍질(파괴)",
+        "element": "fire",
+        "value": 35.0
+      },
+      {
+        "part": "집게다리(파괴)",
+        "element": "fire",
+        "value": 35.0
+      }
+    ]
+  },
+  {
+    "monster": "다이묘자자미 아종",
+    "bestPart": "머리",
+    "topElementParts": [
+      "머리",
+      "앞다리",
+      "뒷다리"
+    ],
+    "parts": [
+      {
+        "part": "머리",
+        "element": "ice",
+        "value": 35.0
+      },
+      {
+        "part": "목",
+        "element": "ice",
+        "value": 20.0
+      },
+      {
+        "part": "등",
+        "element": "ice",
+        "value": 25.0
+      },
+      {
+        "part": "배",
+        "element": "ice",
+        "value": 15.0
+      },
+      {
+        "part": "앞다리",
+        "element": "ice",
+        "value": 35.0
+      },
+      {
+        "part": "날개",
+        "element": "ice",
+        "value": 15.0
+      },
+      {
+        "part": "뒷다리",
+        "element": "ice",
+        "value": 35.0
+      },
+      {
+        "part": "꼬리",
+        "element": "ice",
+        "value": 35.0
+      }
+    ]
+  },
+  {
+    "monster": "케차와차",
+    "bestPart": "머리",
+    "topElementParts": [
+      "머리",
+      "앞발톱",
+      "몸통"
+    ],
+    "parts": [
+      {
+        "part": "머리",
+        "element": "fire",
+        "value": 30.0
+      },
+      {
+        "part": "몸통",
+        "element": "fire",
+        "value": 15.0
+      },
+      {
+        "part": "앞발톱",
+        "element": "fire",
+        "value": 20.0
+      },
+      {
+        "part": "앞다리",
+        "element": "fire",
+        "value": 10.0
+      },
+      {
+        "part": "뒷다리",
+        "element": "fire",
+        "value": 10.0
+      },
+      {
+        "part": "꼬리",
+        "element": "fire",
+        "value": 15.0
+      }
+    ]
+  },
+  {
+    "monster": "케차와차 아종",
+    "bestPart": "머리",
+    "topElementParts": [
+      "머리",
+      "몸통",
+      "꼬리"
+    ],
+    "parts": [
+      {
+        "part": "머리",
+        "element": "water",
+        "value": 30.0
+      },
+      {
+        "part": "몸통",
+        "element": "water",
+        "value": 15.0
+      },
+      {
+        "part": "앞다리",
+        "element": "water",
+        "value": 10.0
+      },
+      {
+        "part": "뒷다리",
+        "element": "water",
+        "value": 10.0
+      },
+      {
+        "part": "꼬리",
+        "element": "water",
+        "value": 15.0
+      }
+    ]
+  },
+  {
+    "monster": "울크스스",
+    "bestPart": "머리",
+    "topElementParts": [
+      "머리",
+      "상반신",
+      "등(꼬리)"
+    ],
+    "parts": [
+      {
+        "part": "머리",
+        "element": "fire",
+        "value": 30.0
+      },
+      {
+        "part": "상반신",
+        "element": "fire",
+        "value": 30.0
+      },
+      {
+        "part": "배",
+        "element": "fire",
+        "value": 10.0
+      },
+      {
+        "part": "등(꼬리)",
+        "element": "fire",
+        "value": 20.0
+      },
+      {
+        "part": "앞다리",
+        "element": "fire",
+        "value": 10.0
+      },
+      {
+        "part": "뒷다리",
+        "element": "fire",
+        "value": 10.0
+      }
+    ]
+  },
+  {
+    "monster": "바바콩가",
+    "bestPart": "머리",
+    "topElementParts": [
+      "머리",
+      "앞다리",
+      "뒷다리"
+    ],
+    "parts": [
+      {
+        "part": "머리",
+        "element": "fire",
+        "value": 25.0
+      },
+      {
+        "part": "앞다리",
+        "element": "fire",
+        "value": 15.0
+      },
+      {
+        "part": "뒷다리",
+        "element": "fire",
+        "value": 15.0
+      }
+    ]
+  },
+  {
+    "monster": "바바콩가 아종",
+    "bestPart": "머리",
+    "topElementParts": [
+      "머리",
+      "앞다리",
+      "뒷다리"
+    ],
+    "parts": [
+      {
+        "part": "머리",
+        "element": "ice",
+        "value": 15.0
+      },
+      {
+        "part": "앞다리",
+        "element": "ice",
+        "value": 15.0
+      },
+      {
+        "part": "뒷다리",
+        "element": "ice",
+        "value": 15.0
+      }
+    ]
+  },
+  {
+    "monster": "라잔",
+    "bestPart": "머리",
+    "topElementParts": [
+      "머리",
+      "꼬리",
+      "몸통"
+    ],
+    "parts": [
+      {
+        "part": "머리",
+        "element": "ice",
+        "value": 30.0
+      },
+      {
+        "part": "몸통",
+        "element": "ice",
+        "value": 15.0
+      },
+      {
+        "part": "앞다리",
+        "element": "ice",
+        "value": 15.0
+      },
+      {
+        "part": "뒷다리",
+        "element": "ice",
+        "value": 15.0
+      },
+      {
+        "part": "꼬리",
+        "element": "ice",
+        "value": 20.0
+      }
+    ]
+  },
+  {
+    "monster": "격앙 라잔",
+    "bestPart": "머리",
+    "topElementParts": [
+      "머리",
+      "꼬리",
+      "몸통"
+    ],
+    "parts": [
+      {
+        "part": "머리",
+        "element": "ice",
+        "value": 30.0
+      },
+      {
+        "part": "몸통",
+        "element": "ice",
+        "value": 15.0
+      },
+      {
+        "part": "앞다리",
+        "element": "ice",
+        "value": 15.0
+      },
+      {
+        "part": "뒷다리",
+        "element": "ice",
+        "value": 15.0
+      },
+      {
+        "part": "꼬리",
+        "element": "ice",
+        "value": 20.0
+      }
+    ]
+  },
+  {
+    "monster": "테츠카브라",
+    "bestPart": "머리",
+    "topElementParts": [
+      "머리",
+      "이빨",
+      "몸통"
+    ],
+    "parts": [
+      {
+        "part": "머리",
+        "element": "water",
+        "value": 30.0
+      },
+      {
+        "part": "이빨",
+        "element": "water",
+        "value": 25.0
+      },
+      {
+        "part": "몸통",
+        "element": "water",
+        "value": 20.0
+      },
+      {
+        "part": "앞다리",
+        "element": "water",
+        "value": 20.0
+      },
+      {
+        "part": "뒷다리",
+        "element": "water",
+        "value": 15.0
+      }
+    ]
+  },
+  {
+    "monster": "테츠카브라 아종",
+    "bestPart": "머리",
+    "topElementParts": [
+      "머리",
+      "이빨",
+      "앞다리"
+    ],
+    "parts": [
+      {
+        "part": "머리",
+        "element": "ice",
+        "value": 30.0
+      },
+      {
+        "part": "이빨",
+        "element": "ice",
+        "value": 30.0
+      },
+      {
+        "part": "몸통",
+        "element": "ice",
+        "value": 15.0
+      },
+      {
+        "part": "앞다리",
+        "element": "ice",
+        "value": 20.0
+      },
+      {
+        "part": "뒷다리",
+        "element": "ice",
+        "value": 20.0
+      }
+    ]
+  },
+  {
+    "monster": "자보아자길",
+    "bestPart": "팽창시 배",
+    "topElementParts": [
+      "팽창시 배",
+      "머리",
+      "지느러미"
+    ],
+    "parts": [
+      {
+        "part": "머리",
+        "element": "fire",
+        "value": 20.0
+      },
+      {
+        "part": "몸통",
+        "element": "fire",
+        "value": 15.0
+      },
+      {
+        "part": "팽창시 배",
+        "element": "fire",
+        "value": 30.0
+      },
+      {
+        "part": "지느러미",
+        "element": "fire",
+        "value": 20.0
+      },
+      {
+        "part": "앞다리",
+        "element": "fire",
+        "value": 20.0
+      },
+      {
+        "part": "뒷다리",
+        "element": "fire",
+        "value": 15.0
+      },
+      {
+        "part": "꼬리",
+        "element": "fire",
+        "value": 20.0
+      }
+    ]
+  },
+  {
+    "monster": "자보아자길 아종",
+    "bestPart": "팽창시 배",
+    "topElementParts": [
+      "팽창시 배",
+      "머리",
+      "몸통"
+    ],
+    "parts": [
+      {
+        "part": "머리",
+        "element": "ice",
+        "value": 25.0
+      },
+      {
+        "part": "몸통",
+        "element": "ice",
+        "value": 20.0
+      },
+      {
+        "part": "팽창시 배",
+        "element": "ice",
+        "value": 30.0
+      },
+      {
+        "part": "지느러미",
+        "element": "ice",
+        "value": 20.0
+      },
+      {
+        "part": "앞다리",
+        "element": "ice",
+        "value": 15.0
+      },
+      {
+        "part": "뒷다리",
+        "element": "ice",
+        "value": 15.0
+      },
+      {
+        "part": "꼬리",
+        "element": "ice",
+        "value": 20.0
+      }
+    ]
+  },
+  {
+    "monster": "가라라아자라",
+    "bestPart": "앞다리",
+    "topElementParts": [
+      "앞다리",
+      "등",
+      "몸통"
+    ],
+    "parts": [
+      {
+        "part": "머리",
+        "element": "ice",
+        "value": 15.0
+      },
+      {
+        "part": "목",
+        "element": "ice",
+        "value": 15.0
+      },
+      {
+        "part": "몸통",
+        "element": "ice",
+        "value": 25.0
+      },
+      {
+        "part": "등",
+        "element": "ice",
+        "value": 30.0
+      },
+      {
+        "part": "앞다리",
+        "element": "ice",
+        "value": 35.0
+      },
+      {
+        "part": "뒷다리",
+        "element": "ice",
+        "value": 15.0
+      },
+      {
+        "part": "꼬리",
+        "element": "ice",
+        "value": 10.0
+      }
+    ]
+  },
+  {
+    "monster": "가라라아자라 아종",
+    "bestPart": "등",
+    "topElementParts": [
+      "등",
+      "몸통",
+      "앞다리"
+    ],
+    "parts": [
+      {
+        "part": "머리",
+        "element": "fire",
+        "value": 10.0
+      },
+      {
+        "part": "목",
+        "element": "fire",
+        "value": 10.0
+      },
+      {
+        "part": "몸통",
+        "element": "fire",
+        "value": 25.0
+      },
+      {
+        "part": "등",
+        "element": "fire",
+        "value": 35.0
+      },
+      {
+        "part": "앞다리",
+        "element": "fire",
+        "value": 15.0
+      },
+      {
+        "part": "뒷다리",
+        "element": "thunder",
+        "value": 15.0
+      },
+      {
+        "part": "꼬리",
+        "element": "fire",
+        "value": 10.0
+      }
+    ]
+  },
+  {
+    "monster": "브라키디오스",
+    "bestPart": "뿔",
+    "topElementParts": [
+      "뿔",
+      "머리",
+      "몸통"
+    ],
+    "parts": [
+      {
+        "part": "뿔",
+        "element": "water",
+        "value": 25.0
+      },
+      {
+        "part": "머리",
+        "element": "water",
+        "value": 20.0
+      },
+      {
+        "part": "몸통",
+        "element": "water",
+        "value": 15.0
+      },
+      {
+        "part": "앞다리",
+        "element": "water",
+        "value": 10.0
+      },
+      {
+        "part": "뒷다리",
+        "element": "water",
+        "value": 10.0
+      },
+      {
+        "part": "꼬리",
+        "element": "water",
+        "value": 15.0
+      },
+      {
+        "part": "꼬리끝",
+        "element": "water",
+        "value": 5.0
+      }
+    ]
+  },
+  {
+    "monster": "임계 브라키디오스",
+    "bestPart": "",
+    "topElementParts": [],
+    "parts": []
+  },
+  {
+    "monster": "이블조",
+    "bestPart": "몸통",
+    "topElementParts": [
+      "몸통",
+      "꼬리"
+    ],
+    "parts": [
+      {
+        "part": "몸통",
+        "element": "thunder",
+        "value": 25.0
+      },
+      {
+        "part": "꼬리",
+        "element": "thunder",
+        "value": 20.0
+      }
+    ]
+  },
+  {
+    "monster": "광폭 이블조",
+    "bestPart": "꼬리",
+    "topElementParts": [
+      "꼬리",
+      "등",
+      "뒷다리"
+    ],
+    "parts": [
+      {
+        "part": "가슴",
+        "element": "thunder",
+        "value": 25.0
+      },
+      {
+        "part": "등",
+        "element": "thunder",
+        "value": 30.0
+      },
+      {
+        "part": "앞다리",
+        "element": "thunder",
+        "value": 25.0
+      },
+      {
+        "part": "뒷다리",
+        "element": "thunder",
+        "value": 30.0
+      },
+      {
+        "part": "꼬리",
+        "element": "thunder",
+        "value": 35.0
+      }
+    ]
+  },
+  {
+    "monster": "푸루푸루",
+    "bestPart": "머리",
+    "topElementParts": [
+      "머리",
+      "목",
+      "몸통"
+    ],
+    "parts": [
+      {
+        "part": "머리",
+        "element": "fire",
+        "value": 30.0
+      },
+      {
+        "part": "목",
+        "element": "fire",
+        "value": 25.0
+      },
+      {
+        "part": "몸통",
+        "element": "fire",
+        "value": 25.0
+      },
+      {
+        "part": "날개",
+        "element": "fire",
+        "value": 20.0
+      },
+      {
+        "part": "다리",
+        "element": "fire",
+        "value": 15.0
+      },
+      {
+        "part": "꼬리",
+        "element": "fire",
+        "value": 20.0
+      }
+    ]
+  },
+  {
+    "monster": "푸루푸루 아종",
+    "bestPart": "머리",
+    "topElementParts": [
+      "머리",
+      "목",
+      "몸통"
+    ],
+    "parts": [
+      {
+        "part": "머리",
+        "element": "water",
+        "value": 30.0
+      },
+      {
+        "part": "목",
+        "element": "water",
+        "value": 25.0
+      },
+      {
+        "part": "몸통",
+        "element": "water",
+        "value": 25.0
+      },
+      {
+        "part": "날개",
+        "element": "water",
+        "value": 20.0
+      },
+      {
+        "part": "다리",
+        "element": "water",
+        "value": 15.0
+      },
+      {
+        "part": "꼬리",
+        "element": "water",
+        "value": 20.0
+      }
+    ]
+  },
+  {
+    "monster": "바살모스",
+    "bestPart": "머리",
+    "topElementParts": [
+      "머리",
+      "목아래",
+      "등"
+    ],
+    "parts": [
+      {
+        "part": "머리",
+        "element": "dragon",
+        "value": 18.0
+      },
+      {
+        "part": "목아래",
+        "element": "dragon",
+        "value": 18.0
+      },
+      {
+        "part": "등",
+        "element": "dragon",
+        "value": 18.0
+      },
+      {
+        "part": "날개",
+        "element": "dragon",
+        "value": 18.0
+      },
+      {
+        "part": "다리",
+        "element": "water",
+        "value": 10.0
+      },
+      {
+        "part": "꼬리아래",
+        "element": "dragon",
+        "value": 18.0
+      },
+      {
+        "part": "꼬리끝",
+        "element": "dragon",
+        "value": 15.0
+      }
+    ]
+  },
+  {
+    "monster": "바살모스 아종",
+    "bestPart": "머리",
+    "topElementParts": [
+      "머리",
+      "목아래",
+      "등"
+    ],
+    "parts": [
+      {
+        "part": "머리",
+        "element": "ice",
+        "value": 18.0
+      },
+      {
+        "part": "목아래",
+        "element": "ice",
+        "value": 18.0
+      },
+      {
+        "part": "등",
+        "element": "ice",
+        "value": 18.0
+      },
+      {
+        "part": "날개",
+        "element": "ice",
+        "value": 18.0
+      },
+      {
+        "part": "다리",
+        "element": "ice",
+        "value": 13.0
+      },
+      {
+        "part": "꼬리아래",
+        "element": "ice",
+        "value": 18.0
+      },
+      {
+        "part": "꼬리끝",
+        "element": "ice",
+        "value": 15.0
+      }
+    ]
+  },
+  {
+    "monster": "그라비모스",
+    "bestPart": "등",
+    "topElementParts": [
+      "등",
+      "목",
+      "다리"
+    ],
+    "parts": [
+      {
+        "part": "머리",
+        "element": "dragon",
+        "value": 30.0
+      },
+      {
+        "part": "목",
+        "element": "water",
+        "value": 30.0
+      },
+      {
+        "part": "등",
+        "element": "water",
+        "value": 35.0
+      },
+      {
+        "part": "날개",
+        "element": "water",
+        "value": 20.0
+      },
+      {
+        "part": "다리",
+        "element": "water",
+        "value": 30.0
+      },
+      {
+        "part": "꼬리",
+        "element": "water",
+        "value": 30.0
+      }
+    ]
+  },
+  {
+    "monster": "그라비모스 아종",
+    "bestPart": "목",
+    "topElementParts": [
+      "목",
+      "꼬리",
+      "다리"
+    ],
+    "parts": [
+      {
+        "part": "머리",
+        "element": "water",
+        "value": 15.0
+      },
+      {
+        "part": "목",
+        "element": "water",
+        "value": 30.0
+      },
+      {
+        "part": "날개",
+        "element": "water",
+        "value": 15.0
+      },
+      {
+        "part": "다리",
+        "element": "water",
+        "value": 25.0
+      },
+      {
+        "part": "꼬리",
+        "element": "water",
+        "value": 30.0
+      }
+    ]
+  },
+  {
+    "monster": "리오레이아",
+    "bestPart": "머리",
+    "topElementParts": [
+      "머리",
+      "등",
+      "꼬리"
+    ],
+    "parts": [
+      {
+        "part": "머리",
+        "element": "dragon",
+        "value": 35.0
+      },
+      {
+        "part": "목",
+        "element": "dragon",
+        "value": 20.0
+      },
+      {
+        "part": "배",
+        "element": "thunder",
+        "value": 20.0
+      },
+      {
+        "part": "등",
+        "element": "dragon",
+        "value": 25.0
+      },
+      {
+        "part": "날개",
+        "element": "dragon",
+        "value": 20.0
+      },
+      {
+        "part": "다리",
+        "element": "dragon",
+        "value": 10.0
+      },
+      {
+        "part": "꼬리",
+        "element": "dragon",
+        "value": 25.0
+      }
+    ]
+  },
+  {
+    "monster": "리오레이아 아종",
+    "bestPart": "머리",
+    "topElementParts": [
+      "머리",
+      "꼬리끝",
+      "배"
+    ],
+    "parts": [
+      {
+        "part": "머리",
+        "element": "dragon",
+        "value": 25.0
+      },
+      {
+        "part": "목",
+        "element": "dragon",
+        "value": 15.0
+      },
+      {
+        "part": "배",
+        "element": "thunder",
+        "value": 20.0
+      },
+      {
+        "part": "등",
+        "element": "dragon",
+        "value": 20.0
+      },
+      {
+        "part": "날개",
+        "element": "dragon",
+        "value": 20.0
+      },
+      {
+        "part": "다리",
+        "element": "thunder",
+        "value": 5.0
+      },
+      {
+        "part": "꼬리",
+        "element": "dragon",
+        "value": 20.0
+      },
+      {
+        "part": "꼬리끝",
+        "element": "dragon",
+        "value": 25.0
+      }
+    ]
+  },
+  {
+    "monster": "리오레이아 희소종",
+    "bestPart": "목",
+    "topElementParts": [
+      "목",
+      "날개",
+      "등"
+    ],
+    "parts": [
+      {
+        "part": "목",
+        "element": "thunder",
+        "value": 30.0
+      },
+      {
+        "part": "배",
+        "element": "thunder",
+        "value": 15.0
+      },
+      {
+        "part": "등",
+        "element": "thunder",
+        "value": 20.0
+      },
+      {
+        "part": "날개",
+        "element": "thunder",
+        "value": 25.0
+      },
+      {
+        "part": "다리",
+        "element": "thunder",
+        "value": 10.0
+      },
+      {
+        "part": "꼬리",
+        "element": "thunder",
+        "value": 10.0
+      },
+      {
+        "part": "꼬리끝",
+        "element": "thunder",
+        "value": 10.0
+      }
+    ]
+  },
+  {
+    "monster": "리오레우스",
+    "bestPart": "날개",
+    "topElementParts": [
+      "날개",
+      "등",
+      "머리"
+    ],
+    "parts": [
+      {
+        "part": "머리",
+        "element": "dragon",
+        "value": 20.0
+      },
+      {
+        "part": "목",
+        "element": "dragon",
+        "value": 10.0
+      },
+      {
+        "part": "배",
+        "element": "thunder",
+        "value": 20.0
+      },
+      {
+        "part": "등",
+        "element": "dragon",
+        "value": 25.0
+      },
+      {
+        "part": "날개",
+        "element": "dragon",
+        "value": 35.0
+      },
+      {
+        "part": "다리",
+        "element": "dragon",
+        "value": 10.0
+      },
+      {
+        "part": "꼬리",
+        "element": "dragon",
+        "value": 20.0
+      }
+    ]
+  },
+  {
+    "monster": "리오레우스 아종",
+    "bestPart": "다리",
+    "topElementParts": [
+      "다리",
+      "머리",
+      "등"
+    ],
+    "parts": [
+      {
+        "part": "머리",
+        "element": "dragon",
+        "value": 20.0
+      },
+      {
+        "part": "목",
+        "element": "dragon",
+        "value": 15.0
+      },
+      {
+        "part": "배",
+        "element": "ice",
+        "value": 15.0
+      },
+      {
+        "part": "등",
+        "element": "dragon",
+        "value": 20.0
+      },
+      {
+        "part": "날개",
+        "element": "dragon",
+        "value": 15.0
+      },
+      {
+        "part": "다리",
+        "element": "dragon",
+        "value": 30.0
+      },
+      {
+        "part": "꼬리",
+        "element": "dragon",
+        "value": 20.0
+      },
+      {
+        "part": "꼬리끝",
+        "element": "dragon",
+        "value": 20.0
+      }
+    ]
+  },
+  {
+    "monster": "리오레우스 희소종",
+    "bestPart": "목",
+    "topElementParts": [
+      "목",
+      "날개",
+      "등"
+    ],
+    "parts": [
+      {
+        "part": "목",
+        "element": "water",
+        "value": 35.0
+      },
+      {
+        "part": "배",
+        "element": "water",
+        "value": 15.0
+      },
+      {
+        "part": "등",
+        "element": "water",
+        "value": 20.0
+      },
+      {
+        "part": "날개",
+        "element": "water",
+        "value": 25.0
+      },
+      {
+        "part": "다리",
+        "element": "water",
+        "value": 10.0
+      },
+      {
+        "part": "꼬리",
+        "element": "water",
+        "value": 10.0
+      },
+      {
+        "part": "꼬리끝",
+        "element": "water",
+        "value": 10.0
+      }
+    ]
+  },
+  {
+    "monster": "티가렉스",
+    "bestPart": "등",
+    "topElementParts": [
+      "등",
+      "머리",
+      "목"
+    ],
+    "parts": [
+      {
+        "part": "머리",
+        "element": "thunder",
+        "value": 20.0
+      },
+      {
+        "part": "목",
+        "element": "thunder",
+        "value": 20.0
+      },
+      {
+        "part": "배",
+        "element": "thunder",
+        "value": 15.0
+      },
+      {
+        "part": "등",
+        "element": "thunder",
+        "value": 25.0
+      },
+      {
+        "part": "앞다리",
+        "element": "thunder",
+        "value": 20.0
+      },
+      {
+        "part": "뒷다리",
+        "element": "thunder",
+        "value": 10.0
+      },
+      {
+        "part": "꼬리",
+        "element": "thunder",
+        "value": 15.0
+      }
+    ]
+  },
+  {
+    "monster": "티가렉스 아종",
+    "bestPart": "머리",
+    "topElementParts": [
+      "머리",
+      "등",
+      "목"
+    ],
+    "parts": [
+      {
+        "part": "머리",
+        "element": "water",
+        "value": 25.0
+      },
+      {
+        "part": "목",
+        "element": "water",
+        "value": 15.0
+      },
+      {
+        "part": "배",
+        "element": "water",
+        "value": 15.0
+      },
+      {
+        "part": "등",
+        "element": "water",
+        "value": 20.0
+      },
+      {
+        "part": "앞다리",
+        "element": "water",
+        "value": 15.0
+      },
+      {
+        "part": "뒷다리",
+        "element": "water",
+        "value": 10.0
+      },
+      {
+        "part": "꼬리",
+        "element": "water",
+        "value": 10.0
+      }
+    ]
+  },
+  {
+    "monster": "티가렉스 희소종",
+    "bestPart": "꼬리",
+    "topElementParts": [
+      "꼬리",
+      "뒷다리",
+      "머리파괴후"
+    ],
+    "parts": [
+      {
+        "part": "머리파괴후",
+        "element": "water",
+        "value": 15.0
+      },
+      {
+        "part": "목",
+        "element": "water",
+        "value": 10.0
+      },
+      {
+        "part": "배",
+        "element": "water",
+        "value": 15.0
+      },
+      {
+        "part": "등",
+        "element": "water",
+        "value": 10.0
+      },
+      {
+        "part": "꼬리",
+        "element": "water",
+        "value": 20.0
+      },
+      {
+        "part": "앞다리",
+        "element": "water",
+        "value": 10.0
+      },
+      {
+        "part": "뒷다리",
+        "element": "water",
+        "value": 20.0
+      }
+    ]
+  },
+  {
+    "monster": "모노블로스",
+    "bestPart": "목",
+    "topElementParts": [
+      "목",
+      "꼬리끝",
+      "머리"
+    ],
+    "parts": [
+      {
+        "part": "머리",
+        "element": "ice",
+        "value": 25.0
+      },
+      {
+        "part": "목",
+        "element": "thunder",
+        "value": 30.0
+      },
+      {
+        "part": "등/날개",
+        "element": "ice",
+        "value": 25.0
+      },
+      {
+        "part": "배",
+        "element": "thunder",
+        "value": 25.0
+      },
+      {
+        "part": "날개갈퀴",
+        "element": "thunder",
+        "value": 20.0
+      },
+      {
+        "part": "다리",
+        "element": "fire",
+        "value": 15.0
+      },
+      {
+        "part": "꼬리",
+        "element": "thunder",
+        "value": 25.0
+      },
+      {
+        "part": "꼬리끝",
+        "element": "thunder",
+        "value": 30.0
+      }
+    ]
+  },
+  {
+    "monster": "모노블로스 아종",
+    "bestPart": "목",
+    "topElementParts": [
+      "목",
+      "꼬리끝",
+      "머리"
+    ],
+    "parts": [
+      {
+        "part": "머리",
+        "element": "ice",
+        "value": 25.0
+      },
+      {
+        "part": "목",
+        "element": "thunder",
+        "value": 30.0
+      },
+      {
+        "part": "등/날개",
+        "element": "ice",
+        "value": 25.0
+      },
+      {
+        "part": "배",
+        "element": "thunder",
+        "value": 25.0
+      },
+      {
+        "part": "날개갈퀴",
+        "element": "thunder",
+        "value": 20.0
+      },
+      {
+        "part": "다리",
+        "element": "fire",
+        "value": 15.0
+      },
+      {
+        "part": "꼬리",
+        "element": "thunder",
+        "value": 25.0
+      },
+      {
+        "part": "꼬리끝",
+        "element": "thunder",
+        "value": 30.0
+      }
+    ]
+  },
+  {
+    "monster": "디아블로스",
+    "bestPart": "꼬리끝",
+    "topElementParts": [
+      "꼬리끝",
+      "등/날개",
+      "머리"
+    ],
+    "parts": [
+      {
+        "part": "머리",
+        "element": "ice",
+        "value": 20.0
+      },
+      {
+        "part": "목",
+        "element": "ice",
+        "value": 15.0
+      },
+      {
+        "part": "등/날개",
+        "element": "ice",
+        "value": 25.0
+      },
+      {
+        "part": "배",
+        "element": "ice",
+        "value": 10.0
+      },
+      {
+        "part": "날개갈퀴",
+        "element": "ice",
+        "value": 20.0
+      },
+      {
+        "part": "다리",
+        "element": "ice",
+        "value": 8.0
+      },
+      {
+        "part": "꼬리",
+        "element": "ice",
+        "value": 15.0
+      },
+      {
+        "part": "꼬리끝",
+        "element": "ice",
+        "value": 30.0
+      }
+    ]
+  },
+  {
+    "monster": "디아블로스 아종",
+    "bestPart": "꼬리끝",
+    "topElementParts": [
+      "꼬리끝",
+      "등/날개",
+      "머리"
+    ],
+    "parts": [
+      {
+        "part": "머리",
+        "element": "ice",
+        "value": 20.0
+      },
+      {
+        "part": "목",
+        "element": "ice",
+        "value": 15.0
+      },
+      {
+        "part": "등/날개",
+        "element": "ice",
+        "value": 25.0
+      },
+      {
+        "part": "배",
+        "element": "ice",
+        "value": 10.0
+      },
+      {
+        "part": "날개갈퀴",
+        "element": "ice",
+        "value": 20.0
+      },
+      {
+        "part": "다리",
+        "element": "ice",
+        "value": 8.0
+      },
+      {
+        "part": "꼬리",
+        "element": "ice",
+        "value": 15.0
+      },
+      {
+        "part": "꼬리끝",
+        "element": "ice",
+        "value": 30.0
+      }
+    ]
+  },
+  {
+    "monster": "셀레기오스",
+    "bestPart": "머리",
+    "topElementParts": [
+      "머리",
+      "배",
+      "뒷다리"
+    ],
+    "parts": [
+      {
+        "part": "머리",
+        "element": "thunder",
+        "value": 25.0
+      },
+      {
+        "part": "목",
+        "element": "thunder",
+        "value": 15.0
+      },
+      {
+        "part": "등",
+        "element": "thunder",
+        "value": 15.0
+      },
+      {
+        "part": "배",
+        "element": "thunder",
+        "value": 20.0
+      },
+      {
+        "part": "앞다리",
+        "element": "thunder",
+        "value": 15.0
+      },
+      {
+        "part": "날개",
+        "element": "thunder",
+        "value": 15.0
+      },
+      {
+        "part": "뒷다리",
+        "element": "thunder",
+        "value": 20.0
+      },
+      {
+        "part": "꼬리",
+        "element": "thunder",
+        "value": 10.0
+      }
+    ]
+  },
+  {
+    "monster": "아캄토름",
+    "bestPart": "꼬리",
+    "topElementParts": [
+      "꼬리",
+      "머리",
+      "앞다리"
+    ],
+    "parts": [
+      {
+        "part": "머리",
+        "element": "dragon",
+        "value": 25.0
+      },
+      {
+        "part": "목",
+        "element": "dragon",
+        "value": 20.0
+      },
+      {
+        "part": "앞다리",
+        "element": "dragon",
+        "value": 25.0
+      },
+      {
+        "part": "뒷다리",
+        "element": "dragon",
+        "value": 20.0
+      },
+      {
+        "part": "꼬리",
+        "element": "dragon",
+        "value": 30.0
+      }
+    ]
+  },
+  {
+    "monster": "우캄루바스",
+    "bestPart": "머리",
+    "topElementParts": [
+      "머리",
+      "앞다리",
+      "꼬리"
+    ],
+    "parts": [
+      {
+        "part": "머리",
+        "element": "fire",
+        "value": 25.0
+      },
+      {
+        "part": "등",
+        "element": "fire",
+        "value": 15.0
+      },
+      {
+        "part": "배",
+        "element": "fire",
+        "value": 20.0
+      },
+      {
+        "part": "앞다리",
+        "element": "thunder",
+        "value": 25.0
+      },
+      {
+        "part": "뒷다리",
+        "element": "dragon",
+        "value": 20.0
+      },
+      {
+        "part": "아랫배",
+        "element": "fire",
+        "value": 20.0
+      },
+      {
+        "part": "꼬리",
+        "element": "fire",
+        "value": 25.0
+      }
+    ]
+  },
+  {
+    "monster": "진오우거",
+    "bestPart": "꼬리끝",
+    "topElementParts": [
+      "꼬리끝",
+      "머리",
+      "앞다리"
+    ],
+    "parts": [
+      {
+        "part": "머리",
+        "element": "ice",
+        "value": 15.0
+      },
+      {
+        "part": "몸통",
+        "element": "water",
+        "value": 10.0
+      },
+      {
+        "part": "앞다리",
+        "element": "ice",
+        "value": 15.0
+      },
+      {
+        "part": "꼬리",
+        "element": "water",
+        "value": 10.0
+      },
+      {
+        "part": "꼬리끝",
+        "element": "ice",
+        "value": 20.0
+      }
+    ]
+  },
+  {
+    "monster": "진오우거 아종",
+    "bestPart": "앞다리",
+    "topElementParts": [
+      "앞다리",
+      "뒷다리",
+      "어깨"
+    ],
+    "parts": [
+      {
+        "part": "몸통",
+        "element": "thunder",
+        "value": 15.0
+      },
+      {
+        "part": "앞다리",
+        "element": "thunder",
+        "value": 30.0
+      },
+      {
+        "part": "뒷다리",
+        "element": "thunder",
+        "value": 25.0
+      },
+      {
+        "part": "어깨",
+        "element": "thunder",
+        "value": 25.0
+      },
+      {
+        "part": "꼬리",
+        "element": "thunder",
+        "value": 20.0
+      },
+      {
+        "part": "꼬리끝",
+        "element": "thunder",
+        "value": 25.0
+      }
+    ]
+  },
+  {
+    "monster": "키린",
+    "bestPart": "몸통",
+    "topElementParts": [
+      "몸통",
+      "하반신",
+      "머리"
+    ],
+    "parts": [
+      {
+        "part": "머리",
+        "element": "fire",
+        "value": 5.0
+      },
+      {
+        "part": "몸통",
+        "element": "fire",
+        "value": 15.0
+      },
+      {
+        "part": "앞다리",
+        "element": "fire",
+        "value": 5.0
+      },
+      {
+        "part": "하반신",
+        "element": "fire",
+        "value": 15.0
+      }
+    ]
+  },
+  {
+    "monster": "키린 아종",
+    "bestPart": "몸통",
+    "topElementParts": [
+      "몸통",
+      "하반신",
+      "머리"
+    ],
+    "parts": [
+      {
+        "part": "머리",
+        "element": "fire",
+        "value": 5.0
+      },
+      {
+        "part": "몸통",
+        "element": "fire",
+        "value": 15.0
+      },
+      {
+        "part": "앞다리",
+        "element": "fire",
+        "value": 5.0
+      },
+      {
+        "part": "하반신",
+        "element": "fire",
+        "value": 15.0
+      }
+    ]
+  },
+  {
+    "monster": "샤가르마가라",
+    "bestPart": "머리",
+    "topElementParts": [
+      "머리",
+      "날개다리",
+      "목"
+    ],
+    "parts": [
+      {
+        "part": "머리",
+        "element": "dragon",
+        "value": 30.0
+      },
+      {
+        "part": "목",
+        "element": "dragon",
+        "value": 20.0
+      },
+      {
+        "part": "몸통",
+        "element": "fire",
+        "value": 10.0
+      },
+      {
+        "part": "날개",
+        "element": "dragon",
+        "value": 20.0
+      },
+      {
+        "part": "날개다리",
+        "element": "fire",
+        "value": 30.0
+      },
+      {
+        "part": "앞다리",
+        "element": "fire",
+        "value": 10.0
+      },
+      {
+        "part": "뒷다리",
+        "element": "fire",
+        "value": 10.0
+      },
+      {
+        "part": "꼬리",
+        "element": "dragon",
+        "value": 15.0
+      }
+    ]
+  },
+  {
+    "monster": "크샬다오라",
+    "bestPart": "꼬리",
+    "topElementParts": [
+      "꼬리",
+      "목",
+      "등"
+    ],
+    "parts": [
+      {
+        "part": "목",
+        "element": "dragon",
+        "value": 35.0
+      },
+      {
+        "part": "등",
+        "element": "thunder",
+        "value": 20.0
+      },
+      {
+        "part": "날개",
+        "element": "dragon",
+        "value": 20.0
+      },
+      {
+        "part": "꼬리",
+        "element": "dragon",
+        "value": 40.0
+      }
+    ]
+  },
+  {
+    "monster": "녹슨크샬다오라",
+    "bestPart": "꼬리",
+    "topElementParts": [
+      "꼬리",
+      "배",
+      "등"
+    ],
+    "parts": [
+      {
+        "part": "배",
+        "element": "water",
+        "value": 25.0
+      },
+      {
+        "part": "등",
+        "element": "water",
+        "value": 20.0
+      },
+      {
+        "part": "날개",
+        "element": "dragon",
+        "value": 20.0
+      },
+      {
+        "part": "앞다리",
+        "element": "water",
+        "value": 20.0
+      },
+      {
+        "part": "뒷다리",
+        "element": "water",
+        "value": 15.0
+      },
+      {
+        "part": "꼬리",
+        "element": "water",
+        "value": 40.0
+      }
+    ]
+  },
+  {
+    "monster": "테오·테스카토르",
+    "bestPart": "꼬리",
+    "topElementParts": [
+      "꼬리",
+      "앞다리",
+      "뒷다리"
+    ],
+    "parts": [
+      {
+        "part": "배",
+        "element": "dragon",
+        "value": 10.0
+      },
+      {
+        "part": "등",
+        "element": "dragon",
+        "value": 10.0
+      },
+      {
+        "part": "날개",
+        "element": "dragon",
+        "value": 10.0
+      },
+      {
+        "part": "앞다리",
+        "element": "water",
+        "value": 15.0
+      },
+      {
+        "part": "뒷다리",
+        "element": "ice",
+        "value": 15.0
+      },
+      {
+        "part": "꼬리",
+        "element": "dragon",
+        "value": 25.0
+      }
+    ]
+  },
+  {
+    "monster": "오나즈치",
+    "bestPart": "머리",
+    "topElementParts": [
+      "머리",
+      "배",
+      "등"
+    ],
+    "parts": [
+      {
+        "part": "머리",
+        "element": "fire",
+        "value": 40.0
+      },
+      {
+        "part": "배",
+        "element": "fire",
+        "value": 40.0
+      },
+      {
+        "part": "등",
+        "element": "fire",
+        "value": 30.0
+      },
+      {
+        "part": "앞다리",
+        "element": "fire",
+        "value": 20.0
+      },
+      {
+        "part": "뒷다리",
+        "element": "fire",
+        "value": 30.0
+      },
+      {
+        "part": "날개",
+        "element": "fire",
+        "value": 15.0
+      },
+      {
+        "part": "꼬리",
+        "element": "fire",
+        "value": 15.0
+      }
+    ]
+  },
+  {
+    "monster": "다렌·모란",
+    "bestPart": "입안",
+    "topElementParts": [
+      "입안",
+      "배",
+      "등의약점"
+    ],
+    "parts": [
+      {
+        "part": "입안",
+        "element": "thunder",
+        "value": 25.0
+      },
+      {
+        "part": "뿔/등",
+        "element": "thunder",
+        "value": 15.0
+      },
+      {
+        "part": "몸통",
+        "element": "thunder",
+        "value": 8.0
+      },
+      {
+        "part": "다리",
+        "element": "thunder",
+        "value": 15.0
+      },
+      {
+        "part": "배",
+        "element": "thunder",
+        "value": 22.0
+      },
+      {
+        "part": "등의약점",
+        "element": "thunder",
+        "value": 22.0
+      },
+      {
+        "part": "분사구",
+        "element": "thunder",
+        "value": 20.0
+      }
+    ]
+  },
+  {
+    "monster": "다라·아마듈라",
+    "bestPart": "등칼날 흑가시 발톱",
+    "topElementParts": [
+      "등칼날 흑가시 발톱",
+      "머리약점",
+      "하반신하부"
+    ],
+    "parts": [
+      {
+        "part": "머리약점",
+        "element": "dragon",
+        "value": 30.0
+      },
+      {
+        "part": "등칼날 흑가시 발톱",
+        "element": "dragon",
+        "value": 40.0
+      },
+      {
+        "part": "상반신",
+        "element": "dragon",
+        "value": 5.0
+      },
+      {
+        "part": "하반신하부",
+        "element": "dragon",
+        "value": 15.0
+      }
+    ]
+  },
+  {
+    "monster": "다라·아마듈라 아종",
+    "bestPart": "머리약점",
+    "topElementParts": [
+      "머리약점",
+      "하반신상부",
+      "하반신하부"
+    ],
+    "parts": [
+      {
+        "part": "머리약점",
+        "element": "dragon",
+        "value": 30.0
+      },
+      {
+        "part": "흉부",
+        "element": "dragon",
+        "value": 5.0
+      },
+      {
+        "part": "상반신",
+        "element": "dragon",
+        "value": 5.0
+      },
+      {
+        "part": "하반신하부",
+        "element": "dragon",
+        "value": 10.0
+      },
+      {
+        "part": "하반신상부",
+        "element": "dragon",
+        "value": 15.0
+      }
+    ]
+  },
+  {
+    "monster": "고그마지오스",
+    "bestPart": "목",
+    "topElementParts": [
+      "목",
+      "배",
+      "앞다리"
+    ],
+    "parts": [
+      {
+        "part": "목",
+        "element": "fire",
+        "value": 5.0
+      },
+      {
+        "part": "배",
+        "element": "fire",
+        "value": 5.0
+      },
+      {
+        "part": "앞다리",
+        "element": "fire",
+        "value": 5.0
+      },
+      {
+        "part": "뒷다리",
+        "element": "fire",
+        "value": 5.0
+      }
+    ]
+  },
+  {
+    "monster": "고어·마가라",
+    "bestPart": "날개다리",
+    "topElementParts": [
+      "날개다리",
+      "머리",
+      "목"
+    ],
+    "parts": [
+      {
+        "part": "머리",
+        "element": "dragon",
+        "value": 30.0
+      },
+      {
+        "part": "목",
+        "element": "fire",
+        "value": 15.0
+      },
+      {
+        "part": "몸통",
+        "element": "fire",
+        "value": 10.0
+      },
+      {
+        "part": "날개",
+        "element": "fire",
+        "value": 15.0
+      },
+      {
+        "part": "날개다리",
+        "element": "fire",
+        "value": 30.0
+      },
+      {
+        "part": "앞다리",
+        "element": "fire",
+        "value": 10.0
+      },
+      {
+        "part": "뒷다리",
+        "element": "fire",
+        "value": 10.0
+      },
+      {
+        "part": "꼬리",
+        "element": "fire",
+        "value": 10.0
+      }
+    ]
+  },
+  {
+    "monster": "혼돈의 고어·마가라",
+    "bestPart": "",
+    "topElementParts": [],
+    "parts": []
+  },
+  {
+    "monster": "밀라보레아스",
+    "bestPart": "",
+    "topElementParts": [],
+    "parts": []
+  },
+  {
+    "monster": "밀라보레아스 (조룡)",
+    "bestPart": "",
+    "topElementParts": [],
+    "parts": []
+  },
+  {
+    "monster": "밀라보레아스 (홍룡)",
+    "bestPart": "머리",
+    "topElementParts": [
+      "머리",
+      "목",
+      "꼬리"
+    ],
+    "parts": [
+      {
+        "part": "머리",
+        "element": "dragon",
+        "value": 30.0
+      },
+      {
+        "part": "목",
+        "element": "dragon",
+        "value": 25.0
+      },
+      {
+        "part": "등",
+        "element": "dragon",
+        "value": 15.0
+      },
+      {
+        "part": "날개",
+        "element": "ice",
+        "value": 18.0
+      },
+      {
+        "part": "가슴",
+        "element": "ice",
+        "value": 15.0
+      },
+      {
+        "part": "배",
+        "element": "ice",
+        "value": 15.0
+      },
+      {
+        "part": "팔",
+        "element": "ice",
+        "value": 15.0
+      },
+      {
+        "part": "다리",
+        "element": "ice",
+        "value": 15.0
+      },
+      {
+        "part": "꼬리",
+        "element": "dragon",
+        "value": 20.0
+      }
+    ]
+  },
+  {
+    "monster": "밀라보레아스 (홍염룡)",
+    "bestPart": "머리",
+    "topElementParts": [
+      "머리",
+      "목",
+      "꼬리"
+    ],
+    "parts": [
+      {
+        "part": "머리",
+        "element": "dragon",
+        "value": 30.0
+      },
+      {
+        "part": "목",
+        "element": "dragon",
+        "value": 25.0
+      },
+      {
+        "part": "등",
+        "element": "dragon",
+        "value": 15.0
+      },
+      {
+        "part": "날개",
+        "element": "ice",
+        "value": 18.0
+      },
+      {
+        "part": "가슴",
+        "element": "ice",
+        "value": 15.0
+      },
+      {
+        "part": "배",
+        "element": "ice",
+        "value": 15.0
+      },
+      {
+        "part": "팔",
+        "element": "ice",
+        "value": 15.0
+      },
+      {
+        "part": "다리",
+        "element": "ice",
+        "value": 15.0
+      },
+      {
+        "part": "꼬리",
+        "element": "dragon",
+        "value": 20.0
+      }
+    ]
+  }
+]

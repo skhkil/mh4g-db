@@ -1,11 +1,14 @@
 #!/usr/bin/env python3
 """Precompute monster hitzone highlights for the UI.
 
-Rules:
-- Determine primary elemental weakness from monster_summary element grades.
-- Badge targets are ELEMENT-ONLY; physical maxima are kept as audit metadata only.
-- bestPart is the highest hitzone part of the strongest primary element.
-- Handles compound values such as "19 / 24" by comparing their maximum numeric value.
+Rules (chat 4, part-wise elemental highlights):
+- Every monster part gets exactly one best elemental attribute when its best value is > 0.
+- The best attribute is chosen by raw hitzone value; ties are broken by the monster's
+  element-grade metadata, then by a stable element order.
+- Rank parts by that per-part best elemental value and mark the strongest top 3 parts
+  (or fewer when fewer valid parts exist) with a part badge.
+- UI only reads this precomputed metadata; no comparison/search runs on monster click.
+- Compound values such as "19 / 24" are compared by their maximum numeric value.
 """
 from __future__ import annotations
 import json, re
@@ -14,48 +17,60 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 DATA=ROOT/'data'
 ELEMENTS=('fire','water','thunder','ice','dragon')
-PHYSICAL=('cut','impact','shot')
 GRADE={'◎':5,'○':4,'△':3,'▲':2,'×':1,'-':0,'':0,None:0}
+
 
 def load(name):
     return json.loads((DATA/name).read_text(encoding='utf-8'))
+
 
 def val(v):
     nums=re.findall(r'-?\d+(?:\.\d+)?',str(v or ''))
     return max((float(x) for x in nums), default=0.0)
 
-def maxima(parts,key):
-    m=max((val(p.get(key)) for p in parts),default=0.0)
-    return m,[p.get('part','') for p in parts if val(p.get(key))==m and p.get('part')]
 
 def main():
     summaries=load('monster_summary.json')
     details={x.get('name'):x for x in load('monster_details.json')}
+    audit=[]
     for mon in summaries:
         parts=(details.get(mon.get('name')) or {}).get('parts') or []
-        if not parts:
-            continue
         elems=mon.get('elements') or {}
-        top=max((GRADE.get(elems.get(k),0) for k in ELEMENTS),default=0)
-        primary=[k for k in ELEMENTS if GRADE.get(elems.get(k),0)==top and top>0]
-        # If grade metadata is unavailable, fall back to raw elemental hitzone maxima.
-        if not primary:
-            raw={k:maxima(parts,k)[0] for k in ELEMENTS}
-            topv=max(raw.values(),default=0)
-            primary=[k for k in ELEMENTS if raw[k]==topv and topv>0]
-        max_values={}; best_parts={}
-        for key in (*PHYSICAL,*primary):
-            m,b=maxima(parts,key); max_values[key]=m; best_parts[key]=b
-        chosen=max(primary,key=lambda k:max_values.get(k,0),default=None)
-        best_part=(best_parts.get(chosen) or [parts[0].get('part','')])[0]
+        part_best={}
+        ranked=[]
+        for idx,part in enumerate(parts):
+            values={k:val(part.get(k)) for k in ELEMENTS}
+            maxv=max(values.values(),default=0.0)
+            if maxv<=0:
+                continue
+            tied=[k for k in ELEMENTS if values[k]==maxv]
+            # One badge per part: stronger monster-wide weakness grade wins a raw-value tie.
+            chosen=sorted(tied,key=lambda k:(-GRADE.get(elems.get(k),0), ELEMENTS.index(k)))[0]
+            name=part.get('part','')
+            if not name:
+                continue
+            part_best[name]={'element':chosen,'value':maxv}
+            ranked.append((maxv, GRADE.get(elems.get(chosen),0), -idx, name, chosen))
+
+        ranked.sort(reverse=True)
+        top_parts=[x[3] for x in ranked[:3]]
+        best_part=top_parts[0] if top_parts else (parts[0].get('part','') if parts else '')
         mon['hitzoneHighlights']={
             'bestPart':best_part,
-            'primaryElements':primary,
-            'primaryElement':chosen,
-            'maxValues':max_values,
-            'bestParts':best_parts,
+            'topElementParts':top_parts,
+            'partBestElements':{name:meta['element'] for name,meta in part_best.items()},
+            'partBestValues':{name:meta['value'] for name,meta in part_best.items()},
         }
-    (DATA/'monster_summary.json').write_text(json.dumps(summaries,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-    print(f'updated {len(summaries)} monsters')
+        audit.append({
+            'monster':mon.get('name'),
+            'bestPart':best_part,
+            'topElementParts':top_parts,
+            'parts':[{'part':name,**meta} for name,meta in part_best.items()],
+        })
 
-if __name__=='__main__': main()
+    (DATA/'monster_summary.json').write_text(json.dumps(summaries,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+    (DATA/'monster_hitzone_highlight_audit.json').write_text(json.dumps(audit,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+    print(f'updated {len(summaries)} monsters; audit {len(audit)}')
+
+if __name__=='__main__':
+    main()
