@@ -38,29 +38,7 @@
     },
     "traits": "방어다운",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Seltas",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "thunder"
-      ],
-      "bestPart": "배",
-      "bestParts": {
-        "cut": [
-          "배"
-        ],
-        "impact": [
-          "머리",
-          "배"
-        ],
-        "shot": [
-          "배"
-        ],
-        "thunder": [
-          "배"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Seltas"
   },
   {
     "id": "monster_30b571e90ca7",
@@ -101,29 +79,7 @@
     },
     "traits": "마비",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Desert Seltas",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "ice"
-      ],
-      "bestPart": "배",
-      "bestParts": {
-        "cut": [
-          "배"
-        ],
-        "impact": [
-          "머리",
-          "배"
-        ],
-        "shot": [
-          "배"
-        ],
-        "ice": [
-          "배"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Desert Seltas"
   },
   {
     "id": "monster_110cd565db40",
@@ -164,28 +120,7 @@
     },
     "traits": "물, 기절, 악취",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Seltas Queen",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "fire"
-      ],
-      "bestPart": "머리",
-      "bestParts": {
-        "cut": [
-          "머리"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "fire": [
-          "머리"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Seltas Queen"
   },
   {
     "id": "monster_b92f48e6e514",
@@ -226,28 +161,7 @@
     },
     "traits": "물, 기절, 악취",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Desert Seltas Queen",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "ice"
-      ],
-      "bestPart": "머리",
-      "bestParts": {
-        "cut": [
-          "머리"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "ice": [
-          "머리"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Desert Seltas Queen"
   },
   {
     "id": "monster_f8b0910be458",
@@ -288,29 +202,7 @@
     },
     "traits": "독, 수면",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Nerscylla",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "fire"
-      ],
-      "bestPart": "독침",
-      "bestParts": {
-        "cut": [
-          "배"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "독침"
-        ],
-        "fire": [
-          "독침",
-          "흉부"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Nerscylla"
   },
   {
     "id": "monster_e536a661d09d",
@@ -351,30 +243,7 @@
     },
     "traits": "독, 마비",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Shrouded Nerscylla",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "fire"
-      ],
-      "bestPart": "배",
-      "bestParts": {
-        "cut": [
-          "배"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "fire": [
-          "독침",
-          "흉부",
-          "배"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Shrouded Nerscylla"
   },
   {
     "id": "monster_6f965be06141",
@@ -415,29 +284,7 @@
     },
     "traits": "마비, 물",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Cephadrome",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "ice"
-      ],
-      "bestPart": "목",
-      "bestParts": {
-        "cut": [
-          "목"
-        ],
-        "impact": [
-          "목"
-        ],
-        "shot": [
-          "목",
-          "등/지느러미"
-        ],
-        "ice": [
-          "머리"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Cephadrome"
   },
   {
     "id": "monster_a73b98d0b944",
@@ -478,29 +325,7 @@
     },
     "traits": "",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Great Jaggi",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "fire"
-      ],
-      "bestPart": "머리",
-      "bestParts": {
-        "cut": [
-          "머리"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "fire": [
-          "머리",
-          "몸통"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Great Jaggi"
   },
   {
     "id": "monster_c2d60b6b13b7",
@@ -541,40 +366,7 @@
     },
     "traits": "빠름",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Velocidrome",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "fire",
-        "water",
-        "thunder",
-        "ice"
-      ],
-      "bestPart": "머리",
-      "bestParts": {
-        "cut": [
-          "머리"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "fire": [
-          "머리"
-        ],
-        "water": [
-          "머리"
-        ],
-        "thunder": [
-          "머리"
-        ],
-        "ice": [
-          "머리"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Velocidrome"
   },
   {
     "id": "monster_5b731f22ec27",
@@ -615,32 +407,7 @@
     },
     "traits": "마비",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Gendrome",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "thunder",
-        "ice"
-      ],
-      "bestPart": "머리",
-      "bestParts": {
-        "cut": [
-          "머리"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "thunder": [
-          "머리"
-        ],
-        "ice": [
-          "머리"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Gendrome"
   },
   {
     "id": "monster_3a5d33386ba9",
@@ -681,32 +448,7 @@
     },
     "traits": "독, 빠름",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Iodrome",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "water",
-        "thunder"
-      ],
-      "bestPart": "몸통",
-      "bestParts": {
-        "cut": [
-          "몸통"
-        ],
-        "impact": [
-          "몸통"
-        ],
-        "shot": [
-          "몸통"
-        ],
-        "water": [
-          "머리"
-        ],
-        "thunder": [
-          "머리"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Iodrome"
   },
   {
     "id": "monster_eb48d5e7dc99",
@@ -747,32 +489,7 @@
     },
     "traits": "불",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Yian Kut-Ku",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "thunder",
-        "ice"
-      ],
-      "bestPart": "머리",
-      "bestParts": {
-        "cut": [
-          "날개"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "thunder": [
-          "목"
-        ],
-        "ice": [
-          "목"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Yian Kut-Ku"
   },
   {
     "id": "monster_52db24e076e3",
@@ -813,32 +530,7 @@
     },
     "traits": "불",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Blue Yian Kut-Ku",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "water",
-        "thunder"
-      ],
-      "bestPart": "목",
-      "bestParts": {
-        "cut": [
-          "배"
-        ],
-        "impact": [
-          "배"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "water": [
-          "목"
-        ],
-        "thunder": [
-          "목"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Blue Yian Kut-Ku"
   },
   {
     "id": "monster_7909ff36357b",
@@ -879,28 +571,7 @@
     },
     "traits": "독, 기절",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Gypceros",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "fire"
-      ],
-      "bestPart": "머리",
-      "bestParts": {
-        "cut": [
-          "꼬리"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "꼬리"
-        ],
-        "fire": [
-          "머리"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Gypceros"
   },
   {
     "id": "monster_d50064f75286",
@@ -941,28 +612,7 @@
     },
     "traits": "독, 기절",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Purple Gypceros",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "fire"
-      ],
-      "bestPart": "머리",
-      "bestParts": {
-        "cut": [
-          "꼬리"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "꼬리"
-        ],
-        "fire": [
-          "머리"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Purple Gypceros"
   },
   {
     "id": "monster_f0f14f5de096",
@@ -1003,28 +653,7 @@
     },
     "traits": "불, 독",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Yian Garuga",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "water"
-      ],
-      "bestPart": "머리",
-      "bestParts": {
-        "cut": [
-          "머리"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "water": [
-          "등"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Yian Garuga"
   },
   {
     "id": "monster_8527604e7797",
@@ -1065,34 +694,7 @@
     },
     "traits": "물",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Daimyo Hermitaur",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "fire",
-        "thunder"
-      ],
-      "bestPart": "머리",
-      "bestParts": {
-        "cut": [
-          "머리"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "fire": [
-          "집게다리",
-          "등껍질(파괴)",
-          "집게다리(파괴)"
-        ],
-        "thunder": [
-          "머리"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Daimyo Hermitaur"
   },
   {
     "id": "monster_bcafff125175",
@@ -1133,31 +735,7 @@
     },
     "traits": "물",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Plum Daimyo Hermitaur",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "ice"
-      ],
-      "bestPart": "머리",
-      "bestParts": {
-        "cut": [
-          "머리"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "ice": [
-          "머리",
-          "앞다리",
-          "뒷다리",
-          "꼬리"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Plum Daimyo Hermitaur"
   },
   {
     "id": "monster_50c2282faebf",
@@ -1198,28 +776,7 @@
     },
     "traits": "물",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Kecha Wacha",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "fire"
-      ],
-      "bestPart": "머리",
-      "bestParts": {
-        "cut": [
-          "머리"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "fire": [
-          "머리"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Kecha Wacha"
   },
   {
     "id": "monster_e7725cd9e750",
@@ -1260,28 +817,7 @@
     },
     "traits": "불",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Ash Kecha Wacha",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "water"
-      ],
-      "bestPart": "머리",
-      "bestParts": {
-        "cut": [
-          "머리"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "water": [
-          "머리"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Ash Kecha Wacha"
   },
   {
     "id": "monster_e0026a2106a0",
@@ -1322,29 +858,7 @@
     },
     "traits": "얼음, 눈사람상태",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Lagombi",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "fire"
-      ],
-      "bestPart": "머리",
-      "bestParts": {
-        "cut": [
-          "등(꼬리)"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "fire": [
-          "머리",
-          "상반신"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Lagombi"
   },
   {
     "id": "monster_70c20bccbbb7",
@@ -1385,30 +899,7 @@
     },
     "traits": "불, 독, 마비, 폭발 , 악취",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Congalala",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "fire"
-      ],
-      "bestPart": "머리",
-      "bestParts": {
-        "cut": [
-          "머리",
-          "앞다리",
-          "뒷다리"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "fire": [
-          "머리"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Congalala"
   },
   {
     "id": "monster_e7d539be6cbe",
@@ -1449,31 +940,7 @@
     },
     "traits": "불, 독, 마비 , 폭발, 악취",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Emerald Congalala",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "ice"
-      ],
-      "bestPart": "머리",
-      "bestParts": {
-        "cut": [
-          "머리",
-          "뒷다리"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "ice": [
-          "머리",
-          "앞다리",
-          "뒷다리"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Emerald Congalala"
   },
   {
     "id": "monster_ccd85a66ac50",
@@ -1514,28 +981,7 @@
     },
     "traits": "번개, 지진",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Rajang",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "ice"
-      ],
-      "bestPart": "머리",
-      "bestParts": {
-        "cut": [
-          "머리"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "ice": [
-          "머리"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Rajang"
   },
   {
     "id": "monster_5d2b261ab356",
@@ -1576,28 +1022,7 @@
     },
     "traits": "번개, 지진",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Furious Rajang",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "ice"
-      ],
-      "bestPart": "머리",
-      "bestParts": {
-        "cut": [
-          "머리"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "ice": [
-          "머리"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Furious Rajang"
   },
   {
     "id": "monster_eda79317399f",
@@ -1638,28 +1063,7 @@
     },
     "traits": "지진, 얼음",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Tetsucabra",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "water"
-      ],
-      "bestPart": "머리",
-      "bestParts": {
-        "cut": [
-          "머리"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "water": [
-          "머리"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Tetsucabra"
   },
   {
     "id": "monster_3c60c91411b5",
@@ -1700,29 +1104,7 @@
     },
     "traits": "",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Berserk Tetsucabra",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "ice"
-      ],
-      "bestPart": "머리",
-      "bestParts": {
-        "cut": [
-          "머리"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "ice": [
-          "머리",
-          "이빨"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Berserk Tetsucabra"
   },
   {
     "id": "monster_29a248ddb29e",
@@ -1763,32 +1145,7 @@
     },
     "traits": "얼음, 눈사람상태",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Zamtrios",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "fire",
-        "thunder"
-      ],
-      "bestPart": "팽창시 배",
-      "bestParts": {
-        "cut": [
-          "팽창시 배"
-        ],
-        "impact": [
-          "팽창시 배"
-        ],
-        "shot": [
-          "팽창시 배"
-        ],
-        "fire": [
-          "팽창시 배"
-        ],
-        "thunder": [
-          "팽창시 배"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Zamtrios"
   },
   {
     "id": "monster_9e327e259893",
@@ -1829,28 +1186,7 @@
     },
     "traits": "",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Tigerstripe Zamtrios",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "ice"
-      ],
-      "bestPart": "팽창시 배",
-      "bestParts": {
-        "cut": [
-          "팽창시 배"
-        ],
-        "impact": [
-          "팽창시 배"
-        ],
-        "shot": [
-          "팽창시 배"
-        ],
-        "ice": [
-          "팽창시 배"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Tigerstripe Zamtrios"
   },
   {
     "id": "monster_1fc09bb9ad41",
@@ -1891,28 +1227,7 @@
     },
     "traits": "마비, 기절",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Najarala",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "ice"
-      ],
-      "bestPart": "머리",
-      "bestParts": {
-        "cut": [
-          "머리"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "ice": [
-          "앞다리"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Najarala"
   },
   {
     "id": "monster_29c487f90914",
@@ -1953,29 +1268,7 @@
     },
     "traits": "마비, 기절, 물",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Tidal Najarala",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "fire"
-      ],
-      "bestPart": "등",
-      "bestParts": {
-        "cut": [
-          "등",
-          "앞다리"
-        ],
-        "impact": [
-          "등"
-        ],
-        "shot": [
-          "앞다리"
-        ],
-        "fire": [
-          "등"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Tidal Najarala"
   },
   {
     "id": "monster_836ee95f0ec6",
@@ -2016,28 +1309,7 @@
     },
     "traits": "폭발",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Brachydios",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "water"
-      ],
-      "bestPart": "머리",
-      "bestParts": {
-        "cut": [
-          "머리"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "water": [
-          "뿔"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Brachydios"
   },
   {
     "id": "monster_4668124f544d",
@@ -2078,20 +1350,7 @@
     },
     "traits": "폭발",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Raging Brachydios",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "ice"
-      ],
-      "bestPart": "",
-      "bestParts": {
-        "cut": [],
-        "impact": [],
-        "shot": [],
-        "ice": []
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Raging Brachydios"
   },
   {
     "id": "monster_5256532a45a4",
@@ -2132,32 +1391,7 @@
     },
     "traits": "용, 방어다운, @4",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Deviljho",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "thunder",
-        "dragon"
-      ],
-      "bestPart": "꼬리",
-      "bestParts": {
-        "cut": [
-          "꼬리"
-        ],
-        "impact": [
-          "꼬리"
-        ],
-        "shot": [
-          "꼬리"
-        ],
-        "thunder": [
-          "몸통"
-        ],
-        "dragon": [
-          "몸통"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Deviljho"
   },
   {
     "id": "monster_7f7c2c902368",
@@ -2198,28 +1432,7 @@
     },
     "traits": "용, 방어다운, @4",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Savage Deviljho",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "thunder"
-      ],
-      "bestPart": "가슴",
-      "bestParts": {
-        "cut": [
-          "가슴"
-        ],
-        "impact": [
-          "가슴"
-        ],
-        "shot": [
-          "가슴"
-        ],
-        "thunder": [
-          "꼬리"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Savage Deviljho"
   },
   {
     "id": "monster_04b2a735f5f0",
@@ -2260,28 +1473,7 @@
     },
     "traits": "번개, 마비",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Khezu",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "fire"
-      ],
-      "bestPart": "머리",
-      "bestParts": {
-        "cut": [
-          "목"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "fire": [
-          "머리"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Khezu"
   },
   {
     "id": "monster_ea8ac9827112",
@@ -2322,28 +1514,7 @@
     },
     "traits": "번개, 마비",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Red Khezu",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "water"
-      ],
-      "bestPart": "머리",
-      "bestParts": {
-        "cut": [
-          "목"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "water": [
-          "머리"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Red Khezu"
   },
   {
     "id": "monster_85fcc1c0a529",
@@ -2384,40 +1555,7 @@
     },
     "traits": "불, 독, 수면",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Basarios",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "water",
-        "dragon"
-      ],
-      "bestPart": "머리",
-      "bestParts": {
-        "cut": [
-          "꼬리끝"
-        ],
-        "impact": [
-          "다리"
-        ],
-        "shot": [
-          "다리"
-        ],
-        "water": [
-          "머리",
-          "목아래",
-          "등",
-          "날개",
-          "꼬리아래"
-        ],
-        "dragon": [
-          "머리",
-          "목아래",
-          "등",
-          "날개",
-          "꼬리아래"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Basarios"
   },
   {
     "id": "monster_e5d10185951f",
@@ -2458,40 +1596,7 @@
     },
     "traits": "불, 독",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Ruby Basarios",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "water",
-        "ice"
-      ],
-      "bestPart": "다리",
-      "bestParts": {
-        "cut": [
-          "꼬리끝"
-        ],
-        "impact": [
-          "다리"
-        ],
-        "shot": [
-          "다리"
-        ],
-        "water": [
-          "머리",
-          "목아래",
-          "등",
-          "날개",
-          "꼬리아래"
-        ],
-        "ice": [
-          "머리",
-          "목아래",
-          "등",
-          "날개",
-          "꼬리아래"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Ruby Basarios"
   },
   {
     "id": "monster_fa70bc20a669",
@@ -2532,28 +1637,7 @@
     },
     "traits": "불, 수면",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Gravios",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "water"
-      ],
-      "bestPart": "등",
-      "bestParts": {
-        "cut": [
-          "등"
-        ],
-        "impact": [
-          "등"
-        ],
-        "shot": [
-          "등"
-        ],
-        "water": [
-          "등"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Gravios"
   },
   {
     "id": "monster_eb863199a36f",
@@ -2594,32 +1678,7 @@
     },
     "traits": "불, 수면",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Black Gravios",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "water"
-      ],
-      "bestPart": "목",
-      "bestParts": {
-        "cut": [
-          "머리",
-          "날개"
-        ],
-        "impact": [
-          "목",
-          "다리",
-          "꼬리"
-        ],
-        "shot": [
-          "날개"
-        ],
-        "water": [
-          "목",
-          "꼬리"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Black Gravios"
   },
   {
     "id": "monster_0a437979cefc",
@@ -2660,28 +1719,7 @@
     },
     "traits": "불, 독",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Rathian",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "dragon"
-      ],
-      "bestPart": "머리",
-      "bestParts": {
-        "cut": [
-          "머리"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "dragon": [
-          "머리"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Rathian"
   },
   {
     "id": "monster_074d46bb4fb2",
@@ -2722,34 +1760,7 @@
     },
     "traits": "불, 독",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Pink Rathian",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "thunder",
-        "dragon"
-      ],
-      "bestPart": "배",
-      "bestParts": {
-        "cut": [
-          "배"
-        ],
-        "impact": [
-          "다리"
-        ],
-        "shot": [
-          "배"
-        ],
-        "thunder": [
-          "배",
-          "꼬리끝"
-        ],
-        "dragon": [
-          "머리",
-          "꼬리끝"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Pink Rathian"
   },
   {
     "id": "monster_573e9e80d879",
@@ -2790,28 +1801,7 @@
     },
     "traits": "불, 독",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Gold Rathian",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "thunder"
-      ],
-      "bestPart": "등",
-      "bestParts": {
-        "cut": [
-          "등"
-        ],
-        "impact": [
-          "등"
-        ],
-        "shot": [
-          "다리"
-        ],
-        "thunder": [
-          "목"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Gold Rathian"
   },
   {
     "id": "monster_4987998fc593",
@@ -2852,28 +1842,7 @@
     },
     "traits": "불, 독",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Rathalos",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "dragon"
-      ],
-      "bestPart": "머리",
-      "bestParts": {
-        "cut": [
-          "머리"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "dragon": [
-          "날개"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Rathalos"
   },
   {
     "id": "monster_919b97d0f10a",
@@ -2914,28 +1883,7 @@
     },
     "traits": "불, 독",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Azure Rathalos",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "dragon"
-      ],
-      "bestPart": "머리",
-      "bestParts": {
-        "cut": [
-          "머리"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "배"
-        ],
-        "dragon": [
-          "다리"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Azure Rathalos"
   },
   {
     "id": "monster_fcaa117bd72e",
@@ -2976,32 +1924,7 @@
     },
     "traits": "불, 독",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Silver Rathalos",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "water",
-        "thunder"
-      ],
-      "bestPart": "등",
-      "bestParts": {
-        "cut": [
-          "등"
-        ],
-        "impact": [
-          "등"
-        ],
-        "shot": [
-          "다리"
-        ],
-        "water": [
-          "목"
-        ],
-        "thunder": [
-          "목"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Silver Rathalos"
   },
   {
     "id": "monster_38986e1e13fb",
@@ -3042,28 +1965,7 @@
     },
     "traits": "@4",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Tigrex",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "thunder"
-      ],
-      "bestPart": "머리",
-      "bestParts": {
-        "cut": [
-          "머리"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "thunder": [
-          "등"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Tigrex"
   },
   {
     "id": "monster_1b5ef2a7a699",
@@ -3104,28 +2006,7 @@
     },
     "traits": "@4",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Brute Tigrex",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "water"
-      ],
-      "bestPart": "머리",
-      "bestParts": {
-        "cut": [
-          "머리"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "water": [
-          "머리"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Brute Tigrex"
   },
   {
     "id": "monster_3233eb8b7b15",
@@ -3166,30 +2047,7 @@
     },
     "traits": "폭발",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Molten Tigrex",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "water"
-      ],
-      "bestPart": "앞다리",
-      "bestParts": {
-        "cut": [
-          "앞다리"
-        ],
-        "impact": [
-          "앞다리"
-        ],
-        "shot": [
-          "머리파괴후",
-          "앞다리"
-        ],
-        "water": [
-          "꼬리",
-          "뒷다리"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Molten Tigrex"
   },
   {
     "id": "monster_ff9d2a8a319c",
@@ -3230,34 +2088,7 @@
     },
     "traits": "",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Monoblos",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "thunder",
-        "ice"
-      ],
-      "bestPart": "꼬리끝",
-      "bestParts": {
-        "cut": [
-          "꼬리끝"
-        ],
-        "impact": [
-          "목"
-        ],
-        "shot": [
-          "꼬리끝"
-        ],
-        "thunder": [
-          "목",
-          "꼬리끝"
-        ],
-        "ice": [
-          "머리",
-          "등/날개"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Monoblos"
   },
   {
     "id": "monster_82779af5a16a",
@@ -3298,34 +2129,7 @@
     },
     "traits": "",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "White Monoblos",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "thunder",
-        "ice"
-      ],
-      "bestPart": "꼬리끝",
-      "bestParts": {
-        "cut": [
-          "꼬리끝"
-        ],
-        "impact": [
-          "목"
-        ],
-        "shot": [
-          "꼬리끝"
-        ],
-        "thunder": [
-          "목",
-          "꼬리끝"
-        ],
-        "ice": [
-          "머리",
-          "등/날개"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "White Monoblos"
   },
   {
     "id": "monster_321e6889c047",
@@ -3366,28 +2170,7 @@
     },
     "traits": "",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Diablos",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "ice"
-      ],
-      "bestPart": "배",
-      "bestParts": {
-        "cut": [
-          "배"
-        ],
-        "impact": [
-          "배"
-        ],
-        "shot": [
-          "꼬리"
-        ],
-        "ice": [
-          "꼬리끝"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Diablos"
   },
   {
     "id": "monster_d6784e726b19",
@@ -3428,28 +2211,7 @@
     },
     "traits": "",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Black Diablos",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "ice"
-      ],
-      "bestPart": "배",
-      "bestParts": {
-        "cut": [
-          "배"
-        ],
-        "impact": [
-          "배"
-        ],
-        "shot": [
-          "꼬리"
-        ],
-        "ice": [
-          "꼬리끝"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Black Diablos"
   },
   {
     "id": "monster_749d9a97f1ed",
@@ -3490,28 +2252,7 @@
     },
     "traits": "열상",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Seregios",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "thunder"
-      ],
-      "bestPart": "배",
-      "bestParts": {
-        "cut": [
-          "배"
-        ],
-        "impact": [
-          "배"
-        ],
-        "shot": [
-          "배"
-        ],
-        "thunder": [
-          "머리"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Seregios"
   },
   {
     "id": "monster_08adaa2710ea",
@@ -3552,28 +2293,7 @@
     },
     "traits": "불, 용, 방어다운",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Akantor",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "dragon"
-      ],
-      "bestPart": "머리",
-      "bestParts": {
-        "cut": [
-          "머리"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "dragon": [
-          "꼬리"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Akantor"
   },
   {
     "id": "monster_26ee0bc57b51",
@@ -3614,33 +2334,7 @@
     },
     "traits": "불, 용, 방어다운",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Ukanlos",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "fire",
-        "thunder"
-      ],
-      "bestPart": "머리",
-      "bestParts": {
-        "cut": [
-          "머리"
-        ],
-        "impact": [
-          "배"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "fire": [
-          "머리",
-          "꼬리"
-        ],
-        "thunder": [
-          "앞다리"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Ukanlos"
   },
   {
     "id": "monster_714e59cec38c",
@@ -3681,32 +2375,7 @@
     },
     "traits": "번개",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Zinogre",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "water",
-        "ice"
-      ],
-      "bestPart": "머리",
-      "bestParts": {
-        "cut": [
-          "머리"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "water": [
-          "꼬리끝"
-        ],
-        "ice": [
-          "꼬리끝"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Zinogre"
   },
   {
     "id": "monster_c7cfbdbf07a7",
@@ -3747,36 +2416,7 @@
     },
     "traits": "용",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Stygian Zinogre",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "water",
-        "thunder"
-      ],
-      "bestPart": "뒷다리",
-      "bestParts": {
-        "cut": [
-          "뒷다리"
-        ],
-        "impact": [
-          "뒷다리"
-        ],
-        "shot": [
-          "몸통",
-          "뒷다리",
-          "어깨"
-        ],
-        "water": [
-          "앞다리",
-          "뒷다리",
-          "어깨"
-        ],
-        "thunder": [
-          "앞다리"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Stygian Zinogre"
   },
   {
     "id": "monster_d25a2a548008",
@@ -3817,34 +2457,7 @@
     },
     "traits": "번개, 마비",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Kirin",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "fire",
-        "water"
-      ],
-      "bestPart": "머리",
-      "bestParts": {
-        "cut": [
-          "머리"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "fire": [
-          "몸통",
-          "하반신"
-        ],
-        "water": [
-          "몸통",
-          "하반신"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Kirin"
   },
   {
     "id": "monster_1d8445bb59ea",
@@ -3885,34 +2498,7 @@
     },
     "traits": "얼음",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Oroshi Kirin",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "fire",
-        "water"
-      ],
-      "bestPart": "머리",
-      "bestParts": {
-        "cut": [
-          "머리"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "fire": [
-          "몸통",
-          "하반신"
-        ],
-        "water": [
-          "몸통",
-          "하반신"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Oroshi Kirin"
   },
   {
     "id": "monster_40f881ac5baa",
@@ -3953,33 +2539,7 @@
     },
     "traits": "지진, 광룡",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Shagaru Magala",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "fire",
-        "dragon"
-      ],
-      "bestPart": "머리",
-      "bestParts": {
-        "cut": [
-          "머리"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "fire": [
-          "날개다리"
-        ],
-        "dragon": [
-          "머리",
-          "날개다리"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Shagaru Magala"
   },
   {
     "id": "monster_610734916c89",
@@ -4020,32 +2580,7 @@
     },
     "traits": "얼음, 눈사람",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Kushala Daora",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "thunder",
-        "dragon"
-      ],
-      "bestPart": "꼬리",
-      "bestParts": {
-        "cut": [
-          "목"
-        ],
-        "impact": [
-          "목"
-        ],
-        "shot": [
-          "꼬리"
-        ],
-        "thunder": [
-          "꼬리"
-        ],
-        "dragon": [
-          "꼬리"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Kushala Daora"
   },
   {
     "id": "monster_ff0a7a4c8d9d",
@@ -4086,34 +2621,7 @@
     },
     "traits": "얼음, 눈사람",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Rusted Kushala Daora",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "water",
-        "dragon"
-      ],
-      "bestPart": "꼬리",
-      "bestParts": {
-        "cut": [
-          "배",
-          "앞다리",
-          "꼬리"
-        ],
-        "impact": [
-          "배"
-        ],
-        "shot": [
-          "꼬리"
-        ],
-        "water": [
-          "꼬리"
-        ],
-        "dragon": [
-          "꼬리"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Rusted Kushala Daora"
   },
   {
     "id": "monster_65eb49a7b36b",
@@ -4154,29 +2662,7 @@
     },
     "traits": "불, 기절, 폭발, 분진(열)",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Teostra",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "dragon"
-      ],
-      "bestPart": "꼬리",
-      "bestParts": {
-        "cut": [
-          "뒷다리",
-          "꼬리"
-        ],
-        "impact": [
-          "뒷다리"
-        ],
-        "shot": [
-          "꼬리"
-        ],
-        "dragon": [
-          "꼬리"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Teostra"
   },
   {
     "id": "monster_425a7cfad71b",
@@ -4217,30 +2703,7 @@
     },
     "traits": "독",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Chameleos",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "fire"
-      ],
-      "bestPart": "머리",
-      "bestParts": {
-        "cut": [
-          "머리"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리",
-          "날개"
-        ],
-        "fire": [
-          "머리",
-          "배"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Chameleos"
   },
   {
     "id": "monster_be54494a9c03",
@@ -4281,33 +2744,7 @@
     },
     "traits": "물",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Dah'ren Mohran",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "thunder",
-        "dragon"
-      ],
-      "bestPart": "입안",
-      "bestParts": {
-        "cut": [
-          "입안"
-        ],
-        "impact": [
-          "입안"
-        ],
-        "shot": [
-          "입안"
-        ],
-        "thunder": [
-          "입안"
-        ],
-        "dragon": [
-          "배",
-          "등의약점"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Dah'ren Mohran"
   },
   {
     "id": "monster_409708ecde3b",
@@ -4348,29 +2785,7 @@
     },
     "traits": "분진(열)",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Dalamadur",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "dragon"
-      ],
-      "bestPart": "머리약점",
-      "bestParts": {
-        "cut": [
-          "머리약점"
-        ],
-        "impact": [
-          "머리약점"
-        ],
-        "shot": [
-          "머리약점",
-          "등칼날 흑가시 발톱"
-        ],
-        "dragon": [
-          "등칼날 흑가시 발톱"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Dalamadur"
   },
   {
     "id": "monster_fd07105d4890",
@@ -4411,28 +2826,7 @@
     },
     "traits": "분진(열)",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Shah Dalamadur",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "dragon"
-      ],
-      "bestPart": "머리약점",
-      "bestParts": {
-        "cut": [
-          "머리약점"
-        ],
-        "impact": [
-          "머리약점"
-        ],
-        "shot": [
-          "흉부"
-        ],
-        "dragon": [
-          "머리약점"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Shah Dalamadur"
   },
   {
     "id": "monster_f6da870b0ad3",
@@ -4473,42 +2867,7 @@
     },
     "traits": "중류, 불",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Gogmazios",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "fire",
-        "dragon"
-      ],
-      "bestPart": "목",
-      "bestParts": {
-        "cut": [
-          "목",
-          "배",
-          "앞다리"
-        ],
-        "impact": [
-          "뒷다리"
-        ],
-        "shot": [
-          "목",
-          "배",
-          "앞다리"
-        ],
-        "fire": [
-          "목",
-          "배",
-          "앞다리",
-          "뒷다리"
-        ],
-        "dragon": [
-          "목",
-          "배",
-          "앞다리",
-          "뒷다리"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Gogmazios"
   },
   {
     "id": "monster_c28a3c80b825",
@@ -4549,28 +2908,7 @@
     },
     "traits": "광룡상태",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Gore Magala",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "fire"
-      ],
-      "bestPart": "머리",
-      "bestParts": {
-        "cut": [
-          "머리"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "fire": [
-          "날개다리"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Gore Magala"
   },
   {
     "id": "monster_e9a394deb403",
@@ -4611,22 +2949,7 @@
     },
     "traits": "광룡상태",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Chaotic Gore Magala",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "fire",
-        "dragon"
-      ],
-      "bestPart": "",
-      "bestParts": {
-        "cut": [],
-        "impact": [],
-        "shot": [],
-        "fire": [],
-        "dragon": []
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Chaotic Gore Magala"
   },
   {
     "id": "monster_0168790e9024",
@@ -4667,20 +2990,7 @@
     },
     "traits": "불, 폭발",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Fatalis",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "dragon"
-      ],
-      "bestPart": "",
-      "bestParts": {
-        "cut": [],
-        "impact": [],
-        "shot": [],
-        "dragon": []
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Fatalis"
   },
   {
     "id": "monster_237f47a54bf5",
@@ -4721,20 +3031,7 @@
     },
     "traits": "?",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "White Fatalis",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "dragon"
-      ],
-      "bestPart": "",
-      "bestParts": {
-        "cut": [],
-        "impact": [],
-        "shot": [],
-        "dragon": []
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "White Fatalis"
   },
   {
     "id": "monster_a569b811a29b",
@@ -4775,28 +3072,7 @@
     },
     "traits": "불, 폭발",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Crimson Fatalis",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "dragon"
-      ],
-      "bestPart": "머리",
-      "bestParts": {
-        "cut": [
-          "머리"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "dragon": [
-          "머리"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Crimson Fatalis"
   },
   {
     "id": "monster_77906b127b97",
@@ -4837,27 +3113,6 @@
     },
     "traits": "?",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
-    "nameEn": "Crimson Fatalis",
-    "hitzoneHighlights": {
-      "bestElements": [
-        "dragon"
-      ],
-      "bestPart": "머리",
-      "bestParts": {
-        "cut": [
-          "머리"
-        ],
-        "impact": [
-          "머리"
-        ],
-        "shot": [
-          "머리"
-        ],
-        "dragon": [
-          "머리"
-        ]
-      },
-      "source": "summary-rating"
-    }
+    "nameEn": "Crimson Fatalis"
   }
 ]
