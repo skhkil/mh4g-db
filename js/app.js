@@ -1,5 +1,5 @@
-import {loadSimulatorData,loadFullData,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-itemxref1";
-import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-itemxref1";
+import {loadSimulatorData,loadFullData,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-itemxref2-opt";
+import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-itemxref2-opt";
 
 let data={skills:[],armors:[],armorSets:[],decorations:[],weapons:[],weaponSummary:[],melodies:[],items:[],itemReferences:{},meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],siteInfo:{},meta:{}};
 let targets=[];
@@ -23,7 +23,8 @@ let questView="key";
 let selectedItemId="";
 
 // v0.7.2: 반복 배열 검색과 옵션 재생성을 줄이기 위한 인덱스/캐시
-let skillById=new Map(),armorById=new Map(),weaponById=new Map(),decorationByIdMap=new Map(),armorSetById=new Map(),itemByName=new Map();
+let skillById=new Map(),armorById=new Map(),weaponById=new Map(),decorationByIdMap=new Map(),armorSetById=new Map(),itemByName=new Map(),itemById=new Map();
+let itemSearchCorpusById=new Map(),itemDetailHtmlCache=new Map();
 const optionCache={armorByPart:new Map(),weaponByType:new Map(),armorSets:null,skillPicker:null,activation:null,weaponTypes:null};
 function rebuildIndexes(){
   skillById=new Map((data.skills||[]).map(x=>[x.id,x]));
@@ -32,6 +33,8 @@ function rebuildIndexes(){
   decorationByIdMap=new Map((data.decorations||[]).map(x=>[x.id,x]));
   armorSetById=new Map((data.armorSets||[]).map(x=>[x.id,x]));
   itemByName=new Map((data.items||[]).map(x=>[x.name,x]));
+  itemById=new Map((data.items||[]).map(x=>[String(x.id),x]));
+  rebuildItemReferenceIndexes();
   optionCache.armorByPart.clear();optionCache.weaponByType.clear();
   optionCache.armorSets=null;optionCache.skillPicker=null;optionCache.activation=null;optionCache.weaponTypes=null;
 }
@@ -592,9 +595,14 @@ function materialLinks(text){
 async function openItemByName(name){
   await ensureFullData(["items","itemReferences"]);
   const item=itemByName.get(String(name||"").trim());if(!item)return;
-  await openPage("item");$("#itemSearch").value=item.name;renderItemTable();renderItemDetail(item.id);
+  // 검색값을 먼저 지정해 아이템 페이지 진입 시 524개 전체 표를 그렸다가 다시 그리는 이중 렌더링을 피한다.
+  $("#itemSearch").value=item.name;
+  if(currentPage!=="item")await openPage("item");
+  else renderItemTable();
+  renderItemDetail(item.id);
 }
-function bindInlineItemLinks(root=document){root.querySelectorAll?.('[data-open-item]').forEach(b=>{if(b.dataset.itemBound)return;b.dataset.itemBound="1";b.onclick=()=>openItemByName(b.dataset.openItem)})}
+// 인라인 아이템 링크는 document 단일 위임 핸들러에서 처리한다.
+function bindInlineItemLinks(){ }
 
 function renderCraft(w){
   const craft=w.craft||[];
@@ -736,11 +744,24 @@ function renderSkillTable(){
   renderTable("#skillTable",["스킬 계통","발동 조건","효과 및 비고"],rows);
 }
 function itemRefEntry(item){return data.itemReferences?.items?.[item?.id]||{acquire:[],uses:[]}}
-function itemReferenceCorpus(item){
+function buildItemReferenceCorpus(item){
   const ref=itemRefEntry(item),bits=[];
   for(const x of ref.acquire||[])bits.push(x.type,x.monster,x.method,x.name,x.required,x.materialA,x.materialB,x.line,x.market,x.objective,x.location,x.unlock);
   for(const x of ref.uses||[])bits.push(x.type,x.name,x.weaponType,x.result,x.method,x.materials,x.unlock);
   return bits.filter(Boolean).join(" ");
+}
+function rebuildItemReferenceIndexes(){
+  itemSearchCorpusById=new Map();
+  itemDetailHtmlCache.clear();
+  for(const item of data.items||[]){
+    const corpus=`${item.name||""} ${item.nameJa||""} ${item.nameEn||""} ${item.acquire||""} ${item.note||""} ${buildItemReferenceCorpus(item)}`.toLowerCase();
+    itemSearchCorpusById.set(String(item.id),corpus);
+  }
+}
+function itemReferenceCorpus(item){
+  const key=String(item?.id??"");
+  if(itemSearchCorpusById.has(key))return itemSearchCorpusById.get(key);
+  return buildItemReferenceCorpus(item).toLowerCase();
 }
 function refButton(label,type,attrs={}){
   const dataAttrs=Object.entries(attrs).filter(([,v])=>v!==undefined&&v!==null&&String(v)!=="").map(([k,v])=>` data-nav-${k}="${esc(String(v))}"`).join("");
@@ -768,10 +789,7 @@ function xrefGroup(title,items,renderer){
   if(!items?.length)return `<section class="xref-group empty"><h4>${esc(title)} <span>0</span></h4><p class="muted">현재 DB에서 연결된 항목이 없습니다.</p></section>`;
   return `<details class="xref-group" open><summary><strong>${esc(title)}</strong><span>${items.length.toLocaleString()}건</span></summary><ul>${items.map(renderer).join("")}</ul></details>`;
 }
-function renderItemDetail(id){
-  const host=$("#itemDetail"); if(!host)return;
-  const item=data.items.find(x=>x.id===id); if(!item){host.hidden=true;host.innerHTML="";return}
-  selectedItemId=id;
+function buildItemDetailHtml(item){
   const ref=itemRefEntry(item),acq=ref.acquire||[],uses=ref.uses||[];
   const acqGroups=[
     ["퀘스트 보수",acq.filter(x=>x.type==="quest")],["몬스터 갈무리/보수",acq.filter(x=>x.type==="monster")],
@@ -781,11 +799,21 @@ function renderItemDetail(id){
     ["무기 생산/강화",uses.filter(x=>x.type==="weapon")],["방어구 생산",uses.filter(x=>x.type==="armor")],
     ["장식주 생산",uses.filter(x=>x.type==="decoration")],["조합 재료",uses.filter(x=>x.type==="compose")],["용인 교환 재료",uses.filter(x=>x.type==="exchange")]
   ].filter(([,v])=>v.length);
+  selectedItemId=String(item.id);
+  return `<section class="panel item-detail-card"><div class="item-detail-head"><div><span class="item-detail-kicker">아이템 상세 · 역참조</span><h2>${esc(item.name)}</h2>${localizedNameSub(item)}</div><button type="button" class="item-detail-close" aria-label="상세 닫기">×</button></div><div class="item-detail-meta"><span>RARE <strong>${item.rare||"-"}</strong></span><span>소지 <strong>${item.maxStack||"-"}</strong></span><span>구매 <strong>${esc(item.buyPrice||"-")}</strong></span><span>판매 <strong>${esc(item.sellPrice||"-")}</strong></span><span>입수 연결 <strong>${acq.length.toLocaleString()}</strong></span><span>사용 연결 <strong>${uses.length.toLocaleString()}</strong></span></div>${item.acquire||item.note?`<div class="item-detail-note">${item.acquire?`<p><b>기본 입수</b> ${esc(item.acquire)}</p>`:""}${item.note?`<p><b>효과/비고</b> ${esc(item.note)}</p>`:""}</div>`:""}<div class="item-xref-columns"><div><h3>어디서 얻나</h3>${acqGroups.length?acqGroups.map(([t,v])=>xrefGroup(t,v,acquireRefHtml)).join(""):'<p class="muted xref-empty">현재 구조화 데이터에서 확인되는 입수처가 없습니다.</p>'}</div><div><h3>어디에 쓰나</h3>${useGroups.length?useGroups.map(([t,v])=>xrefGroup(t,v,useRefHtml)).join(""):'<p class="muted xref-empty">현재 구조화 데이터에서 확인되는 사용처가 없습니다.</p>'}</div></div><p class="xref-footnote">※ 역참조는 현재 프로젝트의 퀘스트·몬스터 보수·조합·용인족 도매상·무기·방어구·장식주 데이터를 연결해 표시합니다.</p></section>`;
+}
+function renderItemDetail(id){
+  const host=$("#itemDetail"); if(!host)return;
+  const key=String(id);
+  const item=itemById.get(key); if(!item){host.hidden=true;host.innerHTML="";return}
+  selectedItemId=key;
   host.hidden=false;
-  host.innerHTML=`<section class="panel item-detail-card"><div class="item-detail-head"><div><span class="item-detail-kicker">아이템 상세 · 역참조</span><h2>${esc(item.name)}</h2>${localizedNameSub(item)}</div><button type="button" class="item-detail-close" aria-label="상세 닫기">×</button></div><div class="item-detail-meta"><span>RARE <strong>${item.rare||"-"}</strong></span><span>소지 <strong>${item.maxStack||"-"}</strong></span><span>구매 <strong>${esc(item.buyPrice||"-")}</strong></span><span>판매 <strong>${esc(item.sellPrice||"-")}</strong></span><span>입수 연결 <strong>${acq.length.toLocaleString()}</strong></span><span>사용 연결 <strong>${uses.length.toLocaleString()}</strong></span></div>${item.acquire||item.note?`<div class="item-detail-note">${item.acquire?`<p><b>기본 입수</b> ${esc(item.acquire)}</p>`:""}${item.note?`<p><b>효과/비고</b> ${esc(item.note)}</p>`:""}</div>`:""}<div class="item-xref-columns"><div><h3>어디서 얻나</h3>${acqGroups.length?acqGroups.map(([t,v])=>xrefGroup(t,v,acquireRefHtml)).join(""):'<p class="muted xref-empty">현재 구조화 데이터에서 확인되는 입수처가 없습니다.</p>'}</div><div><h3>어디에 쓰나</h3>${useGroups.length?useGroups.map(([t,v])=>xrefGroup(t,v,useRefHtml)).join(""):'<p class="muted xref-empty">현재 구조화 데이터에서 확인되는 사용처가 없습니다.</p>'}</div></div><p class="xref-footnote">※ 역참조는 현재 프로젝트의 퀘스트·몬스터 보수·조합·용인족 도매상·무기·방어구·장식주 데이터를 연결해 표시합니다.</p></section>`;
-  host.querySelector('.item-detail-close').onclick=()=>{selectedItemId="";host.hidden=true;host.innerHTML=""};
-  host.querySelectorAll('[data-item-nav]').forEach(b=>b.onclick=()=>followItemReference(b));
-  host.scrollIntoView({behavior:"smooth",block:"start"});
+  let html=itemDetailHtmlCache.get(key);
+  if(!html){html=buildItemDetailHtml(item);itemDetailHtmlCache.set(key,html);}
+  host.innerHTML=html;
+  // smooth 스크롤은 모바일 메인 스레드 프레임 드롭을 유발할 수 있어 필요한 경우에만 즉시 위치시킨다.
+  const r=host.getBoundingClientRect();
+  if(r.top<0||r.top>window.innerHeight*0.9)host.scrollIntoView({behavior:"auto",block:"start"});
 }
 async function followItemReference(btn){
   const type=btn.dataset.itemNav,name=btn.dataset.navName||"";
@@ -807,9 +835,8 @@ async function followItemReference(btn){
 }
 function renderItemTable(){
   const q=$("#itemSearch").value.trim().toLowerCase();
-  const rows=data.items.filter(i=>!q||`${i.name} ${i.nameJa||""} ${i.nameEn||""} ${i.acquire||""} ${i.note||""} ${itemReferenceCorpus(i)}`.toLowerCase().includes(q)).map(i=>{const ref=itemRefEntry(i),count=(ref.acquire?.length||0)+(ref.uses?.length||0);return `<tr><td><button type="button" class="item-name-link" data-item-id="${esc(i.id)}"><strong>${esc(i.name)}</strong>${localizedNameSub(i)}</button></td><td>${i.rare||"-"}</td><td>${i.maxStack||"-"}</td><td>${esc(i.buyPrice||"-")}</td><td>${esc(i.sellPrice||"-")}</td><td>${esc(i.acquire||"")}</td><td>${esc(i.note||"")}${count?`<small class="xref-count">연결 ${count.toLocaleString()}건</small>`:""}</td></tr>`});
+  const rows=data.items.filter(i=>!q||itemReferenceCorpus(i).includes(q)).map(i=>{const ref=itemRefEntry(i),count=(ref.acquire?.length||0)+(ref.uses?.length||0);return `<tr><td><button type="button" class="item-name-link" data-item-id="${esc(i.id)}"><strong>${esc(i.name)}</strong>${localizedNameSub(i)}</button></td><td>${i.rare||"-"}</td><td>${i.maxStack||"-"}</td><td>${esc(i.buyPrice||"-")}</td><td>${esc(i.sellPrice||"-")}</td><td>${esc(i.acquire||"")}</td><td>${esc(i.note||"")}${count?`<small class="xref-count">연결 ${count.toLocaleString()}건</small>`:""}</td></tr>`});
   renderTable("#itemTable",["아이템","RARE","소지수","구매","판매","입수","효과/비고"],rows);
-  $("#itemTable").querySelectorAll('[data-item-id]').forEach(b=>b.onclick=()=>renderItemDetail(b.dataset.itemId));
 }
 
 function renderSourcePage(){
@@ -1048,6 +1075,7 @@ async function ensureFullData(keys){
   const patch=await loadFullData(missing);
   Object.assign(data,patch);missing.forEach(k=>loadedFullKeys.add(k));
   if(missing.some(k=>["skills","armors","armorSets","decorations","weapons","items"].includes(k)))rebuildIndexes();
+  else if(missing.includes("itemReferences"))rebuildItemReferenceIndexes();
   if(missing.includes("meals"))populateMealIngredientFilter();
   if(missing.some(k=>["monsterSummary","monsterDetails","monsterRewards"].includes(k)))populateMonsterSelect();
   if(missing.includes("quests"))populateQuestLevels();
@@ -1139,7 +1167,17 @@ function setupResponsiveNavColumns(){
 }
 
 function bind(){
-  document.addEventListener('click',()=>closePickers());
+  document.addEventListener('click',e=>{
+    closePickers();
+    const inline=e.target.closest?.('[data-open-item]');
+    if(inline){e.preventDefault();e.stopPropagation();openItemByName(inline.dataset.openItem);return;}
+    const itemRow=e.target.closest?.('#itemTable [data-item-id]');
+    if(itemRow){e.preventDefault();renderItemDetail(itemRow.dataset.itemId);return;}
+    const nav=e.target.closest?.('#itemDetail [data-item-nav]');
+    if(nav){e.preventDefault();followItemReference(nav);return;}
+    const close=e.target.closest?.('#itemDetail .item-detail-close');
+    if(close){selectedItemId="";const host=$("#itemDetail");host.hidden=true;host.innerHTML="";}
+  });
   $("#sidebarToggle").onclick=()=>{$(".app-shell").classList.toggle("sidebar-collapsed");const collapsed=$(".app-shell").classList.contains("sidebar-collapsed");$("#sidebarToggle").title=collapsed?"좌측 메뉴 펼치기":"좌측 메뉴 접기";};
 
   $$('.nav-group-toggle').forEach(b=>b.onclick=e=>{
@@ -1188,3 +1226,7 @@ function bind(){
 }
 
 Object.assign(data,await loadSimulatorData());rebuildIndexes();bind();setupResponsiveNavColumns();renderAll();
+// 초기 화면 렌더가 끝난 뒤 유휴 시간에 아이템 역참조를 미리 읽어 첫 클릭의 JSON 파싱 지연도 줄인다.
+const prewarmItemReferences=()=>ensureFullData(["items","itemReferences"]).catch(()=>{});
+if("requestIdleCallback" in window)window.requestIdleCallback(prewarmItemReferences,{timeout:4000});
+else window.setTimeout(prewarmItemReferences,1500);
