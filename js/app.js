@@ -17,7 +17,7 @@ const uiState={
 let sourceView="main";
 let armorViewMode="all";
 let decoView="type";
-let monsterView="summary";
+let monsterView="detail";
 let dragonView="exchange";
 let questView="key";
 
@@ -845,7 +845,7 @@ function pageTitleForState(page){
   if(page==="melody") return ["수렵피리 선율표","음색 조합별 선율 효과와 해당 무기를 조회합니다."];
   if(page==="meal") return ["식사","식재료 조합과 조리법에 따른 식사효과·야옹스킬을 조회합니다."];
   if(page==="monster"){
-    const t={summary:"육질표요약",detail:"육질표상세",rewards:"갈무리보수확률",materials:"몬스터소재요약"}[monsterView];
+    const t={detail:"육질표상세",rewards:"갈무리보수확률",materials:"몬스터소재요약"}[monsterView];
     return [t,"몬스터 약점·육질·상태이상·소재 정보를 조회합니다."];
   }
   if(page==="dragon"){
@@ -854,7 +854,7 @@ function pageTitleForState(page){
   }
   if(page==="compose") return ["조합서","아이템 조합식과 성공확률·생산수를 조회합니다."];
   if(page==="quest"){
-    const t={key:"키퀘스트","village-summary":"여단요약","village-detail":"여단상세","hub-summary":"집회소요약","hub-detail":"집회소상세","g-summary":"G급요약","g-detail":"G급상세","event-all":"이벤트 전체","event-low":"이벤트 하위","event-high":"이벤트 상위","event-g":"이벤트 G급","event-episodic":"에피소드","challenge":"다운로드 챌린지"}[questView];
+    const t={key:"키퀘스트","village-detail":"여단상세","hub-detail":"집회소상세","g-detail":"G급상세","event-all":"이벤트 전체","event-low":"이벤트 하위","event-high":"이벤트 상위","event-g":"이벤트 G급","event-episodic":"에피소드","challenge":"다운로드 챌린지"}[questView];
     return [`퀘스트 · ${t||"전체"}`,eventViewTitleText(questView)];
   }
   return null;
@@ -871,7 +871,7 @@ function handleRoute(btn){
   }else if(route==="decoration-view"){
     decoView=btn.dataset.decoView||"type";openPage("decoration");
   }else if(route==="monster-view"){
-    monsterView=btn.dataset.monsterView||"summary";openPage("monster");
+    monsterView=btn.dataset.monsterView||"detail";openPage("monster");
   }else if(route==="dragon-view"){
     dragonView=btn.dataset.dragonView||"exchange";openPage("dragon");
   }else if(route==="quest-view"){
@@ -906,7 +906,7 @@ function dataKeysForPage(page){
   if(page==="weapon-summary")return ["weaponSummary"];
   if(page==="melody")return ["melodies"];
   if(page==="meal")return ["meals"];
-  if(page==="monster")return monsterView==="summary"?["monsterSummary"]:monsterView==="detail"?["monsterDetails"]:["monsterRewards"];
+  if(page==="monster")return monsterView==="detail"?["monsterDetails"]:["monsterRewards"];
   if(page==="dragon")return dragonView==="exchange"?["dragonExchange"]:dragonView==="sell"?["dragonSell"]:["dragonIncrease"];
   if(page==="item")return ["items"];
   if(page==="compose")return ["compositions"];
