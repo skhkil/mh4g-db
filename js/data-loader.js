@@ -1,4 +1,4 @@
-const DATA_VERSION = "0.7.7-chat4-monster2-noimg";
+const DATA_VERSION = "0.7.7-chat4-monster3-fix";
 
 const FULL_FILES = {
   skills:"./data/skills.json",
@@ -84,7 +84,13 @@ export async function loadItemReference(itemId){
 export async function loadMonsterReference(file){
   const key=String(file||"").trim();
   if(!key) return {monster:"",items:[],quests:[],uses:[]};
-  return fetchJson(`monsterRef:${key}`,`./data/monster_refs/${encodeURIComponent(key)}.json`);
+  const x=await fetchJson(`monsterRef:${key}`,`./data/monster_refs/${encodeURIComponent(key)}.json`);
+  return (x&&typeof x==="object"&&!Array.isArray(x))?x:null;
+}
+
+export async function loadMonsterReferencesFallback(){
+  const x=await fetchJson("monsterReferencesFallback","./data/monster_references.json");
+  return (x&&typeof x==="object"&&!Array.isArray(x))?x:{};
 }
 
 // 이전 코드 호환용: 인자가 없으면 전체 데이터를 병렬 로딩한다.

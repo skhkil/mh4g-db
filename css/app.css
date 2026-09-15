@@ -666,3 +666,23 @@ button{border:1px solid var(--line);background:#202b39;color:white;border-radius
   .monster-quest-row{grid-template-columns:1fr}.monster-hitzone-table .data-table.responsive-table{min-width:0!important}.monster-hitzone-table .data-table.responsive-table thead{display:table-header-group!important}.monster-hitzone-table .data-table.responsive-table tbody{display:table-row-group!important}.monster-hitzone-table .data-table.responsive-table tbody tr{display:table-row!important;border:0!important;background:transparent!important}.monster-hitzone-table .data-table.responsive-table tbody td{display:table-cell!important;width:auto!important;padding:6px 4px!important;font-size:9px!important;border-bottom:1px solid #273342!important}.monster-hitzone-table .data-table.responsive-table tbody td::before{display:none!important}.monster-hitzone-table .data-table.responsive-table th{padding:6px 4px!important;font-size:8px!important}
 }
 @media (max-width:420px){.monster-roster{grid-template-columns:1fr}.monster-hero{grid-template-columns:minmax(0,1fr) auto}.monster-back-list{justify-self:end}.monster-tabs{grid-template-columns:repeat(2,minmax(0,1fr))}.monster-reward-items{grid-template-columns:1fr}}
+
+/* 2026-09-15 chat4 monster detail correctness fix */
+.monster-hitzone-cards{display:none}
+.monster-reward-rank{padding:0;overflow:hidden}
+.monster-reward-rank>summary{display:flex;align-items:center;justify-content:space-between;gap:10px;cursor:pointer;padding:12px 14px;background:#16202b;list-style:none}
+.monster-reward-rank>summary::-webkit-details-marker{display:none}
+.monster-reward-rank>summary::before{content:'▶';font-size:9px;color:var(--muted);margin-right:7px}
+.monster-reward-rank[open]>summary::before{content:'▼'}
+.monster-reward-rank>summary strong{margin-right:auto;font-size:14px}.monster-reward-rank>summary span{color:var(--muted);font-size:10px}
+.monster-reward-rank-body{padding:0 12px 10px}
+@media (max-width:900px),(max-width:1180px) and (hover:none) and (pointer:coarse){
+  .monster-hitzone-desktop{display:none!important}
+  .monster-hitzone-cards{display:flex;flex-direction:column;gap:8px}
+  .monster-hitzone-card{padding:0;overflow:hidden}.monster-hitzone-card h4{margin:0;padding:9px 10px;background:#16202b;font-size:11px}
+  .hitzone-physical,.hitzone-elemental,.hitzone-extra{display:grid;border-top:1px solid #273342}
+  .hitzone-physical{grid-template-columns:repeat(3,1fr)}.hitzone-elemental{grid-template-columns:repeat(5,1fr)}.hitzone-extra{grid-template-columns:repeat(2,1fr)}
+  .monster-hitzone-card span{display:flex;flex-direction:column;align-items:center;justify-content:center;min-width:0;padding:7px 3px;border-right:1px solid #273342}
+  .monster-hitzone-card span:last-child{border-right:0}.monster-hitzone-card small{font-size:8px;color:var(--muted);margin-bottom:2px}.monster-hitzone-card strong{font-size:10px}
+  .monster-hitzone-card .best-hitzone{background:#20364c!important}
+}

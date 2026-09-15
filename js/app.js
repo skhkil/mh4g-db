@@ -1,5 +1,5 @@
-import {loadSimulatorData,loadFullData,loadItemReference,loadMonsterReference,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-monster2-noimg";
-import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-monster2-noimg";
+import {loadSimulatorData,loadFullData,loadItemReference,loadMonsterReference,loadMonsterReferencesFallback,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-monster3-fix";
+import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-monster3-fix";
 
 let data={skills:[],armors:[],armorSets:[],decorations:[],weapons:[],weaponSummary:[],melodies:[],items:[],itemReferenceIndex:{items:{}},meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],monsterReferenceIndex:{items:{}},dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],siteInfo:{},meta:{}};
 let targets=[];
@@ -25,7 +25,7 @@ let restoringHistory=false;
 
 // v0.7.2: 반복 배열 검색과 옵션 재생성을 줄이기 위한 인덱스/캐시
 let skillById=new Map(),armorById=new Map(),weaponById=new Map(),decorationByIdMap=new Map(),armorSetById=new Map(),itemByName=new Map(),itemById=new Map();
-let itemSearchCorpusById=new Map(),itemDetailHtmlCache=new Map(),itemReferenceCache=new Map(),monsterReferenceCache=new Map();
+let itemSearchCorpusById=new Map(),itemDetailHtmlCache=new Map(),itemReferenceCache=new Map(),monsterReferenceCache=new Map(),monsterFallbackPromise=null;
 const optionCache={armorByPart:new Map(),weaponByType:new Map(),armorSets:null,skillPicker:null,activation:null,weaponTypes:null};
 function rebuildIndexes(){
   skillById=new Map((data.skills||[]).map(x=>[x.id,x]));
@@ -1011,11 +1011,14 @@ function renderMonsterBasic(mon){
 function maxPartValue(parts,key){return Math.max(0,...(parts||[]).map(p=>Number(String(p[key]||0).replace(/[^0-9.-]/g,""))||0))}
 function renderMonsterHitzone(name){
   const x=monsterDetailRow(name); if(!x)return '<div class="panel result-empty">육질 상세 데이터가 없습니다.</div>';
-  const max={cut:maxPartValue(x.parts,"cut"),impact:maxPartValue(x.parts,"impact"),shot:maxPartValue(x.parts,"shot"),fire:maxPartValue(x.parts,"fire"),water:maxPartValue(x.parts,"water"),thunder:maxPartValue(x.parts,"thunder"),ice:maxPartValue(x.parts,"ice"),dragon:maxPartValue(x.parts,"dragon")};
-  const cell=(p,k)=>`<td class="${Number(p[k])===max[k]&&max[k]>0?"best-hitzone":""}">${esc(p[k])}${Number(p[k])===max[k]&&max[k]>0?'<b class="best-mark">★</b>':''}</td>`;
+  const keys=[["cut","절"],["impact","타"],["shot","탄"],["fire","불"],["water","물"],["thunder","뇌"],["ice","빙"],["dragon","용"]];
+  const max=Object.fromEntries(keys.map(([k])=>[k,maxPartValue(x.parts,k)]));
+  const value=(p,k)=>`${esc(p[k]??"-")}${Number(p[k])===max[k]&&max[k]>0?'<b class="best-mark">★</b>':''}`;
   const meta=x.meta||{};
-  const html=`<div class="monster-meta">${meta.baseHp?`<span>기본체력 <strong>${esc(meta.baseHp)}</strong></span>`:""}${meta.minCrown?`<span>최소금관 ${esc(meta.minCrown)}</span>`:""}${meta.maxSilver?`<span>최대은관 ${esc(meta.maxSilver)}</span>`:""}${meta.maxGold?`<span>최대금관 ${esc(meta.maxGold)}</span>`:""}</div><div class="table-panel monster-hitzone-table"><table class="data-table"><thead><tr><th>부위</th><th>절</th><th>타</th><th>탄</th><th>불</th><th>물</th><th>뇌</th><th>빙</th><th>용</th><th>기절</th><th>다운</th></tr></thead><tbody>${(x.parts||[]).map(p=>`<tr><td>${esc(p.part)}</td>${cell(p,"cut")}${cell(p,"impact")}${cell(p,"shot")}${cell(p,"fire")}${cell(p,"water")}${cell(p,"thunder")}${cell(p,"ice")}${cell(p,"dragon")}<td>${esc(p.stun)}</td><td>${esc(p.down)}</td></tr>`).join("")}</tbody></table></div><h3>상태이상 내성</h3><div class="table-panel"><table class="data-table"><thead><tr><th>상태</th><th>지속/데미지</th><th>초기내성</th><th>상승치</th><th>최대내성</th></tr></thead><tbody>${(x.statuses||[]).map(st=>`<tr><td>${esc(st.status)}</td><td>${esc(st.durationDamage)}</td><td>${esc(st.initial)}</td><td>${esc(st.increase)}</td><td>${esc(st.max)}</td></tr>`).join("")}</tbody></table></div>`;
-  return html;
+  const desktop=`<div class="table-panel monster-hitzone-table monster-hitzone-desktop"><table class="data-table"><thead><tr><th>부위</th>${keys.map(([,l])=>`<th>${l}</th>`).join("")}<th>기절</th><th>다운</th></tr></thead><tbody>${(x.parts||[]).map(p=>`<tr><td>${esc(p.part)}</td>${keys.map(([k])=>`<td class="${Number(p[k])===max[k]&&max[k]>0?"best-hitzone":""}">${value(p,k)}</td>`).join("")}<td>${esc(p.stun??"-")}</td><td>${esc(p.down??"-")}</td></tr>`).join("")}</tbody></table></div>`;
+  const mobile=`<div class="monster-hitzone-cards">${(x.parts||[]).map(p=>`<section class="panel monster-hitzone-card"><h4>${esc(p.part)}</h4><div class="hitzone-physical">${keys.slice(0,3).map(([k,l])=>`<span class="${Number(p[k])===max[k]&&max[k]>0?"best-hitzone":""}"><small>${l}</small><strong>${value(p,k)}</strong></span>`).join("")}</div><div class="hitzone-elemental">${keys.slice(3).map(([k,l])=>`<span class="${Number(p[k])===max[k]&&max[k]>0?"best-hitzone":""}"><small>${l}</small><strong>${value(p,k)}</strong></span>`).join("")}</div><div class="hitzone-extra"><span><small>기절</small><strong>${esc(p.stun??"-")}</strong></span><span><small>다운</small><strong>${esc(p.down??"-")}</strong></span></div></section>`).join("")}</div>`;
+  const status=`<h3>상태이상 내성</h3><div class="table-panel monster-status-table"><table class="data-table"><thead><tr><th>상태</th><th>지속/데미지</th><th>초기내성</th><th>상승치</th><th>최대내성</th></tr></thead><tbody>${(x.statuses||[]).map(st=>`<tr><td>${esc(st.status)}</td><td>${esc(st.durationDamage)}</td><td>${esc(st.initial)}</td><td>${esc(st.increase)}</td><td>${esc(st.max)}</td></tr>`).join("")}</tbody></table></div>`;
+  return `<div class="monster-meta">${meta.baseHp?`<span>기본체력 <strong>${esc(meta.baseHp)}</strong></span>`:""}${meta.minCrown?`<span>최소금관 ${esc(meta.minCrown)}</span>`:""}${meta.maxSilver?`<span>최대은관 ${esc(meta.maxSilver)}</span>`:""}${meta.maxGold?`<span>최대금관 ${esc(meta.maxGold)}</span>`:""}</div>${desktop}${mobile}${status}`;
 }
 function monsterRankLabel(rank){return rank==="low"?"하위":rank==="high"?"상위":rank==="g"?"G급":rank==="extreme"?"극한":rank}
 function renderMonsterRewards(name){
@@ -1025,14 +1028,23 @@ function renderMonsterRewards(name){
   const sections=rankOrder.filter(r=>rows.some(x=>x.rank===r)).map(rank=>{
     const rr=rows.filter(x=>x.rank===rank),methods=new Map();
     rr.forEach(x=>{const k=`${x.method||"입수"}|${x.count||""}`;if(!methods.has(k))methods.set(k,[]);methods.get(k).push(x)});
-    return `<section class="panel monster-reward-rank"><h3>${monsterRankLabel(rank)}</h3>${[...methods.entries()].map(([method,list])=>`<div class="monster-reward-method"><h4>${esc(method.replace("|"," ").trim())}</h4><div class="monster-reward-items">${list.map(x=>`<div><strong>${itemLink(x.item)}</strong><span>${esc(x.probability||"-")}</span></div>`).join("")}</div></div>`).join("")}</section>`;
+    return `<details class="panel monster-reward-rank"><summary><strong>${monsterRankLabel(rank)}</strong><span>${rr.length.toLocaleString()}건</span></summary><div class="monster-reward-rank-body">${[...methods.entries()].map(([method,list])=>`<div class="monster-reward-method"><h4>${esc(method.replace("|"," ").trim())}</h4><div class="monster-reward-items">${list.map(x=>`<div><strong>${itemLink(x.item)}</strong><span>${esc(x.probability||"-")}</span></div>`).join("")}</div></div>`).join("")}</div></details>`;
   });
   return sections.join("")||'<div class="panel result-empty">보수 데이터가 없습니다.</div>';
 }
 async function getMonsterReference(name){
-  const meta=data.monsterReferenceIndex?.items?.[name]; if(!meta?.file)return {monster:name,items:[],quests:[],uses:[]};
+  const meta=data.monsterReferenceIndex?.items?.[name];
   if(monsterReferenceCache.has(name))return monsterReferenceCache.get(name);
-  const promise=loadMonsterReference(meta.file).catch(()=>({monster:name,items:[],quests:[],uses:[]})); monsterReferenceCache.set(name,promise); return promise;
+  const promise=(async()=>{
+    let ref=null;
+    if(meta?.file)try{ref=await loadMonsterReference(meta.file)}catch{}
+    if(ref&&Array.isArray(ref.quests)&&Array.isArray(ref.uses))return ref;
+    if(!monsterFallbackPromise)monsterFallbackPromise=loadMonsterReferencesFallback().catch(()=>({}));
+    const all=await monsterFallbackPromise;
+    return all?.[name]||{monster:name,items:[],quests:[],uses:[]};
+  })();
+  monsterReferenceCache.set(name,promise);
+  return promise;
 }
 function questTypeOrder(x){return ({village:1,hub:2,g:3,event:4,challenge:5}[x]||9)}
 async function renderMonsterReferenceTab(name,kind,token){
@@ -1045,7 +1057,7 @@ async function renderMonsterReferenceTab(name,kind,token){
   }else{
     const uses=ref.uses||[],groups=[["weapon","무기"],["armor","방어구"],["decoration","장식주"]];
     const useLine=x=>useRefHtml(x).replace(/^<li>|<\/li>$/g,"");
-    host.innerHTML=groups.map(([type,label])=>{const list=uses.filter(x=>x.type===type);if(!list.length)return "";return `<details class="panel monster-use-group" open><summary><strong>${label}</strong><span>${list.length.toLocaleString()}건</span></summary><ul>${list.map(x=>`<li><div class="monster-use-entry">${useLine(x)}</div><small>사용 소재: ${(x.viaItems||[]).map(i=>itemLink(i)).join(" · ")}</small></li>`).join("")}</ul></details>`}).join("")||'<div class="panel result-empty">제작 사용처 연결이 없습니다.</div>';
+    host.innerHTML=groups.map(([type,label])=>{const list=uses.filter(x=>x.type===type);if(!list.length)return "";return `<details class="panel monster-use-group"><summary><strong>${label}</strong><span>${list.length.toLocaleString()}건</span></summary><ul>${list.map(x=>`<li><div class="monster-use-entry">${useLine(x)}</div><small>사용 소재: ${(x.viaItems||[]).map(i=>itemLink(i)).join(" · ")}</small></li>`).join("")}</ul></details>`}).join("")||'<div class="panel result-empty">제작 사용처 연결이 없습니다.</div>';
   }
 }
 let monsterRenderToken=0;
@@ -1058,7 +1070,7 @@ function renderMonsterDetailShell(name){
   else if(monsterView==="detail")body=renderMonsterHitzone(name);
   else if(monsterView==="rewards")body=renderMonsterRewards(name);
   $("#monsterContent").innerHTML=`<section class="panel monster-hero"><div class="monster-hero-copy"><span>${esc(mon.species||"")}</span><h2>${esc(mon.name)}</h2><p>${esc(mon.nameEn||"")}</p><small>${esc(mon.materialName||"")}</small></div><button type="button" class="monster-back-list" data-monster-list>목록</button></section>${monsterTabs()}<div id="monsterTabBody">${body}</div>`;
-  if(monsterView==="detail")decorateResponsiveTables($("#monsterTabBody"));
+  if(monsterView==="detail"){const status=$("#monsterTabBody .monster-status-table");if(status)decorateResponsiveTables(status);}
   if(monsterView==="quests"||monsterView==="uses")void renderMonsterReferenceTab(name,monsterView,token);
 }
 async function setMonsterView(view){
