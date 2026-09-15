@@ -44,6 +44,7 @@
       "primaryElements": [
         "thunder"
       ],
+      "primaryElement": "thunder",
       "maxValues": {
         "cut": 65.0,
         "impact": 55.0,
@@ -112,6 +113,7 @@
       "primaryElements": [
         "ice"
       ],
+      "primaryElement": "ice",
       "maxValues": {
         "cut": 60.0,
         "impact": 50.0,
@@ -180,6 +182,7 @@
       "primaryElements": [
         "fire"
       ],
+      "primaryElement": "fire",
       "maxValues": {
         "cut": 80.0,
         "impact": 60.0,
@@ -247,6 +250,7 @@
       "primaryElements": [
         "ice"
       ],
+      "primaryElement": "ice",
       "maxValues": {
         "cut": 80.0,
         "impact": 60.0,
@@ -314,6 +318,7 @@
       "primaryElements": [
         "fire"
       ],
+      "primaryElement": "fire",
       "maxValues": {
         "cut": 65.0,
         "impact": 65.0,
@@ -378,10 +383,11 @@
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
     "nameEn": "Shrouded Nerscylla",
     "hitzoneHighlights": {
-      "bestPart": "배",
+      "bestPart": "독침",
       "primaryElements": [
         "fire"
       ],
+      "primaryElement": "fire",
       "maxValues": {
         "cut": 65.0,
         "impact": 65.0,
@@ -447,10 +453,11 @@
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
     "nameEn": "Cephadrome",
     "hitzoneHighlights": {
-      "bestPart": "목",
+      "bestPart": "머리",
       "primaryElements": [
         "ice"
       ],
+      "primaryElement": "ice",
       "maxValues": {
         "cut": 65.0,
         "impact": 60.0,
@@ -519,6 +526,7 @@
       "primaryElements": [
         "fire"
       ],
+      "primaryElement": "fire",
       "maxValues": {
         "cut": 75.0,
         "impact": 75.0,
@@ -590,6 +598,7 @@
         "thunder",
         "ice"
       ],
+      "primaryElement": "ice",
       "maxValues": {
         "cut": 85.0,
         "impact": 85.0,
@@ -670,6 +679,7 @@
         "thunder",
         "ice"
       ],
+      "primaryElement": "ice",
       "maxValues": {
         "cut": 75.0,
         "impact": 80.0,
@@ -737,11 +747,12 @@
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
     "nameEn": "Iodrome",
     "hitzoneHighlights": {
-      "bestPart": "몸통",
+      "bestPart": "머리",
       "primaryElements": [
         "water",
         "thunder"
       ],
+      "primaryElement": "water",
       "maxValues": {
         "cut": 56.0,
         "impact": 56.0,
@@ -809,11 +820,12 @@
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
     "nameEn": "Yian Kut-Ku",
     "hitzoneHighlights": {
-      "bestPart": "머리",
+      "bestPart": "목",
       "primaryElements": [
         "thunder",
         "ice"
       ],
+      "primaryElement": "ice",
       "maxValues": {
         "cut": 80.0,
         "impact": 75.0,
@@ -886,6 +898,7 @@
         "water",
         "thunder"
       ],
+      "primaryElement": "water",
       "maxValues": {
         "cut": 70.0,
         "impact": 70.0,
@@ -957,6 +970,7 @@
       "primaryElements": [
         "fire"
       ],
+      "primaryElement": "fire",
       "maxValues": {
         "cut": 70.0,
         "impact": 65.0,
@@ -1024,6 +1038,7 @@
       "primaryElements": [
         "fire"
       ],
+      "primaryElement": "fire",
       "maxValues": {
         "cut": 70.0,
         "impact": 65.0,
@@ -1087,10 +1102,11 @@
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
     "nameEn": "Yian Garuga",
     "hitzoneHighlights": {
-      "bestPart": "머리",
+      "bestPart": "등",
       "primaryElements": [
         "water"
       ],
+      "primaryElement": "water",
       "maxValues": {
         "cut": 65.0,
         "impact": 60.0,
@@ -1154,11 +1170,12 @@
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
     "nameEn": "Daimyo Hermitaur",
     "hitzoneHighlights": {
-      "bestPart": "머리",
+      "bestPart": "집게다리",
       "primaryElements": [
         "fire",
         "thunder"
       ],
+      "primaryElement": "fire",
       "maxValues": {
         "cut": 50.0,
         "impact": 60.0,
@@ -1232,6 +1249,7 @@
       "primaryElements": [
         "ice"
       ],
+      "primaryElement": "ice",
       "maxValues": {
         "cut": 50.0,
         "impact": 60.0,
@@ -1302,6 +1320,7 @@
       "primaryElements": [
         "fire"
       ],
+      "primaryElement": "fire",
       "maxValues": {
         "cut": 70.0,
         "impact": 65.0,
@@ -1369,6 +1388,7 @@
       "primaryElements": [
         "water"
       ],
+      "primaryElement": "water",
       "maxValues": {
         "cut": 70.0,
         "impact": 65.0,
@@ -1436,6 +1456,7 @@
       "primaryElements": [
         "fire"
       ],
+      "primaryElement": "fire",
       "maxValues": {
         "cut": 63.0,
         "impact": 63.0,
@@ -1504,6 +1525,7 @@
       "primaryElements": [
         "fire"
       ],
+      "primaryElement": "fire",
       "maxValues": {
         "cut": 65.0,
         "impact": 75.0,
@@ -1573,6 +1595,7 @@
       "primaryElements": [
         "ice"
       ],
+      "primaryElement": "ice",
       "maxValues": {
         "cut": 45.0,
         "impact": 65.0,
@@ -1643,6 +1666,7 @@
       "primaryElements": [
         "ice"
       ],
+      "primaryElement": "ice",
       "maxValues": {
         "cut": 60.0,
         "impact": 60.0,
@@ -1710,6 +1734,7 @@
       "primaryElements": [
         "ice"
       ],
+      "primaryElement": "ice",
       "maxValues": {
         "cut": 60.0,
         "impact": 60.0,
@@ -1777,6 +1802,7 @@
       "primaryElements": [
         "water"
       ],
+      "primaryElement": "water",
       "maxValues": {
         "cut": 56.0,
         "impact": 56.0,
@@ -1844,6 +1870,7 @@
       "primaryElements": [
         "ice"
       ],
+      "primaryElement": "ice",
       "maxValues": {
         "cut": 52.0,
         "impact": 52.0,
@@ -1913,6 +1940,7 @@
         "fire",
         "thunder"
       ],
+      "primaryElement": "fire",
       "maxValues": {
         "cut": 75.0,
         "impact": 66.0,
@@ -1984,6 +2012,7 @@
       "primaryElements": [
         "ice"
       ],
+      "primaryElement": "ice",
       "maxValues": {
         "cut": 65.0,
         "impact": 58.0,
@@ -2047,10 +2076,11 @@
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
     "nameEn": "Najarala",
     "hitzoneHighlights": {
-      "bestPart": "머리",
+      "bestPart": "앞다리",
       "primaryElements": [
         "ice"
       ],
+      "primaryElement": "ice",
       "maxValues": {
         "cut": 85.0,
         "impact": 80.0,
@@ -2118,6 +2148,7 @@
       "primaryElements": [
         "fire"
       ],
+      "primaryElement": "fire",
       "maxValues": {
         "cut": 55.0,
         "impact": 55.0,
@@ -2182,10 +2213,11 @@
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
     "nameEn": "Brachydios",
     "hitzoneHighlights": {
-      "bestPart": "머리",
+      "bestPart": "뿔",
       "primaryElements": [
         "water"
       ],
+      "primaryElement": "water",
       "maxValues": {
         "cut": 70.0,
         "impact": 65.0,
@@ -2308,11 +2340,12 @@
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
     "nameEn": "Deviljho",
     "hitzoneHighlights": {
-      "bestPart": "꼬리",
+      "bestPart": "몸통",
       "primaryElements": [
         "thunder",
         "dragon"
       ],
+      "primaryElement": "thunder",
       "maxValues": {
         "cut": 38.0,
         "impact": 35.0,
@@ -2380,10 +2413,11 @@
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
     "nameEn": "Savage Deviljho",
     "hitzoneHighlights": {
-      "bestPart": "가슴",
+      "bestPart": "꼬리",
       "primaryElements": [
         "thunder"
       ],
+      "primaryElement": "thunder",
       "maxValues": {
         "cut": 69.0,
         "impact": 69.0,
@@ -2451,6 +2485,7 @@
       "primaryElements": [
         "fire"
       ],
+      "primaryElement": "fire",
       "maxValues": {
         "cut": 75.0,
         "impact": 70.0,
@@ -2518,6 +2553,7 @@
       "primaryElements": [
         "water"
       ],
+      "primaryElement": "water",
       "maxValues": {
         "cut": 75.0,
         "impact": 70.0,
@@ -2586,6 +2622,7 @@
         "water",
         "dragon"
       ],
+      "primaryElement": "dragon",
       "maxValues": {
         "cut": 28.0,
         "impact": 26.0,
@@ -2661,11 +2698,12 @@
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
     "nameEn": "Ruby Basarios",
     "hitzoneHighlights": {
-      "bestPart": "다리",
+      "bestPart": "머리",
       "primaryElements": [
         "water",
         "ice"
       ],
+      "primaryElement": "ice",
       "maxValues": {
         "cut": 28.0,
         "impact": 26.0,
@@ -2745,6 +2783,7 @@
       "primaryElements": [
         "water"
       ],
+      "primaryElement": "water",
       "maxValues": {
         "cut": 45.0,
         "impact": 45.0,
@@ -2812,6 +2851,7 @@
       "primaryElements": [
         "water"
       ],
+      "primaryElement": "water",
       "maxValues": {
         "cut": 26.0,
         "impact": 30.0,
@@ -2883,6 +2923,7 @@
       "primaryElements": [
         "dragon"
       ],
+      "primaryElement": "dragon",
       "maxValues": {
         "cut": 90.0,
         "impact": 80.0,
@@ -2946,11 +2987,12 @@
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
     "nameEn": "Pink Rathian",
     "hitzoneHighlights": {
-      "bestPart": "배",
+      "bestPart": "머리",
       "primaryElements": [
         "thunder",
         "dragon"
       ],
+      "primaryElement": "dragon",
       "maxValues": {
         "cut": 70.0,
         "impact": 70.0,
@@ -3020,10 +3062,11 @@
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
     "nameEn": "Gold Rathian",
     "hitzoneHighlights": {
-      "bestPart": "등",
+      "bestPart": "목",
       "primaryElements": [
         "thunder"
       ],
+      "primaryElement": "thunder",
       "maxValues": {
         "cut": 55.0,
         "impact": 50.0,
@@ -3087,10 +3130,11 @@
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
     "nameEn": "Rathalos",
     "hitzoneHighlights": {
-      "bestPart": "머리",
+      "bestPart": "날개",
       "primaryElements": [
         "dragon"
       ],
+      "primaryElement": "dragon",
       "maxValues": {
         "cut": 65.0,
         "impact": 65.0,
@@ -3154,10 +3198,11 @@
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
     "nameEn": "Azure Rathalos",
     "hitzoneHighlights": {
-      "bestPart": "머리",
+      "bestPart": "다리",
       "primaryElements": [
         "dragon"
       ],
+      "primaryElement": "dragon",
       "maxValues": {
         "cut": 65.0,
         "impact": 60.0,
@@ -3221,11 +3266,12 @@
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
     "nameEn": "Silver Rathalos",
     "hitzoneHighlights": {
-      "bestPart": "등",
+      "bestPart": "목",
       "primaryElements": [
         "water",
         "thunder"
       ],
+      "primaryElement": "water",
       "maxValues": {
         "cut": 55.0,
         "impact": 50.0,
@@ -3293,10 +3339,11 @@
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
     "nameEn": "Tigrex",
     "hitzoneHighlights": {
-      "bestPart": "머리",
+      "bestPart": "등",
       "primaryElements": [
         "thunder"
       ],
+      "primaryElement": "thunder",
       "maxValues": {
         "cut": 70.0,
         "impact": 65.0,
@@ -3364,6 +3411,7 @@
       "primaryElements": [
         "water"
       ],
+      "primaryElement": "water",
       "maxValues": {
         "cut": 75.0,
         "impact": 70.0,
@@ -3427,10 +3475,11 @@
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
     "nameEn": "Molten Tigrex",
     "hitzoneHighlights": {
-      "bestPart": "앞다리",
+      "bestPart": "꼬리",
       "primaryElements": [
         "water"
       ],
+      "primaryElement": "water",
       "maxValues": {
         "cut": 55.0,
         "impact": 55.0,
@@ -3496,11 +3545,12 @@
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
     "nameEn": "Monoblos",
     "hitzoneHighlights": {
-      "bestPart": "꼬리끝",
+      "bestPart": "목",
       "primaryElements": [
         "thunder",
         "ice"
       ],
+      "primaryElement": "thunder",
       "maxValues": {
         "cut": 60.0,
         "impact": 70.0,
@@ -3570,11 +3620,12 @@
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
     "nameEn": "White Monoblos",
     "hitzoneHighlights": {
-      "bestPart": "꼬리끝",
+      "bestPart": "목",
       "primaryElements": [
         "thunder",
         "ice"
       ],
+      "primaryElement": "thunder",
       "maxValues": {
         "cut": 60.0,
         "impact": 70.0,
@@ -3644,10 +3695,11 @@
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
     "nameEn": "Diablos",
     "hitzoneHighlights": {
-      "bestPart": "배",
+      "bestPart": "꼬리끝",
       "primaryElements": [
         "ice"
       ],
+      "primaryElement": "ice",
       "maxValues": {
         "cut": 68.0,
         "impact": 75.0,
@@ -3711,10 +3763,11 @@
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
     "nameEn": "Black Diablos",
     "hitzoneHighlights": {
-      "bestPart": "배",
+      "bestPart": "꼬리끝",
       "primaryElements": [
         "ice"
       ],
+      "primaryElement": "ice",
       "maxValues": {
         "cut": 68.0,
         "impact": 75.0,
@@ -3778,10 +3831,11 @@
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
     "nameEn": "Seregios",
     "hitzoneHighlights": {
-      "bestPart": "배",
+      "bestPart": "머리",
       "primaryElements": [
         "thunder"
       ],
+      "primaryElement": "thunder",
       "maxValues": {
         "cut": 60.0,
         "impact": 55.0,
@@ -3845,10 +3899,11 @@
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
     "nameEn": "Akantor",
     "hitzoneHighlights": {
-      "bestPart": "머리",
+      "bestPart": "꼬리",
       "primaryElements": [
         "dragon"
       ],
+      "primaryElement": "dragon",
       "maxValues": {
         "cut": 50.0,
         "impact": 55.0,
@@ -3917,6 +3972,7 @@
         "fire",
         "thunder"
       ],
+      "primaryElement": "fire",
       "maxValues": {
         "cut": 50.0,
         "impact": 50.0,
@@ -3985,11 +4041,12 @@
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
     "nameEn": "Zinogre",
     "hitzoneHighlights": {
-      "bestPart": "머리",
+      "bestPart": "꼬리끝",
       "primaryElements": [
         "water",
         "ice"
       ],
+      "primaryElement": "ice",
       "maxValues": {
         "cut": 65.0,
         "impact": 65.0,
@@ -4057,11 +4114,12 @@
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
     "nameEn": "Stygian Zinogre",
     "hitzoneHighlights": {
-      "bestPart": "뒷다리",
+      "bestPart": "앞다리",
       "primaryElements": [
         "water",
         "thunder"
       ],
+      "primaryElement": "thunder",
       "maxValues": {
         "cut": 40.0,
         "impact": 40.0,
@@ -4133,11 +4191,12 @@
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
     "nameEn": "Kirin",
     "hitzoneHighlights": {
-      "bestPart": "머리",
+      "bestPart": "몸통",
       "primaryElements": [
         "fire",
         "water"
       ],
+      "primaryElement": "fire",
       "maxValues": {
         "cut": 50.0,
         "impact": 50.0,
@@ -4207,11 +4266,12 @@
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
     "nameEn": "Oroshi Kirin",
     "hitzoneHighlights": {
-      "bestPart": "머리",
+      "bestPart": "몸통",
       "primaryElements": [
         "fire",
         "water"
       ],
+      "primaryElement": "fire",
       "maxValues": {
         "cut": 50.0,
         "impact": 50.0,
@@ -4281,11 +4341,12 @@
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
     "nameEn": "Shagaru Magala",
     "hitzoneHighlights": {
-      "bestPart": "머리",
+      "bestPart": "날개다리",
       "primaryElements": [
         "fire",
         "dragon"
       ],
+      "primaryElement": "fire",
       "maxValues": {
         "cut": 65.0,
         "impact": 60.0,
@@ -4359,6 +4420,7 @@
         "thunder",
         "dragon"
       ],
+      "primaryElement": "dragon",
       "maxValues": {
         "cut": 45.0,
         "impact": 40.0,
@@ -4431,6 +4493,7 @@
         "water",
         "dragon"
       ],
+      "primaryElement": "water",
       "maxValues": {
         "cut": 30.0,
         "impact": 40.0,
@@ -4504,6 +4567,7 @@
       "primaryElements": [
         "dragon"
       ],
+      "primaryElement": "dragon",
       "maxValues": {
         "cut": 55.0,
         "impact": 55.0,
@@ -4572,6 +4636,7 @@
       "primaryElements": [
         "fire"
       ],
+      "primaryElement": "fire",
       "maxValues": {
         "cut": 45.0,
         "impact": 50.0,
@@ -4642,6 +4707,7 @@
         "thunder",
         "dragon"
       ],
+      "primaryElement": "thunder",
       "maxValues": {
         "cut": 90.0,
         "impact": 80.0,
@@ -4710,10 +4776,11 @@
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
     "nameEn": "Dalamadur",
     "hitzoneHighlights": {
-      "bestPart": "머리약점",
+      "bestPart": "등칼날 흑가시 발톱",
       "primaryElements": [
         "dragon"
       ],
+      "primaryElement": "dragon",
       "maxValues": {
         "cut": 160.0,
         "impact": 150.0,
@@ -4782,6 +4849,7 @@
       "primaryElements": [
         "dragon"
       ],
+      "primaryElement": "dragon",
       "maxValues": {
         "cut": 160.0,
         "impact": 150.0,
@@ -4850,6 +4918,7 @@
         "fire",
         "dragon"
       ],
+      "primaryElement": "fire",
       "maxValues": {
         "cut": 40.0,
         "impact": 40.0,
@@ -4927,10 +4996,11 @@
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
     "nameEn": "Gore Magala",
     "hitzoneHighlights": {
-      "bestPart": "머리",
+      "bestPart": "날개다리",
       "primaryElements": [
         "fire"
       ],
+      "primaryElement": "fire",
       "maxValues": {
         "cut": 75.0,
         "impact": 70.0,
@@ -5178,6 +5248,7 @@
       "primaryElements": [
         "dragon"
       ],
+      "primaryElement": "dragon",
       "maxValues": {
         "cut": 70.0,
         "impact": 75.0,
@@ -5245,6 +5316,7 @@
       "primaryElements": [
         "dragon"
       ],
+      "primaryElement": "dragon",
       "maxValues": {
         "cut": 70.0,
         "impact": 75.0,

@@ -1,5 +1,5 @@
-import {loadSimulatorData,loadFullData,loadItemReference,loadMonsterReference,loadMonsterReferencesFallback,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-monster8-recovery";
-import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-monster8-recovery";
+import {loadSimulatorData,loadFullData,loadItemReference,loadMonsterReference,loadMonsterReferencesFallback,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-monster9-elementbadge-pcfix";
+import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-monster9-elementbadge-pcfix";
 
 let data={skills:[],armors:[],armorSets:[],decorations:[],weapons:[],weaponSummary:[],melodies:[],items:[],itemReferenceIndex:{items:{}},meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],monsterReferenceIndex:{items:{}},dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],siteInfo:{},meta:{}};
 let targets=[];
@@ -1020,21 +1020,22 @@ function renderMonsterHitzone(name){
   const elements=[['fire','불'],['water','물'],['thunder','뇌'],['ice','빙'],['dragon','용']];
   const primary=new Set(hi.primaryElements||[]);
   const bestParts=hi.bestParts||{};
-  const isBest=(p,k)=>{
-    if(['cut','impact','shot'].includes(k))return (bestParts[k]||[]).includes(p.part);
-    return primary.has(k)&&(bestParts[k]||[]).includes(p.part);
-  };
-  const metric=(p,k,label)=>`<span class="hitzone-metric ${isBest(p,k)?'best-hitzone':''}"><small>${label}</small><strong>${esc(p[k]??'-')}</strong>${isBest(p,k)?'<i class="best-badge" title="물리 최고값 또는 주요 약점 속성 최고값">✨</i>':''}</span>`;
+  // Badge/highlight is intentionally ELEMENT-ONLY. Physical hitzones are shown as plain values.
+  const isElementBest=(part,k)=>primary.has(k)&&(bestParts[k]||[]).includes(part.part);
+  const metric=(part,k,label)=>`<span class="hitzone-metric ${isElementBest(part,k)?'best-hitzone':''}"><small>${label}</small><strong>${esc(part[k]??'-')}</strong>${isElementBest(part,k)?'<i class="best-badge" title="주요 약점 속성 최고 부위">✨</i>':''}</span>`;
   const parts=x.parts||[];
   const bestPartIndex=Math.max(0,parts.findIndex(p=>p.part===hi.bestPart));
-  const partButtons=`<div class="monster-part-strip" role="tablist" aria-label="육질 부위 선택">${parts.map((p,i)=>`<button type="button" class="monster-part-chip ${i===bestPartIndex?'active best-part-chip':''}" data-hitzone-part="${i}" aria-expanded="${i===bestPartIndex?'true':'false'}">${i===bestPartIndex?'<i class="part-best-badge" title="베스트 약점 부위">⭐</i>':''}<span>${esc(p.part)}</span></button>`).join('')}</div>`;
-  const partPanels=`<div class="monster-part-panels">${parts.map((p,i)=>`<section class="panel monster-part-panel" data-hitzone-panel="${i}" ${i===bestPartIndex?'':'hidden'}><div class="monster-part-panel-title"><strong>${i===bestPartIndex?'<i class="part-best-badge panel-badge" title="베스트 약점 부위">⭐</i>':''}${esc(p.part)}</strong><span>물리 + 기절/다운 · 속성</span></div><div class="monster-hitzone-line hitzone-line-physical">${physical.map(([k,l])=>metric(p,k,l)).join('')}</div><div class="monster-hitzone-line hitzone-line-element">${elements.map(([k,l])=>metric(p,k,l)).join('')}</div></section>`).join('')}</div>`;
+  const partButtons=`<div class="monster-part-strip" role="tablist" aria-label="육질 부위 선택">${parts.map((part,i)=>`<button type="button" class="monster-part-chip ${i===bestPartIndex?'active best-part-chip':''}" data-hitzone-part="${i}" aria-expanded="${i===bestPartIndex?'true':'false'}">${i===bestPartIndex?'<i class="part-best-badge" title="속성 베스트 약점 부위">⭐</i>':''}<span>${esc(part.part)}</span></button>`).join('')}</div>`;
+  const partPanels=`<div class="monster-part-panels">${parts.map((part,i)=>`<section class="panel monster-part-panel" data-hitzone-panel="${i}" ${i===bestPartIndex?'':'hidden'}><div class="monster-part-panel-title"><strong>${i===bestPartIndex?'<i class="part-best-badge panel-badge" title="속성 베스트 약점 부위">⭐</i>':''}${esc(part.part)}</strong><span>물리 + 기절/다운 · 속성</span></div><div class="monster-hitzone-line hitzone-line-physical">${physical.map(([k,l])=>metric(part,k,l)).join('')}</div><div class="monster-hitzone-line hitzone-line-element">${elements.map(([k,l])=>metric(part,k,l)).join('')}</div></section>`).join('')}</div>`;
+  const desktopRows=parts.map((part,i)=>`<tr class="${i===bestPartIndex?'best-element-part-row':''}"><td>${i===bestPartIndex?'<i class="part-best-badge" title="속성 베스트 약점 부위">⭐</i>':''}${esc(part.part)}</td>${physical.map(([k])=>`<td>${esc(part[k]??'-')}</td>`).join('')}${elements.map(([k])=>`<td class="${isElementBest(part,k)?'best-hitzone':''}">${esc(part[k]??'-')}${isElementBest(part,k)?'<i class="best-badge" title="주요 약점 속성 최고 부위">✨</i>':''}</td>`).join('')}</tr>`).join('');
+  const desktopTable=`<div class="monster-hitzone-desktop-view table-panel"><table class="data-table monster-hitzone-pc-table"><thead><tr><th rowspan="2">부위</th><th colspan="5">물리 + 기절/다운</th><th colspan="5">속성</th></tr><tr>${physical.map(([,l])=>`<th>${l}</th>`).join('')}${elements.map(([,l])=>`<th>${l}</th>`).join('')}</tr></thead><tbody>${desktopRows}</tbody></table></div>`;
+  const mobileAccordion=`<div class="monster-hitzone-mobile-view">${partButtons}${partPanels}</div>`;
   const meta=x.meta||{};
   const statusRows=(x.statuses||[]).map(st=>`<tr><td>${esc(st.status)}</td><td>${esc(st.durationDamage)}</td><td>${esc(st.initial)}</td><td>${esc(st.increase)}</td><td>${esc(st.max)}</td></tr>`).join('');
   const status=`<details class="panel monster-status-details"><summary><strong>상태이상 내성</strong><span>${(x.statuses||[]).length}종</span></summary><div class="monster-status-body"><div class="table-panel monster-status-table"><table class="data-table"><thead><tr><th>상태</th><th>지속/데미지</th><th>초기내성</th><th>상승치</th><th>최대내성</th></tr></thead><tbody>${statusRows}</tbody></table></div></div></details>`;
   const elemLabels={fire:'불',water:'물',thunder:'뇌',ice:'빙',dragon:'용'};
   const primaryText=(hi.primaryElements||[]).map(k=>elemLabels[k]||k).join('·');
-  return `<div class="monster-meta">${meta.baseHp?`<span>기본체력 <strong>${esc(meta.baseHp)}</strong></span>`:''}${meta.minCrown?`<span>최소금관 ${esc(meta.minCrown)}</span>`:''}${meta.maxSilver?`<span>최대은관 ${esc(meta.maxSilver)}</span>`:''}${meta.maxGold?`<span>최대금관 ${esc(meta.maxGold)}</span>`:''}${primaryText?`<span>주요 약점 속성 <strong>${esc(primaryText)}</strong></span>`:''}</div><section class="monster-hitzone-browser"><div class="monster-hitzone-guide"><strong>부위별 육질</strong><span>부위를 선택하면 상세 수치가 펼쳐집니다. <i class="best-badge demo">✨</i> 물리 최고값 / 주요 약점 속성</span></div>${partButtons}${partPanels}</section>${status}`;
+  return `<div class="monster-meta">${meta.baseHp?`<span>기본체력 <strong>${esc(meta.baseHp)}</strong></span>`:''}${meta.minCrown?`<span>최소금관 ${esc(meta.minCrown)}</span>`:''}${meta.maxSilver?`<span>최대은관 ${esc(meta.maxSilver)}</span>`:''}${meta.maxGold?`<span>최대금관 ${esc(meta.maxGold)}</span>`:''}${primaryText?`<span>주요 약점 속성 <strong>${esc(primaryText)}</strong></span>`:''}</div><section class="monster-hitzone-browser"><div class="monster-hitzone-guide"><strong>부위별 육질</strong><span><i class="best-badge demo">✨</i> 주요 약점 속성의 최고 부위만 강조합니다.</span></div>${desktopTable}${mobileAccordion}</section>${status}`;
 }
 
 function monsterRankLabel(rank){return rank==="low"?"하위":rank==="high"?"상위":rank==="g"?"G급":rank==="extreme"?"극한":rank}
@@ -1304,7 +1305,7 @@ function setupResponsiveNavColumns(){
   if(!nav)return;
   const originalItems=[...nav.children];
   let columnCount=0;
-  const mobileQuery=window.matchMedia("(max-width: 900px), (max-width: 1180px) and (hover: none) and (pointer: coarse)");
+  const mobileQuery=window.matchMedia("(max-width: 1180px) and (hover: none) and (pointer: coarse)");
 
   function restoreOriginal(){
     nav.classList.remove("mobile-independent-columns");
