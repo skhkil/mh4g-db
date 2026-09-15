@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#121821" />
   <title>MH4G 장비 · 스킬 시뮬레이터</title>
-  <link rel="stylesheet" href="./css/app.css?v=0.7.7-chat4-armor-materials1" />
+  <link rel="stylesheet" href="./css/app.css?v=0.7.7-chat4-monster1" />
 </head>
 <body>
   <div class="app-shell">
@@ -57,14 +57,7 @@
         <button data-page="skill" class="nav-main">✦ 스킬</button>
         <button data-page="meal" class="nav-main">🍖 식사</button>
 
-        <div class="nav-group">
-          <button class="nav-main nav-with-chevron nav-group-toggle" data-submenu="monsterSubNav"><span>🐲 몬스터</span><span class="nav-chevron">⌄</span></button>
-          <div id="monsterSubNav" class="nav-submenu">
-            <button data-route="monster-view" data-monster-view="detail">육질표상세</button>
-            <button data-route="monster-view" data-monster-view="rewards">갈무리보수확률</button>
-            <button data-route="monster-view" data-monster-view="materials">몬스터소재요약</button>
-          </div>
-        </div>
+        <button data-page="monster" class="nav-main">🐲 몬스터</button>
 
         <div class="nav-group">
           <button class="nav-main nav-with-chevron nav-group-toggle" data-submenu="dragonSubNav"><span>🏪 용인족 도매상</span><span class="nav-chevron">⌄</span></button>
@@ -316,10 +309,10 @@
       </section>
 
       <section id="page-monster" class="page">
-        <div class="toolbar">
-          <input id="monsterSearch" class="search-input" placeholder="몬스터명·소재명·특성 검색" />
+        <div class="toolbar monster-toolbar">
+          <input id="monsterSearch" class="search-input" placeholder="몬스터명·영문명·소재·특성 검색" />
           <select id="monsterSelect"><option value="all">전체 몬스터</option></select>
-          <select id="monsterRankFilter">
+          <select id="monsterRankFilter" class="monster-rank-filter">
             <option value="all">전체 등급</option><option value="low">하위</option><option value="high">상위</option><option value="g">G급</option><option value="extreme">극한</option>
           </select>
         </div>
@@ -380,6 +373,6 @@ python tools/build_database.py --publish</code></pre>
     </main>
   </div>
 
-  <script type="module" src="./js/app.js?v=0.7.7-chat4-armor-materials1"></script>
+  <script type="module" src="./js/app.js?v=0.7.7-chat4-monster1"></script>
 </body>
 </html>

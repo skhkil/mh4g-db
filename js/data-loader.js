@@ -1,4 +1,4 @@
-const DATA_VERSION = "0.7.7-chat4-armor-materials1";
+const DATA_VERSION = "0.7.7-chat4-monster2-noimg";
 
 const FULL_FILES = {
   skills:"./data/skills.json",
@@ -14,6 +14,7 @@ const FULL_FILES = {
   monsterSummary:"./data/monster_summary.json",
   monsterDetails:"./data/monster_details.json",
   monsterRewards:"./data/monster_rewards.json",
+  monsterReferenceIndex:"./data/monster_reference_index.json",
   dragonExchange:"./data/dragon_exchange.json",
   dragonSell:"./data/dragon_sell.json",
   dragonIncrease:"./data/dragon_increase.json",
@@ -38,7 +39,7 @@ export const FULL_DATA_KEYS = Object.freeze(Object.keys(FULL_FILES));
 const requestCache = new Map();
 
 function emptyValue(key){
-  return (key==="meta"||key==="siteInfo")?{}:[];
+  return (key==="meta"||key==="siteInfo"||key.endsWith("Index"))?{}:[];
 }
 function versioned(url){
   return `${url}?v=${DATA_VERSION}`;
@@ -80,6 +81,12 @@ export async function loadItemReference(itemId){
   return fetchJson(`itemRef:${key}`,`./data/item_refs/${encodeURIComponent(key)}.json`);
 }
 
+export async function loadMonsterReference(file){
+  const key=String(file||"").trim();
+  if(!key) return {monster:"",items:[],quests:[],uses:[]};
+  return fetchJson(`monsterRef:${key}`,`./data/monster_refs/${encodeURIComponent(key)}.json`);
+}
+
 // 이전 코드 호환용: 인자가 없으면 전체 데이터를 병렬 로딩한다.
 export function loadData(){
   return loadFullData();
@@ -90,7 +97,7 @@ export function classifyImported(name,json){
   const rules=[
     ["armor_sets","armorSets"],["armor","armors"],["decor","decorations"],["weapon_summary","weaponSummary"],
     ["weapon","weapons"],["skill","skills"],["item_reference_index","itemReferenceIndex"],["item","items"],["meal","meals"],
-    ["monster_summary","monsterSummary"],["monster_details","monsterDetails"],["monster_rewards","monsterRewards"],
+    ["monster_summary","monsterSummary"],["monster_details","monsterDetails"],["monster_rewards","monsterRewards"],["monster_reference_index","monsterReferenceIndex"],
     ["dragon_exchange","dragonExchange"],["dragon_sell","dragonSell"],["dragon_increase","dragonIncrease"],
     ["composition","compositions"],["quest","quests"],["melod","melodies"],["site_info","siteInfo"]
   ];
