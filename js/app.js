@@ -993,6 +993,52 @@ async function openPage(page){
 }
 function renderAll(){fillSelectors();renderSavedBuilds();renderManualSelectors();renderTargets();renderManualResult();renderSummary();updateHeaderFilterVisibility()}
 
+// Mobile/Fold sidebar: independent columns prevent one open submenu from stretching sibling rows.
+function setupResponsiveNavColumns(){
+  const nav=$("#mainNav");
+  if(!nav)return;
+  const originalItems=[...nav.children];
+  let columnCount=0;
+  const mobileQuery=window.matchMedia("(max-width: 900px), (max-width: 1180px) and (hover: none) and (pointer: coarse)");
+
+  function restoreOriginal(){
+    nav.classList.remove("mobile-independent-columns");
+    nav.querySelectorAll(":scope > .nav-mobile-column").forEach(col=>col.remove());
+    originalItems.forEach(item=>nav.appendChild(item));
+    columnCount=0;
+  }
+
+  function applyColumns(){
+    if(!mobileQuery.matches){
+      if(columnCount)restoreOriginal();
+      return;
+    }
+    const wanted=window.innerWidth>=600?3:2;
+    if(columnCount===wanted&&nav.classList.contains("mobile-independent-columns"))return;
+
+    nav.querySelectorAll(":scope > .nav-mobile-column").forEach(col=>col.remove());
+    originalItems.forEach(item=>item.remove());
+    const cols=Array.from({length:wanted},(_,i)=>{
+      const col=document.createElement("div");
+      col.className="nav-mobile-column";
+      col.dataset.column=String(i+1);
+      nav.appendChild(col);
+      return col;
+    });
+    originalItems.forEach((item,i)=>cols[i%wanted].appendChild(item));
+    nav.classList.add("mobile-independent-columns");
+    columnCount=wanted;
+  }
+
+  applyColumns();
+  mobileQuery.addEventListener?.("change",applyColumns);
+  let resizeFrame=0;
+  window.addEventListener("resize",()=>{
+    cancelAnimationFrame(resizeFrame);
+    resizeFrame=requestAnimationFrame(applyColumns);
+  },{passive:true});
+}
+
 function bind(){
   document.addEventListener('click',()=>closePickers());
   $("#sidebarToggle").onclick=()=>{$(".app-shell").classList.toggle("sidebar-collapsed");const collapsed=$(".app-shell").classList.contains("sidebar-collapsed");$("#sidebarToggle").title=collapsed?"좌측 메뉴 펼치기":"좌측 메뉴 접기";};
@@ -1042,4 +1088,4 @@ function bind(){
   $("#jsonImport").onchange=async e=>{const lines=[];for(const f of e.target.files){try{const json=JSON.parse(await f.text()),type=classifyImported(f.name,json);if(type){data[type]=json;lines.push(`${f.name} → ${type} ${Array.isArray(json)?json.length:"객체"}건`)}else lines.push(`${f.name} → 유형 판별 실패`)}catch{lines.push(`${f.name} → JSON 오류`)}}data.meta={...data.meta,demo:false,version:"browser-import"};rebuildIndexes();$("#importStatus").innerHTML=lines.map(esc).join("<br>");renderAll()};
 }
 
-Object.assign(data,await loadSimulatorData());rebuildIndexes();bind();renderAll();
+Object.assign(data,await loadSimulatorData());rebuildIndexes();bind();setupResponsiveNavColumns();renderAll();

@@ -534,3 +534,36 @@ button{border:1px solid var(--line);background:#202b39;color:white;border-radius
   .summary-list{grid-template-columns:1fr 1fr}
   .craft-line{grid-template-columns:46px minmax(0,1fr);gap:5px}
 }
+
+
+/* 2026-09-15 mobile/fold sidebar independent dropdown columns */
+@media (max-width:900px), (max-width:1180px) and (hover:none) and (pointer:coarse){
+  .nav.mobile-independent-columns{
+    display:grid!important;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:6px;
+    align-items:start;
+    overflow:visible;
+  }
+  .nav.mobile-independent-columns>.nav-mobile-column{
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+    min-width:0;
+    width:100%;
+    align-self:start;
+  }
+  .nav.mobile-independent-columns>.nav-mobile-column>.nav-main,
+  .nav.mobile-independent-columns>.nav-mobile-column>.nav-group{
+    width:100%;
+    min-width:0;
+    align-self:flex-start;
+    flex:0 0 auto;
+  }
+  .nav.mobile-independent-columns .nav-group{height:auto!important}
+  .nav.mobile-independent-columns .nav-submenu.open{height:auto}
+}
+@media (min-width:600px) and (max-width:1180px) and (hover:none) and (pointer:coarse),
+       (min-width:600px) and (max-width:900px){
+  .nav.mobile-independent-columns{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
