@@ -1,4 +1,4 @@
-const DATA_VERSION = "0.7.7-chat4-itemxref4-perf";
+const DATA_VERSION = "0.7.7-chat4-armor-materials1";
 
 const FULL_FILES = {
   skills:"./data/skills.json",
