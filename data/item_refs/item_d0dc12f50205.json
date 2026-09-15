@@ -1,0 +1,1 @@
+{"id":"item_d0dc12f50205","acquire":[{"type":"compose","no":43,"materialA":"소형나무통","materialB":"화약초","successRate":"90%","yield":"1"}],"uses":[{"type":"compose","result":"발사나무통폭탄","no":47,"successRate":"55%"},{"type":"compose","result":"소형나무통폭탄G","no":44,"successRate":"75%"},{"type":"compose","result":"아이룰루폭탄","no":50,"successRate":"90%"}]}

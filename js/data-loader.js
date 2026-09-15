@@ -1,4 +1,4 @@
-const DATA_VERSION = "0.7.7-chat4-itemxref3-inlinehist";
+const DATA_VERSION = "0.7.7-chat4-itemxref4-perf";
 
 const FULL_FILES = {
   skills:"./data/skills.json",
@@ -9,7 +9,7 @@ const FULL_FILES = {
   weaponSummary:"./data/weapon_summary.json",
   melodies:"./data/melodies.json",
   items:"./data/items.json",
-  itemReferences:"./data/item_references.json",
+  itemReferenceIndex:"./data/item_reference_index.json",
   meals:"./data/meals.json",
   monsterSummary:"./data/monster_summary.json",
   monsterDetails:"./data/monster_details.json",
@@ -74,6 +74,12 @@ export function loadFullData(keys=FULL_DATA_KEYS){
   return loadMap(FULL_FILES,keys);
 }
 
+export async function loadItemReference(itemId){
+  const key=String(itemId||"").trim();
+  if(!key) return {id:key,acquire:[],uses:[]};
+  return fetchJson(`itemRef:${key}`,`./data/item_refs/${encodeURIComponent(key)}.json`);
+}
+
 // 이전 코드 호환용: 인자가 없으면 전체 데이터를 병렬 로딩한다.
 export function loadData(){
   return loadFullData();
@@ -83,7 +89,7 @@ export function classifyImported(name,json){
   const lower=name.toLowerCase();
   const rules=[
     ["armor_sets","armorSets"],["armor","armors"],["decor","decorations"],["weapon_summary","weaponSummary"],
-    ["weapon","weapons"],["skill","skills"],["item","items"],["meal","meals"],
+    ["weapon","weapons"],["skill","skills"],["item_reference_index","itemReferenceIndex"],["item","items"],["meal","meals"],
     ["monster_summary","monsterSummary"],["monster_details","monsterDetails"],["monster_rewards","monsterRewards"],
     ["dragon_exchange","dragonExchange"],["dragon_sell","dragonSell"],["dragon_increase","dragonIncrease"],
     ["composition","compositions"],["quest","quests"],["melod","melodies"],["site_info","siteInfo"]

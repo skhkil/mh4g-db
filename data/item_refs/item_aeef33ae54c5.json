@@ -1,0 +1,1 @@
+{"id":"item_aeef33ae54c5","acquire":[{"type":"compose","no":120,"materialA":"수면초","materialB":"마비버섯","successRate":"65%","yield":"1"}],"uses":[{"type":"compose","result":"포획용마취나이프","no":121,"successRate":"75%"},{"type":"compose","result":"포획용마취옥","no":122,"successRate":"75%"},{"type":"compose","result":"포획용마취탄","no":123,"successRate":"90%"}]}

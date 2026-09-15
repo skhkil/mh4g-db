@@ -78,6 +78,15 @@ for rid,v in refs.items():
 useful={k:v for k,v in refs.items() if v['acquire'] or v['uses']}
 out={'version':'0.7.7-chat4-itemxref1','generated':'2026-09-15','itemCount':len(items),'indexedCount':len(useful),'items':useful}
 json.dump(out,open(P/'data/item_references.json','w',encoding='utf-8'),ensure_ascii=False,indent=2)
+# Runtime performance: keep the monolithic audit/source file, but serve one small reference file per item.
+shard_dir=P/'data'/'item_refs'; shard_dir.mkdir(exist_ok=True)
+for old_file in shard_dir.glob('*.json'): old_file.unlink()
+index={'version':'0.7.7-chat4-itemxref4-perf','generated':'2026-09-15','items':{}}
+for iid,v in useful.items():
+    payload={'id':iid,'acquire':v['acquire'],'uses':v['uses']}
+    json.dump(payload,open(shard_dir/f'{iid}.json','w',encoding='utf-8'),ensure_ascii=False,separators=(',',':'))
+    index['items'][iid]={'acquire':len(v['acquire']),'uses':len(v['uses'])}
+json.dump(index,open(P/'data/item_reference_index.json','w',encoding='utf-8'),ensure_ascii=False,separators=(',',':'))
 print(f"item references: {len(useful)}/{len(items)} items indexed")
 print(f"acquire references: {sum(len(v['acquire']) for v in useful.values())}")
 print(f"usage references: {sum(len(v['uses']) for v in useful.values())}")

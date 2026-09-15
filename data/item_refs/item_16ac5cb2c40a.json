@@ -1,0 +1,1 @@
+{"id":"item_16ac5cb2c40a","acquire":[{"type":"compose","no":10,"materialA":"켈비 뿔","materialB":"낙양초의 꽃","successRate":"55%","yield":"1"},{"type":"compose","no":9,"materialA":"활력제","materialB":"켈비 뿔","successRate":"55%","yield":"1"}],"uses":[{"type":"decoration","id":"deco_689b17f2e2ec","name":"치유주【2】","slots":2,"count":1,"materials":"수라원주×1 기원호 견장골×1 고대의 비약×1"}]}

@@ -1,5 +1,18 @@
 # WORK STATUS v0.7.7
 
+## 2026-09-15 채팅 4 — 아이템 역참조 성능 구조 재설계
+- 실제 병목 재확인: 1.8MB 단일 역참조 JSON 전체 파싱/검색 인덱싱 + 524행 HTML table 상세 삽입에 따른 전체 table reflow.
+- 런타임 역참조를 `data/item_refs/<item-id>.json` 347개로 분할하고, 목록에는 약 15KB `item_reference_index.json`만 로드.
+- 아이템 선택 시 해당 아이템의 역참조 파일만 로드하며 재클릭은 메모리 캐시 사용.
+- 아이템 DB 목록을 HTML table에서 CSS Grid 기반 독립 행 목록으로 전환하여 상세 확장 시 전체 표 레이아웃 재계산 제거.
+- `content-visibility:auto`로 화면 밖 524행 렌더/페인트 비용 절감.
+- 검색 인덱스에서 역참조 전체 문자열 결합 제거.
+- 전역 button hover filter에서 아이템/역참조 링크 제외.
+- 생성 스크립트도 감사용 단일 JSON + 런타임 분할 JSON/인덱스를 함께 생성하도록 갱신.
+- History API 및 클릭한 항목 바로 아래 상세 UX 유지.
+- 캐시 키 `0.7.7-chat4-itemxref4-perf`.
+- README 동시 갱신, JS/JSON 검증 완료.
+
 ## 2026-09-15 채팅 4 — 아이템 역참조 2차 최적화 / 인라인 상세 / History
 - 아이템 상세를 페이지 상단 고정 패널에서 **선택 행 바로 아래 인라인 펼침**으로 변경.
 - 역참조 그룹은 클릭 시 전체 목록을 만들지 않고 `<details>`를 펼칠 때만 해당 그룹 DOM을 생성하는 lazy render 적용.

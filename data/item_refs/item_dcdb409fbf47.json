@@ -1,0 +1,1 @@
+{"id":"item_dcdb409fbf47","acquire":[{"type":"compose","no":64,"materialA":"불사충","materialB":"용 이빨","successRate":"90%","yield":"1"}],"uses":[{"type":"compose","result":"생명의 약","no":65,"successRate":"65%"},{"type":"compose","result":"회복피리","no":66,"successRate":"65%"}]}

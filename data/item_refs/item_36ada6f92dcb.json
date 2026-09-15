@@ -1,0 +1,1 @@
+{"id":"item_36ada6f92dcb","acquire":[{"type":"compose","no":26,"materialA":"얼음결정","materialB":"씁쓸충","successRate":"90%","yield":"1"}],"uses":[{"type":"weapon","id":"weapon_fe91dc67836a","name":"냉동다랑어","weaponType":"대검","method":"생산","count":3,"materials":"청새치다랑어×1 쿨드링크×3 빙결주머니×3"}]}
