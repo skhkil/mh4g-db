@@ -501,10 +501,19 @@ function decorateResponsiveTable(table){
   if(!table)return;
   table.classList.add("responsive-table");
   const headers=[...table.querySelectorAll("thead th")].map(th=>th.textContent.trim());
+  const wideLabels=new Set([
+    "명칭","퀘스트","클리어 조건","서브퀘스트","특수조건","비고","효과/비고",
+    "스킬","스킬 합계","발동 조건","효과 및 비고","내성","내성 합계","입수","특성",
+    "생산 소재","생산/강화 소재","필요 아이템","해금 조건/퀘스트","선율 효과","해당 무기",
+    "리로드/반동/흔들림","속사","특수","모으기","병","선율/효과","벌레","예리도"
+  ]);
   table.querySelectorAll("tbody tr").forEach(tr=>{
     [...tr.children].forEach((td,i)=>{
       if(td.tagName!=="TD"||td.classList.contains("result-empty"))return;
-      td.dataset.label=headers[i]||"";
+      const label=headers[i]||"";
+      td.dataset.label=label;
+      if(i===0)td.classList.add("mobile-title-cell");
+      if(wideLabels.has(label)||td.classList.contains("wrap-cell")||td.classList.contains("col-craft")||td.classList.contains("col-sharpness"))td.classList.add("mobile-wide-cell");
       const text=td.textContent.trim();
       if(!text||text==="-")td.dataset.empty="true";
     });
