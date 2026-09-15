@@ -1,4 +1,4 @@
-const DATA_VERSION = "0.7.7-chat4-monster4-hitzone";
+const DATA_VERSION = "0.7.7-chat4-monster6-badgefix";
 
 const FULL_FILES = {
   skills:"./data/skills.json",

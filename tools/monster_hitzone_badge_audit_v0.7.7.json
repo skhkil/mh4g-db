@@ -1,0 +1,1325 @@
+[
+  {
+    "name": "아르셀타스",
+    "bestElements": [
+      "뇌"
+    ],
+    "bestElementKeys": [
+      "thunder"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "뇌": [
+        "배"
+      ]
+    }
+  },
+  {
+    "name": "아르셀타스 아종",
+    "bestElements": [
+      "빙"
+    ],
+    "bestElementKeys": [
+      "ice"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "빙": [
+        "배"
+      ]
+    }
+  },
+  {
+    "name": "게넬·셀타스",
+    "bestElements": [
+      "불"
+    ],
+    "bestElementKeys": [
+      "fire"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "불": [
+        "머리"
+      ]
+    }
+  },
+  {
+    "name": "게넬·셀타스 아종",
+    "bestElements": [
+      "빙"
+    ],
+    "bestElementKeys": [
+      "ice"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "빙": [
+        "머리"
+      ]
+    }
+  },
+  {
+    "name": "네르스큐라",
+    "bestElements": [
+      "불"
+    ],
+    "bestElementKeys": [
+      "fire"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "불": [
+        "독침",
+        "흉부"
+      ]
+    }
+  },
+  {
+    "name": "네르스큐라 아종",
+    "bestElements": [
+      "불"
+    ],
+    "bestElementKeys": [
+      "fire"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "불": [
+        "독침",
+        "흉부",
+        "배"
+      ]
+    }
+  },
+  {
+    "name": "도스가레오스",
+    "bestElements": [
+      "빙"
+    ],
+    "bestElementKeys": [
+      "ice"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "빙": [
+        "머리"
+      ]
+    }
+  },
+  {
+    "name": "도스재기",
+    "bestElements": [
+      "불"
+    ],
+    "bestElementKeys": [
+      "fire"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "불": [
+        "머리",
+        "몸통"
+      ]
+    }
+  },
+  {
+    "name": "도스람포스",
+    "bestElements": [
+      "불",
+      "물",
+      "뇌",
+      "빙"
+    ],
+    "bestElementKeys": [
+      "fire",
+      "water",
+      "thunder",
+      "ice"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "불": [
+        "머리"
+      ],
+      "물": [
+        "머리"
+      ],
+      "뇌": [
+        "머리"
+      ],
+      "빙": [
+        "머리"
+      ]
+    }
+  },
+  {
+    "name": "도스게네포스",
+    "bestElements": [
+      "뇌",
+      "빙"
+    ],
+    "bestElementKeys": [
+      "thunder",
+      "ice"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "뇌": [
+        "머리"
+      ],
+      "빙": [
+        "머리"
+      ]
+    }
+  },
+  {
+    "name": "도스이오스",
+    "bestElements": [
+      "물",
+      "뇌"
+    ],
+    "bestElementKeys": [
+      "water",
+      "thunder"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "물": [
+        "머리"
+      ],
+      "뇌": [
+        "머리"
+      ]
+    }
+  },
+  {
+    "name": "얀쿡크",
+    "bestElements": [
+      "뇌",
+      "빙"
+    ],
+    "bestElementKeys": [
+      "thunder",
+      "ice"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "뇌": [
+        "목"
+      ],
+      "빙": [
+        "목"
+      ]
+    }
+  },
+  {
+    "name": "얀쿡크 아종",
+    "bestElements": [
+      "물",
+      "뇌"
+    ],
+    "bestElementKeys": [
+      "water",
+      "thunder"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "물": [
+        "목"
+      ],
+      "뇌": [
+        "목"
+      ]
+    }
+  },
+  {
+    "name": "게리오스",
+    "bestElements": [
+      "불"
+    ],
+    "bestElementKeys": [
+      "fire"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "불": [
+        "머리"
+      ]
+    }
+  },
+  {
+    "name": "게리오스 아종",
+    "bestElements": [
+      "불"
+    ],
+    "bestElementKeys": [
+      "fire"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "불": [
+        "머리"
+      ]
+    }
+  },
+  {
+    "name": "얀가루루가",
+    "bestElements": [
+      "물"
+    ],
+    "bestElementKeys": [
+      "water"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "물": [
+        "등"
+      ]
+    }
+  },
+  {
+    "name": "다이묘자자미",
+    "bestElements": [
+      "불",
+      "뇌"
+    ],
+    "bestElementKeys": [
+      "fire",
+      "thunder"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "불": [
+        "집게다리",
+        "등껍질(파괴)",
+        "집게다리(파괴)"
+      ],
+      "뇌": [
+        "머리"
+      ]
+    }
+  },
+  {
+    "name": "다이묘자자미 아종",
+    "bestElements": [
+      "빙"
+    ],
+    "bestElementKeys": [
+      "ice"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "빙": [
+        "머리",
+        "앞다리",
+        "뒷다리",
+        "꼬리"
+      ]
+    }
+  },
+  {
+    "name": "케차와차",
+    "bestElements": [
+      "불"
+    ],
+    "bestElementKeys": [
+      "fire"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "불": [
+        "머리"
+      ]
+    }
+  },
+  {
+    "name": "케차와차 아종",
+    "bestElements": [
+      "물"
+    ],
+    "bestElementKeys": [
+      "water"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "물": [
+        "머리"
+      ]
+    }
+  },
+  {
+    "name": "울크스스",
+    "bestElements": [
+      "불"
+    ],
+    "bestElementKeys": [
+      "fire"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "불": [
+        "머리",
+        "상반신"
+      ]
+    }
+  },
+  {
+    "name": "바바콩가",
+    "bestElements": [
+      "불"
+    ],
+    "bestElementKeys": [
+      "fire"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "불": [
+        "머리"
+      ]
+    }
+  },
+  {
+    "name": "바바콩가 아종",
+    "bestElements": [
+      "빙"
+    ],
+    "bestElementKeys": [
+      "ice"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "빙": [
+        "머리",
+        "앞다리",
+        "뒷다리"
+      ]
+    }
+  },
+  {
+    "name": "라잔",
+    "bestElements": [
+      "빙"
+    ],
+    "bestElementKeys": [
+      "ice"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "빙": [
+        "머리"
+      ]
+    }
+  },
+  {
+    "name": "격앙 라잔",
+    "bestElements": [
+      "빙"
+    ],
+    "bestElementKeys": [
+      "ice"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "빙": [
+        "머리"
+      ]
+    }
+  },
+  {
+    "name": "테츠카브라",
+    "bestElements": [
+      "물"
+    ],
+    "bestElementKeys": [
+      "water"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "물": [
+        "머리"
+      ]
+    }
+  },
+  {
+    "name": "테츠카브라 아종",
+    "bestElements": [
+      "빙"
+    ],
+    "bestElementKeys": [
+      "ice"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "빙": [
+        "머리",
+        "이빨"
+      ]
+    }
+  },
+  {
+    "name": "자보아자길",
+    "bestElements": [
+      "불",
+      "뇌"
+    ],
+    "bestElementKeys": [
+      "fire",
+      "thunder"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "불": [
+        "팽창시 배"
+      ],
+      "뇌": [
+        "팽창시 배"
+      ]
+    }
+  },
+  {
+    "name": "자보아자길 아종",
+    "bestElements": [
+      "빙"
+    ],
+    "bestElementKeys": [
+      "ice"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "빙": [
+        "팽창시 배"
+      ]
+    }
+  },
+  {
+    "name": "가라라아자라",
+    "bestElements": [
+      "빙"
+    ],
+    "bestElementKeys": [
+      "ice"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "빙": [
+        "앞다리"
+      ]
+    }
+  },
+  {
+    "name": "가라라아자라 아종",
+    "bestElements": [
+      "불"
+    ],
+    "bestElementKeys": [
+      "fire"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "불": [
+        "등"
+      ]
+    }
+  },
+  {
+    "name": "브라키디오스",
+    "bestElements": [
+      "물"
+    ],
+    "bestElementKeys": [
+      "water"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "물": [
+        "뿔"
+      ]
+    }
+  },
+  {
+    "name": "맹폭 브라키디오스",
+    "bestElements": [
+      "빙"
+    ],
+    "bestElementKeys": [
+      "ice"
+    ],
+    "source": "detail-fallback",
+    "highlightParts": {
+      "빙": [
+        "뿔"
+      ]
+    }
+  },
+  {
+    "name": "이블조",
+    "bestElements": [
+      "뇌",
+      "용"
+    ],
+    "bestElementKeys": [
+      "thunder",
+      "dragon"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "뇌": [
+        "몸통"
+      ],
+      "용": [
+        "몸통"
+      ]
+    }
+  },
+  {
+    "name": "광폭 이블조",
+    "bestElements": [
+      "뇌"
+    ],
+    "bestElementKeys": [
+      "thunder"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "뇌": [
+        "꼬리"
+      ]
+    }
+  },
+  {
+    "name": "푸루푸루",
+    "bestElements": [
+      "불"
+    ],
+    "bestElementKeys": [
+      "fire"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "불": [
+        "머리"
+      ]
+    }
+  },
+  {
+    "name": "푸루푸루 아종",
+    "bestElements": [
+      "물"
+    ],
+    "bestElementKeys": [
+      "water"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "물": [
+        "머리"
+      ]
+    }
+  },
+  {
+    "name": "바살모스",
+    "bestElements": [
+      "물",
+      "용"
+    ],
+    "bestElementKeys": [
+      "water",
+      "dragon"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "물": [
+        "머리",
+        "목아래",
+        "등",
+        "날개",
+        "꼬리아래"
+      ],
+      "용": [
+        "머리",
+        "목아래",
+        "등",
+        "날개",
+        "꼬리아래"
+      ]
+    }
+  },
+  {
+    "name": "바살모스 아종",
+    "bestElements": [
+      "물",
+      "빙"
+    ],
+    "bestElementKeys": [
+      "water",
+      "ice"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "물": [
+        "머리",
+        "목아래",
+        "등",
+        "날개",
+        "꼬리아래"
+      ],
+      "빙": [
+        "머리",
+        "목아래",
+        "등",
+        "날개",
+        "꼬리아래"
+      ]
+    }
+  },
+  {
+    "name": "그라비모스",
+    "bestElements": [
+      "물"
+    ],
+    "bestElementKeys": [
+      "water"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "물": [
+        "등"
+      ]
+    }
+  },
+  {
+    "name": "그라비모스 아종",
+    "bestElements": [
+      "물"
+    ],
+    "bestElementKeys": [
+      "water"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "물": [
+        "목",
+        "꼬리"
+      ]
+    }
+  },
+  {
+    "name": "리오레이아",
+    "bestElements": [
+      "용"
+    ],
+    "bestElementKeys": [
+      "dragon"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "용": [
+        "머리"
+      ]
+    }
+  },
+  {
+    "name": "리오레이아 아종",
+    "bestElements": [
+      "뇌",
+      "용"
+    ],
+    "bestElementKeys": [
+      "thunder",
+      "dragon"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "뇌": [
+        "배",
+        "꼬리끝"
+      ],
+      "용": [
+        "머리",
+        "꼬리끝"
+      ]
+    }
+  },
+  {
+    "name": "리오레이아 희소종",
+    "bestElements": [
+      "뇌"
+    ],
+    "bestElementKeys": [
+      "thunder"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "뇌": [
+        "목"
+      ]
+    }
+  },
+  {
+    "name": "리오레우스",
+    "bestElements": [
+      "용"
+    ],
+    "bestElementKeys": [
+      "dragon"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "용": [
+        "날개"
+      ]
+    }
+  },
+  {
+    "name": "리오레우스 아종",
+    "bestElements": [
+      "용"
+    ],
+    "bestElementKeys": [
+      "dragon"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "용": [
+        "다리"
+      ]
+    }
+  },
+  {
+    "name": "리오레우스 희소종",
+    "bestElements": [
+      "물",
+      "뇌"
+    ],
+    "bestElementKeys": [
+      "water",
+      "thunder"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "물": [
+        "목"
+      ],
+      "뇌": [
+        "목"
+      ]
+    }
+  },
+  {
+    "name": "티가렉스",
+    "bestElements": [
+      "뇌"
+    ],
+    "bestElementKeys": [
+      "thunder"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "뇌": [
+        "등"
+      ]
+    }
+  },
+  {
+    "name": "티가렉스 아종",
+    "bestElements": [
+      "물"
+    ],
+    "bestElementKeys": [
+      "water"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "물": [
+        "머리"
+      ]
+    }
+  },
+  {
+    "name": "티가렉스 희소종",
+    "bestElements": [
+      "물"
+    ],
+    "bestElementKeys": [
+      "water"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "물": [
+        "꼬리",
+        "뒷다리"
+      ]
+    }
+  },
+  {
+    "name": "모노블로스",
+    "bestElements": [
+      "뇌",
+      "빙"
+    ],
+    "bestElementKeys": [
+      "thunder",
+      "ice"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "뇌": [
+        "목",
+        "꼬리끝"
+      ],
+      "빙": [
+        "머리",
+        "등/날개"
+      ]
+    }
+  },
+  {
+    "name": "모노블로스 아종",
+    "bestElements": [
+      "뇌",
+      "빙"
+    ],
+    "bestElementKeys": [
+      "thunder",
+      "ice"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "뇌": [
+        "목",
+        "꼬리끝"
+      ],
+      "빙": [
+        "머리",
+        "등/날개"
+      ]
+    }
+  },
+  {
+    "name": "디아블로스",
+    "bestElements": [
+      "빙"
+    ],
+    "bestElementKeys": [
+      "ice"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "빙": [
+        "꼬리끝"
+      ]
+    }
+  },
+  {
+    "name": "디아블로스 아종",
+    "bestElements": [
+      "빙"
+    ],
+    "bestElementKeys": [
+      "ice"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "빙": [
+        "꼬리끝"
+      ]
+    }
+  },
+  {
+    "name": "셀레기오스",
+    "bestElements": [
+      "뇌"
+    ],
+    "bestElementKeys": [
+      "thunder"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "뇌": [
+        "머리"
+      ]
+    }
+  },
+  {
+    "name": "아캄토름",
+    "bestElements": [
+      "용"
+    ],
+    "bestElementKeys": [
+      "dragon"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "용": [
+        "꼬리"
+      ]
+    }
+  },
+  {
+    "name": "우캄루바스",
+    "bestElements": [
+      "불",
+      "뇌"
+    ],
+    "bestElementKeys": [
+      "fire",
+      "thunder"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "불": [
+        "머리",
+        "꼬리"
+      ],
+      "뇌": [
+        "앞다리"
+      ]
+    }
+  },
+  {
+    "name": "진오우거",
+    "bestElements": [
+      "물",
+      "빙"
+    ],
+    "bestElementKeys": [
+      "water",
+      "ice"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "물": [
+        "꼬리끝"
+      ],
+      "빙": [
+        "꼬리끝"
+      ]
+    }
+  },
+  {
+    "name": "진오우거 아종",
+    "bestElements": [
+      "물",
+      "뇌"
+    ],
+    "bestElementKeys": [
+      "water",
+      "thunder"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "물": [
+        "앞다리",
+        "뒷다리",
+        "어깨"
+      ],
+      "뇌": [
+        "앞다리"
+      ]
+    }
+  },
+  {
+    "name": "키린",
+    "bestElements": [
+      "불",
+      "물"
+    ],
+    "bestElementKeys": [
+      "fire",
+      "water"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "불": [
+        "몸통",
+        "하반신"
+      ],
+      "물": [
+        "몸통",
+        "하반신"
+      ]
+    }
+  },
+  {
+    "name": "키린 아종",
+    "bestElements": [
+      "불",
+      "물"
+    ],
+    "bestElementKeys": [
+      "fire",
+      "water"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "불": [
+        "몸통",
+        "하반신"
+      ],
+      "물": [
+        "몸통",
+        "하반신"
+      ]
+    }
+  },
+  {
+    "name": "샤가르마가라",
+    "bestElements": [
+      "불",
+      "용"
+    ],
+    "bestElementKeys": [
+      "fire",
+      "dragon"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "불": [
+        "날개다리"
+      ],
+      "용": [
+        "머리",
+        "날개다리"
+      ]
+    }
+  },
+  {
+    "name": "크샬다오라",
+    "bestElements": [
+      "뇌",
+      "용"
+    ],
+    "bestElementKeys": [
+      "thunder",
+      "dragon"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "뇌": [
+        "꼬리"
+      ],
+      "용": [
+        "꼬리"
+      ]
+    }
+  },
+  {
+    "name": "녹슨크샬다오라",
+    "bestElements": [
+      "물",
+      "용"
+    ],
+    "bestElementKeys": [
+      "water",
+      "dragon"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "물": [
+        "꼬리"
+      ],
+      "용": [
+        "꼬리"
+      ]
+    }
+  },
+  {
+    "name": "테오·테스카토르",
+    "bestElements": [
+      "용"
+    ],
+    "bestElementKeys": [
+      "dragon"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "용": [
+        "꼬리"
+      ]
+    }
+  },
+  {
+    "name": "오나즈치",
+    "bestElements": [
+      "불"
+    ],
+    "bestElementKeys": [
+      "fire"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "불": [
+        "머리",
+        "배"
+      ]
+    }
+  },
+  {
+    "name": "다렌·모란",
+    "bestElements": [
+      "뇌",
+      "용"
+    ],
+    "bestElementKeys": [
+      "thunder",
+      "dragon"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "뇌": [
+        "입안"
+      ],
+      "용": [
+        "배",
+        "등의약점"
+      ]
+    }
+  },
+  {
+    "name": "다라·아마듈라",
+    "bestElements": [
+      "용"
+    ],
+    "bestElementKeys": [
+      "dragon"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "용": [
+        "등칼날 흑가시 발톱"
+      ]
+    }
+  },
+  {
+    "name": "다라·아마듈라 아종",
+    "bestElements": [
+      "용"
+    ],
+    "bestElementKeys": [
+      "dragon"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "용": [
+        "머리약점"
+      ]
+    }
+  },
+  {
+    "name": "고그마지오스",
+    "bestElements": [
+      "불",
+      "용"
+    ],
+    "bestElementKeys": [
+      "fire",
+      "dragon"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "불": [
+        "목",
+        "배",
+        "앞다리",
+        "뒷다리"
+      ],
+      "용": [
+        "목",
+        "배",
+        "앞다리",
+        "뒷다리"
+      ]
+    }
+  },
+  {
+    "name": "고어·마가라",
+    "bestElements": [
+      "불"
+    ],
+    "bestElementKeys": [
+      "fire"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "불": [
+        "날개다리"
+      ]
+    }
+  },
+  {
+    "name": "혼돈에 신음하는 고어·마가라",
+    "bestElements": [
+      "불"
+    ],
+    "bestElementKeys": [
+      "fire"
+    ],
+    "source": "detail-fallback",
+    "highlightParts": {
+      "불": [
+        "우날개다리"
+      ]
+    }
+  },
+  {
+    "name": "밀라보레아스 (흑룡)",
+    "bestElements": [
+      "용"
+    ],
+    "bestElementKeys": [
+      "dragon"
+    ],
+    "source": "detail-fallback",
+    "highlightParts": {
+      "용": [
+        "머리"
+      ]
+    }
+  },
+  {
+    "name": "밀라보레아스 (홍룡)",
+    "bestElements": [
+      "용"
+    ],
+    "bestElementKeys": [
+      "dragon"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "용": [
+        "머리"
+      ]
+    }
+  },
+  {
+    "name": "밀라보레아스 (홍염룡)",
+    "bestElements": [
+      "용"
+    ],
+    "bestElementKeys": [
+      "dragon"
+    ],
+    "source": "summary-rating",
+    "highlightParts": {
+      "용": [
+        "머리"
+      ]
+    }
+  },
+  {
+    "name": "밀라보레아스 (선조룡)",
+    "bestElements": [
+      "용"
+    ],
+    "bestElementKeys": [
+      "dragon"
+    ],
+    "source": "detail-fallback",
+    "highlightParts": {
+      "용": [
+        "머리"
+      ]
+    }
+  }
+]
