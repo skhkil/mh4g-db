@@ -408,3 +408,101 @@ button{border:1px solid var(--line);background:#202b39;color:white;border-radius
 #weaponElementFilter,#weaponSort{min-width:145px}
 @media(max-width:1100px){.weapon-toolbar{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}.weapon-toolbar .search-input{grid-column:1/-1;min-width:0}.weapon-toolbar select{width:100%}}
 @media(max-width:560px){.weapon-toolbar{grid-template-columns:1fr}.weapon-toolbar .search-input{grid-column:auto}}
+
+/* v0.7.7-chat4 mobile/fold responsive tables
+   Desktop layout is intentionally unchanged; these rules only apply at 820px and below. */
+@media(max-width:820px){
+  html,body{max-width:100%;overflow-x:hidden}
+  .content,.page,.panel,.toolbar,.table-panel,.weapon-tree-table-wrap{min-width:0;max-width:100%}
+  .page{padding:14px 12px 36px}
+  .panel{padding:14px}
+  .topbar{padding:12px;min-width:0;flex-wrap:wrap}
+  .topbar-left{width:100%;min-width:0}
+  .topbar h1{font-size:18px;line-height:1.25;overflow-wrap:anywhere}
+  .topbar p{font-size:11px;line-height:1.4}
+  .top-actions{width:100%;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}
+  .top-actions>*{min-width:0;max-width:100%}
+  .top-actions select,.top-actions button{width:100%}
+  .toolbar{display:grid!important;grid-template-columns:1fr;gap:7px}
+  .toolbar>*{min-width:0!important;width:100%!important;max-width:100%}
+  .search-input{min-width:0!important;width:100%}
+  .row{min-width:0;flex-wrap:wrap}
+  .row>*{min-width:0}
+  .table-panel,.weapon-tree-table-wrap{overflow:visible!important}
+
+  /* All database tables become vertical cards on phone/fold screens. */
+  table.data-table.responsive-table{
+    display:block;width:100%!important;min-width:0!important;max-width:100%!important;
+    table-layout:auto!important;white-space:normal!important;border-collapse:separate;
+  }
+  .data-table.responsive-table thead{
+    position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;
+    overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important;
+  }
+  .data-table.responsive-table tbody{display:flex;flex-direction:column;gap:10px;width:100%}
+  .data-table.responsive-table tbody tr{
+    display:block;width:100%;min-width:0;background:#101720;border:1px solid var(--line);border-radius:10px;
+    overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.12)
+  }
+  .data-table.responsive-table tbody tr:hover td{background:transparent}
+  .data-table.responsive-table tbody td{
+    display:grid!important;grid-template-columns:minmax(78px,30%) minmax(0,1fr);align-items:start;gap:8px;
+    width:100%!important;min-width:0!important;max-width:100%!important;padding:7px 9px!important;
+    border-bottom:1px solid #222d3b!important;white-space:normal!important;word-break:keep-all;overflow-wrap:anywhere;
+    text-align:left!important;font-size:11px;line-height:1.45
+  }
+  .data-table.responsive-table tbody td:last-child{border-bottom:0!important}
+  .data-table.responsive-table tbody td::before{
+    content:attr(data-label);display:block;color:var(--muted);font-size:10px;font-weight:700;line-height:1.45;
+  }
+  .data-table.responsive-table tbody td[data-empty="true"]{display:none!important}
+  .data-table.responsive-table tbody td.result-empty{
+    display:block!important;text-align:center!important;padding:18px 10px!important;border:0!important
+  }
+  .data-table.responsive-table tbody td.result-empty::before{display:none}
+  .data-table.responsive-table tbody td:first-child:not(.result-empty){background:#151f2a}
+  .data-table.responsive-table small{display:block;max-width:100%;white-space:normal;overflow-wrap:anywhere}
+  .wrap-cell{white-space:normal!important;min-width:0!important;max-width:none!important}
+
+  /* Weapon tables have large desktop-only minimum widths; cancel them on mobile. */
+  .weapon-data-table,.weapon-data-table td,.weapon-data-table th,
+  .weapon-data-table .col-name,.weapon-data-table .col-element,.weapon-data-table .col-sharpness,
+  .weapon-data-table .col-craft,.weapon-name-cell,.sharpness-cell,.sharpness-stack,.craft-list,
+  .weapon-data-table .feature-short,.weapon-data-table .feature-wrap,.weapon-data-table .feature-charge{
+    min-width:0!important;max-width:100%!important;width:auto!important
+  }
+  .weapon-tree-group>summary{padding:11px 12px;gap:6px;min-width:0}
+  .weapon-tree-group>summary span:first-child{min-width:0;overflow-wrap:anywhere}
+  .weapon-tree-group>summary .tree-meta{font-size:9px;white-space:nowrap}
+  .sharpness-stack{width:100%}
+  .sharpness-stack>div{grid-template-columns:24px minmax(0,1fr)}
+  .sharpness-gauge{width:100%!important;max-width:170px}
+  .craft-list{width:100%}
+  .craft-line{grid-template-columns:52px minmax(0,1fr);gap:5px}
+  .craft-materials{min-width:0;overflow-wrap:anywhere}
+
+  /* Simulator/detail widgets that previously carried desktop minimum widths. */
+  .manual-weapon-picker-row{grid-template-columns:96px minmax(0,1fr)}
+  .manual-charm-inline{grid-template-columns:1fr 52px;gap:5px}
+  .manual-charm-inline>*{min-width:0}
+  .manual-charm-inline .manual-inline-label{grid-column:1/-1}
+  .search-select-menu{max-width:calc(100vw - 24px)}
+  .skill-result-table-wrap{overflow:visible!important;max-width:100%}
+}
+
+@media(max-width:420px){
+  .page{padding:10px 8px 30px}
+  .panel{padding:11px;border-radius:10px}
+  .topbar{padding:10px 8px}
+  .top-actions{grid-template-columns:1fr}
+  .nav{grid-template-columns:1fr 1fr}
+  .data-table.responsive-table tbody td{grid-template-columns:72px minmax(0,1fr);padding:6px 8px!important;font-size:10.5px}
+  .data-table.responsive-table tbody td::before{font-size:9px}
+  .summary-list{grid-template-columns:1fr 1fr}
+}
+
+@media(max-width:820px){
+  .deco-chip-list{flex-wrap:wrap!important;overflow-x:visible!important}
+  .skill-points{width:100%!important;min-width:0!important;max-width:100%!important;table-layout:fixed!important}
+  .skill-points th,.skill-points td{white-space:normal!important;overflow-wrap:anywhere}
+}

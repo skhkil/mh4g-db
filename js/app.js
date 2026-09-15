@@ -497,7 +497,25 @@ async function runSearch(){
   }finally{btn.disabled=false;btn.textContent="조합 검색"}
 }
 
-function renderTable(el,headers,rows){$(el).innerHTML=`<table class="data-table"><thead><tr>${headers.map(h=>`<th>${h}</th>`).join("")}</tr></thead><tbody>${rows.length?rows.join(""):`<tr><td colspan="${headers.length}" class="result-empty">검색 결과 없음</td></tr>`}</tbody></table>`}
+function decorateResponsiveTable(table){
+  if(!table)return;
+  table.classList.add("responsive-table");
+  const headers=[...table.querySelectorAll("thead th")].map(th=>th.textContent.trim());
+  table.querySelectorAll("tbody tr").forEach(tr=>{
+    [...tr.children].forEach((td,i)=>{
+      if(td.tagName!=="TD"||td.classList.contains("result-empty"))return;
+      td.dataset.label=headers[i]||"";
+      const text=td.textContent.trim();
+      if(!text||text==="-")td.dataset.empty="true";
+    });
+  });
+}
+function decorateResponsiveTables(root=document){root.querySelectorAll("table.data-table").forEach(decorateResponsiveTable)}
+function renderTable(el,headers,rows){
+  const root=$(el);
+  root.innerHTML=`<table class="data-table"><thead><tr>${headers.map(h=>`<th>${h}</th>`).join("")}</tr></thead><tbody>${rows.length?rows.join(""):`<tr><td colspan="${headers.length}" class="result-empty">검색 결과 없음</td></tr>`}</tbody></table>`;
+  decorateResponsiveTables(root);
+}
 function localizedNameSub(x){
   const main=String(x?.name||"").trim();
   const names=[x?.nameJa,x?.nameEn].map(v=>String(v||"").trim()).filter((v,i,a)=>v&&v!==main&&a.indexOf(v)===i);
@@ -667,6 +685,7 @@ function renderWeaponTrees(){
     const cols=weaponTableColumns(type);
     return `<details class="weapon-tree-group" ${(q||tree!=="all"||element!=="all"||sortMode!=="tree"||i===0)?"open":""}><summary><span>${esc(name)}</span><span class="tree-meta">${esc(type)} · ${list.length}개</span></summary><div class="weapon-tree-table-wrap"><table class="data-table weapon-data-table ${RANGED_TYPES.has(type)?"ranged-table":"melee-table"}"><thead><tr>${cols.map(c=>`<th class="${esc(c.className||"")}">${esc(c.label)}</th>`).join("")}</tr></thead><tbody>${sorted.map(w=>weaponRow(w,cols)).join("")}</tbody></table></div></details>`;
   }).join(""):'<div class="panel result-empty">검색 결과 없음</div>';
+  decorateResponsiveTables($("#weaponTrees"));
   syncWeaponSubActive();
 }
 function renderDecoTable(){
@@ -752,6 +771,7 @@ function renderMonsterDetailView(){
   const q=$("#monsterSearch").value.trim().toLowerCase();
   const list=data.monsterDetails.filter(x=>monsterMatchName(x.name)&&(!q||`${x.name} ${(x.parts||[]).map(p=>p.part).join(" ")} ${(x.statuses||[]).map(s=>s.status).join(" ")}`.toLowerCase().includes(q)));
   $("#monsterContent").innerHTML=list.map((x,i)=>`<details class="monster-detail panel" ${(list.length===1||i===0)?"open":""}><summary><strong>${esc(x.name)}</strong><span class="tree-meta">부위 ${(x.parts||[]).length} · 상태 ${(x.statuses||[]).length}</span></summary><div class="monster-meta">${x.meta?.baseHp?`<span>기본체력 <strong>${esc(x.meta.baseHp)}</strong></span>`:""}${x.meta?.minCrown?`<span>최소금관 ${esc(x.meta.minCrown)}</span>`:""}${x.meta?.maxSilver?`<span>최대은관 ${esc(x.meta.maxSilver)}</span>`:""}${x.meta?.maxGold?`<span>최대금관 ${esc(x.meta.maxGold)}</span>`:""}</div><div class="table-panel"><table class="data-table"><thead><tr><th>부위</th><th>절단</th><th>타격</th><th>탄</th><th>불</th><th>물</th><th>번개</th><th>얼음</th><th>용</th><th>기절</th><th>다운</th></tr></thead><tbody>${(x.parts||[]).map(p=>`<tr><td>${esc(p.part)}</td><td>${esc(p.cut)}</td><td>${esc(p.impact)}</td><td>${esc(p.shot)}</td><td>${esc(p.fire)}</td><td>${esc(p.water)}</td><td>${esc(p.thunder)}</td><td>${esc(p.ice)}</td><td>${esc(p.dragon)}</td><td>${esc(p.stun)}</td><td>${esc(p.down)}</td></tr>`).join("")}</tbody></table></div><h4>상태이상 내성</h4><div class="table-panel"><table class="data-table"><thead><tr><th>상태</th><th>지속/데미지</th><th>초기내성</th><th>상승치</th><th>최대내성</th></tr></thead><tbody>${(x.statuses||[]).map(s=>`<tr><td>${esc(s.status)}</td><td>${esc(s.durationDamage)}</td><td>${esc(s.initial)}</td><td>${esc(s.increase)}</td><td>${esc(s.max)}</td></tr>`).join("")}</tbody></table></div></details>`).join("")||'<div class="panel result-empty">검색 결과 없음</div>';
+  decorateResponsiveTables($("#monsterContent"));
 }
 function filteredRewards(){
   const q=$("#monsterSearch").value.trim().toLowerCase(),rank=$("#monsterRankFilter").value;
