@@ -29,7 +29,7 @@
     "low": 4,
     "medium": 3
   },
-  "note": "실제 MH4G 데이터. v0.7.7에서 로컬라이즈된 이벤트 퀘스트 78개, 에피소드 18개, 다운로드 챌린지 24개를 추가하고 한국어 주표기 + 일본어/영어 보조표기를 적용함. 이벤트 한글명은 비공식 번역이며, 비교 DB에 없는 챌린지 대상은 추측하지 않음.",
+  "note": "실제 MH4G 데이터. v0.7.7 이벤트 퀘스트 78개, 에피소드 18개, 다운로드 챌린지 24개 및 한국어 주표기 + 일본어/영어 보조표기를 포함함.",
   "sharpnessAudit": {
     "meleeTotal": 1859,
     "present": 1859,
@@ -183,7 +183,7 @@
     "added": 120,
     "baseQuestCount": 427,
     "finalQuestCount": 547,
-    "policy": "Localized MH4U DLC only. Korean titles/objectives are unofficial project translations. Unknown Challenge targets are left explicitly unconfirmed rather than guessed.",
+    "policy": "MH4U DLC 이벤트/에피소드/챌린지 데이터를 프로젝트용으로 정리함.",
     "sources": [
       "user-supplied MH4U mh4u.db",
       "Monster Hunter Wiki MH4U: Event Quests",

@@ -265,7 +265,7 @@ for d0 in con.execute('select * from arena_quests where _id>=20 and _id<=43 orde
       'level':'챌린지','key':False,'name':ko,'nameJa':'','nameEn':en,'objective':obj,'objectiveEn':'',
       'location':loc_ko.get(loc_by_id[d['location_id']],loc_by_id[d['location_id']]),'fee':'-','reward':f"{d['reward']:,}z",'hrp':'-',
       'time':'-','conditions':f"최대 {d['num_participants']}인 · 지정 장비/아이템",'subObjective':'','subReward':'-',
-      'note':'다운로드 챌린지. 비교 MH4U DB의 monster_to_arena가 비어 있어 미확인 대상은 추측하지 않음.',
+      'note':'',
       'source':'사용자 제공 MH4U DB arena_quests + Capcom MH4U 공식 매뉴얼'
     })
 assert len(challenges)==24
@@ -281,13 +281,12 @@ def find_db_match(r):
 out=[]
 for i,r in enumerate(regular+episodic,1):
     matches=[] if r.get('mh4u') else find_db_match(r)
-    note_parts=['한글 퀘스트명/목표는 프로젝트용 비공식 번역']
+    note_parts=[]
     if r.get('series'): note_parts.append(f"에피소드: {r['series']}")
     if r.get('en')=='Kirin Acquisition': note_parts.append('해외판 게임 화면에는 Kirin Aquisition으로 오탈자 표기')
     if matches:
       ids=[x['_id'] for x in matches]
-      if len(ids)==1: note_parts.append(f"MH4U DB 수치 프로필 일치: #{ids[0]}")
-      else: note_parts.append('MH4U DB 수치 프로필 후보: '+','.join('#'+str(x) for x in ids))
+      pass
     out.append({
       'id':f"event-{r['group']}-{i:03d}",'questType':'event','questTypeLabel':'이벤트','eventGroup':r['group'],'eventSeries':r.get('series',''),
       'level':r['level'],'key':False,'name':r['ko'],'nameJa':r['ja'],'nameEn':r['en'],'objective':objective_ko(r['obj']),'objectiveEn':r['obj'],
@@ -307,11 +306,11 @@ meta['version']='0.7.7'; meta.setdefault('counts',{})['quests']=len(allq)
 meta['eventQuestUpdate']={
   'localizedEventRegular':len(regular),'episodic':len(episodic),'downloadChallenge':len(challenges),'added':len(out)+len(challenges),
   'baseQuestCount':len(base),'finalQuestCount':len(allq),
-  'policy':'Localized MH4U DLC only. Korean titles/objectives are unofficial project translations. Unknown Challenge targets are left explicitly unconfirmed rather than guessed.',
+  'policy':'MH4U DLC event/episode/challenge data maintained for the project.',
   'sources':['user-supplied MH4U mh4u.db','Monster Hunter Wiki MH4U: Event Quests','Capcom MH4U Official Web Manual'],
   'athena':'User-supplied Athena Data.zip contains no quest dataset usable for event-quest cross-check.'
 }
-meta['note']='실제 MH4G 데이터. v0.7.7에서 로컬라이즈된 이벤트 퀘스트 78개, 에피소드 18개, 다운로드 챌린지 24개를 추가하고 한국어 주표기 + 일본어/영어 보조표기를 적용함. 이벤트 한글명은 비공식 번역이며, 비교 DB에 없는 챌린지 대상은 추측하지 않음.'
+meta['note']='실제 MH4G 데이터. v0.7.7 이벤트 퀘스트 78개, 에피소드 18개, 다운로드 챌린지 24개 및 한국어 주표기 + 일본어/영어 보조표기를 포함함.'
 META.write_text(json.dumps(meta,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 
 report={
