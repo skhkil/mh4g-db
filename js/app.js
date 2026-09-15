@@ -1011,14 +1011,19 @@ function renderMonsterBasic(mon){
 function maxPartValue(parts,key){return Math.max(0,...(parts||[]).map(p=>Number(String(p[key]||0).replace(/[^0-9.-]/g,""))||0))}
 function renderMonsterHitzone(name){
   const x=monsterDetailRow(name); if(!x)return '<div class="panel result-empty">육질 상세 데이터가 없습니다.</div>';
-  const keys=[["cut","절"],["impact","타"],["shot","탄"],["fire","불"],["water","물"],["thunder","뇌"],["ice","빙"],["dragon","용"]];
-  const max=Object.fromEntries(keys.map(([k])=>[k,maxPartValue(x.parts,k)]));
-  const value=(p,k)=>`${esc(p[k]??"-")}${Number(p[k])===max[k]&&max[k]>0?'<b class="best-mark">★</b>':''}`;
+  const physical=[['cut','절단'],['impact','타격'],['shot','탄'],['stun','기절'],['down','다운']];
+  const elements=[['fire','불'],['water','물'],['thunder','뇌'],['ice','빙'],['dragon','용']];
+  const bestKeys=['cut','impact','shot','fire','water','thunder','ice','dragon'];
+  const max=Object.fromEntries(bestKeys.map(k=>[k,maxPartValue(x.parts,k)]));
+  const isBest=(p,k)=>bestKeys.includes(k)&&Number(p[k])===max[k]&&max[k]>0;
+  const metric=(p,k,label)=>`<span class="hitzone-metric ${isBest(p,k)?'best-hitzone':''}"><small>${label}</small><strong>${esc(p[k]??'-')}</strong>${isBest(p,k)?'<i class="best-badge" title="이 항목의 최고 육질">✨</i>':''}</span>`;
+  const parts=x.parts||[];
+  const partButtons=`<div class="monster-part-strip" role="tablist" aria-label="육질 부위 선택">${parts.map((p,i)=>`<button type="button" class="monster-part-chip" data-hitzone-part="${i}" aria-expanded="false">${esc(p.part)}</button>`).join('')}</div>`;
+  const partPanels=`<div class="monster-part-panels">${parts.map((p,i)=>`<section class="panel monster-part-panel" data-hitzone-panel="${i}" hidden><div class="monster-part-panel-title"><strong>${esc(p.part)}</strong><span>물리 + 기절/다운 · 속성</span></div><div class="monster-hitzone-line hitzone-line-physical">${physical.map(([k,l])=>metric(p,k,l)).join('')}</div><div class="monster-hitzone-line hitzone-line-element">${elements.map(([k,l])=>metric(p,k,l)).join('')}</div></section>`).join('')}</div>`;
   const meta=x.meta||{};
-  const desktop=`<div class="table-panel monster-hitzone-table monster-hitzone-desktop"><table class="data-table"><thead><tr><th>부위</th>${keys.map(([,l])=>`<th>${l}</th>`).join("")}<th>기절</th><th>다운</th></tr></thead><tbody>${(x.parts||[]).map(p=>`<tr><td>${esc(p.part)}</td>${keys.map(([k])=>`<td class="${Number(p[k])===max[k]&&max[k]>0?"best-hitzone":""}">${value(p,k)}</td>`).join("")}<td>${esc(p.stun??"-")}</td><td>${esc(p.down??"-")}</td></tr>`).join("")}</tbody></table></div>`;
-  const mobile=`<div class="monster-hitzone-cards">${(x.parts||[]).map(p=>`<section class="panel monster-hitzone-card"><h4>${esc(p.part)}</h4><div class="hitzone-physical">${keys.slice(0,3).map(([k,l])=>`<span class="${Number(p[k])===max[k]&&max[k]>0?"best-hitzone":""}"><small>${l}</small><strong>${value(p,k)}</strong></span>`).join("")}</div><div class="hitzone-elemental">${keys.slice(3).map(([k,l])=>`<span class="${Number(p[k])===max[k]&&max[k]>0?"best-hitzone":""}"><small>${l}</small><strong>${value(p,k)}</strong></span>`).join("")}</div><div class="hitzone-extra"><span><small>기절</small><strong>${esc(p.stun??"-")}</strong></span><span><small>다운</small><strong>${esc(p.down??"-")}</strong></span></div></section>`).join("")}</div>`;
-  const status=`<h3>상태이상 내성</h3><div class="table-panel monster-status-table"><table class="data-table"><thead><tr><th>상태</th><th>지속/데미지</th><th>초기내성</th><th>상승치</th><th>최대내성</th></tr></thead><tbody>${(x.statuses||[]).map(st=>`<tr><td>${esc(st.status)}</td><td>${esc(st.durationDamage)}</td><td>${esc(st.initial)}</td><td>${esc(st.increase)}</td><td>${esc(st.max)}</td></tr>`).join("")}</tbody></table></div>`;
-  return `<div class="monster-meta">${meta.baseHp?`<span>기본체력 <strong>${esc(meta.baseHp)}</strong></span>`:""}${meta.minCrown?`<span>최소금관 ${esc(meta.minCrown)}</span>`:""}${meta.maxSilver?`<span>최대은관 ${esc(meta.maxSilver)}</span>`:""}${meta.maxGold?`<span>최대금관 ${esc(meta.maxGold)}</span>`:""}</div>${desktop}${mobile}${status}`;
+  const statusRows=(x.statuses||[]).map(st=>`<tr><td>${esc(st.status)}</td><td>${esc(st.durationDamage)}</td><td>${esc(st.initial)}</td><td>${esc(st.increase)}</td><td>${esc(st.max)}</td></tr>`).join('');
+  const status=`<details class="panel monster-status-details"><summary><strong>상태이상 내성</strong><span>${(x.statuses||[]).length}종</span></summary><div class="monster-status-body"><div class="table-panel monster-status-table"><table class="data-table"><thead><tr><th>상태</th><th>지속/데미지</th><th>초기내성</th><th>상승치</th><th>최대내성</th></tr></thead><tbody>${statusRows}</tbody></table></div></div></details>`;
+  return `<div class="monster-meta">${meta.baseHp?`<span>기본체력 <strong>${esc(meta.baseHp)}</strong></span>`:''}${meta.minCrown?`<span>최소금관 ${esc(meta.minCrown)}</span>`:''}${meta.maxSilver?`<span>최대은관 ${esc(meta.maxSilver)}</span>`:''}${meta.maxGold?`<span>최대금관 ${esc(meta.maxGold)}</span>`:''}</div><section class="monster-hitzone-browser"><div class="monster-hitzone-guide"><strong>부위별 육질</strong><span>부위를 선택하면 상세 수치가 펼쳐집니다. <i class="best-badge demo">✨</i> 최고값</span></div>${partButtons}${partPanels}</section>${status}`;
 }
 function monsterRankLabel(rank){return rank==="low"?"하위":rank==="high"?"상위":rank==="g"?"G급":rank==="extreme"?"극한":rank}
 function renderMonsterRewards(name){
@@ -1334,6 +1339,19 @@ function bind(){
     if(monsterCard){e.preventDefault();replaceCurrentHistoryState();$("#monsterSelect").value=monsterCard.dataset.monsterCard;$("#monsterSearch").value="";monsterView="basic";renderMonster();pushCurrentHistoryState();return;}
     const monsterTab=e.target.closest?.('[data-monster-tab]');
     if(monsterTab){e.preventDefault();replaceCurrentHistoryState();setMonsterView(monsterTab.dataset.monsterTab).then(pushCurrentHistoryState);return;}
+    const hitzonePart=e.target.closest?.('[data-hitzone-part]');
+    if(hitzonePart){
+      e.preventDefault();
+      const root=hitzonePart.closest('.monster-hitzone-browser');
+      if(!root)return;
+      const key=hitzonePart.dataset.hitzonePart;
+      const panel=root.querySelector(`[data-hitzone-panel="${key}"]`);
+      const wasOpen=hitzonePart.getAttribute('aria-expanded')==='true';
+      root.querySelectorAll('[data-hitzone-part]').forEach(b=>{b.setAttribute('aria-expanded','false');b.classList.remove('active')});
+      root.querySelectorAll('[data-hitzone-panel]').forEach(p=>p.hidden=true);
+      if(!wasOpen&&panel){hitzonePart.setAttribute('aria-expanded','true');hitzonePart.classList.add('active');panel.hidden=false;}
+      return;
+    }
     const monsterList=e.target.closest?.('[data-monster-list]');
     if(monsterList){e.preventDefault();replaceCurrentHistoryState();$("#monsterSelect").value="all";$("#monsterSearch").value="";monsterView="basic";renderMonster();pushCurrentHistoryState();return;}
     const monsterNav=e.target.closest?.('#monsterContent [data-item-nav]');
