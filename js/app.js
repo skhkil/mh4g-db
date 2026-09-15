@@ -1008,52 +1008,22 @@ function renderMonsterBasic(mon){
   const el=mon.elements||{},ail=mon.ailments||{},tr=mon.traps||{},sp=mon.special||{};
   return `<div class="monster-basic-grid"><section class="panel monster-info-card"><h3>약점 / 특성</h3><dl><dt>종족</dt><dd>${esc(mon.species||"-")}</dd><dt>절단 약점</dt><dd>${esc(mon.weakspots?.cut||"-")}</dd><dt>타격 약점</dt><dd>${esc(mon.weakspots?.impact||"-")}</dd><dt>탄 약점</dt><dd>${esc(mon.weakspots?.shot||"-")}</dd><dt>특성</dt><dd>${esc(mon.traits||"-")}</dd></dl></section><section class="panel monster-info-card"><h3>속성 / 상태이상</h3><dl><dt>불·물·뇌·빙·용</dt><dd>${[el.fire,el.water,el.thunder,el.ice,el.dragon].map(x=>esc(x||"-")).join(" / ")}</dd><dt>독·수면·마비·폭파</dt><dd>${[ail.poison,ail.sleep,ail.paralysis,ail.blast].map(x=>esc(x||"-")).join(" / ")}</dd><dt>함정</dt><dd>${[tr.pitfall,tr.shock,tr.flash,tr.sonic,tr.meat].map(x=>esc(x||"-")).join(" / ")}</dd><dt>포효·풍압·진동</dt><dd>${[sp.roar,sp.wind,sp.tremor].map(x=>esc(x||"-")).join(" / ")}</dd></dl></section></div>`;
 }
-function hitzoneValue(v){
-  const nums=String(v??"").match(/-?\d+(?:\.\d+)?/g);
-  return nums?.length?Math.max(...nums.map(Number).filter(Number.isFinite)):0;
-}
-function maxPartValue(parts,key){return Math.max(0,...(parts||[]).map(p=>hitzoneValue(p[key])))}
-function bestElementKeys(name,parts,elements){
-  const summary=monsterSummaryRow(name);
-  const rating={"◎":5,"○":4,"△":3,"▲":2,"×":0,"-":0,"":0};
-  const rated=elements.map(([k])=>({k,score:rating[String(summary?.elements?.[k]??"").trim()]??0}));
-  const topRating=Math.max(0,...rated.map(x=>x.score));
-  if(topRating>0)return rated.filter(x=>x.score===topRating).map(x=>x.k);
-  const scored=elements.map(([k])=>{
-    const vals=(parts||[]).map(p=>hitzoneValue(p[k]));
-    const peak=Math.max(0,...vals);
-    const avg=vals.length?vals.reduce((a,b)=>a+b,0)/vals.length:0;
-    return {k,peak,avg};
-  });
-  const peak=Math.max(0,...scored.map(x=>x.peak));
-  const peakSet=scored.filter(x=>x.peak===peak&&peak>0);
-  const avg=Math.max(0,...peakSet.map(x=>x.avg));
-  return peakSet.filter(x=>Math.abs(x.avg-avg)<1e-9).map(x=>x.k);
-}
+function maxPartValue(parts,key){return Math.max(0,...(parts||[]).map(p=>Number(String(p[key]||0).replace(/[^0-9.-]/g,""))||0))}
 function renderMonsterHitzone(name){
   const x=monsterDetailRow(name); if(!x)return '<div class="panel result-empty">육질 상세 데이터가 없습니다.</div>';
   const physical=[['cut','절단'],['impact','타격'],['shot','탄'],['stun','기절'],['down','다운']];
   const elements=[['fire','불'],['water','물'],['thunder','뇌'],['ice','빙'],['dragon','용']];
-  const physicalBestKeys=['cut','impact','shot'];
-  const selectedElementKeys=bestElementKeys(name,x.parts||[],elements);
-  const highlightKeys=[...physicalBestKeys,...selectedElementKeys];
-  const max=Object.fromEntries([...physicalBestKeys,...elements.map(([k])=>k].map(k=>[k,maxPartValue(x.parts,k)]));
-  const isBest=(p,k)=>highlightKeys.includes(k)&&hitzoneValue(p[k])===max[k]&&max[k]>0;
-  const metric=(p,k,label)=>`<span class="hitzone-metric ${isBest(p,k)?'best-hitzone':''}"><small>${label}</small><strong>${esc(p[k]??'-')}</strong>${isBest(p,k)?'<i class="best-badge" title="주요 약점의 최고 육질">✨</i>':''}</span>`;
+  const bestKeys=['cut','impact','shot','fire','water','thunder','ice','dragon'];
+  const max=Object.fromEntries(bestKeys.map(k=>[k,maxPartValue(x.parts,k)]));
+  const isBest=(p,k)=>bestKeys.includes(k)&&Number(p[k])===max[k]&&max[k]>0;
+  const metric=(p,k,label)=>`<span class="hitzone-metric ${isBest(p,k)?'best-hitzone':''}"><small>${label}</small><strong>${esc(p[k]??'-')}</strong>${isBest(p,k)?'<i class="best-badge" title="이 항목의 최고 육질">✨</i>':''}</span>`;
   const parts=x.parts||[];
-  const bestPartKeys=[...physicalBestKeys,...selectedElementKeys];
-  const bestPartIndex=parts.length?parts.map((p,i)=>{
-    const bestCount=bestPartKeys.reduce((n,k)=>n+(isBest(p,k)?1:0),0);
-    const normalized=bestPartKeys.reduce((sum,k)=>sum+(max[k]>0?hitzoneValue(p[k])/max[k]:0),0);
-    const physicalPeak=Math.max(hitzoneValue(p.cut),hitzoneValue(p.impact),hitzoneValue(p.shot));
-    return {i,bestCount,normalized,physicalPeak};
-  }).sort((a,b)=>b.bestCount-a.bestCount||b.normalized-a.normalized||b.physicalPeak-a.physicalPeak||a.i-b.i)[0].i:-1;
-  const partButtons=`<div class="monster-part-strip" role="tablist" aria-label="육질 부위 선택">${parts.map((p,i)=>`<button type="button" class="monster-part-chip ${i===bestPartIndex?'active best-part-chip':''}" data-hitzone-part="${i}" aria-expanded="${i===bestPartIndex?'true':'false'}">${i===bestPartIndex?'<i class="part-best-badge" title="베스트 약점 부위">⭐</i>':''}<span>${esc(p.part)}</span></button>`).join('')}</div>`;
-  const partPanels=`<div class="monster-part-panels">${parts.map((p,i)=>`<section class="panel monster-part-panel" data-hitzone-panel="${i}" ${i===bestPartIndex?'':'hidden'}><div class="monster-part-panel-title"><strong>${i===bestPartIndex?'<i class="part-best-badge panel-badge" title="베스트 약점 부위">⭐</i>':''}${esc(p.part)}</strong><span>물리 + 기절/다운 · 속성</span></div><div class="monster-hitzone-line hitzone-line-physical">${physical.map(([k,l])=>metric(p,k,l)).join('')}</div><div class="monster-hitzone-line hitzone-line-element">${elements.map(([k,l])=>metric(p,k,l)).join('')}</div></section>`).join('')}</div>`;
+  const partButtons=`<div class="monster-part-strip" role="tablist" aria-label="육질 부위 선택">${parts.map((p,i)=>`<button type="button" class="monster-part-chip" data-hitzone-part="${i}" aria-expanded="false">${esc(p.part)}</button>`).join('')}</div>`;
+  const partPanels=`<div class="monster-part-panels">${parts.map((p,i)=>`<section class="panel monster-part-panel" data-hitzone-panel="${i}" hidden><div class="monster-part-panel-title"><strong>${esc(p.part)}</strong><span>물리 + 기절/다운 · 속성</span></div><div class="monster-hitzone-line hitzone-line-physical">${physical.map(([k,l])=>metric(p,k,l)).join('')}</div><div class="monster-hitzone-line hitzone-line-element">${elements.map(([k,l])=>metric(p,k,l)).join('')}</div></section>`).join('')}</div>`;
   const meta=x.meta||{};
   const statusRows=(x.statuses||[]).map(st=>`<tr><td>${esc(st.status)}</td><td>${esc(st.durationDamage)}</td><td>${esc(st.initial)}</td><td>${esc(st.increase)}</td><td>${esc(st.max)}</td></tr>`).join('');
   const status=`<details class="panel monster-status-details"><summary><strong>상태이상 내성</strong><span>${(x.statuses||[]).length}종</span></summary><div class="monster-status-body"><div class="table-panel monster-status-table"><table class="data-table"><thead><tr><th>상태</th><th>지속/데미지</th><th>초기내성</th><th>상승치</th><th>최대내성</th></tr></thead><tbody>${statusRows}</tbody></table></div></div></details>`;
-  return `<div class="monster-meta">${meta.baseHp?`<span>기본체력 <strong>${esc(meta.baseHp)}</strong></span>`:''}${meta.minCrown?`<span>최소금관 ${esc(meta.minCrown)}</span>`:''}${meta.maxSilver?`<span>최대은관 ${esc(meta.maxSilver)}</span>`:''}${meta.maxGold?`<span>최대금관 ${esc(meta.maxGold)}</span>`:''}</div><section class="monster-hitzone-browser"><div class="monster-hitzone-guide"><strong>부위별 육질</strong><span>부위를 선택하면 상세 수치가 펼쳐집니다. <i class="best-badge demo">✨</i> 물리 최고값 / 주요 약점 속성</span></div>${partButtons}${partPanels}</section>${status}`;
+  return `<div class="monster-meta">${meta.baseHp?`<span>기본체력 <strong>${esc(meta.baseHp)}</strong></span>`:''}${meta.minCrown?`<span>최소금관 ${esc(meta.minCrown)}</span>`:''}${meta.maxSilver?`<span>최대은관 ${esc(meta.maxSilver)}</span>`:''}${meta.maxGold?`<span>최대금관 ${esc(meta.maxGold)}</span>`:''}</div><section class="monster-hitzone-browser"><div class="monster-hitzone-guide"><strong>부위별 육질</strong><span>부위를 선택하면 상세 수치가 펼쳐집니다. <i class="best-badge demo">✨</i> 최고값</span></div>${partButtons}${partPanels}</section>${status}`;
 }
 function monsterRankLabel(rank){return rank==="low"?"하위":rank==="high"?"상위":rank==="g"?"G급":rank==="extreme"?"극한":rank}
 function renderMonsterRewards(name){
