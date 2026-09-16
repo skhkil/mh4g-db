@@ -1,5 +1,5 @@
-import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-rowfocus1";
-import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-rowfocus1";
+import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-rowfocus2-mobileperf";
+import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-rowfocus2-mobileperf";
 
 let data={skills:[],armors:[],armorSets:[],decorations:[],weapons:[],weaponSummary:[],melodies:[],items:[],itemReferenceIndex:{items:{}},skillReferenceIndex:{items:{},categories:[]},meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],monsterReferenceIndex:{items:{}},dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],siteInfo:{},meta:{}};
 let targets=[];
@@ -1422,19 +1422,24 @@ function setupResponsiveNavColumns(){
   },{passive:true});
 }
 
+const rowFocusQuery=window.matchMedia("(max-width:820px), (pointer:coarse) and (max-width:1180px)");
+let selectedUiRow=null;
 function clearUiSelectedRows(except=null){
-  document.querySelectorAll(".ui-selected-row").forEach(el=>{if(el!==except)el.classList.remove("ui-selected-row")});
+  if(selectedUiRow&&selectedUiRow!==except){selectedUiRow.classList.remove("ui-selected-row");}
+  if(!except)selectedUiRow=null;
 }
 function selectUiRow(row){
-  if(!row)return;
+  if(!row||!rowFocusQuery.matches)return;
   clearUiSelectedRows(row);
   row.classList.add("ui-selected-row");
+  selectedUiRow=row;
 }
+rowFocusQuery.addEventListener?.("change",e=>{if(!e.matches)clearUiSelectedRows();});
 function bind(){
   document.addEventListener('click',e=>{
     closePickers();
     const visualRow=e.target.closest?.('.data-table tbody tr:not(.skill-detail-row), .item-list-row, .monster-quest-row, .skill-source-row, .meal-method');
-    if(visualRow&&!visualRow.classList.contains('result-empty')&&!visualRow.closest('#skillTable tr.skill-db-row'))selectUiRow(visualRow);
+    if(rowFocusQuery.matches&&visualRow&&!visualRow.classList.contains('result-empty')&&!visualRow.closest('#skillTable tr.skill-db-row'))selectUiRow(visualRow);
     const skillItem=e.target.closest?.('#skillTable .inline-item-link[data-open-item]');
     if(skillItem){e.preventDefault();e.stopPropagation();void openItemByName(skillItem.dataset.openItem);return;}
     const skillBtn=e.target.closest?.('[data-open-skill]');
