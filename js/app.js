@@ -1,5 +1,5 @@
-import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-skillxref3-accordion";
-import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-skillxref3-accordion";
+import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-skillxref4-nestedaccordion";
+import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-skillxref4-nestedaccordion";
 
 let data={skills:[],armors:[],armorSets:[],decorations:[],weapons:[],weaponSummary:[],melodies:[],items:[],itemReferenceIndex:{items:{}},skillReferenceIndex:{items:{},categories:[]},meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],monsterReferenceIndex:{items:{}},dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],siteInfo:{},meta:{}};
 let targets=[];
@@ -1424,6 +1424,8 @@ function setupResponsiveNavColumns(){
 function bind(){
   document.addEventListener('click',e=>{
     closePickers();
+    const skillItem=e.target.closest?.('#skillTable .inline-item-link[data-open-item]');
+    if(skillItem){e.preventDefault();e.stopPropagation();void openItemByName(skillItem.dataset.openItem);return;}
     const skillBtn=e.target.closest?.('[data-open-skill]');
     if(skillBtn){e.preventDefault();openPage("skill").then(()=>{$("#skillSearch").value=skillName(skillBtn.dataset.openSkill)||"";$("#skillCategoryFilter").value="all";$("#skillTypeFilter").value="all";renderSkillTable();});return;}
     const decoBtn=e.target.closest?.('[data-open-deco]');
@@ -1466,7 +1468,18 @@ function bind(){
     if(close){e.preventDefault();removeItemDetailRow();selectedItemId="";replaceCurrentHistoryState();return;}
   });
   document.addEventListener("keydown",e=>{const row=e.target.closest?.('#skillTable tr.skill-db-row[data-skill-row]');if(row&&(e.key==="Enter"||e.key===" ")){e.preventDefault();void openSkillDetail(row.dataset.skillRow,row);}});
-  document.addEventListener("toggle",e=>{const d=e.target;if(d?.matches?.("#itemTable details.xref-lazy"))void hydrateXrefGroup(d)},true);
+  document.addEventListener("toggle",e=>{
+    const d=e.target;
+    if(d?.matches?.("#itemTable details.xref-lazy"))void hydrateXrefGroup(d);
+    if(d?.open&&d.matches?.("#skillTable details.skill-source-group")){
+      const host=d.parentElement;
+      host?.querySelectorAll(":scope > details.skill-source-group[open]").forEach(other=>{if(other!==d)other.open=false});
+    }
+    if(d?.open&&d.matches?.("#skillTable details.skill-armor-set")){
+      const host=d.parentElement;
+      host?.querySelectorAll(":scope > details.skill-armor-set[open]").forEach(other=>{if(other!==d)other.open=false});
+    }
+  },true);
   $("#sidebarToggle").onclick=()=>{$(".app-shell").classList.toggle("sidebar-collapsed");const collapsed=$(".app-shell").classList.contains("sidebar-collapsed");$("#sidebarToggle").title=collapsed?"좌측 메뉴 펼치기":"좌측 메뉴 접기";};
 
   $$('.nav-group-toggle').forEach(b=>b.onclick=e=>{
