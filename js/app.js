@@ -1,5 +1,5 @@
-import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-weapontree2-stable";
-import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-weapontree2-stable";
+import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-weapontree3-clickfix";
+import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-weapontree3-clickfix";
 
 let data={skills:[],armors:[],armorSets:[],decorations:[],weapons:[],weaponSummary:[],melodies:[],items:[],itemReferenceIndex:{items:{}},skillReferenceIndex:{items:{},categories:[]},meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],monsterReferenceIndex:{items:{}},dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],questReferenceIndex:{quests:{}},siteInfo:{},meta:{}};
 let targets=[];
@@ -26,7 +26,7 @@ let restoringHistory=false;
 // Weapon tree is isolated from app startup. A failure here must never break global navigation.
 let weaponTreeIndex={items:{}};
 let weaponTreeIndexPromise=null;
-const WEAPON_TREE_VERSION="0.7.7-chat4-weapontree2-stable";
+const WEAPON_TREE_VERSION="0.7.7-chat4-weapontree3-clickfix";
 async function ensureWeaponTreeIndex(){
   if(weaponTreeIndexPromise)return weaponTreeIndexPromise;
   weaponTreeIndexPromise=(async()=>{
@@ -1585,7 +1585,7 @@ function bind(){
     const weaponNav=e.target.closest?.('[data-open-weapon]');
     if(weaponNav){e.preventDefault();e.stopPropagation();replaceCurrentHistoryState();void navigateWeapon(weaponNav.dataset.openWeapon).then(pushCurrentHistoryState);return;}
     const weaponRow=e.target.closest?.('#weaponTrees tr.weapon-db-row[data-weapon-row]');
-    if(weaponRow&&!e.target.closest('button,a,input,select,details,summary')){e.preventDefault();void openWeaponDetail(weaponRow);return;}
+    if(weaponRow&&!e.target.closest('button,a,input,select,summary')){e.preventDefault();void openWeaponDetail(weaponRow);return;}
     const skillItem=e.target.closest?.('#skillTable .inline-item-link[data-open-item]');
     if(skillItem){e.preventDefault();e.stopPropagation();void openItemByName(skillItem.dataset.openItem);return;}
     const skillBtn=e.target.closest?.('[data-open-skill]');

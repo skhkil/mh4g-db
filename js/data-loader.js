@@ -1,4 +1,4 @@
-const DATA_VERSION = "0.7.7-chat4-weapontree2-stable";
+const DATA_VERSION = "0.7.7-chat4-weapontree3-clickfix";
 
 const FULL_FILES = {
   skills:"./data/skills.json",
