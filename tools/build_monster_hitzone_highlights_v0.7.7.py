@@ -2,11 +2,10 @@
 """Precompute monster hitzone highlights for the UI.
 
 Rules (chat 4, part-wise elemental highlights):
-- Every monster part gets exactly one best elemental attribute when its best value is > 0.
-- The best attribute is chosen by raw hitzone value; ties are broken by the monster's
-  element-grade metadata, then by a stable element order.
-- Rank parts by that per-part best elemental value and mark the strongest top 3 parts
-  (or fewer when fewer valid parts exist) with a part badge.
+- Every monster part gets all elemental attributes tied for that part's highest value (> 0).
+- No equal maximum is discarded; e.g. Fire 30 / Dragon 30 marks both cells.
+- Rank parts by the per-part best elemental value and mark the top-3 cutoff including ties.
+  This prevents a 4th+ part with the same value as 3rd place from losing its badge.
 - UI only reads this precomputed metadata; no comparison/search runs on monster click.
 - Compound values such as "19 / 24" are compared by their maximum numeric value.
 """
@@ -51,21 +50,26 @@ def main():
             if maxv<=0:
                 continue
             tied=[k for k in ELEMENTS if values[k]==maxv]
-            # One badge per part: stronger monster-wide weakness grade wins a raw-value tie.
-            chosen=sorted(tied,key=lambda k:(-GRADE.get(elems.get(k),0), ELEMENTS.index(k)))[0]
+            # Preserve every equal maximum. Grade/order only provide stable display ordering.
+            tied=sorted(tied,key=lambda k:(-GRADE.get(elems.get(k),0), ELEMENTS.index(k)))
             name=part.get('part','')
             if not name:
                 continue
-            part_best[name]={'element':chosen,'value':maxv}
-            ranked.append((maxv, GRADE.get(elems.get(chosen),0), -idx, name, chosen))
+            part_best[name]={'elements':tied,'value':maxv}
+            ranked.append((maxv, -idx, name))
 
-        ranked.sort(reverse=True)
-        top_parts=[x[3] for x in ranked[:3]]
+        ranked.sort(key=lambda x:(-x[0], -x[1]))
+        if ranked:
+            cutoff_index=min(2,len(ranked)-1)
+            cutoff_value=ranked[cutoff_index][0]
+            top_parts=[x[2] for x in ranked if x[0]>=cutoff_value]
+        else:
+            top_parts=[]
         best_part=top_parts[0] if top_parts else (parts[0].get('part','') if parts else '')
         mon['hitzoneHighlights']={
             'bestPart':best_part,
             'topElementParts':top_parts,
-            'partBestElements':{name:meta['element'] for name,meta in part_best.items()},
+            'partBestElements':{name:meta['elements'] for name,meta in part_best.items()},
             'partBestValues':{name:meta['value'] for name,meta in part_best.items()},
         }
         audit.append({

@@ -47,11 +47,21 @@
         "뿔"
       ],
       "partBestElements": {
-        "뿔": "thunder",
-        "머리": "thunder",
-        "배": "thunder",
-        "발톱": "thunder",
-        "다리": "thunder"
+        "뿔": [
+          "thunder"
+        ],
+        "머리": [
+          "thunder"
+        ],
+        "배": [
+          "thunder"
+        ],
+        "발톱": [
+          "thunder"
+        ],
+        "다리": [
+          "thunder"
+        ]
       },
       "partBestValues": {
         "뿔": 20.0,
@@ -110,11 +120,21 @@
         "뿔"
       ],
       "partBestElements": {
-        "뿔": "ice",
-        "머리": "ice",
-        "배": "ice",
-        "발톱": "ice",
-        "다리": "ice"
+        "뿔": [
+          "ice"
+        ],
+        "머리": [
+          "ice"
+        ],
+        "배": [
+          "ice"
+        ],
+        "발톱": [
+          "ice"
+        ],
+        "다리": [
+          "ice"
+        ]
       },
       "partBestValues": {
         "뿔": 15.0,
@@ -170,14 +190,26 @@
       "topElementParts": [
         "머리",
         "하판",
-        "턱"
+        "턱",
+        "꼬리끝"
       ],
       "partBestElements": {
-        "머리": "fire",
-        "상판": "fire",
-        "하판": "fire",
-        "턱": "ice",
-        "꼬리끝": "ice"
+        "머리": [
+          "fire"
+        ],
+        "상판": [
+          "fire",
+          "ice"
+        ],
+        "하판": [
+          "fire"
+        ],
+        "턱": [
+          "ice"
+        ],
+        "꼬리끝": [
+          "ice"
+        ]
       },
       "partBestValues": {
         "머리": 30.0,
@@ -233,14 +265,25 @@
       "topElementParts": [
         "머리",
         "상판",
-        "턱"
+        "턱",
+        "꼬리끝"
       ],
       "partBestElements": {
-        "머리": "ice",
-        "상판": "ice",
-        "하판": "ice",
-        "턱": "ice",
-        "꼬리끝": "ice"
+        "머리": [
+          "ice"
+        ],
+        "상판": [
+          "ice"
+        ],
+        "하판": [
+          "ice"
+        ],
+        "턱": [
+          "ice"
+        ],
+        "꼬리끝": [
+          "ice"
+        ]
       },
       "partBestValues": {
         "머리": 25.0,
@@ -296,16 +339,32 @@
       "topElementParts": [
         "독침",
         "흉부",
+        "배",
         "다리공통"
       ],
       "partBestElements": {
-        "머리": "fire",
-        "독침": "thunder",
-        "흉부": "fire",
-        "배": "thunder",
-        "앞발톱": "thunder",
-        "다리공통": "fire",
-        "다리끝": "fire"
+        "머리": [
+          "fire"
+        ],
+        "독침": [
+          "thunder"
+        ],
+        "흉부": [
+          "fire",
+          "thunder"
+        ],
+        "배": [
+          "thunder"
+        ],
+        "앞발톱": [
+          "thunder"
+        ],
+        "다리공통": [
+          "fire"
+        ],
+        "다리끝": [
+          "fire"
+        ]
       },
       "partBestValues": {
         "머리": 15.0,
@@ -366,13 +425,30 @@
         "다리공통"
       ],
       "partBestElements": {
-        "머리": "ice",
-        "독침": "ice",
-        "흉부": "ice",
-        "배": "fire",
-        "앞발톱": "ice",
-        "다리공통": "ice",
-        "다리끝": "fire"
+        "머리": [
+          "ice"
+        ],
+        "독침": [
+          "ice"
+        ],
+        "흉부": [
+          "ice"
+        ],
+        "배": [
+          "fire",
+          "ice"
+        ],
+        "앞발톱": [
+          "ice",
+          "thunder"
+        ],
+        "다리공통": [
+          "ice"
+        ],
+        "다리끝": [
+          "fire",
+          "ice"
+        ]
       },
       "partBestValues": {
         "머리": 15.0,
@@ -429,17 +505,33 @@
       "bestPart": "머리",
       "topElementParts": [
         "머리",
+        "등/지느러미",
         "배",
         "꼬리"
       ],
       "partBestElements": {
-        "머리": "ice",
-        "목": "ice",
-        "등/지느러미": "thunder",
-        "배": "ice",
-        "날개": "ice",
-        "다리": "ice",
-        "꼬리": "ice"
+        "머리": [
+          "ice"
+        ],
+        "목": [
+          "ice",
+          "thunder"
+        ],
+        "등/지느러미": [
+          "thunder"
+        ],
+        "배": [
+          "ice"
+        ],
+        "날개": [
+          "ice"
+        ],
+        "다리": [
+          "ice"
+        ],
+        "꼬리": [
+          "ice"
+        ]
       },
       "partBestValues": {
         "머리": 30.0,
@@ -499,8 +591,12 @@
         "몸통"
       ],
       "partBestElements": {
-        "머리": "fire",
-        "몸통": "fire"
+        "머리": [
+          "fire"
+        ],
+        "몸통": [
+          "fire"
+        ]
       },
       "partBestValues": {
         "머리": 30.0,
@@ -555,8 +651,12 @@
         "몸통"
       ],
       "partBestElements": {
-        "머리": "ice",
-        "몸통": "ice"
+        "머리": [
+          "ice"
+        ],
+        "몸통": [
+          "ice"
+        ]
       },
       "partBestValues": {
         "머리": 40.0,
@@ -611,8 +711,12 @@
         "몸통"
       ],
       "partBestElements": {
-        "머리": "ice",
-        "몸통": "ice"
+        "머리": [
+          "ice"
+        ],
+        "몸통": [
+          "ice"
+        ]
       },
       "partBestValues": {
         "머리": 40.0,
@@ -667,8 +771,14 @@
         "몸통"
       ],
       "partBestElements": {
-        "머리": "water",
-        "몸통": "water"
+        "머리": [
+          "water",
+          "thunder"
+        ],
+        "몸통": [
+          "water",
+          "thunder"
+        ]
       },
       "partBestValues": {
         "머리": 30.0,
@@ -724,13 +834,30 @@
         "날개"
       ],
       "partBestElements": {
-        "머리": "ice",
-        "목": "ice",
-        "배": "ice",
-        "등": "ice",
-        "날개": "thunder",
-        "다리": "thunder",
-        "꼬리": "ice"
+        "머리": [
+          "ice"
+        ],
+        "목": [
+          "ice"
+        ],
+        "배": [
+          "ice"
+        ],
+        "등": [
+          "ice"
+        ],
+        "날개": [
+          "thunder"
+        ],
+        "다리": [
+          "thunder",
+          "ice",
+          "water",
+          "fire"
+        ],
+        "꼬리": [
+          "ice"
+        ]
       },
       "partBestValues": {
         "머리": 30.0,
@@ -788,16 +915,36 @@
       "topElementParts": [
         "목",
         "머리",
-        "배"
+        "배",
+        "등",
+        "날개",
+        "꼬리"
       ],
       "partBestElements": {
-        "머리": "water",
-        "목": "water",
-        "배": "water",
-        "등": "water",
-        "날개": "thunder",
-        "다리": "water",
-        "꼬리": "water"
+        "머리": [
+          "water"
+        ],
+        "목": [
+          "water"
+        ],
+        "배": [
+          "water"
+        ],
+        "등": [
+          "water"
+        ],
+        "날개": [
+          "thunder"
+        ],
+        "다리": [
+          "water",
+          "thunder",
+          "ice",
+          "fire"
+        ],
+        "꼬리": [
+          "water"
+        ]
       },
       "partBestValues": {
         "머리": 30.0,
@@ -855,16 +1002,37 @@
       "topElementParts": [
         "머리",
         "목",
-        "배"
+        "배",
+        "날개",
+        "꼬리"
       ],
       "partBestElements": {
-        "머리": "fire",
-        "목": "fire",
-        "배": "fire",
-        "등": "fire",
-        "날개": "fire",
-        "다리": "fire",
-        "꼬리": "fire"
+        "머리": [
+          "fire"
+        ],
+        "목": [
+          "fire"
+        ],
+        "배": [
+          "fire"
+        ],
+        "등": [
+          "fire",
+          "ice",
+          "dragon"
+        ],
+        "날개": [
+          "fire",
+          "ice"
+        ],
+        "다리": [
+          "fire",
+          "ice",
+          "dragon"
+        ],
+        "꼬리": [
+          "fire"
+        ]
       },
       "partBestValues": {
         "머리": 30.0,
@@ -922,16 +1090,37 @@
       "topElementParts": [
         "머리",
         "목",
-        "배"
+        "배",
+        "날개",
+        "꼬리"
       ],
       "partBestElements": {
-        "머리": "fire",
-        "목": "fire",
-        "배": "fire",
-        "등": "fire",
-        "날개": "fire",
-        "다리": "fire",
-        "꼬리": "fire"
+        "머리": [
+          "fire"
+        ],
+        "목": [
+          "fire"
+        ],
+        "배": [
+          "fire"
+        ],
+        "등": [
+          "fire",
+          "ice",
+          "dragon"
+        ],
+        "날개": [
+          "fire",
+          "ice"
+        ],
+        "다리": [
+          "fire",
+          "ice",
+          "dragon"
+        ],
+        "꼬리": [
+          "fire"
+        ]
       },
       "partBestValues": {
         "머리": 30.0,
@@ -992,13 +1181,28 @@
         "배"
       ],
       "partBestElements": {
-        "머리": "water",
-        "목": "water",
-        "배": "water",
-        "등": "water",
-        "날개": "water",
-        "다리": "water",
-        "꼬리": "water"
+        "머리": [
+          "water"
+        ],
+        "목": [
+          "water"
+        ],
+        "배": [
+          "water"
+        ],
+        "등": [
+          "water"
+        ],
+        "날개": [
+          "water"
+        ],
+        "다리": [
+          "water",
+          "ice"
+        ],
+        "꼬리": [
+          "water"
+        ]
       },
       "partBestValues": {
         "머리": 20.0,
@@ -1056,17 +1260,36 @@
       "topElementParts": [
         "머리",
         "집게다리",
-        "등껍질(파괴)"
+        "등껍질(파괴)",
+        "집게다리(파괴)"
       ],
       "partBestElements": {
-        "머리": "thunder",
-        "몸통": "thunder",
-        "등껍질": "thunder",
-        "다리": "fire",
-        "집게다리": "fire",
-        "집게팔": "fire",
-        "등껍질(파괴)": "fire",
-        "집게다리(파괴)": "fire"
+        "머리": [
+          "thunder"
+        ],
+        "몸통": [
+          "thunder"
+        ],
+        "등껍질": [
+          "thunder"
+        ],
+        "다리": [
+          "fire",
+          "thunder"
+        ],
+        "집게다리": [
+          "fire"
+        ],
+        "집게팔": [
+          "fire",
+          "thunder"
+        ],
+        "등껍질(파괴)": [
+          "fire"
+        ],
+        "집게다리(파괴)": [
+          "fire"
+        ]
       },
       "partBestValues": {
         "머리": 35.0,
@@ -1125,17 +1348,34 @@
       "topElementParts": [
         "머리",
         "앞다리",
-        "뒷다리"
+        "뒷다리",
+        "꼬리"
       ],
       "partBestElements": {
-        "머리": "ice",
-        "목": "ice",
-        "등": "ice",
-        "배": "ice",
-        "앞다리": "ice",
-        "날개": "ice",
-        "뒷다리": "ice",
-        "꼬리": "ice"
+        "머리": [
+          "ice"
+        ],
+        "목": [
+          "ice"
+        ],
+        "등": [
+          "ice"
+        ],
+        "배": [
+          "ice"
+        ],
+        "앞다리": [
+          "ice"
+        ],
+        "날개": [
+          "ice"
+        ],
+        "뒷다리": [
+          "ice"
+        ],
+        "꼬리": [
+          "ice"
+        ]
       },
       "partBestValues": {
         "머리": 35.0,
@@ -1194,15 +1434,28 @@
       "topElementParts": [
         "머리",
         "앞발톱",
-        "몸통"
+        "몸통",
+        "꼬리"
       ],
       "partBestElements": {
-        "머리": "fire",
-        "몸통": "fire",
-        "앞발톱": "fire",
-        "앞다리": "fire",
-        "뒷다리": "fire",
-        "꼬리": "fire"
+        "머리": [
+          "fire"
+        ],
+        "몸통": [
+          "fire"
+        ],
+        "앞발톱": [
+          "fire"
+        ],
+        "앞다리": [
+          "fire"
+        ],
+        "뒷다리": [
+          "fire"
+        ],
+        "꼬리": [
+          "fire"
+        ]
       },
       "partBestValues": {
         "머리": 30.0,
@@ -1262,11 +1515,21 @@
         "꼬리"
       ],
       "partBestElements": {
-        "머리": "water",
-        "몸통": "water",
-        "앞다리": "water",
-        "뒷다리": "water",
-        "꼬리": "water"
+        "머리": [
+          "water"
+        ],
+        "몸통": [
+          "water"
+        ],
+        "앞다리": [
+          "water"
+        ],
+        "뒷다리": [
+          "water"
+        ],
+        "꼬리": [
+          "water"
+        ]
       },
       "partBestValues": {
         "머리": 30.0,
@@ -1325,12 +1588,24 @@
         "등(꼬리)"
       ],
       "partBestElements": {
-        "머리": "fire",
-        "상반신": "fire",
-        "배": "fire",
-        "등(꼬리)": "fire",
-        "앞다리": "fire",
-        "뒷다리": "fire"
+        "머리": [
+          "fire"
+        ],
+        "상반신": [
+          "fire"
+        ],
+        "배": [
+          "fire"
+        ],
+        "등(꼬리)": [
+          "fire"
+        ],
+        "앞다리": [
+          "fire"
+        ],
+        "뒷다리": [
+          "fire"
+        ]
       },
       "partBestValues": {
         "머리": 30.0,
@@ -1390,9 +1665,17 @@
         "뒷다리"
       ],
       "partBestElements": {
-        "머리": "fire",
-        "앞다리": "fire",
-        "뒷다리": "fire"
+        "머리": [
+          "fire"
+        ],
+        "앞다리": [
+          "fire",
+          "ice"
+        ],
+        "뒷다리": [
+          "fire",
+          "ice"
+        ]
       },
       "partBestValues": {
         "머리": 25.0,
@@ -1449,9 +1732,15 @@
         "뒷다리"
       ],
       "partBestElements": {
-        "머리": "ice",
-        "앞다리": "ice",
-        "뒷다리": "ice"
+        "머리": [
+          "ice"
+        ],
+        "앞다리": [
+          "ice"
+        ],
+        "뒷다리": [
+          "ice"
+        ]
       },
       "partBestValues": {
         "머리": 15.0,
@@ -1505,14 +1794,26 @@
       "topElementParts": [
         "머리",
         "꼬리",
-        "몸통"
+        "몸통",
+        "앞다리",
+        "뒷다리"
       ],
       "partBestElements": {
-        "머리": "ice",
-        "몸통": "ice",
-        "앞다리": "ice",
-        "뒷다리": "ice",
-        "꼬리": "ice"
+        "머리": [
+          "ice"
+        ],
+        "몸통": [
+          "ice"
+        ],
+        "앞다리": [
+          "ice"
+        ],
+        "뒷다리": [
+          "ice"
+        ],
+        "꼬리": [
+          "ice"
+        ]
       },
       "partBestValues": {
         "머리": 30.0,
@@ -1568,14 +1869,26 @@
       "topElementParts": [
         "머리",
         "꼬리",
-        "몸통"
+        "몸통",
+        "앞다리",
+        "뒷다리"
       ],
       "partBestElements": {
-        "머리": "ice",
-        "몸통": "ice",
-        "앞다리": "ice",
-        "뒷다리": "ice",
-        "꼬리": "ice"
+        "머리": [
+          "ice"
+        ],
+        "몸통": [
+          "ice"
+        ],
+        "앞다리": [
+          "ice"
+        ],
+        "뒷다리": [
+          "ice"
+        ],
+        "꼬리": [
+          "ice"
+        ]
       },
       "partBestValues": {
         "머리": 30.0,
@@ -1631,14 +1944,27 @@
       "topElementParts": [
         "머리",
         "이빨",
-        "몸통"
+        "몸통",
+        "앞다리"
       ],
       "partBestElements": {
-        "머리": "water",
-        "이빨": "water",
-        "몸통": "water",
-        "앞다리": "water",
-        "뒷다리": "water"
+        "머리": [
+          "water"
+        ],
+        "이빨": [
+          "water",
+          "thunder"
+        ],
+        "몸통": [
+          "water"
+        ],
+        "앞다리": [
+          "water"
+        ],
+        "뒷다리": [
+          "water",
+          "thunder"
+        ]
       },
       "partBestValues": {
         "머리": 30.0,
@@ -1694,14 +2020,26 @@
       "topElementParts": [
         "머리",
         "이빨",
-        "앞다리"
+        "앞다리",
+        "뒷다리"
       ],
       "partBestElements": {
-        "머리": "ice",
-        "이빨": "ice",
-        "몸통": "ice",
-        "앞다리": "ice",
-        "뒷다리": "ice"
+        "머리": [
+          "ice"
+        ],
+        "이빨": [
+          "ice"
+        ],
+        "몸통": [
+          "ice",
+          "thunder"
+        ],
+        "앞다리": [
+          "ice"
+        ],
+        "뒷다리": [
+          "ice"
+        ]
       },
       "partBestValues": {
         "머리": 30.0,
@@ -1757,16 +2095,36 @@
       "topElementParts": [
         "팽창시 배",
         "머리",
-        "지느러미"
+        "지느러미",
+        "앞다리",
+        "꼬리"
       ],
       "partBestElements": {
-        "머리": "fire",
-        "몸통": "fire",
-        "팽창시 배": "fire",
-        "지느러미": "fire",
-        "앞다리": "fire",
-        "뒷다리": "fire",
-        "꼬리": "fire"
+        "머리": [
+          "fire",
+          "thunder"
+        ],
+        "몸통": [
+          "fire",
+          "thunder"
+        ],
+        "팽창시 배": [
+          "fire",
+          "thunder"
+        ],
+        "지느러미": [
+          "fire"
+        ],
+        "앞다리": [
+          "fire"
+        ],
+        "뒷다리": [
+          "fire",
+          "thunder"
+        ],
+        "꼬리": [
+          "fire"
+        ]
       },
       "partBestValues": {
         "머리": 20.0,
@@ -1824,16 +2182,32 @@
       "topElementParts": [
         "팽창시 배",
         "머리",
-        "몸통"
+        "몸통",
+        "지느러미",
+        "꼬리"
       ],
       "partBestElements": {
-        "머리": "ice",
-        "몸통": "ice",
-        "팽창시 배": "ice",
-        "지느러미": "ice",
-        "앞다리": "ice",
-        "뒷다리": "ice",
-        "꼬리": "ice"
+        "머리": [
+          "ice"
+        ],
+        "몸통": [
+          "ice"
+        ],
+        "팽창시 배": [
+          "ice"
+        ],
+        "지느러미": [
+          "ice"
+        ],
+        "앞다리": [
+          "ice"
+        ],
+        "뒷다리": [
+          "ice"
+        ],
+        "꼬리": [
+          "ice"
+        ]
       },
       "partBestValues": {
         "머리": 25.0,
@@ -1894,13 +2268,29 @@
         "몸통"
       ],
       "partBestElements": {
-        "머리": "ice",
-        "목": "ice",
-        "몸통": "ice",
-        "등": "ice",
-        "앞다리": "ice",
-        "뒷다리": "ice",
-        "꼬리": "ice"
+        "머리": [
+          "ice"
+        ],
+        "목": [
+          "ice"
+        ],
+        "몸통": [
+          "ice",
+          "thunder"
+        ],
+        "등": [
+          "ice"
+        ],
+        "앞다리": [
+          "ice"
+        ],
+        "뒷다리": [
+          "ice"
+        ],
+        "꼬리": [
+          "ice",
+          "water"
+        ]
       },
       "partBestValues": {
         "머리": 15.0,
@@ -1958,16 +2348,33 @@
       "topElementParts": [
         "등",
         "몸통",
-        "앞다리"
+        "앞다리",
+        "뒷다리"
       ],
       "partBestElements": {
-        "머리": "fire",
-        "목": "fire",
-        "몸통": "fire",
-        "등": "fire",
-        "앞다리": "fire",
-        "뒷다리": "thunder",
-        "꼬리": "fire"
+        "머리": [
+          "fire",
+          "thunder"
+        ],
+        "목": [
+          "fire"
+        ],
+        "몸통": [
+          "fire"
+        ],
+        "등": [
+          "fire"
+        ],
+        "앞다리": [
+          "fire"
+        ],
+        "뒷다리": [
+          "thunder"
+        ],
+        "꼬리": [
+          "fire",
+          "thunder"
+        ]
       },
       "partBestValues": {
         "머리": 10.0,
@@ -2025,16 +2432,32 @@
       "topElementParts": [
         "뿔",
         "머리",
-        "몸통"
+        "몸통",
+        "꼬리"
       ],
       "partBestElements": {
-        "뿔": "water",
-        "머리": "water",
-        "몸통": "water",
-        "앞다리": "water",
-        "뒷다리": "water",
-        "꼬리": "water",
-        "꼬리끝": "water"
+        "뿔": [
+          "water"
+        ],
+        "머리": [
+          "water"
+        ],
+        "몸통": [
+          "water"
+        ],
+        "앞다리": [
+          "water"
+        ],
+        "뒷다리": [
+          "water"
+        ],
+        "꼬리": [
+          "water"
+        ],
+        "꼬리끝": [
+          "water",
+          "ice"
+        ]
       },
       "partBestValues": {
         "뿔": 25.0,
@@ -2092,16 +2515,32 @@
       "topElementParts": [
         "뿔",
         "머리",
-        "몸통"
+        "몸통",
+        "꼬리"
       ],
       "partBestElements": {
-        "뿔": "ice",
-        "머리": "ice",
-        "몸통": "ice",
-        "앞다리": "ice",
-        "뒷다리": "ice",
-        "꼬리": "ice",
-        "꼬리끝": "ice"
+        "뿔": [
+          "ice"
+        ],
+        "머리": [
+          "ice"
+        ],
+        "몸통": [
+          "ice"
+        ],
+        "앞다리": [
+          "ice"
+        ],
+        "뒷다리": [
+          "ice"
+        ],
+        "꼬리": [
+          "ice"
+        ],
+        "꼬리끝": [
+          "ice",
+          "water"
+        ]
       },
       "partBestValues": {
         "뿔": 25.0,
@@ -2161,8 +2600,14 @@
         "꼬리"
       ],
       "partBestElements": {
-        "몸통": "thunder",
-        "꼬리": "thunder"
+        "몸통": [
+          "thunder",
+          "dragon"
+        ],
+        "꼬리": [
+          "thunder",
+          "dragon"
+        ]
       },
       "partBestValues": {
         "몸통": 25.0,
@@ -2218,11 +2663,21 @@
         "뒷다리"
       ],
       "partBestElements": {
-        "가슴": "thunder",
-        "등": "thunder",
-        "앞다리": "thunder",
-        "뒷다리": "thunder",
-        "꼬리": "thunder"
+        "가슴": [
+          "thunder"
+        ],
+        "등": [
+          "thunder"
+        ],
+        "앞다리": [
+          "thunder"
+        ],
+        "뒷다리": [
+          "thunder"
+        ],
+        "꼬리": [
+          "thunder"
+        ]
       },
       "partBestValues": {
         "가슴": 25.0,
@@ -2281,12 +2736,24 @@
         "몸통"
       ],
       "partBestElements": {
-        "머리": "fire",
-        "목": "fire",
-        "몸통": "fire",
-        "날개": "fire",
-        "다리": "fire",
-        "꼬리": "fire"
+        "머리": [
+          "fire"
+        ],
+        "목": [
+          "fire"
+        ],
+        "몸통": [
+          "fire"
+        ],
+        "날개": [
+          "fire"
+        ],
+        "다리": [
+          "fire"
+        ],
+        "꼬리": [
+          "fire"
+        ]
       },
       "partBestValues": {
         "머리": 30.0,
@@ -2346,12 +2813,24 @@
         "몸통"
       ],
       "partBestElements": {
-        "머리": "water",
-        "목": "water",
-        "몸통": "water",
-        "날개": "water",
-        "다리": "water",
-        "꼬리": "water"
+        "머리": [
+          "water"
+        ],
+        "목": [
+          "water"
+        ],
+        "몸통": [
+          "water"
+        ],
+        "날개": [
+          "water"
+        ],
+        "다리": [
+          "water"
+        ],
+        "꼬리": [
+          "water"
+        ]
       },
       "partBestValues": {
         "머리": 30.0,
@@ -2408,16 +2887,36 @@
       "topElementParts": [
         "머리",
         "목아래",
-        "등"
+        "등",
+        "날개",
+        "꼬리아래"
       ],
       "partBestElements": {
-        "머리": "dragon",
-        "목아래": "dragon",
-        "등": "dragon",
-        "날개": "dragon",
-        "다리": "water",
-        "꼬리아래": "dragon",
-        "꼬리끝": "dragon"
+        "머리": [
+          "dragon"
+        ],
+        "목아래": [
+          "dragon"
+        ],
+        "등": [
+          "dragon"
+        ],
+        "날개": [
+          "dragon"
+        ],
+        "다리": [
+          "water",
+          "dragon",
+          "fire",
+          "thunder",
+          "ice"
+        ],
+        "꼬리아래": [
+          "dragon"
+        ],
+        "꼬리끝": [
+          "dragon"
+        ]
       },
       "partBestValues": {
         "머리": 18.0,
@@ -2475,16 +2974,32 @@
       "topElementParts": [
         "머리",
         "목아래",
-        "등"
+        "등",
+        "날개",
+        "꼬리아래"
       ],
       "partBestElements": {
-        "머리": "ice",
-        "목아래": "ice",
-        "등": "ice",
-        "날개": "ice",
-        "다리": "ice",
-        "꼬리아래": "ice",
-        "꼬리끝": "ice"
+        "머리": [
+          "ice"
+        ],
+        "목아래": [
+          "ice"
+        ],
+        "등": [
+          "ice"
+        ],
+        "날개": [
+          "ice"
+        ],
+        "다리": [
+          "ice"
+        ],
+        "꼬리아래": [
+          "ice"
+        ],
+        "꼬리끝": [
+          "ice"
+        ]
       },
       "partBestValues": {
         "머리": 18.0,
@@ -2541,16 +3056,30 @@
       "bestPart": "등",
       "topElementParts": [
         "등",
+        "머리",
         "목",
-        "다리"
+        "다리",
+        "꼬리"
       ],
       "partBestElements": {
-        "머리": "dragon",
-        "목": "water",
-        "등": "water",
-        "날개": "water",
-        "다리": "water",
-        "꼬리": "water"
+        "머리": [
+          "dragon"
+        ],
+        "목": [
+          "water"
+        ],
+        "등": [
+          "water"
+        ],
+        "날개": [
+          "water"
+        ],
+        "다리": [
+          "water"
+        ],
+        "꼬리": [
+          "water"
+        ]
       },
       "partBestValues": {
         "머리": 30.0,
@@ -2610,11 +3139,21 @@
         "다리"
       ],
       "partBestElements": {
-        "머리": "water",
-        "목": "water",
-        "날개": "water",
-        "다리": "water",
-        "꼬리": "water"
+        "머리": [
+          "water"
+        ],
+        "목": [
+          "water"
+        ],
+        "날개": [
+          "water"
+        ],
+        "다리": [
+          "water"
+        ],
+        "꼬리": [
+          "water"
+        ]
       },
       "partBestValues": {
         "머리": 15.0,
@@ -2673,13 +3212,28 @@
         "꼬리"
       ],
       "partBestElements": {
-        "머리": "dragon",
-        "목": "dragon",
-        "배": "thunder",
-        "등": "dragon",
-        "날개": "dragon",
-        "다리": "dragon",
-        "꼬리": "dragon"
+        "머리": [
+          "dragon"
+        ],
+        "목": [
+          "dragon"
+        ],
+        "배": [
+          "thunder"
+        ],
+        "등": [
+          "dragon"
+        ],
+        "날개": [
+          "dragon"
+        ],
+        "다리": [
+          "dragon",
+          "thunder"
+        ],
+        "꼬리": [
+          "dragon"
+        ]
       },
       "partBestValues": {
         "머리": 35.0,
@@ -2737,17 +3291,39 @@
       "topElementParts": [
         "머리",
         "꼬리끝",
-        "배"
+        "배",
+        "등",
+        "날개",
+        "꼬리"
       ],
       "partBestElements": {
-        "머리": "dragon",
-        "목": "dragon",
-        "배": "thunder",
-        "등": "dragon",
-        "날개": "dragon",
-        "다리": "thunder",
-        "꼬리": "dragon",
-        "꼬리끝": "dragon"
+        "머리": [
+          "dragon"
+        ],
+        "목": [
+          "dragon"
+        ],
+        "배": [
+          "thunder"
+        ],
+        "등": [
+          "dragon"
+        ],
+        "날개": [
+          "dragon"
+        ],
+        "다리": [
+          "thunder",
+          "dragon",
+          "water",
+          "ice"
+        ],
+        "꼬리": [
+          "dragon"
+        ],
+        "꼬리끝": [
+          "dragon"
+        ]
       },
       "partBestValues": {
         "머리": 25.0,
@@ -2809,13 +3385,29 @@
         "등"
       ],
       "partBestElements": {
-        "목": "thunder",
-        "배": "thunder",
-        "등": "thunder",
-        "날개": "thunder",
-        "다리": "thunder",
-        "꼬리": "thunder",
-        "꼬리끝": "thunder"
+        "목": [
+          "thunder"
+        ],
+        "배": [
+          "thunder"
+        ],
+        "등": [
+          "thunder"
+        ],
+        "날개": [
+          "thunder"
+        ],
+        "다리": [
+          "thunder",
+          "water"
+        ],
+        "꼬리": [
+          "thunder"
+        ],
+        "꼬리끝": [
+          "thunder",
+          "water"
+        ]
       },
       "partBestValues": {
         "목": 30.0,
@@ -2873,16 +3465,36 @@
       "topElementParts": [
         "날개",
         "등",
-        "머리"
+        "머리",
+        "배",
+        "꼬리"
       ],
       "partBestElements": {
-        "머리": "dragon",
-        "목": "dragon",
-        "배": "thunder",
-        "등": "dragon",
-        "날개": "dragon",
-        "다리": "dragon",
-        "꼬리": "dragon"
+        "머리": [
+          "dragon"
+        ],
+        "목": [
+          "dragon",
+          "thunder",
+          "water",
+          "ice"
+        ],
+        "배": [
+          "thunder"
+        ],
+        "등": [
+          "dragon"
+        ],
+        "날개": [
+          "dragon"
+        ],
+        "다리": [
+          "dragon",
+          "thunder"
+        ],
+        "꼬리": [
+          "dragon"
+        ]
       },
       "partBestValues": {
         "머리": 20.0,
@@ -2940,17 +3552,37 @@
       "topElementParts": [
         "다리",
         "머리",
-        "등"
+        "등",
+        "꼬리",
+        "꼬리끝"
       ],
       "partBestElements": {
-        "머리": "dragon",
-        "목": "dragon",
-        "배": "ice",
-        "등": "dragon",
-        "날개": "dragon",
-        "다리": "dragon",
-        "꼬리": "dragon",
-        "꼬리끝": "dragon"
+        "머리": [
+          "dragon"
+        ],
+        "목": [
+          "dragon"
+        ],
+        "배": [
+          "ice"
+        ],
+        "등": [
+          "dragon",
+          "ice"
+        ],
+        "날개": [
+          "dragon",
+          "ice"
+        ],
+        "다리": [
+          "dragon"
+        ],
+        "꼬리": [
+          "dragon"
+        ],
+        "꼬리끝": [
+          "dragon"
+        ]
       },
       "partBestValues": {
         "머리": 20.0,
@@ -3012,13 +3644,29 @@
         "등"
       ],
       "partBestElements": {
-        "목": "water",
-        "배": "water",
-        "등": "water",
-        "날개": "water",
-        "다리": "water",
-        "꼬리": "water",
-        "꼬리끝": "water"
+        "목": [
+          "water"
+        ],
+        "배": [
+          "water"
+        ],
+        "등": [
+          "water"
+        ],
+        "날개": [
+          "water"
+        ],
+        "다리": [
+          "water",
+          "thunder"
+        ],
+        "꼬리": [
+          "water"
+        ],
+        "꼬리끝": [
+          "water",
+          "thunder"
+        ]
       },
       "partBestValues": {
         "목": 35.0,
@@ -3076,16 +3724,35 @@
       "topElementParts": [
         "등",
         "머리",
-        "목"
+        "목",
+        "앞다리"
       ],
       "partBestElements": {
-        "머리": "thunder",
-        "목": "thunder",
-        "배": "thunder",
-        "등": "thunder",
-        "앞다리": "thunder",
-        "뒷다리": "thunder",
-        "꼬리": "thunder"
+        "머리": [
+          "thunder"
+        ],
+        "목": [
+          "thunder"
+        ],
+        "배": [
+          "thunder",
+          "water",
+          "dragon",
+          "fire"
+        ],
+        "등": [
+          "thunder"
+        ],
+        "앞다리": [
+          "thunder"
+        ],
+        "뒷다리": [
+          "thunder"
+        ],
+        "꼬리": [
+          "thunder",
+          "dragon"
+        ]
       },
       "partBestValues": {
         "머리": 20.0,
@@ -3143,16 +3810,38 @@
       "topElementParts": [
         "머리",
         "등",
-        "목"
+        "목",
+        "배",
+        "앞다리"
       ],
       "partBestElements": {
-        "머리": "water",
-        "목": "water",
-        "배": "water",
-        "등": "water",
-        "앞다리": "water",
-        "뒷다리": "water",
-        "꼬리": "water"
+        "머리": [
+          "water"
+        ],
+        "목": [
+          "water",
+          "thunder",
+          "dragon"
+        ],
+        "배": [
+          "water",
+          "thunder",
+          "dragon"
+        ],
+        "등": [
+          "water"
+        ],
+        "앞다리": [
+          "water"
+        ],
+        "뒷다리": [
+          "water"
+        ],
+        "꼬리": [
+          "water",
+          "thunder",
+          "dragon"
+        ]
       },
       "partBestValues": {
         "머리": 25.0,
@@ -3210,16 +3899,32 @@
       "topElementParts": [
         "꼬리",
         "뒷다리",
-        "머리파괴후"
+        "머리파괴후",
+        "배"
       ],
       "partBestElements": {
-        "머리파괴후": "water",
-        "목": "water",
-        "배": "water",
-        "등": "water",
-        "꼬리": "water",
-        "앞다리": "water",
-        "뒷다리": "water"
+        "머리파괴후": [
+          "water"
+        ],
+        "목": [
+          "water"
+        ],
+        "배": [
+          "water"
+        ],
+        "등": [
+          "water",
+          "ice"
+        ],
+        "꼬리": [
+          "water"
+        ],
+        "앞다리": [
+          "water"
+        ],
+        "뒷다리": [
+          "water"
+        ]
       },
       "partBestValues": {
         "머리파괴후": 15.0,
@@ -3277,17 +3982,36 @@
       "topElementParts": [
         "목",
         "꼬리끝",
-        "머리"
+        "머리",
+        "등/날개",
+        "배",
+        "꼬리"
       ],
       "partBestElements": {
-        "머리": "ice",
-        "목": "thunder",
-        "등/날개": "ice",
-        "배": "thunder",
-        "날개갈퀴": "thunder",
-        "다리": "fire",
-        "꼬리": "thunder",
-        "꼬리끝": "thunder"
+        "머리": [
+          "ice"
+        ],
+        "목": [
+          "thunder"
+        ],
+        "등/날개": [
+          "ice"
+        ],
+        "배": [
+          "thunder"
+        ],
+        "날개갈퀴": [
+          "thunder"
+        ],
+        "다리": [
+          "fire"
+        ],
+        "꼬리": [
+          "thunder"
+        ],
+        "꼬리끝": [
+          "thunder"
+        ]
       },
       "partBestValues": {
         "머리": 25.0,
@@ -3346,17 +4070,36 @@
       "topElementParts": [
         "목",
         "꼬리끝",
-        "머리"
+        "머리",
+        "등/날개",
+        "배",
+        "꼬리"
       ],
       "partBestElements": {
-        "머리": "ice",
-        "목": "thunder",
-        "등/날개": "ice",
-        "배": "thunder",
-        "날개갈퀴": "thunder",
-        "다리": "fire",
-        "꼬리": "thunder",
-        "꼬리끝": "thunder"
+        "머리": [
+          "ice"
+        ],
+        "목": [
+          "thunder"
+        ],
+        "등/날개": [
+          "ice"
+        ],
+        "배": [
+          "thunder"
+        ],
+        "날개갈퀴": [
+          "thunder"
+        ],
+        "다리": [
+          "fire"
+        ],
+        "꼬리": [
+          "thunder"
+        ],
+        "꼬리끝": [
+          "thunder"
+        ]
       },
       "partBestValues": {
         "머리": 25.0,
@@ -3415,17 +4158,37 @@
       "topElementParts": [
         "꼬리끝",
         "등/날개",
-        "머리"
+        "머리",
+        "날개갈퀴"
       ],
       "partBestElements": {
-        "머리": "ice",
-        "목": "ice",
-        "등/날개": "ice",
-        "배": "ice",
-        "날개갈퀴": "ice",
-        "다리": "ice",
-        "꼬리": "ice",
-        "꼬리끝": "ice"
+        "머리": [
+          "ice"
+        ],
+        "목": [
+          "ice"
+        ],
+        "등/날개": [
+          "ice"
+        ],
+        "배": [
+          "ice",
+          "water",
+          "thunder",
+          "dragon"
+        ],
+        "날개갈퀴": [
+          "ice"
+        ],
+        "다리": [
+          "ice"
+        ],
+        "꼬리": [
+          "ice"
+        ],
+        "꼬리끝": [
+          "ice"
+        ]
       },
       "partBestValues": {
         "머리": 20.0,
@@ -3484,17 +4247,37 @@
       "topElementParts": [
         "꼬리끝",
         "등/날개",
-        "머리"
+        "머리",
+        "날개갈퀴"
       ],
       "partBestElements": {
-        "머리": "ice",
-        "목": "ice",
-        "등/날개": "ice",
-        "배": "ice",
-        "날개갈퀴": "ice",
-        "다리": "ice",
-        "꼬리": "ice",
-        "꼬리끝": "ice"
+        "머리": [
+          "ice"
+        ],
+        "목": [
+          "ice"
+        ],
+        "등/날개": [
+          "ice"
+        ],
+        "배": [
+          "ice",
+          "water",
+          "thunder",
+          "dragon"
+        ],
+        "날개갈퀴": [
+          "ice"
+        ],
+        "다리": [
+          "ice"
+        ],
+        "꼬리": [
+          "ice"
+        ],
+        "꼬리끝": [
+          "ice"
+        ]
       },
       "partBestValues": {
         "머리": 20.0,
@@ -3556,14 +4339,31 @@
         "뒷다리"
       ],
       "partBestElements": {
-        "머리": "thunder",
-        "목": "thunder",
-        "등": "thunder",
-        "배": "thunder",
-        "앞다리": "thunder",
-        "날개": "thunder",
-        "뒷다리": "thunder",
-        "꼬리": "thunder"
+        "머리": [
+          "thunder"
+        ],
+        "목": [
+          "thunder"
+        ],
+        "등": [
+          "thunder",
+          "fire"
+        ],
+        "배": [
+          "thunder"
+        ],
+        "앞다리": [
+          "thunder"
+        ],
+        "날개": [
+          "thunder"
+        ],
+        "뒷다리": [
+          "thunder"
+        ],
+        "꼬리": [
+          "thunder"
+        ]
       },
       "partBestValues": {
         "머리": 25.0,
@@ -3625,11 +4425,22 @@
         "앞다리"
       ],
       "partBestElements": {
-        "머리": "dragon",
-        "목": "dragon",
-        "앞다리": "dragon",
-        "뒷다리": "dragon",
-        "꼬리": "dragon"
+        "머리": [
+          "dragon"
+        ],
+        "목": [
+          "dragon"
+        ],
+        "앞다리": [
+          "dragon"
+        ],
+        "뒷다리": [
+          "dragon"
+        ],
+        "꼬리": [
+          "dragon",
+          "thunder"
+        ]
       },
       "partBestValues": {
         "머리": 25.0,
@@ -3688,13 +4499,28 @@
         "꼬리"
       ],
       "partBestElements": {
-        "머리": "fire",
-        "등": "fire",
-        "배": "fire",
-        "앞다리": "thunder",
-        "뒷다리": "dragon",
-        "아랫배": "fire",
-        "꼬리": "fire"
+        "머리": [
+          "fire"
+        ],
+        "등": [
+          "fire",
+          "thunder"
+        ],
+        "배": [
+          "fire"
+        ],
+        "앞다리": [
+          "thunder"
+        ],
+        "뒷다리": [
+          "dragon"
+        ],
+        "아랫배": [
+          "fire"
+        ],
+        "꼬리": [
+          "fire"
+        ]
       },
       "partBestValues": {
         "머리": 25.0,
@@ -3755,11 +4581,23 @@
         "앞다리"
       ],
       "partBestElements": {
-        "머리": "ice",
-        "몸통": "water",
-        "앞다리": "ice",
-        "꼬리": "water",
-        "꼬리끝": "ice"
+        "머리": [
+          "ice"
+        ],
+        "몸통": [
+          "water",
+          "ice"
+        ],
+        "앞다리": [
+          "ice"
+        ],
+        "꼬리": [
+          "water",
+          "ice"
+        ],
+        "꼬리끝": [
+          "ice"
+        ]
       },
       "partBestValues": {
         "머리": 15.0,
@@ -3815,15 +4653,28 @@
       "topElementParts": [
         "앞다리",
         "뒷다리",
-        "어깨"
+        "어깨",
+        "꼬리끝"
       ],
       "partBestElements": {
-        "몸통": "thunder",
-        "앞다리": "thunder",
-        "뒷다리": "thunder",
-        "어깨": "thunder",
-        "꼬리": "thunder",
-        "꼬리끝": "thunder"
+        "몸통": [
+          "thunder"
+        ],
+        "앞다리": [
+          "thunder"
+        ],
+        "뒷다리": [
+          "thunder"
+        ],
+        "어깨": [
+          "thunder"
+        ],
+        "꼬리": [
+          "thunder"
+        ],
+        "꼬리끝": [
+          "thunder"
+        ]
       },
       "partBestValues": {
         "몸통": 15.0,
@@ -3880,13 +4731,30 @@
       "topElementParts": [
         "몸통",
         "하반신",
-        "머리"
+        "머리",
+        "앞다리"
       ],
       "partBestElements": {
-        "머리": "fire",
-        "몸통": "fire",
-        "앞다리": "fire",
-        "하반신": "fire"
+        "머리": [
+          "fire",
+          "water",
+          "ice",
+          "dragon"
+        ],
+        "몸통": [
+          "fire",
+          "water"
+        ],
+        "앞다리": [
+          "fire",
+          "water",
+          "ice",
+          "dragon"
+        ],
+        "하반신": [
+          "fire",
+          "water"
+        ]
       },
       "partBestValues": {
         "머리": 5.0,
@@ -3941,13 +4809,30 @@
       "topElementParts": [
         "몸통",
         "하반신",
-        "머리"
+        "머리",
+        "앞다리"
       ],
       "partBestElements": {
-        "머리": "fire",
-        "몸통": "fire",
-        "앞다리": "fire",
-        "하반신": "fire"
+        "머리": [
+          "fire",
+          "water",
+          "thunder",
+          "dragon"
+        ],
+        "몸통": [
+          "fire",
+          "water"
+        ],
+        "앞다리": [
+          "fire",
+          "water",
+          "thunder",
+          "dragon"
+        ],
+        "하반신": [
+          "fire",
+          "water"
+        ]
       },
       "partBestValues": {
         "머리": 5.0,
@@ -4002,17 +4887,38 @@
       "topElementParts": [
         "머리",
         "날개다리",
-        "목"
+        "목",
+        "날개"
       ],
       "partBestElements": {
-        "머리": "dragon",
-        "목": "dragon",
-        "몸통": "fire",
-        "날개": "dragon",
-        "날개다리": "fire",
-        "앞다리": "fire",
-        "뒷다리": "fire",
-        "꼬리": "dragon"
+        "머리": [
+          "dragon"
+        ],
+        "목": [
+          "dragon"
+        ],
+        "몸통": [
+          "fire",
+          "dragon"
+        ],
+        "날개": [
+          "dragon"
+        ],
+        "날개다리": [
+          "fire",
+          "dragon"
+        ],
+        "앞다리": [
+          "fire",
+          "dragon"
+        ],
+        "뒷다리": [
+          "fire",
+          "dragon"
+        ],
+        "꼬리": [
+          "dragon"
+        ]
       },
       "partBestValues": {
         "머리": 30.0,
@@ -4071,13 +4977,23 @@
       "topElementParts": [
         "꼬리",
         "목",
-        "등"
+        "등",
+        "날개"
       ],
       "partBestElements": {
-        "목": "dragon",
-        "등": "thunder",
-        "날개": "dragon",
-        "꼬리": "dragon"
+        "목": [
+          "dragon"
+        ],
+        "등": [
+          "thunder",
+          "dragon"
+        ],
+        "날개": [
+          "dragon"
+        ],
+        "꼬리": [
+          "dragon"
+        ]
       },
       "partBestValues": {
         "목": 35.0,
@@ -4132,15 +5048,30 @@
       "topElementParts": [
         "꼬리",
         "배",
-        "등"
+        "등",
+        "날개",
+        "앞다리"
       ],
       "partBestElements": {
-        "배": "water",
-        "등": "water",
-        "날개": "dragon",
-        "앞다리": "water",
-        "뒷다리": "water",
-        "꼬리": "water"
+        "배": [
+          "water"
+        ],
+        "등": [
+          "water"
+        ],
+        "날개": [
+          "dragon"
+        ],
+        "앞다리": [
+          "water",
+          "dragon"
+        ],
+        "뒷다리": [
+          "water"
+        ],
+        "꼬리": [
+          "water"
+        ]
       },
       "partBestValues": {
         "배": 25.0,
@@ -4200,12 +5131,27 @@
         "뒷다리"
       ],
       "partBestElements": {
-        "배": "dragon",
-        "등": "dragon",
-        "날개": "dragon",
-        "앞다리": "water",
-        "뒷다리": "ice",
-        "꼬리": "dragon"
+        "배": [
+          "dragon",
+          "water",
+          "ice"
+        ],
+        "등": [
+          "dragon"
+        ],
+        "날개": [
+          "dragon"
+        ],
+        "앞다리": [
+          "water"
+        ],
+        "뒷다리": [
+          "ice"
+        ],
+        "꼬리": [
+          "dragon",
+          "ice"
+        ]
       },
       "partBestValues": {
         "배": 10.0,
@@ -4262,16 +5208,34 @@
       "topElementParts": [
         "머리",
         "배",
-        "등"
+        "등",
+        "뒷다리"
       ],
       "partBestElements": {
-        "머리": "fire",
-        "배": "fire",
-        "등": "fire",
-        "앞다리": "fire",
-        "뒷다리": "fire",
-        "날개": "fire",
-        "꼬리": "fire"
+        "머리": [
+          "fire"
+        ],
+        "배": [
+          "fire"
+        ],
+        "등": [
+          "fire"
+        ],
+        "앞다리": [
+          "fire",
+          "thunder"
+        ],
+        "뒷다리": [
+          "fire"
+        ],
+        "날개": [
+          "fire",
+          "dragon",
+          "thunder"
+        ],
+        "꼬리": [
+          "fire"
+        ]
       },
       "partBestValues": {
         "머리": 40.0,
@@ -4332,13 +5296,32 @@
         "등의약점"
       ],
       "partBestElements": {
-        "입안": "thunder",
-        "뿔/등": "thunder",
-        "몸통": "thunder",
-        "다리": "thunder",
-        "배": "thunder",
-        "등의약점": "thunder",
-        "분사구": "thunder"
+        "입안": [
+          "thunder"
+        ],
+        "뿔/등": [
+          "thunder",
+          "dragon"
+        ],
+        "몸통": [
+          "thunder",
+          "dragon"
+        ],
+        "다리": [
+          "thunder",
+          "dragon"
+        ],
+        "배": [
+          "thunder",
+          "dragon"
+        ],
+        "등의약점": [
+          "thunder",
+          "dragon"
+        ],
+        "분사구": [
+          "thunder"
+        ]
       },
       "partBestValues": {
         "입안": 25.0,
@@ -4399,10 +5382,20 @@
         "하반신하부"
       ],
       "partBestElements": {
-        "머리약점": "dragon",
-        "등칼날 흑가시 발톱": "dragon",
-        "상반신": "dragon",
-        "하반신하부": "dragon"
+        "머리약점": [
+          "dragon"
+        ],
+        "등칼날 흑가시 발톱": [
+          "dragon"
+        ],
+        "상반신": [
+          "dragon",
+          "thunder",
+          "ice"
+        ],
+        "하반신하부": [
+          "dragon"
+        ]
       },
       "partBestValues": {
         "머리약점": 30.0,
@@ -4460,11 +5453,25 @@
         "하반신하부"
       ],
       "partBestElements": {
-        "머리약점": "dragon",
-        "흉부": "dragon",
-        "상반신": "dragon",
-        "하반신하부": "dragon",
-        "하반신상부": "dragon"
+        "머리약점": [
+          "dragon"
+        ],
+        "흉부": [
+          "dragon",
+          "thunder",
+          "ice"
+        ],
+        "상반신": [
+          "dragon",
+          "thunder",
+          "ice"
+        ],
+        "하반신하부": [
+          "dragon"
+        ],
+        "하반신상부": [
+          "dragon"
+        ]
       },
       "partBestValues": {
         "머리약점": 30.0,
@@ -4520,13 +5527,26 @@
       "topElementParts": [
         "목",
         "배",
-        "앞다리"
+        "앞다리",
+        "뒷다리"
       ],
       "partBestElements": {
-        "목": "fire",
-        "배": "fire",
-        "앞다리": "fire",
-        "뒷다리": "fire"
+        "목": [
+          "fire",
+          "dragon"
+        ],
+        "배": [
+          "fire",
+          "dragon"
+        ],
+        "앞다리": [
+          "fire",
+          "dragon"
+        ],
+        "뒷다리": [
+          "fire",
+          "dragon"
+        ]
       },
       "partBestValues": {
         "목": 5.0,
@@ -4577,21 +5597,39 @@
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
     "nameEn": "Gore Magala",
     "hitzoneHighlights": {
-      "bestPart": "날개다리",
+      "bestPart": "머리",
       "topElementParts": [
-        "날개다리",
         "머리",
-        "목"
+        "날개다리",
+        "목",
+        "날개"
       ],
       "partBestElements": {
-        "머리": "dragon",
-        "목": "fire",
-        "몸통": "fire",
-        "날개": "fire",
-        "날개다리": "fire",
-        "앞다리": "fire",
-        "뒷다리": "fire",
-        "꼬리": "fire"
+        "머리": [
+          "dragon"
+        ],
+        "목": [
+          "fire"
+        ],
+        "몸통": [
+          "fire"
+        ],
+        "날개": [
+          "fire"
+        ],
+        "날개다리": [
+          "fire"
+        ],
+        "앞다리": [
+          "fire"
+        ],
+        "뒷다리": [
+          "fire"
+        ],
+        "꼬리": [
+          "fire",
+          "thunder"
+        ]
       },
       "partBestValues": {
         "머리": 30.0,
@@ -4653,14 +5691,32 @@
         "좌날개다리"
       ],
       "partBestElements": {
-        "머리": "dragon",
-        "몸통": "fire",
-        "날개": "fire",
-        "우날개다리": "fire",
-        "좌날개다리": "fire",
-        "앞다리": "fire",
-        "뒷다리": "fire",
-        "꼬리": "fire"
+        "머리": [
+          "dragon"
+        ],
+        "몸통": [
+          "fire"
+        ],
+        "날개": [
+          "fire"
+        ],
+        "우날개다리": [
+          "fire",
+          "dragon"
+        ],
+        "좌날개다리": [
+          "fire"
+        ],
+        "앞다리": [
+          "fire"
+        ],
+        "뒷다리": [
+          "fire"
+        ],
+        "꼬리": [
+          "fire",
+          "thunder"
+        ]
       },
       "partBestValues": {
         "머리": 30.0,
@@ -4722,15 +5778,34 @@
         "꼬리"
       ],
       "partBestElements": {
-        "머리": "dragon",
-        "목": "dragon",
-        "등": "dragon",
-        "날개": "dragon",
-        "가슴": "fire",
-        "배": "fire",
-        "팔": "fire",
-        "다리": "fire",
-        "꼬리": "dragon"
+        "머리": [
+          "dragon"
+        ],
+        "목": [
+          "dragon"
+        ],
+        "등": [
+          "dragon",
+          "fire"
+        ],
+        "날개": [
+          "dragon"
+        ],
+        "가슴": [
+          "fire"
+        ],
+        "배": [
+          "fire"
+        ],
+        "팔": [
+          "fire"
+        ],
+        "다리": [
+          "fire"
+        ],
+        "꼬리": [
+          "dragon"
+        ]
       },
       "partBestValues": {
         "머리": 30.0,
@@ -4790,18 +5865,45 @@
       "topElementParts": [
         "머리",
         "목",
-        "등"
+        "등",
+        "날개",
+        "가슴",
+        "배",
+        "팔",
+        "다리",
+        "꼬리"
       ],
       "partBestElements": {
-        "머리": "dragon",
-        "목": "dragon",
-        "등": "dragon",
-        "날개": "dragon",
-        "가슴": "fire",
-        "배": "fire",
-        "팔": "fire",
-        "다리": "fire",
-        "꼬리": "dragon"
+        "머리": [
+          "dragon"
+        ],
+        "목": [
+          "dragon"
+        ],
+        "등": [
+          "dragon",
+          "fire"
+        ],
+        "날개": [
+          "dragon",
+          "fire"
+        ],
+        "가슴": [
+          "fire"
+        ],
+        "배": [
+          "fire"
+        ],
+        "팔": [
+          "fire"
+        ],
+        "다리": [
+          "fire"
+        ],
+        "꼬리": [
+          "dragon",
+          "fire"
+        ]
       },
       "partBestValues": {
         "머리": 30.0,
@@ -4864,15 +5966,34 @@
         "꼬리"
       ],
       "partBestElements": {
-        "머리": "dragon",
-        "목": "dragon",
-        "등": "dragon",
-        "날개": "ice",
-        "가슴": "ice",
-        "배": "ice",
-        "팔": "ice",
-        "다리": "ice",
-        "꼬리": "dragon"
+        "머리": [
+          "dragon"
+        ],
+        "목": [
+          "dragon"
+        ],
+        "등": [
+          "dragon",
+          "ice"
+        ],
+        "날개": [
+          "ice"
+        ],
+        "가슴": [
+          "ice"
+        ],
+        "배": [
+          "ice"
+        ],
+        "팔": [
+          "ice"
+        ],
+        "다리": [
+          "ice"
+        ],
+        "꼬리": [
+          "dragon"
+        ]
       },
       "partBestValues": {
         "머리": 30.0,
@@ -4935,15 +6056,34 @@
         "꼬리"
       ],
       "partBestElements": {
-        "머리": "dragon",
-        "목": "dragon",
-        "등": "dragon",
-        "날개": "ice",
-        "가슴": "ice",
-        "배": "ice",
-        "팔": "ice",
-        "다리": "ice",
-        "꼬리": "dragon"
+        "머리": [
+          "dragon"
+        ],
+        "목": [
+          "dragon"
+        ],
+        "등": [
+          "dragon",
+          "ice"
+        ],
+        "날개": [
+          "ice"
+        ],
+        "가슴": [
+          "ice"
+        ],
+        "배": [
+          "ice"
+        ],
+        "팔": [
+          "ice"
+        ],
+        "다리": [
+          "ice"
+        ],
+        "꼬리": [
+          "dragon"
+        ]
       },
       "partBestValues": {
         "머리": 30.0,

@@ -1,5 +1,5 @@
-import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-itemdb1";
-import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-itemdb1";
+import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-monbadge-tiefix";
+import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-monbadge-tiefix";
 
 let data={skills:[],armors:[],armorSets:[],decorations:[],weapons:[],weaponSummary:[],melodies:[],items:[],itemReferenceIndex:{items:{}},skillReferenceIndex:{items:{},categories:[]},meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],monsterReferenceIndex:{items:{}},dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],siteInfo:{},meta:{}};
 let targets=[];
@@ -1118,12 +1118,15 @@ function renderMonsterHitzone(name){
   const topElementParts=Array.isArray(hi.topElementParts)?hi.topElementParts:[];
   const topPartSet=new Set(topElementParts);
   // One elemental badge per part. Top 3 parts by their best elemental hitzone also receive a star badge.
-  const isPartBestElement=(part,k)=>partBestElements[part.part]===k;
+  const isPartBestElement=(part,k)=>{
+    const best=partBestElements[part.part];
+    return Array.isArray(best)?best.includes(k):best===k;
+  };
   const partRank=part=>{const i=topElementParts.indexOf(part.part);return i>=0?i+1:0};
   const metric=(part,k,label)=>`<span class="hitzone-metric ${isPartBestElement(part,k)?'best-hitzone':''}"><small>${label}</small><strong>${esc(part[k]??'-')}</strong>${isPartBestElement(part,k)?'<i class="best-badge" title="이 부위의 최고 속성">✨</i>':''}</span>`;
   const parts=x.parts||[];
   const bestPartIndex=Math.max(0,parts.findIndex(p=>p.part===hi.bestPart));
-  const partButtons=`<div class="monster-part-strip" role="tablist" aria-label="육질 부위 선택">${parts.map((part,i)=>{const rank=partRank(part);return `<button type="button" class="monster-part-chip ${i===bestPartIndex?'active ':''}${rank?'best-part-chip':''}" data-hitzone-part="${i}" aria-expanded="${i===bestPartIndex?'true':'false'}">${rank?`<i class="part-best-badge" title="속성 육질 상위 ${topElementParts.length}부위">⭐</i>`:''}<span>${esc(part.part)}</span></button>`}).join('')}</div>`;
+  const partButtons=`<div class="monster-part-strip" role="tablist" aria-label="육질 부위 선택">${parts.map((part,i)=>{const rank=partRank(part);return `<button type="button" class="monster-part-chip ${i===bestPartIndex?'active ':''}${rank?'best-part-chip':''}" data-hitzone-part="${i}" aria-expanded="${i===bestPartIndex?'true':'false'}">${rank?`<i class="part-best-badge" title="속성 육질 상위 3위권(동률 포함)">⭐</i>`:''}<span>${esc(part.part)}</span></button>`}).join('')}</div>`;
   const partPanels=`<div class="monster-part-panels">${parts.map((part,i)=>{const rank=partRank(part);return `<section class="panel monster-part-panel" data-hitzone-panel="${i}" ${i===bestPartIndex?'':'hidden'}><div class="monster-part-panel-title"><strong>${rank?'<i class="part-best-badge panel-badge" title="속성 육질 상위 부위">⭐</i>':''}${esc(part.part)}</strong><span>물리 + 기절/다운 · 속성</span></div><div class="monster-hitzone-line hitzone-line-physical">${physical.map(([k,l])=>metric(part,k,l)).join('')}</div><div class="monster-hitzone-line hitzone-line-element">${elements.map(([k,l])=>metric(part,k,l)).join('')}</div></section>`}).join('')}</div>`;
   const desktopRows=parts.map(part=>{const rank=partRank(part);return `<tr class="${rank?'best-element-part-row':''}"><td>${rank?'<i class="part-best-badge" title="속성 육질 상위 부위">⭐</i>':''}${esc(part.part)}</td>${physical.map(([k])=>`<td>${esc(part[k]??'-')}</td>`).join('')}${elements.map(([k])=>`<td class="${isPartBestElement(part,k)?'best-hitzone':''}">${esc(part[k]??'-')}${isPartBestElement(part,k)?'<i class="best-badge" title="이 부위의 최고 속성">✨</i>':''}</td>`).join('')}</tr>`}).join('');
   const desktopTable=`<div class="monster-hitzone-desktop-view table-panel"><table class="data-table monster-hitzone-pc-table"><thead><tr><th rowspan="2">부위</th><th colspan="5">물리 + 기절/다운</th><th colspan="5">속성</th></tr><tr>${physical.map(([,l])=>`<th>${l}</th>`).join('')}${elements.map(([,l])=>`<th>${l}</th>`).join('')}</tr></thead><tbody>${desktopRows}</tbody></table></div>`;
@@ -1131,7 +1134,7 @@ function renderMonsterHitzone(name){
   const meta=x.meta||{};
   const statusRows=(x.statuses||[]).map(st=>`<tr><td>${esc(st.status)}</td><td>${esc(st.durationDamage)}</td><td>${esc(st.initial)}</td><td>${esc(st.increase)}</td><td>${esc(st.max)}</td></tr>`).join('');
   const status=`<details class="panel monster-status-details"><summary><strong>상태이상 내성</strong><span>${(x.statuses||[]).length}종</span></summary><div class="monster-status-body"><div class="table-panel monster-status-table"><table class="data-table"><thead><tr><th>상태</th><th>지속/데미지</th><th>초기내성</th><th>상승치</th><th>최대내성</th></tr></thead><tbody>${statusRows}</tbody></table></div></div></details>`;
-  return `<div class="monster-meta">${meta.baseHp?`<span>기본체력 <strong>${esc(meta.baseHp)}</strong></span>`:''}${meta.minCrown?`<span>최소금관 ${esc(meta.minCrown)}</span>`:''}${meta.maxSilver?`<span>최대은관 ${esc(meta.maxSilver)}</span>`:''}${meta.maxGold?`<span>최대금관 ${esc(meta.maxGold)}</span>`:''}</div><section class="monster-hitzone-browser"><div class="monster-hitzone-guide"><strong>부위별 육질</strong><span><i class="best-badge demo">✨</i> 각 부위의 최고 속성 · <i class="part-best-badge">⭐</i> 속성 육질 상위 ${Math.min(3,topElementParts.length)}부위</span></div>${desktopTable}${mobileAccordion}</section>${status}`;
+  return `<div class="monster-meta">${meta.baseHp?`<span>기본체력 <strong>${esc(meta.baseHp)}</strong></span>`:''}${meta.minCrown?`<span>최소금관 ${esc(meta.minCrown)}</span>`:''}${meta.maxSilver?`<span>최대은관 ${esc(meta.maxSilver)}</span>`:''}${meta.maxGold?`<span>최대금관 ${esc(meta.maxGold)}</span>`:''}</div><section class="monster-hitzone-browser"><div class="monster-hitzone-guide"><strong>부위별 육질</strong><span><i class="best-badge demo">✨</i> 각 부위의 최고 속성(동률 포함) · <i class="part-best-badge">⭐</i> 속성 육질 상위 3위권(동률 포함)</span></div>${desktopTable}${mobileAccordion}</section>${status}`;
 }
 
 function monsterRankLabel(rank){return rank==="low"?"하위":rank==="high"?"상위":rank==="g"?"G급":rank==="extreme"?"극한":rank}
