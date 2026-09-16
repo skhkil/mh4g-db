@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#121821" />
   <title>MH4G 장비 · 스킬 시뮬레이터</title>
-  <link rel="stylesheet" href="./css/app.css?v=0.7.7-chat4-skillxref1" />
+  <link rel="stylesheet" href="./css/app.css?v=0.7.7-chat4-skillxref2-ui" />
 </head>
 <body>
   <div class="app-shell">
@@ -252,9 +252,19 @@
       </section>
 
       <section id="page-decoration" class="page">
-        <div class="toolbar">
+        <div class="toolbar deco-filter-toolbar">
           <input id="decoSearch" class="search-input" placeholder="장식주명·스킬·효과 검색 (예: 회심)" />
+          <select id="decoRankFilter" class="toolbar-select" aria-label="장식주 등급">
+            <option value="all">전체 등급</option><option value="low">하위</option><option value="high">상위</option><option value="g">G급</option>
+          </select>
+          <select id="decoSlotFilter" class="toolbar-select" aria-label="필요 슬롯">
+            <option value="all">전체 슬롯</option><option value="1">1슬롯</option><option value="2">2슬롯</option><option value="3">3슬롯</option>
+          </select>
+          <select id="decoCategoryFilter" class="toolbar-select" aria-label="스킬 분야">
+            <option value="all">전체 분야</option><option value="공격">공격</option><option value="방어·생존">방어·생존</option><option value="원거리">원거리</option><option value="속성·상태">속성·상태</option><option value="유틸·행동">유틸·행동</option><option value="채집·보수">채집·보수</option><option value="동반자">동반자</option>
+          </select>
         </div>
+        <div id="decoResultInfo" class="muted result-info"></div>
         <div class="panel table-panel"><div id="decoTable"></div></div>
       </section>
 
@@ -380,6 +390,6 @@ python tools/build_database.py --publish</code></pre>
     </main>
   </div>
 
-  <script type="module" src="./js/app.js?v=0.7.7-chat4-skillxref1"></script>
+  <script type="module" src="./js/app.js?v=0.7.7-chat4-skillxref2-ui"></script>
 </body>
 </html>
