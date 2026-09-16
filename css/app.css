@@ -795,3 +795,61 @@ button{border:1px solid var(--line);background:#202b39;color:white;border-radius
   .skill-armor-set>summary small{width:100%;margin-left:20px;text-align:left}
   .skill-armor-set .skill-source-list{padding-left:18px}
 }
+
+/* 2026-09-16 global selected-row focus */
+:root{--row-focus:#4fc879;--row-focus-bg:rgba(79,200,121,.075);--row-focus-line:rgba(79,200,121,.85)}
+.data-table tbody tr.ui-selected-row>td{
+  background:var(--row-focus-bg)!important;
+  border-top:2px solid var(--row-focus-line)!important;
+  border-bottom:2px solid var(--row-focus-line)!important;
+}
+.data-table tbody tr.ui-selected-row>td:first-child{border-left:2px solid var(--row-focus-line)!important}
+.data-table tbody tr.ui-selected-row>td:last-child{border-right:2px solid var(--row-focus-line)!important}
+.item-list-row.ui-selected-row,
+.item-list-row.item-row-selected,
+.monster-quest-row.ui-selected-row,
+.skill-source-row.ui-selected-row,
+.meal-method.ui-selected-row{
+  position:relative;
+  z-index:1;
+  outline:2px solid var(--row-focus-line);
+  outline-offset:-2px;
+  background:var(--row-focus-bg)!important;
+}
+#itemTable .item-list-row.item-row-selected>.item-cell{background:var(--row-focus-bg)!important}
+#skillTable .skill-db-row.is-open>td,
+#skillTable .skill-db-row.ui-selected-row>td{
+  background:var(--row-focus-bg)!important;
+  border-top:2px solid var(--row-focus-line)!important;
+  border-bottom:0!important;
+}
+#skillTable .skill-db-row.is-open>td:first-child,
+#skillTable .skill-db-row.ui-selected-row>td:first-child{border-left:2px solid var(--row-focus-line)!important}
+#skillTable .skill-db-row.is-open>td:last-child,
+#skillTable .skill-db-row.ui-selected-row>td:last-child{border-right:2px solid var(--row-focus-line)!important}
+#skillTable .skill-db-row.is-open + .skill-detail-row>td{
+  border-left:2px solid var(--row-focus-line)!important;
+  border-right:2px solid var(--row-focus-line)!important;
+  border-bottom:2px solid var(--row-focus-line)!important;
+  background:rgba(79,200,121,.035)!important;
+}
+#skillTable .skill-db-row.is-open td:first-child::after{color:var(--row-focus)!important}
+.data-table tbody tr:not(.ui-selected-row):hover>td{background:rgba(255,255,255,.025)}
+@media (max-width:820px), (pointer:coarse) and (max-width:1180px){
+  .data-table.responsive-table tbody tr.ui-selected-row{
+    outline:2px solid var(--row-focus-line)!important;
+    outline-offset:-2px;
+    background:var(--row-focus-bg)!important;
+  }
+  .data-table.responsive-table tbody tr.ui-selected-row>td{
+    border-top:0!important;border-bottom:0!important;border-left:0!important;border-right:0!important;
+    background:transparent!important;
+  }
+  #skillTable .skill-db-table.responsive-table tbody tr.skill-db-row.is-open{
+    outline:2px solid var(--row-focus-line)!important;
+    outline-offset:-2px;
+    border-radius:10px 10px 0 0!important;
+  }
+  #skillTable .skill-db-table.responsive-table tbody tr.skill-db-row.is-open>td{border:0!important;background:transparent!important}
+  #skillTable .skill-db-row.is-open + .skill-detail-row>td{border-left:2px solid var(--row-focus-line)!important;border-right:2px solid var(--row-focus-line)!important;border-bottom:2px solid var(--row-focus-line)!important}
+}

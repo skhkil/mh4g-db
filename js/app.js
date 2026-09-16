@@ -1,5 +1,5 @@
-import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-skillxref5-armorlink";
-import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-skillxref5-armorlink";
+import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-rowfocus1";
+import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-rowfocus1";
 
 let data={skills:[],armors:[],armorSets:[],decorations:[],weapons:[],weaponSummary:[],melodies:[],items:[],itemReferenceIndex:{items:{}},skillReferenceIndex:{items:{},categories:[]},meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],monsterReferenceIndex:{items:{}},dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],siteInfo:{},meta:{}};
 let targets=[];
@@ -818,12 +818,13 @@ async function openSkillDetail(skillId,row){
   const table=row?.closest("table"); if(!table)return;
   const current=table.querySelector("tr.skill-db-row.is-open");
   const currentDetail=table.querySelector("tr.skill-detail-row:not([hidden])");
-  if(current&&current!==row){current.classList.remove("is-open");current.setAttribute("aria-expanded","false");}
+  if(current&&current!==row){current.classList.remove("is-open","ui-selected-row");current.setAttribute("aria-expanded","false");}
   if(currentDetail&&currentDetail.previousElementSibling!==row)currentDetail.hidden=true;
   const detail=row.nextElementSibling;
   if(!detail?.classList.contains("skill-detail-row"))return;
   const willOpen=!row.classList.contains("is-open");
-  if(!willOpen){row.classList.remove("is-open");row.setAttribute("aria-expanded","false");detail.hidden=true;return;}
+  if(!willOpen){row.classList.remove("is-open","ui-selected-row");row.setAttribute("aria-expanded","false");detail.hidden=true;return;}
+  selectUiRow(row);
   row.classList.add("is-open");row.setAttribute("aria-expanded","true");detail.hidden=false;
   const body=detail.querySelector(".skill-source-body");
   if(detail.dataset.loaded==="1")return;
@@ -1421,9 +1422,19 @@ function setupResponsiveNavColumns(){
   },{passive:true});
 }
 
+function clearUiSelectedRows(except=null){
+  document.querySelectorAll(".ui-selected-row").forEach(el=>{if(el!==except)el.classList.remove("ui-selected-row")});
+}
+function selectUiRow(row){
+  if(!row)return;
+  clearUiSelectedRows(row);
+  row.classList.add("ui-selected-row");
+}
 function bind(){
   document.addEventListener('click',e=>{
     closePickers();
+    const visualRow=e.target.closest?.('.data-table tbody tr:not(.skill-detail-row), .item-list-row, .monster-quest-row, .skill-source-row, .meal-method');
+    if(visualRow&&!visualRow.classList.contains('result-empty')&&!visualRow.closest('#skillTable tr.skill-db-row'))selectUiRow(visualRow);
     const skillItem=e.target.closest?.('#skillTable .inline-item-link[data-open-item]');
     if(skillItem){e.preventDefault();e.stopPropagation();void openItemByName(skillItem.dataset.openItem);return;}
     const skillBtn=e.target.closest?.('[data-open-skill]');
