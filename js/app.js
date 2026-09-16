@@ -1,5 +1,5 @@
-import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-weapontree4-mobilelayout";
-import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-weapontree4-mobilelayout";
+import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-weapontree5-mobilefix";
+import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-weapontree5-mobilefix";
 
 let data={skills:[],armors:[],armorSets:[],decorations:[],weapons:[],weaponSummary:[],melodies:[],items:[],itemReferenceIndex:{items:{}},skillReferenceIndex:{items:{},categories:[]},meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],monsterReferenceIndex:{items:{}},dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],questReferenceIndex:{quests:{}},siteInfo:{},meta:{}};
 let targets=[];
@@ -26,7 +26,7 @@ let restoringHistory=false;
 // Weapon tree is isolated from app startup. A failure here must never break global navigation.
 let weaponTreeIndex={items:{}};
 let weaponTreeIndexPromise=null;
-const WEAPON_TREE_VERSION="0.7.7-chat4-weapontree4-mobilelayout";
+const WEAPON_TREE_VERSION="0.7.7-chat4-weapontree5-mobilefix";
 async function ensureWeaponTreeIndex(){
   if(weaponTreeIndexPromise)return weaponTreeIndexPromise;
   weaponTreeIndexPromise=(async()=>{
@@ -796,8 +796,8 @@ function buildWeaponTreeDetail(w,ref){
   const meta=weaponTreeMeta(w.id),path=(ref.pathIds||[]).map(String).filter(id=>weaponById.has(id)),children=(meta.childIds||[]).map(String).filter(id=>weaponById.has(id)),finals=(ref.finalIds||[]).map(String).filter(id=>weaponById.has(id));
   const parent=meta.parentId&&weaponById.has(String(meta.parentId))?String(meta.parentId):null;
   const route=path.map((id,i)=>`${i?'<span class="weapon-route-arrow">→</span>':''}${weaponNavButton(id)}`).join('');
-  const next=children.length?children.map(id=>weaponNavButton(id)).join(' · '):'<span class="muted">최종 단계</span>';
-  const finalList=finals.length?finals.map(id=>weaponNavButton(id)).join(' · '):'<span class="muted">-</span>';
+  const next=children.length?`<div class="weapon-nav-list">${children.map(id=>weaponNavButton(id)).join('')}</div>`:'<span class="muted">최종 단계</span>';
+  const finalList=finals.length?`<div class="weapon-nav-list">${finals.map(id=>weaponNavButton(id)).join('')}</div>`:'<span class="muted">-</span>';
   const direct=(w.craft||[]).filter(c=>c.method==='생산');
   return `<div class="weapon-tree-detail"><div class="weapon-detail-grid"><section><h4>강화 경로</h4><div class="weapon-route">${route||weaponNavButton(w.id)}</div></section><section><h4>이전 강화</h4><div>${parent?weaponNavButton(parent):'<span class="muted">트리 시작</span>'}</div></section><section><h4>다음 강화</h4><div>${next}</div></section><section><h4>최종 강화</h4><div>${finalList}</div></section></div>${direct.length?`<div class="weapon-direct-create"><b>직접 생산</b> ${direct.map(c=>materialLinks(c.materials||'')).join(' / ')}</div>`:''}<details class="weapon-material-total" open><summary>현재 무기까지 누적 필요 소재 <b>${(ref.cumulativeMaterials||[]).length}종</b></summary>${weaponMaterialSummary(ref.cumulativeMaterials||[])}</details><div class="weapon-tree-source-note">트리 관계: ${esc(meta.match||'local')} · MH4U parent_id 기준${meta.mh4uId?` · #${meta.mh4uId}`:''}</div></div>`;
 }
