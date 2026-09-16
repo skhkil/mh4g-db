@@ -32,9 +32,16 @@ def val(v):
 def main():
     summaries=load('monster_summary.json')
     details={x.get('name'):x for x in load('monster_details.json')}
+    detail_alias={
+        '임계 브라키디오스':'맹폭 브라키디오스',
+        '혼돈의 고어·마가라':'혼돈에 신음하는 고어·마가라',
+        '밀라보레아스':'밀라보레아스 (흑룡)',
+        '밀라보레아스 (조룡)':'밀라보레아스 (선조룡)',
+    }
     audit=[]
     for mon in summaries:
-        parts=(details.get(mon.get('name')) or {}).get('parts') or []
+        detail_name=detail_alias.get(mon.get('name'), mon.get('name'))
+        parts=(details.get(detail_name) or {}).get('parts') or []
         elems=mon.get('elements') or {}
         part_best={}
         ranked=[]

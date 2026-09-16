@@ -2088,10 +2088,30 @@
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
     "nameEn": "Raging Brachydios",
     "hitzoneHighlights": {
-      "bestPart": "",
-      "topElementParts": [],
-      "partBestElements": {},
-      "partBestValues": {}
+      "bestPart": "뿔",
+      "topElementParts": [
+        "뿔",
+        "머리",
+        "몸통"
+      ],
+      "partBestElements": {
+        "뿔": "ice",
+        "머리": "ice",
+        "몸통": "ice",
+        "앞다리": "ice",
+        "뒷다리": "ice",
+        "꼬리": "ice",
+        "꼬리끝": "ice"
+      },
+      "partBestValues": {
+        "뿔": 25.0,
+        "머리": 20.0,
+        "몸통": 15.0,
+        "앞다리": 10.0,
+        "뒷다리": 10.0,
+        "꼬리": 15.0,
+        "꼬리끝": 5.0
+      }
     }
   },
   {
@@ -4626,10 +4646,32 @@
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
     "nameEn": "Chaotic Gore Magala",
     "hitzoneHighlights": {
-      "bestPart": "",
-      "topElementParts": [],
-      "partBestElements": {},
-      "partBestValues": {}
+      "bestPart": "머리",
+      "topElementParts": [
+        "머리",
+        "우날개다리",
+        "좌날개다리"
+      ],
+      "partBestElements": {
+        "머리": "dragon",
+        "몸통": "fire",
+        "날개": "fire",
+        "우날개다리": "fire",
+        "좌날개다리": "fire",
+        "앞다리": "fire",
+        "뒷다리": "fire",
+        "꼬리": "fire"
+      },
+      "partBestValues": {
+        "머리": 30.0,
+        "몸통": 10.0,
+        "날개": 15.0,
+        "우날개다리": 30.0,
+        "좌날개다리": 25.0,
+        "앞다리": 10.0,
+        "뒷다리": 10.0,
+        "꼬리": 10.0
+      }
     }
   },
   {
@@ -4673,10 +4715,34 @@
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
     "nameEn": "Fatalis",
     "hitzoneHighlights": {
-      "bestPart": "",
-      "topElementParts": [],
-      "partBestElements": {},
-      "partBestValues": {}
+      "bestPart": "머리",
+      "topElementParts": [
+        "머리",
+        "목",
+        "꼬리"
+      ],
+      "partBestElements": {
+        "머리": "dragon",
+        "목": "dragon",
+        "등": "dragon",
+        "날개": "dragon",
+        "가슴": "fire",
+        "배": "fire",
+        "팔": "fire",
+        "다리": "fire",
+        "꼬리": "dragon"
+      },
+      "partBestValues": {
+        "머리": 30.0,
+        "목": 25.0,
+        "등": 15.0,
+        "날개": 15.0,
+        "가슴": 15.0,
+        "배": 15.0,
+        "팔": 15.0,
+        "다리": 15.0,
+        "꼬리": 20.0
+      }
     }
   },
   {
@@ -4720,10 +4786,34 @@
     "source": "https://flashkiller.cafe24.com/mh4g/monster/meat_s.htm",
     "nameEn": "White Fatalis",
     "hitzoneHighlights": {
-      "bestPart": "",
-      "topElementParts": [],
-      "partBestElements": {},
-      "partBestValues": {}
+      "bestPart": "머리",
+      "topElementParts": [
+        "머리",
+        "목",
+        "등"
+      ],
+      "partBestElements": {
+        "머리": "dragon",
+        "목": "dragon",
+        "등": "dragon",
+        "날개": "dragon",
+        "가슴": "fire",
+        "배": "fire",
+        "팔": "fire",
+        "다리": "fire",
+        "꼬리": "dragon"
+      },
+      "partBestValues": {
+        "머리": 30.0,
+        "목": 25.0,
+        "등": 15.0,
+        "날개": 15.0,
+        "가슴": 15.0,
+        "배": 15.0,
+        "팔": 15.0,
+        "다리": 15.0,
+        "꼬리": 15.0
+      }
     }
   },
   {

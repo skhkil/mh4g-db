@@ -1239,9 +1239,49 @@
   },
   {
     "monster": "임계 브라키디오스",
-    "bestPart": "",
-    "topElementParts": [],
-    "parts": []
+    "bestPart": "뿔",
+    "topElementParts": [
+      "뿔",
+      "머리",
+      "몸통"
+    ],
+    "parts": [
+      {
+        "part": "뿔",
+        "element": "ice",
+        "value": 25.0
+      },
+      {
+        "part": "머리",
+        "element": "ice",
+        "value": 20.0
+      },
+      {
+        "part": "몸통",
+        "element": "ice",
+        "value": 15.0
+      },
+      {
+        "part": "앞다리",
+        "element": "ice",
+        "value": 10.0
+      },
+      {
+        "part": "뒷다리",
+        "element": "ice",
+        "value": 10.0
+      },
+      {
+        "part": "꼬리",
+        "element": "ice",
+        "value": 15.0
+      },
+      {
+        "part": "꼬리끝",
+        "element": "ice",
+        "value": 5.0
+      }
+    ]
   },
   {
     "monster": "이블조",
@@ -2857,21 +2897,166 @@
   },
   {
     "monster": "혼돈의 고어·마가라",
-    "bestPart": "",
-    "topElementParts": [],
-    "parts": []
+    "bestPart": "머리",
+    "topElementParts": [
+      "머리",
+      "우날개다리",
+      "좌날개다리"
+    ],
+    "parts": [
+      {
+        "part": "머리",
+        "element": "dragon",
+        "value": 30.0
+      },
+      {
+        "part": "몸통",
+        "element": "fire",
+        "value": 10.0
+      },
+      {
+        "part": "날개",
+        "element": "fire",
+        "value": 15.0
+      },
+      {
+        "part": "우날개다리",
+        "element": "fire",
+        "value": 30.0
+      },
+      {
+        "part": "좌날개다리",
+        "element": "fire",
+        "value": 25.0
+      },
+      {
+        "part": "앞다리",
+        "element": "fire",
+        "value": 10.0
+      },
+      {
+        "part": "뒷다리",
+        "element": "fire",
+        "value": 10.0
+      },
+      {
+        "part": "꼬리",
+        "element": "fire",
+        "value": 10.0
+      }
+    ]
   },
   {
     "monster": "밀라보레아스",
-    "bestPart": "",
-    "topElementParts": [],
-    "parts": []
+    "bestPart": "머리",
+    "topElementParts": [
+      "머리",
+      "목",
+      "꼬리"
+    ],
+    "parts": [
+      {
+        "part": "머리",
+        "element": "dragon",
+        "value": 30.0
+      },
+      {
+        "part": "목",
+        "element": "dragon",
+        "value": 25.0
+      },
+      {
+        "part": "등",
+        "element": "dragon",
+        "value": 15.0
+      },
+      {
+        "part": "날개",
+        "element": "dragon",
+        "value": 15.0
+      },
+      {
+        "part": "가슴",
+        "element": "fire",
+        "value": 15.0
+      },
+      {
+        "part": "배",
+        "element": "fire",
+        "value": 15.0
+      },
+      {
+        "part": "팔",
+        "element": "fire",
+        "value": 15.0
+      },
+      {
+        "part": "다리",
+        "element": "fire",
+        "value": 15.0
+      },
+      {
+        "part": "꼬리",
+        "element": "dragon",
+        "value": 20.0
+      }
+    ]
   },
   {
     "monster": "밀라보레아스 (조룡)",
-    "bestPart": "",
-    "topElementParts": [],
-    "parts": []
+    "bestPart": "머리",
+    "topElementParts": [
+      "머리",
+      "목",
+      "등"
+    ],
+    "parts": [
+      {
+        "part": "머리",
+        "element": "dragon",
+        "value": 30.0
+      },
+      {
+        "part": "목",
+        "element": "dragon",
+        "value": 25.0
+      },
+      {
+        "part": "등",
+        "element": "dragon",
+        "value": 15.0
+      },
+      {
+        "part": "날개",
+        "element": "dragon",
+        "value": 15.0
+      },
+      {
+        "part": "가슴",
+        "element": "fire",
+        "value": 15.0
+      },
+      {
+        "part": "배",
+        "element": "fire",
+        "value": 15.0
+      },
+      {
+        "part": "팔",
+        "element": "fire",
+        "value": 15.0
+      },
+      {
+        "part": "다리",
+        "element": "fire",
+        "value": 15.0
+      },
+      {
+        "part": "꼬리",
+        "element": "dragon",
+        "value": 15.0
+      }
+    ]
   },
   {
     "monster": "밀라보레아스 (홍룡)",
