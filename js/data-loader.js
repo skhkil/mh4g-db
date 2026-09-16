@@ -1,4 +1,4 @@
-const DATA_VERSION = "0.7.7-chat4-mobilejump1";
+const DATA_VERSION = "0.7.7-chat4-weapontree1";
 
 const FULL_FILES = {
   skills:"./data/skills.json",
@@ -7,6 +7,7 @@ const FULL_FILES = {
   decorations:"./data/decorations.json",
   weapons:"./data/weapons.json",
   weaponSummary:"./data/weapon_summary.json",
+  weaponTreeIndex:"./data/weapon_tree_index.json",
   melodies:"./data/melodies.json",
   items:"./data/items.json",
   itemReferenceIndex:"./data/item_reference_index.json",
@@ -77,6 +78,14 @@ export function loadFullData(keys=FULL_DATA_KEYS){
   return loadMap(FULL_FILES,keys);
 }
 
+
+export async function loadWeaponReference(weaponId){
+  const key=String(weaponId||"").trim();
+  if(!key) return {id:key,pathIds:[],finalIds:[],cumulativeMaterials:[]};
+  const x=await fetchJson(`weaponRef:${key}`,`./data/weapon_refs/${encodeURIComponent(key)}.json`);
+  return (x&&typeof x==="object"&&!Array.isArray(x))?x:{id:key,pathIds:[],finalIds:[],cumulativeMaterials:[]};
+}
+
 export async function loadItemReference(itemId){
   const key=String(itemId||"").trim();
   if(!key) return {id:key,acquire:[],uses:[]};
@@ -110,7 +119,7 @@ export function loadData(){
 export function classifyImported(name,json){
   const lower=name.toLowerCase();
   const rules=[
-    ["armor_sets","armorSets"],["armor","armors"],["decor","decorations"],["weapon_summary","weaponSummary"],
+    ["armor_sets","armorSets"],["armor","armors"],["decor","decorations"],["weapon_tree_index","weaponTreeIndex"],["weapon_summary","weaponSummary"],
     ["weapon","weapons"],["skill_reference_index","skillReferenceIndex"],["skill","skills"],["item_reference_index","itemReferenceIndex"],["item","items"],["meal","meals"],
     ["monster_summary","monsterSummary"],["monster_details","monsterDetails"],["monster_rewards","monsterRewards"],["monster_reference_index","monsterReferenceIndex"],
     ["dragon_exchange","dragonExchange"],["dragon_sell","dragonSell"],["dragon_increase","dragonIncrease"],

@@ -1,0 +1,55 @@
+{
+  "weapons": 2314,
+  "matchedExact": 2268,
+  "matchedNumeric": 39,
+  "visualFallback": 5,
+  "unmatchedRoot": 2,
+  "mappedToMh4u": 2307,
+  "unmapped": [
+    {
+      "id": "weapon_73dc0be2a3e4",
+      "type": "헤비보우건",
+      "name": "황포 다라그롭스",
+      "nameEn": null
+    },
+    {
+      "id": "weapon_86e6e2f1cfc4",
+      "type": "헤비보우건",
+      "name": "사황포 오뷰마듈라",
+      "nameEn": null
+    },
+    {
+      "id": "weapon_a1fdd89e3de9",
+      "type": "활",
+      "name": "진�낭아궁【멸죄】",
+      "nameEn": null
+    },
+    {
+      "id": "weapon_a6f6d2201b01",
+      "type": "쌍검",
+      "name": "조스클리버+",
+      "nameEn": null
+    },
+    {
+      "id": "weapon_e3cad963a306",
+      "type": "쌍검",
+      "name": "가노스마체테",
+      "nameEn": null
+    },
+    {
+      "id": "weapon_f4b48c6bf940",
+      "type": "건랜스",
+      "name": "창귀총창포",
+      "nameEn": null
+    },
+    {
+      "id": "weapon_b2d8ff38e034",
+      "type": "건랜스",
+      "name": "붕총창 파시캄루바스",
+      "nameEn": null
+    }
+  ],
+  "brokenParentRefs": 0,
+  "emptyPaths": 0,
+  "noFinalPath": 0
+}

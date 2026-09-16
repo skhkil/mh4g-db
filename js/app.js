@@ -1,7 +1,7 @@
-import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-mobilejump1";
-import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-mobilejump1";
+import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,loadWeaponReference,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-weapontree1";
+import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-weapontree1";
 
-let data={skills:[],armors:[],armorSets:[],decorations:[],weapons:[],weaponSummary:[],melodies:[],items:[],itemReferenceIndex:{items:{}},skillReferenceIndex:{items:{},categories:[]},meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],monsterReferenceIndex:{items:{}},dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],questReferenceIndex:{quests:{}},siteInfo:{},meta:{}};
+let data={skills:[],armors:[],armorSets:[],decorations:[],weapons:[],weaponSummary:[],weaponTreeIndex:{items:{}},melodies:[],items:[],itemReferenceIndex:{items:{}},skillReferenceIndex:{items:{},categories:[]},meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],monsterReferenceIndex:{items:{}},dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],questReferenceIndex:{quests:{}},siteInfo:{},meta:{}};
 let targets=[];
 let currentPage="simulator";
 const BUILD_STORAGE_KEY="mh4g-builds-v1";
@@ -759,9 +759,58 @@ function weaponCell(w,col){
   return f?f.render(w):"-";
 }
 function weaponRow(w,cols){
-  return `<tr>${cols.map(col=>`<td class="${col.key==="name"?"weapon-name-cell ":""}${col.key==="slots"?"slots ":""}${col.key==="sharpness"?"sharpness-cell ":""}${esc(col.className||"")}">${weaponCell(w,col)}</td>`).join("")}</tr>`;
+  return `<tr class="weapon-db-row" data-weapon-row="${esc(w.id)}" tabindex="0" aria-expanded="false">${cols.map(col=>`<td class="${col.key==="name"?"weapon-name-cell ":""}${col.key==="slots"?"slots ":""}${col.key==="sharpness"?"sharpness-cell ":""}${esc(col.className||"")}">${weaponCell(w,col)}</td>`).join("")}</tr>`;
+}
+function weaponTreeMeta(id){return data.weaponTreeIndex?.items?.[String(id)]||{};}
+function weaponNavButton(id,label){const w=weaponById.get(id);return w?`<button type="button" class="xref-link weapon-tree-nav" data-open-weapon="${esc(id)}">${esc(label||w.name)}</button>`:"-";}
+function weaponMaterialSummary(list=[]){return list.length?`<div class="weapon-total-materials">${list.map(x=>`<span>${itemLink(x.name)} <b>×${Number(x.count)||0}</b></span>`).join("")}</div>`:'<span class="muted">집계 가능한 소재 없음</span>';}
+function buildWeaponTreeDetail(w,ref){
+  const meta=weaponTreeMeta(w.id),path=(ref.pathIds||[]).filter(id=>weaponById.has(id)),children=(meta.childIds||[]).filter(id=>weaponById.has(id)),finals=(ref.finalIds||[]).filter(id=>weaponById.has(id));
+  const parent=meta.parentId&&weaponById.has(meta.parentId)?meta.parentId:null;
+  const route=path.map((id,i)=>`${i?'<span class="weapon-route-arrow">→</span>':''}${weaponNavButton(id)}`).join('');
+  const next=children.length?children.map(id=>weaponNavButton(id)).join(' · '):'<span class="muted">최종 단계</span>';
+  const finalList=finals.length?finals.map(id=>weaponNavButton(id)).join(' · '):'<span class="muted">-</span>';
+  const direct=(w.craft||[]).filter(c=>c.method==='생산');
+  return `<div class="weapon-tree-detail">
+    <div class="weapon-detail-grid">
+      <section><h4>강화 경로</h4><div class="weapon-route">${route||weaponNavButton(w.id)}</div></section>
+      <section><h4>이전 강화</h4><div>${parent?weaponNavButton(parent):'<span class="muted">트리 시작</span>'}</div></section>
+      <section><h4>다음 강화</h4><div>${next}</div></section>
+      <section><h4>최종 강화</h4><div>${finalList}</div></section>
+    </div>
+    ${direct.length?`<div class="weapon-direct-create"><b>직접 생산</b> ${direct.map(c=>materialLinks(c.materials||'')).join(' / ')}</div>`:''}
+    <details class="weapon-material-total" open><summary>현재 무기까지 누적 필요 소재 <b>${(ref.cumulativeMaterials||[]).length}종</b></summary>${weaponMaterialSummary(ref.cumulativeMaterials||[])}</details>
+    <div class="weapon-tree-source-note">트리 관계: ${esc(meta.match||'local')} · MH4U parent_id 기준${meta.mh4uId?` · #${meta.mh4uId}`:''}</div>
+  </div>`;
+}
+let openWeaponRow=null,openWeaponDetail=null;
+function closeWeaponDetail(){
+  if(openWeaponRow){openWeaponRow.classList.remove('is-open');openWeaponRow.setAttribute('aria-expanded','false');}
+  openWeaponDetail?.remove();openWeaponRow=null;openWeaponDetail=null;
+}
+async function openWeaponDetail(row){
+  if(!row)return; const id=row.dataset.weaponRow,w=weaponById.get(id);if(!w)return;
+  if(openWeaponRow===row){closeWeaponDetail();return;} closeWeaponDetail();
+  const tr=document.createElement('tr');tr.className='weapon-detail-row';
+  const td=document.createElement('td');td.colSpan=row.children.length;td.innerHTML='<div class="weapon-tree-detail"><span class="muted">트리 정보를 불러오는 중…</span></div>';tr.appendChild(td);row.after(tr);
+  row.classList.add('is-open');row.setAttribute('aria-expanded','true');openWeaponRow=row;openWeaponDetail=tr;
+  const ref=await loadWeaponReference(id);
+  if(openWeaponRow!==row||!tr.isConnected)return;td.innerHTML=buildWeaponTreeDetail(w,ref);
+}
+async function navigateWeapon(id){
+  const w=weaponById.get(String(id||''));if(!w)return;
+  if(currentPage!=="weapon")await openPage("weapon");
+  if($("#weaponTypeFilter"))$("#weaponTypeFilter").value=w.weaponType;
+  renderWeaponTreeFilter();
+  if($("#weaponTreeFilter"))$("#weaponTreeFilter").value=w.tree||"all";
+  if($("#weaponElementFilter"))$("#weaponElementFilter").value="all";
+  if($("#weaponSort"))$("#weaponSort").value="tree";
+  if($("#weaponSearch"))$("#weaponSearch").value="";
+  renderWeaponTrees();
+  const row=document.querySelector(`[data-weapon-row="${CSS.escape(w.id)}"]`);if(row){await openWeaponDetail(row);row.scrollIntoView({block:'center',behavior:'auto'});}
 }
 function renderWeaponTrees(){
+  closeWeaponDetail();
   const q=$("#weaponSearch").value.trim().toLowerCase(),tree=$("#weaponTreeFilter").value;
   const element=$("#weaponElementFilter")?.value||"all",sortMode=$("#weaponSort")?.value||"tree";
   const cmp=weaponComparator(sortMode);
@@ -1364,7 +1413,7 @@ function dataKeysForPage(page){
   if(page==="source")return ["siteInfo"];
   if(page==="armor")return ["armors"];
   if(page==="armor-set")return ["armorSets"];
-  if(page==="weapon")return ["weapons","items"];
+  if(page==="weapon")return ["weapons","items","weaponTreeIndex"];
   if(page==="weapon-summary")return ["weaponSummary"];
   if(page==="decoration")return ["decorations","items","itemReferenceIndex","skillReferenceIndex"];
   if(page==="skill")return ["items","skillReferenceIndex"];
@@ -1527,6 +1576,10 @@ function bind(){
     closePickers();
     const visualRow=e.target.closest?.('.data-table tbody tr:not(.skill-detail-row), .item-list-row, .monster-quest-row, .skill-source-row, .meal-method');
     if(rowFocusQuery.matches&&visualRow&&!visualRow.classList.contains('result-empty')&&!visualRow.closest('#skillTable tr.skill-db-row'))selectUiRow(visualRow);
+    const weaponNav=e.target.closest?.('[data-open-weapon]');
+    if(weaponNav){e.preventDefault();e.stopPropagation();replaceCurrentHistoryState();void navigateWeapon(weaponNav.dataset.openWeapon).then(pushCurrentHistoryState);return;}
+    const weaponRow=e.target.closest?.('#weaponTrees tr.weapon-db-row[data-weapon-row]');
+    if(weaponRow&&!e.target.closest('button,a,input,select,details,summary')){e.preventDefault();void openWeaponDetail(weaponRow);return;}
     const skillItem=e.target.closest?.('#skillTable .inline-item-link[data-open-item]');
     if(skillItem){e.preventDefault();e.stopPropagation();void openItemByName(skillItem.dataset.openItem);return;}
     const skillBtn=e.target.closest?.('[data-open-skill]');
@@ -1572,7 +1625,7 @@ function bind(){
     const close=e.target.closest?.('#itemTable .item-detail-close');
     if(close){e.preventDefault();removeItemDetailRow();selectedItemId="";replaceCurrentHistoryState();return;}
   });
-  document.addEventListener("keydown",e=>{const row=e.target.closest?.('#skillTable tr.skill-db-row[data-skill-row]');if(row&&(e.key==="Enter"||e.key===" ")){e.preventDefault();void openSkillDetail(row.dataset.skillRow,row);}});
+  document.addEventListener("keydown",e=>{const wrow=e.target.closest?.('#weaponTrees tr.weapon-db-row[data-weapon-row]');if(wrow&&(e.key==="Enter"||e.key===" ")){e.preventDefault();void openWeaponDetail(wrow);return;}const row=e.target.closest?.('#skillTable tr.skill-db-row[data-skill-row]');if(row&&(e.key==="Enter"||e.key===" ")){e.preventDefault();void openSkillDetail(row.dataset.skillRow,row);}});
   document.addEventListener("toggle",e=>{
     const d=e.target;
     if(d?.matches?.("#itemTable details.xref-lazy"))void hydrateXrefGroup(d);
