@@ -1,0 +1,1523 @@
+{
+  "version": "0.7.7",
+  "categories": [
+    "공격",
+    "방어·생존",
+    "원거리",
+    "속성·상태",
+    "유틸·행동",
+    "채집·보수",
+    "동반자"
+  ],
+  "items": {
+    "skill_da9fb11eb79b": {
+      "name": "KO",
+      "category": "공격",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 59,
+      "file": "skill_da9fb11eb79b.json"
+    },
+    "skill_fd6b9f4f574f": {
+      "name": "가드강화",
+      "category": "방어·생존",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 74,
+      "file": "skill_fd6b9f4f574f.json"
+    },
+    "skill_9c891ceddf5d": {
+      "name": "가드성능",
+      "category": "방어·생존",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 81,
+      "file": "skill_9c891ceddf5d.json"
+    },
+    "skill_bcf68a1ff0a1": {
+      "name": "가호",
+      "category": "방어·생존",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 120,
+      "file": "skill_bcf68a1ff0a1.json"
+    },
+    "skill_3ab130560c8a": {
+      "name": "강격",
+      "category": "공격",
+      "composite": true,
+      "components": [
+        "약점특효",
+        "통찰력+2"
+      ],
+      "hasDecoration": false,
+      "decorationCount": 0,
+      "armorCount": 24,
+      "file": "skill_3ab130560c8a.json"
+    },
+    "skill_5c22c482d71c": {
+      "name": "강격병추가",
+      "category": "원거리",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 0,
+      "file": "skill_5c22c482d71c.json"
+    },
+    "skill_43cd18168b4b": {
+      "name": "강완",
+      "category": "공격",
+      "composite": true,
+      "components": [
+        "KO술",
+        "스태미나강탈"
+      ],
+      "hasDecoration": false,
+      "decorationCount": 0,
+      "armorCount": 14,
+      "file": "skill_43cd18168b4b.json"
+    },
+    "skill_75d2b8654cf4": {
+      "name": "강탈무효",
+      "category": "유틸·행동",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 1,
+      "armorCount": 2,
+      "file": "skill_75d2b8654cf4.json"
+    },
+    "skill_28dc80245370": {
+      "name": "건강제일",
+      "category": "유틸·행동",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 51,
+      "file": "skill_28dc80245370.json"
+    },
+    "skill_a3c4d7818b03": {
+      "name": "검술",
+      "category": "공격",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 70,
+      "file": "skill_a3c4d7818b03.json"
+    },
+    "skill_ed1944192c5e": {
+      "name": "결벽",
+      "category": "공격",
+      "composite": true,
+      "components": [
+        "회피거리UP",
+        "풀차지"
+      ],
+      "hasDecoration": false,
+      "decorationCount": 0,
+      "armorCount": 30,
+      "file": "skill_ed1944192c5e.json"
+    },
+    "skill_6365d7eb75b5": {
+      "name": "고속설치",
+      "category": "유틸·행동",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 1,
+      "armorCount": 40,
+      "file": "skill_6365d7eb75b5.json"
+    },
+    "skill_55748660f9ee": {
+      "name": "고속수집",
+      "category": "채집·보수",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 1,
+      "armorCount": 17,
+      "file": "skill_55748660f9ee.json"
+    },
+    "skill_2a9c189a93d7": {
+      "name": "공격",
+      "category": "공격",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 3,
+      "armorCount": 290,
+      "file": "skill_2a9c189a93d7.json"
+    },
+    "skill_9beb5b0d63dc": {
+      "name": "관찰안",
+      "category": "채집·보수",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 1,
+      "armorCount": 75,
+      "file": "skill_9beb5b0d63dc.json"
+    },
+    "skill_36177c02fa41": {
+      "name": "관통탄강화",
+      "category": "원거리",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 87,
+      "file": "skill_36177c02fa41.json"
+    },
+    "skill_336a703d8409": {
+      "name": "관통탄추가",
+      "category": "원거리",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 1,
+      "armorCount": 5,
+      "file": "skill_336a703d8409.json"
+    },
+    "skill_f743b97156ed": {
+      "name": "광격내성",
+      "category": "방어·생존",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 71,
+      "file": "skill_f743b97156ed.json"
+    },
+    "skill_411e538f7c2f": {
+      "name": "광역",
+      "category": "유틸·행동",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 118,
+      "file": "skill_411e538f7c2f.json"
+    },
+    "skill_0b8715ba4a76": {
+      "name": "근성",
+      "category": "방어·생존",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 37,
+      "file": "skill_0b8715ba4a76.json"
+    },
+    "skill_bf24a5d55721": {
+      "name": "기력회복",
+      "category": "유틸·행동",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 64,
+      "file": "skill_bf24a5d55721.json"
+    },
+    "skill_8e9aa57c53f3": {
+      "name": "기원",
+      "category": "유틸·행동",
+      "composite": true,
+      "components": [
+        "체력회복량UP",
+        "정령의 가호"
+      ],
+      "hasDecoration": false,
+      "decorationCount": 0,
+      "armorCount": 4,
+      "file": "skill_8e9aa57c53f3.json"
+    },
+    "skill_8d7ad8b7839d": {
+      "name": "기절",
+      "category": "방어·생존",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 67,
+      "file": "skill_8d7ad8b7839d.json"
+    },
+    "skill_640d40323052": {
+      "name": "기척",
+      "category": "유틸·행동",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 1,
+      "armorCount": 10,
+      "file": "skill_640d40323052.json"
+    },
+    "skill_63c2bbb3a506": {
+      "name": "납도",
+      "category": "유틸·행동",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 129,
+      "file": "skill_63c2bbb3a506.json"
+    },
+    "skill_4c363fb8e85d": {
+      "name": "내니내설",
+      "category": "방어·생존",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 67,
+      "file": "skill_4c363fb8e85d.json"
+    },
+    "skill_32348dadc980": {
+      "name": "내서",
+      "category": "방어·생존",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 1,
+      "armorCount": 95,
+      "file": "skill_32348dadc980.json"
+    },
+    "skill_5e95610da13d": {
+      "name": "내점",
+      "category": "방어·생존",
+      "composite": false,
+      "components": [],
+      "hasDecoration": false,
+      "decorationCount": 0,
+      "armorCount": 6,
+      "file": "skill_5e95610da13d.json"
+    },
+    "skill_65856e9fd388": {
+      "name": "내진",
+      "category": "방어·생존",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 51,
+      "file": "skill_65856e9fd388.json"
+    },
+    "skill_d419d4fb59a3": {
+      "name": "내한",
+      "category": "방어·생존",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 1,
+      "armorCount": 50,
+      "file": "skill_d419d4fb59a3.json"
+    },
+    "skill_25c2859f7595": {
+      "name": "달인",
+      "category": "공격",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 3,
+      "armorCount": 284,
+      "file": "skill_25c2859f7595.json"
+    },
+    "skill_0a0d7a1a0dde": {
+      "name": "도공",
+      "category": "공격",
+      "composite": true,
+      "components": [
+        "예리도레벨+1",
+        "공격력UP【대】"
+      ],
+      "hasDecoration": false,
+      "decorationCount": 0,
+      "armorCount": 21,
+      "file": "skill_0a0d7a1a0dde.json"
+    },
+    "skill_37a4e4eddec0": {
+      "name": "독",
+      "category": "방어·생존",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 106,
+      "file": "skill_37a4e4eddec0.json"
+    },
+    "skill_e6862626576e": {
+      "name": "독병추가",
+      "category": "원거리",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 1,
+      "armorCount": 0,
+      "file": "skill_e6862626576e.json"
+    },
+    "skill_38ca304494f3": {
+      "name": "마비",
+      "category": "방어·생존",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 85,
+      "file": "skill_38ca304494f3.json"
+    },
+    "skill_596acdbdc84d": {
+      "name": "마비병추가",
+      "category": "원거리",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 0,
+      "file": "skill_596acdbdc84d.json"
+    },
+    "skill_810ef03516ac": {
+      "name": "먹보",
+      "category": "유틸·행동",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 1,
+      "armorCount": 76,
+      "file": "skill_810ef03516ac.json"
+    },
+    "skill_ca1537907883": {
+      "name": "멸기공격",
+      "category": "공격",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 51,
+      "file": "skill_ca1537907883.json"
+    },
+    "skill_8b8905a42a60": {
+      "name": "멸기병추가",
+      "category": "원거리",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 1,
+      "armorCount": 0,
+      "file": "skill_8b8905a42a60.json"
+    },
+    "skill_5d84527a2efe": {
+      "name": "물내성",
+      "category": "방어·생존",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 0,
+      "file": "skill_5d84527a2efe.json"
+    },
+    "skill_96039668e096": {
+      "name": "물속성공격",
+      "category": "속성·상태",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 108,
+      "file": "skill_96039668e096.json"
+    },
+    "skill_d83820844b4d": {
+      "name": "반동",
+      "category": "원거리",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 109,
+      "file": "skill_d83820844b4d.json"
+    },
+    "skill_dbf4116422c9": {
+      "name": "발도기절",
+      "category": "공격",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 32,
+      "file": "skill_dbf4116422c9.json"
+    },
+    "skill_89c345412fe4": {
+      "name": "발도치명타",
+      "category": "공격",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 43,
+      "file": "skill_89c345412fe4.json"
+    },
+    "skill_2a87c14e4abc": {
+      "name": "방어",
+      "category": "방어·생존",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 3,
+      "armorCount": 147,
+      "file": "skill_2a87c14e4abc.json"
+    },
+    "skill_21bbc3dfb2f7": {
+      "name": "버섯섭취",
+      "category": "유틸·행동",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 1,
+      "armorCount": 21,
+      "file": "skill_21bbc3dfb2f7.json"
+    },
+    "skill_fdb5eae206c1": {
+      "name": "번개내성",
+      "category": "방어·생존",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 0,
+      "file": "skill_fdb5eae206c1.json"
+    },
+    "skill_e2bd81d7e74c": {
+      "name": "번개속공격",
+      "category": "속성·상태",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 80,
+      "file": "skill_e2bd81d7e74c.json"
+    },
+    "skill_a6713dfa141b": {
+      "name": "벌꿀",
+      "category": "채집·보수",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 32,
+      "file": "skill_a6713dfa141b.json"
+    },
+    "skill_7717a3d7e05e": {
+      "name": "베기",
+      "category": "공격",
+      "composite": true,
+      "components": [
+        "발도술【힘】",
+        "납도술"
+      ],
+      "hasDecoration": false,
+      "decorationCount": 0,
+      "armorCount": 9,
+      "file": "skill_7717a3d7e05e.json"
+    },
+    "skill_9c165ef0be95": {
+      "name": "변덕",
+      "category": "채집·보수",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 1,
+      "armorCount": 35,
+      "file": "skill_9c165ef0be95.json"
+    },
+    "skill_2ba74f432225": {
+      "name": "북진낫토류",
+      "category": "공격",
+      "composite": true,
+      "components": [
+        "불굴",
+        "러너",
+        "스태미나강탈"
+      ],
+      "hasDecoration": false,
+      "decorationCount": 0,
+      "armorCount": 8,
+      "file": "skill_2ba74f432225.json"
+    },
+    "skill_41614695fa79": {
+      "name": "분노",
+      "category": "공격",
+      "composite": true,
+      "components": [
+        "근성",
+        "재난대처능력+2"
+      ],
+      "hasDecoration": false,
+      "decorationCount": 0,
+      "armorCount": 52,
+      "file": "skill_41614695fa79.json"
+    },
+    "skill_d565a104e42c": {
+      "name": "불내성",
+      "category": "방어·생존",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 26,
+      "file": "skill_d565a104e42c.json"
+    },
+    "skill_b483bb71c31d": {
+      "name": "불속성공격",
+      "category": "속성·상태",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 158,
+      "file": "skill_b483bb71c31d.json"
+    },
+    "skill_c6c048ecdc6b": {
+      "name": "비밀공작",
+      "category": "유틸·행동",
+      "composite": true,
+      "components": [
+        "장전수UP",
+        "조합성공률+20%",
+        "은밀"
+      ],
+      "hasDecoration": false,
+      "decorationCount": 0,
+      "armorCount": 10,
+      "file": "skill_c6c048ecdc6b.json"
+    },
+    "skill_8245ec7f462a": {
+      "name": "비전",
+      "category": "유틸·행동",
+      "composite": true,
+      "components": [
+        "각성",
+        "속성공격강화",
+        "상태이상공격+1"
+      ],
+      "hasDecoration": false,
+      "decorationCount": 0,
+      "armorCount": 15,
+      "file": "skill_8245ec7f462a.json"
+    },
+    "skill_c7afd72b9998": {
+      "name": "사격법",
+      "category": "원거리",
+      "composite": false,
+      "components": [],
+      "hasDecoration": false,
+      "decorationCount": 0,
+      "armorCount": 13,
+      "file": "skill_c7afd72b9998.json"
+    },
+    "skill_3745b2a425cd": {
+      "name": "사수",
+      "category": "원거리",
+      "composite": true,
+      "components": [
+        "통상탄�연사살UP",
+        "산탄�확산살UP",
+        "관통탄�관통살UP"
+      ],
+      "hasDecoration": false,
+      "decorationCount": 0,
+      "armorCount": 21,
+      "file": "skill_3745b2a425cd.json"
+    },
+    "skill_abda96911e59": {
+      "name": "산탄강화",
+      "category": "원거리",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 22,
+      "file": "skill_abda96911e59.json"
+    },
+    "skill_b574c850f7d0": {
+      "name": "산탄추가",
+      "category": "원거리",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 1,
+      "armorCount": 8,
+      "file": "skill_b574c850f7d0.json"
+    },
+    "skill_82438dbfdbd2": {
+      "name": "상태내성",
+      "category": "방어·생존",
+      "composite": true,
+      "components": [
+        "독무효",
+        "기절무효",
+        "마비무효",
+        "수면무효"
+      ],
+      "hasDecoration": false,
+      "decorationCount": 0,
+      "armorCount": 14,
+      "file": "skill_82438dbfdbd2.json"
+    },
+    "skill_d6ea8f6b4907": {
+      "name": "세균학",
+      "category": "방어·생존",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 95,
+      "file": "skill_d6ea8f6b4907.json"
+    },
+    "skill_77ad65f34cd9": {
+      "name": "속사",
+      "category": "원거리",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 50,
+      "file": "skill_77ad65f34cd9.json"
+    },
+    "skill_1826606ac13c": {
+      "name": "속성공격",
+      "category": "속성·상태",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 100,
+      "file": "skill_1826606ac13c.json"
+    },
+    "skill_28cbe0a71742": {
+      "name": "속성내성",
+      "category": "방어·생존",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 98,
+      "file": "skill_28cbe0a71742.json"
+    },
+    "skill_1ae21921a72f": {
+      "name": "속성치명타",
+      "category": "공격",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 26,
+      "file": "skill_1ae21921a72f.json"
+    },
+    "skill_c9fb5f168064": {
+      "name": "속성해방",
+      "category": "속성·상태",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 3,
+      "armorCount": 202,
+      "file": "skill_c9fb5f168064.json"
+    },
+    "skill_56d47db4267b": {
+      "name": "수면",
+      "category": "방어·생존",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 26,
+      "file": "skill_56d47db4267b.json"
+    },
+    "skill_05675302032e": {
+      "name": "수면병추가",
+      "category": "원거리",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 1,
+      "armorCount": 0,
+      "file": "skill_05675302032e.json"
+    },
+    "skill_410c93e16f86": {
+      "name": "스태미나",
+      "category": "유틸·행동",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 104,
+      "file": "skill_410c93e16f86.json"
+    },
+    "skill_9914f3bb006d": {
+      "name": "식사",
+      "category": "유틸·행동",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 140,
+      "file": "skill_9914f3bb006d.json"
+    },
+    "skill_168a39d9eb1b": {
+      "name": "식욕",
+      "category": "유틸·행동",
+      "composite": true,
+      "components": [
+        "흡입+2",
+        "고기마니아",
+        "버섯좋아"
+      ],
+      "hasDecoration": false,
+      "decorationCount": 0,
+      "armorCount": 10,
+      "file": "skill_168a39d9eb1b.json"
+    },
+    "skill_e234157c2fe5": {
+      "name": "실드",
+      "category": "방어·생존",
+      "composite": true,
+      "components": [
+        "가드강화",
+        "스태미나급속회복"
+      ],
+      "hasDecoration": false,
+      "decorationCount": 0,
+      "armorCount": 11,
+      "file": "skill_e234157c2fe5.json"
+    },
+    "skill_6443ad676ced": {
+      "name": "얼음내성",
+      "category": "방어·생존",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 0,
+      "file": "skill_6443ad676ced.json"
+    },
+    "skill_d2eae745f55d": {
+      "name": "얼음속공격",
+      "category": "속성·상태",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 70,
+      "file": "skill_d2eae745f55d.json"
+    },
+    "skill_9a0f4d876162": {
+      "name": "역경",
+      "category": "공격",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 12,
+      "file": "skill_9a0f4d876162.json"
+    },
+    "skill_4f483f174bc9": {
+      "name": "연린",
+      "category": "공격",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 1,
+      "armorCount": 24,
+      "file": "skill_4f483f174bc9.json"
+    },
+    "skill_e43cf9f6c27e": {
+      "name": "연마사",
+      "category": "유틸·행동",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 1,
+      "armorCount": 37,
+      "file": "skill_e43cf9f6c27e.json"
+    },
+    "skill_03a65ac27189": {
+      "name": "열상",
+      "category": "방어·생존",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 1,
+      "armorCount": 18,
+      "file": "skill_03a65ac27189.json"
+    },
+    "skill_82680c9bf0f3": {
+      "name": "예리도",
+      "category": "공격",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 93,
+      "file": "skill_82680c9bf0f3.json"
+    },
+    "skill_0669fcda6735": {
+      "name": "완강",
+      "category": "방어·생존",
+      "composite": true,
+      "components": [
+        "방어력UP【대】",
+        "철면피"
+      ],
+      "hasDecoration": false,
+      "decorationCount": 0,
+      "armorCount": 33,
+      "file": "skill_0669fcda6735.json"
+    },
+    "skill_77b3da4beed3": {
+      "name": "요지부동",
+      "category": "방어·생존",
+      "composite": true,
+      "components": [
+        "귀마개",
+        "풍압【소】무효"
+      ],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 50,
+      "file": "skill_77b3da4beed3.json"
+    },
+    "skill_3bdc830a2d1a": {
+      "name": "용내성",
+      "category": "방어·생존",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 0,
+      "file": "skill_3bdc830a2d1a.json"
+    },
+    "skill_c21e79dfed09": {
+      "name": "용속성공격",
+      "category": "속성·상태",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 60,
+      "file": "skill_c21e79dfed09.json"
+    },
+    "skill_a17db9b54aef": {
+      "name": "운반",
+      "category": "유틸·행동",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 1,
+      "armorCount": 4,
+      "file": "skill_a17db9b54aef.json"
+    },
+    "skill_bbe11654094a": {
+      "name": "운수",
+      "category": "채집·보수",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 109,
+      "file": "skill_bbe11654094a.json"
+    },
+    "skill_725792be8c4d": {
+      "name": "유탄추가",
+      "category": "원거리",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 1,
+      "armorCount": 16,
+      "file": "skill_725792be8c4d.json"
+    },
+    "skill_a9c0c630697b": {
+      "name": "육식",
+      "category": "채집·보수",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 35,
+      "file": "skill_a9c0c630697b.json"
+    },
+    "skill_eb815d46e71f": {
+      "name": "일심",
+      "category": "유틸·행동",
+      "composite": true,
+      "components": [
+        "집중",
+        "고기마니아"
+      ],
+      "hasDecoration": false,
+      "decorationCount": 0,
+      "armorCount": 12,
+      "file": "skill_eb815d46e71f.json"
+    },
+    "skill_0263df444797": {
+      "name": "자동방어",
+      "category": "유틸·행동",
+      "composite": false,
+      "components": [],
+      "hasDecoration": false,
+      "decorationCount": 0,
+      "armorCount": 0,
+      "file": "skill_0263df444797.json"
+    },
+    "skill_d5d5017546d7": {
+      "name": "잠재력",
+      "category": "공격",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 152,
+      "file": "skill_d5d5017546d7.json"
+    },
+    "skill_dc306dbb4ef6": {
+      "name": "장인",
+      "category": "공격",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 3,
+      "armorCount": 157,
+      "file": "skill_dc306dbb4ef6.json"
+    },
+    "skill_2d4c948c0c23": {
+      "name": "장전속도",
+      "category": "원거리",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 103,
+      "file": "skill_2d4c948c0c23.json"
+    },
+    "skill_cb5bba6091b7": {
+      "name": "장전수",
+      "category": "원거리",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 3,
+      "armorCount": 188,
+      "file": "skill_cb5bba6091b7.json"
+    },
+    "skill_4b980fd1a16e": {
+      "name": "재물운",
+      "category": "채집·보수",
+      "composite": true,
+      "components": [
+        "강운",
+        "포획달인"
+      ],
+      "hasDecoration": false,
+      "decorationCount": 0,
+      "armorCount": 25,
+      "file": "skill_4b980fd1a16e.json"
+    },
+    "skill_05e4b277d6b9": {
+      "name": "저력",
+      "category": "공격",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 124,
+      "file": "skill_05e4b277d6b9.json"
+    },
+    "skill_f6ae1efeaf6d": {
+      "name": "절식",
+      "category": "유틸·행동",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 1,
+      "armorCount": 32,
+      "file": "skill_f6ae1efeaf6d.json"
+    },
+    "skill_21996a7e8a32": {
+      "name": "접격병추가",
+      "category": "원거리",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 1,
+      "armorCount": 0,
+      "file": "skill_21996a7e8a32.json"
+    },
+    "skill_e0cef00c6709": {
+      "name": "정밀사격",
+      "category": "원거리",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 1,
+      "armorCount": 51,
+      "file": "skill_e0cef00c6709.json"
+    },
+    "skill_b95d60db9423": {
+      "name": "조합성공률",
+      "category": "채집·보수",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 1,
+      "armorCount": 41,
+      "file": "skill_b95d60db9423.json"
+    },
+    "skill_6f397d16f0cd": {
+      "name": "조합수",
+      "category": "채집·보수",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 1,
+      "armorCount": 10,
+      "file": "skill_6f397d16f0cd.json"
+    },
+    "skill_91feda75c5e9": {
+      "name": "중격",
+      "category": "공격",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 121,
+      "file": "skill_91feda75c5e9.json"
+    },
+    "skill_bd1967124e25": {
+      "name": "증폭",
+      "category": "속성·상태",
+      "composite": true,
+      "components": [
+        "속성공격강화",
+        "아이템사용강화"
+      ],
+      "hasDecoration": false,
+      "decorationCount": 0,
+      "armorCount": 3,
+      "file": "skill_bd1967124e25.json"
+    },
+    "skill_a0f8884ccb05": {
+      "name": "지시",
+      "category": "동반자",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 10,
+      "file": "skill_a0f8884ccb05.json"
+    },
+    "skill_dafef2d56749": {
+      "name": "지휘",
+      "category": "동반자",
+      "composite": true,
+      "components": [
+        "지시to동반자",
+        "호령to동반자"
+      ],
+      "hasDecoration": false,
+      "decorationCount": 0,
+      "armorCount": 32,
+      "file": "skill_dafef2d56749.json"
+    },
+    "skill_257801ee04a9": {
+      "name": "직공",
+      "category": "공격",
+      "composite": true,
+      "components": [
+        "보머",
+        "함정꾼"
+      ],
+      "hasDecoration": false,
+      "decorationCount": 0,
+      "armorCount": 11,
+      "file": "skill_257801ee04a9.json"
+    },
+    "skill_04fd12814adf": {
+      "name": "차지단축",
+      "category": "공격",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 90,
+      "file": "skill_04fd12814adf.json"
+    },
+    "skill_68f9d1b72bff": {
+      "name": "참격술",
+      "category": "공격",
+      "composite": true,
+      "components": [
+        "심안",
+        "예리"
+      ],
+      "hasDecoration": false,
+      "decorationCount": 0,
+      "armorCount": 20,
+      "file": "skill_68f9d1b72bff.json"
+    },
+    "skill_920c69390d1f": {
+      "name": "참렬탄추가",
+      "category": "원거리",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 1,
+      "armorCount": 0,
+      "file": "skill_920c69390d1f.json"
+    },
+    "skill_a64199ed5d30": {
+      "name": "채집",
+      "category": "채집·보수",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 1,
+      "armorCount": 65,
+      "file": "skill_a64199ed5d30.json"
+    },
+    "skill_20267c0a62e3": {
+      "name": "채취",
+      "category": "채집·보수",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 64,
+      "file": "skill_20267c0a62e3.json"
+    },
+    "skill_b98410ce2063": {
+      "name": "천리안",
+      "category": "채집·보수",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 1,
+      "armorCount": 88,
+      "file": "skill_b98410ce2063.json"
+    },
+    "skill_4d4485c17552": {
+      "name": "청각보호",
+      "category": "방어·생존",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 238,
+      "file": "skill_4d4485c17552.json"
+    },
+    "skill_a45ea58ebcb0": {
+      "name": "체력",
+      "category": "방어·생존",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 1,
+      "armorCount": 112,
+      "file": "skill_a45ea58ebcb0.json"
+    },
+    "skill_122ffa46b9a4": {
+      "name": "체술",
+      "category": "유틸·행동",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 107,
+      "file": "skill_122ffa46b9a4.json"
+    },
+    "skill_56899bd6d661": {
+      "name": "탑승",
+      "category": "유틸·행동",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 1,
+      "armorCount": 45,
+      "file": "skill_56899bd6d661.json"
+    },
+    "skill_aa8a7d803517": {
+      "name": "통격",
+      "category": "공격",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 105,
+      "file": "skill_aa8a7d803517.json"
+    },
+    "skill_a9d9b5fe31e4": {
+      "name": "통상탄강화",
+      "category": "원거리",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 47,
+      "file": "skill_a9d9b5fe31e4.json"
+    },
+    "skill_a72479f3ae09": {
+      "name": "통상탄추가",
+      "category": "원거리",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 2,
+      "file": "skill_a72479f3ae09.json"
+    },
+    "skill_a71c734bea26": {
+      "name": "투혼",
+      "category": "공격",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 164,
+      "file": "skill_a71c734bea26.json"
+    },
+    "skill_dd358f9bd4d7": {
+      "name": "특수공격",
+      "category": "속성·상태",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 145,
+      "file": "skill_dd358f9bd4d7.json"
+    },
+    "skill_8f6ae043151b": {
+      "name": "특수치명타",
+      "category": "공격",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 25,
+      "file": "skill_8f6ae043151b.json"
+    },
+    "skill_78219e43d710": {
+      "name": "포술",
+      "category": "공격",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 1,
+      "armorCount": 105,
+      "file": "skill_78219e43d710.json"
+    },
+    "skill_771a2a6d9d1e": {
+      "name": "포획",
+      "category": "채집·보수",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 59,
+      "file": "skill_771a2a6d9d1e.json"
+    },
+    "skill_b49d70f154bd": {
+      "name": "폭탄강화",
+      "category": "공격",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 1,
+      "armorCount": 63,
+      "file": "skill_b49d70f154bd.json"
+    },
+    "skill_ea86e4db2ddb": {
+      "name": "폭파병추가",
+      "category": "원거리",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 1,
+      "armorCount": 0,
+      "file": "skill_ea86e4db2ddb.json"
+    },
+    "skill_934580b17bc3": {
+      "name": "폭파탄추가",
+      "category": "원거리",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 1,
+      "armorCount": 0,
+      "file": "skill_934580b17bc3.json"
+    },
+    "skill_9d982d6cb255": {
+      "name": "풍압",
+      "category": "방어·생존",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 66,
+      "file": "skill_9d982d6cb255.json"
+    },
+    "skill_b273e25bfef2": {
+      "name": "피리",
+      "category": "유틸·행동",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 1,
+      "armorCount": 40,
+      "file": "skill_b273e25bfef2.json"
+    },
+    "skill_58aa2edfa0fa": {
+      "name": "항방어DOWN",
+      "category": "방어·생존",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 1,
+      "armorCount": 14,
+      "file": "skill_58aa2edfa0fa.json"
+    },
+    "skill_27df943493ca": {
+      "name": "허기",
+      "category": "유틸·행동",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 1,
+      "armorCount": 36,
+      "file": "skill_27df943493ca.json"
+    },
+    "skill_837350925f0a": {
+      "name": "헌터",
+      "category": "채집·보수",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 1,
+      "armorCount": 64,
+      "file": "skill_837350925f0a.json"
+    },
+    "skill_ab2b0a823a8a": {
+      "name": "호령",
+      "category": "동반자",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 0,
+      "file": "skill_ab2b0a823a8a.json"
+    },
+    "skill_1a5ea8610123": {
+      "name": "호석수집",
+      "category": "채집·보수",
+      "composite": true,
+      "components": [
+        "채취+2",
+        "부적헌터"
+      ],
+      "hasDecoration": false,
+      "decorationCount": 0,
+      "armorCount": 4,
+      "file": "skill_1a5ea8610123.json"
+    },
+    "skill_aa5ff5179f47": {
+      "name": "호석왕",
+      "category": "채집·보수",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 1,
+      "armorCount": 1,
+      "file": "skill_aa5ff5179f47.json"
+    },
+    "skill_4cc00ebe37cb": {
+      "name": "확산탄추가",
+      "category": "원거리",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 1,
+      "armorCount": 3,
+      "file": "skill_4cc00ebe37cb.json"
+    },
+    "skill_0a24dffb8259": {
+      "name": "회복량",
+      "category": "방어·생존",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 80,
+      "file": "skill_0a24dffb8259.json"
+    },
+    "skill_6aac09f1f9a7": {
+      "name": "회복속도",
+      "category": "방어·생존",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 96,
+      "file": "skill_6aac09f1f9a7.json"
+    },
+    "skill_4b9bc9c6f953": {
+      "name": "회피거리",
+      "category": "방어·생존",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 130,
+      "file": "skill_4b9bc9c6f953.json"
+    },
+    "skill_977515684794": {
+      "name": "회피성능",
+      "category": "방어·생존",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 2,
+      "armorCount": 130,
+      "file": "skill_977515684794.json"
+    },
+    "skill_dfbf20468c93": {
+      "name": "회피술",
+      "category": "방어·생존",
+      "composite": true,
+      "components": [
+        "회피성능+1",
+        "체술+1"
+      ],
+      "hasDecoration": false,
+      "decorationCount": 0,
+      "armorCount": 30,
+      "file": "skill_dfbf20468c93.json"
+    },
+    "skill_719784872b09": {
+      "name": "효과지속",
+      "category": "유틸·행동",
+      "composite": false,
+      "components": [],
+      "hasDecoration": true,
+      "decorationCount": 1,
+      "armorCount": 35,
+      "file": "skill_719784872b09.json"
+    }
+  }
+}

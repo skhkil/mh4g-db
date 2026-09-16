@@ -706,3 +706,23 @@ button{border:1px solid var(--line);background:#202b39;color:white;border-radius
 /* 2026-09-16 chat4 monster compact fold spacing */
 #monsterContent .monster-reward-rank,#monsterContent .monster-use-group,#monsterContent .monster-status-details{scroll-margin-bottom:28px}
 #monsterContent .monster-reward-rank:last-child,#monsterContent .monster-use-group:last-child{margin-bottom:22px}
+
+
+/* v0.7.7 skill/deco reverse-reference UI */
+.skill-filter-toolbar{display:grid;grid-template-columns:minmax(260px,1fr) 170px 170px;gap:10px;align-items:center}
+.skill-filter-toolbar .toolbar-select{min-width:0;width:100%}
+.skill-badges{display:flex;gap:5px;flex-wrap:wrap;margin-top:6px}
+.skill-category-badge,.skill-composite-badge,.no-deco-badge{display:inline-flex;align-items:center;border-radius:999px;padding:2px 7px;font-size:11px;line-height:1.5;font-weight:700;white-space:nowrap}
+.skill-category-badge{background:rgba(80,130,200,.13);border:1px solid rgba(80,130,200,.28)}
+.skill-composite-badge{background:rgba(148,93,214,.15);border:1px solid rgba(148,93,214,.35)}
+.no-deco-badge{background:rgba(206,128,37,.14);border:1px solid rgba(206,128,37,.35)}
+.skill-source-details,.deco-supply-details{min-width:220px}
+.skill-source-details>summary,.deco-supply-details>summary,.skill-source-group>summary{cursor:pointer;font-weight:700}
+.skill-source-details>summary{display:flex;justify-content:space-between;gap:10px;align-items:center}
+.skill-source-count{font-size:11px;font-weight:500;opacity:.7;white-space:nowrap}
+.skill-source-body{margin-top:9px;min-width:300px}.skill-composite-box{display:flex;gap:10px;align-items:flex-start;padding:8px 10px;margin-bottom:8px;border-radius:8px;background:rgba(148,93,214,.08)}
+.skill-composite-box span{line-height:1.55}.skill-source-group{margin:7px 0;border:1px solid var(--line,#ddd);border-radius:8px;padding:7px 9px}.skill-source-list{max-height:360px;overflow:auto;margin-top:7px;padding-right:4px}
+.skill-source-row{padding:7px 2px;border-top:1px dashed rgba(128,128,128,.22)}.skill-source-row:first-child{border-top:0}.skill-source-row small{display:block;margin-top:3px;line-height:1.55;opacity:.78}
+.skill-no-deco-note,.skill-no-source-note{display:flex;flex-direction:column;gap:4px;padding:9px 10px;margin:7px 0;border-radius:8px;background:rgba(206,128,37,.08)}.skill-source-footnote{font-size:12px;line-height:1.55;opacity:.72;margin:9px 0 0}
+.deco-supply-details{max-width:360px}.deco-supply-list{margin-top:8px}.deco-supply-row{padding:6px 0;border-top:1px dashed rgba(128,128,128,.22)}.deco-supply-row:first-child{border-top:0}.deco-supply-row small{display:block;margin-top:3px;line-height:1.45;opacity:.75}
+@media (max-width:1180px) and (pointer:coarse){.skill-filter-toolbar{grid-template-columns:1fr 1fr}.skill-filter-toolbar .search-input{grid-column:1/-1}.skill-source-details,.deco-supply-details,.skill-source-body{min-width:0;width:100%}.skill-source-details>summary{align-items:flex-start;flex-direction:column;gap:4px}.skill-source-list{max-height:300px}}

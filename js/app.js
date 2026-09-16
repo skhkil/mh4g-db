@@ -1,7 +1,7 @@
-import {loadSimulatorData,loadFullData,loadItemReference,loadMonsterReference,loadMonsterReferencesFallback,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-monster10-part-elementbadges";
-import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-monster10-part-elementbadges";
+import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-skillxref1";
+import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-skillxref1";
 
-let data={skills:[],armors:[],armorSets:[],decorations:[],weapons:[],weaponSummary:[],melodies:[],items:[],itemReferenceIndex:{items:{}},meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],monsterReferenceIndex:{items:{}},dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],siteInfo:{},meta:{}};
+let data={skills:[],armors:[],armorSets:[],decorations:[],weapons:[],weaponSummary:[],melodies:[],items:[],itemReferenceIndex:{items:{}},skillReferenceIndex:{items:{},categories:[]},meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],monsterReferenceIndex:{items:{}},dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],siteInfo:{},meta:{}};
 let targets=[];
 let currentPage="simulator";
 const BUILD_STORAGE_KEY="mh4g-builds-v1";
@@ -25,7 +25,7 @@ let restoringHistory=false;
 
 // v0.7.2: 반복 배열 검색과 옵션 재생성을 줄이기 위한 인덱스/캐시
 let skillById=new Map(),armorById=new Map(),weaponById=new Map(),decorationByIdMap=new Map(),armorSetById=new Map(),itemByName=new Map(),itemById=new Map();
-let itemSearchCorpusById=new Map(),itemDetailHtmlCache=new Map(),itemReferenceCache=new Map(),monsterReferenceCache=new Map(),monsterFallbackPromise=null;
+let itemSearchCorpusById=new Map(),itemDetailHtmlCache=new Map(),itemReferenceCache=new Map(),skillReferenceCache=new Map(),monsterReferenceCache=new Map(),monsterFallbackPromise=null;
 const optionCache={armorByPart:new Map(),weaponByType:new Map(),armorSets:null,skillPicker:null,activation:null,weaponTypes:null};
 function rebuildIndexes(){
   skillById=new Map((data.skills||[]).map(x=>[x.id,x]));
@@ -780,17 +780,60 @@ function renderWeaponTrees(){
   bindInlineItemLinks($("#weaponTrees"));
   syncWeaponSubActive();
 }
+
+function skillReferenceMeta(skillId){return data.skillReferenceIndex?.items?.[String(skillId)]||{};}
+async function getSkillReference(skillId){
+  const key=String(skillId||"");
+  if(skillReferenceCache.has(key))return skillReferenceCache.get(key);
+  const meta=skillReferenceMeta(key),file=meta.file||`${key}.json`;
+  const promise=loadSkillReference(file).catch(()=>({decorations:[],armors:[]}));
+  skillReferenceCache.set(key,promise);return promise;
+}
+function skillLink(skillId,label){return `<button type="button" class="xref-link skill-inline-link" data-open-skill="${esc(skillId)}">${esc(label||skillName(skillId))}</button>`;}
+function decoLink(name){return `<button type="button" class="xref-link" data-open-deco="${esc(name)}">${esc(name)}</button>`;}
+function decorationMaterialSupplyHtml(d){
+  const mats=parseMaterialCounts(d.materials||"");
+  if(!mats.length)return '<p class="muted">생산 소재 정보 없음</p>';
+  return `<div class="deco-supply-list">${mats.map(([name,count])=>{
+    const item=itemByName.get(name),ref=item?itemReferenceCount(item):{acquire:0,uses:0};
+    return `<div class="deco-supply-row"><div><strong>${item?itemLink(name):esc(name)}</strong> ×${count}</div><small>${item?`기본 입수: ${esc(item.acquire||"확인 필요")} · 구조화 입수처 ${ref.acquire}건`:'아이템 DB 매칭 없음'}</small></div>`;
+  }).join("")}</div>`;
+}
+function decorationSkillHtml(d){return Object.entries(d.skills||{}).map(([k,v])=>`${skillLink(k,skillName(k))} <b>${v>0?"+":""}${v}</b>`).join(", ");}
+function skillSourceDetailsShell(s){
+  const m=skillReferenceMeta(s.id),deco=Number(m.decorationCount||0),armor=Number(m.armorCount||0),noDeco=!m.hasDecoration;
+  return `<details class="skill-source-details" data-skill-ref="${esc(s.id)}"><summary><span>${noDeco?'<span class="no-deco-badge">장식주 없음</span>':'제작/획득 역추적'}</span><span class="skill-source-count">장식주 ${deco} · 방어구 ${armor}</span></summary><div class="skill-source-body"><p class="muted">펼치면 실제 연결 데이터를 불러옵니다.</p></div></details>`;
+}
+function armorSourceLabel(a){return `${PART_NAMES[a.part]||a.part||""} · ${rankName(a.rank)} · RARE ${a.rare||"-"} · ${a.points>0?"+":""}${a.points}`;}
+function buildSkillSourceHtml(s,ref){
+  const meta=skillReferenceMeta(s.id),decos=ref.decorations||[],armors=ref.armors||[],components=meta.components||[];
+  const composite=meta.composite&&components.length?`<div class="skill-composite-box"><b>복합 효과</b><span>${components.map(esc).join(" + ")}</span></div>`:"";
+  const decoBlock=decos.length?`<details class="skill-source-group" open><summary>장식주로 확보 <b>${decos.length}종</b></summary><div class="skill-source-list">${decos.map(d=>`<div class="skill-source-row"><div>${decoLink(d.name)} <span class="slots">${d.slots}슬롯</span> <b>+${d.points}</b></div><small>${rankName(d.rank)} · ${materialLinks(d.materials||"")}</small></div>`).join("")}</div></details>`:`<div class="skill-no-deco-note"><b>장식주 없음</b><span>이 스킬 계통을 직접 올리는 장식주는 현재 MH4G 데이터에 없습니다.</span></div>`;
+  const armorBlock=armors.length?`<details class="skill-source-group"><summary>방어구로 확보 <b>${armors.length}부위</b></summary><div class="skill-source-list skill-armor-source-list">${armors.map(a=>`<div class="skill-source-row"><div><button type="button" class="xref-link" data-item-nav="armor" data-nav-name="${esc(a.name)}">${esc(a.name)}</button> <b>+${a.points}</b></div><small>${esc(armorSourceLabel(a))}${a.materials?` · 제작: ${materialLinks(a.materials)}`:""}</small></div>`).join("")}</div></details>`:`<div class="skill-no-source-note">현재 방어구 데이터에서도 양의 스킬 포인트 출처가 확인되지 않습니다.</div>`;
+  const charmNote=!decos.length?'<p class="skill-source-footnote">※ 현재 프로젝트에는 호석 개별 테이블이 없어 호석 획득 여부/수치는 확정 표시하지 않습니다. 방어구·장식주 데이터에서 확인되는 내용만 표시합니다.</p>':"";
+  return `${composite}${decoBlock}${armorBlock}${charmNote}`;
+}
+async function hydrateSkillSource(details){
+  if(!details?.open||details.dataset.loaded==="1")return;
+  const sid=details.dataset.skillRef,s=skillById.get(sid);if(!s)return;
+  const body=details.querySelector('.skill-source-body');if(!body)return;
+  body.innerHTML='<p class="muted">연결 데이터 불러오는 중…</p>';
+  const ref=await getSkillReference(sid);if(!details.isConnected||!details.open)return;
+  body.innerHTML=buildSkillSourceHtml(s,ref);details.dataset.loaded="1";bindInlineItemLinks(body);
+}
+
 function renderDecoTable(){
   const q=$("#decoSearch").value.trim().toLowerCase(),rank=$("#rankFilter").value;
   const list=data.decorations.filter(d=>(rank==="all"||d.rank===rank)&&(!q||decorationSearchCorpus(d).toLowerCase().includes(q)));
   list.sort((a,b)=>decoView==="slot"?(a.slots-b.slots||a.name.localeCompare(b.name,"ko")):(Object.keys(a.skills||{}).map(skillName).join("").localeCompare(Object.keys(b.skills||{}).map(skillName).join(""),"ko")||a.name.localeCompare(b.name,"ko")));
-  const rows=list.map(d=>`<tr><td><strong>${esc(d.name)}</strong>${localizedNameSub(d)}</td><td>${d.slots}</td><td>${Object.entries(d.skills||{}).map(([k,v])=>`${esc(skillName(k))} ${v>0?"+":""}${v}`).join(", ")}</td><td>${rankName(d.rank)}</td><td>${materialLinks(d.materials||"")}</td></tr>`);
-  renderTable("#decoTable",["장식주","필요 슬롯","스킬 포인트","등급","생산 소재"],rows);
+  const rows=list.map(d=>`<tr><td><strong>${esc(d.name)}</strong>${localizedNameSub(d)}</td><td>${d.slots}</td><td>${decorationSkillHtml(d)}</td><td>${rankName(d.rank)}</td><td>${materialLinks(d.materials||"")}</td><td><details class="deco-supply-details"><summary>재료 수급처</summary>${decorationMaterialSupplyHtml(d)}</details></td></tr>`);
+  renderTable("#decoTable",["장식주","필요 슬롯","스킬 포인트","등급","생산 소재","제작/수급"],rows);bindInlineItemLinks($("#decoTable"));
 }
 function renderSkillTable(){
-  const q=$("#skillSearch").value.trim().toLowerCase();
-  const rows=data.skills.filter(s=>!q||skillSearchCorpus(s).toLowerCase().includes(q)).map(s=>`<tr><td><strong>${esc(s.name)}</strong>${localizedNameSub(s)}</td><td>${(s.activations||[]).map(a=>`${a.points>0?"+":""}${a.points} → <strong>${esc(a.name)}</strong>${localizedNameSub(a)}`).join("<br>")}</td><td>${(s.activations||[]).map(a=>a.description?`<div><strong>${esc(a.name)}</strong>: ${esc(cleanEffectText(a.description))}</div>`:"").filter(Boolean).join("")}</td></tr>`);
-  renderTable("#skillTable",["스킬 계통","발동 조건","효과 및 비고"],rows);
+  const q=$("#skillSearch").value.trim().toLowerCase(),cat=$("#skillCategoryFilter")?.value||"all",type=$("#skillTypeFilter")?.value||"all";
+  const list=data.skills.filter(s=>{const m=skillReferenceMeta(s.id);if(q&&!skillSearchCorpus(s).toLowerCase().includes(q))return false;if(cat!=="all"&&m.category!==cat)return false;if(type==="composite"&&!m.composite)return false;if(type==="normal"&&m.composite)return false;if(type==="no-deco"&&m.hasDecoration)return false;if(type==="with-deco"&&!m.hasDecoration)return false;return true;});
+  const rows=list.map(s=>{const m=skillReferenceMeta(s.id);return `<tr><td><strong>${esc(s.name)}</strong>${localizedNameSub(s)}<div class="skill-badges"><span class="skill-category-badge">${esc(m.category||"미분류")}</span>${m.composite?'<span class="skill-composite-badge">복합</span>':""}${!m.hasDecoration?'<span class="no-deco-badge">장식주 없음</span>':""}</div></td><td>${(s.activations||[]).map(a=>`${a.points>0?"+":""}${a.points} → <strong>${esc(a.name)}</strong>${localizedNameSub(a)}`).join("<br>")}</td><td>${(s.activations||[]).map(a=>a.description?`<div><strong>${esc(a.name)}</strong>: ${esc(cleanEffectText(a.description))}</div>`:"").filter(Boolean).join("")}</td><td>${skillSourceDetailsShell(s)}</td></tr>`});
+  renderTable("#skillTable",["스킬 계통","발동 조건","효과 및 비고","획득/제작 역추적"],rows);bindInlineItemLinks($("#skillTable"));const info=$("#skillResultInfo");if(info)info.textContent=`${list.length} / ${data.skills.length}개 스킬 · 분야는 탐색용 편의 분류`;
 }
 function itemReferenceCount(item){
   const row=data.itemReferenceIndex?.items?.[item?.id]||data.itemReferenceIndex?.items?.[String(item?.id)]||{};
@@ -1231,7 +1274,8 @@ function dataKeysForPage(page){
   if(page==="armor-set")return ["armorSets"];
   if(page==="weapon")return ["weapons","items"];
   if(page==="weapon-summary")return ["weaponSummary"];
-  if(page==="decoration")return ["decorations","items"];
+  if(page==="decoration")return ["decorations","items","itemReferenceIndex"];
+  if(page==="skill")return ["items","skillReferenceIndex"];
   if(page==="melody")return ["melodies"];
   if(page==="meal")return ["meals"];
   if(page==="monster"){
@@ -1255,6 +1299,7 @@ async function ensureFullData(keys){
   Object.assign(data,patch);missing.forEach(k=>loadedFullKeys.add(k));
   if(missing.some(k=>["skills","armors","armorSets","decorations","weapons","items"].includes(k)))rebuildIndexes();
   else if(missing.includes("itemReferenceIndex"))rebuildItemReferenceIndexes();
+  if(missing.includes("skillReferenceIndex"))skillReferenceCache.clear();
   if(missing.includes("meals"))populateMealIngredientFilter();
   if(missing.includes("monsterSummary"))populateMonsterSelect();
   if(missing.includes("quests"))populateQuestLevels();
@@ -1348,6 +1393,12 @@ function setupResponsiveNavColumns(){
 function bind(){
   document.addEventListener('click',e=>{
     closePickers();
+    const skillBtn=e.target.closest?.('[data-open-skill]');
+    if(skillBtn){e.preventDefault();openPage("skill").then(()=>{$("#skillSearch").value=skillName(skillBtn.dataset.openSkill)||"";$("#skillCategoryFilter").value="all";$("#skillTypeFilter").value="all";renderSkillTable();});return;}
+    const decoBtn=e.target.closest?.('[data-open-deco]');
+    if(decoBtn){e.preventDefault();openPage("decoration").then(()=>{$("#rankFilter").value="all";$("#decoSearch").value=decoBtn.dataset.openDeco||"";renderDecoTable();});return;}
+    const skillNav=e.target.closest?.('#skillTable .skill-source-details [data-item-nav]');
+    if(skillNav){e.preventDefault();replaceCurrentHistoryState();followItemReference(skillNav).then(pushCurrentHistoryState);return;}
     const monsterCard=e.target.closest?.('[data-monster-card]');
     if(monsterCard){e.preventDefault();replaceCurrentHistoryState();$("#monsterSelect").value=monsterCard.dataset.monsterCard;$("#monsterSearch").value="";monsterView="basic";renderMonster();pushCurrentHistoryState();return;}
     const monsterTab=e.target.closest?.('[data-monster-tab]');
@@ -1378,7 +1429,7 @@ function bind(){
     const close=e.target.closest?.('#itemTable .item-detail-close');
     if(close){e.preventDefault();removeItemDetailRow();selectedItemId="";replaceCurrentHistoryState();return;}
   });
-  document.addEventListener("toggle",e=>{const d=e.target;if(d?.matches?.("#itemTable details.xref-lazy"))void hydrateXrefGroup(d)},true);
+  document.addEventListener("toggle",e=>{const d=e.target;if(d?.matches?.("#itemTable details.xref-lazy"))void hydrateXrefGroup(d);if(d?.matches?.("details.skill-source-details"))void hydrateSkillSource(d)},true);
   $("#sidebarToggle").onclick=()=>{$(".app-shell").classList.toggle("sidebar-collapsed");const collapsed=$(".app-shell").classList.contains("sidebar-collapsed");$("#sidebarToggle").title=collapsed?"좌측 메뉴 펼치기":"좌측 메뉴 접기";};
 
   $$('.nav-group-toggle').forEach(b=>b.onclick=e=>{
@@ -1415,7 +1466,7 @@ function bind(){
   $("#weaponSearch").oninput=renderWeaponTrees;$("#weaponTypeFilter").onchange=()=>{renderWeaponTreeFilter();renderWeaponTrees()};$("#weaponTreeFilter").onchange=renderWeaponTrees;$("#weaponElementFilter").onchange=renderWeaponTrees;$("#weaponSort").onchange=renderWeaponTrees;
   $("#weaponSummarySearch").oninput=renderWeaponSummary;$("#weaponSummaryType").onchange=renderWeaponSummary;
   $("#melodySearch").oninput=renderMelodyTable;
-  $("#decoSearch").oninput=renderDecoTable;$("#skillSearch").oninput=renderSkillTable;
+  $("#decoSearch").oninput=renderDecoTable;$("#skillSearch").oninput=renderSkillTable;$("#skillCategoryFilter").onchange=renderSkillTable;$("#skillTypeFilter").onchange=renderSkillTable;
   $("#mealSearch").oninput=renderMealGrid;$("#mealIngredientFilter").onchange=renderMealGrid;
   $("#monsterSearch").oninput=()=>{if($("#monsterSelect").value!=="all")$("#monsterSelect").value="all";renderMonster()};$("#monsterSelect").onchange=()=>{monsterView="basic";$("#monsterSearch").value="";renderMonster()};$("#monsterRankFilter").onchange=renderMonster;
   $("#dragonSearch").oninput=renderDragon;

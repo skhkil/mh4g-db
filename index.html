@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#121821" />
   <title>MH4G 장비 · 스킬 시뮬레이터</title>
-  <link rel="stylesheet" href="./css/app.css?v=0.7.7-chat4-monster10-part-elementbadges" />
+  <link rel="stylesheet" href="./css/app.css?v=0.7.7-chat4-skillxref1" />
 </head>
 <body>
   <div class="app-shell">
@@ -259,9 +259,16 @@
       </section>
 
       <section id="page-skill" class="page">
-        <div class="toolbar">
+        <div class="toolbar skill-filter-toolbar">
           <input id="skillSearch" class="search-input" placeholder="스킬명 또는 발동 스킬 검색" />
+          <select id="skillCategoryFilter" class="toolbar-select" aria-label="스킬 분야">
+            <option value="all">전체 분야</option><option value="공격">공격</option><option value="방어·생존">방어·생존</option><option value="원거리">원거리</option><option value="속성·상태">속성·상태</option><option value="유틸·행동">유틸·행동</option><option value="채집·보수">채집·보수</option><option value="동반자">동반자</option>
+          </select>
+          <select id="skillTypeFilter" class="toolbar-select" aria-label="스킬 유형">
+            <option value="all">전체 유형</option><option value="composite">복합스킬</option><option value="normal">일반스킬</option><option value="no-deco">장식주 없음</option><option value="with-deco">장식주 있음</option>
+          </select>
         </div>
+        <div id="skillResultInfo" class="muted result-info"></div>
         <div class="panel table-panel"><div id="skillTable"></div></div>
       </section>
 
@@ -373,6 +380,6 @@ python tools/build_database.py --publish</code></pre>
     </main>
   </div>
 
-  <script type="module" src="./js/app.js?v=0.7.7-chat4-monster10-part-elementbadges"></script>
+  <script type="module" src="./js/app.js?v=0.7.7-chat4-skillxref1"></script>
 </body>
 </html>

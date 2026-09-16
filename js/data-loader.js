@@ -1,4 +1,4 @@
-const DATA_VERSION = "0.7.7-chat4-monster10-part-elementbadges";
+const DATA_VERSION = "0.7.7-chat4-skillxref1";
 
 const FULL_FILES = {
   skills:"./data/skills.json",
@@ -10,6 +10,7 @@ const FULL_FILES = {
   melodies:"./data/melodies.json",
   items:"./data/items.json",
   itemReferenceIndex:"./data/item_reference_index.json",
+  skillReferenceIndex:"./data/skill_reference_index.json",
   meals:"./data/meals.json",
   monsterSummary:"./data/monster_summary.json",
   monsterDetails:"./data/monster_details.json",
@@ -81,6 +82,13 @@ export async function loadItemReference(itemId){
   return fetchJson(`itemRef:${key}`,`./data/item_refs/${encodeURIComponent(key)}.json`);
 }
 
+export async function loadSkillReference(file){
+  const key=String(file||"").trim();
+  if(!key) return {decorations:[],armors:[]};
+  const x=await fetchJson(`skillRef:${key}`,`./data/skill_refs/${encodeURIComponent(key)}`);
+  return (x&&typeof x==="object"&&!Array.isArray(x))?x:{decorations:[],armors:[]};
+}
+
 export async function loadMonsterReference(file){
   const key=String(file||"").trim();
   if(!key) return {monster:"",items:[],quests:[],uses:[]};
@@ -102,7 +110,7 @@ export function classifyImported(name,json){
   const lower=name.toLowerCase();
   const rules=[
     ["armor_sets","armorSets"],["armor","armors"],["decor","decorations"],["weapon_summary","weaponSummary"],
-    ["weapon","weapons"],["skill","skills"],["item_reference_index","itemReferenceIndex"],["item","items"],["meal","meals"],
+    ["weapon","weapons"],["skill_reference_index","skillReferenceIndex"],["skill","skills"],["item_reference_index","itemReferenceIndex"],["item","items"],["meal","meals"],
     ["monster_summary","monsterSummary"],["monster_details","monsterDetails"],["monster_rewards","monsterRewards"],["monster_reference_index","monsterReferenceIndex"],
     ["dragon_exchange","dragonExchange"],["dragon_sell","dragonSell"],["dragon_increase","dragonIncrease"],
     ["composition","compositions"],["quest","quests"],["melod","melodies"],["site_info","siteInfo"]
