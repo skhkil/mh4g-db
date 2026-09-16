@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 from pathlib import Path
-import json, os, collections
+import json, os, collections, re
 ROOT=Path(__file__).resolve().parents[1]
 D=ROOT/'data'
 load=lambda name: json.loads((D/name).read_text(encoding='utf-8'))
@@ -9,7 +9,7 @@ decos=load('decorations.json'); skills=load('skills.json'); quests=load('quests.
 details=load('monster_details.json'); rewards=load('monster_rewards.json'); compositions=load('compositions.json')
 item_index=load('item_reference_index.json'); monster_index=load('monster_reference_index.json'); skill_index=load('skill_reference_index.json')
 name_sets={
- 'item':{x['name'] for x in items},'weapon':{x['name'] for x in weapons},'armor':{x['name'] for x in armors},
+ 'item':({n for x in items for n in ([x.get('name')] + list(x.get('aliases') or [])) if n}),'weapon':{x['name'] for x in weapons},'armor':{x['name'] for x in armors},
  'decoration':{x['name'] for x in decos},'quest':{x['name'] for x in quests},'monster':{x['name'] for x in monsters},
  'composition_result':{x['result'] for x in compositions}
 }
@@ -55,7 +55,7 @@ for name,meta in monster_index.get('items',{}).items():
  for u in r.get('uses',[]):
   t=u.get('type')
   if t in ('weapon','armor','decoration') and u.get('name') not in name_sets[t]: issue(f'monster_ref_bad_{t}',name,u.get('name'))
- missing=[x.get('name') for x in r.get('items',[]) if x.get('name') not in name_sets['item']]
+ missing=[x.get('name') for x in r.get('items',[]) if re.sub(r'\s*[×xX*]\s*\d+\s*$','',str(x.get('name') or '')).strip() not in name_sets['item']]
  if missing:
   affected_monsters+=1; missing_monster_materials+=len(missing)
   warning('monster_material_not_in_item_db',name,len(missing),missing[:12])
@@ -83,7 +83,7 @@ for m in sorted(name_sets['monster']):
 if no_reward: warning('monsters_without_reward_rows',len(no_reward),no_reward)
 
 summary={
- 'version':'0.7.7-chat4-xrefaudit1',
+ 'version':'0.7.7-chat4-itemdb1',
  'hardIssueCount':len(issues),
  'warningCount':len(warnings),
  'itemCount':len(items),'itemIndexedCount':len(item_index.get('items',{})),

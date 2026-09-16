@@ -1,5 +1,5 @@
-import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-xrefaudit1";
-import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-xrefaudit1";
+import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-itemdb1";
+import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-itemdb1";
 
 let data={skills:[],armors:[],armorSets:[],decorations:[],weapons:[],weaponSummary:[],melodies:[],items:[],itemReferenceIndex:{items:{}},skillReferenceIndex:{items:{},categories:[]},meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],monsterReferenceIndex:{items:{}},dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],siteInfo:{},meta:{}};
 let targets=[];
@@ -35,7 +35,7 @@ function rebuildIndexes(){
   armorSetById=new Map((data.armorSets||[]).map(x=>[x.id,x]));
   armorSetByPieceId=new Map();
   for(const set of data.armorSets||[]) for(const piece of set.pieces||[]) armorSetByPieceId.set(piece.id,set);
-  itemByName=new Map((data.items||[]).map(x=>[x.name,x]));
+  itemByName=new Map(); for(const x of data.items||[]){if(x.name)itemByName.set(x.name,x);for(const a of x.aliases||[])if(a&&!itemByName.has(a))itemByName.set(a,x);}
   itemById=new Map((data.items||[]).map(x=>[String(x.id),x]));
   rebuildItemReferenceIndexes();
   optionCache.armorByPart.clear();optionCache.weaponByType.clear();
@@ -876,13 +876,13 @@ function rebuildItemReferenceIndexes(){
   itemSearchCorpusById=new Map();
   itemDetailHtmlCache.clear();
   for(const item of data.items||[]){
-    const corpus=`${item.name||""} ${item.nameJa||""} ${item.nameEn||""} ${item.acquire||""} ${item.note||""}`.toLowerCase();
+    const corpus=`${item.name||""} ${(item.aliases||[]).join(" ")} ${item.nameJa||""} ${item.nameEn||""} ${item.acquire||""} ${item.note||""}`.toLowerCase();
     itemSearchCorpusById.set(String(item.id),corpus);
   }
 }
 function itemReferenceCorpus(item){
   const key=String(item?.id??"");
-  return itemSearchCorpusById.get(key)||`${item?.name||""} ${item?.nameJa||""} ${item?.nameEn||""} ${item?.acquire||""} ${item?.note||""}`.toLowerCase();
+  return itemSearchCorpusById.get(key)||`${item?.name||""} ${(item?.aliases||[]).join(" ")} ${item?.nameJa||""} ${item?.nameEn||""} ${item?.acquire||""} ${item?.note||""}`.toLowerCase();
 }
 async function getItemReference(itemId){
   const key=String(itemId||"");

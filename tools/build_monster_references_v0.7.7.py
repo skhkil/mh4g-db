@@ -12,7 +12,11 @@ ROOT=Path(__file__).resolve().parents[1]; D=ROOT/'data'
 load=lambda n: json.loads((D/n).read_text(encoding='utf-8'))
 mons=load('monster_summary.json'); rewards=load('monster_rewards.json'); quests=load('quests.json')
 weapons=load('weapons.json'); armors=load('armors.json'); decos=load('decorations.json'); items=load('items.json')
-names=[m['name'] for m in mons]; item_ids={x['name']:str(x['id']) for x in items}
+names=[m['name'] for m in mons]; item_ids={}
+for x in items:
+    if x.get('name'): item_ids[x['name']]=str(x['id'])
+    for alias in x.get('aliases') or []:
+        if alias: item_ids.setdefault(alias,str(x['id']))
 SOURCE_TO_CANONICAL={'오오나즈치':'오나즈치','맹폭 브라키디오스':'임계 브라키디오스','혼돈에 신음하는 고어·마가라':'혼돈의 고어·마가라','밀라보레아스 (흑룡)':'밀라보레아스','밀라보레아스 (선조룡)':'밀라보레아스 (조룡)'}
 CANONICAL_TO_SOURCE=collections.defaultdict(list)
 for src,canon in SOURCE_TO_CANONICAL.items(): CANONICAL_TO_SOURCE[canon].append(src)
@@ -59,6 +63,6 @@ for m in mons:
     fallback[m['name']]=payload
     fname=re.sub(r'[^a-z0-9_-]+','-',m['id'].lower())+'.json'; (out/fname).write_text(json.dumps(payload,ensure_ascii=False,separators=(',',':')),encoding='utf-8')
     index[m['name']]={'file':fname,'quests':len(payload['quests']),'uses':len(uses),'items':len(src)}
-(D/'monster_reference_index.json').write_text(json.dumps({'version':'0.7.7-chat4-xrefaudit1','items':index},ensure_ascii=False,separators=(',',':')),encoding='utf-8')
+(D/'monster_reference_index.json').write_text(json.dumps({'version':'0.7.7-chat4-itemdb1','items':index},ensure_ascii=False,separators=(',',':')),encoding='utf-8')
 (D/'monster_references.json').write_text(json.dumps(fallback,ensure_ascii=False,separators=(',',':')),encoding='utf-8')
 print(f"monster refs: {len(index)}")

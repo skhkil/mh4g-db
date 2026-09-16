@@ -1,0 +1,31 @@
+{
+  "version": "0.7.7-chat4-itemdb-enrich1",
+  "currentBefore": 524,
+  "added": 912,
+  "currentAfter": 1436,
+  "mh4uNonEquipmentTotal": 1624,
+  "mh4uRepresentedAfter": 1428,
+  "mh4uStillWithoutKoreanMapping": 196,
+  "aliasesAdded": 28,
+  "resolvedKoreanNames": 1489,
+  "ambiguousMappings": 4,
+  "arenaValidatedNewItems": 908,
+  "monsterRewardUniqueMissingAfter": 0,
+  "monsterRewardMissingAfter": [],
+  "unmappedCurrentItems": [
+    "고급충육꿀(화염)",
+    "고급충육꿀(유수)",
+    "고급충육꿀(뇌광)",
+    "고급충육꿀(빙결)",
+    "고급충육꿀(파룡)",
+    "중룡골",
+    "포졸의 일기",
+    "태고의 악보",
+    "전격G티켓"
+  ],
+  "notes": [
+    "장비 소재는 3번 MH4U DB의 components 관계를 장비 영문명+수량/순서로 대조해 매핑",
+    "2번 Arena DB의 Japanese/English components 병렬 목록으로 가능한 항목을 교차 검증",
+    "동일 MH4U 아이템의 한글 표기 변형은 aliases로 통합해 중복 아이템 생성을 방지"
+  ]
+}

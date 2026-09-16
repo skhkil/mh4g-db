@@ -5,7 +5,11 @@ def load(name): return json.load(open(P/'data'/name,encoding='utf-8'))
 items=load('items.json'); weapons=load('weapons.json'); armors=load('armors.json'); decos=load('decorations.json'); quests=load('quests.json'); rewards=load('monster_rewards.json'); comps=load('compositions.json'); exch=load('dragon_exchange.json'); sell=load('dragon_sell.json'); inc=load('dragon_increase.json')
 MONSTER_ALIASES={'오오나즈치':'오나즈치','맹폭 브라키디오스':'임계 브라키디오스','혼돈에 신음하는 고어·마가라':'혼돈의 고어·마가라','밀라보레아스 (흑룡)':'밀라보레아스','밀라보레아스 (선조룡)':'밀라보레아스 (조룡)'}
 def canonical_monster(name): return MONSTER_ALIASES.get(str(name or '').strip(),str(name or '').strip())
-by_name={x['name']:x for x in items if x.get('name')}
+by_name={}
+for x in items:
+    if x.get('name'): by_name[x['name']]=x
+    for alias in x.get('aliases') or []:
+        if alias: by_name.setdefault(alias,x)
 names=sorted(by_name,key=len,reverse=True)
 refs={x['id']:{'name':x['name'],'acquire':[],'uses':[]} for x in items}
 seen={x['id']:{'acquire':set(),'uses':set()} for x in items}
@@ -38,7 +42,7 @@ def material_matches(text):
     return [(n,c) for _,n,c in sorted(matches)]
 # Acquisitions: monster rewards
 for r in rewards:
-    add(r.get('item'),'acquire',{'type':'monster','monster':canonical_monster(r.get('monster','')),'method':r.get('method',''),'rank':r.get('rank',''),'probability':r.get('probability',''),'count':r.get('count','')})
+    add(re.sub(r'\s*[×xX*]\s*\d+\s*$','',str(r.get('item') or '')).strip(),'acquire',{'type':'monster','monster':canonical_monster(r.get('monster','')),'method':r.get('method',''),'rank':r.get('rank',''),'probability':r.get('probability',''),'count':r.get('count','')})
 # Acquisitions + usage: combinations
 for c in comps:
     add(c.get('result'),'acquire',{'type':'compose','no':c.get('no'),'materialA':c.get('materialA',''),'materialB':c.get('materialB',''),'successRate':c.get('successRate',''),'yield':c.get('yield','')})
@@ -78,12 +82,12 @@ for rid,v in refs.items():
     v['acquire'].sort(key=lambda x:(x.get('type',''),x.get('monster',''),x.get('name',''),str(x.get('no',''))))
     v['uses'].sort(key=lambda x:(x.get('type',''),x.get('weaponType',''),x.get('name',''),x.get('result','')))
 useful={k:v for k,v in refs.items() if v['acquire'] or v['uses']}
-out={'version':'0.7.7-chat4-xrefaudit1','generated':'2026-09-16','itemCount':len(items),'indexedCount':len(useful),'items':useful}
+out={'version':'0.7.7-chat4-itemdb1','generated':'2026-09-16','itemCount':len(items),'indexedCount':len(useful),'items':useful}
 json.dump(out,open(P/'data/item_references.json','w',encoding='utf-8'),ensure_ascii=False,indent=2)
 # Runtime performance: keep the monolithic audit/source file, but serve one small reference file per item.
 shard_dir=P/'data'/'item_refs'; shard_dir.mkdir(exist_ok=True)
 for old_file in shard_dir.glob('*.json'): old_file.unlink()
-index={'version':'0.7.7-chat4-xrefaudit1','generated':'2026-09-16','items':{}}
+index={'version':'0.7.7-chat4-itemdb1','generated':'2026-09-16','items':{}}
 for iid,v in useful.items():
     payload={'id':iid,'acquire':v['acquire'],'uses':v['uses']}
     json.dump(payload,open(shard_dir/f'{iid}.json','w',encoding='utf-8'),ensure_ascii=False,separators=(',',':'))
