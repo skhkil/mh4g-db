@@ -858,3 +858,71 @@ button{border:1px solid var(--line);background:#202b39;color:white;border-radius
   #page-quest .toolbar .toolbar-check{grid-column:1/-1}
   #page-quest .quest-monsters,#page-quest .quest-rewards{white-space:normal!important;overflow-wrap:anywhere}
 }
+
+/* 2026-09-16 quest no-horizontal-scroll layout
+   PC and mobile must fit the content viewport without horizontal scrolling. */
+#page-quest{min-width:0;max-width:100%;overflow-x:hidden}
+#page-quest .table-panel{width:100%;max-width:100%;min-width:0;overflow-x:hidden!important}
+#page-quest #questTable{width:100%;max-width:100%;min-width:0}
+#page-quest #questTable .data-table{
+  width:100%!important;max-width:100%!important;min-width:0!important;
+  table-layout:fixed;white-space:normal!important;
+}
+#page-quest #questTable .data-table th,
+#page-quest #questTable .data-table td{
+  min-width:0!important;max-width:none!important;
+  white-space:normal!important;overflow-wrap:anywhere;word-break:keep-all;
+  vertical-align:top;
+}
+#page-quest #questTable .data-table th{padding:8px 5px;font-size:10px;line-height:1.25}
+#page-quest #questTable .data-table td{padding:7px 5px;font-size:10px;line-height:1.38}
+#page-quest #questTable .data-table small{white-space:normal;overflow-wrap:anywhere}
+#page-quest #questTable .ref-nav-btn,
+#page-quest #questTable .inline-item-link{max-width:100%;white-space:normal!important;overflow-wrap:anywhere}
+
+/* Event / episode / challenge: 16 columns = 100%. */
+#page-quest #questTable.quest-table-event th:nth-child(1),#page-quest #questTable.quest-table-event td:nth-child(1){width:4%}
+#page-quest #questTable.quest-table-event th:nth-child(2),#page-quest #questTable.quest-table-event td:nth-child(2){width:3%}
+#page-quest #questTable.quest-table-event th:nth-child(3),#page-quest #questTable.quest-table-event td:nth-child(3){width:10%}
+#page-quest #questTable.quest-table-event th:nth-child(4),#page-quest #questTable.quest-table-event td:nth-child(4){width:10%}
+#page-quest #questTable.quest-table-event th:nth-child(5),#page-quest #questTable.quest-table-event td:nth-child(5){width:8%}
+#page-quest #questTable.quest-table-event th:nth-child(6),#page-quest #questTable.quest-table-event td:nth-child(6){width:9%}
+#page-quest #questTable.quest-table-event th:nth-child(7),#page-quest #questTable.quest-table-event td:nth-child(7){width:6%}
+#page-quest #questTable.quest-table-event th:nth-child(8),#page-quest #questTable.quest-table-event td:nth-child(8){width:4%}
+#page-quest #questTable.quest-table-event th:nth-child(9),#page-quest #questTable.quest-table-event td:nth-child(9){width:5%}
+#page-quest #questTable.quest-table-event th:nth-child(10),#page-quest #questTable.quest-table-event td:nth-child(10){width:3.5%}
+#page-quest #questTable.quest-table-event th:nth-child(11),#page-quest #questTable.quest-table-event td:nth-child(11){width:4%}
+#page-quest #questTable.quest-table-event th:nth-child(12),#page-quest #questTable.quest-table-event td:nth-child(12){width:8%}
+#page-quest #questTable.quest-table-event th:nth-child(13),#page-quest #questTable.quest-table-event td:nth-child(13){width:4%}
+#page-quest #questTable.quest-table-event th:nth-child(14),#page-quest #questTable.quest-table-event td:nth-child(14){width:3.5%}
+#page-quest #questTable.quest-table-event th:nth-child(15),#page-quest #questTable.quest-table-event td:nth-child(15){width:7%}
+#page-quest #questTable.quest-table-event th:nth-child(16),#page-quest #questTable.quest-table-event td:nth-child(16){width:11%}
+
+/* Village / hub / G detail: 13 columns = 100%. */
+#page-quest #questTable.quest-table-detail th:nth-child(1),#page-quest #questTable.quest-table-detail td:nth-child(1){width:5%}
+#page-quest #questTable.quest-table-detail th:nth-child(2),#page-quest #questTable.quest-table-detail td:nth-child(2){width:4%}
+#page-quest #questTable.quest-table-detail th:nth-child(3),#page-quest #questTable.quest-table-detail td:nth-child(3){width:3%}
+#page-quest #questTable.quest-table-detail th:nth-child(4),#page-quest #questTable.quest-table-detail td:nth-child(4){width:13%}
+#page-quest #questTable.quest-table-detail th:nth-child(5),#page-quest #questTable.quest-table-detail td:nth-child(5){width:13%}
+#page-quest #questTable.quest-table-detail th:nth-child(6),#page-quest #questTable.quest-table-detail td:nth-child(6){width:9%}
+#page-quest #questTable.quest-table-detail th:nth-child(7),#page-quest #questTable.quest-table-detail td:nth-child(7){width:11%}
+#page-quest #questTable.quest-table-detail th:nth-child(8),#page-quest #questTable.quest-table-detail td:nth-child(8){width:7%}
+#page-quest #questTable.quest-table-detail th:nth-child(9),#page-quest #questTable.quest-table-detail td:nth-child(9){width:5%}
+#page-quest #questTable.quest-table-detail th:nth-child(10),#page-quest #questTable.quest-table-detail td:nth-child(10){width:6%}
+#page-quest #questTable.quest-table-detail th:nth-child(11),#page-quest #questTable.quest-table-detail td:nth-child(11){width:5%}
+#page-quest #questTable.quest-table-detail th:nth-child(12),#page-quest #questTable.quest-table-detail td:nth-child(12){width:8%}
+#page-quest #questTable.quest-table-detail th:nth-child(13),#page-quest #questTable.quest-table-detail td:nth-child(13){width:11%}
+
+/* Compact quest result: 8 columns = 100%. */
+#page-quest #questTable.quest-table-summary th:nth-child(1),#page-quest #questTable.quest-table-summary td:nth-child(1){width:6%}
+#page-quest #questTable.quest-table-summary th:nth-child(2),#page-quest #questTable.quest-table-summary td:nth-child(2){width:5%}
+#page-quest #questTable.quest-table-summary th:nth-child(3),#page-quest #questTable.quest-table-summary td:nth-child(3){width:18%}
+#page-quest #questTable.quest-table-summary th:nth-child(4),#page-quest #questTable.quest-table-summary td:nth-child(4){width:19%}
+#page-quest #questTable.quest-table-summary th:nth-child(5),#page-quest #questTable.quest-table-summary td:nth-child(5){width:12%}
+#page-quest #questTable.quest-table-summary th:nth-child(6),#page-quest #questTable.quest-table-summary td:nth-child(6){width:15%}
+#page-quest #questTable.quest-table-summary th:nth-child(7),#page-quest #questTable.quest-table-summary td:nth-child(7){width:9%}
+#page-quest #questTable.quest-table-summary th:nth-child(8),#page-quest #questTable.quest-table-summary td:nth-child(8){width:16%}
+
+@media (min-width:1181px), (hover:hover) and (pointer:fine) and (min-width:821px){
+  #page-quest #questTable .data-table{font-size:10px}
+}
