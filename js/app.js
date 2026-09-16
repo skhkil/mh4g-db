@@ -1,5 +1,5 @@
-import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-skillxref2-ui";
-import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-skillxref2-ui";
+import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-skillxref3-accordion";
+import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-skillxref3-accordion";
 
 let data={skills:[],armors:[],armorSets:[],decorations:[],weapons:[],weaponSummary:[],melodies:[],items:[],itemReferenceIndex:{items:{}},skillReferenceIndex:{items:{},categories:[]},meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],monsterReferenceIndex:{items:{}},dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],siteInfo:{},meta:{}};
 let targets=[];
@@ -24,7 +24,7 @@ let selectedItemId="";
 let restoringHistory=false;
 
 // v0.7.2: 반복 배열 검색과 옵션 재생성을 줄이기 위한 인덱스/캐시
-let skillById=new Map(),armorById=new Map(),weaponById=new Map(),decorationByIdMap=new Map(),armorSetById=new Map(),itemByName=new Map(),itemById=new Map();
+let skillById=new Map(),armorById=new Map(),weaponById=new Map(),decorationByIdMap=new Map(),armorSetById=new Map(),armorSetByPieceId=new Map(),itemByName=new Map(),itemById=new Map();
 let itemSearchCorpusById=new Map(),itemDetailHtmlCache=new Map(),itemReferenceCache=new Map(),skillReferenceCache=new Map(),monsterReferenceCache=new Map(),monsterFallbackPromise=null;
 const optionCache={armorByPart:new Map(),weaponByType:new Map(),armorSets:null,skillPicker:null,activation:null,weaponTypes:null};
 function rebuildIndexes(){
@@ -33,6 +33,8 @@ function rebuildIndexes(){
   weaponById=new Map((data.weapons||[]).map(x=>[x.id,x]));
   decorationByIdMap=new Map((data.decorations||[]).map(x=>[x.id,x]));
   armorSetById=new Map((data.armorSets||[]).map(x=>[x.id,x]));
+  armorSetByPieceId=new Map();
+  for(const set of data.armorSets||[]) for(const piece of set.pieces||[]) armorSetByPieceId.set(piece.id,set);
   itemByName=new Map((data.items||[]).map(x=>[x.name,x]));
   itemById=new Map((data.items||[]).map(x=>[String(x.id),x]));
   rebuildItemReferenceIndexes();
@@ -792,25 +794,44 @@ async function getSkillReference(skillId){
 function skillLink(skillId,label){return `<button type="button" class="xref-link skill-inline-link" data-open-skill="${esc(skillId)}">${esc(label||skillName(skillId))}</button>`;}
 function decoLink(name){return `<button type="button" class="xref-link" data-open-deco="${esc(name)}">${esc(name)}</button>`;}
 function decorationSkillHtml(d){return Object.entries(d.skills||{}).map(([k,v])=>`${skillLink(k,skillName(k))} <b>${v>0?"+":""}${v}</b>`).join(", ");}
-function skillSourceDetailsShell(s){
-  const m=skillReferenceMeta(s.id),deco=Number(m.decorationCount||0),armor=Number(m.armorCount||0);
-  return `<details class="skill-source-details" data-skill-ref="${esc(s.id)}"><summary><span>획득/제작 역추적</span><span class="skill-source-count">장식주 ${deco} · 방어구 ${armor}</span></summary><div class="skill-source-body"></div></details>`;
-}
 function armorSourceLabel(a){return `${PART_NAMES[a.part]||a.part||""} · ${rankName(a.rank)} · RARE ${a.rare||"-"} · ${a.points>0?"+":""}${a.points}`;}
+function groupSkillArmorsBySet(armors=[]){
+  const groups=new Map();
+  for(const a of armors){
+    const set=armorSetByPieceId.get(a.id);
+    const key=set?.id||`solo:${a.id}`;
+    if(!groups.has(key))groups.set(key,{id:key,name:set?.name||a.name,hunterType:set?.hunterType||a.hunterType,rank:set?.rank||a.rank,rare:set?.rare||a.rare,pieces:[]});
+    groups.get(key).pieces.push(a);
+  }
+  return [...groups.values()].sort((a,b)=>rankOrder(a.rank)-rankOrder(b.rank)||Number(a.rare||0)-Number(b.rare||0)||a.name.localeCompare(b.name,"ko"));
+}
+function rankOrder(r){return ({low:0,high:1,g:2})[r]??9;}
 function buildSkillSourceHtml(s,ref){
   const meta=skillReferenceMeta(s.id),decos=ref.decorations||[],armors=ref.armors||[],components=meta.components||[];
   const composite=meta.composite&&components.length?`<div class="skill-composite-box"><b>복합 효과</b><span>${components.map(esc).join(" + ")}</span></div>`:"";
-  const decoBlock=decos.length?`<details class="skill-source-group" open><summary>장식주로 확보 <b>${decos.length}종</b></summary><div class="skill-source-list">${decos.map(d=>`<div class="skill-source-row"><div>${decoLink(d.name)} <span class="slots">${d.slots}슬롯</span> <b>+${d.points}</b></div><small>${rankName(d.rank)} · ${materialLinks(d.materials||"")}</small></div>`).join("")}</div></details>`:"";
-  const armorBlock=armors.length?`<details class="skill-source-group" ${decos.length?'':'open'}><summary>방어구로 확보 <b>${armors.length}부위</b></summary><div class="skill-source-list skill-armor-source-list">${armors.map(a=>`<div class="skill-source-row"><div><button type="button" class="xref-link" data-item-nav="armor" data-nav-name="${esc(a.name)}">${esc(a.name)}</button> <b>+${a.points}</b></div><small>${esc(armorSourceLabel(a))}${a.materials?` · 제작: ${materialLinks(a.materials)}`:""}</small></div>`).join("")}</div></details>`:"";
+  const decoBlock=decos.length?`<details class="skill-source-group"><summary>장식주로 확보 <b>${decos.length}종</b></summary><div class="skill-source-list">${decos.map(d=>`<div class="skill-source-row"><div>${decoLink(d.name)} <span class="slots">${d.slots}슬롯</span> <b>+${d.points}</b></div><small>${rankName(d.rank)} · ${materialLinks(d.materials||"")}</small></div>`).join("")}</div></details>`:"";
+  const armorGroups=groupSkillArmorsBySet(armors);
+  const armorBlock=armorGroups.length?`<details class="skill-source-group"><summary>방어구로 확보 <b>${armorGroups.length}세트 · ${armors.length}부위</b></summary><div class="skill-armor-set-list">${armorGroups.map(g=>`<details class="skill-armor-set"><summary><span>${esc(g.name)}</span><small>${hunterName(g.hunterType)} · ${rankName(g.rank)} · RARE ${g.rare||"-"} · ${g.pieces.length}부위</small></summary><div class="skill-source-list skill-armor-source-list">${g.pieces.sort((a,b)=>PARTS.indexOf(a.part)-PARTS.indexOf(b.part)).map(a=>`<div class="skill-source-row"><div><button type="button" class="xref-link" data-item-nav="armor" data-nav-name="${esc(a.name)}">${esc(a.name)}</button> <b>${a.points>0?"+":""}${a.points}</b></div><small>${esc(armorSourceLabel(a))}${a.materials?` · 제작: ${materialLinks(a.materials)}`:""}</small></div>`).join("")}</div></details>`).join("")}</div></details>`:"";
   return `${composite}${decoBlock}${armorBlock}`;
 }
-async function hydrateSkillSource(details){
-  if(!details?.open||details.dataset.loaded==="1")return;
-  const sid=details.dataset.skillRef,s=skillById.get(sid);if(!s)return;
-  const body=details.querySelector('.skill-source-body');if(!body)return;
+async function openSkillDetail(skillId,row){
+  const table=row?.closest("table"); if(!table)return;
+  const current=table.querySelector("tr.skill-db-row.is-open");
+  const currentDetail=table.querySelector("tr.skill-detail-row:not([hidden])");
+  if(current&&current!==row){current.classList.remove("is-open");current.setAttribute("aria-expanded","false");}
+  if(currentDetail&&currentDetail.previousElementSibling!==row)currentDetail.hidden=true;
+  const detail=row.nextElementSibling;
+  if(!detail?.classList.contains("skill-detail-row"))return;
+  const willOpen=!row.classList.contains("is-open");
+  if(!willOpen){row.classList.remove("is-open");row.setAttribute("aria-expanded","false");detail.hidden=true;return;}
+  row.classList.add("is-open");row.setAttribute("aria-expanded","true");detail.hidden=false;
+  const body=detail.querySelector(".skill-source-body");
+  if(detail.dataset.loaded==="1")return;
   body.innerHTML='<p class="muted">연결 데이터 불러오는 중…</p>';
-  const ref=await getSkillReference(sid);if(!details.isConnected||!details.open)return;
-  body.innerHTML=buildSkillSourceHtml(s,ref);details.dataset.loaded="1";bindInlineItemLinks(body);
+  const skill=skillById.get(skillId); if(!skill)return;
+  const ref=await getSkillReference(skillId);
+  if(!detail.isConnected||detail.hidden)return;
+  body.innerHTML=buildSkillSourceHtml(skill,ref);detail.dataset.loaded="1";bindInlineItemLinks(body);
 }
 
 function decorationCategories(d){
@@ -839,9 +860,12 @@ function renderDecoTable(){
 function renderSkillTable(){
   const q=$("#skillSearch").value.trim().toLowerCase(),cat=$("#skillCategoryFilter")?.value||"all",type=$("#skillTypeFilter")?.value||"all";
   const list=data.skills.filter(s=>{const m=skillReferenceMeta(s.id);if(q&&!skillSearchCorpus(s).toLowerCase().includes(q))return false;if(cat!=="all"&&m.category!==cat)return false;if(type==="composite"&&!m.composite)return false;if(type==="normal"&&m.composite)return false;if(type==="no-deco"&&m.hasDecoration)return false;if(type==="with-deco"&&!m.hasDecoration)return false;return true;});
-  const rows=list.map(s=>{const m=skillReferenceMeta(s.id);return `<tr><td><strong>${esc(s.name)}</strong>${localizedNameSub(s)}<div class="skill-badges"><span class="skill-category-badge">${esc(m.category||"미분류")}</span>${m.composite?'<span class="skill-composite-badge">복합</span>':""}</div></td><td>${(s.activations||[]).map(a=>`${a.points>0?"+":""}${a.points} → <strong>${esc(a.name)}</strong>${localizedNameSub(a)}`).join("<br>")}</td><td>${(s.activations||[]).map(a=>a.description?`<div><strong>${esc(a.name)}</strong>: ${esc(cleanEffectText(a.description))}</div>`:"").filter(Boolean).join("")}</td><td>${skillSourceDetailsShell(s)}</td></tr>`});
-  renderTable("#skillTable",["스킬 계통","발동 조건","효과 및 비고","획득/제작 역추적"],rows);bindInlineItemLinks($("#skillTable"));const info=$("#skillResultInfo");if(info)info.textContent=`${list.length} / ${data.skills.length}개 스킬 · 분야는 탐색용 편의 분류`;
+  const root=$("#skillTable");
+  const rows=list.map(s=>{const m=skillReferenceMeta(s.id);const main=`<tr class="skill-db-row" data-skill-row="${esc(s.id)}" tabindex="0" aria-expanded="false"><td><strong>${esc(s.name)}</strong>${localizedNameSub(s)}<div class="skill-badges"><span class="skill-category-badge">${esc(m.category||"미분류")}</span>${m.composite?'<span class="skill-composite-badge">복합</span>':""}</div></td><td>${(s.activations||[]).map(a=>`${a.points>0?"+":""}${a.points} → <strong>${esc(a.name)}</strong>${localizedNameSub(a)}`).join("<br>")}</td><td>${(s.activations||[]).map(a=>a.description?`<div><strong>${esc(a.name)}</strong>: ${esc(cleanEffectText(a.description))}</div>`:"").filter(Boolean).join("")}</td></tr>`;const detail=`<tr class="skill-detail-row" data-skill-detail="${esc(s.id)}" hidden><td colspan="3"><div class="skill-source-body"></div></td></tr>`;return main+detail;}).join("");
+  root.innerHTML=`<table class="data-table skill-db-table"><colgroup><col class="skill-col-tree"><col class="skill-col-activation"><col class="skill-col-effect"></colgroup><thead><tr><th>스킬 계통</th><th>발동 조건</th><th>효과 및 비고</th></tr></thead><tbody>${rows||'<tr><td colspan="3" class="result-empty">검색 결과 없음</td></tr>'}</tbody></table>`;
+  decorateResponsiveTables(root);bindInlineItemLinks(root);const info=$("#skillResultInfo");if(info)info.textContent=`${list.length} / ${data.skills.length}개 스킬 · 분야는 탐색용 편의 분류`;
 }
+
 function itemReferenceCount(item){
   const row=data.itemReferenceIndex?.items?.[item?.id]||data.itemReferenceIndex?.items?.[String(item?.id)]||{};
   return {acquire:Number(row.acquire)||0,uses:Number(row.uses)||0};
@@ -1406,6 +1430,11 @@ function bind(){
     if(decoBtn){e.preventDefault();openPage("decoration").then(()=>{$("#decoRankFilter").value="all";$("#decoSlotFilter").value="all";$("#decoCategoryFilter").value="all";$("#decoSearch").value=decoBtn.dataset.openDeco||"";renderDecoTable();});return;}
     const skillNav=e.target.closest?.('#skillTable .skill-source-details [data-item-nav]');
     if(skillNav){e.preventDefault();replaceCurrentHistoryState();followItemReference(skillNav).then(pushCurrentHistoryState);return;}
+    const skillRow=e.target.closest?.('#skillTable tr.skill-db-row[data-skill-row]');
+    if(skillRow){
+      if(e.target.closest('button,a,input,select,details,summary'))return;
+      e.preventDefault();void openSkillDetail(skillRow.dataset.skillRow,skillRow);return;
+    }
     const monsterCard=e.target.closest?.('[data-monster-card]');
     if(monsterCard){e.preventDefault();replaceCurrentHistoryState();$("#monsterSelect").value=monsterCard.dataset.monsterCard;$("#monsterSearch").value="";monsterView="basic";renderMonster();pushCurrentHistoryState();return;}
     const monsterTab=e.target.closest?.('[data-monster-tab]');
@@ -1436,7 +1465,8 @@ function bind(){
     const close=e.target.closest?.('#itemTable .item-detail-close');
     if(close){e.preventDefault();removeItemDetailRow();selectedItemId="";replaceCurrentHistoryState();return;}
   });
-  document.addEventListener("toggle",e=>{const d=e.target;if(d?.matches?.("#itemTable details.xref-lazy"))void hydrateXrefGroup(d);if(d?.matches?.("details.skill-source-details"))void hydrateSkillSource(d)},true);
+  document.addEventListener("keydown",e=>{const row=e.target.closest?.('#skillTable tr.skill-db-row[data-skill-row]');if(row&&(e.key==="Enter"||e.key===" ")){e.preventDefault();void openSkillDetail(row.dataset.skillRow,row);}});
+  document.addEventListener("toggle",e=>{const d=e.target;if(d?.matches?.("#itemTable details.xref-lazy"))void hydrateXrefGroup(d)},true);
   $("#sidebarToggle").onclick=()=>{$(".app-shell").classList.toggle("sidebar-collapsed");const collapsed=$(".app-shell").classList.contains("sidebar-collapsed");$("#sidebarToggle").title=collapsed?"좌측 메뉴 펼치기":"좌측 메뉴 접기";};
 
   $$('.nav-group-toggle').forEach(b=>b.onclick=e=>{

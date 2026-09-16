@@ -750,3 +750,48 @@ button{border:1px solid var(--line);background:#202b39;color:white;border-radius
   .skill-filter-toolbar,.deco-filter-toolbar{grid-template-columns:1fr!important}
   .skill-filter-toolbar .search-input,.deco-filter-toolbar .search-input{grid-column:auto}
 }
+
+/* 2026-09-16 skill DB accordion cleanup */
+#skillTable .skill-db-table{table-layout:fixed;width:100%;min-width:0}
+#skillTable .skill-db-table col.skill-col-tree{width:18%}
+#skillTable .skill-db-table col.skill-col-activation{width:24%}
+#skillTable .skill-db-table col.skill-col-effect{width:58%}
+#skillTable .skill-db-table th,
+#skillTable .skill-db-table td{white-space:normal;overflow-wrap:anywhere;word-break:keep-all;vertical-align:top}
+#skillTable .skill-db-row{cursor:pointer;transition:background .12s ease}
+#skillTable .skill-db-row:hover td{background:#1a2633}
+#skillTable .skill-db-row.is-open td{background:#182532;border-bottom-color:#33465a}
+#skillTable .skill-db-row td:first-child{position:relative;padding-right:28px}
+#skillTable .skill-db-row td:first-child::after{content:'⌄';position:absolute;right:10px;top:11px;color:var(--muted);font-size:13px;transition:transform .12s ease}
+#skillTable .skill-db-row.is-open td:first-child::after{transform:rotate(180deg);color:var(--accent2)}
+#skillTable .skill-detail-row>td{padding:0!important;background:#111a24!important;border-bottom:1px solid #344354!important}
+#skillTable .skill-detail-row[hidden]{display:none!important}
+#skillTable .skill-detail-row .skill-source-body{padding:14px 16px 18px;min-width:0}
+#skillTable .skill-source-group{margin:8px 0;background:rgba(255,255,255,.015)}
+#skillTable .skill-source-group>summary{display:flex;align-items:center;gap:8px;padding:3px 1px}
+#skillTable .skill-source-group>summary b{margin-left:auto;color:var(--muted);font-size:11px}
+.skill-armor-set-list{display:flex;flex-direction:column;gap:6px;margin-top:8px}
+.skill-armor-set{border:1px solid rgba(128,128,128,.22);border-radius:8px;overflow:hidden;background:rgba(255,255,255,.018)}
+.skill-armor-set>summary{cursor:pointer;display:flex;align-items:center;gap:10px;padding:9px 10px;list-style:none;font-weight:700}
+.skill-armor-set>summary::-webkit-details-marker{display:none}
+.skill-armor-set>summary::before{content:'▶';font-size:8px;color:var(--muted);width:10px;flex:0 0 10px}
+.skill-armor-set[open]>summary::before{content:'▼'}
+.skill-armor-set>summary small{margin-left:auto;color:var(--muted);font-size:10px;font-weight:500;white-space:normal;text-align:right}
+.skill-armor-set .skill-source-list{margin:0;padding:4px 10px 8px 28px;max-height:none;overflow:visible}
+
+@media (max-width:820px), (pointer:coarse) and (max-width:1180px){
+  #skillTable .skill-db-table colgroup{display:none}
+  #skillTable .skill-db-table.responsive-table tbody tr.skill-db-row{grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr)!important}
+  #skillTable .skill-db-table.responsive-table tbody tr.skill-db-row td:nth-child(1),
+  #skillTable .skill-db-table.responsive-table tbody tr.skill-db-row td:nth-child(2){grid-column:auto!important;border-right:1px solid #222d3b!important}
+  #skillTable .skill-db-table.responsive-table tbody tr.skill-db-row td:nth-child(2){border-right:0!important}
+  #skillTable .skill-db-table.responsive-table tbody tr.skill-db-row td:nth-child(3){grid-column:1/-1!important;border-right:0!important}
+  #skillTable .skill-db-table.responsive-table tbody tr.skill-detail-row{display:block!important;padding:0!important;border-radius:0 0 10px 10px!important;border-top:0!important}
+  #skillTable .skill-db-table.responsive-table tbody tr.skill-detail-row[hidden]{display:none!important}
+  #skillTable .skill-db-table.responsive-table tbody tr.skill-detail-row>td{display:block!important;width:100%!important;max-width:100%!important;border:0!important;padding:0!important}
+  #skillTable .skill-db-table.responsive-table tbody tr.skill-detail-row>td::before{display:none!important}
+  #skillTable .skill-detail-row .skill-source-body{padding:12px 10px 16px}
+  .skill-armor-set>summary{align-items:flex-start;flex-wrap:wrap}
+  .skill-armor-set>summary small{width:100%;margin-left:20px;text-align:left}
+  .skill-armor-set .skill-source-list{padding-left:18px}
+}
