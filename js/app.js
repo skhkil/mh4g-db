@@ -1,5 +1,5 @@
-import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-rowfocus2-mobileperf";
-import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-rowfocus2-mobileperf";
+import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-xrefaudit1";
+import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-xrefaudit1";
 
 let data={skills:[],armors:[],armorSets:[],decorations:[],weapons:[],weaponSummary:[],melodies:[],items:[],itemReferenceIndex:{items:{}},skillReferenceIndex:{items:{},categories:[]},meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],monsterReferenceIndex:{items:{}},dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],siteInfo:{},meta:{}};
 let targets=[];
@@ -542,7 +542,7 @@ function localizedNameSub(x){
 }
 function renderArmorTable(){
   const q=$("#armorSearch").value.trim().toLowerCase(),part=$("#armorPartFilter").value;
-  const rows=data.armors.filter(a=>(part==="all"||a.part===part)&&armorEligible(a)&&(armorViewMode!=="other"||(a.source||"").endsWith("/armor/etc.htm"))).filter(a=>!q||`${a.name} ${a.nameJa||""} ${a.nameEn||""} ${Object.keys(a.skills||{}).map(skillName).join(" ")} ${a.materials||""}`.toLowerCase().includes(q)).map(a=>`<tr><td><strong>${esc(a.name)}</strong>${localizedNameSub(a)}</td><td>${hunterName(a.hunterType)}</td><td>${PART_NAMES[a.part]||a.part}</td><td>${a.rare||"-"}</td><td>${a.defense||0} / ${a.maxDefense||a.defense||0}</td><td class="slots">${slotsText(a.slots)}</td><td>${a.torsoUp?"몸통배가":Object.entries(a.skills||{}).map(([k,v])=>`${esc(skillName(k))} ${v>0?"+":""}${v}`).join(", ")}</td><td>${resistText(a.resistances)}</td><td>${rankName(a.rank)}</td><td class="wrap-cell">${materialLinks(a.materials||"")}</td></tr>`);
+  const rows=data.armors.filter(a=>(part==="all"||a.part===part)&&armorEligible(a)&&(armorViewMode!=="other"||(a.source||"").endsWith("/armor/etc.htm"))).filter(a=>!q||`${a.name} ${a.nameJa||""} ${a.nameEn||""} ${Object.keys(a.skills||{}).map(skillName).join(" ")} ${a.materials||""}`.toLowerCase().includes(q)).map(a=>`<tr><td><strong>${esc(a.name)}</strong>${localizedNameSub(a)}</td><td>${hunterName(a.hunterType)}</td><td>${PART_NAMES[a.part]||a.part}</td><td>${a.rare||"-"}</td><td>${a.defense||0} / ${a.maxDefense||a.defense||0}</td><td class="slots">${slotsText(a.slots)}</td><td>${a.torsoUp?"몸통배가":Object.entries(a.skills||{}).map(([k,v])=>`${skillLink(k,skillName(k))} ${v>0?"+":""}${v}`).join(", ")}</td><td>${resistText(a.resistances)}</td><td>${rankName(a.rank)}</td><td class="wrap-cell">${materialLinks(a.materials||"")}</td></tr>`);
   renderTable("#armorTable",["명칭","타입","부위","RARE","방어(초기/최대)","슬롯","스킬","내성","등급","생산 소재"],rows);
 }
 
@@ -988,13 +988,15 @@ async function followItemReference(btn){
   }else if(type==="armor"){
     await openPage("armor"); $("#hunterType").value="both";$("#rankFilter").value="all";$("#armorPartFilter").value="all";$("#armorSearch").value=name;renderArmorTable();
   }else if(type==="decoration"){
-    await openPage("decoration");$("#rankFilter").value="all";$("#decoSearch").value=name;renderDecoTable();
+    await openPage("decoration");
+    $("#decoRankFilter").value="all";$("#decoSlotFilter").value="all";$("#decoCategoryFilter").value="all";
+    $("#decoSearch").value=name;renderDecoTable();
   }else if(type==="compose"){
     await openPage("compose");$("#composeSearch").value=name;renderCompose();
   }else if(type==="dragon"){
     dragonView=btn.dataset.navView||"exchange";await openPage("dragon");$("#dragonSearch").value=name;renderDragon();
   }else if(type==="monster"){
-    monsterView="rewards";await openPage("monster");const mon=btn.dataset.navMonster||"";if([...$("#monsterSelect").options].some(o=>o.value===mon))$("#monsterSelect").value=mon;$("#monsterSearch").value="";$("#monsterRankFilter").value="all";renderMonster();
+    monsterView="rewards";await openPage("monster");const mon=canonicalMonsterName(btn.dataset.navMonster||"");if([...$("#monsterSelect").options].some(o=>o.value===mon))$("#monsterSelect").value=mon;$("#monsterSearch").value="";$("#monsterRankFilter").value="all";renderMonster();
   }else if(type==="quest"){
     const qt=btn.dataset.navQuesttype||"";questView=qt==="event"?"event-all":qt==="challenge"?"challenge":qt==="village"?"village-detail":qt==="hub"?"hub-detail":qt==="g"?"g-detail":"key";await openPage("quest");$("#questSearch").value=name;$("#questLevelFilter").value="all";$("#questKeyOnly").checked=false;renderQuest();
   }
@@ -1029,7 +1031,7 @@ function armorSetEligible(s){
 function renderArmorSetTable(){
   const q=$("#armorSetSearch").value.trim().toLowerCase();
   const rows=data.armorSets.filter(armorSetEligible).filter(s=>{const mats=armorSetMaterials(s);return !q||`${s.name} ${(s.pieces||[]).map(p=>p.name).join(" ")} ${Object.keys(s.skills||{}).map(skillName).join(" ")} ${mats}`.toLowerCase().includes(q)})
-    .map(s=>{const mats=armorSetMaterials(s);return `<tr><td><strong>${esc(s.name)}</strong><small>${(s.pieces||[]).map(p=>`${PART_NAMES[p.part]||p.part}:${p.name}`).map(esc).join(" · ")}</small></td><td>${hunterName(s.hunterType)}</td><td>${rankName(s.rank)}</td><td>${s.rare||"-"}</td><td>${s.defense||0} / ${s.maxDefense||s.defense||0}</td><td>${s.slots||0}</td><td>${Object.entries(s.skills||{}).sort((a,b)=>b[1]-a[1]).map(([k,v])=>`${esc(skillName(k))} ${v>0?"+":""}${v}`).join(", ")}</td><td>${resistText(s.resistances)}</td><td class="wrap-cell">${materialLinks(mats)}</td></tr>`});
+    .map(s=>{const mats=armorSetMaterials(s);return `<tr><td><strong>${esc(s.name)}</strong><small>${(s.pieces||[]).map(p=>`${PART_NAMES[p.part]||p.part}:${p.name}`).map(esc).join(" · ")}</small></td><td>${hunterName(s.hunterType)}</td><td>${rankName(s.rank)}</td><td>${s.rare||"-"}</td><td>${s.defense||0} / ${s.maxDefense||s.defense||0}</td><td>${s.slots||0}</td><td>${Object.entries(s.skills||{}).sort((a,b)=>b[1]-a[1]).map(([k,v])=>`${skillLink(k,skillName(k))} ${v>0?"+":""}${v}`).join(", ")}</td><td>${resistText(s.resistances)}</td><td class="wrap-cell">${materialLinks(mats)}</td></tr>`});
   renderTable("#armorSetTable",["세트","타입","등급","RARE","방어(초기/최대)","총 슬롯","스킬 합계","내성 합계","세트 제작 소재"],rows);
 }
 
@@ -1055,15 +1057,34 @@ function renderMealGrid(){
   $("#mealGrid").innerHTML=[...grouped.entries()].map(([key,rows])=>`<section class="panel meal-card"><h3>${esc(key)}</h3><div class="meal-method-grid">${rows.map(x=>`<div class="meal-method"><strong>${esc(x.method)}</strong><span class="meal-effect">${esc(x.effect||"효과없음")}</span><small>${(x.skills||[]).map(esc).join(" · ")||"-"}</small></div>`).join("")}</div></section>`).join("")||'<div class="panel result-empty">검색 결과 없음</div>';
 }
 
+const MONSTER_CANONICAL_ALIASES=Object.freeze({
+  "오오나즈치":"오나즈치",
+  "맹폭 브라키디오스":"임계 브라키디오스",
+  "혼돈에 신음하는 고어·마가라":"혼돈의 고어·마가라",
+  "밀라보레아스 (흑룡)":"밀라보레아스",
+  "밀라보레아스 (선조룡)":"밀라보레아스 (조룡)"
+});
+const MONSTER_DETAIL_ALIASES=Object.freeze({
+  "임계 브라키디오스":"맹폭 브라키디오스",
+  "혼돈의 고어·마가라":"혼돈에 신음하는 고어·마가라",
+  "밀라보레아스":"밀라보레아스 (흑룡)",
+  "밀라보레아스 (조룡)":"밀라보레아스 (선조룡)"
+});
+const MONSTER_REWARD_ALIASES=Object.freeze({
+  "오나즈치":"오오나즈치",
+  "임계 브라키디오스":"맹폭 브라키디오스",
+  "혼돈의 고어·마가라":"혼돈에 신음하는 고어·마가라"
+});
+function canonicalMonsterName(name){return MONSTER_CANONICAL_ALIASES[String(name||"").trim()]||String(name||"").trim()}
 function populateMonsterSelect(){
   const el=$("#monsterSelect"); if(!el) return;
-  const old=el.value||"all";
+  const old=canonicalMonsterName(el.value||"all");
   const names=(data.monsterSummary||[]).map(x=>x.name).filter(Boolean).sort((a,b)=>a.localeCompare(b,"ko"));
   el.innerHTML='<option value="all">전체 몬스터</option>'+names.map(n=>`<option value="${esc(n)}">${esc(n)}</option>`).join("");
   el.value=names.includes(old)?old:"all";
 }
-function monsterSummaryRow(name){return (data.monsterSummary||[]).find(x=>x.name===name)||null}
-function monsterDetailRow(name){return (data.monsterDetails||[]).find(x=>x.name===name)||null}
+function monsterSummaryRow(name){const key=canonicalMonsterName(name);return (data.monsterSummary||[]).find(x=>x.name===key)||null}
+function monsterDetailRow(name){const key=MONSTER_DETAIL_ALIASES[canonicalMonsterName(name)]||canonicalMonsterName(name);return (data.monsterDetails||[]).find(x=>x.name===key)||null}
 function selectedMonsterName(){const v=$("#monsterSelect")?.value||"all";return v==="all"?"":v}
 function monsterSearchMatch(mon,q){
   if(!q)return true;
@@ -1116,7 +1137,8 @@ function renderMonsterHitzone(name){
 function monsterRankLabel(rank){return rank==="low"?"하위":rank==="high"?"상위":rank==="g"?"G급":rank==="extreme"?"극한":rank}
 function renderMonsterRewards(name){
   const selectedRank=$("#monsterRankFilter").value||"all";
-  const rows=(data.monsterRewards||[]).filter(x=>x.monster===name&&(selectedRank==="all"||x.rank===selectedRank));
+  const rewardName=MONSTER_REWARD_ALIASES[canonicalMonsterName(name)]||canonicalMonsterName(name);
+  const rows=(data.monsterRewards||[]).filter(x=>x.monster===rewardName&&(selectedRank==="all"||x.rank===selectedRank));
   const rankOrder=["low","high","g","extreme"];
   const sections=rankOrder.filter(r=>rows.some(x=>x.rank===r)).map(rank=>{
     const rr=rows.filter(x=>x.rank===rank),methods=new Map();
@@ -1126,17 +1148,18 @@ function renderMonsterRewards(name){
   return sections.join("")||'<div class="panel result-empty">보수 데이터가 없습니다.</div>';
 }
 async function getMonsterReference(name){
-  const meta=data.monsterReferenceIndex?.items?.[name];
-  if(monsterReferenceCache.has(name))return monsterReferenceCache.get(name);
+  const key=canonicalMonsterName(name);
+  const meta=data.monsterReferenceIndex?.items?.[key];
+  if(monsterReferenceCache.has(key))return monsterReferenceCache.get(key);
   const promise=(async()=>{
     let ref=null;
     if(meta?.file)try{ref=await loadMonsterReference(meta.file)}catch{}
     if(ref&&Array.isArray(ref.quests)&&Array.isArray(ref.uses))return ref;
     if(!monsterFallbackPromise)monsterFallbackPromise=loadMonsterReferencesFallback().catch(()=>({}));
     const all=await monsterFallbackPromise;
-    return all?.[name]||{monster:name,items:[],quests:[],uses:[]};
+    return all?.[key]||{monster:key,items:[],quests:[],uses:[]};
   })();
-  monsterReferenceCache.set(name,promise);
+  monsterReferenceCache.set(key,promise);
   return promise;
 }
 function questTypeOrder(x){return ({village:1,hub:2,g:3,event:4,challenge:5}[x]||9)}
@@ -1443,9 +1466,9 @@ function bind(){
     const skillItem=e.target.closest?.('#skillTable .inline-item-link[data-open-item]');
     if(skillItem){e.preventDefault();e.stopPropagation();void openItemByName(skillItem.dataset.openItem);return;}
     const skillBtn=e.target.closest?.('[data-open-skill]');
-    if(skillBtn){e.preventDefault();openPage("skill").then(()=>{$("#skillSearch").value=skillName(skillBtn.dataset.openSkill)||"";$("#skillCategoryFilter").value="all";$("#skillTypeFilter").value="all";renderSkillTable();});return;}
+    if(skillBtn){e.preventDefault();e.stopPropagation();replaceCurrentHistoryState();openPage("skill").then(()=>{$("#skillSearch").value=skillName(skillBtn.dataset.openSkill)||"";$("#skillCategoryFilter").value="all";$("#skillTypeFilter").value="all";renderSkillTable();pushCurrentHistoryState();});return;}
     const decoBtn=e.target.closest?.('[data-open-deco]');
-    if(decoBtn){e.preventDefault();openPage("decoration").then(()=>{$("#decoRankFilter").value="all";$("#decoSlotFilter").value="all";$("#decoCategoryFilter").value="all";$("#decoSearch").value=decoBtn.dataset.openDeco||"";renderDecoTable();});return;}
+    if(decoBtn){e.preventDefault();e.stopPropagation();replaceCurrentHistoryState();openPage("decoration").then(()=>{$("#decoRankFilter").value="all";$("#decoSlotFilter").value="all";$("#decoCategoryFilter").value="all";$("#decoSearch").value=decoBtn.dataset.openDeco||"";renderDecoTable();pushCurrentHistoryState();});return;}
     const skillNav=e.target.closest?.('#skillTable .skill-source-body [data-item-nav]');
     if(skillNav){e.preventDefault();e.stopPropagation();replaceCurrentHistoryState();followItemReference(skillNav).then(pushCurrentHistoryState);return;}
     const skillRow=e.target.closest?.('#skillTable tr.skill-db-row[data-skill-row]');

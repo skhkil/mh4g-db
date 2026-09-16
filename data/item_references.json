@@ -1,6 +1,6 @@
 {
-  "version": "0.7.7-chat4-itemxref1",
-  "generated": "2026-09-15",
+  "version": "0.7.7-chat4-xrefaudit1",
+  "generated": "2026-09-16",
   "itemCount": 524,
   "indexedCount": 347,
   "items": {
@@ -22113,7 +22113,7 @@
         },
         {
           "type": "monster",
-          "monster": "오오나즈치",
+          "monster": "오나즈치",
           "method": "갈무리",
           "rank": "g",
           "probability": "15%",
@@ -22121,7 +22121,7 @@
         },
         {
           "type": "monster",
-          "monster": "오오나즈치",
+          "monster": "오나즈치",
           "method": "꼬리 갈무리",
           "rank": "g",
           "probability": "1 7%",
@@ -22129,7 +22129,7 @@
         },
         {
           "type": "monster",
-          "monster": "오오나즈치",
+          "monster": "오나즈치",
           "method": "최대 2회",
           "rank": "g",
           "probability": "37%",
@@ -22137,7 +22137,7 @@
         },
         {
           "type": "monster",
-          "monster": "오오나즈치",
+          "monster": "오나즈치",
           "method": "파괴 시 보수",
           "rank": "g",
           "probability": "30%",
@@ -56145,14 +56145,6 @@
         },
         {
           "type": "monster",
-          "monster": "맹폭 브라키디오스",
-          "method": "낙하물",
-          "rank": "g",
-          "probability": "6 5%",
-          "count": ""
-        },
-        {
-          "type": "monster",
           "monster": "모노블로스",
           "method": "낙하물",
           "rank": "high",
@@ -56361,6 +56353,14 @@
         },
         {
           "type": "monster",
+          "monster": "임계 브라키디오스",
+          "method": "낙하물",
+          "rank": "g",
+          "probability": "6 5%",
+          "count": ""
+        },
+        {
+          "type": "monster",
           "monster": "진오우거",
           "method": "낙하물",
           "rank": "g",
@@ -56489,7 +56489,7 @@
         },
         {
           "type": "monster",
-          "monster": "혼돈에 신음하는 고어·마가라",
+          "monster": "혼돈의 고어·마가라",
           "method": "낙하물",
           "rank": "g",
           "probability": "50%",
@@ -56697,7 +56697,7 @@
         },
         {
           "type": "monster",
-          "monster": "오오나즈치",
+          "monster": "오나즈치",
           "method": "낙하물",
           "rank": "g",
           "probability": "55%",
