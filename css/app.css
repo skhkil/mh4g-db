@@ -844,3 +844,17 @@ button{border:1px solid var(--line);background:#202b39;color:white;border-radius
   #skillTable .skill-db-row.is-open + .skill-detail-row>td{background:transparent!important}
   #skillTable .skill-db-row.is-open td:first-child::after{color:var(--row-focus)!important}
 }
+
+/* 2026-09-16 quest advanced filters */
+#page-quest .toolbar{flex-wrap:wrap;align-items:center}
+#page-quest .toolbar .search-input{flex:1 1 360px}
+#page-quest .toolbar .toolbar-select{min-width:135px;max-width:220px}
+#page-quest .quest-monsters .ref-nav-btn,#page-quest .quest-rewards .inline-item-link{white-space:normal}
+.quest-more-rewards{display:inline-block;padding:2px 6px;border:1px solid var(--line);border-radius:999px;color:var(--muted);font-size:10px;vertical-align:middle}
+@media (max-width:820px), (hover:none) and (pointer:coarse) and (max-width:1180px){
+  #page-quest .toolbar{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}
+  #page-quest .toolbar .search-input,#page-quest #questRewardFilter{grid-column:1/-1;max-width:none}
+  #page-quest .toolbar .toolbar-select{min-width:0;max-width:none;width:100%}
+  #page-quest .toolbar .toolbar-check{grid-column:1/-1}
+  #page-quest .quest-monsters,#page-quest .quest-rewards{white-space:normal!important;overflow-wrap:anywhere}
+}

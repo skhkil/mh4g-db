@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#121821" />
   <title>MH4G 장비 · 스킬 시뮬레이터</title>
-  <link rel="stylesheet" href="./css/app.css?v=0.7.7-chat4-monbadge-tiefix" />
+  <link rel="stylesheet" href="./css/app.css?v=0.7.7-chat4-quest1" />
 </head>
 <body>
   <div class="app-shell">
@@ -352,8 +352,12 @@
 
       <section id="page-quest" class="page">
         <div class="toolbar">
-          <input id="questSearch" class="search-input" placeholder="퀘스트명·목표·장소 검색" />
-          <select id="questLevelFilter"><option value="all">전체 ★</option></select>
+          <input id="questSearch" class="search-input" placeholder="퀘스트명·목표·몬스터·보상 검색" />
+          <select id="questTypeFilter" class="toolbar-select"><option value="all">전체 유형</option><option value="key">키퀘</option><option value="urgent">긴급</option><option value="village">여단</option><option value="hub">집회소</option><option value="g">G급</option><option value="event">이벤트</option><option value="episodic">에피소드</option><option value="challenge">챌린지</option></select>
+          <select id="questLevelFilter" class="toolbar-select"><option value="all">전체 ★</option></select>
+          <select id="questLocationFilter" class="toolbar-select"><option value="all">전체 맵</option></select>
+          <select id="questMonsterFilter" class="toolbar-select"><option value="all">전체 몬스터</option></select>
+          <input id="questRewardFilter" class="toolbar-select" list="questRewardList" placeholder="보상 아이템/티켓" /><datalist id="questRewardList"></datalist>
           <label class="toolbar-check"><input type="checkbox" id="questKeyOnly" /> 키퀘만</label>
         </div>
         <div class="panel table-panel"><div id="questTable"></div></div>
@@ -390,6 +394,6 @@ python tools/build_database.py --publish</code></pre>
     </main>
   </div>
 
-  <script type="module" src="./js/app.js?v=0.7.7-chat4-monbadge-tiefix"></script>
+  <script type="module" src="./js/app.js?v=0.7.7-chat4-quest1"></script>
 </body>
 </html>

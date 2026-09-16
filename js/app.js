@@ -1,7 +1,7 @@
-import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-monbadge-tiefix";
-import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-monbadge-tiefix";
+import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-quest1";
+import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-quest1";
 
-let data={skills:[],armors:[],armorSets:[],decorations:[],weapons:[],weaponSummary:[],melodies:[],items:[],itemReferenceIndex:{items:{}},skillReferenceIndex:{items:{},categories:[]},meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],monsterReferenceIndex:{items:{}},dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],siteInfo:{},meta:{}};
+let data={skills:[],armors:[],armorSets:[],decorations:[],weapons:[],weaponSummary:[],melodies:[],items:[],itemReferenceIndex:{items:{}},skillReferenceIndex:{items:{},categories:[]},meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],monsterReferenceIndex:{items:{}},dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],questReferenceIndex:{quests:{}},siteInfo:{},meta:{}};
 let targets=[];
 let currentPage="simulator";
 const BUILD_STORAGE_KEY="mh4g-builds-v1";
@@ -998,7 +998,7 @@ async function followItemReference(btn){
   }else if(type==="monster"){
     monsterView="rewards";await openPage("monster");const mon=canonicalMonsterName(btn.dataset.navMonster||"");if([...$("#monsterSelect").options].some(o=>o.value===mon))$("#monsterSelect").value=mon;$("#monsterSearch").value="";$("#monsterRankFilter").value="all";renderMonster();
   }else if(type==="quest"){
-    const qt=btn.dataset.navQuesttype||"";questView=qt==="event"?"event-all":qt==="challenge"?"challenge":qt==="village"?"village-detail":qt==="hub"?"hub-detail":qt==="g"?"g-detail":"key";await openPage("quest");$("#questSearch").value=name;$("#questLevelFilter").value="all";$("#questKeyOnly").checked=false;renderQuest();
+    const qt=btn.dataset.navQuesttype||"";questView=qt==="event"?"event-all":qt==="challenge"?"challenge":qt==="village"?"village-detail":qt==="hub"?"hub-detail":qt==="g"?"g-detail":"key";await openPage("quest");$("#questSearch").value=name;$("#questLevelFilter").value="all";$("#questKeyOnly").checked=false;if($("#questTypeFilter"))$("#questTypeFilter").value="all";if($("#questLocationFilter"))$("#questLocationFilter").value="all";if($("#questMonsterFilter"))$("#questMonsterFilter").value="all";if($("#questRewardFilter"))$("#questRewardFilter").value="";renderQuest();
   }
 }
 function renderItemTable(){
@@ -1237,29 +1237,61 @@ function questMatchesView(q){
   if(questView==="challenge")return q.questType==="challenge";
   return true;
 }
+function questRef(q){return data.questReferenceIndex?.quests?.[q.id]||{monsters:[],rewardItems:[],tags:[]}}
 function populateQuestLevels(){
   const el=$("#questLevelFilter");if(!el)return;
   const old=el.value||"all";
-  const levels=[...new Set(data.quests.filter(questMatchesView).map(q=>q.level))].sort((a,b)=>String(a).localeCompare(String(b),"ko",{numeric:true}));
+  const type=$("#questTypeFilter")?.value||"all";
+  const levelBase=type==="all"?data.quests.filter(questMatchesView):data.quests.filter(q=>questTypeFilterMatch(q,type));
+  const levels=[...new Set(levelBase.map(q=>q.level))].sort((a,b)=>String(a).localeCompare(String(b),"ko",{numeric:true}));
   el.innerHTML='<option value="all">전체 ★</option>'+levels.map(x=>`<option value="${esc(x)}">${esc(x)}</option>`).join("");
   el.value=levels.includes(old)?old:"all";
 }
+function populateQuestAdvancedFilters(){
+  const loc=$("#questLocationFilter"),mon=$("#questMonsterFilter"),rewards=$("#questRewardList");
+  if(loc){const old=loc.value||"all";const vals=[...new Set(data.quests.map(q=>q.location).filter(Boolean))].sort((a,b)=>a.localeCompare(b,"ko"));loc.innerHTML='<option value="all">전체 맵</option>'+vals.map(x=>`<option value="${esc(x)}">${esc(x)}</option>`).join("");loc.value=vals.includes(old)?old:"all";}
+  if(mon){const old=mon.value||"all";const vals=(data.monsterSummary||[]).map(x=>x.name).filter(Boolean).sort((a,b)=>a.localeCompare(b,"ko"));mon.innerHTML='<option value="all">전체 몬스터</option>'+vals.map(x=>`<option value="${esc(x)}">${esc(x)}</option>`).join("");mon.value=vals.includes(old)?old:"all";}
+  if(rewards){const vals=[...new Set(Object.values(data.questReferenceIndex?.quests||{}).flatMap(x=>x.rewardItems||[]))].sort((a,b)=>a.localeCompare(b,"ko"));rewards.innerHTML=vals.map(x=>`<option value="${esc(x)}"></option>`).join("");}
+}
+function questMonsterLinks(q){
+  const names=questRef(q).monsters||[];if(!names.length)return "-";
+  return names.map(n=>refButton(n,"monster",{monster:n})).join(' <span class="muted">·</span> ');
+}
+function questRewardLinks(q){
+  const names=questRef(q).rewardItems||[];if(!names.length)return "-";
+  const shown=names.slice(0,4).map(n=>itemLink(n)).join(' <span class="muted">·</span> ');
+  return shown+(names.length>4?` <span class="quest-more-rewards" title="${esc(names.slice(4).join(" · "))}">+${names.length-4}</span>`:"");
+}
+function questTypeFilterMatch(q,v){
+  if(v==="all")return true;
+  const r=questRef(q),tags=r.tags||[];
+  if(v==="key")return !!q.key;
+  if(v==="urgent")return tags.includes("urgent");
+  if(v==="event")return q.questType==="event";
+  if(v==="episodic")return q.questType==="event"&&q.eventGroup==="episodic";
+  if(v==="challenge")return q.questType==="challenge";
+  if(v==="village"||v==="hub"||v==="g")return q.questType===v;
+  return true;
+}
 function renderQuest(){
-  populateQuestLevels();
+  populateQuestLevels();populateQuestAdvancedFilters();
   const qtext=$("#questSearch").value.trim().toLowerCase(),level=$("#questLevelFilter").value;
-  const eventView=questView.startsWith("event-")||questView==="challenge";
+  const type=$("#questTypeFilter")?.value||"all",location=$("#questLocationFilter")?.value||"all",monster=$("#questMonsterFilter")?.value||"all",rewardText=($("#questRewardFilter")?.value||"").trim().toLowerCase();
+  const eventView=questView.startsWith("event-")||questView==="challenge"||["event","episodic","challenge"].includes(type);
   const keyBox=$("#questKeyOnly"),keyLabel=keyBox?.closest("label");
   if(keyLabel)keyLabel.style.display=eventView?"none":"";
-  const keyOnly=!eventView&&(questView==="key"||keyBox?.checked);
-  const list=data.quests.filter(q=>questMatchesView(q)&&(level==="all"||q.level===level)&&(!keyOnly||q.key)&&(!qtext||`${q.name||""} ${q.nameJa||""} ${q.nameEn||""} ${q.objective||""} ${q.objectiveEn||""} ${q.subObjective||""} ${q.subObjectiveEn||""} ${q.location||""} ${q.eventSeries||""} ${q.note||""}`.toLowerCase().includes(qtext)));
+  const keyOnly=!eventView&&((questView==="key"&&type==="all")||keyBox?.checked);
+  const list=data.quests.filter(q=>{
+    const ref=questRef(q),search=`${q.name||""} ${q.nameJa||""} ${q.nameEn||""} ${q.objective||""} ${q.objectiveEn||""} ${q.subObjective||""} ${q.subObjectiveEn||""} ${q.location||""} ${q.eventSeries||""} ${q.note||""} ${(ref.monsters||[]).join(" ")} ${(ref.rewardItems||[]).join(" ")}`.toLowerCase();
+    return (type==="all"?questMatchesView(q):true)&&(level==="all"||q.level===level)&&(!keyOnly||q.key)&&questTypeFilterMatch(q,type)&&(location==="all"||q.location===location)&&(monster==="all"||(ref.monsters||[]).includes(monster))&&(!rewardText||(ref.rewardItems||[]).some(x=>x.toLowerCase().includes(rewardText)))&&(!qtext||search.includes(qtext));
+  });
   if(eventView){
-    const rows=list.map(q=>`<tr><td>${esc(q.questTypeLabel||q.questType)}</td><td>${esc(q.level)}</td><td><strong>${esc(q.name)}</strong>${localizedNameSub(q)}</td><td class="wrap-cell">${esc(q.objective||"-")}</td><td>${esc(q.location||"-")}</td><td>${esc(q.fee||"-")}</td><td>${esc(q.reward||"-")}</td><td>${esc(q.hrp||"-")}</td><td>${esc(q.time||"-")}</td><td class="wrap-cell">${esc(q.subObjective||"-")}</td><td>${esc(q.subReward||"-")}</td><td>${esc(q.subHrp||"-")}</td><td class="wrap-cell">${esc(q.conditions||"-")}</td><td class="wrap-cell">${esc(q.note||"")}</td></tr>`);
-    renderTable("#questTable",["구분","레벨","퀘스트","클리어 조건","장소","계약금","보수금","HRP","시간","서브퀘스트","서브 보수","서브 HRP","특수조건","비고"],rows);
-    return;
+    const rows=list.map(q=>`<tr><td>${esc(q.questTypeLabel||q.questType)}</td><td>${esc(q.level)}</td><td><strong>${esc(q.name)}</strong>${localizedNameSub(q)}</td><td class="wrap-cell">${esc(q.objective||"-")}</td><td class="wrap-cell quest-monsters">${questMonsterLinks(q)}</td><td class="wrap-cell quest-rewards">${questRewardLinks(q)}</td><td>${esc(q.location||"-")}</td><td>${esc(q.fee||"-")}</td><td>${esc(q.reward||"-")}</td><td>${esc(q.hrp||"-")}</td><td>${esc(q.time||"-")}</td><td class="wrap-cell">${esc(q.subObjective||"-")}</td><td>${esc(q.subReward||"-")}</td><td>${esc(q.subHrp||"-")}</td><td class="wrap-cell">${esc(q.conditions||"-")}</td><td class="wrap-cell">${esc(q.note||"")}</td></tr>`);
+    renderTable("#questTable",["구분","레벨","퀘스트","클리어 조건","몬스터","주요 보상","장소","계약금","보수금","HRP","시간","서브퀘스트","서브 보수","서브 HRP","특수조건","비고"],rows);return;
   }
   const detail=questView.endsWith("detail")||questView==="key";
-  const rows=list.map(q=>detail?`<tr><td>${esc(q.questTypeLabel)}</td><td>${esc(q.level)}</td><td>${q.key?"○":""}</td><td><strong>${esc(q.name)}</strong>${localizedNameSub(q)}</td><td class="wrap-cell">${esc(q.objective)}</td><td>${esc(q.location)}</td><td>${esc(q.fee)}</td><td>${esc(q.reward)}</td><td>${esc(q.time)}</td><td>${esc(q.conditions)}</td><td>${esc(q.note)}</td></tr>`:`<tr><td>${esc(q.level)}</td><td>${q.key?"○":""}</td><td><strong>${esc(q.name)}</strong>${localizedNameSub(q)}</td><td class="wrap-cell">${esc(q.objective)}</td><td>${esc(q.location)}</td><td>${esc(q.note)}</td></tr>`);
-  renderTable("#questTable",detail?["구분","레벨","키","퀘스트","클리어 조건","장소","계약금","보수금","시간","특수조건","비고"]:["레벨","키","퀘스트","클리어 조건","장소","비고"],rows);
+  const rows=list.map(q=>detail?`<tr><td>${esc(q.questTypeLabel)}</td><td>${esc(q.level)}</td><td>${q.key?"○":""}</td><td><strong>${esc(q.name)}</strong>${localizedNameSub(q)}</td><td class="wrap-cell">${esc(q.objective)}</td><td class="wrap-cell quest-monsters">${questMonsterLinks(q)}</td><td class="wrap-cell quest-rewards">${questRewardLinks(q)}</td><td>${esc(q.location)}</td><td>${esc(q.fee)}</td><td>${esc(q.reward)}</td><td>${esc(q.time)}</td><td>${esc(q.conditions)}</td><td>${esc(q.note)}</td></tr>`:`<tr><td>${esc(q.level)}</td><td>${q.key?"○":""}</td><td><strong>${esc(q.name)}</strong>${localizedNameSub(q)}</td><td class="wrap-cell">${esc(q.objective)}</td><td class="wrap-cell quest-monsters">${questMonsterLinks(q)}</td><td class="wrap-cell quest-rewards">${questRewardLinks(q)}</td><td>${esc(q.location)}</td><td>${esc(q.note)}</td></tr>`);
+  renderTable("#questTable",detail?["구분","레벨","키","퀘스트","클리어 조건","몬스터","주요 보상","장소","계약금","보수금","시간","특수조건","비고"]:["레벨","키","퀘스트","클리어 조건","몬스터","주요 보상","장소","비고"],rows);
 }
 
 function eventViewTitleText(view){
@@ -1346,7 +1378,7 @@ function dataKeysForPage(page){
   if(page==="dragon")return dragonView==="exchange"?["dragonExchange","items"]:dragonView==="sell"?["dragonSell","items"]:["dragonIncrease","items"];
   if(page==="item")return ["items","itemReferenceIndex"];
   if(page==="compose")return ["compositions","items"];
-  if(page==="quest")return ["quests"];
+  if(page==="quest")return ["quests","questReferenceIndex","monsterSummary","items"];
   if(page==="data")return FULL_DATA_KEYS;
   return [];
 }
@@ -1360,7 +1392,8 @@ async function ensureFullData(keys){
   if(missing.includes("skillReferenceIndex"))skillReferenceCache.clear();
   if(missing.includes("meals"))populateMealIngredientFilter();
   if(missing.includes("monsterSummary"))populateMonsterSelect();
-  if(missing.includes("quests"))populateQuestLevels();
+  if(missing.includes("quests")){populateQuestLevels();populateQuestAdvancedFilters();}
+  if(missing.includes("questReferenceIndex")||missing.includes("monsterSummary"))populateQuestAdvancedFilters();
   return true;
 }
 function renderPageData(page){
@@ -1500,6 +1533,8 @@ function bind(){
     if(monsterList){e.preventDefault();replaceCurrentHistoryState();$("#monsterSelect").value="all";$("#monsterSearch").value="";monsterView="basic";renderMonster();pushCurrentHistoryState();return;}
     const monsterNav=e.target.closest?.('#monsterContent [data-item-nav]');
     if(monsterNav){e.preventDefault();replaceCurrentHistoryState();followItemReference(monsterNav).then(pushCurrentHistoryState);return;}
+    const questNav=e.target.closest?.('#questTable [data-item-nav]');
+    if(questNav){e.preventDefault();e.stopPropagation();replaceCurrentHistoryState();followItemReference(questNav).then(pushCurrentHistoryState);return;}
     const inline=e.target.closest?.('[data-open-item]');
     if(inline){e.preventDefault();e.stopPropagation();openItemByName(inline.dataset.openItem);return;}
     const itemRow=e.target.closest?.('#itemTable [data-item-id]');
@@ -1563,7 +1598,7 @@ function bind(){
   $("#dragonSearch").oninput=renderDragon;
   $("#itemSearch").oninput=renderItemTable;
   $("#composeSearch").oninput=renderCompose;
-  $("#questSearch").oninput=renderQuest;$("#questLevelFilter").onchange=renderQuest;$("#questKeyOnly").onchange=renderQuest;
+  $("#questSearch").oninput=renderQuest;$("#questLevelFilter").onchange=renderQuest;$("#questKeyOnly").onchange=renderQuest;$("#questTypeFilter").onchange=renderQuest;$("#questLocationFilter").onchange=renderQuest;$("#questMonsterFilter").onchange=renderQuest;$("#questRewardFilter").oninput=renderQuest;
 
   $("#jsonImport").onchange=async e=>{const lines=[];for(const f of e.target.files){try{const json=JSON.parse(await f.text()),type=classifyImported(f.name,json);if(type){data[type]=json;lines.push(`${f.name} → ${type} ${Array.isArray(json)?json.length:"객체"}건`)}else lines.push(`${f.name} → 유형 판별 실패`)}catch{lines.push(`${f.name} → JSON 오류`)}}data.meta={...data.meta,demo:false,version:"browser-import"};rebuildIndexes();$("#importStatus").innerHTML=lines.map(esc).join("<br>");renderAll()};
 }

@@ -1,4 +1,4 @@
-const DATA_VERSION = "0.7.7-chat4-monbadge-tiefix";
+const DATA_VERSION = "0.7.7-chat4-quest1";
 
 const FULL_FILES = {
   skills:"./data/skills.json",
@@ -21,6 +21,7 @@ const FULL_FILES = {
   dragonIncrease:"./data/dragon_increase.json",
   compositions:"./data/compositions.json",
   quests:"./data/quests.json",
+  questReferenceIndex:"./data/quest_reference_index.json",
   siteInfo:"./data/site_info.json",
   meta:"./data/meta.json"
 };
@@ -113,7 +114,7 @@ export function classifyImported(name,json){
     ["weapon","weapons"],["skill_reference_index","skillReferenceIndex"],["skill","skills"],["item_reference_index","itemReferenceIndex"],["item","items"],["meal","meals"],
     ["monster_summary","monsterSummary"],["monster_details","monsterDetails"],["monster_rewards","monsterRewards"],["monster_reference_index","monsterReferenceIndex"],
     ["dragon_exchange","dragonExchange"],["dragon_sell","dragonSell"],["dragon_increase","dragonIncrease"],
-    ["composition","compositions"],["quest","quests"],["melod","melodies"],["site_info","siteInfo"]
+    ["composition","compositions"],["quest_reference_index","questReferenceIndex"],["quest","quests"],["melod","melodies"],["site_info","siteInfo"]
   ];
   for(const [needle,key] of rules) if(lower.includes(needle)) return key;
   if(Array.isArray(json)&&json.length){
