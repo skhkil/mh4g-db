@@ -1,5 +1,5 @@
-import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-quest2-fit";
-import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-quest2-fit";
+import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-mobilejump1";
+import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-mobilejump1";
 
 let data={skills:[],armors:[],armorSets:[],decorations:[],weapons:[],weaponSummary:[],melodies:[],items:[],itemReferenceIndex:{items:{}},skillReferenceIndex:{items:{},categories:[]},meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],monsterReferenceIndex:{items:{}},dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],questReferenceIndex:{quests:{}},siteInfo:{},meta:{}};
 let targets=[];
@@ -1496,6 +1496,32 @@ function selectUiRow(row){
   selectedUiRow=row;
 }
 rowFocusQuery.addEventListener?.("change",e=>{if(!e.matches)clearUiSelectedRows();});
+
+const mobileJumpQuery=window.matchMedia("(max-width:820px), (hover:none) and (pointer:coarse) and (max-width:1180px)");
+function setupMobilePageJump(){
+  const host=$("#mobilePageJump"),topBtn=$("#pageJumpTop"),bottomBtn=$("#pageJumpBottom");
+  if(!host||!topBtn||!bottomBtn)return;
+  let ticking=false;
+  const update=()=>{
+    ticking=false;
+    const mobile=mobileJumpQuery.matches;
+    const doc=document.documentElement;
+    const maxScroll=Math.max(0,doc.scrollHeight-window.innerHeight);
+    const useful=maxScroll>Math.max(320,window.innerHeight*.45);
+    host.classList.toggle("is-visible",mobile&&useful);
+    topBtn.classList.toggle("is-hidden",!mobile||!useful||window.scrollY<120);
+    bottomBtn.classList.toggle("is-hidden",!mobile||!useful||window.scrollY>maxScroll-120);
+  };
+  const schedule=()=>{if(!ticking){ticking=true;requestAnimationFrame(update)}};
+  topBtn.addEventListener("click",e=>{e.preventDefault();window.scrollTo({top:0,left:0,behavior:"auto"});schedule()});
+  bottomBtn.addEventListener("click",e=>{e.preventDefault();const doc=document.documentElement;window.scrollTo({top:doc.scrollHeight,left:0,behavior:"auto"});schedule()});
+  window.addEventListener("scroll",schedule,{passive:true});
+  window.addEventListener("resize",schedule,{passive:true});
+  mobileJumpQuery.addEventListener?.("change",schedule);
+  if("ResizeObserver" in window)new ResizeObserver(schedule).observe(document.body);
+  schedule();
+}
+
 function bind(){
   document.addEventListener('click',e=>{
     closePickers();
@@ -1605,7 +1631,7 @@ function bind(){
   $("#jsonImport").onchange=async e=>{const lines=[];for(const f of e.target.files){try{const json=JSON.parse(await f.text()),type=classifyImported(f.name,json);if(type){data[type]=json;lines.push(`${f.name} → ${type} ${Array.isArray(json)?json.length:"객체"}건`)}else lines.push(`${f.name} → 유형 판별 실패`)}catch{lines.push(`${f.name} → JSON 오류`)}}data.meta={...data.meta,demo:false,version:"browser-import"};rebuildIndexes();$("#importStatus").innerHTML=lines.map(esc).join("<br>");renderAll()};
 }
 
-Object.assign(data,await loadSimulatorData());rebuildIndexes();bind();setupResponsiveNavColumns();renderAll();
+Object.assign(data,await loadSimulatorData());rebuildIndexes();bind();setupResponsiveNavColumns();setupMobilePageJump();renderAll();
 window.addEventListener("popstate",e=>{if(e.state?.mh4g)restoreAppHistoryState(e.state)});
 replaceCurrentHistoryState();
 // 아이템 역참조는 아이템 화면 진입/아이템 링크 첫 사용 시에만 불러온다.

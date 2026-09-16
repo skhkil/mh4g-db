@@ -926,3 +926,13 @@ button{border:1px solid var(--line);background:#202b39;color:white;border-radius
 @media (min-width:1181px), (hover:hover) and (pointer:fine) and (min-width:821px){
   #page-quest #questTable .data-table{font-size:10px}
 }
+
+/* 2026-09-16 mobile/fold quick page jump */
+.mobile-page-jump{display:none;position:fixed;right:max(12px,env(safe-area-inset-right));bottom:calc(16px + env(safe-area-inset-bottom));z-index:1200;flex-direction:column;gap:8px;pointer-events:none}
+.mobile-page-jump-btn{width:42px;height:42px;border:1px solid rgba(79,200,121,.72);border-radius:999px;background:rgba(18,24,22,.9);color:#dff8e7;font-size:22px;font-weight:800;line-height:1;box-shadow:0 4px 16px rgba(0,0,0,.28);backdrop-filter:blur(7px);-webkit-backdrop-filter:blur(7px);display:grid;place-items:center;cursor:pointer;pointer-events:auto;transition:opacity .16s ease,transform .16s ease,background .16s ease}
+.mobile-page-jump-btn:active{transform:scale(.94);background:rgba(45,105,65,.92)}
+.mobile-page-jump-btn.is-hidden{opacity:0;visibility:hidden;pointer-events:none;transform:translateY(4px)}
+@media (max-width:820px), (hover:none) and (pointer:coarse) and (max-width:1180px){
+  .mobile-page-jump.is-visible{display:flex}
+}
+@media (max-width:420px){.mobile-page-jump-btn{width:40px;height:40px;font-size:21px}.mobile-page-jump{right:max(10px,env(safe-area-inset-right));bottom:calc(12px + env(safe-area-inset-bottom))}}
