@@ -1,7 +1,7 @@
-import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-simaudit1";
-import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-simaudit1";
+import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-recommend1";
+import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-recommend1";
 
-let data={skills:[],armors:[],armorSets:[],decorations:[],weapons:[],weaponSummary:[],melodies:[],items:[],itemReferenceIndex:{items:{}},skillReferenceIndex:{items:{},categories:[]},meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],monsterReferenceIndex:{items:{}},dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],questReferenceIndex:{quests:{}},siteInfo:{},meta:{}};
+let data={skills:[],armors:[],armorSets:[],decorations:[],weapons:[],weaponSummary:[],melodies:[],items:[],itemReferenceIndex:{items:{}},skillReferenceIndex:{items:{},categories:[]},meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],monsterReferenceIndex:{items:{}},dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],questReferenceIndex:{quests:{}},siteInfo:{},meta:{},recommendedLoadouts:{weaponTypes:[],entries:[]}};
 let targets=[];
 let currentPage="simulator";
 const BUILD_STORAGE_KEY="mh4g-builds-v1";
@@ -27,7 +27,7 @@ const autoSearchCache=new Map();
 // Weapon tree is isolated from app startup. A failure here must never break global navigation.
 let weaponTreeIndex={items:{}};
 let weaponTreeIndexPromise=null;
-const WEAPON_TREE_VERSION="0.7.7-chat4-simaudit1";
+const WEAPON_TREE_VERSION="0.7.7-chat4-recommend1";
 async function ensureWeaponTreeIndex(){
   if(weaponTreeIndexPromise)return weaponTreeIndexPromise;
   weaponTreeIndexPromise=(async()=>{
@@ -1424,6 +1424,33 @@ function renderSummary(){
   const badge=$("#datasetBadge");
   if(badge){const isDemo=Boolean(data.meta?.demo);badge.textContent=isDemo?"샘플 데이터":`실데이터 v${data.meta?.version||""}`;badge.className=`badge ${isDemo?"warning":"good"}`;}
 }
+
+let recommendWeaponType="대검", recommendRank="low";
+function populateRecommendFilters(){
+  const w=$("#recommendWeaponType"),r=$("#recommendRank"); if(!w||!r)return;
+  const types=data.recommendedLoadouts?.weaponTypes?.length?data.recommendedLoadouts.weaponTypes:WEAPON_TYPES;
+  w.innerHTML=types.map(x=>`<option value="${esc(x)}">${esc(x)}</option>`).join("");
+  if(!types.includes(recommendWeaponType))recommendWeaponType=types[0]||"대검";
+  w.value=recommendWeaponType;r.value=recommendRank;
+}
+function recommendPieceHtml(a){return `<div class="recommend-piece"><span>${esc(PART_NAMES[a.part]||a.part)}</span>${refButton(a.name,"armor",{name:a.name})}<small>DEF ${Number(a.defense||0)} · ${slotsText(a.slots)}</small></div>`;}
+function recommendVariantHtml(v){
+  const b=v.build||{},decos=b.decorations||[],activated=b.activated||[];
+  return `<article class="panel recommend-variant"><div class="recommend-variant-head"><div><h3>${esc(v.label)}</h3><p>${esc(v.description||"")}</p></div><strong>DEF ${Number(b.defense||0)}</strong></div><div class="recommend-active-skills">${activated.map(x=>`<button type="button" class="skill-active" data-open-skill="${esc(x.skillId)}">${esc(x.name)}</button>`).join("")||'<span class="muted">발동 스킬 없음</span>'}</div><div class="recommend-pieces">${(b.armors||[]).map(recommendPieceHtml).join("")}</div><div class="recommend-decos"><b>장식주</b>${decos.length?decos.map(d=>refButton(`${d.name} ×${d.count}`,"decoration",{name:d.name})).join(""):"<span class=\"muted\">없음</span>"}</div></article>`;
+}
+function renderRecommendedLoadouts(){
+  populateRecommendFilters(); const root=$("#recommendContent");if(!root)return;
+  const entry=(data.recommendedLoadouts?.entries||[]).find(x=>x.weaponType===recommendWeaponType&&x.rank===recommendRank);
+  if(!entry){root.innerHTML='<div class="panel result-empty">추천 장비 데이터가 없습니다.</div>';return;}
+  const targets=entry.targets||[];
+  root.innerHTML=`<section class="panel recommend-profile"><div><span class="recommend-rank-badge">${esc(entry.rankLabel)}</span><h2>${esc(entry.weaponType)}</h2><p>${esc(entry.summary||"")}</p></div><div class="recommend-targets"><b>핵심 스킬</b>${targets.map(x=>`<button type="button" class="skill-active" data-open-skill="${esc(x.skillId)}">${esc(x.name)}</button>`).join("")}</div><button type="button" class="primary recommend-open-sim" data-recommend-sim>자동조합에서 다시 계산</button></section><div class="recommend-note">${esc(data.recommendedLoadouts.method||"")}</div><div class="recommend-variants">${(entry.variants||[]).map(recommendVariantHtml).join("")}</div>`;
+}
+async function openRecommendationInSimulator(){
+  const entry=(data.recommendedLoadouts?.entries||[]).find(x=>x.weaponType===recommendWeaponType&&x.rank===recommendRank);if(!entry)return;
+  targets=(entry.targets||[]).map(x=>x.id); await openPage("simulator");
+  $("#autoHunterType").value=entry.hunterType||"blade"; $("#autoRank").value=entry.rank||"g"; renderTargets(); await runSearch();
+  document.querySelector('.auto-search-panel')?.scrollIntoView({block:'start',behavior:'auto'});
+}
 function updateHeaderFilterVisibility(){
   const typePages=new Set(["simulator","armor","armor-set","weapon"]),rankPages=new Set(["simulator","armor","armor-set","weapon"]);
   $("#hunterTypeWrap").classList.toggle("hidden-filter",!typePages.has(currentPage));
@@ -1433,6 +1460,7 @@ const loadedFullKeys=new Set(["skills","decorations","meta"]);
 let pageLoadToken=0;
 function dataKeysForPage(page){
   if(page==="source")return ["siteInfo"];
+  if(page==="recommend")return ["recommendedLoadouts"];
   if(page==="armor")return ["armors"];
   if(page==="armor-set")return ["armorSets"];
   if(page==="weapon")return ["weapons","items"];
@@ -1471,6 +1499,7 @@ async function ensureFullData(keys){
 }
 function renderPageData(page){
   if(page==="source")renderSourcePage();
+  else if(page==="recommend")renderRecommendedLoadouts();
   else if(page==="armor")renderArmorTable();
   else if(page==="armor-set")renderArmorSetTable();
   else if(page==="weapon"){renderWeaponTreeFilter();renderWeaponTrees()}
@@ -1490,7 +1519,7 @@ async function openPage(page){
   $$('.nav-main[data-page]').forEach(x=>x.classList.toggle('active',x.dataset.page===page&&(!x.dataset.sourceView||x.dataset.sourceView===sourceView)));
   $$('.page').forEach(p=>p.classList.remove('active'));
   const section=$(`#page-${page}`); if(section)section.classList.add('active');
-  const titles={simulator:["스킬 시뮬레이터","방어구 + 호석 + 장식주 조합을 계산합니다."],armor:["방어구 상세","타입·등급·부위 조건으로 방어구를 조회합니다."],weapon:["무기 DB","무기 종류·파생·예리도와 제작 정보를 조회합니다."],decoration:[decoView==="slot"?"장신구 · 소켓별":"장신구 · 종류별","슬롯·스킬 포인트·생산소재를 조회합니다."],skill:["스킬 DB","스킬 계통과 발동 조건·효과를 조회합니다."],item:["아이템 DB","아이템 입수방법과 효과를 조회합니다."],data:["데이터 관리","실제 JSON 데이터 상태와 업데이트 방법을 확인합니다."]};
+  const titles={simulator:["스킬 시뮬레이터","방어구 + 호석 + 장식주 조합을 계산합니다."],recommend:["추천 장비","무기종별 하위·상위·G급 추천 조합을 확인합니다."],armor:["방어구 상세","타입·등급·부위 조건으로 방어구를 조회합니다."],weapon:["무기 DB","무기 종류·파생·예리도와 제작 정보를 조회합니다."],decoration:[decoView==="slot"?"장신구 · 소켓별":"장신구 · 종류별","슬롯·스킬 포인트·생산소재를 조회합니다."],skill:["스킬 DB","스킬 계통과 발동 조건·효과를 조회합니다."],item:["아이템 DB","아이템 입수방법과 효과를 조회합니다."],data:["데이터 관리","실제 JSON 데이터 상태와 업데이트 방법을 확인합니다."]};
   const dynamic=pageTitleForState(page);
   const title=dynamic||titles[page]||["MH4G DB",""];
   $("#pageTitle").textContent=title[0];$("#pageSubtitle").textContent=title[1];
@@ -1604,6 +1633,10 @@ function bind(){
     if(weaponRow&&!e.target.closest('button,a,input,select,summary')){e.preventDefault();void openWeaponDetail(weaponRow);return;}
     const skillItem=e.target.closest?.('#skillTable .inline-item-link[data-open-item]');
     if(skillItem){e.preventDefault();e.stopPropagation();void openItemByName(skillItem.dataset.openItem);return;}
+    const recSim=e.target.closest?.('[data-recommend-sim]');
+    if(recSim){e.preventDefault();void openRecommendationInSimulator();return;}
+    const recNav=e.target.closest?.('#recommendContent [data-item-nav]');
+    if(recNav){e.preventDefault();e.stopPropagation();replaceCurrentHistoryState();followItemReference(recNav).then(pushCurrentHistoryState);return;}
     const skillBtn=e.target.closest?.('[data-open-skill]');
     if(skillBtn){e.preventDefault();e.stopPropagation();replaceCurrentHistoryState();openPage("skill").then(()=>{$("#skillSearch").value=skillName(skillBtn.dataset.openSkill)||"";$("#skillCategoryFilter").value="all";$("#skillTypeFilter").value="all";renderSkillTable();pushCurrentHistoryState();});return;}
     const decoBtn=e.target.closest?.('[data-open-deco]');
@@ -1702,6 +1735,7 @@ function bind(){
   $("#itemSearch").oninput=renderItemTable;
   $("#composeSearch").oninput=renderCompose;
   $("#questSearch").oninput=renderQuest;$("#questLevelFilter").onchange=renderQuest;$("#questKeyOnly").onchange=renderQuest;$("#questTypeFilter").onchange=renderQuest;$("#questLocationFilter").onchange=renderQuest;$("#questMonsterFilter").onchange=renderQuest;$("#questRewardFilter").oninput=renderQuest;
+  $("#recommendWeaponType").onchange=e=>{recommendWeaponType=e.target.value;renderRecommendedLoadouts()};$("#recommendRank").onchange=e=>{recommendRank=e.target.value;renderRecommendedLoadouts()};
 
   $("#jsonImport").onchange=async e=>{const lines=[];for(const f of e.target.files){try{const json=JSON.parse(await f.text()),type=classifyImported(f.name,json);if(type){data[type]=json;lines.push(`${f.name} → ${type} ${Array.isArray(json)?json.length:"객체"}건`)}else lines.push(`${f.name} → 유형 판별 실패`)}catch{lines.push(`${f.name} → JSON 오류`)}}data.meta={...data.meta,demo:false,version:"browser-import"};rebuildIndexes();$("#importStatus").innerHTML=lines.map(esc).join("<br>");renderAll()};
 }
