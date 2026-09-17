@@ -1013,3 +1013,42 @@ button{border:1px solid var(--line);background:#202b39;color:white;border-radius
   .weapon-tree-nav{font-size:10px!important}
   .weapon-total-materials>span{font-size:10px!important;padding:6px 7px!important}
 }
+
+/* 2026-09-17 weapon tree mobile open-card focus
+   Open weapon row + expanded tree detail render as one continuous card. */
+@media (max-width:820px), (hover:none) and (pointer:coarse) and (max-width:1180px){
+  #weaponTrees .weapon-data-table.responsive-table tbody tr.weapon-db-row.is-open{
+    position:relative!important;
+    z-index:2!important;
+    border-radius:10px 10px 0 0!important;
+    border-bottom-color:transparent!important;
+    background:var(--row-focus-bg)!important;
+    box-shadow:
+      inset 2px 0 0 var(--row-focus-line),
+      inset -2px 0 0 var(--row-focus-line),
+      inset 0 2px 0 var(--row-focus-line)!important;
+  }
+  #weaponTrees .weapon-data-table.responsive-table tbody tr.weapon-db-row.is-open>td{
+    background:transparent!important;
+  }
+  #weaponTrees .weapon-data-table.responsive-table tbody tr.weapon-db-row.is-open + tr.weapon-detail-row{
+    position:relative!important;
+    z-index:1!important;
+    margin-top:-1px!important;
+    border-radius:0 0 10px 10px!important;
+    background:rgba(79,200,121,.025)!important;
+    box-shadow:
+      inset 2px 0 0 var(--row-focus-line),
+      inset -2px 0 0 var(--row-focus-line),
+      inset 0 -2px 0 var(--row-focus-line)!important;
+  }
+  #weaponTrees .weapon-data-table.responsive-table tbody tr.weapon-db-row.is-open + tr.weapon-detail-row>td{
+    background:transparent!important;
+    box-shadow:none!important;
+  }
+  #weaponTrees .weapon-data-table.responsive-table tbody tr.weapon-db-row.is-open + tr.weapon-detail-row .weapon-tree-detail{
+    border-top-color:rgba(79,200,121,.24)!important;
+    border-bottom:0!important;
+    background:rgba(17,26,36,.96)!important;
+  }
+}
