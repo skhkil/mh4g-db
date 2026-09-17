@@ -1052,3 +1052,30 @@ button{border:1px solid var(--line);background:#202b39;color:white;border-radius
     background:rgba(17,26,36,.96)!important;
   }
 }
+
+
+/* 2026-09-17 weapon open-card focus full-height fix
+   Put the mobile focus frame on the actual detail wrapper, not the table row. */
+@media (max-width:820px), (hover:none) and (pointer:coarse) and (max-width:1180px){
+  #weaponTrees .weapon-data-table.responsive-table tbody tr.weapon-db-row.is-open + tr.weapon-detail-row{
+    box-shadow:none!important;
+    background:transparent!important;
+    margin-top:-1px!important;
+  }
+  #weaponTrees .weapon-data-table.responsive-table tbody tr.weapon-db-row.is-open + tr.weapon-detail-row>td{
+    box-shadow:none!important;
+    background:transparent!important;
+  }
+  #weaponTrees .weapon-data-table.responsive-table tbody tr.weapon-db-row.is-open + tr.weapon-detail-row .weapon-tree-detail{
+    position:relative!important;
+    margin-top:-1px!important;
+    border-top:1px solid rgba(79,200,121,.22)!important;
+    border-bottom:0!important;
+    border-radius:0 0 10px 10px!important;
+    background:rgba(17,26,36,.96)!important;
+    box-shadow:
+      inset 2px 0 0 var(--row-focus-line),
+      inset -2px 0 0 var(--row-focus-line),
+      inset 0 -2px 0 var(--row-focus-line)!important;
+  }
+}
