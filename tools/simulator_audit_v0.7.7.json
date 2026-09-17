@@ -1,0 +1,236 @@
+{
+  "generatedAt": "2026-09-17T02:56:37.810Z",
+  "counts": {
+    "skills": 143,
+    "armors": 2876,
+    "decorations": 199
+  },
+  "cases": [
+    {
+      "case": "공격대",
+      "skills": [
+        "공격력UP【대】"
+      ],
+      "hunterType": "blade",
+      "rank": "all",
+      "ms": 25,
+      "results": 20,
+      "errors": [],
+      "stats": {
+        "eligible": 1464,
+        "rawCandidates": {
+          "head": 313,
+          "body": 294,
+          "arms": 287,
+          "waist": 282,
+          "legs": 288
+        },
+        "candidates": {
+          "head": 6,
+          "body": 5,
+          "arms": 4,
+          "waist": 5,
+          "legs": 6
+        },
+        "finalists": 700,
+        "beam": 3600,
+        "approximate": true,
+        "relevantDecorations": 3,
+        "decorationMemo": 0,
+        "invalid": 0,
+        "beamMs": 22,
+        "solveMs": 2,
+        "totalMs": 25
+      }
+    },
+    {
+      "case": "장인",
+      "skills": [
+        "예리도레벨+1"
+      ],
+      "hunterType": "blade",
+      "rank": "all",
+      "ms": 18,
+      "results": 20,
+      "errors": [],
+      "stats": {
+        "eligible": 1464,
+        "rawCandidates": {
+          "head": 313,
+          "body": 294,
+          "arms": 287,
+          "waist": 282,
+          "legs": 288
+        },
+        "candidates": {
+          "head": 8,
+          "body": 4,
+          "arms": 6,
+          "waist": 6,
+          "legs": 5
+        },
+        "finalists": 700,
+        "beam": 5760,
+        "approximate": true,
+        "relevantDecorations": 3,
+        "decorationMemo": 0,
+        "invalid": 0,
+        "beamMs": 16,
+        "solveMs": 1,
+        "totalMs": 17
+      }
+    },
+    {
+      "case": "공격대+장인",
+      "skills": [
+        "공격력UP【대】",
+        "예리도레벨+1"
+      ],
+      "hunterType": "blade",
+      "rank": "all",
+      "ms": 291,
+      "results": 20,
+      "errors": [],
+      "stats": {
+        "eligible": 1464,
+        "rawCandidates": {
+          "head": 313,
+          "body": 294,
+          "arms": 287,
+          "waist": 282,
+          "legs": 288
+        },
+        "candidates": {
+          "head": 11,
+          "body": 9,
+          "arms": 9,
+          "waist": 8,
+          "legs": 9
+        },
+        "finalists": 700,
+        "beam": 7000,
+        "approximate": true,
+        "relevantDecorations": 6,
+        "decorationMemo": 30,
+        "invalid": 0,
+        "beamMs": 58,
+        "solveMs": 233,
+        "totalMs": 291
+      }
+    },
+    {
+      "case": "집중+고귀",
+      "skills": [
+        "집중",
+        "고급귀마개"
+      ],
+      "hunterType": "gunner",
+      "rank": "all",
+      "ms": 86,
+      "results": 20,
+      "errors": [],
+      "stats": {
+        "eligible": 1464,
+        "rawCandidates": {
+          "head": 313,
+          "body": 294,
+          "arms": 287,
+          "waist": 282,
+          "legs": 288
+        },
+        "candidates": {
+          "head": 9,
+          "body": 7,
+          "arms": 8,
+          "waist": 4,
+          "legs": 7
+        },
+        "finalists": 700,
+        "beam": 7000,
+        "approximate": true,
+        "relevantDecorations": 4,
+        "decorationMemo": 19,
+        "invalid": 0,
+        "beamMs": 15,
+        "solveMs": 70,
+        "totalMs": 86
+      }
+    },
+    {
+      "case": "도공(장식주없음)",
+      "skills": [
+        "명검"
+      ],
+      "hunterType": "blade",
+      "rank": "g",
+      "ms": 7,
+      "results": 20,
+      "errors": [],
+      "stats": {
+        "eligible": 1464,
+        "rawCandidates": {
+          "head": 313,
+          "body": 294,
+          "arms": 287,
+          "waist": 282,
+          "legs": 288
+        },
+        "candidates": {
+          "head": 5,
+          "body": 4,
+          "arms": 4,
+          "waist": 4,
+          "legs": 4
+        },
+        "finalists": 700,
+        "beam": 1280,
+        "approximate": true,
+        "relevantDecorations": 0,
+        "decorationMemo": 0,
+        "invalid": 0,
+        "beamMs": 7,
+        "solveMs": 1,
+        "totalMs": 7
+      }
+    },
+    {
+      "case": "상위거너",
+      "skills": [
+        "집중",
+        "고급귀마개"
+      ],
+      "hunterType": "gunner",
+      "rank": "high",
+      "ms": 72,
+      "results": 20,
+      "errors": [],
+      "stats": {
+        "eligible": 934,
+        "rawCandidates": {
+          "head": 195,
+          "body": 189,
+          "arms": 183,
+          "waist": 182,
+          "legs": 185
+        },
+        "candidates": {
+          "head": 11,
+          "body": 10,
+          "arms": 9,
+          "waist": 9,
+          "legs": 12
+        },
+        "finalists": 700,
+        "beam": 7000,
+        "approximate": true,
+        "relevantDecorations": 4,
+        "decorationMemo": 13,
+        "invalid": 0,
+        "beamMs": 30,
+        "solveMs": 42,
+        "totalMs": 72
+      }
+    }
+  ],
+  "hardErrors": 0
+}

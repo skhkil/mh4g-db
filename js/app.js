@@ -1,5 +1,5 @@
-import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-weapontree7-focusfull";
-import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-weapontree7-focusfull";
+import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-simaudit1";
+import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-simaudit1";
 
 let data={skills:[],armors:[],armorSets:[],decorations:[],weapons:[],weaponSummary:[],melodies:[],items:[],itemReferenceIndex:{items:{}},skillReferenceIndex:{items:{},categories:[]},meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],monsterReferenceIndex:{items:{}},dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],questReferenceIndex:{quests:{}},siteInfo:{},meta:{}};
 let targets=[];
@@ -22,11 +22,12 @@ let dragonView="exchange";
 let questView="key";
 let selectedItemId="";
 let restoringHistory=false;
+const autoSearchCache=new Map();
 
 // Weapon tree is isolated from app startup. A failure here must never break global navigation.
 let weaponTreeIndex={items:{}};
 let weaponTreeIndexPromise=null;
-const WEAPON_TREE_VERSION="0.7.7-chat4-weapontree7-focusfull";
+const WEAPON_TREE_VERSION="0.7.7-chat4-simaudit1";
 async function ensureWeaponTreeIndex(){
   if(weaponTreeIndexPromise)return weaponTreeIndexPromise;
   weaponTreeIndexPromise=(async()=>{
@@ -69,6 +70,7 @@ function rebuildIndexes(){
   optionCache.armorByPart.clear();optionCache.weaponByType.clear();
   optionCache.armorSets=null;optionCache.skillPicker=null;optionCache.activation=null;optionCache.weaponTypes=null;
   armorSetMaterialCache.clear();
+  autoSearchCache.clear();
 }
 
 const $=s=>document.querySelector(s);
@@ -308,8 +310,16 @@ function armorSetPickerOptions(){
   return optionCache.armorSets;
 }
 function simulatorSearchHunterType(){
-  const type=selectedWeapon()?.weaponType || (uiState.manualWeaponType!=="all"?uiState.manualWeaponType:"");
-  return type ? (RANGED_TYPES.has(type)?"gunner":"blade") : "blade";
+  return $("#autoHunterType")?.value||"blade";
+}
+function simulatorSearchRank(){return $("#autoRank")?.value||"g"}
+function autoSearchKey(){
+  return JSON.stringify({
+    targets:[...targets].sort(),hunter:simulatorSearchHunterType(),rank:simulatorSearchRank(),
+    charm:charm(),weaponSlots:Number(selectedWeapon()?.slots||0),
+    decorations:$("#allowDecorations")?.checked!==false,torso:$("#includeTorsoUp")?.checked!==false,
+    limit:Number($("#resultLimit")?.value||20)
+  });
 }
 function containerCapacity(container){
   if(container==="weapon")return Number(selectedWeapon()?.slots||0);
@@ -525,12 +535,18 @@ function renderBuildCard(b,i){
 }
 async function runSearch(){
   if(!targets.length){$("#searchResults").innerHTML='<div class="result-empty">먼저 원하는 스킬을 추가하세요.</div>';return}
-  const btn=$("#runSearch");btn.disabled=true;btn.textContent="검색 중…";$("#searchStats").textContent="실제 DB에서 후보 조합을 계산하고 있습니다.";
+  const btn=$("#runSearch");btn.disabled=true;btn.textContent="검색 중…";$("#searchStats").textContent="후보 방어구와 장식주 배치를 계산하고 있습니다.";
   try{
-    const simHunter=simulatorSearchHunterType();
-    const r=await searchBuilds({targetActivationIds:targets,hunterType:simHunter,rank:"all",charm:charm(),weaponSlots:Number(selectedWeapon()?.slots||0),allowDecorations:$("#allowDecorations").checked,includeTorsoUp:$("#includeTorsoUp").checked,limit:Number($("#resultLimit").value||20)},data);
-    $("#searchStats").textContent=r.stats.message||`검색 타입 ${hunterName(simHunter)} · 전체 등급 · 대상 방어구 ${r.stats.eligible}개 · 최종 후보 ${r.stats.finalists}개 · 고속 후보검색(완전탐색 아님)`;
-    $("#searchResults").innerHTML=r.results.length?r.results.map(renderBuildCard).join(""):'<div class="result-empty">조건을 만족하는 조합을 찾지 못했습니다.</div>';
+    const simHunter=simulatorSearchHunterType(),simRank=simulatorSearchRank(),key=autoSearchKey();
+    let r=autoSearchCache.get(key),cached=Boolean(r);
+    if(!r){
+      r=await searchBuilds({targetActivationIds:targets,hunterType:simHunter,rank:simRank,charm:charm(),weaponSlots:Number(selectedWeapon()?.slots||0),allowDecorations:$("#allowDecorations").checked,includeTorsoUp:$("#includeTorsoUp").checked,limit:Number($("#resultLimit").value||20)},data);
+      autoSearchCache.set(key,r);
+      if(autoSearchCache.size>12)autoSearchCache.delete(autoSearchCache.keys().next().value);
+    }
+    const rankLabel=simRank==="all"?"전체":`${rankName(simRank)}까지`;
+    $("#searchStats").textContent=r.stats.message||`${cached?"캐시 · ":""}${hunterName(simHunter)} · ${rankLabel} · 대상 ${r.stats.eligible}개 · 후보 ${r.stats.finalists}개 · ${cached?"즉시":"계산 "+r.stats.totalMs+"ms"} · 근사검색`;
+    $("#searchResults").innerHTML=r.results.length?r.results.map(renderBuildCard).join(""):'<div class="result-empty">조건을 만족하는 조합을 찾지 못했습니다. 장식주 없는 스킬은 해당 스킬 포인트가 붙은 방어구/호석이 필요합니다.</div>';
   }finally{btn.disabled=false;btn.textContent="조합 검색"}
 }
 
