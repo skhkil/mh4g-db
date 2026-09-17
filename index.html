@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#121821" />
   <title>MH4G 장비 · 스킬 시뮬레이터</title>
-  <link rel="stylesheet" href="./css/app.css?v=0.7.7-chat4-recommend1" />
+  <link rel="stylesheet" href="./css/app.css?v=0.7.7-chat4-recommend-redesign1" />
 </head>
 <body>
   <div class="app-shell">
@@ -181,12 +181,6 @@
                 </div>
               </div>
               <div class="search-options compact-skill-options">
-                <label>타입
-                  <select id="autoHunterType"><option value="blade">검사</option><option value="gunner">거너</option></select>
-                </label>
-                <label>진행도
-                  <select id="autoRank"><option value="all">전체</option><option value="low">하위까지</option><option value="high">상위까지</option><option value="g" selected>G급까지</option></select>
-                </label>
                 <label><input id="allowDecorations" type="checkbox" checked /> 장식주 사용</label>
                 <label><input id="includeTorsoUp" type="checkbox" checked /> 몸통배가 고려</label>
                 <label>결과 수
@@ -210,7 +204,7 @@
 
       <section id="page-recommend" class="page">
         <section class="panel recommend-controls">
-          <div class="panel-title"><div><h2>무기종 · 진행도별 추천 장비</h2><p class="muted">호석 없음 · 무기 슬롯 0 기준으로 자동조합 엔진에서 검증한 예시입니다.</p></div></div>
+          <div class="panel-title"><div><h2>무기종 · 진행도별 추천 장비</h2><p class="muted">하위·상위는 진행용 3종, G급은 커뮤니티 핵심스킬 기반 최종 세팅 4종을 제공합니다.</p></div></div>
           <div class="recommend-filter-row">
             <label>무기종<select id="recommendWeaponType"></select></label>
             <label>진행도<select id="recommendRank"><option value="low">하위</option><option value="high">상위</option><option value="g">G급</option></select></label>
@@ -416,6 +410,6 @@ python tools/build_database.py --publish</code></pre>
     <button id="pageJumpTop" class="mobile-page-jump-btn" type="button" aria-label="맨 위로 이동" title="맨 위로">↑</button>
     <button id="pageJumpBottom" class="mobile-page-jump-btn" type="button" aria-label="맨 아래로 이동" title="맨 아래로">↓</button>
   </div>
-  <script type="module" src="./js/app.js?v=0.7.7-chat4-recommend1"></script>
+  <script type="module" src="./js/app.js?v=0.7.7-chat4-recommend-redesign1"></script>
 </body>
 </html>

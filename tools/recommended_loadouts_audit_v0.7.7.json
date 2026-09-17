@@ -1,7 +1,12 @@
 {
   "weaponTypes": 14,
   "entries": 42,
-  "variants": 126,
-  "issues": [],
-  "hardErrors": 0
+  "variants": 140,
+  "lowVariants": 42,
+  "highVariants": 42,
+  "gVariants": 56,
+  "hardErrors": 0,
+  "warnings": 0,
+  "errors": [],
+  "warningRows": []
 }

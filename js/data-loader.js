@@ -1,4 +1,4 @@
-const DATA_VERSION = "0.7.7-chat4-recommend1";
+const DATA_VERSION = "0.7.7-chat4-recommend-redesign1";
 
 const FULL_FILES = {
   skills:"./data/skills.json",
@@ -43,7 +43,7 @@ export const FULL_DATA_KEYS = Object.freeze(Object.keys(FULL_FILES));
 const requestCache = new Map();
 
 function emptyValue(key){
-  return (key==="meta"||key==="siteInfo"||key==="recommendedLoadouts"||key.endsWith("Index"))?{}:[];
+  return (key==="meta"||key==="siteInfo"||key.endsWith("Index"))?{}:[];
 }
 function versioned(url){
   return `${url}?v=${DATA_VERSION}`;

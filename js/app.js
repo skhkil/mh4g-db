@@ -1,7 +1,7 @@
-import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-recommend1";
-import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-recommend1";
+import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-recommend-redesign1";
+import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-recommend-redesign1";
 
-let data={skills:[],armors:[],armorSets:[],decorations:[],weapons:[],weaponSummary:[],melodies:[],items:[],itemReferenceIndex:{items:{}},skillReferenceIndex:{items:{},categories:[]},meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],monsterReferenceIndex:{items:{}},dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],questReferenceIndex:{quests:{}},siteInfo:{},meta:{},recommendedLoadouts:{weaponTypes:[],entries:[]}};
+let data={skills:[],armors:[],armorSets:[],decorations:[],weapons:[],weaponSummary:[],melodies:[],items:[],itemReferenceIndex:{items:{}},skillReferenceIndex:{items:{},categories:[]},meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],monsterReferenceIndex:{items:{}},dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],questReferenceIndex:{quests:{}},siteInfo:{},meta:{}};
 let targets=[];
 let currentPage="simulator";
 const BUILD_STORAGE_KEY="mh4g-builds-v1";
@@ -22,12 +22,11 @@ let dragonView="exchange";
 let questView="key";
 let selectedItemId="";
 let restoringHistory=false;
-const autoSearchCache=new Map();
 
 // Weapon tree is isolated from app startup. A failure here must never break global navigation.
 let weaponTreeIndex={items:{}};
 let weaponTreeIndexPromise=null;
-const WEAPON_TREE_VERSION="0.7.7-chat4-recommend1";
+const WEAPON_TREE_VERSION="0.7.7-chat4-weapontree7-focusfull";
 async function ensureWeaponTreeIndex(){
   if(weaponTreeIndexPromise)return weaponTreeIndexPromise;
   weaponTreeIndexPromise=(async()=>{
@@ -70,7 +69,6 @@ function rebuildIndexes(){
   optionCache.armorByPart.clear();optionCache.weaponByType.clear();
   optionCache.armorSets=null;optionCache.skillPicker=null;optionCache.activation=null;optionCache.weaponTypes=null;
   armorSetMaterialCache.clear();
-  autoSearchCache.clear();
 }
 
 const $=s=>document.querySelector(s);
@@ -310,16 +308,8 @@ function armorSetPickerOptions(){
   return optionCache.armorSets;
 }
 function simulatorSearchHunterType(){
-  return $("#autoHunterType")?.value||"blade";
-}
-function simulatorSearchRank(){return $("#autoRank")?.value||"g"}
-function autoSearchKey(){
-  return JSON.stringify({
-    targets:[...targets].sort(),hunter:simulatorSearchHunterType(),rank:simulatorSearchRank(),
-    charm:charm(),weaponSlots:Number(selectedWeapon()?.slots||0),
-    decorations:$("#allowDecorations")?.checked!==false,torso:$("#includeTorsoUp")?.checked!==false,
-    limit:Number($("#resultLimit")?.value||20)
-  });
+  const type=selectedWeapon()?.weaponType || (uiState.manualWeaponType!=="all"?uiState.manualWeaponType:"");
+  return type ? (RANGED_TYPES.has(type)?"gunner":"blade") : "blade";
 }
 function containerCapacity(container){
   if(container==="weapon")return Number(selectedWeapon()?.slots||0);
@@ -535,18 +525,12 @@ function renderBuildCard(b,i){
 }
 async function runSearch(){
   if(!targets.length){$("#searchResults").innerHTML='<div class="result-empty">먼저 원하는 스킬을 추가하세요.</div>';return}
-  const btn=$("#runSearch");btn.disabled=true;btn.textContent="검색 중…";$("#searchStats").textContent="후보 방어구와 장식주 배치를 계산하고 있습니다.";
+  const btn=$("#runSearch");btn.disabled=true;btn.textContent="검색 중…";$("#searchStats").textContent="실제 DB에서 후보 조합을 계산하고 있습니다.";
   try{
-    const simHunter=simulatorSearchHunterType(),simRank=simulatorSearchRank(),key=autoSearchKey();
-    let r=autoSearchCache.get(key),cached=Boolean(r);
-    if(!r){
-      r=await searchBuilds({targetActivationIds:targets,hunterType:simHunter,rank:simRank,charm:charm(),weaponSlots:Number(selectedWeapon()?.slots||0),allowDecorations:$("#allowDecorations").checked,includeTorsoUp:$("#includeTorsoUp").checked,limit:Number($("#resultLimit").value||20)},data);
-      autoSearchCache.set(key,r);
-      if(autoSearchCache.size>12)autoSearchCache.delete(autoSearchCache.keys().next().value);
-    }
-    const rankLabel=simRank==="all"?"전체":`${rankName(simRank)}까지`;
-    $("#searchStats").textContent=r.stats.message||`${cached?"캐시 · ":""}${hunterName(simHunter)} · ${rankLabel} · 대상 ${r.stats.eligible}개 · 후보 ${r.stats.finalists}개 · ${cached?"즉시":"계산 "+r.stats.totalMs+"ms"} · 근사검색`;
-    $("#searchResults").innerHTML=r.results.length?r.results.map(renderBuildCard).join(""):'<div class="result-empty">조건을 만족하는 조합을 찾지 못했습니다. 장식주 없는 스킬은 해당 스킬 포인트가 붙은 방어구/호석이 필요합니다.</div>';
+    const simHunter=simulatorSearchHunterType();
+    const r=await searchBuilds({targetActivationIds:targets,hunterType:simHunter,rank:"all",charm:charm(),weaponSlots:Number(selectedWeapon()?.slots||0),allowDecorations:$("#allowDecorations").checked,includeTorsoUp:$("#includeTorsoUp").checked,limit:Number($("#resultLimit").value||20)},data);
+    $("#searchStats").textContent=r.stats.message||`검색 타입 ${hunterName(simHunter)} · 전체 등급 · 대상 방어구 ${r.stats.eligible}개 · 최종 후보 ${r.stats.finalists}개 · 고속 후보검색(완전탐색 아님)`;
+    $("#searchResults").innerHTML=r.results.length?r.results.map(renderBuildCard).join(""):'<div class="result-empty">조건을 만족하는 조합을 찾지 못했습니다.</div>';
   }finally{btn.disabled=false;btn.textContent="조합 검색"}
 }
 
@@ -1427,30 +1411,32 @@ function renderSummary(){
 
 let recommendWeaponType="대검", recommendRank="low";
 function populateRecommendFilters(){
-  const w=$("#recommendWeaponType"),r=$("#recommendRank"); if(!w||!r)return;
+  const w=$("#recommendWeaponType"),r=$("#recommendRank");if(!w||!r)return;
   const types=data.recommendedLoadouts?.weaponTypes?.length?data.recommendedLoadouts.weaponTypes:WEAPON_TYPES;
   w.innerHTML=types.map(x=>`<option value="${esc(x)}">${esc(x)}</option>`).join("");
   if(!types.includes(recommendWeaponType))recommendWeaponType=types[0]||"대검";
   w.value=recommendWeaponType;r.value=recommendRank;
 }
 function recommendPieceHtml(a){return `<div class="recommend-piece"><span>${esc(PART_NAMES[a.part]||a.part)}</span>${refButton(a.name,"armor",{name:a.name})}<small>DEF ${Number(a.defense||0)} · ${slotsText(a.slots)}</small></div>`;}
-function recommendVariantHtml(v){
-  const b=v.build||{},decos=b.decorations||[],activated=b.activated||[];
-  return `<article class="panel recommend-variant"><div class="recommend-variant-head"><div><h3>${esc(v.label)}</h3><p>${esc(v.description||"")}</p></div><strong>DEF ${Number(b.defense||0)}</strong></div><div class="recommend-active-skills">${activated.map(x=>`<button type="button" class="skill-active" data-open-skill="${esc(x.skillId)}">${esc(x.name)}</button>`).join("")||'<span class="muted">발동 스킬 없음</span>'}</div><div class="recommend-pieces">${(b.armors||[]).map(recommendPieceHtml).join("")}</div><div class="recommend-decos"><b>장식주</b>${decos.length?decos.map(d=>refButton(`${d.name} ×${d.count}`,"decoration",{name:d.name})).join(""):"<span class=\"muted\">없음</span>"}</div></article>`;
+function recommendVariantHtml(v,idx){
+  const b=v.build||{},decos=b.decorations||[],activated=b.activated||[],targets=v.targets||[],src=v.source||{};
+  const relaxed=(v.relaxed||[]).length?`<div class="recommend-warning">※ 원 목표 중 ${esc(v.relaxed.join(' / '))}은 호석 없음·무기 슬롯 0 조건에서 제외됨</div>`:"";
+  return `<article class="panel recommend-variant"><div class="recommend-variant-head"><div><div class="recommend-kind">${esc(v.category||"")}</div><h3>${esc(v.label)}</h3><p>${esc(v.description||"")}</p></div><strong>DEF ${Number(b.defense||0)}</strong></div><div class="recommend-targets compact"><b>목표 스킬</b>${targets.map(x=>`<button type="button" class="skill-active" data-open-skill="${esc(x.skillId)}">${esc(x.name)}</button>`).join("")}</div><div class="recommend-active-skills"><b>실제 발동</b>${activated.map(x=>`<button type="button" class="skill-active" data-open-skill="${esc(x.skillId)}">${esc(x.name)}</button>`).join("")||'<span class="muted">발동 스킬 없음</span>'}</div><div class="recommend-pieces">${(b.armors||[]).map(recommendPieceHtml).join("")}</div><div class="recommend-decos"><b>장식주</b>${decos.length?decos.map(d=>refButton(`${d.name} ×${d.count}`,"decoration",{name:d.name})).join(""):"<span class=\"muted\">없음</span>"}</div>${relaxed}<div class="recommend-source"><span>${esc(src.type||"프로젝트 계산")}</span><b>${esc(src.title||"")}</b><small>${esc(src.note||"")}</small>${src.url?`<a href="${esc(src.url)}" target="_blank" rel="noopener noreferrer">근거 보기 ↗</a>`:""}</div><button type="button" class="ghost recommend-open-sim" data-recommend-sim="${idx}">자동조합에서 재계산</button></article>`;
 }
 function renderRecommendedLoadouts(){
-  populateRecommendFilters(); const root=$("#recommendContent");if(!root)return;
+  populateRecommendFilters();const root=$("#recommendContent");if(!root)return;
   const entry=(data.recommendedLoadouts?.entries||[]).find(x=>x.weaponType===recommendWeaponType&&x.rank===recommendRank);
   if(!entry){root.innerHTML='<div class="panel result-empty">추천 장비 데이터가 없습니다.</div>';return;}
-  const targets=entry.targets||[];
-  root.innerHTML=`<section class="panel recommend-profile"><div><span class="recommend-rank-badge">${esc(entry.rankLabel)}</span><h2>${esc(entry.weaponType)}</h2><p>${esc(entry.summary||"")}</p></div><div class="recommend-targets"><b>핵심 스킬</b>${targets.map(x=>`<button type="button" class="skill-active" data-open-skill="${esc(x.skillId)}">${esc(x.name)}</button>`).join("")}</div><button type="button" class="primary recommend-open-sim" data-recommend-sim>자동조합에서 다시 계산</button></section><div class="recommend-note">${esc(data.recommendedLoadouts.method||"")}</div><div class="recommend-variants">${(entry.variants||[]).map(recommendVariantHtml).join("")}</div>`;
+  root.innerHTML=`<section class="panel recommend-profile"><div><span class="recommend-rank-badge">${esc(entry.rankLabel)}</span><h2>${esc(entry.weaponType)}</h2><p>${esc(entry.summary||"")}</p></div><div class="recommend-profile-note">${entry.rank==="g"?"G급은 최종 세팅 구간이므로 플레이스타일별 4개 후보를 제공합니다.":"진행 장비이므로 공격형 · 방어형 · 균형형 3개만 제공합니다."}</div></section><div class="recommend-note">${esc(data.recommendedLoadouts.method||"")}${data.recommendedLoadouts.progressionNote?`<br>${esc(data.recommendedLoadouts.progressionNote)}`:""}</div><div class="recommend-variants">${(entry.variants||[]).map((v,i)=>recommendVariantHtml(v,i)).join("")}</div>`;
 }
-async function openRecommendationInSimulator(){
+async function openRecommendationInSimulator(index){
   const entry=(data.recommendedLoadouts?.entries||[]).find(x=>x.weaponType===recommendWeaponType&&x.rank===recommendRank);if(!entry)return;
-  targets=(entry.targets||[]).map(x=>x.id); await openPage("simulator");
-  $("#autoHunterType").value=entry.hunterType||"blade"; $("#autoRank").value=entry.rank||"g"; renderTargets(); await runSearch();
+  const v=entry.variants?.[Number(index)||0];if(!v)return;
+  targets=(v.targets||[]).map(x=>x.id);await openPage("simulator");
+  $("#autoHunterType").value=entry.hunterType||"blade";$("#autoRank").value=entry.rank==="g"?"g":entry.rank;renderTargets();await runSearch();
   document.querySelector('.auto-search-panel')?.scrollIntoView({block:'start',behavior:'auto'});
 }
+
 function updateHeaderFilterVisibility(){
   const typePages=new Set(["simulator","armor","armor-set","weapon"]),rankPages=new Set(["simulator","armor","armor-set","weapon"]);
   $("#hunterTypeWrap").classList.toggle("hidden-filter",!typePages.has(currentPage));
@@ -1519,7 +1505,7 @@ async function openPage(page){
   $$('.nav-main[data-page]').forEach(x=>x.classList.toggle('active',x.dataset.page===page&&(!x.dataset.sourceView||x.dataset.sourceView===sourceView)));
   $$('.page').forEach(p=>p.classList.remove('active'));
   const section=$(`#page-${page}`); if(section)section.classList.add('active');
-  const titles={simulator:["스킬 시뮬레이터","방어구 + 호석 + 장식주 조합을 계산합니다."],recommend:["추천 장비","무기종별 하위·상위·G급 추천 조합을 확인합니다."],armor:["방어구 상세","타입·등급·부위 조건으로 방어구를 조회합니다."],weapon:["무기 DB","무기 종류·파생·예리도와 제작 정보를 조회합니다."],decoration:[decoView==="slot"?"장신구 · 소켓별":"장신구 · 종류별","슬롯·스킬 포인트·생산소재를 조회합니다."],skill:["스킬 DB","스킬 계통과 발동 조건·효과를 조회합니다."],item:["아이템 DB","아이템 입수방법과 효과를 조회합니다."],data:["데이터 관리","실제 JSON 데이터 상태와 업데이트 방법을 확인합니다."]};
+  const titles={simulator:["스킬 시뮬레이터","방어구 + 호석 + 장식주 조합을 계산합니다."],recommend:["추천 장비","커뮤니티 근거와 프로젝트 계산을 구분한 무기종별 진행·최종 세팅입니다."],armor:["방어구 상세","타입·등급·부위 조건으로 방어구를 조회합니다."],weapon:["무기 DB","무기 종류·파생·예리도와 제작 정보를 조회합니다."],decoration:[decoView==="slot"?"장신구 · 소켓별":"장신구 · 종류별","슬롯·스킬 포인트·생산소재를 조회합니다."],skill:["스킬 DB","스킬 계통과 발동 조건·효과를 조회합니다."],item:["아이템 DB","아이템 입수방법과 효과를 조회합니다."],data:["데이터 관리","실제 JSON 데이터 상태와 업데이트 방법을 확인합니다."]};
   const dynamic=pageTitleForState(page);
   const title=dynamic||titles[page]||["MH4G DB",""];
   $("#pageTitle").textContent=title[0];$("#pageSubtitle").textContent=title[1];
@@ -1634,9 +1620,7 @@ function bind(){
     const skillItem=e.target.closest?.('#skillTable .inline-item-link[data-open-item]');
     if(skillItem){e.preventDefault();e.stopPropagation();void openItemByName(skillItem.dataset.openItem);return;}
     const recSim=e.target.closest?.('[data-recommend-sim]');
-    if(recSim){e.preventDefault();void openRecommendationInSimulator();return;}
-    const recNav=e.target.closest?.('#recommendContent [data-item-nav]');
-    if(recNav){e.preventDefault();e.stopPropagation();replaceCurrentHistoryState();followItemReference(recNav).then(pushCurrentHistoryState);return;}
+    if(recSim){e.preventDefault();e.stopPropagation();void openRecommendationInSimulator(recSim.dataset.recommendSim);return;}
     const skillBtn=e.target.closest?.('[data-open-skill]');
     if(skillBtn){e.preventDefault();e.stopPropagation();replaceCurrentHistoryState();openPage("skill").then(()=>{$("#skillSearch").value=skillName(skillBtn.dataset.openSkill)||"";$("#skillCategoryFilter").value="all";$("#skillTypeFilter").value="all";renderSkillTable();pushCurrentHistoryState();});return;}
     const decoBtn=e.target.closest?.('[data-open-deco]');
@@ -1735,6 +1719,7 @@ function bind(){
   $("#itemSearch").oninput=renderItemTable;
   $("#composeSearch").oninput=renderCompose;
   $("#questSearch").oninput=renderQuest;$("#questLevelFilter").onchange=renderQuest;$("#questKeyOnly").onchange=renderQuest;$("#questTypeFilter").onchange=renderQuest;$("#questLocationFilter").onchange=renderQuest;$("#questMonsterFilter").onchange=renderQuest;$("#questRewardFilter").oninput=renderQuest;
+
   $("#recommendWeaponType").onchange=e=>{recommendWeaponType=e.target.value;renderRecommendedLoadouts()};$("#recommendRank").onchange=e=>{recommendRank=e.target.value;renderRecommendedLoadouts()};
 
   $("#jsonImport").onchange=async e=>{const lines=[];for(const f of e.target.files){try{const json=JSON.parse(await f.text()),type=classifyImported(f.name,json);if(type){data[type]=json;lines.push(`${f.name} → ${type} ${Array.isArray(json)?json.length:"객체"}건`)}else lines.push(`${f.name} → 유형 판별 실패`)}catch{lines.push(`${f.name} → JSON 오류`)}}data.meta={...data.meta,demo:false,version:"browser-import"};rebuildIndexes();$("#importStatus").innerHTML=lines.map(esc).join("<br>");renderAll()};
