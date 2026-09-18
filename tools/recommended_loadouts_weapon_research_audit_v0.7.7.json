@@ -1,0 +1,28 @@
+{
+  "entries": 42,
+  "cards": 119,
+  "domestic_source_cards": 101,
+  "foreign_source_cards": 53,
+  "foreign_only_cards": 18,
+  "g_cards_by_weapon": {
+    "대검": 3,
+    "태도": 4,
+    "한손검": 4,
+    "쌍검": 4,
+    "해머": 4,
+    "수렵피리": 4,
+    "랜스": 4,
+    "건랜스": 4,
+    "슬래시액스": 4,
+    "차지액스": 4,
+    "조충곤": 4,
+    "라이트보우건": 3,
+    "헤비보우건": 4,
+    "활": 3
+  },
+  "all_cards_have_recommended_decorations": true,
+  "all_cards_have_talisman_guide": true,
+  "all_cards_have_talisman_socket_guide": true,
+  "all_cards_have_usage_guide": true,
+  "issues": []
+}

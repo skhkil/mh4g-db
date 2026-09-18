@@ -1418,10 +1418,20 @@ function populateRecommendFilters(){
   w.value=recommendWeaponType;r.value=recommendRank;
 }
 function recommendPieceHtml(a){return `<div class="recommend-piece"><span>${esc(PART_NAMES[a.part]||a.part)}</span>${refButton(a.name,"armor",{name:a.name})}<small>DEF ${Number(a.defense||0)} · ${slotsText(a.slots)}</small></div>`;}
+function recommendGuideChip(text){
+  const raw=String(text||"").trim();if(!raw)return "";
+  const decoName=raw.split(/[×/]/)[0].trim().replace(/\s+\d+$/,'');
+  const exists=(data.decorations||[]).some(d=>d.name===decoName);
+  return exists?refButton(raw,"decoration",{name:decoName}):`<span class="recommend-guide-chip">${esc(raw)}</span>`;
+}
 function recommendVariantHtml(v,idx){
-  const b=v.build||{},decos=b.decorations||[],activated=b.activated||[],src=v.source||{};
-  const sourceLink=src.url?`<a class="recommend-source-link" href="${esc(src.url)}" target="_blank" rel="noopener noreferrer">국내 참고 ↗</a>`:"";
-  return `<article class="panel recommend-variant"><div class="recommend-variant-head"><div><div class="recommend-kind">${esc(v.style||"")}</div><h3>${esc(v.label)}</h3></div><strong>DEF ${Number(b.defense||0)}</strong></div><div class="recommend-active-skills"><b>발동</b>${activated.map(x=>`<button type="button" class="skill-active" data-open-skill="${esc(x.skillId)}">${esc(x.name)}</button>`).join("")||'<span class="muted">없음</span>'}</div><div class="recommend-pieces">${(b.armors||[]).map(recommendPieceHtml).join("")}</div><div class="recommend-decos"><b>장식주</b>${decos.length?decos.map(d=>refButton(`${d.name} ×${d.count}`,"decoration",{name:d.name})).join(""):"<span class=\"muted\">없음</span>"}</div><div class="recommend-card-foot">${sourceLink}<button type="button" class="ghost recommend-open-sim" data-recommend-sim="${idx}">시뮬레이터에서 보기</button></div></article>`;
+  const b=v.build||{},decos=b.decorations||[],activated=b.activated||[],src=v.source||{},foreign=v.foreignSource||{};
+  const domesticLink=src.url?`<a class="recommend-source-link" href="${esc(src.url)}" target="_blank" rel="noopener noreferrer">국내 근거 ↗</a>`:"";
+  const foreignLink=foreign.url?`<a class="recommend-source-link foreign" href="${esc(foreign.url)}" target="_blank" rel="noopener noreferrer">해외 비교 ↗</a>`:"";
+  const reco=(v.recommendedDecorations||[]).map(recommendGuideChip).join("");
+  const applied=decos.length?`<div class="recommend-decos"><b>적용 장식주</b>${decos.map(d=>refButton(`${d.name} ×${d.count}`,"decoration",{name:d.name})).join("")}</div>`:"";
+  const guides=`${reco?`<div class="recommend-decos recommend-guide"><b>추천 장식주</b>${reco}</div>`:""}${v.talismanGuide?`<div class="recommend-guide-line"><b>호석</b><span>${esc(v.talismanGuide)}</span></div>`:""}${v.talismanSocketGuide?`<div class="recommend-guide-line"><b>호석 슬롯</b><span>${esc(v.talismanSocketGuide)}</span></div>`:""}${v.usageGuide?`<div class="recommend-guide-line"><b>활용</b><span>${esc(v.usageGuide)}</span></div>`:""}${v.foreignComparison?`<div class="recommend-compare"><b>국내↔해외</b><span>${esc(v.foreignComparison)}</span></div>`:""}`;
+  return `<article class="panel recommend-variant"><div class="recommend-variant-head"><div><div class="recommend-kind">${esc(v.style||"")}${v.kind?` · ${esc(v.kind)}`:""}</div><h3>${esc(v.label)}</h3></div><strong>DEF ${Number(b.defense||0)}</strong></div><div class="recommend-active-skills"><b>발동</b>${activated.map(x=>`<button type="button" class="skill-active" data-open-skill="${esc(x.skillId)}">${esc(x.name)}</button>`).join("")||'<span class="muted">없음</span>'}</div><div class="recommend-pieces">${(b.armors||[]).map(recommendPieceHtml).join("")}</div>${applied}${guides}<div class="recommend-card-foot"><div class="recommend-source-links">${domesticLink}${foreignLink}</div><button type="button" class="ghost recommend-open-sim" data-recommend-sim="${idx}">시뮬레이터에서 보기</button></div></article>`;
 }
 function renderRecommendedLoadouts(){
   populateRecommendFilters();const root=$("#recommendContent");if(!root)return;
@@ -1429,7 +1439,7 @@ function renderRecommendedLoadouts(){
   if(!entry){root.innerHTML='<div class="panel result-empty">추천 장비 데이터가 없습니다.</div>';return;}
   const vars=entry.variants||[];
   const heading=`<div class="recommend-heading"><h2>${esc(entry.weaponType)} · ${esc(entry.rankLabel)}</h2></div>`;
-  if(!vars.length){root.innerHTML=`${heading}<div class="panel result-empty">국내 MH4G 커뮤니티 검증 자료를 추가 확인 중입니다.</div>`;return;}
+  if(!vars.length){root.innerHTML=`${heading}<div class="panel result-empty">${esc(entry.researchNote||"검증된 추천 자료를 추가 확인 중입니다.")}</div>`;return;}
   root.innerHTML=`${heading}<section class="recommend-section"><div class="recommend-variants recommend-grid-3">${vars.map((v,i)=>recommendVariantHtml(v,i)).join("")}</div></section>`;
 }
 
