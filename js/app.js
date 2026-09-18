@@ -1,5 +1,5 @@
-import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-research2-hotfix2";
-import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-research2-hotfix2";
+import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-research2-hotfix3";
+import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-research2-hotfix3";
 
 let data={skills:[],armors:[],armorSets:[],decorations:[],weapons:[],weaponSummary:[],melodies:[],items:[],itemReferenceIndex:{items:{}},skillReferenceIndex:{items:{},categories:[]},meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],monsterReferenceIndex:{items:{}},dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],questReferenceIndex:{quests:{}},siteInfo:{},meta:{}};
 let targets=[];
@@ -407,7 +407,21 @@ function manualDecorationPlacements(){
 }
 function decoPickerOptions(container){
   const remain=containerCapacity(container)-usedDecorationSlots(container);
-  return data.decorations.filter(d=>Number(d.slots||0)>0&&Number(d.slots||0)<=remain).sort((a,b)=>Number(a.slots)-Number(b.slots)||a.name.localeCompare(b.name,"ko")).map(d=>{const sub=[d.nameJa,d.nameEn].filter(Boolean).join(" · ");return {value:d.id,label:d.name,meta:`${sub?sub+" · ":""}${d.slots}칸 · ${Object.entries(d.skills||{}).map(([k,v])=>`${skillName(k)} ${v>0?"+":""}${v}`).join(", ")}`,search:decorationSearchCorpus(d)}});
+  return data.decorations
+    .filter(d=>Number(d.slots||0)>0&&Number(d.slots||0)<=remain)
+    .sort((a,b)=>Number(a.slots)-Number(b.slots)||a.name.localeCompare(b.name,"ko"))
+    .map(d=>{
+      const effects=Object.entries(d.skills||{})
+        .sort(([,av],[,bv])=>Number(bv)-Number(av))
+        .map(([k,v])=>`${skillName(k)} ${Number(v)>0?"+":""}${v}`)
+        .join(" · ");
+      return {
+        value:d.id,
+        label:d.name,
+        meta:`${effects||"스킬 포인트 없음"} · 필요 ${d.slots}칸`,
+        search:decorationSearchCorpus(d)
+      };
+    });
 }
 function refreshManualContainer(container){mountDecorationEditor(container);refreshManualSkillPointDisplays()}
 function addManualDecoration(container,id){
