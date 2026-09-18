@@ -9,23 +9,23 @@ const activationByName={}; for(const s of skills) for(const a of s.activations||
 const gunner=new Set(['라이트보우건','헤비보우건','활']);
 const rareRe=/(티켓|코인|증표|보옥|천린|대보옥|홍옥|역린|천각|천갑|천인|희소)/g;
 const SOURCES={
- low:{type:'국내 진행 참고',title:'몬헌4 장비 선택 조언',url:'https://www.inven.co.kr/board/mhf/1755/8390',note:'하위 재기/카브라 계열과 상위 카브라S 이후 커스텀 전환에 대한 국내 진행 조언.'},
- highbm:{type:'국내 진행 참고',title:'몬헌4 장비 선택 조언',url:'https://www.inven.co.kr/board/mhf/1755/8390',note:'상위 초반 카브라S 계열을 거친 뒤 무기와 취향에 맞는 커스텀으로 전환하는 국내 진행 조언.'},
- gs:{type:'국내 4G 참고',title:'[4G] G급 추천 방어구',url:'https://www.inven.co.kr/board/mhf/3746/393',note:'G3 대검용 예리도+1·집중·발도술 계열 세팅이 국내 4G 게시물에 정리되어 있음.'},
- ls:{type:'국내 4G 참고',title:'[4G] G급 추천 방어구',url:'https://www.inven.co.kr/board/mhf/3746/393',note:'검사 범용 G급 세팅과 국내 4G 장비 자료를 참고.'},
- sns:{type:'국내 4G 참고',title:'[4G] G급 추천 방어구',url:'https://www.inven.co.kr/board/mhf/3746/393',note:'검사 범용 G급 세팅과 국내 4G 장비 자료를 참고.'},
- db:{type:'국내 4G 참고',title:'[4G] G급 추천 방어구',url:'https://www.inven.co.kr/board/mhf/3746/393',note:'검사 범용 G급 세팅과 국내 4G 장비 자료를 참고.'},
- hammer:{type:'국내 4G 참고',title:'[4G] G급 추천 방어구',url:'https://www.inven.co.kr/board/mhf/3746/393',note:'검사 범용 G급 세팅과 국내 4G 장비 자료를 참고.'},
- hh:{type:'국내 4G 참고',title:'초보의 무기 선택시 팁',url:'https://www.inven.co.kr/board/mhf/3746/159',note:'무기 특성과 G급 범용 검사 장비 방향을 국내 자료와 함께 참고.'},
- lance:{type:'국내 4G 세트',title:'[4G] G급 추천 방어구',url:'https://www.inven.co.kr/board/mhf/3746/393',note:'자자미X/보로스X 및 G2 가드성능+2·예리도+1 랜스 세팅이 정리되어 있음.'},
- gl:{type:'국내 4G 세트',title:'[4G] G급 추천 방어구',url:'https://www.inven.co.kr/board/mhf/3746/393',note:'가드성능+2·업물·포술마스터 건랜스 세팅이 정리되어 있음.'},
- sa:{type:'국내 4G 참고',title:'초보의 무기 선택시 팁',url:'https://www.inven.co.kr/board/mhf/3746/166',note:'무기 특성과 G급 범용 검사 장비 방향을 국내 자료와 함께 참고.'},
- cb:{type:'국내 4G 참고',title:'초보의 무기 선택시 팁',url:'https://www.inven.co.kr/board/mhf/3746/166',note:'차지액스 특성과 G급 검사 장비 방향을 국내 자료와 함께 참고.'},
- ig:{type:'국내 4G 참고',title:'[4G] 조충곤 엽충 육성',url:'https://www.inven.co.kr/board/mhf/3746/314',note:'4G 조충곤 진액효과연장 엽충과 운용 관련 국내 자료.'},
- lbg:{type:'국내 4G 참고',title:'초보의 무기 선택시 팁',url:'https://www.inven.co.kr/board/mhf/3746/166',note:'라이트보우건 탄종/속사 운용 관련 국내 자료.'},
- hbg:{type:'국내 4G 세트',title:'[4G] G급 추천 방어구',url:'https://www.inven.co.kr/board/mhf/3746/393',note:'G1 자자미Z 관통 헤보 세팅이 국내 4G 게시물에 정리되어 있음.'},
- bow:{type:'국내 4G 참고',title:'초보의 무기 선택시 팁',url:'https://www.inven.co.kr/board/mhf/3746/166',note:'원거리 무기 운용과 장비 방향을 국내 자료와 함께 참고.'}
-}
+ low:{type:'커뮤니티 진행 조언',title:'MH4U Low Rank armor discussion',url:'https://www.reddit.com/r/mh4u/comments/1kpkkdq/',note:'하위는 Velociprey/Kut-Ku 공격형, Tetsucabra 방어형처럼 제작이 쉬운 진행 장비를 쓰고 빠르게 상위로 넘어가는 의견이 반복됨.'},
+ highbm:{type:'커뮤니티 진행 조언',title:'High Rank armor / Double Gore discussion',url:'https://gamefaqs.gamespot.com/boards/762804-monster-hunter-4-ultimate/71266787',note:'상위 검사에서 Double Gore, Rath Soul, Garuga S 등 Sharpness/Challenger 계열 진행 세트가 반복 추천됨.'},
+ gs:{type:'커뮤니티 정석',title:'GS progression / G-rank skill discussions',url:'https://gamefaqs.gamespot.com/boards/762804-monster-hunter-4-ultimate/71393054',note:'대검은 Focus + Critical Draw가 핵심이고 Sharpness+1, Quick Sheathe/Punishing Draw 등이 자주 조합됨.'},
+ ls:{type:'커뮤니티 정석',title:'MH4U Long Sword skills',url:'https://www.reddit.com/r/mh4u/comments/11y0igr/',note:'G급 태도는 Challenger+2를 중심으로 Sharpness+1 또는 Razor Sharp를 조합하는 방향이 반복 추천됨.'},
+ sns:{type:'커뮤니티 정석',title:'MH4U Sword and Shield skills',url:'https://www.reddit.com/r/mh4u/comments/rim5d2/',note:'G급 한손검은 Honed Blade/Sharpness+1, Challenger+2, Razor Sharp, Weakness Exploit 등이 범용 핵심으로 언급됨.'},
+ db:{type:'커뮤니티 기반',title:'MH4U blademaster skill consensus',url:'https://www.reddit.com/r/mh4u/comments/rim5d2/',note:'쌍검은 일반 검사 화력 스킬에 예리도 유지와 스태미나 편의 스킬을 더하는 방향으로 구성.'},
+ hammer:{type:'커뮤니티 정석',title:'MH4U Hammer / Lance skill discussion',url:'https://www.reddit.com/r/mh4u/comments/rvvwuo/',note:'해머는 Weakness Exploit, Handicraft, Evasion, Attack, KO 등이 추천되며 G급에서는 예리도/화력 우선.'},
+ hh:{type:'커뮤니티 정석',title:'MH4U Hunting Horn HR/G skill discussion',url:'https://www.reddit.com/r/mh4u/comments/143i544/',note:'피리명인과 Challenger+2/Sharpness+1 또는 Razor Sharp 조합이 반복 추천됨.'},
+ lance:{type:'커뮤니티 정석',title:'MH4U Lance style discussion',url:'https://www.reddit.com/r/mh4u/comments/vusjpr/',note:'가드형과 회피형이 모두 쓰이며, 매치업에 따라 Guard+2 또는 Evasion을 넣고 예리도/화력 스킬을 병행.'},
+ gl:{type:'커뮤니티 정석',title:'MH4U Gunlance progression',url:'https://www.reddit.com/r/mh4u/comments/c0tkxw/',note:'상위는 Razor Sharp/Artillery/Attack, G급은 Sharpness+1/Honed Blade, Razor Sharp, Challenger+2와 상황별 Guard/Evasion이 언급됨.'},
+ sa:{type:'커뮤니티 정석',title:'MH4U Switch Axe HR skills',url:'https://www.reddit.com/r/mh4u/comments/1km37l8/',note:'상위 이후 Sharpness+1 + Challenger+2가 강한 범용 검사 조합으로 반복 언급됨.'},
+ cb:{type:'커뮤니티 정석',title:'MH4U Charge Blade endgame builds',url:'https://www.reddit.com/r/mh4u/comments/137ze8a/',note:'Impact phial은 Artillery Novice가 효율적이며 Honed Blade/Challenger+2, Razor Sharp, Guard 계열을 조합.'},
+ ig:{type:'커뮤니티 정석',title:'MH4U Insect Glaive armor discussion',url:'https://gamefaqs.gamespot.com/boards/762804-monster-hunter-4-ultimate/71432544',note:'G급에서는 Seregios 계열을 거쳐 Star Knight가 범용 IG 세트로 널리 언급되며, Sharpness/Honed Blade/Challenger 계열이 핵심.'},
+ lbg:{type:'커뮤니티 정석',title:'MH4U LBG low/high skill advice',url:'https://www.reddit.com/r/mh4u/comments/pfaf88/',note:'속사는 Bonus Shot + 주력 탄 강화가 기본이고 속성탄이면 해당 속성 강화, 이후 Challenger/회피거리 등을 추가.'},
+ hbg:{type:'커뮤니티 정석',title:'MH4U HBG Pierce advice',url:'https://www.reddit.com/r/mh4u/comments/1vdfpk7/',note:'관통 HBG는 Pierce Up, Recoil 조절, Evade Extender가 핵심으로 반복 언급됨.'},
+ bow:{type:'커뮤니티 정석',title:'MH4U Bow skill discussion',url:'https://gamefaqs.gamespot.com/boards/762804-monster-hunter-4-ultimate/71716510',note:'연사활은 Focus + Normal/Rapid Up, 특정 활에서는 Load Up이 핵심으로 언급됨.'}
+};
 const profiles={
 '대검':{source:'gs',note:'발도 차지 중심. 집중과 발도술【기술】을 우선.',low:{attack:['공격력UP【중】'],defense:['방어력UP【중】'],balance:['집중']},high:{attack:['집중','발도술【기술】'],defense:['집중','납도술'],balance:['집중','발도술【기술】']},g:[['발도 집중 정석',['집중','발도술【기술】','예리도레벨+1'],'커뮤니티 핵심스킬 기반'],['안정 발도',['집중','발도술【기술】','납도술'],'안정형'],['화력 집중',['집중','발도술【기술】','공격력UP【대】'],'화력형'],['커스텀 믹스',['집중','발도술【기술】','발도술【힘】'],'프로젝트 커스텀']]},
 '태도':{source:'ls',note:'지속 화력과 예리도 유지 중심.',low:{attack:['공격력UP【중】'],defense:['회피성능+1'],balance:['숫돌사용고속화']},high:{attack:['예리도레벨+1','도전자+2'],defense:['예리','회피성능+1'],balance:['예리','도전자+1']},g:[['도전자 예리도',['도전자+2','예리도레벨+1'],'커뮤니티 정석'],['도전자 업물',['도전자+2','예리'],'커뮤니티 정석'],['약점 공략',['약점특효','예리도레벨+1'],'화력형'],['안정 사냥',['고급귀마개','예리도레벨+1'],'안정형']]},
@@ -42,40 +42,8 @@ const profiles={
 '헤비보우건':{source:'hbg',note:'관통탄, 반동, 회피거리의 조합을 우선.',low:{attack:['관통탄�관통살UP'],defense:['회피거리UP'],balance:['관통탄�관통살UP']},high:{attack:['관통탄�관통살UP','반동경감+1'],defense:['회피거리UP','반동경감+1'],balance:['관통탄�관통살UP','회피거리UP']},g:[['관통 정석',['관통탄�관통살UP','반동경감+1','회피거리UP'],'커뮤니티 정석'],['관통 화력',['관통탄�관통살UP','도전자+2'],'화력형'],['관통 안정',['관통탄�관통살UP','회피거리UP'],'안정형'],['반동 대응',['반동경감+2','회피거리UP'],'탄종 특화']]},
 '활':{source:'bow',note:'연사활 기준. 활 타입에 따라 탄 강화 교체 필요.',low:{attack:['공격력UP【중】'],defense:['러너'],balance:['집중']},high:{attack:['집중','통상탄�연사살UP'],defense:['집중','러너'],balance:['집중','장전수UP']},g:[['연사 3핵심',['집중','통상탄�연사살UP'],'커뮤니티 정석'],['연사 화력',['집중','도전자+2'],'화력형'],['스태미나 안정',['집중','스태미나급속회복'],'안정형'],['회피 연사',['집중','회피성능+1'],'커스텀']]}
 };
-
-const skillById=new Map(skills.map(x=>[x.id,x]));
-function activatedFromPoints(points={}){
-  const out=[];
-  for(const [skillId,valueRaw] of Object.entries(points||{})){
-    const value=Number(valueRaw||0), def=skillById.get(skillId); if(!def)continue;
-    const pos=(def.activations||[]).filter(a=>Number(a.points)>0&&Number(a.points)<=value).sort((a,b)=>Number(b.points)-Number(a.points))[0];
-    if(pos)out.push({skillId,name:pos.name,points:value});
-  }
-  return out.sort((a,b)=>a.name.localeCompare(b.name,'ko'));
-}
-function setBuild(set){
-  const armors=(set.pieces||[]).map(p=>fullById.get(p.id)).filter(Boolean).map(a=>({id:a.id,name:a.name,part:a.part,defense:a.defense,slots:a.slots,rank:a.rank,rare:a.rare||0,materials:a.materials||''}));
-  return {armors,decorations:[],decorationPlacements:[],defense:Number(set.defense||0),resist:set.resistances||{},activated:activatedFromPoints(set.skills||{}),score:0,craftPenalty:craftPenalty({armors})};
-}
-function setScore(set,targetNames,mode){
-  const targets=targetNames.map(n=>activationByName[n]).filter(Boolean);
-  let score=0;
-  for(const t of targets){const p=Number(set.skills?.[t.skillId]||0);score+=Math.min(1,Math.max(0,p)/Math.max(1,t.points))*85;}
-  const positive=activatedFromPoints(set.skills||{}).length;
-  score+=positive*10+Number(set.slots||0)*(mode==='balance'?2:1);
-  if(mode==='defense')score+=Number(set.defense||0)*.45+Object.values(set.resistances||{}).reduce((a,b)=>a+Math.max(0,Number(b||0)),0)*.8;
-  else if(mode==='attack')score+=Number(set.defense||0)*.08;
-  else score+=Number(set.defense||0)*.2;
-  const negative=Object.entries(set.skills||{}).filter(([id,v])=>Number(v)<=-10).length;score-=negative*20;
-  return score;
-}
-function recommendFullSet(weaponType,stage,targetNames,mode){
-  const hunter=gunner.has(weaponType)?'gunner':'blade';
-  const pool=read('data/armor_sets.json').filter(s=>(s.hunterType==='both'||s.hunterType===hunter)&&s.rank===stage&&Array.isArray(s.pieces)&&s.pieces.length===5);
-  return pool.sort((a,b)=>setScore(b,targetNames,mode)-setScore(a,targetNames,mode))[0]||null;
-}
 function craftPenalty(build){let n=0;for(const a of build.armors||[]){const m=String(a.materials||'').match(rareRe);n+=m?m.length:0;}return n;}
-function slimBuild(r){const dc={};for(const p of r.decorations||[]){const d=p.deco;if(!d)continue;if(!dc[d.id])dc[d.id]={id:d.id,name:d.name,slots:d.slots,count:0};dc[d.id].count++;}return {armors:(r.armors||[]).map(a=>({id:a.id,name:a.name,part:a.part,defense:a.defense,slots:a.slots,rank:a.rank,rare:a.rare||rareById.get(a.id)||0,materials:fullById.get(a.id)?.materials||a.materials||''})),decorations:Object.values(dc),decorationPlacements:(r.decorations||[]).map(p=>({id:p.deco?.id,name:p.deco?.name,slots:Number(p.deco?.slots||0),container:p.container})).filter(x=>x.id&&x.container),defense:r.calc?.defense||0,resist:r.calc?.resist||{},activated:(r.calc?.activated||[]).filter(x=>x.threshold>0).map(x=>({skillId:x.skillId,name:x.name,points:x.points})),score:r.score||0,craftPenalty:craftPenalty(r)};}
+function slimBuild(r){const dc={};for(const p of r.decorations||[]){const d=p.deco;if(!d)continue;if(!dc[d.id])dc[d.id]={id:d.id,name:d.name,slots:d.slots,count:0};dc[d.id].count++;}return {armors:(r.armors||[]).map(a=>({id:a.id,name:a.name,part:a.part,defense:a.defense,slots:a.slots,rank:a.rank,rare:a.rare||rareById.get(a.id)||0,materials:fullById.get(a.id)?.materials||a.materials||''})),decorations:Object.values(dc),defense:r.calc?.defense||0,resist:r.calc?.resist||{},activated:(r.calc?.activated||[]).filter(x=>x.threshold>0).map(x=>({skillId:x.skillId,name:x.name,points:x.points})),score:r.score||0,craftPenalty:craftPenalty(r)};}
 function stageArmors(stage,hunter){return baseData.armors.filter(a=>(a.hunterType==='both'||a.hunterType===hunter)&&(stage==='low'?a.rank==='low':stage==='high'?(a.rank==='low'||a.rank==='high'):true));}
 function stageDecorations(stage){return stage==='low'?decorations.filter(d=>d.rank==='low'):stage==='high'?decorations.filter(d=>d.rank==='low'||d.rank==='high'):decorations;}
 async function solve(weaponType,stage,names,mode='balanced'){
@@ -91,30 +59,22 @@ async function solve(weaponType,stage,names,mode='balanced'){
  return null;
 }
 function srcFor(key){return SOURCES[key]||SOURCES.highbm;}
-const out={generatedAt:new Date().toISOString(),method:'국내 MH4/4G 커뮤니티 자료와 프로젝트 DB를 기준으로 구성.',progressionNote:'',weaponTypes:Object.keys(profiles),entries:[],sources:SOURCES};
+const out={generatedAt:new Date().toISOString(),method:'웹 커뮤니티/가이드에서 반복 확인되는 무기별 핵심 스킬을 기준으로 프로젝트 자동조합 엔진이 실제 방어구 조합을 검증. 호석 없음 · 무기 슬롯 0 기준. 커뮤니티의 정확한 장비 조합을 그대로 인용한 경우가 아니면 「커뮤니티 기반 커스텀」으로 표시.',progressionNote:'하위·상위는 지나가는 구간이므로 공격형/방어형/균형형 3종만 제공. G급은 최종 세팅 구간으로 무기별 4개 플레이스타일을 제공. 실제 최종 커스텀은 호석/무기 슬롯/상대 몬스터에 따라 달라질 수 있음.',weaponTypes:Object.keys(profiles),entries:[],sources:SOURCES};
 const ONLY=(process.env.ONLY||'').split(',').filter(Boolean);
 for(const [weaponType,p] of Object.entries(profiles)){
  if(ONLY.length&&!ONLY.includes(weaponType))continue;
  const hunter=gunner.has(weaponType)?'gunner':'blade';
  for(const stage of ['low','high']){
   const variants=[];
-  const source=stage==='low'?SOURCES.low:SOURCES.highbm;
-  for(const [key,label,mode,setMode] of [['attack','공격형','balanced','attack'],['defense','방어형','defense','defense'],['balance','균형형','easy','balance']]){
-    const targetNames=p[stage][key];
-    const set=recommendFullSet(weaponType,stage,targetNames,setMode);
-    if(set){
-      const targets=targetNames.map(n=>activationByName[n]).filter(Boolean);
-      variants.push({label:`${label} 세트`,group:'set',category:key,description:'',targets,build:setBuild(set),source,relaxed:[],setName:set.name});
-    }
-  }
   for(const [key,label,mode] of [['attack','공격형','balanced'],['defense','방어형','defense'],['balance','균형형','easy']]){
-    const solved=await solve(weaponType,stage,p[stage][key],mode);if(!solved)continue;
-    variants.push({label:`${label} 커스텀`,group:'custom',category:key,description:'',targets:solved.targets,build:solved.build,source:{type:'프로젝트 커스텀',title:'',url:'',note:''},relaxed:solved.relaxed});
+   const solved=await solve(weaponType,stage,p[stage][key],mode);if(!solved)continue;
+   const source=stage==='low'?SOURCES.low:(weaponType==='대검'?SOURCES.gs:SOURCES.highbm);
+   variants.push({label,category:key,description:key==='attack'?'화력 스킬을 우선한 진행용 세팅':key==='defense'?'생존/가드/회피를 우선한 진행용 세팅':'제작 난이도와 무기 핵심 스킬을 절충한 진행용 세팅',targets:solved.targets,build:solved.build,source,relaxed:solved.relaxed});
   }
   out.entries.push({weaponType,rank:stage,rankLabel:stage==='low'?'하위':'상위',hunterType:hunter,summary:p.note,variants});
  }
  const gvars=[];const source=srcFor(p.source);
- for(const [label,names,kind] of p.g){const mode=kind==='안정형'?'defense':kind==='프로젝트 커스텀'||kind==='커스텀'?'easy':'balanced';const solved=await solve(weaponType,'g',names,mode);if(!solved)continue;gvars.push({label,group:'g',category:kind,description:'',targets:solved.targets,build:solved.build,source:kind.includes('커뮤니티')?source:{type:'프로젝트 커스텀',title:'',url:'',note:''},relaxed:solved.relaxed});}
+ for(const [label,names,kind] of p.g){const mode=kind==='안정형'?'defense':kind==='프로젝트 커스텀'||kind==='커스텀'?'easy':'balanced';const solved=await solve(weaponType,'g',names,mode);if(!solved)continue;gvars.push({label,category:kind,description:`${kind} · ${names.join(' + ')}`,targets:solved.targets,build:solved.build,source:{...source,type:kind.includes('커뮤니티')?source.type:'커뮤니티 근거 + 프로젝트 계산'},relaxed:solved.relaxed});}
  out.entries.push({weaponType,rank:'g',rankLabel:'G급',hunterType:hunter,summary:p.note,variants:gvars});
 }
 fs.writeFileSync(new URL(process.env.OUT||'../data/recommended_loadouts.json',import.meta.url),JSON.stringify(out,null,2));

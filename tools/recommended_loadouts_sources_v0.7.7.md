@@ -1,26 +1,24 @@
-# 추천 장비 웹 근거 정리 v0.7.7
+# 추천 장비 국내 자료 근거 v0.7.7
 
-추천 장비는 공식 정답 세트가 아니라, MH4U 커뮤니티/가이드에서 반복적으로 언급되는 **무기별 핵심 스킬과 플레이스타일**을 근거로 프로젝트 자동조합 엔진이 실제 장비 조합을 계산한 것입니다.
+이번 추천 장비 화면에서 커뮤니티 진행 조언을 표시할 때는 해외 Reddit/GameFAQs 링크를 제거하고 국내 몬스터헌터 커뮤니티 자료만 사용합니다.
 
-- 하위 진행: https://www.reddit.com/r/mh4u/comments/1kpkkdq/
-- 상위 검사 / Double Gore: https://gamefaqs.gamespot.com/boards/762804-monster-hunter-4-ultimate/71266787
-- 대검: https://gamefaqs.gamespot.com/boards/762804-monster-hunter-4-ultimate/71393054
-- 태도: https://www.reddit.com/r/mh4u/comments/11y0igr/
-- 한손검: https://www.reddit.com/r/mh4u/comments/rim5d2/
-- 해머/랜스 참고: https://www.reddit.com/r/mh4u/comments/rvvwuo/
-- 수렵피리: https://www.reddit.com/r/mh4u/comments/143i544/
-- 랜스: https://www.reddit.com/r/mh4u/comments/vusjpr/
-- 건랜스: https://www.reddit.com/r/mh4u/comments/c0tkxw/
-- 슬래시액스: https://www.reddit.com/r/mh4u/comments/1km37l8/
-- 차지액스: https://www.reddit.com/r/mh4u/comments/137ze8a/
-- 조충곤: https://gamefaqs.gamespot.com/boards/762804-monster-hunter-4-ultimate/71432544
-- 라이트보우건: https://www.reddit.com/r/mh4u/comments/pfaf88/
-- 헤비보우건: https://www.reddit.com/r/mh4u/comments/1vdfpk7/
-- 활: https://gamefaqs.gamespot.com/boards/762804-monster-hunter-4-ultimate/71716510
+- 하위/상위 진행 장비: 몬스터헌터 인벤 「모넌4 장비 선택 조언」
+  - https://www.inven.co.kr/board/mhf/1755/8390
+  - 하위 재기/카브라 계열, 상위 진입 후 카브라S를 거쳐 무기와 취향에 맞는 커스텀으로 전환하는 진행 조언을 참고합니다.
+- G급 추천 방어구: 몬스터헌터 인벤 「[4G] G급 추천 방어구 (번역)」
+  - https://www.inven.co.kr/board/mhf/3746/393
+  - 검사 범용, 대검, 랜스, 건랜스, 관통 헤비보우건 세팅 예시를 참고합니다.
+- 검사 무기 특성 참고: 몬스터헌터 인벤 「초보의 무기 선택시 팁(한손검, 대검, 조충곤, 랜스, 건랜스)」
+  - https://www.inven.co.kr/board/mhf/3746/159
+- 슬래시액스/차지액스/보우건 특성 참고: 몬스터헌터 인벤 「초보의 무기 선택시 팁(슬래시액스, 차지액스, 라이트보우건, 헤비보우건)」
+  - https://www.inven.co.kr/board/mhf/3746/166
+- 조충곤 4G 운용 참고: 몬스터헌터 인벤 「[4G]조충곤 엽충! 스피드Max에 신스킬[진액효과연장]타입으로 키워보자」
+  - https://www.inven.co.kr/board/mhf/3746/314
 
-## 표기 원칙
+## 화면 표기 원칙
 
-- `커뮤니티 정석`: 해당 무기에서 반복적으로 확인되는 핵심 스킬 조합.
-- `커뮤니티 기반`: 커뮤니티에서 확인되는 방향성을 프로젝트 데이터에 맞춰 재구성.
-- `안정형/화력형/커스텀`: 위 근거를 바탕으로 프로젝트 자동조합 엔진이 산출한 예시.
-- 실제 호석, 무기 슬롯, 몬스터 상성에 따라 더 좋은 조합이 존재할 수 있습니다.
+- 장황한 커뮤니티 설명은 추천 카드 본문에 표시하지 않습니다.
+- 실제 국내 자료를 참고한 카드만 `국내 참고 ↗` 링크를 표시합니다.
+- 프로젝트 자동 계산 조합은 `프로젝트 커스텀`으로 구분하고 외부 자료를 정석 세트처럼 표현하지 않습니다.
+- 하위/상위는 `세트 장비 3종 + 커스텀 장비 3종`으로 구분합니다.
+- G급은 무기 특성에 따라 3~5개 최종 후보를 유지합니다.

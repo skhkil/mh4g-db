@@ -1,0 +1,15 @@
+{
+  "stats": {
+    "entries": 42,
+    "variants": 224,
+    "lowSet": 42,
+    "lowCustom": 42,
+    "highSet": 42,
+    "highCustom": 42,
+    "g": 56,
+    "domesticLinks": 104
+  },
+  "errors": [],
+  "decorationPackingFailures": [],
+  "foreignUrls": []
+}

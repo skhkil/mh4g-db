@@ -1,4 +1,4 @@
-const DATA_VERSION = "0.7.7-chat4-recommend-redesign1";
+const DATA_VERSION = "0.7.7-chat4-recommend-redesign2-domestic";
 
 const FULL_FILES = {
   skills:"./data/skills.json",
