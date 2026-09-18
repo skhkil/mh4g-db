@@ -654,6 +654,27 @@ def parse_weapons(pages):
         unique.setdefault(rec["id"], rec)
     return list(unique.values())
 
+
+
+def apply_weapon_stat_crosscheck(weapons):
+    """재빌드 시 검증 완료된 무기 스탯을 다시 적용한다.
+
+    원본 한국어 표는 속성/방어가 한 셀에 섞이거나 해외판과 수치가 다른 행이 있어
+    data/weapon_stat_crosscheck.json의 전수 감사 결과를 최종 정규화 값으로 사용한다.
+    """
+    path = PROJECT_DATA / "weapon_stat_crosscheck.json"
+    if not path.exists():
+        return weapons
+    try:
+        ref = json.loads(path.read_text(encoding="utf-8")).get("items", {})
+    except Exception:
+        return weapons
+    for w in weapons:
+        patch = ref.get(w.get("id"))
+        if patch:
+            w.update(patch)
+    return weapons
+
 def parse_items(pages):
     page = next((p for p in pages if (p.get("url") or "").endswith("/item/item.htm")), None)
     if not page:
@@ -1009,7 +1030,7 @@ def derive_melodies(weapons):
     return list(groups.values())
 
 SIM_ARMOR_KEYS = ["id","name","nameJa","nameEn","part","hunterType","rank","defense","slots","torsoUp","resistances","materials","skills"]
-SIM_WEAPON_KEYS = ["id","name","nameJa","nameEn","weaponType","attack","element","affinity","slots","rank","tree"]
+SIM_WEAPON_KEYS = ["id","name","nameJa","nameEn","weaponType","attack","element","elementPrimary","elementSecondary","awakenElement","defenseBonus","affinity","affinityText","slots","rank","tree","statReference","sharpness","phial","shelling","notes","melody","melodyEffects","kinsect","arcShot","specialFire","chargeLevels","coatings","reloadRecoilDrift"]
 SIM_ARMOR_SET_KEYS = ["id","name","hunterType","rank","pieces","slots","skills"]
 
 def compact_rows(rows, keys):
@@ -1090,7 +1111,7 @@ def main():
     material_rank_map = build_material_rank_map(items, monster_rewards, dragon_exchange)
     armors, armor_unresolved = parse_armors(pages, material_rank_map)
     decorations, deco_unresolved = parse_decorations(pages)
-    weapons = parse_weapons(pages)
+    weapons = apply_weapon_stat_crosscheck(parse_weapons(pages))
     weapon_summary = parse_weapon_summary(pages)
     meals = parse_meals(pages)
     monster_summary = parse_monster_summary(pages)

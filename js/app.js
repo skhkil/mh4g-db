@@ -1,5 +1,5 @@
-import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-research2-hotfix6";
-import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-research2-hotfix6";
+import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-research2-hotfix8";
+import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-research2-hotfix8";
 
 let data={skills:[],armors:[],armorSets:[],decorations:[],weapons:[],weaponSummary:[],melodies:[],items:[],itemReferenceIndex:{items:{}},skillReferenceIndex:{items:{},categories:[]},meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],monsterReferenceIndex:{items:{}},dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],questReferenceIndex:{quests:{}},siteInfo:{},meta:{}};
 let targets=[];
@@ -372,10 +372,55 @@ function manualWeaponTypeOptions(){
   if(optionCache.weaponTypes)return optionCache.weaponTypes;
   optionCache.weaponTypes=WEAPON_TYPES.filter(t=>data.weapons.some(w=>w.weaponType===t));return optionCache.weaponTypes;
 }
+const WEAPON_RANK_ORDER={g:0,high:1,low:2};
+function weaponRankCompare(a,b){
+  return (WEAPON_RANK_ORDER[a?.rank]??9)-(WEAPON_RANK_ORDER[b?.rank]??9)
+    || String(a?.weaponType||"").localeCompare(String(b?.weaponType||""),"ko")
+    || String(a?.name||"").localeCompare(String(b?.name||""),"ko");
+}
+function weaponSharpnessText(w){
+  if(RANGED_TYPES.has(w?.weaponType))return "";
+  const colors={red:"빨강",orange:"주황",yellow:"노랑",green:"초록",blue:"파랑",white:"흰색",purple:"보라"};
+  const segs=w?.sharpness?.normal?.segments||[];
+  const colored=segs.filter(x=>x?.color&&x.color!=="gray"&&Number(x.length||0)>0);
+  const top=colored[colored.length-1];
+  return top?.color?`예리도 ${colors[top.color]||top.color}`:"";
+}
+function weaponPropertyBits(w){
+  const bits=[];
+  for(const p of [w?.elementPrimary,w?.elementSecondary]) if(p?.type&&Number(p?.value||0)) bits.push(`속성 ${p.type} ${Number(p.value)}`);
+  if(w?.awakenElement?.type&&Number(w?.awakenElement?.value||0)) bits.push(`각성 ${w.awakenElement.type} ${Number(w.awakenElement.value)}`);
+  if(Number(w?.defenseBonus||0)) bits.push(`방어 +${Number(w.defenseBonus)}`);
+  if(!bits.length&&w?.element) bits.push(`속성/효과 ${w.element}`);
+  return bits;
+}
+function weaponAffinityText(w){
+  const raw=String(w?.affinityText??w?.affinity??0).trim()||"0";
+  if(raw.includes("/"))return `${raw}%`;
+  const n=Number(raw);return `${Number.isFinite(n)&&n>0?"+":""}${raw}%`;
+}
+function weaponPickerMeta(w){
+  const bits=[rankName(w.rank),`공격 ${w.attack??"-"}`,...weaponPropertyBits(w)];
+  if(String(w?.affinityText??w?.affinity??0)!=="0")bits.push(`회심 ${weaponAffinityText(w)}`);
+  bits.push(`슬롯 ${slotsText(w.slots)}`);
+  const sharp=weaponSharpnessText(w);if(sharp)bits.push(sharp);
+  const extra=weaponExtra(w);if(extra)bits.push(`특성 ${extra}`);
+  if(Array.isArray(w.melodyEffects)&&w.melodyEffects.length)bits.push(`선율효과 ${w.melodyEffects.join(" / ")}`);
+  return bits.join(" · ");
+}
 function weaponPickerOptions(){
   const type=uiState.manualWeaponType||"all";
   if(optionCache.weaponByType.has(type))return optionCache.weaponByType.get(type);
-  const opts=data.weapons.filter(w=>type==="all"||w.weaponType===type).sort((a,b)=>a.weaponType.localeCompare(b.weaponType,"ko")||a.name.localeCompare(b.name,"ko")).map(w=>{const sub=[w.nameJa,w.nameEn].filter(Boolean).join(" · ");return {value:w.id,label:`[${w.weaponType}] ${w.name}`,meta:`${sub?sub+" · ":""}${rankName(w.rank)} · ${slotsText(w.slots)} · ATK ${w.attack??"-"}`,search:`${w.name} ${w.nameJa||""} ${w.nameEn||""} ${w.weaponType} ${rankName(w.rank)} ${w.tree||""} ${w.element||""}`}});
+  const opts=data.weapons
+    .filter(w=>type==="all"||w.weaponType===type)
+    .sort(weaponRankCompare)
+    .map(w=>({
+      value:w.id,
+      label:w.name,
+      meta:weaponPickerMeta(w),
+      // 외국어 이름은 선택창에 표시하지 않고 기존 검색 호환용으로만 유지한다.
+      search:`${w.name} ${w.nameJa||""} ${w.nameEn||""} ${w.weaponType} ${rankName(w.rank)} ${w.tree||""} ${w.element||""} ${weaponPropertyBits(w).join(" ")} ${weaponExtra(w)} ${(w.melodyEffects||[]).join(" ")}`
+    }));
   optionCache.weaponByType.set(type,opts);return opts;
 }
 function armorSetPickerOptions(){
@@ -811,12 +856,17 @@ const WEAPON_ELEMENT_FILTERS={
 };
 const SHARPNESS_RANK={red:0,orange:1,yellow:2,green:3,blue:4,white:5,purple:6};
 function weaponElementCategory(w){
+  const props=[w?.elementPrimary,w?.elementSecondary,w?.awakenElement].filter(Boolean);
+  const map={"불":"fire","화":"fire","물":"water","번개":"thunder","뇌":"thunder","얼음":"ice","빙":"ice","용":"dragon","독":"poison","마비":"paralysis","수면":"sleep","폭파":"blast"};
+  for(const p of props){const key=map[String(p?.type||"")];if(key)return key;}
   const text=String(w?.element||"").replace(/[()]/g," ");
   if(!text.trim())return "none";
   for(const [key,word] of Object.entries(WEAPON_ELEMENT_FILTERS)) if(new RegExp(`${word}\\s*\\d+`).test(text)) return key;
   return "none";
 }
 function weaponElementValue(w){
+  const vals=[w?.elementPrimary,w?.elementSecondary,w?.awakenElement].filter(Boolean).map(p=>Number(p?.value)||0);
+  if(vals.length)return Math.max(...vals);
   if(weaponElementCategory(w)==="none")return 0;
   const nums=String(w?.element||"").match(/\d+/g)||[];
   return nums.length?Math.max(...nums.map(Number)):0;
@@ -880,8 +930,8 @@ function weaponCell(w,col){
     return `${prefix}${w.isFinal?'<span class="final-mark">■</span> ':''}<strong>${esc(w.name)}</strong>${localizedNameSub(w)}`;
   }
   if(col.key==="attack") return w.attack??"-";
-  if(col.key==="element") return esc(w.element||"-");
-  if(col.key==="affinity") return `${w.affinity??0}%`;
+  if(col.key==="element") return esc(weaponPropertyBits(w).join(" · ")||"-");
+  if(col.key==="affinity") return weaponAffinityText(w);
   if(col.key==="slots") return slotsText(w.slots);
   if(col.key==="sharpness") return renderSharpness(w);
   if(col.key==="rank") return rankName(w.rank);
@@ -923,7 +973,7 @@ function renderWeaponTrees(){
   const q=$("#weaponSearch").value.trim().toLowerCase(),tree=$("#weaponTreeFilter").value;
   const element=$("#weaponElementFilter")?.value||"all",sortMode=$("#weaponSort")?.value||"tree";
   const cmp=weaponComparator(sortMode);
-  let rows=weaponFilteredBase().filter(w=>(tree==="all"||w.tree===tree)&&(element==="all"||weaponElementCategory(w)===element)&&(!q||`${w.name} ${w.nameJa||""} ${w.nameEn||""} ${w.element||""} ${w.tree||""} ${weaponExtra(w)} ${(w.craft||[]).map(c=>c.materials).join(" ")}`.toLowerCase().includes(q)));
+  let rows=weaponFilteredBase().filter(w=>(tree==="all"||w.tree===tree)&&(element==="all"||weaponElementCategory(w)===element)&&(!q||`${w.name} ${w.nameJa||""} ${w.nameEn||""} ${w.element||""} ${weaponPropertyBits(w).join(" ")} ${w.tree||""} ${weaponExtra(w)} ${(w.craft||[]).map(c=>c.materials).join(" ")}`.toLowerCase().includes(q)));
   const groups=new Map();for(const w of rows){const k=w.tree||"기타";if(!groups.has(k))groups.set(k,[]);groups.get(k).push(w)}
   for(const list of groups.values())list.sort(cmp);
   const ordered=[...groups.entries()].sort((a,b)=>sortMode==="tree"?((a[1][0]?.treeOrder??9999)-(b[1][0]?.treeOrder??9999)||a[0].localeCompare(b[0],"ko")):(cmp(a[1][0],b[1][0])||a[0].localeCompare(b[0],"ko")));
