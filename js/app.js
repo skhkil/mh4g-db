@@ -1,5 +1,5 @@
-import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-recommend-redesign2-domestic";
-import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-recommend-redesign2-domestic";
+import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-recommend-verified-community";
+import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-recommend-verified-community";
 
 let data={skills:[],armors:[],armorSets:[],decorations:[],weapons:[],weaponSummary:[],melodies:[],items:[],itemReferenceIndex:{items:{}},skillReferenceIndex:{items:{},categories:[]},meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],monsterReferenceIndex:{items:{}},dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],questReferenceIndex:{quests:{}},siteInfo:{},meta:{}};
 let targets=[];
@@ -1419,11 +1419,9 @@ function populateRecommendFilters(){
 }
 function recommendPieceHtml(a){return `<div class="recommend-piece"><span>${esc(PART_NAMES[a.part]||a.part)}</span>${refButton(a.name,"armor",{name:a.name})}<small>DEF ${Number(a.defense||0)} · ${slotsText(a.slots)}</small></div>`;}
 function recommendVariantHtml(v,idx){
-  const b=v.build||{},decos=b.decorations||[],activated=b.activated||[],targets=v.targets||[],src=v.source||{};
-  const relaxed=(v.relaxed||[]).length?`<div class="recommend-warning">일부 목표 제외: ${esc(v.relaxed.join(' / '))}</div>`:"";
+  const b=v.build||{},decos=b.decorations||[],activated=b.activated||[],src=v.source||{};
   const sourceLink=src.url?`<a class="recommend-source-link" href="${esc(src.url)}" target="_blank" rel="noopener noreferrer">국내 참고 ↗</a>`:"";
-  const setName=v.setName?`<span class="recommend-set-name">${esc(v.setName)} 세트</span>`:"";
-  return `<article class="panel recommend-variant" data-recommend-group="${esc(v.group||'g')}"><div class="recommend-variant-head"><div><div class="recommend-kind">${esc(v.category||"")}</div><h3>${esc(v.label)}</h3>${setName}</div><strong>DEF ${Number(b.defense||0)}</strong></div><div class="recommend-targets compact"><b>목표</b>${targets.map(x=>`<button type="button" class="skill-active" data-open-skill="${esc(x.skillId)}">${esc(x.name)}</button>`).join("")}</div><div class="recommend-active-skills"><b>발동</b>${activated.map(x=>`<button type="button" class="skill-active" data-open-skill="${esc(x.skillId)}">${esc(x.name)}</button>`).join("")||'<span class="muted">없음</span>'}</div><div class="recommend-pieces">${(b.armors||[]).map(recommendPieceHtml).join("")}</div><div class="recommend-decos"><b>장식주</b>${decos.length?decos.map(d=>refButton(`${d.name} ×${d.count}`,"decoration",{name:d.name})).join(""):"<span class=\"muted\">없음</span>"}</div>${relaxed}<div class="recommend-card-foot">${sourceLink}<button type="button" class="ghost recommend-open-sim" data-recommend-sim="${idx}">시뮬레이터에서 보기</button></div></article>`;
+  return `<article class="panel recommend-variant"><div class="recommend-variant-head"><div><div class="recommend-kind">${esc(v.style||"")}</div><h3>${esc(v.label)}</h3></div><strong>DEF ${Number(b.defense||0)}</strong></div><div class="recommend-active-skills"><b>발동</b>${activated.map(x=>`<button type="button" class="skill-active" data-open-skill="${esc(x.skillId)}">${esc(x.name)}</button>`).join("")||'<span class="muted">없음</span>'}</div><div class="recommend-pieces">${(b.armors||[]).map(recommendPieceHtml).join("")}</div><div class="recommend-decos"><b>장식주</b>${decos.length?decos.map(d=>refButton(`${d.name} ×${d.count}`,"decoration",{name:d.name})).join(""):"<span class=\"muted\">없음</span>"}</div><div class="recommend-card-foot">${sourceLink}<button type="button" class="ghost recommend-open-sim" data-recommend-sim="${idx}">시뮬레이터에서 보기</button></div></article>`;
 }
 function renderRecommendedLoadouts(){
   populateRecommendFilters();const root=$("#recommendContent");if(!root)return;
@@ -1431,14 +1429,10 @@ function renderRecommendedLoadouts(){
   if(!entry){root.innerHTML='<div class="panel result-empty">추천 장비 데이터가 없습니다.</div>';return;}
   const vars=entry.variants||[];
   const heading=`<div class="recommend-heading"><h2>${esc(entry.weaponType)} · ${esc(entry.rankLabel)}</h2></div>`;
-  if(entry.rank==="g"){
-    root.innerHTML=`${heading}<section class="recommend-section"><h3>G급 추천</h3><div class="recommend-variants recommend-grid-3">${vars.map((v,i)=>recommendVariantHtml(v,i)).join("")}</div></section>`;
-    return;
-  }
-  const setRows=vars.map((v,i)=>[v,i]).filter(([v])=>v.group==="set");
-  const customRows=vars.map((v,i)=>[v,i]).filter(([v])=>v.group==="custom");
-  root.innerHTML=`${heading}<section class="recommend-section"><h3>세트 장비</h3><div class="recommend-variants recommend-grid-3">${setRows.map(([v,i])=>recommendVariantHtml(v,i)).join("")}</div></section><section class="recommend-section"><h3>커스텀 장비</h3><div class="recommend-variants recommend-grid-3">${customRows.map(([v,i])=>recommendVariantHtml(v,i)).join("")}</div></section>`;
+  if(!vars.length){root.innerHTML=`${heading}<div class="panel result-empty">국내 MH4G 커뮤니티 검증 자료를 추가 확인 중입니다.</div>`;return;}
+  root.innerHTML=`${heading}<section class="recommend-section"><div class="recommend-variants recommend-grid-3">${vars.map((v,i)=>recommendVariantHtml(v,i)).join("")}</div></section>`;
 }
+
 function distributeRecommendationDecorations(build){
   const placed=Object.fromEntries(MANUAL_CONTAINERS.map(c=>[c,[]]));
   const remaining=Object.fromEntries(PARTS.map(p=>[p,Number(armorById.get(uiState.manual[p])?.slots||0)]));
@@ -1459,7 +1453,7 @@ async function openRecommendationInSimulator(index){
   const entry=(data.recommendedLoadouts?.entries||[]).find(x=>x.weaponType===recommendWeaponType&&x.rank===recommendRank);if(!entry)return;
   const v=entry.variants?.[Number(index)||0];if(!v)return;
   await openPage("simulator");
-  targets=(v.targets||[]).map(x=>x.id);
+  targets=[];
   uiState.manualSet="";uiState.manualWeapon="";uiState.manualWeaponType=entry.weaponType||"all";
   uiState.charmSkill1="";uiState.charmPoint1=0;uiState.charmSkill2="";uiState.charmPoint2=0;uiState.charmSlots=0;
   uiState.manual=Object.fromEntries(PARTS.map(p=>[p,""]));
