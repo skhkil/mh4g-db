@@ -1,5 +1,5 @@
-import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-research2-hotfix5";
-import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-research2-hotfix5";
+import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-research2-hotfix6";
+import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-research2-hotfix6";
 
 let data={skills:[],armors:[],armorSets:[],decorations:[],weapons:[],weaponSummary:[],melodies:[],items:[],itemReferenceIndex:{items:{}},skillReferenceIndex:{items:{},categories:[]},meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],monsterReferenceIndex:{items:{}},dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],questReferenceIndex:{quests:{}},siteInfo:{},meta:{}};
 let targets=[];
@@ -254,15 +254,19 @@ function renderSavedBuilds(selectedId=""){
   el.innerHTML='<option value="">저장한 세팅</option>'+list.map(b=>`<option value="${esc(b.id)}" ${b.id===selectedId?"selected":""}>${esc(b.name)}</option>`).join("");
 }
 function saveCurrentBuild(){
-  const list=getSavedBuilds(),name=$("#buildName")?.value.trim()||`세팅 ${list.length+1}`;
+  const list=getSavedBuilds();
+  const selectedId=$("#savedBuildSelect")?.value||"";
+  const existingIndex=selectedId?list.findIndex(x=>x.id===selectedId):-1;
+  const name=$("#buildName")?.value.trim()||(existingIndex>=0?list[existingIndex].name:`세팅 ${list.length+1}`);
   const rec={
-    id:`build_${Date.now()}_${Math.random().toString(36).slice(2,7)}`,name,
+    id:existingIndex>=0?list[existingIndex].id:`build_${Date.now()}_${Math.random().toString(36).slice(2,7)}`,name,
     targets:[...targets],
     manualSet:uiState.manualSet,manualWeapon:uiState.manualWeapon,manualWeaponType:uiState.manualWeaponType,manual:{...uiState.manual},
     charmSkill1:uiState.charmSkill1,charmPoint1:uiState.charmPoint1,charmSkill2:uiState.charmSkill2,charmPoint2:uiState.charmPoint2,charmSlots:uiState.charmSlots,
     manualDecorations:Object.fromEntries(MANUAL_CONTAINERS.map(c=>[c,[...(uiState.manualDecorations[c]||[])]]))
   };
-  list.push(rec);setSavedBuilds(list);renderSavedBuilds(rec.id);if($("#buildName"))$("#buildName").value="";
+  if(existingIndex>=0) list[existingIndex]=rec; else list.push(rec);
+  setSavedBuilds(list);renderSavedBuilds(rec.id);if($("#buildName"))$("#buildName").value=rec.name;
 }
 function loadSelectedBuild(){
   const rec=getSavedBuilds().find(x=>x.id===$("#savedBuildSelect")?.value);if(!rec)return;
@@ -270,9 +274,10 @@ function loadSelectedBuild(){
   uiState.manualSet=rec.manualSet||"";uiState.manualWeapon=rec.manualWeapon||"";uiState.manualWeaponType=rec.manualWeaponType||"all";uiState.manual={...Object.fromEntries(PARTS.map(p=>[p,""])),...(rec.manual||{})};
   uiState.charmSkill1=rec.charmSkill1||"";uiState.charmPoint1=Number(rec.charmPoint1||0);uiState.charmSkill2=rec.charmSkill2||"";uiState.charmPoint2=Number(rec.charmPoint2||0);uiState.charmSlots=Number(rec.charmSlots||0);
   uiState.manualDecorations=Object.fromEntries(MANUAL_CONTAINERS.map(c=>[c,[...(rec.manualDecorations?.[c]||[])]]));
+  if($("#buildName")) $("#buildName").value=rec.name||"";
   fillSelectors();renderTargets();renderManualSelectors();renderManualResult();
 }
-function deleteSelectedBuild(){const id=$("#savedBuildSelect")?.value;if(!id)return;setSavedBuilds(getSavedBuilds().filter(x=>x.id!==id));renderSavedBuilds()}
+function deleteSelectedBuild(){const id=$("#savedBuildSelect")?.value;if(!id)return;setSavedBuilds(getSavedBuilds().filter(x=>x.id!==id));renderSavedBuilds();if($("#buildName"))$("#buildName").value=""}
 
 function rankEligible(x){const rank=$("#rankFilter").value;return rank==="all"||x.rank===rank}
 function armorEligible(a){
@@ -1834,7 +1839,7 @@ function bind(){
 
   $("#addTargetSkill").onclick=()=>{const v=uiState.targetActivation;if(v&&!targets.includes(v)){targets.push(v);renderTargets()}};
   $("#clearTargets").onclick=()=>{targets=[];renderTargets()};$("#calculateManual").onclick=renderManualResult;$("#runSearch").onclick=runSearch;
-  $("#saveBuild").onclick=saveCurrentBuild;$("#loadBuild").onclick=loadSelectedBuild;$("#deleteBuild").onclick=deleteSelectedBuild;$("#savedBuildSelect").onchange=loadSelectedBuild;
+  $("#saveBuild").onclick=saveCurrentBuild;$("#deleteBuild").onclick=deleteSelectedBuild;$("#savedBuildSelect").onchange=loadSelectedBuild;
 
   $("#hunterType").onchange=()=>{
     if(currentPage==="armor")renderArmorTable();
