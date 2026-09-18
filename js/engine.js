@@ -198,8 +198,9 @@ export async function searchBuilds(options, data){
     allowDecorations=true, includeTorsoUp=true, limit=20
   } = options;
 
-  const req=requirementMap(targetActivationIds,data.skills);
-  if(!Object.keys(req).length) return {results:[],stats:{message:"목표 스킬 없음"}};
+  const requireTorsoUp=targetActivationIds.includes("__torso_up__");
+  const req=requirementMap(targetActivationIds.filter(id=>id!=="__torso_up__"),data.skills);
+  if(!Object.keys(req).length && !requireTorsoUp) return {results:[],stats:{message:"목표 스킬 없음"}};
 
   const eligible = data.armors.filter(a=>{
     const typeOk = hunterType==="both" || a.hunterType==="both" || a.hunterType===hunterType;
@@ -224,6 +225,7 @@ export async function searchBuilds(options, data){
       for(const armor of byPart[part]){
         const arr=[...st.armors,armor];
         let score=arr.reduce((s,a)=>s+armorScore(a,req),0);
+        if(requireTorsoUp && arr.some(a=>a?.part!=="body"&&a?.torsoUp)) score+=18;
         // 몸통배가가 있을 때 몸통 스킬 잠재력 반영
         const body=arr.find(a=>a.part==="body");
         const torso=includeTorsoUp ? arr.filter(a=>a.torsoUp).length : 0;
@@ -247,6 +249,7 @@ export async function searchBuilds(options, data){
   const finalists=beam.slice(0,700);
   const results=[];
   for(const candidate of finalists){
+    if(requireTorsoUp && !candidate.armors.some(a=>a?.part!=="body"&&a?.torsoUp)) continue;
     const {points,torsoUpCount}=baseBuildPoints(candidate.armors,charm,includeTorsoUp);
     const containers=containersForBuild(candidate.armors,charm.slots,weaponSlots);
     let solved={placements:[],points};

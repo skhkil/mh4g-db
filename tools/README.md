@@ -1,3 +1,7 @@
+# 추천 장비 재생성 기준 (2026-09-18 hotfix1)
+
+추천 DB의 정식 재생성 명령은 `python tools/rebuild_recommendations_verified_v0.7.7.py` 입니다. 이 래퍼는 국내/해외 조사 기반 108카드 재구축 → 원문 장식주/호석 예시 보강 → 실제 발동 스킬 재계산을 순서대로 실행합니다. `build_recommended_loadouts_v0.7.7.mjs`는 과거 자동조합 생성기이며 기본 실행을 차단했습니다. `LEGACY_AUTOGEN=1`을 명시하지 않으면 추천 DB를 덮어쓰지 않습니다.
+
 # MH4G DB 수집 / 정규화 도구 v0.4
 
 ## Windows 원클릭

@@ -1,3 +1,8 @@
+// LEGACY ONLY: this file uses the automatic combination engine and must not overwrite the verified recommendation DB.
+if(process.env.LEGACY_AUTOGEN !== "1"){
+  console.error("This legacy auto-generator is disabled. Use: python tools/rebuild_recommendations_verified_v0.7.7.py");
+  process.exit(2);
+}
 import fs from 'fs';
 import {searchBuilds} from '../js/engine.js';
 const read=p=>JSON.parse(fs.readFileSync(new URL(`../${p}`,import.meta.url),'utf8'));

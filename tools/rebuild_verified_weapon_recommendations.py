@@ -1,7 +1,9 @@
 import json, copy, os, datetime
-BASE='/mnt/data/reco_weapon_research/data'
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[1]
+BASE=ROOT/'data'
 
-def load(n): return json.load(open(f'{BASE}/{n}',encoding='utf-8'))
+def load(n): return json.loads((BASE/n).read_text(encoding='utf-8'))
 armors=load('armors.json'); sets=load('armor_sets.json'); skills=load('skills.json'); decos=load('decorations.json')
 armor_by_id={x['id']:x for x in armors}; skill_by_id={x['id']:x for x in skills}; deco_by_name={x['name']:x for x in decos}
 old=load('recommended_loadouts.json')
@@ -86,7 +88,6 @@ blade=set(weapon_types[:11])
 
 def common_low(w):
   guides={
-    '람포스 세트':('공격형',['공격주','천리주'],'공격 계열 또는 1슬롯 호석','초반 화력을 올리기 쉬운 세트. 공격 스킬을 한 단계 올리는 방향으로 활용.'),
     '카브라 세트':('방어형',['방어주','체력주'],'방어/체력 계열 또는 슬롯 호석','체력과 방어를 올려 실수 허용치를 높이는 진행용 세트.'),
     '재기 세트':('밸런스형',['연마주'],'슬롯 호석','숫돌사용고속화를 살리고 남는 슬롯은 공격/생존 보조에 사용.'),
   }

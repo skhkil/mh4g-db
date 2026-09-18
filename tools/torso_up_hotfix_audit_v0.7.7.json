@@ -1,0 +1,25 @@
+{
+  "version": "0.7.7-chat4-research2-hotfix1",
+  "torsoUpArmorCount": 64,
+  "torsoUpByPart": {
+    "head": 6,
+    "body": 0,
+    "arms": 6,
+    "waist": 16,
+    "legs": 36
+  },
+  "recommendationCards": 108,
+  "lowLamposRecommendations": [],
+  "searchAliases": [
+    "몸통배가",
+    "동계통배가",
+    "Torso Up",
+    "胴系統倍加"
+  ],
+  "autoTargetId": "__torso_up__",
+  "tests": {
+    "torsoOnly": "PASS (10/10 results include torsoUp)",
+    "torsoPlusEarplugs": "PASS (10/10 results include torsoUp and Earplugs or HG Earplugs)",
+    "activatedRecalc": "PASS (changed 0, uncertain 0)"
+  }
+}
