@@ -1153,3 +1153,30 @@ button{border:1px solid var(--line);background:#202b39;color:white;border-radius
 @media (max-width:1180px) and (hover:none) and (pointer:coarse){
   .recommend-guide-line,.recommend-compare{grid-template-columns:42px minmax(0,1fr)}
 }
+
+/* v0.7.7 hotfix2: simulator equipment search readability */
+#manual-head .search-select-option,
+#manual-body .search-select-option,
+#manual-arms .search-select-option,
+#manual-waist .search-select-option,
+#manual-legs .search-select-option{
+  align-items:flex-start;
+  flex-direction:column;
+  gap:3px;
+  white-space:normal;
+}
+#manual-head .search-select-option small,
+#manual-body .search-select-option small,
+#manual-arms .search-select-option small,
+#manual-waist .search-select-option small,
+#manual-legs .search-select-option small{
+  width:100%;max-width:none;white-space:normal;overflow:visible;text-overflow:clip;line-height:1.4;
+}
+#manual-head .search-select-label,
+#manual-body .search-select-label,
+#manual-arms .search-select-label,
+#manual-waist .search-select-label,
+#manual-legs .search-select-label{width:100%;font-weight:700;}
+.build-card-clickable{cursor:pointer;transition:border-color .15s ease,transform .15s ease,background .15s ease}
+.build-card-clickable:hover,.build-card-clickable:focus{border-color:#6b8fb8;background:#14202d;outline:none;transform:translateY(-1px)}
+.build-card-action{margin-top:10px;padding-top:8px;border-top:1px solid var(--line);font-size:11px;color:var(--accent2);font-weight:700}

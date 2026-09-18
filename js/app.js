@@ -1,8 +1,9 @@
-import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-research2-hotfix1";
-import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-research2-hotfix1";
+import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-research2-hotfix2";
+import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-research2-hotfix2";
 
 let data={skills:[],armors:[],armorSets:[],decorations:[],weapons:[],weaponSummary:[],melodies:[],items:[],itemReferenceIndex:{items:{}},skillReferenceIndex:{items:{},categories:[]},meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],monsterReferenceIndex:{items:{}},dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],questReferenceIndex:{quests:{}},siteInfo:{},meta:{}};
 let targets=[];
+let latestAutoSearchResults=[];
 let currentPage="simulator";
 const BUILD_STORAGE_KEY="mh4g-builds-v1";
 const WEAPON_TYPES=["대검","태도","한손검","쌍검","해머","수렵피리","랜스","건랜스","슬래시액스","차지액스","조충곤","라이트보우건","헤비보우건","활"];
@@ -287,9 +288,21 @@ function weaponEligible(w){
 function selectedArmors(){return PARTS.map(p=>armorById.get(uiState.manual[p])).filter(Boolean)}
 function selectedWeapon(){return weaponById.get(uiState.manualWeapon)||null}
 // 시뮬레이터는 DB 메뉴의 숨겨진 타입/등급 상태와 완전히 독립적으로 동작한다.
+function armorSkillSearchCorpus(a){
+  const skillIds=Object.keys(a?.skills||{});
+  return skillIds.map(id=>`${skillName(id)} ${skillSearchCorpus(id)}`).join(" ");
+}
 function armorPickerOptions(part){
   if(optionCache.armorByPart.has(part))return optionCache.armorByPart.get(part);
-  const opts=data.armors.filter(a=>a.part===part).sort((a,b)=>a.name.localeCompare(b.name,"ko")).map(a=>{const sub=[a.nameJa,a.nameEn].filter(Boolean).join(" · "),torso=a.torsoUp?" · 몸통배가":"",torsoSearch=a.torsoUp?"몸통배가 동계통배가 胴系統倍加 Torso Up":"";return {value:a.id,label:a.name,meta:`${sub?sub+" · ":""}${hunterName(a.hunterType)} · ${rankName(a.rank)} · ${slotsText(a.slots)} · DEF ${a.defense}${torso}`,search:`${a.name} ${a.nameJa||""} ${a.nameEn||""} ${hunterName(a.hunterType)} ${rankName(a.rank)} ${Object.keys(a.skills||{}).map(skillName).join(" ")} ${torsoSearch} ${a.materials||""}`}});
+  const opts=data.armors.filter(a=>a.part===part).sort((a,b)=>a.name.localeCompare(b.name,"ko")).map(a=>{
+    const torso=a.torsoUp?" · 몸통배가":"",torsoSearch=a.torsoUp?"몸통배가 동계통배가 胴系統倍加 Torso Up":"";
+    const skills=a.torsoUp?"몸통배가":skillPointsPlain(a.skills||{},"스킬 없음");
+    return {
+      value:a.id,label:a.name,
+      meta:`${rankName(a.rank)} · ${hunterName(a.hunterType)} · ${skills} · 슬롯 ${slotsText(a.slots)} · DEF ${a.defense}${torso}`,
+      search:`${a.name} ${a.nameJa||""} ${a.nameEn||""} ${hunterName(a.hunterType)} ${rankName(a.rank)} ${armorSkillSearchCorpus(a)} ${torsoSearch} ${a.materials||""}`
+    };
+  });
   optionCache.armorByPart.set(part,opts);return opts;
 }
 function manualWeaponTypeOptions(){
@@ -519,9 +532,21 @@ function renderTargets(){
   $$('[data-remove-target]').forEach(b=>b.onclick=()=>{targets=targets.filter(x=>x!==b.dataset.removeTarget);renderTargets()});
 }
 function renderBuildCard(b,i){
-  const decolines={};for(const p of b.decorations){const key=`${p.container}:${p.deco.id}`;decolines[key]=(decolines[key]||0)+1}
+  const decolines={};for(const p of b.decorations){const did=typeof p.deco==="string"?p.deco:p.deco?.id;const key=`${p.container}:${did}`;decolines[key]=(decolines[key]||0)+1}
   const decoText=Object.entries(decolines).map(([key,n])=>{const [container,id]=key.split(":"),d=data.decorations.find(x=>x.id===id),label={weapon:"무기",head:"머리",body:"몸통",arms:"팔",waist:"허리",legs:"다리",charm:"호석"}[container]||container;return `${label} ${d?.name||id} ×${n}`}).join(" · ");
-  return `<article class="build-card"><h3><span>조합 ${i+1}</span><span class="score">DEF ${b.calc.defense}</span></h3><div class="build-equipment">${PARTS.map(p=>{const a=b.armors.find(x=>x.part===p);return `<span class="label">${PART_NAMES[p]}</span><span>${esc(a?.name||"-")} <span class="slots">${slotsText(a?.slots)}</span></span>`}).join("")}</div><div class="deco-line">${decoText?`장식주: ${esc(decoText)}`:"장식주 없음"}</div>${renderSkillResult(b.calc)}</article>`;
+  return `<article class="build-card build-card-clickable" data-auto-build="${i}" tabindex="0" role="button" aria-label="조합 ${i+1}을 시뮬레이터에 적용"><h3><span>조합 ${i+1}</span><span class="score">DEF ${b.calc.defense}</span></h3><div class="build-equipment">${PARTS.map(p=>{const a=b.armors.find(x=>x.part===p);return `<span class="label">${PART_NAMES[p]}</span><span>${esc(a?.name||"-")} <span class="slots">${slotsText(a?.slots)}</span></span>`}).join("")}</div><div class="deco-line">${decoText?`장식주: ${esc(decoText)}`:"장식주 없음"}</div>${renderSkillResult(b.calc)}<div class="build-card-action">카드 클릭 → 시뮬레이터에 적용</div></article>`;
+}
+function applyAutoBuildToSimulator(index){
+  const b=latestAutoSearchResults[Number(index)];if(!b)return;
+  uiState.manualSet="";
+  for(const p of PARTS){const a=b.armors.find(x=>x.part===p);uiState.manual[p]=a?.id||"";}
+  uiState.manualDecorations=Object.fromEntries(MANUAL_CONTAINERS.map(c=>[c,[]]));
+  for(const placed of b.decorations||[]){
+    const id=typeof placed.deco==="string"?placed.deco:placed.deco?.id;
+    if(id&&uiState.manualDecorations[placed.container])uiState.manualDecorations[placed.container].push(id);
+  }
+  renderManualSelectors();renderManualResult();
+  document.querySelector("#manualEquipmentBuilder")?.scrollIntoView({behavior:"smooth",block:"start"});
 }
 async function runSearch(){
   if(!targets.length){$("#searchResults").innerHTML='<div class="result-empty">먼저 원하는 스킬을 추가하세요.</div>';return}
@@ -529,8 +554,9 @@ async function runSearch(){
   try{
     const simHunter=simulatorSearchHunterType();
     const r=await searchBuilds({targetActivationIds:targets,hunterType:simHunter,rank:"all",charm:charm(),weaponSlots:Number(selectedWeapon()?.slots||0),allowDecorations:$("#allowDecorations").checked,includeTorsoUp:$("#includeTorsoUp").checked,limit:Number($("#resultLimit").value||20)},data);
+    latestAutoSearchResults=r.results||[];
     $("#searchStats").textContent=r.stats.message||`검색 타입 ${hunterName(simHunter)} · 전체 등급 · 대상 방어구 ${r.stats.eligible}개 · 최종 후보 ${r.stats.finalists}개 · 고속 후보검색(완전탐색 아님)`;
-    $("#searchResults").innerHTML=r.results.length?r.results.map(renderBuildCard).join(""):'<div class="result-empty">조건을 만족하는 조합을 찾지 못했습니다.</div>';
+    $("#searchResults").innerHTML=latestAutoSearchResults.length?latestAutoSearchResults.map(renderBuildCard).join(""):'<div class="result-empty">조건을 만족하는 조합을 찾지 못했습니다.</div>';
   }finally{btn.disabled=false;btn.textContent="조합 검색"}
 }
 
@@ -570,7 +596,7 @@ function localizedNameSub(x){
 }
 function renderArmorTable(){
   const q=$("#armorSearch").value.trim().toLowerCase(),part=$("#armorPartFilter").value;
-  const rows=data.armors.filter(a=>(part==="all"||a.part===part)&&armorEligible(a)&&(armorViewMode!=="other"||(a.source||"").endsWith("/armor/etc.htm"))).filter(a=>!q||`${a.name} ${a.nameJa||""} ${a.nameEn||""} ${Object.keys(a.skills||{}).map(skillName).join(" ")} ${a.torsoUp?"몸통배가 동계통배가 胴系統倍加 Torso Up":""} ${a.materials||""}`.toLowerCase().includes(q)).map(a=>`<tr><td><strong>${esc(a.name)}</strong>${localizedNameSub(a)}</td><td>${hunterName(a.hunterType)}</td><td>${PART_NAMES[a.part]||a.part}</td><td>${a.rare||"-"}</td><td>${a.defense||0} / ${a.maxDefense||a.defense||0}</td><td class="slots">${slotsText(a.slots)}</td><td>${a.torsoUp?"몸통배가":Object.entries(a.skills||{}).map(([k,v])=>`${skillLink(k,skillName(k))} ${v>0?"+":""}${v}`).join(", ")}</td><td>${resistText(a.resistances)}</td><td>${rankName(a.rank)}</td><td class="wrap-cell">${materialLinks(a.materials||"")}</td></tr>`);
+  const rows=data.armors.filter(a=>(part==="all"||a.part===part)&&armorEligible(a)&&(armorViewMode!=="other"||(a.source||"").endsWith("/armor/etc.htm"))).filter(a=>!q||`${a.name} ${a.nameJa||""} ${a.nameEn||""} ${armorSkillSearchCorpus(a)} ${a.torsoUp?"몸통배가 동계통배가 胴系統倍加 Torso Up":""} ${a.materials||""}`.toLowerCase().includes(q)).map(a=>`<tr><td><strong>${esc(a.name)}</strong>${localizedNameSub(a)}</td><td>${hunterName(a.hunterType)}</td><td>${PART_NAMES[a.part]||a.part}</td><td>${a.rare||"-"}</td><td>${a.defense||0} / ${a.maxDefense||a.defense||0}</td><td class="slots">${slotsText(a.slots)}</td><td>${a.torsoUp?"몸통배가":Object.entries(a.skills||{}).map(([k,v])=>`${skillLink(k,skillName(k))} ${v>0?"+":""}${v}`).join(", ")}</td><td>${resistText(a.resistances)}</td><td>${rankName(a.rank)}</td><td class="wrap-cell">${materialLinks(a.materials||"")}</td></tr>`);
   renderTable("#armorTable",["명칭","타입","부위","RARE","방어(초기/최대)","슬롯","스킬","내성","등급","생산 소재"],rows);
 }
 
@@ -1660,6 +1686,8 @@ function bind(){
     if(weaponRow&&!e.target.closest('button,a,input,select,summary')){e.preventDefault();void openWeaponDetail(weaponRow);return;}
     const skillItem=e.target.closest?.('#skillTable .inline-item-link[data-open-item]');
     if(skillItem){e.preventDefault();e.stopPropagation();void openItemByName(skillItem.dataset.openItem);return;}
+    const autoBuild=e.target.closest?.('[data-auto-build]');
+    if(autoBuild&&!e.target.closest('button,a,input,select,summary')){e.preventDefault();e.stopPropagation();applyAutoBuildToSimulator(autoBuild.dataset.autoBuild);return;}
     const recSim=e.target.closest?.('[data-recommend-sim]');
     if(recSim){e.preventDefault();e.stopPropagation();void openRecommendationInSimulator(recSim.dataset.recommendSim);return;}
     const skillBtn=e.target.closest?.('[data-open-skill]');
@@ -1705,7 +1733,7 @@ function bind(){
     const close=e.target.closest?.('#itemTable .item-detail-close');
     if(close){e.preventDefault();removeItemDetailRow();selectedItemId="";replaceCurrentHistoryState();return;}
   });
-  document.addEventListener("keydown",e=>{const wrow=e.target.closest?.('#weaponTrees tr.weapon-db-row[data-weapon-row]');if(wrow&&(e.key==="Enter"||e.key===" ")){e.preventDefault();void openWeaponDetail(wrow);return;}const row=e.target.closest?.('#skillTable tr.skill-db-row[data-skill-row]');if(row&&(e.key==="Enter"||e.key===" ")){e.preventDefault();void openSkillDetail(row.dataset.skillRow,row);}});
+  document.addEventListener("keydown",e=>{const bcard=e.target.closest?.('[data-auto-build]');if(bcard&&(e.key==="Enter"||e.key===" ")){e.preventDefault();applyAutoBuildToSimulator(bcard.dataset.autoBuild);return;}const wrow=e.target.closest?.('#weaponTrees tr.weapon-db-row[data-weapon-row]');if(wrow&&(e.key==="Enter"||e.key===" ")){e.preventDefault();void openWeaponDetail(wrow);return;}const row=e.target.closest?.('#skillTable tr.skill-db-row[data-skill-row]');if(row&&(e.key==="Enter"||e.key===" ")){e.preventDefault();void openSkillDetail(row.dataset.skillRow,row);}});
   document.addEventListener("toggle",e=>{
     const d=e.target;
     if(d?.matches?.("#itemTable details.xref-lazy"))void hydrateXrefGroup(d);
