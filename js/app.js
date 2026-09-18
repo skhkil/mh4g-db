@@ -1,5 +1,5 @@
-import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-research2-hotfix4";
-import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-research2-hotfix4";
+import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-research2-hotfix5";
+import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-research2-hotfix5";
 
 let data={skills:[],armors:[],armorSets:[],decorations:[],weapons:[],weaponSummary:[],melodies:[],items:[],itemReferenceIndex:{items:{}},skillReferenceIndex:{items:{},categories:[]},meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],monsterReferenceIndex:{items:{}},dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],questReferenceIndex:{quests:{}},siteInfo:{},meta:{}};
 let targets=[];
@@ -322,13 +322,28 @@ function armorLooksLikeSkillQuery(query){
     return names.some(x=>String(x).toLowerCase().includes(q));
   });
 }
+const TORSO_UP_SEARCH_TERMS=["몸통배가","동계통배가","몸통 배가","胴系統倍加","torso up","torso-up"];
+function armorIsTorsoUpQuery(query){
+  const q=String(query||"").trim().toLowerCase();
+  if(!q)return false;
+  return TORSO_UP_SEARCH_TERMS.some(term=>term.toLowerCase()===q);
+}
+function armorLooksLikeTorsoUpQuery(query){
+  const q=String(query||"").trim().toLowerCase();
+  if(q.length<2)return false;
+  return TORSO_UP_SEARCH_TERMS.some(term=>term.toLowerCase().includes(q)||q.includes(term.toLowerCase()));
+}
 function armorMatchesSearch(a,query){
   const q=String(query||"").trim().toLowerCase();
   if(!q)return true;
+  // 몸통배가는 일반 스킬 테이블에 없는 방어구 특수효과이므로 별도로 판정한다.
+  // 정확/별칭 검색에서는 torsoUp=true인 방어구만 반환해 장비명 우연 일치를 막는다.
+  if(armorIsTorsoUpQuery(q))return !!a.torsoUp;
   const exactSkillIds=armorSkillQueryIds(q);
   if(exactSkillIds.length)return exactSkillIds.some(id=>Object.prototype.hasOwnProperty.call(a.skills||{},id));
+  if(armorLooksLikeTorsoUpQuery(q))return !!a.torsoUp;
   if(armorLooksLikeSkillQuery(q)){
-    const skillText=`${armorSkillSearchCorpus(a)} ${a.torsoUp?"몸통배가 동계통배가 胴系統倍加 Torso Up":""}`.toLowerCase();
+    const skillText=armorSkillSearchCorpus(a).toLowerCase();
     return skillText.includes(q);
   }
   const normalText=`${a.name} ${a.nameJa||""} ${a.nameEn||""} ${hunterName(a.hunterType)} ${rankName(a.rank)} ${a.materials||""}`.toLowerCase();
