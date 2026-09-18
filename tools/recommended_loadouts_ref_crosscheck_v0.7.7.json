@@ -1,0 +1,34 @@
+{
+  "usedArmorIds": 124,
+  "usedDecorationIds": 4,
+  "armorMh4uMatched": 123,
+  "armorAthenaMatched": 104,
+  "criticalIssues": [],
+  "maxDefenseDifferenceCount": 123,
+  "maxDefenseNote": "프로젝트 maxDefense는 기존 크롤러의 강화단계 수집 범위 차이로 참조 DB 최종강화치와 다를 수 있음. 추천 구성 검증에서는 초기 방어/슬롯/내성/장비 식별을 우선.",
+  "unmatchedArmorMh4u": [
+    "수신·진【복면】"
+  ],
+  "unmatchedArmorAthena": [
+    "재기암",
+    "카브라그리브",
+    "재기펄드",
+    "리오소울그리브",
+    "카브라S헬름",
+    "카브라S펄드",
+    "진오우U헬름",
+    "수신·진【복면】",
+    "카브라S메일",
+    "진오우U메일",
+    "진오우U펄드",
+    "리오소울암",
+    "카브라S암",
+    "반기스그리브",
+    "카브라펄드",
+    "카브라S그리브",
+    "진오우U그리브",
+    "재기그리브",
+    "카브라암",
+    "진오우U암"
+  ]
+}

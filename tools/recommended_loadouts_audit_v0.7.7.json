@@ -1,12 +1,31 @@
 {
   "weaponTypes": 14,
   "entries": 42,
-  "variants": 106,
-  "lowVariants": 33,
+  "variants": 108,
+  "lowVariants": 22,
   "highVariants": 33,
-  "gVariants": 40,
+  "gVariants": 53,
   "hardErrors": 0,
-  "warnings": 0,
+  "warnings": 18,
   "errors": [],
-  "warningRows": []
+  "warningRows": [
+    "태도/g/가루루가X 세트: 출처 URL 없음",
+    "쌍검/g/셀레네X 세트: 출처 URL 없음",
+    "해머/g/가루루가X 세트: 출처 URL 없음",
+    "수렵피리/g/가루루가X 세트: 출처 URL 없음",
+    "랜스/g/나르가X 세트: 출처 URL 없음",
+    "슬래시액스/g/나르가X 세트: 출처 URL 없음",
+    "슬래시액스/g/고어X 세트: 출처 URL 없음",
+    "차지액스/g/셀타스X 세트: 출처 URL 없음",
+    "조충곤/g/가루루가X 세트: 출처 URL 없음",
+    "라이트보우건/g/스타나이트 거너 세트: 출처 URL 없음",
+    "라이트보우건/g/가루루가X 거너 세트: 출처 URL 없음",
+    "라이트보우건/g/고어X 거너 세트: 출처 URL 없음",
+    "헤비보우건/g/진아마기 거너 세트: 출처 URL 없음",
+    "헤비보우건/g/가루루가X 거너 세트: 출처 URL 없음",
+    "헤비보우건/g/스타나이트 거너 세트: 출처 URL 없음",
+    "활/g/스타나이트 거너 세트: 출처 URL 없음",
+    "활/g/셀레네X 거너 세트: 출처 URL 없음",
+    "활/g/가루루가X 거너 세트: 출처 URL 없음"
+  ]
 }

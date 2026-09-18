@@ -1,0 +1,18 @@
+{
+  "activated": [
+    "도전자+2",
+    "탑승마스터",
+    "고급귀마개",
+    "심검일체",
+    "예리도레벨+1"
+  ],
+  "points": {
+    "skill_a71c734bea26": 15,
+    "skill_56899bd6d661": 15,
+    "skill_68f9d1b72bff": 10,
+    "skill_dc306dbb4ef6": 10,
+    "skill_4d4485c17552": 15,
+    "skill_bcf68a1ff0a1": -9,
+    "skill_82680c9bf0f3": -1
+  }
+}
