@@ -1,5 +1,5 @@
-import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-research2-hotfix14";
-import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-research2-hotfix14";
+import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-research2-hotfix15";
+import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-research2-hotfix15";
 
 let data={skills:[],armors:[],armorSets:[],decorations:[],weapons:[],weaponSummary:[],melodies:[],items:[],itemReferenceIndex:{items:{}},skillReferenceIndex:{items:{},categories:[]},meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],monsterReferenceIndex:{items:{}},dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],questReferenceIndex:{quests:{}},siteInfo:{},meta:{}};
 let targets=[];
@@ -23,6 +23,8 @@ let dragonView="exchange";
 let questView="key";
 let selectedItemId="";
 let restoringHistory=false;
+let historyRestoreToken=0;
+try{history.scrollRestoration="manual"}catch{}
 
 // Weapon tree is isolated from app startup. A failure here must never break global navigation.
 let weaponTreeIndex={items:{}};
@@ -882,7 +884,11 @@ function armorSetMaterials(set){
   return text;
 }
 function captureAppHistoryState(){
-  return {mh4g:true,page:currentPage,selectedItemId:String(selectedItemId||""),itemSearch:$("#itemSearch")?.value||"",monsterSelected:$("#monsterSelect")?.value||"all",sourceView,armorViewMode,decoView,monsterView,dragonView,questView,scrollY:Math.max(0,Math.round(window.scrollY||0))};
+  return {
+    mh4g:true,page:currentPage,selectedItemId:String(selectedItemId||""),itemSearch:$("#itemSearch")?.value||"",
+    monsterSelected:$("#monsterSelect")?.value||"all",sourceView,armorViewMode,decoView,monsterView,dragonView,questView,
+    recommendWeaponType,recommendRank,scrollY:Math.max(0,Math.round(window.scrollY||0))
+  };
 }
 function replaceCurrentHistoryState(){
   if(restoringHistory)return;
@@ -892,18 +898,33 @@ function pushCurrentHistoryState(){
   if(restoringHistory)return;
   try{history.pushState(captureAppHistoryState(),"",location.href)}catch{}
 }
+async function navigatePage(page,{source=null,after=null}={}){
+  if(restoringHistory){
+    if(source)sourceView=source;
+    await openPage(page);
+    if(after)await after();
+    return;
+  }
+  replaceCurrentHistoryState();
+  if(source)sourceView=source;
+  await openPage(page);
+  if(after)await after();
+  pushCurrentHistoryState();
+}
 async function restoreAppHistoryState(state){
   if(!state?.mh4g)return;
+  const restoreToken=++historyRestoreToken;
   restoringHistory=true;
   try{
     sourceView=state.sourceView||sourceView;armorViewMode=state.armorViewMode||armorViewMode;decoView=state.decoView||decoView;
     monsterView=state.monsterView||monsterView;dragonView=state.dragonView||dragonView;questView=state.questView||questView;
+    recommendWeaponType=state.recommendWeaponType||recommendWeaponType;recommendRank=state.recommendRank||recommendRank;
     if($("#itemSearch"))$("#itemSearch").value=state.itemSearch||"";
     selectedItemId=String(state.selectedItemId||"");
     await openPage(state.page||"simulator");
     if(state.page==="monster"&&$("#monsterSelect")){const wanted=state.monsterSelected||"all";if([...$("#monsterSelect").options].some(o=>o.value===wanted))$("#monsterSelect").value=wanted;renderMonster();}
     requestAnimationFrame(()=>window.scrollTo({top:Number(state.scrollY)||0,behavior:"auto"}));
-  }finally{restoringHistory=false}
+  }finally{if(restoreToken===historyRestoreToken)restoringHistory=false}
 }
 async function openItemByName(name){
   await ensureFullData(["items","itemReferenceIndex"]);
@@ -933,8 +954,8 @@ function renderWeaponSubNav(){
   }
   buttons.push(`<button type="button" class="weapon-sub-btn sub-special weapon-summary-link" data-special-page="weapon-summary">속성별 무기요약</button>`);
   box.innerHTML=buttons.join("");
-  box.querySelectorAll('[data-weapon-type]').forEach(b=>b.onclick=e=>{e.stopPropagation();armorViewMode="all";$("#weaponTypeFilter").value=b.dataset.weaponType;syncWeaponSubActive();openPage("weapon")});
-  box.querySelectorAll('[data-special-page]').forEach(b=>b.onclick=e=>{e.stopPropagation();openPage(b.dataset.specialPage)});
+  box.querySelectorAll('[data-weapon-type]').forEach(b=>b.onclick=e=>{e.stopPropagation();armorViewMode="all";$("#weaponTypeFilter").value=b.dataset.weaponType;syncWeaponSubActive();void navigatePage("weapon")});
+  box.querySelectorAll('[data-special-page]').forEach(b=>b.onclick=e=>{e.stopPropagation();void navigatePage(b.dataset.specialPage)});
 }
 function syncWeaponSubActive(){const t=$("#weaponTypeFilter")?.value||"all";$$('[data-weapon-type]').forEach(b=>b.classList.toggle('active',b.dataset.weaponType===t))}
 const WEAPON_ELEMENT_FILTERS={
@@ -1687,13 +1708,14 @@ function renderRecommendedLoadouts(){
 async function openRecommendationInSimulator(index){
   const entry=(data.recommendedLoadouts?.entries||[]).find(x=>x.weaponType===recommendWeaponType&&x.rank===recommendRank);if(!entry)return;
   const v=entry.variants?.[Number(index)||0];if(!v)return;
-  await openPage("simulator");
-  // 추천 카드는 방어구 5부위만 불러온다. 사용자가 가진 무기·호석·장식주는 임의로 가정하지 않는다.
-  uiState.manualSet="";
-  for(const p of PARTS)uiState.manual[p]="";
-  for(const a of v.build?.armors||[])if(PARTS.includes(a.part))uiState.manual[a.part]=a.id;
-  renderManualSelectors();renderManualResult();
-  document.querySelector('.manual-panel')?.scrollIntoView({block:'start',behavior:'auto'});
+  await navigatePage("simulator",{after:async()=>{
+    // 추천 카드는 방어구 5부위만 불러온다. 사용자가 가진 무기·호석·장식주는 임의로 가정하지 않는다.
+    uiState.manualSet="";
+    for(const p of PARTS)uiState.manual[p]="";
+    for(const a of v.build?.armors||[])if(PARTS.includes(a.part))uiState.manual[a.part]=a.id;
+    renderManualSelectors();renderManualResult();
+    document.querySelector('.manual-panel')?.scrollIntoView({block:'start',behavior:'auto'});
+  }});
 }
 
 function updateHeaderFilterVisibility(){
@@ -1867,9 +1889,10 @@ function setupMobilePageJump(){
   schedule();
 }
 
-let delegatedEventsBound=false;
+let appEventsBound=false;
 function bind(){
-  if(!delegatedEventsBound){
+  if(appEventsBound)return;
+  appEventsBound=true;
   document.addEventListener('click',e=>{
     closePickers();
     const visualRow=e.target.closest?.('.data-table tbody tr:not(.skill-detail-row), .item-list-row, .monster-quest-row, .skill-source-row, .meal-method');
@@ -1887,7 +1910,7 @@ function bind(){
     const skillBtn=e.target.closest?.('[data-open-skill]');
     if(skillBtn){e.preventDefault();e.stopPropagation();replaceCurrentHistoryState();openPage("skill").then(()=>{$("#skillSearch").value=skillName(skillBtn.dataset.openSkill)||"";$("#skillCategoryFilter").value="all";$("#skillTypeFilter").value="all";renderSkillTable();pushCurrentHistoryState();});return;}
     const decoBtn=e.target.closest?.('[data-open-deco]');
-    if(decoBtn){e.preventDefault();e.stopPropagation();replaceCurrentHistoryState();await openPage("decoration").then(()=>{$("#decoRankFilter").value="all";$("#decoSlotFilter").value="all";$("#decoCategoryFilter").value="all";$("#decoSearch").value=decoBtn.dataset.openDeco||"";renderDecoTable();pushCurrentHistoryState();});return;}
+    if(decoBtn){e.preventDefault();e.stopPropagation();replaceCurrentHistoryState();void openPage("decoration").then(()=>{$("#decoRankFilter").value="all";$("#decoSlotFilter").value="all";$("#decoCategoryFilter").value="all";$("#decoSearch").value=decoBtn.dataset.openDeco||"";renderDecoTable();pushCurrentHistoryState();});return;}
     const skillNav=e.target.closest?.('#skillTable .skill-source-body [data-item-nav]');
     if(skillNav){e.preventDefault();e.stopPropagation();replaceCurrentHistoryState();followItemReference(skillNav).then(pushCurrentHistoryState);return;}
     const skillRow=e.target.closest?.('#skillTable tr.skill-db-row[data-skill-row]');
@@ -1942,8 +1965,6 @@ function bind(){
       host?.querySelectorAll(":scope > details.skill-armor-set[open]").forEach(other=>{if(other!==d)other.open=false});
     }
   },true);
-  delegatedEventsBound=true;
-  }
   $("#sidebarToggle").onclick=()=>{$(".app-shell").classList.toggle("sidebar-collapsed");const collapsed=$(".app-shell").classList.contains("sidebar-collapsed");$("#sidebarToggle").title=collapsed?"좌측 메뉴 펼치기":"좌측 메뉴 접기";};
 
   $$('.nav-group-toggle').forEach(b=>b.onclick=e=>{
@@ -1956,9 +1977,7 @@ function bind(){
     const targetPage=b.dataset.page;
     const targetSource=b.dataset.sourceView||sourceView;
     if(targetPage===currentPage&&targetSource===sourceView){void openPage(targetPage);return;}
-    replaceCurrentHistoryState();
-    if(b.dataset.sourceView)sourceView=b.dataset.sourceView;
-    void openPage(targetPage).then(pushCurrentHistoryState);
+    void navigatePage(targetPage,{source:b.dataset.sourceView||null});
   });
   $$('[data-route]').forEach(b=>b.onclick=e=>{
     e.stopPropagation();
@@ -2004,23 +2023,13 @@ function bind(){
 Object.assign(data,await loadSimulatorData());rebuildIndexes();bind();setupResponsiveNavColumns();setupMobilePageJump();renderAll();
 window.addEventListener("popstate",e=>{
   if(!e.state?.mh4g)return;
-  void restoreAppHistoryState(e.state).finally(()=>{
-    // History restore may revive/re-render controls. Re-attach direct handlers safely.
-    bind();
-    updateHeaderFilterVisibility();
-  });
+  void restoreAppHistoryState(e.state);
 });
+// BFCache restores the same DOM and JS listeners. Rebinding/rerendering here caused duplicate work and back-navigation freezes.
 window.addEventListener("pageshow",e=>{
-  const navEntry=performance.getEntriesByType?.("navigation")?.[0];
-  const backForward=e.persisted||navEntry?.type==="back_forward";
-  if(!backForward)return;
-  // BFCache/back-forward restore: direct DOM handlers can be lost/stale after DOM restoration.
-  // bind() is idempotent for delegated listeners and refreshes direct control handlers.
-  bind();
-  renderPageData(currentPage);
-  updateHeaderFilterVisibility();
+  if(e.persisted)updateHeaderFilterVisibility();
 });
-window.addEventListener("pagehide",()=>replaceCurrentHistoryState());
-replaceCurrentHistoryState();
+if(history.state?.mh4g)await restoreAppHistoryState(history.state);
+else replaceCurrentHistoryState();
 // 아이템 역참조는 아이템 화면 진입/아이템 링크 첫 사용 시에만 불러온다.
 // 대용량 JSON을 백그라운드에서 임의 파싱해 다른 화면의 포인터/스크롤 프레임을 끊지 않도록 prewarm은 사용하지 않는다.

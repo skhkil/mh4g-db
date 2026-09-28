@@ -1,0 +1,48 @@
+{
+  "ok": true,
+  "version": "0.7.7-chat4-research2-hotfix15",
+  "steps": [
+    {
+      "name": "navigation_static",
+      "ok": true,
+      "ms": 1264.54,
+      "stdout": "{\n  \"ok\": true,\n  \"version\": \"0.7.7-chat4-research2-hotfix15\",\n  \"checks\": {\n    \"es_module_syntax_all\": true,\n    \"cache_version_consistent\": true,\n    \"bind_one_shot_guard\": true,\n    \"bind_called_once\": true,\n    \"popstate_restore_only\": true,\n    \"pageshow_no_rebind_or_rerender\": true,\n    \"no_pagehide_history_mutation\": true,\n    \"manual_scroll_restoration\": true,\n    \"history_restore_token\": true,\n    \"recommend_sim_uses_shared_navigation\": true,\n    \"main_nav_uses_shared_navigation\": true,\n    \"shared_navigation_saves_before_push\": true,\n    \"recommend_state_in_history\": true,\n    \"no_sync_handler_await_bug\": true,\n    \"armor_count\": true,\n    \"sim_armor_count\": true,\n    \"recommend_cards\": true\n  },\n  \"syntax\": {\n    \"app.js\": {\n      \"ok\": true,\n      \"stderr\": \"\"\n    },\n    \"data-loader.js\": {\n      \"ok\": true,\n      \"stderr\": \"\"\n    },\n    \"engine.js\": {\n      \"ok\": true,\n      \"stderr\": \"\"\n    }\n  },\n  \"counts\": {\n    \"armors\": 3119,\n    \"simArmors\": 3119,\n    \"recommendCards\": 108\n  },\n  \"bindCallCount\": 1\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "backnav_browser_e2e",
+      "ok": true,
+      "ms": 10752.02,
+      "stdout": "{\n  \"ok\": true,\n  \"cycles\": 15,\n  \"errors\": [],\n  \"timingMs\": {\n    \"min\": 202.42,\n    \"max\": 595.47,\n    \"avg\": 273.61\n  },\n  \"armorRowsAfterBackNav\": 65,\n  \"headRowsAfterForwardNav\": 14\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "cross_references",
+      "ok": true,
+      "ms": 1347.92,
+      "stdout": "{\"hardIssueCount\": 0, \"warningCount\": 1, \"itemIndexedCount\": 1297, \"monsterIndexedCount\": 76, \"skillIndexedCount\": 143, \"monsterMaterialsMissingFromItemDb\": 0, \"monstersAffectedByItemCoverage\": 0}\n",
+      "stderr": ""
+    },
+    {
+      "name": "armor_progression",
+      "ok": true,
+      "ms": 1262.75,
+      "stdout": "{\n  \"restoredArmors\": 243,\n  \"materials\": 858,\n  \"gxArmors\": 30,\n  \"unresolved\": 0,\n  \"projectQuestLinks\": 118,\n  \"errors\": 0,\n  \"errorSamples\": []\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "recommendation_engine",
+      "ok": true,
+      "ms": 155.95,
+      "stdout": "{\n  \"generatedAt\": \"2026-09-28T06:31:04.587Z\",\n  \"entries\": 42,\n  \"cards\": 108,\n  \"engineMismatch\": 0,\n  \"missingArmor\": 0,\n  \"missingDeco\": 0,\n  \"finalMatched\": 83,\n  \"finalConditional\": 25,\n  \"issues\": [],\n  \"autoInjectionPolicy\": {\n    \"armors\": true,\n    \"decorations\": false,\n    \"charm\": false,\n    \"weapon\": false,\n    \"weaponSlots\": false\n  }\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "armor_search_benchmark",
+      "ok": true,
+      "ms": 17356.37,
+      "stdout": "{\n  \"armors\": 3119,\n  \"queries\": [\n    \"예리도\",\n    \"고급귀마개\",\n    \"몸통배가\",\n    \"리오\",\n    \"GX\"\n  ],\n  \"oldMsPerSweep\": 2444.78,\n  \"optimizedMsPerSweep\": 5.46,\n  \"speedup\": 447.35,\n  \"sameSampleCounts\": [\n    {\n      \"q\": \"예리도\",\n      \"old\": 123,\n      \"optimized\": 123\n    },\n    {\n      \"q\": \"고급귀마개\",\n      \"old\": 288,\n      \"optimized\": 288\n    },\n    {\n      \"q\": \"몸통배가\",\n      \"old\": 74,\n      \"optimized\": 74\n    },\n    {\n      \"q\": \"리오\",\n      \"old\": 130,\n      \"optimized\": 130\n    },\n    {\n      \"q\": \"GX\",\n      \"old\": 40,\n      \"optimized\": 40\n    }\n  ]\n}\n",
+      "stderr": ""
+    }
+  ]
+}

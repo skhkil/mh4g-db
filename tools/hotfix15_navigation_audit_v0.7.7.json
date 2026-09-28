@@ -1,0 +1,43 @@
+{
+  "ok": true,
+  "version": "0.7.7-chat4-research2-hotfix15",
+  "checks": {
+    "es_module_syntax_all": true,
+    "cache_version_consistent": true,
+    "bind_one_shot_guard": true,
+    "bind_called_once": true,
+    "popstate_restore_only": true,
+    "pageshow_no_rebind_or_rerender": true,
+    "no_pagehide_history_mutation": true,
+    "manual_scroll_restoration": true,
+    "history_restore_token": true,
+    "recommend_sim_uses_shared_navigation": true,
+    "main_nav_uses_shared_navigation": true,
+    "shared_navigation_saves_before_push": true,
+    "recommend_state_in_history": true,
+    "no_sync_handler_await_bug": true,
+    "armor_count": true,
+    "sim_armor_count": true,
+    "recommend_cards": true
+  },
+  "syntax": {
+    "app.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "data-loader.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "engine.js": {
+      "ok": true,
+      "stderr": ""
+    }
+  },
+  "counts": {
+    "armors": 3119,
+    "simArmors": 3119,
+    "recommendCards": 108
+  },
+  "bindCallCount": 1
+}

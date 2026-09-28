@@ -1,3 +1,14 @@
+## 2026-09-28 - hotfix15 / 네비게이션 구조 재정리 + 자동 회귀검사 게이트
+- hotfix14의 `popstate/pageshow → bind()/재렌더` 방식을 제거하고 이벤트 바인딩을 앱 최초 실행 1회로 고정.
+- 공통 `navigatePage()`를 추가해 메인 메뉴와 추천 장비→시뮬레이터 이동의 `replaceState → 화면 이동 → pushState` 흐름을 단일화.
+- `popstate`는 저장 상태 복원만 수행하고 BFCache `pageshow`에서는 재바인딩/강제 재렌더를 하지 않도록 변경.
+- 추천 장비의 무기종/등급 상태도 history에 저장해 뒤로가기 시 동일 화면을 복원.
+- 동기 document click 핸들러 안에 들어 있던 `await`를 제거. 기존 CommonJS식 `node --check` 대신 `node --experimental-default-type=module --check`를 릴리스 검사에 적용.
+- 실제 Chromium 로컬 라우팅 E2E: `추천 장비 → 방어구 5부위 불러오기 → 시뮬레이터 → 뒤로가기` 15회 반복, 매 회 추천 필터 재조작 성공. 이후 방어구 G급 이동/예리도 검색/뒤로가기/앞으로가기/부위 필터 조작까지 오류 0건.
+- `tools/release_gate_hotfix15_v0.7.7.py` 추가: 네비게이션 구조 감사 + 브라우저 E2E + 교차참조 + 방어구 제작경로 + 추천 엔진 + 방어구 검색 벤치마크를 ZIP 생성 전 일괄 통과하도록 구성.
+- 릴리스 게이트 전체 통과. 방어구 3,119 / 시뮬레이터 방어구 3,119 / 추천 카드 108 유지.
+- 캐시 키 `0.7.7-chat4-research2-hotfix15`.
+
 ## 2026-09-28 - hotfix14 / 브라우저 뒤로가기 이벤트 복원
 - 메인 메뉴/서브 라우트 이동을 `replaceState → openPage → pushState` 흐름으로 통일해 브라우저 뒤로가기가 앱 내부 이전 상태를 복원하도록 수정.
 - `popstate` 복원 완료 후 `bind()`를 다시 실행해 직접 연결된 버튼/필터 핸들러를 재부착.
