@@ -411,7 +411,10 @@ function manualWeaponElementTypes(w){
   return [w?.elementPrimary?.type,w?.elementSecondary?.type,w?.awakenElement?.type].filter(Boolean);
 }
 function weaponMatchesManualFilters(w){
-  const type=uiState.manualWeaponType||"all",rank=uiState.manualWeaponRank||"all",element=uiState.manualWeaponElement||"all",slots=String(uiState.manualWeaponSlots??"all");
+  const type=uiState.manualWeaponType||"all";
+  const rank=uiState.manualWeaponRank||"all";
+  const element=uiState.manualWeaponElement||"all";
+  const slots=String(uiState.manualWeaponSlots??"all");
   if(type!=="all"&&w.weaponType!==type)return false;
   if(rank!=="all"&&w.rank!==rank)return false;
   const types=manualWeaponElementTypes(w);
@@ -590,8 +593,12 @@ function renderManualSelectors(){
     PARTS.map(p=>equipmentCard(PART_NAMES[p],p,`manual-${p}`)).join("")+
     `<div class="manual-equipment-card charm-card"><div class="manual-equipment-main charm-main"><span class="equipment-label">호석</span><div class="manual-charm-inline"><span class="inline-field-label">스킬1</span><div id="charmSkill1Picker" class="search-select compact"></div><input id="charmPoint1" class="charm-point" type="number" min="-20" max="20" value="${uiState.charmPoint1}" /><span class="inline-field-label">스킬2</span><div id="charmSkill2Picker" class="search-select compact"></div><input id="charmPoint2" class="charm-point" type="number" min="-20" max="20" value="${uiState.charmPoint2}" /><span class="inline-field-label">슬롯</span><select id="charmSlots" class="charm-slot-select"><option value="0">---</option><option value="1">O--</option><option value="2">OO-</option><option value="3">OOO</option></select></div>${skillPointsHtml(containerSkillPoints("charm"),"equipment-skill-points")}</div><div id="deco-editor-charm" class="manual-deco-editor"></div></div>`;
 
-  const manualTypeEl=$("#manualWeaponTypeFilter"),manualRankEl=$("#manualWeaponRankFilter"),manualElementEl=$("#manualWeaponElementFilter"),manualSlotEl=$("#manualWeaponSlotFilter"),manualSearchBtn=$("#manualWeaponSearchButton");
-  if(manualTypeEl){
+  const manualTypeEl=$("#manualWeaponTypeFilter");
+  const manualRankEl=$("#manualWeaponRankFilter");
+  const manualElementEl=$("#manualWeaponElementFilter");
+  const manualSlotEl=$("#manualWeaponSlotFilter");
+  const manualSearchBtn=$("#manualWeaponSearchButton");
+  if(manualTypeEl&&manualRankEl&&manualElementEl&&manualSlotEl&&manualSearchBtn){
     const availableTypes=manualWeaponTypeOptions();
     manualTypeEl.value=availableTypes.includes(uiState.manualWeaponType)?uiState.manualWeaponType:"all";
     manualRankEl.value=["all","g","high","low"].includes(uiState.manualWeaponRank)?uiState.manualWeaponRank:"all";
@@ -605,9 +612,6 @@ function renderManualSelectors(){
       const current=selectedWeapon();
       if(current&&!weaponMatchesManualFilters(current)){uiState.manualWeapon="";uiState.manualDecorations.weapon=[];}
       mountManualWeaponSearch();refreshManualContainer("weapon");renderManualResult();
-    };
-  }
-  mountManualWeaponSearch();refreshManualContainer("weapon");renderManualResult();
     };
   }
   mountManualWeaponSearch();

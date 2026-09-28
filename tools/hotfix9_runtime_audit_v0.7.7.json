@@ -1,0 +1,13 @@
+{
+  "ok": true,
+  "version": "0.7.7-chat4-research2-hotfix9",
+  "checks": {
+    "total": 2314,
+    "g": 1005,
+    "slot3": 300,
+    "none": 631,
+    "greatsword_g_water_slot3": 2,
+    "rank_order_bad": 0
+  },
+  "errors": []
+}
