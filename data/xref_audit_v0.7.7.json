@@ -2,8 +2,8 @@
   "version": "0.7.7-chat4-itemdb1",
   "hardIssueCount": 0,
   "warningCount": 1,
-  "itemCount": 1436,
-  "itemIndexedCount": 1277,
+  "itemCount": 1444,
+  "itemIndexedCount": 1297,
   "monsterCount": 76,
   "monsterIndexedCount": 76,
   "skillCount": 143,
@@ -16,12 +16,12 @@
     "item.acquire.dragonSell": 48,
     "item.acquire.exchange": 138,
     "item.acquire.monster": 4481,
-    "item.acquire.quest": 45,
-    "item.use.armor": 10752,
+    "item.acquire.quest": 2420,
+    "item.use.armor": 11600,
     "item.use.compose": 336,
     "item.use.decoration": 541,
     "item.use.exchange": 127,
-    "item.use.weapon": 9016
+    "item.use.weapon": 9021
   },
   "issues": [],
   "warnings": [

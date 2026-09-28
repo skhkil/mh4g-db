@@ -3,7 +3,7 @@ from pathlib import Path
 import json, subprocess, re, sys
 ROOT=Path(__file__).resolve().parents[1]
 APP=ROOT/'js/app.js'; LOADER=ROOT/'js/data-loader.js'; ENGINE=ROOT/'js/engine.js'; INDEX=ROOT/'index.html'; WEAPONS=ROOT/'data/sim_weapons.json'
-VERSION='0.7.7-chat4-research2-hotfix11'
+VERSION='0.7.7-chat4-research2-hotfix12'
 errors=[]
 for f in [APP,LOADER,ENGINE]:
     r=subprocess.run(['node','--check',str(f)],capture_output=True,text=True)

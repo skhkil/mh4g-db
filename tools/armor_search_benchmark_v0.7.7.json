@@ -1,0 +1,40 @@
+{
+  "armors": 3119,
+  "queries": [
+    "예리도",
+    "고급귀마개",
+    "몸통배가",
+    "리오",
+    "GX"
+  ],
+  "oldMsPerSweep": 3709.48,
+  "optimizedMsPerSweep": 8.79,
+  "speedup": 421.81,
+  "sameSampleCounts": [
+    {
+      "q": "예리도",
+      "old": 123,
+      "optimized": 123
+    },
+    {
+      "q": "고급귀마개",
+      "old": 288,
+      "optimized": 288
+    },
+    {
+      "q": "몸통배가",
+      "old": 74,
+      "optimized": 74
+    },
+    {
+      "q": "리오",
+      "old": 130,
+      "optimized": 130
+    },
+    {
+      "q": "GX",
+      "old": 40,
+      "optimized": 40
+    }
+  ]
+}

@@ -1,5 +1,5 @@
-import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-research2-hotfix11";
-import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-research2-hotfix11";
+import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-research2-hotfix12";
+import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-research2-hotfix12";
 
 let data={skills:[],armors:[],armorSets:[],decorations:[],weapons:[],weaponSummary:[],melodies:[],items:[],itemReferenceIndex:{items:{}},skillReferenceIndex:{items:{},categories:[]},meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],monsterReferenceIndex:{items:{}},dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],questReferenceIndex:{quests:{}},siteInfo:{},meta:{}};
 let targets=[];
@@ -55,6 +55,7 @@ async function loadWeaponReferenceLocal(weaponId){
 // v0.7.2: 반복 배열 검색과 옵션 재생성을 줄이기 위한 인덱스/캐시
 let skillById=new Map(),armorById=new Map(),weaponById=new Map(),decorationByIdMap=new Map(),armorSetById=new Map(),armorSetByPieceId=new Map(),itemByName=new Map(),itemById=new Map();
 let itemSearchCorpusById=new Map(),itemDetailHtmlCache=new Map(),itemReferenceCache=new Map(),skillReferenceCache=new Map(),monsterReferenceCache=new Map(),monsterFallbackPromise=null;
+let armorSearchQueryContextCache=new Map(),armorSearchCorpusCache=new Map(),armorRowHtmlCache=new Map(),armorProgressionHtmlCache=new Map();
 const optionCache={armorByPart:new Map(),weaponByType:new Map(),armorSets:null,skillPicker:null,activation:null,weaponTypes:null};
 function rebuildIndexes(){
   skillById=new Map((data.skills||[]).map(x=>[x.id,x]));
@@ -69,7 +70,7 @@ function rebuildIndexes(){
   rebuildItemReferenceIndexes();
   optionCache.armorByPart.clear();optionCache.weaponByType.clear();
   optionCache.armorSets=null;optionCache.skillPicker=null;optionCache.activation=null;optionCache.weaponTypes=null;
-  armorSetMaterialCache.clear();
+  armorSetMaterialCache.clear();armorSearchQueryContextCache.clear();armorSearchCorpusCache.clear();armorRowHtmlCache.clear();armorProgressionHtmlCache.clear();
 }
 
 const $=s=>document.querySelector(s);
@@ -133,7 +134,7 @@ function currentSkillStatus(skillId,points){
   return {def,value,tone,active,next,effect:cleanEffectText(source?.description||"")};
 }
 
-function mountSearchSelect(selector,options,{value="",placeholder="검색 또는 선택",emptyLabel="선택 안 함",onChange=()=>{}}={}){
+function mountSearchSelect(selector,options,{value="",placeholder="검색 또는 선택",emptyLabel="선택 안 함",onChange=()=>{},debounceMs=0}={}){
   const root=typeof selector==="string"?$(selector):selector;
   if(!root) return;
   const selected=options.find(o=>o.value===value);
@@ -185,7 +186,13 @@ function mountSearchSelect(selector,options,{value="",placeholder="검색 또는
   };
   input.onfocus=()=>{input.select();draw("")};
   input.onclick=e=>{e.stopPropagation();draw(input.value===selected?.label?"":input.value)};
-  input.oninput=()=>{highlightedIndex=-1;draw(input.value)};
+  let inputTimer=null;
+  input.oninput=()=>{
+    highlightedIndex=-1;
+    if(inputTimer)clearTimeout(inputTimer);
+    if(debounceMs>0) inputTimer=setTimeout(()=>draw(input.value),debounceMs);
+    else draw(input.value);
+  };
   input.onkeydown=e=>{
     if(e.key==="Escape"){e.preventDefault();closeMenu();input.value=options.find(o=>o.value===root.dataset.value)?.label||"";return;}
     if(e.key==="ArrowDown"||e.key==="ArrowUp"){
@@ -294,65 +301,63 @@ function selectedArmors(){return PARTS.map(p=>armorById.get(uiState.manual[p])).
 function selectedWeapon(){return weaponById.get(uiState.manualWeapon)||null}
 // 시뮬레이터는 DB 메뉴의 숨겨진 타입/등급 상태와 완전히 독립적으로 동작한다.
 function armorSkillSearchCorpus(a){
+  const key=a?.id||a?.name||"";
+  const cached=armorSearchCorpusCache.get(key);
+  if(cached?.skillText!=null)return cached.skillText;
   const skillIds=Object.keys(a?.skills||{});
-  // 방어구 검색에서는 스킬 설명문을 검색 corpus에 넣지 않는다.
-  // 설명문에 우연히 포함된 단어(예: 검술 설명의 "예리도") 때문에 엉뚱한 장비가 잡히는 것을 방지한다.
-  return skillIds.map(id=>{
-    const s=skillDefinition(id);
-    if(!s)return skillName(id);
-    const activationNames=(s.activations||[]).flatMap(x=>[x.name,x.nameJa,x.nameEn]);
-    return [s.name,s.nameJa,s.nameEn,SKILL_SEARCH_ALIASES[s.name]||"",...activationNames].filter(Boolean).join(" ");
+  const skillText=skillIds.map(id=>{
+    const sk=skillDefinition(id);
+    if(!sk)return skillName(id);
+    const activationNames=(sk.activations||[]).flatMap(x=>[x.name,x.nameJa,x.nameEn]);
+    return [sk.name,sk.nameJa,sk.nameEn,SKILL_SEARCH_ALIASES[sk.name]||"",...activationNames].filter(Boolean).join(" ");
   }).join(" ");
+  const normalText=`${a?.name||""} ${a?.nameJa||""} ${a?.nameEn||""} ${hunterName(a?.hunterType)} ${rankName(a?.rank)} ${a?.materials||""}`.toLowerCase();
+  armorSearchCorpusCache.set(key,{skillText,skillTextLower:skillText.toLowerCase(),normalText});
+  return skillText;
 }
 const ARMOR_RANK_ORDER={g:0,high:1,low:2};
 function armorRankCompare(a,b){
   return (ARMOR_RANK_ORDER[a?.rank]??9)-(ARMOR_RANK_ORDER[b?.rank]??9)
     || String(a?.name||"").localeCompare(String(b?.name||""),"ko");
 }
-function armorSkillQueryIds(query){
-  const q=String(query||"").trim().toLowerCase();
-  if(!q)return [];
-  const exact=[];
-  for(const s of data.skills||[]){
-    const names=[s.name,s.nameJa,s.nameEn].filter(Boolean).map(x=>String(x).toLowerCase());
-    if(names.includes(q))exact.push(s.id);
-  }
-  return exact;
-}
-function armorLooksLikeSkillQuery(query){
-  const q=String(query||"").trim().toLowerCase();
-  if(q.length<2)return false;
-  return (data.skills||[]).some(s=>{
-    const names=[s.name,s.nameJa,s.nameEn,SKILL_SEARCH_ALIASES[s.name]||"",...(s.activations||[]).flatMap(x=>[x.name,x.nameJa,x.nameEn])].filter(Boolean);
-    return names.some(x=>String(x).toLowerCase().includes(q));
-  });
-}
 const TORSO_UP_SEARCH_TERMS=["몸통배가","동계통배가","몸통 배가","胴系統倍加","torso up","torso-up"];
-function armorIsTorsoUpQuery(query){
+function armorSearchQueryContext(query){
   const q=String(query||"").trim().toLowerCase();
-  if(!q)return false;
-  return TORSO_UP_SEARCH_TERMS.some(term=>term.toLowerCase()===q);
-}
-function armorLooksLikeTorsoUpQuery(query){
-  const q=String(query||"").trim().toLowerCase();
-  if(q.length<2)return false;
-  return TORSO_UP_SEARCH_TERMS.some(term=>term.toLowerCase().includes(q)||q.includes(term.toLowerCase()));
-}
-function armorMatchesSearch(a,query){
-  const q=String(query||"").trim().toLowerCase();
-  if(!q)return true;
-  // 몸통배가는 일반 스킬 테이블에 없는 방어구 특수효과이므로 별도로 판정한다.
-  // 정확/별칭 검색에서는 torsoUp=true인 방어구만 반환해 장비명 우연 일치를 막는다.
-  if(armorIsTorsoUpQuery(q))return !!a.torsoUp;
-  const exactSkillIds=armorSkillQueryIds(q);
-  if(exactSkillIds.length)return exactSkillIds.some(id=>Object.prototype.hasOwnProperty.call(a.skills||{},id));
-  if(armorLooksLikeTorsoUpQuery(q))return !!a.torsoUp;
-  if(armorLooksLikeSkillQuery(q)){
-    const skillText=armorSkillSearchCorpus(a).toLowerCase();
-    return skillText.includes(q);
+  if(armorSearchQueryContextCache.has(q))return armorSearchQueryContextCache.get(q);
+  const exactSkillIds=[];
+  let looksLikeSkill=false;
+  if(q){
+    for(const sk of data.skills||[]){
+      const exactNames=[sk.name,sk.nameJa,sk.nameEn].filter(Boolean).map(x=>String(x).toLowerCase());
+      if(exactNames.includes(q))exactSkillIds.push(sk.id);
+      if(!looksLikeSkill&&q.length>=2){
+        const names=[sk.name,sk.nameJa,sk.nameEn,SKILL_SEARCH_ALIASES[sk.name]||"",...(sk.activations||[]).flatMap(x=>[x.name,x.nameJa,x.nameEn])].filter(Boolean);
+        looksLikeSkill=names.some(x=>String(x).toLowerCase().includes(q));
+      }
+    }
   }
-  const normalText=`${a.name} ${a.nameJa||""} ${a.nameEn||""} ${hunterName(a.hunterType)} ${rankName(a.rank)} ${a.materials||""}`.toLowerCase();
-  return normalText.includes(q);
+  const torsoExact=!!q&&TORSO_UP_SEARCH_TERMS.some(term=>term.toLowerCase()===q);
+  const torsoLike=q.length>=2&&TORSO_UP_SEARCH_TERMS.some(term=>term.toLowerCase().includes(q)||q.includes(term.toLowerCase()));
+  const ctx={q,exactSkillIds,looksLikeSkill,torsoExact,torsoLike};
+  if(armorSearchQueryContextCache.size>80)armorSearchQueryContextCache.clear();
+  armorSearchQueryContextCache.set(q,ctx);
+  return ctx;
+}
+function armorSkillQueryIds(query){return armorSearchQueryContext(query).exactSkillIds}
+function armorLooksLikeSkillQuery(query){return armorSearchQueryContext(query).looksLikeSkill}
+function armorIsTorsoUpQuery(query){return armorSearchQueryContext(query).torsoExact}
+function armorLooksLikeTorsoUpQuery(query){return armorSearchQueryContext(query).torsoLike}
+function armorMatchesSearch(a,query){
+  const ctx=armorSearchQueryContext(query);
+  if(!ctx.q)return true;
+  if(ctx.torsoExact)return !!a.torsoUp;
+  if(ctx.exactSkillIds.length)return ctx.exactSkillIds.some(id=>Object.prototype.hasOwnProperty.call(a.skills||{},id));
+  if(ctx.torsoLike)return !!a.torsoUp;
+  const key=a?.id||a?.name||"";
+  let cached=armorSearchCorpusCache.get(key);
+  if(!cached){armorSkillSearchCorpus(a);cached=armorSearchCorpusCache.get(key)}
+  if(ctx.looksLikeSkill)return (cached?.skillTextLower||"").includes(ctx.q);
+  return (cached?.normalText||"").includes(ctx.q);
 }
 function armorPickerOptions(part){
   if(optionCache.armorByPart.has(part))return optionCache.armorByPart.get(part);
@@ -617,7 +622,7 @@ function renderManualSelectors(){
   mountManualWeaponSearch();
   for(const p of PARTS){
     const opts=armorPickerOptions(p);
-    mountSearchSelect(`#manual-${p}`,opts,{value:uiState.manual[p],placeholder:`${PART_NAMES[p]} 검색 (${opts.length}개)`,emptyLabel:`선택 안 함 (${opts.length}개)`,onChange:v=>{
+    mountSearchSelect(`#manual-${p}`,opts,{value:uiState.manual[p],placeholder:`${PART_NAMES[p]} 검색 (${opts.length}개)`,emptyLabel:`선택 안 함 (${opts.length}개)`,debounceMs:60,onChange:v=>{
       uiState.manual[p]=v;uiState.manualDecorations[p]=[];refreshManualContainer(p);renderManualResult();
     }});
   }
@@ -775,6 +780,8 @@ function armorProgressionSourceHtml(src,material){
   return `<li><span class="armor-progress-kind">입수</span><span>${esc(src.label||src.note||"입수처 확인")}</span></li>`;
 }
 function armorProgressionHtml(a){
+  const cacheKey=a?.id||a?.name||"";
+  if(cacheKey&&armorProgressionHtmlCache.has(cacheKey))return armorProgressionHtmlCache.get(cacheKey);
   const p=a?.progression;if(!p?.materials?.length)return '<span class="muted">-</span>';
   const eventQs=(p.targets?.quests||[]).filter(q=>q.questType==="event");
   const mons=(p.targets?.monsters||[]).slice(0,4);
@@ -782,12 +789,23 @@ function armorProgressionHtml(a){
   if(eventQs.length)quick.push(`<div class="armor-progress-quick"><b>이벤트</b>${eventQs.slice(0,3).map(q=>q.id?refButton(`${q.level||""} ${q.name}`.trim(),"quest",{name:q.name,questtype:q.questType}):`<span>${esc(q.name)}</span>`).join(" ")}</div>`);
   if(mons.length)quick.push(`<div class="armor-progress-quick"><b>주요 몬스터</b>${mons.map(m=>{const x=typeof m==="string"?{name:m,navMonster:m}:m;return x.navMonster?refButton(x.name,"monster",{monster:x.navMonster}):`<span>${esc(x.name)}</span>`}).join(" ")}</div>`);
   const mats=p.materials.map(m=>`<div class="armor-progress-material"><div class="armor-progress-material-head">${itemLink(m.name)} <b>×${Number(m.count)||1}</b></div><ul>${(m.sources||[]).map(src=>armorProgressionSourceHtml(src,m)).join("")||'<li><span class="muted">입수 경로 데이터 없음</span></li>'}</ul></div>`).join("");
-  return `<details class="armor-progression"><summary>제작 경로 <b>${p.materials.length}</b></summary><div class="armor-progress-body">${quick.join("")}${mats}</div></details>`;
+  const html=`<details class="armor-progression"><summary>제작 경로 <b>${p.materials.length}</b></summary><div class="armor-progress-body">${quick.join("")}${mats}</div></details>`;
+  if(cacheKey)armorProgressionHtmlCache.set(cacheKey,html);
+  return html;
 }
 
+function armorRowHtml(a){
+  const key=a?.id||a?.name||"";
+  if(key&&armorRowHtmlCache.has(key))return armorRowHtmlCache.get(key);
+  const html=`<tr><td><strong>${esc(a.name)}</strong>${localizedNameSub(a)}</td><td>${hunterName(a.hunterType)}</td><td>${PART_NAMES[a.part]||a.part}</td><td>${a.rare||"-"}</td><td>${a.defense||0} / ${a.maxDefense||a.defense||0}</td><td class="slots">${slotsText(a.slots)}</td><td>${a.torsoUp?"몸통배가":Object.entries(a.skills||{}).map(([k,v])=>`${skillLink(k,skillName(k))} ${v>0?"+":""}${v}`).join(", ")}</td><td>${resistText(a.resistances)}</td><td>${rankName(a.rank)}</td><td class="wrap-cell">${materialLinks(a.materials||"")}</td><td class="armor-progress-cell">${armorProgressionHtml(a)}</td></tr>`;
+  if(key)armorRowHtmlCache.set(key,html);
+  return html;
+}
 function renderArmorTable(){
   const q=$("#armorSearch").value.trim().toLowerCase(),part=$("#armorPartFilter").value;
-  const rows=data.armors.filter(a=>(part==="all"||a.part===part)&&armorEligible(a)&&(armorViewMode!=="other"||(a.source||"").endsWith("/armor/etc.htm"))).filter(a=>armorMatchesSearch(a,q)).sort(armorRankCompare).map(a=>`<tr><td><strong>${esc(a.name)}</strong>${localizedNameSub(a)}</td><td>${hunterName(a.hunterType)}</td><td>${PART_NAMES[a.part]||a.part}</td><td>${a.rare||"-"}</td><td>${a.defense||0} / ${a.maxDefense||a.defense||0}</td><td class="slots">${slotsText(a.slots)}</td><td>${a.torsoUp?"몸통배가":Object.entries(a.skills||{}).map(([k,v])=>`${skillLink(k,skillName(k))} ${v>0?"+":""}${v}`).join(", ")}</td><td>${resistText(a.resistances)}</td><td>${rankName(a.rank)}</td><td class="wrap-cell">${materialLinks(a.materials||"")}</td><td class="armor-progress-cell">${armorProgressionHtml(a)}</td></tr>`);
+  const queryCtx=armorSearchQueryContext(q); // 검색 의도 판정은 렌더링당 한 번만 계산
+  const rows=data.armors.filter(a=>(part==="all"||a.part===part)&&armorEligible(a)&&(armorViewMode!=="other"||(a.source||"").endsWith("/armor/etc.htm")))
+    .filter(a=>armorMatchesSearch(a,queryCtx.q)).sort(armorRankCompare).map(armorRowHtml);
   renderTable("#armorTable",["명칭","타입","부위","RARE","방어(초기/최대)","슬롯","스킬","내성","등급","생산 소재","제작 진행"],rows);
 }
 
@@ -1974,7 +1992,8 @@ function bind(){
   };
   $("#includeTorsoUp").onchange=()=>{renderManualResult()};
 
-  $("#armorSearch").oninput=renderArmorTable;$("#armorPartFilter").onchange=renderArmorTable;
+  let armorSearchTimer=null;
+  $("#armorSearch").oninput=()=>{if(armorSearchTimer)clearTimeout(armorSearchTimer);armorSearchTimer=setTimeout(renderArmorTable,110)};$("#armorPartFilter").onchange=renderArmorTable;
   $("#armorSetSearch").oninput=renderArmorSetTable;
   $("#weaponSearch").oninput=renderWeaponTrees;$("#weaponTypeFilter").onchange=()=>{renderWeaponTreeFilter();renderWeaponTrees()};$("#weaponTreeFilter").onchange=renderWeaponTrees;$("#weaponElementFilter").onchange=renderWeaponTrees;$("#weaponSort").onchange=renderWeaponTrees;
   $("#weaponSummarySearch").oninput=renderWeaponSummary;$("#weaponSummaryType").onchange=renderWeaponSummary;

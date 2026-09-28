@@ -1,0 +1,25 @@
+{
+  "ok": true,
+  "version": "0.7.7-chat4-research2-hotfix12",
+  "checks": {
+    "armorCount": 3119,
+    "simArmorCount": 3119,
+    "restoredArmorCount": 243,
+    "restoredGXCount": 30,
+    "externalCommonRemainingMissing": 0,
+    "progressionMaterials": 858,
+    "progressionUnresolved": 0,
+    "progressionErrors": 0,
+    "searchSpeedup": 421.81,
+    "searchCountParity": true,
+    "simMissingFromFull": 0,
+    "versionApp": true,
+    "versionLoader": true,
+    "versionIndex": true,
+    "cachedQueryContext": true,
+    "cachedArmorCorpus": true,
+    "debouncedArmorPicker": true,
+    "debouncedArmorTable": true
+  },
+  "errors": []
+}
