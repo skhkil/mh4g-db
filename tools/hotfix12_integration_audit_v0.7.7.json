@@ -1,5 +1,5 @@
 {
-  "ok": true,
+  "ok": false,
   "version": "0.7.7-chat4-research2-hotfix12",
   "checks": {
     "armorCount": 3119,
@@ -13,13 +13,17 @@
     "searchSpeedup": 421.81,
     "searchCountParity": true,
     "simMissingFromFull": 0,
-    "versionApp": true,
-    "versionLoader": true,
-    "versionIndex": true,
+    "versionApp": false,
+    "versionLoader": false,
+    "versionIndex": false,
     "cachedQueryContext": true,
     "cachedArmorCorpus": true,
     "debouncedArmorPicker": true,
     "debouncedArmorTable": true
   },
-  "errors": []
+  "errors": [
+    "versionApp",
+    "versionLoader",
+    "versionIndex"
+  ]
 }

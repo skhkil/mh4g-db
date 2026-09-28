@@ -1,0 +1,2008 @@
+{
+  "generatedAt": "2026-09-28T05:43:03.984Z",
+  "entries": 42,
+  "cards": 108,
+  "engineMismatch": 0,
+  "missingArmor": 0,
+  "missingDeco": 0,
+  "finalMatched": 83,
+  "finalConditional": 25,
+  "issues": [],
+  "autoInjectionPolicy": {
+    "armors": true,
+    "decorations": false,
+    "charm": false,
+    "weapon": false,
+    "weaponSlots": false
+  },
+  "cardsDetail": [
+    {
+      "weaponType": "대검",
+      "rank": "low",
+      "label": "카브라 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "체력+50",
+        "방어력UP【소】"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "체력+50",
+        "방어력UP【소】"
+      ],
+      "exampleEvidence": "국내 원문 장식주 예시"
+    },
+    {
+      "weaponType": "대검",
+      "rank": "low",
+      "label": "재기 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "숫돌사용고속화",
+        "기절확률반감"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "숫돌사용고속화",
+        "기절확률반감"
+      ],
+      "exampleEvidence": "국내 원문 기본 세트"
+    },
+    {
+      "weaponType": "대검",
+      "rank": "high",
+      "label": "리오소울 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "통찰력+2",
+        "고급귀마개",
+        "예리"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "통찰력+2",
+        "고급귀마개",
+        "예리"
+      ],
+      "exampleEvidence": "국내 원문 정석 장식주 예시"
+    },
+    {
+      "weaponType": "대검",
+      "rank": "high",
+      "label": "카브라S 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "방어력UP【중】",
+        "체력+20",
+        "숫돌사용고속화"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "방어력UP【중】",
+        "체력+20",
+        "숫돌사용고속화"
+      ],
+      "exampleEvidence": "국내 원문 장식주 예시"
+    },
+    {
+      "weaponType": "대검",
+      "rank": "high",
+      "label": "진오우U 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "회피성능+1",
+        "집중",
+        "풀차지",
+        "용속성공격UP+1",
+        "체력회복량DOWN"
+      ],
+      "finalExampleStatus": "conditional_or_extended_example",
+      "finalSkillsExample": [
+        "회피성능+3",
+        "집중",
+        "풀차지",
+        "용속성공격UP+1",
+        "숫돌사용고속화",
+        "체력회복량DOWN"
+      ],
+      "exampleEvidence": "국내 원문 호석/무기슬롯 예시"
+    },
+    {
+      "weaponType": "대검",
+      "rank": "g",
+      "label": "디아블로X 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "발도술【기술】",
+        "납도술",
+        "내진",
+        "숫돌사용저속화"
+      ],
+      "finalExampleStatus": "conditional_or_extended_example",
+      "finalSkillsExample": [
+        "발도술【기술】",
+        "납도술",
+        "내진",
+        "집중",
+        "공격력UP【소】(호석/슬롯에 따라)",
+        "숫돌사용저속화 해제 권장"
+      ],
+      "exampleEvidence": "국내 원문 호석 예시"
+    },
+    {
+      "weaponType": "대검",
+      "rank": "g",
+      "label": "바이바이카이저",
+      "engineOk": true,
+      "actualSkills": [
+        "베기술【힘】",
+        "예리도레벨+1",
+        "추위배가"
+      ],
+      "finalExampleStatus": "conditional_or_extended_example",
+      "finalSkillsExample": [
+        "베기술【힘】",
+        "예리도레벨+1",
+        "발도술【기술】",
+        "집중",
+        "공격력UP【소】"
+      ],
+      "exampleEvidence": "국내 원문 호석/최종스킬 예시"
+    },
+    {
+      "weaponType": "대검",
+      "rank": "g",
+      "label": "우카우카우",
+      "engineOk": true,
+      "actualSkills": [
+        "심안",
+        "예리도레벨+1"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "심안",
+        "예리도레벨+1"
+      ],
+      "exampleEvidence": "국내 원문 호석 예시"
+    },
+    {
+      "weaponType": "태도",
+      "rank": "low",
+      "label": "카브라 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "체력+50",
+        "방어력UP【소】"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "체력+50",
+        "방어력UP【소】"
+      ],
+      "exampleEvidence": "국내 원문 장식주 예시"
+    },
+    {
+      "weaponType": "태도",
+      "rank": "low",
+      "label": "재기 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "숫돌사용고속화",
+        "기절확률반감"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "숫돌사용고속화",
+        "기절확률반감"
+      ],
+      "exampleEvidence": "국내 원문 기본 세트"
+    },
+    {
+      "weaponType": "태도",
+      "rank": "high",
+      "label": "리오소울 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "통찰력+2",
+        "고급귀마개",
+        "예리"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "통찰력+2",
+        "고급귀마개",
+        "예리"
+      ],
+      "exampleEvidence": "국내 원문 정석 장식주 예시"
+    },
+    {
+      "weaponType": "태도",
+      "rank": "high",
+      "label": "카브라S 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "방어력UP【중】",
+        "체력+20",
+        "숫돌사용고속화"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "방어력UP【중】",
+        "체력+20",
+        "숫돌사용고속화"
+      ],
+      "exampleEvidence": "국내 원문 장식주 예시"
+    },
+    {
+      "weaponType": "태도",
+      "rank": "high",
+      "label": "진오우U 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "회피성능+1",
+        "집중",
+        "풀차지",
+        "용속성공격UP+1",
+        "체력회복량DOWN"
+      ],
+      "finalExampleStatus": "conditional_or_extended_example",
+      "finalSkillsExample": [
+        "회피성능+3",
+        "집중",
+        "풀차지",
+        "용속성공격UP+1",
+        "숫돌사용고속화",
+        "체력회복량DOWN"
+      ],
+      "exampleEvidence": "국내 원문 호석/무기슬롯 예시"
+    },
+    {
+      "weaponType": "태도",
+      "rank": "g",
+      "label": "레기오스X 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "체술+2",
+        "열상무효",
+        "심검일체"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "체술+2",
+        "열상무효",
+        "심검일체"
+      ],
+      "exampleEvidence": "국내 원문 장식주 예시"
+    },
+    {
+      "weaponType": "태도",
+      "rank": "g",
+      "label": "스타나이트 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "도전자+2",
+        "탑승마스터",
+        "심검일체"
+      ],
+      "finalExampleStatus": "conditional_or_extended_example",
+      "finalSkillsExample": [
+        "도전자+2",
+        "탑승마스터",
+        "심검일체",
+        "고급귀마개",
+        "예리도레벨+1"
+      ],
+      "exampleEvidence": "국내 원문 조건 + 프로젝트 DB 슬롯 재현"
+    },
+    {
+      "weaponType": "태도",
+      "rank": "g",
+      "label": "우카우카우",
+      "engineOk": true,
+      "actualSkills": [
+        "심안",
+        "예리도레벨+1"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "심안",
+        "예리도레벨+1"
+      ],
+      "exampleEvidence": "국내 원문 호석 예시"
+    },
+    {
+      "weaponType": "태도",
+      "rank": "g",
+      "label": "가루루가X 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "통찰력+2",
+        "고급귀마개",
+        "예리"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "고급귀마개",
+        "예리",
+        "통찰력+2"
+      ],
+      "exampleEvidence": "해외 가이드 방향(고정 장식주 조합 아님)"
+    },
+    {
+      "weaponType": "한손검",
+      "rank": "low",
+      "label": "카브라 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "체력+50",
+        "방어력UP【소】"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "체력+50",
+        "방어력UP【소】"
+      ],
+      "exampleEvidence": "국내 원문 장식주 예시"
+    },
+    {
+      "weaponType": "한손검",
+      "rank": "low",
+      "label": "재기 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "숫돌사용고속화",
+        "기절확률반감"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "숫돌사용고속화",
+        "기절확률반감"
+      ],
+      "exampleEvidence": "국내 원문 기본 세트"
+    },
+    {
+      "weaponType": "한손검",
+      "rank": "high",
+      "label": "리오소울 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "통찰력+2",
+        "고급귀마개",
+        "예리"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "통찰력+2",
+        "고급귀마개",
+        "예리"
+      ],
+      "exampleEvidence": "국내 원문 정석 장식주 예시"
+    },
+    {
+      "weaponType": "한손검",
+      "rank": "high",
+      "label": "카브라S 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "방어력UP【중】",
+        "체력+20",
+        "숫돌사용고속화"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "방어력UP【중】",
+        "체력+20",
+        "숫돌사용고속화"
+      ],
+      "exampleEvidence": "국내 원문 장식주 예시"
+    },
+    {
+      "weaponType": "한손검",
+      "rank": "high",
+      "label": "진오우U 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "회피성능+1",
+        "집중",
+        "풀차지",
+        "용속성공격UP+1",
+        "체력회복량DOWN"
+      ],
+      "finalExampleStatus": "conditional_or_extended_example",
+      "finalSkillsExample": [
+        "회피성능+3",
+        "집중",
+        "풀차지",
+        "용속성공격UP+1",
+        "숫돌사용고속화",
+        "체력회복량DOWN"
+      ],
+      "exampleEvidence": "국내 원문 호석/무기슬롯 예시"
+    },
+    {
+      "weaponType": "한손검",
+      "rank": "g",
+      "label": "레기오스X 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "체술+2",
+        "열상무효",
+        "심검일체"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "체술+2",
+        "열상무효",
+        "심검일체"
+      ],
+      "exampleEvidence": "국내 원문 장식주 예시"
+    },
+    {
+      "weaponType": "한손검",
+      "rank": "g",
+      "label": "미쿠미쿠미",
+      "engineOk": true,
+      "actualSkills": [
+        "귀마개",
+        "풍압【소】무효"
+      ],
+      "finalExampleStatus": "conditional_or_extended_example",
+      "finalSkillsExample": [
+        "고급귀마개",
+        "예리도레벨+1",
+        "회피성능+1",
+        "숫돌사용고속화",
+        "상태이상공격+1"
+      ],
+      "exampleEvidence": "국내 원문 최종 스킬 예시"
+    },
+    {
+      "weaponType": "한손검",
+      "rank": "g",
+      "label": "스타나이트 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "도전자+2",
+        "탑승마스터",
+        "심검일체"
+      ],
+      "finalExampleStatus": "conditional_or_extended_example",
+      "finalSkillsExample": [
+        "도전자+2",
+        "탑승마스터",
+        "심검일체",
+        "고급귀마개",
+        "예리도레벨+1"
+      ],
+      "exampleEvidence": "국내 원문 조건 + 프로젝트 DB 슬롯 재현"
+    },
+    {
+      "weaponType": "한손검",
+      "rank": "g",
+      "label": "우카우카우",
+      "engineOk": true,
+      "actualSkills": [
+        "심안",
+        "예리도레벨+1"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "심안",
+        "예리도레벨+1"
+      ],
+      "exampleEvidence": "국내 원문 호석 예시"
+    },
+    {
+      "weaponType": "쌍검",
+      "rank": "low",
+      "label": "카브라 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "체력+50",
+        "방어력UP【소】"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "체력+50",
+        "방어력UP【소】"
+      ],
+      "exampleEvidence": "국내 원문 장식주 예시"
+    },
+    {
+      "weaponType": "쌍검",
+      "rank": "low",
+      "label": "재기 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "숫돌사용고속화",
+        "기절확률반감"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "숫돌사용고속화",
+        "기절확률반감"
+      ],
+      "exampleEvidence": "국내 원문 기본 세트"
+    },
+    {
+      "weaponType": "쌍검",
+      "rank": "high",
+      "label": "리오소울 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "통찰력+2",
+        "고급귀마개",
+        "예리"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "통찰력+2",
+        "고급귀마개",
+        "예리"
+      ],
+      "exampleEvidence": "국내 원문 정석 장식주 예시"
+    },
+    {
+      "weaponType": "쌍검",
+      "rank": "high",
+      "label": "카브라S 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "방어력UP【중】",
+        "체력+20",
+        "숫돌사용고속화"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "방어력UP【중】",
+        "체력+20",
+        "숫돌사용고속화"
+      ],
+      "exampleEvidence": "국내 원문 장식주 예시"
+    },
+    {
+      "weaponType": "쌍검",
+      "rank": "high",
+      "label": "진오우U 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "회피성능+1",
+        "집중",
+        "풀차지",
+        "용속성공격UP+1",
+        "체력회복량DOWN"
+      ],
+      "finalExampleStatus": "conditional_or_extended_example",
+      "finalSkillsExample": [
+        "회피성능+3",
+        "집중",
+        "풀차지",
+        "용속성공격UP+1",
+        "숫돌사용고속화",
+        "체력회복량DOWN"
+      ],
+      "exampleEvidence": "국내 원문 호석/무기슬롯 예시"
+    },
+    {
+      "weaponType": "쌍검",
+      "rank": "g",
+      "label": "레기오스X 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "체술+2",
+        "열상무효",
+        "심검일체"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "체술+2",
+        "열상무효",
+        "심검일체"
+      ],
+      "exampleEvidence": "국내 원문 장식주 예시"
+    },
+    {
+      "weaponType": "쌍검",
+      "rank": "g",
+      "label": "스타나이트 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "도전자+2",
+        "탑승마스터",
+        "심검일체"
+      ],
+      "finalExampleStatus": "conditional_or_extended_example",
+      "finalSkillsExample": [
+        "도전자+2",
+        "탑승마스터",
+        "심검일체",
+        "고급귀마개",
+        "예리도레벨+1"
+      ],
+      "exampleEvidence": "국내 원문 조건 + 프로젝트 DB 슬롯 재현"
+    },
+    {
+      "weaponType": "쌍검",
+      "rank": "g",
+      "label": "셀레네X 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "고급귀마개",
+        "물속성공격UP+2",
+        "러너",
+        "파괴왕",
+        "악령의 가호"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "고급귀마개",
+        "러너",
+        "물속성공격UP+2",
+        "악령의 가호",
+        "파괴왕"
+      ],
+      "exampleEvidence": "해외 가이드 방향(고정 장식주 조합 아님)"
+    },
+    {
+      "weaponType": "쌍검",
+      "rank": "g",
+      "label": "우카우카우",
+      "engineOk": true,
+      "actualSkills": [
+        "심안",
+        "예리도레벨+1"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "심안",
+        "예리도레벨+1"
+      ],
+      "exampleEvidence": "국내 원문 호석 예시"
+    },
+    {
+      "weaponType": "해머",
+      "rank": "low",
+      "label": "카브라 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "체력+50",
+        "방어력UP【소】"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "체력+50",
+        "방어력UP【소】"
+      ],
+      "exampleEvidence": "국내 원문 장식주 예시"
+    },
+    {
+      "weaponType": "해머",
+      "rank": "low",
+      "label": "재기 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "숫돌사용고속화",
+        "기절확률반감"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "숫돌사용고속화",
+        "기절확률반감"
+      ],
+      "exampleEvidence": "국내 원문 기본 세트"
+    },
+    {
+      "weaponType": "해머",
+      "rank": "high",
+      "label": "리오소울 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "통찰력+2",
+        "고급귀마개",
+        "예리"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "통찰력+2",
+        "고급귀마개",
+        "예리"
+      ],
+      "exampleEvidence": "국내 원문 정석 장식주 예시"
+    },
+    {
+      "weaponType": "해머",
+      "rank": "high",
+      "label": "카브라S 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "방어력UP【중】",
+        "체력+20",
+        "숫돌사용고속화"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "방어력UP【중】",
+        "체력+20",
+        "숫돌사용고속화"
+      ],
+      "exampleEvidence": "국내 원문 장식주 예시"
+    },
+    {
+      "weaponType": "해머",
+      "rank": "high",
+      "label": "진오우U 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "회피성능+1",
+        "집중",
+        "풀차지",
+        "용속성공격UP+1",
+        "체력회복량DOWN"
+      ],
+      "finalExampleStatus": "conditional_or_extended_example",
+      "finalSkillsExample": [
+        "회피성능+3",
+        "집중",
+        "풀차지",
+        "용속성공격UP+1",
+        "숫돌사용고속화",
+        "체력회복량DOWN"
+      ],
+      "exampleEvidence": "국내 원문 호석/무기슬롯 예시"
+    },
+    {
+      "weaponType": "해머",
+      "rank": "g",
+      "label": "레기오스X 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "체술+2",
+        "열상무효",
+        "심검일체"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "체술+2",
+        "열상무효",
+        "심검일체"
+      ],
+      "exampleEvidence": "국내 원문 장식주 예시"
+    },
+    {
+      "weaponType": "해머",
+      "rank": "g",
+      "label": "스타나이트 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "도전자+2",
+        "탑승마스터",
+        "심검일체"
+      ],
+      "finalExampleStatus": "conditional_or_extended_example",
+      "finalSkillsExample": [
+        "도전자+2",
+        "탑승마스터",
+        "심검일체",
+        "고급귀마개",
+        "예리도레벨+1"
+      ],
+      "exampleEvidence": "국내 원문 조건 + 프로젝트 DB 슬롯 재현"
+    },
+    {
+      "weaponType": "해머",
+      "rank": "g",
+      "label": "우카우카우",
+      "engineOk": true,
+      "actualSkills": [
+        "심안",
+        "예리도레벨+1"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "심안",
+        "예리도레벨+1"
+      ],
+      "exampleEvidence": "국내 원문 호석 예시"
+    },
+    {
+      "weaponType": "해머",
+      "rank": "g",
+      "label": "가루루가X 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "통찰력+2",
+        "고급귀마개",
+        "예리"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "고급귀마개",
+        "예리",
+        "통찰력+2"
+      ],
+      "exampleEvidence": "해외 가이드 방향(고정 장식주 조합 아님)"
+    },
+    {
+      "weaponType": "수렵피리",
+      "rank": "low",
+      "label": "카브라 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "체력+50",
+        "방어력UP【소】"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "체력+50",
+        "방어력UP【소】"
+      ],
+      "exampleEvidence": "국내 원문 장식주 예시"
+    },
+    {
+      "weaponType": "수렵피리",
+      "rank": "low",
+      "label": "재기 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "숫돌사용고속화",
+        "기절확률반감"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "숫돌사용고속화",
+        "기절확률반감"
+      ],
+      "exampleEvidence": "국내 원문 기본 세트"
+    },
+    {
+      "weaponType": "수렵피리",
+      "rank": "high",
+      "label": "리오소울 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "통찰력+2",
+        "고급귀마개",
+        "예리"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "통찰력+2",
+        "고급귀마개",
+        "예리"
+      ],
+      "exampleEvidence": "국내 원문 정석 장식주 예시"
+    },
+    {
+      "weaponType": "수렵피리",
+      "rank": "high",
+      "label": "카브라S 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "방어력UP【중】",
+        "체력+20",
+        "숫돌사용고속화"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "방어력UP【중】",
+        "체력+20",
+        "숫돌사용고속화"
+      ],
+      "exampleEvidence": "국내 원문 장식주 예시"
+    },
+    {
+      "weaponType": "수렵피리",
+      "rank": "high",
+      "label": "진오우U 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "회피성능+1",
+        "집중",
+        "풀차지",
+        "용속성공격UP+1",
+        "체력회복량DOWN"
+      ],
+      "finalExampleStatus": "conditional_or_extended_example",
+      "finalSkillsExample": [
+        "회피성능+3",
+        "집중",
+        "풀차지",
+        "용속성공격UP+1",
+        "숫돌사용고속화",
+        "체력회복량DOWN"
+      ],
+      "exampleEvidence": "국내 원문 호석/무기슬롯 예시"
+    },
+    {
+      "weaponType": "수렵피리",
+      "rank": "g",
+      "label": "레기오스X 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "체술+2",
+        "열상무효",
+        "심검일체"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "체술+2",
+        "열상무효",
+        "심검일체"
+      ],
+      "exampleEvidence": "국내 원문 장식주 예시"
+    },
+    {
+      "weaponType": "수렵피리",
+      "rank": "g",
+      "label": "가루루가X 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "통찰력+2",
+        "고급귀마개",
+        "예리"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "고급귀마개",
+        "예리",
+        "통찰력+2"
+      ],
+      "exampleEvidence": "해외 가이드 방향(고정 장식주 조합 아님)"
+    },
+    {
+      "weaponType": "수렵피리",
+      "rank": "g",
+      "label": "스타나이트 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "도전자+2",
+        "탑승마스터",
+        "심검일체"
+      ],
+      "finalExampleStatus": "conditional_or_extended_example",
+      "finalSkillsExample": [
+        "도전자+2",
+        "탑승마스터",
+        "심검일체",
+        "고급귀마개",
+        "예리도레벨+1"
+      ],
+      "exampleEvidence": "국내 원문 조건 + 프로젝트 DB 슬롯 재현"
+    },
+    {
+      "weaponType": "수렵피리",
+      "rank": "g",
+      "label": "우카우카우",
+      "engineOk": true,
+      "actualSkills": [
+        "심안",
+        "예리도레벨+1"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "심안",
+        "예리도레벨+1"
+      ],
+      "exampleEvidence": "국내 원문 호석 예시"
+    },
+    {
+      "weaponType": "랜스",
+      "rank": "low",
+      "label": "카브라 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "체력+50",
+        "방어력UP【소】"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "체력+50",
+        "방어력UP【소】"
+      ],
+      "exampleEvidence": "국내 원문 장식주 예시"
+    },
+    {
+      "weaponType": "랜스",
+      "rank": "low",
+      "label": "재기 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "숫돌사용고속화",
+        "기절확률반감"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "숫돌사용고속화",
+        "기절확률반감"
+      ],
+      "exampleEvidence": "국내 원문 기본 세트"
+    },
+    {
+      "weaponType": "랜스",
+      "rank": "high",
+      "label": "리오소울 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "통찰력+2",
+        "고급귀마개",
+        "예리"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "통찰력+2",
+        "고급귀마개",
+        "예리"
+      ],
+      "exampleEvidence": "국내 원문 정석 장식주 예시"
+    },
+    {
+      "weaponType": "랜스",
+      "rank": "high",
+      "label": "카브라S 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "방어력UP【중】",
+        "체력+20",
+        "숫돌사용고속화"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "방어력UP【중】",
+        "체력+20",
+        "숫돌사용고속화"
+      ],
+      "exampleEvidence": "국내 원문 장식주 예시"
+    },
+    {
+      "weaponType": "랜스",
+      "rank": "high",
+      "label": "진오우U 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "회피성능+1",
+        "집중",
+        "풀차지",
+        "용속성공격UP+1",
+        "체력회복량DOWN"
+      ],
+      "finalExampleStatus": "conditional_or_extended_example",
+      "finalSkillsExample": [
+        "회피성능+3",
+        "집중",
+        "풀차지",
+        "용속성공격UP+1",
+        "숫돌사용고속화",
+        "체력회복량DOWN"
+      ],
+      "exampleEvidence": "국내 원문 호석/무기슬롯 예시"
+    },
+    {
+      "weaponType": "랜스",
+      "rank": "g",
+      "label": "자자미X 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "방어력UP【중】",
+        "가드성능+2",
+        "만족감",
+        "번개내성약화"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "방어력UP【중】",
+        "가드성능+2",
+        "만족감",
+        "번개내성약화"
+      ],
+      "exampleEvidence": "국내 번역 자료 기본 세트"
+    },
+    {
+      "weaponType": "랜스",
+      "rank": "g",
+      "label": "보로스X 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "공격력UP【중】",
+        "가드성능+2",
+        "체술+1",
+        "배고픔배가【소】"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "가드성능+2",
+        "공격력UP【중】",
+        "배고픔배가【소】",
+        "체술+1"
+      ],
+      "exampleEvidence": "국내 번역 자료 기본 세트"
+    },
+    {
+      "weaponType": "랜스",
+      "rank": "g",
+      "label": "G2 가드 랜스 커스텀",
+      "engineOk": true,
+      "actualSkills": [
+        "가드성능+2",
+        "방어력UP【소】"
+      ],
+      "finalExampleStatus": "conditional_or_extended_example",
+      "finalSkillsExample": [
+        "가드성능+2",
+        "예리도레벨+1",
+        "방어력UP【소】"
+      ],
+      "exampleEvidence": "국내 번역 자료 명시 스킬"
+    },
+    {
+      "weaponType": "랜스",
+      "rank": "g",
+      "label": "나르가X 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "회피성능+2",
+        "회피거리UP",
+        "은밀",
+        "느림보"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "느림보",
+        "은밀",
+        "회피거리UP",
+        "회피성능+2"
+      ],
+      "exampleEvidence": "해외 가이드 방향(고정 장식주 조합 아님)"
+    },
+    {
+      "weaponType": "건랜스",
+      "rank": "low",
+      "label": "카브라 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "체력+50",
+        "방어력UP【소】"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "체력+50",
+        "방어력UP【소】"
+      ],
+      "exampleEvidence": "국내 원문 장식주 예시"
+    },
+    {
+      "weaponType": "건랜스",
+      "rank": "low",
+      "label": "재기 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "숫돌사용고속화",
+        "기절확률반감"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "숫돌사용고속화",
+        "기절확률반감"
+      ],
+      "exampleEvidence": "국내 원문 기본 세트"
+    },
+    {
+      "weaponType": "건랜스",
+      "rank": "high",
+      "label": "리오소울 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "통찰력+2",
+        "고급귀마개",
+        "예리"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "통찰력+2",
+        "고급귀마개",
+        "예리"
+      ],
+      "exampleEvidence": "국내 원문 정석 장식주 예시"
+    },
+    {
+      "weaponType": "건랜스",
+      "rank": "high",
+      "label": "카브라S 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "방어력UP【중】",
+        "체력+20",
+        "숫돌사용고속화"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "방어력UP【중】",
+        "체력+20",
+        "숫돌사용고속화"
+      ],
+      "exampleEvidence": "국내 원문 장식주 예시"
+    },
+    {
+      "weaponType": "건랜스",
+      "rank": "high",
+      "label": "진오우U 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "회피성능+1",
+        "집중",
+        "풀차지",
+        "용속성공격UP+1",
+        "체력회복량DOWN"
+      ],
+      "finalExampleStatus": "conditional_or_extended_example",
+      "finalSkillsExample": [
+        "회피성능+3",
+        "집중",
+        "풀차지",
+        "용속성공격UP+1",
+        "숫돌사용고속화",
+        "체력회복량DOWN"
+      ],
+      "exampleEvidence": "국내 원문 호석/무기슬롯 예시"
+    },
+    {
+      "weaponType": "건랜스",
+      "rank": "g",
+      "label": "자자미X 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "방어력UP【중】",
+        "가드성능+2",
+        "만족감",
+        "번개내성약화"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "방어력UP【중】",
+        "가드성능+2",
+        "만족감",
+        "번개내성약화"
+      ],
+      "exampleEvidence": "국내 번역 자료 기본 세트"
+    },
+    {
+      "weaponType": "건랜스",
+      "rank": "g",
+      "label": "보로스X 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "공격력UP【중】",
+        "가드성능+2",
+        "체술+1",
+        "배고픔배가【소】"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "가드성능+2",
+        "공격력UP【중】",
+        "배고픔배가【소】",
+        "체술+1"
+      ],
+      "exampleEvidence": "국내 번역 자료 기본 세트"
+    },
+    {
+      "weaponType": "건랜스",
+      "rank": "g",
+      "label": "G2 포술 건랜스 커스텀",
+      "engineOk": true,
+      "actualSkills": [
+        "예리"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "예리"
+      ],
+      "exampleEvidence": "기본 구성 검증"
+    },
+    {
+      "weaponType": "건랜스",
+      "rank": "g",
+      "label": "셀타스X 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "포술왕",
+        "예리",
+        "스태미나회복지연"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "포술왕",
+        "예리",
+        "스태미나회복지연"
+      ],
+      "exampleEvidence": "기본 구성 검증"
+    },
+    {
+      "weaponType": "슬래시액스",
+      "rank": "low",
+      "label": "카브라 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "체력+50",
+        "방어력UP【소】"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "체력+50",
+        "방어력UP【소】"
+      ],
+      "exampleEvidence": "국내 원문 장식주 예시"
+    },
+    {
+      "weaponType": "슬래시액스",
+      "rank": "low",
+      "label": "재기 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "숫돌사용고속화",
+        "기절확률반감"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "숫돌사용고속화",
+        "기절확률반감"
+      ],
+      "exampleEvidence": "국내 원문 기본 세트"
+    },
+    {
+      "weaponType": "슬래시액스",
+      "rank": "high",
+      "label": "리오소울 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "통찰력+2",
+        "고급귀마개",
+        "예리"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "통찰력+2",
+        "고급귀마개",
+        "예리"
+      ],
+      "exampleEvidence": "국내 원문 정석 장식주 예시"
+    },
+    {
+      "weaponType": "슬래시액스",
+      "rank": "high",
+      "label": "카브라S 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "방어력UP【중】",
+        "체력+20",
+        "숫돌사용고속화"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "방어력UP【중】",
+        "체력+20",
+        "숫돌사용고속화"
+      ],
+      "exampleEvidence": "국내 원문 장식주 예시"
+    },
+    {
+      "weaponType": "슬래시액스",
+      "rank": "high",
+      "label": "진오우U 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "회피성능+1",
+        "집중",
+        "풀차지",
+        "용속성공격UP+1",
+        "체력회복량DOWN"
+      ],
+      "finalExampleStatus": "conditional_or_extended_example",
+      "finalSkillsExample": [
+        "회피성능+3",
+        "집중",
+        "풀차지",
+        "용속성공격UP+1",
+        "숫돌사용고속화",
+        "체력회복량DOWN"
+      ],
+      "exampleEvidence": "국내 원문 호석/무기슬롯 예시"
+    },
+    {
+      "weaponType": "슬래시액스",
+      "rank": "g",
+      "label": "레기오스X 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "체술+2",
+        "열상무효",
+        "심검일체"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "체술+2",
+        "열상무효",
+        "심검일체"
+      ],
+      "exampleEvidence": "국내 원문 장식주 예시"
+    },
+    {
+      "weaponType": "슬래시액스",
+      "rank": "g",
+      "label": "나르가X 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "회피성능+2",
+        "회피거리UP",
+        "은밀",
+        "느림보"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "느림보",
+        "은밀",
+        "회피거리UP",
+        "회피성능+2"
+      ],
+      "exampleEvidence": "해외 가이드 방향(고정 장식주 조합 아님)"
+    },
+    {
+      "weaponType": "슬래시액스",
+      "rank": "g",
+      "label": "스타나이트 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "도전자+2",
+        "탑승마스터",
+        "심검일체"
+      ],
+      "finalExampleStatus": "conditional_or_extended_example",
+      "finalSkillsExample": [
+        "도전자+2",
+        "탑승마스터",
+        "심검일체",
+        "고급귀마개",
+        "예리도레벨+1"
+      ],
+      "exampleEvidence": "국내 원문 조건 + 프로젝트 DB 슬롯 재현"
+    },
+    {
+      "weaponType": "슬래시액스",
+      "rank": "g",
+      "label": "고어X 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "바이오닥터",
+        "도전자+2",
+        "속성공격강화",
+        "무아지경",
+        "불내성약화"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "도전자+2",
+        "무아지경",
+        "바이오닥터",
+        "불내성약화",
+        "속성공격강화"
+      ],
+      "exampleEvidence": "해외 가이드 방향(고정 장식주 조합 아님)"
+    },
+    {
+      "weaponType": "차지액스",
+      "rank": "low",
+      "label": "카브라 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "체력+50",
+        "방어력UP【소】"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "체력+50",
+        "방어력UP【소】"
+      ],
+      "exampleEvidence": "국내 원문 장식주 예시"
+    },
+    {
+      "weaponType": "차지액스",
+      "rank": "low",
+      "label": "재기 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "숫돌사용고속화",
+        "기절확률반감"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "숫돌사용고속화",
+        "기절확률반감"
+      ],
+      "exampleEvidence": "국내 원문 기본 세트"
+    },
+    {
+      "weaponType": "차지액스",
+      "rank": "high",
+      "label": "리오소울 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "통찰력+2",
+        "고급귀마개",
+        "예리"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "통찰력+2",
+        "고급귀마개",
+        "예리"
+      ],
+      "exampleEvidence": "국내 원문 정석 장식주 예시"
+    },
+    {
+      "weaponType": "차지액스",
+      "rank": "high",
+      "label": "카브라S 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "방어력UP【중】",
+        "체력+20",
+        "숫돌사용고속화"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "방어력UP【중】",
+        "체력+20",
+        "숫돌사용고속화"
+      ],
+      "exampleEvidence": "국내 원문 장식주 예시"
+    },
+    {
+      "weaponType": "차지액스",
+      "rank": "high",
+      "label": "진오우U 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "회피성능+1",
+        "집중",
+        "풀차지",
+        "용속성공격UP+1",
+        "체력회복량DOWN"
+      ],
+      "finalExampleStatus": "conditional_or_extended_example",
+      "finalSkillsExample": [
+        "회피성능+3",
+        "집중",
+        "풀차지",
+        "용속성공격UP+1",
+        "숫돌사용고속화",
+        "체력회복량DOWN"
+      ],
+      "exampleEvidence": "국내 원문 호석/무기슬롯 예시"
+    },
+    {
+      "weaponType": "차지액스",
+      "rank": "g",
+      "label": "레기오스X 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "체술+2",
+        "열상무효",
+        "심검일체"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "체술+2",
+        "열상무효",
+        "심검일체"
+      ],
+      "exampleEvidence": "국내 원문 장식주 예시"
+    },
+    {
+      "weaponType": "차지액스",
+      "rank": "g",
+      "label": "셀타스X 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "포술왕",
+        "예리",
+        "스태미나회복지연"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "스태미나회복지연",
+        "예리",
+        "포술왕"
+      ],
+      "exampleEvidence": "해외 가이드 방향(고정 장식주 조합 아님)"
+    },
+    {
+      "weaponType": "차지액스",
+      "rank": "g",
+      "label": "스타나이트 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "도전자+2",
+        "탑승마스터",
+        "심검일체"
+      ],
+      "finalExampleStatus": "conditional_or_extended_example",
+      "finalSkillsExample": [
+        "도전자+2",
+        "탑승마스터",
+        "심검일체",
+        "고급귀마개",
+        "예리도레벨+1"
+      ],
+      "exampleEvidence": "국내 원문 조건 + 프로젝트 DB 슬롯 재현"
+    },
+    {
+      "weaponType": "차지액스",
+      "rank": "g",
+      "label": "우카우카우",
+      "engineOk": true,
+      "actualSkills": [
+        "심안",
+        "예리도레벨+1"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "심안",
+        "예리도레벨+1"
+      ],
+      "exampleEvidence": "국내 원문 호석 예시"
+    },
+    {
+      "weaponType": "조충곤",
+      "rank": "low",
+      "label": "카브라 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "체력+50",
+        "방어력UP【소】"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "체력+50",
+        "방어력UP【소】"
+      ],
+      "exampleEvidence": "국내 원문 장식주 예시"
+    },
+    {
+      "weaponType": "조충곤",
+      "rank": "low",
+      "label": "재기 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "숫돌사용고속화",
+        "기절확률반감"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "숫돌사용고속화",
+        "기절확률반감"
+      ],
+      "exampleEvidence": "국내 원문 기본 세트"
+    },
+    {
+      "weaponType": "조충곤",
+      "rank": "high",
+      "label": "리오소울 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "통찰력+2",
+        "고급귀마개",
+        "예리"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "통찰력+2",
+        "고급귀마개",
+        "예리"
+      ],
+      "exampleEvidence": "국내 원문 정석 장식주 예시"
+    },
+    {
+      "weaponType": "조충곤",
+      "rank": "high",
+      "label": "카브라S 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "방어력UP【중】",
+        "체력+20",
+        "숫돌사용고속화"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "방어력UP【중】",
+        "체력+20",
+        "숫돌사용고속화"
+      ],
+      "exampleEvidence": "국내 원문 장식주 예시"
+    },
+    {
+      "weaponType": "조충곤",
+      "rank": "high",
+      "label": "진오우U 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "회피성능+1",
+        "집중",
+        "풀차지",
+        "용속성공격UP+1",
+        "체력회복량DOWN"
+      ],
+      "finalExampleStatus": "conditional_or_extended_example",
+      "finalSkillsExample": [
+        "회피성능+3",
+        "집중",
+        "풀차지",
+        "용속성공격UP+1",
+        "숫돌사용고속화",
+        "체력회복량DOWN"
+      ],
+      "exampleEvidence": "국내 원문 호석/무기슬롯 예시"
+    },
+    {
+      "weaponType": "조충곤",
+      "rank": "g",
+      "label": "레기오스X 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "체술+2",
+        "열상무효",
+        "심검일체"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "체술+2",
+        "열상무효",
+        "심검일체"
+      ],
+      "exampleEvidence": "국내 원문 장식주 예시"
+    },
+    {
+      "weaponType": "조충곤",
+      "rank": "g",
+      "label": "스타나이트 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "도전자+2",
+        "탑승마스터",
+        "심검일체"
+      ],
+      "finalExampleStatus": "conditional_or_extended_example",
+      "finalSkillsExample": [
+        "도전자+2",
+        "탑승마스터",
+        "심검일체",
+        "고급귀마개",
+        "예리도레벨+1"
+      ],
+      "exampleEvidence": "국내 원문 조건 + 프로젝트 DB 슬롯 재현"
+    },
+    {
+      "weaponType": "조충곤",
+      "rank": "g",
+      "label": "가루루가X 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "통찰력+2",
+        "고급귀마개",
+        "예리"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "고급귀마개",
+        "예리",
+        "통찰력+2"
+      ],
+      "exampleEvidence": "해외 가이드 방향(고정 장식주 조합 아님)"
+    },
+    {
+      "weaponType": "조충곤",
+      "rank": "g",
+      "label": "미쿠미쿠미",
+      "engineOk": true,
+      "actualSkills": [
+        "귀마개",
+        "풍압【소】무효"
+      ],
+      "finalExampleStatus": "conditional_or_extended_example",
+      "finalSkillsExample": [
+        "고급귀마개",
+        "예리도레벨+1",
+        "회피성능+1",
+        "숫돌사용고속화",
+        "상태이상공격+1"
+      ],
+      "exampleEvidence": "국내 원문 최종 스킬 예시"
+    },
+    {
+      "weaponType": "라이트보우건",
+      "rank": "g",
+      "label": "스타나이트 거너 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "도전자+2",
+        "탑승마스터",
+        "장전수UP"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "도전자+2",
+        "장전수UP",
+        "탑승마스터"
+      ],
+      "exampleEvidence": "해외 가이드 방향(고정 장식주 조합 아님)"
+    },
+    {
+      "weaponType": "라이트보우건",
+      "rank": "g",
+      "label": "가루루가X 거너 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "통찰력+2",
+        "고급귀마개",
+        "관통탄�관통살UP"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "고급귀마개",
+        "관통탄�관통살UP",
+        "통찰력+2"
+      ],
+      "exampleEvidence": "해외 가이드 방향(고정 장식주 조합 아님)"
+    },
+    {
+      "weaponType": "라이트보우건",
+      "rank": "g",
+      "label": "고어X 거너 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "바이오닥터",
+        "도전자+2",
+        "속성공격강화",
+        "무아지경",
+        "불내성약화"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "도전자+2",
+        "무아지경",
+        "바이오닥터",
+        "불내성약화",
+        "속성공격강화"
+      ],
+      "exampleEvidence": "해외 가이드 방향(고정 장식주 조합 아님)"
+    },
+    {
+      "weaponType": "헤비보우건",
+      "rank": "g",
+      "label": "자자미Z 거너 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "반동경감+1",
+        "근성",
+        "관통탄�관통살UP"
+      ],
+      "finalExampleStatus": "conditional_or_extended_example",
+      "finalSkillsExample": [
+        "반동경감+1",
+        "관통탄·관통활 강화",
+        "근성"
+      ],
+      "exampleEvidence": "국내 번역 자료 명시 스킬"
+    },
+    {
+      "weaponType": "헤비보우건",
+      "rank": "g",
+      "label": "진아마기 거너 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "반동경감+2",
+        "관통탄�관통살UP",
+        "장전속도-1"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "관통탄�관통살UP",
+        "반동경감+2",
+        "장전속도-1"
+      ],
+      "exampleEvidence": "해외 가이드 방향(고정 장식주 조합 아님)"
+    },
+    {
+      "weaponType": "헤비보우건",
+      "rank": "g",
+      "label": "가루루가X 거너 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "통찰력+2",
+        "고급귀마개",
+        "관통탄�관통살UP"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "고급귀마개",
+        "관통탄�관통살UP",
+        "통찰력+2"
+      ],
+      "exampleEvidence": "해외 가이드 방향(고정 장식주 조합 아님)"
+    },
+    {
+      "weaponType": "헤비보우건",
+      "rank": "g",
+      "label": "스타나이트 거너 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "도전자+2",
+        "탑승마스터",
+        "장전수UP"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "도전자+2",
+        "장전수UP",
+        "탑승마스터"
+      ],
+      "exampleEvidence": "해외 가이드 방향(고정 장식주 조합 아님)"
+    },
+    {
+      "weaponType": "활",
+      "rank": "g",
+      "label": "스타나이트 거너 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "도전자+2",
+        "탑승마스터",
+        "장전수UP"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "도전자+2",
+        "장전수UP",
+        "탑승마스터"
+      ],
+      "exampleEvidence": "해외 가이드 방향(고정 장식주 조합 아님)"
+    },
+    {
+      "weaponType": "활",
+      "rank": "g",
+      "label": "셀레네X 거너 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "고급귀마개",
+        "물속성공격UP+2",
+        "러너",
+        "파괴왕",
+        "악령의 가호"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "고급귀마개",
+        "러너",
+        "물속성공격UP+2",
+        "악령의 가호",
+        "파괴왕"
+      ],
+      "exampleEvidence": "해외 가이드 방향(고정 장식주 조합 아님)"
+    },
+    {
+      "weaponType": "활",
+      "rank": "g",
+      "label": "가루루가X 거너 세트",
+      "engineOk": true,
+      "actualSkills": [
+        "통찰력+2",
+        "고급귀마개",
+        "관통탄�관통살UP"
+      ],
+      "finalExampleStatus": "matches_verified_build",
+      "finalSkillsExample": [
+        "고급귀마개",
+        "관통탄�관통살UP",
+        "통찰력+2"
+      ],
+      "exampleEvidence": "해외 가이드 방향(고정 장식주 조합 아님)"
+    }
+  ]
+}

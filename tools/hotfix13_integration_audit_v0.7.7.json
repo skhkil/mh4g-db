@@ -1,0 +1,42 @@
+{
+  "ok": true,
+  "version": "0.7.7-chat4-research2-hotfix13",
+  "checks": {
+    "versionApp": true,
+    "versionLoader": true,
+    "versionIndex": true,
+    "cardCount": true,
+    "engineMismatch": true,
+    "missingArmor": true,
+    "missingDeco": true,
+    "armorOnlyFunctionFound": true,
+    "setsFiveArmorSlots": true,
+    "noRecommendedDecorationInjection": true,
+    "noCharmInjection": true,
+    "noWeaponInjection": true,
+    "buttonLabel": true,
+    "nonAutoNotice": true,
+    "engineBadge": true,
+    "bindHandler": true,
+    "syntax_app": true,
+    "syntax_engine": true,
+    "syntax_data-loader": true
+  },
+  "recommendationAudit": {
+    "entries": 42,
+    "cards": 108,
+    "engineMismatch": 0,
+    "missingArmor": 0,
+    "missingDeco": 0,
+    "finalMatched": 83,
+    "finalConditional": 25,
+    "autoInjectionPolicy": {
+      "armors": true,
+      "decorations": false,
+      "charm": false,
+      "weapon": false,
+      "weaponSlots": false
+    }
+  },
+  "errors": []
+}

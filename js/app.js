@@ -1,5 +1,5 @@
-import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-research2-hotfix12";
-import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-research2-hotfix12";
+import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-research2-hotfix13";
+import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-research2-hotfix13";
 
 let data={skills:[],armors:[],armorSets:[],decorations:[],weapons:[],weaponSummary:[],melodies:[],items:[],itemReferenceIndex:{items:{}},skillReferenceIndex:{items:{},categories:[]},meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],monsterReferenceIndex:{items:{}},dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],questReferenceIndex:{quests:{}},siteInfo:{},meta:{}};
 let targets=[];
@@ -1669,10 +1669,10 @@ function recommendVariantHtml(v,idx){
   const domesticLink=src.url?`<a class="recommend-source-link" href="${esc(src.url)}" target="_blank" rel="noopener noreferrer">국내 근거 ↗</a>`:"";
   const foreignLink=foreign.url?`<a class="recommend-source-link foreign" href="${esc(foreign.url)}" target="_blank" rel="noopener noreferrer">해외 비교 ↗</a>`:"";
   const reco=(v.recommendedDecorations||[]).map(recommendGuideChip).join("");
-  const applied=decos.length?`<div class="recommend-decos"><b>적용 장식주</b>${decos.map(d=>refButton(`${d.name} ×${d.count}`,"decoration",{name:d.name})).join("")}</div>`:"";
+  const applied=decos.length?`<div class="recommend-decos"><b>검증 예시 장식주</b>${decos.map(d=>refButton(`${d.name} ×${d.count}`,"decoration",{name:d.name})).join("")}</div>`:"";
   const finalExample=(v.finalSkillsExample||[]).map(x=>`<span class="recommend-guide-chip">${esc(x)}</span>`).join("");
   const guides=`${reco?`<div class="recommend-decos recommend-guide"><b>추천 장식주</b>${reco}</div>`:""}${v.talismanGuide?`<div class="recommend-guide-line"><b>호석</b><span>${esc(v.talismanGuide)}</span></div>`:""}${v.talismanSocketGuide?`<div class="recommend-guide-line"><b>호석 슬롯</b><span>${esc(v.talismanSocketGuide)}</span></div>`:""}${v.decorationPlacementExample?`<div class="recommend-guide-line"><b>배치 예시</b><span>${esc(v.decorationPlacementExample)}</span></div>`:""}${finalExample?`<div class="recommend-decos recommend-guide recommend-final"><b>최종 스킬 예시</b>${finalExample}</div>`:""}${v.exampleEvidence?`<div class="recommend-guide-line recommend-evidence"><b>예시 근거</b><span>${esc(v.exampleEvidence)}</span></div>`:""}${v.usageGuide?`<div class="recommend-guide-line"><b>활용</b><span>${esc(v.usageGuide)}</span></div>`:""}${v.foreignComparison?`<div class="recommend-compare"><b>국내↔해외</b><span>${esc(v.foreignComparison)}</span></div>`:""}`;
-  return `<article class="panel recommend-variant"><div class="recommend-variant-head"><div><div class="recommend-kind">${esc(v.style||"")}${v.kind?` · ${esc(v.kind)}`:""}</div><h3>${esc(v.label)}</h3></div><strong>DEF ${Number(b.defense||0)}</strong></div><div class="recommend-active-skills"><b>발동</b>${activated.map(x=>`<button type="button" class="skill-active" data-open-skill="${esc(x.skillId)}">${esc(x.name)}</button>`).join("")||'<span class="muted">없음</span>'}</div><div class="recommend-pieces">${(b.armors||[]).map(recommendPieceHtml).join("")}</div>${applied}${guides}<div class="recommend-card-foot"><div class="recommend-source-links">${domesticLink}${foreignLink}</div><button type="button" class="ghost recommend-open-sim" data-recommend-sim="${idx}">시뮬레이터에서 보기</button></div></article>`;
+  return `<article class="panel recommend-variant"><div class="recommend-variant-head"><div><div class="recommend-kind">${esc(v.style||"")}${v.kind?` · ${esc(v.kind)}`:""}</div><h3>${esc(v.label)}</h3></div><strong>DEF ${Number(b.defense||0)}</strong></div><div class="recommend-active-skills"><b>검증 예시 발동</b>${activated.map(x=>`<button type="button" class="skill-active" data-open-skill="${esc(x.skillId)}">${esc(x.name)}</button>`).join("")||'<span class="muted">없음</span>'}</div><div class="recommend-pieces">${(b.armors||[]).map(recommendPieceHtml).join("")}</div>${applied}${guides}<div class="recommend-card-foot"><div class="recommend-source-links">${domesticLink}${foreignLink}<span class="recommend-engine-badge">엔진 검증</span></div><div class="recommend-sim-actions"><small>장식주·호석·무기 자동입력 없음</small><button type="button" class="ghost recommend-open-sim" data-recommend-sim="${idx}">방어구 5부위 불러오기</button></div></div></article>`;
 }
 function renderRecommendedLoadouts(){
   populateRecommendFilters();const root=$("#recommendContent");if(!root)return;
@@ -1684,37 +1684,15 @@ function renderRecommendedLoadouts(){
   root.innerHTML=`${heading}<section class="recommend-section"><div class="recommend-variants recommend-grid-3">${vars.map((v,i)=>recommendVariantHtml(v,i)).join("")}</div></section>`;
 }
 
-function distributeRecommendationDecorations(build){
-  const placed=Object.fromEntries(MANUAL_CONTAINERS.map(c=>[c,[]]));
-  const remaining=Object.fromEntries(PARTS.map(p=>[p,Number(armorById.get(uiState.manual[p])?.slots||0)]));
-  const torsoUp=PARTS.filter(p=>p!=="body"&&armorById.get(uiState.manual[p])?.torsoUp).length;
-  const expanded=[];
-  for(const d of build.decorations||[])for(let i=0;i<Number(d.count||0);i++)expanded.push(d);
-  expanded.sort((a,b)=>Number(b.slots||0)-Number(a.slots||0));
-  for(const d of expanded){
-    const cost=Number(d.slots||decorationById(d.id)?.slots||0);if(cost<=0)continue;
-    let choices=PARTS.filter(p=>remaining[p]>=cost);
-    if(torsoUp&&choices.includes("body"))choices=["body",...choices.filter(p=>p!=="body")];
-    else choices.sort((a,b)=>remaining[b]-remaining[a]);
-    const p=choices[0];if(!p)continue;placed[p].push(d.id);remaining[p]-=cost;
-  }
-  return placed;
-}
 async function openRecommendationInSimulator(index){
   const entry=(data.recommendedLoadouts?.entries||[]).find(x=>x.weaponType===recommendWeaponType&&x.rank===recommendRank);if(!entry)return;
   const v=entry.variants?.[Number(index)||0];if(!v)return;
   await openPage("simulator");
-  targets=[];
-  uiState.manualSet="";uiState.manualWeapon="";uiState.manualWeaponType=entry.weaponType||"all";uiState.manualWeaponRank="all";uiState.manualWeaponElement="all";uiState.manualWeaponSlots="all";
-  uiState.charmSkill1="";uiState.charmPoint1=0;uiState.charmSkill2="";uiState.charmPoint2=0;uiState.charmSlots=0;
-  uiState.manual=Object.fromEntries(PARTS.map(p=>[p,""]));
+  // 추천 카드는 방어구 5부위만 불러온다. 사용자가 가진 무기·호석·장식주는 임의로 가정하지 않는다.
+  uiState.manualSet="";
+  for(const p of PARTS)uiState.manual[p]="";
   for(const a of v.build?.armors||[])if(PARTS.includes(a.part))uiState.manual[a.part]=a.id;
-  uiState.manualDecorations=Object.fromEntries(MANUAL_CONTAINERS.map(c=>[c,[]]));
-  const explicit=v.build?.decorationPlacements||[];
-  if(explicit.length){for(const d of explicit)if(MANUAL_CONTAINERS.includes(d.container)&&d.id)uiState.manualDecorations[d.container].push(d.id);}
-  else Object.assign(uiState.manualDecorations,distributeRecommendationDecorations(v.build||{}));
-  const hunter=$("#autoHunterType"),rank=$("#autoRank");if(hunter)hunter.value=entry.hunterType||"blade";if(rank)rank.value=entry.rank==="g"?"g":entry.rank;
-  renderTargets();renderManualSelectors();renderManualResult();
+  renderManualSelectors();renderManualResult();
   document.querySelector('.manual-panel')?.scrollIntoView({block:'start',behavior:'auto'});
 }
 
