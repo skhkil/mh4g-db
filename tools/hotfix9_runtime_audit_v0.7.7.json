@@ -1,5 +1,5 @@
 {
-  "ok": true,
+  "ok": false,
   "version": "0.7.7-chat4-research2-hotfix12",
   "checks": {
     "total": 2314,
@@ -9,5 +9,9 @@
     "greatsword_g_water_slot3": 2,
     "rank_order_bad": 0
   },
-  "errors": []
+  "errors": [
+    "cache version missing: app",
+    "cache version missing: loader",
+    "cache version missing: index"
+  ]
 }

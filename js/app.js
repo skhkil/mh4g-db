@@ -1,5 +1,5 @@
-import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-research2-hotfix13";
-import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-research2-hotfix13";
+import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-research2-hotfix14";
+import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-research2-hotfix14";
 
 let data={skills:[],armors:[],armorSets:[],decorations:[],weapons:[],weaponSummary:[],melodies:[],items:[],itemReferenceIndex:{items:{}},skillReferenceIndex:{items:{},categories:[]},meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],monsterReferenceIndex:{items:{}},dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],questReferenceIndex:{quests:{}},siteInfo:{},meta:{}};
 let targets=[];
@@ -1617,22 +1617,22 @@ function pageTitleForState(page){
   return null;
 }
 
-function handleRoute(btn){
+async function handleRoute(btn){
   const route=btn.dataset.route;
   if(route==="armor-set"){
-    armorViewMode="all";$("#hunterType").value=btn.dataset.hunter;$("#rankFilter").value="all";openPage("armor-set");
+    armorViewMode="all";$("#hunterType").value=btn.dataset.hunter;$("#rankFilter").value="all";await openPage("armor-set");
   }else if(route==="armor-detail"){
-    armorViewMode="all";$("#hunterType").value=btn.dataset.hunter;$("#rankFilter").value=btn.dataset.rank;openPage("armor");
+    armorViewMode="all";$("#hunterType").value=btn.dataset.hunter;$("#rankFilter").value=btn.dataset.rank;await openPage("armor");
   }else if(route==="armor-other"){
-    armorViewMode="other";$("#hunterType").value="both";$("#rankFilter").value="all";openPage("armor");
+    armorViewMode="other";$("#hunterType").value="both";$("#rankFilter").value="all";await openPage("armor");
   }else if(route==="decoration-view"){
-    decoView=btn.dataset.decoView||"type";openPage("decoration");
+    decoView=btn.dataset.decoView||"type";await openPage("decoration");
   }else if(route==="monster-view"){
-    monsterView=btn.dataset.monsterView||"basic";openPage("monster");
+    monsterView=btn.dataset.monsterView||"basic";await openPage("monster");
   }else if(route==="dragon-view"){
-    dragonView=btn.dataset.dragonView||"exchange";openPage("dragon");
+    dragonView=btn.dataset.dragonView||"exchange";await openPage("dragon");
   }else if(route==="quest-view"){
-    questView=btn.dataset.questView||"key";$("#questKeyOnly").checked=questView==="key";openPage("quest");
+    questView=btn.dataset.questView||"key";$("#questKeyOnly").checked=questView==="key";await openPage("quest");
   }
 }
 
@@ -1867,7 +1867,9 @@ function setupMobilePageJump(){
   schedule();
 }
 
+let delegatedEventsBound=false;
 function bind(){
+  if(!delegatedEventsBound){
   document.addEventListener('click',e=>{
     closePickers();
     const visualRow=e.target.closest?.('.data-table tbody tr:not(.skill-detail-row), .item-list-row, .monster-quest-row, .skill-source-row, .meal-method');
@@ -1885,7 +1887,7 @@ function bind(){
     const skillBtn=e.target.closest?.('[data-open-skill]');
     if(skillBtn){e.preventDefault();e.stopPropagation();replaceCurrentHistoryState();openPage("skill").then(()=>{$("#skillSearch").value=skillName(skillBtn.dataset.openSkill)||"";$("#skillCategoryFilter").value="all";$("#skillTypeFilter").value="all";renderSkillTable();pushCurrentHistoryState();});return;}
     const decoBtn=e.target.closest?.('[data-open-deco]');
-    if(decoBtn){e.preventDefault();e.stopPropagation();replaceCurrentHistoryState();openPage("decoration").then(()=>{$("#decoRankFilter").value="all";$("#decoSlotFilter").value="all";$("#decoCategoryFilter").value="all";$("#decoSearch").value=decoBtn.dataset.openDeco||"";renderDecoTable();pushCurrentHistoryState();});return;}
+    if(decoBtn){e.preventDefault();e.stopPropagation();replaceCurrentHistoryState();await openPage("decoration").then(()=>{$("#decoRankFilter").value="all";$("#decoSlotFilter").value="all";$("#decoCategoryFilter").value="all";$("#decoSearch").value=decoBtn.dataset.openDeco||"";renderDecoTable();pushCurrentHistoryState();});return;}
     const skillNav=e.target.closest?.('#skillTable .skill-source-body [data-item-nav]');
     if(skillNav){e.preventDefault();e.stopPropagation();replaceCurrentHistoryState();followItemReference(skillNav).then(pushCurrentHistoryState);return;}
     const skillRow=e.target.closest?.('#skillTable tr.skill-db-row[data-skill-row]');
@@ -1940,6 +1942,8 @@ function bind(){
       host?.querySelectorAll(":scope > details.skill-armor-set[open]").forEach(other=>{if(other!==d)other.open=false});
     }
   },true);
+  delegatedEventsBound=true;
+  }
   $("#sidebarToggle").onclick=()=>{$(".app-shell").classList.toggle("sidebar-collapsed");const collapsed=$(".app-shell").classList.contains("sidebar-collapsed");$("#sidebarToggle").title=collapsed?"좌측 메뉴 펼치기":"좌측 메뉴 접기";};
 
   $$('.nav-group-toggle').forEach(b=>b.onclick=e=>{
@@ -1949,10 +1953,18 @@ function bind(){
   });
   $$('.nav-main[data-page]').forEach(b=>b.onclick=e=>{
     e.stopPropagation();
+    const targetPage=b.dataset.page;
+    const targetSource=b.dataset.sourceView||sourceView;
+    if(targetPage===currentPage&&targetSource===sourceView){void openPage(targetPage);return;}
+    replaceCurrentHistoryState();
     if(b.dataset.sourceView)sourceView=b.dataset.sourceView;
-    openPage(b.dataset.page);
+    void openPage(targetPage).then(pushCurrentHistoryState);
   });
-  $$('[data-route]').forEach(b=>b.onclick=e=>{e.stopPropagation();handleRoute(b)});
+  $$('[data-route]').forEach(b=>b.onclick=e=>{
+    e.stopPropagation();
+    replaceCurrentHistoryState();
+    void handleRoute(b).then(pushCurrentHistoryState);
+  });
 
   $("#addTargetSkill").onclick=()=>{const v=uiState.targetActivation;if(v&&!targets.includes(v)){targets.push(v);renderTargets()}};
   $("#clearTargets").onclick=()=>{targets=[];renderTargets()};$("#calculateManual").onclick=renderManualResult;$("#runSearch").onclick=runSearch;
@@ -1990,7 +2002,25 @@ function bind(){
 }
 
 Object.assign(data,await loadSimulatorData());rebuildIndexes();bind();setupResponsiveNavColumns();setupMobilePageJump();renderAll();
-window.addEventListener("popstate",e=>{if(e.state?.mh4g)restoreAppHistoryState(e.state)});
+window.addEventListener("popstate",e=>{
+  if(!e.state?.mh4g)return;
+  void restoreAppHistoryState(e.state).finally(()=>{
+    // History restore may revive/re-render controls. Re-attach direct handlers safely.
+    bind();
+    updateHeaderFilterVisibility();
+  });
+});
+window.addEventListener("pageshow",e=>{
+  const navEntry=performance.getEntriesByType?.("navigation")?.[0];
+  const backForward=e.persisted||navEntry?.type==="back_forward";
+  if(!backForward)return;
+  // BFCache/back-forward restore: direct DOM handlers can be lost/stale after DOM restoration.
+  // bind() is idempotent for delegated listeners and refreshes direct control handlers.
+  bind();
+  renderPageData(currentPage);
+  updateHeaderFilterVisibility();
+});
+window.addEventListener("pagehide",()=>replaceCurrentHistoryState());
 replaceCurrentHistoryState();
 // 아이템 역참조는 아이템 화면 진입/아이템 링크 첫 사용 시에만 불러온다.
 // 대용량 JSON을 백그라운드에서 임의 파싱해 다른 화면의 포인터/스크롤 프레임을 끊지 않도록 prewarm은 사용하지 않는다.

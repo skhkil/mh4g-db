@@ -1,3 +1,11 @@
+## 2026-09-28 - hotfix14 / 브라우저 뒤로가기 이벤트 복원
+- 메인 메뉴/서브 라우트 이동을 `replaceState → openPage → pushState` 흐름으로 통일해 브라우저 뒤로가기가 앱 내부 이전 상태를 복원하도록 수정.
+- `popstate` 복원 완료 후 `bind()`를 다시 실행해 직접 연결된 버튼/필터 핸들러를 재부착.
+- BFCache `pageshow`의 `persisted/back_forward` 복원 시 이벤트 재바인딩 및 현재 화면 재렌더링.
+- `bind()`의 document click/keydown/toggle 전역 이벤트는 최초 1회만 등록하고, 직접 DOM 핸들러만 안전하게 갱신하는 idempotent 구조로 변경.
+- `pagehide`에서 현재 앱 상태를 history에 저장.
+- 캐시 키 `0.7.7-chat4-research2-hotfix14`.
+
 ## 2026-09-28 - hotfix13 / 추천 장비 시뮬레이터 연동
 - 추천 카드에서 수동 시뮬레이터로 방어구 5부위만 적용.
 - 추천 장식주 자동 배치, 추천 호석 자동 입력, 무기/무기 슬롯 조건 자동 반영은 의도적으로 제외.

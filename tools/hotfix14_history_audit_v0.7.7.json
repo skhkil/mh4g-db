@@ -1,0 +1,31 @@
+{
+  "ok": true,
+  "version": "0.7.7-chat4-research2-hotfix14",
+  "checks": {
+    "version_app": true,
+    "version_loader": true,
+    "version_index": true,
+    "bind_idempotent_guard": true,
+    "popstate_rebind": true,
+    "pageshow_bfcache": true,
+    "pagehide_snapshot": true,
+    "nav_history_push": true,
+    "route_history_push": true,
+    "route_async": true,
+    "no_double_await": true,
+    "syntax_all": true,
+    "armor_count": true,
+    "sim_armor_count": true,
+    "recommend_cards": true
+  },
+  "syntax": {
+    "js/app.js": true,
+    "js/engine.js": true,
+    "js/data-loader.js": true
+  },
+  "counts": {
+    "armors": 3119,
+    "simArmors": 3119,
+    "recommendCards": 108
+  }
+}
