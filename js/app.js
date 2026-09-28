@@ -1,5 +1,5 @@
-import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-research2-hotfix8";
-import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-research2-hotfix8";
+import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-research2-hotfix9";
+import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-research2-hotfix9";
 
 let data={skills:[],armors:[],armorSets:[],decorations:[],weapons:[],weaponSummary:[],melodies:[],items:[],itemReferenceIndex:{items:{}},skillReferenceIndex:{items:{},categories:[]},meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],monsterReferenceIndex:{items:{}},dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],questReferenceIndex:{quests:{}},siteInfo:{},meta:{}};
 let targets=[];
@@ -10,7 +10,7 @@ const WEAPON_TYPES=["대검","태도","한손검","쌍검","해머","수렵피�
 const RANGED_TYPES=new Set(["라이트보우건","헤비보우건","활"]);
 const MANUAL_CONTAINERS=["weapon",...PARTS,"charm"];
 const uiState={
-  targetActivation:"", manualSet:"", manualWeapon:"", manualWeaponType:"all",
+  targetActivation:"", manualSet:"", manualWeapon:"", manualWeaponType:"all", manualWeaponRank:"all", manualWeaponElement:"all", manualWeaponSlots:"all",
   charmSkill1:"",charmPoint1:0,charmSkill2:"",charmPoint2:0,charmSlots:0,
   manual:Object.fromEntries(PARTS.map(p=>[p,""])),
   manualDecorations:Object.fromEntries(MANUAL_CONTAINERS.map(c=>[c,[]]))
@@ -261,7 +261,7 @@ function saveCurrentBuild(){
   const rec={
     id:existingIndex>=0?list[existingIndex].id:`build_${Date.now()}_${Math.random().toString(36).slice(2,7)}`,name,
     targets:[...targets],
-    manualSet:uiState.manualSet,manualWeapon:uiState.manualWeapon,manualWeaponType:uiState.manualWeaponType,manual:{...uiState.manual},
+    manualSet:uiState.manualSet,manualWeapon:uiState.manualWeapon,manualWeaponType:uiState.manualWeaponType,manualWeaponRank:uiState.manualWeaponRank,manualWeaponElement:uiState.manualWeaponElement,manualWeaponSlots:uiState.manualWeaponSlots,manual:{...uiState.manual},
     charmSkill1:uiState.charmSkill1,charmPoint1:uiState.charmPoint1,charmSkill2:uiState.charmSkill2,charmPoint2:uiState.charmPoint2,charmSlots:uiState.charmSlots,
     manualDecorations:Object.fromEntries(MANUAL_CONTAINERS.map(c=>[c,[...(uiState.manualDecorations[c]||[])]]))
   };
@@ -271,7 +271,7 @@ function saveCurrentBuild(){
 function loadSelectedBuild(){
   const rec=getSavedBuilds().find(x=>x.id===$("#savedBuildSelect")?.value);if(!rec)return;
   targets=[...(rec.targets||[])];
-  uiState.manualSet=rec.manualSet||"";uiState.manualWeapon=rec.manualWeapon||"";uiState.manualWeaponType=rec.manualWeaponType||"all";uiState.manual={...Object.fromEntries(PARTS.map(p=>[p,""])),...(rec.manual||{})};
+  uiState.manualSet=rec.manualSet||"";uiState.manualWeapon=rec.manualWeapon||"";uiState.manualWeaponType=rec.manualWeaponType||"all";uiState.manualWeaponRank=rec.manualWeaponRank||"all";uiState.manualWeaponElement=rec.manualWeaponElement||"all";uiState.manualWeaponSlots=String(rec.manualWeaponSlots??"all");uiState.manual={...Object.fromEntries(PARTS.map(p=>[p,""])),...(rec.manual||{})};
   uiState.charmSkill1=rec.charmSkill1||"";uiState.charmPoint1=Number(rec.charmPoint1||0);uiState.charmSkill2=rec.charmSkill2||"";uiState.charmPoint2=Number(rec.charmPoint2||0);uiState.charmSlots=Number(rec.charmSlots||0);
   uiState.manualDecorations=Object.fromEntries(MANUAL_CONTAINERS.map(c=>[c,[...(rec.manualDecorations?.[c]||[])]]));
   if($("#buildName")) $("#buildName").value=rec.name||"";
@@ -400,19 +400,31 @@ function weaponAffinityText(w){
   const n=Number(raw);return `${Number.isFinite(n)&&n>0?"+":""}${raw}%`;
 }
 function weaponPickerMeta(w){
-  const bits=[rankName(w.rank),`공격 ${w.attack??"-"}`,...weaponPropertyBits(w)];
+  const bits=[rankName(w.rank),`슬롯 ${slotsText(w.slots)}`,`공격 ${w.attack??"-"}`,...weaponPropertyBits(w)];
   if(String(w?.affinityText??w?.affinity??0)!=="0")bits.push(`회심 ${weaponAffinityText(w)}`);
-  bits.push(`슬롯 ${slotsText(w.slots)}`);
   const sharp=weaponSharpnessText(w);if(sharp)bits.push(sharp);
   const extra=weaponExtra(w);if(extra)bits.push(`특성 ${extra}`);
   if(Array.isArray(w.melodyEffects)&&w.melodyEffects.length)bits.push(`선율효과 ${w.melodyEffects.join(" / ")}`);
   return bits.join(" · ");
 }
+function manualWeaponElementTypes(w){
+  return [w?.elementPrimary?.type,w?.elementSecondary?.type,w?.awakenElement?.type].filter(Boolean);
+}
+function weaponMatchesManualFilters(w){
+  const type=uiState.manualWeaponType||"all",rank=uiState.manualWeaponRank||"all",element=uiState.manualWeaponElement||"all",slots=String(uiState.manualWeaponSlots??"all");
+  if(type!=="all"&&w.weaponType!==type)return false;
+  if(rank!=="all"&&w.rank!==rank)return false;
+  const types=manualWeaponElementTypes(w);
+  if(element==="none"&&types.length)return false;
+  if(element!=="all"&&element!=="none"&&!types.includes(element))return false;
+  if(slots!=="all"&&Number(w.slots||0)!==Number(slots))return false;
+  return true;
+}
 function weaponPickerOptions(){
-  const type=uiState.manualWeaponType||"all";
-  if(optionCache.weaponByType.has(type))return optionCache.weaponByType.get(type);
+  const key=[uiState.manualWeaponType||"all",uiState.manualWeaponRank||"all",uiState.manualWeaponElement||"all",String(uiState.manualWeaponSlots??"all")].join("|");
+  if(optionCache.weaponByType.has(key))return optionCache.weaponByType.get(key);
   const opts=data.weapons
-    .filter(w=>type==="all"||w.weaponType===type)
+    .filter(weaponMatchesManualFilters)
     .sort(weaponRankCompare)
     .map(w=>({
       value:w.id,
@@ -421,7 +433,7 @@ function weaponPickerOptions(){
       // 외국어 이름은 선택창에 표시하지 않고 기존 검색 호환용으로만 유지한다.
       search:`${w.name} ${w.nameJa||""} ${w.nameEn||""} ${w.weaponType} ${rankName(w.rank)} ${w.tree||""} ${w.element||""} ${weaponPropertyBits(w).join(" ")} ${weaponExtra(w)} ${(w.melodyEffects||[]).join(" ")}`
     }));
-  optionCache.weaponByType.set(type,opts);return opts;
+  optionCache.weaponByType.set(key,opts);return opts;
 }
 function armorSetPickerOptions(){
   if(optionCache.armorSets)return optionCache.armorSets;
@@ -574,22 +586,28 @@ function renderManualSelectors(){
 
   const box=$("#manualEquipmentBuilder");
   box.innerHTML=
-    `<div class="manual-equipment-card weapon-card"><div class="manual-equipment-main"><span class="equipment-label">무기</span><div class="manual-weapon-picker-row"><select id="manualWeaponTypeFilter" class="manual-weapon-type-filter" aria-label="시뮬레이터 무기 종류"><option value="all">전체 무기</option>${manualWeaponTypeOptions().map(t=>`<option value="${esc(t)}">${esc(t)}</option>`).join("")}</select><div id="manual-weapon" class="search-select"></div></div>${skillPointsHtml(containerSkillPoints("weapon"),"equipment-skill-points")}</div><div id="deco-editor-weapon" class="manual-deco-editor"></div></div>`+
+    `<div class="manual-equipment-card weapon-card"><div class="manual-equipment-main"><span class="equipment-label">무기</span><div class="manual-weapon-tools"><div class="manual-weapon-filters"><select id="manualWeaponTypeFilter" aria-label="시뮬레이터 무기 종류"><option value="all">전체 무기</option>${manualWeaponTypeOptions().map(t=>`<option value="${esc(t)}">${esc(t)}</option>`).join("")}</select><select id="manualWeaponRankFilter" aria-label="무기 등급"><option value="all">전체 등급</option><option value="g">G급</option><option value="high">상위</option><option value="low">하위</option></select><select id="manualWeaponElementFilter" aria-label="무기 속성"><option value="all">전체 속성</option><option value="불">불</option><option value="물">물</option><option value="번개">번개</option><option value="얼음">얼음</option><option value="용">용</option><option value="독">독</option><option value="마비">마비</option><option value="수면">수면</option><option value="폭파">폭파</option><option value="none">무속성</option></select><select id="manualWeaponSlotFilter" aria-label="무기 슬롯"><option value="all">전체 슬롯</option><option value="3">슬롯 3</option><option value="2">슬롯 2</option><option value="1">슬롯 1</option><option value="0">슬롯 0</option></select><button type="button" id="manualWeaponSearchButton" class="manual-weapon-search-btn">검색</button></div><div id="manual-weapon" class="search-select manual-weapon-results"></div></div>${skillPointsHtml(containerSkillPoints("weapon"),"equipment-skill-points")}</div><div id="deco-editor-weapon" class="manual-deco-editor"></div></div>`+
     PARTS.map(p=>equipmentCard(PART_NAMES[p],p,`manual-${p}`)).join("")+
     `<div class="manual-equipment-card charm-card"><div class="manual-equipment-main charm-main"><span class="equipment-label">호석</span><div class="manual-charm-inline"><span class="inline-field-label">스킬1</span><div id="charmSkill1Picker" class="search-select compact"></div><input id="charmPoint1" class="charm-point" type="number" min="-20" max="20" value="${uiState.charmPoint1}" /><span class="inline-field-label">스킬2</span><div id="charmSkill2Picker" class="search-select compact"></div><input id="charmPoint2" class="charm-point" type="number" min="-20" max="20" value="${uiState.charmPoint2}" /><span class="inline-field-label">슬롯</span><select id="charmSlots" class="charm-slot-select"><option value="0">---</option><option value="1">O--</option><option value="2">OO-</option><option value="3">OOO</option></select></div>${skillPointsHtml(containerSkillPoints("charm"),"equipment-skill-points")}</div><div id="deco-editor-charm" class="manual-deco-editor"></div></div>`;
 
-  const manualTypeEl=$("#manualWeaponTypeFilter");
+  const manualTypeEl=$("#manualWeaponTypeFilter"),manualRankEl=$("#manualWeaponRankFilter"),manualElementEl=$("#manualWeaponElementFilter"),manualSlotEl=$("#manualWeaponSlotFilter"),manualSearchBtn=$("#manualWeaponSearchButton");
   if(manualTypeEl){
     const availableTypes=manualWeaponTypeOptions();
     manualTypeEl.value=availableTypes.includes(uiState.manualWeaponType)?uiState.manualWeaponType:"all";
-    uiState.manualWeaponType=manualTypeEl.value;
-    manualTypeEl.onchange=e=>{
-      uiState.manualWeaponType=e.target.value||"all";
+    manualRankEl.value=["all","g","high","low"].includes(uiState.manualWeaponRank)?uiState.manualWeaponRank:"all";
+    manualElementEl.value=["all","불","물","번개","얼음","용","독","마비","수면","폭파","none"].includes(uiState.manualWeaponElement)?uiState.manualWeaponElement:"all";
+    manualSlotEl.value=["all","3","2","1","0"].includes(String(uiState.manualWeaponSlots))?String(uiState.manualWeaponSlots):"all";
+    manualSearchBtn.onclick=()=>{
+      uiState.manualWeaponType=manualTypeEl.value||"all";
+      uiState.manualWeaponRank=manualRankEl.value||"all";
+      uiState.manualWeaponElement=manualElementEl.value||"all";
+      uiState.manualWeaponSlots=manualSlotEl.value||"all";
       const current=selectedWeapon();
-      if(current&&uiState.manualWeaponType!=="all"&&current.weaponType!==uiState.manualWeaponType){
-        uiState.manualWeapon="";uiState.manualDecorations.weapon=[];
-      }
+      if(current&&!weaponMatchesManualFilters(current)){uiState.manualWeapon="";uiState.manualDecorations.weapon=[];}
       mountManualWeaponSearch();refreshManualContainer("weapon");renderManualResult();
+    };
+  }
+  mountManualWeaponSearch();refreshManualContainer("weapon");renderManualResult();
     };
   }
   mountManualWeaponSearch();
@@ -1618,7 +1636,7 @@ async function openRecommendationInSimulator(index){
   const v=entry.variants?.[Number(index)||0];if(!v)return;
   await openPage("simulator");
   targets=[];
-  uiState.manualSet="";uiState.manualWeapon="";uiState.manualWeaponType=entry.weaponType||"all";
+  uiState.manualSet="";uiState.manualWeapon="";uiState.manualWeaponType=entry.weaponType||"all";uiState.manualWeaponRank="all";uiState.manualWeaponElement="all";uiState.manualWeaponSlots="all";
   uiState.charmSkill1="";uiState.charmPoint1=0;uiState.charmSkill2="";uiState.charmPoint2=0;uiState.charmSlots=0;
   uiState.manual=Object.fromEntries(PARTS.map(p=>[p,""]));
   for(const a of v.build?.armors||[])if(PARTS.includes(a.part))uiState.manual[a.part]=a.id;

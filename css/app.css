@@ -318,24 +318,17 @@ button{border:1px solid var(--line);background:#202b39;color:white;border-radius
   .skill-effect-cell{font-size:9.5px}
 }
 
-/* v0.6.8 simulator weapon type filter */
-.manual-weapon-picker-row{
-  display:grid;
-  grid-template-columns:150px minmax(0,1fr);
-  gap:7px;
-  align-items:center;
-  min-width:0;
-}
-.manual-weapon-type-filter{
-  width:100%;
-  min-width:0;
-  padding:7px 8px;
-  font-size:11px;
-  white-space:nowrap;
-}
-.manual-weapon-picker-row .search-select{min-width:0;width:100%}
+/* v0.7.7 hotfix9 simulator weapon filters */
+.manual-weapon-tools{display:grid;grid-template-columns:minmax(0,1fr);gap:7px;min-width:0}
+.manual-weapon-filters{display:grid;grid-template-columns:1.2fr .85fr .95fr .85fr auto;gap:6px;align-items:center;min-width:0}
+.manual-weapon-filters select,.manual-weapon-search-btn{width:100%;min-width:0;padding:7px 8px;font-size:11px;white-space:nowrap}
+.manual-weapon-search-btn{width:auto;min-width:54px;font-weight:700;cursor:pointer}
+.manual-weapon-results{min-width:0;width:100%}
+.manual-weapon-results .search-select-option small{white-space:normal!important;overflow:visible!important;text-overflow:clip!important;line-height:1.35;display:block}
+@media(max-width:900px){.manual-weapon-filters{grid-template-columns:1fr 1fr 1fr 1fr auto}}
 @media(max-width:760px){
-  .manual-weapon-picker-row{grid-template-columns:118px minmax(0,1fr)}
+  .manual-weapon-filters{grid-template-columns:1fr 1fr}
+  .manual-weapon-search-btn{width:100%}
 }
 
 
