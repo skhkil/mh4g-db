@@ -5669,7 +5669,10 @@
     "note": "여단 ★ 10, 여단 긴급 퀘스트 클리어 시 확률 보수",
     "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
     "nameEn": "Caravan Ticket G",
-    "mh4uId": 1418
+    "mh4uId": 1418,
+    "aliases": [
+      "여단티켓Ｇ"
+    ]
   },
   {
     "id": "item_50c480890c24",
@@ -5954,7 +5957,10 @@
     "note": "G★2 이상 다운로드 이벤트 퀘스트 클리어 시 확률 보수",
     "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
     "nameEn": "Immenseness Ticket S",
-    "mh4uId": 1443
+    "mh4uId": 1443,
+    "aliases": [
+      "대장로티켓Ｓ"
+    ]
   },
   {
     "id": "item_06c19f8c7cfd",
@@ -17314,7 +17320,10 @@
     "nameEn": "Gore Magala Shredder",
     "mh4uId": 865,
     "itemType": "Flesh",
-    "itemSubType": ""
+    "itemSubType": "",
+    "aliases": [
+      "흑식룡 강참흑발톱"
+    ]
   },
   {
     "id": "item_mh4u_0866",
@@ -23368,7 +23377,10 @@
     "nameEn": "Black Belt Coin G",
     "mh4uId": 1326,
     "itemType": "Coin/Ticket",
-    "itemSubType": ""
+    "itemSubType": "",
+    "aliases": [
+      "검은띠코인Ｇ"
+    ]
   },
   {
     "id": "item_mh4u_1327",
@@ -23385,7 +23397,10 @@
     "nameEn": "Expert Coin G",
     "mh4uId": 1327,
     "itemType": "Coin/Ticket",
-    "itemSubType": ""
+    "itemSubType": "",
+    "aliases": [
+      "달인코인Ｇ"
+    ]
   },
   {
     "id": "item_mh4u_1328",
@@ -23404,7 +23419,8 @@
     "itemType": "Coin/Ticket",
     "itemSubType": "",
     "aliases": [
-      "전설코인"
+      "전설코인",
+      "전설코인Ｇ"
     ]
   },
   {
@@ -23422,7 +23438,10 @@
     "nameEn": "Flying Coin G",
     "mh4uId": 1331,
     "itemType": "Coin/Ticket",
-    "itemSubType": ""
+    "itemSubType": "",
+    "aliases": [
+      "비룡코인Ｇ"
+    ]
   },
   {
     "id": "item_mh4u_1335",
@@ -23439,7 +23458,10 @@
     "nameEn": "Brute Coin G",
     "mh4uId": 1335,
     "itemType": "Coin/Ticket",
-    "itemSubType": ""
+    "itemSubType": "",
+    "aliases": [
+      "수룡코인Ｇ"
+    ]
   },
   {
     "id": "item_mh4u_1337",
@@ -23456,7 +23478,10 @@
     "nameEn": "Vermin Coin G",
     "mh4uId": 1337,
     "itemType": "Coin/Ticket",
-    "itemSubType": ""
+    "itemSubType": "",
+    "aliases": [
+      "곤충코인Ｇ"
+    ]
   },
   {
     "id": "item_mh4u_1339",
@@ -23473,7 +23498,10 @@
     "nameEn": "Toad Coin G",
     "mh4uId": 1339,
     "itemType": "Coin/Ticket",
-    "itemSubType": ""
+    "itemSubType": "",
+    "aliases": [
+      "두꺼비코인Ｇ"
+    ]
   },
   {
     "id": "item_mh4u_1340",
@@ -23490,7 +23518,10 @@
     "nameEn": "Snake Coin G",
     "mh4uId": 1340,
     "itemType": "Coin/Ticket",
-    "itemSubType": ""
+    "itemSubType": "",
+    "aliases": [
+      "사룡코인Ｇ"
+    ]
   },
   {
     "id": "item_mh4u_1372",
@@ -23753,5 +23784,141 @@
     "itemType": "Flesh",
     "itemSubType": "",
     "descriptionEn": "A heavy shell from a Black Tigrex."
+  },
+  {
+    "id": "item_mh4u_1385",
+    "name": "반역Ｊ티켓",
+    "nameJa": "反逆Ｊチケット",
+    "rare": 5,
+    "maxStack": "",
+    "buyPrice": "-",
+    "sellPrice": "-",
+    "acquire": "퀘스트·투기대회 보수",
+    "availability": "",
+    "note": "",
+    "source": "Arena DB + MH4U DB",
+    "nameEn": "Treason J Ticket",
+    "mh4uId": 1385,
+    "itemType": "Coin/Ticket",
+    "itemSubType": ""
+  },
+  {
+    "id": "item_mh4u_1401",
+    "name": "인아도의 증표",
+    "nameJa": "刃牙道の証",
+    "rare": 5,
+    "maxStack": "",
+    "buyPrice": "-",
+    "sellPrice": "-",
+    "acquire": "퀘스트·투기대회 보수",
+    "availability": "",
+    "note": "",
+    "source": "Arena DB + MH4U DB",
+    "nameEn": "Goddess's Grace",
+    "mh4uId": 1401,
+    "itemType": "Coin/Ticket",
+    "itemSubType": ""
+  },
+  {
+    "id": "item_mh4u_1396",
+    "name": "영웅의증표",
+    "nameJa": "英雄の証",
+    "rare": 5,
+    "maxStack": "",
+    "buyPrice": "-",
+    "sellPrice": "-",
+    "acquire": "퀘스트·투기대회 보수",
+    "availability": "",
+    "note": "",
+    "source": "Arena DB + MH4U DB",
+    "nameEn": "Hero's Seal",
+    "mh4uId": 1396,
+    "itemType": "Coin/Ticket",
+    "itemSubType": ""
+  },
+  {
+    "id": "item_mh4u_1025",
+    "name": "흑룡 두툼비늘",
+    "nameJa": "黒龍の厚鱗",
+    "rare": 8,
+    "maxStack": 99,
+    "buyPrice": "-",
+    "sellPrice": "13950z",
+    "acquire": "몬스터·퀘스트",
+    "availability": "",
+    "note": "",
+    "source": "Arena DB + MH4U DB",
+    "nameEn": "Fatalis Shard",
+    "mh4uId": 1025,
+    "itemType": "Flesh",
+    "itemSubType": ""
+  },
+  {
+    "id": "item_mh4u_1379",
+    "name": "강욕티켓",
+    "nameJa": "強欲チケット",
+    "rare": 5,
+    "maxStack": "",
+    "buyPrice": "-",
+    "sellPrice": "-",
+    "acquire": "퀘스트·투기대회 보수",
+    "availability": "",
+    "note": "",
+    "source": "Arena DB + MH4U DB",
+    "nameEn": "Deviljho Ticket",
+    "mh4uId": 1379,
+    "itemType": "Coin/Ticket",
+    "itemSubType": ""
+  },
+  {
+    "id": "item_mh4u_1380",
+    "name": "폭풍룡티켓",
+    "nameJa": "嵐龍チケット",
+    "rare": 5,
+    "maxStack": "",
+    "buyPrice": "-",
+    "sellPrice": "-",
+    "acquire": "퀘스트·투기대회 보수",
+    "availability": "",
+    "note": "",
+    "source": "Arena DB + MH4U DB",
+    "nameEn": "Amatsu Ticket",
+    "mh4uId": 1380,
+    "itemType": "Coin/Ticket",
+    "itemSubType": ""
+  },
+  {
+    "id": "item_mh4u_1381",
+    "name": "홍룡티켓",
+    "nameJa": "紅龍チケット",
+    "rare": 5,
+    "maxStack": "",
+    "buyPrice": "-",
+    "sellPrice": "-",
+    "acquire": "퀘스트·투기대회 보수",
+    "availability": "",
+    "note": "",
+    "source": "Arena DB + MH4U DB",
+    "nameEn": "Crimson Fatalis Ticket",
+    "mh4uId": 1381,
+    "itemType": "Coin/Ticket",
+    "itemSubType": ""
+  },
+  {
+    "id": "item_mh4u_1031",
+    "name": "흑룡 강날개",
+    "nameJa": "黒龍の剛翼",
+    "rare": 8,
+    "maxStack": 99,
+    "buyPrice": "-",
+    "sellPrice": "22500z",
+    "acquire": "몬스터·퀘스트",
+    "availability": "",
+    "note": "",
+    "source": "Arena DB + MH4U DB",
+    "nameEn": "Fatalis Fellwing",
+    "mh4uId": 1031,
+    "itemType": "Flesh",
+    "itemSubType": ""
   }
 ]

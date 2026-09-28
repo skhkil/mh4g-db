@@ -1,5 +1,5 @@
-import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-research2-hotfix9";
-import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-research2-hotfix9";
+import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-research2-hotfix11";
+import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-research2-hotfix11";
 
 let data={skills:[],armors:[],armorSets:[],decorations:[],weapons:[],weaponSummary:[],melodies:[],items:[],itemReferenceIndex:{items:{}},skillReferenceIndex:{items:{},categories:[]},meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],monsterReferenceIndex:{items:{}},dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],questReferenceIndex:{quests:{}},siteInfo:{},meta:{}};
 let targets=[];
@@ -738,10 +738,57 @@ function localizedNameSub(x){
   const names=[x?.nameJa,x?.nameEn].map(v=>String(v||"").trim()).filter((v,i,a)=>v&&v!==main&&a.indexOf(v)===i);
   return names.length?`<small>${names.map(esc).join(" · ")}</small>`:"";
 }
+
+function armorProgressionSourceHtml(src,material){
+  const type=src?.type||"";
+  if(type==="monster"){
+    const methodKo={"Body Carve":"몸통 갈무리","Capture":"포획","Shiny Drop":"유실물","Tail Carve":"꼬리 갈무리","Break Head":"머리 파괴","Mining Back":"등 채굴","Break Back":"등 파괴","Break Horn":"뿔 파괴","Break Fin":"지느러미 파괴","Break Blowhole":"분기공 파괴","Break Wing":"날개 파괴","Break Belly":"배 파괴","Break Chest":"가슴 파괴","Break Tail":"꼬리 파괴","Break Front Leg":"앞다리 파괴","Mining Scale":"비늘 채굴","Break Wing Leg":"날개다리 파괴","Mining Ore":"광석 채굴","Mouth Carve":"입 갈무리","Break Claw":"발톱 파괴","Break Cover Skin":"외피 파괴","Break Poison Stinger":"독침 파괴","Break Eye":"눈 파괴","Break Body":"몸통 파괴","Break Antenna":"더듬이 파괴","Break Talon":"갈고리발톱 파괴","Break Ear":"귀 파괴"};
+    const methods=(src.methods||[]).slice(0,3).map(v=>String(v).replace(/^([^·]+?)(?= ·|$)/,m=>methodKo[m.trim()]||m.trim())).join(" / ");
+    const label=esc(src.name||"몬스터");
+    const monsterLink=src.navMonster?refButton(src.name||"몬스터","monster",{monster:src.navMonster,item:material.name}):`<b>${label}</b>`;
+    return `<li><span class="armor-progress-kind">몬스터</span>${monsterLink}${src.rank?` <small>${esc(src.rank)}</small>`:""}${methods?`<small>${esc(methods)}</small>`:""}</li>`;
+  }
+  if(type==="quest"){
+    if(src.id){
+      const label=`${src.level||""} ${src.name||"퀘스트"}`.trim();
+      return `<li><span class="armor-progress-kind ${src.questType==="event"?"event":""}">${src.questType==="event"?"이벤트":"퀘스트"}</span>${refButton(label,"quest",{name:src.name,questtype:src.questType})}${src.note?`<small>${esc(src.note)}</small>`:""}</li>`;
+    }
+    if(src.questType==="event"){
+      const label=`${src.level||""} ${src.name||"이벤트 퀘스트"}`.trim();
+      return `<li><span class="armor-progress-kind event">이벤트</span><b>${esc(label)}</b>${src.note?`<small>${esc(src.note)}</small>`:""}</li>`;
+    }
+    const hub=String(src.questType||"").toLowerCase()==="caravan"?"여단":String(src.questType||"").toLowerCase()==="guild"?"집회소":"퀘스트";
+    const stars=String(src.level||"").replace(/^Caravan/i,"여단").replace(/^Guild/i,"집회소");
+    return `<li><span class="armor-progress-kind">퀘스트</span><b>${esc(`${stars||hub} 보수`)}</b><small>비교 DB에서 입수 확인 · 프로젝트 퀘스트명이 연결되면 바로가기가 표시됩니다.</small></li>`;
+  }
+  if(type==="exchange"){
+    const req=src.required?itemLink(src.required):"교환 재료";
+    const unlock=src.unlockQuestId?refButton(`${src.unlockLevel||""} ${src.unlockQuest||"해금 퀘스트"}`.trim(),"quest",{name:src.unlockQuest,questtype:"g"}):esc(src.unlockQuest||"");
+    return `<li><span class="armor-progress-kind exchange">용인교환</span><span>${req} → ${itemLink(material.name)}</span>${unlock?`<small>해금: ${unlock}</small>`:""}</li>`;
+  }
+  if(type==="facility"){
+    const unlock=src.unlockQuestId?refButton(`${src.unlockLevel||""} ${src.unlockQuest||"해금 퀘스트"}`.trim(),"quest",{name:src.unlockQuest,questtype:"g"}):esc(src.unlockQuest||"");
+    return `<li><span class="armor-progress-kind facility">특수입수</span><b>${esc(src.label||"특수 입수")}</b>${unlock?`<small>해금: ${unlock}</small>`:""}${src.note?`<small>${esc(src.note)}</small>`:""}</li>`;
+  }
+  if(type==="arena")return `<li><span class="armor-progress-kind arena">투기대회</span><b>${esc(src.name||"투기대회")}</b><small>${src.probability!=null?`${src.probability}%`:""}</small></li>`;
+  if(type==="shop")return `<li><span class="armor-progress-kind shop">상점</span><span>${esc(src.label||"상점에서 직접 구입")}</span></li>`;
+  return `<li><span class="armor-progress-kind">입수</span><span>${esc(src.label||src.note||"입수처 확인")}</span></li>`;
+}
+function armorProgressionHtml(a){
+  const p=a?.progression;if(!p?.materials?.length)return '<span class="muted">-</span>';
+  const eventQs=(p.targets?.quests||[]).filter(q=>q.questType==="event");
+  const mons=(p.targets?.monsters||[]).slice(0,4);
+  const quick=[];
+  if(eventQs.length)quick.push(`<div class="armor-progress-quick"><b>이벤트</b>${eventQs.slice(0,3).map(q=>q.id?refButton(`${q.level||""} ${q.name}`.trim(),"quest",{name:q.name,questtype:q.questType}):`<span>${esc(q.name)}</span>`).join(" ")}</div>`);
+  if(mons.length)quick.push(`<div class="armor-progress-quick"><b>주요 몬스터</b>${mons.map(m=>{const x=typeof m==="string"?{name:m,navMonster:m}:m;return x.navMonster?refButton(x.name,"monster",{monster:x.navMonster}):`<span>${esc(x.name)}</span>`}).join(" ")}</div>`);
+  const mats=p.materials.map(m=>`<div class="armor-progress-material"><div class="armor-progress-material-head">${itemLink(m.name)} <b>×${Number(m.count)||1}</b></div><ul>${(m.sources||[]).map(src=>armorProgressionSourceHtml(src,m)).join("")||'<li><span class="muted">입수 경로 데이터 없음</span></li>'}</ul></div>`).join("");
+  return `<details class="armor-progression"><summary>제작 경로 <b>${p.materials.length}</b></summary><div class="armor-progress-body">${quick.join("")}${mats}</div></details>`;
+}
+
 function renderArmorTable(){
   const q=$("#armorSearch").value.trim().toLowerCase(),part=$("#armorPartFilter").value;
-  const rows=data.armors.filter(a=>(part==="all"||a.part===part)&&armorEligible(a)&&(armorViewMode!=="other"||(a.source||"").endsWith("/armor/etc.htm"))).filter(a=>armorMatchesSearch(a,q)).sort(armorRankCompare).map(a=>`<tr><td><strong>${esc(a.name)}</strong>${localizedNameSub(a)}</td><td>${hunterName(a.hunterType)}</td><td>${PART_NAMES[a.part]||a.part}</td><td>${a.rare||"-"}</td><td>${a.defense||0} / ${a.maxDefense||a.defense||0}</td><td class="slots">${slotsText(a.slots)}</td><td>${a.torsoUp?"몸통배가":Object.entries(a.skills||{}).map(([k,v])=>`${skillLink(k,skillName(k))} ${v>0?"+":""}${v}`).join(", ")}</td><td>${resistText(a.resistances)}</td><td>${rankName(a.rank)}</td><td class="wrap-cell">${materialLinks(a.materials||"")}</td></tr>`);
-  renderTable("#armorTable",["명칭","타입","부위","RARE","방어(초기/최대)","슬롯","스킬","내성","등급","생산 소재"],rows);
+  const rows=data.armors.filter(a=>(part==="all"||a.part===part)&&armorEligible(a)&&(armorViewMode!=="other"||(a.source||"").endsWith("/armor/etc.htm"))).filter(a=>armorMatchesSearch(a,q)).sort(armorRankCompare).map(a=>`<tr><td><strong>${esc(a.name)}</strong>${localizedNameSub(a)}</td><td>${hunterName(a.hunterType)}</td><td>${PART_NAMES[a.part]||a.part}</td><td>${a.rare||"-"}</td><td>${a.defense||0} / ${a.maxDefense||a.defense||0}</td><td class="slots">${slotsText(a.slots)}</td><td>${a.torsoUp?"몸통배가":Object.entries(a.skills||{}).map(([k,v])=>`${skillLink(k,skillName(k))} ${v>0?"+":""}${v}`).join(", ")}</td><td>${resistText(a.resistances)}</td><td>${rankName(a.rank)}</td><td class="wrap-cell">${materialLinks(a.materials||"")}</td><td class="armor-progress-cell">${armorProgressionHtml(a)}</td></tr>`);
+  renderTable("#armorTable",["명칭","타입","부위","RARE","방어(초기/최대)","슬롯","스킬","내성","등급","생산 소재","제작 진행"],rows);
 }
 
 function sharpnessBar(bar,maxTotal){
@@ -1873,6 +1920,8 @@ function bind(){
     if(monsterNav){e.preventDefault();replaceCurrentHistoryState();followItemReference(monsterNav).then(pushCurrentHistoryState);return;}
     const questNav=e.target.closest?.('#questTable [data-item-nav]');
     if(questNav){e.preventDefault();e.stopPropagation();replaceCurrentHistoryState();followItemReference(questNav).then(pushCurrentHistoryState);return;}
+    const armorProgressNav=e.target.closest?.('#armorTable .armor-progression [data-item-nav]');
+    if(armorProgressNav){e.preventDefault();e.stopPropagation();replaceCurrentHistoryState();followItemReference(armorProgressNav).then(pushCurrentHistoryState);return;}
     const inline=e.target.closest?.('[data-open-item]');
     if(inline){e.preventDefault();e.stopPropagation();openItemByName(inline.dataset.openItem);return;}
     const itemRow=e.target.closest?.('#itemTable [data-item-id]');

@@ -3,8 +3,8 @@
   "demo": false,
   "source": "https://flashkiller.cafe24.com/mh4g/main.htm",
   "counts": {
-    "armors": 2876,
-    "armor_sets": 550,
+    "armors": 3119,
+    "armor_sets": 594,
     "decorations": 199,
     "skills": 143,
     "weapons": 2314,
@@ -146,7 +146,7 @@
       "Athena Data",
       "MonsterHunter4UDatabase"
     ],
-    "mapped": 2842,
+    "mapped": 3085,
     "nameJaFilled": 995,
     "nameJaCorrected": 37,
     "remainingUnresolved": 34,
@@ -166,7 +166,7 @@
   },
   "localization": {
     "policy": "Korean primary + Japanese/English secondary; no new fuzzy matches",
-    "armorNameEn": 2850,
+    "armorNameEn": 3093,
     "weaponNameEn": 2268,
     "decorationNameEn": 199,
     "skillTreeNameEn": 143,
@@ -190,5 +190,18 @@
       "Capcom MH4U Official Web Manual"
     ],
     "athena": "User-supplied Athena Data.zip contains no quest dataset usable for event-quest cross-check."
+  },
+  "armorRestore": {
+    "restored": 243,
+    "gxRestored": 30,
+    "before": 2876,
+    "after": 3119,
+    "restoredSets": 42,
+    "externalCommonRemainingMissing": 0,
+    "sources": [
+      "user-supplied Athena Data.zip",
+      "user-supplied MH4U mh4u.db"
+    ],
+    "policy": "MH4G Athena stats/materials + MH4U existence/English-name cross-check; quest/event acquisition linking is a later step."
   }
 }

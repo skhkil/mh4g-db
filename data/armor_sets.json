@@ -27832,5 +27832,2285 @@
       "ice": 5,
       "dragon": 5
     }
+  },
+  {
+    "id": "armor_set_de87a19244fd",
+    "name": "반역왕Ｊ",
+    "hunterType": "blade",
+    "rank": "g",
+    "rare": 10,
+    "pieces": [
+      {
+        "id": "armor_9a06b5bb1382",
+        "part": "head",
+        "name": "반역왕Ｊ해트"
+      },
+      {
+        "id": "armor_bdd90f9f7d94",
+        "part": "body",
+        "name": "반역왕Ｊ슈트"
+      },
+      {
+        "id": "armor_f0428e85d8ef",
+        "part": "arms",
+        "name": "반역왕Ｊ글러브"
+      },
+      {
+        "id": "armor_29661e41ef0b",
+        "part": "waist",
+        "name": "반역왕Ｊ코일"
+      },
+      {
+        "id": "armor_9e8dbb716a9a",
+        "part": "legs",
+        "name": "반역왕Ｊ부츠"
+      }
+    ],
+    "defense": 500,
+    "maxDefense": 755,
+    "slots": 6,
+    "skills": {
+      "skill_4b980fd1a16e": 10,
+      "skill_20267c0a62e3": 15,
+      "skill_0a24dffb8259": -18,
+      "skill_8245ec7f462a": 10
+    },
+    "resistances": {
+      "fire": -20,
+      "water": -20,
+      "thunder": -20,
+      "ice": -20,
+      "dragon": -20
+    }
+  },
+  {
+    "id": "armor_set_92f56d0e05b1",
+    "name": "반역왕Ｊ",
+    "hunterType": "gunner",
+    "rank": "g",
+    "rare": 10,
+    "pieces": [
+      {
+        "id": "armor_ebe7741f01b9",
+        "part": "head",
+        "name": "반역왕Ｊ로저"
+      },
+      {
+        "id": "armor_1b5c592efb6c",
+        "part": "body",
+        "name": "반역왕Ｊ베스트"
+      },
+      {
+        "id": "armor_e9a990ef13df",
+        "part": "arms",
+        "name": "반역왕Ｊ커프스"
+      },
+      {
+        "id": "armor_8be94df5664c",
+        "part": "waist",
+        "name": "반역왕Ｊ스커트"
+      },
+      {
+        "id": "armor_b3f7913a094a",
+        "part": "legs",
+        "name": "반역왕Ｊ팬츠"
+      }
+    ],
+    "defense": 275,
+    "maxDefense": 485,
+    "slots": 6,
+    "skills": {
+      "skill_4b980fd1a16e": 10,
+      "skill_20267c0a62e3": 13,
+      "skill_0a24dffb8259": -18,
+      "skill_c7afd72b9998": 10
+    },
+    "resistances": {
+      "fire": -15,
+      "water": -15,
+      "thunder": -15,
+      "ice": -15,
+      "dragon": -15
+    }
+  },
+  {
+    "id": "armor_set_7206757172d3",
+    "name": "하이메탈Ｓ",
+    "hunterType": "blade",
+    "rank": "high",
+    "rare": 5,
+    "pieces": [
+      {
+        "id": "armor_d71e1b48390e",
+        "part": "head",
+        "name": "하이메탈Ｓ헬름"
+      },
+      {
+        "id": "armor_0c7bccf31154",
+        "part": "body",
+        "name": "하이메탈Ｓ메일"
+      },
+      {
+        "id": "armor_c28f9a3584be",
+        "part": "arms",
+        "name": "하이메탈Ｓ암"
+      },
+      {
+        "id": "armor_1aebe54d8182",
+        "part": "waist",
+        "name": "하이메탈Ｓ펄드"
+      },
+      {
+        "id": "armor_b9ca70f2f17b",
+        "part": "legs",
+        "name": "하이메탈Ｓ그리브"
+      }
+    ],
+    "defense": 90,
+    "maxDefense": 570,
+    "slots": 5,
+    "skills": {
+      "skill_2a87c14e4abc": 15,
+      "skill_e43cf9f6c27e": 10,
+      "skill_37a4e4eddec0": -10
+    },
+    "resistances": {
+      "fire": -10,
+      "water": -10,
+      "thunder": 15,
+      "ice": -5,
+      "dragon": 0
+    },
+    "restored": true
+  },
+  {
+    "id": "armor_set_8358b4670e5d",
+    "name": "하이메탈Ｓ",
+    "hunterType": "gunner",
+    "rank": "high",
+    "rare": 5,
+    "pieces": [
+      {
+        "id": "armor_0d0def324ae8",
+        "part": "head",
+        "name": "하이메탈Ｓ캡"
+      },
+      {
+        "id": "armor_3b74bd26abab",
+        "part": "body",
+        "name": "하이메탈Ｓ리지스트"
+      },
+      {
+        "id": "armor_5348d5ac4a91",
+        "part": "arms",
+        "name": "하이메탈Ｓ가드"
+      },
+      {
+        "id": "armor_5b7b452af81c",
+        "part": "waist",
+        "name": "하이메탈Ｓ코트"
+      },
+      {
+        "id": "armor_81042f285cec",
+        "part": "legs",
+        "name": "하이메탈Ｓ레깅스"
+      }
+    ],
+    "defense": 45,
+    "maxDefense": 375,
+    "slots": 5,
+    "skills": {
+      "skill_2a87c14e4abc": 15,
+      "skill_a9d9b5fe31e4": 10,
+      "skill_37a4e4eddec0": -10
+    },
+    "resistances": {
+      "fire": -5,
+      "water": -5,
+      "thunder": 20,
+      "ice": 0,
+      "dragon": 5
+    },
+    "restored": true
+  },
+  {
+    "id": "armor_set_d82b33431cba",
+    "name": "가노스Ｚ",
+    "hunterType": "blade",
+    "rank": "g",
+    "rare": 8,
+    "pieces": [
+      {
+        "id": "armor_b1a2c70436f8",
+        "part": "head",
+        "name": "가노스Ｚ헬름"
+      },
+      {
+        "id": "armor_cb0fb06ec47f",
+        "part": "body",
+        "name": "가노스Ｚ메일"
+      },
+      {
+        "id": "armor_d243914bdec0",
+        "part": "arms",
+        "name": "가노스Ｚ암"
+      },
+      {
+        "id": "armor_ac720795b270",
+        "part": "waist",
+        "name": "가노스Ｚ펄드"
+      },
+      {
+        "id": "armor_7429ed19abb5",
+        "part": "legs",
+        "name": "가노스Ｚ그리브"
+      }
+    ],
+    "defense": 400,
+    "maxDefense": 675,
+    "slots": 6,
+    "skills": {
+      "skill_771a2a6d9d1e": 15,
+      "skill_410c93e16f86": 10,
+      "skill_32348dadc980": 10,
+      "skill_6365d7eb75b5": 10
+    },
+    "resistances": {
+      "fire": -20,
+      "water": 20,
+      "thunder": -20,
+      "ice": 10,
+      "dragon": 0
+    },
+    "restored": true
+  },
+  {
+    "id": "armor_set_8906a6279de8",
+    "name": "가노스Ｚ",
+    "hunterType": "gunner",
+    "rank": "g",
+    "rare": 8,
+    "pieces": [
+      {
+        "id": "armor_f3255d4c2fb2",
+        "part": "head",
+        "name": "가노스Ｚ캡"
+      },
+      {
+        "id": "armor_596c64312dd2",
+        "part": "body",
+        "name": "가노스Ｚ리지스트"
+      },
+      {
+        "id": "armor_1c2eb9fbf06b",
+        "part": "arms",
+        "name": "가노스Ｚ가드"
+      },
+      {
+        "id": "armor_9e5dc75c9f04",
+        "part": "waist",
+        "name": "가노스Ｚ코트"
+      },
+      {
+        "id": "armor_60de974f4abb",
+        "part": "legs",
+        "name": "가노스Ｚ레깅스"
+      }
+    ],
+    "defense": 215,
+    "maxDefense": 440,
+    "slots": 6,
+    "skills": {
+      "skill_771a2a6d9d1e": 15,
+      "skill_410c93e16f86": 10,
+      "skill_32348dadc980": 10,
+      "skill_6365d7eb75b5": 10
+    },
+    "resistances": {
+      "fire": -10,
+      "water": 30,
+      "thunder": -10,
+      "ice": 15,
+      "dragon": 5
+    },
+    "restored": true
+  },
+  {
+    "id": "armor_set_55a2e5e0f2e2",
+    "name": "킹비트Ｘ",
+    "hunterType": "blade",
+    "rank": "g",
+    "rare": 8,
+    "pieces": [
+      {
+        "id": "armor_1c28b415a3eb",
+        "part": "head",
+        "name": "킹비트Ｘ테스타"
+      },
+      {
+        "id": "armor_042faf11cbbd",
+        "part": "body",
+        "name": "킹비트Ｘ페트"
+      },
+      {
+        "id": "armor_f0c427add685",
+        "part": "arms",
+        "name": "킹비트Ｘ마노"
+      },
+      {
+        "id": "armor_e1010616dd67",
+        "part": "waist",
+        "name": "킹비트Ｘ앙카"
+      },
+      {
+        "id": "armor_6d2f7645ad7d",
+        "part": "legs",
+        "name": "킹비트Ｘ감바"
+      }
+    ],
+    "defense": 360,
+    "maxDefense": 645,
+    "slots": 7,
+    "skills": {
+      "skill_a64199ed5d30": 15,
+      "skill_977515684794": 15,
+      "skill_dd358f9bd4d7": 10,
+      "skill_d419d4fb59a3": -10
+    },
+    "resistances": {
+      "fire": 15,
+      "water": -25,
+      "thunder": 15,
+      "ice": -20,
+      "dragon": 10
+    },
+    "restored": true
+  },
+  {
+    "id": "armor_set_2d15d7146281",
+    "name": "킹비트Ｘ",
+    "hunterType": "gunner",
+    "rank": "g",
+    "rare": 8,
+    "pieces": [
+      {
+        "id": "armor_7bc0624ab883",
+        "part": "head",
+        "name": "킹비트Ｘ카푸트"
+      },
+      {
+        "id": "armor_ab6fa0e58aad",
+        "part": "body",
+        "name": "킹비트Ｘ펙토스"
+      },
+      {
+        "id": "armor_08cd1d67dcba",
+        "part": "arms",
+        "name": "킹비트Ｘ브라소"
+      },
+      {
+        "id": "armor_5541aec0d278",
+        "part": "waist",
+        "name": "킹비트Ｘ콕사"
+      },
+      {
+        "id": "armor_e24322c38ca5",
+        "part": "legs",
+        "name": "킹비트Ｘ페무르"
+      }
+    ],
+    "defense": 190,
+    "maxDefense": 420,
+    "slots": 7,
+    "skills": {
+      "skill_a64199ed5d30": 15,
+      "skill_977515684794": 15,
+      "skill_dd358f9bd4d7": 10,
+      "skill_d419d4fb59a3": -10
+    },
+    "resistances": {
+      "fire": 20,
+      "water": -20,
+      "thunder": 25,
+      "ice": -15,
+      "dragon": 10
+    },
+    "restored": true
+  },
+  {
+    "id": "armor_set_2a65f21d67a4",
+    "name": "르와가Ｘ",
+    "hunterType": "blade",
+    "rank": "g",
+    "rare": 8,
+    "pieces": [
+      {
+        "id": "armor_8a66b1a949fb",
+        "part": "head",
+        "name": "르와가Ｘ테스타"
+      },
+      {
+        "id": "armor_806ef13676b3",
+        "part": "body",
+        "name": "르와가Ｘ페트"
+      },
+      {
+        "id": "armor_ef378faa6394",
+        "part": "arms",
+        "name": "르와가Ｘ마노"
+      },
+      {
+        "id": "armor_88aae67af48a",
+        "part": "waist",
+        "name": "르와가Ｘ앙카"
+      },
+      {
+        "id": "armor_bbb572c6badd",
+        "part": "legs",
+        "name": "르와가Ｘ감바"
+      }
+    ],
+    "defense": 460,
+    "maxDefense": 705,
+    "slots": 5,
+    "skills": {
+      "skill_a3c4d7818b03": 2,
+      "skill_4d4485c17552": 15,
+      "skill_c21e79dfed09": 15,
+      "skill_bcf68a1ff0a1": -10,
+      "skill_a6713dfa141b": 10,
+      "skill_c9fb5f168064": 5
+    },
+    "resistances": {
+      "fire": -20,
+      "water": 0,
+      "thunder": 15,
+      "ice": -5,
+      "dragon": 5
+    },
+    "restored": true
+  },
+  {
+    "id": "armor_set_033dd0a7845d",
+    "name": "르와가Ｘ",
+    "hunterType": "gunner",
+    "rank": "g",
+    "rare": 8,
+    "pieces": [
+      {
+        "id": "armor_8fc1c59e12dd",
+        "part": "head",
+        "name": "르와가Ｘ카푸트"
+      },
+      {
+        "id": "armor_a3cab0007fbd",
+        "part": "body",
+        "name": "르와가Ｘ펙토스"
+      },
+      {
+        "id": "armor_a42c116e17d8",
+        "part": "arms",
+        "name": "르와가Ｘ브라소"
+      },
+      {
+        "id": "armor_7023610ab860",
+        "part": "waist",
+        "name": "르와가Ｘ콕사"
+      },
+      {
+        "id": "armor_846596f46bef",
+        "part": "legs",
+        "name": "르와가Ｘ페무르"
+      }
+    ],
+    "defense": 250,
+    "maxDefense": 455,
+    "slots": 5,
+    "skills": {
+      "skill_77ad65f34cd9": 2,
+      "skill_4d4485c17552": 15,
+      "skill_c21e79dfed09": 15,
+      "skill_bcf68a1ff0a1": -10,
+      "skill_a6713dfa141b": 10,
+      "skill_c9fb5f168064": 5
+    },
+    "resistances": {
+      "fire": -15,
+      "water": 5,
+      "thunder": 20,
+      "ice": 0,
+      "dragon": 10
+    },
+    "restored": true
+  },
+  {
+    "id": "armor_set_5bace0ef9872",
+    "name": "가디언Ｘ",
+    "hunterType": "blade",
+    "rank": "g",
+    "rare": 8,
+    "pieces": [
+      {
+        "id": "armor_eea8ff02c870",
+        "part": "head",
+        "name": "가디언Ｘ헬름"
+      },
+      {
+        "id": "armor_1a52698ca699",
+        "part": "body",
+        "name": "가디언Ｘ슈트"
+      },
+      {
+        "id": "armor_ecf91b9dc0e0",
+        "part": "arms",
+        "name": "가디언Ｘ암"
+      },
+      {
+        "id": "armor_5743174773c2",
+        "part": "waist",
+        "name": "가디언Ｘ코일"
+      },
+      {
+        "id": "armor_1ac5c358839f",
+        "part": "legs",
+        "name": "가디언Ｘ부츠"
+      }
+    ],
+    "defense": 400,
+    "maxDefense": 675,
+    "slots": 7,
+    "skills": {
+      "skill_a64199ed5d30": -10,
+      "skill_bbe11654094a": 7,
+      "skill_78219e43d710": 15,
+      "skill_b98410ce2063": 10,
+      "skill_bcf68a1ff0a1": 12
+    },
+    "resistances": {
+      "fire": 0,
+      "water": 0,
+      "thunder": 0,
+      "ice": 0,
+      "dragon": 0
+    },
+    "restored": true
+  },
+  {
+    "id": "armor_set_7aaf14c75acc",
+    "name": "가디언Ｘ",
+    "hunterType": "gunner",
+    "rank": "g",
+    "rare": 8,
+    "pieces": [
+      {
+        "id": "armor_06394a8ed06e",
+        "part": "head",
+        "name": "가디언Ｘ마스크"
+      },
+      {
+        "id": "armor_eb8e023c6e99",
+        "part": "body",
+        "name": "가디언Ｘ베스트"
+      },
+      {
+        "id": "armor_18480a145aac",
+        "part": "arms",
+        "name": "가디언Ｘ가드"
+      },
+      {
+        "id": "armor_b6109bbd6ffa",
+        "part": "waist",
+        "name": "가디언Ｘ코트"
+      },
+      {
+        "id": "armor_d118d272a4e0",
+        "part": "legs",
+        "name": "가디언Ｘ풋"
+      }
+    ],
+    "defense": 215,
+    "maxDefense": 440,
+    "slots": 7,
+    "skills": {
+      "skill_a64199ed5d30": -10,
+      "skill_bbe11654094a": 7,
+      "skill_b98410ce2063": 10,
+      "skill_411e538f7c2f": 15,
+      "skill_bcf68a1ff0a1": 10
+    },
+    "resistances": {
+      "fire": 5,
+      "water": 5,
+      "thunder": 5,
+      "ice": 5,
+      "dragon": 5
+    },
+    "restored": true
+  },
+  {
+    "id": "armor_set_4e2f3487b451",
+    "name": "카오스",
+    "hunterType": "blade",
+    "rank": "g",
+    "rare": 9,
+    "pieces": [
+      {
+        "id": "armor_c88e4058b813",
+        "part": "head",
+        "name": "카오스헬름"
+      },
+      {
+        "id": "armor_e2c53eb97400",
+        "part": "body",
+        "name": "카오스메일"
+      },
+      {
+        "id": "armor_06802f675b4a",
+        "part": "arms",
+        "name": "카오스암"
+      },
+      {
+        "id": "armor_192d36f519ce",
+        "part": "waist",
+        "name": "카오스펄드"
+      },
+      {
+        "id": "armor_69d8fb0265a1",
+        "part": "legs",
+        "name": "카오스그리브"
+      }
+    ],
+    "defense": 530,
+    "maxDefense": 740,
+    "slots": 10,
+    "skills": {
+      "skill_c9fb5f168064": 10,
+      "skill_2a9c189a93d7": 10,
+      "skill_bbe11654094a": -10,
+      "skill_91feda75c5e9": 10,
+      "skill_1ae21921a72f": 6,
+      "skill_a3c4d7818b03": 7
+    },
+    "resistances": {
+      "fire": -25,
+      "water": 20,
+      "thunder": -15,
+      "ice": 10,
+      "dragon": -20
+    },
+    "restored": true
+  },
+  {
+    "id": "armor_set_b3b093642614",
+    "name": "카오스",
+    "hunterType": "gunner",
+    "rank": "g",
+    "rare": 9,
+    "pieces": [
+      {
+        "id": "armor_b576c7fb9a3f",
+        "part": "head",
+        "name": "카오스캡"
+      },
+      {
+        "id": "armor_18c7a37c1807",
+        "part": "body",
+        "name": "카오스리지스트"
+      },
+      {
+        "id": "armor_bfadf8459885",
+        "part": "arms",
+        "name": "카오스가드"
+      },
+      {
+        "id": "armor_4dbade094351",
+        "part": "waist",
+        "name": "카오스코트"
+      },
+      {
+        "id": "armor_55513786e76f",
+        "part": "legs",
+        "name": "카오스레깅스"
+      }
+    ],
+    "defense": 300,
+    "maxDefense": 480,
+    "slots": 10,
+    "skills": {
+      "skill_2d4c948c0c23": 10,
+      "skill_2a9c189a93d7": 10,
+      "skill_bbe11654094a": -10,
+      "skill_91feda75c5e9": 10,
+      "skill_1ae21921a72f": 6,
+      "skill_d83820844b4d": 7
+    },
+    "resistances": {
+      "fire": -20,
+      "water": 25,
+      "thunder": -10,
+      "ice": 15,
+      "dragon": -15
+    },
+    "restored": true
+  },
+  {
+    "id": "armor_set_810e39be89e6",
+    "name": "호크Ｘ",
+    "hunterType": "blade",
+    "rank": "g",
+    "rare": 9,
+    "pieces": [
+      {
+        "id": "armor_f577823c5514",
+        "part": "head",
+        "name": "호크Ｘ해트"
+      },
+      {
+        "id": "armor_f5d64c6efefe",
+        "part": "body",
+        "name": "호크Ｘ슈트"
+      },
+      {
+        "id": "armor_894f71f04808",
+        "part": "arms",
+        "name": "호크Ｘ암"
+      },
+      {
+        "id": "armor_94f7c3527346",
+        "part": "waist",
+        "name": "호크Ｘ코일"
+      },
+      {
+        "id": "armor_313711eb035c",
+        "part": "legs",
+        "name": "호크Ｘ부츠"
+      }
+    ],
+    "defense": 530,
+    "maxDefense": 740,
+    "slots": 10,
+    "skills": {
+      "skill_a64199ed5d30": 16,
+      "skill_63c2bbb3a506": 10,
+      "skill_837350925f0a": 10,
+      "skill_dafef2d56749": 10,
+      "skill_27df943493ca": -15
+    },
+    "resistances": {
+      "fire": 10,
+      "water": -5,
+      "thunder": 5,
+      "ice": 0,
+      "dragon": 10
+    },
+    "restored": true
+  },
+  {
+    "id": "armor_set_7b7a18341ee0",
+    "name": "호크Ｘ",
+    "hunterType": "gunner",
+    "rank": "g",
+    "rare": 9,
+    "pieces": [
+      {
+        "id": "armor_5f030cc455ae",
+        "part": "head",
+        "name": "호크Ｘ캡"
+      },
+      {
+        "id": "armor_f761c25de9a9",
+        "part": "body",
+        "name": "호크Ｘ베스트"
+      },
+      {
+        "id": "armor_55952f19ffd9",
+        "part": "arms",
+        "name": "호크Ｘ가드"
+      },
+      {
+        "id": "armor_c7429bc8bdb8",
+        "part": "waist",
+        "name": "호크Ｘ코트"
+      },
+      {
+        "id": "armor_1d7a0883b5ec",
+        "part": "legs",
+        "name": "호크Ｘ풋"
+      }
+    ],
+    "defense": 300,
+    "maxDefense": 480,
+    "slots": 10,
+    "skills": {
+      "skill_a64199ed5d30": 16,
+      "skill_63c2bbb3a506": 10,
+      "skill_837350925f0a": 10,
+      "skill_dafef2d56749": 10,
+      "skill_27df943493ca": -15
+    },
+    "resistances": {
+      "fire": 15,
+      "water": 0,
+      "thunder": 10,
+      "ice": 5,
+      "dragon": 15
+    },
+    "restored": true
+  },
+  {
+    "id": "armor_set_d422616311c8",
+    "name": "에이스",
+    "hunterType": "blade",
+    "rank": "g",
+    "rare": 9,
+    "pieces": [
+      {
+        "id": "armor_a9a2d1345514",
+        "part": "head",
+        "name": "에이스헤드"
+      },
+      {
+        "id": "armor_606a25df849d",
+        "part": "body",
+        "name": "에이스메일"
+      },
+      {
+        "id": "armor_1bed665625eb",
+        "part": "arms",
+        "name": "에이스암"
+      },
+      {
+        "id": "armor_210c557fc4a1",
+        "part": "waist",
+        "name": "에이스펄드"
+      },
+      {
+        "id": "armor_0689091b7239",
+        "part": "legs",
+        "name": "에이스그리브"
+      }
+    ],
+    "defense": 460,
+    "maxDefense": 705,
+    "slots": 10,
+    "skills": {
+      "skill_ed1944192c5e": 10,
+      "skill_82680c9bf0f3": 10,
+      "skill_03a65ac27189": -10
+    },
+    "resistances": {
+      "fire": 15,
+      "water": 0,
+      "thunder": 0,
+      "ice": 0,
+      "dragon": 10
+    },
+    "restored": true
+  },
+  {
+    "id": "armor_set_5c4b7ec87c5e",
+    "name": "에이스",
+    "hunterType": "gunner",
+    "rank": "g",
+    "rare": 9,
+    "pieces": [
+      {
+        "id": "armor_8210ec165216",
+        "part": "head",
+        "name": "에이스페이스"
+      },
+      {
+        "id": "armor_e3ec4fbaecd5",
+        "part": "body",
+        "name": "에이스리지스트"
+      },
+      {
+        "id": "armor_1594c642cfbb",
+        "part": "arms",
+        "name": "에이스가드"
+      },
+      {
+        "id": "armor_8a983e723277",
+        "part": "waist",
+        "name": "에이스코트"
+      },
+      {
+        "id": "armor_50d16a959449",
+        "part": "legs",
+        "name": "에이스레깅스"
+      }
+    ],
+    "defense": 250,
+    "maxDefense": 455,
+    "slots": 10,
+    "skills": {
+      "skill_ed1944192c5e": 10,
+      "skill_77ad65f34cd9": 10,
+      "skill_03a65ac27189": -10
+    },
+    "resistances": {
+      "fire": 20,
+      "water": 5,
+      "thunder": 5,
+      "ice": 5,
+      "dragon": 15
+    },
+    "restored": true
+  },
+  {
+    "id": "armor_set_e1482dbd9edb",
+    "name": "가디언Ｚ",
+    "hunterType": "blade",
+    "rank": "g",
+    "rare": 9,
+    "pieces": [
+      {
+        "id": "armor_8c9a66fda7a9",
+        "part": "head",
+        "name": "가디언Ｚ헬름"
+      },
+      {
+        "id": "armor_74106ce7c34a",
+        "part": "body",
+        "name": "가디언Ｚ슈트"
+      },
+      {
+        "id": "armor_5266dec11012",
+        "part": "arms",
+        "name": "가디언Ｚ암"
+      },
+      {
+        "id": "armor_069c9004c7d2",
+        "part": "waist",
+        "name": "가디언Ｚ코일"
+      },
+      {
+        "id": "armor_77fdfa37b457",
+        "part": "legs",
+        "name": "가디언Ｚ부츠"
+      }
+    ],
+    "defense": 480,
+    "maxDefense": 715,
+    "slots": 7,
+    "skills": {
+      "skill_05e4b277d6b9": -10,
+      "skill_6365d7eb75b5": 10,
+      "skill_56899bd6d661": 15,
+      "skill_f6ae1efeaf6d": 10
+    },
+    "resistances": {
+      "fire": 0,
+      "water": 0,
+      "thunder": 0,
+      "ice": 0,
+      "dragon": 0
+    },
+    "restored": true
+  },
+  {
+    "id": "armor_set_97b51e58c109",
+    "name": "가디언Ｚ",
+    "hunterType": "gunner",
+    "rank": "g",
+    "rare": 9,
+    "pieces": [
+      {
+        "id": "armor_bec7556d2f44",
+        "part": "head",
+        "name": "가디언Ｚ마스크"
+      },
+      {
+        "id": "armor_5cf35e038205",
+        "part": "body",
+        "name": "가디언Ｚ베스트"
+      },
+      {
+        "id": "armor_8c807dcb310c",
+        "part": "arms",
+        "name": "가디언Ｚ가드"
+      },
+      {
+        "id": "armor_da2c532bdb4e",
+        "part": "waist",
+        "name": "가디언Ｚ코트"
+      },
+      {
+        "id": "armor_d9314ea4d9a7",
+        "part": "legs",
+        "name": "가디언Ｚ풋"
+      }
+    ],
+    "defense": 265,
+    "maxDefense": 465,
+    "slots": 7,
+    "skills": {
+      "skill_05e4b277d6b9": -10,
+      "skill_6365d7eb75b5": 10,
+      "skill_56899bd6d661": 15,
+      "skill_f6ae1efeaf6d": 10
+    },
+    "resistances": {
+      "fire": 5,
+      "water": 5,
+      "thunder": 5,
+      "ice": 5,
+      "dragon": 5
+    },
+    "restored": true
+  },
+  {
+    "id": "armor_set_32e3095b47cc",
+    "name": "길드나이트Ｘ",
+    "hunterType": "blade",
+    "rank": "g",
+    "rare": 9,
+    "pieces": [
+      {
+        "id": "armor_6240cd70ba0b",
+        "part": "head",
+        "name": "길드나이트Ｘ페더"
+      },
+      {
+        "id": "armor_e9c68e780953",
+        "part": "body",
+        "name": "길드나이트Ｘ슈트"
+      },
+      {
+        "id": "armor_b097e995e6a0",
+        "part": "arms",
+        "name": "길드나이트Ｘ글러브"
+      },
+      {
+        "id": "armor_388083979dcf",
+        "part": "waist",
+        "name": "길드나이트Ｘ코일"
+      },
+      {
+        "id": "armor_4952eee383ee",
+        "part": "legs",
+        "name": "길드나이트Ｘ부츠"
+      }
+    ],
+    "defense": 550,
+    "maxDefense": 750,
+    "slots": 7,
+    "skills": {
+      "skill_7717a3d7e05e": 5,
+      "skill_20267c0a62e3": 15,
+      "skill_640d40323052": -10,
+      "skill_411e538f7c2f": 15,
+      "skill_dc306dbb4ef6": 5
+    },
+    "resistances": {
+      "fire": 0,
+      "water": 0,
+      "thunder": 0,
+      "ice": 0,
+      "dragon": 0
+    },
+    "restored": true
+  },
+  {
+    "id": "armor_set_d8021cd4adcb",
+    "name": "길드나이트Ｘ",
+    "hunterType": "gunner",
+    "rank": "g",
+    "rare": 9,
+    "pieces": [
+      {
+        "id": "armor_8502c0871b75",
+        "part": "head",
+        "name": "길드나이트Ｘ마스크"
+      },
+      {
+        "id": "armor_a0ae1c147687",
+        "part": "body",
+        "name": "길드나이트Ｘ베스트"
+      },
+      {
+        "id": "armor_b85be38a6e38",
+        "part": "arms",
+        "name": "길드나이트Ｘ커프스"
+      },
+      {
+        "id": "armor_0c09c5ac4c16",
+        "part": "waist",
+        "name": "길드나이트Ｘ스커트"
+      },
+      {
+        "id": "armor_a09399aacb84",
+        "part": "legs",
+        "name": "길드나이트Ｘ타이츠"
+      }
+    ],
+    "defense": 320,
+    "maxDefense": 485,
+    "slots": 7,
+    "skills": {
+      "skill_3ab130560c8a": 5,
+      "skill_20267c0a62e3": 15,
+      "skill_640d40323052": -10,
+      "skill_411e538f7c2f": 15,
+      "skill_cb5bba6091b7": 5
+    },
+    "resistances": {
+      "fire": 5,
+      "water": 5,
+      "thunder": 5,
+      "ice": 5,
+      "dragon": 5
+    },
+    "restored": true
+  },
+  {
+    "id": "armor_set_330fd5525941",
+    "name": "아크Ｘ",
+    "hunterType": "blade",
+    "rank": "g",
+    "rare": 10,
+    "pieces": [
+      {
+        "id": "armor_cfa0ca17b431",
+        "part": "head",
+        "name": "아크Ｘ헬름"
+      },
+      {
+        "id": "armor_656a1d52be08",
+        "part": "body",
+        "name": "아크Ｘ메일"
+      },
+      {
+        "id": "armor_e589c8f334a3",
+        "part": "arms",
+        "name": "아크Ｘ암"
+      },
+      {
+        "id": "armor_75c8853e8744",
+        "part": "waist",
+        "name": "아크Ｘ펄드"
+      },
+      {
+        "id": "armor_6fbaaf8564bc",
+        "part": "legs",
+        "name": "아크Ｘ그리브"
+      }
+    ],
+    "defense": 545,
+    "maxDefense": 755,
+    "slots": 9,
+    "skills": {
+      "skill_dc306dbb4ef6": 10,
+      "skill_d5d5017546d7": 15,
+      "skill_d565a104e42c": -12,
+      "skill_8e9aa57c53f3": 5,
+      "skill_f743b97156ed": 10,
+      "skill_ed1944192c5e": 5
+    },
+    "resistances": {
+      "fire": -20,
+      "water": 20,
+      "thunder": 0,
+      "ice": 15,
+      "dragon": -30
+    },
+    "restored": true
+  },
+  {
+    "id": "armor_set_f3fecc1e8331",
+    "name": "아크Ｘ",
+    "hunterType": "gunner",
+    "rank": "g",
+    "rare": 10,
+    "pieces": [
+      {
+        "id": "armor_d8444b9ec392",
+        "part": "head",
+        "name": "아크Ｘ캡"
+      },
+      {
+        "id": "armor_87e59f214911",
+        "part": "body",
+        "name": "아크Ｘ리지스트"
+      },
+      {
+        "id": "armor_301abb7d51c7",
+        "part": "arms",
+        "name": "아크Ｘ가드"
+      },
+      {
+        "id": "armor_367eb51396b6",
+        "part": "waist",
+        "name": "아크Ｘ코트"
+      },
+      {
+        "id": "armor_34d7b0289f39",
+        "part": "legs",
+        "name": "아크Ｘ레깅스"
+      }
+    ],
+    "defense": 315,
+    "maxDefense": 490,
+    "slots": 9,
+    "skills": {
+      "skill_d5d5017546d7": 15,
+      "skill_cb5bba6091b7": 10,
+      "skill_d565a104e42c": -12,
+      "skill_8e9aa57c53f3": 5,
+      "skill_f743b97156ed": 10,
+      "skill_ed1944192c5e": 5
+    },
+    "resistances": {
+      "fire": -15,
+      "water": 25,
+      "thunder": 5,
+      "ice": 20,
+      "dragon": -25
+    },
+    "restored": true
+  },
+  {
+    "id": "armor_set_1ad1a21521b2",
+    "name": "잔양・진",
+    "hunterType": "blade",
+    "rank": "g",
+    "rare": 10,
+    "pieces": [
+      {
+        "id": "armor_6dfac372d40d",
+        "part": "head",
+        "name": "잔양・진【투구】"
+      },
+      {
+        "id": "armor_67e35191b381",
+        "part": "body",
+        "name": "잔양・진【동갑】"
+      },
+      {
+        "id": "armor_063e4e5e54d9",
+        "part": "arms",
+        "name": "잔양・진【장갑】"
+      },
+      {
+        "id": "armor_4d21d7b84015",
+        "part": "waist",
+        "name": "잔양・진【요갑】"
+      },
+      {
+        "id": "armor_2b7771147d0b",
+        "part": "legs",
+        "name": "잔양・진【각갑】"
+      }
+    ],
+    "defense": 535,
+    "maxDefense": 745,
+    "slots": 8,
+    "skills": {
+      "skill_89c345412fe4": 10,
+      "skill_77b3da4beed3": 10,
+      "skill_25c2859f7595": 15,
+      "skill_78219e43d710": 10,
+      "skill_05e4b277d6b9": -14,
+      "skill_f6ae1efeaf6d": 4
+    },
+    "resistances": {
+      "fire": 15,
+      "water": 10,
+      "thunder": -20,
+      "ice": 15,
+      "dragon": -20
+    },
+    "restored": true
+  },
+  {
+    "id": "armor_set_2b7fa802306e",
+    "name": "새벽・진",
+    "hunterType": "gunner",
+    "rank": "g",
+    "rare": 10,
+    "pieces": [
+      {
+        "id": "armor_36100247d8d4",
+        "part": "head",
+        "name": "새벽・진【투구】"
+      },
+      {
+        "id": "armor_c324fa1e6ed7",
+        "part": "body",
+        "name": "새벽・진【동갑】"
+      },
+      {
+        "id": "armor_3bdb8c43fe17",
+        "part": "arms",
+        "name": "새벽・진【장갑】"
+      },
+      {
+        "id": "armor_aca6fe58fb9f",
+        "part": "waist",
+        "name": "새벽・진【요갑】"
+      },
+      {
+        "id": "armor_5ab5c6aa3b62",
+        "part": "legs",
+        "name": "새벽・진【각갑】"
+      }
+    ],
+    "defense": 305,
+    "maxDefense": 485,
+    "slots": 8,
+    "skills": {
+      "skill_2d4c948c0c23": -14,
+      "skill_77ad65f34cd9": 10,
+      "skill_77b3da4beed3": 10,
+      "skill_25c2859f7595": 15,
+      "skill_36177c02fa41": 10,
+      "skill_f6ae1efeaf6d": 4
+    },
+    "resistances": {
+      "fire": 20,
+      "water": 15,
+      "thunder": -15,
+      "ice": 20,
+      "dragon": -15
+    },
+    "restored": true
+  },
+  {
+    "id": "armor_set_81693f0fc6f7",
+    "name": "불변・진",
+    "hunterType": "blade",
+    "rank": "g",
+    "rare": 10,
+    "pieces": [
+      {
+        "id": "armor_5a95ab647eeb",
+        "part": "head",
+        "name": "불변・진【투구】"
+      },
+      {
+        "id": "armor_facd17611161",
+        "part": "body",
+        "name": "불변・진【흉갑】"
+      },
+      {
+        "id": "armor_3935c353eb53",
+        "part": "arms",
+        "name": "불변・진【장갑】"
+      },
+      {
+        "id": "armor_5b0d1e812ce5",
+        "part": "waist",
+        "name": "불변・진【요갑】"
+      },
+      {
+        "id": "armor_5ce334153bd3",
+        "part": "legs",
+        "name": "불변・진【각갑】"
+      }
+    ],
+    "defense": 535,
+    "maxDefense": 745,
+    "slots": 8,
+    "skills": {
+      "skill_89c345412fe4": 10,
+      "skill_77b3da4beed3": 10,
+      "skill_25c2859f7595": 15,
+      "skill_78219e43d710": 10,
+      "skill_05e4b277d6b9": -14,
+      "skill_f6ae1efeaf6d": 4
+    },
+    "resistances": {
+      "fire": 15,
+      "water": 10,
+      "thunder": -20,
+      "ice": 15,
+      "dragon": -20
+    },
+    "restored": true
+  },
+  {
+    "id": "armor_set_13e1bda804b1",
+    "name": "무궁・진",
+    "hunterType": "gunner",
+    "rank": "g",
+    "rare": 10,
+    "pieces": [
+      {
+        "id": "armor_864aa5b05dc0",
+        "part": "head",
+        "name": "무궁・진【투구】"
+      },
+      {
+        "id": "armor_52cf8fe88245",
+        "part": "body",
+        "name": "무궁・진【흉갑】"
+      },
+      {
+        "id": "armor_2f49138fe199",
+        "part": "arms",
+        "name": "무궁・진【넓은소매】"
+      },
+      {
+        "id": "armor_367daf0eb1c8",
+        "part": "waist",
+        "name": "무궁・진【요갑】"
+      },
+      {
+        "id": "armor_e598314224b5",
+        "part": "legs",
+        "name": "무궁・진【각갑】"
+      }
+    ],
+    "defense": 305,
+    "maxDefense": 485,
+    "slots": 8,
+    "skills": {
+      "skill_2d4c948c0c23": -14,
+      "skill_77ad65f34cd9": 10,
+      "skill_77b3da4beed3": 10,
+      "skill_25c2859f7595": 15,
+      "skill_36177c02fa41": 10,
+      "skill_f6ae1efeaf6d": 4
+    },
+    "resistances": {
+      "fire": 20,
+      "water": 15,
+      "thunder": -15,
+      "ice": 20,
+      "dragon": -15
+    },
+    "restored": true
+  },
+  {
+    "id": "armor_set_75a26b72f2d8",
+    "name": "진야마토",
+    "hunterType": "blade",
+    "rank": "g",
+    "rare": 10,
+    "pieces": [
+      {
+        "id": "armor_4cb0fe5c009f",
+        "part": "head",
+        "name": "진야마토【투구】"
+      },
+      {
+        "id": "armor_aa9e75340c8d",
+        "part": "body",
+        "name": "진야마토【동갑】"
+      },
+      {
+        "id": "armor_943facd782fb",
+        "part": "arms",
+        "name": "진야마토【장갑】"
+      },
+      {
+        "id": "armor_dcabe090ad65",
+        "part": "waist",
+        "name": "진야마토【요갑】"
+      },
+      {
+        "id": "armor_be469883a6c1",
+        "part": "legs",
+        "name": "진야마토【각갑】"
+      }
+    ],
+    "defense": 540,
+    "maxDefense": 750,
+    "slots": 8,
+    "skills": {
+      "skill_7717a3d7e05e": 8,
+      "skill_25c2859f7595": 15,
+      "skill_05e4b277d6b9": -10,
+      "skill_04fd12814adf": 10,
+      "skill_dc306dbb4ef6": 4
+    },
+    "resistances": {
+      "fire": 15,
+      "water": 5,
+      "thunder": 0,
+      "ice": -20,
+      "dragon": -20
+    },
+    "restored": true
+  },
+  {
+    "id": "armor_set_661ecea97bb4",
+    "name": "진무츠",
+    "hunterType": "gunner",
+    "rank": "g",
+    "rare": 10,
+    "pieces": [
+      {
+        "id": "armor_e3be0da4b486",
+        "part": "head",
+        "name": "진무츠【전투모】"
+      },
+      {
+        "id": "armor_40628fd2cbed",
+        "part": "body",
+        "name": "진무츠【동갑】"
+      },
+      {
+        "id": "armor_f7f700efa1f4",
+        "part": "arms",
+        "name": "진무츠【장갑】"
+      },
+      {
+        "id": "armor_3eb22ebf64a1",
+        "part": "waist",
+        "name": "진무츠【요갑】"
+      },
+      {
+        "id": "armor_a11a0ce32948",
+        "part": "legs",
+        "name": "진무츠【각갑】"
+      }
+    ],
+    "defense": 310,
+    "maxDefense": 490,
+    "slots": 8,
+    "skills": {
+      "skill_3ab130560c8a": 8,
+      "skill_2d4c948c0c23": -10,
+      "skill_d83820844b4d": 15,
+      "skill_36177c02fa41": 10,
+      "skill_cb5bba6091b7": 4
+    },
+    "resistances": {
+      "fire": 20,
+      "water": 10,
+      "thunder": 5,
+      "ice": -15,
+      "dragon": -15
+    },
+    "restored": true
+  },
+  {
+    "id": "armor_set_33c365a43500",
+    "name": "헬리오스Ｘ",
+    "hunterType": "blade",
+    "rank": "g",
+    "rare": 10,
+    "pieces": [
+      {
+        "id": "armor_54e415dc6714",
+        "part": "head",
+        "name": "헬리오스Ｘ헬름"
+      },
+      {
+        "id": "armor_6210a7f733d2",
+        "part": "body",
+        "name": "헬리오스Ｘ메일"
+      },
+      {
+        "id": "armor_ad000775ea10",
+        "part": "arms",
+        "name": "헬리오스Ｘ암"
+      },
+      {
+        "id": "armor_ba4180c62637",
+        "part": "waist",
+        "name": "헬리오스Ｘ코일"
+      },
+      {
+        "id": "armor_714fdac9d289",
+        "part": "legs",
+        "name": "헬리오스Ｘ그리브"
+      }
+    ],
+    "defense": 540,
+    "maxDefense": 750,
+    "slots": 8,
+    "skills": {
+      "skill_dc306dbb4ef6": 4,
+      "skill_4d4485c17552": 15,
+      "skill_96039668e096": 15,
+      "skill_bcf68a1ff0a1": -10,
+      "skill_91feda75c5e9": 10,
+      "skill_410c93e16f86": 10
+    },
+    "resistances": {
+      "fire": 0,
+      "water": 15,
+      "thunder": -10,
+      "ice": 5,
+      "dragon": -25
+    },
+    "restored": true
+  },
+  {
+    "id": "armor_set_d146ba0ea30b",
+    "name": "헬리오스Ｘ",
+    "hunterType": "gunner",
+    "rank": "g",
+    "rare": 10,
+    "pieces": [
+      {
+        "id": "armor_d936f6aa5543",
+        "part": "head",
+        "name": "헬리오스Ｘ캡"
+      },
+      {
+        "id": "armor_cc3f006f3403",
+        "part": "body",
+        "name": "헬리오스Ｘ리지스트"
+      },
+      {
+        "id": "armor_166849214a2b",
+        "part": "arms",
+        "name": "헬리오스Ｘ가드"
+      },
+      {
+        "id": "armor_7fce564f30ad",
+        "part": "waist",
+        "name": "헬리오스Ｘ코트"
+      },
+      {
+        "id": "armor_071b6021afe9",
+        "part": "legs",
+        "name": "헬리오스Ｘ레깅스"
+      }
+    ],
+    "defense": 310,
+    "maxDefense": 490,
+    "slots": 8,
+    "skills": {
+      "skill_4d4485c17552": 15,
+      "skill_cb5bba6091b7": 4,
+      "skill_96039668e096": 15,
+      "skill_bcf68a1ff0a1": -10,
+      "skill_91feda75c5e9": 10,
+      "skill_410c93e16f86": 10
+    },
+    "resistances": {
+      "fire": 5,
+      "water": 20,
+      "thunder": -5,
+      "ice": 10,
+      "dragon": -20
+    },
+    "restored": true
+  },
+  {
+    "id": "armor_set_1a7ab58501bf",
+    "name": "EX칠흑",
+    "hunterType": "blade",
+    "rank": "g",
+    "rare": 10,
+    "pieces": [
+      {
+        "id": "armor_d01acc633250",
+        "part": "head",
+        "name": "EX칠흑【투구】"
+      },
+      {
+        "id": "armor_57cd9491736b",
+        "part": "body",
+        "name": "EX칠흑【동갑】"
+      },
+      {
+        "id": "armor_c292b67979db",
+        "part": "arms",
+        "name": "EX칠흑【장갑】"
+      },
+      {
+        "id": "armor_21236bedb45e",
+        "part": "waist",
+        "name": "EX칠흑【요갑】"
+      },
+      {
+        "id": "armor_f47977e1664f",
+        "part": "legs",
+        "name": "EX칠흑【각갑】"
+      }
+    ],
+    "defense": 580,
+    "maxDefense": 760,
+    "slots": 10,
+    "skills": {
+      "skill_410c93e16f86": -7,
+      "skill_91feda75c5e9": 10,
+      "skill_bcf68a1ff0a1": 10,
+      "skill_68f9d1b72bff": 10,
+      "skill_0669fcda6735": 4
+    },
+    "resistances": {
+      "fire": -10,
+      "water": 10,
+      "thunder": 0,
+      "ice": 10,
+      "dragon": -20
+    },
+    "restored": true
+  },
+  {
+    "id": "armor_set_bd6de4db5b50",
+    "name": "EX여명",
+    "hunterType": "gunner",
+    "rank": "g",
+    "rare": 10,
+    "pieces": [
+      {
+        "id": "armor_d8b62cb06b07",
+        "part": "head",
+        "name": "EX여명【무사건】"
+      },
+      {
+        "id": "armor_eebb31e71f53",
+        "part": "body",
+        "name": "EX여명【동갑】"
+      },
+      {
+        "id": "armor_f3788686a19f",
+        "part": "arms",
+        "name": "EX여명【장갑】"
+      },
+      {
+        "id": "armor_82a6dc5df22c",
+        "part": "waist",
+        "name": "EX여명【요갑】"
+      },
+      {
+        "id": "armor_b3ca91d85237",
+        "part": "legs",
+        "name": "EX여명【각갑】"
+      }
+    ],
+    "defense": 345,
+    "maxDefense": 490,
+    "slots": 11,
+    "skills": {
+      "skill_410c93e16f86": -7,
+      "skill_91feda75c5e9": 10,
+      "skill_bcf68a1ff0a1": 10,
+      "skill_c6c048ecdc6b": 10,
+      "skill_0669fcda6735": 4
+    },
+    "resistances": {
+      "fire": -5,
+      "water": 15,
+      "thunder": 5,
+      "ice": 15,
+      "dragon": -15
+    },
+    "restored": true
+  },
+  {
+    "id": "armor_set_d9318e5dca5d",
+    "name": "왕자의",
+    "hunterType": "blade",
+    "rank": "g",
+    "rare": 10,
+    "pieces": [
+      {
+        "id": "armor_32ecc8d00d7e",
+        "part": "head",
+        "name": "왕자의 헤드기어"
+      },
+      {
+        "id": "armor_6e66eace971b",
+        "part": "body",
+        "name": "왕자의 보디"
+      },
+      {
+        "id": "armor_935d75887143",
+        "part": "arms",
+        "name": "왕자의 밴티지"
+      },
+      {
+        "id": "armor_d088fab28e12",
+        "part": "waist",
+        "name": "왕자의 벨트"
+      },
+      {
+        "id": "armor_2b9d1d06e485",
+        "part": "legs",
+        "name": "왕자의 다리"
+      }
+    ],
+    "defense": 440,
+    "maxDefense": 760,
+    "slots": 6,
+    "skills": {
+      "skill_91feda75c5e9": 10,
+      "skill_1826606ac13c": -10,
+      "skill_122ffa46b9a4": 13,
+      "skill_43cd18168b4b": 10,
+      "skill_77b3da4beed3": 4,
+      "skill_0b8715ba4a76": 8
+    },
+    "resistances": {
+      "fire": -10,
+      "water": -10,
+      "thunder": -10,
+      "ice": -10,
+      "dragon": 20
+    },
+    "restored": true
+  },
+  {
+    "id": "armor_set_af4ff91c76f4",
+    "name": "강자의",
+    "hunterType": "gunner",
+    "rank": "g",
+    "rare": 10,
+    "pieces": [
+      {
+        "id": "armor_b74fd1f5e13c",
+        "part": "head",
+        "name": "강자의 헤드기어"
+      },
+      {
+        "id": "armor_b3fa9974a957",
+        "part": "body",
+        "name": "강자의 보디"
+      },
+      {
+        "id": "armor_08f5950541a9",
+        "part": "arms",
+        "name": "강자의 밴티지"
+      },
+      {
+        "id": "armor_9b4677cdb6df",
+        "part": "waist",
+        "name": "강자의 벨트"
+      },
+      {
+        "id": "armor_f137049bc183",
+        "part": "legs",
+        "name": "강자의 다리"
+      }
+    ],
+    "defense": 235,
+    "maxDefense": 500,
+    "slots": 6,
+    "skills": {
+      "skill_91feda75c5e9": 10,
+      "skill_1826606ac13c": -10,
+      "skill_122ffa46b9a4": 15,
+      "skill_43cd18168b4b": 10,
+      "skill_77b3da4beed3": 4,
+      "skill_0b8715ba4a76": 8
+    },
+    "resistances": {
+      "fire": -5,
+      "water": -5,
+      "thunder": -5,
+      "ice": -5,
+      "dragon": 25
+    },
+    "restored": true
+  },
+  {
+    "id": "armor_set_bf1b0dbc728d",
+    "name": "드래건Ｘ",
+    "hunterType": "blade",
+    "rank": "g",
+    "rare": 10,
+    "pieces": [
+      {
+        "id": "armor_80943222be98",
+        "part": "head",
+        "name": "드래건Ｘ헤드"
+      },
+      {
+        "id": "armor_0e1564649ab0",
+        "part": "body",
+        "name": "드래건Ｘ하이드"
+      },
+      {
+        "id": "armor_0f27eafa5e5e",
+        "part": "arms",
+        "name": "드래건Ｘ클로"
+      },
+      {
+        "id": "armor_a17b731b50de",
+        "part": "waist",
+        "name": "드래건Ｘ스파인"
+      },
+      {
+        "id": "armor_5a319c04a889",
+        "part": "legs",
+        "name": "드래건Ｘ풋"
+      }
+    ],
+    "defense": 590,
+    "maxDefense": 770,
+    "slots": 5,
+    "skills": {
+      "skill_3ab130560c8a": 10,
+      "skill_82680c9bf0f3": 10,
+      "skill_63c2bbb3a506": 10,
+      "skill_04fd12814adf": -13,
+      "skill_dc306dbb4ef6": 6
+    },
+    "resistances": {
+      "fire": -15,
+      "water": 10,
+      "thunder": 10,
+      "ice": -5,
+      "dragon": -30
+    },
+    "restored": true
+  },
+  {
+    "id": "armor_set_9cde7e4ce27e",
+    "name": "드래건Ｘ",
+    "hunterType": "gunner",
+    "rank": "g",
+    "rare": 10,
+    "pieces": [
+      {
+        "id": "armor_0e4fc4ee119c",
+        "part": "head",
+        "name": "드래건Ｘ페이스"
+      },
+      {
+        "id": "armor_51160d26814b",
+        "part": "body",
+        "name": "드래건Ｘ스킨"
+      },
+      {
+        "id": "armor_ee057e593f3f",
+        "part": "arms",
+        "name": "드래건Ｘ피스트"
+      },
+      {
+        "id": "armor_91b48bb17b89",
+        "part": "waist",
+        "name": "드래건Ｘ스케일"
+      },
+      {
+        "id": "armor_a217fb15b5a8",
+        "part": "legs",
+        "name": "드래건Ｘ레그"
+      }
+    ],
+    "defense": 355,
+    "maxDefense": 500,
+    "slots": 5,
+    "skills": {
+      "skill_3ab130560c8a": 10,
+      "skill_63c2bbb3a506": 10,
+      "skill_04fd12814adf": -13,
+      "skill_36177c02fa41": 10,
+      "skill_cb5bba6091b7": 6
+    },
+    "resistances": {
+      "fire": -10,
+      "water": 15,
+      "thunder": 15,
+      "ice": 0,
+      "dragon": -25
+    },
+    "restored": true
+  },
+  {
+    "id": "armor_set_e223246d7add",
+    "name": "GX그리드",
+    "hunterType": "blade",
+    "rank": "g",
+    "rare": 10,
+    "pieces": [
+      {
+        "id": "armor_ea3712bf2cc1",
+        "part": "head",
+        "name": "GX그리드카스크"
+      },
+      {
+        "id": "armor_7415b284a62b",
+        "part": "body",
+        "name": "GX그리드아머"
+      },
+      {
+        "id": "armor_2556044bea26",
+        "part": "arms",
+        "name": "GX그리드크라크"
+      },
+      {
+        "id": "armor_743f93bcc51c",
+        "part": "waist",
+        "name": "GX그리드럼버"
+      },
+      {
+        "id": "armor_8848ef8112dd",
+        "part": "legs",
+        "name": "GX그리드퀴스"
+      }
+    ],
+    "defense": 500,
+    "maxDefense": 755,
+    "slots": 0,
+    "skills": {
+      "skill_aa8a7d803517": 10,
+      "skill_20267c0a62e3": 20,
+      "skill_bbe11654094a": 20,
+      "skill_25c2859f7595": -20
+    },
+    "resistances": {
+      "fire": -25,
+      "water": -25,
+      "thunder": -25,
+      "ice": -25,
+      "dragon": -25
+    },
+    "restored": true
+  },
+  {
+    "id": "armor_set_a82e65ccf424",
+    "name": "GX그리드",
+    "hunterType": "gunner",
+    "rank": "g",
+    "rare": 10,
+    "pieces": [
+      {
+        "id": "armor_b9c39f7f92b8",
+        "part": "head",
+        "name": "GX그리드코이프"
+      },
+      {
+        "id": "armor_3d1fd471c0db",
+        "part": "body",
+        "name": "GX그리드플레이트"
+      },
+      {
+        "id": "armor_935102902b72",
+        "part": "arms",
+        "name": "GX그리드카논"
+      },
+      {
+        "id": "armor_eb8d3be4380a",
+        "part": "waist",
+        "name": "GX그리드타세트"
+      },
+      {
+        "id": "armor_be49bd8f7e93",
+        "part": "legs",
+        "name": "GX그리드크러스"
+      }
+    ],
+    "defense": 275,
+    "maxDefense": 485,
+    "slots": 0,
+    "skills": {
+      "skill_aa8a7d803517": 10,
+      "skill_20267c0a62e3": 20,
+      "skill_bbe11654094a": 20,
+      "skill_25c2859f7595": -19
+    },
+    "resistances": {
+      "fire": -20,
+      "water": -20,
+      "thunder": -20,
+      "ice": -20,
+      "dragon": -20
+    },
+    "restored": true
+  },
+  {
+    "id": "armor_set_f6a3d45131f9",
+    "name": "GX황천",
+    "hunterType": "blade",
+    "rank": "g",
+    "rare": 10,
+    "pieces": [
+      {
+        "id": "armor_57adc3395da1",
+        "part": "head",
+        "name": "GX황천【광관모】"
+      },
+      {
+        "id": "armor_a35654c8dcc0",
+        "part": "body",
+        "name": "GX황천【우의】"
+      },
+      {
+        "id": "armor_bef711d458d3",
+        "part": "arms",
+        "name": "GX황천【우의소매】"
+      },
+      {
+        "id": "armor_77da12111b6a",
+        "part": "waist",
+        "name": "GX황천【우의띠】"
+      },
+      {
+        "id": "armor_fa270fe6896a",
+        "part": "legs",
+        "name": "GX황천【우의하의】"
+      }
+    ],
+    "defense": 440,
+    "maxDefense": 760,
+    "slots": 7,
+    "skills": {
+      "skill_dc306dbb4ef6": 7,
+      "skill_977515684794": 17,
+      "skill_a45ea58ebcb0": -14,
+      "skill_4b9bc9c6f953": 10,
+      "skill_e43cf9f6c27e": 8
+    },
+    "resistances": {
+      "fire": -15,
+      "water": 20,
+      "thunder": 0,
+      "ice": 0,
+      "dragon": -25
+    },
+    "restored": true
+  },
+  {
+    "id": "armor_set_e99615d1f503",
+    "name": "GX창천",
+    "hunterType": "gunner",
+    "rank": "g",
+    "rare": 10,
+    "pieces": [
+      {
+        "id": "armor_4214d1ad1c90",
+        "part": "head",
+        "name": "GX창천【광관모】"
+      },
+      {
+        "id": "armor_f7e4c2d76ae6",
+        "part": "body",
+        "name": "GX창천【우의】"
+      },
+      {
+        "id": "armor_db478b793a32",
+        "part": "arms",
+        "name": "GX창천【우의소매】"
+      },
+      {
+        "id": "armor_9ab57fa70f56",
+        "part": "waist",
+        "name": "GX창천【우의띠】"
+      },
+      {
+        "id": "armor_057d3b03d789",
+        "part": "legs",
+        "name": "GX창천【우의하의】"
+      }
+    ],
+    "defense": 235,
+    "maxDefense": 500,
+    "slots": 7,
+    "skills": {
+      "skill_977515684794": 17,
+      "skill_a45ea58ebcb0": -14,
+      "skill_4b9bc9c6f953": 10,
+      "skill_cb5bba6091b7": 7,
+      "skill_b95d60db9423": 8
+    },
+    "resistances": {
+      "fire": -10,
+      "water": 25,
+      "thunder": 0,
+      "ice": 0,
+      "dragon": -20
+    },
+    "restored": true
+  },
+  {
+    "id": "armor_set_b328766e11c6",
+    "name": "GX밀라발Z",
+    "hunterType": "blade",
+    "rank": "g",
+    "rare": 10,
+    "pieces": [
+      {
+        "id": "armor_930a86130ecd",
+        "part": "head",
+        "name": "GX밀라발Z카스크"
+      },
+      {
+        "id": "armor_d3b56b9776a5",
+        "part": "body",
+        "name": "GX밀라발Z아머"
+      },
+      {
+        "id": "armor_796c1c1a5278",
+        "part": "arms",
+        "name": "GX밀라발Z크라크"
+      },
+      {
+        "id": "armor_68f22b9d555d",
+        "part": "waist",
+        "name": "GX밀라발Z럼버"
+      },
+      {
+        "id": "armor_0704aaeb9d95",
+        "part": "legs",
+        "name": "GX밀라발Z퀴스"
+      }
+    ],
+    "defense": 550,
+    "maxDefense": 760,
+    "slots": 5,
+    "skills": {
+      "skill_0a0d7a1a0dde": 10,
+      "skill_0b8715ba4a76": 10,
+      "skill_122ffa46b9a4": -15,
+      "skill_8245ec7f462a": 10
+    },
+    "resistances": {
+      "fire": 10,
+      "water": -5,
+      "thunder": 5,
+      "ice": -15,
+      "dragon": -35
+    },
+    "restored": true
+  },
+  {
+    "id": "armor_set_8e7a4ae22d90",
+    "name": "GX밀라발Z",
+    "hunterType": "gunner",
+    "rank": "g",
+    "rare": 10,
+    "pieces": [
+      {
+        "id": "armor_7d9544a9ac9c",
+        "part": "head",
+        "name": "GX밀라발Z코이프"
+      },
+      {
+        "id": "armor_65c191991de3",
+        "part": "body",
+        "name": "GX밀라발Z플레이트"
+      },
+      {
+        "id": "armor_cd174a7ddfc2",
+        "part": "arms",
+        "name": "GX밀라발Z카논"
+      },
+      {
+        "id": "armor_8b3b57a52a8c",
+        "part": "waist",
+        "name": "GX밀라발Z타세트"
+      },
+      {
+        "id": "armor_ad2af185f32a",
+        "part": "legs",
+        "name": "GX밀라발Z크러스"
+      }
+    ],
+    "defense": 320,
+    "maxDefense": 490,
+    "slots": 5,
+    "skills": {
+      "skill_3745b2a425cd": 10,
+      "skill_0b8715ba4a76": 10,
+      "skill_122ffa46b9a4": -15,
+      "skill_c6c048ecdc6b": 10
+    },
+    "resistances": {
+      "fire": 15,
+      "water": 0,
+      "thunder": 10,
+      "ice": -10,
+      "dragon": -30
+    },
+    "restored": true
   }
 ]

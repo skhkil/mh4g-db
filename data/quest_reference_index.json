@@ -32832,8 +32832,20 @@
       "monsters": [
         "고그마지오스"
       ],
-      "rewardItems": [],
-      "rewardDetails": [],
+      "rewardItems": [
+        "폭풍룡티켓",
+        "대장로티켓S"
+      ],
+      "rewardDetails": [
+        {
+          "name": "폭풍룡티켓",
+          "source": "MH4G event cross-reference"
+        },
+        {
+          "name": "대장로티켓S",
+          "source": "MH4G event cross-reference"
+        }
+      ],
       "tags": [
         "event"
       ],
@@ -32901,8 +32913,20 @@
       "monsters": [
         "이블조"
       ],
-      "rewardItems": [],
-      "rewardDetails": [],
+      "rewardItems": [
+        "강욕티켓",
+        "대장로티켓S"
+      ],
+      "rewardDetails": [
+        {
+          "name": "강욕티켓",
+          "source": "MH4G event cross-reference"
+        },
+        {
+          "name": "대장로티켓S",
+          "source": "MH4G event cross-reference"
+        }
+      ],
       "tags": [
         "event"
       ],
@@ -32914,8 +32938,15 @@
       "monsters": [
         "라잔"
       ],
-      "rewardItems": [],
-      "rewardDetails": [],
+      "rewardItems": [
+        "인아도의 증표"
+      ],
+      "rewardDetails": [
+        {
+          "name": "인아도의 증표",
+          "source": "MH4G event cross-reference"
+        }
+      ],
       "tags": [
         "event"
       ],
@@ -32927,8 +32958,20 @@
       "monsters": [
         "밀라보레아스"
       ],
-      "rewardItems": [],
-      "rewardDetails": [],
+      "rewardItems": [
+        "홍룡티켓",
+        "대장로티켓S"
+      ],
+      "rewardDetails": [
+        {
+          "name": "홍룡티켓",
+          "source": "MH4G event cross-reference"
+        },
+        {
+          "name": "대장로티켓S",
+          "source": "MH4G event cross-reference"
+        }
+      ],
       "tags": [
         "event"
       ],

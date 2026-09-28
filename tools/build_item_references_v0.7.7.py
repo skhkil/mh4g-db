@@ -2,7 +2,7 @@ import json,re,datetime
 from pathlib import Path
 P=Path('.')
 def load(name): return json.load(open(P/'data'/name,encoding='utf-8'))
-items=load('items.json'); weapons=load('weapons.json'); armors=load('armors.json'); decos=load('decorations.json'); quests=load('quests.json'); rewards=load('monster_rewards.json'); comps=load('compositions.json'); exch=load('dragon_exchange.json'); sell=load('dragon_sell.json'); inc=load('dragon_increase.json')
+items=load('items.json'); weapons=load('weapons.json'); armors=load('armors.json'); decos=load('decorations.json'); quests=load('quests.json'); rewards=load('monster_rewards.json'); comps=load('compositions.json'); exch=load('dragon_exchange.json'); sell=load('dragon_sell.json'); inc=load('dragon_increase.json'); qref=load('quest_reference_index.json')
 MONSTER_ALIASES={'오오나즈치':'오나즈치','맹폭 브라키디오스':'임계 브라키디오스','혼돈에 신음하는 고어·마가라':'혼돈의 고어·마가라','밀라보레아스 (흑룡)':'밀라보레아스','밀라보레아스 (선조룡)':'밀라보레아스 (조룡)'}
 def canonical_monster(name): return MONSTER_ALIASES.get(str(name or '').strip(),str(name or '').strip())
 by_name={}
@@ -67,6 +67,12 @@ for a in armors:
 for d in decos:
     for name,count in material_matches(d.get('materials','')):
         add(name,'uses',{'type':'decoration','id':d.get('id'),'name':d.get('name',''),'slots':d.get('slots'),'count':count,'materials':d.get('materials','')})
+# Quest reward index: canonical quest reward links, including restored MH4G event tickets.
+qby={q.get('id'):q for q in quests}
+for qid,row in (qref.get('quests') or {}).items():
+    q=qby.get(qid,{})
+    for name in row.get('rewardItems') or []:
+        add(name,'acquire',{'type':'quest','id':qid,'name':q.get('name',''),'questType':q.get('questType',row.get('questType','')),'level':q.get('level',row.get('level','')),'location':q.get('location',row.get('location','')),'objective':q.get('objective','')})
 # Event/episode quest notes: only parse the declared 주요 보수 segment, never the old 사용처 text.
 for q in quests:
     note=str(q.get('note') or '')

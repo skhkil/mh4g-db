@@ -40,7 +40,7 @@
     "components": [],
     "hasDecoration": true,
     "decorationCount": 2,
-    "armorCount": 120,
+    "armorCount": 143,
     "file": "skill_bcf68a1ff0a1.json"
   },
   {
@@ -54,7 +54,7 @@
     ],
     "hasDecoration": false,
     "decorationCount": 0,
-    "armorCount": 24,
+    "armorCount": 41,
     "file": "skill_3ab130560c8a.json"
   },
   {
@@ -79,7 +79,7 @@
     ],
     "hasDecoration": false,
     "decorationCount": 0,
-    "armorCount": 14,
+    "armorCount": 24,
     "file": "skill_43cd18168b4b.json"
   },
   {
@@ -112,7 +112,7 @@
     "components": [],
     "hasDecoration": true,
     "decorationCount": 2,
-    "armorCount": 70,
+    "armorCount": 74,
     "file": "skill_a3c4d7818b03.json"
   },
   {
@@ -126,7 +126,7 @@
     ],
     "hasDecoration": false,
     "decorationCount": 0,
-    "armorCount": 30,
+    "armorCount": 45,
     "file": "skill_ed1944192c5e.json"
   },
   {
@@ -137,7 +137,7 @@
     "components": [],
     "hasDecoration": true,
     "decorationCount": 1,
-    "armorCount": 40,
+    "armorCount": 60,
     "file": "skill_6365d7eb75b5.json"
   },
   {
@@ -159,7 +159,7 @@
     "components": [],
     "hasDecoration": true,
     "decorationCount": 3,
-    "armorCount": 290,
+    "armorCount": 300,
     "file": "skill_2a9c189a93d7.json"
   },
   {
@@ -181,7 +181,7 @@
     "components": [],
     "hasDecoration": true,
     "decorationCount": 2,
-    "armorCount": 87,
+    "armorCount": 103,
     "file": "skill_36177c02fa41.json"
   },
   {
@@ -203,7 +203,7 @@
     "components": [],
     "hasDecoration": true,
     "decorationCount": 2,
-    "armorCount": 71,
+    "armorCount": 79,
     "file": "skill_f743b97156ed.json"
   },
   {
@@ -214,7 +214,7 @@
     "components": [],
     "hasDecoration": true,
     "decorationCount": 2,
-    "armorCount": 118,
+    "armorCount": 130,
     "file": "skill_411e538f7c2f.json"
   },
   {
@@ -225,7 +225,7 @@
     "components": [],
     "hasDecoration": true,
     "decorationCount": 2,
-    "armorCount": 37,
+    "armorCount": 53,
     "file": "skill_0b8715ba4a76.json"
   },
   {
@@ -250,7 +250,7 @@
     ],
     "hasDecoration": false,
     "decorationCount": 0,
-    "armorCount": 4,
+    "armorCount": 8,
     "file": "skill_8e9aa57c53f3.json"
   },
   {
@@ -283,7 +283,7 @@
     "components": [],
     "hasDecoration": true,
     "decorationCount": 2,
-    "armorCount": 129,
+    "armorCount": 147,
     "file": "skill_63c2bbb3a506.json"
   },
   {
@@ -305,7 +305,7 @@
     "components": [],
     "hasDecoration": true,
     "decorationCount": 1,
-    "armorCount": 95,
+    "armorCount": 105,
     "file": "skill_32348dadc980.json"
   },
   {
@@ -349,7 +349,7 @@
     "components": [],
     "hasDecoration": true,
     "decorationCount": 3,
-    "armorCount": 284,
+    "armorCount": 310,
     "file": "skill_25c2859f7595.json"
   },
   {
@@ -363,7 +363,7 @@
     ],
     "hasDecoration": false,
     "decorationCount": 0,
-    "armorCount": 21,
+    "armorCount": 26,
     "file": "skill_0a0d7a1a0dde.json"
   },
   {
@@ -462,7 +462,7 @@
     "components": [],
     "hasDecoration": true,
     "decorationCount": 2,
-    "armorCount": 108,
+    "armorCount": 118,
     "file": "skill_96039668e096.json"
   },
   {
@@ -473,7 +473,7 @@
     "components": [],
     "hasDecoration": true,
     "decorationCount": 2,
-    "armorCount": 109,
+    "armorCount": 117,
     "file": "skill_d83820844b4d.json"
   },
   {
@@ -495,7 +495,7 @@
     "components": [],
     "hasDecoration": true,
     "decorationCount": 2,
-    "armorCount": 43,
+    "armorCount": 53,
     "file": "skill_89c345412fe4.json"
   },
   {
@@ -506,7 +506,7 @@
     "components": [],
     "hasDecoration": true,
     "decorationCount": 3,
-    "armorCount": 147,
+    "armorCount": 157,
     "file": "skill_2a87c14e4abc.json"
   },
   {
@@ -539,7 +539,7 @@
     "components": [],
     "hasDecoration": true,
     "decorationCount": 2,
-    "armorCount": 80,
+    "armorCount": 82,
     "file": "skill_e2bd81d7e74c.json"
   },
   {
@@ -550,7 +550,7 @@
     "components": [],
     "hasDecoration": true,
     "decorationCount": 2,
-    "armorCount": 32,
+    "armorCount": 40,
     "file": "skill_a6713dfa141b.json"
   },
   {
@@ -564,7 +564,7 @@
     ],
     "hasDecoration": false,
     "decorationCount": 0,
-    "armorCount": 9,
+    "armorCount": 15,
     "file": "skill_7717a3d7e05e.json"
   },
   {
@@ -641,7 +641,7 @@
     ],
     "hasDecoration": false,
     "decorationCount": 0,
-    "armorCount": 10,
+    "armorCount": 20,
     "file": "skill_c6c048ecdc6b.json"
   },
   {
@@ -656,7 +656,7 @@
     ],
     "hasDecoration": false,
     "decorationCount": 0,
-    "armorCount": 15,
+    "armorCount": 23,
     "file": "skill_8245ec7f462a.json"
   },
   {
@@ -667,7 +667,7 @@
     "components": [],
     "hasDecoration": false,
     "decorationCount": 0,
-    "armorCount": 13,
+    "armorCount": 16,
     "file": "skill_c7afd72b9998.json"
   },
   {
@@ -682,7 +682,7 @@
     ],
     "hasDecoration": false,
     "decorationCount": 0,
-    "armorCount": 21,
+    "armorCount": 26,
     "file": "skill_3745b2a425cd.json"
   },
   {
@@ -720,7 +720,7 @@
     ],
     "hasDecoration": false,
     "decorationCount": 0,
-    "armorCount": 14,
+    "armorCount": 22,
     "file": "skill_82438dbfdbd2.json"
   },
   {
@@ -742,7 +742,7 @@
     "components": [],
     "hasDecoration": true,
     "decorationCount": 2,
-    "armorCount": 50,
+    "armorCount": 68,
     "file": "skill_77ad65f34cd9.json"
   },
   {
@@ -753,7 +753,7 @@
     "components": [],
     "hasDecoration": true,
     "decorationCount": 2,
-    "armorCount": 100,
+    "armorCount": 102,
     "file": "skill_1826606ac13c.json"
   },
   {
@@ -764,7 +764,7 @@
     "components": [],
     "hasDecoration": true,
     "decorationCount": 2,
-    "armorCount": 98,
+    "armorCount": 100,
     "file": "skill_28cbe0a71742.json"
   },
   {
@@ -775,7 +775,7 @@
     "components": [],
     "hasDecoration": true,
     "decorationCount": 2,
-    "armorCount": 26,
+    "armorCount": 30,
     "file": "skill_1ae21921a72f.json"
   },
   {
@@ -786,7 +786,7 @@
     "components": [],
     "hasDecoration": true,
     "decorationCount": 3,
-    "armorCount": 202,
+    "armorCount": 213,
     "file": "skill_c9fb5f168064.json"
   },
   {
@@ -819,7 +819,7 @@
     "components": [],
     "hasDecoration": true,
     "decorationCount": 2,
-    "armorCount": 104,
+    "armorCount": 118,
     "file": "skill_410c93e16f86.json"
   },
   {
@@ -830,7 +830,7 @@
     "components": [],
     "hasDecoration": true,
     "decorationCount": 2,
-    "armorCount": 140,
+    "armorCount": 142,
     "file": "skill_9914f3bb006d.json"
   },
   {
@@ -914,7 +914,7 @@
     "components": [],
     "hasDecoration": true,
     "decorationCount": 1,
-    "armorCount": 37,
+    "armorCount": 44,
     "file": "skill_e43cf9f6c27e.json"
   },
   {
@@ -936,7 +936,7 @@
     "components": [],
     "hasDecoration": true,
     "decorationCount": 2,
-    "armorCount": 93,
+    "armorCount": 104,
     "file": "skill_82680c9bf0f3.json"
   },
   {
@@ -950,7 +950,7 @@
     ],
     "hasDecoration": false,
     "decorationCount": 0,
-    "armorCount": 33,
+    "armorCount": 35,
     "file": "skill_0669fcda6735.json"
   },
   {
@@ -964,7 +964,7 @@
     ],
     "hasDecoration": true,
     "decorationCount": 2,
-    "armorCount": 50,
+    "armorCount": 80,
     "file": "skill_77b3da4beed3.json"
   },
   {
@@ -986,7 +986,7 @@
     "components": [],
     "hasDecoration": true,
     "decorationCount": 2,
-    "armorCount": 60,
+    "armorCount": 70,
     "file": "skill_c21e79dfed09.json"
   },
   {
@@ -1008,7 +1008,7 @@
     "components": [],
     "hasDecoration": true,
     "decorationCount": 2,
-    "armorCount": 109,
+    "armorCount": 128,
     "file": "skill_bbe11654094a.json"
   },
   {
@@ -1066,7 +1066,7 @@
     "components": [],
     "hasDecoration": true,
     "decorationCount": 2,
-    "armorCount": 152,
+    "armorCount": 166,
     "file": "skill_d5d5017546d7.json"
   },
   {
@@ -1077,7 +1077,7 @@
     "components": [],
     "hasDecoration": true,
     "decorationCount": 3,
-    "armorCount": 157,
+    "armorCount": 176,
     "file": "skill_dc306dbb4ef6.json"
   },
   {
@@ -1088,7 +1088,7 @@
     "components": [],
     "hasDecoration": true,
     "decorationCount": 2,
-    "armorCount": 103,
+    "armorCount": 108,
     "file": "skill_2d4c948c0c23.json"
   },
   {
@@ -1099,7 +1099,7 @@
     "components": [],
     "hasDecoration": true,
     "decorationCount": 3,
-    "armorCount": 188,
+    "armorCount": 208,
     "file": "skill_cb5bba6091b7.json"
   },
   {
@@ -1113,7 +1113,7 @@
     ],
     "hasDecoration": false,
     "decorationCount": 0,
-    "armorCount": 25,
+    "armorCount": 29,
     "file": "skill_4b980fd1a16e.json"
   },
   {
@@ -1124,7 +1124,7 @@
     "components": [],
     "hasDecoration": true,
     "decorationCount": 2,
-    "armorCount": 124,
+    "armorCount": 126,
     "file": "skill_05e4b277d6b9.json"
   },
   {
@@ -1135,7 +1135,7 @@
     "components": [],
     "hasDecoration": true,
     "decorationCount": 1,
-    "armorCount": 32,
+    "armorCount": 46,
     "file": "skill_f6ae1efeaf6d.json"
   },
   {
@@ -1168,7 +1168,7 @@
     "components": [],
     "hasDecoration": true,
     "decorationCount": 1,
-    "armorCount": 41,
+    "armorCount": 43,
     "file": "skill_b95d60db9423.json"
   },
   {
@@ -1190,7 +1190,7 @@
     "components": [],
     "hasDecoration": true,
     "decorationCount": 2,
-    "armorCount": 121,
+    "armorCount": 157,
     "file": "skill_91feda75c5e9.json"
   },
   {
@@ -1229,7 +1229,7 @@
     ],
     "hasDecoration": false,
     "decorationCount": 0,
-    "armorCount": 32,
+    "armorCount": 42,
     "file": "skill_dafef2d56749.json"
   },
   {
@@ -1254,7 +1254,7 @@
     "components": [],
     "hasDecoration": true,
     "decorationCount": 2,
-    "armorCount": 90,
+    "armorCount": 95,
     "file": "skill_04fd12814adf.json"
   },
   {
@@ -1268,7 +1268,7 @@
     ],
     "hasDecoration": false,
     "decorationCount": 0,
-    "armorCount": 20,
+    "armorCount": 25,
     "file": "skill_68f9d1b72bff.json"
   },
   {
@@ -1290,7 +1290,7 @@
     "components": [],
     "hasDecoration": true,
     "decorationCount": 1,
-    "armorCount": 65,
+    "armorCount": 85,
     "file": "skill_a64199ed5d30.json"
   },
   {
@@ -1301,7 +1301,7 @@
     "components": [],
     "hasDecoration": true,
     "decorationCount": 2,
-    "armorCount": 64,
+    "armorCount": 89,
     "file": "skill_20267c0a62e3.json"
   },
   {
@@ -1312,7 +1312,7 @@
     "components": [],
     "hasDecoration": true,
     "decorationCount": 1,
-    "armorCount": 88,
+    "armorCount": 97,
     "file": "skill_b98410ce2063.json"
   },
   {
@@ -1323,7 +1323,7 @@
     "components": [],
     "hasDecoration": true,
     "decorationCount": 2,
-    "armorCount": 238,
+    "armorCount": 260,
     "file": "skill_4d4485c17552.json"
   },
   {
@@ -1345,7 +1345,7 @@
     "components": [],
     "hasDecoration": true,
     "decorationCount": 2,
-    "armorCount": 107,
+    "armorCount": 118,
     "file": "skill_122ffa46b9a4.json"
   },
   {
@@ -1356,7 +1356,7 @@
     "components": [],
     "hasDecoration": true,
     "decorationCount": 1,
-    "armorCount": 45,
+    "armorCount": 55,
     "file": "skill_56899bd6d661.json"
   },
   {
@@ -1367,7 +1367,7 @@
     "components": [],
     "hasDecoration": true,
     "decorationCount": 2,
-    "armorCount": 105,
+    "armorCount": 115,
     "file": "skill_aa8a7d803517.json"
   },
   {
@@ -1378,7 +1378,7 @@
     "components": [],
     "hasDecoration": true,
     "decorationCount": 2,
-    "armorCount": 47,
+    "armorCount": 52,
     "file": "skill_a9d9b5fe31e4.json"
   },
   {
@@ -1400,7 +1400,7 @@
     "components": [],
     "hasDecoration": true,
     "decorationCount": 2,
-    "armorCount": 164,
+    "armorCount": 168,
     "file": "skill_a71c734bea26.json"
   },
   {
@@ -1411,7 +1411,7 @@
     "components": [],
     "hasDecoration": true,
     "decorationCount": 2,
-    "armorCount": 145,
+    "armorCount": 157,
     "file": "skill_dd358f9bd4d7.json"
   },
   {
@@ -1433,7 +1433,7 @@
     "components": [],
     "hasDecoration": true,
     "decorationCount": 1,
-    "armorCount": 105,
+    "armorCount": 116,
     "file": "skill_78219e43d710.json"
   },
   {
@@ -1444,7 +1444,7 @@
     "components": [],
     "hasDecoration": true,
     "decorationCount": 2,
-    "armorCount": 59,
+    "armorCount": 69,
     "file": "skill_771a2a6d9d1e.json"
   },
   {
@@ -1488,7 +1488,7 @@
     "components": [],
     "hasDecoration": true,
     "decorationCount": 2,
-    "armorCount": 66,
+    "armorCount": 68,
     "file": "skill_9d982d6cb255.json"
   },
   {
@@ -1532,7 +1532,7 @@
     "components": [],
     "hasDecoration": true,
     "decorationCount": 1,
-    "armorCount": 64,
+    "armorCount": 72,
     "file": "skill_837350925f0a.json"
   },
   {
@@ -1612,7 +1612,7 @@
     "components": [],
     "hasDecoration": true,
     "decorationCount": 2,
-    "armorCount": 130,
+    "armorCount": 136,
     "file": "skill_4b9bc9c6f953.json"
   },
   {
@@ -1623,7 +1623,7 @@
     "components": [],
     "hasDecoration": true,
     "decorationCount": 2,
-    "armorCount": 130,
+    "armorCount": 146,
     "file": "skill_977515684794.json"
   },
   {

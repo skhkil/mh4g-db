@@ -1173,3 +1173,20 @@ button{border:1px solid var(--line);background:#202b39;color:white;border-radius
 .build-card-clickable{cursor:pointer;transition:border-color .15s ease,transform .15s ease,background .15s ease}
 .build-card-clickable:hover,.build-card-clickable:focus{border-color:#6b8fb8;background:#14202d;outline:none;transform:translateY(-1px)}
 .build-card-action{margin-top:10px;padding-top:8px;border-top:1px solid var(--line);font-size:11px;color:var(--accent2);font-weight:700}
+
+/* v0.7.7 hotfix11 restored-armor acquisition progression */
+.armor-progress-cell{min-width:180px;vertical-align:top}
+.armor-progression{min-width:170px}
+.armor-progression>summary{cursor:pointer;font-weight:700;white-space:nowrap}
+.armor-progress-body{min-width:320px;max-width:520px;padding:10px 0 2px;display:grid;gap:10px}
+.armor-progress-quick{display:flex;gap:6px;align-items:center;flex-wrap:wrap;padding:7px 8px;border:1px solid var(--line);border-radius:8px}
+.armor-progress-quick>b{min-width:72px;font-size:12px}
+.armor-progress-material{border-top:1px solid var(--line);padding-top:8px}
+.armor-progress-material:first-of-type{border-top:0}
+.armor-progress-material-head{font-weight:700;margin-bottom:5px}
+.armor-progress-material ul{list-style:none;padding:0;margin:0;display:grid;gap:5px}
+.armor-progress-material li{display:flex;align-items:center;gap:6px;flex-wrap:wrap;font-size:12px}
+.armor-progress-material li small{display:block;width:100%;padding-left:66px;color:var(--muted)}
+.armor-progress-kind{display:inline-flex;align-items:center;justify-content:center;min-width:58px;padding:2px 5px;border:1px solid var(--line);border-radius:999px;font-size:10px;font-weight:700}
+.armor-progress-kind.event{border-color:#c85d4e}.armor-progress-kind.exchange{border-color:#6d8cbf}.armor-progress-kind.facility{border-color:#659d7a}.armor-progress-kind.arena{border-color:#a17ab0}
+@media(max-width:760px){.armor-progress-body{min-width:270px;max-width:82vw}.armor-progress-cell{min-width:150px}.armor-progress-material li small{padding-left:0}}
