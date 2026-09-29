@@ -1,0 +1,303 @@
+{
+  "materials": [
+    {
+      "name": "鈴蘭最 強の証",
+      "count": 2,
+      "nameJa": "鈴蘭最強の証",
+      "itemId": "item_d662d8ae1ac4",
+      "mh4uId": 1363,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "event-g-055",
+          "name": "어둠의 촛불",
+          "nameEn": "The Candle of Darkness",
+          "level": "G★2",
+          "questType": "event",
+          "location": "금지된 땅",
+          "objective": "고어·마가라 토벌",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "길드티켓S",
+      "count": 1,
+      "nameJa": "ギルドチケットＳ",
+      "itemId": "item_fe8dd74cfa10",
+      "mh4uId": 1440,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "event-high-014",
+          "name": "도약하는 공포",
+          "nameEn": "Leaping Terror",
+          "level": "★4",
+          "questType": "event",
+          "location": "Dunes (D)",
+          "objective": "다이묘자자미 1마리와 도스가레오 1마리 수렵",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "event-high-012",
+          "name": "평원에서 유유자적",
+          "nameEn": "Plain & Carefree",
+          "level": "★4",
+          "questType": "event",
+          "location": "유적 평원",
+          "objective": "얀쿡크 1마리 수렵",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "event-high-013",
+          "name": "헤비 메탈",
+          "nameEn": "Heavy Metal",
+          "level": "★4",
+          "questType": "event",
+          "location": "격투장",
+          "objective": "바살모스 1마리와 바살모스 아종 1마리 수렵",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "이오스 비늘+",
+      "count": 6,
+      "nameJa": "イーオスの上鱗",
+      "itemId": "item_mh4u_0413",
+      "mh4uId": 413,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Ioprey",
+          "navMonster": "",
+          "nameEn": "Ioprey",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 40% · ×1",
+            "Body Carve · 25% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "도스이오스",
+          "navMonster": "도스이오스",
+          "nameEn": "Iodrome",
+          "rank": "상위",
+          "methods": [
+            "Capture · 26% · ×2",
+            "Body Carve · 20% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hunt-a-thon: Zinogre",
+          "nameEn": "Hunt-a-thon: Zinogre",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt 2 Zinogres before time expires or deliver a Paw Pass Ticket",
+          "probability": 22,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Mountain Rescue",
+          "nameEn": "Mountain Rescue",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Stygian Zinogre",
+          "probability": 22,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Harvest Tour: Volcanic Hollow",
+          "nameEn": "Harvest Tour: Volcanic Hollow",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+          "probability": 18,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "도스이오스 머리",
+      "count": 3,
+      "nameJa": "ドスイーオスの頭",
+      "itemId": "item_mh4u_0418",
+      "mh4uId": 418,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "도스이오스",
+          "navMonster": "도스이오스",
+          "nameEn": "Iodrome",
+          "rank": "상위",
+          "methods": [
+            "Break Head · 15% · ×1",
+            "Break Head · 10% · ×1",
+            "Capture · 8% · ×1",
+            "Body Carve · 7% · ×1",
+            "Capture · 5% · ×1",
+            "Body Carve · 2% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Harvest Tour: Volcanic Hollow",
+          "nameEn": "Harvest Tour: Volcanic Hollow",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+          "probability": 10,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Take a Powderstone",
+          "nameEn": "Take a Powderstone",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 1 Powderstone",
+          "probability": 10,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Primal Pests",
+          "nameEn": "Primal Pests",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt an Iodrome and a Seltas",
+          "probability": 10,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "Ioprey",
+        "navMonster": ""
+      },
+      {
+        "name": "도스이오스",
+        "navMonster": "도스이오스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "event-g-055",
+        "name": "어둠의 촛불",
+        "nameJa": "",
+        "level": "G★2",
+        "questType": "event",
+        "location": "금지된 땅",
+        "objective": "고어·마가라 토벌",
+        "note": ""
+      },
+      {
+        "id": "event-high-014",
+        "name": "도약하는 공포",
+        "nameJa": "",
+        "level": "★4",
+        "questType": "event",
+        "location": "Dunes (D)",
+        "objective": "다이묘자자미 1마리와 도스가레오 1마리 수렵",
+        "note": ""
+      },
+      {
+        "id": "event-high-012",
+        "name": "평원에서 유유자적",
+        "nameJa": "",
+        "level": "★4",
+        "questType": "event",
+        "location": "유적 평원",
+        "objective": "얀쿡크 1마리 수렵",
+        "note": ""
+      },
+      {
+        "id": "event-high-013",
+        "name": "헤비 메탈",
+        "nameJa": "",
+        "level": "★4",
+        "questType": "event",
+        "location": "격투장",
+        "objective": "바살모스 1마리와 바살모스 아종 1마리 수렵",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Hunt-a-thon: Zinogre",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt 2 Zinogres before time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Mountain Rescue",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Stygian Zinogre",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Harvest Tour: Volcanic Hollow",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Take a Powderstone",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 1 Powderstone",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Primal Pests",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt an Iodrome and a Seltas",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

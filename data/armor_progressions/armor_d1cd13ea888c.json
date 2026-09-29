@@ -1,0 +1,377 @@
+{
+  "materials": [
+    {
+      "name": "자화룡 중갑각",
+      "count": 4,
+      "nameJa": "雌火竜の重殻",
+      "itemId": "item_mh4u_0665",
+      "mh4uId": 665,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "리오레이아",
+          "navMonster": "리오레이아",
+          "nameEn": "Rathian",
+          "rank": "G급",
+          "methods": [
+            "Break Back · 69% · ×1",
+            "Break Head · 68% · ×1",
+            "Capture · 32% · ×1",
+            "Body Carve · 28% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hunter In Green and Red",
+          "nameEn": "Hunter In Green and Red",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Rathian and a Red Khezu",
+          "probability": 25,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Royal Assassination",
+          "nameEn": "Royal Assassination",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Rathian",
+          "probability": 25,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "찬란한 체액",
+          "requiredItemId": "item_mh4u_1167",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: Claw Clash",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "화룡 강날개발톱",
+      "count": 3,
+      "nameJa": "火竜の剛翼爪",
+      "itemId": "item_mh4u_0711",
+      "mh4uId": 711,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "리오레우스",
+          "navMonster": "리오레우스",
+          "nameEn": "Rathalos",
+          "rank": "G급",
+          "methods": [
+            "Break Wing · 75% · ×2"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "리오레이아",
+          "navMonster": "리오레이아",
+          "nameEn": "Rathian",
+          "rank": "G급",
+          "methods": [
+            "Break Wing · 60% · ×2"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "리오레이아 아종",
+          "navMonster": "리오레이아 아종",
+          "nameEn": "Pink Rathian",
+          "rank": "G급",
+          "methods": [
+            "Break Wing · 60% · ×2"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "자화룡 가시+",
+      "count": 2,
+      "nameJa": "雌火竜の上棘",
+      "itemId": "item_mh4u_0668",
+      "mh4uId": 668,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "리오레이아",
+          "navMonster": "리오레이아",
+          "nameEn": "Rathian",
+          "rank": "상위",
+          "methods": [
+            "Break Back · 30% · ×1",
+            "Tail Carve · 15% · ×1",
+            "Body Carve · 10% · ×1",
+            "Shiny Drop · 10% · ×1",
+            "Shiny Drop · 8% · ×1",
+            "Body Carve · 5% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "리오레이아 아종",
+          "navMonster": "리오레이아 아종",
+          "nameEn": "Pink Rathian",
+          "rank": "상위",
+          "methods": [
+            "Break Back · 30% · ×1",
+            "Tail Carve · 16% · ×1",
+            "Shiny Drop · 10% · ×1",
+            "Shiny Drop · 8% · ×1",
+            "Body Carve · 6% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Harvest Tour: Dunes (Night)",
+          "nameEn": "Harvest Tour: Dunes (Night)",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+          "probability": 7,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "In the Pink",
+          "nameEn": "In the Pink",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Pink Rathian",
+          "probability": 7,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Killer Queens",
+          "nameEn": "Killer Queens",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt 2 Rathians",
+          "probability": 7,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "등어룡 가시+",
+          "requiredItemId": "item_mh4u_1126",
+          "unlockQuestId": "",
+          "unlockQuest": "Trader in Trouble",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "옥염석",
+      "count": 3,
+      "nameJa": "獄炎石",
+      "itemId": "item_05a0a5d02783",
+      "mh4uId": 218,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "그라비모스",
+          "navMonster": "그라비모스",
+          "nameEn": "Gravios",
+          "rank": "G급",
+          "methods": [
+            "Shiny Drop · 30% · ×1",
+            "Break Head · 10% · ×1",
+            "Shiny Drop · 6% · ×1",
+            "Capture · 6% · ×1",
+            "Tail Carve · 2% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "극한상태 그라비모스",
+          "navMonster": "그라비모스",
+          "nameEn": "Apex Gravios",
+          "rank": "G급",
+          "methods": [
+            "Shiny Drop · 30% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "그라비모스 아종",
+          "navMonster": "그라비모스 아종",
+          "nameEn": "Black Gravios",
+          "rank": "G급",
+          "methods": [
+            "Shiny Drop · 30% · ×1",
+            "Break Head · 10% · ×1",
+            "Tail Carve · 9% · ×1",
+            "Break Belly · 8% · ×1",
+            "Shiny Drop · 6% · ×1",
+            "Capture · 6% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Stand Tall",
+          "nameEn": "Advanced: Stand Tall",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay an Akantor",
+          "probability": 8,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Take a Powderstone",
+          "nameEn": "Take a Powderstone",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 1 Powderstone",
+          "probability": 8,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Heat Exhaustion",
+          "nameEn": "Heat Exhaustion",
+          "level": "Guild★5",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Deliver 4 Powderstones",
+          "probability": 8,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "리오레이아",
+        "navMonster": "리오레이아"
+      },
+      {
+        "name": "리오레우스",
+        "navMonster": "리오레우스"
+      },
+      {
+        "name": "리오레이아 아종",
+        "navMonster": "리오레이아 아종"
+      },
+      {
+        "name": "그라비모스",
+        "navMonster": "그라비모스"
+      },
+      {
+        "name": "극한상태 그라비모스",
+        "navMonster": "그라비모스"
+      },
+      {
+        "name": "그라비모스 아종",
+        "navMonster": "그라비모스 아종"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Hunter In Green and Red",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Rathian and a Red Khezu",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Royal Assassination",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Rathian",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Harvest Tour: Dunes (Night)",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "In the Pink",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Pink Rathian",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Killer Queens",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt 2 Rathians",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Stand Tall",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay an Akantor",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Take a Powderstone",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 1 Powderstone",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Heat Exhaustion",
+        "nameJa": "",
+        "level": "Guild★5",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Deliver 4 Powderstones",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

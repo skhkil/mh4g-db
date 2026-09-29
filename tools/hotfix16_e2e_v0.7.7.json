@@ -1,0 +1,9 @@
+{
+  "ok": true,
+  "errors": [],
+  "metrics": {
+    "initialLoadMs": 615.02,
+    "armorSearchMs": 277.26
+  },
+  "cycles": 15
+}

@@ -1,0 +1,318 @@
+{
+  "materials": [
+    {
+      "name": "호상어 두툼가죽",
+      "count": 4,
+      "nameJa": "虎鮫の厚皮",
+      "itemId": "item_mh4u_0562",
+      "mh4uId": 562,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "자보아자길 아종",
+          "navMonster": "자보아자길 아종",
+          "nameEn": "Tigerstripe Zamtrios",
+          "rank": "G급",
+          "methods": [
+            "Capture · 36% · ×1",
+            "Body Carve · 33% · ×1",
+            "Break Front Leg · 24% · ×1",
+            "Break Fin · 11% · ×1",
+            "Break Tail · 11% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Grand Finals Confrontation",
+          "nameEn": "Grand Finals Confrontation",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Tigerstripe Zamtrios",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Tiger-sharq",
+          "nameEn": "Advanced: Tiger-sharq",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Tigerstripe Zamtrios",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "호상어 두툼비늘",
+      "count": 2,
+      "nameJa": "虎鮫の厚鱗",
+      "itemId": "item_mh4u_0563",
+      "mh4uId": 563,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "자보아자길 아종",
+          "navMonster": "자보아자길 아종",
+          "nameEn": "Tigerstripe Zamtrios",
+          "rank": "G급",
+          "methods": [
+            "Break Front Leg · 44% · ×1",
+            "Shiny Drop · 35% · ×1",
+            "Body Carve · 25% · ×1",
+            "Break Fin · 24% · ×1",
+            "Break Tail · 24% · ×1",
+            "Capture · 20% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Grand Finals Confrontation",
+          "nameEn": "Grand Finals Confrontation",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Tigerstripe Zamtrios",
+          "probability": 16,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Tiger-sharq",
+          "nameEn": "Advanced: Tiger-sharq",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Tigerstripe Zamtrios",
+          "probability": 16,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "개구리기름++",
+      "count": 3,
+      "nameJa": "カワズの大殿油",
+      "itemId": "item_mh4u_0544",
+      "mh4uId": 544,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "테츠카브라",
+          "navMonster": "테츠카브라",
+          "nameEn": "Tetsucabra",
+          "rank": "G급",
+          "methods": [
+            "Shiny Drop · 35% · ×1",
+            "Capture · 20% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "테츠카브라 아종",
+          "navMonster": "테츠카브라 아종",
+          "nameEn": "Berserk Tetsucabra",
+          "rank": "G급",
+          "methods": [
+            "Shiny Drop · 35% · ×1",
+            "Capture · 20% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "자보아자길",
+          "navMonster": "자보아자길",
+          "nameEn": "Zamtrios",
+          "rank": "G급",
+          "methods": [
+            "Shiny Drop · 10% · ×1",
+            "Capture · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Chasing Tail",
+          "nameEn": "Chasing Tail",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt 2 Tetsucabras",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Berserker Rage",
+          "nameEn": "Berserker Rage",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Berserk Tetsucabra",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Hollow Hysterics",
+          "nameEn": "Advanced: Hollow Hysterics",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Nerscylla and a Tetsucabra",
+          "probability": 12,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "두꺼운 두툼가죽",
+      "count": 2,
+      "nameJa": "肉厚な厚皮",
+      "itemId": "item_mh4u_0548",
+      "mh4uId": 548,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "스쿠아길",
+          "navMonster": "",
+          "nameEn": "Zamite",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 40% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "All-You-Can-Hunt Zamite",
+          "nameEn": "All-You-Can-Hunt Zamite",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay 25 Zamite",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Puffer Fish",
+          "nameEn": "Puffer Fish",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Zamtrios",
+          "probability": 24,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "자보아자길 아종",
+        "navMonster": "자보아자길 아종"
+      },
+      {
+        "name": "테츠카브라",
+        "navMonster": "테츠카브라"
+      },
+      {
+        "name": "테츠카브라 아종",
+        "navMonster": "테츠카브라 아종"
+      },
+      {
+        "name": "자보아자길",
+        "navMonster": "자보아자길"
+      },
+      {
+        "name": "스쿠아길",
+        "navMonster": ""
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Grand Finals Confrontation",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Tigerstripe Zamtrios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Tiger-sharq",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Tigerstripe Zamtrios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Chasing Tail",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt 2 Tetsucabras",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Berserker Rage",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Berserk Tetsucabra",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Hollow Hysterics",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Nerscylla and a Tetsucabra",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "All-You-Can-Hunt Zamite",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay 25 Zamite",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Puffer Fish",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Zamtrios",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

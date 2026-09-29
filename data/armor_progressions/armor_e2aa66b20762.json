@@ -1,0 +1,118 @@
+{
+  "materials": [
+    {
+      "name": "영웅의증표",
+      "count": 2,
+      "nameJa": "英雄の証",
+      "itemId": "item_mh4u_1396",
+      "mh4uId": 1396,
+      "sources": [
+        {
+          "type": "acquire",
+          "label": "퀘스트·투기대회 보수"
+        }
+      ]
+    },
+    {
+      "name": "발바닥스탬프",
+      "count": 2,
+      "nameJa": "肉球のスタンプ",
+      "itemId": "item_3ff9f436a7a7",
+      "mh4uId": 1432,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "메라루",
+          "navMonster": "",
+          "nameEn": "Melynx",
+          "rank": "하위",
+          "methods": [
+            "Shiny Drop · 20% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "아이루",
+          "navMonster": "",
+          "nameEn": "Felyne",
+          "rank": "하위",
+          "methods": [
+            "Shiny Drop · 12% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "The Hero and the Fiery King",
+          "nameEn": "The Hero and the Fiery King",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Rathalos",
+          "probability": 20,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "아이룰루",
+      "count": 20,
+      "nameJa": "マタタビ",
+      "itemId": "item_2e67c6057156",
+      "mh4uId": 177,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "",
+          "name": "The Hero and the Fiery King",
+          "nameEn": "The Hero and the Fiery King",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Rathalos",
+          "probability": 24,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "대장로티켓",
+      "count": 1,
+      "nameJa": "大長老チケット",
+      "itemId": "item_64f8e301f2c3",
+      "mh4uId": 1442,
+      "sources": [
+        {
+          "type": "acquire",
+          "label": "이벤트 퀘스트 보수"
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "메라루",
+        "navMonster": ""
+      },
+      {
+        "name": "아이루",
+        "navMonster": ""
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "The Hero and the Fiery King",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Rathalos",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

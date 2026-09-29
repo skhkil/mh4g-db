@@ -1,0 +1,313 @@
+{
+  "materials": [
+    {
+      "name": "공폭룡 두툼흑가죽",
+      "count": 4,
+      "nameJa": "恐暴竜の厚黒皮",
+      "itemId": "item_mh4u_0917",
+      "mh4uId": 917,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "이블조",
+          "navMonster": "이블조",
+          "nameEn": "Deviljho",
+          "rank": "G급",
+          "methods": [
+            "Capture · 36% · ×1",
+            "Body Carve · 28% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "극한상태 이블조",
+          "navMonster": "이블조",
+          "nameEn": "Apex Deviljho",
+          "rank": "G급",
+          "methods": [
+            "Capture · 36% · ×1",
+            "Body Carve · 28% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "광폭 이블조",
+          "navMonster": "광폭 이블조",
+          "nameEn": "Savage Deviljho",
+          "rank": "G급",
+          "methods": [
+            "Capture · 20% · ×1",
+            "Body Carve · 18% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: The Master's Test",
+          "nameEn": "Advanced: The Master's Test",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 10,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "공폭룡 멸린",
+      "count": 1,
+      "nameJa": "恐暴竜の滅鱗",
+      "itemId": "item_mh4u_0931",
+      "mh4uId": 931,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "극한상태 이블조",
+          "navMonster": "이블조",
+          "nameEn": "Apex Deviljho",
+          "rank": "G급",
+          "methods": [
+            "Capture · 6% · ×1",
+            "Tail Carve · 5% · ×1",
+            "Body Carve · 4% · ×1",
+            "Shiny Drop · 3% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "광폭 이블조",
+          "navMonster": "광폭 이블조",
+          "nameEn": "Savage Deviljho",
+          "rank": "G급",
+          "methods": [
+            "Capture · 5% · ×1",
+            "Tail Carve · 4% · ×1",
+            "Body Carve · 3% · ×1",
+            "Shiny Drop · 2% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "이블조",
+          "navMonster": "이블조",
+          "nameEn": "Deviljho",
+          "rank": "G급",
+          "methods": [
+            "Capture · 4% · ×1",
+            "Tail Carve · 3% · ×1",
+            "Body Carve · 2% · ×1",
+            "Shiny Drop · 1% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: The Master's Test",
+          "nameEn": "Advanced: The Master's Test",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 4,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "공폭룡 두툼흑비늘",
+      "count": 6,
+      "nameJa": "恐暴竜の厚黒鱗",
+      "itemId": "item_mh4u_0915",
+      "mh4uId": 915,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "이블조",
+          "navMonster": "이블조",
+          "nameEn": "Deviljho",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 35% · ×1",
+            "Tail Carve · 32% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "극한상태 이블조",
+          "navMonster": "이블조",
+          "nameEn": "Apex Deviljho",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 30% · ×1",
+            "Tail Carve · 30% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "광폭 이블조",
+          "navMonster": "광폭 이블조",
+          "nameEn": "Savage Deviljho",
+          "rank": "G급",
+          "methods": [
+            "Tail Carve · 26% · ×1",
+            "Body Carve · 25% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: The Master's Test",
+          "nameEn": "Advanced: The Master's Test",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 11,
+          "count": 3
+        }
+      ]
+    },
+    {
+      "name": "농축중갑진액",
+      "count": 1,
+      "nameJa": "濃縮重甲エキス",
+      "itemId": "item_mh4u_0629",
+      "mh4uId": 629,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "게넬·셀타스 아종",
+          "navMonster": "게넬·셀타스 아종",
+          "nameEn": "Desert Seltas Queen",
+          "rank": "G급",
+          "methods": [
+            "Capture · 9% · ×1",
+            "Body Carve · 7% · ×1",
+            "Shiny Drop · 5% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "게넬·셀타스",
+          "navMonster": "게넬·셀타스",
+          "nameEn": "Seltas Queen",
+          "rank": "G급",
+          "methods": [
+            "Capture · 7% · ×1",
+            "Break Head · 7% · ×1",
+            "Body Carve · 5% · ×1",
+            "Shiny Drop · 5% · ×1",
+            "Capture · 4% · ×1",
+            "Break Head · 4% · ×1",
+            "Body Carve · 3% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Pestering Pest",
+          "nameEn": "Pestering Pest",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Desert Seltas Queen",
+          "probability": 8,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Escaped Convicts",
+          "nameEn": "Advanced: Escaped Convicts",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Shrouded Nerscylla and a Desert Seltas Queen",
+          "probability": 8,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Strutting the Royal Runway",
+          "nameEn": "Strutting the Royal Runway",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Capture a Seltas Queen",
+          "probability": 6,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "이블조",
+        "navMonster": "이블조"
+      },
+      {
+        "name": "극한상태 이블조",
+        "navMonster": "이블조"
+      },
+      {
+        "name": "광폭 이블조",
+        "navMonster": "광폭 이블조"
+      },
+      {
+        "name": "게넬·셀타스 아종",
+        "navMonster": "게넬·셀타스 아종"
+      },
+      {
+        "name": "게넬·셀타스",
+        "navMonster": "게넬·셀타스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: The Master's Test",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt all large monsters",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Pestering Pest",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Desert Seltas Queen",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Escaped Convicts",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Shrouded Nerscylla and a Desert Seltas Queen",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Strutting the Royal Runway",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Capture a Seltas Queen",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

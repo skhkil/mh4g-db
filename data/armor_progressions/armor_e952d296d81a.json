@@ -1,0 +1,258 @@
+{
+  "materials": [
+    {
+      "name": "등어룡 가시+",
+      "count": 2,
+      "nameJa": "灯魚竜の上棘",
+      "itemId": "item_mh4u_1126",
+      "mh4uId": 1126,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "자화룡 가시+",
+          "requiredItemId": "item_mh4u_0668",
+          "unlockQuestId": "quest_be13d9a412f4",
+          "unlockQuest": "화려한 매혹색과 홍색",
+          "unlockLevel": "★5",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "등어룡 가죽+",
+      "count": 4,
+      "nameJa": "灯魚竜の上皮",
+      "itemId": "item_mh4u_1125",
+      "mh4uId": 1125,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "자화룡 비늘+",
+          "requiredItemId": "item_mh4u_0661",
+          "unlockQuestId": "quest_be13d9a412f4",
+          "unlockQuest": "화려한 매혹색과 홍색",
+          "unlockLevel": "★5",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "괴상어 톱니",
+      "count": 2,
+      "nameJa": "化け鮫の鋸歯",
+      "itemId": "item_mh4u_0558",
+      "mh4uId": 558,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "자보아자길",
+          "navMonster": "자보아자길",
+          "nameEn": "Zamtrios",
+          "rank": "하위",
+          "methods": [
+            "Break Head · 100% · ×1",
+            "Capture · 14% · ×1",
+            "Capture · 12% · ×1",
+            "Body Carve · 8% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Meownster Hunter Havoc",
+          "nameEn": "Meownster Hunter Havoc",
+          "level": "Caravan★4",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Zamtrios",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "An Ice Surprise",
+          "nameEn": "An Ice Surprise",
+          "level": "Caravan★4",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Zamtrios",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Speartuna Fishing",
+          "nameEn": "Speartuna Fishing",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 3 Speartuna",
+          "probability": 12,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "용골+",
+      "count": 3,
+      "nameJa": "上竜骨",
+      "itemId": "item_a4eda339a44c",
+      "mh4uId": 309,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "그라비모스",
+          "navMonster": "그라비모스",
+          "nameEn": "Gravios",
+          "rank": "하위",
+          "methods": [
+            "Break Back · 40% · ×1",
+            "Break Wing · 10% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "얀쿡크 아종",
+          "navMonster": "얀쿡크 아종",
+          "nameEn": "Blue Yian Kut-Ku",
+          "rank": "상위",
+          "methods": [
+            "Capture · 27% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "다이묘자자미",
+          "navMonster": "다이묘자자미",
+          "nameEn": "Daimyo Hermitaur",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 20% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Queen and Rook",
+          "nameEn": "Queen and Rook",
+          "level": "Guild★3",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Rathian and a Gravios",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hunters' Heaven",
+          "nameEn": "Hunters' Heaven",
+          "level": "Guild★3",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Tigrex and a Zinogre",
+          "probability": 100,
+          "count": 3
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Energy Crisis",
+          "nameEn": "Energy Crisis",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 5 Coals",
+          "probability": 18,
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "자보아자길",
+        "navMonster": "자보아자길"
+      },
+      {
+        "name": "그라비모스",
+        "navMonster": "그라비모스"
+      },
+      {
+        "name": "얀쿡크 아종",
+        "navMonster": "얀쿡크 아종"
+      },
+      {
+        "name": "다이묘자자미",
+        "navMonster": "다이묘자자미"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Meownster Hunter Havoc",
+        "nameJa": "",
+        "level": "Caravan★4",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Zamtrios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "An Ice Surprise",
+        "nameJa": "",
+        "level": "Caravan★4",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Zamtrios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Speartuna Fishing",
+        "nameJa": "",
+        "level": "Caravan★5",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 3 Speartuna",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Queen and Rook",
+        "nameJa": "",
+        "level": "Guild★3",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Rathian and a Gravios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Hunters' Heaven",
+        "nameJa": "",
+        "level": "Guild★3",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Tigrex and a Zinogre",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Energy Crisis",
+        "nameJa": "",
+        "level": "Caravan★5",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 5 Coals",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

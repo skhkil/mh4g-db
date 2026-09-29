@@ -1,0 +1,379 @@
+{
+  "materials": [
+    {
+      "name": "홍화룡 중갑각",
+      "count": 2,
+      "nameJa": "桜火竜の重殻",
+      "itemId": "item_mh4u_0676",
+      "mh4uId": 676,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "리오레이아 아종",
+          "navMonster": "리오레이아 아종",
+          "nameEn": "Pink Rathian",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 76% · ×1",
+            "Break Back · 69% · ×1",
+            "Body Carve · 32% · ×1",
+            "Capture · 25% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Pink Problems",
+          "nameEn": "Pink Problems",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt 2 Pink Rathians",
+          "probability": 24,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Harvest Tour: Dunes (Night)",
+          "nameEn": "Harvest Tour: Dunes (Night)",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+          "probability": 24,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Bolt of Pink",
+          "nameEn": "Advanced: Bolt of Pink",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Zinogre and a Pink Rathian",
+          "probability": 24,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "염과룡 지느러미++",
+          "requiredItemId": "item_mh4u_1176",
+          "unlockQuestId": "",
+          "unlockQuest": "Pink Problems",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "홍화룡 두툼비늘",
+      "count": 3,
+      "nameJa": "桜火竜の厚鱗",
+      "itemId": "item_mh4u_0674",
+      "mh4uId": 674,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "리오레이아 아종",
+          "navMonster": "리오레이아 아종",
+          "nameEn": "Pink Rathian",
+          "rank": "G급",
+          "methods": [
+            "Tail Carve · 58% · ×1",
+            "Body Carve · 44% · ×1",
+            "Break Wing · 40% · ×1",
+            "Capture · 32% · ×2",
+            "Shiny Drop · 25% · ×1",
+            "Break Head · 20% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Pink Problems",
+          "nameEn": "Pink Problems",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt 2 Pink Rathians",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Bolt of Pink",
+          "nameEn": "Advanced: Bolt of Pink",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Zinogre and a Pink Rathian",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Harvest Tour: Dunes (Night)",
+          "nameEn": "Harvest Tour: Dunes (Night)",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+          "probability": 18,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "염과룡 중갑각",
+          "requiredItemId": "item_mh4u_1175",
+          "unlockQuestId": "",
+          "unlockQuest": "Pink Problems",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "중룡골",
+      "count": 2,
+      "nameJa": "重竜骨",
+      "itemId": "item_93ba183fc30f",
+      "mh4uId": 312,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "그라비모스",
+          "navMonster": "그라비모스",
+          "nameEn": "Gravios",
+          "rank": "G급",
+          "methods": [
+            "Break Back · 30% · ×1",
+            "Break Wing · 30% · ×1",
+            "Tail Carve · 20% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "극한상태 그라비모스",
+          "navMonster": "그라비모스",
+          "nameEn": "Apex Gravios",
+          "rank": "G급",
+          "methods": [
+            "Break Back · 30% · ×1",
+            "Break Wing · 30% · ×1",
+            "Tail Carve · 17% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "그라비모스 아종",
+          "navMonster": "그라비모스 아종",
+          "nameEn": "Black Gravios",
+          "rank": "G급",
+          "methods": [
+            "Break Back · 30% · ×1",
+            "Tail Carve · 18% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Bad Hair Day: Monoblos",
+          "nameEn": "Bad Hair Day: Monoblos",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Monoblos",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "The Silvery Spear",
+          "nameEn": "The Silvery Spear",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a White Monoblos",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: All in Its Place",
+          "nameEn": "Advanced: All in Its Place",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt Gore Magala",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "자화룡 비밀가시",
+      "count": 2,
+      "nameJa": "雌火竜の秘棘",
+      "itemId": "item_mh4u_0669",
+      "mh4uId": 669,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "리오레이아",
+          "navMonster": "리오레이아",
+          "nameEn": "Rathian",
+          "rank": "G급",
+          "methods": [
+            "Break Back · 30% · ×1",
+            "Tail Carve · 15% · ×1",
+            "Body Carve · 8% · ×1",
+            "Shiny Drop · 8% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "리오레이아 아종",
+          "navMonster": "리오레이아 아종",
+          "nameEn": "Pink Rathian",
+          "rank": "G급",
+          "methods": [
+            "Break Back · 30% · ×1",
+            "Tail Carve · 16% · ×1",
+            "Body Carve · 8% · ×1",
+            "Shiny Drop · 8% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Pink Problems",
+          "nameEn": "Pink Problems",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt 2 Pink Rathians",
+          "probability": 8,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Harvest Tour: Dunes (Night)",
+          "nameEn": "Harvest Tour: Dunes (Night)",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+          "probability": 8,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Bolt of Pink",
+          "nameEn": "Advanced: Bolt of Pink",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Zinogre and a Pink Rathian",
+          "probability": 8,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "리오레이아 아종",
+        "navMonster": "리오레이아 아종"
+      },
+      {
+        "name": "그라비모스",
+        "navMonster": "그라비모스"
+      },
+      {
+        "name": "극한상태 그라비모스",
+        "navMonster": "그라비모스"
+      },
+      {
+        "name": "그라비모스 아종",
+        "navMonster": "그라비모스 아종"
+      },
+      {
+        "name": "리오레이아",
+        "navMonster": "리오레이아"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Pink Problems",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt 2 Pink Rathians",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Harvest Tour: Dunes (Night)",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Bolt of Pink",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Zinogre and a Pink Rathian",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Bad Hair Day: Monoblos",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Monoblos",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "The Silvery Spear",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a White Monoblos",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: All in Its Place",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt Gore Magala",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

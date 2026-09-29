@@ -1,0 +1,378 @@
+{
+  "materials": [
+    {
+      "name": "이오스 가죽",
+      "count": 2,
+      "nameJa": "イーオスの皮",
+      "itemId": "item_mh4u_0414",
+      "mh4uId": 414,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Ioprey",
+          "navMonster": "",
+          "nameEn": "Ioprey",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 15% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Learning Experience",
+          "nameEn": "Learning Experience",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay 8 Ioprey",
+          "probability": 100,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Ioprey In the Way",
+          "nameEn": "Ioprey In the Way",
+          "level": "Guild★3",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay 12 Ioprey",
+          "probability": 100,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Pick Your Poison",
+          "nameEn": "Pick Your Poison",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt an Iodrome",
+          "probability": 25,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "이오스 비늘",
+      "count": 4,
+      "nameJa": "イーオスの鱗",
+      "itemId": "item_mh4u_0412",
+      "mh4uId": 412,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Ioprey",
+          "navMonster": "",
+          "nameEn": "Ioprey",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 38% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "도스이오스",
+          "navMonster": "도스이오스",
+          "nameEn": "Iodrome",
+          "rank": "하위",
+          "methods": [
+            "Shiny Drop · 25% · ×1",
+            "Body Carve · 15% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Pick Your Poison",
+          "nameEn": "Pick Your Poison",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt an Iodrome",
+          "probability": 22,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Learning Experience",
+          "nameEn": "Learning Experience",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay 8 Ioprey",
+          "probability": 22,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Ioprey In the Way",
+          "nameEn": "Ioprey In the Way",
+          "level": "Guild★3",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay 12 Ioprey",
+          "probability": 22,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "용골【소】",
+      "count": 3,
+      "nameJa": "竜骨【小】",
+      "itemId": "item_4920157876c8",
+      "mh4uId": 304,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Apceros",
+          "navMonster": "",
+          "nameEn": "Apceros",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 40% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "Aptonoth",
+          "navMonster": "",
+          "nameEn": "Aptonoth",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 25% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "Gargwa",
+          "navMonster": "",
+          "nameEn": "Gargwa",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 15% · ×1",
+            "Body Carve · 5% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Midnight Madness",
+          "nameEn": "Midnight Madness",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Tigrex",
+          "probability": 32,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "The Gypceros Project",
+          "nameEn": "The Gypceros Project",
+          "level": "Guild★1",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Capture a Gypceros",
+          "probability": 30,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Operation Catch-a-Kecha",
+          "nameEn": "Operation Catch-a-Kecha",
+          "level": "Guild★1",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Capture a Kecha Wacha",
+          "probability": 30,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "철광석",
+      "count": 2,
+      "nameJa": "鉄鉱石",
+      "itemId": "item_a86a937adb56",
+      "mh4uId": 203,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "게리오스",
+          "navMonster": "게리오스",
+          "nameEn": "Gypceros",
+          "rank": "하위",
+          "methods": [
+            "Break Head · 40% · ×2"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Crystal Clearing",
+          "nameEn": "Crystal Clearing",
+          "level": "Caravan★2",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 4 Sulfur Crystals",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Sootstone Search",
+          "nameEn": "Sootstone Search",
+          "level": "Guild★2",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Deliver 3 Sootstone Ores",
+          "probability": 25,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Chip Off the Old Blockade",
+          "nameEn": "Chip Off the Old Blockade",
+          "level": "Caravan★2",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay 8 Konchu",
+          "probability": 20,
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "Ioprey",
+        "navMonster": ""
+      },
+      {
+        "name": "도스이오스",
+        "navMonster": "도스이오스"
+      },
+      {
+        "name": "Apceros",
+        "navMonster": ""
+      },
+      {
+        "name": "Aptonoth",
+        "navMonster": ""
+      },
+      {
+        "name": "Gargwa",
+        "navMonster": ""
+      },
+      {
+        "name": "게리오스",
+        "navMonster": "게리오스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Learning Experience",
+        "nameJa": "",
+        "level": "Caravan★5",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay 8 Ioprey",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Ioprey In the Way",
+        "nameJa": "",
+        "level": "Guild★3",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay 12 Ioprey",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Pick Your Poison",
+        "nameJa": "",
+        "level": "Caravan★5",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt an Iodrome",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Midnight Madness",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Tigrex",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "The Gypceros Project",
+        "nameJa": "",
+        "level": "Guild★1",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Capture a Gypceros",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Operation Catch-a-Kecha",
+        "nameJa": "",
+        "level": "Guild★1",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Capture a Kecha Wacha",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Crystal Clearing",
+        "nameJa": "",
+        "level": "Caravan★2",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 4 Sulfur Crystals",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Sootstone Search",
+        "nameJa": "",
+        "level": "Guild★2",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Deliver 3 Sootstone Ores",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Chip Off the Old Blockade",
+        "nameJa": "",
+        "level": "Caravan★2",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay 8 Konchu",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

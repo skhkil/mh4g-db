@@ -1,0 +1,255 @@
+{
+  "materials": [
+    {
+      "name": "붕룡 견갑각",
+      "count": 5,
+      "nameJa": "崩竜の堅殻",
+      "itemId": "item_mh4u_1146",
+      "mh4uId": 1146,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "우캄루바스",
+          "navMonster": "우캄루바스",
+          "nameEn": "Ukanlos",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 40% · ×1",
+            "Break Belly · 24% · ×1",
+            "Shiny Drop · 18% · ×1",
+            "Break Back · 15% · ×1",
+            "Tail Carve · 10% · ×1",
+            "Break Front Leg · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Glacial Grinder",
+          "nameEn": "Advanced: Glacial Grinder",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay an Ukanlos",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "패룡 견갑각",
+          "requiredItemId": "item_mh4u_0999",
+          "unlockQuestId": "quest_40e711339d0b",
+          "unlockQuest": "고난도: 미쳐 날뛰는 아캄토름",
+          "unlockLevel": "★7",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "붕룡 보옥",
+      "count": 1,
+      "nameJa": "崩竜の宝玉",
+      "itemId": "item_mh4u_1147",
+      "mh4uId": 1147,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "우캄루바스",
+          "navMonster": "우캄루바스",
+          "nameEn": "Ukanlos",
+          "rank": "G급",
+          "methods": [
+            "Break Belly · 8% · ×1",
+            "Break Belly · 6% · ×1",
+            "Break Head · 6% · ×1",
+            "Break Head · 4% · ×1",
+            "Body Carve · 4% · ×1",
+            "Body Carve · 2% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Icy Investigation",
+          "nameEn": "Advanced: Icy Investigation",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay an Ukanlos",
+          "probability": 15,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Silver Cataclysm",
+          "nameEn": "Advanced: Silver Cataclysm",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay an Ukanlos",
+          "probability": 15,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Glacial Grinder",
+          "nameEn": "Advanced: Glacial Grinder",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay an Ukanlos",
+          "probability": 8,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "희망의 증표",
+          "requiredItemId": "item_0d03c7de5e2a",
+          "unlockQuestId": "quest_40e711339d0b",
+          "unlockQuest": "고난도: 미쳐 날뛰는 아캄토름",
+          "unlockLevel": "★7",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "저주받은 용비늘",
+      "count": 6,
+      "nameJa": "穢れた竜鱗",
+      "itemId": "item_mh4u_0874",
+      "mh4uId": 874,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "고어·마가라",
+          "navMonster": "고어·마가라",
+          "nameEn": "Gore Magala",
+          "rank": "하위",
+          "methods": [
+            "Break Head · 64% · ×1",
+            "Break Head · 40% · ×1",
+            "Break Wing Leg · 25% · ×1",
+            "Capture · 20% · ×1",
+            "Break Wing Leg · 15% · ×1",
+            "Break Wing Leg · 15% · ×2",
+            "Capture · 12% · ×2"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Afraid of the Dark",
+          "nameEn": "Advanced: Afraid of the Dark",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Tipping the Scales",
+          "nameEn": "Tipping the Scales",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt Gore Magala",
+          "probability": 10,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Crazy Stupid Love",
+          "nameEn": "Crazy Stupid Love",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt Gore Magala",
+          "probability": 10,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "우캄루바스",
+        "navMonster": "우캄루바스"
+      },
+      {
+        "name": "고어·마가라",
+        "navMonster": "고어·마가라"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: Glacial Grinder",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay an Ukanlos",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Icy Investigation",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay an Ukanlos",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Silver Cataclysm",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay an Ukanlos",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Afraid of the Dark",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt all large monsters",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Tipping the Scales",
+        "nameJa": "",
+        "level": "Caravan★5",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt Gore Magala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Crazy Stupid Love",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt Gore Magala",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

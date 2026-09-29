@@ -1,0 +1,389 @@
+{
+  "materials": [
+    {
+      "name": "새까만 피",
+      "count": 4,
+      "nameJa": "ドス黒い血",
+      "itemId": "item_mh4u_0926",
+      "mh4uId": 926,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "광폭 이블조",
+          "navMonster": "광폭 이블조",
+          "nameEn": "Savage Deviljho",
+          "rank": "상위",
+          "methods": [
+            "Capture · 20% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Devil at Heaven's Gate",
+          "nameEn": "Devil at Heaven's Gate",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Deviljho",
+          "probability": 18,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "공폭룡 검은비늘",
+      "count": 6,
+      "nameJa": "恐暴竜の黒鱗",
+      "itemId": "item_mh4u_0914",
+      "mh4uId": 914,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "이블조",
+          "navMonster": "이블조",
+          "nameEn": "Deviljho",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 39% · ×1",
+            "Tail Carve · 32% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "광폭 이블조",
+          "navMonster": "광폭 이블조",
+          "nameEn": "Savage Deviljho",
+          "rank": "상위",
+          "methods": [
+            "Tail Carve · 26% · ×1",
+            "Body Carve · 25% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Devil of a Problem",
+          "nameEn": "Devil of a Problem",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Deviljho",
+          "probability": 32,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Naked and Afraid",
+          "nameEn": "Advanced: Naked and Afraid",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt 2 Deviljho",
+          "probability": 26,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Devil at Heaven's Gate",
+          "nameEn": "Devil at Heaven's Gate",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Deviljho",
+          "probability": 12,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "공폭룡 보옥",
+      "count": 1,
+      "nameJa": "恐暴竜の宝玉",
+      "itemId": "item_mh4u_0930",
+      "mh4uId": 930,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "이블조",
+          "navMonster": "이블조",
+          "nameEn": "Deviljho",
+          "rank": "G급",
+          "methods": [
+            "Capture · 6% · ×1",
+            "Tail Carve · 5% · ×1",
+            "Capture · 4% · ×1",
+            "Body Carve · 4% · ×1",
+            "Tail Carve · 3% · ×1",
+            "Shiny Drop · 3% · ×1",
+            "Body Carve · 2% · ×1",
+            "Shiny Drop · 1% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "극한상태 이블조",
+          "navMonster": "이블조",
+          "nameEn": "Apex Deviljho",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 6% · ×1",
+            "Tail Carve · 5% · ×1",
+            "Shiny Drop · 5% · ×1",
+            "Capture · 4% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "광폭 이블조",
+          "navMonster": "광폭 이블조",
+          "nameEn": "Savage Deviljho",
+          "rank": "상위",
+          "methods": [
+            "Capture · 5% · ×1",
+            "Tail Carve · 4% · ×1",
+            "Body Carve · 3% · ×1",
+            "Shiny Drop · 2% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Devil at Heaven's Gate",
+          "nameEn": "Devil at Heaven's Gate",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Deviljho",
+          "probability": 6,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: The Master's Test",
+          "nameEn": "Advanced: The Master's Test",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 6,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Tyrant's Maw",
+          "nameEn": "Advanced: Tyrant's Maw",
+          "level": "Caravan★9",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Deviljho",
+          "probability": 5,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "신비의 발광체",
+          "requiredItemId": "item_mh4u_1153",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: Naked and Afraid",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "고룡의 피",
+      "count": 2,
+      "nameJa": "古龍の血",
+      "itemId": "item_mh4u_0329",
+      "mh4uId": 329,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "다렌·모란",
+          "navMonster": "다렌·모란",
+          "nameEn": "Dah'ren Mohran",
+          "rank": "상위",
+          "methods": [
+            "Break Fin · 15% · ×1",
+            "Break Blowhole · 15% · ×1",
+            "Break Front Leg · 10% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "오나즈치",
+          "navMonster": "오나즈치",
+          "nameEn": "Chameleos",
+          "rank": "G급",
+          "methods": [
+            "Tail Carve · 12% · ×1",
+            "Body Carve · 7% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "다라·아마듈라",
+          "navMonster": "다라·아마듈라",
+          "nameEn": "Dalamadur",
+          "rank": "상위",
+          "methods": [
+            "Break Chest · 10% · ×2"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: A Formless Fiend",
+          "nameEn": "Advanced: A Formless Fiend",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Chameleos or repel it",
+          "probability": 30,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Operation Tongue Twister",
+          "nameEn": "Operation Tongue Twister",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Chameleos or repel it",
+          "probability": 30,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Operation Windbreaker",
+          "nameEn": "Operation Windbreaker",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Kushala Daora or repel it",
+          "probability": 30,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "광폭 이블조",
+        "navMonster": "광폭 이블조"
+      },
+      {
+        "name": "이블조",
+        "navMonster": "이블조"
+      },
+      {
+        "name": "극한상태 이블조",
+        "navMonster": "이블조"
+      },
+      {
+        "name": "다렌·모란",
+        "navMonster": "다렌·모란"
+      },
+      {
+        "name": "오나즈치",
+        "navMonster": "오나즈치"
+      },
+      {
+        "name": "다라·아마듈라",
+        "navMonster": "다라·아마듈라"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Devil at Heaven's Gate",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Deviljho",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Devil of a Problem",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Deviljho",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Naked and Afraid",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt 2 Deviljho",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: The Master's Test",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt all large monsters",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Tyrant's Maw",
+        "nameJa": "",
+        "level": "Caravan★9",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Deviljho",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: A Formless Fiend",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Chameleos or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Operation Tongue Twister",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Chameleos or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Operation Windbreaker",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Kushala Daora or repel it",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

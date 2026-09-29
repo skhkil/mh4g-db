@@ -1,0 +1,335 @@
+{
+  "materials": [
+    {
+      "name": "유쿠모티켓",
+      "count": 1,
+      "nameJa": "ユクモチケット",
+      "itemId": "item_mh4u_1424",
+      "mh4uId": 1424,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "event-episodic-079",
+          "name": "번외: 비밀의 파우치 회수",
+          "nameEn": "Bonus: Stash Grab",
+          "level": "★4",
+          "questType": "event",
+          "location": "Dunes (D)",
+          "objective": "비밀의 파우치 10개 납품",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "event-episodic-080",
+          "name": "번외: 그물로 이익을",
+          "nameEn": "Bonus: Net Profits",
+          "level": "★6",
+          "questType": "event",
+          "location": "원생림",
+          "objective": "초전뇌광충 3마리 납품",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "event-episodic-081",
+          "name": "번외: 더 큰 배가 필요해",
+          "nameEn": "Bonus: A Bigger Boat",
+          "level": "★6",
+          "questType": "event",
+          "location": "대해",
+          "objective": "셀레기오스 1마리 토벌",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "천인룡 조각발톱",
+      "count": 1,
+      "nameJa": "千刃竜の刻爪",
+      "itemId": "item_mh4u_0904",
+      "mh4uId": 904,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "셀레기오스",
+          "navMonster": "셀레기오스",
+          "nameEn": "Seregios",
+          "rank": "상위",
+          "methods": [
+            "Break Claw · 80% · ×1",
+            "Capture · 20% · ×1",
+            "Break Claw · 20% · ×2",
+            "Body Carve · 15% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "극한상태 셀레기오스",
+          "navMonster": "셀레기오스",
+          "nameEn": "Apex Seregios",
+          "rank": "상위",
+          "methods": [
+            "Break Claw · 80% · ×1",
+            "Capture · 20% · ×1",
+            "Break Claw · 20% · ×2",
+            "Body Carve · 15% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Dance of a Thousand Blades",
+          "nameEn": "Dance of a Thousand Blades",
+          "level": "Caravan★9",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Seregios",
+          "probability": 14,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Prickly Pair",
+          "nameEn": "Advanced: Prickly Pair",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Stygian Zinogre and a Seregios",
+          "probability": 14,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Death of a Thousand Cuts",
+          "nameEn": "Death of a Thousand Cuts",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Seregios",
+          "probability": 14,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "영지주 견갑각",
+      "count": 2,
+      "nameJa": "影蜘蛛の堅殻",
+      "itemId": "item_mh4u_0585",
+      "mh4uId": 585,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "네르스큐라",
+          "navMonster": "네르스큐라",
+          "nameEn": "Nerscylla",
+          "rank": "상위",
+          "methods": [
+            "Break Cover Skin · 70% · ×1",
+            "Body Carve · 46% · ×1",
+            "Capture · 25% · ×1",
+            "Break Poison Stinger · 25% · ×1",
+            "Break Claw · 20% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Arachnophobia",
+          "nameEn": "Arachnophobia",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Nerscylla",
+          "probability": 28,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hunt-a-thon: Nerscylla",
+          "nameEn": "Hunt-a-thon: Nerscylla",
+          "level": "Caravan★7",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt 2 Nerscylla before time expires or deliver a Paw Pass Ticket",
+          "probability": 28,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Arachnophilia",
+          "nameEn": "Arachnophilia",
+          "level": "Guild★4",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Nerscylla",
+          "probability": 28,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "고급식사권",
+      "count": 1,
+      "nameJa": "高級お食事券",
+      "itemId": "item_937798189eac",
+      "mh4uId": 1343,
+      "sources": [
+        {
+          "type": "arena",
+          "name": "Grudge Match: Color Code",
+          "level": "투기대회",
+          "probability": 5,
+          "count": 1
+        },
+        {
+          "type": "arena",
+          "name": "Grudge Match: Dos Gravi",
+          "level": "투기대회",
+          "probability": 5,
+          "count": 1
+        },
+        {
+          "type": "arena",
+          "name": "Grudge Match: Fish Fry",
+          "level": "투기대회",
+          "probability": 5,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "셀레기오스",
+        "navMonster": "셀레기오스"
+      },
+      {
+        "name": "극한상태 셀레기오스",
+        "navMonster": "셀레기오스"
+      },
+      {
+        "name": "네르스큐라",
+        "navMonster": "네르스큐라"
+      }
+    ],
+    "quests": [
+      {
+        "id": "event-episodic-079",
+        "name": "번외: 비밀의 파우치 회수",
+        "nameJa": "",
+        "level": "★4",
+        "questType": "event",
+        "location": "Dunes (D)",
+        "objective": "비밀의 파우치 10개 납품",
+        "note": ""
+      },
+      {
+        "id": "event-episodic-080",
+        "name": "번외: 그물로 이익을",
+        "nameJa": "",
+        "level": "★6",
+        "questType": "event",
+        "location": "원생림",
+        "objective": "초전뇌광충 3마리 납품",
+        "note": ""
+      },
+      {
+        "id": "event-episodic-081",
+        "name": "번외: 더 큰 배가 필요해",
+        "nameJa": "",
+        "level": "★6",
+        "questType": "event",
+        "location": "대해",
+        "objective": "셀레기오스 1마리 토벌",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Dance of a Thousand Blades",
+        "nameJa": "",
+        "level": "Caravan★9",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Seregios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Prickly Pair",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Stygian Zinogre and a Seregios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Death of a Thousand Cuts",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Seregios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Arachnophobia",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Nerscylla",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Hunt-a-thon: Nerscylla",
+        "nameJa": "",
+        "level": "Caravan★7",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt 2 Nerscylla before time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Arachnophilia",
+        "nameJa": "",
+        "level": "Guild★4",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Nerscylla",
+        "note": ""
+      }
+    ],
+    "arena": [
+      {
+        "name": "Grudge Match: Color Code",
+        "level": "투기대회",
+        "probability": 5
+      },
+      {
+        "name": "Grudge Match: Dos Gravi",
+        "level": "투기대회",
+        "probability": 5
+      },
+      {
+        "name": "Grudge Match: Fish Fry",
+        "level": "투기대회",
+        "probability": 5
+      }
+    ]
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

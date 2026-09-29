@@ -1,0 +1,235 @@
+{
+  "materials": [
+    {
+      "name": "창강의 용갑각",
+      "count": 2,
+      "nameJa": "錆鋼の龍殻",
+      "itemId": "item_mh4u_0960",
+      "mh4uId": 960,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "녹슨크샬다오라",
+          "navMonster": "녹슨크샬다오라",
+          "nameEn": "Rusted Kushala Daora",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 41% · ×1",
+            "Tail Carve · 24% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Winds of Discord",
+          "nameEn": "Advanced: Winds of Discord",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Kushala Daora or repel it",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Operation Rust Remover",
+          "nameEn": "Operation Rust Remover",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Kushala Daora or repel it",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "은령의 관",
+      "count": 1,
+      "nameJa": "銀嶺の冠",
+      "itemId": "item_mh4u_0963",
+      "mh4uId": 963,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "녹슨크샬다오라",
+          "navMonster": "녹슨크샬다오라",
+          "nameEn": "Rusted Kushala Daora",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 30% · ×1",
+            "Body Carve · 8% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "고룡의 대보옥",
+      "count": 1,
+      "nameJa": "古龍の大宝玉",
+      "itemId": "item_mh4u_0330",
+      "mh4uId": 330,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "크샬다오라",
+          "navMonster": "크샬다오라",
+          "nameEn": "Kushala Daora",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 4% · ×1",
+            "Shiny Drop · 3% · ×1",
+            "Body Carve · 2% · ×1",
+            "Tail Carve · 2% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "테오·테스카토르",
+          "navMonster": "테오·테스카토르",
+          "nameEn": "Teostra",
+          "rank": "G급",
+          "methods": [
+            "Shiny Drop · 4% · ×1",
+            "Tail Carve · 3% · ×1",
+            "Body Carve · 2% · ×1",
+            "Break Head · 2% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "녹슨크샬다오라",
+          "navMonster": "녹슨크샬다오라",
+          "nameEn": "Rusted Kushala Daora",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 3% · ×1",
+            "Break Head · 3% · ×1",
+            "Tail Carve · 2% · ×1",
+            "Shiny Drop · 2% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: A Formless Fiend",
+          "nameEn": "Advanced: A Formless Fiend",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Chameleos or repel it",
+          "probability": 5,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Misty Challenge",
+          "nameEn": "Advanced: Misty Challenge",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Chameleos or repel it",
+          "probability": 5,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: A Storm of Steel",
+          "nameEn": "Advanced: A Storm of Steel",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Kushala Daora or repel it",
+          "probability": 5,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "환상나비",
+      "count": 2,
+      "nameJa": "マボロシチョウ",
+      "itemId": "item_4f2838814bcb",
+      "mh4uId": 270,
+      "sources": [
+        {
+          "type": "acquire",
+          "label": "채집"
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "녹슨크샬다오라",
+        "navMonster": "녹슨크샬다오라"
+      },
+      {
+        "name": "크샬다오라",
+        "navMonster": "크샬다오라"
+      },
+      {
+        "name": "테오·테스카토르",
+        "navMonster": "테오·테스카토르"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: Winds of Discord",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Kushala Daora or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Operation Rust Remover",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Kushala Daora or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: A Formless Fiend",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Chameleos or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Misty Challenge",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Chameleos or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: A Storm of Steel",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Kushala Daora or repel it",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

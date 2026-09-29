@@ -1,0 +1,322 @@
+{
+  "materials": [
+    {
+      "name": "쇄룡 흑요갑",
+      "count": 3,
+      "nameJa": "砕竜の黒曜甲",
+      "itemId": "item_mh4u_0773",
+      "mh4uId": 773,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "브라키디오스",
+          "navMonster": "브라키디오스",
+          "nameEn": "Brachydios",
+          "rank": "하위",
+          "methods": [
+            "Capture · 33% · ×1",
+            "Body Carve · 28% · ×1",
+            "Tail Carve · 20% · ×1",
+            "Break Front Leg · 14% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Dragon's Din",
+          "nameEn": "Advanced: Dragon's Din",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Brachydios",
+          "probability": 14,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Whole Lava Love",
+          "nameEn": "Whole Lava Love",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Brachydios",
+          "probability": 14,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Rock and Rolled",
+          "nameEn": "Advanced: Rock and Rolled",
+          "level": "Guild★3",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Brachydios",
+          "probability": 14,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "쇄룡 두갑각",
+      "count": 1,
+      "nameJa": "砕竜の頭殻",
+      "itemId": "item_mh4u_0776",
+      "mh4uId": 776,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "브라키디오스",
+          "navMonster": "브라키디오스",
+          "nameEn": "Brachydios",
+          "rank": "하위",
+          "methods": [
+            "Break Head · 76% · ×1",
+            "Body Carve · 6% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Dragon's Din",
+          "nameEn": "Advanced: Dragon's Din",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Brachydios",
+          "probability": 8,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Whole Lava Love",
+          "nameEn": "Whole Lava Love",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Brachydios",
+          "probability": 8,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Rock and Rolled",
+          "nameEn": "Advanced: Rock and Rolled",
+          "level": "Guild★3",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Brachydios",
+          "probability": 8,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "양질의 비틀린뿔",
+          "requiredItemId": "item_mh4u_1116",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: Dragon's Din",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "수수께끼의 점균",
+      "count": 3,
+      "nameJa": "なぞの粘菌",
+      "itemId": "item_mh4u_0779",
+      "mh4uId": 779,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "브라키디오스",
+          "navMonster": "브라키디오스",
+          "nameEn": "Brachydios",
+          "rank": "하위",
+          "methods": [
+            "Break Front Leg · 27% · ×1",
+            "Break Front Leg · 27% · ×2",
+            "Shiny Drop · 22% · ×1",
+            "Shiny Drop · 21% · ×1",
+            "Body Carve · 19% · ×1",
+            "Capture · 8% · ×2",
+            "Capture · 7% · ×3"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Dragon's Din",
+          "nameEn": "Advanced: Dragon's Din",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Brachydios",
+          "probability": 20,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Whole Lava Love",
+          "nameEn": "Whole Lava Love",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Brachydios",
+          "probability": 20,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Glacier's Bane",
+          "nameEn": "Advanced: Glacier's Bane",
+          "level": "Caravan★9",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Brachydios",
+          "probability": 20,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "홍련석",
+      "count": 2,
+      "nameJa": "紅蓮石",
+      "itemId": "item_94bcbdc4d067",
+      "mh4uId": 209,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "그라비모스",
+          "navMonster": "그라비모스",
+          "nameEn": "Gravios",
+          "rank": "하위",
+          "methods": [
+            "Break Head · 10% · ×1",
+            "Shiny Drop · 6% · ×1",
+            "Capture · 6% · ×1",
+            "Tail Carve · 4% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Take a Powderstone",
+          "nameEn": "Take a Powderstone",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 1 Powderstone",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Heat Exhaustion",
+          "nameEn": "Heat Exhaustion",
+          "level": "Guild★5",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Deliver 4 Powderstones",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Heat Exhaustion",
+          "nameEn": "Heat Exhaustion",
+          "level": "Guild★3",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Deliver 3 Powderstones",
+          "probability": 10,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "브라키디오스",
+        "navMonster": "브라키디오스"
+      },
+      {
+        "name": "그라비모스",
+        "navMonster": "그라비모스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: Dragon's Din",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Brachydios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Whole Lava Love",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Brachydios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Rock and Rolled",
+        "nameJa": "",
+        "level": "Guild★3",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Brachydios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Glacier's Bane",
+        "nameJa": "",
+        "level": "Caravan★9",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Brachydios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Take a Powderstone",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 1 Powderstone",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Heat Exhaustion",
+        "nameJa": "",
+        "level": "Guild★5",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Deliver 4 Powderstones",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

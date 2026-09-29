@@ -1,0 +1,313 @@
+{
+  "materials": [
+    {
+      "name": "방패게 강발톱",
+      "count": 1,
+      "nameJa": "盾蟹の剛爪",
+      "itemId": "item_mh4u_0638",
+      "mh4uId": 638,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "다이묘자자미",
+          "navMonster": "다이묘자자미",
+          "nameEn": "Daimyo Hermitaur",
+          "rank": "G급",
+          "methods": [
+            "Break Claw · 65% · ×1",
+            "Capture · 50% · ×1",
+            "Break Claw · 25% · ×2",
+            "Body Carve · 16% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Fashion Victim",
+          "nameEn": "Fashion Victim",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Daimyo Hermitaur",
+          "probability": 22,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Claw Clash",
+          "nameEn": "Advanced: Claw Clash",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Daimyo Hermitaur and a Plum Daimyo Hermitaur",
+          "probability": 22,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "방패게 중갑각",
+      "count": 2,
+      "nameJa": "盾蟹の重殻",
+      "itemId": "item_mh4u_0637",
+      "mh4uId": 637,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "다이묘자자미",
+          "navMonster": "다이묘자자미",
+          "nameEn": "Daimyo Hermitaur",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 50% · ×1",
+            "Capture · 35% · ×1",
+            "Break Shell · 35% · ×1",
+            "Shiny Drop · 20% · ×1",
+            "Break Claw · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Fashion Victim",
+          "nameEn": "Fashion Victim",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Daimyo Hermitaur",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Claw Clash",
+          "nameEn": "Advanced: Claw Clash",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Daimyo Hermitaur and a Plum Daimyo Hermitaur",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "엘트라이트광석",
+      "count": 6,
+      "nameJa": "エルトライト鉱石",
+      "itemId": "item_fe4f2a32f3ec",
+      "mh4uId": 216,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "바살모스 아종",
+          "navMonster": "바살모스 아종",
+          "nameEn": "Ruby Basarios",
+          "rank": "G급",
+          "methods": [
+            "Mining Ore · 47% · ×1",
+            "Tail Carve · 40% · ×1",
+            "Break Back · 38% · ×2",
+            "Shiny Drop · 37% · ×1",
+            "Capture · 36% · ×1",
+            "Body Carve · 25% · ×1",
+            "Mining Back · 25% · ×1",
+            "Break Belly · 25% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "바살모스",
+          "navMonster": "바살모스",
+          "nameEn": "Basarios",
+          "rank": "G급",
+          "methods": [
+            "Tail Carve · 40% · ×1",
+            "Break Back · 38% · ×2",
+            "Shiny Drop · 37% · ×1",
+            "Capture · 36% · ×1",
+            "Body Carve · 25% · ×1",
+            "Break Belly · 25% · ×1",
+            "Mining Back · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Beyond the Pale",
+          "nameEn": "Advanced: Beyond the Pale",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt an Ash Kecha Wacha",
+          "probability": 15,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Sculptural Seltas",
+          "nameEn": "Sculptural Seltas",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Desert Seltas",
+          "probability": 15,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Seeing Spots",
+          "nameEn": "Seeing Spots",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt an Ash Kecha Wacha",
+          "probability": 15,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "용두갑각",
+      "count": 1,
+      "nameJa": "竜頭殻",
+      "itemId": "item_mh4u_0639",
+      "mh4uId": 639,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "다이묘자자미",
+          "navMonster": "다이묘자자미",
+          "nameEn": "Daimyo Hermitaur",
+          "rank": "상위",
+          "methods": [
+            "Break Shell · 60% · ×1",
+            "Break Shell · 25% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "다이묘자자미 아종",
+          "navMonster": "다이묘자자미 아종",
+          "nameEn": "Plum Daimyo Hermitaur",
+          "rank": "G급",
+          "methods": [
+            "Break Shell · 15% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hit List: Plum Daimyo Hermitaur",
+          "nameEn": "Hit List: Plum Daimyo Hermitaur",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Plum Daimyo Hermitaur",
+          "probability": 10,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Claw Clash",
+          "nameEn": "Advanced: Claw Clash",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Daimyo Hermitaur and a Plum Daimyo Hermitaur",
+          "probability": 10,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "다이묘자자미",
+        "navMonster": "다이묘자자미"
+      },
+      {
+        "name": "바살모스 아종",
+        "navMonster": "바살모스 아종"
+      },
+      {
+        "name": "바살모스",
+        "navMonster": "바살모스"
+      },
+      {
+        "name": "다이묘자자미 아종",
+        "navMonster": "다이묘자자미 아종"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Fashion Victim",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Daimyo Hermitaur",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Claw Clash",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Daimyo Hermitaur and a Plum Daimyo Hermitaur",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Beyond the Pale",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt an Ash Kecha Wacha",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Sculptural Seltas",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Desert Seltas",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Seeing Spots",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt an Ash Kecha Wacha",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Hit List: Plum Daimyo Hermitaur",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Plum Daimyo Hermitaur",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

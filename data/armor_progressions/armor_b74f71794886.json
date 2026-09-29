@@ -1,0 +1,308 @@
+{
+  "materials": [
+    {
+      "name": "방패게 견갑각",
+      "count": 3,
+      "nameJa": "盾蟹の堅殻",
+      "itemId": "item_mh4u_1123",
+      "mh4uId": 1123,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "다이묘자자미",
+          "navMonster": "다이묘자자미",
+          "nameEn": "Daimyo Hermitaur",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 55% · ×1",
+            "Break Shell · 40% · ×1",
+            "Capture · 35% · ×1",
+            "Break Claw · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Skiff Scuttler",
+          "nameEn": "Skiff Scuttler",
+          "level": "Caravan★7",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Daimyo Hermitaur",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "도모수 억센털",
+          "requiredItemId": "item_mh4u_0493",
+          "unlockQuestId": "quest_edb764c92723",
+          "unlockQuest": "자기주장이 강한 자들",
+          "unlockLevel": "★4",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "방패게 첨예발톱",
+      "count": 1,
+      "nameJa": "盾蟹の尖爪",
+      "itemId": "item_mh4u_1124",
+      "mh4uId": 1124,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "다이묘자자미",
+          "navMonster": "다이묘자자미",
+          "nameEn": "Daimyo Hermitaur",
+          "rank": "상위",
+          "methods": [
+            "Break Claw · 65% · ×1",
+            "Capture · 45% · ×1",
+            "Break Claw · 25% · ×2",
+            "Body Carve · 14% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Skiff Scuttler",
+          "nameEn": "Skiff Scuttler",
+          "level": "Caravan★7",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Daimyo Hermitaur",
+          "probability": 20,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "도모수 첨예발톱",
+          "requiredItemId": "item_mh4u_0497",
+          "unlockQuestId": "quest_edb764c92723",
+          "unlockQuest": "자기주장이 강한 자들",
+          "unlockLevel": "★4",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "도스헤라클레스",
+      "count": 3,
+      "nameJa": "ドスヘラクレス",
+      "itemId": "item_f4a9500b933b",
+      "mh4uId": 266,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Arachnophobia",
+          "nameEn": "Arachnophobia",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Nerscylla",
+          "probability": 11,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hunt-a-thon: Kecha Wacha",
+          "nameEn": "Hunt-a-thon: Kecha Wacha",
+          "level": "Caravan★7",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt 2 Kecha Wacha before time expires or deliver a Paw Pass Ticket",
+          "probability": 11,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hunt-a-thon: Nerscylla",
+          "nameEn": "Hunt-a-thon: Nerscylla",
+          "level": "Caravan★7",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt 2 Nerscylla before time expires or deliver a Paw Pass Ticket",
+          "probability": 11,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "견고한 뼈",
+      "count": 3,
+      "nameJa": "堅牢な骨",
+      "itemId": "item_b891515d834f",
+      "mh4uId": 319,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "바바콩가",
+          "navMonster": "바바콩가",
+          "nameEn": "Congalala",
+          "rank": "상위",
+          "methods": [
+            "Capture · 25% · ×1",
+            "Body Carve · 15% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "바바콩가 아종",
+          "navMonster": "바바콩가 아종",
+          "nameEn": "Emerald Congalala",
+          "rank": "상위",
+          "methods": [
+            "Capture · 25% · ×4",
+            "Body Carve · 15% · ×1",
+            "Body Carve · 5% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "테츠카브라",
+          "navMonster": "테츠카브라",
+          "nameEn": "Tetsucabra",
+          "rank": "상위",
+          "methods": [
+            "Capture · 18% · ×1",
+            "Body Carve · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Enraged Rajang",
+          "nameEn": "Advanced: Enraged Rajang",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt 2 Rajang",
+          "probability": 25,
+          "count": 3
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Tough Love",
+          "nameEn": "Advanced: Tough Love",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Rajang",
+          "probability": 22,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: The Raging Rajang",
+          "nameEn": "Advanced: The Raging Rajang",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Rajang",
+          "probability": 22,
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "다이묘자자미",
+        "navMonster": "다이묘자자미"
+      },
+      {
+        "name": "바바콩가",
+        "navMonster": "바바콩가"
+      },
+      {
+        "name": "바바콩가 아종",
+        "navMonster": "바바콩가 아종"
+      },
+      {
+        "name": "테츠카브라",
+        "navMonster": "테츠카브라"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Skiff Scuttler",
+        "nameJa": "",
+        "level": "Caravan★7",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Daimyo Hermitaur",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Arachnophobia",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Nerscylla",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Hunt-a-thon: Kecha Wacha",
+        "nameJa": "",
+        "level": "Caravan★7",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt 2 Kecha Wacha before time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Hunt-a-thon: Nerscylla",
+        "nameJa": "",
+        "level": "Caravan★7",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt 2 Nerscylla before time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Enraged Rajang",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt 2 Rajang",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Tough Love",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Rajang",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: The Raging Rajang",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Rajang",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

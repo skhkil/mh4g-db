@@ -1,0 +1,284 @@
+{
+  "materials": [
+    {
+      "name": "백원호 중장골",
+      "count": 2,
+      "nameJa": "白猿狐の重長骨",
+      "itemId": "item_mh4u_0485",
+      "mh4uId": 485,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "케차와차 아종",
+          "navMonster": "케차와차 아종",
+          "nameEn": "Ash Kecha Wacha",
+          "rank": "G급",
+          "methods": [
+            "Break Claw · 40% · ×1",
+            "Body Carve · 32% · ×1",
+            "Capture · 28% · ×1",
+            "Break Tail · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Beyond the Pale",
+          "nameEn": "Advanced: Beyond the Pale",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt an Ash Kecha Wacha",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Seeing Spots",
+          "nameEn": "Seeing Spots",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt an Ash Kecha Wacha",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Terrible Twins",
+          "nameEn": "Advanced: Terrible Twins",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Kecha Wacha and an Ash Kecha Wacha",
+          "probability": 12,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "백원호 억센털+",
+      "count": 4,
+      "nameJa": "白猿狐の豪剛毛",
+      "itemId": "item_mh4u_0484",
+      "mh4uId": 484,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "케차와차 아종",
+          "navMonster": "케차와차 아종",
+          "nameEn": "Ash Kecha Wacha",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 45% · ×1",
+            "Break Tail · 40% · ×1",
+            "Shiny Drop · 35% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Beyond the Pale",
+          "nameEn": "Advanced: Beyond the Pale",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt an Ash Kecha Wacha",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Seeing Spots",
+          "nameEn": "Seeing Spots",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt an Ash Kecha Wacha",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Terrible Twins",
+          "nameEn": "Advanced: Terrible Twins",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Kecha Wacha and an Ash Kecha Wacha",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "백원호 질긴꼬리",
+      "count": 1,
+      "nameJa": "白猿狐の靭尾",
+      "itemId": "item_mh4u_0488",
+      "mh4uId": 488,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "케차와차 아종",
+          "navMonster": "케차와차 아종",
+          "nameEn": "Ash Kecha Wacha",
+          "rank": "G급",
+          "methods": [
+            "Break Tail · 50% · ×1",
+            "Capture · 12% · ×1",
+            "Shiny Drop · 10% · ×1",
+            "Body Carve · 9% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Beyond the Pale",
+          "nameEn": "Advanced: Beyond the Pale",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt an Ash Kecha Wacha",
+          "probability": 18,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Seeing Spots",
+          "nameEn": "Seeing Spots",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt an Ash Kecha Wacha",
+          "probability": 18,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Terrible Twins",
+          "nameEn": "Advanced: Terrible Twins",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Kecha Wacha and an Ash Kecha Wacha",
+          "probability": 18,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "황제메뚜기",
+      "count": 3,
+      "nameJa": "皇帝バッタ",
+      "itemId": "item_ca6b777dbf0c",
+      "mh4uId": 269,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Lumber Support",
+          "nameEn": "Lumber Support",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Kecha Wacha",
+          "probability": 11,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Fashion Victim",
+          "nameEn": "Fashion Victim",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Daimyo Hermitaur",
+          "probability": 11,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Terrible Twins",
+          "nameEn": "Advanced: Terrible Twins",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Kecha Wacha and an Ash Kecha Wacha",
+          "probability": 11,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "케차와차 아종",
+        "navMonster": "케차와차 아종"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: Beyond the Pale",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt an Ash Kecha Wacha",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Seeing Spots",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt an Ash Kecha Wacha",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Terrible Twins",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Kecha Wacha and an Ash Kecha Wacha",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Lumber Support",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Kecha Wacha",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Fashion Victim",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Daimyo Hermitaur",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

@@ -1,0 +1,254 @@
+{
+  "materials": [
+    {
+      "name": "도암룡 견갑각",
+      "count": 3,
+      "nameJa": "",
+      "itemId": "item_mh4u_0801",
+      "mh4uId": 801,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "바살모스 아종",
+          "navMonster": "바살모스 아종",
+          "nameEn": "Ruby Basarios",
+          "rank": "상위",
+          "methods": [
+            "Tail Carve · 40% · ×1",
+            "Body Carve · 33% · ×1",
+            "Capture · 28% · ×1",
+            "Mining Back · 5% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "암룡 눈물방울",
+      "count": 1,
+      "nameJa": "",
+      "itemId": "item_mh4u_0798",
+      "mh4uId": 798,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "바살모스",
+          "navMonster": "바살모스",
+          "nameEn": "Basarios",
+          "rank": "G급",
+          "methods": [
+            "Break Back · 14% · ×1",
+            "Break Back · 12% · ×1",
+            "Capture · 12% · ×1",
+            "Capture · 8% · ×1",
+            "Body Carve · 8% · ×1",
+            "Shiny Drop · 8% · ×1",
+            "Body Carve · 5% · ×1",
+            "Shiny Drop · 5% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "바살모스 아종",
+          "navMonster": "바살모스 아종",
+          "nameEn": "Ruby Basarios",
+          "rank": "G급",
+          "methods": [
+            "Break Back · 14% · ×1",
+            "Break Back · 12% · ×1",
+            "Capture · 12% · ×1",
+            "Capture · 8% · ×1",
+            "Body Carve · 8% · ×1",
+            "Shiny Drop · 8% · ×1",
+            "Mining Ore · 8% · ×1",
+            "Body Carve · 5% · ×1",
+            "Shiny Drop · 5% · ×1",
+            "Mining Ore · 5% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "미니금붕어",
+      "count": 5,
+      "nameJa": "",
+      "itemId": "item_6c4ce86551ab",
+      "mh4uId": 247,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Fish Wish",
+          "nameEn": "Fish Wish",
+          "level": "Caravan★3",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 4 Small Goldenfish",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Fishing's Lure",
+          "nameEn": "Fishing's Lure",
+          "level": "Guild★1",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Deliver 8 Small Goldenhsh",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Egg-straction: Gargwa",
+          "nameEn": "Egg-straction: Gargwa",
+          "level": "Caravan★2",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 2 Gargwa Eggs",
+          "probability": 50,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "유니언광석",
+      "count": 3,
+      "nameJa": "",
+      "itemId": "item_dfe22fd0ad9d",
+      "mh4uId": 215,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "다렌·모란",
+          "navMonster": "다렌·모란",
+          "nameEn": "Dah'ren Mohran",
+          "rank": "G급",
+          "methods": [
+            "Mining Back · 35% · ×1",
+            "Break Fin · 14% · ×1",
+            "Break Blowhole · 14% · ×1",
+            "Mining Back · 7% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Take a Powderstone",
+          "nameEn": "Take a Powderstone",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 1 Powderstone",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Heat Exhaustion",
+          "nameEn": "Heat Exhaustion",
+          "level": "Guild★5",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Deliver 4 Powderstones",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hi Ho Silver",
+          "nameEn": "Hi Ho Silver",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 3 Silverfish",
+          "probability": 8,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "바살모스 아종",
+        "navMonster": "바살모스 아종"
+      },
+      {
+        "name": "바살모스",
+        "navMonster": "바살모스"
+      },
+      {
+        "name": "다렌·모란",
+        "navMonster": "다렌·모란"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Fish Wish",
+        "nameJa": "",
+        "level": "Caravan★3",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 4 Small Goldenfish",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Fishing's Lure",
+        "nameJa": "",
+        "level": "Guild★1",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Deliver 8 Small Goldenhsh",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Egg-straction: Gargwa",
+        "nameJa": "",
+        "level": "Caravan★2",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 2 Gargwa Eggs",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Take a Powderstone",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 1 Powderstone",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Heat Exhaustion",
+        "nameJa": "",
+        "level": "Guild★5",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Deliver 4 Powderstones",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Hi Ho Silver",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 3 Silverfish",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

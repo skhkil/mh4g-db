@@ -1,0 +1,143 @@
+{
+  "materials": [
+    {
+      "name": "황흑룡 역린",
+      "count": 2,
+      "nameJa": "煌黒龍の逆鱗",
+      "itemId": "item_mh4u_1154",
+      "mh4uId": 1154,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "사왕룡 꼬리비늘",
+          "requiredItemId": "item_mh4u_1049",
+          "unlockQuestId": "quest_020561836e5b",
+          "unlockQuest": "고난도: 천고불후를 읊는 왕",
+          "unlockLevel": "★7",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "황흑룡 익막",
+      "count": 2,
+      "nameJa": "煌黒龍の翼膜",
+      "itemId": "item_mh4u_1155",
+      "mh4uId": 1155,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "사왕룡 예안",
+          "requiredItemId": "item_mh4u_1051",
+          "unlockQuestId": "quest_020561836e5b",
+          "unlockQuest": "고난도: 천고불후를 읊는 왕",
+          "unlockLevel": "★7",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "흑식룡 암옥",
+      "count": 1,
+      "nameJa": "黒蝕竜の闇玉",
+      "itemId": "item_mh4u_0869",
+      "mh4uId": 869,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "고어·마가라",
+          "navMonster": "고어·마가라",
+          "nameEn": "Gore Magala",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 5% · ×1",
+            "Tail Carve · 4% · ×1",
+            "Body Carve · 3% · ×1",
+            "Shiny Drop · 3% · ×1",
+            "Tail Carve · 2% · ×1",
+            "Break Head · 2% · ×1",
+            "Shiny Drop · 1% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Primal Forest M.I.A.",
+          "nameEn": "Primal Forest M.I.A.",
+          "level": "Guild★5",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 3,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Crazy Stupid Love",
+          "nameEn": "Crazy Stupid Love",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt Gore Magala",
+          "probability": 1,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Dread Locked",
+          "nameEn": "Dread Locked",
+          "level": "Guild★5",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt Gore Magala",
+          "probability": 1,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "고어·마가라",
+        "navMonster": "고어·마가라"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Primal Forest M.I.A.",
+        "nameJa": "",
+        "level": "Guild★5",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt all large monsters",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Crazy Stupid Love",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt Gore Magala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Dread Locked",
+        "nameJa": "",
+        "level": "Guild★5",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt Gore Magala",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

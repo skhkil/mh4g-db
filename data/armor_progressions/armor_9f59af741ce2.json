@@ -1,0 +1,314 @@
+{
+  "materials": [
+    {
+      "name": "방패게 중갑각",
+      "count": 4,
+      "nameJa": "盾蟹の重殻",
+      "itemId": "item_mh4u_0637",
+      "mh4uId": 637,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "다이묘자자미",
+          "navMonster": "다이묘자자미",
+          "nameEn": "Daimyo Hermitaur",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 50% · ×1",
+            "Capture · 35% · ×1",
+            "Break Shell · 35% · ×1",
+            "Shiny Drop · 20% · ×1",
+            "Break Claw · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Fashion Victim",
+          "nameEn": "Fashion Victim",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Daimyo Hermitaur",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Claw Clash",
+          "nameEn": "Advanced: Claw Clash",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Daimyo Hermitaur and a Plum Daimyo Hermitaur",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "방패게 강발톱",
+      "count": 1,
+      "nameJa": "盾蟹の剛爪",
+      "itemId": "item_mh4u_0638",
+      "mh4uId": 638,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "다이묘자자미",
+          "navMonster": "다이묘자자미",
+          "nameEn": "Daimyo Hermitaur",
+          "rank": "G급",
+          "methods": [
+            "Break Claw · 65% · ×1",
+            "Capture · 50% · ×1",
+            "Break Claw · 25% · ×2",
+            "Body Carve · 16% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Fashion Victim",
+          "nameEn": "Fashion Victim",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Daimyo Hermitaur",
+          "probability": 22,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Claw Clash",
+          "nameEn": "Advanced: Claw Clash",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Daimyo Hermitaur and a Plum Daimyo Hermitaur",
+          "probability": 22,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "황제메뚜기",
+      "count": 3,
+      "nameJa": "皇帝バッタ",
+      "itemId": "item_ca6b777dbf0c",
+      "mh4uId": 269,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Lumber Support",
+          "nameEn": "Lumber Support",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Kecha Wacha",
+          "probability": 11,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Fashion Victim",
+          "nameEn": "Fashion Victim",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Daimyo Hermitaur",
+          "probability": 11,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Terrible Twins",
+          "nameEn": "Advanced: Terrible Twins",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Kecha Wacha and an Ash Kecha Wacha",
+          "probability": 11,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "견룡골",
+      "count": 5,
+      "nameJa": "堅竜骨",
+      "itemId": "item_b9c38f0f747b",
+      "mh4uId": 311,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "그라비모스",
+          "navMonster": "그라비모스",
+          "nameEn": "Gravios",
+          "rank": "상위",
+          "methods": [
+            "Break Back · 30% · ×1",
+            "Break Wing · 30% · ×1",
+            "Tail Carve · 20% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "그라비모스 아종",
+          "navMonster": "그라비모스 아종",
+          "nameEn": "Black Gravios",
+          "rank": "상위",
+          "methods": [
+            "Break Back · 30% · ×1",
+            "Tail Carve · 18% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "얀쿡크",
+          "navMonster": "얀쿡크",
+          "nameEn": "Yian Kut-Ku",
+          "rank": "G급",
+          "methods": [
+            "Capture · 27% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Black Rock Down",
+          "nameEn": "Black Rock Down",
+          "level": "Caravan★9",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Black Gravios",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Forge Ahead",
+          "nameEn": "Forge Ahead",
+          "level": "Caravan★9",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Stygian Zinogre",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hunting Vicariously",
+          "nameEn": "Hunting Vicariously",
+          "level": "Caravan★9",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Yian Garuga",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "다이묘자자미",
+        "navMonster": "다이묘자자미"
+      },
+      {
+        "name": "그라비모스",
+        "navMonster": "그라비모스"
+      },
+      {
+        "name": "그라비모스 아종",
+        "navMonster": "그라비모스 아종"
+      },
+      {
+        "name": "얀쿡크",
+        "navMonster": "얀쿡크"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Fashion Victim",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Daimyo Hermitaur",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Claw Clash",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Daimyo Hermitaur and a Plum Daimyo Hermitaur",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Lumber Support",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Kecha Wacha",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Terrible Twins",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Kecha Wacha and an Ash Kecha Wacha",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Black Rock Down",
+        "nameJa": "",
+        "level": "Caravan★9",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Black Gravios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Forge Ahead",
+        "nameJa": "",
+        "level": "Caravan★9",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Stygian Zinogre",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Hunting Vicariously",
+        "nameJa": "",
+        "level": "Caravan★9",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Yian Garuga",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

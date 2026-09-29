@@ -1,0 +1,177 @@
+{
+  "materials": [
+    {
+      "name": "염왕룡 첨예뿔",
+      "count": 2,
+      "nameJa": "炎王龍の尖角",
+      "itemId": "item_mh4u_0969",
+      "mh4uId": 969,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "테오·테스카토르",
+          "navMonster": "테오·테스카토르",
+          "nameEn": "Teostra",
+          "rank": "상위",
+          "methods": [
+            "Break Head · 63% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "옥염의 용비늘",
+      "count": 5,
+      "nameJa": "獄炎の龍鱗",
+      "itemId": "item_mh4u_0971",
+      "mh4uId": 971,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "테오·테스카토르",
+          "navMonster": "테오·테스카토르",
+          "nameEn": "Teostra",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 20% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Deep Trouble",
+          "nameEn": "Advanced: Deep Trouble",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay a Teostra or repel it",
+          "probability": 30,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Teostra Tangle",
+          "nameEn": "Advanced: Teostra Tangle",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Teostra or repel it",
+          "probability": 30,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "염룡 보옥",
+      "count": 1,
+      "nameJa": "炎龍の宝玉",
+      "itemId": "item_mh4u_0977",
+      "mh4uId": 977,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "테오·테스카토르",
+          "navMonster": "테오·테스카토르",
+          "nameEn": "Teostra",
+          "rank": "상위",
+          "methods": [
+            "Tail Carve · 5% · ×1",
+            "Body Carve · 4% · ×1",
+            "Body Carve · 3% · ×1",
+            "Shiny Drop · 2% · ×1",
+            "Break Head · 2% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Emperor of Embers",
+          "nameEn": "Advanced: Emperor of Embers",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Teostra or repel it",
+          "probability": 5,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Operation Fire Extinguisher",
+          "nameEn": "Operation Fire Extinguisher",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Teostra or repel it",
+          "probability": 5,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Deep Trouble",
+          "nameEn": "Advanced: Deep Trouble",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay a Teostra or repel it",
+          "probability": 2,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "테오·테스카토르",
+        "navMonster": "테오·테스카토르"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: Deep Trouble",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay a Teostra or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Teostra Tangle",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Teostra or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Emperor of Embers",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Teostra or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Operation Fire Extinguisher",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Teostra or repel it",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

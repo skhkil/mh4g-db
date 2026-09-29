@@ -1,0 +1,166 @@
+{
+  "materials": [
+    {
+      "name": "암룡 눈물방울",
+      "count": 1,
+      "nameJa": "岩竜の涙",
+      "itemId": "item_mh4u_0798",
+      "mh4uId": 798,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "바살모스",
+          "navMonster": "바살모스",
+          "nameEn": "Basarios",
+          "rank": "G급",
+          "methods": [
+            "Break Back · 14% · ×1",
+            "Break Back · 12% · ×1",
+            "Capture · 12% · ×1",
+            "Capture · 8% · ×1",
+            "Body Carve · 8% · ×1",
+            "Shiny Drop · 8% · ×1",
+            "Body Carve · 5% · ×1",
+            "Shiny Drop · 5% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "바살모스 아종",
+          "navMonster": "바살모스 아종",
+          "nameEn": "Ruby Basarios",
+          "rank": "G급",
+          "methods": [
+            "Break Back · 14% · ×1",
+            "Break Back · 12% · ×1",
+            "Capture · 12% · ×1",
+            "Capture · 8% · ×1",
+            "Body Carve · 8% · ×1",
+            "Shiny Drop · 8% · ×1",
+            "Mining Ore · 8% · ×1",
+            "Body Carve · 5% · ×1",
+            "Shiny Drop · 5% · ×1",
+            "Mining Ore · 5% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "암룡 견갑각",
+      "count": 3,
+      "nameJa": "岩竜の堅殻",
+      "itemId": "item_mh4u_0794",
+      "mh4uId": 794,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "바살모스",
+          "navMonster": "바살모스",
+          "nameEn": "Basarios",
+          "rank": "상위",
+          "methods": [
+            "Tail Carve · 40% · ×1",
+            "Body Carve · 33% · ×1",
+            "Capture · 28% · ×1",
+            "Mining Back · 5% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "괴조 비늘+",
+      "count": 2,
+      "nameJa": "怪鳥の上鱗",
+      "itemId": "item_mh4u_0430",
+      "mh4uId": 430,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "얀쿡크",
+          "navMonster": "얀쿡크",
+          "nameEn": "Yian Kut-Ku",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 50% · ×1",
+            "Break Ear · 25% · ×3",
+            "Shiny Drop · 16% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "암룡 날개",
+      "count": 3,
+      "nameJa": "岩竜の翼",
+      "itemId": "item_mh4u_0796",
+      "mh4uId": 796,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "바살모스",
+          "navMonster": "바살모스",
+          "nameEn": "Basarios",
+          "rank": "하위",
+          "methods": [
+            "Break Back · 30% · ×1",
+            "Capture · 10% · ×1",
+            "Body Carve · 7% · ×1",
+            "Capture · 5% · ×1",
+            "Body Carve · 3% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Research: Basarios",
+          "nameEn": "Research: Basarios",
+          "level": "Caravan★3",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Basarios",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "선명한 체액",
+          "requiredItemId": "item_mh4u_1103",
+          "unlockQuestId": "",
+          "unlockQuest": "Tipping the Scales",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "바살모스",
+        "navMonster": "바살모스"
+      },
+      {
+        "name": "바살모스 아종",
+        "navMonster": "바살모스 아종"
+      },
+      {
+        "name": "얀쿡크",
+        "navMonster": "얀쿡크"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Research: Basarios",
+        "nameJa": "",
+        "level": "Caravan★3",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Basarios",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

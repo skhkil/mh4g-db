@@ -1,0 +1,73 @@
+{
+  "materials": [
+    {
+      "name": "노산룡 중갑각",
+      "count": 5,
+      "nameJa": "老山龍の重殻",
+      "itemId": "item_mh4u_1216",
+      "mh4uId": 1216,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "붕룡 중갑각",
+          "requiredItemId": "item_mh4u_1011",
+          "unlockQuestId": "quest_5646ab5053cd",
+          "unlockQuest": "고난도: 은백의 땅은 붕괴된다",
+          "unlockLevel": "★3",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "노산룡 두툼비늘",
+      "count": 2,
+      "nameJa": "老山龍の厚鱗",
+      "itemId": "item_mh4u_1217",
+      "mh4uId": 1217,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "붕룡 두툼배비늘 패왕의 증표G",
+          "requiredItemId": "",
+          "unlockQuestId": "quest_5646ab5053cd",
+          "unlockQuest": "고난도: 은백의 땅은 붕괴된다",
+          "unlockLevel": "★3",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "대굉룡 두툼비늘",
+      "count": 6,
+      "nameJa": "大轟竜の厚鱗",
+      "itemId": "item_mh4u_0843",
+      "mh4uId": 843,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "티가렉스 희소종",
+          "navMonster": "티가렉스 희소종",
+          "nameEn": "Molten Tigrex",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 40% · ×1",
+            "Tail Carve · 37% · ×1",
+            "Shiny Drop · 23% · ×1",
+            "Capture · 20% · ×1"
+          ]
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "티가렉스 희소종",
+        "navMonster": "티가렉스 희소종"
+      }
+    ],
+    "quests": [],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

@@ -1,0 +1,389 @@
+{
+  "materials": [
+    {
+      "name": "창화룡 견갑각",
+      "count": 2,
+      "nameJa": "蒼火竜の堅殻",
+      "itemId": "item_mh4u_0699",
+      "mh4uId": 699,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "리오레우스 아종",
+          "navMonster": "리오레우스 아종",
+          "nameEn": "Azure Rathalos",
+          "rank": "상위",
+          "methods": [
+            "Break Back · 69% · ×1",
+            "Capture · 38% · ×1",
+            "Break Head · 30% · ×1",
+            "Body Carve · 28% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "An Omen in the Skies",
+          "nameEn": "An Omen in the Skies",
+          "level": "Caravan★9",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt an Azure Rathalos",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Bring Down the Sky King",
+          "nameEn": "Bring Down the Sky King",
+          "level": "Guild★6",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt an Azure Rathalos",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Heaven and Earth",
+          "nameEn": "Advanced: Heaven and Earth",
+          "level": "Guild★6",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt an Azure Rathalos and a Pink Rathian",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "염비룡 견갑각",
+          "requiredItemId": "item_mh4u_1137",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: Tigrex Challenge",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "창화룡 날개",
+      "count": 1,
+      "nameJa": "蒼火竜の翼",
+      "itemId": "item_mh4u_0703",
+      "mh4uId": 703,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "리오레우스 아종",
+          "navMonster": "리오레우스 아종",
+          "nameEn": "Azure Rathalos",
+          "rank": "G급",
+          "methods": [
+            "Break Wing · 40% · ×1",
+            "Break Wing · 25% · ×1",
+            "Capture · 19% · ×1",
+            "Capture · 18% · ×1",
+            "Body Carve · 13% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Lab Partners",
+          "nameEn": "Advanced: Lab Partners",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Brachydios and an Azure Rathalos",
+          "probability": 30,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "An Omen in the Skies",
+          "nameEn": "An Omen in the Skies",
+          "level": "Caravan★9",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt an Azure Rathalos",
+          "probability": 21,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Bring Down the Sky King",
+          "nameEn": "Bring Down the Sky King",
+          "level": "Guild★6",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt an Azure Rathalos",
+          "probability": 21,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "염비룡 갈기",
+          "requiredItemId": "item_mh4u_1138",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: Tigrex Challenge",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "화룡 홍옥",
+      "count": 1,
+      "nameJa": "火竜の紅玉",
+      "itemId": "item_mh4u_0695",
+      "mh4uId": 695,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "리오레우스 희소종",
+          "navMonster": "리오레우스 희소종",
+          "nameEn": "Silver Rathalos",
+          "rank": "G급",
+          "methods": [
+            "Tail Carve · 12% · ×1",
+            "Capture · 7% · ×1",
+            "Break Head · 6% · ×1",
+            "Tail Carve · 5% · ×1",
+            "Break Head · 4% · ×1",
+            "Shiny Drop · 3% · ×1",
+            "Break Back · 1% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "리오레우스",
+          "navMonster": "리오레우스",
+          "nameEn": "Rathalos",
+          "rank": "G급",
+          "methods": [
+            "Tail Carve · 10% · ×1",
+            "Break Head · 6% · ×1",
+            "Capture · 5% · ×1",
+            "Break Head · 4% · ×1",
+            "Tail Carve · 3% · ×1",
+            "Capture · 3% · ×1",
+            "Shiny Drop · 2% · ×1",
+            "Break Back · 1% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "리오레우스 아종",
+          "navMonster": "리오레우스 아종",
+          "nameEn": "Azure Rathalos",
+          "rank": "G급",
+          "methods": [
+            "Tail Carve · 10% · ×1",
+            "Break Head · 6% · ×1",
+            "Capture · 5% · ×1",
+            "Tail Carve · 4% · ×1",
+            "Capture · 4% · ×1",
+            "Break Head · 4% · ×1",
+            "Shiny Drop · 2% · ×1",
+            "Break Back · 1% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Lab Partners",
+          "nameEn": "Advanced: Lab Partners",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Brachydios and an Azure Rathalos",
+          "probability": 15,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "The Azure King and the Tyrant",
+          "nameEn": "The Azure King and the Tyrant",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt an Azure Rathalos and a Tigrex",
+          "probability": 7,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Azure Arrival",
+          "nameEn": "Azure Arrival",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt an Azure Rathalos",
+          "probability": 7,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "희귀풍뎅이",
+      "count": 3,
+      "nameJa": "マレコガネ",
+      "itemId": "item_54ae5510c450",
+      "mh4uId": 268,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Icy Shadow",
+          "nameEn": "Icy Shadow",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Khezu",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "All-You-Can-Hunt Zamite",
+          "nameEn": "All-You-Can-Hunt Zamite",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay 25 Zamite",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "La Vie en Rose",
+          "nameEn": "La Vie en Rose",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Red Khezu",
+          "probability": 12,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "리오레우스 아종",
+        "navMonster": "리오레우스 아종"
+      },
+      {
+        "name": "리오레우스 희소종",
+        "navMonster": "리오레우스 희소종"
+      },
+      {
+        "name": "리오레우스",
+        "navMonster": "리오레우스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "An Omen in the Skies",
+        "nameJa": "",
+        "level": "Caravan★9",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt an Azure Rathalos",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Bring Down the Sky King",
+        "nameJa": "",
+        "level": "Guild★6",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt an Azure Rathalos",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Heaven and Earth",
+        "nameJa": "",
+        "level": "Guild★6",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt an Azure Rathalos and a Pink Rathian",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Lab Partners",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Brachydios and an Azure Rathalos",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "The Azure King and the Tyrant",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt an Azure Rathalos and a Tigrex",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Azure Arrival",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt an Azure Rathalos",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Icy Shadow",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Khezu",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "All-You-Can-Hunt Zamite",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay 25 Zamite",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "La Vie en Rose",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Red Khezu",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

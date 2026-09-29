@@ -1,0 +1,247 @@
+{
+  "materials": [
+    {
+      "name": "초식룡 갑각",
+      "count": 2,
+      "nameJa": "草食竜の甲殻",
+      "itemId": "item_mh4u_0359",
+      "mh4uId": 359,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Rhenoplos",
+          "navMonster": "",
+          "nameEn": "Rhenoplos",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 35% · ×1",
+            "Body Carve · 15% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Rhenoplos Slayer",
+          "nameEn": "Rhenoplos Slayer",
+          "level": "Caravan★3",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay 5 Rhenoplos",
+          "probability": 100,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Rhenoplos Headache",
+          "nameEn": "Rhenoplos Headache",
+          "level": "Guild★1",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay 8 Rhenoplos",
+          "probability": 100,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Egg-straction: Herbivores",
+          "nameEn": "Egg-straction: Herbivores",
+          "level": "Caravan★3",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 2 Herbivore Eggs",
+          "probability": 28,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "초식룡 두갑각",
+      "count": 1,
+      "nameJa": "草食竜の頭殻",
+      "itemId": "item_mh4u_0361",
+      "mh4uId": 361,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Rhenoplos",
+          "navMonster": "",
+          "nameEn": "Rhenoplos",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 15% · ×1",
+            "Body Carve · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Rhenoplos Headache",
+          "nameEn": "Rhenoplos Headache",
+          "level": "Guild★4",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay 10 Rhenoplos",
+          "probability": 19,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Rhenoplos Slayer",
+          "nameEn": "Rhenoplos Slayer",
+          "level": "Caravan★3",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay 5 Rhenoplos",
+          "probability": 14,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Egg-straction: Herbivores",
+          "nameEn": "Egg-straction: Herbivores",
+          "level": "Caravan★3",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 2 Herbivore Eggs",
+          "probability": 14,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "대지의 결정",
+      "count": 2,
+      "nameJa": "大地の結晶",
+      "itemId": "item_829d3591a0d0",
+      "mh4uId": 204,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "바살모스",
+          "navMonster": "바살모스",
+          "nameEn": "Basarios",
+          "rank": "하위",
+          "methods": [
+            "Mining Back · 60% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Crystal Clearing",
+          "nameEn": "Crystal Clearing",
+          "level": "Caravan★2",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 4 Sulfur Crystals",
+          "probability": 20,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Sootstone Search",
+          "nameEn": "Sootstone Search",
+          "level": "Guild★2",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Deliver 3 Sootstone Ores",
+          "probability": 20,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Heat Exhaustion",
+          "nameEn": "Heat Exhaustion",
+          "level": "Guild★3",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Deliver 3 Powderstones",
+          "probability": 20,
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "Rhenoplos",
+        "navMonster": ""
+      },
+      {
+        "name": "바살모스",
+        "navMonster": "바살모스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Rhenoplos Slayer",
+        "nameJa": "",
+        "level": "Caravan★3",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay 5 Rhenoplos",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Rhenoplos Headache",
+        "nameJa": "",
+        "level": "Guild★1",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay 8 Rhenoplos",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Egg-straction: Herbivores",
+        "nameJa": "",
+        "level": "Caravan★3",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 2 Herbivore Eggs",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Crystal Clearing",
+        "nameJa": "",
+        "level": "Caravan★2",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 4 Sulfur Crystals",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Sootstone Search",
+        "nameJa": "",
+        "level": "Guild★2",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Deliver 3 Sootstone Ores",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Heat Exhaustion",
+        "nameJa": "",
+        "level": "Guild★3",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Deliver 3 Powderstones",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

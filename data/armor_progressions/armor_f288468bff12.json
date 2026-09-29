@@ -1,0 +1,263 @@
+{
+  "materials": [
+    {
+      "name": "흑랑조 비늘",
+      "count": 5,
+      "nameJa": "黒狼鳥の鱗",
+      "itemId": "item_mh4u_0455",
+      "mh4uId": 455,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "얀가루루가",
+          "navMonster": "얀가루루가",
+          "nameEn": "Yian Garuga",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 64% · ×1",
+            "Shiny Drop · 25% · ×1",
+            "Tail Carve · 20% · ×1",
+            "Break Beak · 20% · ×1",
+            "Break Ear · 20% · ×1",
+            "Tail Carve · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Research: Yian Garuga",
+          "nameEn": "Research: Yian Garuga",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Yian Garuga",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "흑랑조 갑각",
+      "count": 4,
+      "nameJa": "黒狼鳥の甲殻",
+      "itemId": "item_mh4u_0458",
+      "mh4uId": 458,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "얀가루루가",
+          "navMonster": "얀가루루가",
+          "nameEn": "Yian Garuga",
+          "rank": "하위",
+          "methods": [
+            "Capture · 90% · ×2",
+            "Body Carve · 28% · ×1",
+            "Break Talon · 20% · ×1",
+            "Break Back · 20% · ×1",
+            "Break Back · 10% · ×2"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Research: Yian Garuga",
+          "nameEn": "Research: Yian Garuga",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Yian Garuga",
+          "probability": 25,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "끈적뚜기",
+      "count": 4,
+      "nameJa": "のりこねバッタ",
+      "itemId": "item_b0cf7cb3f2bf",
+      "mh4uId": 264,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Crystal Clearing",
+          "nameEn": "Crystal Clearing",
+          "level": "Caravan★2",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 4 Sulfur Crystals",
+          "probability": 6,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Bug Appétit",
+          "nameEn": "Bug Appétit",
+          "level": "Caravan★2",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Seltas",
+          "probability": 6,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Boulder-bash",
+          "nameEn": "Boulder-bash",
+          "level": "Caravan★3",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Tetsucabra",
+          "probability": 6,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "도스게네포스 가죽",
+      "count": 2,
+      "nameJa": "ドスゲネポスの皮",
+      "itemId": "item_mh4u_0408",
+      "mh4uId": 408,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "도스게네포스",
+          "navMonster": "도스게네포스",
+          "nameEn": "Gendrome",
+          "rank": "하위",
+          "methods": [
+            "Capture · 56% · ×1",
+            "Break Head · 50% · ×1",
+            "Body Carve · 48% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Crystal Bone Collector",
+          "nameEn": "Crystal Bone Collector",
+          "level": "Caravan★3",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 5 Crystal Bones",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "The Smell of Fear",
+          "nameEn": "The Smell of Fear",
+          "level": "Caravan★4",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Congalala and a Gendrome",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Gendrome Roadblock",
+          "nameEn": "Gendrome Roadblock",
+          "level": "Guild★2",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Gendrome",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "얀가루루가",
+        "navMonster": "얀가루루가"
+      },
+      {
+        "name": "도스게네포스",
+        "navMonster": "도스게네포스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Research: Yian Garuga",
+        "nameJa": "",
+        "level": "Caravan★5",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Yian Garuga",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Crystal Clearing",
+        "nameJa": "",
+        "level": "Caravan★2",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 4 Sulfur Crystals",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Bug Appétit",
+        "nameJa": "",
+        "level": "Caravan★2",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Seltas",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Boulder-bash",
+        "nameJa": "",
+        "level": "Caravan★3",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Tetsucabra",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Crystal Bone Collector",
+        "nameJa": "",
+        "level": "Caravan★3",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 5 Crystal Bones",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "The Smell of Fear",
+        "nameJa": "",
+        "level": "Caravan★4",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Congalala and a Gendrome",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Gendrome Roadblock",
+        "nameJa": "",
+        "level": "Guild★2",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Gendrome",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

@@ -1,0 +1,228 @@
+{
+  "materials": [
+    {
+      "name": "사황룡 두툼미비늘",
+      "count": 4,
+      "nameJa": "蛇帝龍の厚尾鱗",
+      "itemId": "item_mh4u_1067",
+      "mh4uId": 1067,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "다라·아마듈라 아종",
+          "navMonster": "다라·아마듈라 아종",
+          "nameEn": "Shah Dalamadur",
+          "rank": "G급",
+          "methods": [
+            "Lower Body Carve · 46% · ×1",
+            "Break Back Leg · 45% · ×1",
+            "Break Tail · 20% · ×2"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Eternal Emperor",
+          "nameEn": "Advanced: Eternal Emperor",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Shah Dalamadur",
+          "probability": 30,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "사황룡 강고리발톱",
+      "count": 4,
+      "nameJa": "蛇帝龍の剛鉤爪",
+      "itemId": "item_mh4u_1071",
+      "mh4uId": 1071,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "다라·아마듈라 아종",
+          "navMonster": "다라·아마듈라 아종",
+          "nameEn": "Shah Dalamadur",
+          "rank": "G급",
+          "methods": [
+            "Break Front Leg · 78% · ×1",
+            "Upper Body Carve · 8% · ×1",
+            "Break Front Leg · 2% · ×2"
+          ]
+        },
+        {
+          "type": "exchange",
+          "required": "황흑룡 흉조",
+          "requiredItemId": "item_mh4u_1212",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: Eternal Emperor",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "천검의 용신옥",
+      "count": 1,
+      "nameJa": "天剣の龍神玉",
+      "itemId": "item_mh4u_1064",
+      "mh4uId": 1064,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "다라·아마듈라",
+          "navMonster": "다라·아마듈라",
+          "nameEn": "Dalamadur",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 5% · ×1",
+            "Break Back · 4% · ×1",
+            "Lower Body Carve · 3% · ×1",
+            "Tail Carve · 3% · ×1",
+            "Upper Body Carve · 2% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "다라·아마듈라 아종",
+          "navMonster": "다라·아마듈라 아종",
+          "nameEn": "Shah Dalamadur",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 5% · ×1",
+            "Break Back · 4% · ×1",
+            "Lower Body Carve · 3% · ×1",
+            "Tail Carve · 3% · ×1",
+            "Upper Body Carve · 2% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Eternal Emperor",
+          "nameEn": "Advanced: Eternal Emperor",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Shah Dalamadur",
+          "probability": 5,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "유리색용신옥",
+          "requiredItemId": "item_mh4u_1213",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: Eternal Emperor",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "염왕룡 중갑각",
+      "count": 6,
+      "nameJa": "炎王龍の重殻",
+      "itemId": "item_mh4u_0965",
+      "mh4uId": 965,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "테오·테스카토르",
+          "navMonster": "테오·테스카토르",
+          "nameEn": "Teostra",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 52% · ×1",
+            "Tail Carve · 30% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Emperor of Embers",
+          "nameEn": "Advanced: Emperor of Embers",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Teostra or repel it",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Operation Fire Extinguisher",
+          "nameEn": "Operation Fire Extinguisher",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Teostra or repel it",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "염비룡 중갑각",
+          "requiredItemId": "item_mh4u_1203",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: Hell Hunter Hoax",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "다라·아마듈라 아종",
+        "navMonster": "다라·아마듈라 아종"
+      },
+      {
+        "name": "다라·아마듈라",
+        "navMonster": "다라·아마듈라"
+      },
+      {
+        "name": "테오·테스카토르",
+        "navMonster": "테오·테스카토르"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: Eternal Emperor",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay Shah Dalamadur",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Emperor of Embers",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Teostra or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Operation Fire Extinguisher",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Teostra or repel it",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

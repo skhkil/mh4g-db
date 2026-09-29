@@ -1,0 +1,203 @@
+{
+  "materials": [
+    {
+      "name": "반역Ｊ티켓",
+      "count": 1,
+      "nameJa": "反逆Ｊチケット",
+      "itemId": "item_mh4u_1385",
+      "mh4uId": 1385,
+      "sources": [
+        {
+          "type": "event",
+          "name": "JUMP・작열열투!",
+          "nameJa": "JUMP・灼熱燃闘！",
+          "level": "G★3",
+          "objective": "테오·테스카토르 토벌 또는 격퇴",
+          "location": "구 사막(낮)",
+          "note": "반역J티켓 기본 보수"
+        }
+      ]
+    },
+    {
+      "name": "대장로티켓Ｓ",
+      "count": 3,
+      "nameJa": "大長老チケットＳ",
+      "itemId": "item_a024b69f3b5f",
+      "mh4uId": 1443,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "event-g-078",
+          "name": "진홍의 장막 너머",
+          "nameJa": "紅の終焉",
+          "nameEn": "Beyond the Crimson Veil",
+          "level": "G★3",
+          "questType": "event",
+          "location": "용암섬",
+          "objective": "홍룡 밀라보레아스 1마리 수렵",
+          "note": "G★3 이벤트 보수"
+        },
+        {
+          "type": "quest",
+          "id": "event-g-076",
+          "name": "극한의 포식자",
+          "nameJa": "喰慾の極限",
+          "nameEn": "The Apex Predator",
+          "level": "G★3",
+          "questType": "event",
+          "location": "원생림",
+          "objective": "이블조 1마리 수렵",
+          "note": "G★3 이벤트 보수"
+        },
+        {
+          "type": "quest",
+          "id": "event-g-071",
+          "name": "고그마지오스 포격전",
+          "nameJa": "巨戟砕くは砲撃の雨",
+          "nameEn": "Bombs over Gogmazios",
+          "level": "G★3",
+          "questType": "event",
+          "location": "전투 구역",
+          "objective": "고그마지오스 토벌",
+          "note": "확정 입수 가능한 G★3 이벤트"
+        }
+      ]
+    },
+    {
+      "name": "염왕룡 강뿔",
+      "count": 2,
+      "nameJa": "炎王龍の剛角",
+      "itemId": "item_mh4u_0970",
+      "mh4uId": 970,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "테오·테스카토르",
+          "navMonster": "테오·테스카토르",
+          "nameEn": "Teostra",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 63% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "태고룡골",
+      "count": 4,
+      "nameJa": "太古龍骨",
+      "itemId": "item_22a180f00f9e",
+      "mh4uId": 314,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: A Formless Fiend",
+          "nameEn": "Advanced: A Formless Fiend",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Chameleos or repel it",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Misty Challenge",
+          "nameEn": "Advanced: Misty Challenge",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Chameleos or repel it",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: A Storm of Steel",
+          "nameEn": "Advanced: A Storm of Steel",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Kushala Daora or repel it",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "테오·테스카토르",
+        "navMonster": "테오·테스카토르"
+      }
+    ],
+    "quests": [
+      {
+        "id": "event-g-078",
+        "name": "진홍의 장막 너머",
+        "nameJa": "紅の終焉",
+        "level": "G★3",
+        "questType": "event",
+        "location": "용암섬",
+        "objective": "홍룡 밀라보레아스 1마리 수렵",
+        "note": "G★3 이벤트 보수"
+      },
+      {
+        "id": "event-g-076",
+        "name": "극한의 포식자",
+        "nameJa": "喰慾の極限",
+        "level": "G★3",
+        "questType": "event",
+        "location": "원생림",
+        "objective": "이블조 1마리 수렵",
+        "note": "G★3 이벤트 보수"
+      },
+      {
+        "id": "event-g-071",
+        "name": "고그마지오스 포격전",
+        "nameJa": "巨戟砕くは砲撃の雨",
+        "level": "G★3",
+        "questType": "event",
+        "location": "전투 구역",
+        "objective": "고그마지오스 토벌",
+        "note": "확정 입수 가능한 G★3 이벤트"
+      },
+      {
+        "id": "",
+        "name": "Advanced: A Formless Fiend",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Chameleos or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Misty Challenge",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Chameleos or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: A Storm of Steel",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Kushala Daora or repel it",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

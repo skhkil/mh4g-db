@@ -1,0 +1,241 @@
+{
+  "materials": [
+    {
+      "name": "빙아룡 두툼모피",
+      "count": 4,
+      "nameJa": "氷牙竜の厚毛皮",
+      "itemId": "item_mh4u_1170",
+      "mh4uId": 1170,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "교사룡 두툼가죽",
+          "requiredItemId": "item_mh4u_0572",
+          "unlockQuestId": "quest_34bc81d3575a",
+          "unlockQuest": "고난도: 깨어진 정적",
+          "unlockLevel": "★1",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "중후한 뼈",
+      "count": 4,
+      "nameJa": "重厚な骨",
+      "itemId": "item_bf13a6bc33f0",
+      "mh4uId": 320,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "바바콩가",
+          "navMonster": "바바콩가",
+          "nameEn": "Congalala",
+          "rank": "G급",
+          "methods": [
+            "Capture · 25% · ×1",
+            "Body Carve · 15% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "바바콩가 아종",
+          "navMonster": "바바콩가 아종",
+          "nameEn": "Emerald Congalala",
+          "rank": "G급",
+          "methods": [
+            "Capture · 25% · ×4",
+            "Body Carve · 15% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "울크스스",
+          "navMonster": "울크스스",
+          "nameEn": "Lagombi",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 20% · ×1",
+            "Capture · 20% · ×2"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Bad Hair Rajang",
+          "nameEn": "Advanced: Bad Hair Rajang",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Rajang",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Ring Hollow",
+          "nameEn": "Ring Hollow",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Fur Fixation",
+          "nameEn": "Advanced: Fur Fixation",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Rajang",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "순간동결주머니",
+      "count": 5,
+      "nameJa": "瞬間凍結袋",
+      "itemId": "item_mh4u_0347",
+      "mh4uId": 347,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "자보아자길",
+          "navMonster": "자보아자길",
+          "nameEn": "Zamtrios",
+          "rank": "G급",
+          "methods": [
+            "Capture · 20% · ×1",
+            "Body Carve · 16% · ×1",
+            "Shiny Drop (Breaking Ice) · 5% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Puffer Fish",
+          "nameEn": "Puffer Fish",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Zamtrios",
+          "probability": 14,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "All-You-Can-Hunt Zamite",
+          "nameEn": "All-You-Can-Hunt Zamite",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay 25 Zamite",
+          "probability": 14,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Chumming the Waters",
+          "nameEn": "Advanced: Chumming the Waters",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt 2 Zamtrios",
+          "probability": 14,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "바바콩가",
+        "navMonster": "바바콩가"
+      },
+      {
+        "name": "바바콩가 아종",
+        "navMonster": "바바콩가 아종"
+      },
+      {
+        "name": "울크스스",
+        "navMonster": "울크스스"
+      },
+      {
+        "name": "자보아자길",
+        "navMonster": "자보아자길"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: Bad Hair Rajang",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Rajang",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Ring Hollow",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt all large monsters",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Fur Fixation",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Rajang",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Puffer Fish",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Zamtrios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "All-You-Can-Hunt Zamite",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay 25 Zamite",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Chumming the Waters",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt 2 Zamtrios",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

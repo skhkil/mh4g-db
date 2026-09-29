@@ -1,0 +1,341 @@
+{
+  "materials": [
+    {
+      "name": "흑식룡 견갑각",
+      "count": 5,
+      "nameJa": "黒蝕竜の堅殻",
+      "itemId": "item_mh4u_0858",
+      "mh4uId": 858,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "고어·마가라",
+          "navMonster": "고어·마가라",
+          "nameEn": "Gore Magala",
+          "rank": "상위",
+          "methods": [
+            "Capture · 37% · ×1",
+            "Body Carve · 29% · ×1",
+            "Break Head · 23% · ×2"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Crazy Stupid Love",
+          "nameEn": "Crazy Stupid Love",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt Gore Magala",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Dread Locked",
+          "nameEn": "Dread Locked",
+          "level": "Guild★5",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt Gore Magala",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Primal Forest M.I.A.",
+          "nameEn": "Primal Forest M.I.A.",
+          "level": "Guild★5",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 14,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "흑식룡 비늘+",
+      "count": 4,
+      "nameJa": "黒蝕竜の上鱗",
+      "itemId": "item_mh4u_0855",
+      "mh4uId": 855,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "고어·마가라",
+          "navMonster": "고어·마가라",
+          "nameEn": "Gore Magala",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 40% · ×1",
+            "Break Head · 33% · ×1",
+            "Break Wing Leg · 28% · ×1",
+            "Tail Carve · 24% · ×1",
+            "Shiny Drop · 24% · ×1",
+            "Break Wing · 22% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Crazy Stupid Love",
+          "nameEn": "Crazy Stupid Love",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt Gore Magala",
+          "probability": 34,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Dread Locked",
+          "nameEn": "Dread Locked",
+          "level": "Guild★5",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt Gore Magala",
+          "probability": 34,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Primal Forest M.I.A.",
+          "nameEn": "Primal Forest M.I.A.",
+          "level": "Guild★5",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 16,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "흑식룡 치명발톱",
+      "count": 5,
+      "nameJa": "黒蝕竜の鋭惨爪",
+      "itemId": "item_mh4u_0864",
+      "mh4uId": 864,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "고어·마가라",
+          "navMonster": "고어·마가라",
+          "nameEn": "Gore Magala",
+          "rank": "상위",
+          "methods": [
+            "Break Wing Leg · 37% · ×1",
+            "Break Wing Leg · 20% · ×1",
+            "Body Carve · 18% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Crazy Stupid Love",
+          "nameEn": "Crazy Stupid Love",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt Gore Magala",
+          "probability": 22,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Dread Locked",
+          "nameEn": "Dread Locked",
+          "level": "Guild★5",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt Gore Magala",
+          "probability": 22,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Primal Forest M.I.A.",
+          "nameEn": "Primal Forest M.I.A.",
+          "level": "Guild★5",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 10,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "노바크리스털",
+      "count": 1,
+      "nameJa": "ノヴァクリスタル",
+      "itemId": "item_fc9752fd5432",
+      "mh4uId": 214,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "키린",
+          "navMonster": "키린",
+          "nameEn": "Kirin",
+          "rank": "상위",
+          "methods": [
+            "Shiny Drop · 50% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "키린 아종",
+          "navMonster": "키린 아종",
+          "nameEn": "Oroshi Kirin",
+          "rank": "상위",
+          "methods": [
+            "Shiny Drop · 50% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "게리오스",
+          "navMonster": "게리오스",
+          "nameEn": "Gypceros",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 20% · ×1",
+            "Body Carve · 8% · ×1",
+            "Break Head · 7% · ×1",
+            "Shiny Drop · 5% · ×1",
+            "Body Carve · 5% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Egg-straction: The Reckoning",
+          "nameEn": "Egg-straction: The Reckoning",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 2 Wyvern Eggs",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: A Hero's Icy Test",
+          "nameEn": "Advanced: A Hero's Icy Test",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay an Oroshi Kirin",
+          "probability": 10,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Red Dragon's Dawn",
+          "nameEn": "Advanced: Red Dragon's Dawn",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay a Fatalis or repel it",
+          "probability": 9,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "고어·마가라",
+        "navMonster": "고어·마가라"
+      },
+      {
+        "name": "키린",
+        "navMonster": "키린"
+      },
+      {
+        "name": "키린 아종",
+        "navMonster": "키린 아종"
+      },
+      {
+        "name": "게리오스",
+        "navMonster": "게리오스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Crazy Stupid Love",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt Gore Magala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Dread Locked",
+        "nameJa": "",
+        "level": "Guild★5",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt Gore Magala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Primal Forest M.I.A.",
+        "nameJa": "",
+        "level": "Guild★5",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt all large monsters",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Egg-straction: The Reckoning",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 2 Wyvern Eggs",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: A Hero's Icy Test",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay an Oroshi Kirin",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Red Dragon's Dawn",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay a Fatalis or repel it",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

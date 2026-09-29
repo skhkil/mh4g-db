@@ -1,0 +1,302 @@
+{
+  "materials": [
+    {
+      "name": "중갑충 갑각",
+      "count": 4,
+      "nameJa": "重甲虫の甲殻",
+      "itemId": "item_mh4u_0615",
+      "mh4uId": 615,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "게넬·셀타스",
+          "navMonster": "게넬·셀타스",
+          "nameEn": "Seltas Queen",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 46% · ×1",
+            "Shiny Drop · 25% · ×1",
+            "Break Leg · 25% · ×1",
+            "Capture · 20% · ×1",
+            "Break Tail · 16% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "The Royal Guard",
+          "nameEn": "The Royal Guard",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Seltas Queen",
+          "probability": 25,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "The Royal Guard",
+          "nameEn": "The Royal Guard",
+          "level": "Guild★3",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Seltas Queen",
+          "probability": 25,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Bug Buffet",
+          "nameEn": "Advanced: Bug Buffet",
+          "level": "Guild★3",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Seltas Queen",
+          "probability": 25,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "중갑충 큰턱",
+      "count": 2,
+      "nameJa": "重甲虫の大顎",
+      "itemId": "item_mh4u_0624",
+      "mh4uId": 624,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "게넬·셀타스",
+          "navMonster": "게넬·셀타스",
+          "nameEn": "Seltas Queen",
+          "rank": "하위",
+          "methods": [
+            "Break Head · 70% · ×1",
+            "Break Head · 58% · ×1",
+            "Capture · 11% · ×1",
+            "Capture · 10% · ×1",
+            "Break Head · 10% · ×2",
+            "Body Carve · 6% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "The Royal Guard",
+          "nameEn": "The Royal Guard",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Seltas Queen",
+          "probability": 9,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "The Royal Guard",
+          "nameEn": "The Royal Guard",
+          "level": "Guild★3",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Seltas Queen",
+          "probability": 9,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Bug Buffet",
+          "nameEn": "Advanced: Bug Buffet",
+          "level": "Guild★3",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Seltas Queen",
+          "probability": 9,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "중갑충 원형꼬리",
+      "count": 1,
+      "nameJa": "重甲虫の円月尾",
+      "itemId": "item_mh4u_0626",
+      "mh4uId": 626,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "게넬·셀타스",
+          "navMonster": "게넬·셀타스",
+          "nameEn": "Seltas Queen",
+          "rank": "하위",
+          "methods": [
+            "Break Tail · 76% · ×1",
+            "Break Tail · 60% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "The Royal Guard",
+          "nameEn": "The Royal Guard",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Seltas Queen",
+          "probability": 11,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "The Royal Guard",
+          "nameEn": "The Royal Guard",
+          "level": "Guild★3",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Seltas Queen",
+          "probability": 11,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Bug Buffet",
+          "nameEn": "Advanced: Bug Buffet",
+          "level": "Guild★3",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Seltas Queen",
+          "probability": 11,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "철갑충 뿔",
+      "count": 1,
+      "nameJa": "徹甲虫の角",
+      "itemId": "item_mh4u_0609",
+      "mh4uId": 609,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "아르셀타스",
+          "navMonster": "아르셀타스",
+          "nameEn": "Seltas",
+          "rank": "하위",
+          "methods": [
+            "Break Horn · 70% · ×1",
+            "Capture · 20% · ×1",
+            "Break Horn · 10% · ×2"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Catch and Release",
+          "nameEn": "Catch and Release",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Capture a Seltas",
+          "probability": 11,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Harvest Tour: Sunken Hollow",
+          "nameEn": "Harvest Tour: Sunken Hollow",
+          "level": "Caravan★7",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+          "probability": 11,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Primal Pests",
+          "nameEn": "Primal Pests",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt an Iodrome and a Seltas",
+          "probability": 11,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "게넬·셀타스",
+        "navMonster": "게넬·셀타스"
+      },
+      {
+        "name": "아르셀타스",
+        "navMonster": "아르셀타스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "The Royal Guard",
+        "nameJa": "",
+        "level": "Caravan★5",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Seltas Queen",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Bug Buffet",
+        "nameJa": "",
+        "level": "Guild★3",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Seltas Queen",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Catch and Release",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Capture a Seltas",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Harvest Tour: Sunken Hollow",
+        "nameJa": "",
+        "level": "Caravan★7",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Primal Pests",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt an Iodrome and a Seltas",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

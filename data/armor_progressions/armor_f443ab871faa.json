@@ -1,0 +1,226 @@
+{
+  "materials": [
+    {
+      "name": "성채게 견갑각",
+      "count": 1,
+      "nameJa": "砦蟹の堅甲",
+      "itemId": "item_mh4u_1149",
+      "mh4uId": 1149,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "희망의 증표G",
+          "requiredItemId": "item_e4e64a7c5447",
+          "unlockQuestId": "quest_d79e85dfcb06",
+          "unlockQuest": "고난도: 노한 금사자 수렵!",
+          "unlockLevel": "★7",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "강룡 보옥",
+      "count": 1,
+      "nameJa": "鋼龍の宝玉",
+      "itemId": "item_mh4u_0958",
+      "mh4uId": 958,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "크샬다오라",
+          "navMonster": "크샬다오라",
+          "nameEn": "Kushala Daora",
+          "rank": "G급",
+          "methods": [
+            "Shiny Drop · 5% · ×1",
+            "Tail Carve · 4% · ×1",
+            "Break Head · 4% · ×1",
+            "Body Carve · 4% · ×1",
+            "Shiny Drop · 3% · ×1",
+            "Body Carve · 2% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "녹슨크샬다오라",
+          "navMonster": "녹슨크샬다오라",
+          "nameEn": "Rusted Kushala Daora",
+          "rank": "G급",
+          "methods": [
+            "Shiny Drop · 5% · ×1",
+            "Tail Carve · 4% · ×1",
+            "Break Head · 4% · ×1",
+            "Shiny Drop · 3% · ×1",
+            "Body Carve · 2% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: A Storm of Steel",
+          "nameEn": "Advanced: A Storm of Steel",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Kushala Daora or repel it",
+          "probability": 5,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Operation Windbreaker",
+          "nameEn": "Operation Windbreaker",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Kushala Daora or repel it",
+          "probability": 5,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Stormy Knight",
+          "nameEn": "Advanced: Stormy Knight",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Kushala Daora or repel it",
+          "probability": 4,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "하룡 보옥",
+          "requiredItemId": "item_mh4u_1140",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: Stormy Knight",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "희귀풍뎅이",
+      "count": 1,
+      "nameJa": "マレコガネ",
+      "itemId": "item_54ae5510c450",
+      "mh4uId": 268,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Icy Shadow",
+          "nameEn": "Icy Shadow",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Khezu",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "All-You-Can-Hunt Zamite",
+          "nameEn": "All-You-Can-Hunt Zamite",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay 25 Zamite",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "La Vie en Rose",
+          "nameEn": "La Vie en Rose",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Red Khezu",
+          "probability": 12,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "크샬다오라",
+        "navMonster": "크샬다오라"
+      },
+      {
+        "name": "녹슨크샬다오라",
+        "navMonster": "녹슨크샬다오라"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: A Storm of Steel",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Kushala Daora or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Operation Windbreaker",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Kushala Daora or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Stormy Knight",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Kushala Daora or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Icy Shadow",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Khezu",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "All-You-Can-Hunt Zamite",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay 25 Zamite",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "La Vie en Rose",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Red Khezu",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

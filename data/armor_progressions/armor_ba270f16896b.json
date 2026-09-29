@@ -1,0 +1,241 @@
+{
+  "materials": [
+    {
+      "name": "철갑충 첨예뿔",
+      "count": 2,
+      "nameJa": "徹甲虫の尖角",
+      "itemId": "item_mh4u_0610",
+      "mh4uId": 610,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "아르셀타스",
+          "navMonster": "아르셀타스",
+          "nameEn": "Seltas",
+          "rank": "상위",
+          "methods": [
+            "Break Horn · 65% · ×1",
+            "Capture · 20% · ×1",
+            "Break Horn · 10% · ×2"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Harvest Tour: Anc. Steppe",
+          "nameEn": "Harvest Tour: Anc. Steppe",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+          "probability": 11,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Bug-Be-Gone",
+          "nameEn": "Advanced: Bug-Be-Gone",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Seltas and a Desert Seltas",
+          "probability": 11,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Strutting the Royal Runway",
+          "nameEn": "Strutting the Royal Runway",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Capture a Seltas Queen",
+          "probability": 11,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "이상한 부리",
+      "count": 2,
+      "nameJa": "へんなクチバシ",
+      "itemId": "item_mh4u_1099",
+      "mh4uId": 1099,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "기원호 귀",
+          "requiredItemId": "item_mh4u_0479",
+          "unlockQuestId": "quest_e7f591833ab9",
+          "unlockQuest": "못된 악동 기원호를 수렵하라",
+          "unlockLevel": "★3",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "거대한 뼈",
+      "count": 2,
+      "nameJa": "大きな骨",
+      "itemId": "item_0e6aada4f05c",
+      "mh4uId": 318,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Popo",
+          "navMonster": "",
+          "nameEn": "Popo",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 20% · ×1",
+            "Body Carve · 5% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "울크스스",
+          "navMonster": "울크스스",
+          "nameEn": "Lagombi",
+          "rank": "하위",
+          "methods": [
+            "Capture · 20% · ×2",
+            "Body Carve · 5% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "테츠카브라",
+          "navMonster": "테츠카브라",
+          "nameEn": "Tetsucabra",
+          "rank": "하위",
+          "methods": [
+            "Capture · 20% · ×1",
+            "Body Carve · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Swing into Action",
+          "nameEn": "Swing into Action",
+          "level": "Caravan★3",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Kecha Wacha",
+          "probability": 15,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Kecha Wacha Wallop",
+          "nameEn": "Kecha Wacha Wallop",
+          "level": "Caravan★3",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Kecha Wacha",
+          "probability": 15,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Order of Magnitude",
+          "nameEn": "Advanced: Order of Magnitude",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Kecha Wacha and a Rathian",
+          "probability": 15,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "아르셀타스",
+        "navMonster": "아르셀타스"
+      },
+      {
+        "name": "Popo",
+        "navMonster": ""
+      },
+      {
+        "name": "울크스스",
+        "navMonster": "울크스스"
+      },
+      {
+        "name": "테츠카브라",
+        "navMonster": "테츠카브라"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Harvest Tour: Anc. Steppe",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Bug-Be-Gone",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Seltas and a Desert Seltas",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Strutting the Royal Runway",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Capture a Seltas Queen",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Swing into Action",
+        "nameJa": "",
+        "level": "Caravan★3",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Kecha Wacha",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Kecha Wacha Wallop",
+        "nameJa": "",
+        "level": "Caravan★3",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Kecha Wacha",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Order of Magnitude",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Kecha Wacha and a Rathian",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

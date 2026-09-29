@@ -1,0 +1,231 @@
+{
+  "materials": [
+    {
+      "name": "괴조 비늘",
+      "count": 2,
+      "nameJa": "怪鳥の鱗",
+      "itemId": "item_mh4u_0429",
+      "mh4uId": 429,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "얀쿡크",
+          "navMonster": "얀쿡크",
+          "nameEn": "Yian Kut-Ku",
+          "rank": "하위",
+          "methods": [
+            "Break Ear · 50% · ×3",
+            "Shiny Drop · 16% · ×1",
+            "Body Carve · 13% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "괴조 갑각",
+      "count": 3,
+      "nameJa": "怪鳥の甲殻",
+      "itemId": "item_mh4u_0432",
+      "mh4uId": 432,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "얀쿡크",
+          "navMonster": "얀쿡크",
+          "nameEn": "Yian Kut-Ku",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 50% · ×1",
+            "Capture · 33% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "괴조 익막",
+      "count": 1,
+      "nameJa": "怪鳥の翼膜",
+      "itemId": "item_mh4u_0440",
+      "mh4uId": 440,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "얀쿡크",
+          "navMonster": "얀쿡크",
+          "nameEn": "Yian Kut-Ku",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 32% · ×1",
+            "Body Carve · 10% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "얀쿡크 아종",
+          "navMonster": "얀쿡크 아종",
+          "nameEn": "Blue Yian Kut-Ku",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Singin' the Blues",
+          "nameEn": "Singin' the Blues",
+          "level": "Caravan★7",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Blue Yian Kut-Ku",
+          "probability": 10,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "용골【소】",
+      "count": 3,
+      "nameJa": "竜骨【小】",
+      "itemId": "item_4920157876c8",
+      "mh4uId": 304,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Apceros",
+          "navMonster": "",
+          "nameEn": "Apceros",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 40% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "Aptonoth",
+          "navMonster": "",
+          "nameEn": "Aptonoth",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 25% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "Gargwa",
+          "navMonster": "",
+          "nameEn": "Gargwa",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 15% · ×1",
+            "Body Carve · 5% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Midnight Madness",
+          "nameEn": "Midnight Madness",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Tigrex",
+          "probability": 32,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "The Gypceros Project",
+          "nameEn": "The Gypceros Project",
+          "level": "Guild★1",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Capture a Gypceros",
+          "probability": 30,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Operation Catch-a-Kecha",
+          "nameEn": "Operation Catch-a-Kecha",
+          "level": "Guild★1",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Capture a Kecha Wacha",
+          "probability": 30,
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "얀쿡크",
+        "navMonster": "얀쿡크"
+      },
+      {
+        "name": "얀쿡크 아종",
+        "navMonster": "얀쿡크 아종"
+      },
+      {
+        "name": "Apceros",
+        "navMonster": ""
+      },
+      {
+        "name": "Aptonoth",
+        "navMonster": ""
+      },
+      {
+        "name": "Gargwa",
+        "navMonster": ""
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Singin' the Blues",
+        "nameJa": "",
+        "level": "Caravan★7",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Blue Yian Kut-Ku",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Midnight Madness",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Tigrex",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "The Gypceros Project",
+        "nameJa": "",
+        "level": "Guild★1",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Capture a Gypceros",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Operation Catch-a-Kecha",
+        "nameJa": "",
+        "level": "Guild★1",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Capture a Kecha Wacha",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

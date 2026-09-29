@@ -1,0 +1,217 @@
+{
+  "materials": [
+    {
+      "name": "염과룡 중갑각",
+      "count": 3,
+      "nameJa": "炎戈竜の重殻",
+      "itemId": "item_mh4u_1175",
+      "mh4uId": 1175,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "홍화룡 두툼비늘",
+          "requiredItemId": "item_mh4u_0674",
+          "unlockQuestId": "quest_6199c640e193",
+          "unlockQuest": "사막에 핀 두 그루의 벚나무",
+          "unlockLevel": "★1",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "귀와 중갑각",
+      "count": 3,
+      "nameJa": "鬼蛙の重殻",
+      "itemId": "item_mh4u_0529",
+      "mh4uId": 529,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "테츠카브라",
+          "navMonster": "테츠카브라",
+          "nameEn": "Tetsucabra",
+          "rank": "G급",
+          "methods": [
+            "Break Back · 30% · ×1",
+            "Body Carve · 20% · ×1",
+            "Capture · 15% · ×1",
+            "Break Back Leg · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Chasing Tail",
+          "nameEn": "Chasing Tail",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt 2 Tetsucabras",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Hollow Hysterics",
+          "nameEn": "Advanced: Hollow Hysterics",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Nerscylla and a Tetsucabra",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Harvest Tour: Volcanic Hollow",
+          "nameEn": "Harvest Tour: Volcanic Hollow",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+          "probability": 18,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "견고한 조룡골",
+      "count": 4,
+      "nameJa": "堅牢な鳥竜骨",
+      "itemId": "item_4a7a3d81c377",
+      "mh4uId": 316,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Jaggi",
+          "navMonster": "",
+          "nameEn": "Jaggi",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 50% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "Velociprey",
+          "navMonster": "",
+          "nameEn": "Velociprey",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 45% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "Genprey",
+          "navMonster": "",
+          "nameEn": "Genprey",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 45% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Lumber Support",
+          "nameEn": "Lumber Support",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Kecha Wacha",
+          "probability": 21,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Mountain Rescue",
+          "nameEn": "Mountain Rescue",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Stygian Zinogre",
+          "probability": 21,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "테츠카브라",
+        "navMonster": "테츠카브라"
+      },
+      {
+        "name": "Jaggi",
+        "navMonster": ""
+      },
+      {
+        "name": "Velociprey",
+        "navMonster": ""
+      },
+      {
+        "name": "Genprey",
+        "navMonster": ""
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Chasing Tail",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt 2 Tetsucabras",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Hollow Hysterics",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Nerscylla and a Tetsucabra",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Harvest Tour: Volcanic Hollow",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Lumber Support",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Kecha Wacha",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Mountain Rescue",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Stygian Zinogre",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

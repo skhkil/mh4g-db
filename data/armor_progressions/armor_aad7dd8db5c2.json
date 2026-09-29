@@ -1,0 +1,295 @@
+{
+  "materials": [
+    {
+      "name": "장수호랑나비",
+      "count": 1,
+      "nameJa": "オオツノアゲハ",
+      "itemId": "item_3f8cdddebca5",
+      "mh4uId": 271,
+      "sources": [
+        {
+          "type": "acquire",
+          "label": "채집(상위탐색)"
+        }
+      ]
+    },
+    {
+      "name": "희귀풍뎅이",
+      "count": 2,
+      "nameJa": "マレコガネ",
+      "itemId": "item_54ae5510c450",
+      "mh4uId": 268,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Icy Shadow",
+          "nameEn": "Icy Shadow",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Khezu",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "All-You-Can-Hunt Zamite",
+          "nameEn": "All-You-Can-Hunt Zamite",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay 25 Zamite",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "La Vie en Rose",
+          "nameEn": "La Vie en Rose",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Red Khezu",
+          "probability": 12,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "뇌광충",
+      "count": 3,
+      "nameJa": "雷光虫",
+      "itemId": "item_221bb3fb3cd8",
+      "mh4uId": 263,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Egg-straction: Final Mission",
+          "nameEn": "Egg-straction: Final Mission",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 3 Wyven Eggs",
+          "probability": 16,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "The Stinking Seltas",
+          "nameEn": "The Stinking Seltas",
+          "level": "Caravan★2",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Seltas",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Bug Appétit",
+          "nameEn": "Bug Appétit",
+          "level": "Caravan★2",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Seltas",
+          "probability": 12,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "폭염주머니",
+      "count": 2,
+      "nameJa": "爆炎袋",
+      "itemId": "item_mh4u_0340",
+      "mh4uId": 340,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "그라비모스",
+          "navMonster": "그라비모스",
+          "nameEn": "Gravios",
+          "rank": "상위",
+          "methods": [
+            "Capture · 34% · ×1",
+            "Body Carve · 10% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "그라비모스 아종",
+          "navMonster": "그라비모스 아종",
+          "nameEn": "Black Gravios",
+          "rank": "상위",
+          "methods": [
+            "Capture · 34% · ×1",
+            "Body Carve · 10% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "리오레이아 아종",
+          "navMonster": "리오레이아 아종",
+          "nameEn": "Pink Rathian",
+          "rank": "상위",
+          "methods": [
+            "Capture · 16% · ×1",
+            "Body Carve · 13% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "An Omen in the Skies",
+          "nameEn": "An Omen in the Skies",
+          "level": "Caravan★9",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt an Azure Rathalos",
+          "probability": 20,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Bring Down the Sky King",
+          "nameEn": "Bring Down the Sky King",
+          "level": "Guild★6",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt an Azure Rathalos",
+          "probability": 20,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Heaven and Earth",
+          "nameEn": "Advanced: Heaven and Earth",
+          "level": "Guild★6",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt an Azure Rathalos and a Pink Rathian",
+          "probability": 20,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "그라비모스",
+        "navMonster": "그라비모스"
+      },
+      {
+        "name": "그라비모스 아종",
+        "navMonster": "그라비모스 아종"
+      },
+      {
+        "name": "리오레이아 아종",
+        "navMonster": "리오레이아 아종"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Icy Shadow",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Khezu",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "All-You-Can-Hunt Zamite",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay 25 Zamite",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "La Vie en Rose",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Red Khezu",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Egg-straction: Final Mission",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 3 Wyven Eggs",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "The Stinking Seltas",
+        "nameJa": "",
+        "level": "Caravan★2",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Seltas",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Bug Appétit",
+        "nameJa": "",
+        "level": "Caravan★2",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Seltas",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "An Omen in the Skies",
+        "nameJa": "",
+        "level": "Caravan★9",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt an Azure Rathalos",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Bring Down the Sky King",
+        "nameJa": "",
+        "level": "Guild★6",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt an Azure Rathalos",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Heaven and Earth",
+        "nameJa": "",
+        "level": "Guild★6",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt an Azure Rathalos and a Pink Rathian",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

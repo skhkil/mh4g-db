@@ -1,0 +1,352 @@
+{
+  "materials": [
+    {
+      "name": "희망의 증표",
+      "count": 1,
+      "nameJa": "希望の証",
+      "itemId": "item_0d03c7de5e2a",
+      "mh4uId": 1413,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Terrible Tyrant",
+          "nameEn": "Terrible Tyrant",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Molten Tigrex",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Busted Hell Hunters",
+          "nameEn": "Busted Hell Hunters",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Molten Tigrex",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Speartip Menace",
+          "nameEn": "Advanced: Speartip Menace",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Dalamadur",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "호산룡 견갑암각",
+      "count": 6,
+      "nameJa": "豪山龍の堅岩殻",
+      "itemId": "item_mh4u_0983",
+      "mh4uId": 983,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "다렌·모란",
+          "navMonster": "다렌·모란",
+          "nameEn": "Dah'ren Mohran",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 46% · ×1",
+            "Break Fin · 43% · ×1",
+            "Break Blowhole · 43% · ×1",
+            "Mining Back · 10% · ×1",
+            "Break Fin · 8% · ×1",
+            "Break Blowhole · 8% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Fleet Action",
+          "nameEn": "Advanced: Fleet Action",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Dah'ren Mohran or repel it",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: More Mohran",
+          "nameEn": "Advanced: More Mohran",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Dah'ren Mohran or repel it",
+          "probability": 100,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Moving Mountains",
+          "nameEn": "Advanced: Moving Mountains",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay Dah'ren Mohran or repel it",
+          "probability": 5,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "거친 첨예용뿔",
+      "count": 4,
+      "nameJa": "荒々しい龍尖角",
+      "itemId": "item_mh4u_0992",
+      "mh4uId": 992,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "다렌·모란",
+          "navMonster": "다렌·모란",
+          "nameEn": "Dah'ren Mohran",
+          "rank": "상위",
+          "methods": [
+            "Break Horn · 70% · ×1",
+            "Break Horn · 14% · ×2",
+            "Body Carve · 12% · ×1",
+            "Break Horn · 12% · ×2"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Fleet Action",
+          "nameEn": "Advanced: Fleet Action",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Dah'ren Mohran or repel it",
+          "probability": 15,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: More Mohran",
+          "nameEn": "Advanced: More Mohran",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Dah'ren Mohran or repel it",
+          "probability": 15,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "신룡나무",
+          "requiredItemId": "item_mh4u_1143",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: More Mohran",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "고룡의 피",
+      "count": 1,
+      "nameJa": "古龍の血",
+      "itemId": "item_mh4u_0329",
+      "mh4uId": 329,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "다렌·모란",
+          "navMonster": "다렌·모란",
+          "nameEn": "Dah'ren Mohran",
+          "rank": "상위",
+          "methods": [
+            "Break Fin · 15% · ×1",
+            "Break Blowhole · 15% · ×1",
+            "Break Front Leg · 10% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "오나즈치",
+          "navMonster": "오나즈치",
+          "nameEn": "Chameleos",
+          "rank": "G급",
+          "methods": [
+            "Tail Carve · 12% · ×1",
+            "Body Carve · 7% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "다라·아마듈라",
+          "navMonster": "다라·아마듈라",
+          "nameEn": "Dalamadur",
+          "rank": "상위",
+          "methods": [
+            "Break Chest · 10% · ×2"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: A Formless Fiend",
+          "nameEn": "Advanced: A Formless Fiend",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Chameleos or repel it",
+          "probability": 30,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Operation Tongue Twister",
+          "nameEn": "Operation Tongue Twister",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Chameleos or repel it",
+          "probability": 30,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Operation Windbreaker",
+          "nameEn": "Operation Windbreaker",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Kushala Daora or repel it",
+          "probability": 30,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "다렌·모란",
+        "navMonster": "다렌·모란"
+      },
+      {
+        "name": "오나즈치",
+        "navMonster": "오나즈치"
+      },
+      {
+        "name": "다라·아마듈라",
+        "navMonster": "다라·아마듈라"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Terrible Tyrant",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Molten Tigrex",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Busted Hell Hunters",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Molten Tigrex",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Speartip Menace",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay Dalamadur",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Fleet Action",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay Dah'ren Mohran or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: More Mohran",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay Dah'ren Mohran or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Moving Mountains",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay Dah'ren Mohran or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: A Formless Fiend",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Chameleos or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Operation Tongue Twister",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Chameleos or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Operation Windbreaker",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Kushala Daora or repel it",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

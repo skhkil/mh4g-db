@@ -1,0 +1,182 @@
+{
+  "materials": [
+    {
+      "name": "녹모수 억센털+",
+      "count": 2,
+      "nameJa": "緑毛獣の豪剛毛",
+      "itemId": "item_mh4u_0502",
+      "mh4uId": 502,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "바바콩가 아종",
+          "navMonster": "바바콩가 아종",
+          "nameEn": "Emerald Congalala",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 60% · ×1",
+            "Body Carve · 50% · ×1",
+            "Capture · 40% · ×1",
+            "Break Claw · 20% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Primate Plunder",
+          "nameEn": "Primate Plunder",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt an Emerald Congalala",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Mean and Green",
+          "nameEn": "Advanced: Mean and Green",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt an Emerald Congalala and a Seltas Queen",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "녹모수 강발톱",
+      "count": 3,
+      "nameJa": "緑毛獣の剛爪",
+      "itemId": "item_mh4u_0505",
+      "mh4uId": 505,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "바바콩가 아종",
+          "navMonster": "바바콩가 아종",
+          "nameEn": "Emerald Congalala",
+          "rank": "G급",
+          "methods": [
+            "Break Claw · 80% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Primate Plunder",
+          "nameEn": "Primate Plunder",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt an Emerald Congalala",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Mean and Green",
+          "nameEn": "Advanced: Mean and Green",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt an Emerald Congalala and a Seltas Queen",
+          "probability": 12,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "콩가 억센털",
+      "count": 4,
+      "nameJa": "コンガの剛毛",
+      "itemId": "item_mh4u_0490",
+      "mh4uId": 490,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Conga",
+          "navMonster": "",
+          "nameEn": "Conga",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 50% · ×1",
+            "Body Carve · 33% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "예리한 발톱",
+      "count": 4,
+      "nameJa": "鋭利な爪",
+      "itemId": "item_mh4u_0374",
+      "mh4uId": 374,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Conga",
+          "navMonster": "",
+          "nameEn": "Conga",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 45% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "Hermitaur",
+          "navMonster": "",
+          "nameEn": "Hermitaur",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 40% · ×1"
+          ]
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "바바콩가 아종",
+        "navMonster": "바바콩가 아종"
+      },
+      {
+        "name": "Conga",
+        "navMonster": ""
+      },
+      {
+        "name": "Hermitaur",
+        "navMonster": ""
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Primate Plunder",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt an Emerald Congalala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Mean and Green",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt an Emerald Congalala and a Seltas Queen",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

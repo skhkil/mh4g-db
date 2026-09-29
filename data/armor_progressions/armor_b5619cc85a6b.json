@@ -1,0 +1,89 @@
+{
+  "materials": [
+    {
+      "name": "괴조 두툼비늘",
+      "count": 3,
+      "nameJa": "怪鳥の厚鱗",
+      "itemId": "item_mh4u_0431",
+      "mh4uId": 431,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "얀쿡크",
+          "navMonster": "얀쿡크",
+          "nameEn": "Yian Kut-Ku",
+          "rank": "G급",
+          "methods": [
+            "Shiny Drop · 35% · ×1",
+            "Body Carve · 33% · ×1",
+            "Break Ear · 20% · ×3"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "괴조 중갑각",
+      "count": 2,
+      "nameJa": "怪鳥の重殻",
+      "itemId": "item_mh4u_0434",
+      "mh4uId": 434,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "얀쿡크",
+          "navMonster": "얀쿡크",
+          "nameEn": "Yian Kut-Ku",
+          "rank": "G급",
+          "methods": [
+            "Capture · 43% · ×1",
+            "Body Carve · 25% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "괴조 강날개",
+      "count": 2,
+      "nameJa": "怪鳥の剛翼",
+      "itemId": "item_mh4u_0441",
+      "mh4uId": 441,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "얀쿡크",
+          "navMonster": "얀쿡크",
+          "nameEn": "Yian Kut-Ku",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 32% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "얀쿡크 아종",
+          "navMonster": "얀쿡크 아종",
+          "nameEn": "Blue Yian Kut-Ku",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 32% · ×1"
+          ]
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "얀쿡크",
+        "navMonster": "얀쿡크"
+      },
+      {
+        "name": "얀쿡크 아종",
+        "navMonster": "얀쿡크 아종"
+      }
+    ],
+    "quests": [],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

@@ -1,0 +1,405 @@
+{
+  "materials": [
+    {
+      "name": "공폭룡 큰이빨",
+      "count": 5,
+      "nameJa": "恐暴竜の大牙",
+      "itemId": "item_mh4u_0918",
+      "mh4uId": 918,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "이블조",
+          "navMonster": "이블조",
+          "nameEn": "Deviljho",
+          "rank": "상위",
+          "methods": [
+            "Break Head · 50% · ×1",
+            "Break Head · 15% · ×2",
+            "Body Carve · 11% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "광폭 이블조",
+          "navMonster": "광폭 이블조",
+          "nameEn": "Savage Deviljho",
+          "rank": "상위",
+          "methods": [
+            "Break Head · 35% · ×1",
+            "Break Head · 20% · ×2",
+            "Body Carve · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Tyrant's Maw",
+          "nameEn": "Advanced: Tyrant's Maw",
+          "level": "Caravan★9",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Deviljho",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Bet Your Life",
+          "nameEn": "Advanced: Bet Your Life",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Deviljho and a Rajang",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Naked and Afraid",
+          "nameEn": "Advanced: Naked and Afraid",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt 2 Deviljho",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "휘어진 용뿔",
+          "requiredItemId": "item_mh4u_1152",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: Naked and Afraid",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "공폭룡 갈고리발톱",
+      "count": 4,
+      "nameJa": "恐暴竜の鉤爪",
+      "itemId": "item_mh4u_0920",
+      "mh4uId": 920,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "광폭 이블조",
+          "navMonster": "광폭 이블조",
+          "nameEn": "Savage Deviljho",
+          "rank": "상위",
+          "methods": [
+            "Shiny Drop · 42% · ×1",
+            "Capture · 15% · ×1",
+            "Body Carve · 12% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "이블조",
+          "navMonster": "이블조",
+          "nameEn": "Deviljho",
+          "rank": "상위",
+          "methods": [
+            "Shiny Drop · 34% · ×1",
+            "Body Carve · 20% · ×1",
+            "Capture · 20% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Tyrant's Maw",
+          "nameEn": "Advanced: Tyrant's Maw",
+          "level": "Caravan★9",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Deviljho",
+          "probability": 20,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Splendid Sootstone",
+          "nameEn": "Splendid Sootstone",
+          "level": "Guild★4",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Deliver 4 Sootstone Ores",
+          "probability": 20,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Devil of a Problem",
+          "nameEn": "Devil of a Problem",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Deviljho",
+          "probability": 20,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "공폭룡 검은가죽",
+      "count": 5,
+      "nameJa": "恐暴竜の黒皮",
+      "itemId": "item_mh4u_0916",
+      "mh4uId": 916,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "이블조",
+          "navMonster": "이블조",
+          "nameEn": "Deviljho",
+          "rank": "상위",
+          "methods": [
+            "Capture · 36% · ×1",
+            "Body Carve · 28% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "광폭 이블조",
+          "navMonster": "광폭 이블조",
+          "nameEn": "Savage Deviljho",
+          "rank": "상위",
+          "methods": [
+            "Capture · 20% · ×1",
+            "Body Carve · 18% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Devil of a Problem",
+          "nameEn": "Devil of a Problem",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Deviljho",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Naked and Afraid",
+          "nameEn": "Advanced: Naked and Afraid",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt 2 Deviljho",
+          "probability": 23,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Devil at Heaven's Gate",
+          "nameEn": "Devil at Heaven's Gate",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Deviljho",
+          "probability": 12,
+          "count": 2
+        },
+        {
+          "type": "exchange",
+          "required": "대해룡 갑피",
+          "requiredItemId": "item_mh4u_1151",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: Naked and Afraid",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "뇌랑룡 역린",
+      "count": 1,
+      "nameJa": "雷狼竜の逆鱗",
+      "itemId": "item_mh4u_0752",
+      "mh4uId": 752,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "진오우거",
+          "navMonster": "진오우거",
+          "nameEn": "Zinogre",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 5% · ×1",
+            "Break Head · 3% · ×1",
+            "Tail Carve · 2% · ×1",
+            "Shiny Drop · 2% · ×1",
+            "Capture · 2% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "See the Lightning",
+          "nameEn": "See the Lightning",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Zinogre",
+          "probability": 3,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hunt-a-thon: Zinogre",
+          "nameEn": "Hunt-a-thon: Zinogre",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt 2 Zinogres before time expires or deliver a Paw Pass Ticket",
+          "probability": 3,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Thunder and Stone",
+          "nameEn": "Thunder and Stone",
+          "level": "Caravan★9",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Zinogre and a Gravios",
+          "probability": 3,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "신룡 골수",
+          "requiredItemId": "item_mh4u_1109",
+          "unlockQuestId": "",
+          "unlockQuest": "Uncorner the Market",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "이블조",
+        "navMonster": "이블조"
+      },
+      {
+        "name": "광폭 이블조",
+        "navMonster": "광폭 이블조"
+      },
+      {
+        "name": "진오우거",
+        "navMonster": "진오우거"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: Tyrant's Maw",
+        "nameJa": "",
+        "level": "Caravan★9",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Deviljho",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Bet Your Life",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Deviljho and a Rajang",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Naked and Afraid",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt 2 Deviljho",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Splendid Sootstone",
+        "nameJa": "",
+        "level": "Guild★4",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Deliver 4 Sootstone Ores",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Devil of a Problem",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Deviljho",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Devil at Heaven's Gate",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Deviljho",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "See the Lightning",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Zinogre",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Hunt-a-thon: Zinogre",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt 2 Zinogres before time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Thunder and Stone",
+        "nameJa": "",
+        "level": "Caravan★9",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Zinogre and a Gravios",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

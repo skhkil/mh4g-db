@@ -1,0 +1,224 @@
+{
+  "materials": [
+    {
+      "name": "백일각룡 중갑",
+      "count": 2,
+      "nameJa": "",
+      "itemId": "item_mh4u_0724",
+      "mh4uId": 724,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "모노블로스 아종",
+          "navMonster": "모노블로스 아종",
+          "nameEn": "White Monoblos",
+          "rank": "G급",
+          "methods": [
+            "Break Back · 70% · ×1",
+            "Body Carve · 30% · ×1",
+            "Shiny Drop · 30% · ×1",
+            "Capture · 27% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "The Silvery Spear",
+          "nameEn": "The Silvery Spear",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a White Monoblos",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "백일각룡 중갑각",
+      "count": 5,
+      "nameJa": "",
+      "itemId": "item_mh4u_0723",
+      "mh4uId": 723,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "모노블로스 아종",
+          "navMonster": "모노블로스 아종",
+          "nameEn": "White Monoblos",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 59% · ×1",
+            "Capture · 50% · ×1",
+            "Break Back · 30% · ×2"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "The Silvery Spear",
+          "nameEn": "The Silvery Spear",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a White Monoblos",
+          "probability": 32,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "견고한 은백색뿔",
+      "count": 2,
+      "nameJa": "",
+      "itemId": "item_mh4u_0725",
+      "mh4uId": 725,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "모노블로스 아종",
+          "navMonster": "모노블로스 아종",
+          "nameEn": "White Monoblos",
+          "rank": "G급",
+          "methods": [
+            "Break Horn · 100% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "중룡골",
+      "count": 3,
+      "nameJa": "",
+      "itemId": "item_93ba183fc30f",
+      "mh4uId": 312,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "그라비모스",
+          "navMonster": "그라비모스",
+          "nameEn": "Gravios",
+          "rank": "G급",
+          "methods": [
+            "Break Back · 30% · ×1",
+            "Break Wing · 30% · ×1",
+            "Tail Carve · 20% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "극한상태 그라비모스",
+          "navMonster": "그라비모스",
+          "nameEn": "Apex Gravios",
+          "rank": "G급",
+          "methods": [
+            "Break Back · 30% · ×1",
+            "Break Wing · 30% · ×1",
+            "Tail Carve · 17% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "그라비모스 아종",
+          "navMonster": "그라비모스 아종",
+          "nameEn": "Black Gravios",
+          "rank": "G급",
+          "methods": [
+            "Break Back · 30% · ×1",
+            "Tail Carve · 18% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Bad Hair Day: Monoblos",
+          "nameEn": "Bad Hair Day: Monoblos",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Monoblos",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "The Silvery Spear",
+          "nameEn": "The Silvery Spear",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a White Monoblos",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: All in Its Place",
+          "nameEn": "Advanced: All in Its Place",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt Gore Magala",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "모노블로스 아종",
+        "navMonster": "모노블로스 아종"
+      },
+      {
+        "name": "그라비모스",
+        "navMonster": "그라비모스"
+      },
+      {
+        "name": "극한상태 그라비모스",
+        "navMonster": "그라비모스"
+      },
+      {
+        "name": "그라비모스 아종",
+        "navMonster": "그라비모스 아종"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "The Silvery Spear",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a White Monoblos",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Bad Hair Day: Monoblos",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Monoblos",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: All in Its Place",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt Gore Magala",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

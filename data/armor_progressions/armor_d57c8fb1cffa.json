@@ -1,0 +1,384 @@
+{
+  "materials": [
+    {
+      "name": "이오스 두툼가죽",
+      "count": 3,
+      "nameJa": "イーオスの厚皮",
+      "itemId": "item_mh4u_0416",
+      "mh4uId": 416,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "도스이오스",
+          "navMonster": "도스이오스",
+          "nameEn": "Iodrome",
+          "rank": "G급",
+          "methods": [
+            "Capture · 45% · ×2",
+            "Body Carve · 40% · ×1",
+            "Shiny Drop · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Bad Hair Day: Iodrome",
+          "nameEn": "Bad Hair Day: Iodrome",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt 2 Iodrome",
+          "probability": 45,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Harvest Tour: Primal Forest",
+          "nameEn": "Harvest Tour: Primal Forest",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+          "probability": 45,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Frenzied Trading",
+          "nameEn": "Advanced: Frenzied Trading",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 45,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "이오스 가죽+",
+      "count": 3,
+      "nameJa": "イーオスの上皮",
+      "itemId": "item_mh4u_0415",
+      "mh4uId": 415,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Ioprey",
+          "navMonster": "",
+          "nameEn": "Ioprey",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 35% · ×1",
+            "Body Carve · 15% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "도스이오스",
+          "navMonster": "도스이오스",
+          "nameEn": "Iodrome",
+          "rank": "상위",
+          "methods": [
+            "Capture · 30% · ×2",
+            "Body Carve · 13% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hunt-a-thon: Zinogre",
+          "nameEn": "Hunt-a-thon: Zinogre",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt 2 Zinogres before time expires or deliver a Paw Pass Ticket",
+          "probability": 25,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Mountain Rescue",
+          "nameEn": "Mountain Rescue",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Stygian Zinogre",
+          "probability": 25,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Harvest Tour: Volcanic Hollow",
+          "nameEn": "Harvest Tour: Volcanic Hollow",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+          "probability": 12,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "유니언광석",
+      "count": 6,
+      "nameJa": "ユニオン鉱石",
+      "itemId": "item_dfe22fd0ad9d",
+      "mh4uId": 215,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "다렌·모란",
+          "navMonster": "다렌·모란",
+          "nameEn": "Dah'ren Mohran",
+          "rank": "G급",
+          "methods": [
+            "Mining Back · 35% · ×1",
+            "Break Fin · 14% · ×1",
+            "Break Blowhole · 14% · ×1",
+            "Mining Back · 7% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Take a Powderstone",
+          "nameEn": "Take a Powderstone",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 1 Powderstone",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Heat Exhaustion",
+          "nameEn": "Heat Exhaustion",
+          "level": "Guild★5",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Deliver 4 Powderstones",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hi Ho Silver",
+          "nameEn": "Hi Ho Silver",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 3 Silverfish",
+          "probability": 8,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "극렬독주머니",
+      "count": 2,
+      "nameJa": "劇烈毒袋",
+      "itemId": "item_mh4u_0334",
+      "mh4uId": 334,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "도스이오스",
+          "navMonster": "도스이오스",
+          "nameEn": "Iodrome",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 60% · ×2",
+            "Capture · 52% · ×2",
+            "Break Head · 30% · ×1",
+            "Body Carve · 25% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "바살모스",
+          "navMonster": "바살모스",
+          "nameEn": "Basarios",
+          "rank": "G급",
+          "methods": [
+            "Break Belly · 45% · ×1",
+            "Body Carve · 12% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "바살모스 아종",
+          "navMonster": "바살모스 아종",
+          "nameEn": "Ruby Basarios",
+          "rank": "G급",
+          "methods": [
+            "Break Belly · 45% · ×1",
+            "Body Carve · 12% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Bad Hair Day: Iodrome",
+          "nameEn": "Bad Hair Day: Iodrome",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt 2 Iodrome",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Harvest Tour: Primal Forest",
+          "nameEn": "Harvest Tour: Primal Forest",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+          "probability": 30,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Frenzied Trading",
+          "nameEn": "Advanced: Frenzied Trading",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 30,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "도스이오스",
+        "navMonster": "도스이오스"
+      },
+      {
+        "name": "Ioprey",
+        "navMonster": ""
+      },
+      {
+        "name": "다렌·모란",
+        "navMonster": "다렌·모란"
+      },
+      {
+        "name": "바살모스",
+        "navMonster": "바살모스"
+      },
+      {
+        "name": "바살모스 아종",
+        "navMonster": "바살모스 아종"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Bad Hair Day: Iodrome",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt 2 Iodrome",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Harvest Tour: Primal Forest",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Frenzied Trading",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt all large monsters",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Hunt-a-thon: Zinogre",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt 2 Zinogres before time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Mountain Rescue",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Stygian Zinogre",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Harvest Tour: Volcanic Hollow",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Take a Powderstone",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 1 Powderstone",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Heat Exhaustion",
+        "nameJa": "",
+        "level": "Guild★5",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Deliver 4 Powderstones",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Hi Ho Silver",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 3 Silverfish",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

@@ -1,0 +1,330 @@
+{
+  "materials": [
+    {
+      "name": "줄무늬가죽",
+      "count": 2,
+      "nameJa": "縞模様の皮",
+      "itemId": "item_mh4u_0381",
+      "mh4uId": 381,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Remobra",
+          "navMonster": "",
+          "nameEn": "Remobra",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 40% · ×1",
+            "Body Carve · 30% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Remobra Remedy",
+          "nameEn": "Remobra Remedy",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay 6 Remobras",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Remobra Remedy",
+          "nameEn": "Remobra Remedy",
+          "level": "Guild★3",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay 7 Remobras",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Desert Delinquents",
+          "nameEn": "Desert Delinquents",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay 8 Remobras",
+          "probability": 16,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "철광석",
+      "count": 5,
+      "nameJa": "鉄鉱石",
+      "itemId": "item_a86a937adb56",
+      "mh4uId": 203,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "게리오스",
+          "navMonster": "게리오스",
+          "nameEn": "Gypceros",
+          "rank": "하위",
+          "methods": [
+            "Break Head · 40% · ×2"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Crystal Clearing",
+          "nameEn": "Crystal Clearing",
+          "level": "Caravan★2",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 4 Sulfur Crystals",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Sootstone Search",
+          "nameEn": "Sootstone Search",
+          "level": "Guild★2",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Deliver 3 Sootstone Ores",
+          "probability": 25,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Chip Off the Old Blockade",
+          "nameEn": "Chip Off the Old Blockade",
+          "level": "Caravan★2",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay 8 Konchu",
+          "probability": 20,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "순충 갑각",
+      "count": 4,
+      "nameJa": "盾虫の甲殻",
+      "itemId": "item_mh4u_0375",
+      "mh4uId": 375,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "쿤추",
+          "navMonster": "",
+          "nameEn": "Konchu",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 60% · ×1",
+            "Body Carve · 15% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Chip Off the Old Blockade",
+          "nameEn": "Chip Off the Old Blockade",
+          "level": "Caravan★2",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay 8 Konchu",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Konchu Collector",
+          "nameEn": "Konchu Collector",
+          "level": "Guild★1",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay 10 Konchu",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Kecha Wacha Wallop",
+          "nameEn": "Kecha Wacha Wallop",
+          "level": "Caravan★3",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Kecha Wacha",
+          "probability": 25,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "대지의 결정",
+      "count": 2,
+      "nameJa": "大地の結晶",
+      "itemId": "item_829d3591a0d0",
+      "mh4uId": 204,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "바살모스",
+          "navMonster": "바살모스",
+          "nameEn": "Basarios",
+          "rank": "하위",
+          "methods": [
+            "Mining Back · 60% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Crystal Clearing",
+          "nameEn": "Crystal Clearing",
+          "level": "Caravan★2",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 4 Sulfur Crystals",
+          "probability": 20,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Sootstone Search",
+          "nameEn": "Sootstone Search",
+          "level": "Guild★2",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Deliver 3 Sootstone Ores",
+          "probability": 20,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Heat Exhaustion",
+          "nameEn": "Heat Exhaustion",
+          "level": "Guild★3",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Deliver 3 Powderstones",
+          "probability": 20,
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "Remobra",
+        "navMonster": ""
+      },
+      {
+        "name": "게리오스",
+        "navMonster": "게리오스"
+      },
+      {
+        "name": "쿤추",
+        "navMonster": ""
+      },
+      {
+        "name": "바살모스",
+        "navMonster": "바살모스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Remobra Remedy",
+        "nameJa": "",
+        "level": "Caravan★5",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay 6 Remobras",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Desert Delinquents",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay 8 Remobras",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Crystal Clearing",
+        "nameJa": "",
+        "level": "Caravan★2",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 4 Sulfur Crystals",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Sootstone Search",
+        "nameJa": "",
+        "level": "Guild★2",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Deliver 3 Sootstone Ores",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Chip Off the Old Blockade",
+        "nameJa": "",
+        "level": "Caravan★2",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay 8 Konchu",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Konchu Collector",
+        "nameJa": "",
+        "level": "Guild★1",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay 10 Konchu",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Kecha Wacha Wallop",
+        "nameJa": "",
+        "level": "Caravan★3",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Kecha Wacha",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Heat Exhaustion",
+        "nameJa": "",
+        "level": "Guild★3",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Deliver 3 Powderstones",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

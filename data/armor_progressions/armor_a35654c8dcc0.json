@@ -1,0 +1,220 @@
+{
+  "materials": [
+    {
+      "name": "폭풍룡티켓",
+      "count": 2,
+      "nameJa": "嵐龍チケット",
+      "itemId": "item_mh4u_1380",
+      "mh4uId": 1380,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "event-g-071",
+          "name": "고그마지오스 포격전",
+          "nameJa": "巨戟砕くは砲撃の雨",
+          "nameEn": "Bombs over Gogmazios",
+          "level": "G★3",
+          "questType": "event",
+          "location": "전투 구역",
+          "objective": "고그마지오스 토벌",
+          "note": "GX황천/GX창천 제작 핵심 티켓"
+        }
+      ]
+    },
+    {
+      "name": "거극룡 성갑각",
+      "count": 4,
+      "nameJa": "巨戟龍の城殻",
+      "itemId": "item_mh4u_1075",
+      "mh4uId": 1075,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "고그마지오스",
+          "navMonster": "고그마지오스",
+          "nameEn": "Gogmazios",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 28% · ×1",
+            "Break Head · 28% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Quagmire Quarrel",
+          "nameEn": "Advanced: Quagmire Quarrel",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Gogmazios",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Act of Gog",
+          "nameEn": "Advanced: Act of Gog",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Gogmazios",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "거극룡 요새비늘",
+      "count": 6,
+      "nameJa": "巨戟龍の塞鱗",
+      "itemId": "item_mh4u_1074",
+      "mh4uId": 1074,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "고그마지오스",
+          "navMonster": "고그마지오스",
+          "nameEn": "Gogmazios",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 38% · ×1",
+            "Tail Carve · 38% · ×1",
+            "Break Back · 38% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Quagmire Quarrel",
+          "nameEn": "Advanced: Quagmire Quarrel",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Gogmazios",
+          "probability": 30,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Act of Gog",
+          "nameEn": "Advanced: Act of Gog",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Gogmazios",
+          "probability": 30,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "연흑룡 검은비늘",
+          "requiredItemId": "item_mh4u_1219",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: Act of Gog",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "전화의 용신옥",
+      "count": 1,
+      "nameJa": "戦火の龍神玉",
+      "itemId": "item_mh4u_1080",
+      "mh4uId": 1080,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "고그마지오스",
+          "navMonster": "고그마지오스",
+          "nameEn": "Gogmazios",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 3% · ×1",
+            "Tail Carve · 3% · ×1",
+            "Shiny Drop · 3% · ×1",
+            "Break Head · 3% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Quagmire Quarrel",
+          "nameEn": "Advanced: Quagmire Quarrel",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Gogmazios",
+          "probability": 5,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Act of Gog",
+          "nameEn": "Advanced: Act of Gog",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Gogmazios",
+          "probability": 5,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "광염의 대룡옥",
+          "requiredItemId": "item_mh4u_1221",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: Act of Gog",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "고그마지오스",
+        "navMonster": "고그마지오스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "event-g-071",
+        "name": "고그마지오스 포격전",
+        "nameJa": "巨戟砕くは砲撃の雨",
+        "level": "G★3",
+        "questType": "event",
+        "location": "전투 구역",
+        "objective": "고그마지오스 토벌",
+        "note": "GX황천/GX창천 제작 핵심 티켓"
+      },
+      {
+        "id": "",
+        "name": "Advanced: Quagmire Quarrel",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay Gogmazios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Act of Gog",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay Gogmazios",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

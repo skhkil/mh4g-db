@@ -1,0 +1,351 @@
+{
+  "materials": [
+    {
+      "name": "흑식룡 중갑각",
+      "count": 5,
+      "nameJa": "黒蝕竜の重殻",
+      "itemId": "item_mh4u_0859",
+      "mh4uId": 859,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "고어·마가라",
+          "navMonster": "고어·마가라",
+          "nameEn": "Gore Magala",
+          "rank": "G급",
+          "methods": [
+            "Capture · 37% · ×1",
+            "Body Carve · 29% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Monster Hunter!",
+          "nameEn": "Advanced: Monster Hunter!",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 15,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "흑식룡 두툼비늘",
+      "count": 4,
+      "nameJa": "黒蝕竜の厚鱗",
+      "itemId": "item_mh4u_0856",
+      "mh4uId": 856,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "고어·마가라",
+          "navMonster": "고어·마가라",
+          "nameEn": "Gore Magala",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 70% · ×1",
+            "Body Carve · 40% · ×1",
+            "Shiny Drop · 40% · ×1",
+            "Break Wing Leg · 28% · ×1",
+            "Tail Carve · 24% · ×1",
+            "Break Wing · 22% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "혼돈의 고어·마가라",
+          "navMonster": "혼돈의 고어·마가라",
+          "nameEn": "Chaotic Gore Magala",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 40% · ×1",
+            "Capture · 37% · ×1",
+            "Break Wing · 25% · ×1",
+            "Shiny Drop · 24% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: All in Its Place",
+          "nameEn": "Advanced: All in Its Place",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt Gore Magala",
+          "probability": 34,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: A Plague Awoken",
+          "nameEn": "Advanced: A Plague Awoken",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt Gore Magala",
+          "probability": 30,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Wings of Woe",
+          "nameEn": "Advanced: Wings of Woe",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt Gore Magala",
+          "probability": 30,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "흑식룡 강참혹발톱",
+      "count": 5,
+      "nameJa": "黒蝕竜の剛惨爪",
+      "itemId": "item_mh4u_0865",
+      "mh4uId": 865,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "혼돈의 고어·마가라",
+          "navMonster": "혼돈의 고어·마가라",
+          "nameEn": "Chaotic Gore Magala",
+          "rank": "G급",
+          "methods": [
+            "Break Wing · 60% · ×1",
+            "Body Carve · 18% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "고어·마가라",
+          "navMonster": "고어·마가라",
+          "nameEn": "Gore Magala",
+          "rank": "G급",
+          "methods": [
+            "Break Wing Leg · 37% · ×1",
+            "Body Carve · 18% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: A Plague Awoken",
+          "nameEn": "Advanced: A Plague Awoken",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt Gore Magala",
+          "probability": 30,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Wings of Woe",
+          "nameEn": "Advanced: Wings of Woe",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt Gore Magala",
+          "probability": 30,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: All in Its Place",
+          "nameEn": "Advanced: All in Its Place",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt Gore Magala",
+          "probability": 24,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "퓨어크리스털",
+      "count": 1,
+      "nameJa": "ピュアクリスタル",
+      "itemId": "item_d689931faa86",
+      "mh4uId": 222,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "키린",
+          "navMonster": "키린",
+          "nameEn": "Kirin",
+          "rank": "G급",
+          "methods": [
+            "Shiny Drop · 50% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "키린 아종",
+          "navMonster": "키린 아종",
+          "nameEn": "Oroshi Kirin",
+          "rank": "G급",
+          "methods": [
+            "Shiny Drop · 50% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "게리오스",
+          "navMonster": "게리오스",
+          "nameEn": "Gypceros",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 8% · ×1",
+            "Break Head · 7% · ×1",
+            "Shiny Drop · 5% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: A Final Battle Cry",
+          "nameEn": "Advanced: A Final Battle Cry",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Fatalis or repel it",
+          "probability": 15,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Icy Shadow",
+          "nameEn": "Icy Shadow",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Khezu",
+          "probability": 5,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Puffer Fish",
+          "nameEn": "Puffer Fish",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Zamtrios",
+          "probability": 5,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "고어·마가라",
+        "navMonster": "고어·마가라"
+      },
+      {
+        "name": "혼돈의 고어·마가라",
+        "navMonster": "혼돈의 고어·마가라"
+      },
+      {
+        "name": "키린",
+        "navMonster": "키린"
+      },
+      {
+        "name": "키린 아종",
+        "navMonster": "키린 아종"
+      },
+      {
+        "name": "게리오스",
+        "navMonster": "게리오스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: Monster Hunter!",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt all large monsters",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: All in Its Place",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt Gore Magala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: A Plague Awoken",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt Gore Magala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Wings of Woe",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt Gore Magala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: A Final Battle Cry",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Fatalis or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Icy Shadow",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Khezu",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Puffer Fish",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Zamtrios",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

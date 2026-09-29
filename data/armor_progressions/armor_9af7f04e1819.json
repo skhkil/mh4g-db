@@ -1,0 +1,126 @@
+{
+  "materials": [
+    {
+      "name": "신룡 검은털",
+      "count": 5,
+      "nameJa": "迅竜の黒毛",
+      "itemId": "item_mh4u_1108",
+      "mh4uId": 1108,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "뇌랑룡 갑각",
+          "requiredItemId": "item_mh4u_0735",
+          "unlockQuestId": "quest_67c9850c9ca0",
+          "unlockQuest": "천공산의 지배자들",
+          "unlockLevel": "★5",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "신룡 칼날개",
+      "count": 3,
+      "nameJa": "迅竜の刃翼",
+      "itemId": "item_mh4u_1110",
+      "mh4uId": 1110,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "뇌랑룡 발톱",
+          "requiredItemId": "item_mh4u_0744",
+          "unlockQuestId": "quest_67c9850c9ca0",
+          "unlockQuest": "천공산의 지배자들",
+          "unlockLevel": "★5",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "구룡 발톱",
+      "count": 3,
+      "nameJa": "狗竜の爪",
+      "itemId": "item_mh4u_0390",
+      "mh4uId": 390,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "도스재기",
+          "navMonster": "도스재기",
+          "nameEn": "Great Jaggi",
+          "rank": "하위",
+          "methods": [
+            "Capture · 32% · ×1",
+            "Body Carve · 30% · ×1",
+            "Body Carve · 5% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Jaggi Alliance",
+          "nameEn": "Jaggi Alliance",
+          "level": "Caravan★2",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Great Jaggi",
+          "probability": 23,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Field Trip",
+          "nameEn": "Field Trip",
+          "level": "Guild★1",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Great Jaggi",
+          "probability": 23,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "청웅수 갑각",
+          "requiredItemId": "item_mh4u_1094",
+          "unlockQuestId": "",
+          "unlockQuest": "Swing into Action",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "도스재기",
+        "navMonster": "도스재기"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Jaggi Alliance",
+        "nameJa": "",
+        "level": "Caravan★2",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Great Jaggi",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Field Trip",
+        "nameJa": "",
+        "level": "Guild★1",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Great Jaggi",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

@@ -1,0 +1,142 @@
+{
+  "materials": [
+    {
+      "name": "해룡 전기갑각+",
+      "count": 2,
+      "nameJa": "海竜の高電殻",
+      "itemId": "item_mh4u_1133",
+      "mh4uId": 1133,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "흑개룡 두갑각",
+          "requiredItemId": "item_mh4u_0814",
+          "unlockQuestId": "quest_3b3fcf3cb090",
+          "unlockQuest": "고난도: 검은 용들의 협공",
+          "unlockLevel": "★6",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "창화룡 비늘+",
+      "count": 3,
+      "nameJa": "蒼火竜の上鱗",
+      "itemId": "item_mh4u_0697",
+      "mh4uId": 697,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "리오레우스 아종",
+          "navMonster": "리오레우스 아종",
+          "nameEn": "Azure Rathalos",
+          "rank": "상위",
+          "methods": [
+            "Break Head · 60% · ×1",
+            "Body Carve · 38% · ×1",
+            "Shiny Drop · 23% · ×1",
+            "Tail Carve · 22% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "An Omen in the Skies",
+          "nameEn": "An Omen in the Skies",
+          "level": "Caravan★9",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt an Azure Rathalos",
+          "probability": 23,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Bring Down the Sky King",
+          "nameEn": "Bring Down the Sky King",
+          "level": "Guild★6",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt an Azure Rathalos",
+          "probability": 23,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Heaven and Earth",
+          "nameEn": "Advanced: Heaven and Earth",
+          "level": "Guild★6",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt an Azure Rathalos and a Pink Rathian",
+          "probability": 23,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "창화룡 꼬리",
+      "count": 2,
+      "nameJa": "蒼火竜の尻尾",
+      "itemId": "item_mh4u_0701",
+      "mh4uId": 701,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "리오레우스 아종",
+          "navMonster": "리오레우스 아종",
+          "nameEn": "Azure Rathalos",
+          "rank": "상위",
+          "methods": [
+            "Tail Carve · 53% · ×1",
+            "Capture · 12% · ×1"
+          ]
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "리오레우스 아종",
+        "navMonster": "리오레우스 아종"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "An Omen in the Skies",
+        "nameJa": "",
+        "level": "Caravan★9",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt an Azure Rathalos",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Bring Down the Sky King",
+        "nameJa": "",
+        "level": "Guild★6",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt an Azure Rathalos",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Heaven and Earth",
+        "nameJa": "",
+        "level": "Guild★6",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt an Azure Rathalos and a Pink Rathian",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

@@ -1,0 +1,210 @@
+{
+  "materials": [
+    {
+      "name": "헌터티켓",
+      "count": 1,
+      "nameJa": "狩人チケット",
+      "itemId": "item_fcef389e8f0f",
+      "mh4uId": 1378,
+      "sources": [
+        {
+          "type": "acquire",
+          "label": "이벤트 퀘스트 보수"
+        }
+      ]
+    },
+    {
+      "name": "극채색볏",
+      "count": 3,
+      "nameJa": "極彩色のトサカ",
+      "itemId": "item_mh4u_0506",
+      "mh4uId": 506,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "바바콩가 아종",
+          "navMonster": "바바콩가 아종",
+          "nameEn": "Emerald Congalala",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 40% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Primate Plunder",
+          "nameEn": "Primate Plunder",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt an Emerald Congalala",
+          "probability": 16,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Mean and Green",
+          "nameEn": "Advanced: Mean and Green",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt an Emerald Congalala and a Seltas Queen",
+          "probability": 16,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "녹모수 강발톱",
+      "count": 6,
+      "nameJa": "緑毛獣の剛爪",
+      "itemId": "item_mh4u_0505",
+      "mh4uId": 505,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "바바콩가 아종",
+          "navMonster": "바바콩가 아종",
+          "nameEn": "Emerald Congalala",
+          "rank": "G급",
+          "methods": [
+            "Break Claw · 80% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Primate Plunder",
+          "nameEn": "Primate Plunder",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt an Emerald Congalala",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Mean and Green",
+          "nameEn": "Advanced: Mean and Green",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt an Emerald Congalala and a Seltas Queen",
+          "probability": 12,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "대장로티켓S",
+      "count": 2,
+      "nameJa": "大長老チケットＳ",
+      "itemId": "item_a024b69f3b5f",
+      "mh4uId": 1443,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "event-g-078",
+          "name": "진홍의 장막 너머",
+          "nameJa": "紅の終焉",
+          "nameEn": "Beyond the Crimson Veil",
+          "level": "G★3",
+          "questType": "event",
+          "location": "용암섬",
+          "objective": "홍룡 밀라보레아스 1마리 수렵",
+          "note": "G★3 이벤트 보수"
+        },
+        {
+          "type": "quest",
+          "id": "event-g-076",
+          "name": "극한의 포식자",
+          "nameJa": "喰慾の極限",
+          "nameEn": "The Apex Predator",
+          "level": "G★3",
+          "questType": "event",
+          "location": "원생림",
+          "objective": "이블조 1마리 수렵",
+          "note": "G★3 이벤트 보수"
+        },
+        {
+          "type": "quest",
+          "id": "event-g-071",
+          "name": "고그마지오스 포격전",
+          "nameJa": "巨戟砕くは砲撃の雨",
+          "nameEn": "Bombs over Gogmazios",
+          "level": "G★3",
+          "questType": "event",
+          "location": "전투 구역",
+          "objective": "고그마지오스 토벌",
+          "note": "확정 입수 가능한 G★3 이벤트"
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "바바콩가 아종",
+        "navMonster": "바바콩가 아종"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Primate Plunder",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt an Emerald Congalala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Mean and Green",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt an Emerald Congalala and a Seltas Queen",
+        "note": ""
+      },
+      {
+        "id": "event-g-078",
+        "name": "진홍의 장막 너머",
+        "nameJa": "紅の終焉",
+        "level": "G★3",
+        "questType": "event",
+        "location": "용암섬",
+        "objective": "홍룡 밀라보레아스 1마리 수렵",
+        "note": "G★3 이벤트 보수"
+      },
+      {
+        "id": "event-g-076",
+        "name": "극한의 포식자",
+        "nameJa": "喰慾の極限",
+        "level": "G★3",
+        "questType": "event",
+        "location": "원생림",
+        "objective": "이블조 1마리 수렵",
+        "note": "G★3 이벤트 보수"
+      },
+      {
+        "id": "event-g-071",
+        "name": "고그마지오스 포격전",
+        "nameJa": "巨戟砕くは砲撃の雨",
+        "level": "G★3",
+        "questType": "event",
+        "location": "전투 구역",
+        "objective": "고그마지오스 토벌",
+        "note": "확정 입수 가능한 G★3 이벤트"
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

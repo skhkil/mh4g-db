@@ -1,0 +1,410 @@
+{
+  "materials": [
+    {
+      "name": "매혹색염피",
+      "count": 3,
+      "nameJa": "魅惑色の艶皮",
+      "itemId": "item_mh4u_0657",
+      "mh4uId": 657,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "푸루푸루 아종",
+          "navMonster": "푸루푸루 아종",
+          "nameEn": "Red Khezu",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 52% · ×1",
+            "Break Body · 45% · ×1",
+            "Body Carve · 30% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hunter In Green and Red",
+          "nameEn": "Hunter In Green and Red",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Rathian and a Red Khezu",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "La Vie en Rose",
+          "nameEn": "La Vie en Rose",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Red Khezu",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "특선알비노",
+      "count": 1,
+      "nameJa": "特撰アルビノ",
+      "itemId": "item_mh4u_0655",
+      "mh4uId": 655,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "푸루푸루",
+          "navMonster": "푸루푸루",
+          "nameEn": "Khezu",
+          "rank": "G급",
+          "methods": [
+            "Capture · 8% · ×1",
+            "Break Head · 6% · ×1",
+            "Shiny Drop · 5% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "푸루푸루 아종",
+          "navMonster": "푸루푸루 아종",
+          "nameEn": "Red Khezu",
+          "rank": "G급",
+          "methods": [
+            "Capture · 8% · ×1",
+            "Break Head · 8% · ×1",
+            "Shiny Drop · 5% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hunter In Green and Red",
+          "nameEn": "Hunter In Green and Red",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Rathian and a Red Khezu",
+          "probability": 10,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "La Vie en Rose",
+          "nameEn": "La Vie en Rose",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Red Khezu",
+          "probability": 10,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Icy Shadow",
+          "nameEn": "Icy Shadow",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Khezu",
+          "probability": 8,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "토사룡 중두갑각",
+          "requiredItemId": "item_mh4u_1172",
+          "unlockQuestId": "",
+          "unlockQuest": "Hunt-a-thon: Khezu",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "엘트라이트광석",
+      "count": 2,
+      "nameJa": "エルトライト鉱石",
+      "itemId": "item_fe4f2a32f3ec",
+      "mh4uId": 216,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "바살모스 아종",
+          "navMonster": "바살모스 아종",
+          "nameEn": "Ruby Basarios",
+          "rank": "G급",
+          "methods": [
+            "Mining Ore · 47% · ×1",
+            "Tail Carve · 40% · ×1",
+            "Break Back · 38% · ×2",
+            "Shiny Drop · 37% · ×1",
+            "Capture · 36% · ×1",
+            "Body Carve · 25% · ×1",
+            "Mining Back · 25% · ×1",
+            "Break Belly · 25% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "바살모스",
+          "navMonster": "바살모스",
+          "nameEn": "Basarios",
+          "rank": "G급",
+          "methods": [
+            "Tail Carve · 40% · ×1",
+            "Break Back · 38% · ×2",
+            "Shiny Drop · 37% · ×1",
+            "Capture · 36% · ×1",
+            "Body Carve · 25% · ×1",
+            "Break Belly · 25% · ×1",
+            "Mining Back · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Beyond the Pale",
+          "nameEn": "Advanced: Beyond the Pale",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt an Ash Kecha Wacha",
+          "probability": 15,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Sculptural Seltas",
+          "nameEn": "Sculptural Seltas",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Desert Seltas",
+          "probability": 15,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Seeing Spots",
+          "nameEn": "Seeing Spots",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt an Ash Kecha Wacha",
+          "probability": 15,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "노바크리스털",
+      "count": 2,
+      "nameJa": "ノヴァクリスタル",
+      "itemId": "item_fc9752fd5432",
+      "mh4uId": 214,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "키린",
+          "navMonster": "키린",
+          "nameEn": "Kirin",
+          "rank": "상위",
+          "methods": [
+            "Shiny Drop · 50% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "키린 아종",
+          "navMonster": "키린 아종",
+          "nameEn": "Oroshi Kirin",
+          "rank": "상위",
+          "methods": [
+            "Shiny Drop · 50% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "게리오스",
+          "navMonster": "게리오스",
+          "nameEn": "Gypceros",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 20% · ×1",
+            "Body Carve · 8% · ×1",
+            "Break Head · 7% · ×1",
+            "Shiny Drop · 5% · ×1",
+            "Body Carve · 5% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Egg-straction: The Reckoning",
+          "nameEn": "Egg-straction: The Reckoning",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 2 Wyvern Eggs",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: A Hero's Icy Test",
+          "nameEn": "Advanced: A Hero's Icy Test",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay an Oroshi Kirin",
+          "probability": 10,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Red Dragon's Dawn",
+          "nameEn": "Advanced: Red Dragon's Dawn",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay a Fatalis or repel it",
+          "probability": 9,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "푸루푸루 아종",
+        "navMonster": "푸루푸루 아종"
+      },
+      {
+        "name": "푸루푸루",
+        "navMonster": "푸루푸루"
+      },
+      {
+        "name": "바살모스 아종",
+        "navMonster": "바살모스 아종"
+      },
+      {
+        "name": "바살모스",
+        "navMonster": "바살모스"
+      },
+      {
+        "name": "키린",
+        "navMonster": "키린"
+      },
+      {
+        "name": "키린 아종",
+        "navMonster": "키린 아종"
+      },
+      {
+        "name": "게리오스",
+        "navMonster": "게리오스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Hunter In Green and Red",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Rathian and a Red Khezu",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "La Vie en Rose",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Red Khezu",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Icy Shadow",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Khezu",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Beyond the Pale",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt an Ash Kecha Wacha",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Sculptural Seltas",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Desert Seltas",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Seeing Spots",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt an Ash Kecha Wacha",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Egg-straction: The Reckoning",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 2 Wyvern Eggs",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: A Hero's Icy Test",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay an Oroshi Kirin",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Red Dragon's Dawn",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay a Fatalis or repel it",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

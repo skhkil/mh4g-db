@@ -1,0 +1,384 @@
+{
+  "materials": [
+    {
+      "name": "천인룡 조각발톱",
+      "count": 5,
+      "nameJa": "千刃竜の刻爪",
+      "itemId": "item_mh4u_0904",
+      "mh4uId": 904,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "셀레기오스",
+          "navMonster": "셀레기오스",
+          "nameEn": "Seregios",
+          "rank": "상위",
+          "methods": [
+            "Break Claw · 80% · ×1",
+            "Capture · 20% · ×1",
+            "Break Claw · 20% · ×2",
+            "Body Carve · 15% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "극한상태 셀레기오스",
+          "navMonster": "셀레기오스",
+          "nameEn": "Apex Seregios",
+          "rank": "상위",
+          "methods": [
+            "Break Claw · 80% · ×1",
+            "Capture · 20% · ×1",
+            "Break Claw · 20% · ×2",
+            "Body Carve · 15% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Dance of a Thousand Blades",
+          "nameEn": "Dance of a Thousand Blades",
+          "level": "Caravan★9",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Seregios",
+          "probability": 14,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Prickly Pair",
+          "nameEn": "Advanced: Prickly Pair",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Stygian Zinogre and a Seregios",
+          "probability": 14,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Death of a Thousand Cuts",
+          "nameEn": "Death of a Thousand Cuts",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Seregios",
+          "probability": 14,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "천인룡 첨날개발톱",
+      "count": 4,
+      "nameJa": "千刃竜の尖翼爪",
+      "itemId": "item_mh4u_0908",
+      "mh4uId": 908,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "셀레기오스",
+          "navMonster": "셀레기오스",
+          "nameEn": "Seregios",
+          "rank": "상위",
+          "methods": [
+            "Break Talon · 60% · ×1",
+            "Capture · 28% · ×1",
+            "Body Carve · 14% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "극한상태 셀레기오스",
+          "navMonster": "셀레기오스",
+          "nameEn": "Apex Seregios",
+          "rank": "상위",
+          "methods": [
+            "Break Talon · 60% · ×1",
+            "Capture · 27% · ×1",
+            "Body Carve · 13% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Dance of a Thousand Blades",
+          "nameEn": "Dance of a Thousand Blades",
+          "level": "Caravan★9",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Seregios",
+          "probability": 18,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Prickly Pair",
+          "nameEn": "Advanced: Prickly Pair",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Stygian Zinogre and a Seregios",
+          "probability": 18,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Death of a Thousand Cuts",
+          "nameEn": "Death of a Thousand Cuts",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Seregios",
+          "probability": 18,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "천인룡 비인",
+      "count": 3,
+      "nameJa": "千刃竜の飛刃",
+      "itemId": "item_mh4u_0902",
+      "mh4uId": 902,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "셀레기오스",
+          "navMonster": "셀레기오스",
+          "nameEn": "Seregios",
+          "rank": "상위",
+          "methods": [
+            "Shiny Drop · 45% · ×1",
+            "Break Talon · 30% · ×1",
+            "Capture · 28% · ×1",
+            "Body Carve · 24% · ×1",
+            "Tail Carve · 9% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "극한상태 셀레기오스",
+          "navMonster": "셀레기오스",
+          "nameEn": "Apex Seregios",
+          "rank": "상위",
+          "methods": [
+            "Shiny Drop · 44% · ×1",
+            "Break Talon · 30% · ×1",
+            "Capture · 27% · ×1",
+            "Body Carve · 24% · ×1",
+            "Tail Carve · 8% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Dance of a Thousand Blades",
+          "nameEn": "Dance of a Thousand Blades",
+          "level": "Caravan★9",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Seregios",
+          "probability": 24,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Prickly Pair",
+          "nameEn": "Advanced: Prickly Pair",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Stygian Zinogre and a Seregios",
+          "probability": 24,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Death of a Thousand Cuts",
+          "nameEn": "Death of a Thousand Cuts",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Seregios",
+          "probability": 24,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "노바크리스털",
+      "count": 2,
+      "nameJa": "ノヴァクリスタル",
+      "itemId": "item_fc9752fd5432",
+      "mh4uId": 214,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "키린",
+          "navMonster": "키린",
+          "nameEn": "Kirin",
+          "rank": "상위",
+          "methods": [
+            "Shiny Drop · 50% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "키린 아종",
+          "navMonster": "키린 아종",
+          "nameEn": "Oroshi Kirin",
+          "rank": "상위",
+          "methods": [
+            "Shiny Drop · 50% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "게리오스",
+          "navMonster": "게리오스",
+          "nameEn": "Gypceros",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 20% · ×1",
+            "Body Carve · 8% · ×1",
+            "Break Head · 7% · ×1",
+            "Shiny Drop · 5% · ×1",
+            "Body Carve · 5% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Egg-straction: The Reckoning",
+          "nameEn": "Egg-straction: The Reckoning",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 2 Wyvern Eggs",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: A Hero's Icy Test",
+          "nameEn": "Advanced: A Hero's Icy Test",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay an Oroshi Kirin",
+          "probability": 10,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Red Dragon's Dawn",
+          "nameEn": "Advanced: Red Dragon's Dawn",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay a Fatalis or repel it",
+          "probability": 9,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "셀레기오스",
+        "navMonster": "셀레기오스"
+      },
+      {
+        "name": "극한상태 셀레기오스",
+        "navMonster": "셀레기오스"
+      },
+      {
+        "name": "키린",
+        "navMonster": "키린"
+      },
+      {
+        "name": "키린 아종",
+        "navMonster": "키린 아종"
+      },
+      {
+        "name": "게리오스",
+        "navMonster": "게리오스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Dance of a Thousand Blades",
+        "nameJa": "",
+        "level": "Caravan★9",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Seregios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Prickly Pair",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Stygian Zinogre and a Seregios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Death of a Thousand Cuts",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Seregios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Egg-straction: The Reckoning",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 2 Wyvern Eggs",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: A Hero's Icy Test",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay an Oroshi Kirin",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Red Dragon's Dawn",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay a Fatalis or repel it",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

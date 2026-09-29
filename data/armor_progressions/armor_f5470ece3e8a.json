@@ -1,0 +1,169 @@
+{
+  "materials": [
+    {
+      "name": "하룡 가죽+",
+      "count": 2,
+      "nameJa": "霞龍の上皮",
+      "itemId": "item_mh4u_1139",
+      "mh4uId": 1139,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "강철의 용비늘",
+          "requiredItemId": "item_mh4u_0946",
+          "unlockQuestId": "quest_e33e2ed0e7f6",
+          "unlockQuest": "고난도: 헌터는 청명을 꿈꾼다",
+          "unlockLevel": "★7",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "하룡 꼬리",
+      "count": 1,
+      "nameJa": "霞龍の尻尾",
+      "itemId": "item_mh4u_1141",
+      "mh4uId": 1141,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "희망의 증표",
+          "requiredItemId": "item_0d03c7de5e2a",
+          "unlockQuestId": "quest_e33e2ed0e7f6",
+          "unlockQuest": "고난도: 헌터는 청명을 꿈꾼다",
+          "unlockLevel": "★7",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "노바크리스털",
+      "count": 1,
+      "nameJa": "ノヴァクリスタル",
+      "itemId": "item_fc9752fd5432",
+      "mh4uId": 214,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "키린",
+          "navMonster": "키린",
+          "nameEn": "Kirin",
+          "rank": "상위",
+          "methods": [
+            "Shiny Drop · 50% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "키린 아종",
+          "navMonster": "키린 아종",
+          "nameEn": "Oroshi Kirin",
+          "rank": "상위",
+          "methods": [
+            "Shiny Drop · 50% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "게리오스",
+          "navMonster": "게리오스",
+          "nameEn": "Gypceros",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 20% · ×1",
+            "Body Carve · 8% · ×1",
+            "Break Head · 7% · ×1",
+            "Shiny Drop · 5% · ×1",
+            "Body Carve · 5% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Egg-straction: The Reckoning",
+          "nameEn": "Egg-straction: The Reckoning",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 2 Wyvern Eggs",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: A Hero's Icy Test",
+          "nameEn": "Advanced: A Hero's Icy Test",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay an Oroshi Kirin",
+          "probability": 10,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Red Dragon's Dawn",
+          "nameEn": "Advanced: Red Dragon's Dawn",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay a Fatalis or repel it",
+          "probability": 9,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "키린",
+        "navMonster": "키린"
+      },
+      {
+        "name": "키린 아종",
+        "navMonster": "키린 아종"
+      },
+      {
+        "name": "게리오스",
+        "navMonster": "게리오스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Egg-straction: The Reckoning",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 2 Wyvern Eggs",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: A Hero's Icy Test",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay an Oroshi Kirin",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Red Dragon's Dawn",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay a Fatalis or repel it",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

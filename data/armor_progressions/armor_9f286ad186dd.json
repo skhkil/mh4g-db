@@ -1,0 +1,198 @@
+{
+  "materials": [
+    {
+      "name": "스튜디오패스",
+      "count": 1,
+      "nameJa": "スタジオパス",
+      "itemId": "item_a9df08b2aae2",
+      "mh4uId": 1344,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "event-low-005",
+          "name": "USJ: 화룡들의 뜨거운 무대",
+          "nameEn": "USJ: High-fire Act",
+          "level": "★3",
+          "questType": "event",
+          "location": "천공산",
+          "objective": "광룡화 리오레우스 2마리 수렵",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "길드티켓",
+      "count": 3,
+      "nameJa": "ギルドチケット",
+      "itemId": "item_2fcfdac24ea3",
+      "mh4uId": 1439,
+      "sources": [
+        {
+          "type": "acquire",
+          "label": "이벤트 퀘스트 보수"
+        }
+      ]
+    },
+    {
+      "name": "화룡 날개발톱",
+      "count": 6,
+      "nameJa": "火竜の翼爪",
+      "itemId": "item_mh4u_0710",
+      "mh4uId": 710,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "리오레이아",
+          "navMonster": "리오레이아",
+          "nameEn": "Rathian",
+          "rank": "하위",
+          "methods": [
+            "Break Wing · 70% · ×1",
+            "Break Wing · 60% · ×2"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "리오레우스",
+          "navMonster": "리오레우스",
+          "nameEn": "Rathalos",
+          "rank": "하위",
+          "methods": [
+            "Break Wing · 70% · ×1",
+            "Break Wing · 60% · ×2"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "리오레이아 아종",
+          "navMonster": "리오레이아 아종",
+          "nameEn": "Pink Rathian",
+          "rank": "상위",
+          "methods": [
+            "Break Wing · 60% · ×2"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "화룡 비늘",
+      "count": 4,
+      "nameJa": "火竜の鱗",
+      "itemId": "item_mh4u_0683",
+      "mh4uId": 683,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "리오레우스",
+          "navMonster": "리오레우스",
+          "nameEn": "Rathalos",
+          "rank": "하위",
+          "methods": [
+            "Break Head · 66% · ×1",
+            "Body Carve · 40% · ×1",
+            "Shiny Drop · 24% · ×1",
+            "Tail Carve · 20% · ×1",
+            "Tail Carve · 7% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Uncorner the Market",
+          "nameEn": "Uncorner the Market",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Rathalos and a Zinogre",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "King of the Skies",
+          "nameEn": "King of the Skies",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Rathalos",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Rathalos Renovation",
+          "nameEn": "Rathalos Renovation",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Capture a Rathalos",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "리오레이아",
+        "navMonster": "리오레이아"
+      },
+      {
+        "name": "리오레우스",
+        "navMonster": "리오레우스"
+      },
+      {
+        "name": "리오레이아 아종",
+        "navMonster": "리오레이아 아종"
+      }
+    ],
+    "quests": [
+      {
+        "id": "event-low-005",
+        "name": "USJ: 화룡들의 뜨거운 무대",
+        "nameJa": "",
+        "level": "★3",
+        "questType": "event",
+        "location": "천공산",
+        "objective": "광룡화 리오레우스 2마리 수렵",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Uncorner the Market",
+        "nameJa": "",
+        "level": "Caravan★5",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Rathalos and a Zinogre",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "King of the Skies",
+        "nameJa": "",
+        "level": "Caravan★5",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Rathalos",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Rathalos Renovation",
+        "nameJa": "",
+        "level": "Caravan★5",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Capture a Rathalos",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

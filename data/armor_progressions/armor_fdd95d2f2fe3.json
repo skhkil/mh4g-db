@@ -1,0 +1,178 @@
+{
+  "materials": [
+    {
+      "name": "엘트라이트광석",
+      "count": 2,
+      "nameJa": "",
+      "itemId": "item_fe4f2a32f3ec",
+      "mh4uId": 216,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "바살모스 아종",
+          "navMonster": "바살모스 아종",
+          "nameEn": "Ruby Basarios",
+          "rank": "G급",
+          "methods": [
+            "Mining Ore · 47% · ×1",
+            "Tail Carve · 40% · ×1",
+            "Break Back · 38% · ×2",
+            "Shiny Drop · 37% · ×1",
+            "Capture · 36% · ×1",
+            "Body Carve · 25% · ×1",
+            "Mining Back · 25% · ×1",
+            "Break Belly · 25% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "바살모스",
+          "navMonster": "바살모스",
+          "nameEn": "Basarios",
+          "rank": "G급",
+          "methods": [
+            "Tail Carve · 40% · ×1",
+            "Break Back · 38% · ×2",
+            "Shiny Drop · 37% · ×1",
+            "Capture · 36% · ×1",
+            "Body Carve · 25% · ×1",
+            "Break Belly · 25% · ×1",
+            "Mining Back · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Beyond the Pale",
+          "nameEn": "Advanced: Beyond the Pale",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt an Ash Kecha Wacha",
+          "probability": 15,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Sculptural Seltas",
+          "nameEn": "Sculptural Seltas",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Desert Seltas",
+          "probability": 15,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Seeing Spots",
+          "nameEn": "Seeing Spots",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt an Ash Kecha Wacha",
+          "probability": 15,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "검은띠코인G",
+      "count": 3,
+      "nameJa": "",
+      "itemId": "item_mh4u_1326",
+      "mh4uId": 1326,
+      "sources": [
+        {
+          "type": "arena",
+          "name": "Grudge Match: Fish Fry",
+          "level": "투기대회",
+          "probability": 35,
+          "count": 1
+        },
+        {
+          "type": "arena",
+          "name": "Grudge Match: Tidal Najarala",
+          "level": "투기대회",
+          "probability": 35,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "두꺼비코인G",
+      "count": 3,
+      "nameJa": "",
+      "itemId": "item_mh4u_1339",
+      "mh4uId": 1339,
+      "sources": [
+        {
+          "type": "arena",
+          "name": "Grudge Match: Fish Fry",
+          "level": "투기대회",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "바살모스 아종",
+        "navMonster": "바살모스 아종"
+      },
+      {
+        "name": "바살모스",
+        "navMonster": "바살모스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: Beyond the Pale",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt an Ash Kecha Wacha",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Sculptural Seltas",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Desert Seltas",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Seeing Spots",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt an Ash Kecha Wacha",
+        "note": ""
+      }
+    ],
+    "arena": [
+      {
+        "name": "Grudge Match: Fish Fry",
+        "level": "투기대회",
+        "probability": 35
+      },
+      {
+        "name": "Grudge Match: Tidal Najarala",
+        "level": "투기대회",
+        "probability": 35
+      }
+    ]
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

@@ -1,0 +1,301 @@
+{
+  "materials": [
+    {
+      "name": "화룡 비늘+",
+      "count": 4,
+      "nameJa": "火竜の上鱗",
+      "itemId": "item_mh4u_0684",
+      "mh4uId": 684,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "리오레우스",
+          "navMonster": "리오레우스",
+          "nameEn": "Rathalos",
+          "rank": "상위",
+          "methods": [
+            "Break Head · 57% · ×1",
+            "Body Carve · 38% · ×1",
+            "Shiny Drop · 23% · ×1",
+            "Tail Carve · 22% · ×1",
+            "Tail Carve · 7% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "The Hero and the Fiery King",
+          "nameEn": "The Hero and the Fiery King",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Rathalos",
+          "probability": 24,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Risky Research",
+          "nameEn": "Advanced: Risky Research",
+          "level": "Caravan★9",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Rathalos and a Seltas Queen",
+          "probability": 24,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Heat Exhaustion",
+          "nameEn": "Heat Exhaustion",
+          "level": "Guild★5",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Deliver 4 Powderstones",
+          "probability": 24,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "화룡 날개발톱",
+      "count": 2,
+      "nameJa": "火竜の翼爪",
+      "itemId": "item_mh4u_0710",
+      "mh4uId": 710,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "리오레이아",
+          "navMonster": "리오레이아",
+          "nameEn": "Rathian",
+          "rank": "하위",
+          "methods": [
+            "Break Wing · 70% · ×1",
+            "Break Wing · 60% · ×2"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "리오레우스",
+          "navMonster": "리오레우스",
+          "nameEn": "Rathalos",
+          "rank": "하위",
+          "methods": [
+            "Break Wing · 70% · ×1",
+            "Break Wing · 60% · ×2"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "리오레이아 아종",
+          "navMonster": "리오레이아 아종",
+          "nameEn": "Pink Rathian",
+          "rank": "상위",
+          "methods": [
+            "Break Wing · 60% · ×2"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "화룡 꼬리",
+      "count": 1,
+      "nameJa": "火竜の尻尾",
+      "itemId": "item_mh4u_0692",
+      "mh4uId": 692,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "리오레우스",
+          "navMonster": "리오레우스",
+          "nameEn": "Rathalos",
+          "rank": "하위",
+          "methods": [
+            "Tail Carve · 60% · ×1",
+            "Tail Carve · 48% · ×1",
+            "Capture · 12% · ×1",
+            "Capture · 9% · ×1"
+          ]
+        },
+        {
+          "type": "exchange",
+          "required": "미추룡 뿔",
+          "requiredItemId": "item_mh4u_1112",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: Shipping Out",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "옥염석",
+      "count": 2,
+      "nameJa": "獄炎石",
+      "itemId": "item_05a0a5d02783",
+      "mh4uId": 218,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "그라비모스",
+          "navMonster": "그라비모스",
+          "nameEn": "Gravios",
+          "rank": "G급",
+          "methods": [
+            "Shiny Drop · 30% · ×1",
+            "Break Head · 10% · ×1",
+            "Shiny Drop · 6% · ×1",
+            "Capture · 6% · ×1",
+            "Tail Carve · 2% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "극한상태 그라비모스",
+          "navMonster": "그라비모스",
+          "nameEn": "Apex Gravios",
+          "rank": "G급",
+          "methods": [
+            "Shiny Drop · 30% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "그라비모스 아종",
+          "navMonster": "그라비모스 아종",
+          "nameEn": "Black Gravios",
+          "rank": "G급",
+          "methods": [
+            "Shiny Drop · 30% · ×1",
+            "Break Head · 10% · ×1",
+            "Tail Carve · 9% · ×1",
+            "Break Belly · 8% · ×1",
+            "Shiny Drop · 6% · ×1",
+            "Capture · 6% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Stand Tall",
+          "nameEn": "Advanced: Stand Tall",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay an Akantor",
+          "probability": 8,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Take a Powderstone",
+          "nameEn": "Take a Powderstone",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 1 Powderstone",
+          "probability": 8,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Heat Exhaustion",
+          "nameEn": "Heat Exhaustion",
+          "level": "Guild★5",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Deliver 4 Powderstones",
+          "probability": 8,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "리오레우스",
+        "navMonster": "리오레우스"
+      },
+      {
+        "name": "리오레이아",
+        "navMonster": "리오레이아"
+      },
+      {
+        "name": "리오레이아 아종",
+        "navMonster": "리오레이아 아종"
+      },
+      {
+        "name": "그라비모스",
+        "navMonster": "그라비모스"
+      },
+      {
+        "name": "극한상태 그라비모스",
+        "navMonster": "그라비모스"
+      },
+      {
+        "name": "그라비모스 아종",
+        "navMonster": "그라비모스 아종"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "The Hero and the Fiery King",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Rathalos",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Risky Research",
+        "nameJa": "",
+        "level": "Caravan★9",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Rathalos and a Seltas Queen",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Heat Exhaustion",
+        "nameJa": "",
+        "level": "Guild★5",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Deliver 4 Powderstones",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Stand Tall",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay an Akantor",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Take a Powderstone",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 1 Powderstone",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

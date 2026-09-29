@@ -1,0 +1,159 @@
+{
+  "materials": [
+    {
+      "name": "대해룡 갑피",
+      "count": 2,
+      "nameJa": "大海龍の甲皮",
+      "itemId": "item_mh4u_1151",
+      "mh4uId": 1151,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "공폭룡 검은가죽",
+          "requiredItemId": "item_mh4u_0916",
+          "unlockQuestId": "quest_c1d2049ca823",
+          "unlockQuest": "고난도: 공포와 폭동의 사냥",
+          "unlockLevel": "★7",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "휘어진 용뿔",
+      "count": 1,
+      "nameJa": "湾曲した龍角",
+      "itemId": "item_mh4u_1152",
+      "mh4uId": 1152,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "희망의 증표G",
+          "requiredItemId": "item_e4e64a7c5447",
+          "unlockQuestId": "quest_c1d2049ca823",
+          "unlockQuest": "고난도: 공포와 폭동의 사냥",
+          "unlockLevel": "★7",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "농축중갑진액",
+      "count": 1,
+      "nameJa": "濃縮重甲エキス",
+      "itemId": "item_mh4u_0629",
+      "mh4uId": 629,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "게넬·셀타스 아종",
+          "navMonster": "게넬·셀타스 아종",
+          "nameEn": "Desert Seltas Queen",
+          "rank": "G급",
+          "methods": [
+            "Capture · 9% · ×1",
+            "Body Carve · 7% · ×1",
+            "Shiny Drop · 5% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "게넬·셀타스",
+          "navMonster": "게넬·셀타스",
+          "nameEn": "Seltas Queen",
+          "rank": "G급",
+          "methods": [
+            "Capture · 7% · ×1",
+            "Break Head · 7% · ×1",
+            "Body Carve · 5% · ×1",
+            "Shiny Drop · 5% · ×1",
+            "Capture · 4% · ×1",
+            "Break Head · 4% · ×1",
+            "Body Carve · 3% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Pestering Pest",
+          "nameEn": "Pestering Pest",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Desert Seltas Queen",
+          "probability": 8,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Escaped Convicts",
+          "nameEn": "Advanced: Escaped Convicts",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Shrouded Nerscylla and a Desert Seltas Queen",
+          "probability": 8,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Strutting the Royal Runway",
+          "nameEn": "Strutting the Royal Runway",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Capture a Seltas Queen",
+          "probability": 6,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "게넬·셀타스 아종",
+        "navMonster": "게넬·셀타스 아종"
+      },
+      {
+        "name": "게넬·셀타스",
+        "navMonster": "게넬·셀타스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Pestering Pest",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Desert Seltas Queen",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Escaped Convicts",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Shrouded Nerscylla and a Desert Seltas Queen",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Strutting the Royal Runway",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Capture a Seltas Queen",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

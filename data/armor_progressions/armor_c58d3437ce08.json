@@ -1,0 +1,324 @@
+{
+  "materials": [
+    {
+      "name": "패룡 비늘+",
+      "count": 5,
+      "nameJa": "覇竜の上鱗",
+      "itemId": "item_mh4u_0997",
+      "mh4uId": 997,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "아캄토름",
+          "navMonster": "아캄토름",
+          "nameEn": "Akantor",
+          "rank": "상위",
+          "methods": [
+            "Break Belly · 56% · ×1",
+            "Body Carve · 38% · ×1",
+            "Tail Carve · 20% · ×1",
+            "Break Head · 18% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Stand Tall",
+          "nameEn": "Advanced: Stand Tall",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay an Akantor",
+          "probability": 26,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Grim Tidings",
+          "nameEn": "Advanced: Grim Tidings",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay an Akantor",
+          "probability": 26,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Akantor Coup",
+          "nameEn": "Advanced: Akantor Coup",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay an Akantor",
+          "probability": 26,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "패룡 강철발톱",
+      "count": 5,
+      "nameJa": "覇竜の剛爪",
+      "itemId": "item_mh4u_1003",
+      "mh4uId": 1003,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "아캄토름",
+          "navMonster": "아캄토름",
+          "nameEn": "Akantor",
+          "rank": "상위",
+          "methods": [
+            "Break Front Leg · 80% · ×1",
+            "Body Carve · 10% · ×1",
+            "Break Front Leg · 10% · ×2"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Stand Tall",
+          "nameEn": "Advanced: Stand Tall",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay an Akantor",
+          "probability": 10,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Grim Tidings",
+          "nameEn": "Advanced: Grim Tidings",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay an Akantor",
+          "probability": 10,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Akantor Coup",
+          "nameEn": "Advanced: Akantor Coup",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay an Akantor",
+          "probability": 10,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "패룡 견갑각",
+      "count": 5,
+      "nameJa": "覇竜の堅殻",
+      "itemId": "item_mh4u_0999",
+      "mh4uId": 999,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "아캄토름",
+          "navMonster": "아캄토름",
+          "nameEn": "Akantor",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 35% · ×1",
+            "Break Belly · 28% · ×1",
+            "Break Back · 20% · ×1",
+            "Shiny Drop · 12% · ×1",
+            "Break Front Leg · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Stand Tall",
+          "nameEn": "Advanced: Stand Tall",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay an Akantor",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Grim Tidings",
+          "nameEn": "Advanced: Grim Tidings",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay an Akantor",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Akantor Coup",
+          "nameEn": "Advanced: Akantor Coup",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay an Akantor",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "붕룡 견갑각",
+          "requiredItemId": "item_mh4u_1146",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: Akantor Coup",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "쇄룡 보옥",
+      "count": 1,
+      "nameJa": "砕竜の宝玉",
+      "itemId": "item_mh4u_0787",
+      "mh4uId": 787,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "브라키디오스",
+          "navMonster": "브라키디오스",
+          "nameEn": "Brachydios",
+          "rank": "G급",
+          "methods": [
+            "Tail Carve · 5% · ×1",
+            "Capture · 5% · ×1",
+            "Tail Carve · 3% · ×1",
+            "Shiny Drop · 3% · ×1",
+            "Body Carve · 2% · ×1",
+            "Capture · 2% · ×1",
+            "Shiny Drop · 1% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Lab Partners",
+          "nameEn": "Advanced: Lab Partners",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Brachydios and an Azure Rathalos",
+          "probability": 5,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Bad Hair Day: Brachydios",
+          "nameEn": "Bad Hair Day: Brachydios",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Brachydios",
+          "probability": 3,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Fire Drill",
+          "nameEn": "Fire Drill",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Brachydios and a Stygian Zinogre",
+          "probability": 3,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "아캄토름",
+        "navMonster": "아캄토름"
+      },
+      {
+        "name": "브라키디오스",
+        "navMonster": "브라키디오스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: Stand Tall",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay an Akantor",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Grim Tidings",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay an Akantor",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Akantor Coup",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay an Akantor",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Lab Partners",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Brachydios and an Azure Rathalos",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Bad Hair Day: Brachydios",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Brachydios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Fire Drill",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Brachydios and a Stygian Zinogre",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

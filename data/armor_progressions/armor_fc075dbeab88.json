@@ -1,0 +1,232 @@
+{
+  "materials": [
+    {
+      "name": "伝説 Jの海賊帽",
+      "count": 1,
+      "nameJa": "伝説Ｊの海賊帽",
+      "itemId": "item_3734a8f9ed86",
+      "mh4uId": 1358,
+      "sources": [
+        {
+          "type": "acquire",
+          "label": "이벤트 퀘스트 보수"
+        }
+      ]
+    },
+    {
+      "name": "염왕룡 견갑각",
+      "count": 3,
+      "nameJa": "炎王龍の堅殻",
+      "itemId": "item_mh4u_0964",
+      "mh4uId": 964,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "테오·테스카토르",
+          "navMonster": "테오·테스카토르",
+          "nameEn": "Teostra",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 55% · ×1",
+            "Tail Carve · 30% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Deep Trouble",
+          "nameEn": "Advanced: Deep Trouble",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay a Teostra or repel it",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Teostra Tangle",
+          "nameEn": "Advanced: Teostra Tangle",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Teostra or repel it",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "염왕룡 첨예뿔",
+      "count": 2,
+      "nameJa": "炎王龍の尖角",
+      "itemId": "item_mh4u_0969",
+      "mh4uId": 969,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "테오·테스카토르",
+          "navMonster": "테오·테스카토르",
+          "nameEn": "Teostra",
+          "rank": "상위",
+          "methods": [
+            "Break Head · 63% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "고룡의 피",
+      "count": 1,
+      "nameJa": "古龍の血",
+      "itemId": "item_mh4u_0329",
+      "mh4uId": 329,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "다렌·모란",
+          "navMonster": "다렌·모란",
+          "nameEn": "Dah'ren Mohran",
+          "rank": "상위",
+          "methods": [
+            "Break Fin · 15% · ×1",
+            "Break Blowhole · 15% · ×1",
+            "Break Front Leg · 10% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "오나즈치",
+          "navMonster": "오나즈치",
+          "nameEn": "Chameleos",
+          "rank": "G급",
+          "methods": [
+            "Tail Carve · 12% · ×1",
+            "Body Carve · 7% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "다라·아마듈라",
+          "navMonster": "다라·아마듈라",
+          "nameEn": "Dalamadur",
+          "rank": "상위",
+          "methods": [
+            "Break Chest · 10% · ×2"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: A Formless Fiend",
+          "nameEn": "Advanced: A Formless Fiend",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Chameleos or repel it",
+          "probability": 30,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Operation Tongue Twister",
+          "nameEn": "Operation Tongue Twister",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Chameleos or repel it",
+          "probability": 30,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Operation Windbreaker",
+          "nameEn": "Operation Windbreaker",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Kushala Daora or repel it",
+          "probability": 30,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "테오·테스카토르",
+        "navMonster": "테오·테스카토르"
+      },
+      {
+        "name": "다렌·모란",
+        "navMonster": "다렌·모란"
+      },
+      {
+        "name": "오나즈치",
+        "navMonster": "오나즈치"
+      },
+      {
+        "name": "다라·아마듈라",
+        "navMonster": "다라·아마듈라"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: Deep Trouble",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay a Teostra or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Teostra Tangle",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Teostra or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: A Formless Fiend",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Chameleos or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Operation Tongue Twister",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Chameleos or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Operation Windbreaker",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Kushala Daora or repel it",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

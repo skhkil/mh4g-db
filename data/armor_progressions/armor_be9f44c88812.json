@@ -1,0 +1,279 @@
+{
+  "materials": [
+    {
+      "name": "백토수 얼음발톱",
+      "count": 2,
+      "nameJa": "白兎獣の氷爪",
+      "itemId": "item_mh4u_0427",
+      "mh4uId": 427,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "울크스스",
+          "navMonster": "울크스스",
+          "nameEn": "Lagombi",
+          "rank": "하위",
+          "methods": [
+            "Capture · 25% · ×1",
+            "Body Carve · 15% · ×1",
+            "Capture · 5% · ×2"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Snow with Occasional Lagombi",
+          "nameEn": "Snow with Occasional Lagombi",
+          "level": "Caravan★4",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Lagombi",
+          "probability": 20,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: En Trade Route",
+          "nameEn": "Advanced: En Trade Route",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Zamtrios and a Lagombi",
+          "probability": 20,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Snow with Occasional Lagombi",
+          "nameEn": "Snow with Occasional Lagombi",
+          "level": "Guild★2",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Lagombi",
+          "probability": 20,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "백토수 털",
+      "count": 2,
+      "nameJa": "白兎獣の毛",
+      "itemId": "item_mh4u_0419",
+      "mh4uId": 419,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "울크스스",
+          "navMonster": "울크스스",
+          "nameEn": "Lagombi",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 50% · ×1",
+            "Break Head · 25% · ×1",
+            "Shiny Drop · 15% · ×1",
+            "Capture · 15% · ×2",
+            "Body Carve · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Snow with Occasional Lagombi",
+          "nameEn": "Snow with Occasional Lagombi",
+          "level": "Caravan★4",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Lagombi",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: En Trade Route",
+          "nameEn": "Advanced: En Trade Route",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Zamtrios and a Lagombi",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Snow with Occasional Lagombi",
+          "nameEn": "Snow with Occasional Lagombi",
+          "level": "Guild★2",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Lagombi",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "백토수 복갑",
+      "count": 1,
+      "nameJa": "白兎獣の腹甲",
+      "itemId": "item_mh4u_0425",
+      "mh4uId": 425,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "울크스스",
+          "navMonster": "울크스스",
+          "nameEn": "Lagombi",
+          "rank": "하위",
+          "methods": [
+            "Capture · 40% · ×1",
+            "Body Carve · 30% · ×1",
+            "Shiny Drop · 10% · ×1",
+            "Capture · 8% · ×2"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Snow with Occasional Lagombi",
+          "nameEn": "Snow with Occasional Lagombi",
+          "level": "Caravan★4",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Lagombi",
+          "probability": 32,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: En Trade Route",
+          "nameEn": "Advanced: En Trade Route",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Zamtrios and a Lagombi",
+          "probability": 32,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Snow with Occasional Lagombi",
+          "nameEn": "Snow with Occasional Lagombi",
+          "level": "Guild★2",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Lagombi",
+          "probability": 32,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "두꺼운 가죽",
+      "count": 4,
+      "nameJa": "肉厚な皮",
+      "itemId": "item_mh4u_0546",
+      "mh4uId": 546,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "스쿠아길",
+          "navMonster": "",
+          "nameEn": "Zamite",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 35% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Zamite Fight",
+          "nameEn": "Zamite Fight",
+          "level": "Caravan★4",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay 8 Zamite",
+          "probability": 100,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Zamite Fight",
+          "nameEn": "Zamite Fight",
+          "level": "Guild★2",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay 10 Zamite",
+          "probability": 100,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Zamite Fight",
+          "nameEn": "Zamite Fight",
+          "level": "Guild★5",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay 20 Zamite",
+          "probability": 16,
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "울크스스",
+        "navMonster": "울크스스"
+      },
+      {
+        "name": "스쿠아길",
+        "navMonster": ""
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Snow with Occasional Lagombi",
+        "nameJa": "",
+        "level": "Caravan★4",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Lagombi",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: En Trade Route",
+        "nameJa": "",
+        "level": "Caravan★5",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Zamtrios and a Lagombi",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Zamite Fight",
+        "nameJa": "",
+        "level": "Caravan★4",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay 8 Zamite",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

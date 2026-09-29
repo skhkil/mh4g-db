@@ -1,0 +1,300 @@
+{
+  "materials": [
+    {
+      "name": "도모수 억센털+",
+      "count": 2,
+      "nameJa": "桃毛獣の豪剛毛",
+      "itemId": "item_mh4u_0494",
+      "mh4uId": 494,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "바바콩가",
+          "navMonster": "바바콩가",
+          "nameEn": "Congalala",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 75% · ×1",
+            "Body Carve · 60% · ×1",
+            "Capture · 40% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hunger Games",
+          "nameEn": "Hunger Games",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt 2 Congalalas",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Harvest Tour: Heaven's Mount",
+          "nameEn": "Harvest Tour: Heaven's Mount",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+          "probability": 28,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "극채색털",
+      "count": 3,
+      "nameJa": "極彩色の毛",
+      "itemId": "item_mh4u_0495",
+      "mh4uId": 495,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "바바콩가",
+          "navMonster": "바바콩가",
+          "nameEn": "Congalala",
+          "rank": "상위",
+          "methods": [
+            "Break Head · 50% · ×1",
+            "Break Head · 40% · ×1",
+            "Break Head · 25% · ×2"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "바바콩가 아종",
+          "navMonster": "바바콩가 아종",
+          "nameEn": "Emerald Congalala",
+          "rank": "상위",
+          "methods": [
+            "Break Head · 40% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hot-air Buffoon",
+          "nameEn": "Hot-air Buffoon",
+          "level": "Caravan★7",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt an Emerald Congalala",
+          "probability": 16,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Buffoonish Baboon",
+          "nameEn": "Buffoonish Baboon",
+          "level": "Guild★4",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt an Emerald Congalala",
+          "probability": 16,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Apes of Wrath",
+          "nameEn": "Apes of Wrath",
+          "level": "Guild★4",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Kecha Wacha and an Emerald Congalala",
+          "probability": 16,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "도모수 강발톱",
+      "count": 2,
+      "nameJa": "桃毛獣の剛爪",
+      "itemId": "item_mh4u_0498",
+      "mh4uId": 498,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "바바콩가",
+          "navMonster": "바바콩가",
+          "nameEn": "Congalala",
+          "rank": "G급",
+          "methods": [
+            "Break Claw · 80% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hunger Games",
+          "nameEn": "Hunger Games",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt 2 Congalalas",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Harvest Tour: Heaven's Mount",
+          "nameEn": "Harvest Tour: Heaven's Mount",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+          "probability": 12,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "황제메뚜기",
+      "count": 2,
+      "nameJa": "皇帝バッタ",
+      "itemId": "item_ca6b777dbf0c",
+      "mh4uId": 269,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Lumber Support",
+          "nameEn": "Lumber Support",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Kecha Wacha",
+          "probability": 11,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Fashion Victim",
+          "nameEn": "Fashion Victim",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Daimyo Hermitaur",
+          "probability": 11,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Terrible Twins",
+          "nameEn": "Advanced: Terrible Twins",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Kecha Wacha and an Ash Kecha Wacha",
+          "probability": 11,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "바바콩가",
+        "navMonster": "바바콩가"
+      },
+      {
+        "name": "바바콩가 아종",
+        "navMonster": "바바콩가 아종"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Hunger Games",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt 2 Congalalas",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Harvest Tour: Heaven's Mount",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Hot-air Buffoon",
+        "nameJa": "",
+        "level": "Caravan★7",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt an Emerald Congalala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Buffoonish Baboon",
+        "nameJa": "",
+        "level": "Guild★4",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt an Emerald Congalala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Apes of Wrath",
+        "nameJa": "",
+        "level": "Guild★4",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Kecha Wacha and an Emerald Congalala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Lumber Support",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Kecha Wacha",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Fashion Victim",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Daimyo Hermitaur",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Terrible Twins",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Kecha Wacha and an Ash Kecha Wacha",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

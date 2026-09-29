@@ -1,0 +1,364 @@
+{
+  "materials": [
+    {
+      "name": "람포스 첨예발톱",
+      "count": 4,
+      "nameJa": "ランポスの尖爪",
+      "itemId": "item_mh4u_0400",
+      "mh4uId": 400,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "도스람포스",
+          "navMonster": "도스람포스",
+          "nameEn": "Velocidrome",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 40% · ×1",
+            "Shiny Drop · 30% · ×1",
+            "Shiny Drop · 23% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "The Hero & the Captain's Trap",
+          "nameEn": "The Hero & the Captain's Trap",
+          "level": "Caravan★7",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt 2 Velocidrome",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "람포스 가죽+",
+      "count": 3,
+      "nameJa": "ランポスの上皮",
+      "itemId": "item_mh4u_0397",
+      "mh4uId": 397,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "도스람포스",
+          "navMonster": "도스람포스",
+          "nameEn": "Velocidrome",
+          "rank": "G급",
+          "methods": [
+            "Capture · 37% · ×2",
+            "Capture · 34% · ×2",
+            "Body Carve · 15% · ×1",
+            "Body Carve · 8% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "Velociprey",
+          "navMonster": "",
+          "nameEn": "Velociprey",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 35% · ×1",
+            "Body Carve · 15% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "The Hero & the Captain's Trap",
+          "nameEn": "The Hero & the Captain's Trap",
+          "level": "Caravan★7",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt 2 Velocidrome",
+          "probability": 20,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "강인한 조룡가죽",
+      "count": 3,
+      "nameJa": "強靭な鳥竜皮",
+      "itemId": "item_mh4u_0387",
+      "mh4uId": 387,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "도스람포스",
+          "navMonster": "도스람포스",
+          "nameEn": "Velocidrome",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 35% · ×1",
+            "Capture · 35% · ×2",
+            "Body Carve · 30% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "도스게네포스",
+          "navMonster": "도스게네포스",
+          "nameEn": "Gendrome",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 30% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "도스이오스",
+          "navMonster": "도스이오스",
+          "nameEn": "Iodrome",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 30% · ×1",
+            "Shiny Drop · 30% · ×1",
+            "Shiny Drop · 20% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Bad Hair Day: Iodrome",
+          "nameEn": "Bad Hair Day: Iodrome",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt 2 Iodrome",
+          "probability": 20,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Harvest Tour: Primal Forest",
+          "nameEn": "Harvest Tour: Primal Forest",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+          "probability": 20,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Frenzied Trading",
+          "nameEn": "Advanced: Frenzied Trading",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 20,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "카브레라이트광석",
+      "count": 2,
+      "nameJa": "カブレライト鉱石",
+      "itemId": "item_6f1301567966",
+      "mh4uId": 213,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "바살모스 아종",
+          "navMonster": "바살모스 아종",
+          "nameEn": "Ruby Basarios",
+          "rank": "상위",
+          "methods": [
+            "Mining Ore · 50% · ×1",
+            "Tail Carve · 40% · ×1",
+            "Break Back · 40% · ×2",
+            "Capture · 36% · ×1",
+            "Break Belly · 30% · ×2",
+            "Body Carve · 25% · ×1",
+            "Mining Back · 25% · ×1",
+            "Break Belly · 25% · ×1",
+            "Shiny Drop · 20% · ×1",
+            "Tail Carve · 20% · ×1",
+            "Mining Ore · 20% · ×1",
+            "Capture · 14% · ×1",
+            "Mining Back · 10% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "게리오스",
+          "navMonster": "게리오스",
+          "nameEn": "Gypceros",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 43% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "바살모스",
+          "navMonster": "바살모스",
+          "nameEn": "Basarios",
+          "rank": "상위",
+          "methods": [
+            "Tail Carve · 40% · ×1",
+            "Break Back · 40% · ×2",
+            "Capture · 36% · ×1",
+            "Break Belly · 30% · ×2",
+            "Body Carve · 25% · ×1",
+            "Break Belly · 25% · ×1",
+            "Mining Back · 25% · ×1",
+            "Shiny Drop · 20% · ×1",
+            "Tail Carve · 20% · ×1",
+            "Capture · 14% · ×2",
+            "Mining Back · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Meteoric Prize",
+          "nameEn": "Meteoric Prize",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 1 Meteor Chunk",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Splendid Sootstone",
+          "nameEn": "Splendid Sootstone",
+          "level": "Guild★4",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Deliver 4 Sootstone Ores",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Take a Powderstone",
+          "nameEn": "Take a Powderstone",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 1 Powderstone",
+          "probability": 16,
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "도스람포스",
+        "navMonster": "도스람포스"
+      },
+      {
+        "name": "Velociprey",
+        "navMonster": ""
+      },
+      {
+        "name": "도스게네포스",
+        "navMonster": "도스게네포스"
+      },
+      {
+        "name": "도스이오스",
+        "navMonster": "도스이오스"
+      },
+      {
+        "name": "바살모스 아종",
+        "navMonster": "바살모스 아종"
+      },
+      {
+        "name": "게리오스",
+        "navMonster": "게리오스"
+      },
+      {
+        "name": "바살모스",
+        "navMonster": "바살모스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "The Hero & the Captain's Trap",
+        "nameJa": "",
+        "level": "Caravan★7",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt 2 Velocidrome",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Bad Hair Day: Iodrome",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt 2 Iodrome",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Harvest Tour: Primal Forest",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Frenzied Trading",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt all large monsters",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Meteoric Prize",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 1 Meteor Chunk",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Splendid Sootstone",
+        "nameJa": "",
+        "level": "Guild★4",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Deliver 4 Sootstone Ores",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Take a Powderstone",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 1 Powderstone",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

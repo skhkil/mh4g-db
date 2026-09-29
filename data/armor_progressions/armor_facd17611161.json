@@ -1,0 +1,265 @@
+{
+  "materials": [
+    {
+      "name": "호산룡 중암각",
+      "count": 6,
+      "nameJa": "豪山龍の重岩殻",
+      "itemId": "item_mh4u_0984",
+      "mh4uId": 984,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "다렌·모란",
+          "navMonster": "다렌·모란",
+          "nameEn": "Dah'ren Mohran",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 46% · ×1",
+            "Break Fin · 43% · ×1",
+            "Break Blowhole · 43% · ×1",
+            "Mining Back · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Moving Mountains",
+          "nameEn": "Advanced: Moving Mountains",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay Dah'ren Mohran or repel it",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "호룡암",
+      "count": 6,
+      "nameJa": "豪龍岩",
+      "itemId": "item_mh4u_0994",
+      "mh4uId": 994,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "다렌·모란",
+          "navMonster": "다렌·모란",
+          "nameEn": "Dah'ren Mohran",
+          "rank": "G급",
+          "methods": [
+            "Mining Back · 35% · ×1",
+            "Mining Back · 21% · ×1",
+            "Mining Back · 14% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "고룡의 피",
+      "count": 3,
+      "nameJa": "古龍の血",
+      "itemId": "item_mh4u_0329",
+      "mh4uId": 329,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "다렌·모란",
+          "navMonster": "다렌·모란",
+          "nameEn": "Dah'ren Mohran",
+          "rank": "상위",
+          "methods": [
+            "Break Fin · 15% · ×1",
+            "Break Blowhole · 15% · ×1",
+            "Break Front Leg · 10% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "오나즈치",
+          "navMonster": "오나즈치",
+          "nameEn": "Chameleos",
+          "rank": "G급",
+          "methods": [
+            "Tail Carve · 12% · ×1",
+            "Body Carve · 7% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "다라·아마듈라",
+          "navMonster": "다라·아마듈라",
+          "nameEn": "Dalamadur",
+          "rank": "상위",
+          "methods": [
+            "Break Chest · 10% · ×2"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: A Formless Fiend",
+          "nameEn": "Advanced: A Formless Fiend",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Chameleos or repel it",
+          "probability": 30,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Operation Tongue Twister",
+          "nameEn": "Operation Tongue Twister",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Chameleos or repel it",
+          "probability": 30,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Operation Windbreaker",
+          "nameEn": "Operation Windbreaker",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Kushala Daora or repel it",
+          "probability": 30,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "멜랑제광석",
+      "count": 2,
+      "nameJa": "メランジェ鉱石",
+      "itemId": "item_4356e2f02662",
+      "mh4uId": 217,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "오나즈치",
+          "navMonster": "오나즈치",
+          "nameEn": "Chameleos",
+          "rank": "G급",
+          "methods": [
+            "Shiny Drop · 37% · ×1",
+            "Break Horn · 30% · ×1",
+            "Tail Carve · 17% · ×1",
+            "Body Carve · 15% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "다렌·모란",
+          "navMonster": "다렌·모란",
+          "nameEn": "Dah'ren Mohran",
+          "rank": "G급",
+          "methods": [
+            "Break Fin · 14% · ×1",
+            "Break Blowhole · 14% · ×1",
+            "Mining Back · 8% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "All-You-Can-Hunt Remobra",
+          "nameEn": "All-You-Can-Hunt Remobra",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay 15 Remobras",
+          "probability": 8,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Moving Mountains",
+          "nameEn": "Advanced: Moving Mountains",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay Dah'ren Mohran or repel it",
+          "probability": 6,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "다렌·모란",
+        "navMonster": "다렌·모란"
+      },
+      {
+        "name": "오나즈치",
+        "navMonster": "오나즈치"
+      },
+      {
+        "name": "다라·아마듈라",
+        "navMonster": "다라·아마듈라"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: Moving Mountains",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay Dah'ren Mohran or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: A Formless Fiend",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Chameleos or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Operation Tongue Twister",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Chameleos or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Operation Windbreaker",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Kushala Daora or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "All-You-Can-Hunt Remobra",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay 15 Remobras",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

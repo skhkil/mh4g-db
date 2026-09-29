@@ -1,0 +1,338 @@
+{
+  "materials": [
+    {
+      "name": "영지주 협각",
+      "count": 2,
+      "nameJa": "影蜘蛛の鋏角",
+      "itemId": "item_mh4u_0587",
+      "mh4uId": 587,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "네르스큐라",
+          "navMonster": "네르스큐라",
+          "nameEn": "Nerscylla",
+          "rank": "하위",
+          "methods": [
+            "Capture · 35% · ×1",
+            "Body Carve · 21% · ×1",
+            "Capture · 15% · ×2"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Nerscylla Thrilla",
+          "nameEn": "Nerscylla Thrilla",
+          "level": "Caravan★4",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Nerscylla",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hanging by a Thread",
+          "nameEn": "Hanging by a Thread",
+          "level": "Caravan★4",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt 2 Nerscylla",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Predator into Prey",
+          "nameEn": "Advanced: Predator into Prey",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Nerscylla and a Gypceros",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "영지주 발톱",
+      "count": 1,
+      "nameJa": "影蜘蛛の爪",
+      "itemId": "item_mh4u_0590",
+      "mh4uId": 590,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "네르스큐라",
+          "navMonster": "네르스큐라",
+          "nameEn": "Nerscylla",
+          "rank": "하위",
+          "methods": [
+            "Break Claw · 70% · ×1",
+            "Body Carve · 15% · ×1",
+            "Break Claw · 15% · ×2"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Nerscylla Thrilla",
+          "nameEn": "Nerscylla Thrilla",
+          "level": "Caravan★4",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Nerscylla",
+          "probability": 19,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hanging by a Thread",
+          "nameEn": "Hanging by a Thread",
+          "level": "Caravan★4",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt 2 Nerscylla",
+          "probability": 19,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Predator into Prey",
+          "nameEn": "Advanced: Predator into Prey",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Nerscylla and a Gypceros",
+          "probability": 19,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "영지주 갑각",
+      "count": 1,
+      "nameJa": "影蜘蛛の甲殻",
+      "itemId": "item_mh4u_0584",
+      "mh4uId": 584,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "네르스큐라",
+          "navMonster": "네르스큐라",
+          "nameEn": "Nerscylla",
+          "rank": "하위",
+          "methods": [
+            "Break Cover Skin · 70% · ×1",
+            "Body Carve · 42% · ×1",
+            "Break Poison Stinger · 35% · ×1",
+            "Break Claw · 30% · ×1",
+            "Capture · 20% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Nerscylla Thrilla",
+          "nameEn": "Nerscylla Thrilla",
+          "level": "Caravan★4",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Nerscylla",
+          "probability": 28,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hanging by a Thread",
+          "nameEn": "Hanging by a Thread",
+          "level": "Caravan★4",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt 2 Nerscylla",
+          "probability": 28,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Predator into Prey",
+          "nameEn": "Advanced: Predator into Prey",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Nerscylla and a Gypceros",
+          "probability": 28,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "용골【중】",
+      "count": 3,
+      "nameJa": "竜骨【中】",
+      "itemId": "item_eb551f3702e5",
+      "mh4uId": 305,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Rhenoplos",
+          "navMonster": "",
+          "nameEn": "Rhenoplos",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 20% · ×1",
+            "Body Carve · 15% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "얀쿡크",
+          "navMonster": "얀쿡크",
+          "nameEn": "Yian Kut-Ku",
+          "rank": "하위",
+          "methods": [
+            "Capture · 20% · ×2"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "바살모스",
+          "navMonster": "바살모스",
+          "nameEn": "Basarios",
+          "rank": "하위",
+          "methods": [
+            "Break Back · 20% · ×1",
+            "Body Carve · 8% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "The Gypceros Project",
+          "nameEn": "The Gypceros Project",
+          "level": "Guild★1",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Capture a Gypceros",
+          "probability": 25,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Operation Catch-a-Kecha",
+          "nameEn": "Operation Catch-a-Kecha",
+          "level": "Guild★1",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Capture a Kecha Wacha",
+          "probability": 25,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Egg-straction: Wyvern",
+          "nameEn": "Egg-straction: Wyvern",
+          "level": "Caravan★4",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 2 Wyvem Eggs",
+          "probability": 20,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "네르스큐라",
+        "navMonster": "네르스큐라"
+      },
+      {
+        "name": "Rhenoplos",
+        "navMonster": ""
+      },
+      {
+        "name": "얀쿡크",
+        "navMonster": "얀쿡크"
+      },
+      {
+        "name": "바살모스",
+        "navMonster": "바살모스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Nerscylla Thrilla",
+        "nameJa": "",
+        "level": "Caravan★4",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Nerscylla",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Hanging by a Thread",
+        "nameJa": "",
+        "level": "Caravan★4",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt 2 Nerscylla",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Predator into Prey",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Nerscylla and a Gypceros",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "The Gypceros Project",
+        "nameJa": "",
+        "level": "Guild★1",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Capture a Gypceros",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Operation Catch-a-Kecha",
+        "nameJa": "",
+        "level": "Guild★1",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Capture a Kecha Wacha",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Egg-straction: Wyvern",
+        "nameJa": "",
+        "level": "Caravan★4",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 2 Wyvem Eggs",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

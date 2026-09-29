@@ -1,0 +1,212 @@
+{
+  "materials": [
+    {
+      "name": "도스장수호랑나비",
+      "count": 1,
+      "nameJa": "ドスツノアゲハ",
+      "itemId": "item_4f6183665c7e",
+      "mh4uId": 274,
+      "sources": [
+        {
+          "type": "acquire",
+          "label": "채집( G급탐색)"
+        }
+      ]
+    },
+    {
+      "name": "황제메뚜기",
+      "count": 3,
+      "nameJa": "皇帝バッタ",
+      "itemId": "item_ca6b777dbf0c",
+      "mh4uId": 269,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Lumber Support",
+          "nameEn": "Lumber Support",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Kecha Wacha",
+          "probability": 11,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Fashion Victim",
+          "nameEn": "Fashion Victim",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Daimyo Hermitaur",
+          "probability": 11,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Terrible Twins",
+          "nameEn": "Advanced: Terrible Twins",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Kecha Wacha and an Ash Kecha Wacha",
+          "probability": 11,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "특대물주머니",
+      "count": 3,
+      "nameJa": "特大水袋",
+      "itemId": "item_mh4u_0350",
+      "mh4uId": 350,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "가라라아자라 아종",
+          "navMonster": "가라라아자라 아종",
+          "nameEn": "Tidal Najarala",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 88% · ×1",
+            "Capture · 40% · ×2",
+            "Body Carve · 25% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "극한상태 가라라아자라 아종",
+          "navMonster": "가라라아자라 아종",
+          "nameEn": "Apex Tidal Najarala",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 85% · ×1",
+            "Capture · 37% · ×2",
+            "Body Carve · 17% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "케차와차",
+          "navMonster": "케차와차",
+          "nameEn": "Kecha Wacha",
+          "rank": "G급",
+          "methods": [
+            "Break Ear · 25% · ×1",
+            "Capture · 20% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Rhapsody in Rime",
+          "nameEn": "Advanced: Rhapsody in Rime",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Tidal Najarala",
+          "probability": 30,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Serpent Serenade",
+          "nameEn": "Serpent Serenade",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Tidal Najarala",
+          "probability": 20,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Lumber Support",
+          "nameEn": "Lumber Support",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Kecha Wacha",
+          "probability": 18,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "가라라아자라 아종",
+        "navMonster": "가라라아자라 아종"
+      },
+      {
+        "name": "극한상태 가라라아자라 아종",
+        "navMonster": "가라라아자라 아종"
+      },
+      {
+        "name": "케차와차",
+        "navMonster": "케차와차"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Lumber Support",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Kecha Wacha",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Fashion Victim",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Daimyo Hermitaur",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Terrible Twins",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Kecha Wacha and an Ash Kecha Wacha",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Rhapsody in Rime",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Tidal Najarala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Serpent Serenade",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Tidal Najarala",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

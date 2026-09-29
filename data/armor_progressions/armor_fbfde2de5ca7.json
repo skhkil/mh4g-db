@@ -1,0 +1,196 @@
+{
+  "materials": [
+    {
+      "name": "미추룡 이끼갑각",
+      "count": 4,
+      "nameJa": "尾槌竜の苔甲",
+      "itemId": "item_mh4u_1111",
+      "mh4uId": 1111,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "화룡 갑각",
+          "requiredItemId": "item_mh4u_0686",
+          "unlockQuestId": "quest_10e8277ac568",
+          "unlockQuest": "고난도: 하늘을 누비고 오라",
+          "unlockLevel": "★6",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "거대한 뼈",
+      "count": 5,
+      "nameJa": "大きな骨",
+      "itemId": "item_0e6aada4f05c",
+      "mh4uId": 318,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Popo",
+          "navMonster": "",
+          "nameEn": "Popo",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 20% · ×1",
+            "Body Carve · 5% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "울크스스",
+          "navMonster": "울크스스",
+          "nameEn": "Lagombi",
+          "rank": "하위",
+          "methods": [
+            "Capture · 20% · ×2",
+            "Body Carve · 5% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "테츠카브라",
+          "navMonster": "테츠카브라",
+          "nameEn": "Tetsucabra",
+          "rank": "하위",
+          "methods": [
+            "Capture · 20% · ×1",
+            "Body Carve · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Swing into Action",
+          "nameEn": "Swing into Action",
+          "level": "Caravan★3",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Kecha Wacha",
+          "probability": 15,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Kecha Wacha Wallop",
+          "nameEn": "Kecha Wacha Wallop",
+          "level": "Caravan★3",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Kecha Wacha",
+          "probability": 15,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Order of Magnitude",
+          "nameEn": "Advanced: Order of Magnitude",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Kecha Wacha and a Rathian",
+          "probability": 15,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "따뜻한 모피",
+      "count": 4,
+      "nameJa": "暖かい毛皮",
+      "itemId": "item_mh4u_0356",
+      "mh4uId": 356,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Kelbi",
+          "navMonster": "",
+          "nameEn": "Kelbi",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 30% · ×1",
+            "Body Carve · 5% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Kelbi Cure-All",
+          "nameEn": "Kelbi Cure-All",
+          "level": "Caravan★2",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 3 Kelbi Horns",
+          "probability": 28,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "Popo",
+        "navMonster": ""
+      },
+      {
+        "name": "울크스스",
+        "navMonster": "울크스스"
+      },
+      {
+        "name": "테츠카브라",
+        "navMonster": "테츠카브라"
+      },
+      {
+        "name": "Kelbi",
+        "navMonster": ""
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Swing into Action",
+        "nameJa": "",
+        "level": "Caravan★3",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Kecha Wacha",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Kecha Wacha Wallop",
+        "nameJa": "",
+        "level": "Caravan★3",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Kecha Wacha",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Order of Magnitude",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Kecha Wacha and a Rathian",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Kelbi Cure-All",
+        "nameJa": "",
+        "level": "Caravan★2",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 3 Kelbi Horns",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

@@ -1,0 +1,362 @@
+{
+  "materials": [
+    {
+      "name": "굉룡 두갑각",
+      "count": 1,
+      "nameJa": "轟竜の頭殻",
+      "itemId": "item_mh4u_0831",
+      "mh4uId": 831,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "티가렉스 아종",
+          "navMonster": "티가렉스 아종",
+          "nameEn": "Brute Tigrex",
+          "rank": "상위",
+          "methods": [
+            "Break Head · 20% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "티가렉스",
+          "navMonster": "티가렉스",
+          "nameEn": "Tigrex",
+          "rank": "상위",
+          "methods": [
+            "Break Head · 15% · ×1",
+            "Break Head · 12% · ×1",
+            "Body Carve · 7% · ×1",
+            "Capture · 5% · ×1",
+            "Body Carve · 3% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Tigrex Challenge",
+          "nameEn": "Advanced: Tigrex Challenge",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Brute Tigrex",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "The Echoing Roar",
+          "nameEn": "The Echoing Roar",
+          "level": "Caravan★9",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Brute Tigrex",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Ear Ache",
+          "nameEn": "Ear Ache",
+          "level": "Guild★6",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Brute Tigrex",
+          "probability": 12,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "굉룡 이빨",
+      "count": 4,
+      "nameJa": "轟竜の牙",
+      "itemId": "item_mh4u_0828",
+      "mh4uId": 828,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "티가렉스",
+          "navMonster": "티가렉스",
+          "nameEn": "Tigrex",
+          "rank": "하위",
+          "methods": [
+            "Break Head · 50% · ×2",
+            "Capture · 25% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Ruler of the Frozen Seaway",
+          "nameEn": "Ruler of the Frozen Seaway",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Tigrex",
+          "probability": 14,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Tigrex Terror",
+          "nameEn": "Advanced: Tigrex Terror",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Tigrex",
+          "probability": 14,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Hell Hunters",
+          "nameEn": "Advanced: Hell Hunters",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt 2 Tigrex",
+          "probability": 14,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "용암룡 지느러미",
+          "requiredItemId": "item_mh4u_1114",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: Shipping Out",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "굉룡 비늘",
+      "count": 3,
+      "nameJa": "轟竜の鱗",
+      "itemId": "item_mh4u_0817",
+      "mh4uId": 817,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "티가렉스",
+          "navMonster": "티가렉스",
+          "nameEn": "Tigrex",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 40% · ×1",
+            "Capture · 22% · ×1",
+            "Tail Carve · 20% · ×1",
+            "Shiny Drop · 20% · ×1",
+            "Body Carve · 8% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Ruler of the Frozen Seaway",
+          "nameEn": "Ruler of the Frozen Seaway",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Tigrex",
+          "probability": 25,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Tigrex Terror",
+          "nameEn": "Advanced: Tigrex Terror",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Tigrex",
+          "probability": 25,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Hell Hunters",
+          "nameEn": "Advanced: Hell Hunters",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt 2 Tigrex",
+          "probability": 25,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "용암룡 비늘",
+          "requiredItemId": "item_mh4u_1113",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: Shipping Out",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "상어비늘",
+      "count": 2,
+      "nameJa": "鮫肌の鱗",
+      "itemId": "item_mh4u_0545",
+      "mh4uId": 545,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "스쿠아길",
+          "navMonster": "",
+          "nameEn": "Zamite",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 15% · ×1",
+            "Body Carve · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Zamite Fight",
+          "nameEn": "Zamite Fight",
+          "level": "Caravan★4",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay 8 Zamite",
+          "probability": 20,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Zamite Fight",
+          "nameEn": "Zamite Fight",
+          "level": "Guild★2",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay 10 Zamite",
+          "probability": 20,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Puffer Fish",
+          "nameEn": "Puffer Fish",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Zamtrios",
+          "probability": 12,
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "티가렉스 아종",
+        "navMonster": "티가렉스 아종"
+      },
+      {
+        "name": "티가렉스",
+        "navMonster": "티가렉스"
+      },
+      {
+        "name": "스쿠아길",
+        "navMonster": ""
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: Tigrex Challenge",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Brute Tigrex",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "The Echoing Roar",
+        "nameJa": "",
+        "level": "Caravan★9",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Brute Tigrex",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Ear Ache",
+        "nameJa": "",
+        "level": "Guild★6",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Brute Tigrex",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Ruler of the Frozen Seaway",
+        "nameJa": "",
+        "level": "Caravan★5",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Tigrex",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Tigrex Terror",
+        "nameJa": "",
+        "level": "Caravan★5",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Tigrex",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Hell Hunters",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt 2 Tigrex",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Zamite Fight",
+        "nameJa": "",
+        "level": "Caravan★4",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay 8 Zamite",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Puffer Fish",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Zamtrios",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

@@ -1,0 +1,177 @@
+{
+  "materials": [
+    {
+      "name": "흑룡 마신안",
+      "count": 3,
+      "nameJa": "黒龍の魔神眼",
+      "itemId": "item_mh4u_1040",
+      "mh4uId": 1040,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "밀라보레아스 (홍염룡)",
+          "navMonster": "밀라보레아스 (홍염룡)",
+          "nameEn": "Crimson Fatalis",
+          "rank": "G급",
+          "methods": [
+            "Break Eye · 0% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: A Final Battle Cry",
+          "nameEn": "Advanced: A Final Battle Cry",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Fatalis or repel it",
+          "probability": 5,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "흑룡 홍염비늘",
+      "count": 5,
+      "nameJa": "黒龍の紅焔鱗",
+      "itemId": "item_mh4u_1038",
+      "mh4uId": 1038,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "밀라보레아스 (홍염룡)",
+          "navMonster": "밀라보레아스 (홍염룡)",
+          "nameEn": "Crimson Fatalis",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 0% · ×1",
+            "Break Chest · 0% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: A Final Battle Cry",
+          "nameEn": "Advanced: A Final Battle Cry",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Fatalis or repel it",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "흑룡 홍염뿔",
+      "count": 2,
+      "nameJa": "黒龍の紅焔角",
+      "itemId": "item_mh4u_1037",
+      "mh4uId": 1037,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "밀라보레아스 (홍염룡)",
+          "navMonster": "밀라보레아스 (홍염룡)",
+          "nameEn": "Crimson Fatalis",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 0% · ×1",
+            "Break Horn · 0% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: A Final Battle Cry",
+          "nameEn": "Advanced: A Final Battle Cry",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Fatalis or repel it",
+          "probability": 15,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "패도옥",
+      "count": 1,
+      "nameJa": "覇導玉",
+      "itemId": "item_mh4u_1010",
+      "mh4uId": 1010,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "아캄토름",
+          "navMonster": "아캄토름",
+          "nameEn": "Akantor",
+          "rank": "G급",
+          "methods": [
+            "Break Belly · 6% · ×1",
+            "Break Head · 4% · ×1",
+            "Body Carve · 2% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Dark Domination",
+          "nameEn": "Advanced: Dark Domination",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay an Akantor",
+          "probability": 5,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "천공의 용옥",
+          "requiredItemId": "item_mh4u_1210",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: Wings of Woe",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "밀라보레아스 (홍염룡)",
+        "navMonster": "밀라보레아스 (홍염룡)"
+      },
+      {
+        "name": "아캄토름",
+        "navMonster": "아캄토름"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: A Final Battle Cry",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Fatalis or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Dark Domination",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay an Akantor",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

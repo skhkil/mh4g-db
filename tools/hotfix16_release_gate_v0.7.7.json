@@ -1,0 +1,62 @@
+{
+  "ok": true,
+  "version": "0.7.7-chat4-research2-hotfix16",
+  "steps": [
+    {
+      "name": "app_module_syntax",
+      "ok": true,
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "name": "loader_module_syntax",
+      "ok": true,
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "name": "engine_module_syntax",
+      "ok": true,
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "name": "armor_progression_all",
+      "ok": true,
+      "returncode": 0,
+      "stdout": "{\n  \"ok\": true,\n  \"version\": \"0.7.7-chat4-research2-hotfix16\",\n  \"counts\": {\n    \"armors\": 3119,\n    \"progressions\": 3119,\n    \"materials\": 11630,\n    \"exchangeSources\": 2036,\n    \"unknownSources\": 0\n  },\n  \"checks\": {\n    \"all_progressions_split\": true,\n    \"no_unknown_sources\": true,\n    \"main_armor_db_light\": true,\n    \"row_click_toggle\": true,\n    \"lazy_progression_fetch\": true,\n    \"full_width_detail\": true,\n    \"exchange_route_visible\": true\n  },\n  \"errors\": []\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "browser_e2e",
+      "ok": true,
+      "returncode": 0,
+      "stdout": "{\n  \"ok\": true,\n  \"errors\": [],\n  \"metrics\": {\n    \"initialLoadMs\": 615.02,\n    \"armorSearchMs\": 277.26\n  },\n  \"cycles\": 15\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "cross_references",
+      "ok": true,
+      "returncode": 0,
+      "stdout": "{\"hardIssueCount\": 0, \"warningCount\": 1, \"itemIndexedCount\": 1301, \"monsterIndexedCount\": 76, \"skillIndexedCount\": 143, \"monsterMaterialsMissingFromItemDb\": 0, \"monstersAffectedByItemCoverage\": 0}\n",
+      "stderr": ""
+    },
+    {
+      "name": "recommended_loadouts",
+      "ok": true,
+      "returncode": 0,
+      "stdout": "{\"weaponTypes\": 14, \"entries\": 42, \"variants\": 108, \"lowVariants\": 22, \"highVariants\": 33, \"gVariants\": 53, \"hardErrors\": 0, \"warnings\": 18, \"errors\": [], \"warningRows\": [\"태도/g/가루루가X 세트: 출처 URL 없음\", \"쌍검/g/셀레네X 세트: 출처 URL 없음\", \"해머/g/가루루가X 세트: 출처 URL 없음\", \"수렵피리/g/가루루가X 세트: 출처 URL 없음\", \"랜스/g/나르가X 세트: 출처 URL 없음\", \"슬래시액스/g/나르가X 세트: 출처 URL 없음\", \"슬래시액스/g/고어X 세트: 출처 URL 없음\", \"차지액스/g/셀타스X 세트: 출처 URL 없음\", \"조충곤/g/가루루가X 세트: 출처 URL 없음\", \"라이트보우건/g/스타나이트 거너 세트: 출처 URL 없음\", \"라이트보우건/g/가루루가X 거너 세트: 출처 URL 없음\", \"라이트보우건/g/고어X 거너 세트: 출처 URL 없음\", \"헤비보우건/g/진아마기 거너 세트: 출처 URL 없음\", \"헤비보우건/g/가루루가X 거너 세트: 출처 URL 없음\", \"헤비보우건/g/스타나이트 거너 세트: 출처 URL 없음\", \"활/g/스타나이트 거너 세트: 출처 URL 없음\", \"활/g/셀레네X 거너 세트: 출처 URL 없음\", \"활/g/가루루가X 거너 세트: 출처 URL 없음\"]}\n",
+      "stderr": ""
+    },
+    {
+      "name": "armor_search_benchmark",
+      "ok": true,
+      "returncode": 0,
+      "stdout": "{\n  \"armors\": 3119,\n  \"queries\": [\n    \"예리도\",\n    \"고급귀마개\",\n    \"몸통배가\",\n    \"리오\",\n    \"GX\"\n  ],\n  \"oldMsPerSweep\": 1577.87,\n  \"optimizedMsPerSweep\": 3.52,\n  \"speedup\": 448.15,\n  \"sameSampleCounts\": [\n    {\n      \"q\": \"예리도\",\n      \"old\": 123,\n      \"optimized\": 123\n    },\n    {\n      \"q\": \"고급귀마개\",\n      \"old\": 288,\n      \"optimized\": 288\n    },\n    {\n      \"q\": \"몸통배가\",\n      \"old\": 74,\n      \"optimized\": 74\n    },\n    {\n      \"q\": \"리오\",\n      \"old\": 130,\n      \"optimized\": 130\n    },\n    {\n      \"q\": \"GX\",\n      \"old\": 40,\n      \"optimized\": 40\n    }\n  ]\n}\n",
+      "stderr": ""
+    }
+  ]
+}

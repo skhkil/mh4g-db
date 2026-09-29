@@ -1,0 +1,305 @@
+{
+  "materials": [
+    {
+      "name": "호산룡 완갑+",
+      "count": 4,
+      "nameJa": "豪山龍の上腕甲",
+      "itemId": "item_mh4u_0989",
+      "mh4uId": 989,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "다렌·모란",
+          "navMonster": "다렌·모란",
+          "nameEn": "Dah'ren Mohran",
+          "rank": "상위",
+          "methods": [
+            "Break Front Leg · 65% · ×1",
+            "Break Front Leg · 10% · ×2"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: More Mohran",
+          "nameEn": "Advanced: More Mohran",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Dah'ren Mohran or repel it",
+          "probability": 20,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Fleet Action",
+          "nameEn": "Advanced: Fleet Action",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Dah'ren Mohran or repel it",
+          "probability": 15,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "신룡이끼",
+          "requiredItemId": "item_mh4u_1144",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: More Mohran",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "호산룡 견갑암각",
+      "count": 6,
+      "nameJa": "豪山龍の堅岩殻",
+      "itemId": "item_mh4u_0983",
+      "mh4uId": 983,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "다렌·모란",
+          "navMonster": "다렌·모란",
+          "nameEn": "Dah'ren Mohran",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 46% · ×1",
+            "Break Fin · 43% · ×1",
+            "Break Blowhole · 43% · ×1",
+            "Mining Back · 10% · ×1",
+            "Break Fin · 8% · ×1",
+            "Break Blowhole · 8% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Fleet Action",
+          "nameEn": "Advanced: Fleet Action",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Dah'ren Mohran or repel it",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: More Mohran",
+          "nameEn": "Advanced: More Mohran",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Dah'ren Mohran or repel it",
+          "probability": 100,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Moving Mountains",
+          "nameEn": "Advanced: Moving Mountains",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay Dah'ren Mohran or repel it",
+          "probability": 5,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "호산룡 붉은비늘+",
+      "count": 5,
+      "nameJa": "豪山龍の上紅鱗",
+      "itemId": "item_mh4u_0986",
+      "mh4uId": 986,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "다렌·모란",
+          "navMonster": "다렌·모란",
+          "nameEn": "Dah'ren Mohran",
+          "rank": "상위",
+          "methods": [
+            "Mouth Carve · 40% · ×1",
+            "Body Carve · 28% · ×1",
+            "Break Fin · 20% · ×1",
+            "Break Blowhole · 20% · ×1",
+            "Mouth Carve · 20% · ×1",
+            "Mining Back · 15% · ×1",
+            "Break Front Leg · 15% · ×1",
+            "Body Carve · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Fleet Action",
+          "nameEn": "Advanced: Fleet Action",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Dah'ren Mohran or repel it",
+          "probability": 20,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: More Mohran",
+          "nameEn": "Advanced: More Mohran",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Dah'ren Mohran or repel it",
+          "probability": 14,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Moving Mountains",
+          "nameEn": "Advanced: Moving Mountains",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay Dah'ren Mohran or repel it",
+          "probability": 6,
+          "count": 2
+        },
+        {
+          "type": "exchange",
+          "required": "비악룡 체액",
+          "requiredItemId": "item_mh4u_1142",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: More Mohran",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "용기의 증표G",
+      "count": 1,
+      "nameJa": "勇気の証Ｇ",
+      "itemId": "item_6bcd0ce55ea6",
+      "mh4uId": 1412,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Tyrant's Maw",
+          "nameEn": "Advanced: Tyrant's Maw",
+          "level": "Caravan★9",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Deviljho",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Silver Sovereign",
+          "nameEn": "Silver Sovereign",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Silver Rathalos",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Bad Hair Day: Brachydios",
+          "nameEn": "Bad Hair Day: Brachydios",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Brachydios",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "다렌·모란",
+        "navMonster": "다렌·모란"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: More Mohran",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay Dah'ren Mohran or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Fleet Action",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay Dah'ren Mohran or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Moving Mountains",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay Dah'ren Mohran or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Tyrant's Maw",
+        "nameJa": "",
+        "level": "Caravan★9",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Deviljho",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Silver Sovereign",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Silver Rathalos",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Bad Hair Day: Brachydios",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Brachydios",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

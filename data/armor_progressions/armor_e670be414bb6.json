@@ -1,0 +1,233 @@
+{
+  "materials": [
+    {
+      "name": "잠구룡 가죽",
+      "count": 3,
+      "nameJa": "潜口竜の皮",
+      "itemId": "item_mh4u_1102",
+      "mh4uId": 1102,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "암룡 갑각",
+          "requiredItemId": "item_mh4u_0793",
+          "unlockQuestId": "quest_a19e73f48917",
+          "unlockQuest": "검은 기운은 땅을 좀먹고…",
+          "unlockLevel": "★5",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "몬스터의 체액",
+      "count": 3,
+      "nameJa": "モンスターの体液",
+      "itemId": "item_mh4u_0600",
+      "mh4uId": 600,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Altaroth",
+          "navMonster": "",
+          "nameEn": "Altaroth",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 25% · ×1",
+            "Shiny Drop (Gray) · 20% · ×1",
+            "Shiny Drop (Blue) · 10% · ×1",
+            "Shiny Drop (Orange) · 10% · ×1",
+            "Shiny Drop (Green) · 10% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "네르스큐라",
+          "navMonster": "네르스큐라",
+          "nameEn": "Nerscylla",
+          "rank": "하위",
+          "methods": [
+            "Shiny Drop · 25% · ×1",
+            "Shiny Drop · 10% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "Bnahabra",
+          "navMonster": "",
+          "nameEn": "Bnahabra",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 20% · ×1",
+            "Body Carve · 7% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Bnahabra Bloodbath",
+          "nameEn": "Bnahabra Bloodbath",
+          "level": "Guild★1",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay 12 Bnahabra",
+          "probability": 20,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Bnahabra Buffet",
+          "nameEn": "Bnahabra Buffet",
+          "level": "Caravan★7",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay 12 Bnahabra",
+          "probability": 16,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Bnahabra Bloodbath",
+          "nameEn": "Bnahabra Bloodbath",
+          "level": "Guild★4",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay 20 Bnahabra",
+          "probability": 16,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "초식룡 갑각",
+      "count": 3,
+      "nameJa": "草食竜の甲殻",
+      "itemId": "item_mh4u_0359",
+      "mh4uId": 359,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Rhenoplos",
+          "navMonster": "",
+          "nameEn": "Rhenoplos",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 35% · ×1",
+            "Body Carve · 15% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Rhenoplos Slayer",
+          "nameEn": "Rhenoplos Slayer",
+          "level": "Caravan★3",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay 5 Rhenoplos",
+          "probability": 100,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Rhenoplos Headache",
+          "nameEn": "Rhenoplos Headache",
+          "level": "Guild★1",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay 8 Rhenoplos",
+          "probability": 100,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Egg-straction: Herbivores",
+          "nameEn": "Egg-straction: Herbivores",
+          "level": "Caravan★3",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 2 Herbivore Eggs",
+          "probability": 28,
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "Altaroth",
+        "navMonster": ""
+      },
+      {
+        "name": "네르스큐라",
+        "navMonster": "네르스큐라"
+      },
+      {
+        "name": "Bnahabra",
+        "navMonster": ""
+      },
+      {
+        "name": "Rhenoplos",
+        "navMonster": ""
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Bnahabra Bloodbath",
+        "nameJa": "",
+        "level": "Guild★1",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay 12 Bnahabra",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Bnahabra Buffet",
+        "nameJa": "",
+        "level": "Caravan★7",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay 12 Bnahabra",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Rhenoplos Slayer",
+        "nameJa": "",
+        "level": "Caravan★3",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay 5 Rhenoplos",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Rhenoplos Headache",
+        "nameJa": "",
+        "level": "Guild★1",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay 8 Rhenoplos",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Egg-straction: Herbivores",
+        "nameJa": "",
+        "level": "Caravan★3",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 2 Herbivore Eggs",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

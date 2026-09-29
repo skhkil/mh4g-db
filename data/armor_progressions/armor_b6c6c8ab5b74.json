@@ -1,0 +1,364 @@
+{
+  "materials": [
+    {
+      "name": "강룡 중갑각",
+      "count": 4,
+      "nameJa": "鋼龍の重殻",
+      "itemId": "item_mh4u_0949",
+      "mh4uId": 949,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "크샬다오라",
+          "navMonster": "크샬다오라",
+          "nameEn": "Kushala Daora",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 51% · ×1",
+            "Break Head · 36% · ×1",
+            "Tail Carve · 24% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: A Storm of Steel",
+          "nameEn": "Advanced: A Storm of Steel",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Kushala Daora or repel it",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Operation Windbreaker",
+          "nameEn": "Operation Windbreaker",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Kushala Daora or repel it",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "강룡 강날개",
+      "count": 2,
+      "nameJa": "鋼龍の剛翼",
+      "itemId": "item_mh4u_0955",
+      "mh4uId": 955,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "크샬다오라",
+          "navMonster": "크샬다오라",
+          "nameEn": "Kushala Daora",
+          "rank": "G급",
+          "methods": [
+            "Break Wing · 65% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "녹슨크샬다오라",
+          "navMonster": "녹슨크샬다오라",
+          "nameEn": "Rusted Kushala Daora",
+          "rank": "G급",
+          "methods": [
+            "Break Wing · 25% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: A Storm of Steel",
+          "nameEn": "Advanced: A Storm of Steel",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Kushala Daora or repel it",
+          "probability": 15,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Operation Windbreaker",
+          "nameEn": "Operation Windbreaker",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Kushala Daora or repel it",
+          "probability": 15,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "엘트라이트광석",
+      "count": 4,
+      "nameJa": "エルトライト鉱石",
+      "itemId": "item_fe4f2a32f3ec",
+      "mh4uId": 216,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "바살모스 아종",
+          "navMonster": "바살모스 아종",
+          "nameEn": "Ruby Basarios",
+          "rank": "G급",
+          "methods": [
+            "Mining Ore · 47% · ×1",
+            "Tail Carve · 40% · ×1",
+            "Break Back · 38% · ×2",
+            "Shiny Drop · 37% · ×1",
+            "Capture · 36% · ×1",
+            "Body Carve · 25% · ×1",
+            "Mining Back · 25% · ×1",
+            "Break Belly · 25% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "바살모스",
+          "navMonster": "바살모스",
+          "nameEn": "Basarios",
+          "rank": "G급",
+          "methods": [
+            "Tail Carve · 40% · ×1",
+            "Break Back · 38% · ×2",
+            "Shiny Drop · 37% · ×1",
+            "Capture · 36% · ×1",
+            "Body Carve · 25% · ×1",
+            "Break Belly · 25% · ×1",
+            "Mining Back · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Beyond the Pale",
+          "nameEn": "Advanced: Beyond the Pale",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt an Ash Kecha Wacha",
+          "probability": 15,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Sculptural Seltas",
+          "nameEn": "Sculptural Seltas",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Desert Seltas",
+          "probability": 15,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Seeing Spots",
+          "nameEn": "Seeing Spots",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt an Ash Kecha Wacha",
+          "probability": 15,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "고룡의 피",
+      "count": 5,
+      "nameJa": "古龍の血",
+      "itemId": "item_mh4u_0329",
+      "mh4uId": 329,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "다렌·모란",
+          "navMonster": "다렌·모란",
+          "nameEn": "Dah'ren Mohran",
+          "rank": "상위",
+          "methods": [
+            "Break Fin · 15% · ×1",
+            "Break Blowhole · 15% · ×1",
+            "Break Front Leg · 10% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "오나즈치",
+          "navMonster": "오나즈치",
+          "nameEn": "Chameleos",
+          "rank": "G급",
+          "methods": [
+            "Tail Carve · 12% · ×1",
+            "Body Carve · 7% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "다라·아마듈라",
+          "navMonster": "다라·아마듈라",
+          "nameEn": "Dalamadur",
+          "rank": "상위",
+          "methods": [
+            "Break Chest · 10% · ×2"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: A Formless Fiend",
+          "nameEn": "Advanced: A Formless Fiend",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Chameleos or repel it",
+          "probability": 30,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Operation Tongue Twister",
+          "nameEn": "Operation Tongue Twister",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Chameleos or repel it",
+          "probability": 30,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Operation Windbreaker",
+          "nameEn": "Operation Windbreaker",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Kushala Daora or repel it",
+          "probability": 30,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "크샬다오라",
+        "navMonster": "크샬다오라"
+      },
+      {
+        "name": "녹슨크샬다오라",
+        "navMonster": "녹슨크샬다오라"
+      },
+      {
+        "name": "바살모스 아종",
+        "navMonster": "바살모스 아종"
+      },
+      {
+        "name": "바살모스",
+        "navMonster": "바살모스"
+      },
+      {
+        "name": "다렌·모란",
+        "navMonster": "다렌·모란"
+      },
+      {
+        "name": "오나즈치",
+        "navMonster": "오나즈치"
+      },
+      {
+        "name": "다라·아마듈라",
+        "navMonster": "다라·아마듈라"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: A Storm of Steel",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Kushala Daora or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Operation Windbreaker",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Kushala Daora or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Beyond the Pale",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt an Ash Kecha Wacha",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Sculptural Seltas",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Desert Seltas",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Seeing Spots",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt an Ash Kecha Wacha",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: A Formless Fiend",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Chameleos or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Operation Tongue Twister",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Chameleos or repel it",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

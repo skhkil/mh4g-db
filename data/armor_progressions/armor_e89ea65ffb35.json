@@ -1,0 +1,281 @@
+{
+  "materials": [
+    {
+      "name": "쇄룡 흑요갑",
+      "count": 2,
+      "nameJa": "砕竜の黒曜甲",
+      "itemId": "item_mh4u_0773",
+      "mh4uId": 773,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "브라키디오스",
+          "navMonster": "브라키디오스",
+          "nameEn": "Brachydios",
+          "rank": "하위",
+          "methods": [
+            "Capture · 33% · ×1",
+            "Body Carve · 28% · ×1",
+            "Tail Carve · 20% · ×1",
+            "Break Front Leg · 14% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Dragon's Din",
+          "nameEn": "Advanced: Dragon's Din",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Brachydios",
+          "probability": 14,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Whole Lava Love",
+          "nameEn": "Whole Lava Love",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Brachydios",
+          "probability": 14,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Rock and Rolled",
+          "nameEn": "Advanced: Rock and Rolled",
+          "level": "Guild★3",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Brachydios",
+          "probability": 14,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "쇄룡 꼬리",
+      "count": 1,
+      "nameJa": "砕竜の尻尾",
+      "itemId": "item_mh4u_0784",
+      "mh4uId": 784,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "브라키디오스",
+          "navMonster": "브라키디오스",
+          "nameEn": "Brachydios",
+          "rank": "하위",
+          "methods": [
+            "Tail Carve · 68% · ×1",
+            "Tail Carve · 60% · ×1",
+            "Capture · 10% · ×1",
+            "Capture · 9% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "쇄룡 갑각",
+      "count": 4,
+      "nameJa": "砕竜の甲殻",
+      "itemId": "item_mh4u_0770",
+      "mh4uId": 770,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "브라키디오스",
+          "navMonster": "브라키디오스",
+          "nameEn": "Brachydios",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 42% · ×1",
+            "Capture · 24% · ×1",
+            "Break Head · 24% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Dragon's Din",
+          "nameEn": "Advanced: Dragon's Din",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Brachydios",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Whole Lava Love",
+          "nameEn": "Whole Lava Love",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Brachydios",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Rock and Rolled",
+          "nameEn": "Advanced: Rock and Rolled",
+          "level": "Guild★3",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Brachydios",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "각룡 갑각",
+          "requiredItemId": "item_mh4u_1115",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: Dragon's Din",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "쇄룡 골수",
+      "count": 1,
+      "nameJa": "砕竜の骨髄",
+      "itemId": "item_mh4u_0786",
+      "mh4uId": 786,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "브라키디오스",
+          "navMonster": "브라키디오스",
+          "nameEn": "Brachydios",
+          "rank": "상위",
+          "methods": [
+            "Tail Carve · 14% · ×1",
+            "Tail Carve · 12% · ×1",
+            "Body Carve · 5% · ×1",
+            "Capture · 5% · ×1",
+            "Shiny Drop · 3% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Bad Hair Day: Brachydios",
+          "nameEn": "Bad Hair Day: Brachydios",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Brachydios",
+          "probability": 10,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Glacier's Bane",
+          "nameEn": "Advanced: Glacier's Bane",
+          "level": "Caravan★9",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Brachydios",
+          "probability": 9,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Brimstone and Brachydios",
+          "nameEn": "Brimstone and Brachydios",
+          "level": "Guild★6",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Brachydios",
+          "probability": 9,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "브라키디오스",
+        "navMonster": "브라키디오스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: Dragon's Din",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Brachydios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Whole Lava Love",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Brachydios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Rock and Rolled",
+        "nameJa": "",
+        "level": "Guild★3",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Brachydios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Bad Hair Day: Brachydios",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Brachydios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Glacier's Bane",
+        "nameJa": "",
+        "level": "Caravan★9",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Brachydios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Brimstone and Brachydios",
+        "nameJa": "",
+        "level": "Guild★6",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Brachydios",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

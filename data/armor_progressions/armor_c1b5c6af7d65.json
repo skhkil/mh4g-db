@@ -1,0 +1,364 @@
+{
+  "materials": [
+    {
+      "name": "이오스 두툼가죽",
+      "count": 2,
+      "nameJa": "イーオスの厚皮",
+      "itemId": "item_mh4u_0416",
+      "mh4uId": 416,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "도스이오스",
+          "navMonster": "도스이오스",
+          "nameEn": "Iodrome",
+          "rank": "G급",
+          "methods": [
+            "Capture · 45% · ×2",
+            "Body Carve · 40% · ×1",
+            "Shiny Drop · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Bad Hair Day: Iodrome",
+          "nameEn": "Bad Hair Day: Iodrome",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt 2 Iodrome",
+          "probability": 45,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Harvest Tour: Primal Forest",
+          "nameEn": "Harvest Tour: Primal Forest",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+          "probability": 45,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Frenzied Trading",
+          "nameEn": "Advanced: Frenzied Trading",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 45,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "이오스 가죽+",
+      "count": 2,
+      "nameJa": "イーオスの上皮",
+      "itemId": "item_mh4u_0415",
+      "mh4uId": 415,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Ioprey",
+          "navMonster": "",
+          "nameEn": "Ioprey",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 35% · ×1",
+            "Body Carve · 15% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "도스이오스",
+          "navMonster": "도스이오스",
+          "nameEn": "Iodrome",
+          "rank": "상위",
+          "methods": [
+            "Capture · 30% · ×2",
+            "Body Carve · 13% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hunt-a-thon: Zinogre",
+          "nameEn": "Hunt-a-thon: Zinogre",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt 2 Zinogres before time expires or deliver a Paw Pass Ticket",
+          "probability": 25,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Mountain Rescue",
+          "nameEn": "Mountain Rescue",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Stygian Zinogre",
+          "probability": 25,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Harvest Tour: Volcanic Hollow",
+          "nameEn": "Harvest Tour: Volcanic Hollow",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+          "probability": 12,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "견고한 조룡골",
+      "count": 3,
+      "nameJa": "堅牢な鳥竜骨",
+      "itemId": "item_4a7a3d81c377",
+      "mh4uId": 316,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Jaggi",
+          "navMonster": "",
+          "nameEn": "Jaggi",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 50% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "Velociprey",
+          "navMonster": "",
+          "nameEn": "Velociprey",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 45% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "Genprey",
+          "navMonster": "",
+          "nameEn": "Genprey",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 45% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Lumber Support",
+          "nameEn": "Lumber Support",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Kecha Wacha",
+          "probability": 21,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Mountain Rescue",
+          "nameEn": "Mountain Rescue",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Stygian Zinogre",
+          "probability": 21,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "환조룡옥",
+      "count": 1,
+      "nameJa": "幻鳥竜玉",
+      "itemId": "item_mh4u_0326",
+      "mh4uId": 326,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "도스람포스",
+          "navMonster": "도스람포스",
+          "nameEn": "Velocidrome",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 10% · ×1",
+            "Body Carve · 5% · ×1",
+            "Capture · 3% · ×1",
+            "Shiny Drop · 2% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "도스이오스",
+          "navMonster": "도스이오스",
+          "nameEn": "Iodrome",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 10% · ×1",
+            "Body Carve · 5% · ×1",
+            "Shiny Drop · 5% · ×1",
+            "Capture · 3% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Bad Hair Day: Iodrome",
+          "nameEn": "Bad Hair Day: Iodrome",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt 2 Iodrome",
+          "probability": 5,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Harvest Tour: Primal Forest",
+          "nameEn": "Harvest Tour: Primal Forest",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+          "probability": 5,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Frenzied Trading",
+          "nameEn": "Advanced: Frenzied Trading",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 5,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "도스이오스",
+        "navMonster": "도스이오스"
+      },
+      {
+        "name": "Ioprey",
+        "navMonster": ""
+      },
+      {
+        "name": "Jaggi",
+        "navMonster": ""
+      },
+      {
+        "name": "Velociprey",
+        "navMonster": ""
+      },
+      {
+        "name": "Genprey",
+        "navMonster": ""
+      },
+      {
+        "name": "도스람포스",
+        "navMonster": "도스람포스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Bad Hair Day: Iodrome",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt 2 Iodrome",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Harvest Tour: Primal Forest",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Frenzied Trading",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt all large monsters",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Hunt-a-thon: Zinogre",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt 2 Zinogres before time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Mountain Rescue",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Stygian Zinogre",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Harvest Tour: Volcanic Hollow",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Lumber Support",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Kecha Wacha",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

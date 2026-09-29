@@ -1,0 +1,352 @@
+{
+  "materials": [
+    {
+      "name": "진주색유피",
+      "count": 3,
+      "nameJa": "真珠色の柔皮",
+      "itemId": "item_mh4u_0651",
+      "mh4uId": 651,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "푸루푸루",
+          "navMonster": "푸루푸루",
+          "nameEn": "Khezu",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 54% · ×1",
+            "Break Head · 54% · ×1",
+            "Break Body · 45% · ×1",
+            "Capture · 32% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hide-and-Freak",
+          "nameEn": "Hide-and-Freak",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Khezu",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Zamite Fight",
+          "nameEn": "Zamite Fight",
+          "level": "Guild★5",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay 20 Zamite",
+          "probability": 20,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Electrifying Encounter",
+          "nameEn": "Electrifying Encounter",
+          "level": "Guild★5",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Khezu and a Red Khezu",
+          "probability": 20,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "카브레라이트광석",
+      "count": 3,
+      "nameJa": "カブレライト鉱石",
+      "itemId": "item_6f1301567966",
+      "mh4uId": 213,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "바살모스 아종",
+          "navMonster": "바살모스 아종",
+          "nameEn": "Ruby Basarios",
+          "rank": "상위",
+          "methods": [
+            "Mining Ore · 50% · ×1",
+            "Tail Carve · 40% · ×1",
+            "Break Back · 40% · ×2",
+            "Capture · 36% · ×1",
+            "Break Belly · 30% · ×2",
+            "Body Carve · 25% · ×1",
+            "Mining Back · 25% · ×1",
+            "Break Belly · 25% · ×1",
+            "Shiny Drop · 20% · ×1",
+            "Tail Carve · 20% · ×1",
+            "Mining Ore · 20% · ×1",
+            "Capture · 14% · ×1",
+            "Mining Back · 10% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "게리오스",
+          "navMonster": "게리오스",
+          "nameEn": "Gypceros",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 43% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "바살모스",
+          "navMonster": "바살모스",
+          "nameEn": "Basarios",
+          "rank": "상위",
+          "methods": [
+            "Tail Carve · 40% · ×1",
+            "Break Back · 40% · ×2",
+            "Capture · 36% · ×1",
+            "Break Belly · 30% · ×2",
+            "Body Carve · 25% · ×1",
+            "Break Belly · 25% · ×1",
+            "Mining Back · 25% · ×1",
+            "Shiny Drop · 20% · ×1",
+            "Tail Carve · 20% · ×1",
+            "Capture · 14% · ×2",
+            "Mining Back · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Meteoric Prize",
+          "nameEn": "Meteoric Prize",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 1 Meteor Chunk",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Splendid Sootstone",
+          "nameEn": "Splendid Sootstone",
+          "level": "Guild★4",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Deliver 4 Sootstone Ores",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Take a Powderstone",
+          "nameEn": "Take a Powderstone",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 1 Powderstone",
+          "probability": 16,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "도스헤라클레스",
+      "count": 4,
+      "nameJa": "ドスヘラクレス",
+      "itemId": "item_f4a9500b933b",
+      "mh4uId": 266,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Arachnophobia",
+          "nameEn": "Arachnophobia",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Nerscylla",
+          "probability": 11,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hunt-a-thon: Kecha Wacha",
+          "nameEn": "Hunt-a-thon: Kecha Wacha",
+          "level": "Caravan★7",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt 2 Kecha Wacha before time expires or deliver a Paw Pass Ticket",
+          "probability": 11,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hunt-a-thon: Nerscylla",
+          "nameEn": "Hunt-a-thon: Nerscylla",
+          "level": "Caravan★7",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt 2 Nerscylla before time expires or deliver a Paw Pass Ticket",
+          "probability": 11,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "생명의 약",
+      "count": 3,
+      "nameJa": "生命の粉塵",
+      "itemId": "item_ce0cee6826e3",
+      "mh4uId": 34,
+      "sources": [
+        {
+          "type": "arena",
+          "name": "Grudge Match: Fish Fry",
+          "level": "투기대회",
+          "probability": 15,
+          "count": 1
+        },
+        {
+          "type": "arena",
+          "name": "Grudge Match: Tidal Najarala",
+          "level": "투기대회",
+          "probability": 15,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "푸루푸루",
+        "navMonster": "푸루푸루"
+      },
+      {
+        "name": "바살모스 아종",
+        "navMonster": "바살모스 아종"
+      },
+      {
+        "name": "게리오스",
+        "navMonster": "게리오스"
+      },
+      {
+        "name": "바살모스",
+        "navMonster": "바살모스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Hide-and-Freak",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Khezu",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Zamite Fight",
+        "nameJa": "",
+        "level": "Guild★5",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay 20 Zamite",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Electrifying Encounter",
+        "nameJa": "",
+        "level": "Guild★5",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Khezu and a Red Khezu",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Meteoric Prize",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 1 Meteor Chunk",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Splendid Sootstone",
+        "nameJa": "",
+        "level": "Guild★4",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Deliver 4 Sootstone Ores",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Take a Powderstone",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 1 Powderstone",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Arachnophobia",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Nerscylla",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Hunt-a-thon: Kecha Wacha",
+        "nameJa": "",
+        "level": "Caravan★7",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt 2 Kecha Wacha before time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Hunt-a-thon: Nerscylla",
+        "nameJa": "",
+        "level": "Caravan★7",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt 2 Nerscylla before time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      }
+    ],
+    "arena": [
+      {
+        "name": "Grudge Match: Fish Fry",
+        "level": "투기대회",
+        "probability": 15
+      },
+      {
+        "name": "Grudge Match: Tidal Najarala",
+        "level": "투기대회",
+        "probability": 15
+      }
+    ]
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

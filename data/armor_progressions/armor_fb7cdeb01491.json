@@ -1,0 +1,260 @@
+{
+  "materials": [
+    {
+      "name": "잠구룡 가죽",
+      "count": 4,
+      "nameJa": "潜口竜の皮",
+      "itemId": "item_mh4u_1102",
+      "mh4uId": 1102,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "암룡 갑각",
+          "requiredItemId": "item_mh4u_0793",
+          "unlockQuestId": "quest_a19e73f48917",
+          "unlockQuest": "검은 기운은 땅을 좀먹고…",
+          "unlockLevel": "★5",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "몬스터의 체액",
+      "count": 1,
+      "nameJa": "モンスターの体液",
+      "itemId": "item_mh4u_0600",
+      "mh4uId": 600,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Altaroth",
+          "navMonster": "",
+          "nameEn": "Altaroth",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 25% · ×1",
+            "Shiny Drop (Gray) · 20% · ×1",
+            "Shiny Drop (Blue) · 10% · ×1",
+            "Shiny Drop (Orange) · 10% · ×1",
+            "Shiny Drop (Green) · 10% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "네르스큐라",
+          "navMonster": "네르스큐라",
+          "nameEn": "Nerscylla",
+          "rank": "하위",
+          "methods": [
+            "Shiny Drop · 25% · ×1",
+            "Shiny Drop · 10% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "Bnahabra",
+          "navMonster": "",
+          "nameEn": "Bnahabra",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 20% · ×1",
+            "Body Carve · 7% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Bnahabra Bloodbath",
+          "nameEn": "Bnahabra Bloodbath",
+          "level": "Guild★1",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay 12 Bnahabra",
+          "probability": 20,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Bnahabra Buffet",
+          "nameEn": "Bnahabra Buffet",
+          "level": "Caravan★7",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay 12 Bnahabra",
+          "probability": 16,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Bnahabra Bloodbath",
+          "nameEn": "Bnahabra Bloodbath",
+          "level": "Guild★4",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay 20 Bnahabra",
+          "probability": 16,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "용골【대】",
+      "count": 3,
+      "nameJa": "竜骨【大】",
+      "itemId": "item_45dac90311e6",
+      "mh4uId": 306,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "그라비모스",
+          "navMonster": "그라비모스",
+          "nameEn": "Gravios",
+          "rank": "하위",
+          "methods": [
+            "Tail Carve · 23% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "Cephalos",
+          "navMonster": "",
+          "nameEn": "Cephalos",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 20% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "가라라아자라",
+          "navMonster": "가라라아자라",
+          "nameEn": "Najarala",
+          "rank": "하위",
+          "methods": [
+            "Break Back Leg · 20% · ×2"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Facility Facilitation",
+          "nameEn": "Facility Facilitation",
+          "level": "Caravan★7",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Cephadrome",
+          "probability": 40,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Heaven's Wheel",
+          "nameEn": "Advanced: Heaven's Wheel",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay Shagaru Magala",
+          "probability": 18,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Dragon's Din",
+          "nameEn": "Advanced: Dragon's Din",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Brachydios",
+          "probability": 18,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "Altaroth",
+        "navMonster": ""
+      },
+      {
+        "name": "네르스큐라",
+        "navMonster": "네르스큐라"
+      },
+      {
+        "name": "Bnahabra",
+        "navMonster": ""
+      },
+      {
+        "name": "그라비모스",
+        "navMonster": "그라비모스"
+      },
+      {
+        "name": "Cephalos",
+        "navMonster": ""
+      },
+      {
+        "name": "가라라아자라",
+        "navMonster": "가라라아자라"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Bnahabra Bloodbath",
+        "nameJa": "",
+        "level": "Guild★1",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay 12 Bnahabra",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Bnahabra Buffet",
+        "nameJa": "",
+        "level": "Caravan★7",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay 12 Bnahabra",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Facility Facilitation",
+        "nameJa": "",
+        "level": "Caravan★7",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Cephadrome",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Heaven's Wheel",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay Shagaru Magala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Dragon's Din",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Brachydios",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

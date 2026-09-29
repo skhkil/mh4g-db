@@ -1,0 +1,320 @@
+{
+  "materials": [
+    {
+      "name": "영지주 협각",
+      "count": 2,
+      "nameJa": "影蜘蛛の鋏角",
+      "itemId": "item_mh4u_0587",
+      "mh4uId": 587,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "네르스큐라",
+          "navMonster": "네르스큐라",
+          "nameEn": "Nerscylla",
+          "rank": "하위",
+          "methods": [
+            "Capture · 35% · ×1",
+            "Body Carve · 21% · ×1",
+            "Capture · 15% · ×2"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Nerscylla Thrilla",
+          "nameEn": "Nerscylla Thrilla",
+          "level": "Caravan★4",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Nerscylla",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hanging by a Thread",
+          "nameEn": "Hanging by a Thread",
+          "level": "Caravan★4",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt 2 Nerscylla",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Predator into Prey",
+          "nameEn": "Advanced: Predator into Prey",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Nerscylla and a Gypceros",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "영지주 갑각",
+      "count": 1,
+      "nameJa": "影蜘蛛の甲殻",
+      "itemId": "item_mh4u_0584",
+      "mh4uId": 584,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "네르스큐라",
+          "navMonster": "네르스큐라",
+          "nameEn": "Nerscylla",
+          "rank": "하위",
+          "methods": [
+            "Break Cover Skin · 70% · ×1",
+            "Body Carve · 42% · ×1",
+            "Break Poison Stinger · 35% · ×1",
+            "Break Claw · 30% · ×1",
+            "Capture · 20% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Nerscylla Thrilla",
+          "nameEn": "Nerscylla Thrilla",
+          "level": "Caravan★4",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Nerscylla",
+          "probability": 28,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hanging by a Thread",
+          "nameEn": "Hanging by a Thread",
+          "level": "Caravan★4",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt 2 Nerscylla",
+          "probability": 28,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Predator into Prey",
+          "nameEn": "Advanced: Predator into Prey",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Nerscylla and a Gypceros",
+          "probability": 28,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "영지주 가시",
+      "count": 1,
+      "nameJa": "影蜘蛛の棘",
+      "itemId": "item_mh4u_0593",
+      "mh4uId": 593,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "네르스큐라",
+          "navMonster": "네르스큐라",
+          "nameEn": "Nerscylla",
+          "rank": "하위",
+          "methods": [
+            "Break Poison Stinger · 65% · ×1",
+            "Capture · 25% · ×1",
+            "Break Poison Stinger · 15% · ×2",
+            "Body Carve · 8% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Nerscylla Thrilla",
+          "nameEn": "Nerscylla Thrilla",
+          "level": "Caravan★4",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Nerscylla",
+          "probability": 10,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hanging by a Thread",
+          "nameEn": "Hanging by a Thread",
+          "level": "Caravan★4",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt 2 Nerscylla",
+          "probability": 10,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Arachnophobia",
+          "nameEn": "Arachnophobia",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Nerscylla",
+          "probability": 10,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "순충 갑각",
+      "count": 2,
+      "nameJa": "盾虫の甲殻",
+      "itemId": "item_mh4u_0375",
+      "mh4uId": 375,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "쿤추",
+          "navMonster": "",
+          "nameEn": "Konchu",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 60% · ×1",
+            "Body Carve · 15% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Chip Off the Old Blockade",
+          "nameEn": "Chip Off the Old Blockade",
+          "level": "Caravan★2",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay 8 Konchu",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Konchu Collector",
+          "nameEn": "Konchu Collector",
+          "level": "Guild★1",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay 10 Konchu",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Kecha Wacha Wallop",
+          "nameEn": "Kecha Wacha Wallop",
+          "level": "Caravan★3",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Kecha Wacha",
+          "probability": 25,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "네르스큐라",
+        "navMonster": "네르스큐라"
+      },
+      {
+        "name": "쿤추",
+        "navMonster": ""
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Nerscylla Thrilla",
+        "nameJa": "",
+        "level": "Caravan★4",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Nerscylla",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Hanging by a Thread",
+        "nameJa": "",
+        "level": "Caravan★4",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt 2 Nerscylla",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Predator into Prey",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Nerscylla and a Gypceros",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Arachnophobia",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Nerscylla",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Chip Off the Old Blockade",
+        "nameJa": "",
+        "level": "Caravan★2",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay 8 Konchu",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Konchu Collector",
+        "nameJa": "",
+        "level": "Guild★1",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay 10 Konchu",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Kecha Wacha Wallop",
+        "nameJa": "",
+        "level": "Caravan★3",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Kecha Wacha",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

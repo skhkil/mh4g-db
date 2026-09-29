@@ -1,0 +1,420 @@
+{
+  "materials": [
+    {
+      "name": "홍화룡 두툼비늘",
+      "count": 3,
+      "nameJa": "桜火竜の厚鱗",
+      "itemId": "item_mh4u_0674",
+      "mh4uId": 674,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "리오레이아 아종",
+          "navMonster": "리오레이아 아종",
+          "nameEn": "Pink Rathian",
+          "rank": "G급",
+          "methods": [
+            "Tail Carve · 58% · ×1",
+            "Body Carve · 44% · ×1",
+            "Break Wing · 40% · ×1",
+            "Capture · 32% · ×2",
+            "Shiny Drop · 25% · ×1",
+            "Break Head · 20% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Pink Problems",
+          "nameEn": "Pink Problems",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt 2 Pink Rathians",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Bolt of Pink",
+          "nameEn": "Advanced: Bolt of Pink",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Zinogre and a Pink Rathian",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Harvest Tour: Dunes (Night)",
+          "nameEn": "Harvest Tour: Dunes (Night)",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+          "probability": 18,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "염과룡 중갑각",
+          "requiredItemId": "item_mh4u_1175",
+          "unlockQuestId": "",
+          "unlockQuest": "Pink Problems",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "홍화룡 중갑각",
+      "count": 2,
+      "nameJa": "桜火竜の重殻",
+      "itemId": "item_mh4u_0676",
+      "mh4uId": 676,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "리오레이아 아종",
+          "navMonster": "리오레이아 아종",
+          "nameEn": "Pink Rathian",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 76% · ×1",
+            "Break Back · 69% · ×1",
+            "Body Carve · 32% · ×1",
+            "Capture · 25% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Pink Problems",
+          "nameEn": "Pink Problems",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt 2 Pink Rathians",
+          "probability": 24,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Harvest Tour: Dunes (Night)",
+          "nameEn": "Harvest Tour: Dunes (Night)",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+          "probability": 24,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Bolt of Pink",
+          "nameEn": "Advanced: Bolt of Pink",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Zinogre and a Pink Rathian",
+          "probability": 24,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "염과룡 지느러미++",
+          "requiredItemId": "item_mh4u_1176",
+          "unlockQuestId": "",
+          "unlockQuest": "Pink Problems",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "엘트라이트광석",
+      "count": 4,
+      "nameJa": "エルトライト鉱石",
+      "itemId": "item_fe4f2a32f3ec",
+      "mh4uId": 216,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "바살모스 아종",
+          "navMonster": "바살모스 아종",
+          "nameEn": "Ruby Basarios",
+          "rank": "G급",
+          "methods": [
+            "Mining Ore · 47% · ×1",
+            "Tail Carve · 40% · ×1",
+            "Break Back · 38% · ×2",
+            "Shiny Drop · 37% · ×1",
+            "Capture · 36% · ×1",
+            "Body Carve · 25% · ×1",
+            "Mining Back · 25% · ×1",
+            "Break Belly · 25% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "바살모스",
+          "navMonster": "바살모스",
+          "nameEn": "Basarios",
+          "rank": "G급",
+          "methods": [
+            "Tail Carve · 40% · ×1",
+            "Break Back · 38% · ×2",
+            "Shiny Drop · 37% · ×1",
+            "Capture · 36% · ×1",
+            "Body Carve · 25% · ×1",
+            "Break Belly · 25% · ×1",
+            "Mining Back · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Beyond the Pale",
+          "nameEn": "Advanced: Beyond the Pale",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt an Ash Kecha Wacha",
+          "probability": 15,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Sculptural Seltas",
+          "nameEn": "Sculptural Seltas",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Desert Seltas",
+          "probability": 15,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Seeing Spots",
+          "nameEn": "Seeing Spots",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt an Ash Kecha Wacha",
+          "probability": 15,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "자화룡 홍옥",
+      "count": 1,
+      "nameJa": "雌火竜の紅玉",
+      "itemId": "item_mh4u_0671",
+      "mh4uId": 671,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "리오레이아",
+          "navMonster": "리오레이아",
+          "nameEn": "Rathian",
+          "rank": "G급",
+          "methods": [
+            "Tail Carve · 10% · ×1",
+            "Break Head · 4% · ×1",
+            "Capture · 4% · ×1",
+            "Tail Carve · 3% · ×1",
+            "Capture · 3% · ×1",
+            "Shiny Drop · 2% · ×1",
+            "Break Back · 1% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "리오레이아 아종",
+          "navMonster": "리오레이아 아종",
+          "nameEn": "Pink Rathian",
+          "rank": "G급",
+          "methods": [
+            "Tail Carve · 10% · ×1",
+            "Capture · 5% · ×1",
+            "Tail Carve · 4% · ×1",
+            "Capture · 4% · ×1",
+            "Break Head · 4% · ×1",
+            "Shiny Drop · 2% · ×1",
+            "Break Back · 1% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "리오레이아 희소종",
+          "navMonster": "리오레이아 희소종",
+          "nameEn": "Gold Rathian",
+          "rank": "G급",
+          "methods": [
+            "Tail Carve · 10% · ×1",
+            "Capture · 7% · ×1",
+            "Break Head · 6% · ×1",
+            "Tail Carve · 5% · ×1",
+            "Shiny Drop · 4% · ×1",
+            "Break Head · 4% · ×1",
+            "Capture · 4% · ×1",
+            "Break Back · 1% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hunter In Green and Red",
+          "nameEn": "Hunter In Green and Red",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Rathian and a Red Khezu",
+          "probability": 6,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Royal Assassination",
+          "nameEn": "Royal Assassination",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Rathian",
+          "probability": 6,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Pink Problems",
+          "nameEn": "Pink Problems",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt 2 Pink Rathians",
+          "probability": 6,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "리오레이아 아종",
+        "navMonster": "리오레이아 아종"
+      },
+      {
+        "name": "바살모스 아종",
+        "navMonster": "바살모스 아종"
+      },
+      {
+        "name": "바살모스",
+        "navMonster": "바살모스"
+      },
+      {
+        "name": "리오레이아",
+        "navMonster": "리오레이아"
+      },
+      {
+        "name": "리오레이아 희소종",
+        "navMonster": "리오레이아 희소종"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Pink Problems",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt 2 Pink Rathians",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Bolt of Pink",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Zinogre and a Pink Rathian",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Harvest Tour: Dunes (Night)",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Beyond the Pale",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt an Ash Kecha Wacha",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Sculptural Seltas",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Desert Seltas",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Seeing Spots",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt an Ash Kecha Wacha",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Hunter In Green and Red",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Rathian and a Red Khezu",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Royal Assassination",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Rathian",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

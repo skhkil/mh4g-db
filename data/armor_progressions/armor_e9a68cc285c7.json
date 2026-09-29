@@ -1,0 +1,213 @@
+{
+  "materials": [
+    {
+      "name": "혈전의 칠흑가죽",
+      "count": 4,
+      "nameJa": "血戦の漆黒皮",
+      "itemId": "item_mh4u_0929",
+      "mh4uId": 929,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "광폭 이블조",
+          "navMonster": "광폭 이블조",
+          "nameEn": "Savage Deviljho",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 32% · ×1",
+            "Tail Carve · 15% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "공폭룡 중이빨",
+      "count": 2,
+      "nameJa": "恐暴竜の重牙",
+      "itemId": "item_mh4u_0919",
+      "mh4uId": 919,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "이블조",
+          "navMonster": "이블조",
+          "nameEn": "Deviljho",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 50% · ×1",
+            "Break Head · 15% · ×2",
+            "Body Carve · 11% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "극한상태 이블조",
+          "navMonster": "이블조",
+          "nameEn": "Apex Deviljho",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 50% · ×1",
+            "Break Head · 15% · ×2",
+            "Body Carve · 12% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: The Master's Test",
+          "nameEn": "Advanced: The Master's Test",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 5,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "공폭룡 중꼬리",
+      "count": 2,
+      "nameJa": "恐暴竜の重尾",
+      "itemId": "item_mh4u_0924",
+      "mh4uId": 924,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "이블조",
+          "navMonster": "이블조",
+          "nameEn": "Deviljho",
+          "rank": "G급",
+          "methods": [
+            "Tail Carve · 60% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "극한상태 이블조",
+          "navMonster": "이블조",
+          "nameEn": "Apex Deviljho",
+          "rank": "G급",
+          "methods": [
+            "Tail Carve · 60% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "광폭 이블조",
+          "navMonster": "광폭 이블조",
+          "nameEn": "Savage Deviljho",
+          "rank": "G급",
+          "methods": [
+            "Tail Carve · 55% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "태고룡골",
+      "count": 2,
+      "nameJa": "太古龍骨",
+      "itemId": "item_22a180f00f9e",
+      "mh4uId": 314,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: A Formless Fiend",
+          "nameEn": "Advanced: A Formless Fiend",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Chameleos or repel it",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Misty Challenge",
+          "nameEn": "Advanced: Misty Challenge",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Chameleos or repel it",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: A Storm of Steel",
+          "nameEn": "Advanced: A Storm of Steel",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Kushala Daora or repel it",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "광폭 이블조",
+        "navMonster": "광폭 이블조"
+      },
+      {
+        "name": "이블조",
+        "navMonster": "이블조"
+      },
+      {
+        "name": "극한상태 이블조",
+        "navMonster": "이블조"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: The Master's Test",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt all large monsters",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: A Formless Fiend",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Chameleos or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Misty Challenge",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Chameleos or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: A Storm of Steel",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Kushala Daora or repel it",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

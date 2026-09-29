@@ -1,0 +1,308 @@
+{
+  "materials": [
+    {
+      "name": "ケロンスタ ー",
+      "count": 3,
+      "nameJa": "ケロンスター",
+      "itemId": "item_77665ac97313",
+      "mh4uId": 1347,
+      "sources": [
+        {
+          "type": "acquire",
+          "label": "이벤트 퀘스트 보수"
+        }
+      ]
+    },
+    {
+      "name": "위압적인 머리뼈",
+      "count": 2,
+      "nameJa": "厳めしい頭骨",
+      "itemId": "item_mh4u_0536",
+      "mh4uId": 536,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "테츠카브라",
+          "navMonster": "테츠카브라",
+          "nameEn": "Tetsucabra",
+          "rank": "상위",
+          "methods": [
+            "Break Jaw · 25% · ×1",
+            "Break Jaw · 20% · ×1",
+            "Body Carve · 18% · ×1",
+            "Body Carve · 15% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hammer It Out",
+          "nameEn": "Hammer It Out",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Tetsucabra",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hunt-a-thon: Tetsucabra",
+          "nameEn": "Hunt-a-thon: Tetsucabra",
+          "level": "Caravan★7",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt 2 Tetsucabras before time expires or deliver a Paw Pass Ticket",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Tetsucabra Bounty",
+          "nameEn": "Tetsucabra Bounty",
+          "level": "Guild★4",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Tetsucabra",
+          "probability": 12,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "괴상어 톱니",
+      "count": 2,
+      "nameJa": "化け鮫の鋸歯",
+      "itemId": "item_mh4u_0558",
+      "mh4uId": 558,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "자보아자길",
+          "navMonster": "자보아자길",
+          "nameEn": "Zamtrios",
+          "rank": "하위",
+          "methods": [
+            "Break Head · 100% · ×1",
+            "Capture · 14% · ×1",
+            "Capture · 12% · ×1",
+            "Body Carve · 8% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Meownster Hunter Havoc",
+          "nameEn": "Meownster Hunter Havoc",
+          "level": "Caravan★4",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Zamtrios",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "An Ice Surprise",
+          "nameEn": "An Ice Surprise",
+          "level": "Caravan★4",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Zamtrios",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Speartuna Fishing",
+          "nameEn": "Speartuna Fishing",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 3 Speartuna",
+          "probability": 12,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "개구리기름",
+      "count": 3,
+      "nameJa": "カワズの油",
+      "itemId": "item_mh4u_0542",
+      "mh4uId": 542,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "테츠카브라",
+          "navMonster": "테츠카브라",
+          "nameEn": "Tetsucabra",
+          "rank": "하위",
+          "methods": [
+            "Shiny Drop · 25% · ×1",
+            "Capture · 20% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "자보아자길",
+          "navMonster": "자보아자길",
+          "nameEn": "Zamtrios",
+          "rank": "상위",
+          "methods": [
+            "Shiny Drop · 25% · ×1",
+            "Shiny Drop · 20% · ×1",
+            "Shiny Drop (Breaking Ice) · 10% · ×1",
+            "Capture · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Boulder-bash",
+          "nameEn": "Boulder-bash",
+          "level": "Caravan★3",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Tetsucabra",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Amphibiphobia",
+          "nameEn": "Advanced: Amphibiphobia",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Zamtrios and a Tetsucabra",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Tackling a Tetsucabra",
+          "nameEn": "Tackling a Tetsucabra",
+          "level": "Guild★1",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Tetsucabra",
+          "probability": 12,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "테츠카브라",
+        "navMonster": "테츠카브라"
+      },
+      {
+        "name": "자보아자길",
+        "navMonster": "자보아자길"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Hammer It Out",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Tetsucabra",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Hunt-a-thon: Tetsucabra",
+        "nameJa": "",
+        "level": "Caravan★7",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt 2 Tetsucabras before time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Tetsucabra Bounty",
+        "nameJa": "",
+        "level": "Guild★4",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Tetsucabra",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Meownster Hunter Havoc",
+        "nameJa": "",
+        "level": "Caravan★4",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Zamtrios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "An Ice Surprise",
+        "nameJa": "",
+        "level": "Caravan★4",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Zamtrios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Speartuna Fishing",
+        "nameJa": "",
+        "level": "Caravan★5",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 3 Speartuna",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Boulder-bash",
+        "nameJa": "",
+        "level": "Caravan★3",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Tetsucabra",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Amphibiphobia",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Zamtrios and a Tetsucabra",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Tackling a Tetsucabra",
+        "nameJa": "",
+        "level": "Guild★1",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Tetsucabra",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

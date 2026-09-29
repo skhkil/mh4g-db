@@ -1,0 +1,105 @@
+{
+  "materials": [
+    {
+      "name": "격룡왕코인",
+      "count": 5,
+      "nameJa": "撃龍王のコイン",
+      "itemId": "item_32c1096c26c4",
+      "mh4uId": 1325,
+      "sources": [
+        {
+          "type": "arena",
+          "name": "Grudge Match: Color Code",
+          "level": "투기대회",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "arena",
+          "name": "Grudge Match: Dos Gravi",
+          "level": "투기대회",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "발바닥스탬프",
+      "count": 3,
+      "nameJa": "肉球のスタンプ",
+      "itemId": "item_3ff9f436a7a7",
+      "mh4uId": 1432,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "메라루",
+          "navMonster": "",
+          "nameEn": "Melynx",
+          "rank": "하위",
+          "methods": [
+            "Shiny Drop · 20% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "아이루",
+          "navMonster": "",
+          "nameEn": "Felyne",
+          "rank": "하위",
+          "methods": [
+            "Shiny Drop · 12% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "The Hero and the Fiery King",
+          "nameEn": "The Hero and the Fiery King",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Rathalos",
+          "probability": 20,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "메라루",
+        "navMonster": ""
+      },
+      {
+        "name": "아이루",
+        "navMonster": ""
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "The Hero and the Fiery King",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Rathalos",
+        "note": ""
+      }
+    ],
+    "arena": [
+      {
+        "name": "Grudge Match: Color Code",
+        "level": "투기대회",
+        "probability": 100
+      },
+      {
+        "name": "Grudge Match: Dos Gravi",
+        "level": "투기대회",
+        "probability": 100
+      }
+    ]
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

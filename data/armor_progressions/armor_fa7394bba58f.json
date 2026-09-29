@@ -1,0 +1,231 @@
+{
+  "materials": [
+    {
+      "name": "염비룡 중갑각",
+      "count": 3,
+      "nameJa": "炎妃龍の重殻",
+      "itemId": "item_mh4u_1203",
+      "mh4uId": 1203,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "염왕룡 중갑각",
+          "requiredItemId": "item_mh4u_0965",
+          "unlockQuestId": "quest_fcc1f3928b5f",
+          "unlockQuest": "고난도: 지옥에서 온 숙적들",
+          "unlockLevel": "★10",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "염비룡 꼬리",
+      "count": 1,
+      "nameJa": "炎妃龍の尻尾",
+      "itemId": "item_mh4u_1204",
+      "mh4uId": 1204,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "염왕룡 질긴꼬리",
+          "requiredItemId": "item_mh4u_0968",
+          "unlockQuestId": "quest_fcc1f3928b5f",
+          "unlockQuest": "고난도: 지옥에서 온 숙적들",
+          "unlockLevel": "★10",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "흑굉룡 강발톱",
+      "count": 4,
+      "nameJa": "黒轟竜の剛爪",
+      "itemId": "item_mh4u_0839",
+      "mh4uId": 839,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "티가렉스 아종",
+          "navMonster": "티가렉스 아종",
+          "nameEn": "Brute Tigrex",
+          "rank": "G급",
+          "methods": [
+            "Break Claw · 100% · ×1",
+            "Body Carve · 32% · ×1",
+            "Shiny Drop · 5% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Hell Hunter Hoax",
+          "nameEn": "Advanced: Hell Hunter Hoax",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Tigrex and a Brute Tigrex",
+          "probability": 14,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Brute Force",
+          "nameEn": "Brute Force",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Brute Tigrex",
+          "probability": 14,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: A Black Day",
+          "nameEn": "Advanced: A Black Day",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Black Gravios and a Brute Tigrex",
+          "probability": 14,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "용암룡 지느러미++",
+          "requiredItemId": "item_mh4u_1192",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: Bolt of Pink",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "진홍련석",
+      "count": 2,
+      "nameJa": "真紅蓮石",
+      "itemId": "item_53b42555459e",
+      "mh4uId": 219,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "극한상태 그라비모스",
+          "navMonster": "그라비모스",
+          "nameEn": "Apex Gravios",
+          "rank": "G급",
+          "methods": [
+            "Tail Carve · 15% · ×1",
+            "Shiny Drop · 12% · ×1",
+            "Break Head · 10% · ×1",
+            "Capture · 6% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "그라비모스",
+          "navMonster": "그라비모스",
+          "nameEn": "Gravios",
+          "rank": "G급",
+          "methods": [
+            "Shiny Drop · 12% · ×1",
+            "Break Head · 10% · ×1",
+            "Capture · 6% · ×1",
+            "Tail Carve · 2% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "그라비모스 아종",
+          "navMonster": "그라비모스 아종",
+          "nameEn": "Black Gravios",
+          "rank": "G급",
+          "methods": [
+            "Shiny Drop · 12% · ×1",
+            "Break Head · 10% · ×1",
+            "Tail Carve · 9% · ×1",
+            "Break Belly · 8% · ×1",
+            "Capture · 6% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Dark Domination",
+          "nameEn": "Advanced: Dark Domination",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay an Akantor",
+          "probability": 15,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "티가렉스 아종",
+        "navMonster": "티가렉스 아종"
+      },
+      {
+        "name": "극한상태 그라비모스",
+        "navMonster": "그라비모스"
+      },
+      {
+        "name": "그라비모스",
+        "navMonster": "그라비모스"
+      },
+      {
+        "name": "그라비모스 아종",
+        "navMonster": "그라비모스 아종"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: Hell Hunter Hoax",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Tigrex and a Brute Tigrex",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Brute Force",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Brute Tigrex",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: A Black Day",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Black Gravios and a Brute Tigrex",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Dark Domination",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay an Akantor",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

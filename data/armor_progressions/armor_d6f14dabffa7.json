@@ -1,0 +1,271 @@
+{
+  "materials": [
+    {
+      "name": "패룡 극대이빨",
+      "count": 3,
+      "nameJa": "覇竜の極大牙",
+      "itemId": "item_mh4u_1006",
+      "mh4uId": 1006,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "아캄토름",
+          "navMonster": "아캄토름",
+          "nameEn": "Akantor",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 72% · ×1",
+            "Body Carve · 5% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Dark Domination",
+          "nameEn": "Advanced: Dark Domination",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay an Akantor",
+          "probability": 15,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "패룡 중가시",
+      "count": 2,
+      "nameJa": "覇竜の重棘",
+      "itemId": "item_mh4u_1008",
+      "mh4uId": 1008,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "아캄토름",
+          "navMonster": "아캄토름",
+          "nameEn": "Akantor",
+          "rank": "G급",
+          "methods": [
+            "Break Back · 80% · ×1",
+            "Shiny Drop · 5% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Dark Domination",
+          "nameEn": "Advanced: Dark Domination",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay an Akantor",
+          "probability": 15,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "폭풍룡 비행날개",
+          "requiredItemId": "item_mh4u_1209",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: Wings of Woe",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "패룡 두툼비늘",
+      "count": 4,
+      "nameJa": "覇竜の厚鱗",
+      "itemId": "item_mh4u_0998",
+      "mh4uId": 998,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "아캄토름",
+          "navMonster": "아캄토름",
+          "nameEn": "Akantor",
+          "rank": "G급",
+          "methods": [
+            "Break Belly · 50% · ×1",
+            "Body Carve · 36% · ×1",
+            "Tail Carve · 20% · ×1",
+            "Break Head · 18% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Dark Domination",
+          "nameEn": "Advanced: Dark Domination",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay an Akantor",
+          "probability": 30,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "화룡 천린",
+      "count": 1,
+      "nameJa": "火竜の天鱗",
+      "itemId": "item_mh4u_0696",
+      "mh4uId": 696,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "리오레우스 희소종",
+          "navMonster": "리오레우스 희소종",
+          "nameEn": "Silver Rathalos",
+          "rank": "G급",
+          "methods": [
+            "Capture · 7% · ×1",
+            "Tail Carve · 5% · ×1",
+            "Break Head · 4% · ×1",
+            "Shiny Drop · 3% · ×1",
+            "Break Back · 1% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "리오레우스",
+          "navMonster": "리오레우스",
+          "nameEn": "Rathalos",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 4% · ×1",
+            "Tail Carve · 3% · ×1",
+            "Capture · 3% · ×1",
+            "Shiny Drop · 2% · ×1",
+            "Break Back · 1% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "리오레우스 아종",
+          "navMonster": "리오레우스 아종",
+          "nameEn": "Azure Rathalos",
+          "rank": "G급",
+          "methods": [
+            "Tail Carve · 4% · ×1",
+            "Capture · 4% · ×1",
+            "Break Head · 4% · ×1",
+            "Shiny Drop · 2% · ×1",
+            "Break Back · 1% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Lab Partners",
+          "nameEn": "Advanced: Lab Partners",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Brachydios and an Azure Rathalos",
+          "probability": 5,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Sovereign of the Sky",
+          "nameEn": "Sovereign of the Sky",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Rathalos",
+          "probability": 1,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Rival Clash",
+          "nameEn": "Rival Clash",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Seregios and a Rathalos",
+          "probability": 1,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "해룡 푸른천린",
+          "requiredItemId": "item_mh4u_1188",
+          "unlockQuestId": "",
+          "unlockQuest": "Rival Clash",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "아캄토름",
+        "navMonster": "아캄토름"
+      },
+      {
+        "name": "리오레우스 희소종",
+        "navMonster": "리오레우스 희소종"
+      },
+      {
+        "name": "리오레우스",
+        "navMonster": "리오레우스"
+      },
+      {
+        "name": "리오레우스 아종",
+        "navMonster": "리오레우스 아종"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: Dark Domination",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay an Akantor",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Lab Partners",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Brachydios and an Azure Rathalos",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Sovereign of the Sky",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Rathalos",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Rival Clash",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Seregios and a Rathalos",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

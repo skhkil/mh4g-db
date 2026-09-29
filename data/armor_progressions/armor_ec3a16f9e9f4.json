@@ -1,0 +1,249 @@
+{
+  "materials": [
+    {
+      "name": "흑룡 눈",
+      "count": 2,
+      "nameJa": "黒龍の眼",
+      "itemId": "item_mh4u_1028",
+      "mh4uId": 1028,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "밀라보레아스",
+          "navMonster": "밀라보레아스",
+          "nameEn": "Fatalis",
+          "rank": "상위",
+          "methods": [
+            "Break Eye · 0% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Fade to Black",
+          "nameEn": "Advanced: Fade to Black",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Fatalis or repel it",
+          "probability": 10,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "흑룡 비늘",
+      "count": 4,
+      "nameJa": "黒龍の鱗",
+      "itemId": "item_mh4u_1024",
+      "mh4uId": 1024,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "밀라보레아스",
+          "navMonster": "밀라보레아스",
+          "nameEn": "Fatalis",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 0% · ×1",
+            "Break Chest · 0% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Fade to Black",
+          "nameEn": "Advanced: Fade to Black",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Fatalis or repel it",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "흑룡 뿔",
+      "count": 4,
+      "nameJa": "黒龍の角",
+      "itemId": "item_mh4u_1022",
+      "mh4uId": 1022,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "밀라보레아스",
+          "navMonster": "밀라보레아스",
+          "nameEn": "Fatalis",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 0% · ×1",
+            "Break Horn · 0% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Fade to Black",
+          "nameEn": "Advanced: Fade to Black",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Fatalis or repel it",
+          "probability": 18,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "개룡 연수",
+      "count": 1,
+      "nameJa": "鎧竜の延髄",
+      "itemId": "item_mh4u_0808",
+      "mh4uId": 808,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "극한상태 그라비모스",
+          "navMonster": "그라비모스",
+          "nameEn": "Apex Gravios",
+          "rank": "G급",
+          "methods": [
+            "Tail Carve · 15% · ×1",
+            "Body Carve · 10% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "그라비모스 아종",
+          "navMonster": "그라비모스 아종",
+          "nameEn": "Black Gravios",
+          "rank": "상위",
+          "methods": [
+            "Tail Carve · 15% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "그라비모스",
+          "navMonster": "그라비모스",
+          "nameEn": "Gravios",
+          "rank": "상위",
+          "methods": [
+            "Tail Carve · 12% · ×1",
+            "Body Carve · 6% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Black Rock Down",
+          "nameEn": "Black Rock Down",
+          "level": "Caravan★9",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Black Gravios",
+          "probability": 8,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Whale of a Hammer",
+          "nameEn": "Advanced: Whale of a Hammer",
+          "level": "Caravan★9",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt 2 Black Gravios",
+          "probability": 8,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Ore D'oeuvre",
+          "nameEn": "Ore D'oeuvre",
+          "level": "Guild★6",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Black Gravios",
+          "probability": 8,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "해룡 창옥",
+          "requiredItemId": "item_mh4u_1134",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: Dragon Attack",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "밀라보레아스",
+        "navMonster": "밀라보레아스"
+      },
+      {
+        "name": "극한상태 그라비모스",
+        "navMonster": "그라비모스"
+      },
+      {
+        "name": "그라비모스 아종",
+        "navMonster": "그라비모스 아종"
+      },
+      {
+        "name": "그라비모스",
+        "navMonster": "그라비모스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: Fade to Black",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Fatalis or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Black Rock Down",
+        "nameJa": "",
+        "level": "Caravan★9",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Black Gravios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Whale of a Hammer",
+        "nameJa": "",
+        "level": "Caravan★9",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt 2 Black Gravios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Ore D'oeuvre",
+        "nameJa": "",
+        "level": "Guild★6",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Black Gravios",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

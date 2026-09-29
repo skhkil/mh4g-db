@@ -1,0 +1,147 @@
+{
+  "materials": [
+    {
+      "name": "철광석",
+      "count": 1,
+      "nameJa": "鉄鉱石",
+      "itemId": "item_a86a937adb56",
+      "mh4uId": 203,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "게리오스",
+          "navMonster": "게리오스",
+          "nameEn": "Gypceros",
+          "rank": "하위",
+          "methods": [
+            "Break Head · 40% · ×2"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Crystal Clearing",
+          "nameEn": "Crystal Clearing",
+          "level": "Caravan★2",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 4 Sulfur Crystals",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Sootstone Search",
+          "nameEn": "Sootstone Search",
+          "level": "Guild★2",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Deliver 3 Sootstone Ores",
+          "probability": 25,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Chip Off the Old Blockade",
+          "nameEn": "Chip Off the Old Blockade",
+          "level": "Caravan★2",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay 8 Konchu",
+          "probability": 20,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "따뜻한 모피",
+      "count": 2,
+      "nameJa": "暖かい毛皮",
+      "itemId": "item_mh4u_0356",
+      "mh4uId": 356,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Kelbi",
+          "navMonster": "",
+          "nameEn": "Kelbi",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 30% · ×1",
+            "Body Carve · 5% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Kelbi Cure-All",
+          "nameEn": "Kelbi Cure-All",
+          "level": "Caravan★2",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 3 Kelbi Horns",
+          "probability": 28,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "게리오스",
+        "navMonster": "게리오스"
+      },
+      {
+        "name": "Kelbi",
+        "navMonster": ""
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Crystal Clearing",
+        "nameJa": "",
+        "level": "Caravan★2",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 4 Sulfur Crystals",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Sootstone Search",
+        "nameJa": "",
+        "level": "Guild★2",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Deliver 3 Sootstone Ores",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Chip Off the Old Blockade",
+        "nameJa": "",
+        "level": "Caravan★2",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay 8 Konchu",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Kelbi Cure-All",
+        "nameJa": "",
+        "level": "Caravan★2",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 3 Kelbi Horns",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

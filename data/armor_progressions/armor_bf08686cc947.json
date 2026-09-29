@@ -1,0 +1,264 @@
+{
+  "materials": [
+    {
+      "name": "강철 중갑각",
+      "count": 6,
+      "nameJa": "鋼龍の重殻",
+      "itemId": "item_mh4u_0949",
+      "mh4uId": 949,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "크샬다오라",
+          "navMonster": "크샬다오라",
+          "nameEn": "Kushala Daora",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 51% · ×1",
+            "Break Head · 36% · ×1",
+            "Tail Carve · 24% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: A Storm of Steel",
+          "nameEn": "Advanced: A Storm of Steel",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Kushala Daora or repel it",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Operation Windbreaker",
+          "nameEn": "Operation Windbreaker",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Kushala Daora or repel it",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "강철의 두툼용비늘",
+      "count": 4,
+      "nameJa": "鋼の厚龍鱗",
+      "itemId": "item_mh4u_0947",
+      "mh4uId": 947,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "크샬다오라",
+          "navMonster": "크샬다오라",
+          "nameEn": "Kushala Daora",
+          "rank": "G급",
+          "methods": [
+            "Shiny Drop · 37% · ×1",
+            "Body Carve · 31% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: A Storm of Steel",
+          "nameEn": "Advanced: A Storm of Steel",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Kushala Daora or repel it",
+          "probability": 30,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Operation Windbreaker",
+          "nameEn": "Operation Windbreaker",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Kushala Daora or repel it",
+          "probability": 30,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "강룡 강발톱",
+      "count": 1,
+      "nameJa": "鋼龍の剛爪",
+      "itemId": "item_mh4u_0951",
+      "mh4uId": 951,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "크샬다오라",
+          "navMonster": "크샬다오라",
+          "nameEn": "Kushala Daora",
+          "rank": "G급",
+          "methods": [
+            "Break Wing · 35% · ×1",
+            "Body Carve · 12% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: A Storm of Steel",
+          "nameEn": "Advanced: A Storm of Steel",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Kushala Daora or repel it",
+          "probability": 15,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Operation Windbreaker",
+          "nameEn": "Operation Windbreaker",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Kushala Daora or repel it",
+          "probability": 15,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "노산룡 푸른큰발톱",
+          "requiredItemId": "item_mh4u_1205",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: Hell Hunter Hoax",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "멜랑제광석",
+      "count": 3,
+      "nameJa": "メランジェ鉱石",
+      "itemId": "item_4356e2f02662",
+      "mh4uId": 217,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "오나즈치",
+          "navMonster": "오나즈치",
+          "nameEn": "Chameleos",
+          "rank": "G급",
+          "methods": [
+            "Shiny Drop · 37% · ×1",
+            "Break Horn · 30% · ×1",
+            "Tail Carve · 17% · ×1",
+            "Body Carve · 15% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "다렌·모란",
+          "navMonster": "다렌·모란",
+          "nameEn": "Dah'ren Mohran",
+          "rank": "G급",
+          "methods": [
+            "Break Fin · 14% · ×1",
+            "Break Blowhole · 14% · ×1",
+            "Mining Back · 8% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "All-You-Can-Hunt Remobra",
+          "nameEn": "All-You-Can-Hunt Remobra",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay 15 Remobras",
+          "probability": 8,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Moving Mountains",
+          "nameEn": "Advanced: Moving Mountains",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay Dah'ren Mohran or repel it",
+          "probability": 6,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "크샬다오라",
+        "navMonster": "크샬다오라"
+      },
+      {
+        "name": "오나즈치",
+        "navMonster": "오나즈치"
+      },
+      {
+        "name": "다렌·모란",
+        "navMonster": "다렌·모란"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: A Storm of Steel",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Kushala Daora or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Operation Windbreaker",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Kushala Daora or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "All-You-Can-Hunt Remobra",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay 15 Remobras",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Moving Mountains",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay Dah'ren Mohran or repel it",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

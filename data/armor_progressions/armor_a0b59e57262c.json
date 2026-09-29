@@ -1,0 +1,319 @@
+{
+  "materials": [
+    {
+      "name": "백원호 지옥귀",
+      "count": 1,
+      "nameJa": "白猿狐の地獄耳",
+      "itemId": "item_mh4u_0487",
+      "mh4uId": 487,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "케차와차 아종",
+          "navMonster": "케차와차 아종",
+          "nameEn": "Ash Kecha Wacha",
+          "rank": "G급",
+          "methods": [
+            "Break Ear · 75% · ×1",
+            "Capture · 5% · ×1",
+            "Body Carve · 2% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "백원호 억센털+",
+      "count": 4,
+      "nameJa": "白猿狐の豪剛毛",
+      "itemId": "item_mh4u_0484",
+      "mh4uId": 484,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "케차와차 아종",
+          "navMonster": "케차와차 아종",
+          "nameEn": "Ash Kecha Wacha",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 45% · ×1",
+            "Break Tail · 40% · ×1",
+            "Shiny Drop · 35% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Beyond the Pale",
+          "nameEn": "Advanced: Beyond the Pale",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt an Ash Kecha Wacha",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Seeing Spots",
+          "nameEn": "Seeing Spots",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt an Ash Kecha Wacha",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Terrible Twins",
+          "nameEn": "Advanced: Terrible Twins",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Kecha Wacha and an Ash Kecha Wacha",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "중후한 뼈",
+      "count": 2,
+      "nameJa": "重厚な骨",
+      "itemId": "item_bf13a6bc33f0",
+      "mh4uId": 320,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "바바콩가",
+          "navMonster": "바바콩가",
+          "nameEn": "Congalala",
+          "rank": "G급",
+          "methods": [
+            "Capture · 25% · ×1",
+            "Body Carve · 15% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "바바콩가 아종",
+          "navMonster": "바바콩가 아종",
+          "nameEn": "Emerald Congalala",
+          "rank": "G급",
+          "methods": [
+            "Capture · 25% · ×4",
+            "Body Carve · 15% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "울크스스",
+          "navMonster": "울크스스",
+          "nameEn": "Lagombi",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 20% · ×1",
+            "Capture · 20% · ×2"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Bad Hair Rajang",
+          "nameEn": "Advanced: Bad Hair Rajang",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Rajang",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Ring Hollow",
+          "nameEn": "Ring Hollow",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Fur Fixation",
+          "nameEn": "Advanced: Fur Fixation",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Rajang",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "도스헤라클레스",
+      "count": 2,
+      "nameJa": "ドスヘラクレス",
+      "itemId": "item_f4a9500b933b",
+      "mh4uId": 266,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Arachnophobia",
+          "nameEn": "Arachnophobia",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Nerscylla",
+          "probability": 11,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hunt-a-thon: Kecha Wacha",
+          "nameEn": "Hunt-a-thon: Kecha Wacha",
+          "level": "Caravan★7",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt 2 Kecha Wacha before time expires or deliver a Paw Pass Ticket",
+          "probability": 11,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hunt-a-thon: Nerscylla",
+          "nameEn": "Hunt-a-thon: Nerscylla",
+          "level": "Caravan★7",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt 2 Nerscylla before time expires or deliver a Paw Pass Ticket",
+          "probability": 11,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "케차와차 아종",
+        "navMonster": "케차와차 아종"
+      },
+      {
+        "name": "바바콩가",
+        "navMonster": "바바콩가"
+      },
+      {
+        "name": "바바콩가 아종",
+        "navMonster": "바바콩가 아종"
+      },
+      {
+        "name": "울크스스",
+        "navMonster": "울크스스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: Beyond the Pale",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt an Ash Kecha Wacha",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Seeing Spots",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt an Ash Kecha Wacha",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Terrible Twins",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Kecha Wacha and an Ash Kecha Wacha",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Bad Hair Rajang",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Rajang",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Ring Hollow",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt all large monsters",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Fur Fixation",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Rajang",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Arachnophobia",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Nerscylla",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Hunt-a-thon: Kecha Wacha",
+        "nameJa": "",
+        "level": "Caravan★7",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt 2 Kecha Wacha before time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Hunt-a-thon: Nerscylla",
+        "nameJa": "",
+        "level": "Caravan★7",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt 2 Nerscylla before time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

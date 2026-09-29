@@ -1,0 +1,349 @@
+{
+  "materials": [
+    {
+      "name": "암룡 견갑각",
+      "count": 4,
+      "nameJa": "岩竜の堅殻",
+      "itemId": "item_mh4u_0794",
+      "mh4uId": 794,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "바살모스",
+          "navMonster": "바살모스",
+          "nameEn": "Basarios",
+          "rank": "상위",
+          "methods": [
+            "Tail Carve · 40% · ×1",
+            "Body Carve · 33% · ×1",
+            "Capture · 28% · ×1",
+            "Mining Back · 5% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "카브레라이트광석",
+      "count": 7,
+      "nameJa": "カブレライト鉱石",
+      "itemId": "item_6f1301567966",
+      "mh4uId": 213,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "바살모스 아종",
+          "navMonster": "바살모스 아종",
+          "nameEn": "Ruby Basarios",
+          "rank": "상위",
+          "methods": [
+            "Mining Ore · 50% · ×1",
+            "Tail Carve · 40% · ×1",
+            "Break Back · 40% · ×2",
+            "Capture · 36% · ×1",
+            "Break Belly · 30% · ×2",
+            "Body Carve · 25% · ×1",
+            "Mining Back · 25% · ×1",
+            "Break Belly · 25% · ×1",
+            "Shiny Drop · 20% · ×1",
+            "Tail Carve · 20% · ×1",
+            "Mining Ore · 20% · ×1",
+            "Capture · 14% · ×1",
+            "Mining Back · 10% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "게리오스",
+          "navMonster": "게리오스",
+          "nameEn": "Gypceros",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 43% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "바살모스",
+          "navMonster": "바살모스",
+          "nameEn": "Basarios",
+          "rank": "상위",
+          "methods": [
+            "Tail Carve · 40% · ×1",
+            "Break Back · 40% · ×2",
+            "Capture · 36% · ×1",
+            "Break Belly · 30% · ×2",
+            "Body Carve · 25% · ×1",
+            "Break Belly · 25% · ×1",
+            "Mining Back · 25% · ×1",
+            "Shiny Drop · 20% · ×1",
+            "Tail Carve · 20% · ×1",
+            "Capture · 14% · ×2",
+            "Mining Back · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Meteoric Prize",
+          "nameEn": "Meteoric Prize",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 1 Meteor Chunk",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Splendid Sootstone",
+          "nameEn": "Splendid Sootstone",
+          "level": "Guild★4",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Deliver 4 Sootstone Ores",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Take a Powderstone",
+          "nameEn": "Take a Powderstone",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 1 Powderstone",
+          "probability": 16,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "람포스 비늘+",
+      "count": 8,
+      "nameJa": "ドラグライト鉱石",
+      "itemId": "item_mh4u_0395",
+      "mh4uId": 395,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Velociprey",
+          "navMonster": "",
+          "nameEn": "Velociprey",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 40% · ×1",
+            "Body Carve · 25% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "도스람포스",
+          "navMonster": "도스람포스",
+          "nameEn": "Velocidrome",
+          "rank": "상위",
+          "methods": [
+            "Capture · 30% · ×2",
+            "Body Carve · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "The Hero & the Captain's Trap",
+          "nameEn": "The Hero & the Captain's Trap",
+          "level": "Caravan★7",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt 2 Velocidrome",
+          "probability": 20,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "드래그라이트광석",
+      "count": 3,
+      "nameJa": "ランポスの上鱗",
+      "itemId": "item_693fc7b0ed4b",
+      "mh4uId": 206,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "게리오스 아종",
+          "navMonster": "게리오스 아종",
+          "nameEn": "Purple Gypceros",
+          "rank": "상위",
+          "methods": [
+            "Break Head · 68% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "다렌·모란",
+          "navMonster": "다렌·모란",
+          "nameEn": "Dah'ren Mohran",
+          "rank": "하위",
+          "methods": [
+            "Mining Back · 54% · ×1",
+            "Break Fin · 20% · ×1",
+            "Break Blowhole · 20% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "게리오스",
+          "navMonster": "게리오스",
+          "nameEn": "Gypceros",
+          "rank": "상위",
+          "methods": [
+            "Break Head · 43% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Energy Crisis",
+          "nameEn": "Energy Crisis",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 5 Coals",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Stone-cold Stones",
+          "nameEn": "Stone-cold Stones",
+          "level": "Guild★2",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Deliver 8 Bloodstones",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Heat Exhaustion",
+          "nameEn": "Heat Exhaustion",
+          "level": "Guild★3",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Deliver 3 Powderstones",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "바살모스",
+        "navMonster": "바살모스"
+      },
+      {
+        "name": "바살모스 아종",
+        "navMonster": "바살모스 아종"
+      },
+      {
+        "name": "게리오스",
+        "navMonster": "게리오스"
+      },
+      {
+        "name": "Velociprey",
+        "navMonster": ""
+      },
+      {
+        "name": "도스람포스",
+        "navMonster": "도스람포스"
+      },
+      {
+        "name": "게리오스 아종",
+        "navMonster": "게리오스 아종"
+      },
+      {
+        "name": "다렌·모란",
+        "navMonster": "다렌·모란"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Meteoric Prize",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 1 Meteor Chunk",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Splendid Sootstone",
+        "nameJa": "",
+        "level": "Guild★4",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Deliver 4 Sootstone Ores",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Take a Powderstone",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 1 Powderstone",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "The Hero & the Captain's Trap",
+        "nameJa": "",
+        "level": "Caravan★7",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt 2 Velocidrome",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Energy Crisis",
+        "nameJa": "",
+        "level": "Caravan★5",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 5 Coals",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Stone-cold Stones",
+        "nameJa": "",
+        "level": "Guild★2",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Deliver 8 Bloodstones",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Heat Exhaustion",
+        "nameJa": "",
+        "level": "Guild★3",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Deliver 3 Powderstones",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

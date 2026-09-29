@@ -1,0 +1,370 @@
+{
+  "materials": [
+    {
+      "name": "호산룡 붉은비늘",
+      "count": 4,
+      "nameJa": "豪山龍の腕甲",
+      "itemId": "item_mh4u_0985",
+      "mh4uId": 985,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "다렌·모란",
+          "navMonster": "다렌·모란",
+          "nameEn": "Dah'ren Mohran",
+          "rank": "하위",
+          "methods": [
+            "Mouth Carve · 49% · ×1",
+            "Body Carve · 30% · ×1",
+            "Break Fin · 30% · ×1",
+            "Break Blowhole · 30% · ×1",
+            "Break Front Leg · 20% · ×1",
+            "Mouth Carve · 20% · ×1",
+            "Mining Back · 15% · ×1",
+            "Body Carve · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Shipping Out",
+          "nameEn": "Advanced: Shipping Out",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay Dah'ren Mohran or repel it",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Fleet Action",
+          "nameEn": "Advanced: Fleet Action",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay Dah'ren Mohran or repel it",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Sand Sailor",
+          "nameEn": "Advanced: Sand Sailor",
+          "level": "Guild★3",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Dah'ren Mohran or repel it",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "노산룡 갑각",
+          "requiredItemId": "item_mh4u_1117",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: Shipping Out",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "호산룡 완갑",
+      "count": 6,
+      "nameJa": "豪山龍の甲岩殻",
+      "itemId": "item_mh4u_0988",
+      "mh4uId": 988,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "다렌·모란",
+          "navMonster": "다렌·모란",
+          "nameEn": "Dah'ren Mohran",
+          "rank": "하위",
+          "methods": [
+            "Break Front Leg · 65% · ×1",
+            "Break Front Leg · 15% · ×2",
+            "Break Front Leg · 10% · ×2"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Shipping Out",
+          "nameEn": "Advanced: Shipping Out",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay Dah'ren Mohran or repel it",
+          "probability": 18,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Fleet Action",
+          "nameEn": "Advanced: Fleet Action",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay Dah'ren Mohran or repel it",
+          "probability": 18,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Sand Sailor",
+          "nameEn": "Advanced: Sand Sailor",
+          "level": "Guild★3",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Dah'ren Mohran or repel it",
+          "probability": 18,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "노산룡 큰발톱",
+          "requiredItemId": "item_mh4u_1118",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: Shipping Out",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "호산룡 갑암각",
+      "count": 2,
+      "nameJa": "豪山龍の紅鱗",
+      "itemId": "item_mh4u_0982",
+      "mh4uId": 982,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "다렌·모란",
+          "navMonster": "다렌·모란",
+          "nameEn": "Dah'ren Mohran",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 52% · ×1",
+            "Break Fin · 50% · ×1",
+            "Break Blowhole · 50% · ×1",
+            "Mining Back · 10% · ×1",
+            "Break Fin · 8% · ×1",
+            "Break Blowhole · 8% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Shipping Out",
+          "nameEn": "Advanced: Shipping Out",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay Dah'ren Mohran or repel it",
+          "probability": 24,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Fleet Action",
+          "nameEn": "Advanced: Fleet Action",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay Dah'ren Mohran or repel it",
+          "probability": 24,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Sand Sailor",
+          "nameEn": "Advanced: Sand Sailor",
+          "level": "Guild★3",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Dah'ren Mohran or repel it",
+          "probability": 24,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "화룡 역린",
+      "count": 1,
+      "nameJa": "火竜の逆鱗",
+      "itemId": "item_mh4u_0694",
+      "mh4uId": 694,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "리오레우스 희소종",
+          "navMonster": "리오레우스 희소종",
+          "nameEn": "Silver Rathalos",
+          "rank": "상위",
+          "methods": [
+            "Tail Carve · 12% · ×1",
+            "Break Head · 6% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "리오레우스",
+          "navMonster": "리오레우스",
+          "nameEn": "Rathalos",
+          "rank": "상위",
+          "methods": [
+            "Tail Carve · 10% · ×1",
+            "Break Head · 6% · ×1",
+            "Capture · 5% · ×1",
+            "Break Head · 4% · ×1",
+            "Tail Carve · 3% · ×1",
+            "Shiny Drop · 2% · ×1",
+            "Capture · 2% · ×1",
+            "Break Back · 1% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "리오레우스 아종",
+          "navMonster": "리오레우스 아종",
+          "nameEn": "Azure Rathalos",
+          "rank": "상위",
+          "methods": [
+            "Tail Carve · 10% · ×1",
+            "Break Head · 6% · ×1",
+            "Capture · 5% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Uncorner the Market",
+          "nameEn": "Uncorner the Market",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Rathalos and a Zinogre",
+          "probability": 1,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "King of the Skies",
+          "nameEn": "King of the Skies",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Rathalos",
+          "probability": 1,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Rathalos Renovation",
+          "nameEn": "Rathalos Renovation",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Capture a Rathalos",
+          "probability": 1,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "다렌·모란",
+        "navMonster": "다렌·모란"
+      },
+      {
+        "name": "리오레우스 희소종",
+        "navMonster": "리오레우스 희소종"
+      },
+      {
+        "name": "리오레우스",
+        "navMonster": "리오레우스"
+      },
+      {
+        "name": "리오레우스 아종",
+        "navMonster": "리오레우스 아종"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: Shipping Out",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay Dah'ren Mohran or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Fleet Action",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay Dah'ren Mohran or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Sand Sailor",
+        "nameJa": "",
+        "level": "Guild★3",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay Dah'ren Mohran or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Uncorner the Market",
+        "nameJa": "",
+        "level": "Caravan★5",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Rathalos and a Zinogre",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "King of the Skies",
+        "nameJa": "",
+        "level": "Caravan★5",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Rathalos",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Rathalos Renovation",
+        "nameJa": "",
+        "level": "Caravan★5",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Capture a Rathalos",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

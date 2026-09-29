@@ -1,0 +1,192 @@
+{
+  "materials": [
+    {
+      "name": "황흑룡 천린",
+      "count": 4,
+      "nameJa": "煌黒龍の天鱗",
+      "itemId": "item_mh4u_1211",
+      "mh4uId": 1211,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "사황룡 두툼철가죽",
+          "requiredItemId": "item_mh4u_1066",
+          "unlockQuestId": "quest_7b399259fc68",
+          "unlockQuest": "고난도: 불멸을 구가하는 황제",
+          "unlockLevel": "★3",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "황흑룡 흉조",
+      "count": 3,
+      "nameJa": "煌黒龍の凶爪",
+      "itemId": "item_mh4u_1212",
+      "mh4uId": 1212,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "사황룡 강고리발톱 패왕의 증표",
+          "requiredItemId": "",
+          "unlockQuestId": "quest_7b399259fc68",
+          "unlockQuest": "고난도: 불멸을 구가하는 황제",
+          "unlockLevel": "★3",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "해룡 푸른천린",
+      "count": 1,
+      "nameJa": "海竜の蒼天鱗",
+      "itemId": "item_mh4u_1188",
+      "mh4uId": 1188,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "화룡 천린",
+          "requiredItemId": "item_mh4u_0696",
+          "unlockQuestId": "quest_70d4ffe27b98",
+          "unlockQuest": "천궁의 호적수",
+          "unlockLevel": "★2",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "고룡의 대보옥",
+      "count": 1,
+      "nameJa": "古龍の大宝玉",
+      "itemId": "item_mh4u_0330",
+      "mh4uId": 330,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "크샬다오라",
+          "navMonster": "크샬다오라",
+          "nameEn": "Kushala Daora",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 4% · ×1",
+            "Shiny Drop · 3% · ×1",
+            "Body Carve · 2% · ×1",
+            "Tail Carve · 2% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "테오·테스카토르",
+          "navMonster": "테오·테스카토르",
+          "nameEn": "Teostra",
+          "rank": "G급",
+          "methods": [
+            "Shiny Drop · 4% · ×1",
+            "Tail Carve · 3% · ×1",
+            "Body Carve · 2% · ×1",
+            "Break Head · 2% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "녹슨크샬다오라",
+          "navMonster": "녹슨크샬다오라",
+          "nameEn": "Rusted Kushala Daora",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 3% · ×1",
+            "Break Head · 3% · ×1",
+            "Tail Carve · 2% · ×1",
+            "Shiny Drop · 2% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: A Formless Fiend",
+          "nameEn": "Advanced: A Formless Fiend",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Chameleos or repel it",
+          "probability": 5,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Misty Challenge",
+          "nameEn": "Advanced: Misty Challenge",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Chameleos or repel it",
+          "probability": 5,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: A Storm of Steel",
+          "nameEn": "Advanced: A Storm of Steel",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Kushala Daora or repel it",
+          "probability": 5,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "크샬다오라",
+        "navMonster": "크샬다오라"
+      },
+      {
+        "name": "테오·테스카토르",
+        "navMonster": "테오·테스카토르"
+      },
+      {
+        "name": "녹슨크샬다오라",
+        "navMonster": "녹슨크샬다오라"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: A Formless Fiend",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Chameleos or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Misty Challenge",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Chameleos or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: A Storm of Steel",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Kushala Daora or repel it",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

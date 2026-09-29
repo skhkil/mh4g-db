@@ -1,0 +1,261 @@
+{
+  "materials": [
+    {
+      "name": "강룡티켓",
+      "count": 2,
+      "nameJa": "鋼龍チケット",
+      "itemId": "item_353481446a3c",
+      "mh4uId": 1430,
+      "sources": [
+        {
+          "type": "acquire",
+          "label": "길드퀘스트 보수(달인급)"
+        }
+      ]
+    },
+    {
+      "name": "강룡 꼬리",
+      "count": 3,
+      "nameJa": "鋼龍の尻尾",
+      "itemId": "item_mh4u_0952",
+      "mh4uId": 952,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "크샬다오라",
+          "navMonster": "크샬다오라",
+          "nameEn": "Kushala Daora",
+          "rank": "상위",
+          "methods": [
+            "Tail Carve · 76% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "녹슨크샬다오라",
+          "navMonster": "녹슨크샬다오라",
+          "nameEn": "Rusted Kushala Daora",
+          "rank": "상위",
+          "methods": [
+            "Tail Carve · 76% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Stormy Knight",
+          "nameEn": "Advanced: Stormy Knight",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Kushala Daora or repel it",
+          "probability": 8,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "하룡 꼬리",
+          "requiredItemId": "item_mh4u_1141",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: Stormy Knight",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "은화룡 견갑각",
+      "count": 5,
+      "nameJa": "銀火竜の堅殻",
+      "itemId": "item_mh4u_0706",
+      "mh4uId": 706,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "리오레우스 희소종",
+          "navMonster": "리오레우스 희소종",
+          "nameEn": "Silver Rathalos",
+          "rank": "상위",
+          "methods": [
+            "Break Back · 69% · ×1",
+            "Capture · 40% · ×1",
+            "Body Carve · 30% · ×1",
+            "Break Head · 25% · ×1",
+            "Tail Carve · 8% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: King Slayer",
+          "nameEn": "Advanced: King Slayer",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 16,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Silver Sovereign",
+          "nameEn": "Silver Sovereign",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Silver Rathalos",
+          "probability": 11,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Ring of the Silver Sol",
+          "nameEn": "Ring of the Silver Sol",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Silver Rathalos",
+          "probability": 11,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "고룡골",
+      "count": 3,
+      "nameJa": "古龍骨",
+      "itemId": "item_19c5eaea3a54",
+      "mh4uId": 313,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Deep Trouble",
+          "nameEn": "Advanced: Deep Trouble",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay a Teostra or repel it",
+          "probability": 14,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Wicked Wings",
+          "nameEn": "Advanced: Wicked Wings",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay a Kushala Daora or repel it",
+          "probability": 14,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Teostra Tangle",
+          "nameEn": "Advanced: Teostra Tangle",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Teostra or repel it",
+          "probability": 14,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "크샬다오라",
+        "navMonster": "크샬다오라"
+      },
+      {
+        "name": "녹슨크샬다오라",
+        "navMonster": "녹슨크샬다오라"
+      },
+      {
+        "name": "리오레우스 희소종",
+        "navMonster": "리오레우스 희소종"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: Stormy Knight",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Kushala Daora or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: King Slayer",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt all large monsters",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Silver Sovereign",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Silver Rathalos",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Ring of the Silver Sol",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Silver Rathalos",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Deep Trouble",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay a Teostra or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Wicked Wings",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay a Kushala Daora or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Teostra Tangle",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Teostra or repel it",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

@@ -1,0 +1,304 @@
+{
+  "materials": [
+    {
+      "name": "구룡 가죽",
+      "count": 2,
+      "nameJa": "狗竜の皮",
+      "itemId": "item_mh4u_0388",
+      "mh4uId": 388,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "도스재기",
+          "navMonster": "도스재기",
+          "nameEn": "Great Jaggi",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 43% · ×1",
+            "Capture · 18% · ×1",
+            "Body Carve · 5% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Jaggi Alliance",
+          "nameEn": "Jaggi Alliance",
+          "level": "Caravan★2",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Great Jaggi",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Field Trip",
+          "nameEn": "Field Trip",
+          "level": "Guild★1",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Great Jaggi",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "청웅수 털",
+          "requiredItemId": "item_mh4u_1095",
+          "unlockQuestId": "",
+          "unlockQuest": "Swing into Action",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "우두머리의 목도리",
+      "count": 1,
+      "nameJa": "王者のエリマキ",
+      "itemId": "item_mh4u_0392",
+      "mh4uId": 392,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "도스재기",
+          "navMonster": "도스재기",
+          "nameEn": "Great Jaggi",
+          "rank": "상위",
+          "methods": [
+            "Break Head · 70% · ×1",
+            "Break Head · 65% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "재기 가죽",
+      "count": 3,
+      "nameJa": "ジャギィの皮",
+      "itemId": "item_mh4u_0385",
+      "mh4uId": 385,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Jaggia",
+          "navMonster": "",
+          "nameEn": "Jaggia",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 43% · ×1",
+            "Body Carve · 8% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "Jaggi",
+          "navMonster": "",
+          "nameEn": "Jaggi",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 29% · ×1",
+            "Body Carve · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Den Mothers",
+          "nameEn": "Den Mothers",
+          "level": "Caravan★2",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay 5 Jaggia",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Lair Scare",
+          "nameEn": "Lair Scare",
+          "level": "Caravan★2",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay 8 Jaggi",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "A Winning Combination",
+          "nameEn": "A Winning Combination",
+          "level": "Caravan★1",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 1 Mega Potion",
+          "probability": 15,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "대지의 결정",
+      "count": 1,
+      "nameJa": "大地の結晶",
+      "itemId": "item_829d3591a0d0",
+      "mh4uId": 204,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "바살모스",
+          "navMonster": "바살모스",
+          "nameEn": "Basarios",
+          "rank": "하위",
+          "methods": [
+            "Mining Back · 60% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Crystal Clearing",
+          "nameEn": "Crystal Clearing",
+          "level": "Caravan★2",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 4 Sulfur Crystals",
+          "probability": 20,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Sootstone Search",
+          "nameEn": "Sootstone Search",
+          "level": "Guild★2",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Deliver 3 Sootstone Ores",
+          "probability": 20,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Heat Exhaustion",
+          "nameEn": "Heat Exhaustion",
+          "level": "Guild★3",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Deliver 3 Powderstones",
+          "probability": 20,
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "도스재기",
+        "navMonster": "도스재기"
+      },
+      {
+        "name": "Jaggia",
+        "navMonster": ""
+      },
+      {
+        "name": "Jaggi",
+        "navMonster": ""
+      },
+      {
+        "name": "바살모스",
+        "navMonster": "바살모스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Jaggi Alliance",
+        "nameJa": "",
+        "level": "Caravan★2",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Great Jaggi",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Field Trip",
+        "nameJa": "",
+        "level": "Guild★1",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Great Jaggi",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Den Mothers",
+        "nameJa": "",
+        "level": "Caravan★2",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay 5 Jaggia",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Lair Scare",
+        "nameJa": "",
+        "level": "Caravan★2",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay 8 Jaggi",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "A Winning Combination",
+        "nameJa": "",
+        "level": "Caravan★1",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 1 Mega Potion",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Crystal Clearing",
+        "nameJa": "",
+        "level": "Caravan★2",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 4 Sulfur Crystals",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Sootstone Search",
+        "nameJa": "",
+        "level": "Guild★2",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Deliver 3 Sootstone Ores",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Heat Exhaustion",
+        "nameJa": "",
+        "level": "Guild★3",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Deliver 3 Powderstones",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

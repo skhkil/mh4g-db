@@ -1,0 +1,323 @@
+{
+  "materials": [
+    {
+      "name": "교사룡 중갑각",
+      "count": 5,
+      "nameJa": "絞蛇竜の重殻",
+      "itemId": "item_mh4u_0569",
+      "mh4uId": 569,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "가라라아자라",
+          "navMonster": "가라라아자라",
+          "nameEn": "Najarala",
+          "rank": "G급",
+          "methods": [
+            "Break Back Leg · 50% · ×1",
+            "Body Carve · 45% · ×1",
+            "Break Back · 36% · ×1",
+            "Capture · 28% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Serpentine Samba",
+          "nameEn": "Serpentine Samba",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Najarala",
+          "probability": 28,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Frenzied Trading",
+          "nameEn": "Advanced: Frenzied Trading",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 13,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "교사룡 견갑각",
+      "count": 6,
+      "nameJa": "絞蛇竜の堅殻",
+      "itemId": "item_mh4u_0568",
+      "mh4uId": 568,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "가라라아자라",
+          "navMonster": "가라라아자라",
+          "nameEn": "Najarala",
+          "rank": "상위",
+          "methods": [
+            "Break Back Leg · 50% · ×1",
+            "Body Carve · 45% · ×1",
+            "Break Back · 36% · ×1",
+            "Capture · 24% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Fear Factor",
+          "nameEn": "Fear Factor",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Najarala",
+          "probability": 26,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hunt-a-thon: Najarala",
+          "nameEn": "Hunt-a-thon: Najarala",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt 2 Najarala before time expires or deliver a Paw Pass Ticket",
+          "probability": 26,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Writer's Block",
+          "nameEn": "Writer's Block",
+          "level": "Guild★5",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Najarala and a Rathian",
+          "probability": 26,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "교사룡 연수",
+      "count": 2,
+      "nameJa": "絞蛇竜の延髄",
+      "itemId": "item_mh4u_0574",
+      "mh4uId": 574,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "가라라아자라",
+          "navMonster": "가라라아자라",
+          "nameEn": "Najarala",
+          "rank": "G급",
+          "methods": [
+            "Capture · 10% · ×1",
+            "Capture · 8% · ×1",
+            "Shiny Drop · 5% · ×1",
+            "Break Tail · 5% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Fear Factor",
+          "nameEn": "Fear Factor",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Najarala",
+          "probability": 8,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hunt-a-thon: Najarala",
+          "nameEn": "Hunt-a-thon: Najarala",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt 2 Najarala before time expires or deliver a Paw Pass Ticket",
+          "probability": 8,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Writer's Block",
+          "nameEn": "Writer's Block",
+          "level": "Guild★5",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Najarala and a Rathian",
+          "probability": 8,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "견고한 조룡골",
+      "count": 3,
+      "nameJa": "堅牢な鳥竜骨",
+      "itemId": "item_4a7a3d81c377",
+      "mh4uId": 316,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Jaggi",
+          "navMonster": "",
+          "nameEn": "Jaggi",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 50% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "Velociprey",
+          "navMonster": "",
+          "nameEn": "Velociprey",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 45% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "Genprey",
+          "navMonster": "",
+          "nameEn": "Genprey",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 45% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Lumber Support",
+          "nameEn": "Lumber Support",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Kecha Wacha",
+          "probability": 21,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Mountain Rescue",
+          "nameEn": "Mountain Rescue",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Stygian Zinogre",
+          "probability": 21,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "가라라아자라",
+        "navMonster": "가라라아자라"
+      },
+      {
+        "name": "Jaggi",
+        "navMonster": ""
+      },
+      {
+        "name": "Velociprey",
+        "navMonster": ""
+      },
+      {
+        "name": "Genprey",
+        "navMonster": ""
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Serpentine Samba",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Najarala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Frenzied Trading",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt all large monsters",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Fear Factor",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Najarala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Hunt-a-thon: Najarala",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt 2 Najarala before time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Writer's Block",
+        "nameJa": "",
+        "level": "Guild★5",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Najarala and a Rathian",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Lumber Support",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Kecha Wacha",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Mountain Rescue",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Stygian Zinogre",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

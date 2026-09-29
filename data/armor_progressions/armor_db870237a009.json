@@ -1,0 +1,279 @@
+{
+  "materials": [
+    {
+      "name": "등어룡 두툼가죽",
+      "count": 2,
+      "nameJa": "灯魚竜の厚皮",
+      "itemId": "item_mh4u_1162",
+      "mh4uId": 1162,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "사토룡 보라비늘",
+          "requiredItemId": "item_mh4u_0645",
+          "unlockQuestId": "quest_b93ea51259c1",
+          "unlockQuest": "고난도: 수컷 벌레, 총집합!",
+          "unlockLevel": "★1",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "괴상어 강칼꼬리",
+      "count": 1,
+      "nameJa": "化け鮫の剛刃尾",
+      "itemId": "item_mh4u_0561",
+      "mh4uId": 561,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "자보아자길",
+          "navMonster": "자보아자길",
+          "nameEn": "Zamtrios",
+          "rank": "G급",
+          "methods": [
+            "Break Tail · 65% · ×1",
+            "Body Carve · 8% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "개구리기름++",
+      "count": 3,
+      "nameJa": "カワズの大殿油",
+      "itemId": "item_mh4u_0544",
+      "mh4uId": 544,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "테츠카브라",
+          "navMonster": "테츠카브라",
+          "nameEn": "Tetsucabra",
+          "rank": "G급",
+          "methods": [
+            "Shiny Drop · 35% · ×1",
+            "Capture · 20% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "테츠카브라 아종",
+          "navMonster": "테츠카브라 아종",
+          "nameEn": "Berserk Tetsucabra",
+          "rank": "G급",
+          "methods": [
+            "Shiny Drop · 35% · ×1",
+            "Capture · 20% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "자보아자길",
+          "navMonster": "자보아자길",
+          "nameEn": "Zamtrios",
+          "rank": "G급",
+          "methods": [
+            "Shiny Drop · 10% · ×1",
+            "Capture · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Chasing Tail",
+          "nameEn": "Chasing Tail",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt 2 Tetsucabras",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Berserker Rage",
+          "nameEn": "Berserker Rage",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Berserk Tetsucabra",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Hollow Hysterics",
+          "nameEn": "Advanced: Hollow Hysterics",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Nerscylla and a Tetsucabra",
+          "probability": 12,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "환조룡옥",
+      "count": 1,
+      "nameJa": "幻鳥竜玉",
+      "itemId": "item_mh4u_0326",
+      "mh4uId": 326,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "도스람포스",
+          "navMonster": "도스람포스",
+          "nameEn": "Velocidrome",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 10% · ×1",
+            "Body Carve · 5% · ×1",
+            "Capture · 3% · ×1",
+            "Shiny Drop · 2% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "도스이오스",
+          "navMonster": "도스이오스",
+          "nameEn": "Iodrome",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 10% · ×1",
+            "Body Carve · 5% · ×1",
+            "Shiny Drop · 5% · ×1",
+            "Capture · 3% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Bad Hair Day: Iodrome",
+          "nameEn": "Bad Hair Day: Iodrome",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt 2 Iodrome",
+          "probability": 5,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Harvest Tour: Primal Forest",
+          "nameEn": "Harvest Tour: Primal Forest",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+          "probability": 5,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Frenzied Trading",
+          "nameEn": "Advanced: Frenzied Trading",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 5,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "자보아자길",
+        "navMonster": "자보아자길"
+      },
+      {
+        "name": "테츠카브라",
+        "navMonster": "테츠카브라"
+      },
+      {
+        "name": "테츠카브라 아종",
+        "navMonster": "테츠카브라 아종"
+      },
+      {
+        "name": "도스람포스",
+        "navMonster": "도스람포스"
+      },
+      {
+        "name": "도스이오스",
+        "navMonster": "도스이오스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Chasing Tail",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt 2 Tetsucabras",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Berserker Rage",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Berserk Tetsucabra",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Hollow Hysterics",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Nerscylla and a Tetsucabra",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Bad Hair Day: Iodrome",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt 2 Iodrome",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Harvest Tour: Primal Forest",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Frenzied Trading",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt all large monsters",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

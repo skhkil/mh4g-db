@@ -1,0 +1,260 @@
+{
+  "materials": [
+    {
+      "name": "흑룡 붉은비늘",
+      "count": 6,
+      "nameJa": "黒龍の紅鱗",
+      "itemId": "item_mh4u_1033",
+      "mh4uId": 1033,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "밀라보레아스 (홍염룡)",
+          "navMonster": "밀라보레아스 (홍염룡)",
+          "nameEn": "Crimson Fatalis",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 0% · ×1",
+            "Break Chest · 0% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Red Dragon's Dawn",
+          "nameEn": "Advanced: Red Dragon's Dawn",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay a Fatalis or repel it",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "흑룡 붉은갑각",
+      "count": 6,
+      "nameJa": "黒龍の紅殻",
+      "itemId": "item_mh4u_1034",
+      "mh4uId": 1034,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "밀라보레아스 (홍염룡)",
+          "navMonster": "밀라보레아스 (홍염룡)",
+          "nameEn": "Crimson Fatalis",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 0% · ×1",
+            "Break Chest · 0% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Red Dragon's Dawn",
+          "nameEn": "Advanced: Red Dragon's Dawn",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay a Fatalis or repel it",
+          "probability": 35,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "흑룡 붉은날개",
+      "count": 2,
+      "nameJa": "黒龍の紅翼",
+      "itemId": "item_mh4u_1036",
+      "mh4uId": 1036,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "밀라보레아스 (홍염룡)",
+          "navMonster": "밀라보레아스 (홍염룡)",
+          "nameEn": "Crimson Fatalis",
+          "rank": "상위",
+          "methods": [
+            "Break Wing · 0% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Red Dragon's Dawn",
+          "nameEn": "Advanced: Red Dragon's Dawn",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay a Fatalis or repel it",
+          "probability": 12,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "공폭룡 보옥",
+      "count": 1,
+      "nameJa": "恐暴竜の宝玉",
+      "itemId": "item_mh4u_0930",
+      "mh4uId": 930,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "이블조",
+          "navMonster": "이블조",
+          "nameEn": "Deviljho",
+          "rank": "G급",
+          "methods": [
+            "Capture · 6% · ×1",
+            "Tail Carve · 5% · ×1",
+            "Capture · 4% · ×1",
+            "Body Carve · 4% · ×1",
+            "Tail Carve · 3% · ×1",
+            "Shiny Drop · 3% · ×1",
+            "Body Carve · 2% · ×1",
+            "Shiny Drop · 1% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "극한상태 이블조",
+          "navMonster": "이블조",
+          "nameEn": "Apex Deviljho",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 6% · ×1",
+            "Tail Carve · 5% · ×1",
+            "Shiny Drop · 5% · ×1",
+            "Capture · 4% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "광폭 이블조",
+          "navMonster": "광폭 이블조",
+          "nameEn": "Savage Deviljho",
+          "rank": "상위",
+          "methods": [
+            "Capture · 5% · ×1",
+            "Tail Carve · 4% · ×1",
+            "Body Carve · 3% · ×1",
+            "Shiny Drop · 2% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Devil at Heaven's Gate",
+          "nameEn": "Devil at Heaven's Gate",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Deviljho",
+          "probability": 6,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: The Master's Test",
+          "nameEn": "Advanced: The Master's Test",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 6,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Tyrant's Maw",
+          "nameEn": "Advanced: Tyrant's Maw",
+          "level": "Caravan★9",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Deviljho",
+          "probability": 5,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "신비의 발광체",
+          "requiredItemId": "item_mh4u_1153",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: Naked and Afraid",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "밀라보레아스 (홍염룡)",
+        "navMonster": "밀라보레아스 (홍염룡)"
+      },
+      {
+        "name": "이블조",
+        "navMonster": "이블조"
+      },
+      {
+        "name": "극한상태 이블조",
+        "navMonster": "이블조"
+      },
+      {
+        "name": "광폭 이블조",
+        "navMonster": "광폭 이블조"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: Red Dragon's Dawn",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay a Fatalis or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Devil at Heaven's Gate",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Deviljho",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: The Master's Test",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt all large monsters",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Tyrant's Maw",
+        "nameJa": "",
+        "level": "Caravan★9",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Deviljho",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

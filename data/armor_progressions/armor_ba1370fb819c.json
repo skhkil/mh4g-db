@@ -1,0 +1,230 @@
+{
+  "materials": [
+    {
+      "name": "키린 가죽++",
+      "count": 5,
+      "nameJa": "キリンの特上皮",
+      "itemId": "item_mh4u_0935",
+      "mh4uId": 935,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "키린",
+          "navMonster": "키린",
+          "nameEn": "Kirin",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 70% · ×1",
+            "Shiny Drop · 20% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "키린 아종",
+          "navMonster": "키린 아종",
+          "nameEn": "Oroshi Kirin",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 70% · ×1",
+            "Shiny Drop · 20% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "키린 가죽+",
+      "count": 3,
+      "nameJa": "キリンの上皮",
+      "itemId": "item_mh4u_0934",
+      "mh4uId": 934,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "키린",
+          "navMonster": "키린",
+          "nameEn": "Kirin",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 70% · ×1",
+            "Shiny Drop · 20% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "키린 아종",
+          "navMonster": "키린 아종",
+          "nameEn": "Oroshi Kirin",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 70% · ×1",
+            "Shiny Drop · 20% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: A Hero's Icy Test",
+          "nameEn": "Advanced: A Hero's Icy Test",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay an Oroshi Kirin",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "키린 강푸른뿔",
+      "count": 2,
+      "nameJa": "キリンの剛蒼角",
+      "itemId": "item_mh4u_0941",
+      "mh4uId": 941,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "키린",
+          "navMonster": "키린",
+          "nameEn": "Kirin",
+          "rank": "G급",
+          "methods": [
+            "Break Horn · 80% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "뇌전주머니",
+      "count": 3,
+      "nameJa": "雷電袋",
+      "itemId": "item_mh4u_0344",
+      "mh4uId": 344,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "푸루푸루",
+          "navMonster": "푸루푸루",
+          "nameEn": "Khezu",
+          "rank": "G급",
+          "methods": [
+            "Break Body · 30% · ×1",
+            "Capture · 20% · ×2",
+            "Body Carve · 15% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "푸루푸루 아종",
+          "navMonster": "푸루푸루 아종",
+          "nameEn": "Red Khezu",
+          "rank": "G급",
+          "methods": [
+            "Break Body · 30% · ×1",
+            "Capture · 20% · ×2",
+            "Body Carve · 15% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Icy Shadow",
+          "nameEn": "Icy Shadow",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Khezu",
+          "probability": 20,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Harvest Tour: Frozen Seaway",
+          "nameEn": "Harvest Tour: Frozen Seaway",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+          "probability": 20,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hunter In Green and Red",
+          "nameEn": "Hunter In Green and Red",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Rathian and a Red Khezu",
+          "probability": 20,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "키린",
+        "navMonster": "키린"
+      },
+      {
+        "name": "키린 아종",
+        "navMonster": "키린 아종"
+      },
+      {
+        "name": "푸루푸루",
+        "navMonster": "푸루푸루"
+      },
+      {
+        "name": "푸루푸루 아종",
+        "navMonster": "푸루푸루 아종"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: A Hero's Icy Test",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay an Oroshi Kirin",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Icy Shadow",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Khezu",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Harvest Tour: Frozen Seaway",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Hunter In Green and Red",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Rathian and a Red Khezu",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

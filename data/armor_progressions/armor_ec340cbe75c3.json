@@ -1,0 +1,305 @@
+{
+  "materials": [
+    {
+      "name": "흑식룡티켓",
+      "count": 1,
+      "nameJa": "黒蝕竜チケット",
+      "itemId": "item_mh4u_1408",
+      "mh4uId": 1408,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "event-high-025",
+          "name": "시간을 넘어",
+          "nameEn": "Out of Time",
+          "level": "★7",
+          "questType": "event",
+          "location": "금지된 땅",
+          "objective": "고어·마가라 1마리와 샤가르마가라 1마리 수렵",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "흑식룡 견갑각",
+      "count": 5,
+      "nameJa": "黒蝕竜の堅殻",
+      "itemId": "item_mh4u_0858",
+      "mh4uId": 858,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "고어·마가라",
+          "navMonster": "고어·마가라",
+          "nameEn": "Gore Magala",
+          "rank": "상위",
+          "methods": [
+            "Capture · 37% · ×1",
+            "Body Carve · 29% · ×1",
+            "Break Head · 23% · ×2"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Crazy Stupid Love",
+          "nameEn": "Crazy Stupid Love",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt Gore Magala",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Dread Locked",
+          "nameEn": "Dread Locked",
+          "level": "Guild★5",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt Gore Magala",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Primal Forest M.I.A.",
+          "nameEn": "Primal Forest M.I.A.",
+          "level": "Guild★5",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 14,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "천회룡 광옥",
+      "count": 2,
+      "nameJa": "天廻龍の光玉",
+      "itemId": "item_mh4u_0894",
+      "mh4uId": 894,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "샤가르마가라",
+          "navMonster": "샤가르마가라",
+          "nameEn": "Shagaru Magala",
+          "rank": "G급",
+          "methods": [
+            "Tail Carve · 5% · ×1",
+            "Break Horn · 5% · ×1",
+            "Body Carve · 4% · ×1",
+            "Tail Carve · 3% · ×1",
+            "Break Horn · 3% · ×1",
+            "Shiny Drop · 3% · ×1",
+            "Body Carve · 2% · ×1",
+            "Shiny Drop · 2% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Wheel of Time",
+          "nameEn": "Advanced: Wheel of Time",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Shagaru Magala",
+          "probability": 5,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "The Caravaneer's Challenge",
+          "nameEn": "The Caravaneer's Challenge",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 3,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Stop the Wheel",
+          "nameEn": "Advanced: Stop the Wheel",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Shagaru Magala",
+          "probability": 1,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "길드티켓G",
+      "count": 1,
+      "nameJa": "ギルドチケットＧ",
+      "itemId": "item_2b159c1d18ff",
+      "mh4uId": 1441,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "event-high-031",
+          "name": "흑룡의 귀환",
+          "nameEn": "Return of the Dragon",
+          "level": "★7",
+          "questType": "event",
+          "location": "슈레이더성",
+          "objective": "밀라보레아스 토벌 또는 격퇴",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "event-high-028",
+          "name": "티가렉스의 눈",
+          "nameEn": "Eye of the Tigrex",
+          "level": "★7",
+          "questType": "event",
+          "location": "탑 꼭대기",
+          "objective": "티가렉스 희소종 1마리 수렵",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "event-high-023",
+          "name": "홍룡 강림",
+          "nameEn": "Enter the Red Dragon",
+          "level": "★7",
+          "questType": "event",
+          "location": "용암섬",
+          "objective": "홍룡 밀라보레아스 토벌 또는 격퇴",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "고어·마가라",
+        "navMonster": "고어·마가라"
+      },
+      {
+        "name": "샤가르마가라",
+        "navMonster": "샤가르마가라"
+      }
+    ],
+    "quests": [
+      {
+        "id": "event-high-025",
+        "name": "시간을 넘어",
+        "nameJa": "",
+        "level": "★7",
+        "questType": "event",
+        "location": "금지된 땅",
+        "objective": "고어·마가라 1마리와 샤가르마가라 1마리 수렵",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Crazy Stupid Love",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt Gore Magala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Dread Locked",
+        "nameJa": "",
+        "level": "Guild★5",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt Gore Magala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Primal Forest M.I.A.",
+        "nameJa": "",
+        "level": "Guild★5",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt all large monsters",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Wheel of Time",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay Shagaru Magala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "The Caravaneer's Challenge",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt all large monsters",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Stop the Wheel",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay Shagaru Magala",
+        "note": ""
+      },
+      {
+        "id": "event-high-031",
+        "name": "흑룡의 귀환",
+        "nameJa": "",
+        "level": "★7",
+        "questType": "event",
+        "location": "슈레이더성",
+        "objective": "밀라보레아스 토벌 또는 격퇴",
+        "note": ""
+      },
+      {
+        "id": "event-high-028",
+        "name": "티가렉스의 눈",
+        "nameJa": "",
+        "level": "★7",
+        "questType": "event",
+        "location": "탑 꼭대기",
+        "objective": "티가렉스 희소종 1마리 수렵",
+        "note": ""
+      },
+      {
+        "id": "event-high-023",
+        "name": "홍룡 강림",
+        "nameJa": "",
+        "level": "★7",
+        "questType": "event",
+        "location": "용암섬",
+        "objective": "홍룡 밀라보레아스 토벌 또는 격퇴",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

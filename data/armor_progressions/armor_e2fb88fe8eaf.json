@@ -1,0 +1,260 @@
+{
+  "materials": [
+    {
+      "name": "해면질 가죽",
+      "count": 3,
+      "nameJa": "海綿質の皮",
+      "itemId": "item_mh4u_1097",
+      "mh4uId": 1097,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "도스람포스 가죽",
+          "requiredItemId": "item_mh4u_0398",
+          "unlockQuestId": "quest_e7f591833ab9",
+          "unlockQuest": "못된 악동 기원호를 수렵하라",
+          "unlockLevel": "★3",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "람포스 가죽",
+      "count": 3,
+      "nameJa": "ランポスの皮",
+      "itemId": "item_mh4u_0396",
+      "mh4uId": 396,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Velociprey",
+          "navMonster": "",
+          "nameEn": "Velociprey",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 23% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "용골【소】",
+      "count": 2,
+      "nameJa": "竜骨【小】",
+      "itemId": "item_4920157876c8",
+      "mh4uId": 304,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Apceros",
+          "navMonster": "",
+          "nameEn": "Apceros",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 40% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "Aptonoth",
+          "navMonster": "",
+          "nameEn": "Aptonoth",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 25% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "Gargwa",
+          "navMonster": "",
+          "nameEn": "Gargwa",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 15% · ×1",
+            "Body Carve · 5% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Midnight Madness",
+          "nameEn": "Midnight Madness",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Tigrex",
+          "probability": 32,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "The Gypceros Project",
+          "nameEn": "The Gypceros Project",
+          "level": "Guild★1",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Capture a Gypceros",
+          "probability": 30,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Operation Catch-a-Kecha",
+          "nameEn": "Operation Catch-a-Kecha",
+          "level": "Guild★1",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Capture a Kecha Wacha",
+          "probability": 30,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "대지의 결정",
+      "count": 3,
+      "nameJa": "大地の結晶",
+      "itemId": "item_829d3591a0d0",
+      "mh4uId": 204,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "바살모스",
+          "navMonster": "바살모스",
+          "nameEn": "Basarios",
+          "rank": "하위",
+          "methods": [
+            "Mining Back · 60% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Crystal Clearing",
+          "nameEn": "Crystal Clearing",
+          "level": "Caravan★2",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 4 Sulfur Crystals",
+          "probability": 20,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Sootstone Search",
+          "nameEn": "Sootstone Search",
+          "level": "Guild★2",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Deliver 3 Sootstone Ores",
+          "probability": 20,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Heat Exhaustion",
+          "nameEn": "Heat Exhaustion",
+          "level": "Guild★3",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Deliver 3 Powderstones",
+          "probability": 20,
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "Velociprey",
+        "navMonster": ""
+      },
+      {
+        "name": "Apceros",
+        "navMonster": ""
+      },
+      {
+        "name": "Aptonoth",
+        "navMonster": ""
+      },
+      {
+        "name": "Gargwa",
+        "navMonster": ""
+      },
+      {
+        "name": "바살모스",
+        "navMonster": "바살모스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Midnight Madness",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Tigrex",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "The Gypceros Project",
+        "nameJa": "",
+        "level": "Guild★1",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Capture a Gypceros",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Operation Catch-a-Kecha",
+        "nameJa": "",
+        "level": "Guild★1",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Capture a Kecha Wacha",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Crystal Clearing",
+        "nameJa": "",
+        "level": "Caravan★2",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 4 Sulfur Crystals",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Sootstone Search",
+        "nameJa": "",
+        "level": "Guild★2",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Deliver 3 Sootstone Ores",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Heat Exhaustion",
+        "nameJa": "",
+        "level": "Guild★3",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Deliver 3 Powderstones",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

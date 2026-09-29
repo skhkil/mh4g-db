@@ -1,0 +1,424 @@
+{
+  "materials": [
+    {
+      "name": "재기 가죽",
+      "count": 4,
+      "nameJa": "ジャギィの皮",
+      "itemId": "item_mh4u_0385",
+      "mh4uId": 385,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Jaggia",
+          "navMonster": "",
+          "nameEn": "Jaggia",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 43% · ×1",
+            "Body Carve · 8% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "Jaggi",
+          "navMonster": "",
+          "nameEn": "Jaggi",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 29% · ×1",
+            "Body Carve · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Den Mothers",
+          "nameEn": "Den Mothers",
+          "level": "Caravan★2",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay 5 Jaggia",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Lair Scare",
+          "nameEn": "Lair Scare",
+          "level": "Caravan★2",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay 8 Jaggi",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "A Winning Combination",
+          "nameEn": "A Winning Combination",
+          "level": "Caravan★1",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 1 Mega Potion",
+          "probability": 15,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "재기 비늘",
+      "count": 3,
+      "nameJa": "ジャギィの鱗",
+      "itemId": "item_mh4u_0383",
+      "mh4uId": 383,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Jaggia",
+          "navMonster": "",
+          "nameEn": "Jaggia",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 30% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "도스재기",
+          "navMonster": "도스재기",
+          "nameEn": "Great Jaggi",
+          "rank": "하위",
+          "methods": [
+            "Shiny Drop · 25% · ×1",
+            "Body Carve · 8% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "Jaggi",
+          "navMonster": "",
+          "nameEn": "Jaggi",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 23% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "A Winning Combination",
+          "nameEn": "A Winning Combination",
+          "level": "Caravan★1",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 1 Mega Potion",
+          "probability": 16,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Den Mothers",
+          "nameEn": "Den Mothers",
+          "level": "Caravan★2",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay 5 Jaggia",
+          "probability": 16,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Lair Scare",
+          "nameEn": "Lair Scare",
+          "level": "Caravan★2",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay 8 Jaggi",
+          "probability": 16,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "용골【소】",
+      "count": 4,
+      "nameJa": "竜骨【小】",
+      "itemId": "item_4920157876c8",
+      "mh4uId": 304,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Apceros",
+          "navMonster": "",
+          "nameEn": "Apceros",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 40% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "Aptonoth",
+          "navMonster": "",
+          "nameEn": "Aptonoth",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 25% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "Gargwa",
+          "navMonster": "",
+          "nameEn": "Gargwa",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 15% · ×1",
+            "Body Carve · 5% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Midnight Madness",
+          "nameEn": "Midnight Madness",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Tigrex",
+          "probability": 32,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "The Gypceros Project",
+          "nameEn": "The Gypceros Project",
+          "level": "Guild★1",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Capture a Gypceros",
+          "probability": 30,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Operation Catch-a-Kecha",
+          "nameEn": "Operation Catch-a-Kecha",
+          "level": "Guild★1",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Capture a Kecha Wacha",
+          "probability": 30,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "마카라이트광석",
+      "count": 2,
+      "nameJa": "マカライト鉱石",
+      "itemId": "item_8f142f2db297",
+      "mh4uId": 205,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "바살모스",
+          "navMonster": "바살모스",
+          "nameEn": "Basarios",
+          "rank": "하위",
+          "methods": [
+            "Capture · 59% · ×2",
+            "Tail Carve · 55% · ×1",
+            "Break Belly · 55% · ×1",
+            "Break Back · 50% · ×3",
+            "Mining Back · 35% · ×1",
+            "Body Carve · 25% · ×1",
+            "Shiny Drop · 20% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "바바콩가",
+          "navMonster": "바바콩가",
+          "nameEn": "Congalala",
+          "rank": "하위",
+          "methods": [
+            "Shiny Drop (Ore) · 39% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Crystal Bone Collector",
+          "nameEn": "Crystal Bone Collector",
+          "level": "Caravan★3",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 5 Crystal Bones",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Sootstone Search",
+          "nameEn": "Sootstone Search",
+          "level": "Guild★2",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Deliver 3 Sootstone Ores",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Crystal Clearing",
+          "nameEn": "Crystal Clearing",
+          "level": "Caravan★2",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 4 Sulfur Crystals",
+          "probability": 20,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "Jaggia",
+        "navMonster": ""
+      },
+      {
+        "name": "Jaggi",
+        "navMonster": ""
+      },
+      {
+        "name": "도스재기",
+        "navMonster": "도스재기"
+      },
+      {
+        "name": "Apceros",
+        "navMonster": ""
+      },
+      {
+        "name": "Aptonoth",
+        "navMonster": ""
+      },
+      {
+        "name": "Gargwa",
+        "navMonster": ""
+      },
+      {
+        "name": "바살모스",
+        "navMonster": "바살모스"
+      },
+      {
+        "name": "바바콩가",
+        "navMonster": "바바콩가"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Den Mothers",
+        "nameJa": "",
+        "level": "Caravan★2",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay 5 Jaggia",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Lair Scare",
+        "nameJa": "",
+        "level": "Caravan★2",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay 8 Jaggi",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "A Winning Combination",
+        "nameJa": "",
+        "level": "Caravan★1",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 1 Mega Potion",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Midnight Madness",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Tigrex",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "The Gypceros Project",
+        "nameJa": "",
+        "level": "Guild★1",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Capture a Gypceros",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Operation Catch-a-Kecha",
+        "nameJa": "",
+        "level": "Guild★1",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Capture a Kecha Wacha",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Crystal Bone Collector",
+        "nameJa": "",
+        "level": "Caravan★3",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 5 Crystal Bones",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Sootstone Search",
+        "nameJa": "",
+        "level": "Guild★2",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Deliver 3 Sootstone Ores",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Crystal Clearing",
+        "nameJa": "",
+        "level": "Caravan★2",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 4 Sulfur Crystals",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

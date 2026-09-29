@@ -1,0 +1,330 @@
+{
+  "materials": [
+    {
+      "name": "흑굉룡 비늘+",
+      "count": 5,
+      "nameJa": "",
+      "itemId": "item_mh4u_0834",
+      "mh4uId": 834,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "티가렉스 아종",
+          "navMonster": "티가렉스 아종",
+          "nameEn": "Brute Tigrex",
+          "rank": "상위",
+          "methods": [
+            "Tail Carve · 40% · ×1",
+            "Body Carve · 38% · ×1",
+            "Shiny Drop · 20% · ×1",
+            "Capture · 20% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Tigrex Challenge",
+          "nameEn": "Advanced: Tigrex Challenge",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Brute Tigrex",
+          "probability": 28,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "The Echoing Roar",
+          "nameEn": "The Echoing Roar",
+          "level": "Caravan★9",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Brute Tigrex",
+          "probability": 28,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Ear Ache",
+          "nameEn": "Ear Ache",
+          "level": "Guild★6",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Brute Tigrex",
+          "probability": 28,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "흑굉룡 첨예발톱",
+      "count": 5,
+      "nameJa": "",
+      "itemId": "item_mh4u_0838",
+      "mh4uId": 838,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "티가렉스 아종",
+          "navMonster": "티가렉스 아종",
+          "nameEn": "Brute Tigrex",
+          "rank": "상위",
+          "methods": [
+            "Break Claw · 100% · ×1",
+            "Body Carve · 30% · ×1",
+            "Shiny Drop · 15% · ×1",
+            "Shiny Drop · 5% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Tigrex Challenge",
+          "nameEn": "Advanced: Tigrex Challenge",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Brute Tigrex",
+          "probability": 14,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "The Echoing Roar",
+          "nameEn": "The Echoing Roar",
+          "level": "Caravan★9",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Brute Tigrex",
+          "probability": 14,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Ear Ache",
+          "nameEn": "Ear Ache",
+          "level": "Guild★6",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Brute Tigrex",
+          "probability": 14,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "염과룡 지느러미+",
+          "requiredItemId": "item_mh4u_1136",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: Dragon Attack",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "흑굉룡 견갑각",
+      "count": 3,
+      "nameJa": "",
+      "itemId": "item_mh4u_0836",
+      "mh4uId": 836,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "티가렉스 아종",
+          "navMonster": "티가렉스 아종",
+          "nameEn": "Brute Tigrex",
+          "rank": "상위",
+          "methods": [
+            "Capture · 38% · ×1",
+            "Body Carve · 27% · ×1",
+            "Break Head · 20% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Tigrex Challenge",
+          "nameEn": "Advanced: Tigrex Challenge",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Brute Tigrex",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "The Echoing Roar",
+          "nameEn": "The Echoing Roar",
+          "level": "Caravan★9",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Brute Tigrex",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Ear Ache",
+          "nameEn": "Ear Ache",
+          "level": "Guild★6",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Brute Tigrex",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "염과룡 견갑각",
+          "requiredItemId": "item_mh4u_1135",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: Dragon Attack",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "귀와 견갑각",
+      "count": 2,
+      "nameJa": "",
+      "itemId": "item_mh4u_0528",
+      "mh4uId": 528,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "테츠카브라",
+          "navMonster": "테츠카브라",
+          "nameEn": "Tetsucabra",
+          "rank": "상위",
+          "methods": [
+            "Break Back · 30% · ×1",
+            "Body Carve · 20% · ×1",
+            "Capture · 15% · ×1",
+            "Break Back · 15% · ×2",
+            "Break Back Leg · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hammer It Out",
+          "nameEn": "Hammer It Out",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Tetsucabra",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hunt-a-thon: Tetsucabra",
+          "nameEn": "Hunt-a-thon: Tetsucabra",
+          "level": "Caravan★7",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt 2 Tetsucabras before time expires or deliver a Paw Pass Ticket",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Tetsucabra Bounty",
+          "nameEn": "Tetsucabra Bounty",
+          "level": "Guild★4",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Tetsucabra",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "티가렉스 아종",
+        "navMonster": "티가렉스 아종"
+      },
+      {
+        "name": "테츠카브라",
+        "navMonster": "테츠카브라"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: Tigrex Challenge",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Brute Tigrex",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "The Echoing Roar",
+        "nameJa": "",
+        "level": "Caravan★9",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Brute Tigrex",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Ear Ache",
+        "nameJa": "",
+        "level": "Guild★6",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Brute Tigrex",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Hammer It Out",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Tetsucabra",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Hunt-a-thon: Tetsucabra",
+        "nameJa": "",
+        "level": "Caravan★7",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt 2 Tetsucabras before time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Tetsucabra Bounty",
+        "nameJa": "",
+        "level": "Guild★4",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Tetsucabra",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

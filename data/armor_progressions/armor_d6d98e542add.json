@@ -1,0 +1,159 @@
+{
+  "materials": [
+    {
+      "name": "동반자티켓",
+      "count": 3,
+      "nameJa": "オトモチケット",
+      "itemId": "item_c85fb1235419",
+      "mh4uId": 1420,
+      "sources": [
+        {
+          "type": "acquire",
+          "label": "따끈따끈섬 또는 마이하우스"
+        }
+      ]
+    },
+    {
+      "name": "용기의 증표",
+      "count": 3,
+      "nameJa": "勇気の証",
+      "itemId": "item_ab83d1b940fc",
+      "mh4uId": 1411,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Heaven's Wheel",
+          "nameEn": "Advanced: Heaven's Wheel",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay Shagaru Magala",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Dragon's Din",
+          "nameEn": "Advanced: Dragon's Din",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Brachydios",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Shipping Out",
+          "nameEn": "Advanced: Shipping Out",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay Dah'ren Mohran or repel it",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "발바닥스탬프",
+      "count": 3,
+      "nameJa": "肉球のスタンプ",
+      "itemId": "item_3ff9f436a7a7",
+      "mh4uId": 1432,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "메라루",
+          "navMonster": "",
+          "nameEn": "Melynx",
+          "rank": "하위",
+          "methods": [
+            "Shiny Drop · 20% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "아이루",
+          "navMonster": "",
+          "nameEn": "Felyne",
+          "rank": "하위",
+          "methods": [
+            "Shiny Drop · 12% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "The Hero and the Fiery King",
+          "nameEn": "The Hero and the Fiery King",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Rathalos",
+          "probability": 20,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "메라루",
+        "navMonster": ""
+      },
+      {
+        "name": "아이루",
+        "navMonster": ""
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: Heaven's Wheel",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay Shagaru Magala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Dragon's Din",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Brachydios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Shipping Out",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay Dah'ren Mohran or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "The Hero and the Fiery King",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Rathalos",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

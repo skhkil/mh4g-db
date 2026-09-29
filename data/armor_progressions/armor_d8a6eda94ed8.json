@@ -1,0 +1,297 @@
+{
+  "materials": [
+    {
+      "name": "冥天の星くず",
+      "count": 1,
+      "nameJa": "冥天の星くず",
+      "itemId": "item_ae682d27dbef",
+      "mh4uId": 1362,
+      "sources": [
+        {
+          "type": "acquire",
+          "label": "이벤트 퀘스트 보수"
+        }
+      ]
+    },
+    {
+      "name": "강룡 견갑각",
+      "count": 3,
+      "nameJa": "鋼龍の堅殻",
+      "itemId": "item_mh4u_0948",
+      "mh4uId": 948,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "크샬다오라",
+          "navMonster": "크샬다오라",
+          "nameEn": "Kushala Daora",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 55% · ×1",
+            "Break Head · 36% · ×1",
+            "Tail Carve · 20% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "녹슨크샬다오라",
+          "navMonster": "녹슨크샬다오라",
+          "nameEn": "Rusted Kushala Daora",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 55% · ×1",
+            "Break Head · 36% · ×1",
+            "Tail Carve · 20% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Wicked Wings",
+          "nameEn": "Advanced: Wicked Wings",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay a Kushala Daora or repel it",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Storm Front",
+          "nameEn": "Advanced: Storm Front",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Kushala Daora or repel it",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Stormy Knight",
+          "nameEn": "Advanced: Stormy Knight",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Kushala Daora or repel it",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "익사룡 가죽+",
+      "count": 4,
+      "nameJa": "翼蛇竜の上皮",
+      "itemId": "item_mh4u_0379",
+      "mh4uId": 379,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Remobra",
+          "navMonster": "",
+          "nameEn": "Remobra",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 50% · ×1",
+            "Body Carve · 5% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Desert Delinquents",
+          "nameEn": "Desert Delinquents",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay 8 Remobras",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Party Pants",
+          "nameEn": "Party Pants",
+          "level": "Guild★5",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay 12 Remobras",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "All-You-Can-Hunt Remobra",
+          "nameEn": "All-You-Can-Hunt Remobra",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay 15 Remobras",
+          "probability": 16,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "길드티켓G",
+      "count": 2,
+      "nameJa": "ギルドチケットＧ",
+      "itemId": "item_2b159c1d18ff",
+      "mh4uId": 1441,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "event-high-031",
+          "name": "흑룡의 귀환",
+          "nameEn": "Return of the Dragon",
+          "level": "★7",
+          "questType": "event",
+          "location": "슈레이더성",
+          "objective": "밀라보레아스 토벌 또는 격퇴",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "event-high-028",
+          "name": "티가렉스의 눈",
+          "nameEn": "Eye of the Tigrex",
+          "level": "★7",
+          "questType": "event",
+          "location": "탑 꼭대기",
+          "objective": "티가렉스 희소종 1마리 수렵",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "event-high-023",
+          "name": "홍룡 강림",
+          "nameEn": "Enter the Red Dragon",
+          "level": "★7",
+          "questType": "event",
+          "location": "용암섬",
+          "objective": "홍룡 밀라보레아스 토벌 또는 격퇴",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "크샬다오라",
+        "navMonster": "크샬다오라"
+      },
+      {
+        "name": "녹슨크샬다오라",
+        "navMonster": "녹슨크샬다오라"
+      },
+      {
+        "name": "Remobra",
+        "navMonster": ""
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: Wicked Wings",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay a Kushala Daora or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Storm Front",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Kushala Daora or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Stormy Knight",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Kushala Daora or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Desert Delinquents",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay 8 Remobras",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Party Pants",
+        "nameJa": "",
+        "level": "Guild★5",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay 12 Remobras",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "All-You-Can-Hunt Remobra",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay 15 Remobras",
+        "note": ""
+      },
+      {
+        "id": "event-high-031",
+        "name": "흑룡의 귀환",
+        "nameJa": "",
+        "level": "★7",
+        "questType": "event",
+        "location": "슈레이더성",
+        "objective": "밀라보레아스 토벌 또는 격퇴",
+        "note": ""
+      },
+      {
+        "id": "event-high-028",
+        "name": "티가렉스의 눈",
+        "nameJa": "",
+        "level": "★7",
+        "questType": "event",
+        "location": "탑 꼭대기",
+        "objective": "티가렉스 희소종 1마리 수렵",
+        "note": ""
+      },
+      {
+        "id": "event-high-023",
+        "name": "홍룡 강림",
+        "nameJa": "",
+        "level": "★7",
+        "questType": "event",
+        "location": "용암섬",
+        "objective": "홍룡 밀라보레아스 토벌 또는 격퇴",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

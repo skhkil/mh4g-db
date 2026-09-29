@@ -1,0 +1,233 @@
+{
+  "materials": [
+    {
+      "name": "붕룡 견갑각",
+      "count": 4,
+      "nameJa": "崩竜の堅殻",
+      "itemId": "item_mh4u_1146",
+      "mh4uId": 1146,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "우캄루바스",
+          "navMonster": "우캄루바스",
+          "nameEn": "Ukanlos",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 40% · ×1",
+            "Break Belly · 24% · ×1",
+            "Shiny Drop · 18% · ×1",
+            "Break Back · 15% · ×1",
+            "Tail Carve · 10% · ×1",
+            "Break Front Leg · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Glacial Grinder",
+          "nameEn": "Advanced: Glacial Grinder",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay an Ukanlos",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "패룡 견갑각",
+          "requiredItemId": "item_mh4u_0999",
+          "unlockQuestId": "quest_40e711339d0b",
+          "unlockQuest": "고난도: 미쳐 날뛰는 아캄토름",
+          "unlockLevel": "★7",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "붕룡 분쇄턱",
+      "count": 2,
+      "nameJa": "崩竜の削顎",
+      "itemId": "item_mh4u_1145",
+      "mh4uId": 1145,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "우캄루바스",
+          "navMonster": "우캄루바스",
+          "nameEn": "Ukanlos",
+          "rank": "상위",
+          "methods": [
+            "Break Head · 85% · ×1",
+            "Body Carve · 8% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Glacial Grinder",
+          "nameEn": "Advanced: Glacial Grinder",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay an Ukanlos",
+          "probability": 10,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "희망의 증표",
+          "requiredItemId": "item_0d03c7de5e2a",
+          "unlockQuestId": "quest_40e711339d0b",
+          "unlockQuest": "고난도: 미쳐 날뛰는 아캄토름",
+          "unlockLevel": "★7",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "강룡 보옥",
+      "count": 1,
+      "nameJa": "鋼龍の宝玉",
+      "itemId": "item_mh4u_0958",
+      "mh4uId": 958,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "크샬다오라",
+          "navMonster": "크샬다오라",
+          "nameEn": "Kushala Daora",
+          "rank": "G급",
+          "methods": [
+            "Shiny Drop · 5% · ×1",
+            "Tail Carve · 4% · ×1",
+            "Break Head · 4% · ×1",
+            "Body Carve · 4% · ×1",
+            "Shiny Drop · 3% · ×1",
+            "Body Carve · 2% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "녹슨크샬다오라",
+          "navMonster": "녹슨크샬다오라",
+          "nameEn": "Rusted Kushala Daora",
+          "rank": "G급",
+          "methods": [
+            "Shiny Drop · 5% · ×1",
+            "Tail Carve · 4% · ×1",
+            "Break Head · 4% · ×1",
+            "Shiny Drop · 3% · ×1",
+            "Body Carve · 2% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: A Storm of Steel",
+          "nameEn": "Advanced: A Storm of Steel",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Kushala Daora or repel it",
+          "probability": 5,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Operation Windbreaker",
+          "nameEn": "Operation Windbreaker",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Kushala Daora or repel it",
+          "probability": 5,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Stormy Knight",
+          "nameEn": "Advanced: Stormy Knight",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Kushala Daora or repel it",
+          "probability": 4,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "하룡 보옥",
+          "requiredItemId": "item_mh4u_1140",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: Stormy Knight",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "우캄루바스",
+        "navMonster": "우캄루바스"
+      },
+      {
+        "name": "크샬다오라",
+        "navMonster": "크샬다오라"
+      },
+      {
+        "name": "녹슨크샬다오라",
+        "navMonster": "녹슨크샬다오라"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: Glacial Grinder",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay an Ukanlos",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: A Storm of Steel",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Kushala Daora or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Operation Windbreaker",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Kushala Daora or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Stormy Knight",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Kushala Daora or repel it",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

@@ -1,0 +1,254 @@
+{
+  "materials": [
+    {
+      "name": "수수께끼의 뼈",
+      "count": 2,
+      "nameJa": "なぞの骨",
+      "itemId": "item_19480d0428de",
+      "mh4uId": 307,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Steak Your Ground",
+          "nameEn": "Steak Your Ground",
+          "level": "Caravan★1",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 1 Well-done Steak or Rare Steak",
+          "probability": 30,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Harvest Tour: Anc. Steppe",
+          "nameEn": "Harvest Tour: Anc. Steppe",
+          "level": "Caravan★3",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+          "probability": 20,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Harvest Tour: Sunken Hollow",
+          "nameEn": "Harvest Tour: Sunken Hollow",
+          "level": "Caravan★3",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+          "probability": 20,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "거대한 뼈",
+      "count": 1,
+      "nameJa": "大きな骨",
+      "itemId": "item_0e6aada4f05c",
+      "mh4uId": 318,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Popo",
+          "navMonster": "",
+          "nameEn": "Popo",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 20% · ×1",
+            "Body Carve · 5% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "울크스스",
+          "navMonster": "울크스스",
+          "nameEn": "Lagombi",
+          "rank": "하위",
+          "methods": [
+            "Capture · 20% · ×2",
+            "Body Carve · 5% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "테츠카브라",
+          "navMonster": "테츠카브라",
+          "nameEn": "Tetsucabra",
+          "rank": "하위",
+          "methods": [
+            "Capture · 20% · ×1",
+            "Body Carve · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Swing into Action",
+          "nameEn": "Swing into Action",
+          "level": "Caravan★3",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Kecha Wacha",
+          "probability": 15,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Kecha Wacha Wallop",
+          "nameEn": "Kecha Wacha Wallop",
+          "level": "Caravan★3",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Kecha Wacha",
+          "probability": 15,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Order of Magnitude",
+          "nameEn": "Advanced: Order of Magnitude",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Kecha Wacha and a Rathian",
+          "probability": 15,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "갑충 배주머니",
+      "count": 2,
+      "nameJa": "甲虫の腹袋",
+      "itemId": "item_mh4u_0370",
+      "mh4uId": 370,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Altaroth",
+          "navMonster": "",
+          "nameEn": "Altaroth",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 50% · ×1",
+            "Shiny Drop (Gray) · 32% · ×1",
+            "Body Carve · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Bnahabra Bloodbath",
+          "nameEn": "Bnahabra Bloodbath",
+          "level": "Guild★1",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay 12 Bnahabra",
+          "probability": 50,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "Popo",
+        "navMonster": ""
+      },
+      {
+        "name": "울크스스",
+        "navMonster": "울크스스"
+      },
+      {
+        "name": "테츠카브라",
+        "navMonster": "테츠카브라"
+      },
+      {
+        "name": "Altaroth",
+        "navMonster": ""
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Steak Your Ground",
+        "nameJa": "",
+        "level": "Caravan★1",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 1 Well-done Steak or Rare Steak",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Harvest Tour: Anc. Steppe",
+        "nameJa": "",
+        "level": "Caravan★3",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Harvest Tour: Sunken Hollow",
+        "nameJa": "",
+        "level": "Caravan★3",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Swing into Action",
+        "nameJa": "",
+        "level": "Caravan★3",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Kecha Wacha",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Kecha Wacha Wallop",
+        "nameJa": "",
+        "level": "Caravan★3",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Kecha Wacha",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Order of Magnitude",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Kecha Wacha and a Rathian",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Bnahabra Bloodbath",
+        "nameJa": "",
+        "level": "Guild★1",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay 12 Bnahabra",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

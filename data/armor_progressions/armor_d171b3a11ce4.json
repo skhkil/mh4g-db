@@ -1,0 +1,289 @@
+{
+  "materials": [
+    {
+      "name": "흑랑조 비늘",
+      "count": 4,
+      "nameJa": "黒狼鳥の鱗",
+      "itemId": "item_mh4u_0455",
+      "mh4uId": 455,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "얀가루루가",
+          "navMonster": "얀가루루가",
+          "nameEn": "Yian Garuga",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 64% · ×1",
+            "Shiny Drop · 25% · ×1",
+            "Tail Carve · 20% · ×1",
+            "Break Beak · 20% · ×1",
+            "Break Ear · 20% · ×1",
+            "Tail Carve · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Research: Yian Garuga",
+          "nameEn": "Research: Yian Garuga",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Yian Garuga",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "흑랑조 갑각",
+      "count": 5,
+      "nameJa": "黒狼鳥の甲殻",
+      "itemId": "item_mh4u_0458",
+      "mh4uId": 458,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "얀가루루가",
+          "navMonster": "얀가루루가",
+          "nameEn": "Yian Garuga",
+          "rank": "하위",
+          "methods": [
+            "Capture · 90% · ×2",
+            "Body Carve · 28% · ×1",
+            "Break Talon · 20% · ×1",
+            "Break Back · 20% · ×1",
+            "Break Back · 10% · ×2"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Research: Yian Garuga",
+          "nameEn": "Research: Yian Garuga",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Yian Garuga",
+          "probability": 25,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "킬러비틀",
+      "count": 2,
+      "nameJa": "キラビートル",
+      "itemId": "item_706ebc21b871",
+      "mh4uId": 265,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Mistentoe Delivery",
+          "nameEn": "Mistentoe Delivery",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 5 Mistentoe",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Crystal Bone Collector",
+          "nameEn": "Crystal Bone Collector",
+          "level": "Caravan★3",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 5 Crystal Bones",
+          "probability": 10,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Conga Bongo",
+          "nameEn": "Conga Bongo",
+          "level": "Caravan★3",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay 5 Congas",
+          "probability": 10,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "용골【대】",
+      "count": 2,
+      "nameJa": "竜骨【大】",
+      "itemId": "item_45dac90311e6",
+      "mh4uId": 306,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "그라비모스",
+          "navMonster": "그라비모스",
+          "nameEn": "Gravios",
+          "rank": "하위",
+          "methods": [
+            "Tail Carve · 23% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "Cephalos",
+          "navMonster": "",
+          "nameEn": "Cephalos",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 20% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "가라라아자라",
+          "navMonster": "가라라아자라",
+          "nameEn": "Najarala",
+          "rank": "하위",
+          "methods": [
+            "Break Back Leg · 20% · ×2"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Facility Facilitation",
+          "nameEn": "Facility Facilitation",
+          "level": "Caravan★7",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Cephadrome",
+          "probability": 40,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Heaven's Wheel",
+          "nameEn": "Advanced: Heaven's Wheel",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay Shagaru Magala",
+          "probability": 18,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Dragon's Din",
+          "nameEn": "Advanced: Dragon's Din",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Brachydios",
+          "probability": 18,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "얀가루루가",
+        "navMonster": "얀가루루가"
+      },
+      {
+        "name": "그라비모스",
+        "navMonster": "그라비모스"
+      },
+      {
+        "name": "Cephalos",
+        "navMonster": ""
+      },
+      {
+        "name": "가라라아자라",
+        "navMonster": "가라라아자라"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Research: Yian Garuga",
+        "nameJa": "",
+        "level": "Caravan★5",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Yian Garuga",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Mistentoe Delivery",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 5 Mistentoe",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Crystal Bone Collector",
+        "nameJa": "",
+        "level": "Caravan★3",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 5 Crystal Bones",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Conga Bongo",
+        "nameJa": "",
+        "level": "Caravan★3",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay 5 Congas",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Facility Facilitation",
+        "nameJa": "",
+        "level": "Caravan★7",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Cephadrome",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Heaven's Wheel",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay Shagaru Magala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Dragon's Din",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Brachydios",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

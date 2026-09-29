@@ -1,0 +1,278 @@
+{
+  "materials": [
+    {
+      "name": "천회룡 첨예뿔",
+      "count": 2,
+      "nameJa": "天廻龍の尖角",
+      "itemId": "item_mh4u_0897",
+      "mh4uId": 897,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "샤가르마가라",
+          "navMonster": "샤가르마가라",
+          "nameEn": "Shagaru Magala",
+          "rank": "상위",
+          "methods": [
+            "Break Horn · 72% · ×1",
+            "Break Horn · 20% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Stop the Wheel",
+          "nameEn": "Advanced: Stop the Wheel",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Shagaru Magala",
+          "probability": 6,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "The Caravaneer's Challenge",
+          "nameEn": "The Caravaneer's Challenge",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 4,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "천회룡 비늘+",
+      "count": 4,
+      "nameJa": "天廻龍の上鱗",
+      "itemId": "item_mh4u_0880",
+      "mh4uId": 880,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "샤가르마가라",
+          "navMonster": "샤가르마가라",
+          "nameEn": "Shagaru Magala",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 40% · ×1",
+            "Tail Carve · 28% · ×1",
+            "Break Wing · 15% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Stop the Wheel",
+          "nameEn": "Advanced: Stop the Wheel",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Shagaru Magala",
+          "probability": 27,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Wheel of Time",
+          "nameEn": "Advanced: Wheel of Time",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Shagaru Magala",
+          "probability": 15,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "The Caravaneer's Challenge",
+          "nameEn": "The Caravaneer's Challenge",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 10,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "천회룡 갑각",
+      "count": 4,
+      "nameJa": "天廻龍の甲殻",
+      "itemId": "item_mh4u_0882",
+      "mh4uId": 882,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "샤가르마가라",
+          "navMonster": "샤가르마가라",
+          "nameEn": "Shagaru Magala",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 28% · ×1",
+            "Break Wing Leg · 15% · ×2"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Heaven's Wheel",
+          "nameEn": "Advanced: Heaven's Wheel",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay Shagaru Magala",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "플루크라이트광석",
+      "count": 2,
+      "nameJa": "フルクライト鉱石",
+      "itemId": "item_ecfef79bb435",
+      "mh4uId": 220,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "다라·아마듈라",
+          "navMonster": "다라·아마듈라",
+          "nameEn": "Dalamadur",
+          "rank": "상위",
+          "methods": [
+            "Mining Scale · 12% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Mistentoe Mission",
+          "nameEn": "Mistentoe Mission",
+          "level": "Guild★5",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Deliver 10 Mistentoe",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Killer Queens",
+          "nameEn": "Killer Queens",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt 2 Rathians",
+          "probability": 5,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Party Pants",
+          "nameEn": "Party Pants",
+          "level": "Guild★5",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay 12 Remobras",
+          "probability": 5,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "샤가르마가라",
+        "navMonster": "샤가르마가라"
+      },
+      {
+        "name": "다라·아마듈라",
+        "navMonster": "다라·아마듈라"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: Stop the Wheel",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay Shagaru Magala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "The Caravaneer's Challenge",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt all large monsters",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Wheel of Time",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay Shagaru Magala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Heaven's Wheel",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay Shagaru Magala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Mistentoe Mission",
+        "nameJa": "",
+        "level": "Guild★5",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Deliver 10 Mistentoe",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Killer Queens",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt 2 Rathians",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Party Pants",
+        "nameJa": "",
+        "level": "Guild★5",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay 12 Remobras",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

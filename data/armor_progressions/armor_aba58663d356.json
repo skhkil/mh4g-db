@@ -1,0 +1,343 @@
+{
+  "materials": [
+    {
+      "name": "희망의 증표G",
+      "count": 1,
+      "nameJa": "希望の証Ｇ",
+      "itemId": "item_e4e64a7c5447",
+      "mh4uId": 1414,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Red Dragon's Dawn",
+          "nameEn": "Advanced: Red Dragon's Dawn",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay a Fatalis or repel it",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Fade to Black",
+          "nameEn": "Advanced: Fade to Black",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Fatalis or repel it",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Queen Slayer",
+          "nameEn": "Advanced: Queen Slayer",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "용기의 증표G",
+      "count": 1,
+      "nameJa": "勇気の証Ｇ",
+      "itemId": "item_6bcd0ce55ea6",
+      "mh4uId": 1412,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Tyrant's Maw",
+          "nameEn": "Advanced: Tyrant's Maw",
+          "level": "Caravan★9",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Deviljho",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Silver Sovereign",
+          "nameEn": "Silver Sovereign",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Silver Rathalos",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Bad Hair Day: Brachydios",
+          "nameEn": "Bad Hair Day: Brachydios",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Brachydios",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "패룡 비늘+",
+      "count": 3,
+      "nameJa": "フルクライト鉱石",
+      "itemId": "item_mh4u_0997",
+      "mh4uId": 997,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "아캄토름",
+          "navMonster": "아캄토름",
+          "nameEn": "Akantor",
+          "rank": "상위",
+          "methods": [
+            "Break Belly · 56% · ×1",
+            "Body Carve · 38% · ×1",
+            "Tail Carve · 20% · ×1",
+            "Break Head · 18% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Stand Tall",
+          "nameEn": "Advanced: Stand Tall",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay an Akantor",
+          "probability": 26,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Grim Tidings",
+          "nameEn": "Advanced: Grim Tidings",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay an Akantor",
+          "probability": 26,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Akantor Coup",
+          "nameEn": "Advanced: Akantor Coup",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay an Akantor",
+          "probability": 26,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "플루크라이트광석",
+      "count": 5,
+      "nameJa": "覇竜の上鱗",
+      "itemId": "item_ecfef79bb435",
+      "mh4uId": 220,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "다라·아마듈라",
+          "navMonster": "다라·아마듈라",
+          "nameEn": "Dalamadur",
+          "rank": "상위",
+          "methods": [
+            "Mining Scale · 12% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Mistentoe Mission",
+          "nameEn": "Mistentoe Mission",
+          "level": "Guild★5",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Deliver 10 Mistentoe",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Killer Queens",
+          "nameEn": "Killer Queens",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt 2 Rathians",
+          "probability": 5,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Party Pants",
+          "nameEn": "Party Pants",
+          "level": "Guild★5",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay 12 Remobras",
+          "probability": 5,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "아캄토름",
+        "navMonster": "아캄토름"
+      },
+      {
+        "name": "다라·아마듈라",
+        "navMonster": "다라·아마듈라"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: Red Dragon's Dawn",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay a Fatalis or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Fade to Black",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Fatalis or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Queen Slayer",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt all large monsters",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Tyrant's Maw",
+        "nameJa": "",
+        "level": "Caravan★9",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Deviljho",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Silver Sovereign",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Silver Rathalos",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Bad Hair Day: Brachydios",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Brachydios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Stand Tall",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay an Akantor",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Grim Tidings",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay an Akantor",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Akantor Coup",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay an Akantor",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Mistentoe Mission",
+        "nameJa": "",
+        "level": "Guild★5",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Deliver 10 Mistentoe",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Killer Queens",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt 2 Rathians",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Party Pants",
+        "nameJa": "",
+        "level": "Guild★5",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay 12 Remobras",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

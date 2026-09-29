@@ -1,0 +1,255 @@
+{
+  "materials": [
+    {
+      "name": "해지주 중협각",
+      "count": 4,
+      "nameJa": "骸蜘蛛の重鋏角",
+      "itemId": "item_mh4u_0597",
+      "mh4uId": 597,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "네르스큐라 아종",
+          "navMonster": "네르스큐라 아종",
+          "nameEn": "Shrouded Nerscylla",
+          "rank": "G급",
+          "methods": [
+            "Capture · 35% · ×1",
+            "Body Carve · 21% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Shrouded in Mystery",
+          "nameEn": "Shrouded in Mystery",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Shrouded Nerscylla",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Course Correction",
+          "nameEn": "Course Correction",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Shrouded Nerscylla",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Spider Study",
+          "nameEn": "Advanced: Spider Study",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt 2 Shrouded Nerscylla",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "해지주 중갑각",
+      "count": 2,
+      "nameJa": "骸蜘蛛の重殻",
+      "itemId": "item_mh4u_0596",
+      "mh4uId": 596,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "네르스큐라 아종",
+          "navMonster": "네르스큐라 아종",
+          "nameEn": "Shrouded Nerscylla",
+          "rank": "G급",
+          "methods": [
+            "Break Cover Skin · 70% · ×1",
+            "Body Carve · 42% · ×1",
+            "Break Poison Stinger · 35% · ×1",
+            "Break Claw · 30% · ×1",
+            "Capture · 20% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Shrouded in Mystery",
+          "nameEn": "Shrouded in Mystery",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Shrouded Nerscylla",
+          "probability": 28,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Course Correction",
+          "nameEn": "Course Correction",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Shrouded Nerscylla",
+          "probability": 28,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Spider Study",
+          "nameEn": "Advanced: Spider Study",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt 2 Shrouded Nerscylla",
+          "probability": 28,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "해지주 비밀가시",
+      "count": 2,
+      "nameJa": "骸蜘蛛の秘棘",
+      "itemId": "item_mh4u_0599",
+      "mh4uId": 599,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "네르스큐라 아종",
+          "navMonster": "네르스큐라 아종",
+          "nameEn": "Shrouded Nerscylla",
+          "rank": "G급",
+          "methods": [
+            "Break Poison Stinger · 65% · ×1",
+            "Capture · 25% · ×1",
+            "Body Carve · 8% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Shrouded in Mystery",
+          "nameEn": "Shrouded in Mystery",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Shrouded Nerscylla",
+          "probability": 10,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Course Correction",
+          "nameEn": "Course Correction",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Shrouded Nerscylla",
+          "probability": 10,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Spider Study",
+          "nameEn": "Advanced: Spider Study",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt 2 Shrouded Nerscylla",
+          "probability": 10,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "예리한 발톱",
+      "count": 3,
+      "nameJa": "鋭利な爪",
+      "itemId": "item_mh4u_0374",
+      "mh4uId": 374,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Conga",
+          "navMonster": "",
+          "nameEn": "Conga",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 45% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "Hermitaur",
+          "navMonster": "",
+          "nameEn": "Hermitaur",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 40% · ×1"
+          ]
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "네르스큐라 아종",
+        "navMonster": "네르스큐라 아종"
+      },
+      {
+        "name": "Conga",
+        "navMonster": ""
+      },
+      {
+        "name": "Hermitaur",
+        "navMonster": ""
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Shrouded in Mystery",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Shrouded Nerscylla",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Course Correction",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Shrouded Nerscylla",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Spider Study",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt 2 Shrouded Nerscylla",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

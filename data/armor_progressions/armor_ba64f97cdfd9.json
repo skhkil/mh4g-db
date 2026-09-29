@@ -1,0 +1,355 @@
+{
+  "materials": [
+    {
+      "name": "굉룡 비늘+",
+      "count": 6,
+      "nameJa": "轟竜の上鱗",
+      "itemId": "item_mh4u_0818",
+      "mh4uId": 818,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "티가렉스",
+          "navMonster": "티가렉스",
+          "nameEn": "Tigrex",
+          "rank": "상위",
+          "methods": [
+            "Tail Carve · 40% · ×1",
+            "Body Carve · 35% · ×1",
+            "Shiny Drop · 20% · ×1",
+            "Capture · 20% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Midnight Madness",
+          "nameEn": "Midnight Madness",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Tigrex",
+          "probability": 30,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Tigrex by the Tail",
+          "nameEn": "Tigrex by the Tail",
+          "level": "Guild★5",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Tigrex",
+          "probability": 30,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Dragons' Tale",
+          "nameEn": "Dragons' Tale",
+          "level": "Guild★5",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Gravios and a Tigrex",
+          "probability": 30,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "굉룡 첨예발톱",
+      "count": 4,
+      "nameJa": "轟竜の尖爪",
+      "itemId": "item_mh4u_0826",
+      "mh4uId": 826,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "티가렉스",
+          "navMonster": "티가렉스",
+          "nameEn": "Tigrex",
+          "rank": "상위",
+          "methods": [
+            "Break Claw · 80% · ×1",
+            "Body Carve · 30% · ×1",
+            "Break Claw · 20% · ×3",
+            "Shiny Drop · 15% · ×1",
+            "Shiny Drop · 5% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "극한상태 티가렉스",
+          "navMonster": "티가렉스",
+          "nameEn": "Apex Tigrex",
+          "rank": "G급",
+          "methods": [
+            "Break Claw · 20% · ×3",
+            "Shiny Drop · 15% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Midnight Madness",
+          "nameEn": "Midnight Madness",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Tigrex",
+          "probability": 14,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Tigrex by the Tail",
+          "nameEn": "Tigrex by the Tail",
+          "level": "Guild★5",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Tigrex",
+          "probability": 14,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Dragons' Tale",
+          "nameEn": "Dragons' Tale",
+          "level": "Guild★5",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Gravios and a Tigrex",
+          "probability": 14,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "굉룡 갑각",
+      "count": 4,
+      "nameJa": "轟竜の甲殻",
+      "itemId": "item_mh4u_0820",
+      "mh4uId": 820,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "티가렉스",
+          "navMonster": "티가렉스",
+          "nameEn": "Tigrex",
+          "rank": "하위",
+          "methods": [
+            "Break Head · 38% · ×1",
+            "Capture · 36% · ×1",
+            "Body Carve · 20% · ×1",
+            "Capture · 10% · ×2"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Ruler of the Frozen Seaway",
+          "nameEn": "Ruler of the Frozen Seaway",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Tigrex",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Tigrex Terror",
+          "nameEn": "Advanced: Tigrex Terror",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Tigrex",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Hell Hunters",
+          "nameEn": "Advanced: Hell Hunters",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt 2 Tigrex",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "순충 견갑각",
+      "count": 4,
+      "nameJa": "盾虫の堅殻",
+      "itemId": "item_mh4u_0376",
+      "mh4uId": 376,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "쿤추",
+          "navMonster": "",
+          "nameEn": "Konchu",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 45% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Seltas Romance",
+          "nameEn": "Seltas Romance",
+          "level": "Guild★4",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt 2 Seltas",
+          "probability": 25,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Icy Shadow",
+          "nameEn": "Icy Shadow",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Khezu",
+          "probability": 20,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Netting Neopterons",
+          "nameEn": "Netting Neopterons",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay 30 Bnahabra",
+          "probability": 20,
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "티가렉스",
+        "navMonster": "티가렉스"
+      },
+      {
+        "name": "극한상태 티가렉스",
+        "navMonster": "티가렉스"
+      },
+      {
+        "name": "쿤추",
+        "navMonster": ""
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Midnight Madness",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Tigrex",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Tigrex by the Tail",
+        "nameJa": "",
+        "level": "Guild★5",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Tigrex",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Dragons' Tale",
+        "nameJa": "",
+        "level": "Guild★5",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Gravios and a Tigrex",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Ruler of the Frozen Seaway",
+        "nameJa": "",
+        "level": "Caravan★5",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Tigrex",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Tigrex Terror",
+        "nameJa": "",
+        "level": "Caravan★5",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Tigrex",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Hell Hunters",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt 2 Tigrex",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Seltas Romance",
+        "nameJa": "",
+        "level": "Guild★4",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt 2 Seltas",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Icy Shadow",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Khezu",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Netting Neopterons",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay 30 Bnahabra",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

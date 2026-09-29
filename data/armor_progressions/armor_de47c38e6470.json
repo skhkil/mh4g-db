@@ -1,0 +1,193 @@
+{
+  "materials": [
+    {
+      "name": "각룡 갑각",
+      "count": 4,
+      "nameJa": "角竜の甲殻",
+      "itemId": "item_mh4u_1115",
+      "mh4uId": 1115,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "쇄룡 갑각",
+          "requiredItemId": "item_mh4u_0770",
+          "unlockQuestId": "quest_cb7caab8d88c",
+          "unlockQuest": "고난도: 쇄룡 폭동 정보",
+          "unlockLevel": "★6",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "용골+",
+      "count": 2,
+      "nameJa": "上竜骨",
+      "itemId": "item_a4eda339a44c",
+      "mh4uId": 309,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "그라비모스",
+          "navMonster": "그라비모스",
+          "nameEn": "Gravios",
+          "rank": "하위",
+          "methods": [
+            "Break Back · 40% · ×1",
+            "Break Wing · 10% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "얀쿡크 아종",
+          "navMonster": "얀쿡크 아종",
+          "nameEn": "Blue Yian Kut-Ku",
+          "rank": "상위",
+          "methods": [
+            "Capture · 27% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "다이묘자자미",
+          "navMonster": "다이묘자자미",
+          "nameEn": "Daimyo Hermitaur",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 20% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Queen and Rook",
+          "nameEn": "Queen and Rook",
+          "level": "Guild★3",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Rathian and a Gravios",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hunters' Heaven",
+          "nameEn": "Hunters' Heaven",
+          "level": "Guild★3",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Tigrex and a Zinogre",
+          "probability": 100,
+          "count": 3
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Energy Crisis",
+          "nameEn": "Energy Crisis",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 5 Coals",
+          "probability": 18,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "수피룡 가죽",
+      "count": 2,
+      "nameJa": "垂皮竜の皮",
+      "itemId": "item_mh4u_0363",
+      "mh4uId": 363,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Slagtoth",
+          "navMonster": "",
+          "nameEn": "Slagtoth",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 25% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Oil Toil",
+          "nameEn": "Oil Toil",
+          "level": "Caravan★4",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 5 Slagtoth Oils",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "그라비모스",
+        "navMonster": "그라비모스"
+      },
+      {
+        "name": "얀쿡크 아종",
+        "navMonster": "얀쿡크 아종"
+      },
+      {
+        "name": "다이묘자자미",
+        "navMonster": "다이묘자자미"
+      },
+      {
+        "name": "Slagtoth",
+        "navMonster": ""
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Queen and Rook",
+        "nameJa": "",
+        "level": "Guild★3",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Rathian and a Gravios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Hunters' Heaven",
+        "nameJa": "",
+        "level": "Guild★3",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Tigrex and a Zinogre",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Energy Crisis",
+        "nameJa": "",
+        "level": "Caravan★5",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 5 Coals",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Oil Toil",
+        "nameJa": "",
+        "level": "Caravan★4",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 5 Slagtoth Oils",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

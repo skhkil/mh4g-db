@@ -1,0 +1,308 @@
+{
+  "materials": [
+    {
+      "name": "모듈기능",
+      "count": 1,
+      "nameJa": "モジュール機能",
+      "itemId": "item_fbff628baa97",
+      "mh4uId": 1399,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "event-g-054",
+          "name": "메트로이드: 다가오는 그림자",
+          "nameEn": "Metroid: Looming Shadows",
+          "level": "G★2",
+          "questType": "event",
+          "location": "격투장",
+          "objective": "넬스큐라 아종 모두 수렵",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "엘트라이트광석",
+      "count": 10,
+      "nameJa": "エルトライト鉱石",
+      "itemId": "item_fe4f2a32f3ec",
+      "mh4uId": 216,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "바살모스 아종",
+          "navMonster": "바살모스 아종",
+          "nameEn": "Ruby Basarios",
+          "rank": "G급",
+          "methods": [
+            "Mining Ore · 47% · ×1",
+            "Tail Carve · 40% · ×1",
+            "Break Back · 38% · ×2",
+            "Shiny Drop · 37% · ×1",
+            "Capture · 36% · ×1",
+            "Body Carve · 25% · ×1",
+            "Mining Back · 25% · ×1",
+            "Break Belly · 25% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "바살모스",
+          "navMonster": "바살모스",
+          "nameEn": "Basarios",
+          "rank": "G급",
+          "methods": [
+            "Tail Carve · 40% · ×1",
+            "Break Back · 38% · ×2",
+            "Shiny Drop · 37% · ×1",
+            "Capture · 36% · ×1",
+            "Body Carve · 25% · ×1",
+            "Break Belly · 25% · ×1",
+            "Mining Back · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Beyond the Pale",
+          "nameEn": "Advanced: Beyond the Pale",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt an Ash Kecha Wacha",
+          "probability": 15,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Sculptural Seltas",
+          "nameEn": "Sculptural Seltas",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Desert Seltas",
+          "probability": 15,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Seeing Spots",
+          "nameEn": "Seeing Spots",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt an Ash Kecha Wacha",
+          "probability": 15,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "해지주 중갑각",
+      "count": 6,
+      "nameJa": "骸蜘蛛の重殻",
+      "itemId": "item_mh4u_0596",
+      "mh4uId": 596,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "네르스큐라 아종",
+          "navMonster": "네르스큐라 아종",
+          "nameEn": "Shrouded Nerscylla",
+          "rank": "G급",
+          "methods": [
+            "Break Cover Skin · 70% · ×1",
+            "Body Carve · 42% · ×1",
+            "Break Poison Stinger · 35% · ×1",
+            "Break Claw · 30% · ×1",
+            "Capture · 20% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Shrouded in Mystery",
+          "nameEn": "Shrouded in Mystery",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Shrouded Nerscylla",
+          "probability": 28,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Course Correction",
+          "nameEn": "Course Correction",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Shrouded Nerscylla",
+          "probability": 28,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Spider Study",
+          "nameEn": "Advanced: Spider Study",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt 2 Shrouded Nerscylla",
+          "probability": 28,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "해지주 중협각",
+      "count": 3,
+      "nameJa": "骸蜘蛛の重鋏角",
+      "itemId": "item_mh4u_0597",
+      "mh4uId": 597,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "네르스큐라 아종",
+          "navMonster": "네르스큐라 아종",
+          "nameEn": "Shrouded Nerscylla",
+          "rank": "G급",
+          "methods": [
+            "Capture · 35% · ×1",
+            "Body Carve · 21% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Shrouded in Mystery",
+          "nameEn": "Shrouded in Mystery",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Shrouded Nerscylla",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Course Correction",
+          "nameEn": "Course Correction",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Shrouded Nerscylla",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Spider Study",
+          "nameEn": "Advanced: Spider Study",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt 2 Shrouded Nerscylla",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "바살모스 아종",
+        "navMonster": "바살모스 아종"
+      },
+      {
+        "name": "바살모스",
+        "navMonster": "바살모스"
+      },
+      {
+        "name": "네르스큐라 아종",
+        "navMonster": "네르스큐라 아종"
+      }
+    ],
+    "quests": [
+      {
+        "id": "event-g-054",
+        "name": "메트로이드: 다가오는 그림자",
+        "nameJa": "",
+        "level": "G★2",
+        "questType": "event",
+        "location": "격투장",
+        "objective": "넬스큐라 아종 모두 수렵",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Beyond the Pale",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt an Ash Kecha Wacha",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Sculptural Seltas",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Desert Seltas",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Seeing Spots",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt an Ash Kecha Wacha",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Shrouded in Mystery",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Shrouded Nerscylla",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Course Correction",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Shrouded Nerscylla",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Spider Study",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt 2 Shrouded Nerscylla",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

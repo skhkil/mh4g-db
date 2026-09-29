@@ -1,0 +1,227 @@
+{
+  "materials": [
+    {
+      "name": "수괴수 발톱",
+      "count": 2,
+      "nameJa": "水獣の爪",
+      "itemId": "item_mh4u_1096",
+      "mh4uId": 1096,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "도스람포스 발톱",
+          "requiredItemId": "item_mh4u_0399",
+          "unlockQuestId": "quest_e7f591833ab9",
+          "unlockQuest": "못된 악동 기원호를 수렵하라",
+          "unlockLevel": "★3",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "마카라이트광석",
+      "count": 2,
+      "nameJa": "マカライト鉱石",
+      "itemId": "item_8f142f2db297",
+      "mh4uId": 205,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "바살모스",
+          "navMonster": "바살모스",
+          "nameEn": "Basarios",
+          "rank": "하위",
+          "methods": [
+            "Capture · 59% · ×2",
+            "Tail Carve · 55% · ×1",
+            "Break Belly · 55% · ×1",
+            "Break Back · 50% · ×3",
+            "Mining Back · 35% · ×1",
+            "Body Carve · 25% · ×1",
+            "Shiny Drop · 20% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "바바콩가",
+          "navMonster": "바바콩가",
+          "nameEn": "Congalala",
+          "rank": "하위",
+          "methods": [
+            "Shiny Drop (Ore) · 39% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Crystal Bone Collector",
+          "nameEn": "Crystal Bone Collector",
+          "level": "Caravan★3",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 5 Crystal Bones",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Sootstone Search",
+          "nameEn": "Sootstone Search",
+          "level": "Guild★2",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Deliver 3 Sootstone Ores",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Crystal Clearing",
+          "nameEn": "Crystal Clearing",
+          "level": "Caravan★2",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 4 Sulfur Crystals",
+          "probability": 20,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "람포스 가죽",
+      "count": 2,
+      "nameJa": "ランポスの皮",
+      "itemId": "item_mh4u_0396",
+      "mh4uId": 396,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Velociprey",
+          "navMonster": "",
+          "nameEn": "Velociprey",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 23% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "끈적뚜기",
+      "count": 2,
+      "nameJa": "のりこねバッタ",
+      "itemId": "item_b0cf7cb3f2bf",
+      "mh4uId": 264,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Crystal Clearing",
+          "nameEn": "Crystal Clearing",
+          "level": "Caravan★2",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 4 Sulfur Crystals",
+          "probability": 6,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Bug Appétit",
+          "nameEn": "Bug Appétit",
+          "level": "Caravan★2",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Seltas",
+          "probability": 6,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Boulder-bash",
+          "nameEn": "Boulder-bash",
+          "level": "Caravan★3",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Tetsucabra",
+          "probability": 6,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "바살모스",
+        "navMonster": "바살모스"
+      },
+      {
+        "name": "바바콩가",
+        "navMonster": "바바콩가"
+      },
+      {
+        "name": "Velociprey",
+        "navMonster": ""
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Crystal Bone Collector",
+        "nameJa": "",
+        "level": "Caravan★3",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 5 Crystal Bones",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Sootstone Search",
+        "nameJa": "",
+        "level": "Guild★2",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Deliver 3 Sootstone Ores",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Crystal Clearing",
+        "nameJa": "",
+        "level": "Caravan★2",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 4 Sulfur Crystals",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Bug Appétit",
+        "nameJa": "",
+        "level": "Caravan★2",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Seltas",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Boulder-bash",
+        "nameJa": "",
+        "level": "Caravan★3",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Tetsucabra",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

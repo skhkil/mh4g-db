@@ -1,0 +1,122 @@
+{
+  "materials": [
+    {
+      "name": "청웅수 털",
+      "count": 2,
+      "nameJa": "青熊獣の毛",
+      "itemId": "item_mh4u_1095",
+      "mh4uId": 1095,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "구룡 가죽",
+          "requiredItemId": "item_mh4u_0388",
+          "unlockQuestId": "quest_e7f591833ab9",
+          "unlockQuest": "못된 악동 기원호를 수렵하라",
+          "unlockLevel": "★3",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "청웅수 갑각",
+      "count": 1,
+      "nameJa": "青熊獣の甲殻",
+      "itemId": "item_mh4u_1094",
+      "mh4uId": 1094,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "구룡 발톱",
+          "requiredItemId": "item_mh4u_0390",
+          "unlockQuestId": "quest_e7f591833ab9",
+          "unlockQuest": "못된 악동 기원호를 수렵하라",
+          "unlockLevel": "★3",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "끈적뚜기",
+      "count": 2,
+      "nameJa": "のりこねバッタ",
+      "itemId": "item_b0cf7cb3f2bf",
+      "mh4uId": 264,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Crystal Clearing",
+          "nameEn": "Crystal Clearing",
+          "level": "Caravan★2",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 4 Sulfur Crystals",
+          "probability": 6,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Bug Appétit",
+          "nameEn": "Bug Appétit",
+          "level": "Caravan★2",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Seltas",
+          "probability": 6,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Boulder-bash",
+          "nameEn": "Boulder-bash",
+          "level": "Caravan★3",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Tetsucabra",
+          "probability": 6,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [],
+    "quests": [
+      {
+        "id": "",
+        "name": "Crystal Clearing",
+        "nameJa": "",
+        "level": "Caravan★2",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 4 Sulfur Crystals",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Bug Appétit",
+        "nameJa": "",
+        "level": "Caravan★2",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Seltas",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Boulder-bash",
+        "nameJa": "",
+        "level": "Caravan★3",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Tetsucabra",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

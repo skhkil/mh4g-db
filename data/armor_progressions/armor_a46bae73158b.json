@@ -1,0 +1,295 @@
+{
+  "materials": [
+    {
+      "name": "옥랑룡 강발톱",
+      "count": 5,
+      "nameJa": "獄狼竜の剛爪",
+      "itemId": "item_mh4u_0760",
+      "mh4uId": 760,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "진오우거 아종",
+          "navMonster": "진오우거 아종",
+          "nameEn": "Stygian Zinogre",
+          "rank": "G급",
+          "methods": [
+            "Break Front Leg · 70% · ×1",
+            "Capture · 20% · ×1",
+            "Body Carve · 15% · ×1",
+            "Break Front Leg · 15% · ×2"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Mountain Rescue",
+          "nameEn": "Mountain Rescue",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Stygian Zinogre",
+          "probability": 12,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Fire Drill",
+          "nameEn": "Fire Drill",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Brachydios and a Stygian Zinogre",
+          "probability": 12,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "옥랑룡 멸룡갑각",
+      "count": 4,
+      "nameJa": "獄狼竜の滅龍殻",
+      "itemId": "item_mh4u_0764",
+      "mh4uId": 764,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "진오우거 아종",
+          "navMonster": "진오우거 아종",
+          "nameEn": "Stygian Zinogre",
+          "rank": "G급",
+          "methods": [
+            "Break Back · 60% · ×1",
+            "Capture · 27% · ×1",
+            "Break Front Leg · 15% · ×1",
+            "Body Carve · 14% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Mountain Rescue",
+          "nameEn": "Mountain Rescue",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Stygian Zinogre",
+          "probability": 16,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Fire Drill",
+          "nameEn": "Fire Drill",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Brachydios and a Stygian Zinogre",
+          "probability": 16,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "옥랑룡 멸룡털",
+      "count": 3,
+      "nameJa": "獄狼竜の滅龍毛",
+      "itemId": "item_mh4u_0767",
+      "mh4uId": 767,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "진오우거 아종",
+          "navMonster": "진오우거 아종",
+          "nameEn": "Stygian Zinogre",
+          "rank": "G급",
+          "methods": [
+            "Break Back · 30% · ×1",
+            "Capture · 27% · ×1",
+            "Body Carve · 24% · ×1",
+            "Shiny Drop · 10% · ×1",
+            "Bug-Catching Back · 10% · ×1",
+            "Tail Carve · 9% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Mountain Rescue",
+          "nameEn": "Mountain Rescue",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Stygian Zinogre",
+          "probability": 22,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Fire Drill",
+          "nameEn": "Fire Drill",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Brachydios and a Stygian Zinogre",
+          "probability": 22,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "퓨어크리스털",
+      "count": 2,
+      "nameJa": "ピュアクリスタル",
+      "itemId": "item_d689931faa86",
+      "mh4uId": 222,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "키린",
+          "navMonster": "키린",
+          "nameEn": "Kirin",
+          "rank": "G급",
+          "methods": [
+            "Shiny Drop · 50% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "키린 아종",
+          "navMonster": "키린 아종",
+          "nameEn": "Oroshi Kirin",
+          "rank": "G급",
+          "methods": [
+            "Shiny Drop · 50% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "게리오스",
+          "navMonster": "게리오스",
+          "nameEn": "Gypceros",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 8% · ×1",
+            "Break Head · 7% · ×1",
+            "Shiny Drop · 5% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: A Final Battle Cry",
+          "nameEn": "Advanced: A Final Battle Cry",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Fatalis or repel it",
+          "probability": 15,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Icy Shadow",
+          "nameEn": "Icy Shadow",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Khezu",
+          "probability": 5,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Puffer Fish",
+          "nameEn": "Puffer Fish",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Zamtrios",
+          "probability": 5,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "진오우거 아종",
+        "navMonster": "진오우거 아종"
+      },
+      {
+        "name": "키린",
+        "navMonster": "키린"
+      },
+      {
+        "name": "키린 아종",
+        "navMonster": "키린 아종"
+      },
+      {
+        "name": "게리오스",
+        "navMonster": "게리오스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Mountain Rescue",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Stygian Zinogre",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Fire Drill",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Brachydios and a Stygian Zinogre",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: A Final Battle Cry",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Fatalis or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Icy Shadow",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Khezu",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Puffer Fish",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Zamtrios",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

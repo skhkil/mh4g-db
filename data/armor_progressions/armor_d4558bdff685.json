@@ -1,0 +1,324 @@
+{
+  "materials": [
+    {
+      "name": "뇌랑룡 전기갑각",
+      "count": 3,
+      "nameJa": "雷狼竜の蓄電殻",
+      "itemId": "item_mh4u_0749",
+      "mh4uId": 749,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "진오우거",
+          "navMonster": "진오우거",
+          "nameEn": "Zinogre",
+          "rank": "하위",
+          "methods": [
+            "Break Back · 60% · ×1",
+            "Capture · 30% · ×1",
+            "Body Carve · 20% · ×1",
+            "Break Front Leg · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Uncorner the Market",
+          "nameEn": "Uncorner the Market",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Rathalos and a Zinogre",
+          "probability": 18,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Zinogre Zone",
+          "nameEn": "Zinogre Zone",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Zinogre",
+          "probability": 18,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Howling for Blood",
+          "nameEn": "Advanced: Howling for Blood",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Zinogre",
+          "probability": 18,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "뇌랑룡 갑각",
+      "count": 3,
+      "nameJa": "雷狼竜の甲殻",
+      "itemId": "item_mh4u_0735",
+      "mh4uId": 735,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "진오우거",
+          "navMonster": "진오우거",
+          "nameEn": "Zinogre",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 40% · ×1",
+            "Tail Carve · 20% · ×1",
+            "Break Head · 17% · ×1",
+            "Capture · 10% · ×2",
+            "Break Back · 10% · ×1",
+            "Shiny Drop · 8% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Uncorner the Market",
+          "nameEn": "Uncorner the Market",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Rathalos and a Zinogre",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Zinogre Zone",
+          "nameEn": "Zinogre Zone",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Zinogre",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Howling for Blood",
+          "nameEn": "Advanced: Howling for Blood",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Zinogre",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "신룡 검은털",
+          "requiredItemId": "item_mh4u_1108",
+          "unlockQuestId": "",
+          "unlockQuest": "Uncorner the Market",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "뇌랑룡 발톱",
+      "count": 3,
+      "nameJa": "雷狼竜の爪",
+      "itemId": "item_mh4u_0744",
+      "mh4uId": 744,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "진오우거",
+          "navMonster": "진오우거",
+          "nameEn": "Zinogre",
+          "rank": "하위",
+          "methods": [
+            "Break Front Leg · 70% · ×1",
+            "Capture · 20% · ×1",
+            "Break Front Leg · 20% · ×2",
+            "Body Carve · 15% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Uncorner the Market",
+          "nameEn": "Uncorner the Market",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Rathalos and a Zinogre",
+          "probability": 16,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Zinogre Zone",
+          "nameEn": "Zinogre Zone",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Zinogre",
+          "probability": 16,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Howling for Blood",
+          "nameEn": "Advanced: Howling for Blood",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Zinogre",
+          "probability": 16,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "신룡 강칼날개",
+          "requiredItemId": "item_mh4u_1184",
+          "unlockQuestId": "",
+          "unlockQuest": "Uncorner the Market",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "초전뇌광충",
+      "count": 3,
+      "nameJa": "超電雷光虫",
+      "itemId": "item_93560a69787e",
+      "mh4uId": 267,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "진오우거",
+          "navMonster": "진오우거",
+          "nameEn": "Zinogre",
+          "rank": "하위",
+          "methods": [
+            "Bug-Catching Back · 90% · ×1",
+            "Shiny Drop · 15% · ×1",
+            "Capture · 12% · ×4",
+            "Capture · 8% · ×2",
+            "Shiny Drop · 8% · ×1",
+            "Capture · 8% · ×4"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "극한상태 진오우거",
+          "navMonster": "진오우거",
+          "nameEn": "Apex Zinogre",
+          "rank": "G급",
+          "methods": [
+            "Bug-Catching Back · 90% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Fury on the Mount",
+          "nameEn": "Advanced: Fury on the Mount",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Zinogre",
+          "probability": 15,
+          "count": 6
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Uncorner the Market",
+          "nameEn": "Uncorner the Market",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Rathalos and a Zinogre",
+          "probability": 10,
+          "count": 4
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Zinogre Zone",
+          "nameEn": "Zinogre Zone",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Zinogre",
+          "probability": 10,
+          "count": 4
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "진오우거",
+        "navMonster": "진오우거"
+      },
+      {
+        "name": "극한상태 진오우거",
+        "navMonster": "진오우거"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Uncorner the Market",
+        "nameJa": "",
+        "level": "Caravan★5",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Rathalos and a Zinogre",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Zinogre Zone",
+        "nameJa": "",
+        "level": "Caravan★5",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Zinogre",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Howling for Blood",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Zinogre",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Fury on the Mount",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Zinogre",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

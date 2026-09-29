@@ -1,0 +1,111 @@
+{
+  "materials": [
+    {
+      "name": "키린 가죽++",
+      "count": 6,
+      "nameJa": "キリンの特上皮",
+      "itemId": "item_mh4u_0935",
+      "mh4uId": 935,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "키린",
+          "navMonster": "키린",
+          "nameEn": "Kirin",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 70% · ×1",
+            "Shiny Drop · 20% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "키린 아종",
+          "navMonster": "키린 아종",
+          "nameEn": "Oroshi Kirin",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 70% · ×1",
+            "Shiny Drop · 20% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "키린 강푸른뿔",
+      "count": 3,
+      "nameJa": "キリンの剛蒼角",
+      "itemId": "item_mh4u_0941",
+      "mh4uId": 941,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "키린",
+          "navMonster": "키린",
+          "nameEn": "Kirin",
+          "rank": "G급",
+          "methods": [
+            "Break Horn · 80% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "키린 질긴번개꼬리",
+      "count": 5,
+      "nameJa": "キリンの靭雷尾",
+      "itemId": "item_mh4u_0939",
+      "mh4uId": 939,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "키린",
+          "navMonster": "키린",
+          "nameEn": "Kirin",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 30% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "견고한 진홍뿔",
+      "count": 3,
+      "nameJa": "堅牢な真紅の角",
+      "itemId": "item_mh4u_0721",
+      "mh4uId": 721,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "모노블로스",
+          "navMonster": "모노블로스",
+          "nameEn": "Monoblos",
+          "rank": "G급",
+          "methods": [
+            "Break Horn · 60% · ×1"
+          ]
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "키린",
+        "navMonster": "키린"
+      },
+      {
+        "name": "키린 아종",
+        "navMonster": "키린 아종"
+      },
+      {
+        "name": "모노블로스",
+        "navMonster": "모노블로스"
+      }
+    ],
+    "quests": [],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

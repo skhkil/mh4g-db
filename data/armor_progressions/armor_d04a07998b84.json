@@ -1,0 +1,297 @@
+{
+  "materials": [
+    {
+      "name": "거극룡 흉인",
+      "count": 2,
+      "nameJa": "巨戟龍の凶刃",
+      "itemId": "item_mh4u_1076",
+      "mh4uId": 1076,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "고그마지오스",
+          "navMonster": "고그마지오스",
+          "nameEn": "Gogmazios",
+          "rank": "G급",
+          "methods": [
+            "Break Chest · 20% · ×1",
+            "Break Back · 20% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Quagmire Quarrel",
+          "nameEn": "Advanced: Quagmire Quarrel",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Gogmazios",
+          "probability": 15,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Act of Gog",
+          "nameEn": "Advanced: Act of Gog",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Gogmazios",
+          "probability": 15,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "거극룡 요새비늘",
+      "count": 4,
+      "nameJa": "巨戟龍の塞鱗",
+      "itemId": "item_mh4u_1074",
+      "mh4uId": 1074,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "고그마지오스",
+          "navMonster": "고그마지오스",
+          "nameEn": "Gogmazios",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 38% · ×1",
+            "Tail Carve · 38% · ×1",
+            "Break Back · 38% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Quagmire Quarrel",
+          "nameEn": "Advanced: Quagmire Quarrel",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Gogmazios",
+          "probability": 30,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Act of Gog",
+          "nameEn": "Advanced: Act of Gog",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Gogmazios",
+          "probability": 30,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "연흑룡 검은비늘",
+          "requiredItemId": "item_mh4u_1219",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: Act of Gog",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "거극룡 성갑각",
+      "count": 2,
+      "nameJa": "巨戟龍の城殻",
+      "itemId": "item_mh4u_1075",
+      "mh4uId": 1075,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "고그마지오스",
+          "navMonster": "고그마지오스",
+          "nameEn": "Gogmazios",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 28% · ×1",
+            "Break Head · 28% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Quagmire Quarrel",
+          "nameEn": "Advanced: Quagmire Quarrel",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Gogmazios",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Act of Gog",
+          "nameEn": "Advanced: Act of Gog",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Gogmazios",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "퓨어크리스털",
+      "count": 2,
+      "nameJa": "ピュアクリスタル",
+      "itemId": "item_d689931faa86",
+      "mh4uId": 222,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "키린",
+          "navMonster": "키린",
+          "nameEn": "Kirin",
+          "rank": "G급",
+          "methods": [
+            "Shiny Drop · 50% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "키린 아종",
+          "navMonster": "키린 아종",
+          "nameEn": "Oroshi Kirin",
+          "rank": "G급",
+          "methods": [
+            "Shiny Drop · 50% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "게리오스",
+          "navMonster": "게리오스",
+          "nameEn": "Gypceros",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 8% · ×1",
+            "Break Head · 7% · ×1",
+            "Shiny Drop · 5% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: A Final Battle Cry",
+          "nameEn": "Advanced: A Final Battle Cry",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Fatalis or repel it",
+          "probability": 15,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Icy Shadow",
+          "nameEn": "Icy Shadow",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Khezu",
+          "probability": 5,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Puffer Fish",
+          "nameEn": "Puffer Fish",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Zamtrios",
+          "probability": 5,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "고그마지오스",
+        "navMonster": "고그마지오스"
+      },
+      {
+        "name": "키린",
+        "navMonster": "키린"
+      },
+      {
+        "name": "키린 아종",
+        "navMonster": "키린 아종"
+      },
+      {
+        "name": "게리오스",
+        "navMonster": "게리오스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: Quagmire Quarrel",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay Gogmazios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Act of Gog",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay Gogmazios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: A Final Battle Cry",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Fatalis or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Icy Shadow",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Khezu",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Puffer Fish",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Zamtrios",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

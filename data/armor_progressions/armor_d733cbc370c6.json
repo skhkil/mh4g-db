@@ -1,0 +1,384 @@
+{
+  "materials": [
+    {
+      "name": "굉룡 중갑각",
+      "count": 6,
+      "nameJa": "轟竜の重殻",
+      "itemId": "item_mh4u_0822",
+      "mh4uId": 822,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "티가렉스",
+          "navMonster": "티가렉스",
+          "nameEn": "Tigrex",
+          "rank": "G급",
+          "methods": [
+            "Capture · 32% · ×1",
+            "Body Carve · 25% · ×1",
+            "Break Head · 20% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "극한상태 티가렉스",
+          "navMonster": "티가렉스",
+          "nameEn": "Apex Tigrex",
+          "rank": "G급",
+          "methods": [
+            "Capture · 30% · ×1",
+            "Body Carve · 24% · ×1",
+            "Break Head · 20% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Hell Hunter Hoax",
+          "nameEn": "Advanced: Hell Hunter Hoax",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Tigrex and a Brute Tigrex",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "The Azure King and the Tyrant",
+          "nameEn": "The Azure King and the Tyrant",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt an Azure Rathalos and a Tigrex",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Beast Not Quite Busted",
+          "nameEn": "Beast Not Quite Busted",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Tigrex",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "굉룡 두툼비늘",
+      "count": 5,
+      "nameJa": "轟竜の厚鱗",
+      "itemId": "item_mh4u_0819",
+      "mh4uId": 819,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "티가렉스",
+          "navMonster": "티가렉스",
+          "nameEn": "Tigrex",
+          "rank": "G급",
+          "methods": [
+            "Tail Carve · 40% · ×1",
+            "Body Carve · 36% · ×1",
+            "Shiny Drop · 25% · ×1",
+            "Capture · 20% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "극한상태 티가렉스",
+          "navMonster": "티가렉스",
+          "nameEn": "Apex Tigrex",
+          "rank": "G급",
+          "methods": [
+            "Tail Carve · 40% · ×1",
+            "Body Carve · 32% · ×1",
+            "Shiny Drop · 23% · ×1",
+            "Capture · 20% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Tigrex In Effect",
+          "nameEn": "Advanced: Tigrex In Effect",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Tigrex",
+          "probability": 30,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Operation Tigrex Tamer",
+          "nameEn": "Operation Tigrex Tamer",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Tigrex",
+          "probability": 30,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Hell Hunter Hoax",
+          "nameEn": "Advanced: Hell Hunter Hoax",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Tigrex and a Brute Tigrex",
+          "probability": 29,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "굉룡 천린",
+      "count": 1,
+      "nameJa": "轟竜の天鱗",
+      "itemId": "item_mh4u_0833",
+      "mh4uId": 833,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "극한상태 티가렉스",
+          "navMonster": "티가렉스",
+          "nameEn": "Apex Tigrex",
+          "rank": "G급",
+          "methods": [
+            "Capture · 5% · ×1",
+            "Body Carve · 4% · ×1",
+            "Tail Carve · 4% · ×1",
+            "Shiny Drop · 2% · ×1",
+            "Break Head · 2% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "티가렉스 희소종",
+          "navMonster": "티가렉스 희소종",
+          "nameEn": "Molten Tigrex",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 4% · ×1",
+            "Body Carve · 3% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "티가렉스",
+          "navMonster": "티가렉스",
+          "nameEn": "Tigrex",
+          "rank": "G급",
+          "methods": [
+            "Capture · 3% · ×1",
+            "Body Carve · 2% · ×1",
+            "Tail Carve · 2% · ×1",
+            "Break Head · 2% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "The Sky Is Falling",
+          "nameEn": "The Sky Is Falling",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Molten Tigrex",
+          "probability": 5,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Tigrex In Effect",
+          "nameEn": "Advanced: Tigrex In Effect",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Tigrex",
+          "probability": 5,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Monster Hunter!",
+          "nameEn": "Advanced: Monster Hunter!",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 5,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "두꺼운 두툼가죽",
+      "count": 3,
+      "nameJa": "肉厚な厚皮",
+      "itemId": "item_mh4u_0548",
+      "mh4uId": 548,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "스쿠아길",
+          "navMonster": "",
+          "nameEn": "Zamite",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 40% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "All-You-Can-Hunt Zamite",
+          "nameEn": "All-You-Can-Hunt Zamite",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay 25 Zamite",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Puffer Fish",
+          "nameEn": "Puffer Fish",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Zamtrios",
+          "probability": 24,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "티가렉스",
+        "navMonster": "티가렉스"
+      },
+      {
+        "name": "극한상태 티가렉스",
+        "navMonster": "티가렉스"
+      },
+      {
+        "name": "티가렉스 희소종",
+        "navMonster": "티가렉스 희소종"
+      },
+      {
+        "name": "스쿠아길",
+        "navMonster": ""
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: Hell Hunter Hoax",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Tigrex and a Brute Tigrex",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "The Azure King and the Tyrant",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt an Azure Rathalos and a Tigrex",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Beast Not Quite Busted",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Tigrex",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Tigrex In Effect",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Tigrex",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Operation Tigrex Tamer",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Tigrex",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "The Sky Is Falling",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Molten Tigrex",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Monster Hunter!",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt all large monsters",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "All-You-Can-Hunt Zamite",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay 25 Zamite",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Puffer Fish",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Zamtrios",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

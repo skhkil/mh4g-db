@@ -1,0 +1,329 @@
+{
+  "materials": [
+    {
+      "name": "해지주 중협각",
+      "count": 4,
+      "nameJa": "骸蜘蛛の重鋏角",
+      "itemId": "item_mh4u_0597",
+      "mh4uId": 597,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "네르스큐라 아종",
+          "navMonster": "네르스큐라 아종",
+          "nameEn": "Shrouded Nerscylla",
+          "rank": "G급",
+          "methods": [
+            "Capture · 35% · ×1",
+            "Body Carve · 21% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Shrouded in Mystery",
+          "nameEn": "Shrouded in Mystery",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Shrouded Nerscylla",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Course Correction",
+          "nameEn": "Course Correction",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Shrouded Nerscylla",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Spider Study",
+          "nameEn": "Advanced: Spider Study",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt 2 Shrouded Nerscylla",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "해지주 중갑각",
+      "count": 3,
+      "nameJa": "骸蜘蛛の重殻",
+      "itemId": "item_mh4u_0596",
+      "mh4uId": 596,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "네르스큐라 아종",
+          "navMonster": "네르스큐라 아종",
+          "nameEn": "Shrouded Nerscylla",
+          "rank": "G급",
+          "methods": [
+            "Break Cover Skin · 70% · ×1",
+            "Body Carve · 42% · ×1",
+            "Break Poison Stinger · 35% · ×1",
+            "Break Claw · 30% · ×1",
+            "Capture · 20% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Shrouded in Mystery",
+          "nameEn": "Shrouded in Mystery",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Shrouded Nerscylla",
+          "probability": 28,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Course Correction",
+          "nameEn": "Course Correction",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Shrouded Nerscylla",
+          "probability": 28,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Spider Study",
+          "nameEn": "Advanced: Spider Study",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt 2 Shrouded Nerscylla",
+          "probability": 28,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "해지주 비밀가시",
+      "count": 2,
+      "nameJa": "骸蜘蛛の秘棘",
+      "itemId": "item_mh4u_0599",
+      "mh4uId": 599,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "네르스큐라 아종",
+          "navMonster": "네르스큐라 아종",
+          "nameEn": "Shrouded Nerscylla",
+          "rank": "G급",
+          "methods": [
+            "Break Poison Stinger · 65% · ×1",
+            "Capture · 25% · ×1",
+            "Body Carve · 8% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Shrouded in Mystery",
+          "nameEn": "Shrouded in Mystery",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Shrouded Nerscylla",
+          "probability": 10,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Course Correction",
+          "nameEn": "Course Correction",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Shrouded Nerscylla",
+          "probability": 10,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Spider Study",
+          "nameEn": "Advanced: Spider Study",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt 2 Shrouded Nerscylla",
+          "probability": 10,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "진주색염피",
+      "count": 2,
+      "nameJa": "真珠色の艶皮",
+      "itemId": "item_mh4u_0652",
+      "mh4uId": 652,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "푸루푸루",
+          "navMonster": "푸루푸루",
+          "nameEn": "Khezu",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 54% · ×1",
+            "Break Head · 54% · ×1",
+            "Break Body · 45% · ×1",
+            "Capture · 32% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "네르스큐라 아종",
+          "navMonster": "네르스큐라 아종",
+          "nameEn": "Shrouded Nerscylla",
+          "rank": "G급",
+          "methods": [
+            "Break Cover Skin · 30% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Icy Shadow",
+          "nameEn": "Icy Shadow",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Khezu",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hunt-a-thon: Khezu",
+          "nameEn": "Hunt-a-thon: Khezu",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt 2 Khezu before time expires or deliver a Paw Pass Ticket",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Harvest Tour: Frozen Seaway",
+          "nameEn": "Harvest Tour: Frozen Seaway",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+          "probability": 25,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "토사룡 중갑각",
+          "requiredItemId": "item_mh4u_1171",
+          "unlockQuestId": "",
+          "unlockQuest": "Hunt-a-thon: Khezu",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "네르스큐라 아종",
+        "navMonster": "네르스큐라 아종"
+      },
+      {
+        "name": "푸루푸루",
+        "navMonster": "푸루푸루"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Shrouded in Mystery",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Shrouded Nerscylla",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Course Correction",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Shrouded Nerscylla",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Spider Study",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt 2 Shrouded Nerscylla",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Icy Shadow",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Khezu",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Hunt-a-thon: Khezu",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt 2 Khezu before time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Harvest Tour: Frozen Seaway",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

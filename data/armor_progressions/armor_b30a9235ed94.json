@@ -1,0 +1,306 @@
+{
+  "materials": [
+    {
+      "name": "장수호랑나비",
+      "count": 1,
+      "nameJa": "オオツノアゲハ",
+      "itemId": "item_3f8cdddebca5",
+      "mh4uId": 271,
+      "sources": [
+        {
+          "type": "acquire",
+          "label": "채집(상위탐색)"
+        }
+      ]
+    },
+    {
+      "name": "희귀풍뎅이",
+      "count": 1,
+      "nameJa": "マレコガネ",
+      "itemId": "item_54ae5510c450",
+      "mh4uId": 268,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Icy Shadow",
+          "nameEn": "Icy Shadow",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Khezu",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "All-You-Can-Hunt Zamite",
+          "nameEn": "All-You-Can-Hunt Zamite",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay 25 Zamite",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "La Vie en Rose",
+          "nameEn": "La Vie en Rose",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Red Khezu",
+          "probability": 12,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "몬스터의 농즙",
+      "count": 3,
+      "nameJa": "モンスターの濃汁",
+      "itemId": "item_mh4u_0601",
+      "mh4uId": 601,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Altaroth",
+          "navMonster": "",
+          "nameEn": "Altaroth",
+          "rank": "상위",
+          "methods": [
+            "Shiny Drop (Gray) · 20% · ×1",
+            "Body Carve · 15% · ×1",
+            "Shiny Drop (Blue) · 10% · ×1",
+            "Shiny Drop (Orange) · 10% · ×1",
+            "Shiny Drop (Green) · 10% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "Bnahabra",
+          "navMonster": "",
+          "nameEn": "Bnahabra",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 20% · ×1",
+            "Body Carve · 10% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "아르셀타스",
+          "navMonster": "아르셀타스",
+          "nameEn": "Seltas",
+          "rank": "상위",
+          "methods": [
+            "Shiny Drop · 20% · ×1",
+            "Capture · 10% · ×1",
+            "Capture · 5% · ×2"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Bnahabra Buffet",
+          "nameEn": "Bnahabra Buffet",
+          "level": "Caravan★7",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay 12 Bnahabra",
+          "probability": 21,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Bnahabra Bloodbath",
+          "nameEn": "Bnahabra Bloodbath",
+          "level": "Guild★4",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay 20 Bnahabra",
+          "probability": 21,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Purse Snatcher",
+          "nameEn": "Purse Snatcher",
+          "level": "Caravan★7",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Purple Gypceros",
+          "probability": 20,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "동결주머니",
+      "count": 2,
+      "nameJa": "凍結袋",
+      "itemId": "item_mh4u_0346",
+      "mh4uId": 346,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "자보아자길",
+          "navMonster": "자보아자길",
+          "nameEn": "Zamtrios",
+          "rank": "상위",
+          "methods": [
+            "Capture · 20% · ×1",
+            "Body Carve · 16% · ×1",
+            "Shiny Drop (Breaking Ice) · 10% · ×1",
+            "Shiny Drop (Breaking Ice) · 5% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Fin Finder",
+          "nameEn": "Fin Finder",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Zamtrios",
+          "probability": 14,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Fin Finder",
+          "nameEn": "Fin Finder",
+          "level": "Guild★5",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Zamtrios",
+          "probability": 14,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Cold-blooded Combo",
+          "nameEn": "Cold-blooded Combo",
+          "level": "Guild★5",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Zamtrios and a Lagombi",
+          "probability": 14,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "Altaroth",
+        "navMonster": ""
+      },
+      {
+        "name": "Bnahabra",
+        "navMonster": ""
+      },
+      {
+        "name": "아르셀타스",
+        "navMonster": "아르셀타스"
+      },
+      {
+        "name": "자보아자길",
+        "navMonster": "자보아자길"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Icy Shadow",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Khezu",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "All-You-Can-Hunt Zamite",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay 25 Zamite",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "La Vie en Rose",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Red Khezu",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Bnahabra Buffet",
+        "nameJa": "",
+        "level": "Caravan★7",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay 12 Bnahabra",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Bnahabra Bloodbath",
+        "nameJa": "",
+        "level": "Guild★4",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay 20 Bnahabra",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Purse Snatcher",
+        "nameJa": "",
+        "level": "Caravan★7",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Purple Gypceros",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Fin Finder",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Zamtrios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Cold-blooded Combo",
+        "nameJa": "",
+        "level": "Guild★5",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Zamtrios and a Lagombi",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

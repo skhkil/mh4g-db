@@ -1,0 +1,298 @@
+{
+  "materials": [
+    {
+      "name": "녹모수 억센털",
+      "count": 3,
+      "nameJa": "",
+      "itemId": "item_mh4u_0501",
+      "mh4uId": 501,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "바바콩가 아종",
+          "navMonster": "바바콩가 아종",
+          "nameEn": "Emerald Congalala",
+          "rank": "상위",
+          "methods": [
+            "Break Head · 60% · ×1",
+            "Body Carve · 50% · ×1",
+            "Capture · 40% · ×1",
+            "Break Claw · 20% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hot-air Buffoon",
+          "nameEn": "Hot-air Buffoon",
+          "level": "Caravan★7",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt an Emerald Congalala",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Buffoonish Baboon",
+          "nameEn": "Buffoonish Baboon",
+          "level": "Guild★4",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt an Emerald Congalala",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Apes of Wrath",
+          "nameEn": "Apes of Wrath",
+          "level": "Guild★4",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Kecha Wacha and an Emerald Congalala",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "콩가 억센털",
+      "count": 4,
+      "nameJa": "",
+      "itemId": "item_mh4u_0490",
+      "mh4uId": 490,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Conga",
+          "navMonster": "",
+          "nameEn": "Conga",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 50% · ×1",
+            "Body Carve · 33% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "괴수골",
+      "count": 6,
+      "nameJa": "",
+      "itemId": "item_5ed5ced47a6f",
+      "mh4uId": 317,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Conga",
+          "navMonster": "",
+          "nameEn": "Conga",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 22% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "Popo",
+          "navMonster": "",
+          "nameEn": "Popo",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 20% · ×1",
+            "Body Carve · 8% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "바바콩가",
+          "navMonster": "바바콩가",
+          "nameEn": "Congalala",
+          "rank": "하위",
+          "methods": [
+            "Capture · 20% · ×4",
+            "Shiny Drop (Bone) · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Bite Your Tongues",
+          "nameEn": "Bite Your Tongues",
+          "level": "Guild★2",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Deliver 6 Popo Tongues",
+          "probability": 100,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Conga Bongo",
+          "nameEn": "Conga Bongo",
+          "level": "Caravan★3",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay 5 Congas",
+          "probability": 25,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Conga Bongo",
+          "nameEn": "Conga Bongo",
+          "level": "Guild★2",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay 6 Congas",
+          "probability": 25,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "킬러비틀",
+      "count": 3,
+      "nameJa": "",
+      "itemId": "item_706ebc21b871",
+      "mh4uId": 265,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Mistentoe Delivery",
+          "nameEn": "Mistentoe Delivery",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 5 Mistentoe",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Crystal Bone Collector",
+          "nameEn": "Crystal Bone Collector",
+          "level": "Caravan★3",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 5 Crystal Bones",
+          "probability": 10,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Conga Bongo",
+          "nameEn": "Conga Bongo",
+          "level": "Caravan★3",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay 5 Congas",
+          "probability": 10,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "바바콩가 아종",
+        "navMonster": "바바콩가 아종"
+      },
+      {
+        "name": "Conga",
+        "navMonster": ""
+      },
+      {
+        "name": "Popo",
+        "navMonster": ""
+      },
+      {
+        "name": "바바콩가",
+        "navMonster": "바바콩가"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Hot-air Buffoon",
+        "nameJa": "",
+        "level": "Caravan★7",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt an Emerald Congalala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Buffoonish Baboon",
+        "nameJa": "",
+        "level": "Guild★4",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt an Emerald Congalala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Apes of Wrath",
+        "nameJa": "",
+        "level": "Guild★4",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Kecha Wacha and an Emerald Congalala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Bite Your Tongues",
+        "nameJa": "",
+        "level": "Guild★2",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Deliver 6 Popo Tongues",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Conga Bongo",
+        "nameJa": "",
+        "level": "Caravan★3",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay 5 Congas",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Mistentoe Delivery",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 5 Mistentoe",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Crystal Bone Collector",
+        "nameJa": "",
+        "level": "Caravan★3",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 5 Crystal Bones",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

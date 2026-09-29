@@ -1,0 +1,21 @@
+{
+  "ok": true,
+  "version": "0.7.7-chat4-research2-hotfix16",
+  "counts": {
+    "armors": 3119,
+    "progressions": 3119,
+    "materials": 11630,
+    "exchangeSources": 2036,
+    "unknownSources": 0
+  },
+  "checks": {
+    "all_progressions_split": true,
+    "no_unknown_sources": true,
+    "main_armor_db_light": true,
+    "row_click_toggle": true,
+    "lazy_progression_fetch": true,
+    "full_width_detail": true,
+    "exchange_route_visible": true
+  },
+  "errors": []
+}

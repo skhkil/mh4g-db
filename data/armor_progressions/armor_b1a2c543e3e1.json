@@ -1,0 +1,405 @@
+{
+  "materials": [
+    {
+      "name": "희망의 증표",
+      "count": 1,
+      "nameJa": "希望の証",
+      "itemId": "item_0d03c7de5e2a",
+      "mh4uId": 1413,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Terrible Tyrant",
+          "nameEn": "Terrible Tyrant",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Molten Tigrex",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Busted Hell Hunters",
+          "nameEn": "Busted Hell Hunters",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Molten Tigrex",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Speartip Menace",
+          "nameEn": "Advanced: Speartip Menace",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Dalamadur",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "자화룡 비늘+",
+      "count": 5,
+      "nameJa": "雌火竜の上鱗",
+      "itemId": "item_mh4u_0661",
+      "mh4uId": 661,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "리오레이아",
+          "navMonster": "리오레이아",
+          "nameEn": "Rathian",
+          "rank": "상위",
+          "methods": [
+            "Tail Carve · 55% · ×1",
+            "Body Carve · 38% · ×1",
+            "Capture · 22% · ×2",
+            "Break Head · 20% · ×1",
+            "Shiny Drop · 15% · ×1",
+            "Break Wing · 15% · ×1",
+            "Tail Carve · 7% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Killer Queens",
+          "nameEn": "Killer Queens",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt 2 Rathians",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Writer's Block",
+          "nameEn": "Writer's Block",
+          "level": "Guild★5",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Najarala and a Rathian",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Pyres Beware",
+          "nameEn": "Pyres Beware",
+          "level": "Guild★5",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Rathian and a Rathalos",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "등어룡 가죽+",
+          "requiredItemId": "item_mh4u_1125",
+          "unlockQuestId": "",
+          "unlockQuest": "Trader in Trouble",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "자화룡 역린",
+      "count": 1,
+      "nameJa": "雌火竜の逆鱗",
+      "itemId": "item_mh4u_0670",
+      "mh4uId": 670,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "리오레이아",
+          "navMonster": "리오레이아",
+          "nameEn": "Rathian",
+          "rank": "상위",
+          "methods": [
+            "Tail Carve · 10% · ×1",
+            "Break Head · 4% · ×1",
+            "Capture · 4% · ×1",
+            "Tail Carve · 3% · ×1",
+            "Capture · 2% · ×1",
+            "Shiny Drop · 1% · ×1",
+            "Break Back · 1% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "리오레이아 아종",
+          "navMonster": "리오레이아 아종",
+          "nameEn": "Pink Rathian",
+          "rank": "상위",
+          "methods": [
+            "Tail Carve · 10% · ×1",
+            "Capture · 5% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "리오레이아 희소종",
+          "navMonster": "리오레이아 희소종",
+          "nameEn": "Gold Rathian",
+          "rank": "상위",
+          "methods": [
+            "Tail Carve · 10% · ×1",
+            "Break Head · 6% · ×1",
+            "Capture · 4% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Queen and Rook",
+          "nameEn": "Queen and Rook",
+          "level": "Guild★3",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Rathian and a Gravios",
+          "probability": 3,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Egg-straction: Wyvern",
+          "nameEn": "Egg-straction: Wyvern",
+          "level": "Caravan★4",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 2 Wyvem Eggs",
+          "probability": 1,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Troverian Trouble",
+          "nameEn": "Troverian Trouble",
+          "level": "Caravan★4",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Rathian",
+          "probability": 1,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "유니언광석",
+      "count": 3,
+      "nameJa": "ユニオン鉱石",
+      "itemId": "item_dfe22fd0ad9d",
+      "mh4uId": 215,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "다렌·모란",
+          "navMonster": "다렌·모란",
+          "nameEn": "Dah'ren Mohran",
+          "rank": "G급",
+          "methods": [
+            "Mining Back · 35% · ×1",
+            "Break Fin · 14% · ×1",
+            "Break Blowhole · 14% · ×1",
+            "Mining Back · 7% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Take a Powderstone",
+          "nameEn": "Take a Powderstone",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 1 Powderstone",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Heat Exhaustion",
+          "nameEn": "Heat Exhaustion",
+          "level": "Guild★5",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Deliver 4 Powderstones",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hi Ho Silver",
+          "nameEn": "Hi Ho Silver",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 3 Silverfish",
+          "probability": 8,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "리오레이아",
+        "navMonster": "리오레이아"
+      },
+      {
+        "name": "리오레이아 아종",
+        "navMonster": "리오레이아 아종"
+      },
+      {
+        "name": "리오레이아 희소종",
+        "navMonster": "리오레이아 희소종"
+      },
+      {
+        "name": "다렌·모란",
+        "navMonster": "다렌·모란"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Terrible Tyrant",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Molten Tigrex",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Busted Hell Hunters",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Molten Tigrex",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Speartip Menace",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay Dalamadur",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Killer Queens",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt 2 Rathians",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Writer's Block",
+        "nameJa": "",
+        "level": "Guild★5",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Najarala and a Rathian",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Pyres Beware",
+        "nameJa": "",
+        "level": "Guild★5",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Rathian and a Rathalos",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Queen and Rook",
+        "nameJa": "",
+        "level": "Guild★3",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Rathian and a Gravios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Egg-straction: Wyvern",
+        "nameJa": "",
+        "level": "Caravan★4",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 2 Wyvem Eggs",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Troverian Trouble",
+        "nameJa": "",
+        "level": "Caravan★4",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Rathian",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Take a Powderstone",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 1 Powderstone",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Heat Exhaustion",
+        "nameJa": "",
+        "level": "Guild★5",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Deliver 4 Powderstones",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Hi Ho Silver",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 3 Silverfish",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

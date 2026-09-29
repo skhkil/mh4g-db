@@ -1,0 +1,291 @@
+{
+  "materials": [
+    {
+      "name": "대굉룡 예리이빨",
+      "count": 3,
+      "nameJa": "大轟竜の鋭牙",
+      "itemId": "item_mh4u_0848",
+      "mh4uId": 848,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "티가렉스 희소종",
+          "navMonster": "티가렉스 희소종",
+          "nameEn": "Molten Tigrex",
+          "rank": "상위",
+          "methods": [
+            "Break Head · 57% · ×1",
+            "Capture · 28% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Terrible Tyrant",
+          "nameEn": "Terrible Tyrant",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Molten Tigrex",
+          "probability": 18,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Busted Hell Hunters",
+          "nameEn": "Busted Hell Hunters",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Molten Tigrex",
+          "probability": 18,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "대굉룡 비늘+",
+      "count": 6,
+      "nameJa": "大轟竜の上鱗",
+      "itemId": "item_mh4u_0842",
+      "mh4uId": 842,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "티가렉스 희소종",
+          "navMonster": "티가렉스 희소종",
+          "nameEn": "Molten Tigrex",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 38% · ×1",
+            "Tail Carve · 37% · ×1",
+            "Capture · 20% · ×1",
+            "Shiny Drop · 18% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Terrible Tyrant",
+          "nameEn": "Terrible Tyrant",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Molten Tigrex",
+          "probability": 30,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Busted Hell Hunters",
+          "nameEn": "Busted Hell Hunters",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Molten Tigrex",
+          "probability": 30,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "대굉룡 꼬리",
+      "count": 2,
+      "nameJa": "大轟竜の尻尾",
+      "itemId": "item_mh4u_0850",
+      "mh4uId": 850,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "티가렉스 희소종",
+          "navMonster": "티가렉스 희소종",
+          "nameEn": "Molten Tigrex",
+          "rank": "상위",
+          "methods": [
+            "Tail Carve · 60% · ×1",
+            "Capture · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Terrible Tyrant",
+          "nameEn": "Terrible Tyrant",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Molten Tigrex",
+          "probability": 10,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Busted Hell Hunters",
+          "nameEn": "Busted Hell Hunters",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Molten Tigrex",
+          "probability": 10,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "강룡 보옥",
+      "count": 1,
+      "nameJa": "鋼龍の宝玉",
+      "itemId": "item_mh4u_0958",
+      "mh4uId": 958,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "크샬다오라",
+          "navMonster": "크샬다오라",
+          "nameEn": "Kushala Daora",
+          "rank": "G급",
+          "methods": [
+            "Shiny Drop · 5% · ×1",
+            "Tail Carve · 4% · ×1",
+            "Break Head · 4% · ×1",
+            "Body Carve · 4% · ×1",
+            "Shiny Drop · 3% · ×1",
+            "Body Carve · 2% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "녹슨크샬다오라",
+          "navMonster": "녹슨크샬다오라",
+          "nameEn": "Rusted Kushala Daora",
+          "rank": "G급",
+          "methods": [
+            "Shiny Drop · 5% · ×1",
+            "Tail Carve · 4% · ×1",
+            "Break Head · 4% · ×1",
+            "Shiny Drop · 3% · ×1",
+            "Body Carve · 2% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: A Storm of Steel",
+          "nameEn": "Advanced: A Storm of Steel",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Kushala Daora or repel it",
+          "probability": 5,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Operation Windbreaker",
+          "nameEn": "Operation Windbreaker",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Kushala Daora or repel it",
+          "probability": 5,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Stormy Knight",
+          "nameEn": "Advanced: Stormy Knight",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Kushala Daora or repel it",
+          "probability": 4,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "하룡 보옥",
+          "requiredItemId": "item_mh4u_1140",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: Stormy Knight",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "티가렉스 희소종",
+        "navMonster": "티가렉스 희소종"
+      },
+      {
+        "name": "크샬다오라",
+        "navMonster": "크샬다오라"
+      },
+      {
+        "name": "녹슨크샬다오라",
+        "navMonster": "녹슨크샬다오라"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Terrible Tyrant",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Molten Tigrex",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Busted Hell Hunters",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Molten Tigrex",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: A Storm of Steel",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Kushala Daora or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Operation Windbreaker",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Kushala Daora or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Stormy Knight",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Kushala Daora or repel it",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

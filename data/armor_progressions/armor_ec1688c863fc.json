@@ -1,0 +1,274 @@
+{
+  "materials": [
+    {
+      "name": "암룡 갑각",
+      "count": 3,
+      "nameJa": "岩竜の甲殻",
+      "itemId": "item_mh4u_0793",
+      "mh4uId": 793,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "바살모스",
+          "navMonster": "바살모스",
+          "nameEn": "Basarios",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 46% · ×1",
+            "Tail Carve · 45% · ×1",
+            "Capture · 36% · ×1",
+            "Mining Back · 5% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Research: Basarios",
+          "nameEn": "Research: Basarios",
+          "level": "Caravan★3",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Basarios",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "잠구룡 가죽",
+          "requiredItemId": "item_mh4u_1102",
+          "unlockQuestId": "",
+          "unlockQuest": "Tipping the Scales",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "마카라이트광석",
+      "count": 5,
+      "nameJa": "マカライト鉱石",
+      "itemId": "item_8f142f2db297",
+      "mh4uId": 205,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "바살모스",
+          "navMonster": "바살모스",
+          "nameEn": "Basarios",
+          "rank": "하위",
+          "methods": [
+            "Capture · 59% · ×2",
+            "Tail Carve · 55% · ×1",
+            "Break Belly · 55% · ×1",
+            "Break Back · 50% · ×3",
+            "Mining Back · 35% · ×1",
+            "Body Carve · 25% · ×1",
+            "Shiny Drop · 20% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "바바콩가",
+          "navMonster": "바바콩가",
+          "nameEn": "Congalala",
+          "rank": "하위",
+          "methods": [
+            "Shiny Drop (Ore) · 39% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Crystal Bone Collector",
+          "nameEn": "Crystal Bone Collector",
+          "level": "Caravan★3",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 5 Crystal Bones",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Sootstone Search",
+          "nameEn": "Sootstone Search",
+          "level": "Guild★2",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Deliver 3 Sootstone Ores",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Crystal Clearing",
+          "nameEn": "Crystal Clearing",
+          "level": "Caravan★2",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 4 Sulfur Crystals",
+          "probability": 20,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "괴조 비늘",
+      "count": 2,
+      "nameJa": "怪鳥の鱗",
+      "itemId": "item_mh4u_0429",
+      "mh4uId": 429,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "얀쿡크",
+          "navMonster": "얀쿡크",
+          "nameEn": "Yian Kut-Ku",
+          "rank": "하위",
+          "methods": [
+            "Break Ear · 50% · ×3",
+            "Shiny Drop · 16% · ×1",
+            "Body Carve · 13% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "예리어",
+      "count": 10,
+      "nameJa": "キレアジ",
+      "itemId": "item_5e6abfa1a2ef",
+      "mh4uId": 236,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Sushifish SOS",
+          "nameEn": "Sushifish SOS",
+          "level": "Caravan★2",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 5 Sushifish",
+          "probability": 25,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Fishing's Lure",
+          "nameEn": "Fishing's Lure",
+          "level": "Guild★1",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Deliver 8 Small Goldenhsh",
+          "probability": 25,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Fish Wish",
+          "nameEn": "Fish Wish",
+          "level": "Caravan★3",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 4 Small Goldenfish",
+          "probability": 20,
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "바살모스",
+        "navMonster": "바살모스"
+      },
+      {
+        "name": "바바콩가",
+        "navMonster": "바바콩가"
+      },
+      {
+        "name": "얀쿡크",
+        "navMonster": "얀쿡크"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Research: Basarios",
+        "nameJa": "",
+        "level": "Caravan★3",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Basarios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Crystal Bone Collector",
+        "nameJa": "",
+        "level": "Caravan★3",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 5 Crystal Bones",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Sootstone Search",
+        "nameJa": "",
+        "level": "Guild★2",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Deliver 3 Sootstone Ores",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Crystal Clearing",
+        "nameJa": "",
+        "level": "Caravan★2",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 4 Sulfur Crystals",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Sushifish SOS",
+        "nameJa": "",
+        "level": "Caravan★2",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 5 Sushifish",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Fishing's Lure",
+        "nameJa": "",
+        "level": "Guild★1",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Deliver 8 Small Goldenhsh",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Fish Wish",
+        "nameJa": "",
+        "level": "Caravan★3",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 4 Small Goldenfish",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

@@ -1,0 +1,168 @@
+{
+  "materials": [
+    {
+      "name": "흑룡 홍염뿔",
+      "count": 2,
+      "nameJa": "黒龍の紅焔角",
+      "itemId": "item_mh4u_1037",
+      "mh4uId": 1037,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "밀라보레아스 (홍염룡)",
+          "navMonster": "밀라보레아스 (홍염룡)",
+          "nameEn": "Crimson Fatalis",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 0% · ×1",
+            "Break Horn · 0% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: A Final Battle Cry",
+          "nameEn": "Advanced: A Final Battle Cry",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Fatalis or repel it",
+          "probability": 15,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "흑룡 홍염갑각",
+      "count": 4,
+      "nameJa": "黒龍の紅焔殻",
+      "itemId": "item_mh4u_1039",
+      "mh4uId": 1039,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "밀라보레아스 (홍염룡)",
+          "navMonster": "밀라보레아스 (홍염룡)",
+          "nameEn": "Crimson Fatalis",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 0% · ×1",
+            "Break Chest · 0% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: A Final Battle Cry",
+          "nameEn": "Advanced: A Final Battle Cry",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Fatalis or repel it",
+          "probability": 30,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "흑룡 홍염날개",
+      "count": 3,
+      "nameJa": "黒龍の紅焔翼",
+      "itemId": "item_mh4u_1041",
+      "mh4uId": 1041,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "밀라보레아스 (홍염룡)",
+          "navMonster": "밀라보레아스 (홍염룡)",
+          "nameEn": "Crimson Fatalis",
+          "rank": "G급",
+          "methods": [
+            "Break Wing · 0% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: A Final Battle Cry",
+          "nameEn": "Advanced: A Final Battle Cry",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Fatalis or repel it",
+          "probability": 15,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "대지의 용신옥",
+      "count": 1,
+      "nameJa": "大地の龍神玉",
+      "itemId": "item_mh4u_0996",
+      "mh4uId": 996,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "다렌·모란",
+          "navMonster": "다렌·모란",
+          "nameEn": "Dah'ren Mohran",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 4% · ×1",
+            "Break Horn · 4% · ×1",
+            "Mouth Carve · 2% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Moving Mountains",
+          "nameEn": "Advanced: Moving Mountains",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay Dah'ren Mohran or repel it",
+          "probability": 3,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "밀라보레아스 (홍염룡)",
+        "navMonster": "밀라보레아스 (홍염룡)"
+      },
+      {
+        "name": "다렌·모란",
+        "navMonster": "다렌·모란"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: A Final Battle Cry",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Fatalis or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Moving Mountains",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay Dah'ren Mohran or repel it",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

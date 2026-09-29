@@ -1,0 +1,284 @@
+{
+  "materials": [
+    {
+      "name": "백원호 억센털+",
+      "count": 3,
+      "nameJa": "白猿狐の豪剛毛",
+      "itemId": "item_mh4u_0484",
+      "mh4uId": 484,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "케차와차 아종",
+          "navMonster": "케차와차 아종",
+          "nameEn": "Ash Kecha Wacha",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 45% · ×1",
+            "Break Tail · 40% · ×1",
+            "Shiny Drop · 35% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Beyond the Pale",
+          "nameEn": "Advanced: Beyond the Pale",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt an Ash Kecha Wacha",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Seeing Spots",
+          "nameEn": "Seeing Spots",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt an Ash Kecha Wacha",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Terrible Twins",
+          "nameEn": "Advanced: Terrible Twins",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Kecha Wacha and an Ash Kecha Wacha",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "백원호 강고리발톱",
+      "count": 1,
+      "nameJa": "白猿狐の剛鉤爪",
+      "itemId": "item_mh4u_0486",
+      "mh4uId": 486,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "케차와차 아종",
+          "navMonster": "케차와차 아종",
+          "nameEn": "Ash Kecha Wacha",
+          "rank": "G급",
+          "methods": [
+            "Break Claw · 60% · ×1",
+            "Capture · 20% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Beyond the Pale",
+          "nameEn": "Advanced: Beyond the Pale",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt an Ash Kecha Wacha",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Seeing Spots",
+          "nameEn": "Seeing Spots",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt an Ash Kecha Wacha",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Terrible Twins",
+          "nameEn": "Advanced: Terrible Twins",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Kecha Wacha and an Ash Kecha Wacha",
+          "probability": 12,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "백원호 중장골",
+      "count": 3,
+      "nameJa": "白猿狐の重長骨",
+      "itemId": "item_mh4u_0485",
+      "mh4uId": 485,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "케차와차 아종",
+          "navMonster": "케차와차 아종",
+          "nameEn": "Ash Kecha Wacha",
+          "rank": "G급",
+          "methods": [
+            "Break Claw · 40% · ×1",
+            "Body Carve · 32% · ×1",
+            "Capture · 28% · ×1",
+            "Break Tail · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Beyond the Pale",
+          "nameEn": "Advanced: Beyond the Pale",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt an Ash Kecha Wacha",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Seeing Spots",
+          "nameEn": "Seeing Spots",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt an Ash Kecha Wacha",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Terrible Twins",
+          "nameEn": "Advanced: Terrible Twins",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Kecha Wacha and an Ash Kecha Wacha",
+          "probability": 12,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "순충 중갑각",
+      "count": 2,
+      "nameJa": "盾虫の重殻",
+      "itemId": "item_mh4u_0377",
+      "mh4uId": 377,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "쿤추",
+          "navMonster": "",
+          "nameEn": "Konchu",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 50% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Icy Shadow",
+          "nameEn": "Icy Shadow",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Khezu",
+          "probability": 25,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Netting Neopterons",
+          "nameEn": "Netting Neopterons",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay 30 Bnahabra",
+          "probability": 25,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "케차와차 아종",
+        "navMonster": "케차와차 아종"
+      },
+      {
+        "name": "쿤추",
+        "navMonster": ""
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: Beyond the Pale",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt an Ash Kecha Wacha",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Seeing Spots",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt an Ash Kecha Wacha",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Terrible Twins",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Kecha Wacha and an Ash Kecha Wacha",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Icy Shadow",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Khezu",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Netting Neopterons",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay 30 Bnahabra",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

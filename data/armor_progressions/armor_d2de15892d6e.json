@@ -1,0 +1,388 @@
+{
+  "materials": [
+    {
+      "name": "교사룡 가죽+",
+      "count": 6,
+      "nameJa": "絞蛇竜の上皮",
+      "itemId": "item_mh4u_0571",
+      "mh4uId": 571,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "가라라아자라",
+          "navMonster": "가라라아자라",
+          "nameEn": "Najarala",
+          "rank": "상위",
+          "methods": [
+            "Break Tail · 37% · ×1",
+            "Break Back Leg · 30% · ×1",
+            "Body Carve · 25% · ×1",
+            "Capture · 14% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Fear Factor",
+          "nameEn": "Fear Factor",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Najarala",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hunt-a-thon: Najarala",
+          "nameEn": "Hunt-a-thon: Najarala",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt 2 Najarala before time expires or deliver a Paw Pass Ticket",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Writer's Block",
+          "nameEn": "Writer's Block",
+          "level": "Guild★5",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Najarala and a Rathian",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "빙아룡 모피+",
+          "requiredItemId": "item_mh4u_1129",
+          "unlockQuestId": "",
+          "unlockQuest": "Trader in Trouble",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "교사룡 소리갑각+",
+      "count": 5,
+      "nameJa": "絞蛇竜の上鳴甲",
+      "itemId": "item_mh4u_0576",
+      "mh4uId": 576,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "가라라아자라",
+          "navMonster": "가라라아자라",
+          "nameEn": "Najarala",
+          "rank": "상위",
+          "methods": [
+            "Break Tail · 58% · ×1",
+            "Break Back · 56% · ×1",
+            "Capture · 15% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Fear Factor",
+          "nameEn": "Fear Factor",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Najarala",
+          "probability": 14,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hunt-a-thon: Najarala",
+          "nameEn": "Hunt-a-thon: Najarala",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt 2 Najarala before time expires or deliver a Paw Pass Ticket",
+          "probability": 14,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Writer's Block",
+          "nameEn": "Writer's Block",
+          "level": "Guild★5",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Najarala and a Rathian",
+          "probability": 14,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "호박색예리이빨",
+          "requiredItemId": "item_mh4u_1128",
+          "unlockQuestId": "",
+          "unlockQuest": "Trader in Trouble",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "교사룡 가죽",
+      "count": 3,
+      "nameJa": "絞蛇竜の皮",
+      "itemId": "item_mh4u_0570",
+      "mh4uId": 570,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "가라라아자라",
+          "navMonster": "가라라아자라",
+          "nameEn": "Najarala",
+          "rank": "하위",
+          "methods": [
+            "Break Tail · 37% · ×1",
+            "Break Back Leg · 30% · ×1",
+            "Body Carve · 20% · ×1",
+            "Capture · 13% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Najarala Hunt",
+          "nameEn": "Najarala Hunt",
+          "level": "Caravan★4",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Najarala",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Nix the Najarala",
+          "nameEn": "Nix the Najarala",
+          "level": "Guild★2",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Najarala",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Field Study: Primal Forest",
+          "nameEn": "Field Study: Primal Forest",
+          "level": "Guild★2",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Najarala and a Rathian",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "강인한 조룡가죽",
+      "count": 3,
+      "nameJa": "強靭な鳥竜皮",
+      "itemId": "item_mh4u_0387",
+      "mh4uId": 387,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "도스람포스",
+          "navMonster": "도스람포스",
+          "nameEn": "Velocidrome",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 35% · ×1",
+            "Capture · 35% · ×2",
+            "Body Carve · 30% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "도스게네포스",
+          "navMonster": "도스게네포스",
+          "nameEn": "Gendrome",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 30% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "도스이오스",
+          "navMonster": "도스이오스",
+          "nameEn": "Iodrome",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 30% · ×1",
+            "Shiny Drop · 30% · ×1",
+            "Shiny Drop · 20% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Bad Hair Day: Iodrome",
+          "nameEn": "Bad Hair Day: Iodrome",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt 2 Iodrome",
+          "probability": 20,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Harvest Tour: Primal Forest",
+          "nameEn": "Harvest Tour: Primal Forest",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+          "probability": 20,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Frenzied Trading",
+          "nameEn": "Advanced: Frenzied Trading",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 20,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "가라라아자라",
+        "navMonster": "가라라아자라"
+      },
+      {
+        "name": "도스람포스",
+        "navMonster": "도스람포스"
+      },
+      {
+        "name": "도스게네포스",
+        "navMonster": "도스게네포스"
+      },
+      {
+        "name": "도스이오스",
+        "navMonster": "도스이오스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Fear Factor",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Najarala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Hunt-a-thon: Najarala",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt 2 Najarala before time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Writer's Block",
+        "nameJa": "",
+        "level": "Guild★5",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Najarala and a Rathian",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Najarala Hunt",
+        "nameJa": "",
+        "level": "Caravan★4",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Najarala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Nix the Najarala",
+        "nameJa": "",
+        "level": "Guild★2",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Najarala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Field Study: Primal Forest",
+        "nameJa": "",
+        "level": "Guild★2",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Najarala and a Rathian",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Bad Hair Day: Iodrome",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt 2 Iodrome",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Harvest Tour: Primal Forest",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Frenzied Trading",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt all large monsters",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

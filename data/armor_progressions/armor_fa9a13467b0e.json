@@ -1,0 +1,327 @@
+{
+  "materials": [
+    {
+      "name": "중갑충 흉갑각",
+      "count": 3,
+      "nameJa": "重甲虫の胸殻",
+      "itemId": "item_mh4u_0618",
+      "mh4uId": 618,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "게넬·셀타스",
+          "navMonster": "게넬·셀타스",
+          "nameEn": "Seltas Queen",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 40% · ×1",
+            "Break Claw · 40% · ×1",
+            "Capture · 30% · ×1",
+            "Break Head · 24% · ×1",
+            "Break Leg · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "The Royal Guard",
+          "nameEn": "The Royal Guard",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Seltas Queen",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "The Royal Guard",
+          "nameEn": "The Royal Guard",
+          "level": "Guild★3",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Seltas Queen",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Bug Buffet",
+          "nameEn": "Advanced: Bug Buffet",
+          "level": "Guild★3",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Seltas Queen",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "중갑충 갑각",
+      "count": 5,
+      "nameJa": "重甲虫の甲殻",
+      "itemId": "item_mh4u_0615",
+      "mh4uId": 615,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "게넬·셀타스",
+          "navMonster": "게넬·셀타스",
+          "nameEn": "Seltas Queen",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 46% · ×1",
+            "Shiny Drop · 25% · ×1",
+            "Break Leg · 25% · ×1",
+            "Capture · 20% · ×1",
+            "Break Tail · 16% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "The Royal Guard",
+          "nameEn": "The Royal Guard",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Seltas Queen",
+          "probability": 25,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "The Royal Guard",
+          "nameEn": "The Royal Guard",
+          "level": "Guild★3",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Seltas Queen",
+          "probability": 25,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Bug Buffet",
+          "nameEn": "Advanced: Bug Buffet",
+          "level": "Guild★3",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Seltas Queen",
+          "probability": 25,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "중갑충 큰턱",
+      "count": 2,
+      "nameJa": "重甲虫の大顎",
+      "itemId": "item_mh4u_0624",
+      "mh4uId": 624,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "게넬·셀타스",
+          "navMonster": "게넬·셀타스",
+          "nameEn": "Seltas Queen",
+          "rank": "하위",
+          "methods": [
+            "Break Head · 70% · ×1",
+            "Break Head · 58% · ×1",
+            "Capture · 11% · ×1",
+            "Capture · 10% · ×1",
+            "Break Head · 10% · ×2",
+            "Body Carve · 6% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "The Royal Guard",
+          "nameEn": "The Royal Guard",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Seltas Queen",
+          "probability": 9,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "The Royal Guard",
+          "nameEn": "The Royal Guard",
+          "level": "Guild★3",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Seltas Queen",
+          "probability": 9,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Bug Buffet",
+          "nameEn": "Advanced: Bug Buffet",
+          "level": "Guild★3",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Seltas Queen",
+          "probability": 9,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "몬스터의 체액",
+      "count": 3,
+      "nameJa": "モンスターの体液",
+      "itemId": "item_mh4u_0600",
+      "mh4uId": 600,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Altaroth",
+          "navMonster": "",
+          "nameEn": "Altaroth",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 25% · ×1",
+            "Shiny Drop (Gray) · 20% · ×1",
+            "Shiny Drop (Blue) · 10% · ×1",
+            "Shiny Drop (Orange) · 10% · ×1",
+            "Shiny Drop (Green) · 10% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "네르스큐라",
+          "navMonster": "네르스큐라",
+          "nameEn": "Nerscylla",
+          "rank": "하위",
+          "methods": [
+            "Shiny Drop · 25% · ×1",
+            "Shiny Drop · 10% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "Bnahabra",
+          "navMonster": "",
+          "nameEn": "Bnahabra",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 20% · ×1",
+            "Body Carve · 7% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Bnahabra Bloodbath",
+          "nameEn": "Bnahabra Bloodbath",
+          "level": "Guild★1",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay 12 Bnahabra",
+          "probability": 20,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Bnahabra Buffet",
+          "nameEn": "Bnahabra Buffet",
+          "level": "Caravan★7",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay 12 Bnahabra",
+          "probability": 16,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Bnahabra Bloodbath",
+          "nameEn": "Bnahabra Bloodbath",
+          "level": "Guild★4",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay 20 Bnahabra",
+          "probability": 16,
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "게넬·셀타스",
+        "navMonster": "게넬·셀타스"
+      },
+      {
+        "name": "Altaroth",
+        "navMonster": ""
+      },
+      {
+        "name": "네르스큐라",
+        "navMonster": "네르스큐라"
+      },
+      {
+        "name": "Bnahabra",
+        "navMonster": ""
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "The Royal Guard",
+        "nameJa": "",
+        "level": "Caravan★5",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Seltas Queen",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Bug Buffet",
+        "nameJa": "",
+        "level": "Guild★3",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Seltas Queen",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Bnahabra Bloodbath",
+        "nameJa": "",
+        "level": "Guild★1",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay 12 Bnahabra",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Bnahabra Buffet",
+        "nameJa": "",
+        "level": "Caravan★7",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay 12 Bnahabra",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

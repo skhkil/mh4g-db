@@ -1,0 +1,415 @@
+{
+  "materials": [
+    {
+      "name": "고대의 용골",
+      "count": 3,
+      "nameJa": "いにしえの龍骨",
+      "itemId": "item_c0a2150058b0",
+      "mh4uId": 321,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Wasteland Warrior",
+          "nameEn": "Wasteland Warrior",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Desert Seltas",
+          "probability": 8,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Icy Shadow",
+          "nameEn": "Icy Shadow",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Khezu",
+          "probability": 8,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Puffer Fish",
+          "nameEn": "Puffer Fish",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Zamtrios",
+          "probability": 8,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "철갑충 첨예뿔",
+      "count": 2,
+      "nameJa": "徹甲虫の尖角",
+      "itemId": "item_mh4u_0610",
+      "mh4uId": 610,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "아르셀타스",
+          "navMonster": "아르셀타스",
+          "nameEn": "Seltas",
+          "rank": "상위",
+          "methods": [
+            "Break Horn · 65% · ×1",
+            "Capture · 20% · ×1",
+            "Break Horn · 10% · ×2"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Harvest Tour: Anc. Steppe",
+          "nameEn": "Harvest Tour: Anc. Steppe",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+          "probability": 11,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Bug-Be-Gone",
+          "nameEn": "Advanced: Bug-Be-Gone",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Seltas and a Desert Seltas",
+          "probability": 11,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Strutting the Royal Runway",
+          "nameEn": "Strutting the Royal Runway",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Capture a Seltas Queen",
+          "probability": 11,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "견고한 뼈",
+      "count": 5,
+      "nameJa": "堅牢な骨",
+      "itemId": "item_b891515d834f",
+      "mh4uId": 319,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "바바콩가",
+          "navMonster": "바바콩가",
+          "nameEn": "Congalala",
+          "rank": "상위",
+          "methods": [
+            "Capture · 25% · ×1",
+            "Body Carve · 15% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "바바콩가 아종",
+          "navMonster": "바바콩가 아종",
+          "nameEn": "Emerald Congalala",
+          "rank": "상위",
+          "methods": [
+            "Capture · 25% · ×4",
+            "Body Carve · 15% · ×1",
+            "Body Carve · 5% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "테츠카브라",
+          "navMonster": "테츠카브라",
+          "nameEn": "Tetsucabra",
+          "rank": "상위",
+          "methods": [
+            "Capture · 18% · ×1",
+            "Body Carve · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Enraged Rajang",
+          "nameEn": "Advanced: Enraged Rajang",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt 2 Rajang",
+          "probability": 25,
+          "count": 3
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Tough Love",
+          "nameEn": "Advanced: Tough Love",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Rajang",
+          "probability": 22,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: The Raging Rajang",
+          "nameEn": "Advanced: The Raging Rajang",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Rajang",
+          "probability": 22,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "거대한 뼈",
+      "count": 10,
+      "nameJa": "大きな骨",
+      "itemId": "item_0e6aada4f05c",
+      "mh4uId": 318,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Popo",
+          "navMonster": "",
+          "nameEn": "Popo",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 20% · ×1",
+            "Body Carve · 5% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "울크스스",
+          "navMonster": "울크스스",
+          "nameEn": "Lagombi",
+          "rank": "하위",
+          "methods": [
+            "Capture · 20% · ×2",
+            "Body Carve · 5% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "테츠카브라",
+          "navMonster": "테츠카브라",
+          "nameEn": "Tetsucabra",
+          "rank": "하위",
+          "methods": [
+            "Capture · 20% · ×1",
+            "Body Carve · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Swing into Action",
+          "nameEn": "Swing into Action",
+          "level": "Caravan★3",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Kecha Wacha",
+          "probability": 15,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Kecha Wacha Wallop",
+          "nameEn": "Kecha Wacha Wallop",
+          "level": "Caravan★3",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Kecha Wacha",
+          "probability": 15,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Order of Magnitude",
+          "nameEn": "Advanced: Order of Magnitude",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Kecha Wacha and a Rathian",
+          "probability": 15,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "아르셀타스",
+        "navMonster": "아르셀타스"
+      },
+      {
+        "name": "바바콩가",
+        "navMonster": "바바콩가"
+      },
+      {
+        "name": "바바콩가 아종",
+        "navMonster": "바바콩가 아종"
+      },
+      {
+        "name": "테츠카브라",
+        "navMonster": "테츠카브라"
+      },
+      {
+        "name": "Popo",
+        "navMonster": ""
+      },
+      {
+        "name": "울크스스",
+        "navMonster": "울크스스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Wasteland Warrior",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Desert Seltas",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Icy Shadow",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Khezu",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Puffer Fish",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Zamtrios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Harvest Tour: Anc. Steppe",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Bug-Be-Gone",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Seltas and a Desert Seltas",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Strutting the Royal Runway",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Capture a Seltas Queen",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Enraged Rajang",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt 2 Rajang",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Tough Love",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Rajang",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: The Raging Rajang",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Rajang",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Swing into Action",
+        "nameJa": "",
+        "level": "Caravan★3",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Kecha Wacha",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Kecha Wacha Wallop",
+        "nameJa": "",
+        "level": "Caravan★3",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Kecha Wacha",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Order of Magnitude",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Kecha Wacha and a Rathian",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

@@ -1,0 +1,442 @@
+{
+  "materials": [
+    {
+      "name": "흑굉룡 중이빨",
+      "count": 3,
+      "nameJa": "黒轟竜の重牙",
+      "itemId": "item_mh4u_0841",
+      "mh4uId": 841,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "티가렉스 아종",
+          "navMonster": "티가렉스 아종",
+          "nameEn": "Brute Tigrex",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 66% · ×1",
+            "Capture · 28% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Hell Hunter Hoax",
+          "nameEn": "Advanced: Hell Hunter Hoax",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Tigrex and a Brute Tigrex",
+          "probability": 14,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Brute Force",
+          "nameEn": "Brute Force",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Brute Tigrex",
+          "probability": 14,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: A Black Day",
+          "nameEn": "Advanced: A Black Day",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Black Gravios and a Brute Tigrex",
+          "probability": 14,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "굉룡 천린",
+      "count": 1,
+      "nameJa": "轟竜の天鱗",
+      "itemId": "item_mh4u_0833",
+      "mh4uId": 833,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "극한상태 티가렉스",
+          "navMonster": "티가렉스",
+          "nameEn": "Apex Tigrex",
+          "rank": "G급",
+          "methods": [
+            "Capture · 5% · ×1",
+            "Body Carve · 4% · ×1",
+            "Tail Carve · 4% · ×1",
+            "Shiny Drop · 2% · ×1",
+            "Break Head · 2% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "티가렉스 희소종",
+          "navMonster": "티가렉스 희소종",
+          "nameEn": "Molten Tigrex",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 4% · ×1",
+            "Body Carve · 3% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "티가렉스",
+          "navMonster": "티가렉스",
+          "nameEn": "Tigrex",
+          "rank": "G급",
+          "methods": [
+            "Capture · 3% · ×1",
+            "Body Carve · 2% · ×1",
+            "Tail Carve · 2% · ×1",
+            "Break Head · 2% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "The Sky Is Falling",
+          "nameEn": "The Sky Is Falling",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Molten Tigrex",
+          "probability": 5,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Tigrex In Effect",
+          "nameEn": "Advanced: Tigrex In Effect",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Tigrex",
+          "probability": 5,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Monster Hunter!",
+          "nameEn": "Advanced: Monster Hunter!",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 5,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "굉룡 턱",
+      "count": 2,
+      "nameJa": "轟竜のアギト",
+      "itemId": "item_mh4u_0832",
+      "mh4uId": 832,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "티가렉스",
+          "navMonster": "티가렉스",
+          "nameEn": "Tigrex",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 12% · ×1",
+            "Break Head · 8% · ×1",
+            "Capture · 7% · ×1",
+            "Body Carve · 5% · ×1",
+            "Body Carve · 3% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "극한상태 티가렉스",
+          "navMonster": "티가렉스",
+          "nameEn": "Apex Tigrex",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 12% · ×1",
+            "Body Carve · 10% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "티가렉스 아종",
+          "navMonster": "티가렉스 아종",
+          "nameEn": "Brute Tigrex",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 12% · ×1",
+            "Break Head · 8% · ×1",
+            "Body Carve · 5% · ×1",
+            "Capture · 5% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Tigrex In Effect",
+          "nameEn": "Advanced: Tigrex In Effect",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Tigrex",
+          "probability": 15,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Terrible Tyrant",
+          "nameEn": "Terrible Tyrant",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Molten Tigrex",
+          "probability": 8,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Hell Hunter Hoax",
+          "nameEn": "Advanced: Hell Hunter Hoax",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Tigrex and a Brute Tigrex",
+          "probability": 8,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "개룡 중갑각",
+      "count": 1,
+      "nameJa": "鎧竜の重殻",
+      "itemId": "item_mh4u_0805",
+      "mh4uId": 805,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "그라비모스",
+          "navMonster": "그라비모스",
+          "nameEn": "Gravios",
+          "rank": "G급",
+          "methods": [
+            "Tail Carve · 64% · ×1",
+            "Body Carve · 60% · ×1",
+            "Break Belly · 57% · ×1",
+            "Break Back · 40% · ×1",
+            "Capture · 31% · ×1",
+            "Break Head · 28% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "극한상태 그라비모스",
+          "navMonster": "그라비모스",
+          "nameEn": "Apex Gravios",
+          "rank": "G급",
+          "methods": [
+            "Break Belly · 57% · ×1",
+            "Tail Carve · 50% · ×1",
+            "Body Carve · 46% · ×1",
+            "Break Back · 40% · ×1",
+            "Capture · 31% · ×1",
+            "Break Head · 28% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Temper Tantrum",
+          "nameEn": "Temper Tantrum",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Gravios",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Gravios Situation",
+          "nameEn": "Advanced: Gravios Situation",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Gravios",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Ring Hollow",
+          "nameEn": "Ring Hollow",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 14,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "폭추룡 중갑각",
+          "requiredItemId": "item_mh4u_1181",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: Mean and Green",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "티가렉스 아종",
+        "navMonster": "티가렉스 아종"
+      },
+      {
+        "name": "극한상태 티가렉스",
+        "navMonster": "티가렉스"
+      },
+      {
+        "name": "티가렉스 희소종",
+        "navMonster": "티가렉스 희소종"
+      },
+      {
+        "name": "티가렉스",
+        "navMonster": "티가렉스"
+      },
+      {
+        "name": "그라비모스",
+        "navMonster": "그라비모스"
+      },
+      {
+        "name": "극한상태 그라비모스",
+        "navMonster": "그라비모스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: Hell Hunter Hoax",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Tigrex and a Brute Tigrex",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Brute Force",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Brute Tigrex",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: A Black Day",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Black Gravios and a Brute Tigrex",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "The Sky Is Falling",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Molten Tigrex",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Tigrex In Effect",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Tigrex",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Monster Hunter!",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt all large monsters",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Terrible Tyrant",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Molten Tigrex",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Temper Tantrum",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Gravios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Gravios Situation",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Gravios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Ring Hollow",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt all large monsters",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

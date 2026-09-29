@@ -1,0 +1,336 @@
+{
+  "materials": [
+    {
+      "name": "화룡 두툼비늘",
+      "count": 5,
+      "nameJa": "火竜の厚鱗",
+      "itemId": "item_mh4u_0685",
+      "mh4uId": 685,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "리오레우스",
+          "navMonster": "리오레우스",
+          "nameEn": "Rathalos",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 57% · ×1",
+            "Body Carve · 38% · ×1",
+            "Shiny Drop · 33% · ×1",
+            "Tail Carve · 22% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Sovereign of the Sky",
+          "nameEn": "Sovereign of the Sky",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Rathalos",
+          "probability": 24,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Rival Clash",
+          "nameEn": "Rival Clash",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Seregios and a Rathalos",
+          "probability": 24,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Ring Hollow",
+          "nameEn": "Ring Hollow",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 14,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "해룡 두툼비늘",
+          "requiredItemId": "item_mh4u_1186",
+          "unlockQuestId": "",
+          "unlockQuest": "Rival Clash",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "화룡 중갑각",
+      "count": 2,
+      "nameJa": "火竜の重殻",
+      "itemId": "item_mh4u_0688",
+      "mh4uId": 688,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "리오레우스",
+          "navMonster": "리오레우스",
+          "nameEn": "Rathalos",
+          "rank": "G급",
+          "methods": [
+            "Break Back · 69% · ×1",
+            "Capture · 40% · ×1",
+            "Body Carve · 29% · ×1",
+            "Break Head · 25% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Sovereign of the Sky",
+          "nameEn": "Sovereign of the Sky",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Rathalos",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Rival Clash",
+          "nameEn": "Rival Clash",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Seregios and a Rathalos",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Ring Hollow",
+          "nameEn": "Ring Hollow",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 10,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "화룡 강날개",
+      "count": 3,
+      "nameJa": "火竜の剛翼",
+      "itemId": "item_mh4u_0691",
+      "mh4uId": 691,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "리오레우스",
+          "navMonster": "리오레우스",
+          "nameEn": "Rathalos",
+          "rank": "G급",
+          "methods": [
+            "Break Wing · 25% · ×1",
+            "Body Carve · 13% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "리오레우스 희소종",
+          "navMonster": "리오레우스 희소종",
+          "nameEn": "Silver Rathalos",
+          "rank": "G급",
+          "methods": [
+            "Break Wing · 25% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Sovereign of the Sky",
+          "nameEn": "Sovereign of the Sky",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Rathalos",
+          "probability": 22,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Rival Clash",
+          "nameEn": "Rival Clash",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Seregios and a Rathalos",
+          "probability": 22,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Ring Hollow",
+          "nameEn": "Ring Hollow",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 10,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "해룡 뇌전기갑각",
+          "requiredItemId": "item_mh4u_1187",
+          "unlockQuestId": "",
+          "unlockQuest": "Rival Clash",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "멜랑제광석",
+      "count": 2,
+      "nameJa": "メランジェ鉱石",
+      "itemId": "item_4356e2f02662",
+      "mh4uId": 217,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "오나즈치",
+          "navMonster": "오나즈치",
+          "nameEn": "Chameleos",
+          "rank": "G급",
+          "methods": [
+            "Shiny Drop · 37% · ×1",
+            "Break Horn · 30% · ×1",
+            "Tail Carve · 17% · ×1",
+            "Body Carve · 15% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "다렌·모란",
+          "navMonster": "다렌·모란",
+          "nameEn": "Dah'ren Mohran",
+          "rank": "G급",
+          "methods": [
+            "Break Fin · 14% · ×1",
+            "Break Blowhole · 14% · ×1",
+            "Mining Back · 8% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "All-You-Can-Hunt Remobra",
+          "nameEn": "All-You-Can-Hunt Remobra",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay 15 Remobras",
+          "probability": 8,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Moving Mountains",
+          "nameEn": "Advanced: Moving Mountains",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay Dah'ren Mohran or repel it",
+          "probability": 6,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "리오레우스",
+        "navMonster": "리오레우스"
+      },
+      {
+        "name": "리오레우스 희소종",
+        "navMonster": "리오레우스 희소종"
+      },
+      {
+        "name": "오나즈치",
+        "navMonster": "오나즈치"
+      },
+      {
+        "name": "다렌·모란",
+        "navMonster": "다렌·모란"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Sovereign of the Sky",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Rathalos",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Rival Clash",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Seregios and a Rathalos",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Ring Hollow",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt all large monsters",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "All-You-Can-Hunt Remobra",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay 15 Remobras",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Moving Mountains",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay Dah'ren Mohran or repel it",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

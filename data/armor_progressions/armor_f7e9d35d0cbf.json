@@ -1,0 +1,315 @@
+{
+  "materials": [
+    {
+      "name": "트라이포스",
+      "count": 1,
+      "nameJa": "トライフォース",
+      "itemId": "item_b3aff12b3e86",
+      "mh4uId": 1375,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "event-high-021",
+          "name": "세 가지 덕목",
+          "nameEn": "Three Virtues",
+          "level": "★7",
+          "questType": "event",
+          "location": "격투장",
+          "objective": "진오우거 1마리와 키린 1마리와 라잔 1마리 수렵",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "금사자 꼬리",
+      "count": 2,
+      "nameJa": "金獅子の尻尾",
+      "itemId": "item_mh4u_0515",
+      "mh4uId": 515,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "라잔",
+          "navMonster": "라잔",
+          "nameEn": "Rajang",
+          "rank": "상위",
+          "methods": [
+            "Break Tail · 91% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "극한상태 라잔",
+          "navMonster": "라잔",
+          "nameEn": "Apex Rajang",
+          "rank": "G급",
+          "methods": [
+            "Break Tail · 88% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Tough Love",
+          "nameEn": "Advanced: Tough Love",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Rajang",
+          "probability": 19,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: The Raging Rajang",
+          "nameEn": "Advanced: The Raging Rajang",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Rajang",
+          "probability": 19,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Bet Your Life",
+          "nameEn": "Advanced: Bet Your Life",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Deviljho and a Rajang",
+          "probability": 19,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "키린 가죽+",
+      "count": 3,
+      "nameJa": "キリンの上皮",
+      "itemId": "item_mh4u_0934",
+      "mh4uId": 934,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "키린",
+          "navMonster": "키린",
+          "nameEn": "Kirin",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 70% · ×1",
+            "Shiny Drop · 20% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "키린 아종",
+          "navMonster": "키린 아종",
+          "nameEn": "Oroshi Kirin",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 70% · ×1",
+            "Shiny Drop · 20% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: A Hero's Icy Test",
+          "nameEn": "Advanced: A Hero's Icy Test",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay an Oroshi Kirin",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "초전뇌광충",
+      "count": 4,
+      "nameJa": "超電雷光虫",
+      "itemId": "item_93560a69787e",
+      "mh4uId": 267,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "진오우거",
+          "navMonster": "진오우거",
+          "nameEn": "Zinogre",
+          "rank": "하위",
+          "methods": [
+            "Bug-Catching Back · 90% · ×1",
+            "Shiny Drop · 15% · ×1",
+            "Capture · 12% · ×4",
+            "Capture · 8% · ×2",
+            "Shiny Drop · 8% · ×1",
+            "Capture · 8% · ×4"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "극한상태 진오우거",
+          "navMonster": "진오우거",
+          "nameEn": "Apex Zinogre",
+          "rank": "G급",
+          "methods": [
+            "Bug-Catching Back · 90% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Fury on the Mount",
+          "nameEn": "Advanced: Fury on the Mount",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Zinogre",
+          "probability": 15,
+          "count": 6
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Uncorner the Market",
+          "nameEn": "Uncorner the Market",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Rathalos and a Zinogre",
+          "probability": 10,
+          "count": 4
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Zinogre Zone",
+          "nameEn": "Zinogre Zone",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Zinogre",
+          "probability": 10,
+          "count": 4
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "라잔",
+        "navMonster": "라잔"
+      },
+      {
+        "name": "극한상태 라잔",
+        "navMonster": "라잔"
+      },
+      {
+        "name": "키린",
+        "navMonster": "키린"
+      },
+      {
+        "name": "키린 아종",
+        "navMonster": "키린 아종"
+      },
+      {
+        "name": "진오우거",
+        "navMonster": "진오우거"
+      },
+      {
+        "name": "극한상태 진오우거",
+        "navMonster": "진오우거"
+      }
+    ],
+    "quests": [
+      {
+        "id": "event-high-021",
+        "name": "세 가지 덕목",
+        "nameJa": "",
+        "level": "★7",
+        "questType": "event",
+        "location": "격투장",
+        "objective": "진오우거 1마리와 키린 1마리와 라잔 1마리 수렵",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Tough Love",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Rajang",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: The Raging Rajang",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Rajang",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Bet Your Life",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Deviljho and a Rajang",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: A Hero's Icy Test",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay an Oroshi Kirin",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Fury on the Mount",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Zinogre",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Uncorner the Market",
+        "nameJa": "",
+        "level": "Caravan★5",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Rathalos and a Zinogre",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Zinogre Zone",
+        "nameJa": "",
+        "level": "Caravan★5",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Zinogre",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

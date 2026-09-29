@@ -1,0 +1,271 @@
+{
+  "materials": [
+    {
+      "name": "찬란한 체액",
+      "count": 2,
+      "nameJa": "光り輝く体液",
+      "itemId": "item_mh4u_1167",
+      "mh4uId": 1167,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "자화룡 중갑각",
+          "requiredItemId": "item_mh4u_0665",
+          "unlockQuestId": "quest_154770b228c6",
+          "unlockQuest": "고난도: 4개의 집게 공격!?",
+          "unlockLevel": "★1",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "중후한 뼈",
+      "count": 2,
+      "nameJa": "重厚な骨",
+      "itemId": "item_bf13a6bc33f0",
+      "mh4uId": 320,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "바바콩가",
+          "navMonster": "바바콩가",
+          "nameEn": "Congalala",
+          "rank": "G급",
+          "methods": [
+            "Capture · 25% · ×1",
+            "Body Carve · 15% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "바바콩가 아종",
+          "navMonster": "바바콩가 아종",
+          "nameEn": "Emerald Congalala",
+          "rank": "G급",
+          "methods": [
+            "Capture · 25% · ×4",
+            "Body Carve · 15% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "울크스스",
+          "navMonster": "울크스스",
+          "nameEn": "Lagombi",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 20% · ×1",
+            "Capture · 20% · ×2"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Bad Hair Rajang",
+          "nameEn": "Advanced: Bad Hair Rajang",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Rajang",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Ring Hollow",
+          "nameEn": "Ring Hollow",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Fur Fixation",
+          "nameEn": "Advanced: Fur Fixation",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Rajang",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "몬스터의 특농즙",
+      "count": 2,
+      "nameJa": "モンスターの特濃",
+      "itemId": "item_mh4u_0602",
+      "mh4uId": 602,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "아르셀타스",
+          "navMonster": "아르셀타스",
+          "nameEn": "Seltas",
+          "rank": "G급",
+          "methods": [
+            "Shiny Drop · 35% · ×1",
+            "Capture · 10% · ×1",
+            "Capture · 5% · ×2"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "아르셀타스 아종",
+          "navMonster": "아르셀타스 아종",
+          "nameEn": "Desert Seltas",
+          "rank": "G급",
+          "methods": [
+            "Shiny Drop · 35% · ×1",
+            "Capture · 20% · ×1",
+            "Capture · 5% · ×2"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "네르스큐라",
+          "navMonster": "네르스큐라",
+          "nameEn": "Nerscylla",
+          "rank": "G급",
+          "methods": [
+            "Shiny Drop · 35% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Death and Taxidermy",
+          "nameEn": "Death and Taxidermy",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Capture a Nerscylla",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Strutting the Royal Runway",
+          "nameEn": "Strutting the Royal Runway",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Capture a Seltas Queen",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Pestering Pest",
+          "nameEn": "Pestering Pest",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Desert Seltas Queen",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "바바콩가",
+        "navMonster": "바바콩가"
+      },
+      {
+        "name": "바바콩가 아종",
+        "navMonster": "바바콩가 아종"
+      },
+      {
+        "name": "울크스스",
+        "navMonster": "울크스스"
+      },
+      {
+        "name": "아르셀타스",
+        "navMonster": "아르셀타스"
+      },
+      {
+        "name": "아르셀타스 아종",
+        "navMonster": "아르셀타스 아종"
+      },
+      {
+        "name": "네르스큐라",
+        "navMonster": "네르스큐라"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: Bad Hair Rajang",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Rajang",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Ring Hollow",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt all large monsters",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Fur Fixation",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Rajang",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Death and Taxidermy",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Capture a Nerscylla",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Strutting the Royal Runway",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Capture a Seltas Queen",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Pestering Pest",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Desert Seltas Queen",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

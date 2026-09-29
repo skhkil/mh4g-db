@@ -1,0 +1,144 @@
+{
+  "materials": [
+    {
+      "name": "흑식룡티켓",
+      "count": 1,
+      "nameJa": "黒蝕竜チケット",
+      "itemId": "item_mh4u_1408",
+      "mh4uId": 1408,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "event-high-025",
+          "name": "시간을 넘어",
+          "nameEn": "Out of Time",
+          "level": "★7",
+          "questType": "event",
+          "location": "금지된 땅",
+          "objective": "고어·마가라 1마리와 샤가르마가라 1마리 수렵",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "흑식룡 첨예촉각+4 천회룡 채홍날개+",
+      "count": 4,
+      "nameJa": "黒蝕竜の尖触角",
+      "itemId": "item_mh4u_0872",
+      "mh4uId": 872,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "고어·마가라",
+          "navMonster": "고어·마가라",
+          "nameEn": "Gore Magala",
+          "rank": "상위",
+          "methods": [
+            "Break Antenna · 75% · ×1",
+            "Break Antenna · 25% · ×1",
+            "Capture · 16% · ×1",
+            "Capture · 7% · ×2"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "길드티켓G",
+      "count": 5,
+      "nameJa": "天廻龍の上虹翼",
+      "itemId": "item_2b159c1d18ff",
+      "mh4uId": 1441,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "event-high-031",
+          "name": "흑룡의 귀환",
+          "nameEn": "Return of the Dragon",
+          "level": "★7",
+          "questType": "event",
+          "location": "슈레이더성",
+          "objective": "밀라보레아스 토벌 또는 격퇴",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "event-high-028",
+          "name": "티가렉스의 눈",
+          "nameEn": "Eye of the Tigrex",
+          "level": "★7",
+          "questType": "event",
+          "location": "탑 꼭대기",
+          "objective": "티가렉스 희소종 1마리 수렵",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "event-high-023",
+          "name": "홍룡 강림",
+          "nameEn": "Enter the Red Dragon",
+          "level": "★7",
+          "questType": "event",
+          "location": "용암섬",
+          "objective": "홍룡 밀라보레아스 토벌 또는 격퇴",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "고어·마가라",
+        "navMonster": "고어·마가라"
+      }
+    ],
+    "quests": [
+      {
+        "id": "event-high-025",
+        "name": "시간을 넘어",
+        "nameJa": "",
+        "level": "★7",
+        "questType": "event",
+        "location": "금지된 땅",
+        "objective": "고어·마가라 1마리와 샤가르마가라 1마리 수렵",
+        "note": ""
+      },
+      {
+        "id": "event-high-031",
+        "name": "흑룡의 귀환",
+        "nameJa": "",
+        "level": "★7",
+        "questType": "event",
+        "location": "슈레이더성",
+        "objective": "밀라보레아스 토벌 또는 격퇴",
+        "note": ""
+      },
+      {
+        "id": "event-high-028",
+        "name": "티가렉스의 눈",
+        "nameJa": "",
+        "level": "★7",
+        "questType": "event",
+        "location": "탑 꼭대기",
+        "objective": "티가렉스 희소종 1마리 수렵",
+        "note": ""
+      },
+      {
+        "id": "event-high-023",
+        "name": "홍룡 강림",
+        "nameJa": "",
+        "level": "★7",
+        "questType": "event",
+        "location": "용암섬",
+        "objective": "홍룡 밀라보레아스 토벌 또는 격퇴",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

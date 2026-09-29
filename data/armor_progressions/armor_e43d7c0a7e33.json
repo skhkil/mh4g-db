@@ -1,0 +1,236 @@
+{
+  "materials": [
+    {
+      "name": "적갑수 견갑각",
+      "count": 3,
+      "nameJa": "赤甲獣の堅殻",
+      "itemId": "item_mh4u_1127",
+      "mh4uId": 1127,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "백토수 억센털",
+          "requiredItemId": "item_mh4u_0420",
+          "unlockQuestId": "quest_be13d9a412f4",
+          "unlockQuest": "화려한 매혹색과 홍색",
+          "unlockLevel": "★5",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "몬스터의 농즙",
+      "count": 3,
+      "nameJa": "モンスターの濃汁",
+      "itemId": "item_mh4u_0601",
+      "mh4uId": 601,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Altaroth",
+          "navMonster": "",
+          "nameEn": "Altaroth",
+          "rank": "상위",
+          "methods": [
+            "Shiny Drop (Gray) · 20% · ×1",
+            "Body Carve · 15% · ×1",
+            "Shiny Drop (Blue) · 10% · ×1",
+            "Shiny Drop (Orange) · 10% · ×1",
+            "Shiny Drop (Green) · 10% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "Bnahabra",
+          "navMonster": "",
+          "nameEn": "Bnahabra",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 20% · ×1",
+            "Body Carve · 10% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "아르셀타스",
+          "navMonster": "아르셀타스",
+          "nameEn": "Seltas",
+          "rank": "상위",
+          "methods": [
+            "Shiny Drop · 20% · ×1",
+            "Capture · 10% · ×1",
+            "Capture · 5% · ×2"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Bnahabra Buffet",
+          "nameEn": "Bnahabra Buffet",
+          "level": "Caravan★7",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay 12 Bnahabra",
+          "probability": 21,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Bnahabra Bloodbath",
+          "nameEn": "Bnahabra Bloodbath",
+          "level": "Guild★4",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay 20 Bnahabra",
+          "probability": 21,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Purse Snatcher",
+          "nameEn": "Purse Snatcher",
+          "level": "Caravan★7",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Purple Gypceros",
+          "probability": 20,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "홍련석",
+      "count": 2,
+      "nameJa": "紅蓮石",
+      "itemId": "item_94bcbdc4d067",
+      "mh4uId": 209,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "그라비모스",
+          "navMonster": "그라비모스",
+          "nameEn": "Gravios",
+          "rank": "하위",
+          "methods": [
+            "Break Head · 10% · ×1",
+            "Shiny Drop · 6% · ×1",
+            "Capture · 6% · ×1",
+            "Tail Carve · 4% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Take a Powderstone",
+          "nameEn": "Take a Powderstone",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 1 Powderstone",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Heat Exhaustion",
+          "nameEn": "Heat Exhaustion",
+          "level": "Guild★5",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Deliver 4 Powderstones",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Heat Exhaustion",
+          "nameEn": "Heat Exhaustion",
+          "level": "Guild★3",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Deliver 3 Powderstones",
+          "probability": 10,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "Altaroth",
+        "navMonster": ""
+      },
+      {
+        "name": "Bnahabra",
+        "navMonster": ""
+      },
+      {
+        "name": "아르셀타스",
+        "navMonster": "아르셀타스"
+      },
+      {
+        "name": "그라비모스",
+        "navMonster": "그라비모스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Bnahabra Buffet",
+        "nameJa": "",
+        "level": "Caravan★7",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay 12 Bnahabra",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Bnahabra Bloodbath",
+        "nameJa": "",
+        "level": "Guild★4",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay 20 Bnahabra",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Purse Snatcher",
+        "nameJa": "",
+        "level": "Caravan★7",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Purple Gypceros",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Take a Powderstone",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 1 Powderstone",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Heat Exhaustion",
+        "nameJa": "",
+        "level": "Guild★5",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Deliver 4 Powderstones",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

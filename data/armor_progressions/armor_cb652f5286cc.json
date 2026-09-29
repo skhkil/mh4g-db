@@ -1,0 +1,206 @@
+{
+  "materials": [
+    {
+      "name": "천회룡 채홍날개+",
+      "count": 2,
+      "nameJa": "天廻龍の上虹翼",
+      "itemId": "item_mh4u_0886",
+      "mh4uId": 886,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "샤가르마가라",
+          "navMonster": "샤가르마가라",
+          "nameEn": "Shagaru Magala",
+          "rank": "상위",
+          "methods": [
+            "Break Wing · 75% · ×1",
+            "Body Carve · 10% · ×1",
+            "Break Wing · 10% · ×2"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Stop the Wheel",
+          "nameEn": "Advanced: Stop the Wheel",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Shagaru Magala",
+          "probability": 10,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "The Caravaneer's Challenge",
+          "nameEn": "The Caravaneer's Challenge",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 8,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "천회룡 견갑각",
+      "count": 5,
+      "nameJa": "天廻龍の堅殻",
+      "itemId": "item_mh4u_0883",
+      "mh4uId": 883,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "샤가르마가라",
+          "navMonster": "샤가르마가라",
+          "nameEn": "Shagaru Magala",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 30% · ×1",
+            "Break Wing Leg · 15% · ×2"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Stop the Wheel",
+          "nameEn": "Advanced: Stop the Wheel",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Shagaru Magala",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "The Caravaneer's Challenge",
+          "nameEn": "The Caravaneer's Challenge",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 8,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "천회룡 역린",
+      "count": 1,
+      "nameJa": "天廻龍の逆鱗",
+      "itemId": "item_mh4u_0893",
+      "mh4uId": 893,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "샤가르마가라",
+          "navMonster": "샤가르마가라",
+          "nameEn": "Shagaru Magala",
+          "rank": "상위",
+          "methods": [
+            "Tail Carve · 5% · ×1",
+            "Break Horn · 5% · ×1",
+            "Tail Carve · 4% · ×1",
+            "Body Carve · 4% · ×1",
+            "Body Carve · 3% · ×1",
+            "Break Horn · 3% · ×1",
+            "Shiny Drop · 3% · ×1",
+            "Shiny Drop · 2% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Stop the Wheel",
+          "nameEn": "Advanced: Stop the Wheel",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Shagaru Magala",
+          "probability": 3,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Heaven's Wheel",
+          "nameEn": "Advanced: Heaven's Wheel",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay Shagaru Magala",
+          "probability": 1,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "천회룡 꼬리",
+      "count": 1,
+      "nameJa": "天廻龍の尻尾",
+      "itemId": "item_mh4u_0891",
+      "mh4uId": 891,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "샤가르마가라",
+          "navMonster": "샤가르마가라",
+          "nameEn": "Shagaru Magala",
+          "rank": "하위",
+          "methods": [
+            "Tail Carve · 75% · ×1",
+            "Tail Carve · 64% · ×1",
+            "Body Carve · 8% · ×1"
+          ]
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "샤가르마가라",
+        "navMonster": "샤가르마가라"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: Stop the Wheel",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay Shagaru Magala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "The Caravaneer's Challenge",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt all large monsters",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Heaven's Wheel",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay Shagaru Magala",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

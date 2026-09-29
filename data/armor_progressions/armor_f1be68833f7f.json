@@ -1,0 +1,386 @@
+{
+  "materials": [
+    {
+      "name": "순충 견갑각",
+      "count": 5,
+      "nameJa": "盾虫の堅殻",
+      "itemId": "item_mh4u_0376",
+      "mh4uId": 376,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "쿤추",
+          "navMonster": "",
+          "nameEn": "Konchu",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 45% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Seltas Romance",
+          "nameEn": "Seltas Romance",
+          "level": "Guild★4",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt 2 Seltas",
+          "probability": 25,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Icy Shadow",
+          "nameEn": "Icy Shadow",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Khezu",
+          "probability": 20,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Netting Neopterons",
+          "nameEn": "Netting Neopterons",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay 30 Bnahabra",
+          "probability": 20,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "순충 갑각",
+      "count": 4,
+      "nameJa": "盾虫の甲殻",
+      "itemId": "item_mh4u_0375",
+      "mh4uId": 375,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "쿤추",
+          "navMonster": "",
+          "nameEn": "Konchu",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 60% · ×1",
+            "Body Carve · 15% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Chip Off the Old Blockade",
+          "nameEn": "Chip Off the Old Blockade",
+          "level": "Caravan★2",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay 8 Konchu",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Konchu Collector",
+          "nameEn": "Konchu Collector",
+          "level": "Guild★1",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay 10 Konchu",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Kecha Wacha Wallop",
+          "nameEn": "Kecha Wacha Wallop",
+          "level": "Caravan★3",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Kecha Wacha",
+          "probability": 25,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "몬스터의 농즙",
+      "count": 2,
+      "nameJa": "モンスターの濃汁",
+      "itemId": "item_mh4u_0601",
+      "mh4uId": 601,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Altaroth",
+          "navMonster": "",
+          "nameEn": "Altaroth",
+          "rank": "상위",
+          "methods": [
+            "Shiny Drop (Gray) · 20% · ×1",
+            "Body Carve · 15% · ×1",
+            "Shiny Drop (Blue) · 10% · ×1",
+            "Shiny Drop (Orange) · 10% · ×1",
+            "Shiny Drop (Green) · 10% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "Bnahabra",
+          "navMonster": "",
+          "nameEn": "Bnahabra",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 20% · ×1",
+            "Body Carve · 10% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "아르셀타스",
+          "navMonster": "아르셀타스",
+          "nameEn": "Seltas",
+          "rank": "상위",
+          "methods": [
+            "Shiny Drop · 20% · ×1",
+            "Capture · 10% · ×1",
+            "Capture · 5% · ×2"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Bnahabra Buffet",
+          "nameEn": "Bnahabra Buffet",
+          "level": "Caravan★7",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay 12 Bnahabra",
+          "probability": 21,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Bnahabra Bloodbath",
+          "nameEn": "Bnahabra Bloodbath",
+          "level": "Guild★4",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay 20 Bnahabra",
+          "probability": 21,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Purse Snatcher",
+          "nameEn": "Purse Snatcher",
+          "level": "Caravan★7",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Purple Gypceros",
+          "probability": 20,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "도스헤라클레스",
+      "count": 1,
+      "nameJa": "ドスヘラクレス",
+      "itemId": "item_f4a9500b933b",
+      "mh4uId": 266,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Arachnophobia",
+          "nameEn": "Arachnophobia",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Nerscylla",
+          "probability": 11,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hunt-a-thon: Kecha Wacha",
+          "nameEn": "Hunt-a-thon: Kecha Wacha",
+          "level": "Caravan★7",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt 2 Kecha Wacha before time expires or deliver a Paw Pass Ticket",
+          "probability": 11,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hunt-a-thon: Nerscylla",
+          "nameEn": "Hunt-a-thon: Nerscylla",
+          "level": "Caravan★7",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt 2 Nerscylla before time expires or deliver a Paw Pass Ticket",
+          "probability": 11,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "쿤추",
+        "navMonster": ""
+      },
+      {
+        "name": "Altaroth",
+        "navMonster": ""
+      },
+      {
+        "name": "Bnahabra",
+        "navMonster": ""
+      },
+      {
+        "name": "아르셀타스",
+        "navMonster": "아르셀타스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Seltas Romance",
+        "nameJa": "",
+        "level": "Guild★4",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt 2 Seltas",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Icy Shadow",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Khezu",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Netting Neopterons",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay 30 Bnahabra",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Chip Off the Old Blockade",
+        "nameJa": "",
+        "level": "Caravan★2",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay 8 Konchu",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Konchu Collector",
+        "nameJa": "",
+        "level": "Guild★1",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay 10 Konchu",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Kecha Wacha Wallop",
+        "nameJa": "",
+        "level": "Caravan★3",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Kecha Wacha",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Bnahabra Buffet",
+        "nameJa": "",
+        "level": "Caravan★7",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay 12 Bnahabra",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Bnahabra Bloodbath",
+        "nameJa": "",
+        "level": "Guild★4",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay 20 Bnahabra",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Purse Snatcher",
+        "nameJa": "",
+        "level": "Caravan★7",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Purple Gypceros",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Arachnophobia",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Nerscylla",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Hunt-a-thon: Kecha Wacha",
+        "nameJa": "",
+        "level": "Caravan★7",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt 2 Kecha Wacha before time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Hunt-a-thon: Nerscylla",
+        "nameJa": "",
+        "level": "Caravan★7",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt 2 Nerscylla before time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

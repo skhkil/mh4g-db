@@ -1,0 +1,419 @@
+{
+  "materials": [
+    {
+      "name": "특선알비노",
+      "count": 1,
+      "nameJa": "特撰アルビノ",
+      "itemId": "item_mh4u_0655",
+      "mh4uId": 655,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "푸루푸루",
+          "navMonster": "푸루푸루",
+          "nameEn": "Khezu",
+          "rank": "G급",
+          "methods": [
+            "Capture · 8% · ×1",
+            "Break Head · 6% · ×1",
+            "Shiny Drop · 5% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "푸루푸루 아종",
+          "navMonster": "푸루푸루 아종",
+          "nameEn": "Red Khezu",
+          "rank": "G급",
+          "methods": [
+            "Capture · 8% · ×1",
+            "Break Head · 8% · ×1",
+            "Shiny Drop · 5% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hunter In Green and Red",
+          "nameEn": "Hunter In Green and Red",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Rathian and a Red Khezu",
+          "probability": 10,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "La Vie en Rose",
+          "nameEn": "La Vie en Rose",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Red Khezu",
+          "probability": 10,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Icy Shadow",
+          "nameEn": "Icy Shadow",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Khezu",
+          "probability": 8,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "토사룡 중두갑각",
+          "requiredItemId": "item_mh4u_1172",
+          "unlockQuestId": "",
+          "unlockQuest": "Hunt-a-thon: Khezu",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "진주색염피",
+      "count": 2,
+      "nameJa": "真珠色の艶皮",
+      "itemId": "item_mh4u_0652",
+      "mh4uId": 652,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "푸루푸루",
+          "navMonster": "푸루푸루",
+          "nameEn": "Khezu",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 54% · ×1",
+            "Break Head · 54% · ×1",
+            "Break Body · 45% · ×1",
+            "Capture · 32% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "네르스큐라 아종",
+          "navMonster": "네르스큐라 아종",
+          "nameEn": "Shrouded Nerscylla",
+          "rank": "G급",
+          "methods": [
+            "Break Cover Skin · 30% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Icy Shadow",
+          "nameEn": "Icy Shadow",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Khezu",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hunt-a-thon: Khezu",
+          "nameEn": "Hunt-a-thon: Khezu",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt 2 Khezu before time expires or deliver a Paw Pass Ticket",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Harvest Tour: Frozen Seaway",
+          "nameEn": "Harvest Tour: Frozen Seaway",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+          "probability": 25,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "토사룡 중갑각",
+          "requiredItemId": "item_mh4u_1171",
+          "unlockQuestId": "",
+          "unlockQuest": "Hunt-a-thon: Khezu",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "뇌전주머니",
+      "count": 2,
+      "nameJa": "雷電袋",
+      "itemId": "item_mh4u_0344",
+      "mh4uId": 344,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "푸루푸루",
+          "navMonster": "푸루푸루",
+          "nameEn": "Khezu",
+          "rank": "G급",
+          "methods": [
+            "Break Body · 30% · ×1",
+            "Capture · 20% · ×2",
+            "Body Carve · 15% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "푸루푸루 아종",
+          "navMonster": "푸루푸루 아종",
+          "nameEn": "Red Khezu",
+          "rank": "G급",
+          "methods": [
+            "Break Body · 30% · ×1",
+            "Capture · 20% · ×2",
+            "Body Carve · 15% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Icy Shadow",
+          "nameEn": "Icy Shadow",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Khezu",
+          "probability": 20,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Harvest Tour: Frozen Seaway",
+          "nameEn": "Harvest Tour: Frozen Seaway",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+          "probability": 20,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hunter In Green and Red",
+          "nameEn": "Hunter In Green and Red",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Rathian and a Red Khezu",
+          "probability": 20,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "노바크리스털",
+      "count": 2,
+      "nameJa": "ノヴァクリスタル",
+      "itemId": "item_fc9752fd5432",
+      "mh4uId": 214,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "키린",
+          "navMonster": "키린",
+          "nameEn": "Kirin",
+          "rank": "상위",
+          "methods": [
+            "Shiny Drop · 50% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "키린 아종",
+          "navMonster": "키린 아종",
+          "nameEn": "Oroshi Kirin",
+          "rank": "상위",
+          "methods": [
+            "Shiny Drop · 50% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "게리오스",
+          "navMonster": "게리오스",
+          "nameEn": "Gypceros",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 20% · ×1",
+            "Body Carve · 8% · ×1",
+            "Break Head · 7% · ×1",
+            "Shiny Drop · 5% · ×1",
+            "Body Carve · 5% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Egg-straction: The Reckoning",
+          "nameEn": "Egg-straction: The Reckoning",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 2 Wyvern Eggs",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: A Hero's Icy Test",
+          "nameEn": "Advanced: A Hero's Icy Test",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay an Oroshi Kirin",
+          "probability": 10,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Red Dragon's Dawn",
+          "nameEn": "Advanced: Red Dragon's Dawn",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay a Fatalis or repel it",
+          "probability": 9,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "푸루푸루",
+        "navMonster": "푸루푸루"
+      },
+      {
+        "name": "푸루푸루 아종",
+        "navMonster": "푸루푸루 아종"
+      },
+      {
+        "name": "네르스큐라 아종",
+        "navMonster": "네르스큐라 아종"
+      },
+      {
+        "name": "키린",
+        "navMonster": "키린"
+      },
+      {
+        "name": "키린 아종",
+        "navMonster": "키린 아종"
+      },
+      {
+        "name": "게리오스",
+        "navMonster": "게리오스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Hunter In Green and Red",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Rathian and a Red Khezu",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "La Vie en Rose",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Red Khezu",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Icy Shadow",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Khezu",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Hunt-a-thon: Khezu",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt 2 Khezu before time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Harvest Tour: Frozen Seaway",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Egg-straction: The Reckoning",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 2 Wyvern Eggs",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: A Hero's Icy Test",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay an Oroshi Kirin",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Red Dragon's Dawn",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay a Fatalis or repel it",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

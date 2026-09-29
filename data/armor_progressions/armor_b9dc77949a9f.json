@@ -1,0 +1,391 @@
+{
+  "materials": [
+    {
+      "name": "흑굉룡 견갑각",
+      "count": 4,
+      "nameJa": "",
+      "itemId": "item_mh4u_0836",
+      "mh4uId": 836,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "티가렉스 아종",
+          "navMonster": "티가렉스 아종",
+          "nameEn": "Brute Tigrex",
+          "rank": "상위",
+          "methods": [
+            "Capture · 38% · ×1",
+            "Body Carve · 27% · ×1",
+            "Break Head · 20% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Tigrex Challenge",
+          "nameEn": "Advanced: Tigrex Challenge",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Brute Tigrex",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "The Echoing Roar",
+          "nameEn": "The Echoing Roar",
+          "level": "Caravan★9",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Brute Tigrex",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Ear Ache",
+          "nameEn": "Ear Ache",
+          "level": "Guild★6",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Brute Tigrex",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "염과룡 견갑각",
+          "requiredItemId": "item_mh4u_1135",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: Dragon Attack",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "흑굉룡 비늘+",
+      "count": 6,
+      "nameJa": "",
+      "itemId": "item_mh4u_0834",
+      "mh4uId": 834,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "티가렉스 아종",
+          "navMonster": "티가렉스 아종",
+          "nameEn": "Brute Tigrex",
+          "rank": "상위",
+          "methods": [
+            "Tail Carve · 40% · ×1",
+            "Body Carve · 38% · ×1",
+            "Shiny Drop · 20% · ×1",
+            "Capture · 20% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Tigrex Challenge",
+          "nameEn": "Advanced: Tigrex Challenge",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Brute Tigrex",
+          "probability": 28,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "The Echoing Roar",
+          "nameEn": "The Echoing Roar",
+          "level": "Caravan★9",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Brute Tigrex",
+          "probability": 28,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Ear Ache",
+          "nameEn": "Ear Ache",
+          "level": "Guild★6",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Brute Tigrex",
+          "probability": 28,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "용옥",
+      "count": 1,
+      "nameJa": "",
+      "itemId": "item_mh4u_0327",
+      "mh4uId": 327,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "그라비모스",
+          "navMonster": "그라비모스",
+          "nameEn": "Gravios",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 7% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "그라비모스 아종",
+          "navMonster": "그라비모스 아종",
+          "nameEn": "Black Gravios",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 7% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "모노블로스",
+          "navMonster": "모노블로스",
+          "nameEn": "Monoblos",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 5% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Primal Forest M.I.A.",
+          "nameEn": "Primal Forest M.I.A.",
+          "level": "Guild★5",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 7,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Dance with Dragons",
+          "nameEn": "Advanced: Dance with Dragons",
+          "level": "Guild★6",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 7,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hammer It Home",
+          "nameEn": "Hammer It Home",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Gravios",
+          "probability": 5,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "이오스 비늘",
+      "count": 8,
+      "nameJa": "",
+      "itemId": "item_mh4u_0412",
+      "mh4uId": 412,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Ioprey",
+          "navMonster": "",
+          "nameEn": "Ioprey",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 38% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "도스이오스",
+          "navMonster": "도스이오스",
+          "nameEn": "Iodrome",
+          "rank": "하위",
+          "methods": [
+            "Shiny Drop · 25% · ×1",
+            "Body Carve · 15% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Pick Your Poison",
+          "nameEn": "Pick Your Poison",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt an Iodrome",
+          "probability": 22,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Learning Experience",
+          "nameEn": "Learning Experience",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay 8 Ioprey",
+          "probability": 22,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Ioprey In the Way",
+          "nameEn": "Ioprey In the Way",
+          "level": "Guild★3",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay 12 Ioprey",
+          "probability": 22,
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "티가렉스 아종",
+        "navMonster": "티가렉스 아종"
+      },
+      {
+        "name": "그라비모스",
+        "navMonster": "그라비모스"
+      },
+      {
+        "name": "그라비모스 아종",
+        "navMonster": "그라비모스 아종"
+      },
+      {
+        "name": "모노블로스",
+        "navMonster": "모노블로스"
+      },
+      {
+        "name": "Ioprey",
+        "navMonster": ""
+      },
+      {
+        "name": "도스이오스",
+        "navMonster": "도스이오스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: Tigrex Challenge",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Brute Tigrex",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "The Echoing Roar",
+        "nameJa": "",
+        "level": "Caravan★9",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Brute Tigrex",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Ear Ache",
+        "nameJa": "",
+        "level": "Guild★6",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Brute Tigrex",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Primal Forest M.I.A.",
+        "nameJa": "",
+        "level": "Guild★5",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt all large monsters",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Dance with Dragons",
+        "nameJa": "",
+        "level": "Guild★6",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt all large monsters",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Hammer It Home",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Gravios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Pick Your Poison",
+        "nameJa": "",
+        "level": "Caravan★5",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt an Iodrome",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Learning Experience",
+        "nameJa": "",
+        "level": "Caravan★5",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay 8 Ioprey",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Ioprey In the Way",
+        "nameJa": "",
+        "level": "Guild★3",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay 12 Ioprey",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

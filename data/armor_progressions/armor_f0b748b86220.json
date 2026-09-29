@@ -1,0 +1,439 @@
+{
+  "materials": [
+    {
+      "name": "자화룡 두툼비늘",
+      "count": 4,
+      "nameJa": "雌火竜の厚鱗",
+      "itemId": "item_mh4u_0662",
+      "mh4uId": 662,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "리오레이아",
+          "navMonster": "리오레이아",
+          "nameEn": "Rathian",
+          "rank": "G급",
+          "methods": [
+            "Tail Carve · 55% · ×1",
+            "Body Carve · 40% · ×1",
+            "Break Wing · 40% · ×1",
+            "Shiny Drop · 25% · ×1",
+            "Capture · 25% · ×2",
+            "Break Head · 20% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hunter In Green and Red",
+          "nameEn": "Hunter In Green and Red",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Rathian and a Red Khezu",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Royal Assassination",
+          "nameEn": "Royal Assassination",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Rathian",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "잠구룡 중갑각",
+          "requiredItemId": "item_mh4u_1166",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: Claw Clash",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "업화주머니",
+      "count": 4,
+      "nameJa": "業炎袋",
+      "itemId": "item_mh4u_0341",
+      "mh4uId": 341,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "그라비모스",
+          "navMonster": "그라비모스",
+          "nameEn": "Gravios",
+          "rank": "G급",
+          "methods": [
+            "Capture · 32% · ×1",
+            "Body Carve · 10% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "그라비모스 아종",
+          "navMonster": "그라비모스 아종",
+          "nameEn": "Black Gravios",
+          "rank": "G급",
+          "methods": [
+            "Capture · 32% · ×1",
+            "Body Carve · 10% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "극한상태 그라비모스",
+          "navMonster": "그라비모스",
+          "nameEn": "Apex Gravios",
+          "rank": "G급",
+          "methods": [
+            "Capture · 30% · ×1",
+            "Body Carve · 12% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Lab Partners",
+          "nameEn": "Advanced: Lab Partners",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Brachydios and an Azure Rathalos",
+          "probability": 30,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "The Azure King and the Tyrant",
+          "nameEn": "The Azure King and the Tyrant",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt an Azure Rathalos and a Tigrex",
+          "probability": 20,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Azure Arrival",
+          "nameEn": "Azure Arrival",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt an Azure Rathalos",
+          "probability": 20,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "자화룡 홍옥",
+      "count": 1,
+      "nameJa": "雌火竜の紅玉",
+      "itemId": "item_mh4u_0671",
+      "mh4uId": 671,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "리오레이아",
+          "navMonster": "리오레이아",
+          "nameEn": "Rathian",
+          "rank": "G급",
+          "methods": [
+            "Tail Carve · 10% · ×1",
+            "Break Head · 4% · ×1",
+            "Capture · 4% · ×1",
+            "Tail Carve · 3% · ×1",
+            "Capture · 3% · ×1",
+            "Shiny Drop · 2% · ×1",
+            "Break Back · 1% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "리오레이아 아종",
+          "navMonster": "리오레이아 아종",
+          "nameEn": "Pink Rathian",
+          "rank": "G급",
+          "methods": [
+            "Tail Carve · 10% · ×1",
+            "Capture · 5% · ×1",
+            "Tail Carve · 4% · ×1",
+            "Capture · 4% · ×1",
+            "Break Head · 4% · ×1",
+            "Shiny Drop · 2% · ×1",
+            "Break Back · 1% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "리오레이아 희소종",
+          "navMonster": "리오레이아 희소종",
+          "nameEn": "Gold Rathian",
+          "rank": "G급",
+          "methods": [
+            "Tail Carve · 10% · ×1",
+            "Capture · 7% · ×1",
+            "Break Head · 6% · ×1",
+            "Tail Carve · 5% · ×1",
+            "Shiny Drop · 4% · ×1",
+            "Break Head · 4% · ×1",
+            "Capture · 4% · ×1",
+            "Break Back · 1% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hunter In Green and Red",
+          "nameEn": "Hunter In Green and Red",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Rathian and a Red Khezu",
+          "probability": 6,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Royal Assassination",
+          "nameEn": "Royal Assassination",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Rathian",
+          "probability": 6,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Pink Problems",
+          "nameEn": "Pink Problems",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt 2 Pink Rathians",
+          "probability": 6,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "옥염석",
+      "count": 2,
+      "nameJa": "獄炎石",
+      "itemId": "item_05a0a5d02783",
+      "mh4uId": 218,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "그라비모스",
+          "navMonster": "그라비모스",
+          "nameEn": "Gravios",
+          "rank": "G급",
+          "methods": [
+            "Shiny Drop · 30% · ×1",
+            "Break Head · 10% · ×1",
+            "Shiny Drop · 6% · ×1",
+            "Capture · 6% · ×1",
+            "Tail Carve · 2% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "극한상태 그라비모스",
+          "navMonster": "그라비모스",
+          "nameEn": "Apex Gravios",
+          "rank": "G급",
+          "methods": [
+            "Shiny Drop · 30% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "그라비모스 아종",
+          "navMonster": "그라비모스 아종",
+          "nameEn": "Black Gravios",
+          "rank": "G급",
+          "methods": [
+            "Shiny Drop · 30% · ×1",
+            "Break Head · 10% · ×1",
+            "Tail Carve · 9% · ×1",
+            "Break Belly · 8% · ×1",
+            "Shiny Drop · 6% · ×1",
+            "Capture · 6% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Stand Tall",
+          "nameEn": "Advanced: Stand Tall",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay an Akantor",
+          "probability": 8,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Take a Powderstone",
+          "nameEn": "Take a Powderstone",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 1 Powderstone",
+          "probability": 8,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Heat Exhaustion",
+          "nameEn": "Heat Exhaustion",
+          "level": "Guild★5",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Deliver 4 Powderstones",
+          "probability": 8,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "리오레이아",
+        "navMonster": "리오레이아"
+      },
+      {
+        "name": "그라비모스",
+        "navMonster": "그라비모스"
+      },
+      {
+        "name": "그라비모스 아종",
+        "navMonster": "그라비모스 아종"
+      },
+      {
+        "name": "극한상태 그라비모스",
+        "navMonster": "그라비모스"
+      },
+      {
+        "name": "리오레이아 아종",
+        "navMonster": "리오레이아 아종"
+      },
+      {
+        "name": "리오레이아 희소종",
+        "navMonster": "리오레이아 희소종"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Hunter In Green and Red",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Rathian and a Red Khezu",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Royal Assassination",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Rathian",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Lab Partners",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Brachydios and an Azure Rathalos",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "The Azure King and the Tyrant",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt an Azure Rathalos and a Tigrex",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Azure Arrival",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt an Azure Rathalos",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Pink Problems",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt 2 Pink Rathians",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Stand Tall",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay an Akantor",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Take a Powderstone",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 1 Powderstone",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Heat Exhaustion",
+        "nameJa": "",
+        "level": "Guild★5",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Deliver 4 Powderstones",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

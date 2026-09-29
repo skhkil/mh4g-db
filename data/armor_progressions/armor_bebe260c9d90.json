@@ -1,0 +1,276 @@
+{
+  "materials": [
+    {
+      "name": "트라이포스",
+      "count": 1,
+      "nameJa": "トライフォース",
+      "itemId": "item_b3aff12b3e86",
+      "mh4uId": 1375,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "event-high-021",
+          "name": "세 가지 덕목",
+          "nameEn": "Three Virtues",
+          "level": "★7",
+          "questType": "event",
+          "location": "격투장",
+          "objective": "진오우거 1마리와 키린 1마리와 라잔 1마리 수렵",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "자화룡 익막",
+      "count": 3,
+      "nameJa": "雌火竜の翼膜",
+      "itemId": "item_mh4u_0666",
+      "mh4uId": 666,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "리오레이아",
+          "navMonster": "리오레이아",
+          "nameEn": "Rathian",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 15% · ×1",
+            "Break Wing · 15% · ×1",
+            "Body Carve · 12% · ×1",
+            "Break Wing · 10% · ×2"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "리오레이아 아종",
+          "navMonster": "리오레이아 아종",
+          "nameEn": "Pink Rathian",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 11% · ×1",
+            "Break Wing · 10% · ×2"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "리오레이아 희소종",
+          "navMonster": "리오레이아 희소종",
+          "nameEn": "Gold Rathian",
+          "rank": "상위",
+          "methods": [
+            "Break Wing · 10% · ×2"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Egg-straction: Wyvern",
+          "nameEn": "Egg-straction: Wyvern",
+          "level": "Caravan★4",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 2 Wyvem Eggs",
+          "probability": 19,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Troverian Trouble",
+          "nameEn": "Troverian Trouble",
+          "level": "Caravan★4",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Rathian",
+          "probability": 19,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Two Live Crew",
+          "nameEn": "Two Live Crew",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Rathian and a Rathalos",
+          "probability": 19,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "자화룡 견갑각",
+      "count": 4,
+      "nameJa": "雌火竜の堅殻",
+      "itemId": "item_mh4u_0664",
+      "mh4uId": 664,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "리오레이아",
+          "navMonster": "리오레이아",
+          "nameEn": "Rathian",
+          "rank": "상위",
+          "methods": [
+            "Break Back · 69% · ×1",
+            "Break Head · 68% · ×1",
+            "Capture · 30% · ×1",
+            "Body Carve · 25% · ×1",
+            "Break Head · 8% · ×2"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Harvest Tour: Dunes (Night)",
+          "nameEn": "Harvest Tour: Dunes (Night)",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+          "probability": 25,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Killer Queens",
+          "nameEn": "Killer Queens",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt 2 Rathians",
+          "probability": 25,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Writer's Block",
+          "nameEn": "Writer's Block",
+          "level": "Guild★5",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Najarala and a Rathian",
+          "probability": 25,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "키린 번개꼬리",
+      "count": 2,
+      "nameJa": "キリンの雷尾",
+      "itemId": "item_mh4u_0938",
+      "mh4uId": 938,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "키린",
+          "navMonster": "키린",
+          "nameEn": "Kirin",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 30% · ×1"
+          ]
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "리오레이아",
+        "navMonster": "리오레이아"
+      },
+      {
+        "name": "리오레이아 아종",
+        "navMonster": "리오레이아 아종"
+      },
+      {
+        "name": "리오레이아 희소종",
+        "navMonster": "리오레이아 희소종"
+      },
+      {
+        "name": "키린",
+        "navMonster": "키린"
+      }
+    ],
+    "quests": [
+      {
+        "id": "event-high-021",
+        "name": "세 가지 덕목",
+        "nameJa": "",
+        "level": "★7",
+        "questType": "event",
+        "location": "격투장",
+        "objective": "진오우거 1마리와 키린 1마리와 라잔 1마리 수렵",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Egg-straction: Wyvern",
+        "nameJa": "",
+        "level": "Caravan★4",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 2 Wyvem Eggs",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Troverian Trouble",
+        "nameJa": "",
+        "level": "Caravan★4",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Rathian",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Two Live Crew",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Rathian and a Rathalos",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Harvest Tour: Dunes (Night)",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Killer Queens",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt 2 Rathians",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Writer's Block",
+        "nameJa": "",
+        "level": "Guild★5",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Najarala and a Rathian",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

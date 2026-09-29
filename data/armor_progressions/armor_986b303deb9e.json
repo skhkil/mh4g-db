@@ -1,0 +1,461 @@
+{
+  "materials": [
+    {
+      "name": "화룡 두툼비늘",
+      "count": 4,
+      "nameJa": "火竜の厚鱗",
+      "itemId": "item_mh4u_0685",
+      "mh4uId": 685,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "리오레우스",
+          "navMonster": "리오레우스",
+          "nameEn": "Rathalos",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 57% · ×1",
+            "Body Carve · 38% · ×1",
+            "Shiny Drop · 33% · ×1",
+            "Tail Carve · 22% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Sovereign of the Sky",
+          "nameEn": "Sovereign of the Sky",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Rathalos",
+          "probability": 24,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Rival Clash",
+          "nameEn": "Rival Clash",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Seregios and a Rathalos",
+          "probability": 24,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Ring Hollow",
+          "nameEn": "Ring Hollow",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 14,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "해룡 두툼비늘",
+          "requiredItemId": "item_mh4u_1186",
+          "unlockQuestId": "",
+          "unlockQuest": "Rival Clash",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "대룡옥",
+      "count": 1,
+      "nameJa": "大竜玉",
+      "itemId": "item_mh4u_0328",
+      "mh4uId": 328,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "극한상태 가라라아자라 아종",
+          "navMonster": "가라라아자라 아종",
+          "nameEn": "Apex Tidal Najarala",
+          "rank": "G급",
+          "methods": [
+            "Shiny Drop · 8% · ×1",
+            "Capture · 8% · ×1",
+            "Break Tail · 8% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "극한상태 디아블로스",
+          "navMonster": "디아블로스",
+          "nameEn": "Apex Diablos",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 8% · ×1",
+            "Tail Carve · 8% · ×1",
+            "Capture · 8% · ×1",
+            "Shiny Drop · 4% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "그라비모스",
+          "navMonster": "그라비모스",
+          "nameEn": "Gravios",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 7% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Rhapsody in Rime",
+          "nameEn": "Advanced: Rhapsody in Rime",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Tidal Najarala",
+          "probability": 15,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Tigrex In Effect",
+          "nameEn": "Advanced: Tigrex In Effect",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Tigrex",
+          "probability": 15,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Gravios Situation",
+          "nameEn": "Advanced: Gravios Situation",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Gravios",
+          "probability": 15,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "업화주머니",
+      "count": 3,
+      "nameJa": "業炎袋",
+      "itemId": "item_mh4u_0341",
+      "mh4uId": 341,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "그라비모스",
+          "navMonster": "그라비모스",
+          "nameEn": "Gravios",
+          "rank": "G급",
+          "methods": [
+            "Capture · 32% · ×1",
+            "Body Carve · 10% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "그라비모스 아종",
+          "navMonster": "그라비모스 아종",
+          "nameEn": "Black Gravios",
+          "rank": "G급",
+          "methods": [
+            "Capture · 32% · ×1",
+            "Body Carve · 10% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "극한상태 그라비모스",
+          "navMonster": "그라비모스",
+          "nameEn": "Apex Gravios",
+          "rank": "G급",
+          "methods": [
+            "Capture · 30% · ×1",
+            "Body Carve · 12% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Lab Partners",
+          "nameEn": "Advanced: Lab Partners",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Brachydios and an Azure Rathalos",
+          "probability": 30,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "The Azure King and the Tyrant",
+          "nameEn": "The Azure King and the Tyrant",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt an Azure Rathalos and a Tigrex",
+          "probability": 20,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Azure Arrival",
+          "nameEn": "Azure Arrival",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt an Azure Rathalos",
+          "probability": 20,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "중룡골",
+      "count": 3,
+      "nameJa": "重竜骨",
+      "itemId": "item_93ba183fc30f",
+      "mh4uId": 312,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "그라비모스",
+          "navMonster": "그라비모스",
+          "nameEn": "Gravios",
+          "rank": "G급",
+          "methods": [
+            "Break Back · 30% · ×1",
+            "Break Wing · 30% · ×1",
+            "Tail Carve · 20% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "극한상태 그라비모스",
+          "navMonster": "그라비모스",
+          "nameEn": "Apex Gravios",
+          "rank": "G급",
+          "methods": [
+            "Break Back · 30% · ×1",
+            "Break Wing · 30% · ×1",
+            "Tail Carve · 17% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "그라비모스 아종",
+          "navMonster": "그라비모스 아종",
+          "nameEn": "Black Gravios",
+          "rank": "G급",
+          "methods": [
+            "Break Back · 30% · ×1",
+            "Tail Carve · 18% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Bad Hair Day: Monoblos",
+          "nameEn": "Bad Hair Day: Monoblos",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Monoblos",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "The Silvery Spear",
+          "nameEn": "The Silvery Spear",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a White Monoblos",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: All in Its Place",
+          "nameEn": "Advanced: All in Its Place",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt Gore Magala",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "리오레우스",
+        "navMonster": "리오레우스"
+      },
+      {
+        "name": "극한상태 가라라아자라 아종",
+        "navMonster": "가라라아자라 아종"
+      },
+      {
+        "name": "극한상태 디아블로스",
+        "navMonster": "디아블로스"
+      },
+      {
+        "name": "그라비모스",
+        "navMonster": "그라비모스"
+      },
+      {
+        "name": "그라비모스 아종",
+        "navMonster": "그라비모스 아종"
+      },
+      {
+        "name": "극한상태 그라비모스",
+        "navMonster": "그라비모스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Sovereign of the Sky",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Rathalos",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Rival Clash",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Seregios and a Rathalos",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Ring Hollow",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt all large monsters",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Rhapsody in Rime",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Tidal Najarala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Tigrex In Effect",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Tigrex",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Gravios Situation",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Gravios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Lab Partners",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Brachydios and an Azure Rathalos",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "The Azure King and the Tyrant",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt an Azure Rathalos and a Tigrex",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Azure Arrival",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt an Azure Rathalos",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Bad Hair Day: Monoblos",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Monoblos",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "The Silvery Spear",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a White Monoblos",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: All in Its Place",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt Gore Magala",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

@@ -1,0 +1,368 @@
+{
+  "materials": [
+    {
+      "name": "교사룡 소리갑각",
+      "count": 3,
+      "nameJa": "絞蛇竜の鳴甲",
+      "itemId": "item_mh4u_0575",
+      "mh4uId": 575,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "가라라아자라",
+          "navMonster": "가라라아자라",
+          "nameEn": "Najarala",
+          "rank": "하위",
+          "methods": [
+            "Break Back · 58% · ×1",
+            "Break Tail · 58% · ×1",
+            "Shiny Drop · 25% · ×1",
+            "Capture · 15% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Najarala Hunt",
+          "nameEn": "Najarala Hunt",
+          "level": "Caravan★4",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Najarala",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Nix the Najarala",
+          "nameEn": "Nix the Najarala",
+          "level": "Guild★2",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Najarala",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Field Study: Primal Forest",
+          "nameEn": "Field Study: Primal Forest",
+          "level": "Guild★2",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Najarala and a Rathian",
+          "probability": 12,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "교사룡 갑각",
+      "count": 4,
+      "nameJa": "絞蛇竜の甲殻",
+      "itemId": "item_mh4u_0567",
+      "mh4uId": 567,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "가라라아자라",
+          "navMonster": "가라라아자라",
+          "nameEn": "Najarala",
+          "rank": "하위",
+          "methods": [
+            "Break Back Leg · 50% · ×1",
+            "Body Carve · 45% · ×1",
+            "Break Back · 39% · ×1",
+            "Capture · 24% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Najarala Hunt",
+          "nameEn": "Najarala Hunt",
+          "level": "Caravan★4",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Najarala",
+          "probability": 26,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Nix the Najarala",
+          "nameEn": "Nix the Najarala",
+          "level": "Guild★2",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Najarala",
+          "probability": 26,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Field Study: Primal Forest",
+          "nameEn": "Field Study: Primal Forest",
+          "level": "Guild★2",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Najarala and a Rathian",
+          "probability": 26,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "낫게 갑각",
+          "requiredItemId": "item_mh4u_1104",
+          "unlockQuestId": "",
+          "unlockQuest": "Tipping the Scales",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "섬뜩한 부리",
+      "count": 1,
+      "nameJa": "寒気立つクチバシ",
+      "itemId": "item_mh4u_0579",
+      "mh4uId": 579,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "가라라아자라",
+          "navMonster": "가라라아자라",
+          "nameEn": "Najarala",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 28% · ×1",
+            "Shiny Drop · 15% · ×1",
+            "Break Head · 12% · ×1",
+            "Body Carve · 10% · ×1",
+            "Capture · 10% · ×2",
+            "Break Head · 8% · ×1",
+            "Break Back · 8% · ×1",
+            "Body Carve · 5% · ×1",
+            "Shiny Drop · 5% · ×1",
+            "Break Back · 3% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Fear Factor",
+          "nameEn": "Fear Factor",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Najarala",
+          "probability": 6,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hunt-a-thon: Najarala",
+          "nameEn": "Hunt-a-thon: Najarala",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt 2 Najarala before time expires or deliver a Paw Pass Ticket",
+          "probability": 6,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Writer's Block",
+          "nameEn": "Writer's Block",
+          "level": "Guild★5",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Najarala and a Rathian",
+          "probability": 6,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "낫게 집게",
+          "requiredItemId": "item_mh4u_1105",
+          "unlockQuestId": "",
+          "unlockQuest": "Tipping the Scales",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "게네포스 비늘",
+      "count": 4,
+      "nameJa": "ゲネポスの鱗",
+      "itemId": "item_mh4u_0404",
+      "mh4uId": 404,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Genprey",
+          "navMonster": "",
+          "nameEn": "Genprey",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 33% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "도스게네포스",
+          "navMonster": "도스게네포스",
+          "nameEn": "Gendrome",
+          "rank": "하위",
+          "methods": [
+            "Shiny Drop · 25% · ×1",
+            "Body Carve · 15% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Genprey Payback",
+          "nameEn": "Genprey Payback",
+          "level": "Caravan★3",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay 8 Genprey",
+          "probability": 22,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Road Work",
+          "nameEn": "Road Work",
+          "level": "Caravan★3",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Capture a Gendrome",
+          "probability": 22,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Genprey Payback",
+          "nameEn": "Genprey Payback",
+          "level": "Guild★1",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay 10 Genprey",
+          "probability": 22,
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "가라라아자라",
+        "navMonster": "가라라아자라"
+      },
+      {
+        "name": "Genprey",
+        "navMonster": ""
+      },
+      {
+        "name": "도스게네포스",
+        "navMonster": "도스게네포스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Najarala Hunt",
+        "nameJa": "",
+        "level": "Caravan★4",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Najarala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Nix the Najarala",
+        "nameJa": "",
+        "level": "Guild★2",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Najarala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Field Study: Primal Forest",
+        "nameJa": "",
+        "level": "Guild★2",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Najarala and a Rathian",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Fear Factor",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Najarala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Hunt-a-thon: Najarala",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt 2 Najarala before time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Writer's Block",
+        "nameJa": "",
+        "level": "Guild★5",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Najarala and a Rathian",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Genprey Payback",
+        "nameJa": "",
+        "level": "Caravan★3",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay 8 Genprey",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Road Work",
+        "nameJa": "",
+        "level": "Caravan★3",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Capture a Gendrome",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

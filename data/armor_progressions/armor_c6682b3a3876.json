@@ -1,0 +1,306 @@
+{
+  "materials": [
+    {
+      "name": "귀와 초거대이빨",
+      "count": 2,
+      "nameJa": "鬼蛙の弩級牙",
+      "itemId": "item_mh4u_0535",
+      "mh4uId": 535,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "테츠카브라",
+          "navMonster": "테츠카브라",
+          "nameEn": "Tetsucabra",
+          "rank": "G급",
+          "methods": [
+            "Break Jaw · 55% · ×1",
+            "Capture · 15% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Chasing Tail",
+          "nameEn": "Chasing Tail",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt 2 Tetsucabras",
+          "probability": 10,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Hollow Hysterics",
+          "nameEn": "Advanced: Hollow Hysterics",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Nerscylla and a Tetsucabra",
+          "probability": 10,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Harvest Tour: Volcanic Hollow",
+          "nameEn": "Harvest Tour: Volcanic Hollow",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+          "probability": 10,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "귀와 중갑각",
+      "count": 3,
+      "nameJa": "鬼蛙の重殻",
+      "itemId": "item_mh4u_0529",
+      "mh4uId": 529,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "테츠카브라",
+          "navMonster": "테츠카브라",
+          "nameEn": "Tetsucabra",
+          "rank": "G급",
+          "methods": [
+            "Break Back · 30% · ×1",
+            "Body Carve · 20% · ×1",
+            "Capture · 15% · ×1",
+            "Break Back Leg · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Chasing Tail",
+          "nameEn": "Chasing Tail",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt 2 Tetsucabras",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Hollow Hysterics",
+          "nameEn": "Advanced: Hollow Hysterics",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Nerscylla and a Tetsucabra",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Harvest Tour: Volcanic Hollow",
+          "nameEn": "Harvest Tour: Volcanic Hollow",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+          "probability": 18,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "흉악한 거대머리뼈",
+      "count": 2,
+      "nameJa": "強面な大頭骨",
+      "itemId": "item_mh4u_0537",
+      "mh4uId": 537,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "테츠카브라",
+          "navMonster": "테츠카브라",
+          "nameEn": "Tetsucabra",
+          "rank": "G급",
+          "methods": [
+            "Break Jaw · 25% · ×1",
+            "Body Carve · 18% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "테츠카브라 아종",
+          "navMonster": "테츠카브라 아종",
+          "nameEn": "Berserk Tetsucabra",
+          "rank": "G급",
+          "methods": [
+            "Break Jaw · 20% · ×1",
+            "Body Carve · 15% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Chasing Tail",
+          "nameEn": "Chasing Tail",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt 2 Tetsucabras",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Hollow Hysterics",
+          "nameEn": "Advanced: Hollow Hysterics",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Nerscylla and a Tetsucabra",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Harvest Tour: Volcanic Hollow",
+          "nameEn": "Harvest Tour: Volcanic Hollow",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+          "probability": 12,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "황제메뚜기",
+      "count": 5,
+      "nameJa": "皇帝バッタ",
+      "itemId": "item_ca6b777dbf0c",
+      "mh4uId": 269,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Lumber Support",
+          "nameEn": "Lumber Support",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Kecha Wacha",
+          "probability": 11,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Fashion Victim",
+          "nameEn": "Fashion Victim",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Daimyo Hermitaur",
+          "probability": 11,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Terrible Twins",
+          "nameEn": "Advanced: Terrible Twins",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Kecha Wacha and an Ash Kecha Wacha",
+          "probability": 11,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "테츠카브라",
+        "navMonster": "테츠카브라"
+      },
+      {
+        "name": "테츠카브라 아종",
+        "navMonster": "테츠카브라 아종"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Chasing Tail",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt 2 Tetsucabras",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Hollow Hysterics",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Nerscylla and a Tetsucabra",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Harvest Tour: Volcanic Hollow",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Lumber Support",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Kecha Wacha",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Fashion Victim",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Daimyo Hermitaur",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Terrible Twins",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Kecha Wacha and an Ash Kecha Wacha",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

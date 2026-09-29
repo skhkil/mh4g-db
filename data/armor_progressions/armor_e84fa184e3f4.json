@@ -1,0 +1,208 @@
+{
+  "materials": [
+    {
+      "name": "천회룡 두툼비늘",
+      "count": 3,
+      "nameJa": "天廻龍の厚鱗",
+      "itemId": "item_mh4u_0881",
+      "mh4uId": 881,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "샤가르마가라",
+          "navMonster": "샤가르마가라",
+          "nameEn": "Shagaru Magala",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 40% · ×1",
+            "Tail Carve · 28% · ×1",
+            "Break Wing · 15% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Wheel of Time",
+          "nameEn": "Advanced: Wheel of Time",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Shagaru Magala",
+          "probability": 30,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "천회룡 광채홍날개",
+      "count": 2,
+      "nameJa": "天廻龍の光虹翼",
+      "itemId": "item_mh4u_0887",
+      "mh4uId": 887,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "샤가르마가라",
+          "navMonster": "샤가르마가라",
+          "nameEn": "Shagaru Magala",
+          "rank": "G급",
+          "methods": [
+            "Break Wing · 75% · ×1",
+            "Body Carve · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Wheel of Time",
+          "nameEn": "Advanced: Wheel of Time",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Shagaru Magala",
+          "probability": 15,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "천회룡 중갑각",
+      "count": 4,
+      "nameJa": "天廻龍の重殻",
+      "itemId": "item_mh4u_0884",
+      "mh4uId": 884,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "샤가르마가라",
+          "navMonster": "샤가르마가라",
+          "nameEn": "Shagaru Magala",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 30% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Wheel of Time",
+          "nameEn": "Advanced: Wheel of Time",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Shagaru Magala",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "멜랑제광석",
+      "count": 3,
+      "nameJa": "メランジェ鉱石",
+      "itemId": "item_4356e2f02662",
+      "mh4uId": 217,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "오나즈치",
+          "navMonster": "오나즈치",
+          "nameEn": "Chameleos",
+          "rank": "G급",
+          "methods": [
+            "Shiny Drop · 37% · ×1",
+            "Break Horn · 30% · ×1",
+            "Tail Carve · 17% · ×1",
+            "Body Carve · 15% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "다렌·모란",
+          "navMonster": "다렌·모란",
+          "nameEn": "Dah'ren Mohran",
+          "rank": "G급",
+          "methods": [
+            "Break Fin · 14% · ×1",
+            "Break Blowhole · 14% · ×1",
+            "Mining Back · 8% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "All-You-Can-Hunt Remobra",
+          "nameEn": "All-You-Can-Hunt Remobra",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay 15 Remobras",
+          "probability": 8,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Moving Mountains",
+          "nameEn": "Advanced: Moving Mountains",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay Dah'ren Mohran or repel it",
+          "probability": 6,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "샤가르마가라",
+        "navMonster": "샤가르마가라"
+      },
+      {
+        "name": "오나즈치",
+        "navMonster": "오나즈치"
+      },
+      {
+        "name": "다렌·모란",
+        "navMonster": "다렌·모란"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: Wheel of Time",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay Shagaru Magala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "All-You-Can-Hunt Remobra",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay 15 Remobras",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Moving Mountains",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay Dah'ren Mohran or repel it",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

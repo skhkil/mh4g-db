@@ -1,0 +1,167 @@
+{
+  "materials": [
+    {
+      "name": "연흑룡 검은비늘",
+      "count": 4,
+      "nameJa": "煉黒龍の黒鱗",
+      "itemId": "item_mh4u_1219",
+      "mh4uId": 1219,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "거극룡 요새비늘",
+          "requiredItemId": "item_mh4u_1074",
+          "unlockQuestId": "quest_8c9815f28f48",
+          "unlockQuest": "고난도: 퇴폐의 늪",
+          "unlockLevel": "★3",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "연흑룡 작열핵",
+      "count": 2,
+      "nameJa": "煉黒龍の灼熱核",
+      "itemId": "item_mh4u_1220",
+      "mh4uId": 1220,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "거극룡 전투발톱 패왕의 증표G",
+          "requiredItemId": "",
+          "unlockQuestId": "quest_8c9815f28f48",
+          "unlockQuest": "고난도: 퇴폐의 늪",
+          "unlockLevel": "★3",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "광염의 대룡옥",
+      "count": 1,
+      "nameJa": "光炎の大龍玉",
+      "itemId": "item_mh4u_1221",
+      "mh4uId": 1221,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "전화의 용신옥 패왕의 증표G",
+          "requiredItemId": "",
+          "unlockQuestId": "quest_8c9815f28f48",
+          "unlockQuest": "고난도: 퇴폐의 늪",
+          "unlockLevel": "★3",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "창화룡 중갑각",
+      "count": 10,
+      "nameJa": "蒼火竜の重殻",
+      "itemId": "item_mh4u_0700",
+      "mh4uId": 700,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "리오레우스 아종",
+          "navMonster": "리오레우스 아종",
+          "nameEn": "Azure Rathalos",
+          "rank": "G급",
+          "methods": [
+            "Break Back · 69% · ×1",
+            "Capture · 40% · ×1",
+            "Break Head · 30% · ×1",
+            "Body Carve · 28% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "The Azure King and the Tyrant",
+          "nameEn": "The Azure King and the Tyrant",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt an Azure Rathalos and a Tigrex",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Azure Arrival",
+          "nameEn": "Azure Arrival",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt an Azure Rathalos",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Lab Partners",
+          "nameEn": "Advanced: Lab Partners",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Brachydios and an Azure Rathalos",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "백해룡 뇌전기갑각",
+          "requiredItemId": "item_mh4u_1189",
+          "unlockQuestId": "",
+          "unlockQuest": "Rival Clash",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "리오레우스 아종",
+        "navMonster": "리오레우스 아종"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "The Azure King and the Tyrant",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt an Azure Rathalos and a Tigrex",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Azure Arrival",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt an Azure Rathalos",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Lab Partners",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Brachydios and an Azure Rathalos",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

@@ -1,0 +1,159 @@
+{
+  "materials": [
+    {
+      "name": "등어룡 가시+",
+      "count": 2,
+      "nameJa": "灯魚竜の上棘",
+      "itemId": "item_mh4u_1126",
+      "mh4uId": 1126,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "자화룡 가시+",
+          "requiredItemId": "item_mh4u_0668",
+          "unlockQuestId": "quest_be13d9a412f4",
+          "unlockQuest": "화려한 매혹색과 홍색",
+          "unlockLevel": "★5",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "등어룡 가죽+",
+      "count": 4,
+      "nameJa": "灯魚竜の上皮",
+      "itemId": "item_mh4u_1125",
+      "mh4uId": 1125,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "자화룡 비늘+",
+          "requiredItemId": "item_mh4u_0661",
+          "unlockQuestId": "quest_be13d9a412f4",
+          "unlockQuest": "화려한 매혹색과 홍색",
+          "unlockLevel": "★5",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "괴상어 지느러미+",
+      "count": 2,
+      "nameJa": "化け鮫の上ヒレ",
+      "itemId": "item_mh4u_0556",
+      "mh4uId": 556,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "자보아자길",
+          "navMonster": "자보아자길",
+          "nameEn": "Zamtrios",
+          "rank": "상위",
+          "methods": [
+            "Break Fin · 65% · ×1",
+            "Break Front Leg · 40% · ×1",
+            "Body Carve · 10% · ×1",
+            "Capture · 8% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Fin Finder",
+          "nameEn": "Fin Finder",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Zamtrios",
+          "probability": 16,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Fin Finder",
+          "nameEn": "Fin Finder",
+          "level": "Guild★5",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Zamtrios",
+          "probability": 16,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Cold-blooded Combo",
+          "nameEn": "Cold-blooded Combo",
+          "level": "Guild★5",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Zamtrios and a Lagombi",
+          "probability": 16,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "눈사자 예리이빨",
+          "requiredItemId": "item_mh4u_1132",
+          "unlockQuestId": "",
+          "unlockQuest": "Trader in Trouble",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "괴상어 칼꼬리",
+      "count": 1,
+      "nameJa": "化け鮫の刃尾",
+      "itemId": "item_mh4u_0560",
+      "mh4uId": 560,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "자보아자길",
+          "navMonster": "자보아자길",
+          "nameEn": "Zamtrios",
+          "rank": "하위",
+          "methods": [
+            "Break Tail · 65% · ×1",
+            "Body Carve · 8% · ×1"
+          ]
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "자보아자길",
+        "navMonster": "자보아자길"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Fin Finder",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Zamtrios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Cold-blooded Combo",
+        "nameJa": "",
+        "level": "Guild★5",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Zamtrios and a Lagombi",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

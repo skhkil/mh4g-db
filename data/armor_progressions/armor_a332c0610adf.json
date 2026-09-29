@@ -1,0 +1,239 @@
+{
+  "materials": [
+    {
+      "name": "염비룡 중갑각",
+      "count": 4,
+      "nameJa": "炎妃龍の重殻",
+      "itemId": "item_mh4u_1203",
+      "mh4uId": 1203,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "염왕룡 중갑각",
+          "requiredItemId": "item_mh4u_0965",
+          "unlockQuestId": "quest_fcc1f3928b5f",
+          "unlockQuest": "고난도: 지옥에서 온 숙적들",
+          "unlockLevel": "★10",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "염룡 가루",
+      "count": 4,
+      "nameJa": "炎龍の塵粉",
+      "itemId": "item_mh4u_0976",
+      "mh4uId": 976,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "테오·테스카토르",
+          "navMonster": "테오·테스카토르",
+          "nameEn": "Teostra",
+          "rank": "상위",
+          "methods": [
+            "Shiny Drop · 65% · ×1",
+            "Shiny Drop · 61% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Emperor of Embers",
+          "nameEn": "Advanced: Emperor of Embers",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Teostra or repel it",
+          "probability": 15,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Operation Fire Extinguisher",
+          "nameEn": "Operation Fire Extinguisher",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Teostra or repel it",
+          "probability": 15,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Deep Trouble",
+          "nameEn": "Advanced: Deep Trouble",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay a Teostra or repel it",
+          "probability": 10,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "염룡 강발톱",
+      "count": 3,
+      "nameJa": "炎龍の剛爪",
+      "itemId": "item_mh4u_0974",
+      "mh4uId": 974,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "테오·테스카토르",
+          "navMonster": "테오·테스카토르",
+          "nameEn": "Teostra",
+          "rank": "G급",
+          "methods": [
+            "Break Talon · 35% · ×1",
+            "Body Carve · 8% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Emperor of Embers",
+          "nameEn": "Advanced: Emperor of Embers",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Teostra or repel it",
+          "probability": 15,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Operation Fire Extinguisher",
+          "nameEn": "Operation Fire Extinguisher",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Teostra or repel it",
+          "probability": 15,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "태고룡골",
+      "count": 4,
+      "nameJa": "太古龍骨",
+      "itemId": "item_22a180f00f9e",
+      "mh4uId": 314,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: A Formless Fiend",
+          "nameEn": "Advanced: A Formless Fiend",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Chameleos or repel it",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Misty Challenge",
+          "nameEn": "Advanced: Misty Challenge",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Chameleos or repel it",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: A Storm of Steel",
+          "nameEn": "Advanced: A Storm of Steel",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Kushala Daora or repel it",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "테오·테스카토르",
+        "navMonster": "테오·테스카토르"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: Emperor of Embers",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Teostra or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Operation Fire Extinguisher",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Teostra or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Deep Trouble",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay a Teostra or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: A Formless Fiend",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Chameleos or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Misty Challenge",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Chameleos or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: A Storm of Steel",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Kushala Daora or repel it",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

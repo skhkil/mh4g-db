@@ -1,0 +1,449 @@
+{
+  "materials": [
+    {
+      "name": "희망의 증표",
+      "count": 1,
+      "nameJa": "希望の証",
+      "itemId": "item_0d03c7de5e2a",
+      "mh4uId": 1413,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Terrible Tyrant",
+          "nameEn": "Terrible Tyrant",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Molten Tigrex",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Busted Hell Hunters",
+          "nameEn": "Busted Hell Hunters",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Molten Tigrex",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Speartip Menace",
+          "nameEn": "Advanced: Speartip Menace",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Dalamadur",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "자화룡 가시+",
+      "count": 5,
+      "nameJa": "雌火竜の上棘",
+      "itemId": "item_mh4u_0668",
+      "mh4uId": 668,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "리오레이아",
+          "navMonster": "리오레이아",
+          "nameEn": "Rathian",
+          "rank": "상위",
+          "methods": [
+            "Break Back · 30% · ×1",
+            "Tail Carve · 15% · ×1",
+            "Body Carve · 10% · ×1",
+            "Shiny Drop · 10% · ×1",
+            "Shiny Drop · 8% · ×1",
+            "Body Carve · 5% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "리오레이아 아종",
+          "navMonster": "리오레이아 아종",
+          "nameEn": "Pink Rathian",
+          "rank": "상위",
+          "methods": [
+            "Break Back · 30% · ×1",
+            "Tail Carve · 16% · ×1",
+            "Shiny Drop · 10% · ×1",
+            "Shiny Drop · 8% · ×1",
+            "Body Carve · 6% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Harvest Tour: Dunes (Night)",
+          "nameEn": "Harvest Tour: Dunes (Night)",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+          "probability": 7,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "In the Pink",
+          "nameEn": "In the Pink",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Pink Rathian",
+          "probability": 7,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Killer Queens",
+          "nameEn": "Killer Queens",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt 2 Rathians",
+          "probability": 7,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "등어룡 가시+",
+          "requiredItemId": "item_mh4u_1126",
+          "unlockQuestId": "",
+          "unlockQuest": "Trader in Trouble",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "화룡 연수",
+      "count": 1,
+      "nameJa": "火竜の延髄",
+      "itemId": "item_mh4u_0713",
+      "mh4uId": 713,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "리오레우스",
+          "navMonster": "리오레우스",
+          "nameEn": "Rathalos",
+          "rank": "상위",
+          "methods": [
+            "Break Back · 30% · ×1",
+            "Capture · 18% · ×1",
+            "Tail Carve · 10% · ×1",
+            "Shiny Drop · 10% · ×1",
+            "Capture · 8% · ×1",
+            "Body Carve · 5% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "리오레우스 아종",
+          "navMonster": "리오레우스 아종",
+          "nameEn": "Azure Rathalos",
+          "rank": "상위",
+          "methods": [
+            "Break Back · 30% · ×1",
+            "Capture · 18% · ×1",
+            "Capture · 13% · ×1",
+            "Tail Carve · 11% · ×1",
+            "Shiny Drop · 10% · ×1",
+            "Body Carve · 6% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "리오레이아",
+          "navMonster": "리오레이아",
+          "nameEn": "Rathian",
+          "rank": "G급",
+          "methods": [
+            "Capture · 18% · ×1",
+            "Capture · 13% · ×1",
+            "Tail Carve · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Striking Gold",
+          "nameEn": "Striking Gold",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Gold Rathian",
+          "probability": 11,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Ring of the Golden Lune",
+          "nameEn": "Ring of the Golden Lune",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Gold Rathian",
+          "probability": 11,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Sinister Astronomy",
+          "nameEn": "Sinister Astronomy",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Silver Rathalos and a Gold Rathian",
+          "probability": 11,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "폭염주머니",
+      "count": 2,
+      "nameJa": "爆炎袋",
+      "itemId": "item_mh4u_0340",
+      "mh4uId": 340,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "그라비모스",
+          "navMonster": "그라비모스",
+          "nameEn": "Gravios",
+          "rank": "상위",
+          "methods": [
+            "Capture · 34% · ×1",
+            "Body Carve · 10% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "그라비모스 아종",
+          "navMonster": "그라비모스 아종",
+          "nameEn": "Black Gravios",
+          "rank": "상위",
+          "methods": [
+            "Capture · 34% · ×1",
+            "Body Carve · 10% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "리오레이아 아종",
+          "navMonster": "리오레이아 아종",
+          "nameEn": "Pink Rathian",
+          "rank": "상위",
+          "methods": [
+            "Capture · 16% · ×1",
+            "Body Carve · 13% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "An Omen in the Skies",
+          "nameEn": "An Omen in the Skies",
+          "level": "Caravan★9",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt an Azure Rathalos",
+          "probability": 20,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Bring Down the Sky King",
+          "nameEn": "Bring Down the Sky King",
+          "level": "Guild★6",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt an Azure Rathalos",
+          "probability": 20,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Heaven and Earth",
+          "nameEn": "Advanced: Heaven and Earth",
+          "level": "Guild★6",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt an Azure Rathalos and a Pink Rathian",
+          "probability": 20,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "리오레이아",
+        "navMonster": "리오레이아"
+      },
+      {
+        "name": "리오레이아 아종",
+        "navMonster": "리오레이아 아종"
+      },
+      {
+        "name": "리오레우스",
+        "navMonster": "리오레우스"
+      },
+      {
+        "name": "리오레우스 아종",
+        "navMonster": "리오레우스 아종"
+      },
+      {
+        "name": "그라비모스",
+        "navMonster": "그라비모스"
+      },
+      {
+        "name": "그라비모스 아종",
+        "navMonster": "그라비모스 아종"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Terrible Tyrant",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Molten Tigrex",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Busted Hell Hunters",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Molten Tigrex",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Speartip Menace",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay Dalamadur",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Harvest Tour: Dunes (Night)",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "In the Pink",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Pink Rathian",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Killer Queens",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt 2 Rathians",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Striking Gold",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Gold Rathian",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Ring of the Golden Lune",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Gold Rathian",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Sinister Astronomy",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Silver Rathalos and a Gold Rathian",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "An Omen in the Skies",
+        "nameJa": "",
+        "level": "Caravan★9",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt an Azure Rathalos",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Bring Down the Sky King",
+        "nameJa": "",
+        "level": "Guild★6",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt an Azure Rathalos",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Heaven and Earth",
+        "nameJa": "",
+        "level": "Guild★6",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt an Azure Rathalos and a Pink Rathian",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

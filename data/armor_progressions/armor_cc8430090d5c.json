@@ -1,0 +1,197 @@
+{
+  "materials": [
+    {
+      "name": "신룡이끼",
+      "count": 2,
+      "nameJa": "神龍苔",
+      "itemId": "item_mh4u_1144",
+      "mh4uId": 1144,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "호산룡 완갑+",
+          "requiredItemId": "item_mh4u_0989",
+          "unlockQuestId": "quest_2fc115cc5349",
+          "unlockQuest": "고난도: 담대한 용기의 증명",
+          "unlockLevel": "★7",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "비악룡 체액",
+      "count": 4,
+      "nameJa": "浮岳龍の体液",
+      "itemId": "item_mh4u_1142",
+      "mh4uId": 1142,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "호산룡 붉은비늘+",
+          "requiredItemId": "item_mh4u_0986",
+          "unlockQuestId": "quest_2fc115cc5349",
+          "unlockQuest": "고난도: 담대한 용기의 증명",
+          "unlockLevel": "★7",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "고룡골",
+      "count": 5,
+      "nameJa": "古龍骨",
+      "itemId": "item_19c5eaea3a54",
+      "mh4uId": 313,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Deep Trouble",
+          "nameEn": "Advanced: Deep Trouble",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay a Teostra or repel it",
+          "probability": 14,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Wicked Wings",
+          "nameEn": "Advanced: Wicked Wings",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay a Kushala Daora or repel it",
+          "probability": 14,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Teostra Tangle",
+          "nameEn": "Advanced: Teostra Tangle",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Teostra or repel it",
+          "probability": 14,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "희망의 증표",
+      "count": 1,
+      "nameJa": "希望の証",
+      "itemId": "item_0d03c7de5e2a",
+      "mh4uId": 1413,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Terrible Tyrant",
+          "nameEn": "Terrible Tyrant",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Molten Tigrex",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Busted Hell Hunters",
+          "nameEn": "Busted Hell Hunters",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Molten Tigrex",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Speartip Menace",
+          "nameEn": "Advanced: Speartip Menace",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Dalamadur",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: Deep Trouble",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay a Teostra or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Wicked Wings",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay a Kushala Daora or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Teostra Tangle",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Teostra or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Terrible Tyrant",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Molten Tigrex",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Busted Hell Hunters",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Molten Tigrex",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Speartip Menace",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay Dalamadur",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

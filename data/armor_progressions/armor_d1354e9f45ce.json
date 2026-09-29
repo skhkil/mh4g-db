@@ -1,0 +1,350 @@
+{
+  "materials": [
+    {
+      "name": "중갑충 예리발톱",
+      "count": 3,
+      "nameJa": "重甲虫の鋭爪",
+      "itemId": "item_mh4u_0622",
+      "mh4uId": 622,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "게넬·셀타스",
+          "navMonster": "게넬·셀타스",
+          "nameEn": "Seltas Queen",
+          "rank": "상위",
+          "methods": [
+            "Break Leg · 65% · ×1",
+            "Break Claw · 60% · ×1",
+            "Body Carve · 10% · ×1",
+            "Capture · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Ladykiller",
+          "nameEn": "Ladykiller",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Seltas Queen",
+          "probability": 11,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Risky Research",
+          "nameEn": "Advanced: Risky Research",
+          "level": "Caravan★9",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Rathalos and a Seltas Queen",
+          "probability": 11,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Queen's Academy",
+          "nameEn": "Queen's Academy",
+          "level": "Guild★5",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Seltas Queen",
+          "probability": 11,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "중갑충 견흉갑각",
+      "count": 5,
+      "nameJa": "重甲虫の堅胸殻",
+      "itemId": "item_mh4u_0619",
+      "mh4uId": 619,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "게넬·셀타스",
+          "navMonster": "게넬·셀타스",
+          "nameEn": "Seltas Queen",
+          "rank": "상위",
+          "methods": [
+            "Break Claw · 40% · ×1",
+            "Capture · 38% · ×1",
+            "Body Carve · 34% · ×1",
+            "Break Head · 21% · ×1",
+            "Break Leg · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Ladykiller",
+          "nameEn": "Ladykiller",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Seltas Queen",
+          "probability": 23,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Risky Research",
+          "nameEn": "Advanced: Risky Research",
+          "level": "Caravan★9",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Rathalos and a Seltas Queen",
+          "probability": 23,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Queen's Academy",
+          "nameEn": "Queen's Academy",
+          "level": "Guild★5",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Seltas Queen",
+          "probability": 23,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "중갑충 큰턱",
+      "count": 2,
+      "nameJa": "重甲虫の大顎",
+      "itemId": "item_mh4u_0624",
+      "mh4uId": 624,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "게넬·셀타스",
+          "navMonster": "게넬·셀타스",
+          "nameEn": "Seltas Queen",
+          "rank": "하위",
+          "methods": [
+            "Break Head · 70% · ×1",
+            "Break Head · 58% · ×1",
+            "Capture · 11% · ×1",
+            "Capture · 10% · ×1",
+            "Break Head · 10% · ×2",
+            "Body Carve · 6% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "The Royal Guard",
+          "nameEn": "The Royal Guard",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Seltas Queen",
+          "probability": 9,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "The Royal Guard",
+          "nameEn": "The Royal Guard",
+          "level": "Guild★3",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Seltas Queen",
+          "probability": 9,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Bug Buffet",
+          "nameEn": "Advanced: Bug Buffet",
+          "level": "Guild★3",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Seltas Queen",
+          "probability": 9,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "농축중갑진액",
+      "count": 1,
+      "nameJa": "濃縮重甲エキス",
+      "itemId": "item_mh4u_0629",
+      "mh4uId": 629,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "게넬·셀타스 아종",
+          "navMonster": "게넬·셀타스 아종",
+          "nameEn": "Desert Seltas Queen",
+          "rank": "G급",
+          "methods": [
+            "Capture · 9% · ×1",
+            "Body Carve · 7% · ×1",
+            "Shiny Drop · 5% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "게넬·셀타스",
+          "navMonster": "게넬·셀타스",
+          "nameEn": "Seltas Queen",
+          "rank": "G급",
+          "methods": [
+            "Capture · 7% · ×1",
+            "Break Head · 7% · ×1",
+            "Body Carve · 5% · ×1",
+            "Shiny Drop · 5% · ×1",
+            "Capture · 4% · ×1",
+            "Break Head · 4% · ×1",
+            "Body Carve · 3% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Pestering Pest",
+          "nameEn": "Pestering Pest",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Desert Seltas Queen",
+          "probability": 8,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Escaped Convicts",
+          "nameEn": "Advanced: Escaped Convicts",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Shrouded Nerscylla and a Desert Seltas Queen",
+          "probability": 8,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Strutting the Royal Runway",
+          "nameEn": "Strutting the Royal Runway",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Capture a Seltas Queen",
+          "probability": 6,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "게넬·셀타스",
+        "navMonster": "게넬·셀타스"
+      },
+      {
+        "name": "게넬·셀타스 아종",
+        "navMonster": "게넬·셀타스 아종"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Ladykiller",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Seltas Queen",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Risky Research",
+        "nameJa": "",
+        "level": "Caravan★9",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Rathalos and a Seltas Queen",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Queen's Academy",
+        "nameJa": "",
+        "level": "Guild★5",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Seltas Queen",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "The Royal Guard",
+        "nameJa": "",
+        "level": "Caravan★5",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Seltas Queen",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Bug Buffet",
+        "nameJa": "",
+        "level": "Guild★3",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Seltas Queen",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Pestering Pest",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Desert Seltas Queen",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Escaped Convicts",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Shrouded Nerscylla and a Desert Seltas Queen",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Strutting the Royal Runway",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Capture a Seltas Queen",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

@@ -1,0 +1,274 @@
+{
+  "materials": [
+    {
+      "name": "사왕룡티켓",
+      "count": 1,
+      "nameJa": "蛇王龍チケット",
+      "itemId": "item_7a5b186aa8dc",
+      "mh4uId": 1406,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "event-high-027",
+          "name": "힘의 기둥",
+          "nameEn": "Pillar of Strength",
+          "level": "★7",
+          "questType": "event",
+          "location": "천검산",
+          "objective": "다라 아마듈라 토벌",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "사왕룡 갈고리발톱",
+      "count": 6,
+      "nameJa": "蛇王龍の鉤爪",
+      "itemId": "item_mh4u_1056",
+      "mh4uId": 1056,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "다라·아마듈라",
+          "navMonster": "다라·아마듈라",
+          "nameEn": "Dalamadur",
+          "rank": "상위",
+          "methods": [
+            "Break Front Leg · 78% · ×1",
+            "Upper Body Carve · 8% · ×1",
+            "Break Front Leg · 2% · ×2"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Here to Eternity",
+          "nameEn": "Advanced: Here to Eternity",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Dalamadur",
+          "probability": 8,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "천검의 용옥",
+      "count": 2,
+      "nameJa": "天剣の龍玉",
+      "itemId": "item_mh4u_1063",
+      "mh4uId": 1063,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "다라·아마듈라",
+          "navMonster": "다라·아마듈라",
+          "nameEn": "Dalamadur",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 8% · ×1",
+            "Break Back · 6% · ×1",
+            "Break Head · 5% · ×1",
+            "Lower Body Carve · 5% · ×1",
+            "Break Back · 4% · ×1",
+            "Upper Body Carve · 4% · ×1",
+            "Lower Body Carve · 3% · ×1",
+            "Tail Carve · 3% · ×1",
+            "Upper Body Carve · 2% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "다라·아마듈라 아종",
+          "navMonster": "다라·아마듈라 아종",
+          "nameEn": "Shah Dalamadur",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 8% · ×1",
+            "Break Back · 6% · ×1",
+            "Lower Body Carve · 5% · ×1",
+            "Upper Body Carve · 4% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Eternal Emperor",
+          "nameEn": "Advanced: Eternal Emperor",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Shah Dalamadur",
+          "probability": 5,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Here to Eternity",
+          "nameEn": "Advanced: Here to Eternity",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Dalamadur",
+          "probability": 4,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Speartip Menace",
+          "nameEn": "Advanced: Speartip Menace",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Dalamadur",
+          "probability": 2,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "하늘을 관통할 뿔",
+          "requiredItemId": "item_mh4u_1156",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: Here to Eternity",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "길드티켓G",
+      "count": 2,
+      "nameJa": "ギルドチケットＧ",
+      "itemId": "item_2b159c1d18ff",
+      "mh4uId": 1441,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "event-high-031",
+          "name": "흑룡의 귀환",
+          "nameEn": "Return of the Dragon",
+          "level": "★7",
+          "questType": "event",
+          "location": "슈레이더성",
+          "objective": "밀라보레아스 토벌 또는 격퇴",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "event-high-028",
+          "name": "티가렉스의 눈",
+          "nameEn": "Eye of the Tigrex",
+          "level": "★7",
+          "questType": "event",
+          "location": "탑 꼭대기",
+          "objective": "티가렉스 희소종 1마리 수렵",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "event-high-023",
+          "name": "홍룡 강림",
+          "nameEn": "Enter the Red Dragon",
+          "level": "★7",
+          "questType": "event",
+          "location": "용암섬",
+          "objective": "홍룡 밀라보레아스 토벌 또는 격퇴",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "다라·아마듈라",
+        "navMonster": "다라·아마듈라"
+      },
+      {
+        "name": "다라·아마듈라 아종",
+        "navMonster": "다라·아마듈라 아종"
+      }
+    ],
+    "quests": [
+      {
+        "id": "event-high-027",
+        "name": "힘의 기둥",
+        "nameJa": "",
+        "level": "★7",
+        "questType": "event",
+        "location": "천검산",
+        "objective": "다라 아마듈라 토벌",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Here to Eternity",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay Dalamadur",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Eternal Emperor",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay Shah Dalamadur",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Speartip Menace",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay Dalamadur",
+        "note": ""
+      },
+      {
+        "id": "event-high-031",
+        "name": "흑룡의 귀환",
+        "nameJa": "",
+        "level": "★7",
+        "questType": "event",
+        "location": "슈레이더성",
+        "objective": "밀라보레아스 토벌 또는 격퇴",
+        "note": ""
+      },
+      {
+        "id": "event-high-028",
+        "name": "티가렉스의 눈",
+        "nameJa": "",
+        "level": "★7",
+        "questType": "event",
+        "location": "탑 꼭대기",
+        "objective": "티가렉스 희소종 1마리 수렵",
+        "note": ""
+      },
+      {
+        "id": "event-high-023",
+        "name": "홍룡 강림",
+        "nameJa": "",
+        "level": "★7",
+        "questType": "event",
+        "location": "용암섬",
+        "objective": "홍룡 밀라보레아스 토벌 또는 격퇴",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

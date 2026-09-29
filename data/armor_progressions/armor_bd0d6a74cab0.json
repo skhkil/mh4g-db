@@ -1,0 +1,376 @@
+{
+  "materials": [
+    {
+      "name": "뇌랑룡 뇌전기털",
+      "count": 4,
+      "nameJa": "雷狼竜の雷電毛",
+      "itemId": "item_mh4u_0740",
+      "mh4uId": 740,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "진오우거",
+          "navMonster": "진오우거",
+          "nameEn": "Zinogre",
+          "rank": "G급",
+          "methods": [
+            "Break Back · 30% · ×1",
+            "Capture · 27% · ×1",
+            "Body Carve · 24% · ×1",
+            "Shiny Drop · 10% · ×1",
+            "Bug-Catching Back · 10% · ×1",
+            "Tail Carve · 8% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "극한상태 진오우거",
+          "navMonster": "진오우거",
+          "nameEn": "Apex Zinogre",
+          "rank": "G급",
+          "methods": [
+            "Break Back · 30% · ×1",
+            "Capture · 27% · ×1",
+            "Body Carve · 24% · ×1",
+            "Shiny Drop · 10% · ×1",
+            "Bug-Catching Back · 10% · ×1",
+            "Tail Carve · 8% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Fury on the Mount",
+          "nameEn": "Advanced: Fury on the Mount",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Zinogre",
+          "probability": 30,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "How to Zap Your Zinogre",
+          "nameEn": "How to Zap Your Zinogre",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Zinogre",
+          "probability": 24,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Bolt of Pink",
+          "nameEn": "Advanced: Bolt of Pink",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Zinogre and a Pink Rathian",
+          "probability": 24,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "신룡 검은털+",
+          "requiredItemId": "item_mh4u_1183",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: Bolt of Pink",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "뇌랑룡 중갑각",
+      "count": 5,
+      "nameJa": "雷狼竜の重殻",
+      "itemId": "item_mh4u_0737",
+      "mh4uId": 737,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "진오우거",
+          "navMonster": "진오우거",
+          "nameEn": "Zinogre",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 45% · ×1",
+            "Shiny Drop · 28% · ×1",
+            "Tail Carve · 20% · ×1",
+            "Break Head · 13% · ×1",
+            "Capture · 10% · ×2",
+            "Break Back · 10% · ×2"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "극한상태 진오우거",
+          "navMonster": "진오우거",
+          "nameEn": "Apex Zinogre",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 43% · ×1",
+            "Shiny Drop · 28% · ×1",
+            "Tail Carve · 20% · ×1",
+            "Break Head · 13% · ×1",
+            "Capture · 12% · ×2",
+            "Break Back · 10% · ×2"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "How to Zap Your Zinogre",
+          "nameEn": "How to Zap Your Zinogre",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Zinogre",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Bolt of Pink",
+          "nameEn": "Advanced: Bolt of Pink",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Zinogre and a Pink Rathian",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Fury on the Mount",
+          "nameEn": "Advanced: Fury on the Mount",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Zinogre",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "뇌랑룡 천옥",
+      "count": 1,
+      "nameJa": "雷狼竜の天玉",
+      "itemId": "item_mh4u_0754",
+      "mh4uId": 754,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "극한상태 진오우거",
+          "navMonster": "진오우거",
+          "nameEn": "Apex Zinogre",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 5% · ×1",
+            "Break Head · 5% · ×1",
+            "Capture · 4% · ×1",
+            "Tail Carve · 3% · ×1",
+            "Shiny Drop · 2% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "진오우거",
+          "navMonster": "진오우거",
+          "nameEn": "Zinogre",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 3% · ×1",
+            "Break Head · 3% · ×1",
+            "Tail Carve · 2% · ×1",
+            "Shiny Drop · 2% · ×1",
+            "Capture · 2% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Fury on the Mount",
+          "nameEn": "Advanced: Fury on the Mount",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Zinogre",
+          "probability": 5,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Monster Hunter!",
+          "nameEn": "Advanced: Monster Hunter!",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 5,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "How to Zap Your Zinogre",
+          "nameEn": "How to Zap Your Zinogre",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Zinogre",
+          "probability": 1,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "신룡 천린",
+          "requiredItemId": "item_mh4u_1185",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: Bolt of Pink",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "황제메뚜기",
+      "count": 5,
+      "nameJa": "皇帝バッタ",
+      "itemId": "item_ca6b777dbf0c",
+      "mh4uId": 269,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Lumber Support",
+          "nameEn": "Lumber Support",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Kecha Wacha",
+          "probability": 11,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Fashion Victim",
+          "nameEn": "Fashion Victim",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Daimyo Hermitaur",
+          "probability": 11,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Terrible Twins",
+          "nameEn": "Advanced: Terrible Twins",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Kecha Wacha and an Ash Kecha Wacha",
+          "probability": 11,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "진오우거",
+        "navMonster": "진오우거"
+      },
+      {
+        "name": "극한상태 진오우거",
+        "navMonster": "진오우거"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: Fury on the Mount",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Zinogre",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "How to Zap Your Zinogre",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Zinogre",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Bolt of Pink",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Zinogre and a Pink Rathian",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Monster Hunter!",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt all large monsters",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Lumber Support",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Kecha Wacha",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Fashion Victim",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Daimyo Hermitaur",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Terrible Twins",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Kecha Wacha and an Ash Kecha Wacha",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

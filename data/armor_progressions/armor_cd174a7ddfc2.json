@@ -1,0 +1,178 @@
+{
+  "materials": [
+    {
+      "name": "홍룡티켓",
+      "count": 1,
+      "nameJa": "紅龍チケット",
+      "itemId": "item_mh4u_1381",
+      "mh4uId": 1381,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "event-g-078",
+          "name": "진홍의 장막 너머",
+          "nameJa": "紅の終焉",
+          "nameEn": "Beyond the Crimson Veil",
+          "level": "G★3",
+          "questType": "event",
+          "location": "용암섬",
+          "objective": "홍룡 밀라보레아스 1마리 수렵",
+          "note": "GX밀라발Z 제작 핵심 티켓"
+        }
+      ]
+    },
+    {
+      "name": "흑룡 홍염갑각",
+      "count": 4,
+      "nameJa": "黒龍の紅焔殻",
+      "itemId": "item_mh4u_1039",
+      "mh4uId": 1039,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "밀라보레아스 (홍염룡)",
+          "navMonster": "밀라보레아스 (홍염룡)",
+          "nameEn": "Crimson Fatalis",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 0% · ×1",
+            "Break Chest · 0% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: A Final Battle Cry",
+          "nameEn": "Advanced: A Final Battle Cry",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Fatalis or repel it",
+          "probability": 30,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "흑룡 홍염뿔",
+      "count": 4,
+      "nameJa": "黒龍の紅焔角",
+      "itemId": "item_mh4u_1037",
+      "mh4uId": 1037,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "밀라보레아스 (홍염룡)",
+          "navMonster": "밀라보레아스 (홍염룡)",
+          "nameEn": "Crimson Fatalis",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 0% · ×1",
+            "Break Horn · 0% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: A Final Battle Cry",
+          "nameEn": "Advanced: A Final Battle Cry",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Fatalis or repel it",
+          "probability": 15,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "불멸의 노심갑각",
+      "count": 1,
+      "nameJa": "不滅の炉心殻",
+      "itemId": "item_mh4u_0792",
+      "mh4uId": 792,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "임계 브라키디오스",
+          "navMonster": "임계 브라키디오스",
+          "nameEn": "Raging Brachydios",
+          "rank": "G급",
+          "methods": [
+            "Tail Carve · 3% · ×1",
+            "Body Carve · 2% · ×1",
+            "Capture · 2% · ×1",
+            "Shiny Drop · 1% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Achy Brachy Heart",
+          "nameEn": "Advanced: Achy Brachy Heart",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Brachydios",
+          "probability": 5,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "명해룡 뇌혼",
+          "requiredItemId": "item_mh4u_1215",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: Achy Brachy Heart",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "밀라보레아스 (홍염룡)",
+        "navMonster": "밀라보레아스 (홍염룡)"
+      },
+      {
+        "name": "임계 브라키디오스",
+        "navMonster": "임계 브라키디오스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "event-g-078",
+        "name": "진홍의 장막 너머",
+        "nameJa": "紅の終焉",
+        "level": "G★3",
+        "questType": "event",
+        "location": "용암섬",
+        "objective": "홍룡 밀라보레아스 1마리 수렵",
+        "note": "GX밀라발Z 제작 핵심 티켓"
+      },
+      {
+        "id": "",
+        "name": "Advanced: A Final Battle Cry",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Fatalis or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Achy Brachy Heart",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Brachydios",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

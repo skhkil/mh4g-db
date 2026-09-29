@@ -1,0 +1,298 @@
+{
+  "materials": [
+    {
+      "name": "녹모수 억센털+",
+      "count": 3,
+      "nameJa": "緑毛獣の豪剛毛",
+      "itemId": "item_mh4u_0502",
+      "mh4uId": 502,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "바바콩가 아종",
+          "navMonster": "바바콩가 아종",
+          "nameEn": "Emerald Congalala",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 60% · ×1",
+            "Body Carve · 50% · ×1",
+            "Capture · 40% · ×1",
+            "Break Claw · 20% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Primate Plunder",
+          "nameEn": "Primate Plunder",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt an Emerald Congalala",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Mean and Green",
+          "nameEn": "Advanced: Mean and Green",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt an Emerald Congalala and a Seltas Queen",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "콩가 억센털",
+      "count": 4,
+      "nameJa": "コンガの剛毛",
+      "itemId": "item_mh4u_0490",
+      "mh4uId": 490,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Conga",
+          "navMonster": "",
+          "nameEn": "Conga",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 50% · ×1",
+            "Body Carve · 33% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "초식룡 중골",
+      "count": 4,
+      "nameJa": "草食竜の重骨",
+      "itemId": "item_mh4u_0362",
+      "mh4uId": 362,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Rhenoplos",
+          "navMonster": "",
+          "nameEn": "Rhenoplos",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 50% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "Apceros",
+          "navMonster": "",
+          "nameEn": "Apceros",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 50% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "Slagtoth",
+          "navMonster": "",
+          "nameEn": "Slagtoth",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 20% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Pink Problems",
+          "nameEn": "Pink Problems",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt 2 Pink Rathians",
+          "probability": 35,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Death and Taxidermy",
+          "nameEn": "Death and Taxidermy",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Capture a Nerscylla",
+          "probability": 10,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "How to Zap Your Zinogre",
+          "nameEn": "How to Zap Your Zinogre",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Zinogre",
+          "probability": 10,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "도스헤라클레스",
+      "count": 3,
+      "nameJa": "ドスヘラクレス",
+      "itemId": "item_f4a9500b933b",
+      "mh4uId": 266,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Arachnophobia",
+          "nameEn": "Arachnophobia",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Nerscylla",
+          "probability": 11,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hunt-a-thon: Kecha Wacha",
+          "nameEn": "Hunt-a-thon: Kecha Wacha",
+          "level": "Caravan★7",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt 2 Kecha Wacha before time expires or deliver a Paw Pass Ticket",
+          "probability": 11,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hunt-a-thon: Nerscylla",
+          "nameEn": "Hunt-a-thon: Nerscylla",
+          "level": "Caravan★7",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt 2 Nerscylla before time expires or deliver a Paw Pass Ticket",
+          "probability": 11,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "바바콩가 아종",
+        "navMonster": "바바콩가 아종"
+      },
+      {
+        "name": "Conga",
+        "navMonster": ""
+      },
+      {
+        "name": "Rhenoplos",
+        "navMonster": ""
+      },
+      {
+        "name": "Apceros",
+        "navMonster": ""
+      },
+      {
+        "name": "Slagtoth",
+        "navMonster": ""
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Primate Plunder",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt an Emerald Congalala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Mean and Green",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt an Emerald Congalala and a Seltas Queen",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Pink Problems",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt 2 Pink Rathians",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Death and Taxidermy",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Capture a Nerscylla",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "How to Zap Your Zinogre",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Zinogre",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Arachnophobia",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Nerscylla",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Hunt-a-thon: Kecha Wacha",
+        "nameJa": "",
+        "level": "Caravan★7",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt 2 Kecha Wacha before time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Hunt-a-thon: Nerscylla",
+        "nameJa": "",
+        "level": "Caravan★7",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt 2 Nerscylla before time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

@@ -1,0 +1,370 @@
+{
+  "materials": [
+    {
+      "name": "패룡 견갑각",
+      "count": 5,
+      "nameJa": "覇竜の堅殻",
+      "itemId": "item_mh4u_0999",
+      "mh4uId": 999,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "아캄토름",
+          "navMonster": "아캄토름",
+          "nameEn": "Akantor",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 35% · ×1",
+            "Break Belly · 28% · ×1",
+            "Break Back · 20% · ×1",
+            "Shiny Drop · 12% · ×1",
+            "Break Front Leg · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Stand Tall",
+          "nameEn": "Advanced: Stand Tall",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay an Akantor",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Grim Tidings",
+          "nameEn": "Advanced: Grim Tidings",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay an Akantor",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Akantor Coup",
+          "nameEn": "Advanced: Akantor Coup",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay an Akantor",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "붕룡 견갑각",
+          "requiredItemId": "item_mh4u_1146",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: Akantor Coup",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "패룡 큰이빨",
+      "count": 3,
+      "nameJa": "覇竜の大牙",
+      "itemId": "item_mh4u_1005",
+      "mh4uId": 1005,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "아캄토름",
+          "navMonster": "아캄토름",
+          "nameEn": "Akantor",
+          "rank": "상위",
+          "methods": [
+            "Break Head · 78% · ×1",
+            "Body Carve · 5% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Stand Tall",
+          "nameEn": "Advanced: Stand Tall",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay an Akantor",
+          "probability": 14,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Grim Tidings",
+          "nameEn": "Advanced: Grim Tidings",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay an Akantor",
+          "probability": 14,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Akantor Coup",
+          "nameEn": "Advanced: Akantor Coup",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay an Akantor",
+          "probability": 14,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "붕룡 분쇄턱",
+          "requiredItemId": "item_mh4u_1145",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: Akantor Coup",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "패룡 꼬리",
+      "count": 1,
+      "nameJa": "覇竜の尻尾",
+      "itemId": "item_mh4u_1001",
+      "mh4uId": 1001,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "아캄토름",
+          "navMonster": "아캄토름",
+          "nameEn": "Akantor",
+          "rank": "상위",
+          "methods": [
+            "Tail Carve · 80% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Stand Tall",
+          "nameEn": "Advanced: Stand Tall",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay an Akantor",
+          "probability": 10,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Grim Tidings",
+          "nameEn": "Advanced: Grim Tidings",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay an Akantor",
+          "probability": 10,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Akantor Coup",
+          "nameEn": "Advanced: Akantor Coup",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay an Akantor",
+          "probability": 10,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "자화룡 홍옥",
+      "count": 1,
+      "nameJa": "雌火竜の紅玉",
+      "itemId": "item_mh4u_0671",
+      "mh4uId": 671,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "리오레이아",
+          "navMonster": "리오레이아",
+          "nameEn": "Rathian",
+          "rank": "G급",
+          "methods": [
+            "Tail Carve · 10% · ×1",
+            "Break Head · 4% · ×1",
+            "Capture · 4% · ×1",
+            "Tail Carve · 3% · ×1",
+            "Capture · 3% · ×1",
+            "Shiny Drop · 2% · ×1",
+            "Break Back · 1% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "리오레이아 아종",
+          "navMonster": "리오레이아 아종",
+          "nameEn": "Pink Rathian",
+          "rank": "G급",
+          "methods": [
+            "Tail Carve · 10% · ×1",
+            "Capture · 5% · ×1",
+            "Tail Carve · 4% · ×1",
+            "Capture · 4% · ×1",
+            "Break Head · 4% · ×1",
+            "Shiny Drop · 2% · ×1",
+            "Break Back · 1% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "리오레이아 희소종",
+          "navMonster": "리오레이아 희소종",
+          "nameEn": "Gold Rathian",
+          "rank": "G급",
+          "methods": [
+            "Tail Carve · 10% · ×1",
+            "Capture · 7% · ×1",
+            "Break Head · 6% · ×1",
+            "Tail Carve · 5% · ×1",
+            "Shiny Drop · 4% · ×1",
+            "Break Head · 4% · ×1",
+            "Capture · 4% · ×1",
+            "Break Back · 1% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hunter In Green and Red",
+          "nameEn": "Hunter In Green and Red",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Rathian and a Red Khezu",
+          "probability": 6,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Royal Assassination",
+          "nameEn": "Royal Assassination",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Rathian",
+          "probability": 6,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Pink Problems",
+          "nameEn": "Pink Problems",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt 2 Pink Rathians",
+          "probability": 6,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "아캄토름",
+        "navMonster": "아캄토름"
+      },
+      {
+        "name": "리오레이아",
+        "navMonster": "리오레이아"
+      },
+      {
+        "name": "리오레이아 아종",
+        "navMonster": "리오레이아 아종"
+      },
+      {
+        "name": "리오레이아 희소종",
+        "navMonster": "리오레이아 희소종"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: Stand Tall",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay an Akantor",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Grim Tidings",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay an Akantor",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Akantor Coup",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay an Akantor",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Hunter In Green and Red",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Rathian and a Red Khezu",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Royal Assassination",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Rathian",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Pink Problems",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt 2 Pink Rathians",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

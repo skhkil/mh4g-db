@@ -1,0 +1,185 @@
+{
+  "materials": [
+    {
+      "name": "교역선티켓",
+      "count": 1,
+      "nameJa": "交易船チケット",
+      "itemId": "item_0cc070c03ba6",
+      "mh4uId": 1423,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Puffer Fish",
+          "nameEn": "Puffer Fish",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Zamtrios",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "흉악한 거대머리뼈",
+      "count": 1,
+      "nameJa": "強面な大頭骨",
+      "itemId": "item_mh4u_0537",
+      "mh4uId": 537,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "테츠카브라",
+          "navMonster": "테츠카브라",
+          "nameEn": "Tetsucabra",
+          "rank": "G급",
+          "methods": [
+            "Break Jaw · 25% · ×1",
+            "Body Carve · 18% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "테츠카브라 아종",
+          "navMonster": "테츠카브라 아종",
+          "nameEn": "Berserk Tetsucabra",
+          "rank": "G급",
+          "methods": [
+            "Break Jaw · 20% · ×1",
+            "Body Carve · 15% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Chasing Tail",
+          "nameEn": "Chasing Tail",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt 2 Tetsucabras",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Hollow Hysterics",
+          "nameEn": "Advanced: Hollow Hysterics",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Nerscylla and a Tetsucabra",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Harvest Tour: Volcanic Hollow",
+          "nameEn": "Harvest Tour: Volcanic Hollow",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+          "probability": 12,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "극상의 모피",
+      "count": 3,
+      "nameJa": "極上の毛皮",
+      "itemId": "item_mh4u_0358",
+      "mh4uId": 358,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Kelbi",
+          "navMonster": "",
+          "nameEn": "Kelbi",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 50% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "Popo",
+          "navMonster": "",
+          "nameEn": "Popo",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 40% · ×1"
+          ]
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "테츠카브라",
+        "navMonster": "테츠카브라"
+      },
+      {
+        "name": "테츠카브라 아종",
+        "navMonster": "테츠카브라 아종"
+      },
+      {
+        "name": "Kelbi",
+        "navMonster": ""
+      },
+      {
+        "name": "Popo",
+        "navMonster": ""
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Puffer Fish",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Zamtrios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Chasing Tail",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt 2 Tetsucabras",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Hollow Hysterics",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Nerscylla and a Tetsucabra",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Harvest Tour: Volcanic Hollow",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

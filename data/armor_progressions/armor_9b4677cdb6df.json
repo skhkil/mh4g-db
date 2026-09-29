@@ -1,0 +1,316 @@
+{
+  "materials": [
+    {
+      "name": "인아도의 증표",
+      "count": 1,
+      "nameJa": "刃牙道の証",
+      "itemId": "item_mh4u_1401",
+      "mh4uId": 1401,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "event-g-077",
+          "name": "원시의 난타전",
+          "nameJa": "範馬刃牙・牙剥く金獅子",
+          "nameEn": "Primeval Slugfest",
+          "level": "G★3",
+          "questType": "event",
+          "location": "격투장",
+          "objective": "라잔 1마리 수렵",
+          "note": "격앙 라잔 이벤트 보수"
+        },
+        {
+          "type": "quest",
+          "id": "event-high-032",
+          "name": "강철의 선봉",
+          "nameEn": "The Steel Vanguard",
+          "level": "★7",
+          "questType": "event",
+          "location": "탑 꼭대기",
+          "objective": "크샬다오라 토벌",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "황금의 황모",
+      "count": 1,
+      "nameJa": "黄金の煌毛",
+      "itemId": "item_mh4u_0517",
+      "mh4uId": 517,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "격앙 라잔",
+          "navMonster": "격앙 라잔",
+          "nameEn": "Furious Rajang",
+          "rank": "G급",
+          "methods": [
+            "Shiny Drop · 18% · ×1",
+            "Capture · 15% · ×1",
+            "Body Carve · 12% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "극한상태 라잔",
+          "navMonster": "라잔",
+          "nameEn": "Apex Rajang",
+          "rank": "G급",
+          "methods": [
+            "Capture · 15% · ×1",
+            "Shiny Drop · 12% · ×1",
+            "Break Tail · 12% · ×1",
+            "Body Carve · 10% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "라잔",
+          "navMonster": "라잔",
+          "nameEn": "Rajang",
+          "rank": "G급",
+          "methods": [
+            "Capture · 12% · ×1",
+            "Shiny Drop · 9% · ×1",
+            "Break Tail · 9% · ×1",
+            "Body Carve · 6% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Fur Fixation",
+          "nameEn": "Advanced: Fur Fixation",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Rajang",
+          "probability": 30,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Beyond Brawn",
+          "nameEn": "Advanced: Beyond Brawn",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Rajang",
+          "probability": 30,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Operation Lionheart",
+          "nameEn": "Operation Lionheart",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Rajang",
+          "probability": 30,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "봉산룡 중완갑",
+          "requiredItemId": "item_mh4u_1201",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: The Scathing Shore",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "금사자 중이빨",
+      "count": 4,
+      "nameJa": "金獅子の重牙",
+      "itemId": "item_mh4u_0510",
+      "mh4uId": 510,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "라잔",
+          "navMonster": "라잔",
+          "nameEn": "Rajang",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 46% · ×1",
+            "Capture · 28% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "극한상태 라잔",
+          "navMonster": "라잔",
+          "nameEn": "Apex Rajang",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 44% · ×1",
+            "Capture · 27% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "격앙 라잔",
+          "navMonster": "격앙 라잔",
+          "nameEn": "Furious Rajang",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 26% · ×1",
+            "Capture · 15% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "대장로티켓Ｓ",
+      "count": 2,
+      "nameJa": "大長老チケットＳ",
+      "itemId": "item_a024b69f3b5f",
+      "mh4uId": 1443,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "event-g-078",
+          "name": "진홍의 장막 너머",
+          "nameJa": "紅の終焉",
+          "nameEn": "Beyond the Crimson Veil",
+          "level": "G★3",
+          "questType": "event",
+          "location": "용암섬",
+          "objective": "홍룡 밀라보레아스 1마리 수렵",
+          "note": "G★3 이벤트 보수"
+        },
+        {
+          "type": "quest",
+          "id": "event-g-076",
+          "name": "극한의 포식자",
+          "nameJa": "喰慾の極限",
+          "nameEn": "The Apex Predator",
+          "level": "G★3",
+          "questType": "event",
+          "location": "원생림",
+          "objective": "이블조 1마리 수렵",
+          "note": "G★3 이벤트 보수"
+        },
+        {
+          "type": "quest",
+          "id": "event-g-071",
+          "name": "고그마지오스 포격전",
+          "nameJa": "巨戟砕くは砲撃の雨",
+          "nameEn": "Bombs over Gogmazios",
+          "level": "G★3",
+          "questType": "event",
+          "location": "전투 구역",
+          "objective": "고그마지오스 토벌",
+          "note": "확정 입수 가능한 G★3 이벤트"
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "격앙 라잔",
+        "navMonster": "격앙 라잔"
+      },
+      {
+        "name": "극한상태 라잔",
+        "navMonster": "라잔"
+      },
+      {
+        "name": "라잔",
+        "navMonster": "라잔"
+      }
+    ],
+    "quests": [
+      {
+        "id": "event-g-077",
+        "name": "원시의 난타전",
+        "nameJa": "範馬刃牙・牙剥く金獅子",
+        "level": "G★3",
+        "questType": "event",
+        "location": "격투장",
+        "objective": "라잔 1마리 수렵",
+        "note": "격앙 라잔 이벤트 보수"
+      },
+      {
+        "id": "event-high-032",
+        "name": "강철의 선봉",
+        "nameJa": "",
+        "level": "★7",
+        "questType": "event",
+        "location": "탑 꼭대기",
+        "objective": "크샬다오라 토벌",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Fur Fixation",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Rajang",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Beyond Brawn",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Rajang",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Operation Lionheart",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Rajang",
+        "note": ""
+      },
+      {
+        "id": "event-g-078",
+        "name": "진홍의 장막 너머",
+        "nameJa": "紅の終焉",
+        "level": "G★3",
+        "questType": "event",
+        "location": "용암섬",
+        "objective": "홍룡 밀라보레아스 1마리 수렵",
+        "note": "G★3 이벤트 보수"
+      },
+      {
+        "id": "event-g-076",
+        "name": "극한의 포식자",
+        "nameJa": "喰慾の極限",
+        "level": "G★3",
+        "questType": "event",
+        "location": "원생림",
+        "objective": "이블조 1마리 수렵",
+        "note": "G★3 이벤트 보수"
+      },
+      {
+        "id": "event-g-071",
+        "name": "고그마지오스 포격전",
+        "nameJa": "巨戟砕くは砲撃の雨",
+        "level": "G★3",
+        "questType": "event",
+        "location": "전투 구역",
+        "objective": "고그마지오스 토벌",
+        "note": "확정 입수 가능한 G★3 이벤트"
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

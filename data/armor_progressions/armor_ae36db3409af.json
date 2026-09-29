@@ -1,0 +1,243 @@
+{
+  "materials": [
+    {
+      "name": "익사룡 가죽+",
+      "count": 1,
+      "nameJa": "翼蛇竜の上皮",
+      "itemId": "item_mh4u_0379",
+      "mh4uId": 379,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Remobra",
+          "navMonster": "",
+          "nameEn": "Remobra",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 50% · ×1",
+            "Body Carve · 5% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Desert Delinquents",
+          "nameEn": "Desert Delinquents",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay 8 Remobras",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Party Pants",
+          "nameEn": "Party Pants",
+          "level": "Guild★5",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay 12 Remobras",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "All-You-Can-Hunt Remobra",
+          "nameEn": "All-You-Can-Hunt Remobra",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay 15 Remobras",
+          "probability": 16,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "줄무늬가죽",
+      "count": 4,
+      "nameJa": "縞模様の皮",
+      "itemId": "item_mh4u_0381",
+      "mh4uId": 381,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Remobra",
+          "navMonster": "",
+          "nameEn": "Remobra",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 40% · ×1",
+            "Body Carve · 30% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Remobra Remedy",
+          "nameEn": "Remobra Remedy",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay 6 Remobras",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Remobra Remedy",
+          "nameEn": "Remobra Remedy",
+          "level": "Guild★3",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay 7 Remobras",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Desert Delinquents",
+          "nameEn": "Desert Delinquents",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay 8 Remobras",
+          "probability": 16,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "화룡 날개발톱",
+      "count": 5,
+      "nameJa": "火竜の翼爪",
+      "itemId": "item_mh4u_0710",
+      "mh4uId": 710,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "리오레이아",
+          "navMonster": "리오레이아",
+          "nameEn": "Rathian",
+          "rank": "하위",
+          "methods": [
+            "Break Wing · 70% · ×1",
+            "Break Wing · 60% · ×2"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "리오레우스",
+          "navMonster": "리오레우스",
+          "nameEn": "Rathalos",
+          "rank": "하위",
+          "methods": [
+            "Break Wing · 70% · ×1",
+            "Break Wing · 60% · ×2"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "리오레이아 아종",
+          "navMonster": "리오레이아 아종",
+          "nameEn": "Pink Rathian",
+          "rank": "상위",
+          "methods": [
+            "Break Wing · 60% · ×2"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "두꺼비코인",
+      "count": 1,
+      "nameJa": "ガマのコイン",
+      "itemId": "item_8bdf4303155a",
+      "mh4uId": 1338,
+      "sources": [
+        {
+          "type": "arena",
+          "name": "Grudge Match: Zamtrios",
+          "level": "투기대회",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "Remobra",
+        "navMonster": ""
+      },
+      {
+        "name": "리오레이아",
+        "navMonster": "리오레이아"
+      },
+      {
+        "name": "리오레우스",
+        "navMonster": "리오레우스"
+      },
+      {
+        "name": "리오레이아 아종",
+        "navMonster": "리오레이아 아종"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Desert Delinquents",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay 8 Remobras",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Party Pants",
+        "nameJa": "",
+        "level": "Guild★5",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay 12 Remobras",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "All-You-Can-Hunt Remobra",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay 15 Remobras",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Remobra Remedy",
+        "nameJa": "",
+        "level": "Caravan★5",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay 6 Remobras",
+        "note": ""
+      }
+    ],
+    "arena": [
+      {
+        "name": "Grudge Match: Zamtrios",
+        "level": "투기대회",
+        "probability": 100
+      }
+    ]
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

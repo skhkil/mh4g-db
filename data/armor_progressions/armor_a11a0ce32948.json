@@ -1,0 +1,199 @@
+{
+  "materials": [
+    {
+      "name": "봉산룡 중암갑각",
+      "count": 4,
+      "nameJa": "峯山龍の重岩殻",
+      "itemId": "item_mh4u_1200",
+      "mh4uId": 1200,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "금사자 흑황모",
+          "requiredItemId": "item_mh4u_0512",
+          "unlockQuestId": "quest_2a1a883d1049",
+          "unlockQuest": "고난도: 험준한 물가에서",
+          "unlockLevel": "★3",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "개룡 중갑각",
+      "count": 5,
+      "nameJa": "鎧竜の重殻",
+      "itemId": "item_mh4u_0805",
+      "mh4uId": 805,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "그라비모스",
+          "navMonster": "그라비모스",
+          "nameEn": "Gravios",
+          "rank": "G급",
+          "methods": [
+            "Tail Carve · 64% · ×1",
+            "Body Carve · 60% · ×1",
+            "Break Belly · 57% · ×1",
+            "Break Back · 40% · ×1",
+            "Capture · 31% · ×1",
+            "Break Head · 28% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "극한상태 그라비모스",
+          "navMonster": "그라비모스",
+          "nameEn": "Apex Gravios",
+          "rank": "G급",
+          "methods": [
+            "Break Belly · 57% · ×1",
+            "Tail Carve · 50% · ×1",
+            "Body Carve · 46% · ×1",
+            "Break Back · 40% · ×1",
+            "Capture · 31% · ×1",
+            "Break Head · 28% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Temper Tantrum",
+          "nameEn": "Temper Tantrum",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Gravios",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Gravios Situation",
+          "nameEn": "Advanced: Gravios Situation",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Gravios",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Ring Hollow",
+          "nameEn": "Ring Hollow",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 14,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "폭추룡 중갑각",
+          "requiredItemId": "item_mh4u_1181",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: Mean and Green",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "대지의 용신옥",
+      "count": 1,
+      "nameJa": "大地の龍神玉",
+      "itemId": "item_mh4u_0996",
+      "mh4uId": 996,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "다렌·모란",
+          "navMonster": "다렌·모란",
+          "nameEn": "Dah'ren Mohran",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 4% · ×1",
+            "Break Horn · 4% · ×1",
+            "Mouth Carve · 2% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Moving Mountains",
+          "nameEn": "Advanced: Moving Mountains",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay Dah'ren Mohran or repel it",
+          "probability": 3,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "그라비모스",
+        "navMonster": "그라비모스"
+      },
+      {
+        "name": "극한상태 그라비모스",
+        "navMonster": "그라비모스"
+      },
+      {
+        "name": "다렌·모란",
+        "navMonster": "다렌·모란"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Temper Tantrum",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Gravios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Gravios Situation",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Gravios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Ring Hollow",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt all large monsters",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Moving Mountains",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay Dah'ren Mohran or repel it",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

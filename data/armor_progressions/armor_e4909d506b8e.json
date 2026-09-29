@@ -1,0 +1,363 @@
+{
+  "materials": [
+    {
+      "name": "도스게네포스 꼬리",
+      "count": 2,
+      "nameJa": "ドスゲネポスの尾",
+      "itemId": "item_mh4u_0409",
+      "mh4uId": 409,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "도스게네포스",
+          "navMonster": "도스게네포스",
+          "nameEn": "Gendrome",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 30% · ×1",
+            "Shiny Drop · 23% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Dinner Guests",
+          "nameEn": "Dinner Guests",
+          "level": "Caravan★7",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Great Jaggi and a Gendrome",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Dastardly Duo",
+          "nameEn": "Dastardly Duo",
+          "level": "Guild★4",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Gendrome and a Tetsucabra",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Harvest Tour: Dunes (Day)",
+          "nameEn": "Harvest Tour: Dunes (Day)",
+          "level": "Caravan★7",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+          "probability": 21,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "게네포스 비늘+",
+      "count": 4,
+      "nameJa": "ゲネポスの上鱗",
+      "itemId": "item_mh4u_0405",
+      "mh4uId": 405,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Genprey",
+          "navMonster": "",
+          "nameEn": "Genprey",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 40% · ×1",
+            "Body Carve · 25% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "도스게네포스",
+          "navMonster": "도스게네포스",
+          "nameEn": "Gendrome",
+          "rank": "상위",
+          "methods": [
+            "Capture · 30% · ×2",
+            "Body Carve · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Lumber Support",
+          "nameEn": "Lumber Support",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Kecha Wacha",
+          "probability": 22,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Harvest Tour: Dunes (Day)",
+          "nameEn": "Harvest Tour: Dunes (Day)",
+          "level": "Caravan★7",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+          "probability": 11,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Dinner Guests",
+          "nameEn": "Dinner Guests",
+          "level": "Caravan★7",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Great Jaggi and a Gendrome",
+          "probability": 11,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "마비주머니",
+      "count": 2,
+      "nameJa": "麻痺袋",
+      "itemId": "item_mh4u_0335",
+      "mh4uId": 335,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "도스게네포스",
+          "navMonster": "도스게네포스",
+          "nameEn": "Gendrome",
+          "rank": "상위",
+          "methods": [
+            "Break Head · 40% · ×2",
+            "Capture · 39% · ×2",
+            "Break Head · 39% · ×1",
+            "Body Carve · 35% · ×1",
+            "Break Head · 35% · ×1",
+            "Capture · 25% · ×2",
+            "Body Carve · 16% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "가라라아자라",
+          "navMonster": "가라라아자라",
+          "nameEn": "Najarala",
+          "rank": "하위",
+          "methods": [
+            "Capture · 10% · ×2"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Road Work",
+          "nameEn": "Road Work",
+          "level": "Caravan★3",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Capture a Gendrome",
+          "probability": 15,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "The Smell of Fear",
+          "nameEn": "The Smell of Fear",
+          "level": "Caravan★4",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Congalala and a Gendrome",
+          "probability": 15,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Miner Issues",
+          "nameEn": "Advanced: Miner Issues",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Gendrome and a Khezu",
+          "probability": 15,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "도스헤라클레스",
+      "count": 3,
+      "nameJa": "ドスヘラクレス",
+      "itemId": "item_f4a9500b933b",
+      "mh4uId": 266,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Arachnophobia",
+          "nameEn": "Arachnophobia",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Nerscylla",
+          "probability": 11,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hunt-a-thon: Kecha Wacha",
+          "nameEn": "Hunt-a-thon: Kecha Wacha",
+          "level": "Caravan★7",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt 2 Kecha Wacha before time expires or deliver a Paw Pass Ticket",
+          "probability": 11,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hunt-a-thon: Nerscylla",
+          "nameEn": "Hunt-a-thon: Nerscylla",
+          "level": "Caravan★7",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt 2 Nerscylla before time expires or deliver a Paw Pass Ticket",
+          "probability": 11,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "도스게네포스",
+        "navMonster": "도스게네포스"
+      },
+      {
+        "name": "Genprey",
+        "navMonster": ""
+      },
+      {
+        "name": "가라라아자라",
+        "navMonster": "가라라아자라"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Dinner Guests",
+        "nameJa": "",
+        "level": "Caravan★7",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Great Jaggi and a Gendrome",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Dastardly Duo",
+        "nameJa": "",
+        "level": "Guild★4",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Gendrome and a Tetsucabra",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Harvest Tour: Dunes (Day)",
+        "nameJa": "",
+        "level": "Caravan★7",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Lumber Support",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Kecha Wacha",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Road Work",
+        "nameJa": "",
+        "level": "Caravan★3",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Capture a Gendrome",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "The Smell of Fear",
+        "nameJa": "",
+        "level": "Caravan★4",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Congalala and a Gendrome",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Miner Issues",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Gendrome and a Khezu",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Arachnophobia",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Nerscylla",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Hunt-a-thon: Kecha Wacha",
+        "nameJa": "",
+        "level": "Caravan★7",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt 2 Kecha Wacha before time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Hunt-a-thon: Nerscylla",
+        "nameJa": "",
+        "level": "Caravan★7",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt 2 Nerscylla before time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

@@ -1,0 +1,400 @@
+{
+  "materials": [
+    {
+      "name": "여신의 포옹",
+      "count": 2,
+      "nameJa": "",
+      "itemId": "",
+      "mh4uId": null,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "event-g-061",
+          "name": "신들의 황혼",
+          "nameJa": "",
+          "nameEn": "Twilight of the Gods",
+          "level": "G★3",
+          "questType": "event",
+          "location": "격투장",
+          "objective": "극한 상태 디아블로스 1마리 수렵",
+          "note": "여신의 포옹 보수"
+        }
+      ]
+    },
+    {
+      "name": "금사자 흑황모",
+      "count": 3,
+      "nameJa": "",
+      "itemId": "item_mh4u_0512",
+      "mh4uId": 512,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "라잔",
+          "navMonster": "라잔",
+          "nameEn": "Rajang",
+          "rank": "G급",
+          "methods": [
+            "Capture · 44% · ×1",
+            "Body Carve · 27% · ×1",
+            "Shiny Drop · 21% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "극한상태 라잔",
+          "navMonster": "라잔",
+          "nameEn": "Apex Rajang",
+          "rank": "G급",
+          "methods": [
+            "Capture · 42% · ×1",
+            "Body Carve · 26% · ×1",
+            "Shiny Drop · 21% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "격앙 라잔",
+          "navMonster": "격앙 라잔",
+          "nameEn": "Furious Rajang",
+          "rank": "G급",
+          "methods": [
+            "Capture · 33% · ×1",
+            "Body Carve · 20% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Beyond Brawn",
+          "nameEn": "Advanced: Beyond Brawn",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Rajang",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Operation Lionheart",
+          "nameEn": "Operation Lionheart",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Rajang",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Fur Fixation",
+          "nameEn": "Advanced: Fur Fixation",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Rajang",
+          "probability": 30,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "봉산룡 중암갑각",
+          "requiredItemId": "item_mh4u_1200",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: The Scathing Shore",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "이율의 혼돈날개",
+      "count": 4,
+      "nameJa": "",
+      "itemId": "item_mh4u_0877",
+      "mh4uId": 877,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "혼돈의 고어·마가라",
+          "navMonster": "혼돈의 고어·마가라",
+          "nameEn": "Chaotic Gore Magala",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 65% · ×1",
+            "Capture · 28% · ×1",
+            "Body Carve · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: A Plague Awoken",
+          "nameEn": "Advanced: A Plague Awoken",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt Gore Magala",
+          "probability": 15,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Wings of Woe",
+          "nameEn": "Advanced: Wings of Woe",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt Gore Magala",
+          "probability": 15,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: All in Its Place",
+          "nameEn": "Advanced: All in Its Place",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt Gore Magala",
+          "probability": 10,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "대해룡 갑옷털",
+          "requiredItemId": "item_mh4u_1195",
+          "unlockQuestId": "",
+          "unlockQuest": "Into the Heavens",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "옥염석",
+      "count": 2,
+      "nameJa": "",
+      "itemId": "item_05a0a5d02783",
+      "mh4uId": 218,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "그라비모스",
+          "navMonster": "그라비모스",
+          "nameEn": "Gravios",
+          "rank": "G급",
+          "methods": [
+            "Shiny Drop · 30% · ×1",
+            "Break Head · 10% · ×1",
+            "Shiny Drop · 6% · ×1",
+            "Capture · 6% · ×1",
+            "Tail Carve · 2% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "극한상태 그라비모스",
+          "navMonster": "그라비모스",
+          "nameEn": "Apex Gravios",
+          "rank": "G급",
+          "methods": [
+            "Shiny Drop · 30% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "그라비모스 아종",
+          "navMonster": "그라비모스 아종",
+          "nameEn": "Black Gravios",
+          "rank": "G급",
+          "methods": [
+            "Shiny Drop · 30% · ×1",
+            "Break Head · 10% · ×1",
+            "Tail Carve · 9% · ×1",
+            "Break Belly · 8% · ×1",
+            "Shiny Drop · 6% · ×1",
+            "Capture · 6% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Stand Tall",
+          "nameEn": "Advanced: Stand Tall",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay an Akantor",
+          "probability": 8,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Take a Powderstone",
+          "nameEn": "Take a Powderstone",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 1 Powderstone",
+          "probability": 8,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Heat Exhaustion",
+          "nameEn": "Heat Exhaustion",
+          "level": "Guild★5",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Deliver 4 Powderstones",
+          "probability": 8,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "라잔",
+        "navMonster": "라잔"
+      },
+      {
+        "name": "극한상태 라잔",
+        "navMonster": "라잔"
+      },
+      {
+        "name": "격앙 라잔",
+        "navMonster": "격앙 라잔"
+      },
+      {
+        "name": "혼돈의 고어·마가라",
+        "navMonster": "혼돈의 고어·마가라"
+      },
+      {
+        "name": "그라비모스",
+        "navMonster": "그라비모스"
+      },
+      {
+        "name": "극한상태 그라비모스",
+        "navMonster": "그라비모스"
+      },
+      {
+        "name": "그라비모스 아종",
+        "navMonster": "그라비모스 아종"
+      }
+    ],
+    "quests": [
+      {
+        "id": "event-g-061",
+        "name": "신들의 황혼",
+        "nameJa": "",
+        "level": "G★3",
+        "questType": "event",
+        "location": "격투장",
+        "objective": "극한 상태 디아블로스 1마리 수렵",
+        "note": "여신의 포옹 보수"
+      },
+      {
+        "id": "",
+        "name": "Advanced: Beyond Brawn",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Rajang",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Operation Lionheart",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Rajang",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Fur Fixation",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Rajang",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: A Plague Awoken",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt Gore Magala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Wings of Woe",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt Gore Magala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: All in Its Place",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt Gore Magala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Stand Tall",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay an Akantor",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Take a Powderstone",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 1 Powderstone",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Heat Exhaustion",
+        "nameJa": "",
+        "level": "Guild★5",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Deliver 4 Powderstones",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

@@ -1,0 +1,159 @@
+{
+  "materials": [
+    {
+      "name": "흑랑조 귀",
+      "count": 2,
+      "nameJa": "黒狼鳥の耳",
+      "itemId": "item_mh4u_0461",
+      "mh4uId": 461,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "얀가루루가",
+          "navMonster": "얀가루루가",
+          "nameEn": "Yian Garuga",
+          "rank": "하위",
+          "methods": [
+            "Break Ear · 80% · ×1",
+            "Break Ear · 10% · ×2",
+            "Capture · 5% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "뾰족한 부리",
+      "count": 2,
+      "nameJa": "尖ったクチバシ",
+      "itemId": "item_mh4u_0463",
+      "mh4uId": 463,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "얀가루루가",
+          "navMonster": "얀가루루가",
+          "nameEn": "Yian Garuga",
+          "rank": "하위",
+          "methods": [
+            "Break Beak · 80% · ×1",
+            "Break Beak · 15% · ×1",
+            "Capture · 5% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "흑랑조 갑각",
+      "count": 3,
+      "nameJa": "黒狼鳥の甲殻",
+      "itemId": "item_mh4u_0458",
+      "mh4uId": 458,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "얀가루루가",
+          "navMonster": "얀가루루가",
+          "nameEn": "Yian Garuga",
+          "rank": "하위",
+          "methods": [
+            "Capture · 90% · ×2",
+            "Body Carve · 28% · ×1",
+            "Break Talon · 20% · ×1",
+            "Break Back · 20% · ×1",
+            "Break Back · 10% · ×2"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Research: Yian Garuga",
+          "nameEn": "Research: Yian Garuga",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Yian Garuga",
+          "probability": 25,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "흑랑조 갈기",
+      "count": 2,
+      "nameJa": "黒狼鳥のたてがみ",
+      "itemId": "item_mh4u_0469",
+      "mh4uId": 469,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "얀가루루가",
+          "navMonster": "얀가루루가",
+          "nameEn": "Yian Garuga",
+          "rank": "하위",
+          "methods": [
+            "Break Back · 80% · ×1",
+            "Break Back · 70% · ×1",
+            "Body Carve · 7% · ×1",
+            "Body Carve · 5% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Research: Yian Garuga",
+          "nameEn": "Research: Yian Garuga",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Yian Garuga",
+          "probability": 20,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hunting Vicariously",
+          "nameEn": "Hunting Vicariously",
+          "level": "Caravan★9",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Yian Garuga",
+          "probability": 15,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "얀가루루가",
+        "navMonster": "얀가루루가"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Research: Yian Garuga",
+        "nameJa": "",
+        "level": "Caravan★5",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Yian Garuga",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Hunting Vicariously",
+        "nameJa": "",
+        "level": "Caravan★9",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Yian Garuga",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

@@ -1,0 +1,205 @@
+{
+  "materials": [
+    {
+      "name": "붕룡 분쇄턱",
+      "count": 3,
+      "nameJa": "崩竜の削顎",
+      "itemId": "item_mh4u_1145",
+      "mh4uId": 1145,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "우캄루바스",
+          "navMonster": "우캄루바스",
+          "nameEn": "Ukanlos",
+          "rank": "상위",
+          "methods": [
+            "Break Head · 85% · ×1",
+            "Body Carve · 8% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Glacial Grinder",
+          "nameEn": "Advanced: Glacial Grinder",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay an Ukanlos",
+          "probability": 10,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "희망의 증표",
+          "requiredItemId": "item_0d03c7de5e2a",
+          "unlockQuestId": "quest_40e711339d0b",
+          "unlockQuest": "고난도: 미쳐 날뛰는 아캄토름",
+          "unlockLevel": "★7",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "붕룡 견갑각",
+      "count": 2,
+      "nameJa": "崩竜の堅殻",
+      "itemId": "item_mh4u_1146",
+      "mh4uId": 1146,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "우캄루바스",
+          "navMonster": "우캄루바스",
+          "nameEn": "Ukanlos",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 40% · ×1",
+            "Break Belly · 24% · ×1",
+            "Shiny Drop · 18% · ×1",
+            "Break Back · 15% · ×1",
+            "Tail Carve · 10% · ×1",
+            "Break Front Leg · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Glacial Grinder",
+          "nameEn": "Advanced: Glacial Grinder",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay an Ukanlos",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "패룡 견갑각",
+          "requiredItemId": "item_mh4u_0999",
+          "unlockQuestId": "quest_40e711339d0b",
+          "unlockQuest": "고난도: 미쳐 날뛰는 아캄토름",
+          "unlockLevel": "★7",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "순백의 용비늘",
+      "count": 6,
+      "nameJa": "純白の龍鱗",
+      "itemId": "item_mh4u_0899",
+      "mh4uId": 899,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "샤가르마가라",
+          "navMonster": "샤가르마가라",
+          "nameEn": "Shagaru Magala",
+          "rank": "G급",
+          "methods": [
+            "Shiny Drop · 40% · ×1",
+            "Shiny Drop · 23% · ×1",
+            "Break Horn · 22% · ×1",
+            "Break Wing Leg · 20% · ×1",
+            "Shiny Drop · 20% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Wheel of Time",
+          "nameEn": "Advanced: Wheel of Time",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Shagaru Magala",
+          "probability": 15,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Heaven's Wheel",
+          "nameEn": "Advanced: Heaven's Wheel",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay Shagaru Magala",
+          "probability": 10,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Stop the Wheel",
+          "nameEn": "Advanced: Stop the Wheel",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Shagaru Magala",
+          "probability": 7,
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "우캄루바스",
+        "navMonster": "우캄루바스"
+      },
+      {
+        "name": "샤가르마가라",
+        "navMonster": "샤가르마가라"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: Glacial Grinder",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay an Ukanlos",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Wheel of Time",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay Shagaru Magala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Heaven's Wheel",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay Shagaru Magala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Stop the Wheel",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay Shagaru Magala",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

@@ -1,0 +1,304 @@
+{
+  "materials": [
+    {
+      "name": "거친 용뿔",
+      "count": 6,
+      "nameJa": "豪山龍の甲岩殻",
+      "itemId": "item_mh4u_0991",
+      "mh4uId": 991,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "다렌·모란",
+          "navMonster": "다렌·모란",
+          "nameEn": "Dah'ren Mohran",
+          "rank": "하위",
+          "methods": [
+            "Break Horn · 83% · ×1",
+            "Body Carve · 15% · ×1",
+            "Break Horn · 15% · ×2",
+            "Break Horn · 14% · ×2"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Shipping Out",
+          "nameEn": "Advanced: Shipping Out",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay Dah'ren Mohran or repel it",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Fleet Action",
+          "nameEn": "Advanced: Fleet Action",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay Dah'ren Mohran or repel it",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Sand Sailor",
+          "nameEn": "Advanced: Sand Sailor",
+          "level": "Guild★3",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Dah'ren Mohran or repel it",
+          "probability": 12,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "호산룡 갑암각",
+      "count": 4,
+      "nameJa": "荒々しい龍角",
+      "itemId": "item_mh4u_0982",
+      "mh4uId": 982,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "다렌·모란",
+          "navMonster": "다렌·모란",
+          "nameEn": "Dah'ren Mohran",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 52% · ×1",
+            "Break Fin · 50% · ×1",
+            "Break Blowhole · 50% · ×1",
+            "Mining Back · 10% · ×1",
+            "Break Fin · 8% · ×1",
+            "Break Blowhole · 8% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Shipping Out",
+          "nameEn": "Advanced: Shipping Out",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay Dah'ren Mohran or repel it",
+          "probability": 24,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Fleet Action",
+          "nameEn": "Advanced: Fleet Action",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay Dah'ren Mohran or repel it",
+          "probability": 24,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Sand Sailor",
+          "nameEn": "Advanced: Sand Sailor",
+          "level": "Guild★3",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Dah'ren Mohran or repel it",
+          "probability": 24,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "호룡암",
+      "count": 2,
+      "nameJa": "豪龍岩",
+      "itemId": "item_mh4u_0994",
+      "mh4uId": 994,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "다렌·모란",
+          "navMonster": "다렌·모란",
+          "nameEn": "Dah'ren Mohran",
+          "rank": "G급",
+          "methods": [
+            "Mining Back · 35% · ×1",
+            "Mining Back · 21% · ×1",
+            "Mining Back · 14% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "뾰족한 이빨",
+      "count": 5,
+      "nameJa": "とがった牙",
+      "itemId": "item_mh4u_0372",
+      "mh4uId": 372,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "델쿠스",
+          "navMonster": "",
+          "nameEn": "Delex",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 70% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "스쿠아길",
+          "navMonster": "",
+          "nameEn": "Zamite",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 35% · ×1",
+            "Body Carve · 25% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "쿤추",
+          "navMonster": "",
+          "nameEn": "Konchu",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 23% · ×1",
+            "Body Carve · 18% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Meteoric Prize",
+          "nameEn": "Meteoric Prize",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 1 Meteor Chunk",
+          "probability": 50,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Moving Mountains",
+          "nameEn": "Advanced: Moving Mountains",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay Dah'ren Mohran or repel it",
+          "probability": 20,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Zamite Fight",
+          "nameEn": "Zamite Fight",
+          "level": "Guild★5",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay 20 Zamite",
+          "probability": 15,
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "다렌·모란",
+        "navMonster": "다렌·모란"
+      },
+      {
+        "name": "델쿠스",
+        "navMonster": ""
+      },
+      {
+        "name": "스쿠아길",
+        "navMonster": ""
+      },
+      {
+        "name": "쿤추",
+        "navMonster": ""
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: Shipping Out",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay Dah'ren Mohran or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Fleet Action",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay Dah'ren Mohran or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Sand Sailor",
+        "nameJa": "",
+        "level": "Guild★3",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay Dah'ren Mohran or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Meteoric Prize",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 1 Meteor Chunk",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Moving Mountains",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay Dah'ren Mohran or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Zamite Fight",
+        "nameJa": "",
+        "level": "Guild★5",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay 20 Zamite",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

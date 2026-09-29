@@ -1,0 +1,405 @@
+{
+  "materials": [
+    {
+      "name": "홍화룡 견갑각",
+      "count": 2,
+      "nameJa": "桜火竜の堅殻",
+      "itemId": "item_mh4u_0675",
+      "mh4uId": 675,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "리오레이아 아종",
+          "navMonster": "리오레이아 아종",
+          "nameEn": "Pink Rathian",
+          "rank": "상위",
+          "methods": [
+            "Break Head · 76% · ×1",
+            "Break Back · 69% · ×1",
+            "Body Carve · 30% · ×1",
+            "Capture · 30% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "In the Pink",
+          "nameEn": "In the Pink",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Pink Rathian",
+          "probability": 24,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Rathian's Wrath",
+          "nameEn": "Rathian's Wrath",
+          "level": "Guild★5",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Pink Rathian",
+          "probability": 24,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Trader in Trouble",
+          "nameEn": "Trader in Trouble",
+          "level": "Guild★5",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Red Khezu and a Pink Rathian",
+          "probability": 24,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "홍화룡 비늘+",
+      "count": 4,
+      "nameJa": "桜火竜の上鱗",
+      "itemId": "item_mh4u_0673",
+      "mh4uId": 673,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "리오레이아 아종",
+          "navMonster": "리오레이아 아종",
+          "nameEn": "Pink Rathian",
+          "rank": "상위",
+          "methods": [
+            "Tail Carve · 58% · ×1",
+            "Body Carve · 40% · ×1",
+            "Capture · 20% · ×2",
+            "Break Head · 20% · ×1",
+            "Shiny Drop · 15% · ×1",
+            "Break Wing · 15% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "In the Pink",
+          "nameEn": "In the Pink",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Pink Rathian",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Rathian's Wrath",
+          "nameEn": "Rathian's Wrath",
+          "level": "Guild★5",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Pink Rathian",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Trader in Trouble",
+          "nameEn": "Trader in Trouble",
+          "level": "Guild★5",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Red Khezu and a Pink Rathian",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "첨룡골",
+      "count": 3,
+      "nameJa": "尖竜骨",
+      "itemId": "item_ceb692c59e38",
+      "mh4uId": 310,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "바바콩가 아종",
+          "navMonster": "바바콩가 아종",
+          "nameEn": "Emerald Congalala",
+          "rank": "G급",
+          "methods": [
+            "Shiny Drop (Bone) · 30% · ×1",
+            "Shiny Drop (Bone) · 10% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "얀쿡크",
+          "navMonster": "얀쿡크",
+          "nameEn": "Yian Kut-Ku",
+          "rank": "상위",
+          "methods": [
+            "Capture · 27% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "바바콩가",
+          "navMonster": "바바콩가",
+          "nameEn": "Congalala",
+          "rank": "G급",
+          "methods": [
+            "Shiny Drop (Bone) · 25% · ×1",
+            "Shiny Drop (Bone) · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Harvest Tour: Primal Forest",
+          "nameEn": "Harvest Tour: Primal Forest",
+          "level": "Caravan★7",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+          "probability": 16,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Purse Snatcher",
+          "nameEn": "Purse Snatcher",
+          "level": "Caravan★7",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Purple Gypceros",
+          "probability": 16,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Pungent Pairing",
+          "nameEn": "Pungent Pairing",
+          "level": "Caravan★7",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Gypceros and a Congalala",
+          "probability": 16,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "자화룡 역린",
+      "count": 1,
+      "nameJa": "雌火竜の逆鱗",
+      "itemId": "item_mh4u_0670",
+      "mh4uId": 670,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "리오레이아",
+          "navMonster": "리오레이아",
+          "nameEn": "Rathian",
+          "rank": "상위",
+          "methods": [
+            "Tail Carve · 10% · ×1",
+            "Break Head · 4% · ×1",
+            "Capture · 4% · ×1",
+            "Tail Carve · 3% · ×1",
+            "Capture · 2% · ×1",
+            "Shiny Drop · 1% · ×1",
+            "Break Back · 1% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "리오레이아 아종",
+          "navMonster": "리오레이아 아종",
+          "nameEn": "Pink Rathian",
+          "rank": "상위",
+          "methods": [
+            "Tail Carve · 10% · ×1",
+            "Capture · 5% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "리오레이아 희소종",
+          "navMonster": "리오레이아 희소종",
+          "nameEn": "Gold Rathian",
+          "rank": "상위",
+          "methods": [
+            "Tail Carve · 10% · ×1",
+            "Break Head · 6% · ×1",
+            "Capture · 4% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Queen and Rook",
+          "nameEn": "Queen and Rook",
+          "level": "Guild★3",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Rathian and a Gravios",
+          "probability": 3,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Egg-straction: Wyvern",
+          "nameEn": "Egg-straction: Wyvern",
+          "level": "Caravan★4",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 2 Wyvem Eggs",
+          "probability": 1,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Troverian Trouble",
+          "nameEn": "Troverian Trouble",
+          "level": "Caravan★4",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Rathian",
+          "probability": 1,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "리오레이아 아종",
+        "navMonster": "리오레이아 아종"
+      },
+      {
+        "name": "바바콩가 아종",
+        "navMonster": "바바콩가 아종"
+      },
+      {
+        "name": "얀쿡크",
+        "navMonster": "얀쿡크"
+      },
+      {
+        "name": "바바콩가",
+        "navMonster": "바바콩가"
+      },
+      {
+        "name": "리오레이아",
+        "navMonster": "리오레이아"
+      },
+      {
+        "name": "리오레이아 희소종",
+        "navMonster": "리오레이아 희소종"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "In the Pink",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Pink Rathian",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Rathian's Wrath",
+        "nameJa": "",
+        "level": "Guild★5",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Pink Rathian",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Trader in Trouble",
+        "nameJa": "",
+        "level": "Guild★5",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Red Khezu and a Pink Rathian",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Harvest Tour: Primal Forest",
+        "nameJa": "",
+        "level": "Caravan★7",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Purse Snatcher",
+        "nameJa": "",
+        "level": "Caravan★7",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Purple Gypceros",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Pungent Pairing",
+        "nameJa": "",
+        "level": "Caravan★7",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Gypceros and a Congalala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Queen and Rook",
+        "nameJa": "",
+        "level": "Guild★3",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Rathian and a Gravios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Egg-straction: Wyvern",
+        "nameJa": "",
+        "level": "Caravan★4",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 2 Wyvem Eggs",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Troverian Trouble",
+        "nameJa": "",
+        "level": "Caravan★4",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Rathian",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

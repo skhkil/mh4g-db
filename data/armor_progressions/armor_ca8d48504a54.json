@@ -1,0 +1,345 @@
+{
+  "materials": [
+    {
+      "name": "익사룡 가죽",
+      "count": 4,
+      "nameJa": "翼蛇竜の皮",
+      "itemId": "item_mh4u_0378",
+      "mh4uId": 378,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Remobra",
+          "navMonster": "",
+          "nameEn": "Remobra",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 56% · ×1",
+            "Body Carve · 5% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Remobra Remedy",
+          "nameEn": "Remobra Remedy",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay 6 Remobras",
+          "probability": 32,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Mistentoe Delivery",
+          "nameEn": "Mistentoe Delivery",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 5 Mistentoe",
+          "probability": 32,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Remobra Remedy",
+          "nameEn": "Remobra Remedy",
+          "level": "Guild★3",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay 7 Remobras",
+          "probability": 32,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "용골+",
+      "count": 1,
+      "nameJa": "上竜骨",
+      "itemId": "item_a4eda339a44c",
+      "mh4uId": 309,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "그라비모스",
+          "navMonster": "그라비모스",
+          "nameEn": "Gravios",
+          "rank": "하위",
+          "methods": [
+            "Break Back · 40% · ×1",
+            "Break Wing · 10% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "얀쿡크 아종",
+          "navMonster": "얀쿡크 아종",
+          "nameEn": "Blue Yian Kut-Ku",
+          "rank": "상위",
+          "methods": [
+            "Capture · 27% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "다이묘자자미",
+          "navMonster": "다이묘자자미",
+          "nameEn": "Daimyo Hermitaur",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 20% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Queen and Rook",
+          "nameEn": "Queen and Rook",
+          "level": "Guild★3",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Rathian and a Gravios",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hunters' Heaven",
+          "nameEn": "Hunters' Heaven",
+          "level": "Guild★3",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Tigrex and a Zinogre",
+          "probability": 100,
+          "count": 3
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Energy Crisis",
+          "nameEn": "Energy Crisis",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 5 Coals",
+          "probability": 18,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "몬스터의 체액",
+      "count": 3,
+      "nameJa": "モンスターの体液",
+      "itemId": "item_mh4u_0600",
+      "mh4uId": 600,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Altaroth",
+          "navMonster": "",
+          "nameEn": "Altaroth",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 25% · ×1",
+            "Shiny Drop (Gray) · 20% · ×1",
+            "Shiny Drop (Blue) · 10% · ×1",
+            "Shiny Drop (Orange) · 10% · ×1",
+            "Shiny Drop (Green) · 10% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "네르스큐라",
+          "navMonster": "네르스큐라",
+          "nameEn": "Nerscylla",
+          "rank": "하위",
+          "methods": [
+            "Shiny Drop · 25% · ×1",
+            "Shiny Drop · 10% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "Bnahabra",
+          "navMonster": "",
+          "nameEn": "Bnahabra",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 20% · ×1",
+            "Body Carve · 7% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Bnahabra Bloodbath",
+          "nameEn": "Bnahabra Bloodbath",
+          "level": "Guild★1",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay 12 Bnahabra",
+          "probability": 20,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Bnahabra Buffet",
+          "nameEn": "Bnahabra Buffet",
+          "level": "Caravan★7",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay 12 Bnahabra",
+          "probability": 16,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Bnahabra Bloodbath",
+          "nameEn": "Bnahabra Bloodbath",
+          "level": "Guild★4",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay 20 Bnahabra",
+          "probability": 16,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "곤충코인",
+      "count": 1,
+      "nameJa": "蟲のコイン",
+      "itemId": "item_01f37e870f1c",
+      "mh4uId": 1336,
+      "sources": [
+        {
+          "type": "arena",
+          "name": "Grudge Match: Bug Out",
+          "level": "투기대회",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "Remobra",
+        "navMonster": ""
+      },
+      {
+        "name": "그라비모스",
+        "navMonster": "그라비모스"
+      },
+      {
+        "name": "얀쿡크 아종",
+        "navMonster": "얀쿡크 아종"
+      },
+      {
+        "name": "다이묘자자미",
+        "navMonster": "다이묘자자미"
+      },
+      {
+        "name": "Altaroth",
+        "navMonster": ""
+      },
+      {
+        "name": "네르스큐라",
+        "navMonster": "네르스큐라"
+      },
+      {
+        "name": "Bnahabra",
+        "navMonster": ""
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Remobra Remedy",
+        "nameJa": "",
+        "level": "Caravan★5",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay 6 Remobras",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Mistentoe Delivery",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 5 Mistentoe",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Queen and Rook",
+        "nameJa": "",
+        "level": "Guild★3",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Rathian and a Gravios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Hunters' Heaven",
+        "nameJa": "",
+        "level": "Guild★3",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Tigrex and a Zinogre",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Energy Crisis",
+        "nameJa": "",
+        "level": "Caravan★5",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 5 Coals",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Bnahabra Bloodbath",
+        "nameJa": "",
+        "level": "Guild★1",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay 12 Bnahabra",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Bnahabra Buffet",
+        "nameJa": "",
+        "level": "Caravan★7",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay 12 Bnahabra",
+        "note": ""
+      }
+    ],
+    "arena": [
+      {
+        "name": "Grudge Match: Bug Out",
+        "level": "투기대회",
+        "probability": 100
+      }
+    ]
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

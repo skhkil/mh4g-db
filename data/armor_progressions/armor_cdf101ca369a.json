@@ -1,0 +1,219 @@
+{
+  "materials": [
+    {
+      "name": "비룡코인",
+      "count": 3,
+      "nameJa": "飛竜のコイン",
+      "itemId": "item_374139509817",
+      "mh4uId": 1330,
+      "sources": [
+        {
+          "type": "arena",
+          "name": "Grudge Match: Brute Tigrex",
+          "level": "투기대회",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "arena",
+          "name": "Grudge Match: Color Code",
+          "level": "투기대회",
+          "probability": 35,
+          "count": 1
+        },
+        {
+          "type": "arena",
+          "name": "Grudge Match: Dos Gravi",
+          "level": "투기대회",
+          "probability": 35,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "수렵왕코인",
+      "count": 3,
+      "nameJa": "狩猟王のコイン",
+      "itemId": "item_629fff406671",
+      "mh4uId": 1324,
+      "sources": [
+        {
+          "type": "arena",
+          "name": "Grudge Match: Zamtrios",
+          "level": "투기대회",
+          "probability": 35,
+          "count": 1
+        },
+        {
+          "type": "arena",
+          "name": "Grudge Match: Brute Tigrex",
+          "level": "투기대회",
+          "probability": 35,
+          "count": 1
+        },
+        {
+          "type": "arena",
+          "name": "Grudge Match: S. Zinogre",
+          "level": "투기대회",
+          "probability": 35,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "큰물주머니",
+      "count": 4,
+      "nameJa": "大水袋",
+      "itemId": "item_mh4u_0349",
+      "mh4uId": 349,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "케차와차",
+          "navMonster": "케차와차",
+          "nameEn": "Kecha Wacha",
+          "rank": "상위",
+          "methods": [
+            "Break Ear · 25% · ×1",
+            "Capture · 20% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "게넬·셀타스",
+          "navMonster": "게넬·셀타스",
+          "nameEn": "Seltas Queen",
+          "rank": "상위",
+          "methods": [
+            "Capture · 12% · ×2",
+            "Break Tail · 8% · ×2"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "아르셀타스",
+          "navMonster": "아르셀타스",
+          "nameEn": "Seltas",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 10% · ×1",
+            "Shiny Drop · 5% · ×1",
+            "Capture · 5% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hunt-a-thon: Kecha Wacha",
+          "nameEn": "Hunt-a-thon: Kecha Wacha",
+          "level": "Caravan★7",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt 2 Kecha Wacha before time expires or deliver a Paw Pass Ticket",
+          "probability": 18,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Face Two Face",
+          "nameEn": "Face Two Face",
+          "level": "Guild★4",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt 2 Kecha Wacha",
+          "probability": 18,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Operation Catch-a-Kecha",
+          "nameEn": "Operation Catch-a-Kecha",
+          "level": "Guild★4",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Capture a Kecha Wacha",
+          "probability": 18,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "케차와차",
+        "navMonster": "케차와차"
+      },
+      {
+        "name": "게넬·셀타스",
+        "navMonster": "게넬·셀타스"
+      },
+      {
+        "name": "아르셀타스",
+        "navMonster": "아르셀타스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Hunt-a-thon: Kecha Wacha",
+        "nameJa": "",
+        "level": "Caravan★7",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt 2 Kecha Wacha before time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Face Two Face",
+        "nameJa": "",
+        "level": "Guild★4",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt 2 Kecha Wacha",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Operation Catch-a-Kecha",
+        "nameJa": "",
+        "level": "Guild★4",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Capture a Kecha Wacha",
+        "note": ""
+      }
+    ],
+    "arena": [
+      {
+        "name": "Grudge Match: Brute Tigrex",
+        "level": "투기대회",
+        "probability": 100
+      },
+      {
+        "name": "Grudge Match: Color Code",
+        "level": "투기대회",
+        "probability": 35
+      },
+      {
+        "name": "Grudge Match: Dos Gravi",
+        "level": "투기대회",
+        "probability": 35
+      },
+      {
+        "name": "Grudge Match: Zamtrios",
+        "level": "투기대회",
+        "probability": 35
+      },
+      {
+        "name": "Grudge Match: S. Zinogre",
+        "level": "투기대회",
+        "probability": 35
+      }
+    ]
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

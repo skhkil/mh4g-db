@@ -1,0 +1,139 @@
+{
+  "materials": [
+    {
+      "name": "황흑룡 천린",
+      "count": 4,
+      "nameJa": "煌黒龍の天鱗",
+      "itemId": "item_mh4u_1211",
+      "mh4uId": 1211,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "사황룡 두툼철가죽",
+          "requiredItemId": "item_mh4u_1066",
+          "unlockQuestId": "quest_7b399259fc68",
+          "unlockQuest": "고난도: 불멸을 구가하는 황제",
+          "unlockLevel": "★3",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "황흑룡 흉조",
+      "count": 3,
+      "nameJa": "煌黒龍の凶爪",
+      "itemId": "item_mh4u_1212",
+      "mh4uId": 1212,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "사황룡 강고리발톱 패왕의 증표",
+          "requiredItemId": "",
+          "unlockQuestId": "quest_7b399259fc68",
+          "unlockQuest": "고난도: 불멸을 구가하는 황제",
+          "unlockLevel": "★3",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "붕천옥",
+      "count": 1,
+      "nameJa": "崩天玉",
+      "itemId": "item_mh4u_1021",
+      "mh4uId": 1021,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "우캄루바스",
+          "navMonster": "우캄루바스",
+          "nameEn": "Ukanlos",
+          "rank": "G급",
+          "methods": [
+            "Break Belly · 6% · ×1",
+            "Break Head · 4% · ×1",
+            "Body Carve · 2% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Icy Investigation",
+          "nameEn": "Advanced: Icy Investigation",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay an Ukanlos",
+          "probability": 5,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Silver Cataclysm",
+          "nameEn": "Advanced: Silver Cataclysm",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay an Ukanlos",
+          "probability": 5,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "노산룡 천린",
+          "requiredItemId": "item_mh4u_1218",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: Silver Cataclysm",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "환상나비",
+      "count": 2,
+      "nameJa": "マボロシチョウ",
+      "itemId": "item_4f2838814bcb",
+      "mh4uId": 270,
+      "sources": [
+        {
+          "type": "acquire",
+          "label": "채집"
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "우캄루바스",
+        "navMonster": "우캄루바스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: Icy Investigation",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay an Ukanlos",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Silver Cataclysm",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay an Ukanlos",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

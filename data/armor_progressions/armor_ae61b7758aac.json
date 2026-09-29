@@ -1,0 +1,154 @@
+{
+  "materials": [
+    {
+      "name": "선조룡 두툼흰비늘",
+      "count": 3,
+      "nameJa": "祖龍の厚白鱗",
+      "itemId": "item_mh4u_1043",
+      "mh4uId": 1043,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "밀라보레아스 (조룡)",
+          "navMonster": "밀라보레아스 (조룡)",
+          "nameEn": "White Fatalis",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 0% · ×1",
+            "Break Chest · 0% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "선조룡 중갑각",
+      "count": 2,
+      "nameJa": "祖龍の重殻",
+      "itemId": "item_mh4u_1044",
+      "mh4uId": 1044,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "밀라보레아스 (조룡)",
+          "navMonster": "밀라보레아스 (조룡)",
+          "nameEn": "White Fatalis",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 0% · ×1",
+            "Break Chest · 0% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "선조룡 강날개",
+      "count": 1,
+      "nameJa": "祖龍の剛翼",
+      "itemId": "item_mh4u_1046",
+      "mh4uId": 1046,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "밀라보레아스 (조룡)",
+          "navMonster": "밀라보레아스 (조룡)",
+          "nameEn": "White Fatalis",
+          "rank": "G급",
+          "methods": [
+            "Break Wing · 0% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "전화의 용신옥",
+      "count": 1,
+      "nameJa": "戦火の龍神玉",
+      "itemId": "item_mh4u_1080",
+      "mh4uId": 1080,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "고그마지오스",
+          "navMonster": "고그마지오스",
+          "nameEn": "Gogmazios",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 3% · ×1",
+            "Tail Carve · 3% · ×1",
+            "Shiny Drop · 3% · ×1",
+            "Break Head · 3% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Quagmire Quarrel",
+          "nameEn": "Advanced: Quagmire Quarrel",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Gogmazios",
+          "probability": 5,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Act of Gog",
+          "nameEn": "Advanced: Act of Gog",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Gogmazios",
+          "probability": 5,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "광염의 대룡옥",
+          "requiredItemId": "item_mh4u_1221",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: Act of Gog",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "밀라보레아스 (조룡)",
+        "navMonster": "밀라보레아스 (조룡)"
+      },
+      {
+        "name": "고그마지오스",
+        "navMonster": "고그마지오스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: Quagmire Quarrel",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay Gogmazios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Act of Gog",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay Gogmazios",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

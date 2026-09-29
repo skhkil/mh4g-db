@@ -1,0 +1,220 @@
+{
+  "materials": [
+    {
+      "name": "폭풍룡티켓",
+      "count": 1,
+      "nameJa": "嵐龍チケット",
+      "itemId": "item_mh4u_1380",
+      "mh4uId": 1380,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "event-g-071",
+          "name": "고그마지오스 포격전",
+          "nameJa": "巨戟砕くは砲撃の雨",
+          "nameEn": "Bombs over Gogmazios",
+          "level": "G★3",
+          "questType": "event",
+          "location": "전투 구역",
+          "objective": "고그마지오스 토벌",
+          "note": "GX황천/GX창천 제작 핵심 티켓"
+        }
+      ]
+    },
+    {
+      "name": "거극룡 성갑각",
+      "count": 4,
+      "nameJa": "巨戟龍の城殻",
+      "itemId": "item_mh4u_1075",
+      "mh4uId": 1075,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "고그마지오스",
+          "navMonster": "고그마지오스",
+          "nameEn": "Gogmazios",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 28% · ×1",
+            "Break Head · 28% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Quagmire Quarrel",
+          "nameEn": "Advanced: Quagmire Quarrel",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Gogmazios",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Act of Gog",
+          "nameEn": "Advanced: Act of Gog",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Gogmazios",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "거극룡 근섬유날개",
+      "count": 3,
+      "nameJa": "巨戟龍の筋繊翼",
+      "itemId": "item_mh4u_1078",
+      "mh4uId": 1078,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "고그마지오스",
+          "navMonster": "고그마지오스",
+          "nameEn": "Gogmazios",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · % · ×1",
+            "Break Wing · % · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Quagmire Quarrel",
+          "nameEn": "Advanced: Quagmire Quarrel",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Gogmazios",
+          "probability": 15,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Act of Gog",
+          "nameEn": "Advanced: Act of Gog",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Gogmazios",
+          "probability": 15,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "대장로티켓Ｓ",
+      "count": 3,
+      "nameJa": "大長老チケットＳ",
+      "itemId": "item_a024b69f3b5f",
+      "mh4uId": 1443,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "event-g-078",
+          "name": "진홍의 장막 너머",
+          "nameJa": "紅の終焉",
+          "nameEn": "Beyond the Crimson Veil",
+          "level": "G★3",
+          "questType": "event",
+          "location": "용암섬",
+          "objective": "홍룡 밀라보레아스 1마리 수렵",
+          "note": "G★3 이벤트 보수"
+        },
+        {
+          "type": "quest",
+          "id": "event-g-076",
+          "name": "극한의 포식자",
+          "nameJa": "喰慾の極限",
+          "nameEn": "The Apex Predator",
+          "level": "G★3",
+          "questType": "event",
+          "location": "원생림",
+          "objective": "이블조 1마리 수렵",
+          "note": "G★3 이벤트 보수"
+        },
+        {
+          "type": "quest",
+          "id": "event-g-071",
+          "name": "고그마지오스 포격전",
+          "nameJa": "巨戟砕くは砲撃の雨",
+          "nameEn": "Bombs over Gogmazios",
+          "level": "G★3",
+          "questType": "event",
+          "location": "전투 구역",
+          "objective": "고그마지오스 토벌",
+          "note": "확정 입수 가능한 G★3 이벤트"
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "고그마지오스",
+        "navMonster": "고그마지오스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "event-g-071",
+        "name": "고그마지오스 포격전",
+        "nameJa": "巨戟砕くは砲撃の雨",
+        "level": "G★3",
+        "questType": "event",
+        "location": "전투 구역",
+        "objective": "고그마지오스 토벌",
+        "note": "GX황천/GX창천 제작 핵심 티켓"
+      },
+      {
+        "id": "",
+        "name": "Advanced: Quagmire Quarrel",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay Gogmazios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Act of Gog",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay Gogmazios",
+        "note": ""
+      },
+      {
+        "id": "event-g-078",
+        "name": "진홍의 장막 너머",
+        "nameJa": "紅の終焉",
+        "level": "G★3",
+        "questType": "event",
+        "location": "용암섬",
+        "objective": "홍룡 밀라보레아스 1마리 수렵",
+        "note": "G★3 이벤트 보수"
+      },
+      {
+        "id": "event-g-076",
+        "name": "극한의 포식자",
+        "nameJa": "喰慾の極限",
+        "level": "G★3",
+        "questType": "event",
+        "location": "원생림",
+        "objective": "이블조 1마리 수렵",
+        "note": "G★3 이벤트 보수"
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

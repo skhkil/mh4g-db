@@ -1,0 +1,413 @@
+{
+  "materials": [
+    {
+      "name": "콩가 털",
+      "count": 4,
+      "nameJa": "コンガの毛",
+      "itemId": "item_mh4u_0489",
+      "mh4uId": 489,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Conga",
+          "navMonster": "",
+          "nameEn": "Conga",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 50% · ×1",
+            "Body Carve · 5% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Road Work",
+          "nameEn": "Road Work",
+          "level": "Caravan★3",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Capture a Gendrome",
+          "probability": 100,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Conga Bongo",
+          "nameEn": "Conga Bongo",
+          "level": "Guild★2",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay 6 Congas",
+          "probability": 100,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Conga Bongo",
+          "nameEn": "Conga Bongo",
+          "level": "Caravan★3",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay 5 Congas",
+          "probability": 26,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "철갑충 갑각",
+      "count": 2,
+      "nameJa": "徹甲虫の甲殻",
+      "itemId": "item_mh4u_0603",
+      "mh4uId": 603,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "아르셀타스",
+          "navMonster": "아르셀타스",
+          "nameEn": "Seltas",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 65% · ×1",
+            "Break Horn · 30% · ×1",
+            "Capture · 20% · ×1",
+            "Body Carve · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "The Stinking Seltas",
+          "nameEn": "The Stinking Seltas",
+          "level": "Caravan★2",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Seltas",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Bug Appétit",
+          "nameEn": "Bug Appétit",
+          "level": "Caravan★2",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Seltas",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Bug Burger",
+          "nameEn": "Bug Burger",
+          "level": "Guild★1",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Seltas",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "거대한 뼈",
+      "count": 1,
+      "nameJa": "大きな骨",
+      "itemId": "item_0e6aada4f05c",
+      "mh4uId": 318,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Popo",
+          "navMonster": "",
+          "nameEn": "Popo",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 20% · ×1",
+            "Body Carve · 5% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "울크스스",
+          "navMonster": "울크스스",
+          "nameEn": "Lagombi",
+          "rank": "하위",
+          "methods": [
+            "Capture · 20% · ×2",
+            "Body Carve · 5% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "테츠카브라",
+          "navMonster": "테츠카브라",
+          "nameEn": "Tetsucabra",
+          "rank": "하위",
+          "methods": [
+            "Capture · 20% · ×1",
+            "Body Carve · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Swing into Action",
+          "nameEn": "Swing into Action",
+          "level": "Caravan★3",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Kecha Wacha",
+          "probability": 15,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Kecha Wacha Wallop",
+          "nameEn": "Kecha Wacha Wallop",
+          "level": "Caravan★3",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Kecha Wacha",
+          "probability": 15,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Order of Magnitude",
+          "nameEn": "Advanced: Order of Magnitude",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Kecha Wacha and a Rathian",
+          "probability": 15,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "마카라이트광석",
+      "count": 2,
+      "nameJa": "マカライト鉱石",
+      "itemId": "item_8f142f2db297",
+      "mh4uId": 205,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "바살모스",
+          "navMonster": "바살모스",
+          "nameEn": "Basarios",
+          "rank": "하위",
+          "methods": [
+            "Capture · 59% · ×2",
+            "Tail Carve · 55% · ×1",
+            "Break Belly · 55% · ×1",
+            "Break Back · 50% · ×3",
+            "Mining Back · 35% · ×1",
+            "Body Carve · 25% · ×1",
+            "Shiny Drop · 20% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "바바콩가",
+          "navMonster": "바바콩가",
+          "nameEn": "Congalala",
+          "rank": "하위",
+          "methods": [
+            "Shiny Drop (Ore) · 39% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Crystal Bone Collector",
+          "nameEn": "Crystal Bone Collector",
+          "level": "Caravan★3",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 5 Crystal Bones",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Sootstone Search",
+          "nameEn": "Sootstone Search",
+          "level": "Guild★2",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Deliver 3 Sootstone Ores",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Crystal Clearing",
+          "nameEn": "Crystal Clearing",
+          "level": "Caravan★2",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 4 Sulfur Crystals",
+          "probability": 20,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "Conga",
+        "navMonster": ""
+      },
+      {
+        "name": "아르셀타스",
+        "navMonster": "아르셀타스"
+      },
+      {
+        "name": "Popo",
+        "navMonster": ""
+      },
+      {
+        "name": "울크스스",
+        "navMonster": "울크스스"
+      },
+      {
+        "name": "테츠카브라",
+        "navMonster": "테츠카브라"
+      },
+      {
+        "name": "바살모스",
+        "navMonster": "바살모스"
+      },
+      {
+        "name": "바바콩가",
+        "navMonster": "바바콩가"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Road Work",
+        "nameJa": "",
+        "level": "Caravan★3",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Capture a Gendrome",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Conga Bongo",
+        "nameJa": "",
+        "level": "Guild★2",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay 6 Congas",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "The Stinking Seltas",
+        "nameJa": "",
+        "level": "Caravan★2",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Seltas",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Bug Appétit",
+        "nameJa": "",
+        "level": "Caravan★2",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Seltas",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Bug Burger",
+        "nameJa": "",
+        "level": "Guild★1",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Seltas",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Swing into Action",
+        "nameJa": "",
+        "level": "Caravan★3",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Kecha Wacha",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Kecha Wacha Wallop",
+        "nameJa": "",
+        "level": "Caravan★3",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Kecha Wacha",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Order of Magnitude",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Kecha Wacha and a Rathian",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Crystal Bone Collector",
+        "nameJa": "",
+        "level": "Caravan★3",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 5 Crystal Bones",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Sootstone Search",
+        "nameJa": "",
+        "level": "Guild★2",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Deliver 3 Sootstone Ores",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Crystal Clearing",
+        "nameJa": "",
+        "level": "Caravan★2",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 4 Sulfur Crystals",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

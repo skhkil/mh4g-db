@@ -1,0 +1,132 @@
+{
+  "materials": [
+    {
+      "name": "헌터모집공지",
+      "count": 2,
+      "nameJa": "ハンター急募告知",
+      "itemId": "item_mh4u_1395",
+      "mh4uId": 1395,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "",
+          "name": "헌터 일지 괴조 편",
+          "nameJa": "ハンター日誌　怪鳥の回",
+          "level": "G★1",
+          "questType": "event",
+          "location": "유적평원",
+          "objective": "얀쿡 2마리 이상 수렵 후 귀환 또는 네코택 티켓 납품",
+          "note": "기본 보수에서 헌터모집공지를 획득"
+        }
+      ]
+    },
+    {
+      "name": "마비버섯",
+      "count": 10,
+      "nameJa": "マヒダケ",
+      "itemId": "item_8257cc5a7241",
+      "mh4uId": 187,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Ancestral Steppe Fungus Run",
+          "nameEn": "Ancestral Steppe Fungus Run",
+          "level": "Caravan★2",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 5 Unique Mushrooms",
+          "probability": 23,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Crystal Clearing",
+          "nameEn": "Crystal Clearing",
+          "level": "Caravan★2",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 4 Sulfur Crystals",
+          "probability": 23,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Ancestral Steppe Fungus Run",
+          "nameEn": "Ancestral Steppe Fungus Run",
+          "level": "Guild★1",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Deliver 8 Unique Mushrooms",
+          "probability": 23,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "환상나비",
+      "count": 1,
+      "nameJa": "マボロシチョウ",
+      "itemId": "item_4f2838814bcb",
+      "mh4uId": 270,
+      "sources": [
+        {
+          "type": "acquire",
+          "label": "채집"
+        }
+      ]
+    },
+    {
+      "name": "대장로티켓",
+      "count": 1,
+      "nameJa": "大長老チケット",
+      "itemId": "item_64f8e301f2c3",
+      "mh4uId": 1442,
+      "sources": [
+        {
+          "type": "acquire",
+          "label": "이벤트 퀘스트 보수"
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [],
+    "quests": [
+      {
+        "id": "",
+        "name": "헌터 일지 괴조 편",
+        "nameJa": "ハンター日誌　怪鳥の回",
+        "level": "G★1",
+        "questType": "event",
+        "location": "유적평원",
+        "objective": "얀쿡 2마리 이상 수렵 후 귀환 또는 네코택 티켓 납품",
+        "note": "기본 보수에서 헌터모집공지를 획득"
+      },
+      {
+        "id": "",
+        "name": "Ancestral Steppe Fungus Run",
+        "nameJa": "",
+        "level": "Caravan★2",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 5 Unique Mushrooms",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Crystal Clearing",
+        "nameJa": "",
+        "level": "Caravan★2",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 4 Sulfur Crystals",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

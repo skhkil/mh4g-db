@@ -1,0 +1,311 @@
+{
+  "materials": [
+    {
+      "name": "수사룡 두툼가죽",
+      "count": 6,
+      "nameJa": "水蛇竜の厚皮",
+      "itemId": "item_mh4u_0582",
+      "mh4uId": 582,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "가라라아자라 아종",
+          "navMonster": "가라라아자라 아종",
+          "nameEn": "Tidal Najarala",
+          "rank": "G급",
+          "methods": [
+            "Break Tail · 37% · ×1",
+            "Break Back Leg · 30% · ×1",
+            "Body Carve · 20% · ×1",
+            "Capture · 15% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "극한상태 가라라아자라 아종",
+          "navMonster": "가라라아자라 아종",
+          "nameEn": "Apex Tidal Najarala",
+          "rank": "G급",
+          "methods": [
+            "Break Tail · 37% · ×1",
+            "Break Back Leg · 30% · ×1",
+            "Body Carve · 26% · ×1",
+            "Capture · 15% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Serpent Serenade",
+          "nameEn": "Serpent Serenade",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Tidal Najarala",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Rhapsody in Rime",
+          "nameEn": "Advanced: Rhapsody in Rime",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Tidal Najarala",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "수사룡 방수갑",
+      "count": 4,
+      "nameJa": "水蛇竜の撥水甲",
+      "itemId": "item_mh4u_0583",
+      "mh4uId": 583,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "가라라아자라 아종",
+          "navMonster": "가라라아자라 아종",
+          "nameEn": "Tidal Najarala",
+          "rank": "G급",
+          "methods": [
+            "Break Tail · 58% · ×1",
+            "Break Back · 56% · ×1",
+            "Shiny Drop · 30% · ×1",
+            "Capture · 15% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "극한상태 가라라아자라 아종",
+          "navMonster": "가라라아자라 아종",
+          "nameEn": "Apex Tidal Najarala",
+          "rank": "G급",
+          "methods": [
+            "Break Back · 55% · ×1",
+            "Break Tail · 55% · ×1",
+            "Shiny Drop · 25% · ×1",
+            "Capture · 15% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Rhapsody in Rime",
+          "nameEn": "Advanced: Rhapsody in Rime",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Tidal Najarala",
+          "probability": 15,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Serpent Serenade",
+          "nameEn": "Serpent Serenade",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Tidal Najarala",
+          "probability": 12,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "수사룡 중갑각",
+      "count": 3,
+      "nameJa": "水蛇竜の重殻",
+      "itemId": "item_mh4u_0581",
+      "mh4uId": 581,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "가라라아자라 아종",
+          "navMonster": "가라라아자라 아종",
+          "nameEn": "Tidal Najarala",
+          "rank": "G급",
+          "methods": [
+            "Break Back Leg · 50% · ×1",
+            "Body Carve · 45% · ×1",
+            "Break Back · 36% · ×1",
+            "Capture · 25% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "극한상태 가라라아자라 아종",
+          "navMonster": "가라라아자라 아종",
+          "nameEn": "Apex Tidal Najarala",
+          "rank": "G급",
+          "methods": [
+            "Break Back Leg · 50% · ×1",
+            "Body Carve · 45% · ×1",
+            "Break Back · 35% · ×1",
+            "Capture · 25% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Serpent Serenade",
+          "nameEn": "Serpent Serenade",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Tidal Najarala",
+          "probability": 30,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Rhapsody in Rime",
+          "nameEn": "Advanced: Rhapsody in Rime",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Tidal Najarala",
+          "probability": 30,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "특대물주머니",
+      "count": 3,
+      "nameJa": "特大水袋",
+      "itemId": "item_mh4u_0350",
+      "mh4uId": 350,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "가라라아자라 아종",
+          "navMonster": "가라라아자라 아종",
+          "nameEn": "Tidal Najarala",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 88% · ×1",
+            "Capture · 40% · ×2",
+            "Body Carve · 25% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "극한상태 가라라아자라 아종",
+          "navMonster": "가라라아자라 아종",
+          "nameEn": "Apex Tidal Najarala",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 85% · ×1",
+            "Capture · 37% · ×2",
+            "Body Carve · 17% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "케차와차",
+          "navMonster": "케차와차",
+          "nameEn": "Kecha Wacha",
+          "rank": "G급",
+          "methods": [
+            "Break Ear · 25% · ×1",
+            "Capture · 20% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Rhapsody in Rime",
+          "nameEn": "Advanced: Rhapsody in Rime",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Tidal Najarala",
+          "probability": 30,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Serpent Serenade",
+          "nameEn": "Serpent Serenade",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Tidal Najarala",
+          "probability": 20,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Lumber Support",
+          "nameEn": "Lumber Support",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Kecha Wacha",
+          "probability": 18,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "가라라아자라 아종",
+        "navMonster": "가라라아자라 아종"
+      },
+      {
+        "name": "극한상태 가라라아자라 아종",
+        "navMonster": "가라라아자라 아종"
+      },
+      {
+        "name": "케차와차",
+        "navMonster": "케차와차"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Serpent Serenade",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Tidal Najarala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Rhapsody in Rime",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Tidal Najarala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Lumber Support",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Kecha Wacha",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

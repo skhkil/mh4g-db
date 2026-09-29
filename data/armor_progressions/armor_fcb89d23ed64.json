@@ -1,0 +1,160 @@
+{
+  "materials": [
+    {
+      "name": "희망의 증표",
+      "count": 1,
+      "nameJa": "希望の証",
+      "itemId": "item_0d03c7de5e2a",
+      "mh4uId": 1413,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Terrible Tyrant",
+          "nameEn": "Terrible Tyrant",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Molten Tigrex",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Busted Hell Hunters",
+          "nameEn": "Busted Hell Hunters",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Molten Tigrex",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Speartip Menace",
+          "nameEn": "Advanced: Speartip Menace",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Dalamadur",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "청괴조 비늘+",
+      "count": 4,
+      "nameJa": "青怪鳥の上鱗",
+      "itemId": "item_mh4u_0442",
+      "mh4uId": 442,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "얀쿡크 아종",
+          "navMonster": "얀쿡크 아종",
+          "nameEn": "Blue Yian Kut-Ku",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 50% · ×1",
+            "Break Ear · 25% · ×3",
+            "Shiny Drop · 16% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Singin' the Blues",
+          "nameEn": "Singin' the Blues",
+          "level": "Caravan★7",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Blue Yian Kut-Ku",
+          "probability": 16,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "근사한 부리",
+      "count": 2,
+      "nameJa": "イカしたクチバシ",
+      "itemId": "item_mh4u_0464",
+      "mh4uId": 464,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "얀가루루가",
+          "navMonster": "얀가루루가",
+          "nameEn": "Yian Garuga",
+          "rank": "G급",
+          "methods": [
+            "Break Beak · 85% · ×1",
+            "Break Beak · 70% · ×1",
+            "Capture · 15% · ×1",
+            "Capture · 5% · ×1"
+          ]
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "얀쿡크 아종",
+        "navMonster": "얀쿡크 아종"
+      },
+      {
+        "name": "얀가루루가",
+        "navMonster": "얀가루루가"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Terrible Tyrant",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Molten Tigrex",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Busted Hell Hunters",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Molten Tigrex",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Speartip Menace",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay Dalamadur",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Singin' the Blues",
+        "nameJa": "",
+        "level": "Caravan★7",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Blue Yian Kut-Ku",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

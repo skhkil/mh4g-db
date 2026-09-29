@@ -1,0 +1,160 @@
+{
+  "materials": [
+    {
+      "name": "해면질 가죽",
+      "count": 2,
+      "nameJa": "海綿質の皮",
+      "itemId": "item_mh4u_1097",
+      "mh4uId": 1097,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "도스람포스 가죽",
+          "requiredItemId": "item_mh4u_0398",
+          "unlockQuestId": "quest_e7f591833ab9",
+          "unlockQuest": "못된 악동 기원호를 수렵하라",
+          "unlockLevel": "★3",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "수괴수 발톱",
+      "count": 1,
+      "nameJa": "水獣の爪",
+      "itemId": "item_mh4u_1096",
+      "mh4uId": 1096,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "도스람포스 발톱",
+          "requiredItemId": "item_mh4u_0399",
+          "unlockQuestId": "quest_e7f591833ab9",
+          "unlockQuest": "못된 악동 기원호를 수렵하라",
+          "unlockLevel": "★3",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "람포스 가죽",
+      "count": 3,
+      "nameJa": "ランポスの皮",
+      "itemId": "item_mh4u_0396",
+      "mh4uId": 396,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Velociprey",
+          "navMonster": "",
+          "nameEn": "Velociprey",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 23% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "대지의 결정",
+      "count": 3,
+      "nameJa": "大地の結晶",
+      "itemId": "item_829d3591a0d0",
+      "mh4uId": 204,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "바살모스",
+          "navMonster": "바살모스",
+          "nameEn": "Basarios",
+          "rank": "하위",
+          "methods": [
+            "Mining Back · 60% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Crystal Clearing",
+          "nameEn": "Crystal Clearing",
+          "level": "Caravan★2",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 4 Sulfur Crystals",
+          "probability": 20,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Sootstone Search",
+          "nameEn": "Sootstone Search",
+          "level": "Guild★2",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Deliver 3 Sootstone Ores",
+          "probability": 20,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Heat Exhaustion",
+          "nameEn": "Heat Exhaustion",
+          "level": "Guild★3",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Deliver 3 Powderstones",
+          "probability": 20,
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "Velociprey",
+        "navMonster": ""
+      },
+      {
+        "name": "바살모스",
+        "navMonster": "바살모스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Crystal Clearing",
+        "nameJa": "",
+        "level": "Caravan★2",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 4 Sulfur Crystals",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Sootstone Search",
+        "nameJa": "",
+        "level": "Guild★2",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Deliver 3 Sootstone Ores",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Heat Exhaustion",
+        "nameJa": "",
+        "level": "Guild★3",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Deliver 3 Powderstones",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

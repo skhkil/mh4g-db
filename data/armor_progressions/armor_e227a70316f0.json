@@ -1,0 +1,222 @@
+{
+  "materials": [
+    {
+      "name": "키린 가죽",
+      "count": 5,
+      "nameJa": "キリンの皮",
+      "itemId": "item_mh4u_0933",
+      "mh4uId": 933,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "키린",
+          "navMonster": "키린",
+          "nameEn": "Kirin",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 70% · ×1",
+            "Shiny Drop · 20% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Research: Kirin",
+          "nameEn": "Research: Kirin",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay a Kirin",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: A Hero's Icy Test",
+          "nameEn": "Advanced: A Hero's Icy Test",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay an Oroshi Kirin",
+          "probability": 5,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "키린 갈기",
+      "count": 2,
+      "nameJa": "キリンのたてがみ",
+      "itemId": "item_mh4u_0936",
+      "mh4uId": 936,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "키린",
+          "navMonster": "키린",
+          "nameEn": "Kirin",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 30% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Research: Kirin",
+          "nameEn": "Research: Kirin",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay a Kirin",
+          "probability": 10,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: A Hero's Icy Test",
+          "nameEn": "Advanced: A Hero's Icy Test",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay an Oroshi Kirin",
+          "probability": 10,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "괴조 갑각",
+      "count": 3,
+      "nameJa": "怪鳥の甲殻",
+      "itemId": "item_mh4u_0432",
+      "mh4uId": 432,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "얀쿡크",
+          "navMonster": "얀쿡크",
+          "nameEn": "Yian Kut-Ku",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 50% · ×1",
+            "Capture · 33% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "뇌광충",
+      "count": 5,
+      "nameJa": "雷光虫",
+      "itemId": "item_221bb3fb3cd8",
+      "mh4uId": 263,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Egg-straction: Final Mission",
+          "nameEn": "Egg-straction: Final Mission",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 3 Wyven Eggs",
+          "probability": 16,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "The Stinking Seltas",
+          "nameEn": "The Stinking Seltas",
+          "level": "Caravan★2",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Seltas",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Bug Appétit",
+          "nameEn": "Bug Appétit",
+          "level": "Caravan★2",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Seltas",
+          "probability": 12,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "키린",
+        "navMonster": "키린"
+      },
+      {
+        "name": "얀쿡크",
+        "navMonster": "얀쿡크"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Research: Kirin",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay a Kirin",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: A Hero's Icy Test",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay an Oroshi Kirin",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Egg-straction: Final Mission",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 3 Wyven Eggs",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "The Stinking Seltas",
+        "nameJa": "",
+        "level": "Caravan★2",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Seltas",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Bug Appétit",
+        "nameJa": "",
+        "level": "Caravan★2",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Seltas",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

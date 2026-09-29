@@ -1,0 +1,383 @@
+{
+  "materials": [
+    {
+      "name": "흑굉룡 중갑각",
+      "count": 4,
+      "nameJa": "黒轟竜の重殻",
+      "itemId": "item_mh4u_0837",
+      "mh4uId": 837,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "티가렉스 아종",
+          "navMonster": "티가렉스 아종",
+          "nameEn": "Brute Tigrex",
+          "rank": "G급",
+          "methods": [
+            "Capture · 38% · ×1",
+            "Body Carve · 28% · ×1",
+            "Break Head · 20% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Hell Hunter Hoax",
+          "nameEn": "Advanced: Hell Hunter Hoax",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Tigrex and a Brute Tigrex",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Brute Force",
+          "nameEn": "Brute Force",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Brute Tigrex",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: A Black Day",
+          "nameEn": "Advanced: A Black Day",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Black Gravios and a Brute Tigrex",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "흑굉룡 두툼비늘",
+      "count": 6,
+      "nameJa": "黒轟竜の厚鱗",
+      "itemId": "item_mh4u_0835",
+      "mh4uId": 835,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "티가렉스 아종",
+          "navMonster": "티가렉스 아종",
+          "nameEn": "Brute Tigrex",
+          "rank": "G급",
+          "methods": [
+            "Tail Carve · 40% · ×1",
+            "Body Carve · 38% · ×1",
+            "Shiny Drop · 25% · ×1",
+            "Capture · 21% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Hell Hunter Hoax",
+          "nameEn": "Advanced: Hell Hunter Hoax",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Tigrex and a Brute Tigrex",
+          "probability": 30,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Brute Force",
+          "nameEn": "Brute Force",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Brute Tigrex",
+          "probability": 30,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: A Black Day",
+          "nameEn": "Advanced: A Black Day",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Black Gravios and a Brute Tigrex",
+          "probability": 30,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "용암룡 두툼비늘",
+          "requiredItemId": "item_mh4u_1191",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: Bolt of Pink",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "대룡옥",
+      "count": 1,
+      "nameJa": "大竜玉",
+      "itemId": "item_mh4u_0328",
+      "mh4uId": 328,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "극한상태 가라라아자라 아종",
+          "navMonster": "가라라아자라 아종",
+          "nameEn": "Apex Tidal Najarala",
+          "rank": "G급",
+          "methods": [
+            "Shiny Drop · 8% · ×1",
+            "Capture · 8% · ×1",
+            "Break Tail · 8% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "극한상태 디아블로스",
+          "navMonster": "디아블로스",
+          "nameEn": "Apex Diablos",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 8% · ×1",
+            "Tail Carve · 8% · ×1",
+            "Capture · 8% · ×1",
+            "Shiny Drop · 4% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "그라비모스",
+          "navMonster": "그라비모스",
+          "nameEn": "Gravios",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 7% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Rhapsody in Rime",
+          "nameEn": "Advanced: Rhapsody in Rime",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Tidal Najarala",
+          "probability": 15,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Tigrex In Effect",
+          "nameEn": "Advanced: Tigrex In Effect",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Tigrex",
+          "probability": 15,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Gravios Situation",
+          "nameEn": "Advanced: Gravios Situation",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Gravios",
+          "probability": 15,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "이오스 두툼가죽",
+      "count": 8,
+      "nameJa": "イーオスの厚皮",
+      "itemId": "item_mh4u_0416",
+      "mh4uId": 416,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "도스이오스",
+          "navMonster": "도스이오스",
+          "nameEn": "Iodrome",
+          "rank": "G급",
+          "methods": [
+            "Capture · 45% · ×2",
+            "Body Carve · 40% · ×1",
+            "Shiny Drop · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Bad Hair Day: Iodrome",
+          "nameEn": "Bad Hair Day: Iodrome",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt 2 Iodrome",
+          "probability": 45,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Harvest Tour: Primal Forest",
+          "nameEn": "Harvest Tour: Primal Forest",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+          "probability": 45,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Frenzied Trading",
+          "nameEn": "Advanced: Frenzied Trading",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 45,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "티가렉스 아종",
+        "navMonster": "티가렉스 아종"
+      },
+      {
+        "name": "극한상태 가라라아자라 아종",
+        "navMonster": "가라라아자라 아종"
+      },
+      {
+        "name": "극한상태 디아블로스",
+        "navMonster": "디아블로스"
+      },
+      {
+        "name": "그라비모스",
+        "navMonster": "그라비모스"
+      },
+      {
+        "name": "도스이오스",
+        "navMonster": "도스이오스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: Hell Hunter Hoax",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Tigrex and a Brute Tigrex",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Brute Force",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Brute Tigrex",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: A Black Day",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Black Gravios and a Brute Tigrex",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Rhapsody in Rime",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Tidal Najarala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Tigrex In Effect",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Tigrex",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Gravios Situation",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Gravios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Bad Hair Day: Iodrome",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt 2 Iodrome",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Harvest Tour: Primal Forest",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Frenzied Trading",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt all large monsters",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

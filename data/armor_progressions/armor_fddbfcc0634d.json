@@ -1,0 +1,339 @@
+{
+  "materials": [
+    {
+      "name": "도스이오스 가죽",
+      "count": 1,
+      "nameJa": "ドスイーオスの皮",
+      "itemId": "item_mh4u_0417",
+      "mh4uId": 417,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "도스이오스",
+          "navMonster": "도스이오스",
+          "nameEn": "Iodrome",
+          "rank": "하위",
+          "methods": [
+            "Capture · 56% · ×1",
+            "Body Carve · 48% · ×1",
+            "Break Head · 40% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Pick Your Poison",
+          "nameEn": "Pick Your Poison",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt an Iodrome",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Pick Your Poison",
+          "nameEn": "Pick Your Poison",
+          "level": "Guild★3",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt an Iodrome",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Afraid of the Dark",
+          "nameEn": "Advanced: Afraid of the Dark",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 22,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "이오스 독니",
+      "count": 5,
+      "nameJa": "イーオスの毒牙",
+      "itemId": "item_mh4u_0411",
+      "mh4uId": 411,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Ioprey",
+          "navMonster": "",
+          "nameEn": "Ioprey",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 47% · ×1",
+            "Body Carve · 25% · ×1",
+            "Body Carve · 15% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Pick Your Poison",
+          "nameEn": "Pick Your Poison",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt an Iodrome",
+          "probability": 25,
+          "count": 3
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Learning Experience",
+          "nameEn": "Learning Experience",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay 8 Ioprey",
+          "probability": 25,
+          "count": 3
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hunt-a-thon: Zinogre",
+          "nameEn": "Hunt-a-thon: Zinogre",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt 2 Zinogres before time expires or deliver a Paw Pass Ticket",
+          "probability": 25,
+          "count": 3
+        }
+      ]
+    },
+    {
+      "name": "이오스 비늘",
+      "count": 2,
+      "nameJa": "イーオスの鱗",
+      "itemId": "item_mh4u_0412",
+      "mh4uId": 412,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Ioprey",
+          "navMonster": "",
+          "nameEn": "Ioprey",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 38% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "도스이오스",
+          "navMonster": "도스이오스",
+          "nameEn": "Iodrome",
+          "rank": "하위",
+          "methods": [
+            "Shiny Drop · 25% · ×1",
+            "Body Carve · 15% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Pick Your Poison",
+          "nameEn": "Pick Your Poison",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt an Iodrome",
+          "probability": 22,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Learning Experience",
+          "nameEn": "Learning Experience",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay 8 Ioprey",
+          "probability": 22,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Ioprey In the Way",
+          "nameEn": "Ioprey In the Way",
+          "level": "Guild★3",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay 12 Ioprey",
+          "probability": 22,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "철광석",
+      "count": 2,
+      "nameJa": "鉄鉱石",
+      "itemId": "item_a86a937adb56",
+      "mh4uId": 203,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "게리오스",
+          "navMonster": "게리오스",
+          "nameEn": "Gypceros",
+          "rank": "하위",
+          "methods": [
+            "Break Head · 40% · ×2"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Crystal Clearing",
+          "nameEn": "Crystal Clearing",
+          "level": "Caravan★2",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 4 Sulfur Crystals",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Sootstone Search",
+          "nameEn": "Sootstone Search",
+          "level": "Guild★2",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Deliver 3 Sootstone Ores",
+          "probability": 25,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Chip Off the Old Blockade",
+          "nameEn": "Chip Off the Old Blockade",
+          "level": "Caravan★2",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay 8 Konchu",
+          "probability": 20,
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "도스이오스",
+        "navMonster": "도스이오스"
+      },
+      {
+        "name": "Ioprey",
+        "navMonster": ""
+      },
+      {
+        "name": "게리오스",
+        "navMonster": "게리오스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Pick Your Poison",
+        "nameJa": "",
+        "level": "Caravan★5",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt an Iodrome",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Afraid of the Dark",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt all large monsters",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Learning Experience",
+        "nameJa": "",
+        "level": "Caravan★5",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay 8 Ioprey",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Hunt-a-thon: Zinogre",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt 2 Zinogres before time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Ioprey In the Way",
+        "nameJa": "",
+        "level": "Guild★3",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay 12 Ioprey",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Crystal Clearing",
+        "nameJa": "",
+        "level": "Caravan★2",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 4 Sulfur Crystals",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Sootstone Search",
+        "nameJa": "",
+        "level": "Guild★2",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Deliver 3 Sootstone Ores",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Chip Off the Old Blockade",
+        "nameJa": "",
+        "level": "Caravan★2",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay 8 Konchu",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

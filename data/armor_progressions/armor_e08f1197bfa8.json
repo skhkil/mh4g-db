@@ -1,0 +1,309 @@
+{
+  "materials": [
+    {
+      "name": "굉룡 비늘",
+      "count": 4,
+      "nameJa": "轟竜の鱗",
+      "itemId": "item_mh4u_0817",
+      "mh4uId": 817,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "티가렉스",
+          "navMonster": "티가렉스",
+          "nameEn": "Tigrex",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 40% · ×1",
+            "Capture · 22% · ×1",
+            "Tail Carve · 20% · ×1",
+            "Shiny Drop · 20% · ×1",
+            "Body Carve · 8% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Ruler of the Frozen Seaway",
+          "nameEn": "Ruler of the Frozen Seaway",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Tigrex",
+          "probability": 25,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Tigrex Terror",
+          "nameEn": "Advanced: Tigrex Terror",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Tigrex",
+          "probability": 25,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Hell Hunters",
+          "nameEn": "Advanced: Hell Hunters",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt 2 Tigrex",
+          "probability": 25,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "용암룡 비늘",
+          "requiredItemId": "item_mh4u_1113",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: Shipping Out",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "굉룡 발톱",
+      "count": 5,
+      "nameJa": "轟竜の爪",
+      "itemId": "item_mh4u_0825",
+      "mh4uId": 825,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "티가렉스",
+          "navMonster": "티가렉스",
+          "nameEn": "Tigrex",
+          "rank": "하위",
+          "methods": [
+            "Break Claw · 80% · ×2",
+            "Body Carve · 37% · ×1",
+            "Break Claw · 20% · ×1",
+            "Break Claw · 20% · ×3",
+            "Shiny Drop · 5% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Ruler of the Frozen Seaway",
+          "nameEn": "Ruler of the Frozen Seaway",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Tigrex",
+          "probability": 14,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Tigrex Terror",
+          "nameEn": "Advanced: Tigrex Terror",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Tigrex",
+          "probability": 14,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Hell Hunters",
+          "nameEn": "Advanced: Hell Hunters",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt 2 Tigrex",
+          "probability": 14,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "굉룡 갑각",
+      "count": 3,
+      "nameJa": "轟竜の甲殻",
+      "itemId": "item_mh4u_0820",
+      "mh4uId": 820,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "티가렉스",
+          "navMonster": "티가렉스",
+          "nameEn": "Tigrex",
+          "rank": "하위",
+          "methods": [
+            "Break Head · 38% · ×1",
+            "Capture · 36% · ×1",
+            "Body Carve · 20% · ×1",
+            "Capture · 10% · ×2"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Ruler of the Frozen Seaway",
+          "nameEn": "Ruler of the Frozen Seaway",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Tigrex",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Tigrex Terror",
+          "nameEn": "Advanced: Tigrex Terror",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Tigrex",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Hell Hunters",
+          "nameEn": "Advanced: Hell Hunters",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt 2 Tigrex",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "구룡 가죽",
+      "count": 3,
+      "nameJa": "狗竜の皮",
+      "itemId": "item_mh4u_0388",
+      "mh4uId": 388,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "도스재기",
+          "navMonster": "도스재기",
+          "nameEn": "Great Jaggi",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 43% · ×1",
+            "Capture · 18% · ×1",
+            "Body Carve · 5% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Jaggi Alliance",
+          "nameEn": "Jaggi Alliance",
+          "level": "Caravan★2",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Great Jaggi",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Field Trip",
+          "nameEn": "Field Trip",
+          "level": "Guild★1",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Great Jaggi",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "청웅수 털",
+          "requiredItemId": "item_mh4u_1095",
+          "unlockQuestId": "",
+          "unlockQuest": "Swing into Action",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "티가렉스",
+        "navMonster": "티가렉스"
+      },
+      {
+        "name": "도스재기",
+        "navMonster": "도스재기"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Ruler of the Frozen Seaway",
+        "nameJa": "",
+        "level": "Caravan★5",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Tigrex",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Tigrex Terror",
+        "nameJa": "",
+        "level": "Caravan★5",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Tigrex",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Hell Hunters",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt 2 Tigrex",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Jaggi Alliance",
+        "nameJa": "",
+        "level": "Caravan★2",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Great Jaggi",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Field Trip",
+        "nameJa": "",
+        "level": "Guild★1",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Great Jaggi",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

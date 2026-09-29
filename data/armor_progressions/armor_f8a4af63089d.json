@@ -1,0 +1,273 @@
+{
+  "materials": [
+    {
+      "name": "흑랑조 비늘",
+      "count": 5,
+      "nameJa": "黒狼鳥の鱗",
+      "itemId": "item_mh4u_0455",
+      "mh4uId": 455,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "얀가루루가",
+          "navMonster": "얀가루루가",
+          "nameEn": "Yian Garuga",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 64% · ×1",
+            "Shiny Drop · 25% · ×1",
+            "Tail Carve · 20% · ×1",
+            "Break Beak · 20% · ×1",
+            "Break Ear · 20% · ×1",
+            "Tail Carve · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Research: Yian Garuga",
+          "nameEn": "Research: Yian Garuga",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Yian Garuga",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "흑랑조 갑각",
+      "count": 4,
+      "nameJa": "黒狼鳥の甲殻",
+      "itemId": "item_mh4u_0458",
+      "mh4uId": 458,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "얀가루루가",
+          "navMonster": "얀가루루가",
+          "nameEn": "Yian Garuga",
+          "rank": "하위",
+          "methods": [
+            "Capture · 90% · ×2",
+            "Body Carve · 28% · ×1",
+            "Break Talon · 20% · ×1",
+            "Break Back · 20% · ×1",
+            "Break Back · 10% · ×2"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Research: Yian Garuga",
+          "nameEn": "Research: Yian Garuga",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Yian Garuga",
+          "probability": 25,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "흑랑조 날개",
+      "count": 2,
+      "nameJa": "黒狼鳥の翼",
+      "itemId": "item_mh4u_0465",
+      "mh4uId": 465,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "얀가루루가",
+          "navMonster": "얀가루루가",
+          "nameEn": "Yian Garuga",
+          "rank": "하위",
+          "methods": [
+            "Break Talon · 80% · ×1",
+            "Break Talon · 50% · ×1",
+            "Break Talon · 35% · ×2",
+            "Body Carve · 3% · ×1",
+            "Body Carve · 1% · ×1",
+            "Shiny Drop · 1% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Research: Yian Garuga",
+          "nameEn": "Research: Yian Garuga",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Yian Garuga",
+          "probability": 8,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hunting Vicariously",
+          "nameEn": "Hunting Vicariously",
+          "level": "Caravan★9",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Yian Garuga",
+          "probability": 8,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "용골+",
+      "count": 1,
+      "nameJa": "上竜骨",
+      "itemId": "item_a4eda339a44c",
+      "mh4uId": 309,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "그라비모스",
+          "navMonster": "그라비모스",
+          "nameEn": "Gravios",
+          "rank": "하위",
+          "methods": [
+            "Break Back · 40% · ×1",
+            "Break Wing · 10% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "얀쿡크 아종",
+          "navMonster": "얀쿡크 아종",
+          "nameEn": "Blue Yian Kut-Ku",
+          "rank": "상위",
+          "methods": [
+            "Capture · 27% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "다이묘자자미",
+          "navMonster": "다이묘자자미",
+          "nameEn": "Daimyo Hermitaur",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 20% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Queen and Rook",
+          "nameEn": "Queen and Rook",
+          "level": "Guild★3",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Rathian and a Gravios",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hunters' Heaven",
+          "nameEn": "Hunters' Heaven",
+          "level": "Guild★3",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Tigrex and a Zinogre",
+          "probability": 100,
+          "count": 3
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Energy Crisis",
+          "nameEn": "Energy Crisis",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 5 Coals",
+          "probability": 18,
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "얀가루루가",
+        "navMonster": "얀가루루가"
+      },
+      {
+        "name": "그라비모스",
+        "navMonster": "그라비모스"
+      },
+      {
+        "name": "얀쿡크 아종",
+        "navMonster": "얀쿡크 아종"
+      },
+      {
+        "name": "다이묘자자미",
+        "navMonster": "다이묘자자미"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Research: Yian Garuga",
+        "nameJa": "",
+        "level": "Caravan★5",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Yian Garuga",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Hunting Vicariously",
+        "nameJa": "",
+        "level": "Caravan★9",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Yian Garuga",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Queen and Rook",
+        "nameJa": "",
+        "level": "Guild★3",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Rathian and a Gravios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Hunters' Heaven",
+        "nameJa": "",
+        "level": "Guild★3",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Tigrex and a Zinogre",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Energy Crisis",
+        "nameJa": "",
+        "level": "Caravan★5",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 5 Coals",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

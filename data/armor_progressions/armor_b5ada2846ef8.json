@@ -1,0 +1,165 @@
+{
+  "materials": [
+    {
+      "name": "잠구룡 중갑각",
+      "count": 3,
+      "nameJa": "潜口竜の重殻",
+      "itemId": "item_mh4u_1166",
+      "mh4uId": 1166,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "자화룡 두툼비늘",
+          "requiredItemId": "item_mh4u_0662",
+          "unlockQuestId": "quest_154770b228c6",
+          "unlockQuest": "고난도: 4개의 집게 공격!?",
+          "unlockLevel": "★1",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "찬란한 체액",
+      "count": 2,
+      "nameJa": "光り輝く体液",
+      "itemId": "item_mh4u_1167",
+      "mh4uId": 1167,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "자화룡 중갑각",
+          "requiredItemId": "item_mh4u_0665",
+          "unlockQuestId": "quest_154770b228c6",
+          "unlockQuest": "고난도: 4개의 집게 공격!?",
+          "unlockLevel": "★1",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "중후한 이빨",
+      "count": 3,
+      "nameJa": "重厚な牙",
+      "itemId": "item_mh4u_0373",
+      "mh4uId": 373,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "델쿠스",
+          "navMonster": "",
+          "nameEn": "Delex",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 70% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "쿤추",
+          "navMonster": "",
+          "nameEn": "Konchu",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 25% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "스쿠아길",
+          "navMonster": "",
+          "nameEn": "Zamite",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 25% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Moving Mountains",
+          "nameEn": "Advanced: Moving Mountains",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay Dah'ren Mohran or repel it",
+          "probability": 50,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Puffer Fish",
+          "nameEn": "Puffer Fish",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Zamtrios",
+          "probability": 15,
+          "count": 3
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "All-You-Can-Hunt Zamite",
+          "nameEn": "All-You-Can-Hunt Zamite",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay 25 Zamite",
+          "probability": 15,
+          "count": 3
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "델쿠스",
+        "navMonster": ""
+      },
+      {
+        "name": "쿤추",
+        "navMonster": ""
+      },
+      {
+        "name": "스쿠아길",
+        "navMonster": ""
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: Moving Mountains",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay Dah'ren Mohran or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Puffer Fish",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Zamtrios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "All-You-Can-Hunt Zamite",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay 25 Zamite",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

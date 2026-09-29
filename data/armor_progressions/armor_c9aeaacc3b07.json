@@ -1,0 +1,225 @@
+{
+  "materials": [
+    {
+      "name": "옥랑룡 강뿔",
+      "count": 3,
+      "nameJa": "獄狼竜の剛角",
+      "itemId": "item_mh4u_0758",
+      "mh4uId": 758,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "진오우거 아종",
+          "navMonster": "진오우거 아종",
+          "nameEn": "Stygian Zinogre",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 76% · ×1",
+            "Break Head · 10% · ×2"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "옥랑룡 멸룡털",
+      "count": 4,
+      "nameJa": "獄狼竜の滅龍毛",
+      "itemId": "item_mh4u_0767",
+      "mh4uId": 767,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "진오우거 아종",
+          "navMonster": "진오우거 아종",
+          "nameEn": "Stygian Zinogre",
+          "rank": "G급",
+          "methods": [
+            "Break Back · 30% · ×1",
+            "Capture · 27% · ×1",
+            "Body Carve · 24% · ×1",
+            "Shiny Drop · 10% · ×1",
+            "Bug-Catching Back · 10% · ×1",
+            "Tail Carve · 9% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Mountain Rescue",
+          "nameEn": "Mountain Rescue",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Stygian Zinogre",
+          "probability": 22,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Fire Drill",
+          "nameEn": "Fire Drill",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Brachydios and a Stygian Zinogre",
+          "probability": 22,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "옥랑룡 중갑각",
+      "count": 3,
+      "nameJa": "獄狼竜の重殻",
+      "itemId": "item_mh4u_0756",
+      "mh4uId": 756,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "진오우거 아종",
+          "navMonster": "진오우거 아종",
+          "nameEn": "Stygian Zinogre",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 44% · ×1",
+            "Shiny Drop · 28% · ×1",
+            "Tail Carve · 20% · ×1",
+            "Break Head · 11% · ×1",
+            "Capture · 10% · ×2",
+            "Break Back · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Mountain Rescue",
+          "nameEn": "Mountain Rescue",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Stygian Zinogre",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Fire Drill",
+          "nameEn": "Fire Drill",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Brachydios and a Stygian Zinogre",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Into the Heavens",
+          "nameEn": "Into the Heavens",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Stygian Zinogre and Gore Magala",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "코스모라이트광석",
+      "count": 3,
+      "nameJa": "コスモライト鉱石",
+      "itemId": "item_b64ad25cc204",
+      "mh4uId": 221,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "다라·아마듈라",
+          "navMonster": "다라·아마듈라",
+          "nameEn": "Dalamadur",
+          "rank": "G급",
+          "methods": [
+            "Mining Scale · 12% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "다라·아마듈라 아종",
+          "navMonster": "다라·아마듈라 아종",
+          "nameEn": "Shah Dalamadur",
+          "rank": "G급",
+          "methods": [
+            "Mining Scale · 12% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "우캄루바스",
+          "navMonster": "우캄루바스",
+          "nameEn": "Ukanlos",
+          "rank": "G급",
+          "methods": [
+            "Shiny Drop · 8% · ×1"
+          ]
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "진오우거 아종",
+        "navMonster": "진오우거 아종"
+      },
+      {
+        "name": "다라·아마듈라",
+        "navMonster": "다라·아마듈라"
+      },
+      {
+        "name": "다라·아마듈라 아종",
+        "navMonster": "다라·아마듈라 아종"
+      },
+      {
+        "name": "우캄루바스",
+        "navMonster": "우캄루바스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Mountain Rescue",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Stygian Zinogre",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Fire Drill",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Brachydios and a Stygian Zinogre",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Into the Heavens",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Stygian Zinogre and Gore Magala",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

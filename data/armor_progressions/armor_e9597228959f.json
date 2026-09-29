@@ -1,0 +1,290 @@
+{
+  "materials": [
+    {
+      "name": "쇄룡 초강철주먹",
+      "count": 2,
+      "nameJa": "砕竜の剛鉄拳",
+      "itemId": "item_mh4u_0783",
+      "mh4uId": 783,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "브라키디오스",
+          "navMonster": "브라키디오스",
+          "nameEn": "Brachydios",
+          "rank": "G급",
+          "methods": [
+            "Break Front Leg · 59% · ×1",
+            "Capture · 20% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "쇄룡 질긴꼬리",
+      "count": 1,
+      "nameJa": "砕竜の靭尾",
+      "itemId": "item_mh4u_0785",
+      "mh4uId": 785,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "임계 브라키디오스",
+          "navMonster": "임계 브라키디오스",
+          "nameEn": "Raging Brachydios",
+          "rank": "G급",
+          "methods": [
+            "Tail Carve · 70% · ×1",
+            "Capture · 10% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "브라키디오스",
+          "navMonster": "브라키디오스",
+          "nameEn": "Brachydios",
+          "rank": "G급",
+          "methods": [
+            "Tail Carve · 60% · ×1",
+            "Capture · 9% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "쇄룡 중갑각",
+      "count": 4,
+      "nameJa": "砕竜の重殻",
+      "itemId": "item_mh4u_0772",
+      "mh4uId": 772,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "브라키디오스",
+          "navMonster": "브라키디오스",
+          "nameEn": "Brachydios",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 42% · ×1",
+            "Capture · 24% · ×1",
+            "Break Head · 24% · ×1",
+            "Shiny Drop · 15% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "임계 브라키디오스",
+          "navMonster": "임계 브라키디오스",
+          "nameEn": "Raging Brachydios",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 42% · ×1",
+            "Capture · 24% · ×1",
+            "Break Head · 24% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Fire Drill",
+          "nameEn": "Fire Drill",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Brachydios and a Stygian Zinogre",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Fire and Ice",
+          "nameEn": "Fire and Ice",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Brachydios",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Lab Partners",
+          "nameEn": "Advanced: Lab Partners",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Brachydios and an Azure Rathalos",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "퓨어크리스털",
+      "count": 1,
+      "nameJa": "ピュアクリスタル",
+      "itemId": "item_d689931faa86",
+      "mh4uId": 222,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "키린",
+          "navMonster": "키린",
+          "nameEn": "Kirin",
+          "rank": "G급",
+          "methods": [
+            "Shiny Drop · 50% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "키린 아종",
+          "navMonster": "키린 아종",
+          "nameEn": "Oroshi Kirin",
+          "rank": "G급",
+          "methods": [
+            "Shiny Drop · 50% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "게리오스",
+          "navMonster": "게리오스",
+          "nameEn": "Gypceros",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 8% · ×1",
+            "Break Head · 7% · ×1",
+            "Shiny Drop · 5% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: A Final Battle Cry",
+          "nameEn": "Advanced: A Final Battle Cry",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Fatalis or repel it",
+          "probability": 15,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Icy Shadow",
+          "nameEn": "Icy Shadow",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Khezu",
+          "probability": 5,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Puffer Fish",
+          "nameEn": "Puffer Fish",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Zamtrios",
+          "probability": 5,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "브라키디오스",
+        "navMonster": "브라키디오스"
+      },
+      {
+        "name": "임계 브라키디오스",
+        "navMonster": "임계 브라키디오스"
+      },
+      {
+        "name": "키린",
+        "navMonster": "키린"
+      },
+      {
+        "name": "키린 아종",
+        "navMonster": "키린 아종"
+      },
+      {
+        "name": "게리오스",
+        "navMonster": "게리오스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Fire Drill",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Brachydios and a Stygian Zinogre",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Fire and Ice",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Brachydios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Lab Partners",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Brachydios and an Azure Rathalos",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: A Final Battle Cry",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Fatalis or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Icy Shadow",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Khezu",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Puffer Fish",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Zamtrios",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

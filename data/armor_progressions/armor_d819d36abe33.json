@@ -1,0 +1,167 @@
+{
+  "materials": [
+    {
+      "name": "용암룡 지느러미",
+      "count": 2,
+      "nameJa": "溶岩竜の鱗",
+      "itemId": "item_mh4u_1114",
+      "mh4uId": 1114,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "굉룡 이빨",
+          "requiredItemId": "item_mh4u_0828",
+          "unlockQuestId": "quest_10e8277ac568",
+          "unlockQuest": "고난도: 하늘을 누비고 오라",
+          "unlockLevel": "★6",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "용암룡 비늘",
+      "count": 3,
+      "nameJa": "溶岩竜のヒレ",
+      "itemId": "item_mh4u_1113",
+      "mh4uId": 1113,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "굉룡 비늘",
+          "requiredItemId": "item_mh4u_0817",
+          "unlockQuestId": "quest_10e8277ac568",
+          "unlockQuest": "고난도: 하늘을 누비고 오라",
+          "unlockLevel": "★6",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "화염주머니",
+      "count": 2,
+      "nameJa": "火炎袋",
+      "itemId": "item_mh4u_0339",
+      "mh4uId": 339,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "그라비모스",
+          "navMonster": "그라비모스",
+          "nameEn": "Gravios",
+          "rank": "하위",
+          "methods": [
+            "Capture · 41% · ×2",
+            "Body Carve · 12% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "얀쿡크",
+          "navMonster": "얀쿡크",
+          "nameEn": "Yian Kut-Ku",
+          "rank": "하위",
+          "methods": [
+            "Capture · 20% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "리오레이아",
+          "navMonster": "리오레이아",
+          "nameEn": "Rathian",
+          "rank": "하위",
+          "methods": [
+            "Capture · 20% · ×1",
+            "Body Carve · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Egg-straction: Wyvern",
+          "nameEn": "Egg-straction: Wyvern",
+          "level": "Caravan★4",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 2 Wyvem Eggs",
+          "probability": 15,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Troverian Trouble",
+          "nameEn": "Troverian Trouble",
+          "level": "Caravan★4",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Rathian",
+          "probability": 15,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Two Live Crew",
+          "nameEn": "Two Live Crew",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Rathian and a Rathalos",
+          "probability": 15,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "그라비모스",
+        "navMonster": "그라비모스"
+      },
+      {
+        "name": "얀쿡크",
+        "navMonster": "얀쿡크"
+      },
+      {
+        "name": "리오레이아",
+        "navMonster": "리오레이아"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Egg-straction: Wyvern",
+        "nameJa": "",
+        "level": "Caravan★4",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 2 Wyvem Eggs",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Troverian Trouble",
+        "nameJa": "",
+        "level": "Caravan★4",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Rathian",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Two Live Crew",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Rathian and a Rathalos",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

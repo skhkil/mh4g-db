@@ -1,0 +1,248 @@
+{
+  "materials": [
+    {
+      "name": "쇄룡 강철주먹",
+      "count": 2,
+      "nameJa": "砕竜の剛拳",
+      "itemId": "item_mh4u_0782",
+      "mh4uId": 782,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "브라키디오스",
+          "navMonster": "브라키디오스",
+          "nameEn": "Brachydios",
+          "rank": "상위",
+          "methods": [
+            "Break Front Leg · 59% · ×1",
+            "Capture · 20% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Bad Hair Day: Brachydios",
+          "nameEn": "Bad Hair Day: Brachydios",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Brachydios",
+          "probability": 10,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "쇄룡 꼬리",
+      "count": 1,
+      "nameJa": "砕竜の尻尾",
+      "itemId": "item_mh4u_0784",
+      "mh4uId": 784,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "브라키디오스",
+          "navMonster": "브라키디오스",
+          "nameEn": "Brachydios",
+          "rank": "하위",
+          "methods": [
+            "Tail Carve · 68% · ×1",
+            "Tail Carve · 60% · ×1",
+            "Capture · 10% · ×1",
+            "Capture · 9% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "쇄룡 견갑각",
+      "count": 4,
+      "nameJa": "砕竜の堅殻",
+      "itemId": "item_mh4u_0771",
+      "mh4uId": 771,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "브라키디오스",
+          "navMonster": "브라키디오스",
+          "nameEn": "Brachydios",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 42% · ×1",
+            "Capture · 24% · ×1",
+            "Break Head · 24% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Glacier's Bane",
+          "nameEn": "Advanced: Glacier's Bane",
+          "level": "Caravan★9",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Brachydios",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Brimstone and Brachydios",
+          "nameEn": "Brimstone and Brachydios",
+          "level": "Guild★6",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Brachydios",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Bag a Brachydios",
+          "nameEn": "Advanced: Bag a Brachydios",
+          "level": "Guild★6",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Capture a Brachydios",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "쇄룡 보옥",
+      "count": 1,
+      "nameJa": "砕竜の宝玉",
+      "itemId": "item_mh4u_0787",
+      "mh4uId": 787,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "브라키디오스",
+          "navMonster": "브라키디오스",
+          "nameEn": "Brachydios",
+          "rank": "G급",
+          "methods": [
+            "Tail Carve · 5% · ×1",
+            "Capture · 5% · ×1",
+            "Tail Carve · 3% · ×1",
+            "Shiny Drop · 3% · ×1",
+            "Body Carve · 2% · ×1",
+            "Capture · 2% · ×1",
+            "Shiny Drop · 1% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Lab Partners",
+          "nameEn": "Advanced: Lab Partners",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Brachydios and an Azure Rathalos",
+          "probability": 5,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Bad Hair Day: Brachydios",
+          "nameEn": "Bad Hair Day: Brachydios",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Brachydios",
+          "probability": 3,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Fire Drill",
+          "nameEn": "Fire Drill",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Brachydios and a Stygian Zinogre",
+          "probability": 3,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "브라키디오스",
+        "navMonster": "브라키디오스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Bad Hair Day: Brachydios",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Brachydios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Glacier's Bane",
+        "nameJa": "",
+        "level": "Caravan★9",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Brachydios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Brimstone and Brachydios",
+        "nameJa": "",
+        "level": "Guild★6",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Brachydios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Bag a Brachydios",
+        "nameJa": "",
+        "level": "Guild★6",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Capture a Brachydios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Lab Partners",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Brachydios and an Azure Rathalos",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Fire Drill",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Brachydios and a Stygian Zinogre",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

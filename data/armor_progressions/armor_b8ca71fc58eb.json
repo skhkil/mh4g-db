@@ -1,0 +1,361 @@
+{
+  "materials": [
+    {
+      "name": "교사룡 두툼가죽",
+      "count": 6,
+      "nameJa": "絞蛇竜の厚皮",
+      "itemId": "item_mh4u_0572",
+      "mh4uId": 572,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "가라라아자라",
+          "navMonster": "가라라아자라",
+          "nameEn": "Najarala",
+          "rank": "G급",
+          "methods": [
+            "Break Tail · 37% · ×1",
+            "Break Back Leg · 30% · ×1",
+            "Body Carve · 25% · ×1",
+            "Capture · 16% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Serpentine Samba",
+          "nameEn": "Serpentine Samba",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Najarala",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Frenzied Trading",
+          "nameEn": "Advanced: Frenzied Trading",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 6,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "빙아룡 두툼모피",
+          "requiredItemId": "item_mh4u_1170",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: Frenzied Trading",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "교사룡 중소리갑각",
+      "count": 5,
+      "nameJa": "絞蛇竜の重鳴甲",
+      "itemId": "item_mh4u_0577",
+      "mh4uId": 577,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "가라라아자라",
+          "navMonster": "가라라아자라",
+          "nameEn": "Najarala",
+          "rank": "G급",
+          "methods": [
+            "Break Tail · 58% · ×1",
+            "Break Back · 56% · ×1",
+            "Shiny Drop · 30% · ×1",
+            "Capture · 16% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Serpentine Samba",
+          "nameEn": "Serpentine Samba",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Najarala",
+          "probability": 15,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Frenzied Trading",
+          "nameEn": "Advanced: Frenzied Trading",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 6,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "호박색중이빨",
+          "requiredItemId": "item_mh4u_1169",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: Frenzied Trading",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "교사룡 가죽+",
+      "count": 3,
+      "nameJa": "絞蛇竜の上皮",
+      "itemId": "item_mh4u_0571",
+      "mh4uId": 571,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "가라라아자라",
+          "navMonster": "가라라아자라",
+          "nameEn": "Najarala",
+          "rank": "상위",
+          "methods": [
+            "Break Tail · 37% · ×1",
+            "Break Back Leg · 30% · ×1",
+            "Body Carve · 25% · ×1",
+            "Capture · 14% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Fear Factor",
+          "nameEn": "Fear Factor",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Najarala",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hunt-a-thon: Najarala",
+          "nameEn": "Hunt-a-thon: Najarala",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt 2 Najarala before time expires or deliver a Paw Pass Ticket",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Writer's Block",
+          "nameEn": "Writer's Block",
+          "level": "Guild★5",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Najarala and a Rathian",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "빙아룡 모피+",
+          "requiredItemId": "item_mh4u_1129",
+          "unlockQuestId": "",
+          "unlockQuest": "Trader in Trouble",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "강력마비주머니",
+      "count": 3,
+      "nameJa": "強力麻痺袋",
+      "itemId": "item_mh4u_0336",
+      "mh4uId": 336,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "가라라아자라",
+          "navMonster": "가라라아자라",
+          "nameEn": "Najarala",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 60% · ×1",
+            "Body Carve · 20% · ×1",
+            "Capture · 15% · ×2"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "네르스큐라 아종",
+          "navMonster": "네르스큐라 아종",
+          "nameEn": "Shrouded Nerscylla",
+          "rank": "G급",
+          "methods": [
+            "Capture · 20% · ×1",
+            "Body Carve · 14% · ×1",
+            "Shiny Drop · 10% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "자보아자길 아종",
+          "navMonster": "자보아자길 아종",
+          "nameEn": "Tigerstripe Zamtrios",
+          "rank": "G급",
+          "methods": [
+            "Capture · 20% · ×1",
+            "Body Carve · 16% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Wasteland Warrior",
+          "nameEn": "Wasteland Warrior",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Desert Seltas",
+          "probability": 16,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Sculptural Seltas",
+          "nameEn": "Sculptural Seltas",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Desert Seltas",
+          "probability": 16,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Bug-Be-Gone",
+          "nameEn": "Advanced: Bug-Be-Gone",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Seltas and a Desert Seltas",
+          "probability": 16,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "가라라아자라",
+        "navMonster": "가라라아자라"
+      },
+      {
+        "name": "네르스큐라 아종",
+        "navMonster": "네르스큐라 아종"
+      },
+      {
+        "name": "자보아자길 아종",
+        "navMonster": "자보아자길 아종"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Serpentine Samba",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Najarala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Frenzied Trading",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt all large monsters",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Fear Factor",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Najarala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Hunt-a-thon: Najarala",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt 2 Najarala before time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Writer's Block",
+        "nameJa": "",
+        "level": "Guild★5",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Najarala and a Rathian",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Wasteland Warrior",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Desert Seltas",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Sculptural Seltas",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Desert Seltas",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Bug-Be-Gone",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Seltas and a Desert Seltas",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

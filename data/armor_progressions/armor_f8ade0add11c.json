@@ -1,0 +1,229 @@
+{
+  "materials": [
+    {
+      "name": "붕룡 분쇄턱",
+      "count": 1,
+      "nameJa": "崩竜の削顎",
+      "itemId": "item_mh4u_1145",
+      "mh4uId": 1145,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "우캄루바스",
+          "navMonster": "우캄루바스",
+          "nameEn": "Ukanlos",
+          "rank": "상위",
+          "methods": [
+            "Break Head · 85% · ×1",
+            "Body Carve · 8% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Glacial Grinder",
+          "nameEn": "Advanced: Glacial Grinder",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay an Ukanlos",
+          "probability": 10,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "희망의 증표",
+          "requiredItemId": "item_0d03c7de5e2a",
+          "unlockQuestId": "quest_40e711339d0b",
+          "unlockQuest": "고난도: 미쳐 날뛰는 아캄토름",
+          "unlockLevel": "★7",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "붕룡 견갑각",
+      "count": 2,
+      "nameJa": "崩竜の堅殻",
+      "itemId": "item_mh4u_1146",
+      "mh4uId": 1146,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "우캄루바스",
+          "navMonster": "우캄루바스",
+          "nameEn": "Ukanlos",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 40% · ×1",
+            "Break Belly · 24% · ×1",
+            "Shiny Drop · 18% · ×1",
+            "Break Back · 15% · ×1",
+            "Tail Carve · 10% · ×1",
+            "Break Front Leg · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Glacial Grinder",
+          "nameEn": "Advanced: Glacial Grinder",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay an Ukanlos",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "패룡 견갑각",
+          "requiredItemId": "item_mh4u_0999",
+          "unlockQuestId": "quest_40e711339d0b",
+          "unlockQuest": "고난도: 미쳐 날뛰는 아캄토름",
+          "unlockLevel": "★7",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "용옥",
+      "count": 5,
+      "nameJa": "竜玉",
+      "itemId": "item_mh4u_0327",
+      "mh4uId": 327,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "그라비모스",
+          "navMonster": "그라비모스",
+          "nameEn": "Gravios",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 7% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "그라비모스 아종",
+          "navMonster": "그라비모스 아종",
+          "nameEn": "Black Gravios",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 7% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "모노블로스",
+          "navMonster": "모노블로스",
+          "nameEn": "Monoblos",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 5% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Primal Forest M.I.A.",
+          "nameEn": "Primal Forest M.I.A.",
+          "level": "Guild★5",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 7,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Dance with Dragons",
+          "nameEn": "Advanced: Dance with Dragons",
+          "level": "Guild★6",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 7,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hammer It Home",
+          "nameEn": "Hammer It Home",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Gravios",
+          "probability": 5,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "우캄루바스",
+        "navMonster": "우캄루바스"
+      },
+      {
+        "name": "그라비모스",
+        "navMonster": "그라비모스"
+      },
+      {
+        "name": "그라비모스 아종",
+        "navMonster": "그라비모스 아종"
+      },
+      {
+        "name": "모노블로스",
+        "navMonster": "모노블로스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: Glacial Grinder",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay an Ukanlos",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Primal Forest M.I.A.",
+        "nameJa": "",
+        "level": "Guild★5",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt all large monsters",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Dance with Dragons",
+        "nameJa": "",
+        "level": "Guild★6",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt all large monsters",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Hammer It Home",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Gravios",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

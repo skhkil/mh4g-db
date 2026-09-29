@@ -1,4 +1,4 @@
-const DATA_VERSION = "0.7.7-chat4-research2-hotfix15";
+const DATA_VERSION = "0.7.7-chat4-research2-hotfix16";
 
 const FULL_FILES = {
   skills:"./data/skills.json",
@@ -77,6 +77,14 @@ export function loadSimulatorData(){
 
 export function loadFullData(keys=FULL_DATA_KEYS){
   return loadMap(FULL_FILES,keys);
+}
+
+
+export async function loadArmorProgression(armorId){
+  const key=String(armorId||"").trim();
+  if(!key) return null;
+  const x=await fetchJson(`armorProgression:${key}`,`./data/armor_progressions/${encodeURIComponent(key)}.json`);
+  return (x&&typeof x==="object"&&!Array.isArray(x))?x:null;
 }
 
 export async function loadItemReference(itemId){

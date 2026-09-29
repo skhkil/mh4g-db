@@ -1,0 +1,123 @@
+{
+  "materials": [
+    {
+      "name": "몬헌부가입신청서",
+      "count": 3,
+      "nameJa": "モンハン部入部届",
+      "itemId": "item_e33f29c86f57",
+      "mh4uId": 1352,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "event-low-002",
+          "name": "몬헌부: 가브라스 소탕전",
+          "nameEn": "Fan Club: Remobra Removal",
+          "level": "★2",
+          "questType": "event",
+          "location": "격투장",
+          "objective": "가브라스 12마리 토벌",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "익사룡 가죽",
+      "count": 6,
+      "nameJa": "翼蛇竜の皮",
+      "itemId": "item_mh4u_0378",
+      "mh4uId": 378,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Remobra",
+          "navMonster": "",
+          "nameEn": "Remobra",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 56% · ×1",
+            "Body Carve · 5% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Remobra Remedy",
+          "nameEn": "Remobra Remedy",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay 6 Remobras",
+          "probability": 32,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Mistentoe Delivery",
+          "nameEn": "Mistentoe Delivery",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 5 Mistentoe",
+          "probability": 32,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Remobra Remedy",
+          "nameEn": "Remobra Remedy",
+          "level": "Guild★3",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay 7 Remobras",
+          "probability": 32,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "Remobra",
+        "navMonster": ""
+      }
+    ],
+    "quests": [
+      {
+        "id": "event-low-002",
+        "name": "몬헌부: 가브라스 소탕전",
+        "nameJa": "",
+        "level": "★2",
+        "questType": "event",
+        "location": "격투장",
+        "objective": "가브라스 12마리 토벌",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Remobra Remedy",
+        "nameJa": "",
+        "level": "Caravan★5",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay 6 Remobras",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Mistentoe Delivery",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 5 Mistentoe",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

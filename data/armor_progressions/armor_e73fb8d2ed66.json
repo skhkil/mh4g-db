@@ -1,0 +1,393 @@
+{
+  "materials": [
+    {
+      "name": "게네포스 비늘+",
+      "count": 3,
+      "nameJa": "ゲネポスの上鱗",
+      "itemId": "item_mh4u_0405",
+      "mh4uId": 405,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Genprey",
+          "navMonster": "",
+          "nameEn": "Genprey",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 40% · ×1",
+            "Body Carve · 25% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "도스게네포스",
+          "navMonster": "도스게네포스",
+          "nameEn": "Gendrome",
+          "rank": "상위",
+          "methods": [
+            "Capture · 30% · ×2",
+            "Body Carve · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Lumber Support",
+          "nameEn": "Lumber Support",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Kecha Wacha",
+          "probability": 22,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Harvest Tour: Dunes (Day)",
+          "nameEn": "Harvest Tour: Dunes (Day)",
+          "level": "Caravan★7",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+          "probability": 11,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Dinner Guests",
+          "nameEn": "Dinner Guests",
+          "level": "Caravan★7",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Great Jaggi and a Gendrome",
+          "probability": 11,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "게네포스 가죽+",
+      "count": 4,
+      "nameJa": "ゲネポスの上皮",
+      "itemId": "item_mh4u_0407",
+      "mh4uId": 407,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Genprey",
+          "navMonster": "",
+          "nameEn": "Genprey",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 35% · ×1",
+            "Body Carve · 15% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "도스게네포스",
+          "navMonster": "도스게네포스",
+          "nameEn": "Gendrome",
+          "rank": "상위",
+          "methods": [
+            "Capture · 34% · ×2",
+            "Body Carve · 7% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Lumber Support",
+          "nameEn": "Lumber Support",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Kecha Wacha",
+          "probability": 25,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Harvest Tour: Dunes (Day)",
+          "nameEn": "Harvest Tour: Dunes (Day)",
+          "level": "Caravan★7",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+          "probability": 13,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Dinner Guests",
+          "nameEn": "Dinner Guests",
+          "level": "Caravan★7",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Great Jaggi and a Gendrome",
+          "probability": 13,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "카브레라이트광석",
+      "count": 2,
+      "nameJa": "カブレライト鉱石",
+      "itemId": "item_6f1301567966",
+      "mh4uId": 213,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "바살모스 아종",
+          "navMonster": "바살모스 아종",
+          "nameEn": "Ruby Basarios",
+          "rank": "상위",
+          "methods": [
+            "Mining Ore · 50% · ×1",
+            "Tail Carve · 40% · ×1",
+            "Break Back · 40% · ×2",
+            "Capture · 36% · ×1",
+            "Break Belly · 30% · ×2",
+            "Body Carve · 25% · ×1",
+            "Mining Back · 25% · ×1",
+            "Break Belly · 25% · ×1",
+            "Shiny Drop · 20% · ×1",
+            "Tail Carve · 20% · ×1",
+            "Mining Ore · 20% · ×1",
+            "Capture · 14% · ×1",
+            "Mining Back · 10% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "게리오스",
+          "navMonster": "게리오스",
+          "nameEn": "Gypceros",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 43% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "바살모스",
+          "navMonster": "바살모스",
+          "nameEn": "Basarios",
+          "rank": "상위",
+          "methods": [
+            "Tail Carve · 40% · ×1",
+            "Break Back · 40% · ×2",
+            "Capture · 36% · ×1",
+            "Break Belly · 30% · ×2",
+            "Body Carve · 25% · ×1",
+            "Break Belly · 25% · ×1",
+            "Mining Back · 25% · ×1",
+            "Shiny Drop · 20% · ×1",
+            "Tail Carve · 20% · ×1",
+            "Capture · 14% · ×2",
+            "Mining Back · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Meteoric Prize",
+          "nameEn": "Meteoric Prize",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 1 Meteor Chunk",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Splendid Sootstone",
+          "nameEn": "Splendid Sootstone",
+          "level": "Guild★4",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Deliver 4 Sootstone Ores",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Take a Powderstone",
+          "nameEn": "Take a Powderstone",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 1 Powderstone",
+          "probability": 16,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "도스게네포스 머리",
+      "count": 1,
+      "nameJa": "ドスゲネポスの頭",
+      "itemId": "item_mh4u_0410",
+      "mh4uId": 410,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "도스게네포스",
+          "navMonster": "도스게네포스",
+          "nameEn": "Gendrome",
+          "rank": "상위",
+          "methods": [
+            "Break Head · 15% · ×1",
+            "Break Head · 11% · ×1",
+            "Capture · 8% · ×1",
+            "Body Carve · 7% · ×1",
+            "Capture · 5% · ×1",
+            "Body Carve · 2% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Harvest Tour: Dunes (Day)",
+          "nameEn": "Harvest Tour: Dunes (Day)",
+          "level": "Caravan★7",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+          "probability": 10,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Dinner Guests",
+          "nameEn": "Dinner Guests",
+          "level": "Caravan★7",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Great Jaggi and a Gendrome",
+          "probability": 10,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Dastardly Duo",
+          "nameEn": "Dastardly Duo",
+          "level": "Guild★4",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Gendrome and a Tetsucabra",
+          "probability": 10,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "Genprey",
+        "navMonster": ""
+      },
+      {
+        "name": "도스게네포스",
+        "navMonster": "도스게네포스"
+      },
+      {
+        "name": "바살모스 아종",
+        "navMonster": "바살모스 아종"
+      },
+      {
+        "name": "게리오스",
+        "navMonster": "게리오스"
+      },
+      {
+        "name": "바살모스",
+        "navMonster": "바살모스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Lumber Support",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Kecha Wacha",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Harvest Tour: Dunes (Day)",
+        "nameJa": "",
+        "level": "Caravan★7",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Dinner Guests",
+        "nameJa": "",
+        "level": "Caravan★7",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Great Jaggi and a Gendrome",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Meteoric Prize",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 1 Meteor Chunk",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Splendid Sootstone",
+        "nameJa": "",
+        "level": "Guild★4",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Deliver 4 Sootstone Ores",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Take a Powderstone",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 1 Powderstone",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Dastardly Duo",
+        "nameJa": "",
+        "level": "Guild★4",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Gendrome and a Tetsucabra",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

@@ -1,0 +1,161 @@
+{
+  "materials": [
+    {
+      "name": "수괴수 발톱",
+      "count": 2,
+      "nameJa": "水獣の爪",
+      "itemId": "item_mh4u_1096",
+      "mh4uId": 1096,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "도스람포스 발톱",
+          "requiredItemId": "item_mh4u_0399",
+          "unlockQuestId": "quest_e7f591833ab9",
+          "unlockQuest": "못된 악동 기원호를 수렵하라",
+          "unlockLevel": "★3",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "람포스 비늘",
+      "count": 3,
+      "nameJa": "ランポスの鱗",
+      "itemId": "item_mh4u_0394",
+      "mh4uId": 394,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Velociprey",
+          "navMonster": "",
+          "nameEn": "Velociprey",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 29% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "도스람포스",
+          "navMonster": "도스람포스",
+          "nameEn": "Velocidrome",
+          "rank": "하위",
+          "methods": [
+            "Shiny Drop · 25% · ×1",
+            "Body Carve · 15% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "해면질 가죽",
+      "count": 2,
+      "nameJa": "海綿質の皮",
+      "itemId": "item_mh4u_1097",
+      "mh4uId": 1097,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "도스람포스 가죽",
+          "requiredItemId": "item_mh4u_0398",
+          "unlockQuestId": "quest_e7f591833ab9",
+          "unlockQuest": "못된 악동 기원호를 수렵하라",
+          "unlockLevel": "★3",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "끈적뚜기",
+      "count": 3,
+      "nameJa": "のりこねバッタ",
+      "itemId": "item_b0cf7cb3f2bf",
+      "mh4uId": 264,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Crystal Clearing",
+          "nameEn": "Crystal Clearing",
+          "level": "Caravan★2",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 4 Sulfur Crystals",
+          "probability": 6,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Bug Appétit",
+          "nameEn": "Bug Appétit",
+          "level": "Caravan★2",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Seltas",
+          "probability": 6,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Boulder-bash",
+          "nameEn": "Boulder-bash",
+          "level": "Caravan★3",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Tetsucabra",
+          "probability": 6,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "Velociprey",
+        "navMonster": ""
+      },
+      {
+        "name": "도스람포스",
+        "navMonster": "도스람포스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Crystal Clearing",
+        "nameJa": "",
+        "level": "Caravan★2",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 4 Sulfur Crystals",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Bug Appétit",
+        "nameJa": "",
+        "level": "Caravan★2",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Seltas",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Boulder-bash",
+        "nameJa": "",
+        "level": "Caravan★3",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Tetsucabra",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

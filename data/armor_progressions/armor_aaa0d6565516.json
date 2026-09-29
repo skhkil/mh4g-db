@@ -1,0 +1,177 @@
+{
+  "materials": [
+    {
+      "name": "아룡코인",
+      "count": 2,
+      "nameJa": "牙竜のコイン",
+      "itemId": "item_a1f229c21aa4",
+      "mh4uId": 1333,
+      "sources": [
+        {
+          "type": "arena",
+          "name": "Grudge Match: S. Zinogre",
+          "level": "투기대회",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "수렵왕코인",
+      "count": 3,
+      "nameJa": "狩猟王のコイン",
+      "itemId": "item_629fff406671",
+      "mh4uId": 1324,
+      "sources": [
+        {
+          "type": "arena",
+          "name": "Grudge Match: Zamtrios",
+          "level": "투기대회",
+          "probability": 35,
+          "count": 1
+        },
+        {
+          "type": "arena",
+          "name": "Grudge Match: Brute Tigrex",
+          "level": "투기대회",
+          "probability": 35,
+          "count": 1
+        },
+        {
+          "type": "arena",
+          "name": "Grudge Match: S. Zinogre",
+          "level": "투기대회",
+          "probability": 35,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "대지의 용옥",
+      "count": 1,
+      "nameJa": "大地の龍玉",
+      "itemId": "item_mh4u_0995",
+      "mh4uId": 995,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "다렌·모란",
+          "navMonster": "다렌·모란",
+          "nameEn": "Dah'ren Mohran",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 4% · ×1",
+            "Break Horn · 4% · ×1",
+            "Body Carve · 3% · ×1",
+            "Break Horn · 2% · ×1",
+            "Mouth Carve · 2% · ×1",
+            "Mouth Carve · 1% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Moving Mountains",
+          "nameEn": "Advanced: Moving Mountains",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay Dah'ren Mohran or repel it",
+          "probability": 6,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: More Mohran",
+          "nameEn": "Advanced: More Mohran",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Dah'ren Mohran or repel it",
+          "probability": 5,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Shipping Out",
+          "nameEn": "Advanced: Shipping Out",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay Dah'ren Mohran or repel it",
+          "probability": 3,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "노산룡 뿔",
+          "requiredItemId": "item_mh4u_1119",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: Shipping Out",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "다렌·모란",
+        "navMonster": "다렌·모란"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: Moving Mountains",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay Dah'ren Mohran or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: More Mohran",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay Dah'ren Mohran or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Shipping Out",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay Dah'ren Mohran or repel it",
+        "note": ""
+      }
+    ],
+    "arena": [
+      {
+        "name": "Grudge Match: S. Zinogre",
+        "level": "투기대회",
+        "probability": 100
+      },
+      {
+        "name": "Grudge Match: Zamtrios",
+        "level": "투기대회",
+        "probability": 35
+      },
+      {
+        "name": "Grudge Match: Brute Tigrex",
+        "level": "투기대회",
+        "probability": 35
+      }
+    ]
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

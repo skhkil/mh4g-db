@@ -1,0 +1,346 @@
+{
+  "materials": [
+    {
+      "name": "중갑충 견갑각",
+      "count": 6,
+      "nameJa": "重甲虫の堅殻",
+      "itemId": "item_mh4u_0616",
+      "mh4uId": 616,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "게넬·셀타스",
+          "navMonster": "게넬·셀타스",
+          "nameEn": "Seltas Queen",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 42% · ×1",
+            "Break Tail · 32% · ×1",
+            "Shiny Drop · 25% · ×1",
+            "Break Leg · 25% · ×1",
+            "Capture · 18% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Ladykiller",
+          "nameEn": "Ladykiller",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Seltas Queen",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Risky Research",
+          "nameEn": "Advanced: Risky Research",
+          "level": "Caravan★9",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Rathalos and a Seltas Queen",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Queen's Academy",
+          "nameEn": "Queen's Academy",
+          "level": "Guild★5",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Seltas Queen",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "중갑충 예리발톱",
+      "count": 2,
+      "nameJa": "重甲虫の鋭爪",
+      "itemId": "item_mh4u_0622",
+      "mh4uId": 622,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "게넬·셀타스",
+          "navMonster": "게넬·셀타스",
+          "nameEn": "Seltas Queen",
+          "rank": "상위",
+          "methods": [
+            "Break Leg · 65% · ×1",
+            "Break Claw · 60% · ×1",
+            "Body Carve · 10% · ×1",
+            "Capture · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Ladykiller",
+          "nameEn": "Ladykiller",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Seltas Queen",
+          "probability": 11,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Risky Research",
+          "nameEn": "Advanced: Risky Research",
+          "level": "Caravan★9",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Rathalos and a Seltas Queen",
+          "probability": 11,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Queen's Academy",
+          "nameEn": "Queen's Academy",
+          "level": "Guild★5",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Seltas Queen",
+          "probability": 11,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "중갑충 견흉갑각",
+      "count": 5,
+      "nameJa": "重甲虫の堅胸殻",
+      "itemId": "item_mh4u_0619",
+      "mh4uId": 619,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "게넬·셀타스",
+          "navMonster": "게넬·셀타스",
+          "nameEn": "Seltas Queen",
+          "rank": "상위",
+          "methods": [
+            "Break Claw · 40% · ×1",
+            "Capture · 38% · ×1",
+            "Body Carve · 34% · ×1",
+            "Break Head · 21% · ×1",
+            "Break Leg · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Ladykiller",
+          "nameEn": "Ladykiller",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Seltas Queen",
+          "probability": 23,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Risky Research",
+          "nameEn": "Advanced: Risky Research",
+          "level": "Caravan★9",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Rathalos and a Seltas Queen",
+          "probability": 23,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Queen's Academy",
+          "nameEn": "Queen's Academy",
+          "level": "Guild★5",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Seltas Queen",
+          "probability": 23,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "몬스터의 농즙",
+      "count": 6,
+      "nameJa": "モンスターの濃汁",
+      "itemId": "item_mh4u_0601",
+      "mh4uId": 601,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Altaroth",
+          "navMonster": "",
+          "nameEn": "Altaroth",
+          "rank": "상위",
+          "methods": [
+            "Shiny Drop (Gray) · 20% · ×1",
+            "Body Carve · 15% · ×1",
+            "Shiny Drop (Blue) · 10% · ×1",
+            "Shiny Drop (Orange) · 10% · ×1",
+            "Shiny Drop (Green) · 10% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "Bnahabra",
+          "navMonster": "",
+          "nameEn": "Bnahabra",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 20% · ×1",
+            "Body Carve · 10% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "아르셀타스",
+          "navMonster": "아르셀타스",
+          "nameEn": "Seltas",
+          "rank": "상위",
+          "methods": [
+            "Shiny Drop · 20% · ×1",
+            "Capture · 10% · ×1",
+            "Capture · 5% · ×2"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Bnahabra Buffet",
+          "nameEn": "Bnahabra Buffet",
+          "level": "Caravan★7",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay 12 Bnahabra",
+          "probability": 21,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Bnahabra Bloodbath",
+          "nameEn": "Bnahabra Bloodbath",
+          "level": "Guild★4",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay 20 Bnahabra",
+          "probability": 21,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Purse Snatcher",
+          "nameEn": "Purse Snatcher",
+          "level": "Caravan★7",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Purple Gypceros",
+          "probability": 20,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "게넬·셀타스",
+        "navMonster": "게넬·셀타스"
+      },
+      {
+        "name": "Altaroth",
+        "navMonster": ""
+      },
+      {
+        "name": "Bnahabra",
+        "navMonster": ""
+      },
+      {
+        "name": "아르셀타스",
+        "navMonster": "아르셀타스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Ladykiller",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Seltas Queen",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Risky Research",
+        "nameJa": "",
+        "level": "Caravan★9",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Rathalos and a Seltas Queen",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Queen's Academy",
+        "nameJa": "",
+        "level": "Guild★5",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Seltas Queen",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Bnahabra Buffet",
+        "nameJa": "",
+        "level": "Caravan★7",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay 12 Bnahabra",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Bnahabra Bloodbath",
+        "nameJa": "",
+        "level": "Guild★4",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay 20 Bnahabra",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Purse Snatcher",
+        "nameJa": "",
+        "level": "Caravan★7",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Purple Gypceros",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

@@ -1,0 +1,352 @@
+{
+  "materials": [
+    {
+      "name": "뇌랑룡 첨예발톱",
+      "count": 5,
+      "nameJa": "雷狼竜の尖爪",
+      "itemId": "item_mh4u_0745",
+      "mh4uId": 745,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "진오우거",
+          "navMonster": "진오우거",
+          "nameEn": "Zinogre",
+          "rank": "상위",
+          "methods": [
+            "Break Front Leg · 71% · ×1",
+            "Capture · 20% · ×1",
+            "Break Front Leg · 17% · ×2",
+            "Body Carve · 15% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "See the Lightning",
+          "nameEn": "See the Lightning",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Zinogre",
+          "probability": 14,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hunt-a-thon: Zinogre",
+          "nameEn": "Hunt-a-thon: Zinogre",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt 2 Zinogres before time expires or deliver a Paw Pass Ticket",
+          "probability": 14,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Thunder and Stone",
+          "nameEn": "Thunder and Stone",
+          "level": "Caravan★9",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Zinogre and a Gravios",
+          "probability": 14,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "풍아룡 예리발톱",
+          "requiredItemId": "item_mh4u_1157",
+          "unlockQuestId": "",
+          "unlockQuest": "Thunder and Stone",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "뇌랑룡 전기갑각+",
+      "count": 4,
+      "nameJa": "雷狼竜の高電殻",
+      "itemId": "item_mh4u_0750",
+      "mh4uId": 750,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "진오우거",
+          "navMonster": "진오우거",
+          "nameEn": "Zinogre",
+          "rank": "상위",
+          "methods": [
+            "Break Back · 60% · ×1",
+            "Capture · 28% · ×1",
+            "Body Carve · 13% · ×1",
+            "Break Front Leg · 12% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "See the Lightning",
+          "nameEn": "See the Lightning",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Zinogre",
+          "probability": 16,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hunt-a-thon: Zinogre",
+          "nameEn": "Hunt-a-thon: Zinogre",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt 2 Zinogres before time expires or deliver a Paw Pass Ticket",
+          "probability": 16,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Thunder and Stone",
+          "nameEn": "Thunder and Stone",
+          "level": "Caravan★9",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Zinogre and a Gravios",
+          "probability": 16,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "뇌랑룡 전기털",
+      "count": 3,
+      "nameJa": "雷狼竜の帯電毛",
+      "itemId": "item_mh4u_0738",
+      "mh4uId": 738,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "진오우거",
+          "navMonster": "진오우거",
+          "nameEn": "Zinogre",
+          "rank": "하위",
+          "methods": [
+            "Capture · 30% · ×1",
+            "Break Back · 30% · ×1",
+            "Body Carve · 20% · ×1",
+            "Bug-Catching Back · 10% · ×1",
+            "Tail Carve · 8% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Uncorner the Market",
+          "nameEn": "Uncorner the Market",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Rathalos and a Zinogre",
+          "probability": 26,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Zinogre Zone",
+          "nameEn": "Zinogre Zone",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Zinogre",
+          "probability": 26,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Howling for Blood",
+          "nameEn": "Advanced: Howling for Blood",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Zinogre",
+          "probability": 26,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "철갑충 견갑각",
+      "count": 6,
+      "nameJa": "徹甲虫の堅殻",
+      "itemId": "item_mh4u_0604",
+      "mh4uId": 604,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "아르셀타스",
+          "navMonster": "아르셀타스",
+          "nameEn": "Seltas",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 60% · ×1",
+            "Break Horn · 25% · ×1",
+            "Capture · 20% · ×1",
+            "Body Carve · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Catch and Release",
+          "nameEn": "Catch and Release",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Capture a Seltas",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Primal Pests",
+          "nameEn": "Primal Pests",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt an Iodrome and a Seltas",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Seltas Romance",
+          "nameEn": "Seltas Romance",
+          "level": "Guild★4",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt 2 Seltas",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "진오우거",
+        "navMonster": "진오우거"
+      },
+      {
+        "name": "아르셀타스",
+        "navMonster": "아르셀타스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "See the Lightning",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Zinogre",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Hunt-a-thon: Zinogre",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt 2 Zinogres before time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Thunder and Stone",
+        "nameJa": "",
+        "level": "Caravan★9",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Zinogre and a Gravios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Uncorner the Market",
+        "nameJa": "",
+        "level": "Caravan★5",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Rathalos and a Zinogre",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Zinogre Zone",
+        "nameJa": "",
+        "level": "Caravan★5",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Zinogre",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Howling for Blood",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Zinogre",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Catch and Release",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Capture a Seltas",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Primal Pests",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt an Iodrome and a Seltas",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Seltas Romance",
+        "nameJa": "",
+        "level": "Guild★4",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt 2 Seltas",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

@@ -1,0 +1,287 @@
+{
+  "materials": [
+    {
+      "name": "사황룡 두툼미비늘",
+      "count": 4,
+      "nameJa": "蛇帝龍の厚尾鱗",
+      "itemId": "item_mh4u_1067",
+      "mh4uId": 1067,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "다라·아마듈라 아종",
+          "navMonster": "다라·아마듈라 아종",
+          "nameEn": "Shah Dalamadur",
+          "rank": "G급",
+          "methods": [
+            "Lower Body Carve · 46% · ×1",
+            "Break Back Leg · 45% · ×1",
+            "Break Tail · 20% · ×2"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Eternal Emperor",
+          "nameEn": "Advanced: Eternal Emperor",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Shah Dalamadur",
+          "probability": 30,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "사황룡 큰부채비늘",
+      "count": 3,
+      "nameJa": "蛇帝龍の大扇刃",
+      "itemId": "item_mh4u_1073",
+      "mh4uId": 1073,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "다라·아마듈라 아종",
+          "navMonster": "다라·아마듈라 아종",
+          "nameEn": "Shah Dalamadur",
+          "rank": "G급",
+          "methods": [
+            "Break Back · 72% · ×1",
+            "Break Back · 2% · ×2"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "천검의 용옥",
+      "count": 1,
+      "nameJa": "天剣の龍玉",
+      "itemId": "item_mh4u_1063",
+      "mh4uId": 1063,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "다라·아마듈라",
+          "navMonster": "다라·아마듈라",
+          "nameEn": "Dalamadur",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 8% · ×1",
+            "Break Back · 6% · ×1",
+            "Break Head · 5% · ×1",
+            "Lower Body Carve · 5% · ×1",
+            "Break Back · 4% · ×1",
+            "Upper Body Carve · 4% · ×1",
+            "Lower Body Carve · 3% · ×1",
+            "Tail Carve · 3% · ×1",
+            "Upper Body Carve · 2% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "다라·아마듈라 아종",
+          "navMonster": "다라·아마듈라 아종",
+          "nameEn": "Shah Dalamadur",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 8% · ×1",
+            "Break Back · 6% · ×1",
+            "Lower Body Carve · 5% · ×1",
+            "Upper Body Carve · 4% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Eternal Emperor",
+          "nameEn": "Advanced: Eternal Emperor",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Shah Dalamadur",
+          "probability": 5,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Here to Eternity",
+          "nameEn": "Advanced: Here to Eternity",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Dalamadur",
+          "probability": 4,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Speartip Menace",
+          "nameEn": "Advanced: Speartip Menace",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Dalamadur",
+          "probability": 2,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "하늘을 관통할 뿔",
+          "requiredItemId": "item_mh4u_1156",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: Here to Eternity",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "하룡 가죽++",
+      "count": 6,
+      "nameJa": "霞龍の特上皮",
+      "itemId": "item_mh4u_0978",
+      "mh4uId": 978,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "오나즈치",
+          "navMonster": "오나즈치",
+          "nameEn": "Chameleos",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 40% · ×1",
+            "Break Wing · 40% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Into the Mist",
+          "nameEn": "Into the Mist",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay a Chameleos or repel it",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Elder Dragon of Mist",
+          "nameEn": "Advanced: Elder Dragon of Mist",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay a Chameleos or repel it",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: A Formless Fiend",
+          "nameEn": "Advanced: A Formless Fiend",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Chameleos or repel it",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "태고의 용이끼",
+          "requiredItemId": "item_mh4u_1198",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: Misty Challenge",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "다라·아마듈라 아종",
+        "navMonster": "다라·아마듈라 아종"
+      },
+      {
+        "name": "다라·아마듈라",
+        "navMonster": "다라·아마듈라"
+      },
+      {
+        "name": "오나즈치",
+        "navMonster": "오나즈치"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: Eternal Emperor",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay Shah Dalamadur",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Here to Eternity",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay Dalamadur",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Speartip Menace",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay Dalamadur",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Into the Mist",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay a Chameleos or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Elder Dragon of Mist",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay a Chameleos or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: A Formless Fiend",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Chameleos or repel it",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

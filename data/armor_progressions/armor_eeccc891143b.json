@@ -1,0 +1,151 @@
+{
+  "materials": [
+    {
+      "name": "황흑룡 역린",
+      "count": 2,
+      "nameJa": "煌黒龍の逆鱗",
+      "itemId": "item_mh4u_1154",
+      "mh4uId": 1154,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "사왕룡 꼬리비늘",
+          "requiredItemId": "item_mh4u_1049",
+          "unlockQuestId": "quest_020561836e5b",
+          "unlockQuest": "고난도: 천고불후를 읊는 왕",
+          "unlockLevel": "★7",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "황흑룡 익막",
+      "count": 3,
+      "nameJa": "煌黒龍の翼膜",
+      "itemId": "item_mh4u_1155",
+      "mh4uId": 1155,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "사왕룡 예안",
+          "requiredItemId": "item_mh4u_1051",
+          "unlockQuestId": "quest_020561836e5b",
+          "unlockQuest": "고난도: 천고불후를 읊는 왕",
+          "unlockLevel": "★7",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "패룡 보옥",
+      "count": 1,
+      "nameJa": "覇竜の宝玉",
+      "itemId": "item_mh4u_1009",
+      "mh4uId": 1009,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "아캄토름",
+          "navMonster": "아캄토름",
+          "nameEn": "Akantor",
+          "rank": "G급",
+          "methods": [
+            "Break Belly · 8% · ×1",
+            "Break Belly · 6% · ×1",
+            "Break Head · 6% · ×1",
+            "Break Head · 4% · ×1",
+            "Body Carve · 4% · ×1",
+            "Body Carve · 2% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Dark Domination",
+          "nameEn": "Advanced: Dark Domination",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay an Akantor",
+          "probability": 5,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Stand Tall",
+          "nameEn": "Advanced: Stand Tall",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay an Akantor",
+          "probability": 3,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Grim Tidings",
+          "nameEn": "Advanced: Grim Tidings",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay an Akantor",
+          "probability": 3,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "붕룡 보옥",
+          "requiredItemId": "item_mh4u_1147",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: Akantor Coup",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "아캄토름",
+        "navMonster": "아캄토름"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: Dark Domination",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay an Akantor",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Stand Tall",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay an Akantor",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Grim Tidings",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay an Akantor",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

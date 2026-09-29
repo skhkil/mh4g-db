@@ -1,0 +1,371 @@
+{
+  "materials": [
+    {
+      "name": "여신의 포옹",
+      "count": 2,
+      "nameJa": "",
+      "itemId": "",
+      "mh4uId": null,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "event-g-061",
+          "name": "신들의 황혼",
+          "nameJa": "",
+          "nameEn": "Twilight of the Gods",
+          "level": "G★3",
+          "questType": "event",
+          "location": "격투장",
+          "objective": "극한 상태 디아블로스 1마리 수렵",
+          "note": "여신의 포옹 보수"
+        }
+      ]
+    },
+    {
+      "name": "금사자 흑황모",
+      "count": 3,
+      "nameJa": "",
+      "itemId": "item_mh4u_0512",
+      "mh4uId": 512,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "라잔",
+          "navMonster": "라잔",
+          "nameEn": "Rajang",
+          "rank": "G급",
+          "methods": [
+            "Capture · 44% · ×1",
+            "Body Carve · 27% · ×1",
+            "Shiny Drop · 21% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "극한상태 라잔",
+          "navMonster": "라잔",
+          "nameEn": "Apex Rajang",
+          "rank": "G급",
+          "methods": [
+            "Capture · 42% · ×1",
+            "Body Carve · 26% · ×1",
+            "Shiny Drop · 21% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "격앙 라잔",
+          "navMonster": "격앙 라잔",
+          "nameEn": "Furious Rajang",
+          "rank": "G급",
+          "methods": [
+            "Capture · 33% · ×1",
+            "Body Carve · 20% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Beyond Brawn",
+          "nameEn": "Advanced: Beyond Brawn",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Rajang",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Operation Lionheart",
+          "nameEn": "Operation Lionheart",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Rajang",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Fur Fixation",
+          "nameEn": "Advanced: Fur Fixation",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Rajang",
+          "probability": 30,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "봉산룡 중암갑각",
+          "requiredItemId": "item_mh4u_1200",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: The Scathing Shore",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "금사자 강발톱",
+      "count": 4,
+      "nameJa": "",
+      "itemId": "item_mh4u_0514",
+      "mh4uId": 514,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "라잔",
+          "navMonster": "라잔",
+          "nameEn": "Rajang",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 21% · ×1",
+            "Capture · 16% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "극한상태 라잔",
+          "navMonster": "라잔",
+          "nameEn": "Apex Rajang",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 20% · ×1",
+            "Capture · 16% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "격앙 라잔",
+          "navMonster": "격앙 라잔",
+          "nameEn": "Furious Rajang",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 16% · ×1",
+            "Capture · 12% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Beyond Brawn",
+          "nameEn": "Advanced: Beyond Brawn",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Rajang",
+          "probability": 55,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Operation Lionheart",
+          "nameEn": "Operation Lionheart",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Rajang",
+          "probability": 55,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Fur Fixation",
+          "nameEn": "Advanced: Fur Fixation",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Rajang",
+          "probability": 30,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "퓨어크리스털",
+      "count": 2,
+      "nameJa": "",
+      "itemId": "item_d689931faa86",
+      "mh4uId": 222,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "키린",
+          "navMonster": "키린",
+          "nameEn": "Kirin",
+          "rank": "G급",
+          "methods": [
+            "Shiny Drop · 50% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "키린 아종",
+          "navMonster": "키린 아종",
+          "nameEn": "Oroshi Kirin",
+          "rank": "G급",
+          "methods": [
+            "Shiny Drop · 50% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "게리오스",
+          "navMonster": "게리오스",
+          "nameEn": "Gypceros",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 8% · ×1",
+            "Break Head · 7% · ×1",
+            "Shiny Drop · 5% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: A Final Battle Cry",
+          "nameEn": "Advanced: A Final Battle Cry",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Fatalis or repel it",
+          "probability": 15,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Icy Shadow",
+          "nameEn": "Icy Shadow",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Khezu",
+          "probability": 5,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Puffer Fish",
+          "nameEn": "Puffer Fish",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Zamtrios",
+          "probability": 5,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "라잔",
+        "navMonster": "라잔"
+      },
+      {
+        "name": "극한상태 라잔",
+        "navMonster": "라잔"
+      },
+      {
+        "name": "격앙 라잔",
+        "navMonster": "격앙 라잔"
+      },
+      {
+        "name": "키린",
+        "navMonster": "키린"
+      },
+      {
+        "name": "키린 아종",
+        "navMonster": "키린 아종"
+      },
+      {
+        "name": "게리오스",
+        "navMonster": "게리오스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "event-g-061",
+        "name": "신들의 황혼",
+        "nameJa": "",
+        "level": "G★3",
+        "questType": "event",
+        "location": "격투장",
+        "objective": "극한 상태 디아블로스 1마리 수렵",
+        "note": "여신의 포옹 보수"
+      },
+      {
+        "id": "",
+        "name": "Advanced: Beyond Brawn",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Rajang",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Operation Lionheart",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Rajang",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Fur Fixation",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Rajang",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: A Final Battle Cry",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Fatalis or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Icy Shadow",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Khezu",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Puffer Fish",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Zamtrios",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

@@ -1,0 +1,164 @@
+{
+  "materials": [
+    {
+      "name": "도스사슴호랑나비",
+      "count": 2,
+      "nameJa": "ドスクワアゲハ",
+      "itemId": "item_84fa2a59dd99",
+      "mh4uId": 272,
+      "sources": [
+        {
+          "type": "acquire",
+          "label": "바람의 헌터 보수"
+        }
+      ]
+    },
+    {
+      "name": "코스모라이트광석",
+      "count": 1,
+      "nameJa": "コスモライト鉱石",
+      "itemId": "item_b64ad25cc204",
+      "mh4uId": 221,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "다라·아마듈라",
+          "navMonster": "다라·아마듈라",
+          "nameEn": "Dalamadur",
+          "rank": "G급",
+          "methods": [
+            "Mining Scale · 12% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "다라·아마듈라 아종",
+          "navMonster": "다라·아마듈라 아종",
+          "nameEn": "Shah Dalamadur",
+          "rank": "G급",
+          "methods": [
+            "Mining Scale · 12% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "우캄루바스",
+          "navMonster": "우캄루바스",
+          "nameEn": "Ukanlos",
+          "rank": "G급",
+          "methods": [
+            "Shiny Drop · 8% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "환상나비",
+      "count": 2,
+      "nameJa": "マボロシチョウ",
+      "itemId": "item_4f2838814bcb",
+      "mh4uId": 270,
+      "sources": [
+        {
+          "type": "acquire",
+          "label": "채집"
+        }
+      ]
+    },
+    {
+      "name": "끈적뚜기",
+      "count": 15,
+      "nameJa": "のりこねバッタ",
+      "itemId": "item_b0cf7cb3f2bf",
+      "mh4uId": 264,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Crystal Clearing",
+          "nameEn": "Crystal Clearing",
+          "level": "Caravan★2",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 4 Sulfur Crystals",
+          "probability": 6,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Bug Appétit",
+          "nameEn": "Bug Appétit",
+          "level": "Caravan★2",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Seltas",
+          "probability": 6,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Boulder-bash",
+          "nameEn": "Boulder-bash",
+          "level": "Caravan★3",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Tetsucabra",
+          "probability": 6,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "다라·아마듈라",
+        "navMonster": "다라·아마듈라"
+      },
+      {
+        "name": "다라·아마듈라 아종",
+        "navMonster": "다라·아마듈라 아종"
+      },
+      {
+        "name": "우캄루바스",
+        "navMonster": "우캄루바스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Crystal Clearing",
+        "nameJa": "",
+        "level": "Caravan★2",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 4 Sulfur Crystals",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Bug Appétit",
+        "nameJa": "",
+        "level": "Caravan★2",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Seltas",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Boulder-bash",
+        "nameJa": "",
+        "level": "Caravan★3",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Tetsucabra",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

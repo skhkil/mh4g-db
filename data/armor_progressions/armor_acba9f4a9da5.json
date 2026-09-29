@@ -1,0 +1,155 @@
+{
+  "materials": [
+    {
+      "name": "페이크카탈로그",
+      "count": 1,
+      "nameJa": "フェイクカタログ",
+      "itemId": "item_62e61b69b78d",
+      "mh4uId": 1394,
+      "sources": [
+        {
+          "type": "acquire",
+          "label": "이벤트 퀘스트 보수"
+        }
+      ]
+    },
+    {
+      "name": "대장로티켓",
+      "count": 2,
+      "nameJa": "大長老チケット",
+      "itemId": "item_64f8e301f2c3",
+      "mh4uId": 1442,
+      "sources": [
+        {
+          "type": "acquire",
+          "label": "이벤트 퀘스트 보수"
+        }
+      ]
+    },
+    {
+      "name": "초식룡 중골",
+      "count": 3,
+      "nameJa": "草食竜の重骨",
+      "itemId": "item_mh4u_0362",
+      "mh4uId": 362,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Rhenoplos",
+          "navMonster": "",
+          "nameEn": "Rhenoplos",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 50% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "Apceros",
+          "navMonster": "",
+          "nameEn": "Apceros",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 50% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "Slagtoth",
+          "navMonster": "",
+          "nameEn": "Slagtoth",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 20% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Pink Problems",
+          "nameEn": "Pink Problems",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt 2 Pink Rathians",
+          "probability": 35,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Death and Taxidermy",
+          "nameEn": "Death and Taxidermy",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Capture a Nerscylla",
+          "probability": 10,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "How to Zap Your Zinogre",
+          "nameEn": "How to Zap Your Zinogre",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Zinogre",
+          "probability": 10,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "Rhenoplos",
+        "navMonster": ""
+      },
+      {
+        "name": "Apceros",
+        "navMonster": ""
+      },
+      {
+        "name": "Slagtoth",
+        "navMonster": ""
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Pink Problems",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt 2 Pink Rathians",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Death and Taxidermy",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Capture a Nerscylla",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "How to Zap Your Zinogre",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Zinogre",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

@@ -1,0 +1,265 @@
+{
+  "materials": [
+    {
+      "name": "강욕티켓",
+      "count": 2,
+      "nameJa": "強欲チケット",
+      "itemId": "item_mh4u_1379",
+      "mh4uId": 1379,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "event-g-076",
+          "name": "극한의 포식자",
+          "nameJa": "喰慾の極限",
+          "nameEn": "The Apex Predator",
+          "level": "G★3",
+          "questType": "event",
+          "location": "원생림",
+          "objective": "이블조 1마리 수렵",
+          "note": "GX그리드 제작 핵심 티켓"
+        }
+      ]
+    },
+    {
+      "name": "혈전의 칠흑가죽",
+      "count": 5,
+      "nameJa": "血戦の漆黒皮",
+      "itemId": "item_mh4u_0929",
+      "mh4uId": 929,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "광폭 이블조",
+          "navMonster": "광폭 이블조",
+          "nameEn": "Savage Deviljho",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 32% · ×1",
+            "Tail Carve · 15% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "공폭룡 두툼흑가죽",
+      "count": 8,
+      "nameJa": "恐暴竜の厚黒皮",
+      "itemId": "item_mh4u_0917",
+      "mh4uId": 917,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "이블조",
+          "navMonster": "이블조",
+          "nameEn": "Deviljho",
+          "rank": "G급",
+          "methods": [
+            "Capture · 36% · ×1",
+            "Body Carve · 28% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "극한상태 이블조",
+          "navMonster": "이블조",
+          "nameEn": "Apex Deviljho",
+          "rank": "G급",
+          "methods": [
+            "Capture · 36% · ×1",
+            "Body Carve · 28% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "광폭 이블조",
+          "navMonster": "광폭 이블조",
+          "nameEn": "Savage Deviljho",
+          "rank": "G급",
+          "methods": [
+            "Capture · 20% · ×1",
+            "Body Carve · 18% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: The Master's Test",
+          "nameEn": "Advanced: The Master's Test",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 10,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "고룡의 대보옥",
+      "count": 1,
+      "nameJa": "古龍の大宝玉",
+      "itemId": "item_mh4u_0330",
+      "mh4uId": 330,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "크샬다오라",
+          "navMonster": "크샬다오라",
+          "nameEn": "Kushala Daora",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 4% · ×1",
+            "Shiny Drop · 3% · ×1",
+            "Body Carve · 2% · ×1",
+            "Tail Carve · 2% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "테오·테스카토르",
+          "navMonster": "테오·테스카토르",
+          "nameEn": "Teostra",
+          "rank": "G급",
+          "methods": [
+            "Shiny Drop · 4% · ×1",
+            "Tail Carve · 3% · ×1",
+            "Body Carve · 2% · ×1",
+            "Break Head · 2% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "녹슨크샬다오라",
+          "navMonster": "녹슨크샬다오라",
+          "nameEn": "Rusted Kushala Daora",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 3% · ×1",
+            "Break Head · 3% · ×1",
+            "Tail Carve · 2% · ×1",
+            "Shiny Drop · 2% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: A Formless Fiend",
+          "nameEn": "Advanced: A Formless Fiend",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Chameleos or repel it",
+          "probability": 5,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Misty Challenge",
+          "nameEn": "Advanced: Misty Challenge",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Chameleos or repel it",
+          "probability": 5,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: A Storm of Steel",
+          "nameEn": "Advanced: A Storm of Steel",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Kushala Daora or repel it",
+          "probability": 5,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "광폭 이블조",
+        "navMonster": "광폭 이블조"
+      },
+      {
+        "name": "이블조",
+        "navMonster": "이블조"
+      },
+      {
+        "name": "극한상태 이블조",
+        "navMonster": "이블조"
+      },
+      {
+        "name": "크샬다오라",
+        "navMonster": "크샬다오라"
+      },
+      {
+        "name": "테오·테스카토르",
+        "navMonster": "테오·테스카토르"
+      },
+      {
+        "name": "녹슨크샬다오라",
+        "navMonster": "녹슨크샬다오라"
+      }
+    ],
+    "quests": [
+      {
+        "id": "event-g-076",
+        "name": "극한의 포식자",
+        "nameJa": "喰慾の極限",
+        "level": "G★3",
+        "questType": "event",
+        "location": "원생림",
+        "objective": "이블조 1마리 수렵",
+        "note": "GX그리드 제작 핵심 티켓"
+      },
+      {
+        "id": "",
+        "name": "Advanced: The Master's Test",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt all large monsters",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: A Formless Fiend",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Chameleos or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Misty Challenge",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Chameleos or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: A Storm of Steel",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Kushala Daora or repel it",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

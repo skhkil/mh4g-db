@@ -1,0 +1,332 @@
+{
+  "materials": [
+    {
+      "name": "공폭룡 갈고리발톱",
+      "count": 4,
+      "nameJa": "恐暴竜の鉤爪",
+      "itemId": "item_mh4u_0920",
+      "mh4uId": 920,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "광폭 이블조",
+          "navMonster": "광폭 이블조",
+          "nameEn": "Savage Deviljho",
+          "rank": "상위",
+          "methods": [
+            "Shiny Drop · 42% · ×1",
+            "Capture · 15% · ×1",
+            "Body Carve · 12% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "이블조",
+          "navMonster": "이블조",
+          "nameEn": "Deviljho",
+          "rank": "상위",
+          "methods": [
+            "Shiny Drop · 34% · ×1",
+            "Body Carve · 20% · ×1",
+            "Capture · 20% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Tyrant's Maw",
+          "nameEn": "Advanced: Tyrant's Maw",
+          "level": "Caravan★9",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Deviljho",
+          "probability": 20,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Splendid Sootstone",
+          "nameEn": "Splendid Sootstone",
+          "level": "Guild★4",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Deliver 4 Sootstone Ores",
+          "probability": 20,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Devil of a Problem",
+          "nameEn": "Devil of a Problem",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Deviljho",
+          "probability": 20,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "공폭룡 검은비늘",
+      "count": 6,
+      "nameJa": "恐暴竜の黒鱗",
+      "itemId": "item_mh4u_0914",
+      "mh4uId": 914,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "이블조",
+          "navMonster": "이블조",
+          "nameEn": "Deviljho",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 39% · ×1",
+            "Tail Carve · 32% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "광폭 이블조",
+          "navMonster": "광폭 이블조",
+          "nameEn": "Savage Deviljho",
+          "rank": "상위",
+          "methods": [
+            "Tail Carve · 26% · ×1",
+            "Body Carve · 25% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Devil of a Problem",
+          "nameEn": "Devil of a Problem",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Deviljho",
+          "probability": 32,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Naked and Afraid",
+          "nameEn": "Advanced: Naked and Afraid",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt 2 Deviljho",
+          "probability": 26,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Devil at Heaven's Gate",
+          "nameEn": "Devil at Heaven's Gate",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Deviljho",
+          "probability": 12,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "공폭룡 타액",
+      "count": 3,
+      "nameJa": "恐暴竜の唾液",
+      "itemId": "item_mh4u_0925",
+      "mh4uId": 925,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Naked and Afraid",
+          "nameEn": "Advanced: Naked and Afraid",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt 2 Deviljho",
+          "probability": 20,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Devil of a Problem",
+          "nameEn": "Devil of a Problem",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Deviljho",
+          "probability": 16,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "흑식룡 역린",
+      "count": 1,
+      "nameJa": "黒蝕竜の逆鱗",
+      "itemId": "item_mh4u_0868",
+      "mh4uId": 868,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "고어·마가라",
+          "navMonster": "고어·마가라",
+          "nameEn": "Gore Magala",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 5% · ×1",
+            "Break Head · 5% · ×1",
+            "Tail Carve · 4% · ×1",
+            "Break Head · 3% · ×1",
+            "Shiny Drop · 2% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Crazy Stupid Love",
+          "nameEn": "Crazy Stupid Love",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt Gore Magala",
+          "probability": 3,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Dread Locked",
+          "nameEn": "Dread Locked",
+          "level": "Guild★5",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt Gore Magala",
+          "probability": 3,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Tipping the Scales",
+          "nameEn": "Tipping the Scales",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt Gore Magala",
+          "probability": 1,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "광폭 이블조",
+        "navMonster": "광폭 이블조"
+      },
+      {
+        "name": "이블조",
+        "navMonster": "이블조"
+      },
+      {
+        "name": "고어·마가라",
+        "navMonster": "고어·마가라"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: Tyrant's Maw",
+        "nameJa": "",
+        "level": "Caravan★9",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Deviljho",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Splendid Sootstone",
+        "nameJa": "",
+        "level": "Guild★4",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Deliver 4 Sootstone Ores",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Devil of a Problem",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Deviljho",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Naked and Afraid",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt 2 Deviljho",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Devil at Heaven's Gate",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Deviljho",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Crazy Stupid Love",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt Gore Magala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Dread Locked",
+        "nameJa": "",
+        "level": "Guild★5",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt Gore Magala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Tipping the Scales",
+        "nameJa": "",
+        "level": "Caravan★5",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt Gore Magala",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

@@ -1,0 +1,198 @@
+{
+  "materials": [
+    {
+      "name": "구룡 머리",
+      "count": 1,
+      "nameJa": "狗竜の頭",
+      "itemId": "item_mh4u_0393",
+      "mh4uId": 393,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "도스재기",
+          "navMonster": "도스재기",
+          "nameEn": "Great Jaggi",
+          "rank": "상위",
+          "methods": [
+            "Break Head · 12% · ×1",
+            "Break Head · 10% · ×1",
+            "Capture · 8% · ×1",
+            "Capture · 5% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Harvest Tour: Anc. Steppe",
+          "nameEn": "Harvest Tour: Anc. Steppe",
+          "level": "Caravan★7",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+          "probability": 8,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Dinner Guests",
+          "nameEn": "Dinner Guests",
+          "level": "Caravan★7",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Great Jaggi and a Gendrome",
+          "probability": 8,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Pack Attack",
+          "nameEn": "Pack Attack",
+          "level": "Guild★4",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt 2 Great Jaggi",
+          "probability": 8,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "구룡 가죽",
+      "count": 3,
+      "nameJa": "狗竜の皮",
+      "itemId": "item_mh4u_0388",
+      "mh4uId": 388,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "도스재기",
+          "navMonster": "도스재기",
+          "nameEn": "Great Jaggi",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 43% · ×1",
+            "Capture · 18% · ×1",
+            "Body Carve · 5% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Jaggi Alliance",
+          "nameEn": "Jaggi Alliance",
+          "level": "Caravan★2",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Great Jaggi",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Field Trip",
+          "nameEn": "Field Trip",
+          "level": "Guild★1",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Great Jaggi",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "청웅수 털",
+          "requiredItemId": "item_mh4u_1095",
+          "unlockQuestId": "",
+          "unlockQuest": "Swing into Action",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "우두머리의 목도리",
+      "count": 1,
+      "nameJa": "王者のエリマキ",
+      "itemId": "item_mh4u_0392",
+      "mh4uId": 392,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "도스재기",
+          "navMonster": "도스재기",
+          "nameEn": "Great Jaggi",
+          "rank": "상위",
+          "methods": [
+            "Break Head · 70% · ×1",
+            "Break Head · 65% · ×1"
+          ]
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "도스재기",
+        "navMonster": "도스재기"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Harvest Tour: Anc. Steppe",
+        "nameJa": "",
+        "level": "Caravan★7",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Dinner Guests",
+        "nameJa": "",
+        "level": "Caravan★7",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Great Jaggi and a Gendrome",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Pack Attack",
+        "nameJa": "",
+        "level": "Guild★4",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt 2 Great Jaggi",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Jaggi Alliance",
+        "nameJa": "",
+        "level": "Caravan★2",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Great Jaggi",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Field Trip",
+        "nameJa": "",
+        "level": "Guild★1",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Great Jaggi",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

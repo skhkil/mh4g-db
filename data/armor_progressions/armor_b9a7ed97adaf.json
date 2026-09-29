@@ -1,0 +1,140 @@
+{
+  "materials": [
+    {
+      "name": "노산룡 갑각",
+      "count": 3,
+      "nameJa": "老山龍の甲殻",
+      "itemId": "item_mh4u_1117",
+      "mh4uId": 1117,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "호산룡 붉은비늘",
+          "requiredItemId": "item_mh4u_0985",
+          "unlockQuestId": "quest_69dedd0898a2",
+          "unlockQuest": "고난도: 멀리서 다가오는 호산",
+          "unlockLevel": "★6",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "노산룡 큰발톱",
+      "count": 1,
+      "nameJa": "老山龍の大爪",
+      "itemId": "item_mh4u_1118",
+      "mh4uId": 1118,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "호산룡 완갑",
+          "requiredItemId": "item_mh4u_0988",
+          "unlockQuestId": "quest_69dedd0898a2",
+          "unlockQuest": "고난도: 멀리서 다가오는 호산",
+          "unlockLevel": "★6",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "화룡 익막",
+      "count": 2,
+      "nameJa": "火竜の翼膜",
+      "itemId": "item_mh4u_0689",
+      "mh4uId": 689,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "리오레우스",
+          "navMonster": "리오레우스",
+          "nameEn": "Rathalos",
+          "rank": "하위",
+          "methods": [
+            "Capture · 29% · ×1",
+            "Body Carve · 19% · ×1",
+            "Capture · 18% · ×2",
+            "Break Wing · 15% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Uncorner the Market",
+          "nameEn": "Uncorner the Market",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Rathalos and a Zinogre",
+          "probability": 21,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "King of the Skies",
+          "nameEn": "King of the Skies",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Rathalos",
+          "probability": 21,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Rathalos Renovation",
+          "nameEn": "Rathalos Renovation",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Capture a Rathalos",
+          "probability": 21,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "리오레우스",
+        "navMonster": "리오레우스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Uncorner the Market",
+        "nameJa": "",
+        "level": "Caravan★5",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Rathalos and a Zinogre",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "King of the Skies",
+        "nameJa": "",
+        "level": "Caravan★5",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Rathalos",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Rathalos Renovation",
+        "nameJa": "",
+        "level": "Caravan★5",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Capture a Rathalos",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

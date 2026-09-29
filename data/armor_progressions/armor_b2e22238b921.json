@@ -1,0 +1,263 @@
+{
+  "materials": [
+    {
+      "name": "등어룡 두툼가죽",
+      "count": 1,
+      "nameJa": "灯魚竜の厚皮",
+      "itemId": "item_mh4u_1162",
+      "mh4uId": 1162,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "사토룡 보라비늘",
+          "requiredItemId": "item_mh4u_0645",
+          "unlockQuestId": "quest_b93ea51259c1",
+          "unlockQuest": "고난도: 수컷 벌레, 총집합!",
+          "unlockLevel": "★1",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "괴상어 강칼꼬리",
+      "count": 1,
+      "nameJa": "化け鮫の剛刃尾",
+      "itemId": "item_mh4u_0561",
+      "mh4uId": 561,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "자보아자길",
+          "navMonster": "자보아자길",
+          "nameEn": "Zamtrios",
+          "rank": "G급",
+          "methods": [
+            "Break Tail · 65% · ×1",
+            "Body Carve · 8% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "괴상어 비늘+",
+      "count": 3,
+      "nameJa": "化け鮫の上鱗",
+      "itemId": "item_mh4u_0553",
+      "mh4uId": 553,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "자보아자길",
+          "navMonster": "자보아자길",
+          "nameEn": "Zamtrios",
+          "rank": "상위",
+          "methods": [
+            "Break Front Leg · 36% · ×1",
+            "Body Carve · 25% · ×1",
+            "Break Fin · 24% · ×1",
+            "Break Tail · 24% · ×1",
+            "Capture · 22% · ×1",
+            "Shiny Drop · 5% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Fin Finder",
+          "nameEn": "Fin Finder",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Zamtrios",
+          "probability": 16,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Fin Finder",
+          "nameEn": "Fin Finder",
+          "level": "Guild★5",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Zamtrios",
+          "probability": 16,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Cold-blooded Combo",
+          "nameEn": "Cold-blooded Combo",
+          "level": "Guild★5",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Zamtrios and a Lagombi",
+          "probability": 16,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "눈사자 수염",
+          "requiredItemId": "item_mh4u_1131",
+          "unlockQuestId": "",
+          "unlockQuest": "Trader in Trouble",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "견룡골",
+      "count": 5,
+      "nameJa": "堅竜骨",
+      "itemId": "item_b9c38f0f747b",
+      "mh4uId": 311,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "그라비모스",
+          "navMonster": "그라비모스",
+          "nameEn": "Gravios",
+          "rank": "상위",
+          "methods": [
+            "Break Back · 30% · ×1",
+            "Break Wing · 30% · ×1",
+            "Tail Carve · 20% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "그라비모스 아종",
+          "navMonster": "그라비모스 아종",
+          "nameEn": "Black Gravios",
+          "rank": "상위",
+          "methods": [
+            "Break Back · 30% · ×1",
+            "Tail Carve · 18% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "얀쿡크",
+          "navMonster": "얀쿡크",
+          "nameEn": "Yian Kut-Ku",
+          "rank": "G급",
+          "methods": [
+            "Capture · 27% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Black Rock Down",
+          "nameEn": "Black Rock Down",
+          "level": "Caravan★9",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Black Gravios",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Forge Ahead",
+          "nameEn": "Forge Ahead",
+          "level": "Caravan★9",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Stygian Zinogre",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hunting Vicariously",
+          "nameEn": "Hunting Vicariously",
+          "level": "Caravan★9",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Yian Garuga",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "자보아자길",
+        "navMonster": "자보아자길"
+      },
+      {
+        "name": "그라비모스",
+        "navMonster": "그라비모스"
+      },
+      {
+        "name": "그라비모스 아종",
+        "navMonster": "그라비모스 아종"
+      },
+      {
+        "name": "얀쿡크",
+        "navMonster": "얀쿡크"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Fin Finder",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Zamtrios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Cold-blooded Combo",
+        "nameJa": "",
+        "level": "Guild★5",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Zamtrios and a Lagombi",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Black Rock Down",
+        "nameJa": "",
+        "level": "Caravan★9",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Black Gravios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Forge Ahead",
+        "nameJa": "",
+        "level": "Caravan★9",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Stygian Zinogre",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Hunting Vicariously",
+        "nameJa": "",
+        "level": "Caravan★9",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Yian Garuga",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

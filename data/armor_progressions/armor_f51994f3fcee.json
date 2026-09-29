@@ -1,0 +1,145 @@
+{
+  "materials": [
+    {
+      "name": "금사자티켓",
+      "count": 1,
+      "nameJa": "金獅子チケット",
+      "itemId": "item_6a79da8b7cfb",
+      "mh4uId": 1407,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "event-high-026",
+          "name": "분노의 극치",
+          "nameEn": "All The Rage",
+          "level": "★7",
+          "questType": "event",
+          "location": "용암섬",
+          "objective": "격앙 라잔 2마리 토벌",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "태고의 파편",
+      "count": 4,
+      "nameJa": "太古の破片",
+      "itemId": "item_4b514d4e7fcb",
+      "mh4uId": 1225,
+      "sources": [
+        {
+          "type": "acquire",
+          "label": "채굴(탐색, 길드퀘)"
+        }
+      ]
+    },
+    {
+      "name": "플루크라이트광석",
+      "count": 8,
+      "nameJa": "フルクライト鉱石",
+      "itemId": "item_ecfef79bb435",
+      "mh4uId": 220,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "다라·아마듈라",
+          "navMonster": "다라·아마듈라",
+          "nameEn": "Dalamadur",
+          "rank": "상위",
+          "methods": [
+            "Mining Scale · 12% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Mistentoe Mission",
+          "nameEn": "Mistentoe Mission",
+          "level": "Guild★5",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Deliver 10 Mistentoe",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Killer Queens",
+          "nameEn": "Killer Queens",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt 2 Rathians",
+          "probability": 5,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Party Pants",
+          "nameEn": "Party Pants",
+          "level": "Guild★5",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay 12 Remobras",
+          "probability": 5,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "다라·아마듈라",
+        "navMonster": "다라·아마듈라"
+      }
+    ],
+    "quests": [
+      {
+        "id": "event-high-026",
+        "name": "분노의 극치",
+        "nameJa": "",
+        "level": "★7",
+        "questType": "event",
+        "location": "용암섬",
+        "objective": "격앙 라잔 2마리 토벌",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Mistentoe Mission",
+        "nameJa": "",
+        "level": "Guild★5",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Deliver 10 Mistentoe",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Killer Queens",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt 2 Rathians",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Party Pants",
+        "nameJa": "",
+        "level": "Guild★5",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay 12 Remobras",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

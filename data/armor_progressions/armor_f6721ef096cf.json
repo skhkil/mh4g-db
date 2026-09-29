@@ -1,0 +1,261 @@
+{
+  "materials": [
+    {
+      "name": "영지주 중협각",
+      "count": 4,
+      "nameJa": "影蜘蛛の重鋏角",
+      "itemId": "item_mh4u_0589",
+      "mh4uId": 589,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "네르스큐라",
+          "navMonster": "네르스큐라",
+          "nameEn": "Nerscylla",
+          "rank": "G급",
+          "methods": [
+            "Capture · 35% · ×1",
+            "Body Carve · 25% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Death and Taxidermy",
+          "nameEn": "Death and Taxidermy",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Capture a Nerscylla",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Hollow Hysterics",
+          "nameEn": "Advanced: Hollow Hysterics",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Nerscylla and a Tetsucabra",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "영지주 중갑각",
+      "count": 3,
+      "nameJa": "影蜘蛛の重殻",
+      "itemId": "item_mh4u_0586",
+      "mh4uId": 586,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "네르스큐라",
+          "navMonster": "네르스큐라",
+          "nameEn": "Nerscylla",
+          "rank": "G급",
+          "methods": [
+            "Break Cover Skin · 70% · ×1",
+            "Body Carve · 46% · ×1",
+            "Capture · 25% · ×1",
+            "Break Poison Stinger · 25% · ×1",
+            "Break Claw · 20% · ×1",
+            "Shiny Drop · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Death and Taxidermy",
+          "nameEn": "Death and Taxidermy",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Capture a Nerscylla",
+          "probability": 28,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Hollow Hysterics",
+          "nameEn": "Advanced: Hollow Hysterics",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Nerscylla and a Tetsucabra",
+          "probability": 28,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "빙쇄룡 중갑각",
+          "requiredItemId": "item_mh4u_1177",
+          "unlockQuestId": "",
+          "unlockQuest": "Pink Problems",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "영지주 비밀가시",
+      "count": 2,
+      "nameJa": "影蜘蛛の秘棘",
+      "itemId": "item_mh4u_0595",
+      "mh4uId": 595,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "네르스큐라",
+          "navMonster": "네르스큐라",
+          "nameEn": "Nerscylla",
+          "rank": "G급",
+          "methods": [
+            "Break Poison Stinger · 60% · ×1",
+            "Capture · 25% · ×1",
+            "Body Carve · 11% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Death and Taxidermy",
+          "nameEn": "Death and Taxidermy",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Capture a Nerscylla",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Hollow Hysterics",
+          "nameEn": "Advanced: Hollow Hysterics",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Nerscylla and a Tetsucabra",
+          "probability": 12,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "고무질가죽++",
+      "count": 2,
+      "nameJa": "ゴム質の特上皮",
+      "itemId": "item_mh4u_0448",
+      "mh4uId": 448,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "게리오스",
+          "navMonster": "게리오스",
+          "nameEn": "Gypceros",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 43% · ×1",
+            "Body Carve (Apparent Death) · 30% · ×1",
+            "Capture · 18% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "네르스큐라",
+          "navMonster": "네르스큐라",
+          "nameEn": "Nerscylla",
+          "rank": "G급",
+          "methods": [
+            "Break Cover Skin · 20% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Haughty Hell Hunters",
+          "nameEn": "Haughty Hell Hunters",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Gypceros",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Harvest Tour: Sunken Hollow",
+          "nameEn": "Harvest Tour: Sunken Hollow",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+          "probability": 31,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "네르스큐라",
+        "navMonster": "네르스큐라"
+      },
+      {
+        "name": "게리오스",
+        "navMonster": "게리오스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Death and Taxidermy",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Capture a Nerscylla",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Hollow Hysterics",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Nerscylla and a Tetsucabra",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Haughty Hell Hunters",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Gypceros",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Harvest Tour: Sunken Hollow",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

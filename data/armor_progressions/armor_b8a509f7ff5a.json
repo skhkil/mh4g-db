@@ -1,0 +1,322 @@
+{
+  "materials": [
+    {
+      "name": "금사자 노발천",
+      "count": 2,
+      "nameJa": "金獅子の怒髪天",
+      "itemId": "item_mh4u_0519",
+      "mh4uId": 519,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "격앙 라잔",
+          "navMonster": "격앙 라잔",
+          "nameEn": "Furious Rajang",
+          "rank": "G급",
+          "methods": [
+            "Capture · 25% · ×1",
+            "Body Carve · 18% · ×1",
+            "Shiny Drop · 12% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Bad Hair Rajang",
+          "nameEn": "Advanced: Bad Hair Rajang",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Rajang",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Fur Fixation",
+          "nameEn": "Advanced: Fur Fixation",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Rajang",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "황금의 황모",
+      "count": 3,
+      "nameJa": "黄金の煌毛",
+      "itemId": "item_mh4u_0517",
+      "mh4uId": 517,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "격앙 라잔",
+          "navMonster": "격앙 라잔",
+          "nameEn": "Furious Rajang",
+          "rank": "G급",
+          "methods": [
+            "Shiny Drop · 18% · ×1",
+            "Capture · 15% · ×1",
+            "Body Carve · 12% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "극한상태 라잔",
+          "navMonster": "라잔",
+          "nameEn": "Apex Rajang",
+          "rank": "G급",
+          "methods": [
+            "Capture · 15% · ×1",
+            "Shiny Drop · 12% · ×1",
+            "Break Tail · 12% · ×1",
+            "Body Carve · 10% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "라잔",
+          "navMonster": "라잔",
+          "nameEn": "Rajang",
+          "rank": "G급",
+          "methods": [
+            "Capture · 12% · ×1",
+            "Shiny Drop · 9% · ×1",
+            "Break Tail · 9% · ×1",
+            "Body Carve · 6% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Fur Fixation",
+          "nameEn": "Advanced: Fur Fixation",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Rajang",
+          "probability": 30,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Beyond Brawn",
+          "nameEn": "Advanced: Beyond Brawn",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Rajang",
+          "probability": 30,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Operation Lionheart",
+          "nameEn": "Operation Lionheart",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Rajang",
+          "probability": 30,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "봉산룡 중완갑",
+          "requiredItemId": "item_mh4u_1201",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: The Scathing Shore",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "금사자 꼬리",
+      "count": 2,
+      "nameJa": "金獅子の尻尾",
+      "itemId": "item_mh4u_0515",
+      "mh4uId": 515,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "라잔",
+          "navMonster": "라잔",
+          "nameEn": "Rajang",
+          "rank": "상위",
+          "methods": [
+            "Break Tail · 91% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "극한상태 라잔",
+          "navMonster": "라잔",
+          "nameEn": "Apex Rajang",
+          "rank": "G급",
+          "methods": [
+            "Break Tail · 88% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Tough Love",
+          "nameEn": "Advanced: Tough Love",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Rajang",
+          "probability": 19,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: The Raging Rajang",
+          "nameEn": "Advanced: The Raging Rajang",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Rajang",
+          "probability": 19,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Bet Your Life",
+          "nameEn": "Advanced: Bet Your Life",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Deviljho and a Rajang",
+          "probability": 19,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "흑랑조 강날개",
+      "count": 3,
+      "nameJa": "黒狼鳥の剛翼",
+      "itemId": "item_mh4u_0466",
+      "mh4uId": 466,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "얀가루루가",
+          "navMonster": "얀가루루가",
+          "nameEn": "Yian Garuga",
+          "rank": "G급",
+          "methods": [
+            "Break Talon · 50% · ×1",
+            "Break Talon · 35% · ×2",
+            "Shiny Drop · 12% · ×1",
+            "Body Carve · 3% · ×1"
+          ]
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "격앙 라잔",
+        "navMonster": "격앙 라잔"
+      },
+      {
+        "name": "극한상태 라잔",
+        "navMonster": "라잔"
+      },
+      {
+        "name": "라잔",
+        "navMonster": "라잔"
+      },
+      {
+        "name": "얀가루루가",
+        "navMonster": "얀가루루가"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: Bad Hair Rajang",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Rajang",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Fur Fixation",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Rajang",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Beyond Brawn",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Rajang",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Operation Lionheart",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Rajang",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Tough Love",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Rajang",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: The Raging Rajang",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Rajang",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Bet Your Life",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Deviljho and a Rajang",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

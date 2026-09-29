@@ -1,0 +1,231 @@
+{
+  "materials": [
+    {
+      "name": "몬헌부회보지",
+      "count": 3,
+      "nameJa": "モンハン部会報誌",
+      "itemId": "item_ab860a346b6b",
+      "mh4uId": 1390,
+      "sources": [
+        {
+          "type": "acquire",
+          "label": "이벤트 퀘스트 보수"
+        }
+      ]
+    },
+    {
+      "name": "금화룡 비늘+",
+      "count": 2,
+      "nameJa": "金火竜の上鱗",
+      "itemId": "item_mh4u_0677",
+      "mh4uId": 677,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "리오레이아 희소종",
+          "navMonster": "리오레이아 희소종",
+          "nameEn": "Gold Rathian",
+          "rank": "상위",
+          "methods": [
+            "Tail Carve · 45% · ×1",
+            "Body Carve · 43% · ×1",
+            "Break Head · 25% · ×1",
+            "Capture · 22% · ×2",
+            "Break Wing · 15% · ×1",
+            "Shiny Drop · 11% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Striking Gold",
+          "nameEn": "Striking Gold",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Gold Rathian",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Ring of the Golden Lune",
+          "nameEn": "Ring of the Golden Lune",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Gold Rathian",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Sinister Astronomy",
+          "nameEn": "Sinister Astronomy",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Silver Rathalos and a Gold Rathian",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "백원호 억센털+",
+      "count": 6,
+      "nameJa": "白猿狐の豪剛毛",
+      "itemId": "item_mh4u_0484",
+      "mh4uId": 484,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "케차와차 아종",
+          "navMonster": "케차와차 아종",
+          "nameEn": "Ash Kecha Wacha",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 45% · ×1",
+            "Break Tail · 40% · ×1",
+            "Shiny Drop · 35% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Beyond the Pale",
+          "nameEn": "Advanced: Beyond the Pale",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt an Ash Kecha Wacha",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Seeing Spots",
+          "nameEn": "Seeing Spots",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt an Ash Kecha Wacha",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Terrible Twins",
+          "nameEn": "Advanced: Terrible Twins",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Kecha Wacha and an Ash Kecha Wacha",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "백원호 지옥귀",
+      "count": 3,
+      "nameJa": "白猿狐の地獄耳",
+      "itemId": "item_mh4u_0487",
+      "mh4uId": 487,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "케차와차 아종",
+          "navMonster": "케차와차 아종",
+          "nameEn": "Ash Kecha Wacha",
+          "rank": "G급",
+          "methods": [
+            "Break Ear · 75% · ×1",
+            "Capture · 5% · ×1",
+            "Body Carve · 2% · ×1"
+          ]
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "리오레이아 희소종",
+        "navMonster": "리오레이아 희소종"
+      },
+      {
+        "name": "케차와차 아종",
+        "navMonster": "케차와차 아종"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Striking Gold",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Gold Rathian",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Ring of the Golden Lune",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Gold Rathian",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Sinister Astronomy",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Silver Rathalos and a Gold Rathian",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Beyond the Pale",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt an Ash Kecha Wacha",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Seeing Spots",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt an Ash Kecha Wacha",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Terrible Twins",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Kecha Wacha and an Ash Kecha Wacha",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}
