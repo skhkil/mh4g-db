@@ -23,8 +23,8 @@ SPECIAL_QUESTS={
 }
 # Known MH4G event quests not currently present in project quest DB. Keep the exact Japanese title so users know what to run.
 SPECIAL_TEXT_QUESTS={
-    '反逆Ｊチケット':[{'type':'event','name':'JUMP・작열열투!','nameJa':'JUMP・灼熱燃闘！','level':'G★3','objective':'테오·테스카토르 토벌 또는 격퇴','location':'구 사막(낮)','note':'반역J티켓 기본 보수'}],
-    '刃牙道の証':[{'type':'event','name':'한마 바키・송곳니 드러낸 금사자','nameJa':'範馬刃牙・牙剥く金獅子','level':'G★3','objective':'라잔 1마리 수렵','location':'격투장','note':'刃牙道의 증표 보수'}],
+    '反逆Ｊチケット':[{'type':'quest','questType':'event','name':'JUMP・작열열투!','nameJa':'JUMP・灼熱燃闘！','level':'G★3','objective':'테오·테스카토르 토벌 또는 격퇴','location':'구 사막(낮)','note':'반역J티켓 기본 보수'}],
+    '刃牙道の証':[{'type':'quest','questType':'event','name':'한마 바키・송곳니 드러낸 금사자','nameJa':'範馬刃牙・牙剥く金獅子','level':'G★3','objective':'라잔 1마리 수렵','location':'격투장','note':'刃牙道의 증표 보수'}],
 }
 
 PART_FILES=['Data/head.txt','Data/body.txt','Data/arms.txt','Data/waist.txt','Data/legs.txt']
@@ -303,13 +303,13 @@ def main():
         if not prog: continue
         save_json(prog_dir/f"{a['id']}.json",prog)
         prog_index[a['id']]={'materials':len(prog.get('materials') or []),'monsters':len((prog.get('targets') or {}).get('monsters') or []),'quests':len((prog.get('targets') or {}).get('quests') or [])}
-    save_json(DATA/'armor_progression_index.json',{'version':'0.7.7-chat4-research2-hotfix16','count':len(prog_index),'armors':prog_index})
+    save_json(DATA/'armor_progression_index.json',{'version':'0.7.7-chat4-research2-hotfix18','count':len(prog_index),'armors':prog_index})
     # Rebuild item reverse references using the existing project builder so aliases/items are reflected.
     save_json(DATA/'armors.json',armors)
     save_json(DATA/'items.json',items)
     save_json(DATA/'quest_reference_index.json',qindex)
     report={
-        'version':'0.7.7-chat4-research2-hotfix16','step':'all armor acquisition progression',
+        'version':'0.7.7-chat4-research2-hotfix18','step':'all armor acquisition progression',
         'summary':{'armors':len(targets),'addedItems':len(added_items),'aliasAdds':len(alias_adds),**coverage},
         'addedItems':[{'id':x['id'],'name':x['name'],'nameJa':x.get('nameJa',''),'mh4uId':x.get('mh4uId')} for x in added_items],
         'aliasAdds':[{'item':a,'alias':b} for a,b in alias_adds],

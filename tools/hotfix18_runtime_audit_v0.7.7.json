@@ -1,0 +1,21 @@
+{
+  "ok": true,
+  "version": "0.7.7-chat4-research2-hotfix18",
+  "checks": {
+    "version_index": true,
+    "version_app_imports": true,
+    "version_loader": true,
+    "events_flag_after_groups": true,
+    "bind_groups": true,
+    "binding_isolation": true,
+    "runtime_handler_isolation": true,
+    "visible_runtime_error": true,
+    "bind_before_data_load": true,
+    "no_top_level_data_await": true,
+    "navigation_survives_data_failure": true,
+    "progression_failure_isolated": true,
+    "armor_dom_batch": true,
+    "history_restore_only": true,
+    "lazy_progression_has_catch": true
+  }
+}

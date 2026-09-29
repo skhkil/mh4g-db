@@ -8,13 +8,14 @@
       "mh4uId": 1385,
       "sources": [
         {
-          "type": "event",
+          "type": "quest",
           "name": "JUMP・작열열투!",
           "nameJa": "JUMP・灼熱燃闘！",
           "level": "G★3",
           "objective": "테오·테스카토르 토벌 또는 격퇴",
           "location": "구 사막(낮)",
-          "note": "반역J티켓 기본 보수"
+          "note": "반역J티켓 기본 보수",
+          "questType": "event"
         }
       ]
     },
@@ -183,6 +184,16 @@
         "location": "",
         "objective": "Slay a Teostra or repel it",
         "note": ""
+      },
+      {
+        "id": "",
+        "name": "JUMP・작열열투!",
+        "nameJa": "JUMP・灼熱燃闘！",
+        "level": "G★3",
+        "questType": "event",
+        "location": "구 사막(낮)",
+        "objective": "테오·테스카토르 토벌 또는 격퇴",
+        "note": "반역J티켓 기본 보수"
       }
     ],
     "arena": []

@@ -1,5 +1,5 @@
-import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,loadArmorProgression,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-research2-hotfix17";
-import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-research2-hotfix17";
+import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,loadArmorProgression,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-research2-hotfix18";
+import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-research2-hotfix18";
 
 let data={skills:[],armors:[],armorSets:[],decorations:[],weapons:[],weaponSummary:[],melodies:[],items:[],itemReferenceIndex:{items:{}},skillReferenceIndex:{items:{},categories:[]},meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],monsterReferenceIndex:{items:{}},dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],questReferenceIndex:{quests:{}},siteInfo:{},meta:{}};
 let targets=[];
@@ -26,7 +26,7 @@ let restoringHistory=false;
 let historyRestoreToken=0;
 try{history.scrollRestoration="manual"}catch{}
 
-const APP_VERSION="0.7.7-chat4-research2-hotfix17";
+const APP_VERSION="0.7.7-chat4-research2-hotfix18";
 const boundEventGroups=new Set();
 let appEventsBound=false;
 function ensureRuntimeStatus(){
@@ -796,6 +796,31 @@ function localizedNameSub(x){
   return names.length?`<small>${names.map(esc).join(" · ")}</small>`:"";
 }
 
+function progressionQuestNavMeta(src={}){
+  const rawType=String(src.questType||"").toLowerCase();
+  const rawLevel=String(src.level||"");
+  const m=rawLevel.match(/(\d+)/);
+  const star=m?Number(m[1]):0;
+  let questtype="",level="",label="퀘스트";
+  if(rawType==="caravan"||rawType==="village"){questtype="village";level=star?`★${star}`:"";label=star?`여단 ★${star}`:"여단";}
+  else if(rawType==="guild"||rawType==="hub"){
+    if(star>=8){questtype="g";level=`★${star-7}`;label=`G★${star-7}`;}
+    else{questtype="hub";level=star?`★${star}`:"";label=star?`집회소 ★${star}`:"집회소";}
+  }else if(rawType==="g"){questtype="g";level=star?`★${star}`:"";label=star?`G★${star}`:"G급";}
+  else if(rawType==="event"){questtype="event";level=rawLevel.startsWith("G★")?rawLevel:(star>=8?`G★${star-7}`:(star?`★${star}`:""));label=level?`이벤트 ${level}`:"이벤트";}
+  else if(rawType==="challenge"){questtype="challenge";level=rawLevel;label=rawLevel?`챌린지 ${rawLevel}`:"챌린지";}
+  else if(rawType==="guildquest"){questtype="";level="";label=rawLevel||"길드퀘스트";}
+  else{level=rawLevel;label=rawLevel||"퀘스트";}
+  return {questtype,level,label};
+}
+function progressionQuestFilterButton(src,material,labelOverride=""){
+  const meta=progressionQuestNavMeta(src);
+  const label=labelOverride||meta.label;
+  const materialName=typeof material==="string"?material:(material?.name||"");
+  const monster=typeof material==="object"?(material?.sources||[]).find(x=>x?.type==="monster"&&x?.navMonster)?.navMonster||"":"";
+  return refButton(label,"questfilter",{questtype:meta.questtype,level:meta.level,reward:materialName,monster,source:src?.name||""});
+}
+
 function armorProgressionSourceHtml(src,material){
   const type=src?.type||"";
   if(type==="monster"){
@@ -812,11 +837,16 @@ function armorProgressionSourceHtml(src,material){
     }
     if(src.questType==="event"){
       const label=`${src.level||""} ${src.name||"이벤트 퀘스트"}`.trim();
-      return `<li><span class="armor-progress-kind event">이벤트</span><b>${esc(label)}</b>${src.note?`<small>${esc(src.note)}</small>`:""}</li>`;
+      return `<li><span class="armor-progress-kind event">이벤트</span>${progressionQuestFilterButton(src,material,label)}${src.note?`<small>${esc(src.note)}</small>`:""}</li>`;
     }
-    const hub=String(src.questType||"").toLowerCase()==="caravan"?"여단":String(src.questType||"").toLowerCase()==="guild"?"집회소":"퀘스트";
-    const stars=String(src.level||"").replace(/^Caravan/i,"여단").replace(/^Guild/i,"집회소");
-    return `<li><span class="armor-progress-kind">퀘스트</span><b>${esc(`${stars||hub} 보수`)}</b><small>비교 DB에서 입수 확인 · 프로젝트 퀘스트명이 연결되면 바로가기가 표시됩니다.</small></li>`;
+    const meta=progressionQuestNavMeta(src);
+    const link=progressionQuestFilterButton(src,material,`${meta.label} 보수`);
+    return `<li><span class="armor-progress-kind">퀘스트</span>${link}<small>해당 등급과 보상 소재로 프로젝트 퀘스트를 바로 필터링합니다.</small></li>`;
+  }
+  if(type==="event"){
+    const qsrc={...src,questType:"event"};
+    const label=`${src.level||""} ${src.name||"이벤트 퀘스트"}`.trim();
+    return `<li><span class="armor-progress-kind event">이벤트</span>${progressionQuestFilterButton(qsrc,material,label)}${src.note?`<small>${esc(src.note)}</small>`:""}</li>`;
   }
   if(type==="exchange"){
     const req=src.required?itemLink(src.required):"교환 재료";
@@ -841,7 +871,7 @@ function armorProgressionHtml(a,p){
   const eventQs=(p.targets?.quests||[]).filter(q=>q.questType==="event");
   const mons=(p.targets?.monsters||[]).slice(0,6);
   const quick=[];
-  if(eventQs.length)quick.push(`<div class="armor-progress-quick"><b>이벤트</b>${eventQs.slice(0,4).map(q=>q.id?refButton(`${q.level||""} ${q.name}`.trim(),"quest",{name:q.name,questtype:q.questType}):`<span>${esc(q.name)}</span>`).join(" ")}</div>`);
+  if(eventQs.length)quick.push(`<div class="armor-progress-quick"><b>이벤트</b>${eventQs.slice(0,4).map(q=>q.id?refButton(`${q.level||""} ${q.name}`.trim(),"quest",{name:q.name,questtype:q.questType}):progressionQuestFilterButton(q,"",`${q.level||""} ${q.name}`.trim())).join(" ")}</div>`);
   if(mons.length)quick.push(`<div class="armor-progress-quick"><b>주요 몬스터</b>${mons.map(m=>{const x=typeof m==="string"?{name:m,navMonster:m}:m;return x.navMonster?refButton(x.name,"monster",{monster:x.navMonster}):`<span>${esc(x.name)}</span>`}).join(" ")}</div>`);
   const mats=p.materials.map(m=>`<section class="armor-progress-material"><div class="armor-progress-material-head">${itemLink(m.name)} <b>×${Number(m.count)||1}</b></div><ul>${(m.sources||[]).map(src=>armorProgressionSourceHtml(src,m)).join("")||'<li><span class="muted">입수 경로 데이터 없음</span></li>'}</ul></section>`).join("");
   const html=`<div class="armor-progress-panel"><div class="armor-progress-panel-head"><b>${esc(a.name)} 제작 진행</b><span>소재 ${p.materials.length}종</span></div>${quick.length?`<div class="armor-progress-quick-row">${quick.join("")}</div>`:""}<div class="armor-progress-material-grid">${mats}</div></div>`;
@@ -1407,6 +1437,21 @@ async function followItemReference(btn){
     dragonView=btn.dataset.navView||"exchange";await openPage("dragon");$("#dragonSearch").value=name;renderDragon();
   }else if(type==="monster"){
     monsterView="rewards";await openPage("monster");const mon=canonicalMonsterName(btn.dataset.navMonster||"");if([...$("#monsterSelect").options].some(o=>o.value===mon))$("#monsterSelect").value=mon;$("#monsterSearch").value="";$("#monsterRankFilter").value="all";renderMonster();
+  }else if(type==="questfilter"){
+    const qt=btn.dataset.navQuesttype||"",level=btn.dataset.navLevel||"",reward=btn.dataset.navReward||"",monster=btn.dataset.navMonster||"",source=btn.dataset.navSource||"";
+    questView=qt==="event"?"event-all":qt==="challenge"?"challenge":qt==="village"?"village-detail":qt==="hub"?"hub-detail":qt==="g"?"g-detail":"key";
+    await openPage("quest");
+    if($("#questTypeFilter"))$("#questTypeFilter").value=qt||"all";
+    populateQuestLevels();
+    if($("#questLevelFilter"))$("#questLevelFilter").value=[...$("#questLevelFilter").options].some(o=>o.value===level)?level:"all";
+    if($("#questKeyOnly"))$("#questKeyOnly").checked=false;
+    if($("#questLocationFilter"))$("#questLocationFilter").value="all";
+    if($("#questMonsterFilter")){const mon=$("#questMonsterFilter");mon.value=[...mon.options].some(o=>o.value===monster)?monster:"all";}
+    const exactSource=source&&data.quests.some(q=>q.name===source||q.nameEn===source||q.nameJa===source);
+    if($("#questSearch"))$("#questSearch").value=exactSource?source:"";
+    const rewardMatch=reward&&data.quests.some(q=>(!qt||q.questType===qt)&&(!level||q.level===level)&&(questRef(q).rewardItems||[]).includes(reward));
+    if($("#questRewardFilter"))$("#questRewardFilter").value=rewardMatch?reward:"";
+    renderQuest();
   }else if(type==="quest"){
     const qt=btn.dataset.navQuesttype||"";questView=qt==="event"?"event-all":qt==="challenge"?"challenge":qt==="village"?"village-detail":qt==="hub"?"hub-detail":qt==="g"?"g-detail":"key";await openPage("quest");$("#questSearch").value=name;$("#questLevelFilter").value="all";$("#questKeyOnly").checked=false;if($("#questTypeFilter"))$("#questTypeFilter").value="all";if($("#questLocationFilter"))$("#questLocationFilter").value="all";if($("#questMonsterFilter"))$("#questMonsterFilter").value="all";if($("#questRewardFilter"))$("#questRewardFilter").value="";renderQuest();
   }

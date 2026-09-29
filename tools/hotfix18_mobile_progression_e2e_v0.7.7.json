@@ -1,0 +1,15 @@
+{
+  "version": "hotfix18",
+  "mobileArmorQuest": {
+    "ok": true,
+    "errors": [],
+    "metrics": {
+      "materialCardX": [
+        28,
+        184.9
+      ],
+      "questLinkCycles": 8
+    }
+  },
+  "ok": true
+}
