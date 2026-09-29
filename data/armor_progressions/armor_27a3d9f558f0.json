@@ -1,0 +1,24 @@
+{
+  "materials": [
+    {
+      "name": "여단★7 단장이 보낸 도전장 클리어",
+      "count": 1,
+      "nameJa": "※下位村クエ制覇",
+      "itemId": "",
+      "mh4uId": null,
+      "sources": [
+        {
+          "type": "special",
+          "label": "여단★7 단장이 보낸 도전장 클리어",
+          "note": "제작 소재가 아니라 장비 출현/해금 조건"
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [],
+    "quests": [],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

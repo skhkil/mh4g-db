@@ -1,0 +1,278 @@
+{
+  "materials": [
+    {
+      "name": "흑식룡 강촉각",
+      "count": 2,
+      "nameJa": "黒蝕竜の剛触角",
+      "itemId": "item_mh4u_0873",
+      "mh4uId": 873,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "고어·마가라",
+          "navMonster": "고어·마가라",
+          "nameEn": "Gore Magala",
+          "rank": "G급",
+          "methods": [
+            "Break Antenna · 75% · ×1",
+            "Capture · 16% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "흑식룡 두툼비늘",
+      "count": 4,
+      "nameJa": "黒蝕竜の厚鱗",
+      "itemId": "item_mh4u_0856",
+      "mh4uId": 856,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "고어·마가라",
+          "navMonster": "고어·마가라",
+          "nameEn": "Gore Magala",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 70% · ×1",
+            "Body Carve · 40% · ×1",
+            "Shiny Drop · 40% · ×1",
+            "Break Wing Leg · 28% · ×1",
+            "Tail Carve · 24% · ×1",
+            "Break Wing · 22% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "혼돈의 고어·마가라",
+          "navMonster": "혼돈의 고어·마가라",
+          "nameEn": "Chaotic Gore Magala",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 40% · ×1",
+            "Capture · 37% · ×1",
+            "Break Wing · 25% · ×1",
+            "Shiny Drop · 24% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: All in Its Place",
+          "nameEn": "Advanced: All in Its Place",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt Gore Magala",
+          "probability": 34,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: A Plague Awoken",
+          "nameEn": "Advanced: A Plague Awoken",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt Gore Magala",
+          "probability": 30,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Wings of Woe",
+          "nameEn": "Advanced: Wings of Woe",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt Gore Magala",
+          "probability": 30,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "대룡옥",
+      "count": 1,
+      "nameJa": "大竜玉",
+      "itemId": "item_mh4u_0328",
+      "mh4uId": 328,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "극한상태 가라라아자라 아종",
+          "navMonster": "가라라아자라 아종",
+          "nameEn": "Apex Tidal Najarala",
+          "rank": "G급",
+          "methods": [
+            "Shiny Drop · 8% · ×1",
+            "Capture · 8% · ×1",
+            "Break Tail · 8% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "극한상태 디아블로스",
+          "navMonster": "디아블로스",
+          "nameEn": "Apex Diablos",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 8% · ×1",
+            "Tail Carve · 8% · ×1",
+            "Capture · 8% · ×1",
+            "Shiny Drop · 4% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "그라비모스",
+          "navMonster": "그라비모스",
+          "nameEn": "Gravios",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 7% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Rhapsody in Rime",
+          "nameEn": "Advanced: Rhapsody in Rime",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Tidal Najarala",
+          "probability": 15,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Tigrex In Effect",
+          "nameEn": "Advanced: Tigrex In Effect",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Tigrex",
+          "probability": 15,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Gravios Situation",
+          "nameEn": "Advanced: Gravios Situation",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Gravios",
+          "probability": 15,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "환상나비",
+      "count": 3,
+      "nameJa": "マボロシチョウ",
+      "itemId": "item_4f2838814bcb",
+      "mh4uId": 270,
+      "sources": [
+        {
+          "type": "acquire",
+          "label": "채집"
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "고어·마가라",
+        "navMonster": "고어·마가라"
+      },
+      {
+        "name": "혼돈의 고어·마가라",
+        "navMonster": "혼돈의 고어·마가라"
+      },
+      {
+        "name": "극한상태 가라라아자라 아종",
+        "navMonster": "가라라아자라 아종"
+      },
+      {
+        "name": "극한상태 디아블로스",
+        "navMonster": "디아블로스"
+      },
+      {
+        "name": "그라비모스",
+        "navMonster": "그라비모스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: All in Its Place",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt Gore Magala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: A Plague Awoken",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt Gore Magala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Wings of Woe",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt Gore Magala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Rhapsody in Rime",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Tidal Najarala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Tigrex In Effect",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Tigrex",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Gravios Situation",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Gravios",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

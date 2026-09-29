@@ -1,0 +1,88 @@
+{
+  "materials": [
+    {
+      "name": "페이크카탈로그",
+      "count": 1,
+      "nameJa": "フェイクカタログ",
+      "itemId": "item_62e61b69b78d",
+      "mh4uId": 1394,
+      "sources": [
+        {
+          "type": "acquire",
+          "label": "이벤트 퀘스트 보수"
+        }
+      ]
+    },
+    {
+      "name": "도스람포스 머리",
+      "count": 1,
+      "nameJa": "ドスランポスの頭",
+      "itemId": "item_mh4u_0402",
+      "mh4uId": 402,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "도스람포스",
+          "navMonster": "도스람포스",
+          "nameEn": "Velocidrome",
+          "rank": "상위",
+          "methods": [
+            "Break Head · 15% · ×1",
+            "Break Head · 10% · ×1",
+            "Capture · 8% · ×1",
+            "Body Carve · 7% · ×1",
+            "Capture · 5% · ×1",
+            "Body Carve · 2% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "The Hero & the Captain's Trap",
+          "nameEn": "The Hero & the Captain's Trap",
+          "level": "Caravan★7",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt 2 Velocidrome",
+          "probability": 10,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "대장로티켓",
+      "count": 1,
+      "nameJa": "大長老チケット",
+      "itemId": "item_64f8e301f2c3",
+      "mh4uId": 1442,
+      "sources": [
+        {
+          "type": "acquire",
+          "label": "이벤트 퀘스트 보수"
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "도스람포스",
+        "navMonster": "도스람포스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "The Hero & the Captain's Trap",
+        "nameJa": "",
+        "level": "Caravan★7",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt 2 Velocidrome",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

@@ -1,0 +1,146 @@
+{
+  "materials": [
+    {
+      "name": "선조룡 강뿔",
+      "count": 2,
+      "nameJa": "祖龍の剛角",
+      "itemId": "item_mh4u_1042",
+      "mh4uId": 1042,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "밀라보레아스 (조룡)",
+          "navMonster": "밀라보레아스 (조룡)",
+          "nameEn": "White Fatalis",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 0% · ×1",
+            "Break Horn · 0% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "선조룡 중갑각",
+      "count": 1,
+      "nameJa": "祖龍の重殻",
+      "itemId": "item_mh4u_1044",
+      "mh4uId": 1044,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "밀라보레아스 (조룡)",
+          "navMonster": "밀라보레아스 (조룡)",
+          "nameEn": "White Fatalis",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 0% · ×1",
+            "Break Chest · 0% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "선조룡 강날개",
+      "count": 3,
+      "nameJa": "祖龍の剛翼",
+      "itemId": "item_mh4u_1046",
+      "mh4uId": 1046,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "밀라보레아스 (조룡)",
+          "navMonster": "밀라보레아스 (조룡)",
+          "nameEn": "White Fatalis",
+          "rank": "G급",
+          "methods": [
+            "Break Wing · 0% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "옥랑룡 천옥",
+      "count": 1,
+      "nameJa": "獄狼竜の天玉",
+      "itemId": "item_mh4u_0769",
+      "mh4uId": 769,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "진오우거 아종",
+          "navMonster": "진오우거 아종",
+          "nameEn": "Stygian Zinogre",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 3% · ×1",
+            "Break Head · 3% · ×1",
+            "Tail Carve · 2% · ×1",
+            "Shiny Drop · 2% · ×1",
+            "Capture · 2% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Mountain Rescue",
+          "nameEn": "Mountain Rescue",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Stygian Zinogre",
+          "probability": 1,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Fire Drill",
+          "nameEn": "Fire Drill",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Brachydios and a Stygian Zinogre",
+          "probability": 1,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "밀라보레아스 (조룡)",
+        "navMonster": "밀라보레아스 (조룡)"
+      },
+      {
+        "name": "진오우거 아종",
+        "navMonster": "진오우거 아종"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Mountain Rescue",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Stygian Zinogre",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Fire Drill",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Brachydios and a Stygian Zinogre",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

@@ -1,0 +1,331 @@
+{
+  "materials": [
+    {
+      "name": "옥랑룡 용털",
+      "count": 4,
+      "nameJa": "",
+      "itemId": "item_mh4u_0766",
+      "mh4uId": 766,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "진오우거 아종",
+          "navMonster": "진오우거 아종",
+          "nameEn": "Stygian Zinogre",
+          "rank": "상위",
+          "methods": [
+            "Break Back · 30% · ×1",
+            "Capture · 28% · ×1",
+            "Body Carve · 24% · ×1",
+            "Bug-Catching Back · 10% · ×1",
+            "Tail Carve · 9% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Forge Ahead",
+          "nameEn": "Forge Ahead",
+          "level": "Caravan★9",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Stygian Zinogre",
+          "probability": 22,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Prickly Pair",
+          "nameEn": "Advanced: Prickly Pair",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Stygian Zinogre and a Seregios",
+          "probability": 22,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Infernal Overlord",
+          "nameEn": "Infernal Overlord",
+          "level": "Guild★6",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Stygian Zinogre",
+          "probability": 22,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "옥랑룡 견갑각",
+      "count": 5,
+      "nameJa": "",
+      "itemId": "item_mh4u_0755",
+      "mh4uId": 755,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "진오우거 아종",
+          "navMonster": "진오우거 아종",
+          "nameEn": "Stygian Zinogre",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 44% · ×1",
+            "Tail Carve · 20% · ×1",
+            "Shiny Drop · 15% · ×1",
+            "Break Head · 11% · ×1",
+            "Capture · 10% · ×2",
+            "Break Back · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Forge Ahead",
+          "nameEn": "Forge Ahead",
+          "level": "Caravan★9",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Stygian Zinogre",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Prickly Pair",
+          "nameEn": "Advanced: Prickly Pair",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Stygian Zinogre and a Seregios",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Infernal Overlord",
+          "nameEn": "Infernal Overlord",
+          "level": "Guild★6",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Stygian Zinogre",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "옥랑룡 혼옥",
+      "count": 1,
+      "nameJa": "",
+      "itemId": "item_mh4u_0768",
+      "mh4uId": 768,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "진오우거 아종",
+          "navMonster": "진오우거 아종",
+          "nameEn": "Stygian Zinogre",
+          "rank": "G급",
+          "methods": [
+            "Capture · 6% · ×1",
+            "Shiny Drop · 5% · ×1",
+            "Body Carve · 3% · ×1",
+            "Break Head · 3% · ×1",
+            "Tail Carve · 2% · ×1",
+            "Capture · 2% · ×1",
+            "Shiny Drop · 1% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Mountain Rescue",
+          "nameEn": "Mountain Rescue",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Stygian Zinogre",
+          "probability": 3,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Fire Drill",
+          "nameEn": "Fire Drill",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Brachydios and a Stygian Zinogre",
+          "probability": 3,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Mega Hunt-a-thon",
+          "nameEn": "Advanced: Mega Hunt-a-thon",
+          "level": "Guild★6",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 2,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "용살열매",
+      "count": 20,
+      "nameJa": "",
+      "itemId": "item_26b1840344fe",
+      "mh4uId": 196,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Pick Your Poison",
+          "nameEn": "Pick Your Poison",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt an Iodrome",
+          "probability": 10,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Energy Crisis",
+          "nameEn": "Energy Crisis",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 5 Coals",
+          "probability": 10,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Learning Experience",
+          "nameEn": "Learning Experience",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay 8 Ioprey",
+          "probability": 10,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "진오우거 아종",
+        "navMonster": "진오우거 아종"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Forge Ahead",
+        "nameJa": "",
+        "level": "Caravan★9",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Stygian Zinogre",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Prickly Pair",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Stygian Zinogre and a Seregios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Infernal Overlord",
+        "nameJa": "",
+        "level": "Guild★6",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Stygian Zinogre",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Mountain Rescue",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Stygian Zinogre",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Fire Drill",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Brachydios and a Stygian Zinogre",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Mega Hunt-a-thon",
+        "nameJa": "",
+        "level": "Guild★6",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt all large monsters",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Pick Your Poison",
+        "nameJa": "",
+        "level": "Caravan★5",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt an Iodrome",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Energy Crisis",
+        "nameJa": "",
+        "level": "Caravan★5",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 5 Coals",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Learning Experience",
+        "nameJa": "",
+        "level": "Caravan★5",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay 8 Ioprey",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

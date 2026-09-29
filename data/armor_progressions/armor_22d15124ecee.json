@@ -1,0 +1,211 @@
+{
+  "materials": [
+    {
+      "name": "수피룡 가죽",
+      "count": 5,
+      "nameJa": "垂皮竜の皮",
+      "itemId": "item_mh4u_0363",
+      "mh4uId": 363,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Slagtoth",
+          "navMonster": "",
+          "nameEn": "Slagtoth",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 25% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Oil Toil",
+          "nameEn": "Oil Toil",
+          "level": "Caravan★4",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 5 Slagtoth Oils",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "갑충 배주머니",
+      "count": 3,
+      "nameJa": "甲虫の腹袋",
+      "itemId": "item_mh4u_0370",
+      "mh4uId": 370,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Altaroth",
+          "navMonster": "",
+          "nameEn": "Altaroth",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 50% · ×1",
+            "Shiny Drop (Gray) · 32% · ×1",
+            "Body Carve · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Bnahabra Bloodbath",
+          "nameEn": "Bnahabra Bloodbath",
+          "level": "Guild★1",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay 12 Bnahabra",
+          "probability": 50,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "개구리기름",
+      "count": 3,
+      "nameJa": "カワズの油",
+      "itemId": "item_mh4u_0542",
+      "mh4uId": 542,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "테츠카브라",
+          "navMonster": "테츠카브라",
+          "nameEn": "Tetsucabra",
+          "rank": "하위",
+          "methods": [
+            "Shiny Drop · 25% · ×1",
+            "Capture · 20% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "자보아자길",
+          "navMonster": "자보아자길",
+          "nameEn": "Zamtrios",
+          "rank": "상위",
+          "methods": [
+            "Shiny Drop · 25% · ×1",
+            "Shiny Drop · 20% · ×1",
+            "Shiny Drop (Breaking Ice) · 10% · ×1",
+            "Capture · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Boulder-bash",
+          "nameEn": "Boulder-bash",
+          "level": "Caravan★3",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Tetsucabra",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Amphibiphobia",
+          "nameEn": "Advanced: Amphibiphobia",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Zamtrios and a Tetsucabra",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Tackling a Tetsucabra",
+          "nameEn": "Tackling a Tetsucabra",
+          "level": "Guild★1",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Tetsucabra",
+          "probability": 12,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "Slagtoth",
+        "navMonster": ""
+      },
+      {
+        "name": "Altaroth",
+        "navMonster": ""
+      },
+      {
+        "name": "테츠카브라",
+        "navMonster": "테츠카브라"
+      },
+      {
+        "name": "자보아자길",
+        "navMonster": "자보아자길"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Oil Toil",
+        "nameJa": "",
+        "level": "Caravan★4",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 5 Slagtoth Oils",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Bnahabra Bloodbath",
+        "nameJa": "",
+        "level": "Guild★1",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay 12 Bnahabra",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Boulder-bash",
+        "nameJa": "",
+        "level": "Caravan★3",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Tetsucabra",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Amphibiphobia",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Zamtrios and a Tetsucabra",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Tackling a Tetsucabra",
+        "nameJa": "",
+        "level": "Guild★1",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Tetsucabra",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

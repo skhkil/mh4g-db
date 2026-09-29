@@ -1,0 +1,67 @@
+{
+  "materials": [
+    {
+      "name": "헌터모집공지",
+      "count": 2,
+      "nameJa": "ハンター急募告知",
+      "itemId": "item_mh4u_1395",
+      "mh4uId": 1395,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "",
+          "name": "헌터 일지 괴조 편",
+          "nameJa": "ハンター日誌　怪鳥の回",
+          "level": "G★1",
+          "questType": "event",
+          "location": "유적평원",
+          "objective": "얀쿡 2마리 이상 수렵 후 귀환 또는 네코택 티켓 납품",
+          "note": "기본 보수에서 헌터모집공지를 획득"
+        }
+      ]
+    },
+    {
+      "name": "동반자티켓",
+      "count": 1,
+      "nameJa": "オトモチケット",
+      "itemId": "item_c85fb1235419",
+      "mh4uId": 1420,
+      "sources": [
+        {
+          "type": "acquire",
+          "label": "따끈따끈섬 또는 마이하우스"
+        }
+      ]
+    },
+    {
+      "name": "대장로티켓",
+      "count": 1,
+      "nameJa": "大長老チケット",
+      "itemId": "item_64f8e301f2c3",
+      "mh4uId": 1442,
+      "sources": [
+        {
+          "type": "acquire",
+          "label": "이벤트 퀘스트 보수"
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [],
+    "quests": [
+      {
+        "id": "",
+        "name": "헌터 일지 괴조 편",
+        "nameJa": "ハンター日誌　怪鳥の回",
+        "level": "G★1",
+        "questType": "event",
+        "location": "유적평원",
+        "objective": "얀쿡 2마리 이상 수렵 후 귀환 또는 네코택 티켓 납품",
+        "note": "기본 보수에서 헌터모집공지를 획득"
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

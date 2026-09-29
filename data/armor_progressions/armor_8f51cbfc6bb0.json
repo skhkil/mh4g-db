@@ -1,0 +1,350 @@
+{
+  "materials": [
+    {
+      "name": "도모수 털",
+      "count": 2,
+      "nameJa": "桃毛獣の毛",
+      "itemId": "item_mh4u_0492",
+      "mh4uId": 492,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "바바콩가",
+          "navMonster": "바바콩가",
+          "nameEn": "Congalala",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 63% · ×1",
+            "Break Head · 60% · ×1",
+            "Capture · 40% · ×1",
+            "Body Carve · 5% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Wild Palico Panic",
+          "nameEn": "Wild Palico Panic",
+          "level": "Caravan★4",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Congalala",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Pink Stink",
+          "nameEn": "Pink Stink",
+          "level": "Caravan★4",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Congalala",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "The Smell of Fear",
+          "nameEn": "The Smell of Fear",
+          "level": "Caravan★4",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Congalala and a Gendrome",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "콩가 털",
+      "count": 4,
+      "nameJa": "コンガの毛",
+      "itemId": "item_mh4u_0489",
+      "mh4uId": 489,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Conga",
+          "navMonster": "",
+          "nameEn": "Conga",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 50% · ×1",
+            "Body Carve · 5% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Road Work",
+          "nameEn": "Road Work",
+          "level": "Caravan★3",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Capture a Gendrome",
+          "probability": 100,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Conga Bongo",
+          "nameEn": "Conga Bongo",
+          "level": "Guild★2",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay 6 Congas",
+          "probability": 100,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Conga Bongo",
+          "nameEn": "Conga Bongo",
+          "level": "Caravan★3",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay 5 Congas",
+          "probability": 26,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "괴수골",
+      "count": 2,
+      "nameJa": "獣骨",
+      "itemId": "item_5ed5ced47a6f",
+      "mh4uId": 317,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Conga",
+          "navMonster": "",
+          "nameEn": "Conga",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 22% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "Popo",
+          "navMonster": "",
+          "nameEn": "Popo",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 20% · ×1",
+            "Body Carve · 8% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "바바콩가",
+          "navMonster": "바바콩가",
+          "nameEn": "Congalala",
+          "rank": "하위",
+          "methods": [
+            "Capture · 20% · ×4",
+            "Shiny Drop (Bone) · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Bite Your Tongues",
+          "nameEn": "Bite Your Tongues",
+          "level": "Guild★2",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Deliver 6 Popo Tongues",
+          "probability": 100,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Conga Bongo",
+          "nameEn": "Conga Bongo",
+          "level": "Caravan★3",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay 5 Congas",
+          "probability": 25,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Conga Bongo",
+          "nameEn": "Conga Bongo",
+          "level": "Guild★2",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay 6 Congas",
+          "probability": 25,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "끈적뚜기",
+      "count": 3,
+      "nameJa": "のりこねバッタ",
+      "itemId": "item_b0cf7cb3f2bf",
+      "mh4uId": 264,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Crystal Clearing",
+          "nameEn": "Crystal Clearing",
+          "level": "Caravan★2",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 4 Sulfur Crystals",
+          "probability": 6,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Bug Appétit",
+          "nameEn": "Bug Appétit",
+          "level": "Caravan★2",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Seltas",
+          "probability": 6,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Boulder-bash",
+          "nameEn": "Boulder-bash",
+          "level": "Caravan★3",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Tetsucabra",
+          "probability": 6,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "바바콩가",
+        "navMonster": "바바콩가"
+      },
+      {
+        "name": "Conga",
+        "navMonster": ""
+      },
+      {
+        "name": "Popo",
+        "navMonster": ""
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Wild Palico Panic",
+        "nameJa": "",
+        "level": "Caravan★4",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Congalala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Pink Stink",
+        "nameJa": "",
+        "level": "Caravan★4",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Congalala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "The Smell of Fear",
+        "nameJa": "",
+        "level": "Caravan★4",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Congalala and a Gendrome",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Road Work",
+        "nameJa": "",
+        "level": "Caravan★3",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Capture a Gendrome",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Conga Bongo",
+        "nameJa": "",
+        "level": "Guild★2",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay 6 Congas",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Bite Your Tongues",
+        "nameJa": "",
+        "level": "Guild★2",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Deliver 6 Popo Tongues",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Crystal Clearing",
+        "nameJa": "",
+        "level": "Caravan★2",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 4 Sulfur Crystals",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Bug Appétit",
+        "nameJa": "",
+        "level": "Caravan★2",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Seltas",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Boulder-bash",
+        "nameJa": "",
+        "level": "Caravan★3",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Tetsucabra",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

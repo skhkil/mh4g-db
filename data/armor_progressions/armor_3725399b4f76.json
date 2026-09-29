@@ -1,0 +1,270 @@
+{
+  "materials": [
+    {
+      "name": "패룡 중가시",
+      "count": 3,
+      "nameJa": "覇竜の重棘",
+      "itemId": "item_mh4u_1008",
+      "mh4uId": 1008,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "아캄토름",
+          "navMonster": "아캄토름",
+          "nameEn": "Akantor",
+          "rank": "G급",
+          "methods": [
+            "Break Back · 80% · ×1",
+            "Shiny Drop · 5% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Dark Domination",
+          "nameEn": "Advanced: Dark Domination",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay an Akantor",
+          "probability": 15,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "폭풍룡 비행날개",
+          "requiredItemId": "item_mh4u_1209",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: Wings of Woe",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "패룡 두툼비늘",
+      "count": 4,
+      "nameJa": "覇竜の厚鱗",
+      "itemId": "item_mh4u_0998",
+      "mh4uId": 998,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "아캄토름",
+          "navMonster": "아캄토름",
+          "nameEn": "Akantor",
+          "rank": "G급",
+          "methods": [
+            "Break Belly · 50% · ×1",
+            "Body Carve · 36% · ×1",
+            "Tail Carve · 20% · ×1",
+            "Break Head · 18% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Dark Domination",
+          "nameEn": "Advanced: Dark Domination",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay an Akantor",
+          "probability": 30,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "패룡 중갑각",
+      "count": 6,
+      "nameJa": "覇竜の重殻",
+      "itemId": "item_mh4u_1000",
+      "mh4uId": 1000,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "아캄토름",
+          "navMonster": "아캄토름",
+          "nameEn": "Akantor",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 33% · ×1",
+            "Break Belly · 26% · ×1",
+            "Break Back · 20% · ×1",
+            "Shiny Drop · 12% · ×1",
+            "Break Front Leg · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Dark Domination",
+          "nameEn": "Advanced: Dark Domination",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay an Akantor",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "폭풍룡 견갑각",
+          "requiredItemId": "item_mh4u_1208",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: Wings of Woe",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "굉룡 천린",
+      "count": 1,
+      "nameJa": "轟竜の天鱗",
+      "itemId": "item_mh4u_0833",
+      "mh4uId": 833,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "극한상태 티가렉스",
+          "navMonster": "티가렉스",
+          "nameEn": "Apex Tigrex",
+          "rank": "G급",
+          "methods": [
+            "Capture · 5% · ×1",
+            "Body Carve · 4% · ×1",
+            "Tail Carve · 4% · ×1",
+            "Shiny Drop · 2% · ×1",
+            "Break Head · 2% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "티가렉스 희소종",
+          "navMonster": "티가렉스 희소종",
+          "nameEn": "Molten Tigrex",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 4% · ×1",
+            "Body Carve · 3% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "티가렉스",
+          "navMonster": "티가렉스",
+          "nameEn": "Tigrex",
+          "rank": "G급",
+          "methods": [
+            "Capture · 3% · ×1",
+            "Body Carve · 2% · ×1",
+            "Tail Carve · 2% · ×1",
+            "Break Head · 2% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "The Sky Is Falling",
+          "nameEn": "The Sky Is Falling",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Molten Tigrex",
+          "probability": 5,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Tigrex In Effect",
+          "nameEn": "Advanced: Tigrex In Effect",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Tigrex",
+          "probability": 5,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Monster Hunter!",
+          "nameEn": "Advanced: Monster Hunter!",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 5,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "아캄토름",
+        "navMonster": "아캄토름"
+      },
+      {
+        "name": "극한상태 티가렉스",
+        "navMonster": "티가렉스"
+      },
+      {
+        "name": "티가렉스 희소종",
+        "navMonster": "티가렉스 희소종"
+      },
+      {
+        "name": "티가렉스",
+        "navMonster": "티가렉스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: Dark Domination",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay an Akantor",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "The Sky Is Falling",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Molten Tigrex",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Tigrex In Effect",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Tigrex",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Monster Hunter!",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt all large monsters",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

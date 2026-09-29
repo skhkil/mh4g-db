@@ -1,0 +1,102 @@
+{
+  "materials": [
+    {
+      "name": "전설코인G",
+      "count": 3,
+      "nameJa": "デンセツコインＧ",
+      "itemId": "item_mh4u_1328",
+      "mh4uId": 1328,
+      "sources": [
+        {
+          "type": "arena",
+          "name": "Grudge Match: Triplets",
+          "level": "투기대회",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "arena",
+          "name": "Grudge Match: Apex Deviljho",
+          "level": "투기대회",
+          "probability": 35,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "수룡코인G",
+      "count": 5,
+      "nameJa": "獣竜のコインＧ",
+      "itemId": "item_mh4u_1335",
+      "mh4uId": 1335,
+      "sources": [
+        {
+          "type": "arena",
+          "name": "Grudge Match: Apex Deviljho",
+          "level": "투기대회",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "두꺼비코인G",
+      "count": 5,
+      "nameJa": "ガマのコインＧ",
+      "itemId": "item_mh4u_1339",
+      "mh4uId": 1339,
+      "sources": [
+        {
+          "type": "arena",
+          "name": "Grudge Match: Fish Fry",
+          "level": "투기대회",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "다이묘코인",
+      "count": 3,
+      "nameJa": "ダイミョウコイン",
+      "itemId": "item_1d10d75831bd",
+      "mh4uId": 1341,
+      "sources": [
+        {
+          "type": "arena",
+          "name": "Grudge Match: Shell Game",
+          "level": "투기대회",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [],
+    "quests": [],
+    "arena": [
+      {
+        "name": "Grudge Match: Triplets",
+        "level": "투기대회",
+        "probability": 100
+      },
+      {
+        "name": "Grudge Match: Apex Deviljho",
+        "level": "투기대회",
+        "probability": 35
+      },
+      {
+        "name": "Grudge Match: Fish Fry",
+        "level": "투기대회",
+        "probability": 100
+      },
+      {
+        "name": "Grudge Match: Shell Game",
+        "level": "투기대회",
+        "probability": 100
+      }
+    ]
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

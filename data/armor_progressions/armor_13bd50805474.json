@@ -1,0 +1,377 @@
+{
+  "materials": [
+    {
+      "name": "뇌랑룡 강뿔",
+      "count": 2,
+      "nameJa": "雷狼竜の剛角",
+      "itemId": "item_mh4u_0743",
+      "mh4uId": 743,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "진오우거",
+          "navMonster": "진오우거",
+          "nameEn": "Zinogre",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 70% · ×1",
+            "Break Head · 14% · ×2"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "극한상태 진오우거",
+          "navMonster": "진오우거",
+          "nameEn": "Apex Zinogre",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 68% · ×1",
+            "Break Head · 14% · ×2"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "뇌랑룡 뇌전기털",
+      "count": 4,
+      "nameJa": "雷狼竜の雷電毛",
+      "itemId": "item_mh4u_0740",
+      "mh4uId": 740,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "진오우거",
+          "navMonster": "진오우거",
+          "nameEn": "Zinogre",
+          "rank": "G급",
+          "methods": [
+            "Break Back · 30% · ×1",
+            "Capture · 27% · ×1",
+            "Body Carve · 24% · ×1",
+            "Shiny Drop · 10% · ×1",
+            "Bug-Catching Back · 10% · ×1",
+            "Tail Carve · 8% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "극한상태 진오우거",
+          "navMonster": "진오우거",
+          "nameEn": "Apex Zinogre",
+          "rank": "G급",
+          "methods": [
+            "Break Back · 30% · ×1",
+            "Capture · 27% · ×1",
+            "Body Carve · 24% · ×1",
+            "Shiny Drop · 10% · ×1",
+            "Bug-Catching Back · 10% · ×1",
+            "Tail Carve · 8% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Fury on the Mount",
+          "nameEn": "Advanced: Fury on the Mount",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Zinogre",
+          "probability": 30,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "How to Zap Your Zinogre",
+          "nameEn": "How to Zap Your Zinogre",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Zinogre",
+          "probability": 24,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Bolt of Pink",
+          "nameEn": "Advanced: Bolt of Pink",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Zinogre and a Pink Rathian",
+          "probability": 24,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "신룡 검은털+",
+          "requiredItemId": "item_mh4u_1183",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: Bolt of Pink",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "뇌랑룡 견갑각",
+      "count": 3,
+      "nameJa": "雷狼竜の堅殻",
+      "itemId": "item_mh4u_0736",
+      "mh4uId": 736,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "진오우거",
+          "navMonster": "진오우거",
+          "nameEn": "Zinogre",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 45% · ×1",
+            "Tail Carve · 20% · ×1",
+            "Shiny Drop · 15% · ×1",
+            "Break Head · 13% · ×1",
+            "Capture · 10% · ×2",
+            "Break Back · 10% · ×2"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "See the Lightning",
+          "nameEn": "See the Lightning",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Zinogre",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Thunder and Stone",
+          "nameEn": "Thunder and Stone",
+          "level": "Caravan★9",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Zinogre and a Gravios",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Topple the Monarch",
+          "nameEn": "Topple the Monarch",
+          "level": "Guild★5",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Zinogre",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "대룡옥",
+      "count": 1,
+      "nameJa": "大竜玉",
+      "itemId": "item_mh4u_0328",
+      "mh4uId": 328,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "극한상태 가라라아자라 아종",
+          "navMonster": "가라라아자라 아종",
+          "nameEn": "Apex Tidal Najarala",
+          "rank": "G급",
+          "methods": [
+            "Shiny Drop · 8% · ×1",
+            "Capture · 8% · ×1",
+            "Break Tail · 8% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "극한상태 디아블로스",
+          "navMonster": "디아블로스",
+          "nameEn": "Apex Diablos",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 8% · ×1",
+            "Tail Carve · 8% · ×1",
+            "Capture · 8% · ×1",
+            "Shiny Drop · 4% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "그라비모스",
+          "navMonster": "그라비모스",
+          "nameEn": "Gravios",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 7% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Rhapsody in Rime",
+          "nameEn": "Advanced: Rhapsody in Rime",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Tidal Najarala",
+          "probability": 15,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Tigrex In Effect",
+          "nameEn": "Advanced: Tigrex In Effect",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Tigrex",
+          "probability": 15,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Gravios Situation",
+          "nameEn": "Advanced: Gravios Situation",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Gravios",
+          "probability": 15,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "진오우거",
+        "navMonster": "진오우거"
+      },
+      {
+        "name": "극한상태 진오우거",
+        "navMonster": "진오우거"
+      },
+      {
+        "name": "극한상태 가라라아자라 아종",
+        "navMonster": "가라라아자라 아종"
+      },
+      {
+        "name": "극한상태 디아블로스",
+        "navMonster": "디아블로스"
+      },
+      {
+        "name": "그라비모스",
+        "navMonster": "그라비모스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: Fury on the Mount",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Zinogre",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "How to Zap Your Zinogre",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Zinogre",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Bolt of Pink",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Zinogre and a Pink Rathian",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "See the Lightning",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Zinogre",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Thunder and Stone",
+        "nameJa": "",
+        "level": "Caravan★9",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Zinogre and a Gravios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Topple the Monarch",
+        "nameJa": "",
+        "level": "Guild★5",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Zinogre",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Rhapsody in Rime",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Tidal Najarala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Tigrex In Effect",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Tigrex",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Gravios Situation",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Gravios",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

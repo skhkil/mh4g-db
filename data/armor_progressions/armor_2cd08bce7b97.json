@@ -1,0 +1,258 @@
+{
+  "materials": [
+    {
+      "name": "잠구룡 중갑각",
+      "count": 3,
+      "nameJa": "潜口竜の重殻",
+      "itemId": "item_mh4u_1166",
+      "mh4uId": 1166,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "자화룡 두툼비늘",
+          "requiredItemId": "item_mh4u_0662",
+          "unlockQuestId": "quest_154770b228c6",
+          "unlockQuest": "고난도: 4개의 집게 공격!?",
+          "unlockLevel": "★1",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "몬스터의 특농즙",
+      "count": 3,
+      "nameJa": "モンスターの特濃",
+      "itemId": "item_mh4u_0602",
+      "mh4uId": 602,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "아르셀타스",
+          "navMonster": "아르셀타스",
+          "nameEn": "Seltas",
+          "rank": "G급",
+          "methods": [
+            "Shiny Drop · 35% · ×1",
+            "Capture · 10% · ×1",
+            "Capture · 5% · ×2"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "아르셀타스 아종",
+          "navMonster": "아르셀타스 아종",
+          "nameEn": "Desert Seltas",
+          "rank": "G급",
+          "methods": [
+            "Shiny Drop · 35% · ×1",
+            "Capture · 20% · ×1",
+            "Capture · 5% · ×2"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "네르스큐라",
+          "navMonster": "네르스큐라",
+          "nameEn": "Nerscylla",
+          "rank": "G급",
+          "methods": [
+            "Shiny Drop · 35% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Death and Taxidermy",
+          "nameEn": "Death and Taxidermy",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Capture a Nerscylla",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Strutting the Royal Runway",
+          "nameEn": "Strutting the Royal Runway",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Capture a Seltas Queen",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Pestering Pest",
+          "nameEn": "Pestering Pest",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Desert Seltas Queen",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "초식룡 중골",
+      "count": 3,
+      "nameJa": "草食竜の重骨",
+      "itemId": "item_mh4u_0362",
+      "mh4uId": 362,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Rhenoplos",
+          "navMonster": "",
+          "nameEn": "Rhenoplos",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 50% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "Apceros",
+          "navMonster": "",
+          "nameEn": "Apceros",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 50% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "Slagtoth",
+          "navMonster": "",
+          "nameEn": "Slagtoth",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 20% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Pink Problems",
+          "nameEn": "Pink Problems",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt 2 Pink Rathians",
+          "probability": 35,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Death and Taxidermy",
+          "nameEn": "Death and Taxidermy",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Capture a Nerscylla",
+          "probability": 10,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "How to Zap Your Zinogre",
+          "nameEn": "How to Zap Your Zinogre",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Zinogre",
+          "probability": 10,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "아르셀타스",
+        "navMonster": "아르셀타스"
+      },
+      {
+        "name": "아르셀타스 아종",
+        "navMonster": "아르셀타스 아종"
+      },
+      {
+        "name": "네르스큐라",
+        "navMonster": "네르스큐라"
+      },
+      {
+        "name": "Rhenoplos",
+        "navMonster": ""
+      },
+      {
+        "name": "Apceros",
+        "navMonster": ""
+      },
+      {
+        "name": "Slagtoth",
+        "navMonster": ""
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Death and Taxidermy",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Capture a Nerscylla",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Strutting the Royal Runway",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Capture a Seltas Queen",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Pestering Pest",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Desert Seltas Queen",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Pink Problems",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt 2 Pink Rathians",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "How to Zap Your Zinogre",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Zinogre",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

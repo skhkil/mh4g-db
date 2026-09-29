@@ -1,0 +1,241 @@
+{
+  "materials": [
+    {
+      "name": "흑식룡 비늘",
+      "count": 3,
+      "nameJa": "黒蝕竜の鱗",
+      "itemId": "item_mh4u_0854",
+      "mh4uId": 854,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "고어·마가라",
+          "navMonster": "고어·마가라",
+          "nameEn": "Gore Magala",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 40% · ×1",
+            "Break Wing · 35% · ×1",
+            "Tail Carve · 33% · ×1",
+            "Break Head · 33% · ×1",
+            "Break Wing Leg · 32% · ×1",
+            "Shiny Drop · 23% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Tipping the Scales",
+          "nameEn": "Tipping the Scales",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt Gore Magala",
+          "probability": 34,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Dark Wings, Dark Work",
+          "nameEn": "Dark Wings, Dark Work",
+          "level": "Guild★3",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt Gore Magala",
+          "probability": 34,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Afraid of the Dark",
+          "nameEn": "Advanced: Afraid of the Dark",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 16,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "흑식룡 암흑날개",
+      "count": 2,
+      "nameJa": "黒蝕竜の暗翼",
+      "itemId": "item_mh4u_0860",
+      "mh4uId": 860,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "고어·마가라",
+          "navMonster": "고어·마가라",
+          "nameEn": "Gore Magala",
+          "rank": "하위",
+          "methods": [
+            "Break Wing · 65% · ×1",
+            "Break Wing · 30% · ×1",
+            "Capture · 28% · ×1",
+            "Body Carve · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Tipping the Scales",
+          "nameEn": "Tipping the Scales",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt Gore Magala",
+          "probability": 10,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Dark Wings, Dark Work",
+          "nameEn": "Dark Wings, Dark Work",
+          "level": "Guild★3",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt Gore Magala",
+          "probability": 10,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Afraid of the Dark",
+          "nameEn": "Advanced: Afraid of the Dark",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 5,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "흑식룡 갑각",
+      "count": 3,
+      "nameJa": "黒蝕竜の甲殻",
+      "itemId": "item_mh4u_0857",
+      "mh4uId": 857,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "고어·마가라",
+          "navMonster": "고어·마가라",
+          "nameEn": "Gore Magala",
+          "rank": "하위",
+          "methods": [
+            "Capture · 37% · ×1",
+            "Body Carve · 27% · ×1",
+            "Break Head · 20% · ×2"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Tipping the Scales",
+          "nameEn": "Tipping the Scales",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt Gore Magala",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Dark Wings, Dark Work",
+          "nameEn": "Dark Wings, Dark Work",
+          "level": "Guild★3",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt Gore Magala",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Afraid of the Dark",
+          "nameEn": "Advanced: Afraid of the Dark",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 10,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "흑식룡 꼬리",
+      "count": 1,
+      "nameJa": "黒蝕竜の尻尾",
+      "itemId": "item_mh4u_0866",
+      "mh4uId": 866,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "고어·마가라",
+          "navMonster": "고어·마가라",
+          "nameEn": "Gore Magala",
+          "rank": "상위",
+          "methods": [
+            "Tail Carve · 70% · ×1",
+            "Tail Carve · 63% · ×1"
+          ]
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "고어·마가라",
+        "navMonster": "고어·마가라"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Tipping the Scales",
+        "nameJa": "",
+        "level": "Caravan★5",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt Gore Magala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Dark Wings, Dark Work",
+        "nameJa": "",
+        "level": "Guild★3",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt Gore Magala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Afraid of the Dark",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt all large monsters",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

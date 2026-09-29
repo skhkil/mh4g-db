@@ -1,0 +1,339 @@
+{
+  "materials": [
+    {
+      "name": "흑식룡 참혹발톱",
+      "count": 2,
+      "nameJa": "黒蝕竜の惨爪",
+      "itemId": "item_mh4u_0863",
+      "mh4uId": 863,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "고어·마가라",
+          "navMonster": "고어·마가라",
+          "nameEn": "Gore Magala",
+          "rank": "하위",
+          "methods": [
+            "Break Wing Leg · 43% · ×1",
+            "Break Wing Leg · 20% · ×1",
+            "Body Carve · 18% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Tipping the Scales",
+          "nameEn": "Tipping the Scales",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt Gore Magala",
+          "probability": 25,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Dark Wings, Dark Work",
+          "nameEn": "Dark Wings, Dark Work",
+          "level": "Guild★3",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt Gore Magala",
+          "probability": 25,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Afraid of the Dark",
+          "nameEn": "Advanced: Afraid of the Dark",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 13,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "흑식룡 비늘",
+      "count": 2,
+      "nameJa": "黒蝕竜の鱗",
+      "itemId": "item_mh4u_0854",
+      "mh4uId": 854,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "고어·마가라",
+          "navMonster": "고어·마가라",
+          "nameEn": "Gore Magala",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 40% · ×1",
+            "Break Wing · 35% · ×1",
+            "Tail Carve · 33% · ×1",
+            "Break Head · 33% · ×1",
+            "Break Wing Leg · 32% · ×1",
+            "Shiny Drop · 23% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Tipping the Scales",
+          "nameEn": "Tipping the Scales",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt Gore Magala",
+          "probability": 34,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Dark Wings, Dark Work",
+          "nameEn": "Dark Wings, Dark Work",
+          "level": "Guild★3",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt Gore Magala",
+          "probability": 34,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Afraid of the Dark",
+          "nameEn": "Advanced: Afraid of the Dark",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 16,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "흑식룡 갑각",
+      "count": 4,
+      "nameJa": "黒蝕竜の甲殻",
+      "itemId": "item_mh4u_0857",
+      "mh4uId": 857,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "고어·마가라",
+          "navMonster": "고어·마가라",
+          "nameEn": "Gore Magala",
+          "rank": "하위",
+          "methods": [
+            "Capture · 37% · ×1",
+            "Body Carve · 27% · ×1",
+            "Break Head · 20% · ×2"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Tipping the Scales",
+          "nameEn": "Tipping the Scales",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt Gore Magala",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Dark Wings, Dark Work",
+          "nameEn": "Dark Wings, Dark Work",
+          "level": "Guild★3",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt Gore Magala",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Afraid of the Dark",
+          "nameEn": "Advanced: Afraid of the Dark",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 10,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "드래그라이트광석",
+      "count": 5,
+      "nameJa": "ドラグライト鉱石",
+      "itemId": "item_693fc7b0ed4b",
+      "mh4uId": 206,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "게리오스 아종",
+          "navMonster": "게리오스 아종",
+          "nameEn": "Purple Gypceros",
+          "rank": "상위",
+          "methods": [
+            "Break Head · 68% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "다렌·모란",
+          "navMonster": "다렌·모란",
+          "nameEn": "Dah'ren Mohran",
+          "rank": "하위",
+          "methods": [
+            "Mining Back · 54% · ×1",
+            "Break Fin · 20% · ×1",
+            "Break Blowhole · 20% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "게리오스",
+          "navMonster": "게리오스",
+          "nameEn": "Gypceros",
+          "rank": "상위",
+          "methods": [
+            "Break Head · 43% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Energy Crisis",
+          "nameEn": "Energy Crisis",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 5 Coals",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Stone-cold Stones",
+          "nameEn": "Stone-cold Stones",
+          "level": "Guild★2",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Deliver 8 Bloodstones",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Heat Exhaustion",
+          "nameEn": "Heat Exhaustion",
+          "level": "Guild★3",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Deliver 3 Powderstones",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "고어·마가라",
+        "navMonster": "고어·마가라"
+      },
+      {
+        "name": "게리오스 아종",
+        "navMonster": "게리오스 아종"
+      },
+      {
+        "name": "다렌·모란",
+        "navMonster": "다렌·모란"
+      },
+      {
+        "name": "게리오스",
+        "navMonster": "게리오스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Tipping the Scales",
+        "nameJa": "",
+        "level": "Caravan★5",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt Gore Magala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Dark Wings, Dark Work",
+        "nameJa": "",
+        "level": "Guild★3",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt Gore Magala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Afraid of the Dark",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt all large monsters",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Energy Crisis",
+        "nameJa": "",
+        "level": "Caravan★5",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 5 Coals",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Stone-cold Stones",
+        "nameJa": "",
+        "level": "Guild★2",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Deliver 8 Bloodstones",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Heat Exhaustion",
+        "nameJa": "",
+        "level": "Guild★3",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Deliver 3 Powderstones",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

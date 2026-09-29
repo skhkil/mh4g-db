@@ -1,0 +1,123 @@
+{
+  "materials": [
+    {
+      "name": "청괴조 중갑각",
+      "count": 2,
+      "nameJa": "青怪鳥の重殻",
+      "itemId": "item_mh4u_0445",
+      "mh4uId": 445,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "얀쿡크 아종",
+          "navMonster": "얀쿡크 아종",
+          "nameEn": "Blue Yian Kut-Ku",
+          "rank": "G급",
+          "methods": [
+            "Capture · 43% · ×1",
+            "Body Carve · 25% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "괴조 복귀",
+      "count": 1,
+      "nameJa": "怪鳥の福耳",
+      "itemId": "item_mh4u_0437",
+      "mh4uId": 437,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "얀쿡크",
+          "navMonster": "얀쿡크",
+          "nameEn": "Yian Kut-Ku",
+          "rank": "G급",
+          "methods": [
+            "Break Ear · 30% · ×1",
+            "Shiny Drop · 10% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "얀쿡크 아종",
+          "navMonster": "얀쿡크 아종",
+          "nameEn": "Blue Yian Kut-Ku",
+          "rank": "G급",
+          "methods": [
+            "Break Ear · 30% · ×1",
+            "Shiny Drop · 10% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "괴조 강날개",
+      "count": 2,
+      "nameJa": "怪鳥の剛翼",
+      "itemId": "item_mh4u_0441",
+      "mh4uId": 441,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "얀쿡크",
+          "navMonster": "얀쿡크",
+          "nameEn": "Yian Kut-Ku",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 32% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "얀쿡크 아종",
+          "navMonster": "얀쿡크 아종",
+          "nameEn": "Blue Yian Kut-Ku",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 32% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "람포스 강발톱",
+      "count": 4,
+      "nameJa": "ランポスの剛爪",
+      "itemId": "item_mh4u_0401",
+      "mh4uId": 401,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "도스람포스",
+          "navMonster": "도스람포스",
+          "nameEn": "Velocidrome",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 45% · ×1",
+            "Shiny Drop · 23% · ×1"
+          ]
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "얀쿡크 아종",
+        "navMonster": "얀쿡크 아종"
+      },
+      {
+        "name": "얀쿡크",
+        "navMonster": "얀쿡크"
+      },
+      {
+        "name": "도스람포스",
+        "navMonster": "도스람포스"
+      }
+    ],
+    "quests": [],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

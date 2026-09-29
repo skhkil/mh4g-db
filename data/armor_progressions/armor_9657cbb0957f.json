@@ -1,0 +1,159 @@
+{
+  "materials": [
+    {
+      "name": "수룡 비늘",
+      "count": 1,
+      "nameJa": "水竜の鱗",
+      "itemId": "item_mh4u_1090",
+      "mh4uId": 1090,
+      "sources": [
+        {
+          "type": "facility",
+          "label": "따끈따끈섬 투망 머신 · 가노토토스 계열",
+          "note": "투망 머신에서 가노토토스 및 관련 보너스 소재를 획득"
+        }
+      ]
+    },
+    {
+      "name": "수룡 지느러미",
+      "count": 2,
+      "nameJa": "水竜のヒレ",
+      "itemId": "item_mh4u_1091",
+      "mh4uId": 1091,
+      "sources": [
+        {
+          "type": "facility",
+          "label": "따끈따끈섬 투망 머신 · 가노토토스 계열",
+          "note": "투망 머신에서 가노토토스 및 관련 보너스 소재를 획득"
+        }
+      ]
+    },
+    {
+      "name": "드래그라이트광석",
+      "count": 2,
+      "nameJa": "ドラグライト鉱石",
+      "itemId": "item_693fc7b0ed4b",
+      "mh4uId": 206,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "게리오스 아종",
+          "navMonster": "게리오스 아종",
+          "nameEn": "Purple Gypceros",
+          "rank": "상위",
+          "methods": [
+            "Break Head · 68% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "다렌·모란",
+          "navMonster": "다렌·모란",
+          "nameEn": "Dah'ren Mohran",
+          "rank": "하위",
+          "methods": [
+            "Mining Back · 54% · ×1",
+            "Break Fin · 20% · ×1",
+            "Break Blowhole · 20% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "게리오스",
+          "navMonster": "게리오스",
+          "nameEn": "Gypceros",
+          "rank": "상위",
+          "methods": [
+            "Break Head · 43% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Energy Crisis",
+          "nameEn": "Energy Crisis",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 5 Coals",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Stone-cold Stones",
+          "nameEn": "Stone-cold Stones",
+          "level": "Guild★2",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Deliver 8 Bloodstones",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Heat Exhaustion",
+          "nameEn": "Heat Exhaustion",
+          "level": "Guild★3",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Deliver 3 Powderstones",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "게리오스 아종",
+        "navMonster": "게리오스 아종"
+      },
+      {
+        "name": "다렌·모란",
+        "navMonster": "다렌·모란"
+      },
+      {
+        "name": "게리오스",
+        "navMonster": "게리오스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Energy Crisis",
+        "nameJa": "",
+        "level": "Caravan★5",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 5 Coals",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Stone-cold Stones",
+        "nameJa": "",
+        "level": "Guild★2",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Deliver 8 Bloodstones",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Heat Exhaustion",
+        "nameJa": "",
+        "level": "Guild★3",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Deliver 3 Powderstones",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

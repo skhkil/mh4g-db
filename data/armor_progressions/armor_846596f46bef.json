@@ -1,0 +1,272 @@
+{
+  "materials": [
+    {
+      "name": "도스사슴호랑나비",
+      "count": 1,
+      "nameJa": "ドスクワアゲハ",
+      "itemId": "item_84fa2a59dd99",
+      "mh4uId": 272,
+      "sources": [
+        {
+          "type": "acquire",
+          "label": "바람의 헌터 보수"
+        }
+      ]
+    },
+    {
+      "name": "코스모라이트광석",
+      "count": 2,
+      "nameJa": "コスモライト鉱石",
+      "itemId": "item_b64ad25cc204",
+      "mh4uId": 221,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "다라·아마듈라",
+          "navMonster": "다라·아마듈라",
+          "nameEn": "Dalamadur",
+          "rank": "G급",
+          "methods": [
+            "Mining Scale · 12% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "다라·아마듈라 아종",
+          "navMonster": "다라·아마듈라 아종",
+          "nameEn": "Shah Dalamadur",
+          "rank": "G급",
+          "methods": [
+            "Mining Scale · 12% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "우캄루바스",
+          "navMonster": "우캄루바스",
+          "nameEn": "Ukanlos",
+          "rank": "G급",
+          "methods": [
+            "Shiny Drop · 8% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "몬스터의 특농즙",
+      "count": 3,
+      "nameJa": "モンスターの特濃",
+      "itemId": "item_mh4u_0602",
+      "mh4uId": 602,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "아르셀타스",
+          "navMonster": "아르셀타스",
+          "nameEn": "Seltas",
+          "rank": "G급",
+          "methods": [
+            "Shiny Drop · 35% · ×1",
+            "Capture · 10% · ×1",
+            "Capture · 5% · ×2"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "아르셀타스 아종",
+          "navMonster": "아르셀타스 아종",
+          "nameEn": "Desert Seltas",
+          "rank": "G급",
+          "methods": [
+            "Shiny Drop · 35% · ×1",
+            "Capture · 20% · ×1",
+            "Capture · 5% · ×2"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "네르스큐라",
+          "navMonster": "네르스큐라",
+          "nameEn": "Nerscylla",
+          "rank": "G급",
+          "methods": [
+            "Shiny Drop · 35% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Death and Taxidermy",
+          "nameEn": "Death and Taxidermy",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Capture a Nerscylla",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Strutting the Royal Runway",
+          "nameEn": "Strutting the Royal Runway",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Capture a Seltas Queen",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Pestering Pest",
+          "nameEn": "Pestering Pest",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Desert Seltas Queen",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "땅애벌레",
+      "count": 15,
+      "nameJa": "ツチハチノコ",
+      "itemId": "item_0bbfdcb19898",
+      "mh4uId": 259,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Sushifish SOS",
+          "nameEn": "Sushifish SOS",
+          "level": "Caravan★2",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 5 Sushifish",
+          "probability": 16,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Fish Wish",
+          "nameEn": "Fish Wish",
+          "level": "Caravan★3",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 4 Small Goldenfish",
+          "probability": 16,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Goldenfish Gold Mine",
+          "nameEn": "Goldenfish Gold Mine",
+          "level": "Caravan★4",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 3 Goldenfish",
+          "probability": 16,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "다라·아마듈라",
+        "navMonster": "다라·아마듈라"
+      },
+      {
+        "name": "다라·아마듈라 아종",
+        "navMonster": "다라·아마듈라 아종"
+      },
+      {
+        "name": "우캄루바스",
+        "navMonster": "우캄루바스"
+      },
+      {
+        "name": "아르셀타스",
+        "navMonster": "아르셀타스"
+      },
+      {
+        "name": "아르셀타스 아종",
+        "navMonster": "아르셀타스 아종"
+      },
+      {
+        "name": "네르스큐라",
+        "navMonster": "네르스큐라"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Death and Taxidermy",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Capture a Nerscylla",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Strutting the Royal Runway",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Capture a Seltas Queen",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Pestering Pest",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Desert Seltas Queen",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Sushifish SOS",
+        "nameJa": "",
+        "level": "Caravan★2",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 5 Sushifish",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Fish Wish",
+        "nameJa": "",
+        "level": "Caravan★3",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 4 Small Goldenfish",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Goldenfish Gold Mine",
+        "nameJa": "",
+        "level": "Caravan★4",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 3 Goldenfish",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

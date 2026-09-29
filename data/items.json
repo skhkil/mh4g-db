@@ -5687,7 +5687,11 @@
     "note": "여단 ★ 10, 여단 긴급 퀘스트 클리어 시 확률 보수",
     "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
     "nameEn": "Ace Ticket",
-    "mh4uId": 1419
+    "mh4uId": 1419,
+    "aliases": [
+      "필두티켓+2 천인룡 경옥",
+      "필두티켓+1 화룡 역린"
+    ]
   },
   {
     "id": "item_c85fb1235419",
@@ -6101,7 +6105,10 @@
     "note": "콜라보레이션 퀘스트 전용(한글버전 미확정)",
     "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
     "nameEn": "Kerron Star",
-    "mh4uId": 1347
+    "mh4uId": 1347,
+    "aliases": [
+      "ケロンスタ ー"
+    ]
   },
   {
     "id": "item_ac62354a5ce1",
@@ -6134,7 +6141,10 @@
     "note": "콜라보레이션 퀘스트 전용(한글버전 미확정)",
     "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
     "nameEn": "Armament Invitation",
-    "mh4uId": 1349
+    "mh4uId": 1349,
+    "aliases": [
+      "武装への招待 状"
+    ]
   },
   {
     "id": "item_351afbec24f3",
@@ -6203,7 +6213,11 @@
     "note": "콜라보레이션 퀘스트 전용(한글버전 미확정)",
     "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
     "nameEn": "Legend J Pirate Hat",
-    "mh4uId": 1358
+    "mh4uId": 1358,
+    "aliases": [
+      "伝説 Jの海賊帽",
+      "伝説Jの海賊帽"
+    ]
   },
   {
     "id": "item_6d33b4474f57",
@@ -6287,7 +6301,11 @@
     "note": "콜라보레이션 퀘스트 전용(한글버전 미확정)",
     "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
     "nameEn": "Goddess's Melody",
-    "mh4uId": 1363
+    "mh4uId": 1363,
+    "aliases": [
+      "鈴蘭最 強の証",
+      "鈴蘭最強の証"
+    ]
   },
   {
     "id": "item_e734ae3f8919",
@@ -17442,7 +17460,10 @@
     "nameEn": "Gore Magala Feeler+",
     "mh4uId": 872,
     "itemType": "Flesh",
-    "itemSubType": ""
+    "itemSubType": "",
+    "aliases": [
+      "흑식룡 첨예촉각+4 천회룡 채홍날개+"
+    ]
   },
   {
     "id": "item_mh4u_0873",
@@ -23918,6 +23939,23 @@
     "source": "Arena DB + MH4U DB",
     "nameEn": "Fatalis Fellwing",
     "mh4uId": 1031,
+    "itemType": "Flesh",
+    "itemSubType": ""
+  },
+  {
+    "id": "item_mh4u_1118",
+    "name": "노산룡 큰발톱",
+    "nameJa": "老山龍の大爪",
+    "rare": 4,
+    "maxStack": 99,
+    "buyPrice": "-",
+    "sellPrice": "1000z",
+    "acquire": "몬스터·퀘스트",
+    "availability": "",
+    "note": "",
+    "source": "Arena DB + MH4U DB",
+    "nameEn": "Lao-Shan Claw",
+    "mh4uId": 1118,
     "itemType": "Flesh",
     "itemSubType": ""
   }

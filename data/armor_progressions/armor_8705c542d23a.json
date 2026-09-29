@@ -1,0 +1,354 @@
+{
+  "materials": [
+    {
+      "name": "사토룡 두툼비늘",
+      "count": 5,
+      "nameJa": "砂竜の厚鱗",
+      "itemId": "item_mh4u_0644",
+      "mh4uId": 644,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "도스가레오스",
+          "navMonster": "도스가레오스",
+          "nameEn": "Cephadrome",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 45% · ×1",
+            "Capture · 30% · ×1",
+            "Shiny Drop · 25% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "Cephalos",
+          "navMonster": "",
+          "nameEn": "Cephalos",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 35% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Line in the Sand",
+          "nameEn": "Line in the Sand",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt 2 Cephadrome",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Escaped Convicts",
+          "nameEn": "Advanced: Escaped Convicts",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Shrouded Nerscylla and a Desert Seltas Queen",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Harvest Tour: Dunes (Day)",
+          "nameEn": "Harvest Tour: Dunes (Day)",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+          "probability": 30,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "사토룡 보라비늘",
+      "count": 1,
+      "nameJa": "砂竜の紫鱗",
+      "itemId": "item_mh4u_0645",
+      "mh4uId": 645,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "도스가레오스",
+          "navMonster": "도스가레오스",
+          "nameEn": "Cephadrome",
+          "rank": "G급",
+          "methods": [
+            "Break Tail · 60% · ×1",
+            "Capture · 24% · ×1",
+            "Shiny Drop · 15% · ×1",
+            "Body Carve · 12% · ×1"
+          ]
+        },
+        {
+          "type": "exchange",
+          "required": "등어룡 두툼가죽",
+          "requiredItemId": "item_mh4u_1162",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: Bug-Be-Gone",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "사토룡 지느러미++",
+      "count": 2,
+      "nameJa": "砂竜の特上ヒレ",
+      "itemId": "item_mh4u_0648",
+      "mh4uId": 648,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "도스가레오스",
+          "navMonster": "도스가레오스",
+          "nameEn": "Cephadrome",
+          "rank": "G급",
+          "methods": [
+            "Break Fin · 60% · ×1",
+            "Break Tail · 25% · ×1",
+            "Body Carve · 18% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "Cephalos",
+          "navMonster": "",
+          "nameEn": "Cephalos",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 5% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Harvest Tour: Dunes (Day)",
+          "nameEn": "Harvest Tour: Dunes (Day)",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Line in the Sand",
+          "nameEn": "Line in the Sand",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt 2 Cephadrome",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Escaped Convicts",
+          "nameEn": "Advanced: Escaped Convicts",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Shrouded Nerscylla and a Desert Seltas Queen",
+          "probability": 12,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "카브레라이트광석",
+      "count": 5,
+      "nameJa": "カブレライト鉱石",
+      "itemId": "item_6f1301567966",
+      "mh4uId": 213,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "바살모스 아종",
+          "navMonster": "바살모스 아종",
+          "nameEn": "Ruby Basarios",
+          "rank": "상위",
+          "methods": [
+            "Mining Ore · 50% · ×1",
+            "Tail Carve · 40% · ×1",
+            "Break Back · 40% · ×2",
+            "Capture · 36% · ×1",
+            "Break Belly · 30% · ×2",
+            "Body Carve · 25% · ×1",
+            "Mining Back · 25% · ×1",
+            "Break Belly · 25% · ×1",
+            "Shiny Drop · 20% · ×1",
+            "Tail Carve · 20% · ×1",
+            "Mining Ore · 20% · ×1",
+            "Capture · 14% · ×1",
+            "Mining Back · 10% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "게리오스",
+          "navMonster": "게리오스",
+          "nameEn": "Gypceros",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 43% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "바살모스",
+          "navMonster": "바살모스",
+          "nameEn": "Basarios",
+          "rank": "상위",
+          "methods": [
+            "Tail Carve · 40% · ×1",
+            "Break Back · 40% · ×2",
+            "Capture · 36% · ×1",
+            "Break Belly · 30% · ×2",
+            "Body Carve · 25% · ×1",
+            "Break Belly · 25% · ×1",
+            "Mining Back · 25% · ×1",
+            "Shiny Drop · 20% · ×1",
+            "Tail Carve · 20% · ×1",
+            "Capture · 14% · ×2",
+            "Mining Back · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Meteoric Prize",
+          "nameEn": "Meteoric Prize",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 1 Meteor Chunk",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Splendid Sootstone",
+          "nameEn": "Splendid Sootstone",
+          "level": "Guild★4",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Deliver 4 Sootstone Ores",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Take a Powderstone",
+          "nameEn": "Take a Powderstone",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 1 Powderstone",
+          "probability": 16,
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "도스가레오스",
+        "navMonster": "도스가레오스"
+      },
+      {
+        "name": "Cephalos",
+        "navMonster": ""
+      },
+      {
+        "name": "바살모스 아종",
+        "navMonster": "바살모스 아종"
+      },
+      {
+        "name": "게리오스",
+        "navMonster": "게리오스"
+      },
+      {
+        "name": "바살모스",
+        "navMonster": "바살모스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Line in the Sand",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt 2 Cephadrome",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Escaped Convicts",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Shrouded Nerscylla and a Desert Seltas Queen",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Harvest Tour: Dunes (Day)",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Meteoric Prize",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 1 Meteor Chunk",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Splendid Sootstone",
+        "nameJa": "",
+        "level": "Guild★4",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Deliver 4 Sootstone Ores",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Take a Powderstone",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 1 Powderstone",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

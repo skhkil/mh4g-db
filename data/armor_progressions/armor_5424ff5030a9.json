@@ -1,0 +1,312 @@
+{
+  "materials": [
+    {
+      "name": "괴상어 비늘",
+      "count": 2,
+      "nameJa": "化け鮫の鱗",
+      "itemId": "item_mh4u_0552",
+      "mh4uId": 552,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "자보아자길",
+          "navMonster": "자보아자길",
+          "nameEn": "Zamtrios",
+          "rank": "하위",
+          "methods": [
+            "Break Front Leg · 44% · ×1",
+            "Body Carve · 25% · ×1",
+            "Break Fin · 24% · ×1",
+            "Break Tail · 24% · ×1",
+            "Capture · 20% · ×1",
+            "Shiny Drop · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Meownster Hunter Havoc",
+          "nameEn": "Meownster Hunter Havoc",
+          "level": "Caravan★4",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Zamtrios",
+          "probability": 16,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "An Ice Surprise",
+          "nameEn": "An Ice Surprise",
+          "level": "Caravan★4",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Zamtrios",
+          "probability": 16,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Speartuna Fishing",
+          "nameEn": "Speartuna Fishing",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 3 Speartuna",
+          "probability": 16,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "괴상어 가죽",
+      "count": 4,
+      "nameJa": "化け鮫の皮",
+      "itemId": "item_mh4u_0549",
+      "mh4uId": 549,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "자보아자길",
+          "navMonster": "자보아자길",
+          "nameEn": "Zamtrios",
+          "rank": "하위",
+          "methods": [
+            "Capture · 36% · ×1",
+            "Body Carve · 33% · ×1",
+            "Break Front Leg · 24% · ×1",
+            "Break Fin · 11% · ×1",
+            "Break Tail · 11% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Meownster Hunter Havoc",
+          "nameEn": "Meownster Hunter Havoc",
+          "level": "Caravan★4",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Zamtrios",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "An Ice Surprise",
+          "nameEn": "An Ice Surprise",
+          "level": "Caravan★4",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Zamtrios",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: En Trade Route",
+          "nameEn": "Advanced: En Trade Route",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Zamtrios and a Lagombi",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "괴상어 지느러미",
+      "count": 1,
+      "nameJa": "化け鮫のヒレ",
+      "itemId": "item_mh4u_0555",
+      "mh4uId": 555,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "자보아자길",
+          "navMonster": "자보아자길",
+          "nameEn": "Zamtrios",
+          "rank": "하위",
+          "methods": [
+            "Break Fin · 65% · ×1",
+            "Break Front Leg · 32% · ×1",
+            "Body Carve · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Meownster Hunter Havoc",
+          "nameEn": "Meownster Hunter Havoc",
+          "level": "Caravan★4",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Zamtrios",
+          "probability": 16,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "An Ice Surprise",
+          "nameEn": "An Ice Surprise",
+          "level": "Caravan★4",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Zamtrios",
+          "probability": 16,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Speartuna Fishing",
+          "nameEn": "Speartuna Fishing",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 3 Speartuna",
+          "probability": 16,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "상어비늘",
+      "count": 2,
+      "nameJa": "鮫肌の鱗",
+      "itemId": "item_mh4u_0545",
+      "mh4uId": 545,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "스쿠아길",
+          "navMonster": "",
+          "nameEn": "Zamite",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 15% · ×1",
+            "Body Carve · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Zamite Fight",
+          "nameEn": "Zamite Fight",
+          "level": "Caravan★4",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay 8 Zamite",
+          "probability": 20,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Zamite Fight",
+          "nameEn": "Zamite Fight",
+          "level": "Guild★2",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay 10 Zamite",
+          "probability": 20,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Puffer Fish",
+          "nameEn": "Puffer Fish",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Zamtrios",
+          "probability": 12,
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "자보아자길",
+        "navMonster": "자보아자길"
+      },
+      {
+        "name": "스쿠아길",
+        "navMonster": ""
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Meownster Hunter Havoc",
+        "nameJa": "",
+        "level": "Caravan★4",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Zamtrios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "An Ice Surprise",
+        "nameJa": "",
+        "level": "Caravan★4",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Zamtrios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Speartuna Fishing",
+        "nameJa": "",
+        "level": "Caravan★5",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 3 Speartuna",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: En Trade Route",
+        "nameJa": "",
+        "level": "Caravan★5",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Zamtrios and a Lagombi",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Zamite Fight",
+        "nameJa": "",
+        "level": "Caravan★4",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay 8 Zamite",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Puffer Fish",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Zamtrios",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

@@ -1,0 +1,161 @@
+{
+  "materials": [
+    {
+      "name": "금사자티켓",
+      "count": 1,
+      "nameJa": "金獅子チケット",
+      "itemId": "item_6a79da8b7cfb",
+      "mh4uId": 1407,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "event-high-026",
+          "name": "분노의 극치",
+          "nameEn": "All The Rage",
+          "level": "★7",
+          "questType": "event",
+          "location": "용암섬",
+          "objective": "격앙 라잔 2마리 토벌",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "태고의 파편",
+      "count": 4,
+      "nameJa": "太古の破片",
+      "itemId": "item_4b514d4e7fcb",
+      "mh4uId": 1225,
+      "sources": [
+        {
+          "type": "acquire",
+          "label": "채굴(탐색, 길드퀘)"
+        }
+      ]
+    },
+    {
+      "name": "금사자 첨예발톱",
+      "count": 2,
+      "nameJa": "金獅子の尖爪",
+      "itemId": "item_mh4u_0513",
+      "mh4uId": 513,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "라잔",
+          "navMonster": "라잔",
+          "nameEn": "Rajang",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 21% · ×1",
+            "Capture · 16% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "격앙 라잔",
+          "navMonster": "격앙 라잔",
+          "nameEn": "Furious Rajang",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 16% · ×1",
+            "Capture · 12% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Tough Love",
+          "nameEn": "Advanced: Tough Love",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Rajang",
+          "probability": 32,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: The Raging Rajang",
+          "nameEn": "Advanced: The Raging Rajang",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Rajang",
+          "probability": 32,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Bet Your Life",
+          "nameEn": "Advanced: Bet Your Life",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Deviljho and a Rajang",
+          "probability": 32,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "라잔",
+        "navMonster": "라잔"
+      },
+      {
+        "name": "격앙 라잔",
+        "navMonster": "격앙 라잔"
+      }
+    ],
+    "quests": [
+      {
+        "id": "event-high-026",
+        "name": "분노의 극치",
+        "nameJa": "",
+        "level": "★7",
+        "questType": "event",
+        "location": "용암섬",
+        "objective": "격앙 라잔 2마리 토벌",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Tough Love",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Rajang",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: The Raging Rajang",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Rajang",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Bet Your Life",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Deviljho and a Rajang",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

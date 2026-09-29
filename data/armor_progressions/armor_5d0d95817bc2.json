@@ -1,0 +1,138 @@
+{
+  "materials": [
+    {
+      "name": "대해룡 갑피",
+      "count": 2,
+      "nameJa": "大海龍の甲皮",
+      "itemId": "item_mh4u_1151",
+      "mh4uId": 1151,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "공폭룡 검은가죽",
+          "requiredItemId": "item_mh4u_0916",
+          "unlockQuestId": "quest_c1d2049ca823",
+          "unlockQuest": "고난도: 공포와 폭동의 사냥",
+          "unlockLevel": "★7",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "신비의 발광체",
+      "count": 1,
+      "nameJa": "神秘の発光体",
+      "itemId": "item_mh4u_1153",
+      "mh4uId": 1153,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "희망의 증표G",
+          "requiredItemId": "item_e4e64a7c5447",
+          "unlockQuestId": "quest_c1d2049ca823",
+          "unlockQuest": "고난도: 공포와 폭동의 사냥",
+          "unlockLevel": "★7",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "은화룡 꼬리",
+      "count": 1,
+      "nameJa": "銀火竜の尻尾",
+      "itemId": "item_mh4u_0708",
+      "mh4uId": 708,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "리오레우스 희소종",
+          "navMonster": "리오레우스 희소종",
+          "nameEn": "Silver Rathalos",
+          "rank": "상위",
+          "methods": [
+            "Tail Carve · 60% · ×1",
+            "Capture · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Silver Sovereign",
+          "nameEn": "Silver Sovereign",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Silver Rathalos",
+          "probability": 13,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Ring of the Silver Sol",
+          "nameEn": "Ring of the Silver Sol",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Silver Rathalos",
+          "probability": 13,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Sinister Astronomy",
+          "nameEn": "Sinister Astronomy",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Silver Rathalos and a Gold Rathian",
+          "probability": 13,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "리오레우스 희소종",
+        "navMonster": "리오레우스 희소종"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Silver Sovereign",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Silver Rathalos",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Ring of the Silver Sol",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Silver Rathalos",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Sinister Astronomy",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Silver Rathalos and a Gold Rathian",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

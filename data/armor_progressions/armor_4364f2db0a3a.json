@@ -1,0 +1,333 @@
+{
+  "materials": [
+    {
+      "name": "鈴蘭最強の証",
+      "count": 2,
+      "nameJa": "鈴蘭最強の証",
+      "itemId": "item_d662d8ae1ac4",
+      "mh4uId": 1363,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "event-g-055",
+          "name": "어둠의 촛불",
+          "nameEn": "The Candle of Darkness",
+          "level": "G★2",
+          "questType": "event",
+          "location": "금지된 땅",
+          "objective": "고어·마가라 토벌",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "길드티켓S",
+      "count": 1,
+      "nameJa": "ギルドチケットＳ",
+      "itemId": "item_fe8dd74cfa10",
+      "mh4uId": 1440,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "event-high-014",
+          "name": "도약하는 공포",
+          "nameEn": "Leaping Terror",
+          "level": "★4",
+          "questType": "event",
+          "location": "Dunes (D)",
+          "objective": "다이묘자자미 1마리와 도스가레오 1마리 수렵",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "event-high-012",
+          "name": "평원에서 유유자적",
+          "nameEn": "Plain & Carefree",
+          "level": "★4",
+          "questType": "event",
+          "location": "유적 평원",
+          "objective": "얀쿡크 1마리 수렵",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "event-high-013",
+          "name": "헤비 메탈",
+          "nameEn": "Heavy Metal",
+          "level": "★4",
+          "questType": "event",
+          "location": "격투장",
+          "objective": "바살모스 1마리와 바살모스 아종 1마리 수렵",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "강인한 조룡가죽",
+      "count": 3,
+      "nameJa": "強靭な鳥竜皮",
+      "itemId": "item_mh4u_0387",
+      "mh4uId": 387,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "도스람포스",
+          "navMonster": "도스람포스",
+          "nameEn": "Velocidrome",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 35% · ×1",
+            "Capture · 35% · ×2",
+            "Body Carve · 30% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "도스게네포스",
+          "navMonster": "도스게네포스",
+          "nameEn": "Gendrome",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 30% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "도스이오스",
+          "navMonster": "도스이오스",
+          "nameEn": "Iodrome",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 30% · ×1",
+            "Shiny Drop · 30% · ×1",
+            "Shiny Drop · 20% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Bad Hair Day: Iodrome",
+          "nameEn": "Bad Hair Day: Iodrome",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt 2 Iodrome",
+          "probability": 20,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Harvest Tour: Primal Forest",
+          "nameEn": "Harvest Tour: Primal Forest",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+          "probability": 20,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Frenzied Trading",
+          "nameEn": "Advanced: Frenzied Trading",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 20,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "흑식룡 비늘",
+      "count": 4,
+      "nameJa": "黒蝕竜の鱗",
+      "itemId": "item_mh4u_0854",
+      "mh4uId": 854,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "고어·마가라",
+          "navMonster": "고어·마가라",
+          "nameEn": "Gore Magala",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 40% · ×1",
+            "Break Wing · 35% · ×1",
+            "Tail Carve · 33% · ×1",
+            "Break Head · 33% · ×1",
+            "Break Wing Leg · 32% · ×1",
+            "Shiny Drop · 23% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Tipping the Scales",
+          "nameEn": "Tipping the Scales",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt Gore Magala",
+          "probability": 34,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Dark Wings, Dark Work",
+          "nameEn": "Dark Wings, Dark Work",
+          "level": "Guild★3",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt Gore Magala",
+          "probability": 34,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Afraid of the Dark",
+          "nameEn": "Advanced: Afraid of the Dark",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 16,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "도스람포스",
+        "navMonster": "도스람포스"
+      },
+      {
+        "name": "도스게네포스",
+        "navMonster": "도스게네포스"
+      },
+      {
+        "name": "도스이오스",
+        "navMonster": "도스이오스"
+      },
+      {
+        "name": "고어·마가라",
+        "navMonster": "고어·마가라"
+      }
+    ],
+    "quests": [
+      {
+        "id": "event-g-055",
+        "name": "어둠의 촛불",
+        "nameJa": "",
+        "level": "G★2",
+        "questType": "event",
+        "location": "금지된 땅",
+        "objective": "고어·마가라 토벌",
+        "note": ""
+      },
+      {
+        "id": "event-high-014",
+        "name": "도약하는 공포",
+        "nameJa": "",
+        "level": "★4",
+        "questType": "event",
+        "location": "Dunes (D)",
+        "objective": "다이묘자자미 1마리와 도스가레오 1마리 수렵",
+        "note": ""
+      },
+      {
+        "id": "event-high-012",
+        "name": "평원에서 유유자적",
+        "nameJa": "",
+        "level": "★4",
+        "questType": "event",
+        "location": "유적 평원",
+        "objective": "얀쿡크 1마리 수렵",
+        "note": ""
+      },
+      {
+        "id": "event-high-013",
+        "name": "헤비 메탈",
+        "nameJa": "",
+        "level": "★4",
+        "questType": "event",
+        "location": "격투장",
+        "objective": "바살모스 1마리와 바살모스 아종 1마리 수렵",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Bad Hair Day: Iodrome",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt 2 Iodrome",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Harvest Tour: Primal Forest",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Frenzied Trading",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt all large monsters",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Tipping the Scales",
+        "nameJa": "",
+        "level": "Caravan★5",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt Gore Magala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Dark Wings, Dark Work",
+        "nameJa": "",
+        "level": "Guild★3",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt Gore Magala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Afraid of the Dark",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt all large monsters",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

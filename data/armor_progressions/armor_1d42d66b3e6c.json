@@ -1,0 +1,255 @@
+{
+  "materials": [
+    {
+      "name": "유니클로티켓",
+      "count": 1,
+      "nameJa": "ユニクロチケット",
+      "itemId": "item_cf69d4a3a72f",
+      "mh4uId": 1366,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "event-high-018",
+          "name": "유니클로: 소재가 필요해",
+          "nameEn": "Uniqlo: Material Needs",
+          "level": "★6",
+          "questType": "event",
+          "location": "격투장",
+          "objective": "티가렉스 1마리와 티가렉스 아종 1마리 수렵",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "흑굉룡 견갑각",
+      "count": 2,
+      "nameJa": "黒轟竜の堅殻",
+      "itemId": "item_mh4u_0836",
+      "mh4uId": 836,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "티가렉스 아종",
+          "navMonster": "티가렉스 아종",
+          "nameEn": "Brute Tigrex",
+          "rank": "상위",
+          "methods": [
+            "Capture · 38% · ×1",
+            "Body Carve · 27% · ×1",
+            "Break Head · 20% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Tigrex Challenge",
+          "nameEn": "Advanced: Tigrex Challenge",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Brute Tigrex",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "The Echoing Roar",
+          "nameEn": "The Echoing Roar",
+          "level": "Caravan★9",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Brute Tigrex",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Ear Ache",
+          "nameEn": "Ear Ache",
+          "level": "Guild★6",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Brute Tigrex",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "염과룡 견갑각",
+          "requiredItemId": "item_mh4u_1135",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: Dragon Attack",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "흑굉룡 비늘+",
+      "count": 3,
+      "nameJa": "黒轟竜の上鱗",
+      "itemId": "item_mh4u_0834",
+      "mh4uId": 834,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "티가렉스 아종",
+          "navMonster": "티가렉스 아종",
+          "nameEn": "Brute Tigrex",
+          "rank": "상위",
+          "methods": [
+            "Tail Carve · 40% · ×1",
+            "Body Carve · 38% · ×1",
+            "Shiny Drop · 20% · ×1",
+            "Capture · 20% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Tigrex Challenge",
+          "nameEn": "Advanced: Tigrex Challenge",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Brute Tigrex",
+          "probability": 28,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "The Echoing Roar",
+          "nameEn": "The Echoing Roar",
+          "level": "Caravan★9",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Brute Tigrex",
+          "probability": 28,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Ear Ache",
+          "nameEn": "Ear Ache",
+          "level": "Guild★6",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Brute Tigrex",
+          "probability": 28,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "광룡결정의 조각",
+      "count": 2,
+      "nameJa": "狂竜結晶の欠片",
+      "itemId": "item_6a4d6a12ffb3",
+      "mh4uId": 1082,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "도스재기",
+          "navMonster": "도스재기",
+          "nameEn": "Great Jaggi",
+          "rank": "하위",
+          "methods": [
+            "Virus Reward · 100% · ×1",
+            "Virus Reward · 75% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "도스람포스",
+          "navMonster": "도스람포스",
+          "nameEn": "Velocidrome",
+          "rank": "하위",
+          "methods": [
+            "Virus Reward · 100% · ×1",
+            "Virus Reward · 75% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "도스게네포스",
+          "navMonster": "도스게네포스",
+          "nameEn": "Gendrome",
+          "rank": "하위",
+          "methods": [
+            "Virus Reward · 100% · ×1",
+            "Virus Reward · 75% · ×1"
+          ]
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "티가렉스 아종",
+        "navMonster": "티가렉스 아종"
+      },
+      {
+        "name": "도스재기",
+        "navMonster": "도스재기"
+      },
+      {
+        "name": "도스람포스",
+        "navMonster": "도스람포스"
+      },
+      {
+        "name": "도스게네포스",
+        "navMonster": "도스게네포스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "event-high-018",
+        "name": "유니클로: 소재가 필요해",
+        "nameJa": "",
+        "level": "★6",
+        "questType": "event",
+        "location": "격투장",
+        "objective": "티가렉스 1마리와 티가렉스 아종 1마리 수렵",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Tigrex Challenge",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Brute Tigrex",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "The Echoing Roar",
+        "nameJa": "",
+        "level": "Caravan★9",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Brute Tigrex",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Ear Ache",
+        "nameJa": "",
+        "level": "Guild★6",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Brute Tigrex",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

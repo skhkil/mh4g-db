@@ -1,0 +1,338 @@
+{
+  "materials": [
+    {
+      "name": "유쿠모티켓",
+      "count": 1,
+      "nameJa": "ユクモチケット",
+      "itemId": "item_mh4u_1424",
+      "mh4uId": 1424,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "event-episodic-079",
+          "name": "번외: 비밀의 파우치 회수",
+          "nameEn": "Bonus: Stash Grab",
+          "level": "★4",
+          "questType": "event",
+          "location": "Dunes (D)",
+          "objective": "비밀의 파우치 10개 납품",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "event-episodic-080",
+          "name": "번외: 그물로 이익을",
+          "nameEn": "Bonus: Net Profits",
+          "level": "★6",
+          "questType": "event",
+          "location": "원생림",
+          "objective": "초전뇌광충 3마리 납품",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "event-episodic-081",
+          "name": "번외: 더 큰 배가 필요해",
+          "nameEn": "Bonus: A Bigger Boat",
+          "level": "★6",
+          "questType": "event",
+          "location": "대해",
+          "objective": "셀레기오스 1마리 토벌",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "천인룡 예인비늘",
+      "count": 3,
+      "nameJa": "千刃竜の鋭刃鱗",
+      "itemId": "item_mh4u_0900",
+      "mh4uId": 900,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "셀레기오스",
+          "navMonster": "셀레기오스",
+          "nameEn": "Seregios",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 44% · ×1",
+            "Break Head · 21% · ×1",
+            "Tail Carve · 20% · ×1",
+            "Capture · 10% · ×2",
+            "Break Talon · 10% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "극한상태 셀레기오스",
+          "navMonster": "셀레기오스",
+          "nameEn": "Apex Seregios",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 43% · ×1",
+            "Break Head · 21% · ×1",
+            "Tail Carve · 20% · ×1",
+            "Capture · 10% · ×2",
+            "Break Talon · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Dance of a Thousand Blades",
+          "nameEn": "Dance of a Thousand Blades",
+          "level": "Caravan★9",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Seregios",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Prickly Pair",
+          "nameEn": "Advanced: Prickly Pair",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Stygian Zinogre and a Seregios",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Death of a Thousand Cuts",
+          "nameEn": "Death of a Thousand Cuts",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Seregios",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "백토수 견복갑",
+      "count": 2,
+      "nameJa": "白兎獣の堅腹甲",
+      "itemId": "item_mh4u_0426",
+      "mh4uId": 426,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "울크스스",
+          "navMonster": "울크스스",
+          "nameEn": "Lagombi",
+          "rank": "G급",
+          "methods": [
+            "Capture · 36% · ×1",
+            "Capture · 35% · ×1",
+            "Body Carve · 28% · ×1",
+            "Body Carve · 15% · ×1",
+            "Shiny Drop · 15% · ×1",
+            "Shiny Drop · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Snowbound Showdown",
+          "nameEn": "Snowbound Showdown",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Lagombi and a Red Khezu",
+          "probability": 28,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Lagombi Lair",
+          "nameEn": "Lagombi Lair",
+          "level": "Guild★5",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt 2 Lagombi",
+          "probability": 28,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Cold-blooded Combo",
+          "nameEn": "Cold-blooded Combo",
+          "level": "Guild★5",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Zamtrios and a Lagombi",
+          "probability": 28,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "식사권",
+      "count": 2,
+      "nameJa": "お食事券",
+      "itemId": "item_20a1762bd171",
+      "mh4uId": 1342,
+      "sources": [
+        {
+          "type": "arena",
+          "name": "Grudge Match: Yian Kut-Ku",
+          "level": "투기대회",
+          "probability": 5,
+          "count": 1
+        },
+        {
+          "type": "arena",
+          "name": "Grudge Match: Kecha Wacha",
+          "level": "투기대회",
+          "probability": 5,
+          "count": 1
+        },
+        {
+          "type": "arena",
+          "name": "Grudge Match: Bug Out",
+          "level": "투기대회",
+          "probability": 5,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "셀레기오스",
+        "navMonster": "셀레기오스"
+      },
+      {
+        "name": "극한상태 셀레기오스",
+        "navMonster": "셀레기오스"
+      },
+      {
+        "name": "울크스스",
+        "navMonster": "울크스스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "event-episodic-079",
+        "name": "번외: 비밀의 파우치 회수",
+        "nameJa": "",
+        "level": "★4",
+        "questType": "event",
+        "location": "Dunes (D)",
+        "objective": "비밀의 파우치 10개 납품",
+        "note": ""
+      },
+      {
+        "id": "event-episodic-080",
+        "name": "번외: 그물로 이익을",
+        "nameJa": "",
+        "level": "★6",
+        "questType": "event",
+        "location": "원생림",
+        "objective": "초전뇌광충 3마리 납품",
+        "note": ""
+      },
+      {
+        "id": "event-episodic-081",
+        "name": "번외: 더 큰 배가 필요해",
+        "nameJa": "",
+        "level": "★6",
+        "questType": "event",
+        "location": "대해",
+        "objective": "셀레기오스 1마리 토벌",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Dance of a Thousand Blades",
+        "nameJa": "",
+        "level": "Caravan★9",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Seregios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Prickly Pair",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Stygian Zinogre and a Seregios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Death of a Thousand Cuts",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Seregios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Snowbound Showdown",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Lagombi and a Red Khezu",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Lagombi Lair",
+        "nameJa": "",
+        "level": "Guild★5",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt 2 Lagombi",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Cold-blooded Combo",
+        "nameJa": "",
+        "level": "Guild★5",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Zamtrios and a Lagombi",
+        "note": ""
+      }
+    ],
+    "arena": [
+      {
+        "name": "Grudge Match: Yian Kut-Ku",
+        "level": "투기대회",
+        "probability": 5
+      },
+      {
+        "name": "Grudge Match: Kecha Wacha",
+        "level": "투기대회",
+        "probability": 5
+      },
+      {
+        "name": "Grudge Match: Bug Out",
+        "level": "투기대회",
+        "probability": 5
+      }
+    ]
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

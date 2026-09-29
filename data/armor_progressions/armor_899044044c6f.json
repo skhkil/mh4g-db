@@ -1,0 +1,228 @@
+{
+  "materials": [
+    {
+      "name": "거극룡 전투발톱",
+      "count": 5,
+      "nameJa": "巨戟龍の戦爪",
+      "itemId": "item_mh4u_1077",
+      "mh4uId": 1077,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "고그마지오스",
+          "navMonster": "고그마지오스",
+          "nameEn": "Gogmazios",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 13% · ×1",
+            "Break Wing · 13% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Quagmire Quarrel",
+          "nameEn": "Advanced: Quagmire Quarrel",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Gogmazios",
+          "probability": 15,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Act of Gog",
+          "nameEn": "Advanced: Act of Gog",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Gogmazios",
+          "probability": 15,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "연흑룡 작열핵",
+          "requiredItemId": "item_mh4u_1220",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: Act of Gog",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "거극룡 근섬유날개",
+      "count": 2,
+      "nameJa": "巨戟龍の筋繊翼",
+      "itemId": "item_mh4u_1078",
+      "mh4uId": 1078,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "고그마지오스",
+          "navMonster": "고그마지오스",
+          "nameEn": "Gogmazios",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · % · ×1",
+            "Break Wing · % · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Quagmire Quarrel",
+          "nameEn": "Advanced: Quagmire Quarrel",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Gogmazios",
+          "probability": 15,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Act of Gog",
+          "nameEn": "Advanced: Act of Gog",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Gogmazios",
+          "probability": 15,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "거극룡 성갑각",
+      "count": 5,
+      "nameJa": "巨戟龍の城殻",
+      "itemId": "item_mh4u_1075",
+      "mh4uId": 1075,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "고그마지오스",
+          "navMonster": "고그마지오스",
+          "nameEn": "Gogmazios",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 28% · ×1",
+            "Break Head · 28% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Quagmire Quarrel",
+          "nameEn": "Advanced: Quagmire Quarrel",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Gogmazios",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Act of Gog",
+          "nameEn": "Advanced: Act of Gog",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Gogmazios",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "코스모라이트광석",
+      "count": 3,
+      "nameJa": "コスモライト鉱石",
+      "itemId": "item_b64ad25cc204",
+      "mh4uId": 221,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "다라·아마듈라",
+          "navMonster": "다라·아마듈라",
+          "nameEn": "Dalamadur",
+          "rank": "G급",
+          "methods": [
+            "Mining Scale · 12% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "다라·아마듈라 아종",
+          "navMonster": "다라·아마듈라 아종",
+          "nameEn": "Shah Dalamadur",
+          "rank": "G급",
+          "methods": [
+            "Mining Scale · 12% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "우캄루바스",
+          "navMonster": "우캄루바스",
+          "nameEn": "Ukanlos",
+          "rank": "G급",
+          "methods": [
+            "Shiny Drop · 8% · ×1"
+          ]
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "고그마지오스",
+        "navMonster": "고그마지오스"
+      },
+      {
+        "name": "다라·아마듈라",
+        "navMonster": "다라·아마듈라"
+      },
+      {
+        "name": "다라·아마듈라 아종",
+        "navMonster": "다라·아마듈라 아종"
+      },
+      {
+        "name": "우캄루바스",
+        "navMonster": "우캄루바스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: Quagmire Quarrel",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay Gogmazios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Act of Gog",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay Gogmazios",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

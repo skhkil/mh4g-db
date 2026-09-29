@@ -1,0 +1,296 @@
+{
+  "materials": [
+    {
+      "name": "괴상어 톱니",
+      "count": 2,
+      "nameJa": "化け鮫の鋸歯",
+      "itemId": "item_mh4u_0558",
+      "mh4uId": 558,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "자보아자길",
+          "navMonster": "자보아자길",
+          "nameEn": "Zamtrios",
+          "rank": "하위",
+          "methods": [
+            "Break Head · 100% · ×1",
+            "Capture · 14% · ×1",
+            "Capture · 12% · ×1",
+            "Body Carve · 8% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Meownster Hunter Havoc",
+          "nameEn": "Meownster Hunter Havoc",
+          "level": "Caravan★4",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Zamtrios",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "An Ice Surprise",
+          "nameEn": "An Ice Surprise",
+          "level": "Caravan★4",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Zamtrios",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Speartuna Fishing",
+          "nameEn": "Speartuna Fishing",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 3 Speartuna",
+          "probability": 12,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "괴상어 칼꼬리",
+      "count": 1,
+      "nameJa": "化け鮫の刃尾",
+      "itemId": "item_mh4u_0560",
+      "mh4uId": 560,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "자보아자길",
+          "navMonster": "자보아자길",
+          "nameEn": "Zamtrios",
+          "rank": "하위",
+          "methods": [
+            "Break Tail · 65% · ×1",
+            "Body Carve · 8% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "괴상어 가죽",
+      "count": 3,
+      "nameJa": "化け鮫の皮",
+      "itemId": "item_mh4u_0549",
+      "mh4uId": 549,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "자보아자길",
+          "navMonster": "자보아자길",
+          "nameEn": "Zamtrios",
+          "rank": "하위",
+          "methods": [
+            "Capture · 36% · ×1",
+            "Body Carve · 33% · ×1",
+            "Break Front Leg · 24% · ×1",
+            "Break Fin · 11% · ×1",
+            "Break Tail · 11% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Meownster Hunter Havoc",
+          "nameEn": "Meownster Hunter Havoc",
+          "level": "Caravan★4",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Zamtrios",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "An Ice Surprise",
+          "nameEn": "An Ice Surprise",
+          "level": "Caravan★4",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Zamtrios",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: En Trade Route",
+          "nameEn": "Advanced: En Trade Route",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Zamtrios and a Lagombi",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "개구리기름",
+      "count": 1,
+      "nameJa": "カワズの油",
+      "itemId": "item_mh4u_0542",
+      "mh4uId": 542,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "테츠카브라",
+          "navMonster": "테츠카브라",
+          "nameEn": "Tetsucabra",
+          "rank": "하위",
+          "methods": [
+            "Shiny Drop · 25% · ×1",
+            "Capture · 20% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "자보아자길",
+          "navMonster": "자보아자길",
+          "nameEn": "Zamtrios",
+          "rank": "상위",
+          "methods": [
+            "Shiny Drop · 25% · ×1",
+            "Shiny Drop · 20% · ×1",
+            "Shiny Drop (Breaking Ice) · 10% · ×1",
+            "Capture · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Boulder-bash",
+          "nameEn": "Boulder-bash",
+          "level": "Caravan★3",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Tetsucabra",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Amphibiphobia",
+          "nameEn": "Advanced: Amphibiphobia",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Zamtrios and a Tetsucabra",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Tackling a Tetsucabra",
+          "nameEn": "Tackling a Tetsucabra",
+          "level": "Guild★1",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Tetsucabra",
+          "probability": 12,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "자보아자길",
+        "navMonster": "자보아자길"
+      },
+      {
+        "name": "테츠카브라",
+        "navMonster": "테츠카브라"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Meownster Hunter Havoc",
+        "nameJa": "",
+        "level": "Caravan★4",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Zamtrios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "An Ice Surprise",
+        "nameJa": "",
+        "level": "Caravan★4",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Zamtrios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Speartuna Fishing",
+        "nameJa": "",
+        "level": "Caravan★5",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 3 Speartuna",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: En Trade Route",
+        "nameJa": "",
+        "level": "Caravan★5",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Zamtrios and a Lagombi",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Boulder-bash",
+        "nameJa": "",
+        "level": "Caravan★3",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Tetsucabra",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Amphibiphobia",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Zamtrios and a Tetsucabra",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Tackling a Tetsucabra",
+        "nameJa": "",
+        "level": "Guild★1",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Tetsucabra",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

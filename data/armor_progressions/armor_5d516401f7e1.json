@@ -1,0 +1,218 @@
+{
+  "materials": [
+    {
+      "name": "폭풍룡 비행날개",
+      "count": 2,
+      "nameJa": "嵐龍の飛膜",
+      "itemId": "item_mh4u_1209",
+      "mh4uId": 1209,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "패룡 중가시 패왕의 증표",
+          "requiredItemId": "",
+          "unlockQuestId": "",
+          "unlockQuest": "G★3 - 벗겨지는 재앙의 외투 G★3「高難度： 剥 蝕する原渦の外套」",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "폭풍룡 견갑각",
+      "count": 4,
+      "nameJa": "嵐龍の堅殻",
+      "itemId": "item_mh4u_1208",
+      "mh4uId": 1208,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "패룡 중갑각",
+          "requiredItemId": "item_mh4u_1000",
+          "unlockQuestId": "",
+          "unlockQuest": "G★3 - 벗겨지는 재앙의 외투 G★3「高難度： 剥 蝕する原渦の外套」",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "소용돌이뼈",
+      "count": 7,
+      "nameJa": "渦巻骨",
+      "itemId": "item_mh4u_1062",
+      "mh4uId": 1062,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "다라·아마듈라",
+          "navMonster": "다라·아마듈라",
+          "nameEn": "Dalamadur",
+          "rank": "상위",
+          "methods": [
+            "Break Back Leg · 50% · ×1",
+            "Break Back Leg · 30% · ×2",
+            "Lower Body Carve · 27% · ×1",
+            "Lower Body Carve · 16% · ×1",
+            "Upper Body Carve · 13% · ×1",
+            "Break Tail · 10% · ×2",
+            "Upper Body Carve · 10% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "다라·아마듈라 아종",
+          "navMonster": "다라·아마듈라 아종",
+          "nameEn": "Shah Dalamadur",
+          "rank": "G급",
+          "methods": [
+            "Break Back Leg · 30% · ×2",
+            "Lower Body Carve · 16% · ×1",
+            "Upper Body Carve · 10% · ×1",
+            "Break Tail · 10% · ×2"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Speartip Menace",
+          "nameEn": "Advanced: Speartip Menace",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Dalamadur",
+          "probability": 30,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Here to Eternity",
+          "nameEn": "Advanced: Here to Eternity",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Dalamadur",
+          "probability": 16,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Eternal Emperor",
+          "nameEn": "Advanced: Eternal Emperor",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Shah Dalamadur",
+          "probability": 15,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "천검의 용신옥",
+      "count": 1,
+      "nameJa": "天剣の龍神玉",
+      "itemId": "item_mh4u_1064",
+      "mh4uId": 1064,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "다라·아마듈라",
+          "navMonster": "다라·아마듈라",
+          "nameEn": "Dalamadur",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 5% · ×1",
+            "Break Back · 4% · ×1",
+            "Lower Body Carve · 3% · ×1",
+            "Tail Carve · 3% · ×1",
+            "Upper Body Carve · 2% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "다라·아마듈라 아종",
+          "navMonster": "다라·아마듈라 아종",
+          "nameEn": "Shah Dalamadur",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 5% · ×1",
+            "Break Back · 4% · ×1",
+            "Lower Body Carve · 3% · ×1",
+            "Tail Carve · 3% · ×1",
+            "Upper Body Carve · 2% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Eternal Emperor",
+          "nameEn": "Advanced: Eternal Emperor",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Shah Dalamadur",
+          "probability": 5,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "유리색용신옥",
+          "requiredItemId": "item_mh4u_1213",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: Eternal Emperor",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "다라·아마듈라",
+        "navMonster": "다라·아마듈라"
+      },
+      {
+        "name": "다라·아마듈라 아종",
+        "navMonster": "다라·아마듈라 아종"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: Speartip Menace",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay Dalamadur",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Here to Eternity",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay Dalamadur",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Eternal Emperor",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay Shah Dalamadur",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

@@ -1,0 +1,214 @@
+{
+  "materials": [
+    {
+      "name": "흑룡 강뿔",
+      "count": 2,
+      "nameJa": "黒龍の剛角",
+      "itemId": "item_mh4u_1023",
+      "mh4uId": 1023,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "밀라보레아스",
+          "navMonster": "밀라보레아스",
+          "nameEn": "Fatalis",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 0% · ×1",
+            "Break Horn · 0% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "흑룡 중갑각",
+      "count": 4,
+      "nameJa": "黒龍の重殻",
+      "itemId": "item_mh4u_1027",
+      "mh4uId": 1027,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "밀라보레아스",
+          "navMonster": "밀라보레아스",
+          "nameEn": "Fatalis",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 0% · ×1",
+            "Break Chest · 0% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "흑룡 두툼비늘",
+      "count": 4,
+      "nameJa": "黒龍の厚鱗",
+      "itemId": "item_mh4u_1025",
+      "mh4uId": 1025,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "밀라보레아스",
+          "navMonster": "밀라보레아스",
+          "nameEn": "Fatalis",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 0% · ×1",
+            "Break Chest · 0% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "화룡 천린",
+      "count": 1,
+      "nameJa": "火竜の天鱗",
+      "itemId": "item_mh4u_0696",
+      "mh4uId": 696,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "리오레우스 희소종",
+          "navMonster": "리오레우스 희소종",
+          "nameEn": "Silver Rathalos",
+          "rank": "G급",
+          "methods": [
+            "Capture · 7% · ×1",
+            "Tail Carve · 5% · ×1",
+            "Break Head · 4% · ×1",
+            "Shiny Drop · 3% · ×1",
+            "Break Back · 1% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "리오레우스",
+          "navMonster": "리오레우스",
+          "nameEn": "Rathalos",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 4% · ×1",
+            "Tail Carve · 3% · ×1",
+            "Capture · 3% · ×1",
+            "Shiny Drop · 2% · ×1",
+            "Break Back · 1% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "리오레우스 아종",
+          "navMonster": "리오레우스 아종",
+          "nameEn": "Azure Rathalos",
+          "rank": "G급",
+          "methods": [
+            "Tail Carve · 4% · ×1",
+            "Capture · 4% · ×1",
+            "Break Head · 4% · ×1",
+            "Shiny Drop · 2% · ×1",
+            "Break Back · 1% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Lab Partners",
+          "nameEn": "Advanced: Lab Partners",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Brachydios and an Azure Rathalos",
+          "probability": 5,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Sovereign of the Sky",
+          "nameEn": "Sovereign of the Sky",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Rathalos",
+          "probability": 1,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Rival Clash",
+          "nameEn": "Rival Clash",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Seregios and a Rathalos",
+          "probability": 1,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "해룡 푸른천린",
+          "requiredItemId": "item_mh4u_1188",
+          "unlockQuestId": "",
+          "unlockQuest": "Rival Clash",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "밀라보레아스",
+        "navMonster": "밀라보레아스"
+      },
+      {
+        "name": "리오레우스 희소종",
+        "navMonster": "리오레우스 희소종"
+      },
+      {
+        "name": "리오레우스",
+        "navMonster": "리오레우스"
+      },
+      {
+        "name": "리오레우스 아종",
+        "navMonster": "리오레우스 아종"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: Lab Partners",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Brachydios and an Azure Rathalos",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Sovereign of the Sky",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Rathalos",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Rival Clash",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Seregios and a Rathalos",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

@@ -1,0 +1,192 @@
+{
+  "materials": [
+    {
+      "name": "흑룡 홍염뿔",
+      "count": 2,
+      "nameJa": "黒龍の紅焔角",
+      "itemId": "item_mh4u_1037",
+      "mh4uId": 1037,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "밀라보레아스 (홍염룡)",
+          "navMonster": "밀라보레아스 (홍염룡)",
+          "nameEn": "Crimson Fatalis",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 0% · ×1",
+            "Break Horn · 0% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: A Final Battle Cry",
+          "nameEn": "Advanced: A Final Battle Cry",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Fatalis or repel it",
+          "probability": 15,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "흑룡 홍염갑각",
+      "count": 5,
+      "nameJa": "黒龍の紅焔殻",
+      "itemId": "item_mh4u_1039",
+      "mh4uId": 1039,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "밀라보레아스 (홍염룡)",
+          "navMonster": "밀라보레아스 (홍염룡)",
+          "nameEn": "Crimson Fatalis",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 0% · ×1",
+            "Break Chest · 0% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: A Final Battle Cry",
+          "nameEn": "Advanced: A Final Battle Cry",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Fatalis or repel it",
+          "probability": 30,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "흑룡 홍염비늘",
+      "count": 4,
+      "nameJa": "黒龍の紅焔鱗",
+      "itemId": "item_mh4u_1038",
+      "mh4uId": 1038,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "밀라보레아스 (홍염룡)",
+          "navMonster": "밀라보레아스 (홍염룡)",
+          "nameEn": "Crimson Fatalis",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 0% · ×1",
+            "Break Chest · 0% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: A Final Battle Cry",
+          "nameEn": "Advanced: A Final Battle Cry",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay a Fatalis or repel it",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "흑개룡 천각",
+      "count": 1,
+      "nameJa": "黒鎧竜の天殻",
+      "itemId": "item_mh4u_0816",
+      "mh4uId": 816,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "그라비모스 아종",
+          "navMonster": "그라비모스 아종",
+          "nameEn": "Black Gravios",
+          "rank": "G급",
+          "methods": [
+            "Capture · 3% · ×1",
+            "Body Carve · 2% · ×1",
+            "Tail Carve · 2% · ×1",
+            "Break Head · 2% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hollow Promise",
+          "nameEn": "Hollow Promise",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Black Gravios",
+          "probability": 1,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: A Black Day",
+          "nameEn": "Advanced: A Black Day",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Black Gravios and a Brute Tigrex",
+          "probability": 1,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "밀라보레아스 (홍염룡)",
+        "navMonster": "밀라보레아스 (홍염룡)"
+      },
+      {
+        "name": "그라비모스 아종",
+        "navMonster": "그라비모스 아종"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: A Final Battle Cry",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay a Fatalis or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Hollow Promise",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Black Gravios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: A Black Day",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Black Gravios and a Brute Tigrex",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

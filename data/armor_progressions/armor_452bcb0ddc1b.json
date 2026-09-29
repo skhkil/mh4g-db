@@ -1,0 +1,122 @@
+{
+  "materials": [
+    {
+      "name": "토사룡 두갑각",
+      "count": 1,
+      "nameJa": "土砂竜の頭殻",
+      "itemId": "item_mh4u_1101",
+      "mh4uId": 1101,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "독괴조 머리",
+          "requiredItemId": "item_mh4u_0449",
+          "unlockQuestId": "quest_959bc1df1f08",
+          "unlockQuest": "침묵, 교활, 암살자의 모든것",
+          "unlockLevel": "★4",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "토사룡 갑각",
+      "count": 2,
+      "nameJa": "土砂竜の甲殻",
+      "itemId": "item_mh4u_1100",
+      "mh4uId": 1100,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "고무질 가죽",
+          "requiredItemId": "item_mh4u_0446",
+          "unlockQuestId": "quest_959bc1df1f08",
+          "unlockQuest": "침묵, 교활, 암살자의 모든것",
+          "unlockLevel": "★4",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "킬러비틀",
+      "count": 2,
+      "nameJa": "キラビートル",
+      "itemId": "item_706ebc21b871",
+      "mh4uId": 265,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Mistentoe Delivery",
+          "nameEn": "Mistentoe Delivery",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 5 Mistentoe",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Crystal Bone Collector",
+          "nameEn": "Crystal Bone Collector",
+          "level": "Caravan★3",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 5 Crystal Bones",
+          "probability": 10,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Conga Bongo",
+          "nameEn": "Conga Bongo",
+          "level": "Caravan★3",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay 5 Congas",
+          "probability": 10,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [],
+    "quests": [
+      {
+        "id": "",
+        "name": "Mistentoe Delivery",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 5 Mistentoe",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Crystal Bone Collector",
+        "nameJa": "",
+        "level": "Caravan★3",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 5 Crystal Bones",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Conga Bongo",
+        "nameJa": "",
+        "level": "Caravan★3",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay 5 Congas",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

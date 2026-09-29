@@ -1,0 +1,268 @@
+{
+  "materials": [
+    {
+      "name": "포갑충 강발톱",
+      "count": 3,
+      "nameJa": "砲甲虫の剛爪",
+      "itemId": "item_mh4u_0633",
+      "mh4uId": 633,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "게넬·셀타스 아종",
+          "navMonster": "게넬·셀타스 아종",
+          "nameEn": "Desert Seltas Queen",
+          "rank": "G급",
+          "methods": [
+            "Break Leg · 65% · ×1",
+            "Break Claw · 60% · ×1",
+            "Body Carve · 10% · ×1",
+            "Capture · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Pestering Pest",
+          "nameEn": "Pestering Pest",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Desert Seltas Queen",
+          "probability": 11,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Escaped Convicts",
+          "nameEn": "Advanced: Escaped Convicts",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Shrouded Nerscylla and a Desert Seltas Queen",
+          "probability": 11,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "포갑충 중흉갑각",
+      "count": 5,
+      "nameJa": "砲甲虫の重胸殻",
+      "itemId": "item_mh4u_0632",
+      "mh4uId": 632,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "게넬·셀타스 아종",
+          "navMonster": "게넬·셀타스 아종",
+          "nameEn": "Desert Seltas Queen",
+          "rank": "G급",
+          "methods": [
+            "Break Claw · 40% · ×1",
+            "Capture · 36% · ×1",
+            "Body Carve · 31% · ×1",
+            "Break Head · 24% · ×1",
+            "Break Leg · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Pestering Pest",
+          "nameEn": "Pestering Pest",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Desert Seltas Queen",
+          "probability": 21,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Escaped Convicts",
+          "nameEn": "Advanced: Escaped Convicts",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Shrouded Nerscylla and a Desert Seltas Queen",
+          "probability": 21,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "포갑충 중턱",
+      "count": 2,
+      "nameJa": "砲甲虫の重顎",
+      "itemId": "item_mh4u_0634",
+      "mh4uId": 634,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "게넬·셀타스 아종",
+          "navMonster": "게넬·셀타스 아종",
+          "nameEn": "Desert Seltas Queen",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 70% · ×1",
+            "Capture · 11% · ×1",
+            "Body Carve · 6% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Pestering Pest",
+          "nameEn": "Pestering Pest",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Desert Seltas Queen",
+          "probability": 8,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Escaped Convicts",
+          "nameEn": "Advanced: Escaped Convicts",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Shrouded Nerscylla and a Desert Seltas Queen",
+          "probability": 8,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "특농축중갑진액",
+      "count": 1,
+      "nameJa": "特濃重甲エキス",
+      "itemId": "item_mh4u_0630",
+      "mh4uId": 630,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "게넬·셀타스 아종",
+          "navMonster": "게넬·셀타스 아종",
+          "nameEn": "Desert Seltas Queen",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 6% · ×1",
+            "Capture · 5% · ×1",
+            "Body Carve · 4% · ×1",
+            "Shiny Drop · 3% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "게넬·셀타스",
+          "navMonster": "게넬·셀타스",
+          "nameEn": "Seltas Queen",
+          "rank": "G급",
+          "methods": [
+            "Capture · 4% · ×1",
+            "Break Head · 4% · ×1",
+            "Body Carve · 3% · ×1",
+            "Shiny Drop · 3% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Pestering Pest",
+          "nameEn": "Pestering Pest",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Desert Seltas Queen",
+          "probability": 4,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Escaped Convicts",
+          "nameEn": "Advanced: Escaped Convicts",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Shrouded Nerscylla and a Desert Seltas Queen",
+          "probability": 4,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Strutting the Royal Runway",
+          "nameEn": "Strutting the Royal Runway",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Capture a Seltas Queen",
+          "probability": 3,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "도볼스톤",
+          "requiredItemId": "item_mh4u_1180",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: Mean and Green",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "게넬·셀타스 아종",
+        "navMonster": "게넬·셀타스 아종"
+      },
+      {
+        "name": "게넬·셀타스",
+        "navMonster": "게넬·셀타스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Pestering Pest",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Desert Seltas Queen",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Escaped Convicts",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Shrouded Nerscylla and a Desert Seltas Queen",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Strutting the Royal Runway",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Capture a Seltas Queen",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

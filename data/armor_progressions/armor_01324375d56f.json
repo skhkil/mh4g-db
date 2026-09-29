@@ -1,0 +1,137 @@
+{
+  "materials": [
+    {
+      "name": "용암룡 지느러미",
+      "count": 3,
+      "nameJa": "溶岩竜の鱗",
+      "itemId": "item_mh4u_1114",
+      "mh4uId": 1114,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "굉룡 이빨",
+          "requiredItemId": "item_mh4u_0828",
+          "unlockQuestId": "quest_10e8277ac568",
+          "unlockQuest": "고난도: 하늘을 누비고 오라",
+          "unlockLevel": "★6",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "용암룡 비늘",
+      "count": 1,
+      "nameJa": "溶岩竜のヒレ",
+      "itemId": "item_mh4u_1113",
+      "mh4uId": 1113,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "굉룡 비늘",
+          "requiredItemId": "item_mh4u_0817",
+          "unlockQuestId": "quest_10e8277ac568",
+          "unlockQuest": "고난도: 하늘을 누비고 오라",
+          "unlockLevel": "★6",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "이오스 가죽",
+      "count": 5,
+      "nameJa": "イーオスの皮",
+      "itemId": "item_mh4u_0414",
+      "mh4uId": 414,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Ioprey",
+          "navMonster": "",
+          "nameEn": "Ioprey",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 15% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Learning Experience",
+          "nameEn": "Learning Experience",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay 8 Ioprey",
+          "probability": 100,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Ioprey In the Way",
+          "nameEn": "Ioprey In the Way",
+          "level": "Guild★3",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay 12 Ioprey",
+          "probability": 100,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Pick Your Poison",
+          "nameEn": "Pick Your Poison",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt an Iodrome",
+          "probability": 25,
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "Ioprey",
+        "navMonster": ""
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Learning Experience",
+        "nameJa": "",
+        "level": "Caravan★5",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay 8 Ioprey",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Ioprey In the Way",
+        "nameJa": "",
+        "level": "Guild★3",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay 12 Ioprey",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Pick Your Poison",
+        "nameJa": "",
+        "level": "Caravan★5",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt an Iodrome",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

@@ -1,0 +1,295 @@
+{
+  "materials": [
+    {
+      "name": "귀와 발톱",
+      "count": 1,
+      "nameJa": "鬼蛙の爪",
+      "itemId": "item_mh4u_0530",
+      "mh4uId": 530,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "테츠카브라",
+          "navMonster": "테츠카브라",
+          "nameEn": "Tetsucabra",
+          "rank": "하위",
+          "methods": [
+            "Break Back Leg · 65% · ×1",
+            "Capture · 20% · ×1",
+            "Body Carve · 18% · ×1",
+            "Capture · 7% · ×2"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Boulder-bash",
+          "nameEn": "Boulder-bash",
+          "level": "Caravan★3",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Tetsucabra",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Amphibiphobia",
+          "nameEn": "Advanced: Amphibiphobia",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Zamtrios and a Tetsucabra",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Tackling a Tetsucabra",
+          "nameEn": "Tackling a Tetsucabra",
+          "level": "Guild★1",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Tetsucabra",
+          "probability": 12,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "귀와 갑각",
+      "count": 2,
+      "nameJa": "鬼蛙の甲殻",
+      "itemId": "item_mh4u_0527",
+      "mh4uId": 527,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "테츠카브라",
+          "navMonster": "테츠카브라",
+          "nameEn": "Tetsucabra",
+          "rank": "하위",
+          "methods": [
+            "Break Back · 40% · ×1",
+            "Body Carve · 22% · ×1",
+            "Capture · 15% · ×1",
+            "Break Back · 15% · ×2",
+            "Break Back Leg · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Boulder-bash",
+          "nameEn": "Boulder-bash",
+          "level": "Caravan★3",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Tetsucabra",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Amphibiphobia",
+          "nameEn": "Advanced: Amphibiphobia",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Zamtrios and a Tetsucabra",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Tackling a Tetsucabra",
+          "nameEn": "Tackling a Tetsucabra",
+          "level": "Guild★1",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Tetsucabra",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "귀와 비늘",
+      "count": 2,
+      "nameJa": "鬼蛙の鱗",
+      "itemId": "item_mh4u_0524",
+      "mh4uId": 524,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "테츠카브라",
+          "navMonster": "테츠카브라",
+          "nameEn": "Tetsucabra",
+          "rank": "하위",
+          "methods": [
+            "Break Back · 60% · ×1",
+            "Body Carve · 35% · ×1",
+            "Break Back Leg · 25% · ×1",
+            "Break Back · 15% · ×2",
+            "Capture · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Boulder-bash",
+          "nameEn": "Boulder-bash",
+          "level": "Caravan★3",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Tetsucabra",
+          "probability": 26,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Amphibiphobia",
+          "nameEn": "Advanced: Amphibiphobia",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Zamtrios and a Tetsucabra",
+          "probability": 26,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Tackling a Tetsucabra",
+          "nameEn": "Tackling a Tetsucabra",
+          "level": "Guild★1",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Tetsucabra",
+          "probability": 26,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "개구리기름",
+      "count": 2,
+      "nameJa": "カワズの油",
+      "itemId": "item_mh4u_0542",
+      "mh4uId": 542,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "테츠카브라",
+          "navMonster": "테츠카브라",
+          "nameEn": "Tetsucabra",
+          "rank": "하위",
+          "methods": [
+            "Shiny Drop · 25% · ×1",
+            "Capture · 20% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "자보아자길",
+          "navMonster": "자보아자길",
+          "nameEn": "Zamtrios",
+          "rank": "상위",
+          "methods": [
+            "Shiny Drop · 25% · ×1",
+            "Shiny Drop · 20% · ×1",
+            "Shiny Drop (Breaking Ice) · 10% · ×1",
+            "Capture · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Boulder-bash",
+          "nameEn": "Boulder-bash",
+          "level": "Caravan★3",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Tetsucabra",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Amphibiphobia",
+          "nameEn": "Advanced: Amphibiphobia",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Zamtrios and a Tetsucabra",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Tackling a Tetsucabra",
+          "nameEn": "Tackling a Tetsucabra",
+          "level": "Guild★1",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Tetsucabra",
+          "probability": 12,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "테츠카브라",
+        "navMonster": "테츠카브라"
+      },
+      {
+        "name": "자보아자길",
+        "navMonster": "자보아자길"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Boulder-bash",
+        "nameJa": "",
+        "level": "Caravan★3",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Tetsucabra",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Amphibiphobia",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Zamtrios and a Tetsucabra",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Tackling a Tetsucabra",
+        "nameJa": "",
+        "level": "Guild★1",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Tetsucabra",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

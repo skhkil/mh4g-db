@@ -1,0 +1,208 @@
+{
+  "materials": [
+    {
+      "name": "금사자 검은털",
+      "count": 2,
+      "nameJa": "金獅子の黒毛",
+      "itemId": "item_mh4u_0511",
+      "mh4uId": 511,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "라잔",
+          "navMonster": "라잔",
+          "nameEn": "Rajang",
+          "rank": "상위",
+          "methods": [
+            "Capture · 44% · ×1",
+            "Body Carve · 27% · ×1",
+            "Shiny Drop · 21% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "격앙 라잔",
+          "navMonster": "격앙 라잔",
+          "nameEn": "Furious Rajang",
+          "rank": "상위",
+          "methods": [
+            "Capture · 33% · ×1",
+            "Body Carve · 20% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Tough Love",
+          "nameEn": "Advanced: Tough Love",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Rajang",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: The Raging Rajang",
+          "nameEn": "Advanced: The Raging Rajang",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Rajang",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Bet Your Life",
+          "nameEn": "Advanced: Bet Your Life",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Deviljho and a Rajang",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "격룡왕코인",
+      "count": 3,
+      "nameJa": "撃龍王のコイン",
+      "itemId": "item_32c1096c26c4",
+      "mh4uId": 1325,
+      "sources": [
+        {
+          "type": "arena",
+          "name": "Grudge Match: Color Code",
+          "level": "투기대회",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "arena",
+          "name": "Grudge Match: Dos Gravi",
+          "level": "투기대회",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "비룡코인",
+      "count": 3,
+      "nameJa": "飛竜のコイン",
+      "itemId": "item_374139509817",
+      "mh4uId": 1330,
+      "sources": [
+        {
+          "type": "arena",
+          "name": "Grudge Match: Brute Tigrex",
+          "level": "투기대회",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "arena",
+          "name": "Grudge Match: Color Code",
+          "level": "투기대회",
+          "probability": 35,
+          "count": 1
+        },
+        {
+          "type": "arena",
+          "name": "Grudge Match: Dos Gravi",
+          "level": "투기대회",
+          "probability": 35,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "수룡코인",
+      "count": 3,
+      "nameJa": "獣竜のコイン",
+      "itemId": "item_68a48f1ebe30",
+      "mh4uId": 1334,
+      "sources": [
+        {
+          "type": "arena",
+          "name": "Grudge Match: Deviljho",
+          "level": "투기대회",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "라잔",
+        "navMonster": "라잔"
+      },
+      {
+        "name": "격앙 라잔",
+        "navMonster": "격앙 라잔"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: Tough Love",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Rajang",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: The Raging Rajang",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Rajang",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Bet Your Life",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Deviljho and a Rajang",
+        "note": ""
+      }
+    ],
+    "arena": [
+      {
+        "name": "Grudge Match: Color Code",
+        "level": "투기대회",
+        "probability": 100
+      },
+      {
+        "name": "Grudge Match: Dos Gravi",
+        "level": "투기대회",
+        "probability": 100
+      },
+      {
+        "name": "Grudge Match: Brute Tigrex",
+        "level": "투기대회",
+        "probability": 100
+      },
+      {
+        "name": "Grudge Match: Deviljho",
+        "level": "투기대회",
+        "probability": 100
+      }
+    ]
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

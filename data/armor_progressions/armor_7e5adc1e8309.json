@@ -1,0 +1,153 @@
+{
+  "materials": [
+    {
+      "name": "염과룡 중갑각",
+      "count": 2,
+      "nameJa": "炎戈竜の重殻",
+      "itemId": "item_mh4u_1175",
+      "mh4uId": 1175,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "홍화룡 두툼비늘",
+          "requiredItemId": "item_mh4u_0674",
+          "unlockQuestId": "quest_6199c640e193",
+          "unlockQuest": "사막에 핀 두 그루의 벚나무",
+          "unlockLevel": "★1",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "염과룡 지느러미++",
+      "count": 1,
+      "nameJa": "炎戈竜の特上ビレ",
+      "itemId": "item_mh4u_1176",
+      "mh4uId": 1176,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "홍화룡 중갑각",
+          "requiredItemId": "item_mh4u_0676",
+          "unlockQuestId": "quest_6199c640e193",
+          "unlockQuest": "사막에 핀 두 그루의 벚나무",
+          "unlockLevel": "★1",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "흉악한 거대머리뼈",
+      "count": 1,
+      "nameJa": "強面な大頭骨",
+      "itemId": "item_mh4u_0537",
+      "mh4uId": 537,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "테츠카브라",
+          "navMonster": "테츠카브라",
+          "nameEn": "Tetsucabra",
+          "rank": "G급",
+          "methods": [
+            "Break Jaw · 25% · ×1",
+            "Body Carve · 18% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "테츠카브라 아종",
+          "navMonster": "테츠카브라 아종",
+          "nameEn": "Berserk Tetsucabra",
+          "rank": "G급",
+          "methods": [
+            "Break Jaw · 20% · ×1",
+            "Body Carve · 15% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Chasing Tail",
+          "nameEn": "Chasing Tail",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt 2 Tetsucabras",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Hollow Hysterics",
+          "nameEn": "Advanced: Hollow Hysterics",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Nerscylla and a Tetsucabra",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Harvest Tour: Volcanic Hollow",
+          "nameEn": "Harvest Tour: Volcanic Hollow",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+          "probability": 12,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "테츠카브라",
+        "navMonster": "테츠카브라"
+      },
+      {
+        "name": "테츠카브라 아종",
+        "navMonster": "테츠카브라 아종"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Chasing Tail",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt 2 Tetsucabras",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Hollow Hysterics",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Nerscylla and a Tetsucabra",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Harvest Tour: Volcanic Hollow",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

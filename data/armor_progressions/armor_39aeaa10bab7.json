@@ -1,0 +1,282 @@
+{
+  "materials": [
+    {
+      "name": "혼돈의 용비늘",
+      "count": 3,
+      "nameJa": "渾沌の竜鱗",
+      "itemId": "item_mh4u_0875",
+      "mh4uId": 875,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "혼돈의 고어·마가라",
+          "navMonster": "혼돈의 고어·마가라",
+          "nameEn": "Chaotic Gore Magala",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 35% · ×1",
+            "Tail Carve · 33% · ×1",
+            "Body Carve · 29% · ×1",
+            "Break Wing Leg · 25% · ×1",
+            "Shiny Drop · 24% · ×1",
+            "Capture · 20% · ×1",
+            "Break Wing · 15% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: All in Its Place",
+          "nameEn": "Advanced: All in Its Place",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt Gore Magala",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Into the Heavens",
+          "nameEn": "Into the Heavens",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Stygian Zinogre and Gore Magala",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: A Plague Awoken",
+          "nameEn": "Advanced: A Plague Awoken",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt Gore Magala",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "대해룡 비늘",
+          "requiredItemId": "item_mh4u_1194",
+          "unlockQuestId": "",
+          "unlockQuest": "Into the Heavens",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "이율의 혼돈날개",
+      "count": 3,
+      "nameJa": "二律を纏う乱翼",
+      "itemId": "item_mh4u_0877",
+      "mh4uId": 877,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "혼돈의 고어·마가라",
+          "navMonster": "혼돈의 고어·마가라",
+          "nameEn": "Chaotic Gore Magala",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 65% · ×1",
+            "Capture · 28% · ×1",
+            "Body Carve · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: A Plague Awoken",
+          "nameEn": "Advanced: A Plague Awoken",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt Gore Magala",
+          "probability": 15,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Wings of Woe",
+          "nameEn": "Advanced: Wings of Woe",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt Gore Magala",
+          "probability": 15,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: All in Its Place",
+          "nameEn": "Advanced: All in Its Place",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt Gore Magala",
+          "probability": 10,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "대해룡 갑옷털",
+          "requiredItemId": "item_mh4u_1195",
+          "unlockQuestId": "",
+          "unlockQuest": "Into the Heavens",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "흑식룡 두툼비늘",
+      "count": 4,
+      "nameJa": "黒蝕竜の厚鱗",
+      "itemId": "item_mh4u_0856",
+      "mh4uId": 856,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "고어·마가라",
+          "navMonster": "고어·마가라",
+          "nameEn": "Gore Magala",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 70% · ×1",
+            "Body Carve · 40% · ×1",
+            "Shiny Drop · 40% · ×1",
+            "Break Wing Leg · 28% · ×1",
+            "Tail Carve · 24% · ×1",
+            "Break Wing · 22% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "혼돈의 고어·마가라",
+          "navMonster": "혼돈의 고어·마가라",
+          "nameEn": "Chaotic Gore Magala",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 40% · ×1",
+            "Capture · 37% · ×1",
+            "Break Wing · 25% · ×1",
+            "Shiny Drop · 24% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: All in Its Place",
+          "nameEn": "Advanced: All in Its Place",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt Gore Magala",
+          "probability": 34,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: A Plague Awoken",
+          "nameEn": "Advanced: A Plague Awoken",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt Gore Magala",
+          "probability": 30,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Wings of Woe",
+          "nameEn": "Advanced: Wings of Woe",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt Gore Magala",
+          "probability": 30,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "환상나비",
+      "count": 3,
+      "nameJa": "マボロシチョウ",
+      "itemId": "item_4f2838814bcb",
+      "mh4uId": 270,
+      "sources": [
+        {
+          "type": "acquire",
+          "label": "채집"
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "혼돈의 고어·마가라",
+        "navMonster": "혼돈의 고어·마가라"
+      },
+      {
+        "name": "고어·마가라",
+        "navMonster": "고어·마가라"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: All in Its Place",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt Gore Magala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Into the Heavens",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Stygian Zinogre and Gore Magala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: A Plague Awoken",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt Gore Magala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Wings of Woe",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt Gore Magala",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

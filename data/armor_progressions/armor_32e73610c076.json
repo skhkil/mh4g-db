@@ -1,0 +1,147 @@
+{
+  "materials": [
+    {
+      "name": "노산룡 뿔",
+      "count": 1,
+      "nameJa": "老山龍の角",
+      "itemId": "item_mh4u_1119",
+      "mh4uId": 1119,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "대지의 용옥",
+          "requiredItemId": "item_mh4u_0995",
+          "unlockQuestId": "quest_69dedd0898a2",
+          "unlockQuest": "고난도: 멀리서 다가오는 호산",
+          "unlockLevel": "★6",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "노산룡 갑각",
+      "count": 4,
+      "nameJa": "老山龍の甲殻",
+      "itemId": "item_mh4u_1117",
+      "mh4uId": 1117,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "호산룡 붉은비늘",
+          "requiredItemId": "item_mh4u_0985",
+          "unlockQuestId": "quest_69dedd0898a2",
+          "unlockQuest": "고난도: 멀리서 다가오는 호산",
+          "unlockLevel": "★6",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "쇄룡 두갑각",
+      "count": 1,
+      "nameJa": "砕竜の頭殻",
+      "itemId": "item_mh4u_0776",
+      "mh4uId": 776,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "브라키디오스",
+          "navMonster": "브라키디오스",
+          "nameEn": "Brachydios",
+          "rank": "하위",
+          "methods": [
+            "Break Head · 76% · ×1",
+            "Body Carve · 6% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Dragon's Din",
+          "nameEn": "Advanced: Dragon's Din",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Brachydios",
+          "probability": 8,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Whole Lava Love",
+          "nameEn": "Whole Lava Love",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Brachydios",
+          "probability": 8,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Rock and Rolled",
+          "nameEn": "Advanced: Rock and Rolled",
+          "level": "Guild★3",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Brachydios",
+          "probability": 8,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "양질의 비틀린뿔",
+          "requiredItemId": "item_mh4u_1116",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: Dragon's Din",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "브라키디오스",
+        "navMonster": "브라키디오스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: Dragon's Din",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Brachydios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Whole Lava Love",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Brachydios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Rock and Rolled",
+        "nameJa": "",
+        "level": "Guild★3",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Brachydios",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

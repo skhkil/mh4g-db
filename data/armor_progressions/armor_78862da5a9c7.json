@@ -1,0 +1,157 @@
+{
+  "materials": [
+    {
+      "name": "대해룡 갑옷털",
+      "count": 2,
+      "nameJa": "大海龍の鎧毛",
+      "itemId": "item_mh4u_1195",
+      "mh4uId": 1195,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "이율의 혼돈날개",
+          "requiredItemId": "item_mh4u_0877",
+          "unlockQuestId": "quest_5f701615a1a9",
+          "unlockQuest": "하늘을 보듯 그들을 보라",
+          "unlockLevel": "★3",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "심연의 용옥",
+      "count": 1,
+      "nameJa": "深淵の龍玉",
+      "itemId": "item_mh4u_1196",
+      "mh4uId": 1196,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "배반하는 쌍역린",
+          "requiredItemId": "item_mh4u_0878",
+          "unlockQuestId": "quest_5f701615a1a9",
+          "unlockQuest": "하늘을 보듯 그들을 보라",
+          "unlockLevel": "★3",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "자화룡 비밀가시",
+      "count": 1,
+      "nameJa": "雌火竜の秘棘",
+      "itemId": "item_mh4u_0669",
+      "mh4uId": 669,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "리오레이아",
+          "navMonster": "리오레이아",
+          "nameEn": "Rathian",
+          "rank": "G급",
+          "methods": [
+            "Break Back · 30% · ×1",
+            "Tail Carve · 15% · ×1",
+            "Body Carve · 8% · ×1",
+            "Shiny Drop · 8% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "리오레이아 아종",
+          "navMonster": "리오레이아 아종",
+          "nameEn": "Pink Rathian",
+          "rank": "G급",
+          "methods": [
+            "Break Back · 30% · ×1",
+            "Tail Carve · 16% · ×1",
+            "Body Carve · 8% · ×1",
+            "Shiny Drop · 8% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Pink Problems",
+          "nameEn": "Pink Problems",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt 2 Pink Rathians",
+          "probability": 8,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Harvest Tour: Dunes (Night)",
+          "nameEn": "Harvest Tour: Dunes (Night)",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+          "probability": 8,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Bolt of Pink",
+          "nameEn": "Advanced: Bolt of Pink",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Zinogre and a Pink Rathian",
+          "probability": 8,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "리오레이아",
+        "navMonster": "리오레이아"
+      },
+      {
+        "name": "리오레이아 아종",
+        "navMonster": "리오레이아 아종"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Pink Problems",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt 2 Pink Rathians",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Harvest Tour: Dunes (Night)",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Bolt of Pink",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Zinogre and a Pink Rathian",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

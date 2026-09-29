@@ -1,0 +1,190 @@
+{
+  "materials": [
+    {
+      "name": "海賊Jチケット",
+      "count": 1,
+      "nameJa": "海賊Ｊチケット",
+      "itemId": "item_b04d6984dcef",
+      "mh4uId": 1356,
+      "sources": [
+        {
+          "type": "acquire",
+          "label": "이벤트 퀘스트 보수"
+        }
+      ]
+    },
+    {
+      "name": "옥랑룡 용털",
+      "count": 3,
+      "nameJa": "獄狼竜の龍毛",
+      "itemId": "item_mh4u_0766",
+      "mh4uId": 766,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "진오우거 아종",
+          "navMonster": "진오우거 아종",
+          "nameEn": "Stygian Zinogre",
+          "rank": "상위",
+          "methods": [
+            "Break Back · 30% · ×1",
+            "Capture · 28% · ×1",
+            "Body Carve · 24% · ×1",
+            "Bug-Catching Back · 10% · ×1",
+            "Tail Carve · 9% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Forge Ahead",
+          "nameEn": "Forge Ahead",
+          "level": "Caravan★9",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Stygian Zinogre",
+          "probability": 22,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Prickly Pair",
+          "nameEn": "Advanced: Prickly Pair",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Stygian Zinogre and a Seregios",
+          "probability": 22,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Infernal Overlord",
+          "nameEn": "Infernal Overlord",
+          "level": "Guild★6",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Stygian Zinogre",
+          "probability": 22,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "옥랑룡 첨예뿔",
+      "count": 4,
+      "nameJa": "獄狼竜の尖角",
+      "itemId": "item_mh4u_0757",
+      "mh4uId": 757,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "진오우거 아종",
+          "navMonster": "진오우거 아종",
+          "nameEn": "Stygian Zinogre",
+          "rank": "상위",
+          "methods": [
+            "Break Head · 76% · ×1",
+            "Break Head · 10% · ×2"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "광룡결정",
+      "count": 3,
+      "nameJa": "狂竜結晶",
+      "itemId": "item_8ba0451005e8",
+      "mh4uId": 1083,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "리오레우스",
+          "navMonster": "리오레우스",
+          "nameEn": "Rathalos",
+          "rank": "하위",
+          "methods": [
+            "Virus Reward · 100% · ×1",
+            "Virus Reward · 30% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "다이묘자자미",
+          "navMonster": "다이묘자자미",
+          "nameEn": "Daimyo Hermitaur",
+          "rank": "상위",
+          "methods": [
+            "Virus Reward · 75% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "케차와차",
+          "navMonster": "케차와차",
+          "nameEn": "Kecha Wacha",
+          "rank": "상위",
+          "methods": [
+            "Virus Reward · 75% · ×1"
+          ]
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "진오우거 아종",
+        "navMonster": "진오우거 아종"
+      },
+      {
+        "name": "리오레우스",
+        "navMonster": "리오레우스"
+      },
+      {
+        "name": "다이묘자자미",
+        "navMonster": "다이묘자자미"
+      },
+      {
+        "name": "케차와차",
+        "navMonster": "케차와차"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Forge Ahead",
+        "nameJa": "",
+        "level": "Caravan★9",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Stygian Zinogre",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Prickly Pair",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Stygian Zinogre and a Seregios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Infernal Overlord",
+        "nameJa": "",
+        "level": "Guild★6",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Stygian Zinogre",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

@@ -1,0 +1,302 @@
+{
+  "materials": [
+    {
+      "name": "사왕룡 꼬리비늘",
+      "count": 4,
+      "nameJa": "蛇王龍の尾鱗",
+      "itemId": "item_mh4u_1049",
+      "mh4uId": 1049,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "다라·아마듈라",
+          "navMonster": "다라·아마듈라",
+          "nameEn": "Dalamadur",
+          "rank": "상위",
+          "methods": [
+            "Lower Body Carve · 45% · ×1",
+            "Break Back Leg · 35% · ×1",
+            "Break Tail · 20% · ×2"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Speartip Menace",
+          "nameEn": "Advanced: Speartip Menace",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Dalamadur",
+          "probability": 21,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Here to Eternity",
+          "nameEn": "Advanced: Here to Eternity",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Dalamadur",
+          "probability": 18,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "황흑룡 역린",
+          "requiredItemId": "item_mh4u_1154",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: Here to Eternity",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "사왕룡 부채칼비늘",
+      "count": 3,
+      "nameJa": "蛇王龍の扇刃",
+      "itemId": "item_mh4u_1060",
+      "mh4uId": 1060,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "다라·아마듈라",
+          "navMonster": "다라·아마듈라",
+          "nameEn": "Dalamadur",
+          "rank": "상위",
+          "methods": [
+            "Break Back · 78% · ×1",
+            "Break Back · 2% · ×2"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "천검의 용옥",
+      "count": 1,
+      "nameJa": "天剣の龍玉",
+      "itemId": "item_mh4u_1063",
+      "mh4uId": 1063,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "다라·아마듈라",
+          "navMonster": "다라·아마듈라",
+          "nameEn": "Dalamadur",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 8% · ×1",
+            "Break Back · 6% · ×1",
+            "Break Head · 5% · ×1",
+            "Lower Body Carve · 5% · ×1",
+            "Break Back · 4% · ×1",
+            "Upper Body Carve · 4% · ×1",
+            "Lower Body Carve · 3% · ×1",
+            "Tail Carve · 3% · ×1",
+            "Upper Body Carve · 2% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "다라·아마듈라 아종",
+          "navMonster": "다라·아마듈라 아종",
+          "nameEn": "Shah Dalamadur",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 8% · ×1",
+            "Break Back · 6% · ×1",
+            "Lower Body Carve · 5% · ×1",
+            "Upper Body Carve · 4% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Eternal Emperor",
+          "nameEn": "Advanced: Eternal Emperor",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Shah Dalamadur",
+          "probability": 5,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Here to Eternity",
+          "nameEn": "Advanced: Here to Eternity",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Dalamadur",
+          "probability": 4,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Speartip Menace",
+          "nameEn": "Advanced: Speartip Menace",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Dalamadur",
+          "probability": 2,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "하늘을 관통할 뿔",
+          "requiredItemId": "item_mh4u_1156",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: Here to Eternity",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "은화룡 견갑각",
+      "count": 8,
+      "nameJa": "銀火竜の堅殻",
+      "itemId": "item_mh4u_0706",
+      "mh4uId": 706,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "리오레우스 희소종",
+          "navMonster": "리오레우스 희소종",
+          "nameEn": "Silver Rathalos",
+          "rank": "상위",
+          "methods": [
+            "Break Back · 69% · ×1",
+            "Capture · 40% · ×1",
+            "Body Carve · 30% · ×1",
+            "Break Head · 25% · ×1",
+            "Tail Carve · 8% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: King Slayer",
+          "nameEn": "Advanced: King Slayer",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 16,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Silver Sovereign",
+          "nameEn": "Silver Sovereign",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Silver Rathalos",
+          "probability": 11,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Ring of the Silver Sol",
+          "nameEn": "Ring of the Silver Sol",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Silver Rathalos",
+          "probability": 11,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "다라·아마듈라",
+        "navMonster": "다라·아마듈라"
+      },
+      {
+        "name": "다라·아마듈라 아종",
+        "navMonster": "다라·아마듈라 아종"
+      },
+      {
+        "name": "리오레우스 희소종",
+        "navMonster": "리오레우스 희소종"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: Speartip Menace",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay Dalamadur",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Here to Eternity",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay Dalamadur",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Eternal Emperor",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay Shah Dalamadur",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: King Slayer",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt all large monsters",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Silver Sovereign",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Silver Rathalos",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Ring of the Silver Sol",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Silver Rathalos",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

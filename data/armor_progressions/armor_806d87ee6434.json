@@ -1,0 +1,164 @@
+{
+  "materials": [
+    {
+      "name": "사황룡 두툼철가죽",
+      "count": 5,
+      "nameJa": "蛇帝龍の厚鋼皮",
+      "itemId": "item_mh4u_1066",
+      "mh4uId": 1066,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "다라·아마듈라 아종",
+          "navMonster": "다라·아마듈라 아종",
+          "nameEn": "Shah Dalamadur",
+          "rank": "G급",
+          "methods": [
+            "Upper Body Carve · 64% · ×1",
+            "Lower Body Carve · 30% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Eternal Emperor",
+          "nameEn": "Advanced: Eternal Emperor",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Shah Dalamadur",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "황흑룡 천린",
+          "requiredItemId": "item_mh4u_1211",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: Eternal Emperor",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "사황룡 두툼미비늘",
+      "count": 4,
+      "nameJa": "蛇帝龍の厚尾鱗",
+      "itemId": "item_mh4u_1067",
+      "mh4uId": 1067,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "다라·아마듈라 아종",
+          "navMonster": "다라·아마듈라 아종",
+          "nameEn": "Shah Dalamadur",
+          "rank": "G급",
+          "methods": [
+            "Lower Body Carve · 46% · ×1",
+            "Break Back Leg · 45% · ×1",
+            "Break Tail · 20% · ×2"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Eternal Emperor",
+          "nameEn": "Advanced: Eternal Emperor",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Shah Dalamadur",
+          "probability": 30,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "사황룡 강고리발톱",
+      "count": 2,
+      "nameJa": "蛇帝龍の剛鉤爪",
+      "itemId": "item_mh4u_1071",
+      "mh4uId": 1071,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "다라·아마듈라 아종",
+          "navMonster": "다라·아마듈라 아종",
+          "nameEn": "Shah Dalamadur",
+          "rank": "G급",
+          "methods": [
+            "Break Front Leg · 78% · ×1",
+            "Upper Body Carve · 8% · ×1",
+            "Break Front Leg · 2% · ×2"
+          ]
+        },
+        {
+          "type": "exchange",
+          "required": "황흑룡 흉조",
+          "requiredItemId": "item_mh4u_1212",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: Eternal Emperor",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "흉성의 파편",
+      "count": 6,
+      "nameJa": "凶星の破片",
+      "itemId": "item_mh4u_1065",
+      "mh4uId": 1065,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "다라·아마듈라",
+          "navMonster": "다라·아마듈라",
+          "nameEn": "Dalamadur",
+          "rank": "G급",
+          "methods": [
+            "Mining Scale · 80% · ×1",
+            "Mining Scale · 50% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "다라·아마듈라 아종",
+          "navMonster": "다라·아마듈라 아종",
+          "nameEn": "Shah Dalamadur",
+          "rank": "G급",
+          "methods": [
+            "Mining Scale · 80% · ×1"
+          ]
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "다라·아마듈라 아종",
+        "navMonster": "다라·아마듈라 아종"
+      },
+      {
+        "name": "다라·아마듈라",
+        "navMonster": "다라·아마듈라"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: Eternal Emperor",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay Shah Dalamadur",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

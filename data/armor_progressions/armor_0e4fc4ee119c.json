@@ -1,0 +1,193 @@
+{
+  "materials": [
+    {
+      "name": "흑룡 사안",
+      "count": 2,
+      "nameJa": "黒龍の邪眼",
+      "itemId": "item_mh4u_1029",
+      "mh4uId": 1029,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "밀라보레아스",
+          "navMonster": "밀라보레아스",
+          "nameEn": "Fatalis",
+          "rank": "G급",
+          "methods": [
+            "Break Eye · 0% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "흑룡 두툼비늘",
+      "count": 4,
+      "nameJa": "黒龍の厚鱗",
+      "itemId": "item_mh4u_1025",
+      "mh4uId": 1025,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "밀라보레아스",
+          "navMonster": "밀라보레아스",
+          "nameEn": "Fatalis",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 0% · ×1",
+            "Break Chest · 0% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "흑룡 강뿔",
+      "count": 4,
+      "nameJa": "黒龍の剛角",
+      "itemId": "item_mh4u_1023",
+      "mh4uId": 1023,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "밀라보레아스",
+          "navMonster": "밀라보레아스",
+          "nameEn": "Fatalis",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 0% · ×1",
+            "Break Horn · 0% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "개룡 천각",
+      "count": 1,
+      "nameJa": "鎧竜の天殻",
+      "itemId": "item_mh4u_0811",
+      "mh4uId": 811,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "극한상태 그라비모스",
+          "navMonster": "그라비모스",
+          "nameEn": "Apex Gravios",
+          "rank": "G급",
+          "methods": [
+            "Capture · 5% · ×1",
+            "Break Head · 4% · ×1",
+            "Body Carve · 3% · ×1",
+            "Tail Carve · 3% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "그라비모스",
+          "navMonster": "그라비모스",
+          "nameEn": "Gravios",
+          "rank": "G급",
+          "methods": [
+            "Capture · 3% · ×1",
+            "Body Carve · 2% · ×1",
+            "Tail Carve · 2% · ×1",
+            "Break Head · 2% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Gravios Situation",
+          "nameEn": "Advanced: Gravios Situation",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Gravios",
+          "probability": 5,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Temper Tantrum",
+          "nameEn": "Temper Tantrum",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Gravios",
+          "probability": 1,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Ring Hollow",
+          "nameEn": "Ring Hollow",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 1,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "폭추룡 천각",
+          "requiredItemId": "item_mh4u_1182",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: Mean and Green",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "밀라보레아스",
+        "navMonster": "밀라보레아스"
+      },
+      {
+        "name": "극한상태 그라비모스",
+        "navMonster": "그라비모스"
+      },
+      {
+        "name": "그라비모스",
+        "navMonster": "그라비모스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: Gravios Situation",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Gravios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Temper Tantrum",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Gravios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Ring Hollow",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt all large monsters",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

@@ -1,0 +1,143 @@
+{
+  "materials": [
+    {
+      "name": "키린 얼음뿔",
+      "count": 2,
+      "nameJa": "",
+      "itemId": "item_mh4u_0942",
+      "mh4uId": 942,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "키린 아종",
+          "navMonster": "키린 아종",
+          "nameEn": "Oroshi Kirin",
+          "rank": "상위",
+          "methods": [
+            "Break Horn · 100% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "키린 서리꼬리",
+      "count": 2,
+      "nameJa": "",
+      "itemId": "item_mh4u_0944",
+      "mh4uId": 944,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "키린 아종",
+          "navMonster": "키린 아종",
+          "nameEn": "Oroshi Kirin",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 30% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: A Hero's Icy Test",
+          "nameEn": "Advanced: A Hero's Icy Test",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay an Oroshi Kirin",
+          "probability": 20,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "키린 가죽+",
+      "count": 3,
+      "nameJa": "",
+      "itemId": "item_mh4u_0934",
+      "mh4uId": 934,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "키린",
+          "navMonster": "키린",
+          "nameEn": "Kirin",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 70% · ×1",
+            "Shiny Drop · 20% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "키린 아종",
+          "navMonster": "키린 아종",
+          "nameEn": "Oroshi Kirin",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 70% · ×1",
+            "Shiny Drop · 20% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: A Hero's Icy Test",
+          "nameEn": "Advanced: A Hero's Icy Test",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay an Oroshi Kirin",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "키린 푸른뿔",
+      "count": 5,
+      "nameJa": "",
+      "itemId": "item_mh4u_0940",
+      "mh4uId": 940,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "키린",
+          "navMonster": "키린",
+          "nameEn": "Kirin",
+          "rank": "상위",
+          "methods": [
+            "Break Horn · 80% · ×1",
+            "Break Horn · 20% · ×1"
+          ]
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "키린 아종",
+        "navMonster": "키린 아종"
+      },
+      {
+        "name": "키린",
+        "navMonster": "키린"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: A Hero's Icy Test",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay an Oroshi Kirin",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

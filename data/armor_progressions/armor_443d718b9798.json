@@ -1,0 +1,154 @@
+{
+  "materials": [
+    {
+      "name": "페이크카탈로그",
+      "count": 1,
+      "nameJa": "フェイクカタログ",
+      "itemId": "item_62e61b69b78d",
+      "mh4uId": 1394,
+      "sources": [
+        {
+          "type": "acquire",
+          "label": "이벤트 퀘스트 보수"
+        }
+      ]
+    },
+    {
+      "name": "근사한 부리",
+      "count": 1,
+      "nameJa": "イカしたクチバシ",
+      "itemId": "item_mh4u_0464",
+      "mh4uId": 464,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "얀가루루가",
+          "navMonster": "얀가루루가",
+          "nameEn": "Yian Garuga",
+          "rank": "G급",
+          "methods": [
+            "Break Beak · 85% · ×1",
+            "Break Beak · 70% · ×1",
+            "Capture · 15% · ×1",
+            "Capture · 5% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "흑랑조 지옥귀",
+      "count": 2,
+      "nameJa": "黒狼鳥の地獄耳",
+      "itemId": "item_mh4u_0462",
+      "mh4uId": 462,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "얀가루루가",
+          "navMonster": "얀가루루가",
+          "nameEn": "Yian Garuga",
+          "rank": "상위",
+          "methods": [
+            "Break Ear · 75% · ×1",
+            "Capture · 5% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "진홍련석",
+      "count": 1,
+      "nameJa": "真紅蓮石",
+      "itemId": "item_53b42555459e",
+      "mh4uId": 219,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "극한상태 그라비모스",
+          "navMonster": "그라비모스",
+          "nameEn": "Apex Gravios",
+          "rank": "G급",
+          "methods": [
+            "Tail Carve · 15% · ×1",
+            "Shiny Drop · 12% · ×1",
+            "Break Head · 10% · ×1",
+            "Capture · 6% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "그라비모스",
+          "navMonster": "그라비모스",
+          "nameEn": "Gravios",
+          "rank": "G급",
+          "methods": [
+            "Shiny Drop · 12% · ×1",
+            "Break Head · 10% · ×1",
+            "Capture · 6% · ×1",
+            "Tail Carve · 2% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "그라비모스 아종",
+          "navMonster": "그라비모스 아종",
+          "nameEn": "Black Gravios",
+          "rank": "G급",
+          "methods": [
+            "Shiny Drop · 12% · ×1",
+            "Break Head · 10% · ×1",
+            "Tail Carve · 9% · ×1",
+            "Break Belly · 8% · ×1",
+            "Capture · 6% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Dark Domination",
+          "nameEn": "Advanced: Dark Domination",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay an Akantor",
+          "probability": 15,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "얀가루루가",
+        "navMonster": "얀가루루가"
+      },
+      {
+        "name": "극한상태 그라비모스",
+        "navMonster": "그라비모스"
+      },
+      {
+        "name": "그라비모스",
+        "navMonster": "그라비모스"
+      },
+      {
+        "name": "그라비모스 아종",
+        "navMonster": "그라비모스 아종"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: Dark Domination",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay an Akantor",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

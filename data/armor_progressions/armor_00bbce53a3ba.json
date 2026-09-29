@@ -1,0 +1,130 @@
+{
+  "materials": [
+    {
+      "name": "폭추룡 골수",
+      "count": 1,
+      "nameJa": "爆鎚竜の骨髄",
+      "itemId": "item_mh4u_1106",
+      "mh4uId": 1106,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "개룡 두갑각",
+          "requiredItemId": "item_mh4u_0806",
+          "unlockQuestId": "quest_67c9850c9ca0",
+          "unlockQuest": "천공산의 지배자들",
+          "unlockLevel": "★5",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "폭추룡 내열갑각",
+      "count": 1,
+      "nameJa": "爆鎚竜の耐熱殻",
+      "itemId": "item_mh4u_1107",
+      "mh4uId": 1107,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "개룡 갑각",
+          "requiredItemId": "item_mh4u_0803",
+          "unlockQuestId": "quest_67c9850c9ca0",
+          "unlockQuest": "천공산의 지배자들",
+          "unlockLevel": "★5",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "홍련석",
+      "count": 1,
+      "nameJa": "紅蓮石",
+      "itemId": "item_94bcbdc4d067",
+      "mh4uId": 209,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "그라비모스",
+          "navMonster": "그라비모스",
+          "nameEn": "Gravios",
+          "rank": "하위",
+          "methods": [
+            "Break Head · 10% · ×1",
+            "Shiny Drop · 6% · ×1",
+            "Capture · 6% · ×1",
+            "Tail Carve · 4% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Take a Powderstone",
+          "nameEn": "Take a Powderstone",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 1 Powderstone",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Heat Exhaustion",
+          "nameEn": "Heat Exhaustion",
+          "level": "Guild★5",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Deliver 4 Powderstones",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Heat Exhaustion",
+          "nameEn": "Heat Exhaustion",
+          "level": "Guild★3",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Deliver 3 Powderstones",
+          "probability": 10,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "그라비모스",
+        "navMonster": "그라비모스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Take a Powderstone",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 1 Powderstone",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Heat Exhaustion",
+        "nameJa": "",
+        "level": "Guild★5",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Deliver 4 Powderstones",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

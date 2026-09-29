@@ -1,0 +1,167 @@
+{
+  "materials": [
+    {
+      "name": "호박색중이빨",
+      "count": 2,
+      "nameJa": "琥珀色の重牙",
+      "itemId": "item_mh4u_1169",
+      "mh4uId": 1169,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "교사룡 중소리갑각",
+          "requiredItemId": "item_mh4u_0577",
+          "unlockQuestId": "quest_34bc81d3575a",
+          "unlockQuest": "고난도: 깨어진 정적",
+          "unlockLevel": "★1",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "백토수 억센털+",
+      "count": 4,
+      "nameJa": "白兎獣の豪剛毛",
+      "itemId": "item_mh4u_0421",
+      "mh4uId": 421,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "울크스스",
+          "navMonster": "울크스스",
+          "nameEn": "Lagombi",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 45% · ×1",
+            "Shiny Drop · 30% · ×1",
+            "Break Head · 20% · ×1",
+            "Capture · 16% · ×2"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Lagombi Lair",
+          "nameEn": "Lagombi Lair",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt 2 Lagombi",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "적갑수 중갑각",
+          "requiredItemId": "item_mh4u_1174",
+          "unlockQuestId": "",
+          "unlockQuest": "Hunt-a-thon: Khezu",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "백토수 견복갑",
+      "count": 5,
+      "nameJa": "白兎獣の堅腹甲",
+      "itemId": "item_mh4u_0426",
+      "mh4uId": 426,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "울크스스",
+          "navMonster": "울크스스",
+          "nameEn": "Lagombi",
+          "rank": "G급",
+          "methods": [
+            "Capture · 36% · ×1",
+            "Capture · 35% · ×1",
+            "Body Carve · 28% · ×1",
+            "Body Carve · 15% · ×1",
+            "Shiny Drop · 15% · ×1",
+            "Shiny Drop · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Snowbound Showdown",
+          "nameEn": "Snowbound Showdown",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Lagombi and a Red Khezu",
+          "probability": 28,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Lagombi Lair",
+          "nameEn": "Lagombi Lair",
+          "level": "Guild★5",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt 2 Lagombi",
+          "probability": 28,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Cold-blooded Combo",
+          "nameEn": "Cold-blooded Combo",
+          "level": "Guild★5",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Zamtrios and a Lagombi",
+          "probability": 28,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "울크스스",
+        "navMonster": "울크스스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Lagombi Lair",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt 2 Lagombi",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Snowbound Showdown",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Lagombi and a Red Khezu",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Cold-blooded Combo",
+        "nameJa": "",
+        "level": "Guild★5",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Zamtrios and a Lagombi",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

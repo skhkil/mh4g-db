@@ -1,0 +1,192 @@
+{
+  "materials": [
+    {
+      "name": "페피포펌프킨",
+      "count": 3,
+      "nameJa": "ペピポパンプキン",
+      "itemId": "item_d67abb81c27e",
+      "mh4uId": 201,
+      "sources": [
+        {
+          "type": "acquire",
+          "label": "용인족 상인"
+        }
+      ]
+    },
+    {
+      "name": "킬러비틀",
+      "count": 3,
+      "nameJa": "キラビートル",
+      "itemId": "item_706ebc21b871",
+      "mh4uId": 265,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Mistentoe Delivery",
+          "nameEn": "Mistentoe Delivery",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 5 Mistentoe",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Crystal Bone Collector",
+          "nameEn": "Crystal Bone Collector",
+          "level": "Caravan★3",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 5 Crystal Bones",
+          "probability": 10,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Conga Bongo",
+          "nameEn": "Conga Bongo",
+          "level": "Caravan★3",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay 5 Congas",
+          "probability": 10,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "바늘열매",
+      "count": 10,
+      "nameJa": "ハリの実",
+      "itemId": "item_07d4d46e9225",
+      "mh4uId": 198,
+      "sources": [
+        {
+          "type": "acquire",
+          "label": "채집, 용인족 상인"
+        }
+      ]
+    },
+    {
+      "name": "두근두근버섯",
+      "count": 4,
+      "nameJa": "ドキドキノコ",
+      "itemId": "item_583bad9f58fa",
+      "mh4uId": 189,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "바바콩가",
+          "navMonster": "바바콩가",
+          "nameEn": "Congalala",
+          "rank": "하위",
+          "methods": [
+            "Shiny Drop (Mushroom) · 5% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Ancestral Steppe Fungus Run",
+          "nameEn": "Ancestral Steppe Fungus Run",
+          "level": "Caravan★2",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 5 Unique Mushrooms",
+          "probability": 21,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Crystal Clearing",
+          "nameEn": "Crystal Clearing",
+          "level": "Caravan★2",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 4 Sulfur Crystals",
+          "probability": 21,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Ancestral Steppe Fungus Run",
+          "nameEn": "Ancestral Steppe Fungus Run",
+          "level": "Guild★1",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Deliver 8 Unique Mushrooms",
+          "probability": 21,
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "바바콩가",
+        "navMonster": "바바콩가"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Mistentoe Delivery",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 5 Mistentoe",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Crystal Bone Collector",
+        "nameJa": "",
+        "level": "Caravan★3",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 5 Crystal Bones",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Conga Bongo",
+        "nameJa": "",
+        "level": "Caravan★3",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay 5 Congas",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Ancestral Steppe Fungus Run",
+        "nameJa": "",
+        "level": "Caravan★2",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 5 Unique Mushrooms",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Crystal Clearing",
+        "nameJa": "",
+        "level": "Caravan★2",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 4 Sulfur Crystals",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

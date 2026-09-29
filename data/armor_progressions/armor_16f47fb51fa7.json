@@ -1,0 +1,199 @@
+{
+  "materials": [
+    {
+      "name": "환수티켓",
+      "count": 1,
+      "nameJa": "",
+      "itemId": "item_443756fd0574",
+      "mh4uId": 1410,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Kirin Aquisition",
+          "nameEn": "Kirin Aquisition",
+          "level": "Event★6",
+          "questType": "Event",
+          "location": "",
+          "objective": "Slay a Kirin and an Oroshi Kirin",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "키린 가죽+",
+      "count": 3,
+      "nameJa": "",
+      "itemId": "item_mh4u_0934",
+      "mh4uId": 934,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "키린",
+          "navMonster": "키린",
+          "nameEn": "Kirin",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 70% · ×1",
+            "Shiny Drop · 20% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "키린 아종",
+          "navMonster": "키린 아종",
+          "nameEn": "Oroshi Kirin",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 70% · ×1",
+            "Shiny Drop · 20% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: A Hero's Icy Test",
+          "nameEn": "Advanced: A Hero's Icy Test",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay an Oroshi Kirin",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "키린 푸른뿔",
+      "count": 5,
+      "nameJa": "",
+      "itemId": "item_mh4u_0940",
+      "mh4uId": 940,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "키린",
+          "navMonster": "키린",
+          "nameEn": "Kirin",
+          "rank": "상위",
+          "methods": [
+            "Break Horn · 80% · ×1",
+            "Break Horn · 20% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "길드티켓G",
+      "count": 1,
+      "nameJa": "",
+      "itemId": "item_2b159c1d18ff",
+      "mh4uId": 1441,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "event-high-031",
+          "name": "흑룡의 귀환",
+          "nameEn": "Return of the Dragon",
+          "level": "★7",
+          "questType": "event",
+          "location": "슈레이더성",
+          "objective": "밀라보레아스 토벌 또는 격퇴",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "event-high-028",
+          "name": "티가렉스의 눈",
+          "nameEn": "Eye of the Tigrex",
+          "level": "★7",
+          "questType": "event",
+          "location": "탑 꼭대기",
+          "objective": "티가렉스 희소종 1마리 수렵",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "event-high-023",
+          "name": "홍룡 강림",
+          "nameEn": "Enter the Red Dragon",
+          "level": "★7",
+          "questType": "event",
+          "location": "용암섬",
+          "objective": "홍룡 밀라보레아스 토벌 또는 격퇴",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "키린",
+        "navMonster": "키린"
+      },
+      {
+        "name": "키린 아종",
+        "navMonster": "키린 아종"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Kirin Aquisition",
+        "nameJa": "",
+        "level": "Event★6",
+        "questType": "Event",
+        "location": "",
+        "objective": "Slay a Kirin and an Oroshi Kirin",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: A Hero's Icy Test",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay an Oroshi Kirin",
+        "note": ""
+      },
+      {
+        "id": "event-high-031",
+        "name": "흑룡의 귀환",
+        "nameJa": "",
+        "level": "★7",
+        "questType": "event",
+        "location": "슈레이더성",
+        "objective": "밀라보레아스 토벌 또는 격퇴",
+        "note": ""
+      },
+      {
+        "id": "event-high-028",
+        "name": "티가렉스의 눈",
+        "nameJa": "",
+        "level": "★7",
+        "questType": "event",
+        "location": "탑 꼭대기",
+        "objective": "티가렉스 희소종 1마리 수렵",
+        "note": ""
+      },
+      {
+        "id": "event-high-023",
+        "name": "홍룡 강림",
+        "nameJa": "",
+        "level": "★7",
+        "questType": "event",
+        "location": "용암섬",
+        "objective": "홍룡 밀라보레아스 토벌 또는 격퇴",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

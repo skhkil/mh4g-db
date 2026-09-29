@@ -1,0 +1,326 @@
+{
+  "materials": [
+    {
+      "name": "견고히 말린 흑뿔",
+      "count": 3,
+      "nameJa": "堅牢な黒巻き角",
+      "itemId": "item_mh4u_0734",
+      "mh4uId": 734,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "디아블로스 아종",
+          "navMonster": "디아블로스 아종",
+          "nameEn": "Black Diablos",
+          "rank": "G급",
+          "methods": [
+            "Break Horn · 88% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: The Scathing Shore",
+          "nameEn": "Advanced: The Scathing Shore",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 15,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Showdown at Midnight",
+          "nameEn": "Showdown at Midnight",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Black Diablos",
+          "probability": 12,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Locked Horns",
+          "nameEn": "Locked Horns",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Diablos and a Black Diablos",
+          "probability": 12,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "흑각룡 중갑",
+      "count": 3,
+      "nameJa": "黒角竜の重甲",
+      "itemId": "item_mh4u_0733",
+      "mh4uId": 733,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "디아블로스 아종",
+          "navMonster": "디아블로스 아종",
+          "nameEn": "Black Diablos",
+          "rank": "G급",
+          "methods": [
+            "Break Back · 70% · ×1",
+            "Shiny Drop · 38% · ×1",
+            "Capture · 33% · ×1",
+            "Body Carve · 25% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: The Scathing Shore",
+          "nameEn": "Advanced: The Scathing Shore",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 30,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Showdown at Midnight",
+          "nameEn": "Showdown at Midnight",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Black Diablos",
+          "probability": 22,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Locked Horns",
+          "nameEn": "Locked Horns",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Diablos and a Black Diablos",
+          "probability": 22,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "흑각룡 중갑각",
+      "count": 4,
+      "nameJa": "黒角竜の重殻",
+      "itemId": "item_mh4u_0732",
+      "mh4uId": 732,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "디아블로스 아종",
+          "navMonster": "디아블로스 아종",
+          "nameEn": "Black Diablos",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 60% · ×1",
+            "Break Back · 30% · ×2",
+            "Tail Carve · 29% · ×1",
+            "Capture · 25% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Showdown at Midnight",
+          "nameEn": "Showdown at Midnight",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Black Diablos",
+          "probability": 30,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Locked Horns",
+          "nameEn": "Locked Horns",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Diablos and a Black Diablos",
+          "probability": 30,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: The Scathing Shore",
+          "nameEn": "Advanced: The Scathing Shore",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 30,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "환조룡옥",
+      "count": 1,
+      "nameJa": "幻鳥竜玉",
+      "itemId": "item_mh4u_0326",
+      "mh4uId": 326,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "도스람포스",
+          "navMonster": "도스람포스",
+          "nameEn": "Velocidrome",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 10% · ×1",
+            "Body Carve · 5% · ×1",
+            "Capture · 3% · ×1",
+            "Shiny Drop · 2% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "도스이오스",
+          "navMonster": "도스이오스",
+          "nameEn": "Iodrome",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 10% · ×1",
+            "Body Carve · 5% · ×1",
+            "Shiny Drop · 5% · ×1",
+            "Capture · 3% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Bad Hair Day: Iodrome",
+          "nameEn": "Bad Hair Day: Iodrome",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt 2 Iodrome",
+          "probability": 5,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Harvest Tour: Primal Forest",
+          "nameEn": "Harvest Tour: Primal Forest",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+          "probability": 5,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Frenzied Trading",
+          "nameEn": "Advanced: Frenzied Trading",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 5,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "디아블로스 아종",
+        "navMonster": "디아블로스 아종"
+      },
+      {
+        "name": "도스람포스",
+        "navMonster": "도스람포스"
+      },
+      {
+        "name": "도스이오스",
+        "navMonster": "도스이오스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: The Scathing Shore",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt all large monsters",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Showdown at Midnight",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Black Diablos",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Locked Horns",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Diablos and a Black Diablos",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Bad Hair Day: Iodrome",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt 2 Iodrome",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Harvest Tour: Primal Forest",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Frenzied Trading",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt all large monsters",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

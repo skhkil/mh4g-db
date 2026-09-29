@@ -1,0 +1,113 @@
+{
+  "materials": [
+    {
+      "name": "괴조 비늘",
+      "count": 3,
+      "nameJa": "怪鳥の鱗",
+      "itemId": "item_mh4u_0429",
+      "mh4uId": 429,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "얀쿡크",
+          "navMonster": "얀쿡크",
+          "nameEn": "Yian Kut-Ku",
+          "rank": "하위",
+          "methods": [
+            "Break Ear · 50% · ×3",
+            "Shiny Drop · 16% · ×1",
+            "Body Carve · 13% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "괴조 갑각",
+      "count": 2,
+      "nameJa": "怪鳥の甲殻",
+      "itemId": "item_mh4u_0432",
+      "mh4uId": 432,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "얀쿡크",
+          "navMonster": "얀쿡크",
+          "nameEn": "Yian Kut-Ku",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 50% · ×1",
+            "Capture · 33% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "괴조 익막",
+      "count": 2,
+      "nameJa": "怪鳥の翼膜",
+      "itemId": "item_mh4u_0440",
+      "mh4uId": 440,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "얀쿡크",
+          "navMonster": "얀쿡크",
+          "nameEn": "Yian Kut-Ku",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 32% · ×1",
+            "Body Carve · 10% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "얀쿡크 아종",
+          "navMonster": "얀쿡크 아종",
+          "nameEn": "Blue Yian Kut-Ku",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Singin' the Blues",
+          "nameEn": "Singin' the Blues",
+          "level": "Caravan★7",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Blue Yian Kut-Ku",
+          "probability": 10,
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "얀쿡크",
+        "navMonster": "얀쿡크"
+      },
+      {
+        "name": "얀쿡크 아종",
+        "navMonster": "얀쿡크 아종"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Singin' the Blues",
+        "nameJa": "",
+        "level": "Caravan★7",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Blue Yian Kut-Ku",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

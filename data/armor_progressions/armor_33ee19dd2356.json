@@ -1,0 +1,176 @@
+{
+  "materials": [
+    {
+      "name": "철광석",
+      "count": 1,
+      "nameJa": "鉄鉱石",
+      "itemId": "item_a86a937adb56",
+      "mh4uId": 203,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "게리오스",
+          "navMonster": "게리오스",
+          "nameEn": "Gypceros",
+          "rank": "하위",
+          "methods": [
+            "Break Head · 40% · ×2"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Crystal Clearing",
+          "nameEn": "Crystal Clearing",
+          "level": "Caravan★2",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 4 Sulfur Crystals",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Sootstone Search",
+          "nameEn": "Sootstone Search",
+          "level": "Guild★2",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Deliver 3 Sootstone Ores",
+          "probability": 25,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Chip Off the Old Blockade",
+          "nameEn": "Chip Off the Old Blockade",
+          "level": "Caravan★2",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay 8 Konchu",
+          "probability": 20,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "숫돌",
+      "count": 2,
+      "nameJa": "砥石",
+      "itemId": "item_cff8ee795b78",
+      "mh4uId": 151,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Steak Your Ground",
+          "nameEn": "Steak Your Ground",
+          "level": "Caravan★1",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 1 Well-done Steak or Rare Steak",
+          "probability": 55,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Training: Insect Glaive",
+          "nameEn": "Training: Insect Glaive",
+          "level": "Caravan★1",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay a Great Jaggi",
+          "probability": 20,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Training: Great Sword",
+          "nameEn": "Training: Great Sword",
+          "level": "Caravan★1",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay a Great Jaggi",
+          "probability": 20,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "게리오스",
+        "navMonster": "게리오스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Crystal Clearing",
+        "nameJa": "",
+        "level": "Caravan★2",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 4 Sulfur Crystals",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Sootstone Search",
+        "nameJa": "",
+        "level": "Guild★2",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Deliver 3 Sootstone Ores",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Chip Off the Old Blockade",
+        "nameJa": "",
+        "level": "Caravan★2",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay 8 Konchu",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Steak Your Ground",
+        "nameJa": "",
+        "level": "Caravan★1",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 1 Well-done Steak or Rare Steak",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Training: Insect Glaive",
+        "nameJa": "",
+        "level": "Caravan★1",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay a Great Jaggi",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Training: Great Sword",
+        "nameJa": "",
+        "level": "Caravan★1",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay a Great Jaggi",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

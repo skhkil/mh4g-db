@@ -1,0 +1,152 @@
+{
+  "materials": [
+    {
+      "name": "각룡 갑각",
+      "count": 4,
+      "nameJa": "角竜の甲殻",
+      "itemId": "item_mh4u_1115",
+      "mh4uId": 1115,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "쇄룡 갑각",
+          "requiredItemId": "item_mh4u_0770",
+          "unlockQuestId": "quest_cb7caab8d88c",
+          "unlockQuest": "고난도: 쇄룡 폭동 정보",
+          "unlockLevel": "★6",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "양질의 비틀린뿔",
+      "count": 1,
+      "nameJa": "上質なねじれた角",
+      "itemId": "item_mh4u_1116",
+      "mh4uId": 1116,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "다이묘자자미 아종",
+          "navMonster": "다이묘자자미 아종",
+          "nameEn": "Plum Daimyo Hermitaur",
+          "rank": "G급",
+          "methods": [
+            "Break Shell · 30% · ×1"
+          ]
+        },
+        {
+          "type": "exchange",
+          "required": "쇄룡 두갑각",
+          "requiredItemId": "item_mh4u_0776",
+          "unlockQuestId": "quest_cb7caab8d88c",
+          "unlockQuest": "고난도: 쇄룡 폭동 정보",
+          "unlockLevel": "★6",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "초식룡 두갑각",
+      "count": 1,
+      "nameJa": "草食竜の頭殻",
+      "itemId": "item_mh4u_0361",
+      "mh4uId": 361,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Rhenoplos",
+          "navMonster": "",
+          "nameEn": "Rhenoplos",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 15% · ×1",
+            "Body Carve · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Rhenoplos Headache",
+          "nameEn": "Rhenoplos Headache",
+          "level": "Guild★4",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay 10 Rhenoplos",
+          "probability": 19,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Rhenoplos Slayer",
+          "nameEn": "Rhenoplos Slayer",
+          "level": "Caravan★3",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay 5 Rhenoplos",
+          "probability": 14,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Egg-straction: Herbivores",
+          "nameEn": "Egg-straction: Herbivores",
+          "level": "Caravan★3",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 2 Herbivore Eggs",
+          "probability": 14,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "다이묘자자미 아종",
+        "navMonster": "다이묘자자미 아종"
+      },
+      {
+        "name": "Rhenoplos",
+        "navMonster": ""
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Rhenoplos Headache",
+        "nameJa": "",
+        "level": "Guild★4",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay 10 Rhenoplos",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Rhenoplos Slayer",
+        "nameJa": "",
+        "level": "Caravan★3",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay 5 Rhenoplos",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Egg-straction: Herbivores",
+        "nameJa": "",
+        "level": "Caravan★3",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 2 Herbivore Eggs",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

@@ -1,0 +1,95 @@
+{
+  "materials": [
+    {
+      "name": "청웅수 갑각",
+      "count": 2,
+      "nameJa": "青熊獣の甲殻",
+      "itemId": "item_mh4u_1094",
+      "mh4uId": 1094,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "구룡 발톱",
+          "requiredItemId": "item_mh4u_0390",
+          "unlockQuestId": "quest_e7f591833ab9",
+          "unlockQuest": "못된 악동 기원호를 수렵하라",
+          "unlockLevel": "★3",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "청웅수 털",
+      "count": 2,
+      "nameJa": "青熊獣の毛",
+      "itemId": "item_mh4u_1095",
+      "mh4uId": 1095,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "구룡 가죽",
+          "requiredItemId": "item_mh4u_0388",
+          "unlockQuestId": "quest_e7f591833ab9",
+          "unlockQuest": "못된 악동 기원호를 수렵하라",
+          "unlockLevel": "★3",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "갑충 배주머니",
+      "count": 1,
+      "nameJa": "甲虫の腹袋",
+      "itemId": "item_mh4u_0370",
+      "mh4uId": 370,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Altaroth",
+          "navMonster": "",
+          "nameEn": "Altaroth",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 50% · ×1",
+            "Shiny Drop (Gray) · 32% · ×1",
+            "Body Carve · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Bnahabra Bloodbath",
+          "nameEn": "Bnahabra Bloodbath",
+          "level": "Guild★1",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay 12 Bnahabra",
+          "probability": 50,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "Altaroth",
+        "navMonster": ""
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Bnahabra Bloodbath",
+        "nameJa": "",
+        "level": "Guild★1",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay 12 Bnahabra",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

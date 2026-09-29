@@ -1,0 +1,133 @@
+{
+  "materials": [
+    {
+      "name": "여단티켓Ｇ",
+      "count": 1,
+      "nameJa": "旅団チケットＧ",
+      "itemId": "item_a2c630d1643b",
+      "mh4uId": 1418,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Moving Mountains",
+          "nameEn": "Advanced: Moving Mountains",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay Dah'ren Mohran or repel it",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: The Master's Test",
+          "nameEn": "Advanced: The Master's Test",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 100,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "도스장수호랑나비",
+      "count": 4,
+      "nameJa": "ドスツノアゲハ",
+      "itemId": "item_4f6183665c7e",
+      "mh4uId": 274,
+      "sources": [
+        {
+          "type": "acquire",
+          "label": "채집( G급탐색)"
+        }
+      ]
+    },
+    {
+      "name": "취수룡 두툼비늘",
+      "count": 5,
+      "nameJa": "翠水竜の厚鱗",
+      "itemId": "item_mh4u_1092",
+      "mh4uId": 1092,
+      "sources": [
+        {
+          "type": "facility",
+          "label": "따끈따끈섬 투망 머신 Lv4 · 가노토토스 아종",
+          "unlockQuestId": "quest_ddba3c82a2ca",
+          "unlockQuest": "고난도: 괴상어, 낚시터 난입",
+          "unlockLevel": "★1",
+          "note": "해당 퀘스트 클리어 후 가노토토스 아종이 투망 머신에 출현"
+        }
+      ]
+    },
+    {
+      "name": "성석의 결정",
+      "count": 2,
+      "nameJa": "星石の結晶",
+      "itemId": "item_c7113b7b7d0e",
+      "mh4uId": 212,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "바살모스",
+          "navMonster": "바살모스",
+          "nameEn": "Basarios",
+          "rank": "G급",
+          "methods": [
+            "Mining Back · 60% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "바살모스 아종",
+          "navMonster": "바살모스 아종",
+          "nameEn": "Ruby Basarios",
+          "rank": "G급",
+          "methods": [
+            "Mining Back · 60% · ×1",
+            "Mining Ore · 25% · ×1"
+          ]
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "바살모스",
+        "navMonster": "바살모스"
+      },
+      {
+        "name": "바살모스 아종",
+        "navMonster": "바살모스 아종"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: Moving Mountains",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay Dah'ren Mohran or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: The Master's Test",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt all large monsters",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

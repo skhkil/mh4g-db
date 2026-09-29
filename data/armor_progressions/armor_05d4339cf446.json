@@ -1,0 +1,95 @@
+{
+  "materials": [
+    {
+      "name": "잠구룡 가죽",
+      "count": 3,
+      "nameJa": "潜口竜の皮",
+      "itemId": "item_mh4u_1102",
+      "mh4uId": 1102,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "암룡 갑각",
+          "requiredItemId": "item_mh4u_0793",
+          "unlockQuestId": "quest_a19e73f48917",
+          "unlockQuest": "검은 기운은 땅을 좀먹고…",
+          "unlockLevel": "★5",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "선명한 체액",
+      "count": 1,
+      "nameJa": "鮮やかな体液",
+      "itemId": "item_mh4u_1103",
+      "mh4uId": 1103,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "암룡 날개",
+          "requiredItemId": "item_mh4u_0796",
+          "unlockQuestId": "quest_a19e73f48917",
+          "unlockQuest": "검은 기운은 땅을 좀먹고…",
+          "unlockLevel": "★5",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "갑충 배주머니",
+      "count": 3,
+      "nameJa": "甲虫の腹袋",
+      "itemId": "item_mh4u_0370",
+      "mh4uId": 370,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Altaroth",
+          "navMonster": "",
+          "nameEn": "Altaroth",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 50% · ×1",
+            "Shiny Drop (Gray) · 32% · ×1",
+            "Body Carve · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Bnahabra Bloodbath",
+          "nameEn": "Bnahabra Bloodbath",
+          "level": "Guild★1",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay 12 Bnahabra",
+          "probability": 50,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "Altaroth",
+        "navMonster": ""
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Bnahabra Bloodbath",
+        "nameJa": "",
+        "level": "Guild★1",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay 12 Bnahabra",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

@@ -1,0 +1,250 @@
+{
+  "materials": [
+    {
+      "name": "海賊Jチケット",
+      "count": 1,
+      "nameJa": "海賊Ｊチケット",
+      "itemId": "item_b04d6984dcef",
+      "mh4uId": 1356,
+      "sources": [
+        {
+          "type": "acquire",
+          "label": "이벤트 퀘스트 보수"
+        }
+      ]
+    },
+    {
+      "name": "옥랑룡 첨예발톱",
+      "count": 5,
+      "nameJa": "獄狼竜の尖爪",
+      "itemId": "item_mh4u_0759",
+      "mh4uId": 759,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "진오우거 아종",
+          "navMonster": "진오우거 아종",
+          "nameEn": "Stygian Zinogre",
+          "rank": "상위",
+          "methods": [
+            "Break Front Leg · 70% · ×1",
+            "Capture · 20% · ×1",
+            "Body Carve · 15% · ×1",
+            "Break Front Leg · 15% · ×2"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Forge Ahead",
+          "nameEn": "Forge Ahead",
+          "level": "Caravan★9",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Stygian Zinogre",
+          "probability": 12,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Prickly Pair",
+          "nameEn": "Advanced: Prickly Pair",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Stygian Zinogre and a Seregios",
+          "probability": 12,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Infernal Overlord",
+          "nameEn": "Infernal Overlord",
+          "level": "Guild★6",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Stygian Zinogre",
+          "probability": 12,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "식룡충",
+      "count": 1,
+      "nameJa": "蝕龍蟲",
+      "itemId": "item_da2704a70170",
+      "mh4uId": 765,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "진오우거 아종",
+          "navMonster": "진오우거 아종",
+          "nameEn": "Stygian Zinogre",
+          "rank": "상위",
+          "methods": [
+            "Bug-Catching Back · 90% · ×1",
+            "Capture · 12% · ×4",
+            "Shiny Drop · 9% · ×1",
+            "Capture · 8% · ×4"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Forge Ahead",
+          "nameEn": "Forge Ahead",
+          "level": "Caravan★9",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Stygian Zinogre",
+          "probability": 10,
+          "count": 4
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Prickly Pair",
+          "nameEn": "Advanced: Prickly Pair",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Stygian Zinogre and a Seregios",
+          "probability": 10,
+          "count": 4
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Infernal Overlord",
+          "nameEn": "Infernal Overlord",
+          "level": "Guild★6",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Stygian Zinogre",
+          "probability": 10,
+          "count": 4
+        }
+      ]
+    },
+    {
+      "name": "길드티켓S",
+      "count": 3,
+      "nameJa": "ギルドチケットＳ",
+      "itemId": "item_fe8dd74cfa10",
+      "mh4uId": 1440,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "event-high-014",
+          "name": "도약하는 공포",
+          "nameEn": "Leaping Terror",
+          "level": "★4",
+          "questType": "event",
+          "location": "Dunes (D)",
+          "objective": "다이묘자자미 1마리와 도스가레오 1마리 수렵",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "event-high-012",
+          "name": "평원에서 유유자적",
+          "nameEn": "Plain & Carefree",
+          "level": "★4",
+          "questType": "event",
+          "location": "유적 평원",
+          "objective": "얀쿡크 1마리 수렵",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "event-high-013",
+          "name": "헤비 메탈",
+          "nameEn": "Heavy Metal",
+          "level": "★4",
+          "questType": "event",
+          "location": "격투장",
+          "objective": "바살모스 1마리와 바살모스 아종 1마리 수렵",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "진오우거 아종",
+        "navMonster": "진오우거 아종"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Forge Ahead",
+        "nameJa": "",
+        "level": "Caravan★9",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Stygian Zinogre",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Prickly Pair",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Stygian Zinogre and a Seregios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Infernal Overlord",
+        "nameJa": "",
+        "level": "Guild★6",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Stygian Zinogre",
+        "note": ""
+      },
+      {
+        "id": "event-high-014",
+        "name": "도약하는 공포",
+        "nameJa": "",
+        "level": "★4",
+        "questType": "event",
+        "location": "Dunes (D)",
+        "objective": "다이묘자자미 1마리와 도스가레오 1마리 수렵",
+        "note": ""
+      },
+      {
+        "id": "event-high-012",
+        "name": "평원에서 유유자적",
+        "nameJa": "",
+        "level": "★4",
+        "questType": "event",
+        "location": "유적 평원",
+        "objective": "얀쿡크 1마리 수렵",
+        "note": ""
+      },
+      {
+        "id": "event-high-013",
+        "name": "헤비 메탈",
+        "nameJa": "",
+        "level": "★4",
+        "questType": "event",
+        "location": "격투장",
+        "objective": "바살모스 1마리와 바살모스 아종 1마리 수렵",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

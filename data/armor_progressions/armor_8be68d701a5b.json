@@ -1,0 +1,348 @@
+{
+  "materials": [
+    {
+      "name": "鈴蘭最強の証",
+      "count": 2,
+      "nameJa": "鈴蘭最強の証",
+      "itemId": "item_d662d8ae1ac4",
+      "mh4uId": 1363,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "event-g-055",
+          "name": "어둠의 촛불",
+          "nameEn": "The Candle of Darkness",
+          "level": "G★2",
+          "questType": "event",
+          "location": "금지된 땅",
+          "objective": "고어·마가라 토벌",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "길드티켓S",
+      "count": 2,
+      "nameJa": "ギルドチケットＳ",
+      "itemId": "item_fe8dd74cfa10",
+      "mh4uId": 1440,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "event-high-014",
+          "name": "도약하는 공포",
+          "nameEn": "Leaping Terror",
+          "level": "★4",
+          "questType": "event",
+          "location": "Dunes (D)",
+          "objective": "다이묘자자미 1마리와 도스가레오 1마리 수렵",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "event-high-012",
+          "name": "평원에서 유유자적",
+          "nameEn": "Plain & Carefree",
+          "level": "★4",
+          "questType": "event",
+          "location": "유적 평원",
+          "objective": "얀쿡크 1마리 수렵",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "event-high-013",
+          "name": "헤비 메탈",
+          "nameEn": "Heavy Metal",
+          "level": "★4",
+          "questType": "event",
+          "location": "격투장",
+          "objective": "바살모스 1마리와 바살모스 아종 1마리 수렵",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "이오스 가죽+",
+      "count": 5,
+      "nameJa": "イーオスの上皮",
+      "itemId": "item_mh4u_0415",
+      "mh4uId": 415,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Ioprey",
+          "navMonster": "",
+          "nameEn": "Ioprey",
+          "rank": "상위",
+          "methods": [
+            "Body Carve · 35% · ×1",
+            "Body Carve · 15% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "도스이오스",
+          "navMonster": "도스이오스",
+          "nameEn": "Iodrome",
+          "rank": "상위",
+          "methods": [
+            "Capture · 30% · ×2",
+            "Body Carve · 13% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Hunt-a-thon: Zinogre",
+          "nameEn": "Hunt-a-thon: Zinogre",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt 2 Zinogres before time expires or deliver a Paw Pass Ticket",
+          "probability": 25,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Mountain Rescue",
+          "nameEn": "Mountain Rescue",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Stygian Zinogre",
+          "probability": 25,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Harvest Tour: Volcanic Hollow",
+          "nameEn": "Harvest Tour: Volcanic Hollow",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+          "probability": 12,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "조룡옥",
+      "count": 3,
+      "nameJa": "鳥竜玉",
+      "itemId": "item_mh4u_0325",
+      "mh4uId": 325,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "도스재기",
+          "navMonster": "도스재기",
+          "nameEn": "Great Jaggi",
+          "rank": "상위",
+          "methods": [
+            "Break Head · 10% · ×1",
+            "Body Carve · 5% · ×1",
+            "Capture · 4% · ×1",
+            "Shiny Drop · 2% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "도스람포스",
+          "navMonster": "도스람포스",
+          "nameEn": "Velocidrome",
+          "rank": "상위",
+          "methods": [
+            "Break Head · 10% · ×1",
+            "Body Carve · 5% · ×1",
+            "Capture · 3% · ×1",
+            "Shiny Drop · 2% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "도스게네포스",
+          "navMonster": "도스게네포스",
+          "nameEn": "Gendrome",
+          "rank": "상위",
+          "methods": [
+            "Break Head · 10% · ×1",
+            "Capture · 3% · ×1",
+            "Shiny Drop · 2% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Harvest Tour: Anc. Steppe",
+          "nameEn": "Harvest Tour: Anc. Steppe",
+          "level": "Caravan★7",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+          "probability": 5,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Harvest Tour: Dunes (Day)",
+          "nameEn": "Harvest Tour: Dunes (Day)",
+          "level": "Caravan★7",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+          "probability": 5,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Dinner Guests",
+          "nameEn": "Dinner Guests",
+          "level": "Caravan★7",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Great Jaggi and a Gendrome",
+          "probability": 5,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "Ioprey",
+        "navMonster": ""
+      },
+      {
+        "name": "도스이오스",
+        "navMonster": "도스이오스"
+      },
+      {
+        "name": "도스재기",
+        "navMonster": "도스재기"
+      },
+      {
+        "name": "도스람포스",
+        "navMonster": "도스람포스"
+      },
+      {
+        "name": "도스게네포스",
+        "navMonster": "도스게네포스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "event-g-055",
+        "name": "어둠의 촛불",
+        "nameJa": "",
+        "level": "G★2",
+        "questType": "event",
+        "location": "금지된 땅",
+        "objective": "고어·마가라 토벌",
+        "note": ""
+      },
+      {
+        "id": "event-high-014",
+        "name": "도약하는 공포",
+        "nameJa": "",
+        "level": "★4",
+        "questType": "event",
+        "location": "Dunes (D)",
+        "objective": "다이묘자자미 1마리와 도스가레오 1마리 수렵",
+        "note": ""
+      },
+      {
+        "id": "event-high-012",
+        "name": "평원에서 유유자적",
+        "nameJa": "",
+        "level": "★4",
+        "questType": "event",
+        "location": "유적 평원",
+        "objective": "얀쿡크 1마리 수렵",
+        "note": ""
+      },
+      {
+        "id": "event-high-013",
+        "name": "헤비 메탈",
+        "nameJa": "",
+        "level": "★4",
+        "questType": "event",
+        "location": "격투장",
+        "objective": "바살모스 1마리와 바살모스 아종 1마리 수렵",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Hunt-a-thon: Zinogre",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt 2 Zinogres before time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Mountain Rescue",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Stygian Zinogre",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Harvest Tour: Volcanic Hollow",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Harvest Tour: Anc. Steppe",
+        "nameJa": "",
+        "level": "Caravan★7",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Harvest Tour: Dunes (Day)",
+        "nameJa": "",
+        "level": "Caravan★7",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Dinner Guests",
+        "nameJa": "",
+        "level": "Caravan★7",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Great Jaggi and a Gendrome",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

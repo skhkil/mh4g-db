@@ -1,0 +1,166 @@
+{
+  "materials": [
+    {
+      "name": "대해룡 비늘",
+      "count": 2,
+      "nameJa": "大海龍の鱗",
+      "itemId": "item_mh4u_1194",
+      "mh4uId": 1194,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "혼돈의 용비늘",
+          "requiredItemId": "item_mh4u_0875",
+          "unlockQuestId": "quest_5f701615a1a9",
+          "unlockQuest": "하늘을 보듯 그들을 보라",
+          "unlockLevel": "★3",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "대해룡 갑옷털",
+      "count": 1,
+      "nameJa": "大海龍の鎧毛",
+      "itemId": "item_mh4u_1195",
+      "mh4uId": 1195,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "이율의 혼돈날개",
+          "requiredItemId": "item_mh4u_0877",
+          "unlockQuestId": "quest_5f701615a1a9",
+          "unlockQuest": "하늘을 보듯 그들을 보라",
+          "unlockLevel": "★3",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "특농축중갑진액",
+      "count": 1,
+      "nameJa": "特濃重甲エキス",
+      "itemId": "item_mh4u_0630",
+      "mh4uId": 630,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "게넬·셀타스 아종",
+          "navMonster": "게넬·셀타스 아종",
+          "nameEn": "Desert Seltas Queen",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 6% · ×1",
+            "Capture · 5% · ×1",
+            "Body Carve · 4% · ×1",
+            "Shiny Drop · 3% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "게넬·셀타스",
+          "navMonster": "게넬·셀타스",
+          "nameEn": "Seltas Queen",
+          "rank": "G급",
+          "methods": [
+            "Capture · 4% · ×1",
+            "Break Head · 4% · ×1",
+            "Body Carve · 3% · ×1",
+            "Shiny Drop · 3% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Pestering Pest",
+          "nameEn": "Pestering Pest",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Desert Seltas Queen",
+          "probability": 4,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Escaped Convicts",
+          "nameEn": "Advanced: Escaped Convicts",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Shrouded Nerscylla and a Desert Seltas Queen",
+          "probability": 4,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Strutting the Royal Runway",
+          "nameEn": "Strutting the Royal Runway",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Capture a Seltas Queen",
+          "probability": 3,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "도볼스톤",
+          "requiredItemId": "item_mh4u_1180",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: Mean and Green",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "게넬·셀타스 아종",
+        "navMonster": "게넬·셀타스 아종"
+      },
+      {
+        "name": "게넬·셀타스",
+        "navMonster": "게넬·셀타스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Pestering Pest",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Desert Seltas Queen",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Escaped Convicts",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Shrouded Nerscylla and a Desert Seltas Queen",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Strutting the Royal Runway",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Capture a Seltas Queen",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

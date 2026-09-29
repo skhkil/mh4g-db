@@ -1,0 +1,233 @@
+{
+  "materials": [
+    {
+      "name": "일각룡 견갑",
+      "count": 2,
+      "nameJa": "一角竜の堅甲",
+      "itemId": "item_mh4u_0718",
+      "mh4uId": 718,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "모노블로스",
+          "navMonster": "모노블로스",
+          "nameEn": "Monoblos",
+          "rank": "상위",
+          "methods": [
+            "Break Back · 70% · ×1",
+            "Body Carve · 30% · ×1",
+            "Capture · 28% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Skiff Competition",
+          "nameEn": "Skiff Competition",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Monoblos",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "The Hero and the Sandy Spear",
+          "nameEn": "The Hero and the Sandy Spear",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Capture a Monoblos",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "양질의 진홍뿔",
+      "count": 1,
+      "nameJa": "上質な真紅の角",
+      "itemId": "item_mh4u_0720",
+      "mh4uId": 720,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "모노블로스",
+          "navMonster": "모노블로스",
+          "nameEn": "Monoblos",
+          "rank": "상위",
+          "methods": [
+            "Break Horn · 100% · ×1",
+            "Break Horn · 40% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "다이묘자자미",
+          "navMonster": "다이묘자자미",
+          "nameEn": "Daimyo Hermitaur",
+          "rank": "G급",
+          "methods": [
+            "Break Shell · 33% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "일각룡 견갑각",
+      "count": 3,
+      "nameJa": "一角竜の堅殻",
+      "itemId": "item_mh4u_0716",
+      "mh4uId": 716,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "모노블로스",
+          "navMonster": "모노블로스",
+          "nameEn": "Monoblos",
+          "rank": "상위",
+          "methods": [
+            "Tail Carve · 70% · ×1",
+            "Body Carve · 61% · ×1",
+            "Capture · 56% · ×1",
+            "Break Back · 30% · ×2"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Skiff Competition",
+          "nameEn": "Skiff Competition",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Monoblos",
+          "probability": 34,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "The Hero and the Sandy Spear",
+          "nameEn": "The Hero and the Sandy Spear",
+          "level": "Caravan★8",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Capture a Monoblos",
+          "probability": 34,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Fashion Victim",
+          "nameEn": "Fashion Victim",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Daimyo Hermitaur",
+          "probability": 10,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "모노블로스하트",
+      "count": 1,
+      "nameJa": "モノブロスハート",
+      "itemId": "item_mh4u_0722",
+      "mh4uId": 722,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "모노블로스 아종",
+          "navMonster": "모노블로스 아종",
+          "nameEn": "White Monoblos",
+          "rank": "G급",
+          "methods": [
+            "Capture · 8% · ×1",
+            "Body Carve · 6% · ×1",
+            "Shiny Drop · 6% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "다이묘자자미",
+          "navMonster": "다이묘자자미",
+          "nameEn": "Daimyo Hermitaur",
+          "rank": "G급",
+          "methods": [
+            "Break Shell · 7% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "모노블로스",
+          "navMonster": "모노블로스",
+          "nameEn": "Monoblos",
+          "rank": "G급",
+          "methods": [
+            "Capture · 7% · ×1",
+            "Capture · 6% · ×1",
+            "Body Carve · 6% · ×1",
+            "Shiny Drop · 6% · ×1",
+            "Body Carve · 4% · ×1",
+            "Shiny Drop · 4% · ×1"
+          ]
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "모노블로스",
+        "navMonster": "모노블로스"
+      },
+      {
+        "name": "다이묘자자미",
+        "navMonster": "다이묘자자미"
+      },
+      {
+        "name": "모노블로스 아종",
+        "navMonster": "모노블로스 아종"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Skiff Competition",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Monoblos",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "The Hero and the Sandy Spear",
+        "nameJa": "",
+        "level": "Caravan★8",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Capture a Monoblos",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Fashion Victim",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Daimyo Hermitaur",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

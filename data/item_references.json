@@ -1,8 +1,8 @@
 {
   "version": "0.7.7-chat4-itemdb1",
   "generated": "2026-09-16",
-  "itemCount": 1444,
-  "indexedCount": 1297,
+  "itemCount": 1445,
+  "indexedCount": 1301,
   "items": {
     "item_6ef401578a8b": {
       "name": "회복약",
@@ -67159,7 +67159,7 @@
           "name": "퀸리지스트",
           "part": "body",
           "hunterType": "gunner",
-          "count": null,
+          "count": 1,
           "materials": "필두티켓+1 화룡 역린*1 해지주 중협각*3 고룡의 피*2"
         },
         {
@@ -67168,7 +67168,7 @@
           "name": "퀸메일",
           "part": "body",
           "hunterType": "blade",
-          "count": null,
+          "count": 1,
           "materials": "필두티켓+1 화룡 역린*1 해지주 중협각*3 고룡의 피*2"
         },
         {
@@ -67213,7 +67213,7 @@
           "name": "퀸페이스",
           "part": "head",
           "hunterType": "gunner",
-          "count": null,
+          "count": 1,
           "materials": "필두티켓+2 천인룡 경옥*1 해지주 중갑각*3 고룡의 피*2"
         },
         {
@@ -67222,7 +67222,7 @@
           "name": "퀸헤드",
           "part": "head",
           "hunterType": "blade",
-          "count": null,
+          "count": 1,
           "materials": "필두티켓+2 천인룡 경옥*1 해지주 중갑각*3 고룡의 피*2"
         }
       ]
@@ -70140,6 +70140,21 @@
         }
       ]
     },
+    "item_77665ac97313": {
+      "name": "케른스타",
+      "acquire": [],
+      "uses": [
+        {
+          "type": "armor",
+          "id": "armor_b8ab045ab4b2",
+          "name": "케로로페이크",
+          "part": "head",
+          "hunterType": "both",
+          "count": 3,
+          "materials": "ケロンスタ ー *3 위압적인 머리뼈*2 괴상어 톱니*2 개구리기름*3"
+        }
+      ]
+    },
     "item_ac62354a5ce1": {
       "name": "매거진티켓",
       "acquire": [],
@@ -70170,6 +70185,30 @@
           "method": "강화",
           "count": 2,
           "materials": "길드티켓S×2 알비노 설로인×2 용옥×3 マガジンチケット×2"
+        }
+      ]
+    },
+    "item_7a60c644d22d": {
+      "name": "무장의 초대장",
+      "acquire": [],
+      "uses": [
+        {
+          "type": "armor",
+          "id": "armor_84e28b66deb8",
+          "name": "무장전선가죽재킷",
+          "part": "body",
+          "hunterType": "gunner",
+          "count": 2,
+          "materials": "武装への招待 状 *2 중갑충 흉갑각*1 중갑충 갑각*3 중갑진액*1"
+        },
+        {
+          "type": "armor",
+          "id": "armor_ea3e5549d0e1",
+          "name": "무장전선재킷",
+          "part": "body",
+          "hunterType": "blade",
+          "count": 2,
+          "materials": "武装への招待 状 *2 중갑충 흉갑각*1 중갑충 갑각*3 중갑진액*1"
         }
       ]
     },
@@ -70261,6 +70300,111 @@
           "method": "생산",
           "count": 3,
           "materials": "伝説 Jの碇×3 개룡 견갑각×8 폭염주머니×6 용옥×1"
+        }
+      ]
+    },
+    "item_3734a8f9ed86": {
+      "name": "전설J해적모자",
+      "acquire": [],
+      "uses": [
+        {
+          "type": "armor",
+          "id": "armor_22e008c8b769",
+          "name": "전설J글러브",
+          "part": "arms",
+          "hunterType": "blade",
+          "count": 1,
+          "materials": "伝説 Jの海賊帽*1 옥염의 용비늘*5 염왕룡 첨예뿔*2 염룡 가루*2"
+        },
+        {
+          "type": "armor",
+          "id": "armor_f80820129a34",
+          "name": "전설J로저",
+          "part": "head",
+          "hunterType": "gunner",
+          "count": 2,
+          "materials": "伝説Jの海賊帽*2 염왕룡 갈기*3 염왕룡 첨예뿔*2 염룡 가루*2"
+        },
+        {
+          "type": "armor",
+          "id": "armor_aa8d3549308c",
+          "name": "전설J베스트",
+          "part": "body",
+          "hunterType": "gunner",
+          "count": 1,
+          "materials": "伝説Jの海賊帽*1 염왕룡 첨예발톱*4 염왕룡 견갑각*4 염룡 보옥*1"
+        },
+        {
+          "type": "armor",
+          "id": "armor_fc075dbeab88",
+          "name": "전설J부츠",
+          "part": "legs",
+          "hunterType": "blade",
+          "count": 1,
+          "materials": "伝説 Jの海賊帽*1 염왕룡 견갑각*3 염왕룡 첨예뿔*2 고룡의 피*1"
+        },
+        {
+          "type": "armor",
+          "id": "armor_8063f7e520b8",
+          "name": "전설J슈트",
+          "part": "body",
+          "hunterType": "blade",
+          "count": 1,
+          "materials": "伝説 Jの海賊帽*1 염왕룡 첨예발톱*4 염왕룡 견갑각*4 염룡 보옥*1"
+        },
+        {
+          "type": "armor",
+          "id": "armor_1c6b6c254fd9",
+          "name": "전설J스커트",
+          "part": "waist",
+          "hunterType": "gunner",
+          "count": 1,
+          "materials": "伝説Jの海賊帽*1 옥염의 용비늘*3 염왕룡 견갑각*3 염룡 가루*3"
+        },
+        {
+          "type": "armor",
+          "id": "armor_4129b705fe99",
+          "name": "전설J커프스",
+          "part": "arms",
+          "hunterType": "gunner",
+          "count": 1,
+          "materials": "伝説Jの海賊帽*1 옥염의 용비늘*5 염왕룡 첨예뿔*2 염룡 가루*2"
+        },
+        {
+          "type": "armor",
+          "id": "armor_2572c90e16aa",
+          "name": "전설J코일",
+          "part": "waist",
+          "hunterType": "blade",
+          "count": 1,
+          "materials": "伝説 Jの海賊帽*1 옥염의 용비늘*3 염왕룡 견갑각*3 염룡 가루*3"
+        },
+        {
+          "type": "armor",
+          "id": "armor_f7cb52e730b6",
+          "name": "전설J팬츠",
+          "part": "legs",
+          "hunterType": "gunner",
+          "count": 1,
+          "materials": "伝説Jの海賊帽*1 염왕룡 견갑각*3 염왕룡 첨예뿔*2 고룡의 피*1"
+        },
+        {
+          "type": "armor",
+          "id": "armor_715493914ee2",
+          "name": "전설J해트",
+          "part": "head",
+          "hunterType": "blade",
+          "count": 2,
+          "materials": "伝説 Jの海賊帽*2 염왕룡 갈기*3 염왕룡 첨예뿔*2 염룡 가루*2"
+        },
+        {
+          "type": "weapon",
+          "id": "weapon_468d4f720e84",
+          "name": "전설J레가시",
+          "weaponType": "차지액스",
+          "method": "강화",
+          "count": 3,
+          "materials": "伝説 Jの海賊帽×3 은화룡 꼬리×3 금화룡 가시+×4 길드티켓G×1"
         }
       ]
     },
@@ -70449,7 +70593,62 @@
           "objective": "고어·마가라 토벌"
         }
       ],
-      "uses": []
+      "uses": [
+        {
+          "type": "armor",
+          "id": "armor_4364f2db0a3a",
+          "name": "철부지데님",
+          "part": "legs",
+          "hunterType": "gunner",
+          "count": 2,
+          "materials": "鈴蘭最強の証*2 길드티켓S*1 강인한 조룡가죽*3 흑식룡 비늘*4"
+        },
+        {
+          "type": "armor",
+          "id": "armor_8be68d701a5b",
+          "name": "철부지버클",
+          "part": "waist",
+          "hunterType": "gunner",
+          "count": 2,
+          "materials": "鈴蘭最強の証*2 길드티켓S*2 이오스 가죽+*5 조룡옥*3"
+        },
+        {
+          "type": "armor",
+          "id": "armor_736c274eb4e2",
+          "name": "철부지벨트",
+          "part": "waist",
+          "hunterType": "blade",
+          "count": 2,
+          "materials": "鈴蘭最 強の証*2 길드티켓S*2 이오스 가죽+*5 조룡옥*3"
+        },
+        {
+          "type": "armor",
+          "id": "armor_e7db7d209c21",
+          "name": "철부지재킷",
+          "part": "body",
+          "hunterType": "blade",
+          "count": 2,
+          "materials": "鈴蘭最 強の証*2 길드티켓S*1 이오스 비늘+*6 도스이오스 머리*3"
+        },
+        {
+          "type": "armor",
+          "id": "armor_60c87dcbda31",
+          "name": "철부지점퍼",
+          "part": "body",
+          "hunterType": "gunner",
+          "count": 2,
+          "materials": "鈴蘭最強の証*2 길드티켓S*2 이오스 가죽+*5 조룡옥*3"
+        },
+        {
+          "type": "armor",
+          "id": "armor_ea91cd9f8d52",
+          "name": "철부지청바지",
+          "part": "legs",
+          "hunterType": "blade",
+          "count": 2,
+          "materials": "鈴蘭最 強の証*2 길드티켓S*1 강인한 조룡가죽*3 흑식룡 비늘*4"
+        }
+      ]
     },
     "item_e734ae3f8919": {
       "name": "지상최강의 증명",
@@ -162796,24 +162995,6 @@
           "materials": "호산룡 붉은비늘*2 호산룡 완갑*4 호산룡 갑암각*6 화룡 역린*1"
         },
         {
-          "type": "armor",
-          "id": "armor_35f34e5cb086",
-          "name": "퀸리지스트",
-          "part": "body",
-          "hunterType": "gunner",
-          "count": 1,
-          "materials": "필두티켓+1 화룡 역린*1 해지주 중협각*3 고룡의 피*2"
-        },
-        {
-          "type": "armor",
-          "id": "armor_50d8569ba8ae",
-          "name": "퀸메일",
-          "part": "body",
-          "hunterType": "blade",
-          "count": 1,
-          "materials": "필두티켓+1 화룡 역린*1 해지주 중협각*3 고룡의 피*2"
-        },
-        {
           "type": "decoration",
           "id": "deco_458e4e587e6c",
           "name": "속사주【3】",
@@ -203161,7 +203342,7 @@
           "name": "EX고어캡",
           "part": "head",
           "hunterType": "gunner",
-          "count": null,
+          "count": 5,
           "materials": "흑식룡티켓*1 흑식룡 첨예촉각+4 천회룡 채홍날개+*5 길드티켓G*1"
         },
         {
@@ -203170,7 +203351,7 @@
           "name": "EX고어헬름",
           "part": "head",
           "hunterType": "blade",
-          "count": null,
+          "count": 5,
           "materials": "흑식룡티켓*1 흑식룡 첨예촉각+4 천회룡 채홍날개+*5 길드티켓G*1"
         },
         {
@@ -206207,24 +206388,6 @@
         }
       ],
       "uses": [
-        {
-          "type": "armor",
-          "id": "armor_8de9a1024d57",
-          "name": "EX고어캡",
-          "part": "head",
-          "hunterType": "gunner",
-          "count": 5,
-          "materials": "흑식룡티켓*1 흑식룡 첨예촉각+4 천회룡 채홍날개+*5 길드티켓G*1"
-        },
-        {
-          "type": "armor",
-          "id": "armor_c574c6fdfdaf",
-          "name": "EX고어헬름",
-          "part": "head",
-          "hunterType": "blade",
-          "count": 5,
-          "materials": "흑식룡티켓*1 흑식룡 첨예촉각+4 천회룡 채홍날개+*5 길드티켓G*1"
-        },
         {
           "type": "armor",
           "id": "armor_2f81e3450afe",
@@ -212091,24 +212254,6 @@
           "hunterType": "both",
           "count": 1,
           "materials": "필두티켓*2 · 천인룡 경옥*1 · 해지주 중갑각*3 · 고룡의 피*2"
-        },
-        {
-          "type": "armor",
-          "id": "armor_e77a0bc95719",
-          "name": "퀸페이스",
-          "part": "head",
-          "hunterType": "gunner",
-          "count": 1,
-          "materials": "필두티켓+2 천인룡 경옥*1 해지주 중갑각*3 고룡의 피*2"
-        },
-        {
-          "type": "armor",
-          "id": "armor_b5b59d3cbdb4",
-          "name": "퀸헤드",
-          "part": "head",
-          "hunterType": "blade",
-          "count": 1,
-          "materials": "필두티켓+2 천인룡 경옥*1 해지주 중갑각*3 고룡의 피*2"
         },
         {
           "type": "weapon",
@@ -261520,6 +261665,108 @@
           "method": "강화",
           "count": 3,
           "materials": "흑룡 중갑각×8 흑룡 강날개×3 흑룡 사안×2 고룡의 대보옥×2"
+        }
+      ]
+    },
+    "item_mh4u_1118": {
+      "name": "노산룡 큰발톱",
+      "acquire": [
+        {
+          "type": "exchange",
+          "required": "호산룡 완갑",
+          "unlock": "여단★6 - 고난도: 멀리서 다가오는 호산 村★6「高難度：遠離に見やる豪の山」"
+        }
+      ],
+      "uses": [
+        {
+          "type": "armor",
+          "id": "armor_44aaf1ddb71a",
+          "name": "여명【각갑】",
+          "part": "legs",
+          "hunterType": "gunner",
+          "count": 5,
+          "materials": "노산룡 갑각*3 노산룡 큰발톱*5 자화룡 가시*2"
+        },
+        {
+          "type": "armor",
+          "id": "armor_b9a7ed97adaf",
+          "name": "여명【장갑】",
+          "part": "arms",
+          "hunterType": "gunner",
+          "count": 1,
+          "materials": "노산룡 갑각*3 노산룡 큰발톱*1 화룡 익막*2"
+        },
+        {
+          "type": "armor",
+          "id": "armor_84037e7b6883",
+          "name": "용맹【장갑】",
+          "part": "arms",
+          "hunterType": "blade",
+          "count": 1,
+          "materials": "노산룡 갑각*3 노산룡 큰발톱*1 화룡 익막*2"
+        },
+        {
+          "type": "armor",
+          "id": "armor_7c6b08c60eb9",
+          "name": "용맹【하의】",
+          "part": "legs",
+          "hunterType": "blade",
+          "count": 5,
+          "materials": "노산룡 갑각*3 노산룡 큰발톱*5 자화룡 가시*2"
+        },
+        {
+          "type": "armor",
+          "id": "armor_03150c3f545d",
+          "name": "칠흑【각갑】",
+          "part": "legs",
+          "hunterType": "blade",
+          "count": 5,
+          "materials": "노산룡 갑각*3 노산룡 큰발톱*5 자화룡 가시*2"
+        },
+        {
+          "type": "armor",
+          "id": "armor_88ca7c50f14e",
+          "name": "칠흑【장갑】",
+          "part": "arms",
+          "hunterType": "blade",
+          "count": 1,
+          "materials": "노산룡 갑각*3 노산룡 큰발톱*1 화룡 익막*2"
+        },
+        {
+          "type": "armor",
+          "id": "armor_74a39c3501dc",
+          "name": "풍월【장갑】",
+          "part": "arms",
+          "hunterType": "gunner",
+          "count": 1,
+          "materials": "노산룡 갑각*3 노산룡 큰발톱*1 화룡 익막*2"
+        },
+        {
+          "type": "armor",
+          "id": "armor_c02833e8ff05",
+          "name": "풍월【하의】",
+          "part": "legs",
+          "hunterType": "gunner",
+          "count": 5,
+          "materials": "노산룡 갑각*3 노산룡 큰발톱*5 자화룡 가시*2"
+        },
+        {
+          "type": "weapon",
+          "id": "weapon_ec8421e38f63",
+          "name": "쌍룡검【극】",
+          "weaponType": "쌍검",
+          "method": "강화",
+          "count": 2,
+          "materials": "노산룡 큰발톱×2 옥랑룡 용갑각×5 식룡충×7 옥랑룡 혼옥×1"
+        },
+        {
+          "type": "weapon",
+          "id": "weapon_e4063bf7938c",
+          "name": "쌍룡검【지극】",
+          "weaponType": "쌍검",
+          "method": "강화",
+          "count": 3,
+          "materials": "노산룡 푸른큰발톱×3 노산룡 큰발톱×3 태고룡골×5 고룡의 대보옥×1"
         }
       ]
     }

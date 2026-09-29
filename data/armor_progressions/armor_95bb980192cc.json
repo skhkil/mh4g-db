@@ -1,0 +1,173 @@
+{
+  "materials": [
+    {
+      "name": "노산룡 중갑각",
+      "count": 5,
+      "nameJa": "老山龍の重殻",
+      "itemId": "item_mh4u_1216",
+      "mh4uId": 1216,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "붕룡 중갑각",
+          "requiredItemId": "item_mh4u_1011",
+          "unlockQuestId": "quest_5646ab5053cd",
+          "unlockQuest": "고난도: 은백의 땅은 붕괴된다",
+          "unlockLevel": "★3",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "노산룡 두툼비늘",
+      "count": 2,
+      "nameJa": "老山龍の厚鱗",
+      "itemId": "item_mh4u_1217",
+      "mh4uId": 1217,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "붕룡 두툼배비늘 패왕의 증표G",
+          "requiredItemId": "",
+          "unlockQuestId": "quest_5646ab5053cd",
+          "unlockQuest": "고난도: 은백의 땅은 붕괴된다",
+          "unlockLevel": "★3",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "굉룡 천린",
+      "count": 1,
+      "nameJa": "轟竜の天鱗",
+      "itemId": "item_mh4u_0833",
+      "mh4uId": 833,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "극한상태 티가렉스",
+          "navMonster": "티가렉스",
+          "nameEn": "Apex Tigrex",
+          "rank": "G급",
+          "methods": [
+            "Capture · 5% · ×1",
+            "Body Carve · 4% · ×1",
+            "Tail Carve · 4% · ×1",
+            "Shiny Drop · 2% · ×1",
+            "Break Head · 2% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "티가렉스 희소종",
+          "navMonster": "티가렉스 희소종",
+          "nameEn": "Molten Tigrex",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 4% · ×1",
+            "Body Carve · 3% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "티가렉스",
+          "navMonster": "티가렉스",
+          "nameEn": "Tigrex",
+          "rank": "G급",
+          "methods": [
+            "Capture · 3% · ×1",
+            "Body Carve · 2% · ×1",
+            "Tail Carve · 2% · ×1",
+            "Break Head · 2% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "The Sky Is Falling",
+          "nameEn": "The Sky Is Falling",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Molten Tigrex",
+          "probability": 5,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Tigrex In Effect",
+          "nameEn": "Advanced: Tigrex In Effect",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Tigrex",
+          "probability": 5,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Monster Hunter!",
+          "nameEn": "Advanced: Monster Hunter!",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 5,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "극한상태 티가렉스",
+        "navMonster": "티가렉스"
+      },
+      {
+        "name": "티가렉스 희소종",
+        "navMonster": "티가렉스 희소종"
+      },
+      {
+        "name": "티가렉스",
+        "navMonster": "티가렉스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "The Sky Is Falling",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Molten Tigrex",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Tigrex In Effect",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Tigrex",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Monster Hunter!",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt all large monsters",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

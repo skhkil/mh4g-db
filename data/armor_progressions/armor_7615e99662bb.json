@@ -1,0 +1,248 @@
+{
+  "materials": [
+    {
+      "name": "등어룡 가죽+",
+      "count": 4,
+      "nameJa": "灯魚竜の上皮",
+      "itemId": "item_mh4u_1125",
+      "mh4uId": 1125,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "자화룡 비늘+",
+          "requiredItemId": "item_mh4u_0661",
+          "unlockQuestId": "quest_be13d9a412f4",
+          "unlockQuest": "화려한 매혹색과 홍색",
+          "unlockLevel": "★5",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "등어룡 가시+",
+      "count": 1,
+      "nameJa": "灯魚竜の上棘",
+      "itemId": "item_mh4u_1126",
+      "mh4uId": 1126,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "자화룡 가시+",
+          "requiredItemId": "item_mh4u_0668",
+          "unlockQuestId": "quest_be13d9a412f4",
+          "unlockQuest": "화려한 매혹색과 홍색",
+          "unlockLevel": "★5",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "괴상어 지느러미",
+      "count": 2,
+      "nameJa": "化け鮫のヒレ",
+      "itemId": "item_mh4u_0555",
+      "mh4uId": 555,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "자보아자길",
+          "navMonster": "자보아자길",
+          "nameEn": "Zamtrios",
+          "rank": "하위",
+          "methods": [
+            "Break Fin · 65% · ×1",
+            "Break Front Leg · 32% · ×1",
+            "Body Carve · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Meownster Hunter Havoc",
+          "nameEn": "Meownster Hunter Havoc",
+          "level": "Caravan★4",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Zamtrios",
+          "probability": 16,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "An Ice Surprise",
+          "nameEn": "An Ice Surprise",
+          "level": "Caravan★4",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Zamtrios",
+          "probability": 16,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Speartuna Fishing",
+          "nameEn": "Speartuna Fishing",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Deliver 3 Speartuna",
+          "probability": 16,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "마비주머니",
+      "count": 5,
+      "nameJa": "麻痺袋",
+      "itemId": "item_mh4u_0335",
+      "mh4uId": 335,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "도스게네포스",
+          "navMonster": "도스게네포스",
+          "nameEn": "Gendrome",
+          "rank": "상위",
+          "methods": [
+            "Break Head · 40% · ×2",
+            "Capture · 39% · ×2",
+            "Break Head · 39% · ×1",
+            "Body Carve · 35% · ×1",
+            "Break Head · 35% · ×1",
+            "Capture · 25% · ×2",
+            "Body Carve · 16% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "가라라아자라",
+          "navMonster": "가라라아자라",
+          "nameEn": "Najarala",
+          "rank": "하위",
+          "methods": [
+            "Capture · 10% · ×2"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Road Work",
+          "nameEn": "Road Work",
+          "level": "Caravan★3",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Capture a Gendrome",
+          "probability": 15,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "The Smell of Fear",
+          "nameEn": "The Smell of Fear",
+          "level": "Caravan★4",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Congalala and a Gendrome",
+          "probability": 15,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Miner Issues",
+          "nameEn": "Advanced: Miner Issues",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Gendrome and a Khezu",
+          "probability": 15,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "자보아자길",
+        "navMonster": "자보아자길"
+      },
+      {
+        "name": "도스게네포스",
+        "navMonster": "도스게네포스"
+      },
+      {
+        "name": "가라라아자라",
+        "navMonster": "가라라아자라"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Meownster Hunter Havoc",
+        "nameJa": "",
+        "level": "Caravan★4",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Zamtrios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "An Ice Surprise",
+        "nameJa": "",
+        "level": "Caravan★4",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Zamtrios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Speartuna Fishing",
+        "nameJa": "",
+        "level": "Caravan★5",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Deliver 3 Speartuna",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Road Work",
+        "nameJa": "",
+        "level": "Caravan★3",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Capture a Gendrome",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "The Smell of Fear",
+        "nameJa": "",
+        "level": "Caravan★4",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Congalala and a Gendrome",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Miner Issues",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Gendrome and a Khezu",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

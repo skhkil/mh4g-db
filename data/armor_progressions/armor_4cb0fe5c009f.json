@@ -1,0 +1,107 @@
+{
+  "materials": [
+    {
+      "name": "거룩한 용이빨",
+      "count": 2,
+      "nameJa": "神々しい龍牙",
+      "itemId": "item_mh4u_1202",
+      "mh4uId": 1202,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "금사자 강뿔",
+          "requiredItemId": "item_mh4u_0508",
+          "unlockQuestId": "quest_2a1a883d1049",
+          "unlockQuest": "고난도: 험준한 물가에서",
+          "unlockLevel": "★3",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "봉산룡 중암갑각",
+      "count": 4,
+      "nameJa": "峯山龍の重岩殻",
+      "itemId": "item_mh4u_1200",
+      "mh4uId": 1200,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "금사자 흑황모",
+          "requiredItemId": "item_mh4u_0512",
+          "unlockQuestId": "quest_2a1a883d1049",
+          "unlockQuest": "고난도: 험준한 물가에서",
+          "unlockLevel": "★3",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "개룡 강날개",
+      "count": 2,
+      "nameJa": "鎧竜の剛翼",
+      "itemId": "item_mh4u_0810",
+      "mh4uId": 810,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "그라비모스",
+          "navMonster": "그라비모스",
+          "nameEn": "Gravios",
+          "rank": "G급",
+          "methods": [
+            "Break Wing · 52% · ×1",
+            "Break Back · 30% · ×1",
+            "Break Wing · 18% · ×2",
+            "Capture · 12% · ×2"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "극한상태 그라비모스",
+          "navMonster": "그라비모스",
+          "nameEn": "Apex Gravios",
+          "rank": "G급",
+          "methods": [
+            "Break Wing · 52% · ×1",
+            "Break Back · 30% · ×1",
+            "Break Wing · 18% · ×2",
+            "Capture · 12% · ×2"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "그라비모스 아종",
+          "navMonster": "그라비모스 아종",
+          "nameEn": "Black Gravios",
+          "rank": "G급",
+          "methods": [
+            "Break Wing · 52% · ×1",
+            "Break Back · 30% · ×1",
+            "Break Wing · 18% · ×2",
+            "Capture · 12% · ×2"
+          ]
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "그라비모스",
+        "navMonster": "그라비모스"
+      },
+      {
+        "name": "극한상태 그라비모스",
+        "navMonster": "그라비모스"
+      },
+      {
+        "name": "그라비모스 아종",
+        "navMonster": "그라비모스 아종"
+      }
+    ],
+    "quests": [],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

@@ -1,0 +1,148 @@
+{
+  "materials": [
+    {
+      "name": "채조 두툼비늘",
+      "count": 2,
+      "nameJa": "彩鳥の厚鱗",
+      "itemId": "item_mh4u_1159",
+      "mh4uId": 1159,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "기원호 억센털+",
+          "requiredItemId": "item_mh4u_0473",
+          "unlockQuestId": "quest_34c4c6e69f39",
+          "unlockQuest": "고난도: 산만한 두 녀석",
+          "unlockLevel": "★1",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "철갑충 중갑각",
+      "count": 2,
+      "nameJa": "徹甲虫の重殻",
+      "itemId": "item_mh4u_0605",
+      "mh4uId": 605,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "아르셀타스",
+          "navMonster": "아르셀타스",
+          "nameEn": "Seltas",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 60% · ×1",
+            "Break Horn · 25% · ×1",
+            "Capture · 20% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Bug-Be-Gone",
+          "nameEn": "Advanced: Bug-Be-Gone",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Seltas and a Desert Seltas",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Harvest Tour: Anc. Steppe",
+          "nameEn": "Harvest Tour: Anc. Steppe",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+          "probability": 24,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Strutting the Royal Runway",
+          "nameEn": "Strutting the Royal Runway",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Capture a Seltas Queen",
+          "probability": 24,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "청웅수 중갑각",
+          "requiredItemId": "item_mh4u_1165",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: Bug-Be-Gone",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "극채색농염날개",
+      "count": 1,
+      "nameJa": "極彩色の艶羽根",
+      "itemId": "item_mh4u_1160",
+      "mh4uId": 1160,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "기원호 지옥귀",
+          "requiredItemId": "item_mh4u_0481",
+          "unlockQuestId": "quest_34c4c6e69f39",
+          "unlockQuest": "고난도: 산만한 두 녀석",
+          "unlockLevel": "★1",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "아르셀타스",
+        "navMonster": "아르셀타스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: Bug-Be-Gone",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Seltas and a Desert Seltas",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Harvest Tour: Anc. Steppe",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Strutting the Royal Runway",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Capture a Seltas Queen",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

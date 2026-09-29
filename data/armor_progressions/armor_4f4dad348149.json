@@ -1,0 +1,204 @@
+{
+  "materials": [
+    {
+      "name": "빙아룡 두툼모피",
+      "count": 5,
+      "nameJa": "氷牙竜の厚毛皮",
+      "itemId": "item_mh4u_1170",
+      "mh4uId": 1170,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "교사룡 두툼가죽",
+          "requiredItemId": "item_mh4u_0572",
+          "unlockQuestId": "quest_34bc81d3575a",
+          "unlockQuest": "고난도: 깨어진 정적",
+          "unlockLevel": "★1",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "중후한 이빨",
+      "count": 3,
+      "nameJa": "重厚な牙",
+      "itemId": "item_mh4u_0373",
+      "mh4uId": 373,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "델쿠스",
+          "navMonster": "",
+          "nameEn": "Delex",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 70% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "쿤추",
+          "navMonster": "",
+          "nameEn": "Konchu",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 25% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "스쿠아길",
+          "navMonster": "",
+          "nameEn": "Zamite",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 25% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Moving Mountains",
+          "nameEn": "Advanced: Moving Mountains",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay Dah'ren Mohran or repel it",
+          "probability": 50,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Puffer Fish",
+          "nameEn": "Puffer Fish",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Zamtrios",
+          "probability": 15,
+          "count": 3
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "All-You-Can-Hunt Zamite",
+          "nameEn": "All-You-Can-Hunt Zamite",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay 25 Zamite",
+          "probability": 15,
+          "count": 3
+        }
+      ]
+    },
+    {
+      "name": "백토수 억센털+",
+      "count": 4,
+      "nameJa": "白兎獣の豪剛毛",
+      "itemId": "item_mh4u_0421",
+      "mh4uId": 421,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "울크스스",
+          "navMonster": "울크스스",
+          "nameEn": "Lagombi",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 45% · ×1",
+            "Shiny Drop · 30% · ×1",
+            "Break Head · 20% · ×1",
+            "Capture · 16% · ×2"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Lagombi Lair",
+          "nameEn": "Lagombi Lair",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt 2 Lagombi",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "적갑수 중갑각",
+          "requiredItemId": "item_mh4u_1174",
+          "unlockQuestId": "",
+          "unlockQuest": "Hunt-a-thon: Khezu",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "델쿠스",
+        "navMonster": ""
+      },
+      {
+        "name": "쿤추",
+        "navMonster": ""
+      },
+      {
+        "name": "스쿠아길",
+        "navMonster": ""
+      },
+      {
+        "name": "울크스스",
+        "navMonster": "울크스스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: Moving Mountains",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay Dah'ren Mohran or repel it",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Puffer Fish",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Zamtrios",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "All-You-Can-Hunt Zamite",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay 25 Zamite",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Lagombi Lair",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt 2 Lagombi",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

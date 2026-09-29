@@ -1,0 +1,167 @@
+{
+  "materials": [
+    {
+      "name": "천회룡 비늘",
+      "count": 3,
+      "nameJa": "天廻龍の鱗",
+      "itemId": "item_mh4u_0879",
+      "mh4uId": 879,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "샤가르마가라",
+          "navMonster": "샤가르마가라",
+          "nameEn": "Shagaru Magala",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 38% · ×1",
+            "Tail Carve · 21% · ×1",
+            "Break Wing · 20% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Heaven's Wheel",
+          "nameEn": "Advanced: Heaven's Wheel",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay Shagaru Magala",
+          "probability": 34,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Stop the Wheel",
+          "nameEn": "Advanced: Stop the Wheel",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay Shagaru Magala",
+          "probability": 10,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "천회룡 채홍날개",
+      "count": 2,
+      "nameJa": "天廻龍の虹翼",
+      "itemId": "item_mh4u_0885",
+      "mh4uId": 885,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "샤가르마가라",
+          "navMonster": "샤가르마가라",
+          "nameEn": "Shagaru Magala",
+          "rank": "하위",
+          "methods": [
+            "Break Wing · 80% · ×1",
+            "Body Carve · 10% · ×1",
+            "Break Wing · 10% · ×2"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Heaven's Wheel",
+          "nameEn": "Advanced: Heaven's Wheel",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay Shagaru Magala",
+          "probability": 10,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "천회룡 갑각",
+      "count": 3,
+      "nameJa": "天廻龍の甲殻",
+      "itemId": "item_mh4u_0882",
+      "mh4uId": 882,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "샤가르마가라",
+          "navMonster": "샤가르마가라",
+          "nameEn": "Shagaru Magala",
+          "rank": "하위",
+          "methods": [
+            "Body Carve · 28% · ×1",
+            "Break Wing Leg · 15% · ×2"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Heaven's Wheel",
+          "nameEn": "Advanced: Heaven's Wheel",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Slay Shagaru Magala",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "천회룡 꼬리",
+      "count": 1,
+      "nameJa": "天廻龍の尻尾",
+      "itemId": "item_mh4u_0891",
+      "mh4uId": 891,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "샤가르마가라",
+          "navMonster": "샤가르마가라",
+          "nameEn": "Shagaru Magala",
+          "rank": "하위",
+          "methods": [
+            "Tail Carve · 75% · ×1",
+            "Tail Carve · 64% · ×1",
+            "Body Carve · 8% · ×1"
+          ]
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "샤가르마가라",
+        "navMonster": "샤가르마가라"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: Heaven's Wheel",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Slay Shagaru Magala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Stop the Wheel",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay Shagaru Magala",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

@@ -1,0 +1,231 @@
+{
+  "materials": [
+    {
+      "name": "해룡 두툼비늘",
+      "count": 2,
+      "nameJa": "海竜の厚鱗",
+      "itemId": "item_mh4u_1186",
+      "mh4uId": 1186,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "화룡 두툼비늘",
+          "requiredItemId": "item_mh4u_0685",
+          "unlockQuestId": "quest_70d4ffe27b98",
+          "unlockQuest": "천궁의 호적수",
+          "unlockLevel": "★2",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "해룡 뇌전기갑각",
+      "count": 1,
+      "nameJa": "海竜の雷電殻",
+      "itemId": "item_mh4u_1187",
+      "mh4uId": 1187,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "화룡 강날개",
+          "requiredItemId": "item_mh4u_0691",
+          "unlockQuestId": "quest_70d4ffe27b98",
+          "unlockQuest": "천궁의 호적수",
+          "unlockLevel": "★2",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "수사룡 중갑각",
+      "count": 4,
+      "nameJa": "水蛇竜の重殻",
+      "itemId": "item_mh4u_0581",
+      "mh4uId": 581,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "가라라아자라 아종",
+          "navMonster": "가라라아자라 아종",
+          "nameEn": "Tidal Najarala",
+          "rank": "G급",
+          "methods": [
+            "Break Back Leg · 50% · ×1",
+            "Body Carve · 45% · ×1",
+            "Break Back · 36% · ×1",
+            "Capture · 25% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "극한상태 가라라아자라 아종",
+          "navMonster": "가라라아자라 아종",
+          "nameEn": "Apex Tidal Najarala",
+          "rank": "G급",
+          "methods": [
+            "Break Back Leg · 50% · ×1",
+            "Body Carve · 45% · ×1",
+            "Break Back · 35% · ×1",
+            "Capture · 25% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Serpent Serenade",
+          "nameEn": "Serpent Serenade",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Tidal Najarala",
+          "probability": 30,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Rhapsody in Rime",
+          "nameEn": "Advanced: Rhapsody in Rime",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Tidal Najarala",
+          "probability": 30,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "오싹한 부리",
+      "count": 1,
+      "nameJa": "身も凍るクチバシ",
+      "itemId": "item_mh4u_0580",
+      "mh4uId": 580,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "극한상태 가라라아자라 아종",
+          "navMonster": "가라라아자라 아종",
+          "nameEn": "Apex Tidal Najarala",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 15% · ×1",
+            "Body Carve · 12% · ×1",
+            "Shiny Drop · 12% · ×1",
+            "Break Back · 10% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "가라라아자라",
+          "navMonster": "가라라아자라",
+          "nameEn": "Najarala",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 12% · ×1",
+            "Body Carve · 10% · ×1",
+            "Shiny Drop · 10% · ×1",
+            "Break Back · 8% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "가라라아자라 아종",
+          "navMonster": "가라라아자라 아종",
+          "nameEn": "Tidal Najarala",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 12% · ×1",
+            "Body Carve · 10% · ×1",
+            "Shiny Drop · 10% · ×1",
+            "Break Back · 8% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Serpentine Samba",
+          "nameEn": "Serpentine Samba",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Najarala",
+          "probability": 10,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Frenzied Trading",
+          "nameEn": "Advanced: Frenzied Trading",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 5,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "가라라아자라 아종",
+        "navMonster": "가라라아자라 아종"
+      },
+      {
+        "name": "극한상태 가라라아자라 아종",
+        "navMonster": "가라라아자라 아종"
+      },
+      {
+        "name": "가라라아자라",
+        "navMonster": "가라라아자라"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Serpent Serenade",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Tidal Najarala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Rhapsody in Rime",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Tidal Najarala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Serpentine Samba",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Najarala",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Frenzied Trading",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt all large monsters",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

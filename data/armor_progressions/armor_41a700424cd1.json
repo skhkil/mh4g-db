@@ -1,0 +1,334 @@
+{
+  "materials": [
+    {
+      "name": "트라이포스",
+      "count": 1,
+      "nameJa": "トライフォース",
+      "itemId": "item_b3aff12b3e86",
+      "mh4uId": 1375,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "event-high-021",
+          "name": "세 가지 덕목",
+          "nameEn": "Three Virtues",
+          "level": "★7",
+          "questType": "event",
+          "location": "격투장",
+          "objective": "진오우거 1마리와 키린 1마리와 라잔 1마리 수렵",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "금사자 검은털",
+      "count": 4,
+      "nameJa": "金獅子の黒毛",
+      "itemId": "item_mh4u_0511",
+      "mh4uId": 511,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "라잔",
+          "navMonster": "라잔",
+          "nameEn": "Rajang",
+          "rank": "상위",
+          "methods": [
+            "Capture · 44% · ×1",
+            "Body Carve · 27% · ×1",
+            "Shiny Drop · 21% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "격앙 라잔",
+          "navMonster": "격앙 라잔",
+          "nameEn": "Furious Rajang",
+          "rank": "상위",
+          "methods": [
+            "Capture · 33% · ×1",
+            "Body Carve · 20% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Tough Love",
+          "nameEn": "Advanced: Tough Love",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Rajang",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: The Raging Rajang",
+          "nameEn": "Advanced: The Raging Rajang",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Rajang",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Bet Your Life",
+          "nameEn": "Advanced: Bet Your Life",
+          "level": "Guild★7",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Deviljho and a Rajang",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "길드티켓S",
+      "count": 2,
+      "nameJa": "ギルドチケットＳ",
+      "itemId": "item_fe8dd74cfa10",
+      "mh4uId": 1440,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "event-high-014",
+          "name": "도약하는 공포",
+          "nameEn": "Leaping Terror",
+          "level": "★4",
+          "questType": "event",
+          "location": "Dunes (D)",
+          "objective": "다이묘자자미 1마리와 도스가레오 1마리 수렵",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "event-high-012",
+          "name": "평원에서 유유자적",
+          "nameEn": "Plain & Carefree",
+          "level": "★4",
+          "questType": "event",
+          "location": "유적 평원",
+          "objective": "얀쿡크 1마리 수렵",
+          "probability": 100,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "event-high-013",
+          "name": "헤비 메탈",
+          "nameEn": "Heavy Metal",
+          "level": "★4",
+          "questType": "event",
+          "location": "격투장",
+          "objective": "바살모스 1마리와 바살모스 아종 1마리 수렵",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "뇌랑룡 벽옥",
+      "count": 1,
+      "nameJa": "雷狼竜の碧玉",
+      "itemId": "item_mh4u_0753",
+      "mh4uId": 753,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "극한상태 진오우거",
+          "navMonster": "진오우거",
+          "nameEn": "Apex Zinogre",
+          "rank": "G급",
+          "methods": [
+            "Capture · 8% · ×1",
+            "Shiny Drop · 5% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "진오우거",
+          "navMonster": "진오우거",
+          "nameEn": "Zinogre",
+          "rank": "G급",
+          "methods": [
+            "Capture · 6% · ×1",
+            "Shiny Drop · 5% · ×1",
+            "Body Carve · 3% · ×1",
+            "Break Head · 3% · ×1",
+            "Tail Carve · 2% · ×1",
+            "Shiny Drop · 2% · ×1",
+            "Capture · 2% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Fury on the Mount",
+          "nameEn": "Advanced: Fury on the Mount",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Zinogre",
+          "probability": 15,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "The Caravaneer's Challenge",
+          "nameEn": "The Caravaneer's Challenge",
+          "level": "Caravan★6",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 3,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "How to Zap Your Zinogre",
+          "nameEn": "How to Zap Your Zinogre",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Zinogre",
+          "probability": 3,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "라잔",
+        "navMonster": "라잔"
+      },
+      {
+        "name": "격앙 라잔",
+        "navMonster": "격앙 라잔"
+      },
+      {
+        "name": "극한상태 진오우거",
+        "navMonster": "진오우거"
+      },
+      {
+        "name": "진오우거",
+        "navMonster": "진오우거"
+      }
+    ],
+    "quests": [
+      {
+        "id": "event-high-021",
+        "name": "세 가지 덕목",
+        "nameJa": "",
+        "level": "★7",
+        "questType": "event",
+        "location": "격투장",
+        "objective": "진오우거 1마리와 키린 1마리와 라잔 1마리 수렵",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Tough Love",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Rajang",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: The Raging Rajang",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Rajang",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Bet Your Life",
+        "nameJa": "",
+        "level": "Guild★7",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Deviljho and a Rajang",
+        "note": ""
+      },
+      {
+        "id": "event-high-014",
+        "name": "도약하는 공포",
+        "nameJa": "",
+        "level": "★4",
+        "questType": "event",
+        "location": "Dunes (D)",
+        "objective": "다이묘자자미 1마리와 도스가레오 1마리 수렵",
+        "note": ""
+      },
+      {
+        "id": "event-high-012",
+        "name": "평원에서 유유자적",
+        "nameJa": "",
+        "level": "★4",
+        "questType": "event",
+        "location": "유적 평원",
+        "objective": "얀쿡크 1마리 수렵",
+        "note": ""
+      },
+      {
+        "id": "event-high-013",
+        "name": "헤비 메탈",
+        "nameJa": "",
+        "level": "★4",
+        "questType": "event",
+        "location": "격투장",
+        "objective": "바살모스 1마리와 바살모스 아종 1마리 수렵",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Fury on the Mount",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Zinogre",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "The Caravaneer's Challenge",
+        "nameJa": "",
+        "level": "Caravan★6",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt all large monsters",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "How to Zap Your Zinogre",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Zinogre",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

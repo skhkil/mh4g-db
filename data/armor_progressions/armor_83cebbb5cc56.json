@@ -1,0 +1,135 @@
+{
+  "materials": [
+    {
+      "name": "폭풍룡 견갑각",
+      "count": 5,
+      "nameJa": "嵐龍の堅殻",
+      "itemId": "item_mh4u_1208",
+      "mh4uId": 1208,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "패룡 중갑각",
+          "requiredItemId": "item_mh4u_1000",
+          "unlockQuestId": "",
+          "unlockQuest": "G★3 - 벗겨지는 재앙의 외투 G★3「高難度： 剥 蝕する原渦の外套」",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "천공의 용옥",
+      "count": 1,
+      "nameJa": "天空の龍玉",
+      "itemId": "item_mh4u_1210",
+      "mh4uId": 1210,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "패도옥 패왕의 증표",
+          "requiredItemId": "",
+          "unlockQuestId": "",
+          "unlockQuest": "G★3 - 벗겨지는 재앙의 외투 G★3「高難度： 剥 蝕する原渦の外套」",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "대굉룡 강폭파발톱",
+      "count": 4,
+      "nameJa": "大轟竜の剛爆爪",
+      "itemId": "item_mh4u_0847",
+      "mh4uId": 847,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "티가렉스 희소종",
+          "navMonster": "티가렉스 희소종",
+          "nameEn": "Molten Tigrex",
+          "rank": "G급",
+          "methods": [
+            "Break Claw · 100% · ×1",
+            "Body Carve · 30% · ×1"
+          ]
+        },
+        {
+          "type": "exchange",
+          "required": "월신룡 투명칼날개",
+          "requiredItemId": "item_mh4u_1206",
+          "unlockQuestId": "",
+          "unlockQuest": "The Sky Is Falling",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "경이의 대폭심",
+      "count": 1,
+      "nameJa": "驚異の大爆心",
+      "itemId": "item_mh4u_0853",
+      "mh4uId": 853,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "티가렉스 희소종",
+          "navMonster": "티가렉스 희소종",
+          "nameEn": "Molten Tigrex",
+          "rank": "G급",
+          "methods": [
+            "Tail Carve · 3% · ×1",
+            "Capture · 3% · ×1",
+            "Break Head · 3% · ×1",
+            "Body Carve · 2% · ×1",
+            "Shiny Drop · 1% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "The Sky Is Falling",
+          "nameEn": "The Sky Is Falling",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt a Molten Tigrex",
+          "probability": 5,
+          "count": 1
+        },
+        {
+          "type": "exchange",
+          "required": "농월의 파편",
+          "requiredItemId": "item_mh4u_1207",
+          "unlockQuestId": "",
+          "unlockQuest": "The Sky Is Falling",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "티가렉스 희소종",
+        "navMonster": "티가렉스 희소종"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "The Sky Is Falling",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt a Molten Tigrex",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

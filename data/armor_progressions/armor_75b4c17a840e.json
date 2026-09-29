@@ -1,0 +1,166 @@
+{
+  "materials": [
+    {
+      "name": "백일각룡 중갑",
+      "count": 3,
+      "nameJa": "白一角竜の重甲",
+      "itemId": "item_mh4u_0724",
+      "mh4uId": 724,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "모노블로스 아종",
+          "navMonster": "모노블로스 아종",
+          "nameEn": "White Monoblos",
+          "rank": "G급",
+          "methods": [
+            "Break Back · 70% · ×1",
+            "Body Carve · 30% · ×1",
+            "Shiny Drop · 30% · ×1",
+            "Capture · 27% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "The Silvery Spear",
+          "nameEn": "The Silvery Spear",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a White Monoblos",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "백일각룡 중갑각",
+      "count": 2,
+      "nameJa": "白一角竜の重殻",
+      "itemId": "item_mh4u_0723",
+      "mh4uId": 723,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "모노블로스 아종",
+          "navMonster": "모노블로스 아종",
+          "nameEn": "White Monoblos",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 59% · ×1",
+            "Capture · 50% · ×1",
+            "Break Back · 30% · ×2"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "The Silvery Spear",
+          "nameEn": "The Silvery Spear",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a White Monoblos",
+          "probability": 32,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "견고한 은백색뿔",
+      "count": 2,
+      "nameJa": "堅牢な白銀の角",
+      "itemId": "item_mh4u_0725",
+      "mh4uId": 725,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "모노블로스 아종",
+          "navMonster": "모노블로스 아종",
+          "nameEn": "White Monoblos",
+          "rank": "G급",
+          "methods": [
+            "Break Horn · 100% · ×1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "모노블로스하트",
+      "count": 1,
+      "nameJa": "モノブロスハート",
+      "itemId": "item_mh4u_0722",
+      "mh4uId": 722,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "모노블로스 아종",
+          "navMonster": "모노블로스 아종",
+          "nameEn": "White Monoblos",
+          "rank": "G급",
+          "methods": [
+            "Capture · 8% · ×1",
+            "Body Carve · 6% · ×1",
+            "Shiny Drop · 6% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "다이묘자자미",
+          "navMonster": "다이묘자자미",
+          "nameEn": "Daimyo Hermitaur",
+          "rank": "G급",
+          "methods": [
+            "Break Shell · 7% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "모노블로스",
+          "navMonster": "모노블로스",
+          "nameEn": "Monoblos",
+          "rank": "G급",
+          "methods": [
+            "Capture · 7% · ×1",
+            "Capture · 6% · ×1",
+            "Body Carve · 6% · ×1",
+            "Shiny Drop · 6% · ×1",
+            "Body Carve · 4% · ×1",
+            "Shiny Drop · 4% · ×1"
+          ]
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "모노블로스 아종",
+        "navMonster": "모노블로스 아종"
+      },
+      {
+        "name": "다이묘자자미",
+        "navMonster": "다이묘자자미"
+      },
+      {
+        "name": "모노블로스",
+        "navMonster": "모노블로스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "The Silvery Spear",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a White Monoblos",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

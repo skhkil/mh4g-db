@@ -1,0 +1,139 @@
+{
+  "materials": [
+    {
+      "name": "신룡 검은털+",
+      "count": 5,
+      "nameJa": "迅竜の豪黒毛",
+      "itemId": "item_mh4u_1183",
+      "mh4uId": 1183,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "뇌랑룡 뇌전기털",
+          "requiredItemId": "item_mh4u_0740",
+          "unlockQuestId": "quest_2e65697c3bd5",
+          "unlockQuest": "고난도: 산벚나무, 봄 번개",
+          "unlockLevel": "★2",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "신룡 강칼날개",
+      "count": 3,
+      "nameJa": "迅竜の剛刃翼",
+      "itemId": "item_mh4u_1184",
+      "mh4uId": 1184,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "뇌랑룡 강발톱",
+          "requiredItemId": "item_mh4u_0746",
+          "unlockQuestId": "quest_2e65697c3bd5",
+          "unlockQuest": "고난도: 산벚나무, 봄 번개",
+          "unlockLevel": "★2",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "이오스 두툼가죽",
+      "count": 3,
+      "nameJa": "イーオスの厚皮",
+      "itemId": "item_mh4u_0416",
+      "mh4uId": 416,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "도스이오스",
+          "navMonster": "도스이오스",
+          "nameEn": "Iodrome",
+          "rank": "G급",
+          "methods": [
+            "Capture · 45% · ×2",
+            "Body Carve · 40% · ×1",
+            "Shiny Drop · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Bad Hair Day: Iodrome",
+          "nameEn": "Bad Hair Day: Iodrome",
+          "level": "Caravan★10",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt 2 Iodrome",
+          "probability": 45,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Harvest Tour: Primal Forest",
+          "nameEn": "Harvest Tour: Primal Forest",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+          "probability": 45,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Frenzied Trading",
+          "nameEn": "Advanced: Frenzied Trading",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt all large monsters",
+          "probability": 45,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "도스이오스",
+        "navMonster": "도스이오스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Bad Hair Day: Iodrome",
+        "nameJa": "",
+        "level": "Caravan★10",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt 2 Iodrome",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Harvest Tour: Primal Forest",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Survive until time expires or deliver a Paw Pass Ticket",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Frenzied Trading",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt all large monsters",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

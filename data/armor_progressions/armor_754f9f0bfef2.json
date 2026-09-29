@@ -1,0 +1,255 @@
+{
+  "materials": [
+    {
+      "name": "스튜디오패스",
+      "count": 1,
+      "nameJa": "スタジオパス",
+      "itemId": "item_a9df08b2aae2",
+      "mh4uId": 1344,
+      "sources": [
+        {
+          "type": "quest",
+          "id": "event-low-005",
+          "name": "USJ: 화룡들의 뜨거운 무대",
+          "nameEn": "USJ: High-fire Act",
+          "level": "★3",
+          "questType": "event",
+          "location": "천공산",
+          "objective": "광룡화 리오레우스 2마리 수렵",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "화룡 꼬리",
+      "count": 4,
+      "nameJa": "火竜の尻尾",
+      "itemId": "item_mh4u_0692",
+      "mh4uId": 692,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "리오레우스",
+          "navMonster": "리오레우스",
+          "nameEn": "Rathalos",
+          "rank": "하위",
+          "methods": [
+            "Tail Carve · 60% · ×1",
+            "Tail Carve · 48% · ×1",
+            "Capture · 12% · ×1",
+            "Capture · 9% · ×1"
+          ]
+        },
+        {
+          "type": "exchange",
+          "required": "미추룡 뿔",
+          "requiredItemId": "item_mh4u_1112",
+          "unlockQuestId": "",
+          "unlockQuest": "Advanced: Shipping Out",
+          "unlockLevel": "",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "화룡 역린",
+      "count": 1,
+      "nameJa": "火竜の逆鱗",
+      "itemId": "item_mh4u_0694",
+      "mh4uId": 694,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "리오레우스 희소종",
+          "navMonster": "리오레우스 희소종",
+          "nameEn": "Silver Rathalos",
+          "rank": "상위",
+          "methods": [
+            "Tail Carve · 12% · ×1",
+            "Break Head · 6% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "리오레우스",
+          "navMonster": "리오레우스",
+          "nameEn": "Rathalos",
+          "rank": "상위",
+          "methods": [
+            "Tail Carve · 10% · ×1",
+            "Break Head · 6% · ×1",
+            "Capture · 5% · ×1",
+            "Break Head · 4% · ×1",
+            "Tail Carve · 3% · ×1",
+            "Shiny Drop · 2% · ×1",
+            "Capture · 2% · ×1",
+            "Break Back · 1% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "리오레우스 아종",
+          "navMonster": "리오레우스 아종",
+          "nameEn": "Azure Rathalos",
+          "rank": "상위",
+          "methods": [
+            "Tail Carve · 10% · ×1",
+            "Break Head · 6% · ×1",
+            "Capture · 5% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Uncorner the Market",
+          "nameEn": "Uncorner the Market",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Rathalos and a Zinogre",
+          "probability": 1,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "King of the Skies",
+          "nameEn": "King of the Skies",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Hunt a Rathalos",
+          "probability": 1,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Rathalos Renovation",
+          "nameEn": "Rathalos Renovation",
+          "level": "Caravan★5",
+          "questType": "Caravan",
+          "location": "",
+          "objective": "Capture a Rathalos",
+          "probability": 1,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "광룡결정의 조각",
+      "count": 3,
+      "nameJa": "狂竜結晶の欠片",
+      "itemId": "item_6a4d6a12ffb3",
+      "mh4uId": 1082,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "도스재기",
+          "navMonster": "도스재기",
+          "nameEn": "Great Jaggi",
+          "rank": "하위",
+          "methods": [
+            "Virus Reward · 100% · ×1",
+            "Virus Reward · 75% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "도스람포스",
+          "navMonster": "도스람포스",
+          "nameEn": "Velocidrome",
+          "rank": "하위",
+          "methods": [
+            "Virus Reward · 100% · ×1",
+            "Virus Reward · 75% · ×1"
+          ]
+        },
+        {
+          "type": "monster",
+          "name": "도스게네포스",
+          "navMonster": "도스게네포스",
+          "nameEn": "Gendrome",
+          "rank": "하위",
+          "methods": [
+            "Virus Reward · 100% · ×1",
+            "Virus Reward · 75% · ×1"
+          ]
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "리오레우스",
+        "navMonster": "리오레우스"
+      },
+      {
+        "name": "리오레우스 희소종",
+        "navMonster": "리오레우스 희소종"
+      },
+      {
+        "name": "리오레우스 아종",
+        "navMonster": "리오레우스 아종"
+      },
+      {
+        "name": "도스재기",
+        "navMonster": "도스재기"
+      },
+      {
+        "name": "도스람포스",
+        "navMonster": "도스람포스"
+      },
+      {
+        "name": "도스게네포스",
+        "navMonster": "도스게네포스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "event-low-005",
+        "name": "USJ: 화룡들의 뜨거운 무대",
+        "nameJa": "",
+        "level": "★3",
+        "questType": "event",
+        "location": "천공산",
+        "objective": "광룡화 리오레우스 2마리 수렵",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Uncorner the Market",
+        "nameJa": "",
+        "level": "Caravan★5",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Rathalos and a Zinogre",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "King of the Skies",
+        "nameJa": "",
+        "level": "Caravan★5",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Hunt a Rathalos",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Rathalos Renovation",
+        "nameJa": "",
+        "level": "Caravan★5",
+        "questType": "Caravan",
+        "location": "",
+        "objective": "Capture a Rathalos",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

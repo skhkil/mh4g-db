@@ -1,0 +1,93 @@
+{
+  "materials": [
+    {
+      "name": "용암룡 지느러미++",
+      "count": 1,
+      "nameJa": "溶岩竜の特上ビレ",
+      "itemId": "item_mh4u_1192",
+      "mh4uId": 1192,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "흑굉룡 강발톱",
+          "requiredItemId": "item_mh4u_0839",
+          "unlockQuestId": "quest_2010db9a3653",
+          "unlockQuest": "고난도: 흑폭풍에 흔들리는 땅",
+          "unlockLevel": "★2",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "용암룡 두툼비늘",
+      "count": 3,
+      "nameJa": "溶岩竜の厚鱗",
+      "itemId": "item_mh4u_1191",
+      "mh4uId": 1191,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "흑굉룡 두툼비늘",
+          "requiredItemId": "item_mh4u_0835",
+          "unlockQuestId": "quest_2010db9a3653",
+          "unlockQuest": "고난도: 흑폭풍에 흔들리는 땅",
+          "unlockLevel": "★2",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "익사룡 가죽++",
+      "count": 2,
+      "nameJa": "翼蛇竜の特上皮",
+      "itemId": "item_mh4u_0380",
+      "mh4uId": 380,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "Remobra",
+          "navMonster": "",
+          "nameEn": "Remobra",
+          "rank": "G급",
+          "methods": [
+            "Body Carve · 50% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "All-You-Can-Hunt Remobra",
+          "nameEn": "All-You-Can-Hunt Remobra",
+          "level": "Guild★9",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay 15 Remobras",
+          "probability": 100,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "Remobra",
+        "navMonster": ""
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "All-You-Can-Hunt Remobra",
+        "nameJa": "",
+        "level": "Guild★9",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay 15 Remobras",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

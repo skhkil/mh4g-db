@@ -1,0 +1,24 @@
+{
+  "materials": [
+    {
+      "name": "특수조건 만족 시 출현",
+      "count": 1,
+      "nameJa": "※Ｇ級闘技大会",
+      "itemId": "",
+      "mh4uId": null,
+      "sources": [
+        {
+          "type": "special",
+          "label": "특수조건 만족 시 출현",
+          "note": "제작 소재가 아니라 장비 출현/해금 조건"
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [],
+    "quests": [],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

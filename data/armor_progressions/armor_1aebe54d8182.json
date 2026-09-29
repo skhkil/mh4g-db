@@ -1,0 +1,23 @@
+{
+  "materials": [
+    {
+      "name": "※상점판매",
+      "count": 1,
+      "nameJa": "※店売り",
+      "itemId": "",
+      "mh4uId": null,
+      "sources": [
+        {
+          "type": "shop",
+          "label": "상점에서 직접 구입"
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [],
+    "quests": [],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

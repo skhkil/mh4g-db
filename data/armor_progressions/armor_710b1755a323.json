@@ -1,0 +1,71 @@
+{
+  "materials": [
+    {
+      "name": "대해룡 비늘",
+      "count": 2,
+      "nameJa": "大海龍の鱗",
+      "itemId": "item_mh4u_1194",
+      "mh4uId": 1194,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "혼돈의 용비늘",
+          "requiredItemId": "item_mh4u_0875",
+          "unlockQuestId": "quest_5f701615a1a9",
+          "unlockQuest": "하늘을 보듯 그들을 보라",
+          "unlockLevel": "★3",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "심연의 용옥",
+      "count": 1,
+      "nameJa": "深淵の龍玉",
+      "itemId": "item_mh4u_1196",
+      "mh4uId": 1196,
+      "sources": [
+        {
+          "type": "exchange",
+          "required": "배반하는 쌍역린",
+          "requiredItemId": "item_mh4u_0878",
+          "unlockQuestId": "quest_5f701615a1a9",
+          "unlockQuest": "하늘을 보듯 그들을 보라",
+          "unlockLevel": "★3",
+          "label": "용인족 도매상 소재교환"
+        }
+      ]
+    },
+    {
+      "name": "화룡 질긴꼬리",
+      "count": 1,
+      "nameJa": "火竜の靭尾",
+      "itemId": "item_mh4u_0693",
+      "mh4uId": 693,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "리오레우스",
+          "navMonster": "리오레우스",
+          "nameEn": "Rathalos",
+          "rank": "G급",
+          "methods": [
+            "Tail Carve · 48% · ×1",
+            "Capture · 14% · ×1"
+          ]
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "리오레우스",
+        "navMonster": "리오레우스"
+      }
+    ],
+    "quests": [],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

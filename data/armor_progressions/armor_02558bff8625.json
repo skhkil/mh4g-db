@@ -1,0 +1,214 @@
+{
+  "materials": [
+    {
+      "name": "붕룡 두툼배비늘",
+      "count": 5,
+      "nameJa": "崩竜の厚腹鱗",
+      "itemId": "item_mh4u_1013",
+      "mh4uId": 1013,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "우캄루바스",
+          "navMonster": "우캄루바스",
+          "nameEn": "Ukanlos",
+          "rank": "G급",
+          "methods": [
+            "Break Belly · 64% · ×1",
+            "Body Carve · 26% · ×1",
+            "Break Head · 12% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Icy Investigation",
+          "nameEn": "Advanced: Icy Investigation",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay an Ukanlos",
+          "probability": 30,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Silver Cataclysm",
+          "nameEn": "Advanced: Silver Cataclysm",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay an Ukanlos",
+          "probability": 30,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "붕룡 강관통발톱",
+      "count": 3,
+      "nameJa": "崩竜の剛穿爪",
+      "itemId": "item_mh4u_1015",
+      "mh4uId": 1015,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "우캄루바스",
+          "navMonster": "우캄루바스",
+          "nameEn": "Ukanlos",
+          "rank": "G급",
+          "methods": [
+            "Break Front Leg · 80% · ×1",
+            "Break Front Leg · 10% · ×2"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Icy Investigation",
+          "nameEn": "Advanced: Icy Investigation",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay an Ukanlos",
+          "probability": 15,
+          "count": 2
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Silver Cataclysm",
+          "nameEn": "Advanced: Silver Cataclysm",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay an Ukanlos",
+          "probability": 15,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "붕룡 중꼬리",
+      "count": 1,
+      "nameJa": "崩竜の重尾",
+      "itemId": "item_mh4u_1019",
+      "mh4uId": 1019,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "우캄루바스",
+          "navMonster": "우캄루바스",
+          "nameEn": "Ukanlos",
+          "rank": "G급",
+          "methods": [
+            "Tail Carve · 90% · ×1",
+            "Body Carve · 10% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Icy Investigation",
+          "nameEn": "Advanced: Icy Investigation",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay an Ukanlos",
+          "probability": 15,
+          "count": 1
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Advanced: Silver Cataclysm",
+          "nameEn": "Advanced: Silver Cataclysm",
+          "level": "Guild★10",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Slay an Ukanlos",
+          "probability": 15,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "백토수 지옥귀",
+      "count": 3,
+      "nameJa": "白兎獣の地獄耳",
+      "itemId": "item_mh4u_0424",
+      "mh4uId": 424,
+      "sources": [
+        {
+          "type": "monster",
+          "name": "울크스스",
+          "navMonster": "울크스스",
+          "nameEn": "Lagombi",
+          "rank": "G급",
+          "methods": [
+            "Break Head · 70% · ×1"
+          ]
+        },
+        {
+          "type": "quest",
+          "id": "",
+          "name": "Lagombi Lair",
+          "nameEn": "Lagombi Lair",
+          "level": "Guild★8",
+          "questType": "Guild",
+          "location": "",
+          "objective": "Hunt 2 Lagombi",
+          "probability": 14,
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "targets": {
+    "monsters": [
+      {
+        "name": "우캄루바스",
+        "navMonster": "우캄루바스"
+      },
+      {
+        "name": "울크스스",
+        "navMonster": "울크스스"
+      }
+    ],
+    "quests": [
+      {
+        "id": "",
+        "name": "Advanced: Icy Investigation",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay an Ukanlos",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Advanced: Silver Cataclysm",
+        "nameJa": "",
+        "level": "Guild★10",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Slay an Ukanlos",
+        "note": ""
+      },
+      {
+        "id": "",
+        "name": "Lagombi Lair",
+        "nameJa": "",
+        "level": "Guild★8",
+        "questType": "Guild",
+        "location": "",
+        "objective": "Hunt 2 Lagombi",
+        "note": ""
+      }
+    ],
+    "arena": []
+  },
+  "source": "Athena armor materials + MH4U reward DB + MH4G event cross-reference"
+}

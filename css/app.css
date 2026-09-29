@@ -1174,22 +1174,31 @@ button{border:1px solid var(--line);background:#202b39;color:white;border-radius
 .build-card-clickable:hover,.build-card-clickable:focus{border-color:#6b8fb8;background:#14202d;outline:none;transform:translateY(-1px)}
 .build-card-action{margin-top:10px;padding-top:8px;border-top:1px solid var(--line);font-size:11px;color:var(--accent2);font-weight:700}
 
-/* v0.7.7 hotfix11 restored-armor acquisition progression */
-.armor-progress-cell{min-width:180px;vertical-align:top}
-.armor-progression{min-width:170px}
-.armor-progression>summary{cursor:pointer;font-weight:700;white-space:nowrap}
-.armor-progress-body{min-width:320px;max-width:520px;padding:10px 0 2px;display:grid;gap:10px}
-.armor-progress-quick{display:flex;gap:6px;align-items:center;flex-wrap:wrap;padding:7px 8px;border:1px solid var(--line);border-radius:8px}
+/* v0.7.7 hotfix16 all-armor acquisition progression / full-width row detail */
+#armorTable tr.armor-db-row{cursor:pointer;transition:background .12s ease}
+#armorTable tr.armor-db-row:hover,#armorTable tr.armor-db-row:focus,#armorTable tr.armor-db-row.expanded{background:rgba(93,139,181,.09);outline:none}
+.armor-row-chevron{display:inline-block;width:15px;margin-right:4px;color:var(--muted);font-size:9px;transition:transform .12s ease}
+.armor-db-row.expanded .armor-row-chevron{transform:rotate(90deg);color:var(--accent2)}
+.armor-detail-row>td{padding:0!important;border-top:0!important;background:rgba(6,13,20,.48)}
+.armor-detail-row[hidden]{display:none!important}
+.armor-progress-panel{padding:14px 16px 16px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.armor-progress-panel-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:10px}
+.armor-progress-panel-head>b{font-size:14px}.armor-progress-panel-head>span{font-size:11px;color:var(--muted)}
+.armor-progress-quick-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:8px;margin-bottom:10px}
+.armor-progress-quick{display:flex;gap:6px;align-items:center;flex-wrap:wrap;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:rgba(255,255,255,.02)}
 .armor-progress-quick>b{min-width:72px;font-size:12px}
-.armor-progress-material{border-top:1px solid var(--line);padding-top:8px}
-.armor-progress-material:first-of-type{border-top:0}
-.armor-progress-material-head{font-weight:700;margin-bottom:5px}
-.armor-progress-material ul{list-style:none;padding:0;margin:0;display:grid;gap:5px}
-.armor-progress-material li{display:flex;align-items:center;gap:6px;flex-wrap:wrap;font-size:12px}
-.armor-progress-material li small{display:block;width:100%;padding-left:66px;color:var(--muted)}
-.armor-progress-kind{display:inline-flex;align-items:center;justify-content:center;min-width:58px;padding:2px 5px;border:1px solid var(--line);border-radius:999px;font-size:10px;font-weight:700}
-.armor-progress-kind.event{border-color:#c85d4e}.armor-progress-kind.exchange{border-color:#6d8cbf}.armor-progress-kind.facility{border-color:#659d7a}.armor-progress-kind.arena{border-color:#a17ab0}
-@media(max-width:760px){.armor-progress-body{min-width:270px;max-width:82vw}.armor-progress-cell{min-width:150px}.armor-progress-material li small{padding-left:0}}
+.armor-progress-material-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:10px;align-items:start}
+.armor-progress-material{min-width:0;border:1px solid var(--line);border-radius:9px;padding:10px;background:rgba(255,255,255,.018)}
+.armor-progress-material-head{font-weight:700;margin-bottom:7px;padding-bottom:7px;border-bottom:1px solid var(--line)}
+.armor-progress-material ul{list-style:none;padding:0;margin:0;display:grid;gap:6px}
+.armor-progress-material li{display:flex;align-items:center;gap:6px;flex-wrap:wrap;font-size:12px;min-width:0}
+.armor-progress-material li>span:not(.armor-progress-kind){min-width:0}
+.armor-progress-material li small{display:block;width:100%;padding-left:66px;color:var(--muted);line-height:1.35}
+.armor-progress-kind{display:inline-flex;align-items:center;justify-content:center;min-width:58px;padding:2px 5px;border:1px solid var(--line);border-radius:999px;font-size:10px;font-weight:700;flex:0 0 auto}
+.armor-progress-kind.event{border-color:#c85d4e}.armor-progress-kind.exchange{border-color:#6d8cbf}.armor-progress-kind.facility{border-color:#659d7a}.armor-progress-kind.arena{border-color:#a17ab0}.armor-progress-kind.gather{border-color:#8a9b62}.armor-progress-kind.special{border-color:#b78953}.armor-progress-kind.unknown{border-color:#9a6262}
+.armor-exchange-route{display:flex;align-items:center;gap:5px;flex-wrap:wrap}.armor-exchange-route>b{font-size:10px;color:var(--muted)}.armor-exchange-arrow{color:var(--accent2);font-weight:800}
+.armor-progress-empty{padding:12px}
+@media(max-width:760px){.armor-progress-panel{padding:10px}.armor-progress-material-grid,.armor-progress-quick-row{grid-template-columns:1fr}.armor-progress-material li small{padding-left:0}.armor-progress-panel-head{align-items:flex-start;flex-direction:column;gap:3px}}
 
 /* 2026-09-28 hotfix13: recommendation → simulator armor-only handoff */
 .recommend-engine-badge{display:inline-flex;align-items:center;padding:2px 6px;border:1px solid rgba(79,200,121,.35);border-radius:999px;background:rgba(79,200,121,.08);color:var(--accent);font-size:9px;font-weight:800;white-space:nowrap}
