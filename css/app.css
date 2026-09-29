@@ -1174,6 +1174,14 @@ button{border:1px solid var(--line);background:#202b39;color:white;border-radius
 .build-card-clickable:hover,.build-card-clickable:focus{border-color:#6b8fb8;background:#14202d;outline:none;transform:translateY(-1px)}
 .build-card-action{margin-top:10px;padding-top:8px;border-top:1px solid var(--line);font-size:11px;color:var(--accent2);font-weight:700}
 
+/* v0.7.7 hotfix17 resilient initialization / event isolation */
+.app-runtime-status{margin:8px 16px 0;padding:9px 12px;border:1px solid var(--line);border-radius:8px;font-size:12px;line-height:1.45;background:rgba(30,40,52,.96);color:var(--text)}
+.app-runtime-status[hidden]{display:none!important}
+.app-runtime-status.loading{border-color:rgba(93,139,181,.55);color:var(--muted)}
+.app-runtime-status.warn{border-color:rgba(214,161,74,.7);background:rgba(86,61,19,.3)}
+.app-runtime-status.error{border-color:rgba(212,86,86,.75);background:rgba(89,30,30,.32);color:#ffd6d6}
+@media(max-width:760px){.app-runtime-status{margin:7px 10px 0;padding:8px 10px}}
+
 /* v0.7.7 hotfix16 all-armor acquisition progression / full-width row detail */
 #armorTable tr.armor-db-row{cursor:pointer;transition:background .12s ease}
 #armorTable tr.armor-db-row:hover,#armorTable tr.armor-db-row:focus,#armorTable tr.armor-db-row.expanded{background:rgba(93,139,181,.09);outline:none}
@@ -1206,3 +1214,7 @@ button{border:1px solid var(--line);background:#202b39;color:white;border-radius
 .recommend-sim-actions>small{color:var(--muted);font-size:9px;line-height:1.3;text-align:right}
 .recommend-sim-actions .recommend-open-sim{margin:0}
 @media (max-width:430px){.recommend-card-foot{display:grid;grid-template-columns:1fr}.recommend-sim-actions{margin-left:0;justify-items:stretch}.recommend-sim-actions>small{text-align:left}.recommend-sim-actions .recommend-open-sim{width:100%}}
+
+/* hotfix17: cap initial armor DOM size; expand in batches instead of rendering 3,119 rows at once */
+.armor-result-footer{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 12px;border-top:1px solid var(--line);color:var(--muted);font-size:12px}
+@media(max-width:760px){.armor-result-footer{align-items:stretch;flex-direction:column}.armor-result-footer button{width:100%}}

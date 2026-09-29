@@ -1,5 +1,5 @@
-import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,loadArmorProgression,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-research2-hotfix16";
-import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-research2-hotfix16";
+import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,loadArmorProgression,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-research2-hotfix17";
+import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-research2-hotfix17";
 
 let data={skills:[],armors:[],armorSets:[],decorations:[],weapons:[],weaponSummary:[],melodies:[],items:[],itemReferenceIndex:{items:{}},skillReferenceIndex:{items:{},categories:[]},meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],monsterReferenceIndex:{items:{}},dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],questReferenceIndex:{quests:{}},siteInfo:{},meta:{}};
 let targets=[];
@@ -25,6 +25,55 @@ let selectedItemId="";
 let restoringHistory=false;
 let historyRestoreToken=0;
 try{history.scrollRestoration="manual"}catch{}
+
+const APP_VERSION="0.7.7-chat4-research2-hotfix17";
+const boundEventGroups=new Set();
+let appEventsBound=false;
+function ensureRuntimeStatus(){
+  let box=document.getElementById("appRuntimeStatus");
+  if(box)return box;
+  box=document.createElement("div");
+  box.id="appRuntimeStatus";
+  box.className="app-runtime-status";
+  box.hidden=true;
+  box.setAttribute("role","status");
+  const main=document.querySelector("main.content");
+  const topbar=main?.querySelector(".topbar");
+  if(main)main.insertBefore(box,topbar?.nextSibling||main.firstChild);
+  else document.body.prepend(box);
+  return box;
+}
+function showRuntimeStatus(message,level="error"){
+  const box=ensureRuntimeStatus();
+  box.className=`app-runtime-status ${level}`;
+  box.textContent=String(message||"");
+  box.hidden=!message;
+}
+function clearRuntimeStatus(){
+  const box=document.getElementById("appRuntimeStatus");
+  if(box){box.hidden=true;box.textContent="";box.className="app-runtime-status";}
+}
+function reportAppError(scope,error,{visible=true}={}){
+  const detail=error?.message||String(error||"알 수 없는 오류");
+  console.error(`[MH4G:${scope}]`,error);
+  if(visible)showRuntimeStatus(`일부 기능 초기화에 실패했습니다. (${scope}: ${detail}) · 메뉴와 다른 기능은 계속 사용할 수 있습니다.`,"error");
+}
+function safeUiHandler(scope,handler){
+  return function(...args){
+    try{
+      const result=handler.apply(this,args);
+      if(result&&typeof result.then==="function")result.catch(err=>reportAppError(scope,err));
+      return result;
+    }catch(err){reportAppError(scope,err);}
+  };
+}
+function bindEventGroup(name,fn){
+  if(boundEventGroups.has(name))return true;
+  try{fn();boundEventGroups.add(name);return true;}catch(err){reportAppError(`이벤트:${name}`,err);return false;}
+}
+function safeInitStep(name,fn){
+  try{return fn();}catch(err){reportAppError(`초기화:${name}`,err);return undefined;}
+}
 
 // Weapon tree is isolated from app startup. A failure here must never break global navigation.
 let weaponTreeIndex={items:{}};
@@ -821,19 +870,39 @@ async function toggleArmorProgressRow(row,force){
       host.dataset.loading='1';
       host.innerHTML='<div class="armor-progress-empty muted">제작 진행 불러오는 중…</div>';
       const a=armorById.get(row.dataset.armorId)||data.armors.find(x=>x.id===row.dataset.armorId);
-      const p=a?await loadArmorProgression(a.id):null;
-      host.innerHTML=a?armorProgressionHtml(a,p):'<div class="armor-progress-empty muted">장비 데이터를 찾지 못했습니다.</div>';
-      host.dataset.hydrated='1';delete host.dataset.loading;
+      try{
+        const p=a?await loadArmorProgression(a.id):null;
+        host.innerHTML=a?armorProgressionHtml(a,p):'<div class="armor-progress-empty muted">장비 데이터를 찾지 못했습니다.</div>';
+        host.dataset.hydrated='1';
+      }catch(err){
+        reportAppError("방어구 제작 진행",err);
+        host.innerHTML='<div class="armor-progress-empty muted">제작 진행 데이터를 불러오지 못했습니다. 다른 기능은 계속 사용할 수 있습니다.</div>';
+      }finally{delete host.dataset.loading;}
     }
   }
   detail.hidden=!open;row.setAttribute('aria-expanded',open?'true':'false');row.classList.toggle('expanded',open);
 }
+const ARMOR_RENDER_BATCH=180;
+let armorRenderLimit=ARMOR_RENDER_BATCH;
+let armorRenderQueryKey="";
 function renderArmorTable(){
   const q=$("#armorSearch").value.trim().toLowerCase(),part=$("#armorPartFilter").value;
   const queryCtx=armorSearchQueryContext(q); // 검색 의도 판정은 렌더링당 한 번만 계산
-  const rows=data.armors.filter(a=>(part==="all"||a.part===part)&&armorEligible(a)&&(armorViewMode!=="other"||(a.source||"").endsWith("/armor/etc.htm")))
-    .filter(a=>armorMatchesSearch(a,queryCtx.q)).sort(armorRankCompare).map(armorRowHtml);
-  renderTable("#armorTable",["명칭","타입","부위","RARE","방어(초기/최대)","슬롯","스킬","내성","등급","생산 소재"],rows);
+  const queryKey=[q,part,$("#hunterType")?.value||"both",$("#rankFilter")?.value||"all",armorViewMode].join("|");
+  if(queryKey!==armorRenderQueryKey){armorRenderQueryKey=queryKey;armorRenderLimit=ARMOR_RENDER_BATCH;}
+  const matches=data.armors.filter(a=>(part==="all"||a.part===part)&&armorEligible(a)&&(armorViewMode!=="other"||(a.source||"").endsWith("/armor/etc.htm")))
+    .filter(a=>armorMatchesSearch(a,queryCtx.q)).sort(armorRankCompare);
+  const shown=matches.slice(0,armorRenderLimit);
+  renderTable("#armorTable",["명칭","타입","부위","RARE","방어(초기/최대)","슬롯","스킬","내성","등급","생산 소재"],shown.map(armorRowHtml));
+  const root=$("#armorTable");
+  if(!root)return;
+  const remain=Math.max(0,matches.length-shown.length);
+  const footer=document.createElement("div");
+  footer.className="armor-result-footer";
+  footer.innerHTML=`<span>검색 결과 ${matches.length.toLocaleString("ko-KR")}개 · 현재 ${shown.length.toLocaleString("ko-KR")}개 표시</span>${remain?`<button type="button" class="ghost small" id="armorLoadMore">더 보기 (${Math.min(ARMOR_RENDER_BATCH,remain)}개)</button>`:""}`;
+  root.appendChild(footer);
+  const more=$("#armorLoadMore");
+  if(more)more.onclick=safeUiHandler("방어구 더 보기",()=>{armorRenderLimit+=ARMOR_RENDER_BATCH;renderArmorTable();});
 }
 
 function sharpnessBar(bar,maxTotal){
@@ -1814,18 +1883,23 @@ async function openPage(page){
   const titles={simulator:["스킬 시뮬레이터","방어구 + 호석 + 장식주 조합을 계산합니다."],recommend:["추천 장비","무기종·진행도별 장비 구성을 확인합니다."],armor:["방어구 상세","타입·등급·부위 조건으로 방어구를 조회합니다."],weapon:["무기 DB","무기 종류·파생·예리도와 제작 정보를 조회합니다."],decoration:[decoView==="slot"?"장신구 · 소켓별":"장신구 · 종류별","슬롯·스킬 포인트·생산소재를 조회합니다."],skill:["스킬 DB","스킬 계통과 발동 조건·효과를 조회합니다."],item:["아이템 DB","아이템 입수방법과 효과를 조회합니다."],data:["데이터 관리","실제 JSON 데이터 상태와 업데이트 방법을 확인합니다."]};
   const dynamic=pageTitleForState(page);
   const title=dynamic||titles[page]||["MH4G DB",""];
-  $("#pageTitle").textContent=title[0];$("#pageSubtitle").textContent=title[1];
-  updateHeaderFilterVisibility();
+  if($("#pageTitle"))$("#pageTitle").textContent=title[0];
+  if($("#pageSubtitle"))$("#pageSubtitle").textContent=title[1];
+  safeInitStep("헤더 필터",updateHeaderFilterVisibility);
   const token=++pageLoadToken;
   const keys=dataKeysForPage(page);
   if(keys.some(k=>!loadedFullKeys.has(k))){
-    $("#pageSubtitle").textContent=`${title[1]} · 데이터 불러오는 중…`;
-    await ensureFullData(keys);
+    if($("#pageSubtitle"))$("#pageSubtitle").textContent=`${title[1]} · 데이터 불러오는 중…`;
+    try{await ensureFullData(keys);}catch(err){reportAppError(`${title[0]} 데이터 로드`,err);}
     if(token!==pageLoadToken||currentPage!==page)return;
-    $("#pageSubtitle").textContent=title[1];
+    if($("#pageSubtitle"))$("#pageSubtitle").textContent=title[1];
   }
-  if(page==="data")renderSummary();
-  renderPageData(page);
+  try{
+    if(page==="data")renderSummary();
+    renderPageData(page);
+  }catch(err){
+    reportAppError(`${title[0]} 화면 렌더링`,err);
+  }
 }
 function renderAll(){fillSelectors();renderSavedBuilds();renderManualSelectors();renderTargets();renderManualResult();renderSummary();updateHeaderFilterVisibility()}
 
@@ -1914,11 +1988,11 @@ function setupMobilePageJump(){
   schedule();
 }
 
-let appEventsBound=false;
 function bind(){
-  if(appEventsBound)return;
-  appEventsBound=true;
-  document.addEventListener('click',e=>{
+  if(appEventsBound)return true;
+  const results=[];
+  results.push(bindEventGroup("document-delegates",()=>{
+  document.addEventListener('click',safeUiHandler('document.click',e=>{
     closePickers();
     const visualRow=e.target.closest?.('.data-table tbody tr:not(.skill-detail-row):not(.armor-detail-row), .item-list-row, .monster-quest-row, .skill-source-row, .meal-method');
     if(rowFocusQuery.matches&&visualRow&&!visualRow.classList.contains('result-empty')&&!visualRow.closest('#skillTable tr.skill-db-row'))selectUiRow(visualRow);
@@ -1978,9 +2052,9 @@ function bind(){
     if(nav){e.preventDefault();replaceCurrentHistoryState();followItemReference(nav).then(pushCurrentHistoryState);return;}
     const close=e.target.closest?.('#itemTable .item-detail-close');
     if(close){e.preventDefault();removeItemDetailRow();selectedItemId="";replaceCurrentHistoryState();return;}
-  });
-  document.addEventListener("keydown",e=>{const armorRow=e.target.closest?.('#armorTable tr.armor-db-row[data-armor-id]');if(armorRow&&(e.key==="Enter"||e.key===" ")){e.preventDefault();void toggleArmorProgressRow(armorRow);return;}const bcard=e.target.closest?.('[data-auto-build]');if(bcard&&(e.key==="Enter"||e.key===" ")){e.preventDefault();applyAutoBuildToSimulator(bcard.dataset.autoBuild);return;}const wrow=e.target.closest?.('#weaponTrees tr.weapon-db-row[data-weapon-row]');if(wrow&&(e.key==="Enter"||e.key===" ")){e.preventDefault();void openWeaponDetail(wrow);return;}const row=e.target.closest?.('#skillTable tr.skill-db-row[data-skill-row]');if(row&&(e.key==="Enter"||e.key===" ")){e.preventDefault();void openSkillDetail(row.dataset.skillRow,row);}});
-  document.addEventListener("toggle",e=>{
+  }));
+  document.addEventListener("keydown",safeUiHandler("document.keydown",e=>{const armorRow=e.target.closest?.('#armorTable tr.armor-db-row[data-armor-id]');if(armorRow&&(e.key==="Enter"||e.key===" ")){e.preventDefault();void toggleArmorProgressRow(armorRow);return;}const bcard=e.target.closest?.('[data-auto-build]');if(bcard&&(e.key==="Enter"||e.key===" ")){e.preventDefault();applyAutoBuildToSimulator(bcard.dataset.autoBuild);return;}const wrow=e.target.closest?.('#weaponTrees tr.weapon-db-row[data-weapon-row]');if(wrow&&(e.key==="Enter"||e.key===" ")){e.preventDefault();void openWeaponDetail(wrow);return;}const row=e.target.closest?.('#skillTable tr.skill-db-row[data-skill-row]');if(row&&(e.key==="Enter"||e.key===" ")){e.preventDefault();void openSkillDetail(row.dataset.skillRow,row);}}));
+  document.addEventListener("toggle",safeUiHandler("document.toggle",e=>{
     const d=e.target;
     if(d?.matches?.("#itemTable details.xref-lazy"))void hydrateXrefGroup(d);
     if(d?.open&&d.matches?.("#skillTable details.skill-source-group")){
@@ -1991,7 +2065,9 @@ function bind(){
       const host=d.parentElement;
       host?.querySelectorAll(":scope > details.skill-armor-set[open]").forEach(other=>{if(other!==d)other.open=false});
     }
-  },true);
+  }),true);
+  }));
+  results.push(bindEventGroup("navigation",()=>{
   $("#sidebarToggle").onclick=()=>{$(".app-shell").classList.toggle("sidebar-collapsed");const collapsed=$(".app-shell").classList.contains("sidebar-collapsed");$("#sidebarToggle").title=collapsed?"좌측 메뉴 펼치기":"좌측 메뉴 접기";};
 
   $$('.nav-group-toggle').forEach(b=>b.onclick=e=>{
@@ -2011,7 +2087,8 @@ function bind(){
     replaceCurrentHistoryState();
     void handleRoute(b).then(pushCurrentHistoryState);
   });
-
+  }));
+  results.push(bindEventGroup("simulator-controls",()=>{
   $("#addTargetSkill").onclick=()=>{const v=uiState.targetActivation;if(v&&!targets.includes(v)){targets.push(v);renderTargets()}};
   $("#clearTargets").onclick=()=>{targets=[];renderTargets()};$("#calculateManual").onclick=renderManualResult;$("#runSearch").onclick=runSearch;
   $("#saveBuild").onclick=saveCurrentBuild;$("#deleteBuild").onclick=deleteSelectedBuild;$("#savedBuildSelect").onchange=loadSelectedBuild;
@@ -2027,7 +2104,8 @@ function bind(){
     if(currentPage==="weapon"){renderWeaponTreeFilter();renderWeaponTrees()}
   };
   $("#includeTorsoUp").onchange=()=>{renderManualResult()};
-
+  }));
+  results.push(bindEventGroup("database-filters",()=>{
   let armorSearchTimer=null;
   $("#armorSearch").oninput=()=>{if(armorSearchTimer)clearTimeout(armorSearchTimer);armorSearchTimer=setTimeout(renderArmorTable,110)};$("#armorPartFilter").onchange=renderArmorTable;
   $("#armorSetSearch").oninput=renderArmorSetTable;
@@ -2041,22 +2119,62 @@ function bind(){
   $("#itemSearch").oninput=renderItemTable;
   $("#composeSearch").oninput=renderCompose;
   $("#questSearch").oninput=renderQuest;$("#questLevelFilter").onchange=renderQuest;$("#questKeyOnly").onchange=renderQuest;$("#questTypeFilter").onchange=renderQuest;$("#questLocationFilter").onchange=renderQuest;$("#questMonsterFilter").onchange=renderQuest;$("#questRewardFilter").oninput=renderQuest;
-
+  }));
+  results.push(bindEventGroup("recommendation",()=>{
   $("#recommendWeaponType").onchange=e=>{recommendWeaponType=e.target.value;renderRecommendedLoadouts()};$("#recommendRank").onchange=e=>{recommendRank=e.target.value;renderRecommendedLoadouts()};
-
+  }));
+  results.push(bindEventGroup("json-import",()=>{
   $("#jsonImport").onchange=async e=>{const lines=[];for(const f of e.target.files){try{const json=JSON.parse(await f.text()),type=classifyImported(f.name,json);if(type){data[type]=json;lines.push(`${f.name} → ${type} ${Array.isArray(json)?json.length:"객체"}건`)}else lines.push(`${f.name} → 유형 판별 실패`)}catch{lines.push(`${f.name} → JSON 오류`)}}data.meta={...data.meta,demo:false,version:"browser-import"};rebuildIndexes();$("#importStatus").innerHTML=lines.map(esc).join("<br>");renderAll()};
+  }));
+  results.push(bindEventGroup("history-lifecycle",()=>{
+    window.addEventListener("popstate",safeUiHandler("history.popstate",e=>{
+      if(!e.state?.mh4g)return;
+      return restoreAppHistoryState(e.state);
+    }));
+    window.addEventListener("pageshow",safeUiHandler("history.pageshow",e=>{
+      if(e.persisted)updateHeaderFilterVisibility();
+    }));
+  }));
+  appEventsBound=results.every(Boolean);
+  if(!appEventsBound)showRuntimeStatus("일부 화면 이벤트 연결에 실패했습니다. 실패한 기능만 재시도할 수 있으며 메뉴 이동은 유지됩니다.","warn");
+  return appEventsBound;
 }
 
-Object.assign(data,await loadSimulatorData());rebuildIndexes();bind();setupResponsiveNavColumns();setupMobilePageJump();renderAll();
-window.addEventListener("popstate",e=>{
-  if(!e.state?.mh4g)return;
-  void restoreAppHistoryState(e.state);
+async function bootstrapApp(){
+  // 데이터 다운로드가 느리거나 실패해도 메뉴/기본 이벤트는 먼저 살아 있어야 한다.
+  bind();
+  safeInitStep("반응형 메뉴",setupResponsiveNavColumns);
+  safeInitStep("모바일 빠른 이동",setupMobilePageJump);
+  const initialState=history.state?.mh4g?history.state:null;
+  if(!initialState)replaceCurrentHistoryState();
+  showRuntimeStatus("기본 데이터를 불러오는 중입니다. 메뉴 이동은 사용할 수 있습니다.","loading");
+  try{
+    const patch=await loadSimulatorData();
+    Object.assign(data,patch);
+    const missingCore=["skills","armors","armorSets","decorations","weapons"].filter(k=>!Array.isArray(patch[k])||patch[k].length===0);
+    if(!patch.recommendedLoadouts||!Array.isArray(patch.recommendedLoadouts.entries)||patch.recommendedLoadouts.entries.length===0)missingCore.push("recommendedLoadouts");
+    safeInitStep("검색 인덱스",rebuildIndexes);
+    safeInitStep("초기 화면",renderAll);
+    if(currentPage!=="simulator")safeInitStep("현재 화면 갱신",()=>renderPageData(currentPage));
+    if(initialState)await restoreAppHistoryState(initialState);
+    if(missingCore.length)showRuntimeStatus(`일부 기본 데이터를 불러오지 못했습니다: ${missingCore.join(", ")} · 메뉴와 정상 로드된 기능은 계속 사용할 수 있습니다.`,"warn");
+    else if(appEventsBound)clearRuntimeStatus();
+  }catch(err){
+    reportAppError("기본 데이터 로드",err);
+    // 데이터 오류와 관계없이 이미 연결된 메뉴/버튼은 유지한다.
+    safeInitStep("최소 화면 복구",()=>{updateHeaderFilterVisibility();renderSummary();});
+  }finally{
+    // 실패한 이벤트 그룹이 있었다면 성공한 그룹은 건드리지 않고 실패 그룹만 다시 시도한다.
+    bind();
+  }
+}
+
+window.addEventListener("error",e=>{
+  if(e?.error)reportAppError("런타임",e.error);
 });
-// BFCache restores the same DOM and JS listeners. Rebinding/rerendering here caused duplicate work and back-navigation freezes.
-window.addEventListener("pageshow",e=>{
-  if(e.persisted)updateHeaderFilterVisibility();
+window.addEventListener("unhandledrejection",e=>{
+  reportAppError("비동기",e.reason||new Error("처리되지 않은 비동기 오류"));
 });
-if(history.state?.mh4g)await restoreAppHistoryState(history.state);
-else replaceCurrentHistoryState();
+void bootstrapApp();
 // 아이템 역참조는 아이템 화면 진입/아이템 링크 첫 사용 시에만 불러온다.
 // 대용량 JSON을 백그라운드에서 임의 파싱해 다른 화면의 포인터/스크롤 프레임을 끊지 않도록 prewarm은 사용하지 않는다.
