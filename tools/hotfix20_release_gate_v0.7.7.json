@@ -1,0 +1,67 @@
+{
+  "ok": true,
+  "version": "0.7.7-chat4-research2-hotfix20",
+  "executionMode": "gate steps executed in split batches because the orchestration shell has a 240s wall-clock limit",
+  "steps": [
+    {
+      "name": "app_module_syntax",
+      "ok": true
+    },
+    {
+      "name": "loader_module_syntax",
+      "ok": true
+    },
+    {
+      "name": "engine_module_syntax",
+      "ok": true
+    },
+    {
+      "name": "hotfix20_runtime",
+      "ok": true
+    },
+    {
+      "name": "hotfix20_rank",
+      "ok": true
+    },
+    {
+      "name": "hotfix20_e2e",
+      "ok": true
+    },
+    {
+      "name": "hotfix19_planner",
+      "ok": true
+    },
+    {
+      "name": "hotfix19_mobile",
+      "ok": true
+    },
+    {
+      "name": "hotfix18_mobile",
+      "ok": true
+    },
+    {
+      "name": "hotfix17_stability",
+      "ok": true
+    },
+    {
+      "name": "armor_progression_all",
+      "ok": true,
+      "detail": "3119 armors / 11630 materials / unknown 0"
+    },
+    {
+      "name": "cross_references",
+      "ok": true,
+      "detail": "hardIssueCount 0"
+    },
+    {
+      "name": "recommended_loadouts",
+      "ok": true,
+      "detail": "108 variants / hardErrors 0"
+    },
+    {
+      "name": "armor_search_benchmark",
+      "ok": true,
+      "detail": "same sample counts; optimized 5.09ms/sweep in latest run"
+    }
+  ]
+}

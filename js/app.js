@@ -1,5 +1,5 @@
-import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,loadArmorProgression,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-research2-hotfix19";
-import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-research2-hotfix19";
+import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,loadArmorProgression,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-research2-hotfix20";
+import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-research2-hotfix20";
 
 let data={skills:[],armors:[],armorSets:[],decorations:[],weapons:[],weaponSummary:[],melodies:[],items:[],itemReferenceIndex:{items:{}},skillReferenceIndex:{items:{},categories:[]},meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],monsterReferenceIndex:{items:{}},dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],questReferenceIndex:{quests:{}},siteInfo:{},meta:{}};
 let targets=[];
@@ -26,7 +26,7 @@ let restoringHistory=false;
 let historyRestoreToken=0;
 try{history.scrollRestoration="manual"}catch{}
 
-const APP_VERSION="0.7.7-chat4-research2-hotfix19";
+const APP_VERSION="0.7.7-chat4-research2-hotfix20";
 const boundEventGroups=new Set();
 let appEventsBound=false;
 function ensureRuntimeStatus(){
@@ -521,7 +521,7 @@ function armorPickerOptions(part){
     const skills=a.torsoUp?"몸통배가":skillPointsPlain(a.skills||{},"스킬 없음");
     return {
       value:a.id,label:a.name,
-      meta:`${rankName(a.rank)} · ${hunterName(a.hunterType)} · ${skills} · 슬롯 ${slotsText(a.slots)} · DEF ${a.defense}${torso}`,
+      meta:`${rankName(a.rank)} · ${hunterName(a.hunterType)} · ${skills} · 슬롯 ${slotsText(a.slots)} · DEF ${a.defense} · 내성 ${resistText(a.resistances)}${torso}`,
       search:`${a.name} ${a.nameJa||""} ${a.nameEn||""} ${hunterName(a.hunterType)} ${rankName(a.rank)} ${armorSkillSearchCorpus(a)} ${torsoSearch} ${a.materials||""}`,
       matchQuery:q=>armorMatchesSearch(a,q)
     };
@@ -817,7 +817,8 @@ function manualLoadoutSummary(){
   const gear=[`<div><b>무기</b><span>${esc(w?.name||"-")} ${w?`<small>${slotsText(w.slots)}</small>`:""}</span>${skillCell("weapon")}</div>`];
   for(const p of PARTS){
     const a=armorById.get(uiState.manual[p]);
-    gear.push(`<div><b>${PART_NAMES[p]}</b><span>${esc(a?.name||"-")} ${a?`<small>${slotsText(a.slots)}</small>`:""}</span>${skillCell(p)}</div>`);
+    const armorMeta=a?`<small>${slotsText(a.slots)}</small><small class="loadout-resist">DEF ${Number(a.defense||0)} · ${esc(resistText(a.resistances))}</small>`:"";
+    gear.push(`<div><b>${PART_NAMES[p]}</b><span>${esc(a?.name||"-")} ${armorMeta}</span>${skillCell(p)}</div>`);
   }
   const decoCount=manualDecorationPlacements().length;
   const charmText=`${uiState.charmSkill1?`${esc(skillName(uiState.charmSkill1))} ${uiState.charmPoint1>0?"+":""}${uiState.charmPoint1}`:"-"}${uiState.charmSkill2?` / ${esc(skillName(uiState.charmSkill2))} ${uiState.charmPoint2>0?"+":""}${uiState.charmPoint2}`:""} <small>${slotsText(uiState.charmSlots)}</small>`;
@@ -838,7 +839,8 @@ function renderTargets(){
 function renderBuildCard(b,i){
   const decolines={};for(const p of b.decorations){const did=typeof p.deco==="string"?p.deco:p.deco?.id;const key=`${p.container}:${did}`;decolines[key]=(decolines[key]||0)+1}
   const decoText=Object.entries(decolines).map(([key,n])=>{const [container,id]=key.split(":"),d=data.decorations.find(x=>x.id===id),label={weapon:"무기",head:"머리",body:"몸통",arms:"팔",waist:"허리",legs:"다리",charm:"호석"}[container]||container;return `${label} ${d?.name||id} ×${n}`}).join(" · ");
-  return `<article class="build-card build-card-clickable" data-auto-build="${i}" tabindex="0" role="button" aria-label="조합 ${i+1}을 시뮬레이터에 적용"><h3><span>조합 ${i+1}</span><span class="score">DEF ${b.calc.defense}</span></h3><div class="build-equipment">${PARTS.map(p=>{const a=b.armors.find(x=>x.part===p);return `<span class="label">${PART_NAMES[p]}</span><span>${esc(a?.name||"-")} <span class="slots">${slotsText(a?.slots)}</span></span>`}).join("")}</div><div class="deco-line">${decoText?`장식주: ${esc(decoText)}`:"장식주 없음"}</div>${renderSkillResult(b.calc)}<div class="build-card-action">카드 클릭 → 시뮬레이터에 적용</div></article>`;
+  const resistTotal=Object.values(b.calc?.resist||{}).reduce((sum,v)=>sum+Number(v||0),0);
+  return `<article class="build-card build-card-clickable" data-auto-build="${i}" tabindex="0" role="button" aria-label="조합 ${i+1}을 시뮬레이터에 적용"><h3><span>조합 ${i+1}</span><span class="score">DEF ${b.calc.defense} · 내성합 ${resistTotal>=0?"+":""}${resistTotal}</span></h3><div class="build-equipment">${PARTS.map(p=>{const a=b.armors.find(x=>x.part===p);return `<span class="label">${PART_NAMES[p]}</span><span>${esc(a?.name||"-")} <span class="slots">${slotsText(a?.slots)}</span></span>`}).join("")}</div><div class="deco-line">${decoText?`장식주: ${esc(decoText)}`:"장식주 없음"}</div>${renderSkillResult(b.calc)}<div class="build-card-action">카드 클릭 → 시뮬레이터에 적용</div></article>`;
 }
 function applyAutoBuildToSimulator(index){
   const b=latestAutoSearchResults[Number(index)];if(!b)return;
@@ -857,9 +859,11 @@ async function runSearch(){
   const btn=$("#runSearch");btn.disabled=true;btn.textContent="검색 중…";$("#searchStats").textContent="실제 DB에서 후보 조합을 계산하고 있습니다.";
   try{
     const simHunter=simulatorSearchHunterType();
-    const r=await searchBuilds({targetActivationIds:targets,hunterType:simHunter,rank:"all",charm:charm(),weaponSlots:Number(selectedWeapon()?.slots||0),allowDecorations:$("#allowDecorations").checked,includeTorsoUp:$("#includeTorsoUp").checked,limit:Number($("#resultLimit").value||20)},data);
+    const progression=$("#autoProgressionRank")?.value||"g";
+    const progressionLabel={low:"하위",high:"상위",g:"G급"}[progression]||"전체";
+    const r=await searchBuilds({targetActivationIds:targets,hunterType:simHunter,rank:progression,charm:charm(),weaponSlots:Number(selectedWeapon()?.slots||0),allowDecorations:$("#allowDecorations").checked,includeTorsoUp:$("#includeTorsoUp").checked,limit:Number($("#resultLimit").value||20)},data);
     latestAutoSearchResults=r.results||[];
-    $("#searchStats").textContent=r.stats.message||`검색 타입 ${hunterName(simHunter)} · 전체 등급 · 대상 방어구 ${r.stats.eligible}개 · 최종 후보 ${r.stats.finalists}개 · 고속 후보검색(완전탐색 아님)`;
+    $("#searchStats").textContent=r.stats.message||`검색 타입 ${hunterName(simHunter)} · 진행도 ${progressionLabel} · 대상 방어구 ${r.stats.eligible}개 · 최종 후보 ${r.stats.finalists}개 · 고속 후보검색(완전탐색 아님)`;
     $("#searchResults").innerHTML=latestAutoSearchResults.length?latestAutoSearchResults.map(renderBuildCard).join(""):'<div class="result-empty">조건을 만족하는 조합을 찾지 못했습니다.</div>';
   }finally{btn.disabled=false;btn.textContent="조합 검색"}
 }

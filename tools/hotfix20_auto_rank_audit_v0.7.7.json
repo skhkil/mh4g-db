@@ -1,0 +1,140 @@
+{
+  "ok": true,
+  "version": "0.7.7-chat4-research2-hotfix20",
+  "checks": {
+    "low_progression_has_results": true,
+    "low_progression_only_low": true,
+    "low_target_fully_activated": true,
+    "high_progression_has_results": true,
+    "high_progression_no_g": true,
+    "high_targets_fully_activated": true,
+    "g_progression_has_results": true,
+    "g_targets_fully_activated": true,
+    "g_top_prefers_current_rank": true,
+    "g_top_no_low_gavra_bias": true,
+    "g_top_contains_g_torso_up_waist": true,
+    "ranking_metrics_present": true,
+    "resistance_metrics_match_calc": true,
+    "ranking_lexicographic_order": true
+  },
+  "failures": [],
+  "scenario": {
+    "target": "세균연구가 + 명검",
+    "progression": "G급",
+    "topArmors": [
+      {
+        "part": "head",
+        "name": "반역왕Ｊ해트",
+        "rank": "g",
+        "defense": 100,
+        "resistances": {
+          "fire": -4,
+          "water": -4,
+          "thunder": -4,
+          "ice": -4,
+          "dragon": -4
+        },
+        "torsoUp": true
+      },
+      {
+        "part": "body",
+        "name": "리벨리언X메일",
+        "rank": "g",
+        "defense": 110,
+        "resistances": {
+          "fire": 3,
+          "water": 3,
+          "thunder": -2,
+          "ice": -2,
+          "dragon": -3
+        },
+        "torsoUp": false
+      },
+      {
+        "part": "arms",
+        "name": "반역왕Ｊ글러브",
+        "rank": "g",
+        "defense": 100,
+        "resistances": {
+          "fire": -4,
+          "water": -4,
+          "thunder": -4,
+          "ice": -4,
+          "dragon": -4
+        },
+        "torsoUp": true
+      },
+      {
+        "part": "waist",
+        "name": "그리드Z펄드",
+        "rank": "g",
+        "defense": 108,
+        "resistances": {
+          "fire": -1,
+          "water": -1,
+          "thunder": -3,
+          "ice": -1,
+          "dragon": -1
+        },
+        "torsoUp": true
+      },
+      {
+        "part": "legs",
+        "name": "카이저X그리브",
+        "rank": "g",
+        "defense": 109,
+        "resistances": {
+          "fire": 4,
+          "water": -6,
+          "thunder": 1,
+          "ice": -2,
+          "dragon": -2
+        },
+        "torsoUp": false
+      }
+    ],
+    "topMetrics": {
+      "negativeSkillCount": 1,
+      "negativeSkillSeverity": 10,
+      "decorationCount": 1,
+      "usedDecorationSlots": 1,
+      "distinctDecorationTypes": 1,
+      "targetWastePoints": 5,
+      "targetUpgradeSteps": 0,
+      "extraPositiveSkillCount": 0,
+      "rankMaxDowngrade": 0,
+      "rankTotalDowngrade": 0,
+      "currentRankPieces": 5,
+      "defense": 527,
+      "resistanceTotal": -53,
+      "resistanceMinimum": -14,
+      "remainingSlots": 2
+    },
+    "topActivated": [
+      {
+        "skillId": "skill_d6ea8f6b4907",
+        "points": 13,
+        "name": "세균연구가",
+        "threshold": 10
+      },
+      {
+        "skillId": "skill_0a0d7a1a0dde",
+        "points": 12,
+        "name": "명검",
+        "threshold": 10
+      },
+      {
+        "skillId": "skill_2a9c189a93d7",
+        "points": -13,
+        "name": "공격력DOWN【소】",
+        "threshold": -10
+      }
+    ]
+  },
+  "counts": {
+    "lowEligible": 322,
+    "highEligible": 940,
+    "gEligible": 1613,
+    "gRankedPool": 160
+  }
+}

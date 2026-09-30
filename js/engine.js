@@ -101,6 +101,26 @@ function requirementMap(targetActivationIds, skills){
   return req;
 }
 
+
+const RANK_ORDER={low:0,high:1,g:2};
+function progressionRankAllows(armorRank, progression){
+  if(progression==="all"||!progression) return true;
+  const armor=RANK_ORDER[armorRank];
+  const max=RANK_ORDER[progression];
+  return Number.isFinite(armor)&&Number.isFinite(max)&&armor<=max;
+}
+
+function compareArmorGenerationTie(a,b,progression){
+  const max=RANK_ORDER[progression];
+  if(!Number.isFinite(max))return 0;
+  const ad=max-(RANK_ORDER[a?.rank]??0),bd=max-(RANK_ORDER[b?.rank]??0);
+  return ad-bd||Number(b?.defense||0)-Number(a?.defense||0)||String(a?.id||"").localeCompare(String(b?.id||""));
+}
+
+function targetRequirementsSatisfied(points, req){
+  return Object.entries(req).every(([id,need])=>Number(points?.[id]||0)>=Number(need||0));
+}
+
 function deficitScore(points, req){
   let miss=0, hit=0;
   for(const [id,need] of Object.entries(req)){
@@ -125,6 +145,103 @@ function armorScore(a, req){
 function buildSignature(items){
   return PARTS.map(p=>items.find(a=>a?.part===p)?.id||"-").join("|");
 }
+
+function decorationBurden(placements=[]){
+  let usedSlots=0;
+  const types=new Set();
+  for(const placed of placements){
+    const deco=placed?.deco;
+    usedSlots+=Number((typeof deco==="object"?deco?.slots:0)||0);
+    const id=typeof deco==="string"?deco:deco?.id;
+    if(id)types.add(id);
+  }
+  return {decorationCount:placements.length,usedDecorationSlots:usedSlots,distinctDecorationTypes:types.size};
+}
+
+function negativeSkillBurden(calc){
+  const negative=(calc?.activated||[]).filter(a=>Number(a.threshold)<0);
+  return {
+    negativeSkillCount:negative.length,
+    negativeSkillSeverity:negative.reduce((sum,a)=>sum+Math.abs(Number(a.threshold)||0),0)
+  };
+}
+
+function targetPointEfficiency(calc,req,skills){
+  let targetWastePoints=0,targetUpgradeSteps=0;
+  for(const [skillId,needRaw] of Object.entries(req)){
+    const need=Number(needRaw)||0;
+    const have=Number(calc?.points?.[skillId]||0);
+    const def=getSkillDefinition(skills,skillId);
+    const thresholds=(def?.activations||[]).map(a=>Number(a.points)).filter(v=>v>0).sort((a,b)=>a-b);
+    const reached=thresholds.filter(v=>v<=have).at(-1)??need;
+    targetWastePoints+=Math.max(0,have-reached);
+    targetUpgradeSteps+=thresholds.filter(v=>v>need&&v<=have).length;
+  }
+  const targetIds=new Set(Object.keys(req));
+  const extraPositiveSkillCount=(calc?.activated||[]).filter(a=>Number(a.threshold)>0&&!targetIds.has(a.skillId)).length;
+  return {targetWastePoints,targetUpgradeSteps,extraPositiveSkillCount};
+}
+
+function practicalBuildMetrics(armors,progression,calc,containers,usedDecorationSlots){
+  const max=Number.isFinite(RANK_ORDER[progression])?RANK_ORDER[progression]:RANK_ORDER.g;
+  const downgrades=armors.map(a=>Math.max(0,max-(RANK_ORDER[a?.rank]??0)));
+  const totalCapacity=(containers||[]).reduce((sum,c)=>sum+Number(c?.capacity||0),0);
+  const resistValues=["fire","water","thunder","ice","dragon"].map(k=>Number(calc?.resist?.[k]||0));
+  return {
+    rankMaxDowngrade:downgrades.length?Math.max(...downgrades):0,
+    rankTotalDowngrade:downgrades.reduce((a,b)=>a+b,0),
+    currentRankPieces:downgrades.filter(x=>x===0).length,
+    defense:Number(calc?.defense||0),
+    resistanceTotal:resistValues.reduce((sum,v)=>sum+v,0),
+    resistanceMinimum:resistValues.length?Math.min(...resistValues):0,
+    remainingSlots:Math.max(0,totalCapacity-Number(usedDecorationSlots||0))
+  };
+}
+
+function compareRankedMetrics(a,b){
+  const am=a.metrics||{},bm=b.metrics||{};
+  return (am.negativeSkillCount||0)-(bm.negativeSkillCount||0)
+    ||(am.negativeSkillSeverity||0)-(bm.negativeSkillSeverity||0)
+    ||(am.usedDecorationSlots||0)-(bm.usedDecorationSlots||0)
+    ||(am.decorationCount||0)-(bm.decorationCount||0)
+    ||(am.distinctDecorationTypes||0)-(bm.distinctDecorationTypes||0)
+    ||(am.targetWastePoints||0)-(bm.targetWastePoints||0)
+    ||(bm.targetUpgradeSteps||0)-(am.targetUpgradeSteps||0)
+    ||(bm.extraPositiveSkillCount||0)-(am.extraPositiveSkillCount||0)
+    ||(am.rankMaxDowngrade||0)-(bm.rankMaxDowngrade||0)
+    ||(am.rankTotalDowngrade||0)-(bm.rankTotalDowngrade||0)
+    ||(bm.defense||0)-(am.defense||0)
+    ||(bm.resistanceTotal||0)-(am.resistanceTotal||0)
+    ||(bm.resistanceMinimum||0)-(am.resistanceMinimum||0)
+    ||(bm.remainingSlots||0)-(am.remainingSlots||0);
+}
+
+function compareRankedBuilds(a,b){
+  return compareRankedMetrics(a,b)||buildSignature(a.armors).localeCompare(buildSignature(b.armors));
+}
+
+function diversifyExactTieGroups(sorted){
+  const out=[];
+  for(let i=0;i<sorted.length;){
+    let j=i+1;
+    while(j<sorted.length&&compareRankedMetrics(sorted[i],sorted[j])===0)j++;
+    const group=sorted.slice(i,j);
+    if(group.length<=2){out.push(...group);i=j;continue;}
+    const chosen=[group.shift()];
+    while(group.length){
+      let bestIndex=0,bestDistance=-1;
+      for(let k=0;k<group.length;k++){
+        const sig=group[k].armors.map(a=>a?.id||"");
+        const minDistance=Math.min(...chosen.map(c=>c.armors.reduce((n,a,idx)=>n+(a?.id!==sig[idx]?1:0),0)));
+        if(minDistance>bestDistance){bestDistance=minDistance;bestIndex=k;}
+      }
+      chosen.push(group.splice(bestIndex,1)[0]);
+    }
+    out.push(...chosen);i=j;
+  }
+  return out;
+}
+
 
 function placeDecorationState(state, deco, containerId, bodyMultiplier, req){
   const next = {
@@ -204,12 +321,12 @@ export async function searchBuilds(options, data){
 
   const eligible = data.armors.filter(a=>{
     const typeOk = hunterType==="both" || a.hunterType==="both" || a.hunterType===hunterType;
-    const rankOk = rank==="all" || a.rank===rank;
+    const rankOk = progressionRankAllows(a.rank,rank);
     return typeOk && rankOk;
   });
 
   const byPart=Object.fromEntries(PARTS.map(p=>[p, eligible.filter(a=>a.part===p)
-    .sort((a,b)=>armorScore(b,req)-armorScore(a,req))
+    .sort((a,b)=>armorScore(b,req)-armorScore(a,req)||compareArmorGenerationTie(a,b,rank))
     .slice(0,55)]));
 
   if(PARTS.some(p=>byPart[p].length===0)){
@@ -247,7 +364,8 @@ export async function searchBuilds(options, data){
   }
 
   const finalists=beam.slice(0,700);
-  const results=[];
+  const rankedPool=[];
+  const poolTarget=Math.min(300,Math.max(120,Number(limit||20)*8));
   for(const candidate of finalists){
     if(requireTorsoUp && !candidate.armors.some(a=>a?.part!=="body"&&a?.torsoUp)) continue;
     const {points,torsoUpCount}=baseBuildPoints(candidate.armors,charm,includeTorsoUp);
@@ -258,24 +376,37 @@ export async function searchBuilds(options, data){
       solved=solveDecorations(points,containers,data.decorations,req,torsoUpCount,1800);
       if(!solved) continue;
     }
-    if(deficitScore(solved.points,req).miss>0) continue;
+    if(!targetRequirementsSatisfied(solved.points,req)) continue;
     const calc=calculateBuild({
       armors:candidate.armors,charm,weaponSlots,decorations:solved.placements
     },data,includeTorsoUp);
-    results.push({
+    if(!targetRequirementsSatisfied(calc.points,req)) continue;
+    const decoMetrics=decorationBurden(solved.placements);
+    const metrics={
+      ...negativeSkillBurden(calc),
+      ...decoMetrics,
+      ...targetPointEfficiency(calc,req,data.skills),
+      ...practicalBuildMetrics(candidate.armors,rank,calc,containers,decoMetrics.usedDecorationSlots)
+    };
+    rankedPool.push({
       armors:candidate.armors,
       decorations:solved.placements,
       calc,
+      metrics,
       score:candidate.score - solved.placements.length*0.15
     });
-    if(results.length>=Number(limit)) break;
+    if(rankedPool.length>=poolTarget) break;
   }
 
+  rankedPool.sort(compareRankedBuilds);
+  const diversified=diversifyExactTieGroups(rankedPool);
+  const results=diversified.slice(0,Number(limit));
   return {
     results,
     stats:{
       eligible:eligible.length,
       finalists:finalists.length,
+      rankedPool:rankedPool.length,
       beam:beam.length,
       approximate:true
     }

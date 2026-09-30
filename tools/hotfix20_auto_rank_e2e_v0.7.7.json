@@ -1,0 +1,42 @@
+{
+  "version": "hotfix20",
+  "runs": [
+    {
+      "cycle": 1,
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "ok": true,
+      "errors": []
+    },
+    {
+      "cycle": 2,
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "ok": true,
+      "errors": []
+    },
+    {
+      "cycle": 3,
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "ok": true,
+      "errors": []
+    },
+    {
+      "cycle": 4,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "ok": true,
+      "errors": []
+    }
+  ],
+  "ok": true
+}

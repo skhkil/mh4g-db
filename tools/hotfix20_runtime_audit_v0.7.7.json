@@ -1,0 +1,27 @@
+{
+  "ok": true,
+  "version": "0.7.7-chat4-research2-hotfix20",
+  "checks": {
+    "index_app_hotfix20": true,
+    "index_css_hotfix20": true,
+    "app_imports_hotfix20": true,
+    "app_version_hotfix20": true,
+    "progression_ui": true,
+    "progression_filter_engine": true,
+    "target_final_validation": true,
+    "negative_rank_metrics": true,
+    "decoration_rank_metrics": true,
+    "waste_rank_metrics": true,
+    "extra_skill_rank_metrics": true,
+    "practical_rank_metrics": true,
+    "resistance_rank_metrics": true,
+    "stable_tie": true,
+    "exact_tie_diversity": true,
+    "armor_picker_resistance": true,
+    "selected_armor_resistance": true,
+    "auto_card_resistance": true,
+    "readme_top_hotfix20": true,
+    "readme_hotfix19_order": true,
+    "work_status_hotfix20": true
+  }
+}
