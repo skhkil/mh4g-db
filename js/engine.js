@@ -182,6 +182,13 @@ function targetPointEfficiency(calc,req,skills){
   return {targetWastePoints,targetUpgradeSteps,extraPositiveSkillCount};
 }
 
+function preferredSkillMetrics(calc,preferredSkillWeights={}){
+  const active=new Set((calc?.activated||[]).filter(a=>Number(a.threshold)>0).map(a=>a.skillId));
+  let preferredSkillScore=0,preferredSkillCount=0;
+  for(const [id,w] of Object.entries(preferredSkillWeights||{}))if(active.has(id)){preferredSkillScore+=Number(w)||0;preferredSkillCount+=1}
+  return {preferredSkillScore,preferredSkillCount};
+}
+
 function practicalBuildMetrics(armors,progression,calc,containers,usedDecorationSlots){
   const max=Number.isFinite(RANK_ORDER[progression])?RANK_ORDER[progression]:RANK_ORDER.g;
   const downgrades=armors.map(a=>Math.max(0,max-(RANK_ORDER[a?.rank]??0)));
@@ -202,18 +209,20 @@ function compareRankedMetrics(a,b){
   const am=a.metrics||{},bm=b.metrics||{};
   return (am.negativeSkillCount||0)-(bm.negativeSkillCount||0)
     ||(am.negativeSkillSeverity||0)-(bm.negativeSkillSeverity||0)
+    ||(am.targetWastePoints||0)-(bm.targetWastePoints||0)
+    ||(bm.targetUpgradeSteps||0)-(am.targetUpgradeSteps||0)
+    ||(bm.remainingSlots||0)-(am.remainingSlots||0)
+    ||(bm.preferredSkillScore||0)-(am.preferredSkillScore||0)
+    ||(bm.preferredSkillCount||0)-(am.preferredSkillCount||0)
     ||(am.usedDecorationSlots||0)-(bm.usedDecorationSlots||0)
     ||(am.decorationCount||0)-(bm.decorationCount||0)
     ||(am.distinctDecorationTypes||0)-(bm.distinctDecorationTypes||0)
-    ||(am.targetWastePoints||0)-(bm.targetWastePoints||0)
-    ||(bm.targetUpgradeSteps||0)-(am.targetUpgradeSteps||0)
     ||(bm.extraPositiveSkillCount||0)-(am.extraPositiveSkillCount||0)
     ||(am.rankMaxDowngrade||0)-(bm.rankMaxDowngrade||0)
     ||(am.rankTotalDowngrade||0)-(bm.rankTotalDowngrade||0)
     ||(bm.defense||0)-(am.defense||0)
     ||(bm.resistanceTotal||0)-(am.resistanceTotal||0)
-    ||(bm.resistanceMinimum||0)-(am.resistanceMinimum||0)
-    ||(bm.remainingSlots||0)-(am.remainingSlots||0);
+    ||(bm.resistanceMinimum||0)-(am.resistanceMinimum||0);
 }
 
 function compareRankedBuilds(a,b){
@@ -330,6 +339,113 @@ function requirementDeficits(points,req){
   }).filter(x=>x.missing>0).sort((a,b)=>b.missing-a.missing||a.skillId.localeCompare(b.skillId));
 }
 
+function remainingContainersAfterPlacements(containers,placements=[]){
+  const used={};
+  for(const placed of placements){
+    const id=placed?.container;if(!id)continue;
+    const deco=placed?.deco;
+    used[id]=(used[id]||0)+Number((typeof deco==="object"?deco?.slots:0)||0);
+  }
+  return (containers||[]).map(c=>({
+    ...c,
+    capacity:Math.max(0,Number(c?.capacity||0)-Number(used[c?.id]||0))
+  }));
+}
+
+function virtualExtraSlotContainers(extraSlots){
+  const out=[];
+  let left=Math.max(0,Number(extraSlots)||0),i=0;
+  while(left>0){
+    const capacity=Math.min(3,left);
+    out.push({id:`__extra_${i++}`,label:"추가 슬롯",capacity});
+    left-=capacity;
+  }
+  return out;
+}
+
+function estimateSlotCompletion(points,containers,placements,decorations,req,torsoUpCount,maxExtraSlots=9,maxStates=900){
+  const remaining=remainingContainersAfterPlacements(containers,placements);
+  const currentFreeSlots=remaining.reduce((sum,c)=>sum+Number(c?.capacity||0),0);
+  const already=deficitScore(points,req);
+  if(already.miss<=0)return {slotOnlyCompletable:true,minAdditionalSlots:0,currentFreeSlots,extraPlacements:[]};
+  const test=extra=>{
+    const testContainers=[...remaining,...virtualExtraSlotContainers(extra)];
+    const solved=solveDecorations(points,testContainers,decorations,req,torsoUpCount,maxStates);
+    return solved.complete&&targetRequirementsSatisfied(solved.points,req)?solved:null;
+  };
+  const maxSolved=test(maxExtraSlots);
+  if(!maxSolved)return {slotOnlyCompletable:false,minAdditionalSlots:null,currentFreeSlots,extraPlacements:[]};
+  let lo=0,hi=maxExtraSlots,best=maxSolved;
+  while(lo<hi){
+    const mid=Math.floor((lo+hi)/2);
+    const solved=test(mid);
+    if(solved){hi=mid;best=solved;}else lo=mid+1;
+  }
+  if(lo!==maxExtraSlots){const exact=test(lo);if(exact)best=exact;}
+  const extraPlacements=(best.placements||[]).filter(x=>String(x?.container||"").startsWith("__extra_"));
+  return {slotOnlyCompletable:true,minAdditionalSlots:lo,currentFreeSlots,extraPlacements};
+}
+
+function buildTargetGenerationMeta(req, skills){
+  const thresholds={};
+  for(const [skillId,needRaw] of Object.entries(req)){
+    const need=Number(needRaw)||0;
+    const def=getSkillDefinition(skills,skillId);
+    thresholds[skillId]=(def?.activations||[]).map(a=>Number(a.points)).filter(v=>v>0&&v>=need).sort((a,b)=>a-b);
+  }
+  return {thresholds};
+}
+
+function targetWasteForGeneration(points,req,targetMeta){
+  let waste=0,upgradeSteps=0;
+  for(const [skillId,needRaw] of Object.entries(req)){
+    const need=Number(needRaw)||0,have=Number(points?.[skillId]||0);
+    const thresholds=targetMeta.thresholds?.[skillId]||[];
+    const reached=thresholds.filter(v=>v<=have).at(-1)??need;
+    waste+=Math.max(0,have-reached);
+    upgradeSteps+=thresholds.filter(v=>v>need&&v<=have).length;
+  }
+  return {waste,upgradeSteps};
+}
+
+function extendTargetGenerationState(st,armor,req,includeTorsoUp){
+  const targetPoints={...st.targetPoints};
+  const add=(skills,mul=1)=>{for(const id of Object.keys(req)){const v=Number(skills?.[id]||0);if(v)targetPoints[id]=Number(targetPoints[id]||0)+v*mul;}};
+  let torsoUpCount=Number(st.targetTorsoUpCount||0),bodyTargetSkills=st.bodyTargetSkills;
+  if(armor?.part==="body"){
+    bodyTargetSkills=Object.fromEntries(Object.keys(req).map(id=>[id,Number(armor.skills?.[id]||0)]));
+    add(armor.skills,1+torsoUpCount);
+  }else{
+    add(armor?.skills,1);
+    if(includeTorsoUp&&armor?.torsoUp){torsoUpCount+=1;if(bodyTargetSkills)add(bodyTargetSkills,1);}
+  }
+  return {targetPoints,targetTorsoUpCount:torsoUpCount,bodyTargetSkills};
+}
+
+function selectGenerationBeam(next,width){
+  const original=[...next].sort((a,b)=>b.score-a.score);
+  const efficient=[...next].sort((a,b)=>b.efficientScore-a.efficientScore||b.score-a.score);
+  const out=[],seen=new Set();let oi=0,ei=0;
+  const pushFrom=list=>{while(list===original?oi<list.length:ei<list.length){const idx=list===original?oi++:ei++;const n=list[idx],sig=buildSignature(n.armors);if(seen.has(sig))continue;seen.add(sig);out.push(n);return true;}return false;};
+  while(out.length<width&&(oi<original.length||ei<efficient.length)){
+    for(let k=0;k<3&&out.length<width;k++)if(!pushFrom(original))break;
+    if(out.length<width)pushFrom(efficient);
+  }
+  return out;
+}
+
+function selectFinalistsWithTargetEfficiency(beam,limit){
+  const original=[...beam].sort((a,b)=>b.score-a.score);
+  const efficient=[...beam].sort((a,b)=>b.efficientScore-a.efficientScore||b.score-a.score);
+  const out=[],seen=new Set();let oi=0,ei=0;
+  const push=(list,key)=>{let i=key==='o'?oi:ei;while(i<list.length){const n=list[i++],sig=buildSignature(n.armors);if(seen.has(sig))continue;seen.add(sig);out.push(n);if(key==='o')oi=i;else ei=i;return true;}if(key==='o')oi=i;else ei=i;return false;};
+  while(out.length<limit&&(oi<original.length||ei<efficient.length)){
+    push(efficient,'e');
+    if(out.length<limit)push(original,'o');
+  }
+  return out;
+}
+
 function autoSearchProfile(targetCount){
   if(targetCount>=5)return {name:"complex5",partLimit:32,beamWidth:2000,finalists:60,decoStates:160,timeBudgetMs:5000};
   if(targetCount>=4)return {name:"complex4",partLimit:36,beamWidth:3000,finalists:80,decoStates:220,timeBudgetMs:6000};
@@ -342,7 +458,7 @@ export async function searchBuilds(options, data){
     targetActivationIds=[], hunterType="blade", rank="all",
     charm={skills:{},slots:0}, weaponSlots=0,
     allowDecorations=true, includeTorsoUp=true, limit=20,
-    onProgress=null, timeBudgetMs=null
+    preferredSkillWeights={}, onProgress=null, timeBudgetMs=null
   } = options;
 
   const requireTorsoUp=targetActivationIds.includes("__torso_up__");
@@ -370,7 +486,9 @@ export async function searchBuilds(options, data){
     return {results:[],nearMisses:[],stats:{message:"필요한 방어구 부위 데이터가 부족합니다."}};
   }
 
-  let beam=[{armors:[],score:0}];
+  const targetMeta=buildTargetGenerationMeta(req,data.skills);
+  const initialTargetPoints=Object.fromEntries(Object.keys(req).map(id=>[id,Number(charm?.skills?.[id]||0)]));
+  let beam=[{armors:[],score:0,efficientScore:0,targetPoints:initialTargetPoints,targetTorsoUpCount:0,bodyTargetSkills:null}];
   for(let partIndex=0;partIndex<PARTS.length;partIndex++){
     const part=PARTS[partIndex];
     const next=[];
@@ -384,22 +502,17 @@ export async function searchBuilds(options, data){
         if(body && torso){
           score += Object.keys(req).reduce((sum,id)=>sum+Math.max(0,Number(body.skills?.[id]||0))*torso*1.6,0);
         }
-        next.push({armors:arr,score});
+        const targetState=extendTargetGenerationState(st,armor,req,includeTorsoUp);
+        const efficiency=targetWasteForGeneration(targetState.targetPoints,req,targetMeta);
+        next.push({armors:arr,score,efficientScore:score-efficiency.waste*3+efficiency.upgradeSteps*1.5,...targetState});
       }
     }
-    next.sort((a,b)=>b.score-a.score);
-    const seen=new Set(); beam=[];
-    for(const n of next){
-      const sig=buildSignature(n.armors);
-      if(seen.has(sig)) continue;
-      seen.add(sig); beam.push(n);
-      if(beam.length>=profile.beamWidth) break;
-    }
+    beam=selectGenerationBeam(next,profile.beamWidth);
     progress({phase:"armor",current:partIndex+1,total:PARTS.length,beam:beam.length});
     await yieldUi();
   }
 
-  const finalists=beam.slice(0,profile.finalists);
+  const finalists=selectFinalistsWithTargetEfficiency(beam,profile.finalists);
   const rankedPool=[];
   const nearMissPool=[];
   const poolTarget=Math.min(profile.finalists,Math.max(60,Number(limit||20)*5));
@@ -437,6 +550,7 @@ export async function searchBuilds(options, data){
           ...negativeSkillBurden(calc),
           ...decoMetrics,
           ...targetPointEfficiency(calc,req,data.skills),
+          ...preferredSkillMetrics(calc,preferredSkillWeights),
           ...practicalBuildMetrics(candidate.armors,rank,calc,containers,decoMetrics.usedDecorationSlots)
         };
         rankedPool.push({
@@ -460,7 +574,23 @@ export async function searchBuilds(options, data){
   const results=diversified.slice(0,Number(limit));
 
   nearMissPool.sort((a,b)=>a.missingSkillCount-b.missingSkillCount||a.missingTotal-b.missingTotal||(a.decorations?.length||0)-(b.decorations?.length||0)||b.score-a.score||buildSignature(a.armors).localeCompare(buildSignature(b.armors)));
-  const nearMisses=nearMissPool.slice(0,3).map(n=>({
+  const nearAnalysisPool=nearMissPool.slice(0,Math.min(16,nearMissPool.length)).map(n=>{
+    const {torsoUpCount}=baseBuildPoints(n.armors,charm,includeTorsoUp);
+    const containers=containersForBuild(n.armors,charm.slots,weaponSlots);
+    const slotCompletion=estimateSlotCompletion(n.points,containers,n.decorations||[],data.decorations,req,torsoUpCount,9,Math.min(1200,profile.decoStates));
+    return {...n,slotCompletion};
+  });
+  nearAnalysisPool.sort((a,b)=>
+    Number(!a.slotCompletion?.slotOnlyCompletable)-Number(!b.slotCompletion?.slotOnlyCompletable)
+    ||Number(a.slotCompletion?.minAdditionalSlots??99)-Number(b.slotCompletion?.minAdditionalSlots??99)
+    ||a.missingSkillCount-b.missingSkillCount
+    ||a.missingTotal-b.missingTotal
+    ||Number(b.slotCompletion?.currentFreeSlots||0)-Number(a.slotCompletion?.currentFreeSlots||0)
+    ||(a.decorations?.length||0)-(b.decorations?.length||0)
+    ||b.score-a.score
+    ||buildSignature(a.armors).localeCompare(buildSignature(b.armors))
+  );
+  const nearMisses=nearAnalysisPool.slice(0,3).map(n=>({
     ...n,
     calc:calculateBuild({armors:n.armors,charm,weaponSlots,decorations:n.decorations||[]},data,includeTorsoUp)
   }));

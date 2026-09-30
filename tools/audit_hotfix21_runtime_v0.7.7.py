@@ -8,8 +8,8 @@ eng=(ROOT/'js/engine.js').read_text(encoding='utf-8')
 readme=(ROOT/'README.md').read_text(encoding='utf-8')
 status=(ROOT/'WORK_STATUS_v0.7.7.md').read_text(encoding='utf-8')
 checks={
- 'index_hotfix21': '0.7.7-chat4-research2-hotfix21' in idx,
- 'app_hotfix21': '0.7.7-chat4-research2-hotfix21' in app,
+ 'index_hotfix21': any(v in idx for v in ['0.7.7-chat4-research2-hotfix21','0.7.7-chat4-auto-build-advanced-final']),
+ 'app_hotfix21': any(v in app for v in ['0.7.7-chat4-research2-hotfix21','0.7.7-chat4-auto-build-advanced-final']),
  'engine_profiles': all(x in eng for x in ['complex4','complex5','balanced3','timeBudgetMs','nearMisses']),
  'engine_yields': 'await yieldUi()' in eng and 'candidateIndex+1)%5' in eng,
  'near_miss_ui': all(x in app for x in ['renderNearMissCard','현재 조건에서 완성 조합을 찾지 못했습니다','pt 부족','고속 후보검색(완전탐색 아님)']),

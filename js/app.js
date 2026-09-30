@@ -1,13 +1,32 @@
-import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,loadArmorProgression,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-research2-hotfix21";
-import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-research2-hotfix21";
+import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,loadArmorProgression,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-auto-build-advanced-final";
+import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-auto-build-advanced-final";
 
-let data={skills:[],armors:[],armorSets:[],decorations:[],weapons:[],weaponSummary:[],melodies:[],items:[],itemReferenceIndex:{items:{}},skillReferenceIndex:{items:{},categories:[]},meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],monsterReferenceIndex:{items:{}},dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],questReferenceIndex:{quests:{}},siteInfo:{},meta:{}};
+let data={skills:[],armors:[],armorSets:[],decorations:[],weapons:[],weaponSummary:[],melodies:[],items:[],itemReferenceIndex:{items:{}},skillReferenceIndex:{items:{},categories:[]},meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],monsterReferenceIndex:{items:{}},dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],questReferenceIndex:{quests:{}},siteInfo:{},meta:{},weaponSkillPriorities:{weapons:{}}};
 let targets=[];
 let latestAutoSearchResults=[];
 let currentPage="simulator";
 const BUILD_STORAGE_KEY="mh4g-builds-v1";
+const OWNED_CHARMS_STORAGE_KEY="mh4g-owned-charms-v1";
 const WEAPON_TYPES=["대검","태도","한손검","쌍검","해머","수렵피리","랜스","건랜스","슬래시액스","차지액스","조충곤","라이트보우건","헤비보우건","활"];
 const RANGED_TYPES=new Set(["라이트보우건","헤비보우건","활"]);
+const WEAPON_SKILL_PRIORITY_NAMES={
+  "대검":{"차지단축":5,"발도치명타":5,"장인":3,"예리도":3},
+  "태도":{"예리도":5,"장인":4,"투혼":4,"청각보호":2,"달인":2},
+  "한손검":{"예리도":4,"장인":4,"회피성능":3,"특수공격":3,"속성공격":3},
+  "쌍검":{"예리도":5,"장인":4,"속성공격":4,"속성치명타":3,"회피성능":2},
+  "해머":{"통격":5,"투혼":4,"청각보호":3,"장인":2},
+  "수렵피리":{"피리":5,"예리도":3,"장인":3,"투혼":3},
+  "랜스":{"가드성능":5,"가드강화":3,"회피성능":4,"회피거리":3,"예리도":3,"장인":3},
+  "건랜스":{"포술":5,"가드성능":4,"가드강화":3,"예리도":4,"장인":3},
+  "슬래시액스":{"회피거리":5,"회피성능":3,"예리도":4,"장인":4,"투혼":3},
+  "차지액스":{"포술":5,"가드성능":4,"예리도":4,"장인":3,"투혼":3},
+  "조충곤":{"예리도":5,"장인":4,"투혼":4,"통격":3,"청각보호":2},
+  "라이트보우건":{"반동":4,"장전속도":3,"통상탄강화":4,"관통탄강화":4,"속성공격":4},
+  "헤비보우건":{"관통탄강화":5,"통상탄강화":4,"반동":4,"회피거리":4,"장전속도":3},
+  "활":{"차지단축":5,"통상탄강화":4,"산탄강화":4,"관통탄강화":4,"장전수":2}
+};
+function weaponPreferredSkillWeights(hunterType="blade"){const type=selectedWeapon()?.weaponType||uiState.manualWeaponType;const src=(type&&type!=="all"?(data.weaponSkillPriorities?.weapons?.[type]||WEAPON_SKILL_PRIORITY_NAMES[type]):null)||data.weaponSkillPriorities?.hunterTypeDefaults?.[hunterType]||{};const byName=new Map((data.skills||[]).map(x=>[x.name,x.id]));return Object.fromEntries(Object.entries(src).map(([name,w])=>[byName.get(name),w]).filter(([id])=>id))}
+
 const MANUAL_CONTAINERS=["weapon",...PARTS,"charm"];
 const uiState={
   targetActivation:"", manualSet:"", manualWeapon:"", manualWeaponType:"all", manualWeaponRank:"all", manualWeaponElement:"all", manualWeaponSlots:"all",
@@ -26,7 +45,7 @@ let restoringHistory=false;
 let historyRestoreToken=0;
 try{history.scrollRestoration="manual"}catch{}
 
-const APP_VERSION="0.7.7-chat4-research2-hotfix21";
+const APP_VERSION="0.7.7-chat4-auto-build-advanced-final";
 const boundEventGroups=new Set();
 let appEventsBound=false;
 function ensureRuntimeStatus(){
@@ -408,6 +427,20 @@ function charm(){
   if(uiState.charmSkill2) skills[uiState.charmSkill2]=(skills[uiState.charmSkill2]||0)+Number(uiState.charmPoint2||0);
   return {skills,slots:Number(uiState.charmSlots||0)};
 }
+
+function getOwnedCharms(){try{const v=JSON.parse(localStorage.getItem(OWNED_CHARMS_STORAGE_KEY)||"[]");return Array.isArray(v)?v:[]}catch{return []}}
+function setOwnedCharms(list){try{localStorage.setItem(OWNED_CHARMS_STORAGE_KEY,JSON.stringify(list));return true}catch{return false}}
+function normalizeCharmRecord(c={}){const skills={};for(const [id,v] of Object.entries(c.skills||{})){const n=Number(v)||0;if(id&&n)skills[id]=n}return {id:String(c.id||`charm_${Date.now()}_${Math.random().toString(36).slice(2,8)}`),skills,slots:Math.max(0,Math.min(3,Number(c.slots)||0))}}
+function charmLabel(c){const ss=Object.entries(c?.skills||{}).map(([id,v])=>`${skillName(id)} ${Number(v)>0?"+":""}${Number(v)}`);return `${ss.length?ss.join(" / "):"스킬 없음"} · ${slotsText(c?.slots||0)}`}
+function renderOwnedCharms(){const root=$("#ownedCharmList");if(!root)return;const list=getOwnedCharms();root.innerHTML=list.length?list.map((c,i)=>`<div class="owned-charm-row"><span>${esc(charmLabel(c))}</span><span class="owned-charm-actions"><button type="button" class="ghost small" data-owned-charm-apply="${i}">적용</button><button type="button" class="ghost small" data-owned-charm-remove="${i}">삭제</button></span></div>`).join(""):'<div class="muted">등록된 보유 호석이 없습니다.</div>'}
+function saveCurrentCharmToOwned(){const c=normalizeCharmRecord(charm());if(!Object.keys(c.skills).length&&!c.slots){showRuntimeStatus("저장할 호석 스킬 또는 슬롯을 먼저 입력하세요.","info");return}const list=getOwnedCharms();const sig=JSON.stringify({skills:c.skills,slots:c.slots});if(!list.some(x=>JSON.stringify({skills:x.skills||{},slots:Number(x.slots)||0})===sig)){list.push(c);setOwnedCharms(list)}renderOwnedCharms()}
+function applyOwnedCharm(index){const c=getOwnedCharms()[Number(index)];if(!c)return;const e=Object.entries(c.skills||{});uiState.charmSkill1=e[0]?.[0]||"";uiState.charmPoint1=Number(e[0]?.[1]||0);uiState.charmSkill2=e[1]?.[0]||"";uiState.charmPoint2=Number(e[1]?.[1]||0);uiState.charmSlots=Number(c.slots||0);renderManualSelectors();renderManualResult();renderOwnedCharms()}
+function removeOwnedCharm(index){const list=getOwnedCharms();list.splice(Number(index),1);setOwnedCharms(list);renderOwnedCharms()}
+function targetRequirementForActivationIds(ids){const out={};for(const aid of ids||[])for(const sk of data.skills||[])for(const a of sk.activations||[])if(a.id===aid&&Number(a.points)>0)out[sk.id]=Math.max(Number(out[sk.id]||0),Number(a.points)||0);return out}
+function scoreOwnedCharm(c,req){let s=Number(c.slots||0)*0.75;for(const [id,need] of Object.entries(req||{}))s+=Math.min(Math.max(0,Number(c.skills?.[id]||0)),Number(need))*4;return s}
+function compareMergedAutoResults(a,b){const am=a.metrics||{},bm=b.metrics||{};return (am.negativeSkillCount||0)-(bm.negativeSkillCount||0)||(am.targetWastePoints||0)-(bm.targetWastePoints||0)||(bm.remainingSlots||0)-(am.remainingSlots||0)||(am.usedDecorationSlots||0)-(bm.usedDecorationSlots||0)||(bm.defense||0)-(am.defense||0)}
+function requiredCharmConditionFromNear(near){const misses=near?.missing||[];if(!misses.length)return "추가 호석 조건 산출 불가";const parts=misses.map(x=>`${skillName(x.skillId)} +${Number(x.missing||0)}`);return `${parts.join(" / ")} · 슬롯3이면 장식주 보완 여지 증가 (충분 조건)`}
+
 function getSavedBuilds(){try{const v=JSON.parse(localStorage.getItem(BUILD_STORAGE_KEY)||"[]");return Array.isArray(v)?v:[]}catch{return []}}
 function setSavedBuilds(list){localStorage.setItem(BUILD_STORAGE_KEY,JSON.stringify(list))}
 function renderSavedBuilds(selectedId=""){
@@ -836,25 +869,41 @@ function renderTargets(){
   box.className="chip-list";const opts=activationOptions();box.innerHTML=targets.map(id=>{const a=opts.find(x=>x.value===id);return `<span class="chip">${esc(a?.name||id)} <button data-remove-target="${esc(id)}">×</button></span>`}).join("");
   $$('[data-remove-target]').forEach(b=>b.onclick=()=>{targets=targets.filter(x=>x!==b.dataset.removeTarget);renderTargets()});
 }
+function buildPlacementPlanHtml(b){
+  const by=Object.fromEntries(MANUAL_CONTAINERS.map(c=>[c,[]]));
+  for(const p of b.decorations||[]){const id=typeof p.deco==="string"?p.deco:p.deco?.id;const d=decorationByIdMap.get(id);if(by[p.container])by[p.container].push(d?.name||id)}
+  const rows=[];
+  rows.push(`<div><b>무기</b><span>${esc(selectedWeapon()?.name||"미선택")} ${slotsText(selectedWeapon()?.slots||0)}${by.weapon.length?` · ${esc(by.weapon.join(" + "))}`:""}</span></div>`);
+  for(const part of PARTS){const a=b.armors.find(x=>x.part===part);rows.push(`<div><b>${PART_NAMES[part]}</b><span>${esc(a?.name||"-")} ${slotsText(a?.slots||0)}${by[part].length?` · ${esc(by[part].join(" + "))}`:""}</span></div>`)}
+  const c=b.searchCharm||charm();rows.push(`<div><b>호석</b><span>${esc(charmLabel(c))}${by.charm.length?` · ${esc(by.charm.join(" + "))}`:""}</span></div>`);
+  return `<div class="build-resource-plan"><div class="build-resource-plan-title">완성 커스텀 구성</div>${rows.join("")}</div>`;
+}
+
 function renderBuildCard(b,i){
   const decolines={};for(const p of b.decorations){const did=typeof p.deco==="string"?p.deco:p.deco?.id;const key=`${p.container}:${did}`;decolines[key]=(decolines[key]||0)+1}
   const decoText=Object.entries(decolines).map(([key,n])=>{const [container,id]=key.split(":"),d=data.decorations.find(x=>x.id===id),label={weapon:"무기",head:"머리",body:"몸통",arms:"팔",waist:"허리",legs:"다리",charm:"호석"}[container]||container;return `${label} ${d?.name||id} ×${n}`}).join(" · ");
   const resistTotal=Object.values(b.calc?.resist||{}).reduce((sum,v)=>sum+Number(v||0),0);
-  return `<article class="build-card build-card-clickable" data-auto-build="${i}" tabindex="0" role="button" aria-label="조합 ${i+1}을 시뮬레이터에 적용"><h3><span>조합 ${i+1}</span><span class="score">DEF ${b.calc.defense} · 내성합 ${resistTotal>=0?"+":""}${resistTotal}</span></h3><div class="build-equipment">${PARTS.map(p=>{const a=b.armors.find(x=>x.part===p);return `<span class="label">${PART_NAMES[p]}</span><span>${esc(a?.name||"-")} <span class="slots">${slotsText(a?.slots)}</span></span>`}).join("")}</div><div class="deco-line">${decoText?`장식주: ${esc(decoText)}`:"장식주 없음"}</div>${renderSkillResult(b.calc)}<div class="build-card-action">카드 클릭 → 시뮬레이터에 적용</div></article>`;
+  return `<article class="build-card build-card-clickable" data-auto-build="${i}" tabindex="0" role="button" aria-label="조합 ${i+1}을 시뮬레이터에 적용"><h3><span>조합 ${i+1}</span><span class="score">DEF ${b.calc.defense} · 내성합 ${resistTotal>=0?"+":""}${resistTotal}</span></h3><div class="build-equipment">${PARTS.map(p=>{const a=b.armors.find(x=>x.part===p);return `<span class="label">${PART_NAMES[p]}</span><span>${esc(a?.name||"-")} <span class="slots">${slotsText(a?.slots)}</span></span>`}).join("")}</div><div class="deco-line">${b.searchCharm?`사용 호석: ${esc(charmLabel(b.searchCharm))}<br>`:""}${decoText?`장식주: ${esc(decoText)}`:"장식주 없음"}</div>${buildPlacementPlanHtml(b)}${renderSkillResult(b.calc)}<div class="build-card-action">카드 클릭 → 시뮬레이터에 적용</div></article>`;
 }
 function autoSearchConditionText(){
   const w=selectedWeapon();
   const c=charm();
   const charmSkills=Object.entries(c.skills||{}).filter(([,v])=>Number(v)!==0).map(([id,v])=>`${skillName(id)} ${Number(v)>0?"+":""}${Number(v)}`);
-  return `무기 ${w?esc(w.name):"미선택"} · 무기 슬롯 ${Number(w?.slots||0)} · 호석 ${charmSkills.length?charmSkills.map(esc).join(" / "):"스킬 없음"} · 호석 슬롯 ${Number(c.slots||0)}`;
+  return `무기 ${w?esc(w.name):"미선택"} · 무기 슬롯 ${Number(w?.slots||0)} · ${$("#ownedCharmsOnly")?.checked?`보유 호석만 사용 (${getOwnedCharms().length}개)`:`호석 ${charmSkills.length?charmSkills.map(esc).join(" / "):"스킬 없음"} · 호석 슬롯 ${Number(c.slots||0)}`}`;
 }
 function renderNearMissCard(b,i){
   const missing=(b.missing||[]).map(x=>`${skillName(x.skillId)} ${Number(x.have||0)}/${Number(x.need||0)} (${Number(x.missing||0)}pt 부족)`).join(" · ");
   const decoCount=(b.decorations||[]).length;
-  return `<article class="build-card near-miss-card"><h3><span>근접 후보 ${i+1}</span><span class="score">목표 미완성</span></h3><div class="build-equipment">${PARTS.map(p=>{const a=b.armors.find(x=>x.part===p);return `<span class="label">${PART_NAMES[p]}</span><span>${esc(a?.name||"-")} <span class="slots">${slotsText(a?.slots)}</span></span>`}).join("")}</div><div class="near-miss-deficit"><b>추가 필요</b> ${esc(missing||"목표 포인트 부족")}</div><div class="muted">현재 조건에서 배치한 장식주 ${decoCount}개 · DEF ${Number(b.calc?.defense||0)} · ${esc(resistText(b.calc?.resist||{}))}</div></article>`;
+  const slot=b.slotCompletion||{};
+  const completion=slot.slotOnlyCompletable
+    ? (Number(slot.minAdditionalSlots||0)>0?`슬롯만 보강 시 최소 +${Number(slot.minAdditionalSlots)}슬롯 필요`:`현재 남은 슬롯 재배치로 완성 가능`)
+    : `추가 9슬롯 이내 장식주만으로는 완성 어려움 · 호석 스킬 자체 보강 필요`;
+  const free=`현재 미사용 슬롯 ${Number(slot.currentFreeSlots||0)}칸`;
+  return `<article class="build-card near-miss-card"><h3><span>근접 후보 ${i+1}</span><span class="score">목표 미완성</span></h3><div class="build-equipment">${PARTS.map(p=>{const a=b.armors.find(x=>x.part===p);return `<span class="label">${PART_NAMES[p]}</span><span>${esc(a?.name||"-")} <span class="slots">${slotsText(a?.slots)}</span></span>`}).join("")}</div>${b.searchCharm?`<div class="near-miss-deficit"><b>검토 호석</b> ${esc(charmLabel(b.searchCharm))}</div>`:""}<div class="near-miss-deficit"><b>추가 필요</b> ${esc(missing||"목표 포인트 부족")}</div><div class="near-miss-deficit"><b>완성 가능성</b> ${esc(completion)} · ${esc(free)}</div><div class="near-miss-deficit"><b>필요 호석 충분 조건</b> ${esc(requiredCharmConditionFromNear(b))}</div><div class="muted">현재 조건에서 배치한 장식주 ${decoCount}개 · DEF ${Number(b.calc?.defense||0)} · ${esc(resistText(b.calc?.resist||{}))}</div></article>`;
 }
 function applyAutoBuildToSimulator(index){
   const b=latestAutoSearchResults[Number(index)];if(!b)return;
+  if(b.searchCharm){const e=Object.entries(b.searchCharm.skills||{});uiState.charmSkill1=e[0]?.[0]||"";uiState.charmPoint1=Number(e[0]?.[1]||0);uiState.charmSkill2=e[1]?.[0]||"";uiState.charmPoint2=Number(e[1]?.[1]||0);uiState.charmSlots=Number(b.searchCharm.slots||0)}
   uiState.manualSet="";
   for(const p of PARTS){const a=b.armors.find(x=>x.part===p);uiState.manual[p]=a?.id||"";}
   uiState.manualDecorations=Object.fromEntries(MANUAL_CONTAINERS.map(c=>[c,[]]));
@@ -865,6 +914,28 @@ function applyAutoBuildToSimulator(index){
   renderManualSelectors();renderManualResult();
   document.querySelector("#manualEquipmentBuilder")?.scrollIntoView({behavior:"smooth",block:"start"});
 }
+async function searchAutoWithCharmMode(baseOptions){
+  const ownedOnly=$("#ownedCharmsOnly")?.checked===true;
+  if(!ownedOnly)return await searchBuilds({...baseOptions,charm:charm()},data);
+  const owned=getOwnedCharms().map(normalizeCharmRecord);
+  if(!owned.length)return {results:[],nearMisses:[],stats:{message:"보유 호석만 사용이 켜져 있지만 등록된 호석이 없습니다."}};
+  const req=targetRequirementForActivationIds(targets);
+  const ordered=[...owned].sort((a,b)=>scoreOwnedCharm(b,req)-scoreOwnedCharm(a,req));
+  const mergedResults=[],mergedNear=[];let elapsedMs=0,eligible=0,checkedFinalists=0,finalists=0,timedOut=false;
+  const perBudget=Math.max(1600,Math.floor(12000/Math.max(1,ordered.length)));
+  for(let i=0;i<ordered.length;i++){
+    const c=ordered[i];
+    baseOptions.onProgress?.({phase:"ownedCharm",current:i+1,total:ordered.length,label:charmLabel(c)});
+    const r=await searchBuilds({...baseOptions,charm:c,timeBudgetMs:perBudget,limit:Math.min(12,Number(baseOptions.limit||20))},data);
+    elapsedMs+=Number(r.stats?.elapsedMs||0);eligible=Math.max(eligible,Number(r.stats?.eligible||0));checkedFinalists+=Number(r.stats?.checkedFinalists||0);finalists+=Number(r.stats?.finalists||0);timedOut=timedOut||!!r.stats?.timedOut;
+    mergedResults.push(...(r.results||[]).map(x=>({...x,searchCharm:c})));
+    mergedNear.push(...(r.nearMisses||[]).map(x=>({...x,searchCharm:c})));
+  }
+  mergedResults.sort(compareMergedAutoResults);
+  mergedNear.sort((a,b)=>Number(!a.slotCompletion?.slotOnlyCompletable)-Number(!b.slotCompletion?.slotOnlyCompletable)||Number(a.slotCompletion?.minAdditionalSlots??99)-Number(b.slotCompletion?.minAdditionalSlots??99)||(a.missingTotal||0)-(b.missingTotal||0));
+  return {results:mergedResults.slice(0,Number(baseOptions.limit||20)),nearMisses:mergedNear.slice(0,3),stats:{eligible,checkedFinalists,finalists,timedOut,elapsedMs,ownedCharmsSearched:ordered.length,profile:"owned-charms"}};
+}
+
 async function runSearch(){
   if(!targets.length){$("#searchResults").innerHTML='<div class="result-empty">먼저 원하는 스킬을 추가하세요.</div>';return}
   const btn=$("#runSearch");btn.disabled=true;btn.textContent="검색 중…";
@@ -874,20 +945,21 @@ async function runSearch(){
     const simHunter=simulatorSearchHunterType();
     const progression=$("#autoProgressionRank")?.value||"g";
     const progressionLabel={low:"하위",high:"상위",g:"G급"}[progression]||"전체";
-    const r=await searchBuilds({
+    const r=await searchAutoWithCharmMode({
       targetActivationIds:targets,
       hunterType:simHunter,
       rank:progression,
-      charm:charm(),
       weaponSlots:Number(selectedWeapon()?.slots||0),
       allowDecorations:$("#allowDecorations").checked,
       includeTorsoUp:$("#includeTorsoUp").checked,
       limit:Number($("#resultLimit").value||20),
+      preferredSkillWeights:weaponPreferredSkillWeights(simHunter),
       onProgress:p=>{
         if(p.phase==="armor")$("#searchStats").textContent=`방어구 후보 계산 ${p.current}/${p.total} · 후보 ${p.beam||0}개 · ${conditionText}`;
         else if(p.phase==="decorate")$("#searchStats").textContent=`장식주 조합 검증 ${p.current}/${p.total} · 완성 ${p.exact||0}개 · ${conditionText}`;
+        else if(p.phase==="ownedCharm")$("#searchStats").textContent=`보유 호석 비교 ${p.current}/${p.total} · ${p.label||""}`;
       }
-    },data);
+    });
     latestAutoSearchResults=r.results||[];
     const sec=(Number(r.stats?.elapsedMs||0)/1000).toFixed(1);
     const statusBase=`검색 타입 ${hunterName(simHunter)} · 진행도 ${progressionLabel} · 대상 방어구 ${r.stats.eligible||0}개 · 검증 후보 ${r.stats.checkedFinalists??r.stats.finalists??0}/${r.stats.finalists||0} · ${sec}초 · ${conditionText}`;
@@ -903,7 +975,12 @@ async function runSearch(){
     }else if((r.nearMisses||[]).length){
       const top=r.nearMisses[0];
       const missing=(top.missing||[]).map(x=>`${skillName(x.skillId)} +${Number(x.missing||0)}pt`).join(" · ");
-      $("#searchResults").innerHTML=`<div class="search-guidance"><b>현재 조건에서 완성 조합을 찾지 못했습니다.</b><p>가장 가까운 후보 기준으로 <strong>${esc(missing||"추가 스킬 포인트")}</strong>가 더 필요합니다. 호석 스킬이나 무기/호석 슬롯을 보강한 뒤 다시 검색해 보세요.</p><p class="muted">자동조합은 현재 수동 시뮬레이터에서 선택한 무기 슬롯과 호석 조건을 그대로 사용합니다.</p></div>${r.nearMisses.map(renderNearMissCard).join("")}`;
+      const slot=top.slotCompletion||{};
+      const slotGuide=slot.slotOnlyCompletable
+        ? (Number(slot.minAdditionalSlots||0)>0?`장식주 기준 최소 ${Number(slot.minAdditionalSlots)}슬롯을 더 확보하면 완성 가능한 후보입니다.`:`남은 슬롯의 장식주 배치를 다시 최적화하면 완성 가능성이 있습니다.`)
+        : `추가 슬롯만으로는 해결하기 어려워 목표 스킬이 붙은 호석 자체가 필요합니다.`;
+      const nextStep=`${slotGuide} 필요 호석 충분 조건: ${requiredCharmConditionFromNear(top)}`;
+      $("#searchResults").innerHTML=`<div class="search-guidance"><b>현재 조건에서 완성 조합을 찾지 못했습니다.</b><p>가장 가까운 후보 기준으로 <strong>${esc(missing||"추가 스킬 포인트")}</strong>가 더 필요합니다. ${esc(nextStep)}</p><p class="muted">자동조합은 현재 수동 시뮬레이터에서 선택한 무기 슬롯과 호석 조건을 그대로 사용합니다. 호석 스킬/슬롯도 통합 계산합니다.</p></div>${r.nearMisses.map(renderNearMissCard).join("")}`;
     }else{
       $("#searchResults").innerHTML='<div class="result-empty">현재 조건의 고속 탐색 범위에서 완성 조합을 찾지 못했습니다. 호석 스킬 또는 무기/호석 슬롯을 추가한 뒤 다시 검색해 보세요.</div>';
     }
@@ -2213,6 +2290,10 @@ function bind(){
     if(weaponRow&&!e.target.closest('button,a,input,select,summary')){e.preventDefault();void openWeaponDetail(weaponRow);return;}
     const skillItem=e.target.closest?.('#skillTable .inline-item-link[data-open-item]');
     if(skillItem){e.preventDefault();e.stopPropagation();void openItemByName(skillItem.dataset.openItem);return;}
+    const ownedApply=e.target.closest?.('[data-owned-charm-apply]');
+    if(ownedApply){e.preventDefault();e.stopPropagation();applyOwnedCharm(ownedApply.dataset.ownedCharmApply);return;}
+    const ownedRemove=e.target.closest?.('[data-owned-charm-remove]');
+    if(ownedRemove){e.preventDefault();e.stopPropagation();removeOwnedCharm(ownedRemove.dataset.ownedCharmRemove);return;}
     const autoBuild=e.target.closest?.('[data-auto-build]');
     if(autoBuild&&!e.target.closest('button,a,input,select,summary')){e.preventDefault();e.stopPropagation();applyAutoBuildToSimulator(autoBuild.dataset.autoBuild);return;}
     const recSim=e.target.closest?.('[data-recommend-sim]');
@@ -2309,7 +2390,7 @@ function bind(){
   }));
   results.push(bindEventGroup("simulator-controls",()=>{
   $("#addTargetSkill").onclick=()=>{const v=uiState.targetActivation;if(v&&!targets.includes(v)){targets.push(v);renderTargets()}};
-  $("#clearTargets").onclick=()=>{targets=[];renderTargets()};$("#calculateManual").onclick=renderManualResult;$("#runSearch").onclick=runSearch;
+  $("#clearTargets").onclick=()=>{targets=[];renderTargets()};$("#calculateManual").onclick=renderManualResult;$("#runSearch").onclick=runSearch;if($("#saveOwnedCharm"))$("#saveOwnedCharm").onclick=saveCurrentCharmToOwned;renderOwnedCharms();
   $("#saveBuild").onclick=saveCurrentBuild;$("#deleteBuild").onclick=deleteSelectedBuild;$("#savedBuildSelect").onchange=loadSelectedBuild;
 
   $("#hunterType").onchange=()=>{

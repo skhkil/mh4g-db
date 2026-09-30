@@ -1,0 +1,125 @@
+{
+  "ok": true,
+  "version": "0.7.7-stage1-threshold-efficiency",
+  "checks": {
+    "hg_exact_threshold_top5": true,
+    "mixed_hg_not_overinvested": true,
+    "actual_upper_activation_is_valid": true
+  },
+  "soloTop": [
+    {
+      "points": 15,
+      "waste": 0,
+      "remainingSlots": 11,
+      "armors": [
+        "가루루가페이크",
+        "밀라아르마하이드",
+        "가루루가암",
+        "엑스제로Z코일",
+        "길드나이트Ｘ부츠"
+      ]
+    },
+    {
+      "points": 15,
+      "waste": 0,
+      "remainingSlots": 11,
+      "armors": [
+        "가루루가페이크",
+        "밀라아르마하이드",
+        "가루루가암",
+        "엑스제로Z코일",
+        "메이드X삭스"
+      ]
+    },
+    {
+      "points": 15,
+      "waste": 0,
+      "remainingSlots": 11,
+      "armors": [
+        "가루루가페이크",
+        "밀라아르마하이드",
+        "가루루가암",
+        "엑스제로Z코일",
+        "카브라X그리브"
+      ]
+    },
+    {
+      "points": 15,
+      "waste": 0,
+      "remainingSlots": 11,
+      "armors": [
+        "가루루가페이크",
+        "밀라아르마하이드",
+        "가루루가암",
+        "엑스제로Z코일",
+        "람포스X그리브"
+      ]
+    },
+    {
+      "points": 15,
+      "waste": 0,
+      "remainingSlots": 11,
+      "armors": [
+        "가루루가페이크",
+        "밀라아르마하이드",
+        "가루루가암",
+        "엑스제로Z코일",
+        "세일러삭스"
+      ]
+    }
+  ],
+  "mixedTop": [
+    {
+      "hearing": 15,
+      "waste": 1,
+      "remainingSlots": 4
+    },
+    {
+      "hearing": 15,
+      "waste": 1,
+      "remainingSlots": 4
+    },
+    {
+      "hearing": 15,
+      "waste": 1,
+      "remainingSlots": 4
+    },
+    {
+      "hearing": 15,
+      "waste": 1,
+      "remainingSlots": 4
+    },
+    {
+      "hearing": 15,
+      "waste": 1,
+      "remainingSlots": 4
+    }
+  ],
+  "upperActivationTop": [
+    {
+      "evade": 20,
+      "waste": 0,
+      "upgradeSteps": 1
+    },
+    {
+      "evade": 20,
+      "waste": 0,
+      "upgradeSteps": 1
+    },
+    {
+      "evade": 20,
+      "waste": 0,
+      "upgradeSteps": 1
+    },
+    {
+      "evade": 20,
+      "waste": 0,
+      "upgradeSteps": 1
+    },
+    {
+      "evade": 20,
+      "waste": 0,
+      "upgradeSteps": 1
+    }
+  ]
+}

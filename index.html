@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#121821" />
   <title>MH4G 장비 · 스킬 시뮬레이터</title>
-  <link rel="stylesheet" href="./css/app.css?v=0.7.7-chat4-research2-hotfix21" />
+  <link rel="stylesheet" href="./css/app.css?v=0.7.7-chat4-auto-build-advanced-final" />
 </head>
 <body>
   <div class="app-shell">
@@ -200,6 +200,11 @@
             </div>
             <div id="targetSkills" class="chip-list empty-state">선택된 스킬이 없습니다.</div>
             <p class="muted auto-search-condition-note">자동조합은 현재 수동 시뮬레이터에서 선택한 무기 슬롯과 호석 스킬/슬롯 조건을 함께 사용합니다.</p>
+            <div class="owned-charm-panel">
+              <div class="owned-charm-head"><b>보유 호석</b><span class="muted">현재 입력한 호석을 저장해 자동조합 후보로 사용할 수 있습니다.</span></div>
+              <div class="owned-charm-controls"><button id="saveOwnedCharm" type="button" class="ghost small">현재 호석 저장</button><label><input id="ownedCharmsOnly" type="checkbox" /> 보유 호석만 사용</label></div>
+              <div id="ownedCharmList" class="owned-charm-list"><div class="muted">등록된 보유 호석이 없습니다.</div></div>
+            </div>
           </div>
           <div class="skill-auto-results">
             <div id="searchStats" class="muted search-stats"></div>
@@ -439,6 +444,6 @@ python tools/build_database.py --publish</code></pre>
     <button id="pageJumpTop" class="mobile-page-jump-btn" type="button" aria-label="맨 위로 이동" title="맨 위로">↑</button>
     <button id="pageJumpBottom" class="mobile-page-jump-btn" type="button" aria-label="맨 아래로 이동" title="맨 아래로">↓</button>
   </div>
-  <script type="module" src="./js/app.js?v=0.7.7-chat4-research2-hotfix21"></script>
+  <script type="module" src="./js/app.js?v=0.7.7-chat4-auto-build-advanced-final"></script>
 </body>
 </html>

@@ -1341,3 +1341,18 @@ button{border:1px solid var(--line);background:#202b39;color:white;border-radius
 .near-miss-card{opacity:.94}
 .near-miss-card .score{font-weight:700}
 .near-miss-deficit{margin:10px 0 6px;padding:8px 10px;border-radius:8px;background:rgba(255,255,255,.035);line-height:1.5}
+
+/* auto-build stage3: owned charms */
+.owned-charm-panel{margin-top:12px;padding:12px;border:1px solid var(--line);border-radius:10px;background:var(--panel-soft,#fff)}
+.owned-charm-head,.owned-charm-controls,.owned-charm-row{display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.owned-charm-controls{margin-top:8px;justify-content:flex-start}
+.owned-charm-list{display:grid;gap:6px;margin-top:8px}
+.owned-charm-row{padding:7px 8px;border:1px solid var(--line);border-radius:8px}
+.owned-charm-actions{display:flex;gap:6px}
+@media(max-width:640px){.owned-charm-row{align-items:flex-start}.owned-charm-actions{width:100%}}
+
+/* auto-build stage5: full custom resource plan */
+.build-resource-plan{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px 12px;margin:10px 0;padding:10px;border:1px solid var(--line);border-radius:8px}
+.build-resource-plan-title{grid-column:1/-1;font-weight:700}
+.build-resource-plan>div:not(.build-resource-plan-title){display:grid;grid-template-columns:46px 1fr;gap:6px}
+@media(max-width:640px){.build-resource-plan{grid-template-columns:1fr}}

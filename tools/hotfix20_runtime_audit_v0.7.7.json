@@ -1,11 +1,11 @@
 {
-  "ok": true,
+  "ok": false,
   "version": "0.7.7-chat4-research2-hotfix20",
   "checks": {
-    "index_app_hotfix20": true,
-    "index_css_hotfix20": true,
-    "app_imports_hotfix20": true,
-    "app_version_hotfix20": true,
+    "index_app_hotfix20": false,
+    "index_css_hotfix20": false,
+    "app_imports_hotfix20": false,
+    "app_version_hotfix20": false,
     "progression_ui": true,
     "progression_filter_engine": true,
     "target_final_validation": true,
@@ -20,7 +20,7 @@
     "armor_picker_resistance": true,
     "selected_armor_resistance": true,
     "auto_card_resistance": true,
-    "readme_top_hotfix20": true,
+    "readme_top_hotfix20": false,
     "readme_hotfix19_order": true,
     "work_status_hotfix20": true
   }

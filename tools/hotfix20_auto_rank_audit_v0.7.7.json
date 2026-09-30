@@ -102,6 +102,8 @@
       "targetWastePoints": 5,
       "targetUpgradeSteps": 0,
       "extraPositiveSkillCount": 0,
+      "preferredSkillScore": 0,
+      "preferredSkillCount": 0,
       "rankMaxDowngrade": 0,
       "rankTotalDowngrade": 0,
       "currentRankPieces": 5,

@@ -1,4 +1,4 @@
-const DATA_VERSION = "0.7.7-chat4-research2-hotfix18";
+const DATA_VERSION = "0.7.7-chat4-auto-build-advanced-final";
 
 const FULL_FILES = {
   skills:"./data/skills.json",
@@ -24,7 +24,8 @@ const FULL_FILES = {
   questReferenceIndex:"./data/quest_reference_index.json",
   siteInfo:"./data/site_info.json",
   meta:"./data/meta.json",
-  recommendedLoadouts:"./data/recommended_loadouts.json"
+  recommendedLoadouts:"./data/recommended_loadouts.json",
+  weaponSkillPriorities:"./data/weapon_skill_priorities.json"
 };
 
 // 시뮬레이터 첫 화면에 필요한 필드만 담은 경량 데이터.
@@ -36,14 +37,15 @@ const SIMULATOR_FILES = {
   decorations:"./data/decorations.json",
   weapons:"./data/sim_weapons.json",
   meta:"./data/meta.json",
-  recommendedLoadouts:"./data/recommended_loadouts.json"
+  recommendedLoadouts:"./data/recommended_loadouts.json",
+  weaponSkillPriorities:"./data/weapon_skill_priorities.json"
 };
 
 export const FULL_DATA_KEYS = Object.freeze(Object.keys(FULL_FILES));
 const requestCache = new Map();
 
 function emptyValue(key){
-  return (key==="meta"||key==="siteInfo"||key.endsWith("Index"))?{}:[];
+  return (key==="meta"||key==="siteInfo"||key==="weaponSkillPriorities"||key.endsWith("Index"))?{}:[];
 }
 function versioned(url){
   return `${url}?v=${DATA_VERSION}`;

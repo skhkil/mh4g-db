@@ -1,0 +1,135 @@
+{
+  "ok": true,
+  "version": "0.7.7-auto-build-stage4-6",
+  "checks": {
+    "fourteen_weapons": true,
+    "priority_skills_resolve": true,
+    "recommendation_db_coverage": true,
+    "research_coverage": true,
+    "target_stays_primary": true,
+    "preferred_metric_present": true,
+    "source_policy": true
+  },
+  "coverage": {
+    "대검": {
+      "priority": true,
+      "recommended": true,
+      "research": true,
+      "missingSkills": []
+    },
+    "태도": {
+      "priority": true,
+      "recommended": true,
+      "research": true,
+      "missingSkills": []
+    },
+    "한손검": {
+      "priority": true,
+      "recommended": true,
+      "research": true,
+      "missingSkills": []
+    },
+    "쌍검": {
+      "priority": true,
+      "recommended": true,
+      "research": true,
+      "missingSkills": []
+    },
+    "해머": {
+      "priority": true,
+      "recommended": true,
+      "research": true,
+      "missingSkills": []
+    },
+    "수렵피리": {
+      "priority": true,
+      "recommended": true,
+      "research": true,
+      "missingSkills": []
+    },
+    "랜스": {
+      "priority": true,
+      "recommended": true,
+      "research": true,
+      "missingSkills": []
+    },
+    "건랜스": {
+      "priority": true,
+      "recommended": true,
+      "research": true,
+      "missingSkills": []
+    },
+    "슬래시액스": {
+      "priority": true,
+      "recommended": true,
+      "research": true,
+      "missingSkills": []
+    },
+    "차지액스": {
+      "priority": true,
+      "recommended": true,
+      "research": true,
+      "missingSkills": []
+    },
+    "조충곤": {
+      "priority": true,
+      "recommended": true,
+      "research": true,
+      "missingSkills": []
+    },
+    "라이트보우건": {
+      "priority": true,
+      "recommended": true,
+      "research": true,
+      "missingSkills": []
+    },
+    "헤비보우건": {
+      "priority": true,
+      "recommended": true,
+      "research": true,
+      "missingSkills": []
+    },
+    "활": {
+      "priority": true,
+      "recommended": true,
+      "research": true,
+      "missingSkills": []
+    }
+  },
+  "probe": {
+    "target": "고급귀마개",
+    "preferred": "포술 x999",
+    "top": [
+      {
+        "hearing": 15,
+        "preferredSkillScore": 0,
+        "targetWaste": 0,
+        "remainingSlots": 11
+      },
+      {
+        "hearing": 15,
+        "preferredSkillScore": 0,
+        "targetWaste": 0,
+        "remainingSlots": 11
+      },
+      {
+        "hearing": 15,
+        "preferredSkillScore": 0,
+        "targetWaste": 0,
+        "remainingSlots": 11
+      },
+      {
+        "hearing": 15,
+        "preferredSkillScore": 0,
+        "targetWaste": 0,
+        "remainingSlots": 11
+      },
+      {
+        "hearing": 15,
+        "preferredSkillScore": 0,
+        "targetWaste": 0,
+        "remainingSlots": 11
+      }
+    ]
+  }
+}

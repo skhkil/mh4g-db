@@ -1,0 +1,117 @@
+{
+  "ok": true,
+  "version": "0.7.7-stage2-resource-feasibility",
+  "scenario": "고급귀마개 + 통찰력+1 + 회피성능+3 + 숫돌사용고속화",
+  "checks": {
+    "base_has_near_miss": true,
+    "resource_analysis_present": true,
+    "slot_completable_candidate_prioritized": true,
+    "minimum_additional_slots_computed": true,
+    "base_top_evade_deficit": true,
+    "assisted_exact_found": true,
+    "assisted_uses_full_resources": true,
+    "exact_metrics_keep_free_slots": true
+  },
+  "base": {
+    "stats": {
+      "eligible": 1613,
+      "finalists": 80,
+      "checkedFinalists": 80,
+      "rankedPool": 0,
+      "beam": 3000,
+      "approximate": true,
+      "targetCount": 4,
+      "profile": "complex4",
+      "timedOut": false,
+      "elapsedMs": 5041
+    },
+    "topNear": {
+      "missing": [
+        {
+          "skillId": "skill_977515684794",
+          "need": 20,
+          "have": 13,
+          "missing": 7
+        }
+      ],
+      "slotCompletion": {
+        "slotOnlyCompletable": true,
+        "minAdditionalSlots": 5,
+        "currentFreeSlots": 0,
+        "extraPlacements": [
+          {
+            "name": "회피주【2】",
+            "container": "__extra_0"
+          },
+          {
+            "name": "회피주【2】",
+            "container": "__extra_1"
+          },
+          {
+            "name": "회피주【1】",
+            "container": "__extra_0"
+          }
+        ]
+      },
+      "armors": [
+        {
+          "name": "가루루가페이크",
+          "slots": 2
+        },
+        {
+          "name": "가루루가X메일",
+          "slots": 2
+        },
+        {
+          "name": "리오소울Z암",
+          "slots": 1
+        },
+        {
+          "name": "리오소울Z코일",
+          "slots": 2
+        },
+        {
+          "name": "GX황천【우의하의】",
+          "slots": 3
+        }
+      ]
+    }
+  },
+  "assisted": {
+    "condition": "회피성능 +5 / 호석3슬롯 / 무기3슬롯",
+    "stats": {
+      "eligible": 1613,
+      "finalists": 80,
+      "checkedFinalists": 40,
+      "rankedPool": 9,
+      "beam": 3000,
+      "approximate": true,
+      "targetCount": 4,
+      "profile": "complex4",
+      "timedOut": true,
+      "elapsedMs": 6035
+    },
+    "top": {
+      "armors": [
+        "가루루가페이크",
+        "가루루가X메일",
+        "모노블로X암",
+        "리오소울Z코일",
+        "리오소울Z그리브"
+      ],
+      "remainingSlots": 0,
+      "decorations": [
+        "회피주【2】",
+        "회피주【2】",
+        "회피주【2】",
+        "회피주【2】",
+        "회피주【2】",
+        "연마주【1】",
+        "연마주【1】",
+        "연마주【1】",
+        "연마주【1】",
+        "연마주【1】"
+      ]
+    }
+  }
+}
