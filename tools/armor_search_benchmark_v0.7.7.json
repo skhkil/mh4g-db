@@ -7,9 +7,9 @@
     "리오",
     "GX"
   ],
-  "oldMsPerSweep": 2806.01,
-  "optimizedMsPerSweep": 5.09,
-  "speedup": 551.2,
+  "oldMsPerSweep": 1485.43,
+  "optimizedMsPerSweep": 3.67,
+  "speedup": 404.87,
   "sameSampleCounts": [
     {
       "q": "예리도",

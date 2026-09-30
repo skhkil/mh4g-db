@@ -1334,3 +1334,10 @@ button{border:1px solid var(--line);background:#202b39;color:white;border-radius
   .planner-material-head,.planner-material-row{grid-template-columns:minmax(0,1fr) 48px 68px 48px;gap:5px;padding:8px}
   .planner-material-row input{width:62px}
 }
+
+/* hotfix21: complex auto-search near-miss guidance */
+.search-guidance{margin:0 0 12px;padding:12px 14px;border:1px solid var(--border,#394452);border-radius:10px;background:rgba(255,255,255,.03);line-height:1.55}
+.search-guidance p{margin:6px 0 0}
+.near-miss-card{opacity:.94}
+.near-miss-card .score{font-weight:700}
+.near-miss-deficit{margin:10px 0 6px;padding:8px 10px;border-radius:8px;background:rgba(255,255,255,.035);line-height:1.5}

@@ -1,0 +1,69 @@
+{
+  "ok": true,
+  "version": "0.7.7-chat4-research2-hotfix21",
+  "scenario": "고급귀마개 + 통찰력+1 + 회피성능+3 + 숫돌사용고속화",
+  "checks": {
+    "complex_finishes_bounded": true,
+    "complex_profile_selected": true,
+    "complex_ui_yield_points": true,
+    "complex_progress_events": true,
+    "complex_returns_diagnostic": true,
+    "near_miss_present": true,
+    "near_miss_has_deficit": true,
+    "near_miss_evade_deficit": true,
+    "assisted_finishes_bounded": true,
+    "assisted_finds_exact": true,
+    "assisted_targets_satisfied": true
+  },
+  "failures": [],
+  "base": {
+    "elapsedMs": 3892,
+    "ticks": 20,
+    "progressEvents": 21,
+    "stats": {
+      "eligible": 1613,
+      "finalists": 80,
+      "checkedFinalists": 80,
+      "rankedPool": 0,
+      "beam": 3000,
+      "approximate": true,
+      "targetCount": 4,
+      "profile": "complex4",
+      "timedOut": false,
+      "elapsedMs": 3891
+    },
+    "exact": 0,
+    "nearMiss": [
+      {
+        "skillId": "skill_977515684794",
+        "need": 20,
+        "have": 13,
+        "missing": 7
+      }
+    ]
+  },
+  "assisted": {
+    "condition": "회피성능 +5 호석 / 호석 3슬롯 / 무기 3슬롯",
+    "elapsedMs": 6098,
+    "stats": {
+      "eligible": 1613,
+      "finalists": 80,
+      "checkedFinalists": 46,
+      "rankedPool": 8,
+      "beam": 3000,
+      "approximate": true,
+      "targetCount": 4,
+      "profile": "complex4",
+      "timedOut": true,
+      "elapsedMs": 6098
+    },
+    "exact": 5,
+    "top": [
+      "가루루가페이크",
+      "가루루가X메일",
+      "모노블로X암",
+      "리오소울Z코일",
+      "리오소울Z그리브"
+    ]
+  }
+}

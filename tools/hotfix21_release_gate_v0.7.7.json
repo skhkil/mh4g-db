@@ -1,0 +1,113 @@
+{
+  "ok": true,
+  "version": "0.7.7-chat4-research2-hotfix21",
+  "codeMtime": 1790738075.7153556,
+  "steps": [
+    {
+      "name": "app_module_syntax",
+      "ok": true,
+      "elapsedSec": 0.03,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "name": "loader_module_syntax",
+      "ok": true,
+      "elapsedSec": 0.02,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "name": "engine_module_syntax",
+      "ok": true,
+      "elapsedSec": 0.02,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "name": "hotfix21_structure",
+      "ok": true,
+      "elapsedSec": 0.67,
+      "stdout": "{\n  \"ok\": true,\n  \"version\": \"0.7.7-chat4-research2-hotfix21\",\n  \"checks\": {\n    \"index_hotfix21\": true,\n    \"app_hotfix21\": true,\n    \"engine_profiles\": true,\n    \"engine_yields\": true,\n    \"near_miss_ui\": true,\n    \"condition_summary_ui\": true,\n    \"condition_hint_html\": true,\n    \"readme_hotfix21_first\": true,\n    \"work_status_hotfix21_first\": true\n  },\n  \"errors\": []\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "complex_search_logic",
+      "ok": true,
+      "elapsedSec": 10.04,
+      "stdout": "{\n  \"ok\": true,\n  \"version\": \"0.7.7-chat4-research2-hotfix21\",\n  \"scenario\": \"고급귀마개 + 통찰력+1 + 회피성능+3 + 숫돌사용고속화\",\n  \"checks\": {\n    \"complex_finishes_bounded\": true,\n    \"complex_profile_selected\": true,\n    \"complex_ui_yield_points\": true,\n    \"complex_progress_events\": true,\n    \"complex_returns_diagnostic\": true,\n    \"near_miss_present\": true,\n    \"near_miss_has_deficit\": true,\n    \"near_miss_evade_deficit\": true,\n    \"assisted_finishes_bounded\": true,\n    \"assisted_finds_exact\": true,\n    \"assisted_targets_satisfied\": true\n  },\n  \"failures\": [],\n  \"base\": {\n    \"elapsedMs\": 3892,\n    \"ticks\": 20,\n    \"progressEvents\": 21,\n    \"stats\": {\n      \"eligible\": 1613,\n      \"finalists\": 80,\n      \"checkedFinalists\": 80,\n      \"rankedPool\": 0,\n      \"beam\": 3000,\n      \"approximate\": true,\n      \"targetCount\": 4,\n      \"profile\": \"complex4\",\n      \"timedOut\": false,\n      \"elapsedMs\": 3891\n    },\n    \"exact\": 0,\n    \"nearMiss\": [\n      {\n        \"skillId\": \"skill_977515684794\",\n        \"need\": 20,\n        \"have\": 13,\n        \"missing\": 7\n      }\n    ]\n  },\n  \"assisted\": {\n    \"condition\": \"회피성능 +5 호석 / 호석 3슬롯 / 무기 3슬롯\",\n    \"elapsedMs\": 6098,\n    \"stats\": {\n      \"eligible\": 1613,\n      \"finalists\": 80,\n      \"checkedFinalists\": 46,\n      \"rankedPool\": 8,\n      \"beam\": 3000,\n      \"approximate\": true,\n      \"targetCount\": 4,\n      \"profile\": \"complex4\",\n      \"timedOut\": true,\n      \"elapsedMs\": 6098\n    },\n    \"exact\": 5,\n    \"top\": [\n      \"가루루가페이크\",\n      \"가루루가X메일\",\n      \"모노블로X암\",\n      \"리오소울Z코일\",\n      \"리오소울Z그리브\"\n    ]\n  }\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "auto_rank_logic_baseline",
+      "ok": true,
+      "elapsedSec": 3.32,
+      "stdout": "{\n  \"ok\": true,\n  \"version\": \"0.7.7-chat4-research2-hotfix20\",\n  \"checks\": {\n    \"low_progression_has_results\": true,\n    \"low_progression_only_low\": true,\n    \"low_target_fully_activated\": true,\n    \"high_progression_has_results\": true,\n    \"high_progression_no_g\": true,\n    \"high_targets_fully_activated\": true,\n    \"g_progression_has_results\": true,\n    \"g_targets_fully_activated\": true,\n    \"g_top_prefers_current_rank\": true,\n    \"g_top_no_low_gavra_bias\": true,\n    \"g_top_contains_g_torso_up_waist\": true,\n    \"ranking_metrics_present\": true,\n    \"resistance_metrics_match_calc\": true,\n    \"ranking_lexicographic_order\": true\n  },\n  \"failures\": [],\n  \"scenario\": {\n    \"target\": \"세균연구가 + 명검\",\n    \"progression\": \"G급\",\n    \"topArmors\": [\n      {\n        \"part\": \"head\",\n        \"name\": \"반역왕Ｊ해트\",\n        \"rank\": \"g\",\n        \"defense\": 100,\n        \"resistances\": {\n          \"fire\": -4,\n          \"water\": -4,\n          \"thunder\": -4,\n          \"ice\": -4,\n          \"dragon\": -4\n        },\n        \"torsoUp\": true\n      },\n      {\n        \"part\": \"body\",\n        \"name\": \"리벨리언X메일\",\n        \"rank\": \"g\",\n        \"defense\": 110,\n        \"resistances\": {\n          \"fire\": 3,\n          \"water\": 3,\n          \"thunder\": -2,\n          \"ice\": -2,\n          \"dragon\": -3\n        },\n        \"torsoUp\": false\n      },\n      {\n        \"part\": \"arms\",\n        \"name\": \"반역왕Ｊ글러브\",\n        \"rank\": \"g\",\n        \"defense\": 100,\n        \"resistances\": {\n          \"fire\": -4,\n          \"water\": -4,\n          \"thunder\": -4,\n          \"ice\": -4,\n          \"dragon\": -4\n        },\n        \"torsoUp\": true\n      },\n      {\n        \"part\": \"waist\",\n        \"name\": \"그리드Z펄드\",\n        \"rank\": \"g\",\n        \"defense\": 108,\n        \"resistances\": {\n          \"fire\": -1,\n          \"water\": -1,\n          \"thunder\": -3,\n          \"ice\": -1,\n          \"dragon\": -1\n        },\n        \"torsoUp\": true\n      },\n      {\n        \"part\": \"legs\",\n        \"name\": \"카이저X그리브\",\n        \"rank\": \"g\",\n        \"defense\": 109,\n        \"resistances\": {\n          \"fire\": 4,\n          \"water\": -6,\n          \"thunder\": 1,\n          \"ice\": -2,\n          \"dragon\": -2\n        },\n        \"torsoUp\": false\n      }\n    ],\n    \"topMetrics\": {\n      \"negativeSkillCount\": 1,\n      \"negativeSkillSeverity\": 10,\n      \"decorationCount\": 1,\n      \"usedDecorationSlots\": 1,\n      \"distinctDecorationTypes\": 1,\n      \"targetWastePoints\": 5,\n      \"targetUpgradeSteps\": 0,\n      \"extraPositiveSkillCount\": 0,\n      \"rankMaxDowngrade\": 0,\n      \"rankTotalDowngrade\": 0,\n      \"currentRankPieces\": 5,\n      \"defense\": 527,\n      \"resistanceTotal\": -53,\n      \"resistanceMinimum\": -14,\n      \"remainingSlots\": 2\n    },\n    \"topActivated\": [\n      {\n        \"skillId\": \"skill_d6ea8f6b4907\",\n        \"points\": 13,\n        \"name\": \"세균연구가\",\n        \"threshold\": 10\n      },\n      {\n        \"skillId\": \"skill_0a0d7a1a0dde\",\n        \"points\": 12,\n        \"name\": \"명검\",\n        \"threshold\": 10\n      },\n      {\n        \"skillId\": \"skill_2a9c189a93d7\",\n        \"points\": -13,\n        \"name\": \"공격력DOWN【소】\",\n        \"threshold\": -10\n      }\n    ]\n  },\n  \"counts\": {\n    \"lowEligible\": 322,\n    \"highEligible\": 940,\n    \"gEligible\": 1613,\n    \"gRankedPool\": 100\n  }\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "armor_progression_all",
+      "ok": true,
+      "elapsedSec": 0.79,
+      "stdout": "{\n  \"ok\": true,\n  \"version\": \"0.7.7-chat4-research2-hotfix16\",\n  \"counts\": {\n    \"armors\": 3119,\n    \"progressions\": 3119,\n    \"materials\": 11630,\n    \"exchangeSources\": 2036,\n    \"unknownSources\": 0\n  },\n  \"checks\": {\n    \"all_progressions_split\": true,\n    \"no_unknown_sources\": true,\n    \"main_armor_db_light\": true,\n    \"row_click_toggle\": true,\n    \"lazy_progression_fetch\": true,\n    \"full_width_detail\": true,\n    \"exchange_route_visible\": true\n  },\n  \"errors\": []\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "cross_references",
+      "ok": true,
+      "elapsedSec": 0.84,
+      "stdout": "{\"hardIssueCount\": 0, \"warningCount\": 1, \"itemIndexedCount\": 1301, \"monsterIndexedCount\": 76, \"skillIndexedCount\": 143, \"monsterMaterialsMissingFromItemDb\": 0, \"monstersAffectedByItemCoverage\": 0}\n",
+      "stderr": ""
+    },
+    {
+      "name": "recommended_loadouts",
+      "ok": true,
+      "elapsedSec": 0.61,
+      "stdout": "{\"weaponTypes\": 14, \"entries\": 42, \"variants\": 108, \"lowVariants\": 22, \"highVariants\": 33, \"gVariants\": 53, \"hardErrors\": 0, \"warnings\": 18, \"errors\": [], \"warningRows\": [\"태도/g/가루루가X 세트: 출처 URL 없음\", \"쌍검/g/셀레네X 세트: 출처 URL 없음\", \"해머/g/가루루가X 세트: 출처 URL 없음\", \"수렵피리/g/가루루가X 세트: 출처 URL 없음\", \"랜스/g/나르가X 세트: 출처 URL 없음\", \"슬래시액스/g/나르가X 세트: 출처 URL 없음\", \"슬래시액스/g/고어X 세트: 출처 URL 없음\", \"차지액스/g/셀타스X 세트: 출처 URL 없음\", \"조충곤/g/가루루가X 세트: 출처 URL 없음\", \"라이트보우건/g/스타나이트 거너 세트: 출처 URL 없음\", \"라이트보우건/g/가루루가X 거너 세트: 출처 URL 없음\", \"라이트보우건/g/고어X 거너 세트: 출처 URL 없음\", \"헤비보우건/g/진아마기 거너 세트: 출처 URL 없음\", \"헤비보우건/g/가루루가X 거너 세트: 출처 URL 없음\", \"헤비보우건/g/스타나이트 거너 세트: 출처 URL 없음\", \"활/g/스타나이트 거너 세트: 출처 URL 없음\", \"활/g/셀레네X 거너 세트: 출처 URL 없음\", \"활/g/가루루가X 거너 세트: 출처 URL 없음\"]}\n",
+      "stderr": ""
+    },
+    {
+      "name": "armor_search_benchmark",
+      "ok": true,
+      "elapsedSec": 10.59,
+      "stdout": "{\n  \"armors\": 3119,\n  \"queries\": [\n    \"예리도\",\n    \"고급귀마개\",\n    \"몸통배가\",\n    \"리오\",\n    \"GX\"\n  ],\n  \"oldMsPerSweep\": 1485.43,\n  \"optimizedMsPerSweep\": 3.67,\n  \"speedup\": 404.87,\n  \"sameSampleCounts\": [\n    {\n      \"q\": \"예리도\",\n      \"old\": 123,\n      \"optimized\": 123\n    },\n    {\n      \"q\": \"고급귀마개\",\n      \"old\": 288,\n      \"optimized\": 288\n    },\n    {\n      \"q\": \"몸통배가\",\n      \"old\": 74,\n      \"optimized\": 74\n    },\n    {\n      \"q\": \"리오\",\n      \"old\": 130,\n      \"optimized\": 130\n    },\n    {\n      \"q\": \"GX\",\n      \"old\": 40,\n      \"optimized\": 40\n    }\n  ]\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "browser_report:hotfix21_complex_search_e2e_v0.7.7.json",
+      "ok": true,
+      "elapsedSec": 0.0,
+      "detail": "report_ok=True, fresh=True"
+    },
+    {
+      "name": "browser_report:hotfix20_auto_rank_e2e_v0.7.7.json",
+      "ok": true,
+      "elapsedSec": 0.0,
+      "detail": "report_ok=True, fresh=True"
+    },
+    {
+      "name": "browser_report:hotfix19_planner_e2e_v0.7.7.json",
+      "ok": true,
+      "elapsedSec": 0.0,
+      "detail": "report_ok=True, fresh=True"
+    },
+    {
+      "name": "browser_report:hotfix19_planner_mobile_e2e_v0.7.7.json",
+      "ok": true,
+      "elapsedSec": 0.0,
+      "detail": "report_ok=True, fresh=True"
+    },
+    {
+      "name": "browser_report:hotfix18_mobile_progression_e2e_v0.7.7.json",
+      "ok": true,
+      "elapsedSec": 0.0,
+      "detail": "report_ok=True, fresh=True"
+    },
+    {
+      "name": "browser_report:hotfix17_stability_e2e_v0.7.7.json",
+      "ok": true,
+      "elapsedSec": 0.0,
+      "detail": "report_ok=True, fresh=True"
+    }
+  ]
+}

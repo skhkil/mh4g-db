@@ -1,5 +1,5 @@
-import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,loadArmorProgression,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-research2-hotfix20";
-import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-research2-hotfix20";
+import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,loadArmorProgression,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-research2-hotfix21";
+import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-research2-hotfix21";
 
 let data={skills:[],armors:[],armorSets:[],decorations:[],weapons:[],weaponSummary:[],melodies:[],items:[],itemReferenceIndex:{items:{}},skillReferenceIndex:{items:{},categories:[]},meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],monsterReferenceIndex:{items:{}},dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],questReferenceIndex:{quests:{}},siteInfo:{},meta:{}};
 let targets=[];
@@ -26,7 +26,7 @@ let restoringHistory=false;
 let historyRestoreToken=0;
 try{history.scrollRestoration="manual"}catch{}
 
-const APP_VERSION="0.7.7-chat4-research2-hotfix20";
+const APP_VERSION="0.7.7-chat4-research2-hotfix21";
 const boundEventGroups=new Set();
 let appEventsBound=false;
 function ensureRuntimeStatus(){
@@ -842,6 +842,17 @@ function renderBuildCard(b,i){
   const resistTotal=Object.values(b.calc?.resist||{}).reduce((sum,v)=>sum+Number(v||0),0);
   return `<article class="build-card build-card-clickable" data-auto-build="${i}" tabindex="0" role="button" aria-label="조합 ${i+1}을 시뮬레이터에 적용"><h3><span>조합 ${i+1}</span><span class="score">DEF ${b.calc.defense} · 내성합 ${resistTotal>=0?"+":""}${resistTotal}</span></h3><div class="build-equipment">${PARTS.map(p=>{const a=b.armors.find(x=>x.part===p);return `<span class="label">${PART_NAMES[p]}</span><span>${esc(a?.name||"-")} <span class="slots">${slotsText(a?.slots)}</span></span>`}).join("")}</div><div class="deco-line">${decoText?`장식주: ${esc(decoText)}`:"장식주 없음"}</div>${renderSkillResult(b.calc)}<div class="build-card-action">카드 클릭 → 시뮬레이터에 적용</div></article>`;
 }
+function autoSearchConditionText(){
+  const w=selectedWeapon();
+  const c=charm();
+  const charmSkills=Object.entries(c.skills||{}).filter(([,v])=>Number(v)!==0).map(([id,v])=>`${skillName(id)} ${Number(v)>0?"+":""}${Number(v)}`);
+  return `무기 ${w?esc(w.name):"미선택"} · 무기 슬롯 ${Number(w?.slots||0)} · 호석 ${charmSkills.length?charmSkills.map(esc).join(" / "):"스킬 없음"} · 호석 슬롯 ${Number(c.slots||0)}`;
+}
+function renderNearMissCard(b,i){
+  const missing=(b.missing||[]).map(x=>`${skillName(x.skillId)} ${Number(x.have||0)}/${Number(x.need||0)} (${Number(x.missing||0)}pt 부족)`).join(" · ");
+  const decoCount=(b.decorations||[]).length;
+  return `<article class="build-card near-miss-card"><h3><span>근접 후보 ${i+1}</span><span class="score">목표 미완성</span></h3><div class="build-equipment">${PARTS.map(p=>{const a=b.armors.find(x=>x.part===p);return `<span class="label">${PART_NAMES[p]}</span><span>${esc(a?.name||"-")} <span class="slots">${slotsText(a?.slots)}</span></span>`}).join("")}</div><div class="near-miss-deficit"><b>추가 필요</b> ${esc(missing||"목표 포인트 부족")}</div><div class="muted">현재 조건에서 배치한 장식주 ${decoCount}개 · DEF ${Number(b.calc?.defense||0)} · ${esc(resistText(b.calc?.resist||{}))}</div></article>`;
+}
 function applyAutoBuildToSimulator(index){
   const b=latestAutoSearchResults[Number(index)];if(!b)return;
   uiState.manualSet="";
@@ -856,15 +867,50 @@ function applyAutoBuildToSimulator(index){
 }
 async function runSearch(){
   if(!targets.length){$("#searchResults").innerHTML='<div class="result-empty">먼저 원하는 스킬을 추가하세요.</div>';return}
-  const btn=$("#runSearch");btn.disabled=true;btn.textContent="검색 중…";$("#searchStats").textContent="실제 DB에서 후보 조합을 계산하고 있습니다.";
+  const btn=$("#runSearch");btn.disabled=true;btn.textContent="검색 중…";
+  const conditionText=autoSearchConditionText();
+  $("#searchStats").textContent=`검색 준비 중 · ${conditionText}`;
   try{
     const simHunter=simulatorSearchHunterType();
     const progression=$("#autoProgressionRank")?.value||"g";
     const progressionLabel={low:"하위",high:"상위",g:"G급"}[progression]||"전체";
-    const r=await searchBuilds({targetActivationIds:targets,hunterType:simHunter,rank:progression,charm:charm(),weaponSlots:Number(selectedWeapon()?.slots||0),allowDecorations:$("#allowDecorations").checked,includeTorsoUp:$("#includeTorsoUp").checked,limit:Number($("#resultLimit").value||20)},data);
+    const r=await searchBuilds({
+      targetActivationIds:targets,
+      hunterType:simHunter,
+      rank:progression,
+      charm:charm(),
+      weaponSlots:Number(selectedWeapon()?.slots||0),
+      allowDecorations:$("#allowDecorations").checked,
+      includeTorsoUp:$("#includeTorsoUp").checked,
+      limit:Number($("#resultLimit").value||20),
+      onProgress:p=>{
+        if(p.phase==="armor")$("#searchStats").textContent=`방어구 후보 계산 ${p.current}/${p.total} · 후보 ${p.beam||0}개 · ${conditionText}`;
+        else if(p.phase==="decorate")$("#searchStats").textContent=`장식주 조합 검증 ${p.current}/${p.total} · 완성 ${p.exact||0}개 · ${conditionText}`;
+      }
+    },data);
     latestAutoSearchResults=r.results||[];
-    $("#searchStats").textContent=r.stats.message||`검색 타입 ${hunterName(simHunter)} · 진행도 ${progressionLabel} · 대상 방어구 ${r.stats.eligible}개 · 최종 후보 ${r.stats.finalists}개 · 고속 후보검색(완전탐색 아님)`;
-    $("#searchResults").innerHTML=latestAutoSearchResults.length?latestAutoSearchResults.map(renderBuildCard).join(""):'<div class="result-empty">조건을 만족하는 조합을 찾지 못했습니다.</div>';
+    const sec=(Number(r.stats?.elapsedMs||0)/1000).toFixed(1);
+    const statusBase=`검색 타입 ${hunterName(simHunter)} · 진행도 ${progressionLabel} · 대상 방어구 ${r.stats.eligible||0}개 · 검증 후보 ${r.stats.checkedFinalists??r.stats.finalists??0}/${r.stats.finalists||0} · ${sec}초 · ${conditionText}`;
+    if(r.stats.message){
+      $("#searchStats").textContent=r.stats.message;
+    }else if(latestAutoSearchResults.length){
+      $("#searchStats").textContent=`${statusBase}${r.stats.timedOut?" · 시간 제한 내 발견된 결과만 표시":""} · 고속 후보검색(완전탐색 아님)`;
+    }else{
+      $("#searchStats").textContent=`${statusBase} · ${r.stats.timedOut?"시간 제한 내 완성 조합 미발견":"완성 조합 미발견"} · 고속 후보검색(완전탐색 아님)`;
+    }
+    if(latestAutoSearchResults.length){
+      $("#searchResults").innerHTML=latestAutoSearchResults.map(renderBuildCard).join("");
+    }else if((r.nearMisses||[]).length){
+      const top=r.nearMisses[0];
+      const missing=(top.missing||[]).map(x=>`${skillName(x.skillId)} +${Number(x.missing||0)}pt`).join(" · ");
+      $("#searchResults").innerHTML=`<div class="search-guidance"><b>현재 조건에서 완성 조합을 찾지 못했습니다.</b><p>가장 가까운 후보 기준으로 <strong>${esc(missing||"추가 스킬 포인트")}</strong>가 더 필요합니다. 호석 스킬이나 무기/호석 슬롯을 보강한 뒤 다시 검색해 보세요.</p><p class="muted">자동조합은 현재 수동 시뮬레이터에서 선택한 무기 슬롯과 호석 조건을 그대로 사용합니다.</p></div>${r.nearMisses.map(renderNearMissCard).join("")}`;
+    }else{
+      $("#searchResults").innerHTML='<div class="result-empty">현재 조건의 고속 탐색 범위에서 완성 조합을 찾지 못했습니다. 호석 스킬 또는 무기/호석 슬롯을 추가한 뒤 다시 검색해 보세요.</div>';
+    }
+  }catch(e){
+    console.error("auto search failed",e);
+    $("#searchStats").textContent="자동조합 계산 중 오류가 발생했습니다.";
+    $("#searchResults").innerHTML=`<div class="result-empty">검색을 완료하지 못했습니다. ${esc(e?.message||String(e))}</div>`;
   }finally{btn.disabled=false;btn.textContent="조합 검색"}
 }
 

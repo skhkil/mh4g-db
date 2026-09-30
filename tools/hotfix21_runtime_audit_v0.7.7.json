@@ -1,0 +1,16 @@
+{
+  "ok": true,
+  "version": "0.7.7-chat4-research2-hotfix21",
+  "checks": {
+    "index_hotfix21": true,
+    "app_hotfix21": true,
+    "engine_profiles": true,
+    "engine_yields": true,
+    "near_miss_ui": true,
+    "condition_summary_ui": true,
+    "condition_hint_html": true,
+    "readme_hotfix21_first": true,
+    "work_status_hotfix21_first": true
+  },
+  "errors": []
+}
