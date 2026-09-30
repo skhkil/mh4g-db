@@ -1,9 +1,9 @@
 {
-  "ok": true,
+  "ok": false,
   "version": "0.7.7-chat4-research2-hotfix18",
   "checks": {
-    "version_index": true,
-    "version_app_imports": true,
+    "version_index": false,
+    "version_app_imports": false,
     "version_loader": true,
     "events_flag_after_groups": true,
     "bind_groups": true,

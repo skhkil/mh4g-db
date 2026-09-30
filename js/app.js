@@ -1,5 +1,5 @@
-import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,loadArmorProgression,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-research2-hotfix18";
-import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-research2-hotfix18";
+import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,loadArmorProgression,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-research2-hotfix19";
+import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-research2-hotfix19";
 
 let data={skills:[],armors:[],armorSets:[],decorations:[],weapons:[],weaponSummary:[],melodies:[],items:[],itemReferenceIndex:{items:{}},skillReferenceIndex:{items:{},categories:[]},meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],monsterReferenceIndex:{items:{}},dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],questReferenceIndex:{quests:{}},siteInfo:{},meta:{}};
 let targets=[];
@@ -26,7 +26,7 @@ let restoringHistory=false;
 let historyRestoreToken=0;
 try{history.scrollRestoration="manual"}catch{}
 
-const APP_VERSION="0.7.7-chat4-research2-hotfix18";
+const APP_VERSION="0.7.7-chat4-research2-hotfix19";
 const boundEventGroups=new Set();
 let appEventsBound=false;
 function ensureRuntimeStatus(){
@@ -130,6 +130,110 @@ const esc=s=>String(s??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&
 const rankName=r=>({low:"하위",high:"상위",g:"G급",all:"전체"}[r]||r||"-");
 const hunterName=t=>({blade:"검사",gunner:"거너",both:"공용"}[t]||t||"-");
 const resistText=r=>`화 ${r?.fire??0} / 수 ${r?.water??0} / 뇌 ${r?.thunder??0} / 빙 ${r?.ice??0} / 용 ${r?.dragon??0}`;
+
+
+const PLANNER_STORAGE_KEY="mh4g-planner-v1";
+let plannerMemoryStorage="";
+function plannerStorageGet(){try{return localStorage.getItem(PLANNER_STORAGE_KEY)}catch{return plannerMemoryStorage||null}}
+function plannerStorageSet(value){plannerMemoryStorage=String(value||"");try{localStorage.setItem(PLANNER_STORAGE_KEY,plannerMemoryStorage);return true}catch{return false}}
+const EMPTY_PLANNER_STATE=()=>({favorites:{weapon:[],armor:[],recommend:[],quest:[]},craft:{},inventory:{}});
+function loadPlannerState(){
+  const base=EMPTY_PLANNER_STATE();
+  try{
+    const raw=plannerStorageGet();if(!raw)return base;
+    const x=JSON.parse(raw)||{};
+    for(const k of Object.keys(base.favorites))base.favorites[k]=Array.isArray(x.favorites?.[k])?[...new Set(x.favorites[k].map(String))]:[];
+    base.craft=x.craft&&typeof x.craft==="object"&&!Array.isArray(x.craft)?x.craft:{};
+    base.inventory=x.inventory&&typeof x.inventory==="object"&&!Array.isArray(x.inventory)?x.inventory:{};
+  }catch(err){console.warn("planner storage load failed",err);}
+  return base;
+}
+let plannerState=loadPlannerState();
+function savePlannerState(){return plannerStorageSet(JSON.stringify(plannerState))}
+function plannerFavoriteList(kind){return plannerState.favorites[kind]||(plannerState.favorites[kind]=[])}
+function isPlannerFavorite(kind,id){return plannerFavoriteList(kind).includes(String(id))}
+function recommendPlannerId(weaponType,rank,index){return `${weaponType}|${rank}|${Number(index)||0}`}
+function parseRecommendPlannerId(id){const [weaponType,rank,index]=String(id||"").split("|");return {weaponType,rank,index:Number(index)||0}}
+function plannerIconButton(kind,id,{craft=false,label=""}={}){
+  const fav=isPlannerFavorite(kind,id);
+  const favorite=`<button type="button" class="planner-inline-action ${fav?"is-active":""}" data-planner-favorite-kind="${esc(kind)}" data-planner-favorite-id="${esc(id)}" title="${fav?"즐겨찾기 해제":"즐겨찾기 추가"}" aria-label="${fav?"즐겨찾기 해제":"즐겨찾기 추가"}">${fav?"★":"☆"}</button>`;
+  const craftButton=craft?`<button type="button" class="planner-inline-action craft" data-planner-craft-kind="${esc(kind)}" data-planner-craft-id="${esc(id)}" title="제작 목록에 추가" aria-label="제작 목록에 추가">＋</button>`:"";
+  return `<span class="planner-inline-actions"${label?` aria-label="${esc(label)}"`:""}>${favorite}${craftButton}</span>`;
+}
+function parseCraftMaterials(text){
+  const out=[];const raw=String(text||"").trim();if(!raw)return out;
+  const re=/(.*?)(?:[×*x]\s*(\d+))(?=\s|$)/g;let m;
+  while((m=re.exec(raw))){const name=m[1].trim();const count=Number(m[2])||0;if(name&&count)out.push({name,count});}
+  return out;
+}
+function weaponPlannerRecipe(w){
+  const rows=(w?.craft||[]).filter(x=>x&&x.materials);
+  if(!rows.length)return {label:"소재 정보 없음",materials:[]};
+  const row=rows.find(x=>String(x.method||"").includes("생산"))||rows.find(x=>String(x.method||"").includes("강화"))||rows[0];
+  return {label:row.method||"제작",materials:parseCraftMaterials(row.materials)};
+}
+function plannerCraftKey(kind,id){return `${kind}:${id}`}
+function addPlannerCraft(kind,id){
+  if(!["weapon","armor"].includes(kind))return;
+  const key=plannerCraftKey(kind,id),cur=plannerState.craft[key];
+  plannerState.craft[key]={kind,id:String(id),qty:Math.max(1,Number(cur?.qty)||0)+(!cur?0:1)};
+  savePlannerState();
+  if(currentPage==="planner")renderPlanner();
+  showRuntimeStatus("제작 목록에 추가했습니다.","success");setTimeout(()=>{if(document.getElementById("appRuntimeStatus")?.classList.contains("success"))clearRuntimeStatus()},1200);
+}
+function togglePlannerFavorite(kind,id){
+  if(!plannerState.favorites[kind])return;
+  const key=String(id),list=plannerFavoriteList(kind),idx=list.indexOf(key);
+  if(idx>=0)list.splice(idx,1);else list.push(key);
+  savePlannerState();
+  if(currentPage==="weapon")renderWeaponTrees();
+  else if(currentPage==="armor"){armorRowHtmlCache.clear();renderArmorTable();}
+  else if(currentPage==="recommend")renderRecommendedLoadouts();
+  else if(currentPage==="quest")renderQuest();
+  else if(currentPage==="planner")renderPlanner();
+}
+function plannerCraftEntries(){return Object.values(plannerState.craft||{}).filter(x=>x&&["weapon","armor"].includes(x.kind)&&x.id).map(x=>({...x,qty:Math.max(1,Number(x.qty)||1)}));}
+function plannerCraftEntity(entry){return entry.kind==="weapon"?weaponById.get(String(entry.id)):armorById.get(String(entry.id));}
+function plannerMaterialTotals(){
+  const totals=new Map();
+  for(const entry of plannerCraftEntries()){
+    const entity=plannerCraftEntity(entry);if(!entity)continue;
+    const mats=entry.kind==="weapon"?weaponPlannerRecipe(entity).materials:parseCraftMaterials(entity.materials);
+    for(const m of mats)totals.set(m.name,(totals.get(m.name)||0)+m.count*entry.qty);
+  }
+  return [...totals.entries()].map(([name,need])=>{const owned=Math.max(0,Number(plannerState.inventory[name])||0);return {name,need,owned,missing:Math.max(0,need-owned)}}).sort((a,b)=>b.missing-a.missing||a.name.localeCompare(b.name,"ko"));
+}
+function plannerFavoriteCard(kind,id){
+  if(kind==="weapon"){
+    const w=weaponById.get(String(id));if(!w)return "";
+    return `<div class="planner-fav-card"><div><span class="planner-kind">무기 · ${esc(w.weaponType||"")}</span><strong>${esc(w.name)}</strong><small>${rankName(w.rank)} · 공격 ${w.attack??"-"} · ${slotsText(w.slots)}</small></div><div class="planner-card-actions">${refButton("열기","weapon",{name:w.name,weapontype:w.weaponType})}${plannerIconButton(kind,id,{craft:true})}</div></div>`;
+  }
+  if(kind==="armor"){
+    const a=armorById.get(String(id));if(!a)return "";
+    return `<div class="planner-fav-card"><div><span class="planner-kind">방어구 · ${esc(PART_NAMES[a.part]||a.part)}</span><strong>${esc(a.name)}</strong><small>${rankName(a.rank)} · ${hunterName(a.hunterType)} · DEF ${a.defense||0}</small></div><div class="planner-card-actions">${refButton("열기","armor",{name:a.name})}${plannerIconButton(kind,id,{craft:true})}</div></div>`;
+  }
+  if(kind==="quest"){
+    const q=(data.quests||[]).find(x=>String(x.id)===String(id));if(!q)return "";
+    return `<div class="planner-fav-card"><div><span class="planner-kind">퀘스트 · ${esc(q.questTypeLabel||q.questType||"")}</span><strong>${esc(q.name)}</strong><small>${esc(q.level||"")} · ${esc(q.location||"")}</small></div><div class="planner-card-actions">${refButton("열기","quest",{name:q.name,questtype:q.questType})}${plannerIconButton(kind,id)}</div></div>`;
+  }
+  if(kind==="recommend"){
+    const key=parseRecommendPlannerId(id),entry=(data.recommendedLoadouts?.entries||[]).find(x=>x.weaponType===key.weaponType&&x.rank===key.rank),v=entry?.variants?.[key.index];if(!entry||!v)return "";
+    return `<div class="planner-fav-card"><div><span class="planner-kind">추천 장비 · ${esc(entry.weaponType)} · ${esc(entry.rankLabel||rankName(entry.rank))}</span><strong>${esc(v.label)}</strong><small>${esc(v.style||"")} · DEF ${Number(v.build?.defense||0)}</small></div><div class="planner-card-actions"><button type="button" class="xref-link" data-planner-open-recommend="${esc(id)}">열기</button>${plannerIconButton(kind,id)}</div></div>`;
+  }
+  return "";
+}
+function renderPlanner(){
+  const summary=$("#plannerSummary"),favRoot=$("#plannerFavorites"),craftRoot=$("#plannerCraftList"),matRoot=$("#plannerMaterials");if(!summary||!favRoot||!craftRoot||!matRoot)return;
+  const favCount=Object.values(plannerState.favorites).reduce((n,x)=>n+(x?.length||0),0),craft=plannerCraftEntries(),mats=plannerMaterialTotals(),missing=mats.reduce((n,x)=>n+x.missing,0);
+  summary.innerHTML=`<span>즐겨찾기 <b>${favCount}</b></span><span>제작 장비 <b>${craft.reduce((n,x)=>n+x.qty,0)}</b></span><span>필요 소재 <b>${mats.length}종</b></span><span>부족 합계 <b>${missing}</b></span>`;
+  const sections=[['weapon','무기'],['armor','방어구'],['recommend','추천 장비'],['quest','퀘스트']].map(([kind,label])=>{const cards=plannerFavoriteList(kind).map(id=>plannerFavoriteCard(kind,id)).filter(Boolean).join("");return cards?`<section class="planner-fav-group"><h3>${label}</h3>${cards}</section>`:""}).join("");
+  favRoot.innerHTML=sections||'<div class="result-empty">아직 즐겨찾기가 없습니다. 무기·방어구·추천 장비·퀘스트에서 ☆ 버튼을 눌러 추가할 수 있습니다.</div>';
+  craftRoot.innerHTML=craft.length?craft.map(entry=>{const x=plannerCraftEntity(entry);if(!x)return "";const recipe=entry.kind==="weapon"?weaponPlannerRecipe(x):{label:"생산",materials:parseCraftMaterials(x.materials)};return `<div class="planner-craft-row" data-planner-craft-key="${esc(plannerCraftKey(entry.kind,entry.id))}"><div><span class="planner-kind">${entry.kind==="weapon"?`무기 · ${esc(x.weaponType||"")}`:`방어구 · ${esc(PART_NAMES[x.part]||x.part)}`}</span><strong>${esc(x.name)}</strong><small>${esc(recipe.label)} · ${recipe.materials.length?recipe.materials.map(m=>`${esc(m.name)} ×${m.count}`).join(" · "):"소재 정보 없음"}</small></div><div class="planner-qty"><button type="button" data-planner-craft-delta="-1" aria-label="수량 감소">−</button><input type="number" min="1" max="99" value="${entry.qty}" data-planner-craft-qty="${esc(plannerCraftKey(entry.kind,entry.id))}" aria-label="제작 수량"><button type="button" data-planner-craft-delta="1" aria-label="수량 증가">＋</button><button type="button" class="ghost small" data-planner-craft-remove="${esc(plannerCraftKey(entry.kind,entry.id))}">삭제</button></div></div>`}).join(""):'<div class="result-empty">제작 목록이 비어 있습니다. 무기·방어구의 ＋ 버튼으로 추가하세요.</div>';
+  matRoot.innerHTML=mats.length?`<div class="planner-material-head"><span>소재</span><span>필요</span><span>보유</span><span>부족</span></div>${mats.map(m=>`<div class="planner-material-row ${m.missing?"is-missing":"is-complete"}"><div>${itemLink(m.name)}</div><b>${m.need}</b><input type="number" min="0" max="9999" value="${m.owned}" data-planner-inventory="${esc(m.name)}" aria-label="${esc(m.name)} 보유 수량"><strong>${m.missing}</strong></div>`).join("")}`:'<div class="result-empty">제작 목록에 장비를 추가하면 필요한 소재를 합산합니다.</div>';
+}
+async function openPlannerRecommendation(id){
+  const key=parseRecommendPlannerId(id);recommendWeaponType=key.weaponType;recommendRank=key.rank;await navigatePage("recommend",{after:()=>{populateRecommendFilters();$("#recommendWeaponType").value=recommendWeaponType;$("#recommendRank").value=recommendRank;renderRecommendedLoadouts();const cards=$$("#recommendContent .recommend-variant");cards[key.index]?.scrollIntoView({block:"center",behavior:"auto"});}});
+}
 
 const SKILL_SEARCH_ALIASES={
   "통격":"약점 약특 약점특효 회심 크리티컬",
@@ -883,7 +987,7 @@ function armorRowHtml(a){
   const key=a?.id||a?.name||"";
   if(key&&armorRowHtmlCache.has(key))return armorRowHtmlCache.get(key);
   const aid=esc(a.id||key);
-  const main=`<tr class="armor-db-row" data-armor-id="${aid}" tabindex="0" role="button" aria-expanded="false" title="행을 클릭하면 제작 진행을 펼칩니다"><td><span class="armor-row-chevron" aria-hidden="true">▶</span><strong>${esc(a.name)}</strong>${localizedNameSub(a)}</td><td>${hunterName(a.hunterType)}</td><td>${PART_NAMES[a.part]||a.part}</td><td>${a.rare||"-"}</td><td>${a.defense||0} / ${a.maxDefense||a.defense||0}</td><td class="slots">${slotsText(a.slots)}</td><td>${a.torsoUp?"몸통배가":Object.entries(a.skills||{}).map(([k,v])=>`${skillLink(k,skillName(k))} ${v>0?"+":""}${v}`).join(", ")}</td><td>${resistText(a.resistances)}</td><td>${rankName(a.rank)}</td><td class="wrap-cell">${materialLinks(a.materials||"")}</td></tr>`;
+  const main=`<tr class="armor-db-row" data-armor-id="${aid}" tabindex="0" role="button" aria-expanded="false" title="행을 클릭하면 제작 진행을 펼칩니다"><td><span class="armor-row-chevron" aria-hidden="true">▶</span><strong>${esc(a.name)}</strong>${localizedNameSub(a)}${plannerIconButton("armor",a.id,{craft:true,label:`${a.name} 즐겨찾기/제작`})}</td><td>${hunterName(a.hunterType)}</td><td>${PART_NAMES[a.part]||a.part}</td><td>${a.rare||"-"}</td><td>${a.defense||0} / ${a.maxDefense||a.defense||0}</td><td class="slots">${slotsText(a.slots)}</td><td>${a.torsoUp?"몸통배가":Object.entries(a.skills||{}).map(([k,v])=>`${skillLink(k,skillName(k))} ${v>0?"+":""}${v}`).join(", ")}</td><td>${resistText(a.resistances)}</td><td>${rankName(a.rank)}</td><td class="wrap-cell">${materialLinks(a.materials||"")}</td></tr>`;
   const detail=`<tr class="armor-detail-row" data-armor-detail="${aid}" hidden><td colspan="10"><div class="armor-detail-host"></div></td></tr>`;
   const html=main+detail;
   if(key)armorRowHtmlCache.set(key,html);
@@ -1159,7 +1263,7 @@ function weaponTableColumns(type){
 function weaponCell(w,col){
   if(col.key==="name"){
     const prefix=w.treePrefix?`<span class="tree-prefix">${esc(w.treePrefix)}</span>`:"";
-    return `${prefix}${w.isFinal?'<span class="final-mark">■</span> ':''}<strong>${esc(w.name)}</strong>${localizedNameSub(w)}`;
+    return `${prefix}${w.isFinal?'<span class="final-mark">■</span> ':''}<strong>${esc(w.name)}</strong>${localizedNameSub(w)}${plannerIconButton("weapon",w.id,{craft:true,label:`${w.name} 즐겨찾기/제작`})}`;
   }
   if(col.key==="attack") return w.attack??"-";
   if(col.key==="element") return esc(weaponPropertyBits(w).join(" · ")||"-");
@@ -1742,12 +1846,12 @@ function renderQuest(){
   });
   if(eventView){
     const questRoot=$("#questTable");if(questRoot)questRoot.className="quest-table-mode quest-table-event";
-    const rows=list.map(q=>`<tr><td>${esc(q.questTypeLabel||q.questType)}</td><td>${esc(q.level)}</td><td><strong>${esc(q.name)}</strong>${localizedNameSub(q)}</td><td class="wrap-cell">${esc(q.objective||"-")}</td><td class="wrap-cell quest-monsters">${questMonsterLinks(q)}</td><td class="wrap-cell quest-rewards">${questRewardLinks(q)}</td><td>${esc(q.location||"-")}</td><td>${esc(q.fee||"-")}</td><td>${esc(q.reward||"-")}</td><td>${esc(q.hrp||"-")}</td><td>${esc(q.time||"-")}</td><td class="wrap-cell">${esc(q.subObjective||"-")}</td><td>${esc(q.subReward||"-")}</td><td>${esc(q.subHrp||"-")}</td><td class="wrap-cell">${esc(q.conditions||"-")}</td><td class="wrap-cell">${esc(q.note||"")}</td></tr>`);
+    const rows=list.map(q=>`<tr><td>${esc(q.questTypeLabel||q.questType)}</td><td>${esc(q.level)}</td><td><strong>${esc(q.name)}</strong>${localizedNameSub(q)}${plannerIconButton("quest",q.id,{label:`${q.name} 즐겨찾기`})}</td><td class="wrap-cell">${esc(q.objective||"-")}</td><td class="wrap-cell quest-monsters">${questMonsterLinks(q)}</td><td class="wrap-cell quest-rewards">${questRewardLinks(q)}</td><td>${esc(q.location||"-")}</td><td>${esc(q.fee||"-")}</td><td>${esc(q.reward||"-")}</td><td>${esc(q.hrp||"-")}</td><td>${esc(q.time||"-")}</td><td class="wrap-cell">${esc(q.subObjective||"-")}</td><td>${esc(q.subReward||"-")}</td><td>${esc(q.subHrp||"-")}</td><td class="wrap-cell">${esc(q.conditions||"-")}</td><td class="wrap-cell">${esc(q.note||"")}</td></tr>`);
     renderTable("#questTable",["구분","레벨","퀘스트","클리어 조건","몬스터","주요 보상","장소","계약금","보수금","HRP","시간","서브퀘스트","서브 보수","서브 HRP","특수조건","비고"],rows);return;
   }
   const detail=questView.endsWith("detail")||questView==="key";
   const questRoot=$("#questTable");if(questRoot)questRoot.className=`quest-table-mode ${detail?"quest-table-detail":"quest-table-summary"}`;
-  const rows=list.map(q=>detail?`<tr><td>${esc(q.questTypeLabel)}</td><td>${esc(q.level)}</td><td>${q.key?"○":""}</td><td><strong>${esc(q.name)}</strong>${localizedNameSub(q)}</td><td class="wrap-cell">${esc(q.objective)}</td><td class="wrap-cell quest-monsters">${questMonsterLinks(q)}</td><td class="wrap-cell quest-rewards">${questRewardLinks(q)}</td><td>${esc(q.location)}</td><td>${esc(q.fee)}</td><td>${esc(q.reward)}</td><td>${esc(q.time)}</td><td>${esc(q.conditions)}</td><td>${esc(q.note)}</td></tr>`:`<tr><td>${esc(q.level)}</td><td>${q.key?"○":""}</td><td><strong>${esc(q.name)}</strong>${localizedNameSub(q)}</td><td class="wrap-cell">${esc(q.objective)}</td><td class="wrap-cell quest-monsters">${questMonsterLinks(q)}</td><td class="wrap-cell quest-rewards">${questRewardLinks(q)}</td><td>${esc(q.location)}</td><td>${esc(q.note)}</td></tr>`);
+  const rows=list.map(q=>detail?`<tr><td>${esc(q.questTypeLabel)}</td><td>${esc(q.level)}</td><td>${q.key?"○":""}</td><td><strong>${esc(q.name)}</strong>${localizedNameSub(q)}${plannerIconButton("quest",q.id,{label:`${q.name} 즐겨찾기`})}</td><td class="wrap-cell">${esc(q.objective)}</td><td class="wrap-cell quest-monsters">${questMonsterLinks(q)}</td><td class="wrap-cell quest-rewards">${questRewardLinks(q)}</td><td>${esc(q.location)}</td><td>${esc(q.fee)}</td><td>${esc(q.reward)}</td><td>${esc(q.time)}</td><td>${esc(q.conditions)}</td><td>${esc(q.note)}</td></tr>`:`<tr><td>${esc(q.level)}</td><td>${q.key?"○":""}</td><td><strong>${esc(q.name)}</strong>${localizedNameSub(q)}${plannerIconButton("quest",q.id,{label:`${q.name} 즐겨찾기`})}</td><td class="wrap-cell">${esc(q.objective)}</td><td class="wrap-cell quest-monsters">${questMonsterLinks(q)}</td><td class="wrap-cell quest-rewards">${questRewardLinks(q)}</td><td>${esc(q.location)}</td><td>${esc(q.note)}</td></tr>`);
   renderTable("#questTable",detail?["구분","레벨","키","퀘스트","클리어 조건","몬스터","주요 보상","장소","계약금","보수금","시간","특수조건","비고"]:["레벨","키","퀘스트","클리어 조건","몬스터","주요 보상","장소","비고"],rows);
 }
 
@@ -1832,7 +1936,7 @@ function recommendVariantHtml(v,idx){
   const applied=decos.length?`<div class="recommend-decos"><b>검증 예시 장식주</b>${decos.map(d=>refButton(`${d.name} ×${d.count}`,"decoration",{name:d.name})).join("")}</div>`:"";
   const finalExample=(v.finalSkillsExample||[]).map(x=>`<span class="recommend-guide-chip">${esc(x)}</span>`).join("");
   const guides=`${reco?`<div class="recommend-decos recommend-guide"><b>추천 장식주</b>${reco}</div>`:""}${v.talismanGuide?`<div class="recommend-guide-line"><b>호석</b><span>${esc(v.talismanGuide)}</span></div>`:""}${v.talismanSocketGuide?`<div class="recommend-guide-line"><b>호석 슬롯</b><span>${esc(v.talismanSocketGuide)}</span></div>`:""}${v.decorationPlacementExample?`<div class="recommend-guide-line"><b>배치 예시</b><span>${esc(v.decorationPlacementExample)}</span></div>`:""}${finalExample?`<div class="recommend-decos recommend-guide recommend-final"><b>최종 스킬 예시</b>${finalExample}</div>`:""}${v.exampleEvidence?`<div class="recommend-guide-line recommend-evidence"><b>예시 근거</b><span>${esc(v.exampleEvidence)}</span></div>`:""}${v.usageGuide?`<div class="recommend-guide-line"><b>활용</b><span>${esc(v.usageGuide)}</span></div>`:""}${v.foreignComparison?`<div class="recommend-compare"><b>국내↔해외</b><span>${esc(v.foreignComparison)}</span></div>`:""}`;
-  return `<article class="panel recommend-variant"><div class="recommend-variant-head"><div><div class="recommend-kind">${esc(v.style||"")}${v.kind?` · ${esc(v.kind)}`:""}</div><h3>${esc(v.label)}</h3></div><strong>DEF ${Number(b.defense||0)}</strong></div><div class="recommend-active-skills"><b>검증 예시 발동</b>${activated.map(x=>`<button type="button" class="skill-active" data-open-skill="${esc(x.skillId)}">${esc(x.name)}</button>`).join("")||'<span class="muted">없음</span>'}</div><div class="recommend-pieces">${(b.armors||[]).map(recommendPieceHtml).join("")}</div>${applied}${guides}<div class="recommend-card-foot"><div class="recommend-source-links">${domesticLink}${foreignLink}<span class="recommend-engine-badge">엔진 검증</span></div><div class="recommend-sim-actions"><small>장식주·호석·무기 자동입력 없음</small><button type="button" class="ghost recommend-open-sim" data-recommend-sim="${idx}">방어구 5부위 불러오기</button></div></div></article>`;
+  return `<article class="panel recommend-variant"><div class="recommend-variant-head"><div><div class="recommend-kind">${esc(v.style||"")}${v.kind?` · ${esc(v.kind)}`:""}</div><h3>${esc(v.label)}</h3></div><div class="recommend-head-actions"><strong>DEF ${Number(b.defense||0)}</strong>${plannerIconButton("recommend",recommendPlannerId(recommendWeaponType,recommendRank,idx),{label:`${v.label} 즐겨찾기`})}</div></div><div class="recommend-active-skills"><b>검증 예시 발동</b>${activated.map(x=>`<button type="button" class="skill-active" data-open-skill="${esc(x.skillId)}">${esc(x.name)}</button>`).join("")||'<span class="muted">없음</span>'}</div><div class="recommend-pieces">${(b.armors||[]).map(recommendPieceHtml).join("")}</div>${applied}${guides}<div class="recommend-card-foot"><div class="recommend-source-links">${domesticLink}${foreignLink}<span class="recommend-engine-badge">엔진 검증</span></div><div class="recommend-sim-actions"><small>장식주·호석·무기 자동입력 없음</small><button type="button" class="ghost recommend-open-sim" data-recommend-sim="${idx}">방어구 5부위 불러오기</button></div></div></article>`;
 }
 function renderRecommendedLoadouts(){
   populateRecommendFilters();const root=$("#recommendContent");if(!root)return;
@@ -1867,6 +1971,7 @@ let pageLoadToken=0;
 function dataKeysForPage(page){
   if(page==="source")return ["siteInfo"];
   if(page==="recommend")return ["recommendedLoadouts"];
+  if(page==="planner")return ["weapons","armors","items","quests","questReferenceIndex","recommendedLoadouts"];
   if(page==="armor")return ["armors"];
   if(page==="armor-set")return ["armorSets"];
   if(page==="weapon")return ["weapons","items"];
@@ -1906,6 +2011,7 @@ async function ensureFullData(keys){
 function renderPageData(page){
   if(page==="source")renderSourcePage();
   else if(page==="recommend")renderRecommendedLoadouts();
+  else if(page==="planner")renderPlanner();
   else if(page==="armor")renderArmorTable();
   else if(page==="armor-set")renderArmorSetTable();
   else if(page==="weapon"){renderWeaponTreeFilter();renderWeaponTrees()}
@@ -1925,7 +2031,7 @@ async function openPage(page){
   $$('.nav-main[data-page]').forEach(x=>x.classList.toggle('active',x.dataset.page===page&&(!x.dataset.sourceView||x.dataset.sourceView===sourceView)));
   $$('.page').forEach(p=>p.classList.remove('active'));
   const section=$(`#page-${page}`); if(section)section.classList.add('active');
-  const titles={simulator:["스킬 시뮬레이터","방어구 + 호석 + 장식주 조합을 계산합니다."],recommend:["추천 장비","무기종·진행도별 장비 구성을 확인합니다."],armor:["방어구 상세","타입·등급·부위 조건으로 방어구를 조회합니다."],weapon:["무기 DB","무기 종류·파생·예리도와 제작 정보를 조회합니다."],decoration:[decoView==="slot"?"장신구 · 소켓별":"장신구 · 종류별","슬롯·스킬 포인트·생산소재를 조회합니다."],skill:["스킬 DB","스킬 계통과 발동 조건·효과를 조회합니다."],item:["아이템 DB","아이템 입수방법과 효과를 조회합니다."],data:["데이터 관리","실제 JSON 데이터 상태와 업데이트 방법을 확인합니다."]};
+  const titles={simulator:["스킬 시뮬레이터","방어구 + 호석 + 장식주 조합을 계산합니다."],recommend:["추천 장비","무기종·진행도별 장비 구성을 확인합니다."],planner:["즐겨찾기 · 제작","저장한 장비·퀘스트와 제작 소재 체크리스트를 관리합니다."],armor:["방어구 상세","타입·등급·부위 조건으로 방어구를 조회합니다."],weapon:["무기 DB","무기 종류·파생·예리도와 제작 정보를 조회합니다."],decoration:[decoView==="slot"?"장신구 · 소켓별":"장신구 · 종류별","슬롯·스킬 포인트·생산소재를 조회합니다."],skill:["스킬 DB","스킬 계통과 발동 조건·효과를 조회합니다."],item:["아이템 DB","아이템 입수방법과 효과를 조회합니다."],data:["데이터 관리","실제 JSON 데이터 상태와 업데이트 방법을 확인합니다."]};
   const dynamic=pageTitleForState(page);
   const title=dynamic||titles[page]||["MH4G DB",""];
   if($("#pageTitle"))$("#pageTitle").textContent=title[0];
@@ -2041,6 +2147,16 @@ function bind(){
     closePickers();
     const visualRow=e.target.closest?.('.data-table tbody tr:not(.skill-detail-row):not(.armor-detail-row), .item-list-row, .monster-quest-row, .skill-source-row, .meal-method');
     if(rowFocusQuery.matches&&visualRow&&!visualRow.classList.contains('result-empty')&&!visualRow.closest('#skillTable tr.skill-db-row'))selectUiRow(visualRow);
+    const plannerFavorite=e.target.closest?.('[data-planner-favorite-kind]');
+    if(plannerFavorite){e.preventDefault();e.stopPropagation();togglePlannerFavorite(plannerFavorite.dataset.plannerFavoriteKind,plannerFavorite.dataset.plannerFavoriteId);return;}
+    const plannerCraft=e.target.closest?.('[data-planner-craft-kind]');
+    if(plannerCraft){e.preventDefault();e.stopPropagation();addPlannerCraft(plannerCraft.dataset.plannerCraftKind,plannerCraft.dataset.plannerCraftId);return;}
+    const plannerRecommend=e.target.closest?.('[data-planner-open-recommend]');
+    if(plannerRecommend){e.preventDefault();e.stopPropagation();replaceCurrentHistoryState();void openPlannerRecommendation(plannerRecommend.dataset.plannerOpenRecommend).then(pushCurrentHistoryState);return;}
+    const plannerRemove=e.target.closest?.('[data-planner-craft-remove]');
+    if(plannerRemove){e.preventDefault();e.stopPropagation();delete plannerState.craft[plannerRemove.dataset.plannerCraftRemove];savePlannerState();renderPlanner();return;}
+    const plannerDelta=e.target.closest?.('[data-planner-craft-delta]');
+    if(plannerDelta){e.preventDefault();e.stopPropagation();const row=plannerDelta.closest('[data-planner-craft-key]'),key=row?.dataset.plannerCraftKey,entry=plannerState.craft[key];if(entry){entry.qty=Math.max(1,Math.min(99,(Number(entry.qty)||1)+Number(plannerDelta.dataset.plannerCraftDelta||0)));savePlannerState();renderPlanner();}return;}
     const weaponNav=e.target.closest?.('[data-open-weapon]');
     if(weaponNav){e.preventDefault();e.stopPropagation();replaceCurrentHistoryState();void navigateWeapon(weaponNav.dataset.openWeapon).then(pushCurrentHistoryState);return;}
     const weaponRow=e.target.closest?.('#weaponTrees tr.weapon-db-row[data-weapon-row]');
@@ -2055,6 +2171,8 @@ function bind(){
     if(skillBtn){e.preventDefault();e.stopPropagation();replaceCurrentHistoryState();openPage("skill").then(()=>{$("#skillSearch").value=skillName(skillBtn.dataset.openSkill)||"";$("#skillCategoryFilter").value="all";$("#skillTypeFilter").value="all";renderSkillTable();pushCurrentHistoryState();});return;}
     const decoBtn=e.target.closest?.('[data-open-deco]');
     if(decoBtn){e.preventDefault();e.stopPropagation();replaceCurrentHistoryState();void openPage("decoration").then(()=>{$("#decoRankFilter").value="all";$("#decoSlotFilter").value="all";$("#decoCategoryFilter").value="all";$("#decoSearch").value=decoBtn.dataset.openDeco||"";renderDecoTable();pushCurrentHistoryState();});return;}
+    const plannerNav=e.target.closest?.('#page-planner [data-item-nav]');
+    if(plannerNav){e.preventDefault();e.stopPropagation();replaceCurrentHistoryState();followItemReference(plannerNav).then(pushCurrentHistoryState);return;}
     const skillNav=e.target.closest?.('#skillTable .skill-source-body [data-item-nav]');
     if(skillNav){e.preventDefault();e.stopPropagation();replaceCurrentHistoryState();followItemReference(skillNav).then(pushCurrentHistoryState);return;}
     const skillRow=e.target.closest?.('#skillTable tr.skill-db-row[data-skill-row]');
@@ -2097,6 +2215,12 @@ function bind(){
     if(nav){e.preventDefault();replaceCurrentHistoryState();followItemReference(nav).then(pushCurrentHistoryState);return;}
     const close=e.target.closest?.('#itemTable .item-detail-close');
     if(close){e.preventDefault();removeItemDetailRow();selectedItemId="";replaceCurrentHistoryState();return;}
+  }));
+  document.addEventListener("change",safeUiHandler("document.change",e=>{
+    const qty=e.target.closest?.('[data-planner-craft-qty]');
+    if(qty){const entry=plannerState.craft[qty.dataset.plannerCraftQty];if(entry){entry.qty=Math.max(1,Math.min(99,Number(qty.value)||1));savePlannerState();renderPlanner();}return;}
+    const inv=e.target.closest?.('[data-planner-inventory]');
+    if(inv){plannerState.inventory[inv.dataset.plannerInventory]=Math.max(0,Math.min(9999,Number(inv.value)||0));savePlannerState();renderPlanner();return;}
   }));
   document.addEventListener("keydown",safeUiHandler("document.keydown",e=>{const armorRow=e.target.closest?.('#armorTable tr.armor-db-row[data-armor-id]');if(armorRow&&(e.key==="Enter"||e.key===" ")){e.preventDefault();void toggleArmorProgressRow(armorRow);return;}const bcard=e.target.closest?.('[data-auto-build]');if(bcard&&(e.key==="Enter"||e.key===" ")){e.preventDefault();applyAutoBuildToSimulator(bcard.dataset.autoBuild);return;}const wrow=e.target.closest?.('#weaponTrees tr.weapon-db-row[data-weapon-row]');if(wrow&&(e.key==="Enter"||e.key===" ")){e.preventDefault();void openWeaponDetail(wrow);return;}const row=e.target.closest?.('#skillTable tr.skill-db-row[data-skill-row]');if(row&&(e.key==="Enter"||e.key===" ")){e.preventDefault();void openSkillDetail(row.dataset.skillRow,row);}}));
   document.addEventListener("toggle",safeUiHandler("document.toggle",e=>{
@@ -2167,6 +2291,12 @@ function bind(){
   }));
   results.push(bindEventGroup("recommendation",()=>{
   $("#recommendWeaponType").onchange=e=>{recommendWeaponType=e.target.value;renderRecommendedLoadouts()};$("#recommendRank").onchange=e=>{recommendRank=e.target.value;renderRecommendedLoadouts()};
+  }));
+  results.push(bindEventGroup("planner-controls",()=>{
+    const clearFav=$("#plannerClearFavorites"),clearCraft=$("#plannerClearCraft"),resetInventory=$("#plannerResetInventory");
+    if(clearFav)clearFav.onclick=()=>{plannerState.favorites={weapon:[],armor:[],recommend:[],quest:[]};savePlannerState();renderPlanner();};
+    if(clearCraft)clearCraft.onclick=()=>{plannerState.craft={};savePlannerState();renderPlanner();};
+    if(resetInventory)resetInventory.onclick=()=>{plannerState.inventory={};savePlannerState();renderPlanner();};
   }));
   results.push(bindEventGroup("json-import",()=>{
   $("#jsonImport").onchange=async e=>{const lines=[];for(const f of e.target.files){try{const json=JSON.parse(await f.text()),type=classifyImported(f.name,json);if(type){data[type]=json;lines.push(`${f.name} → ${type} ${Array.isArray(json)?json.length:"객체"}건`)}else lines.push(`${f.name} → 유형 판별 실패`)}catch{lines.push(`${f.name} → JSON 오류`)}}data.meta={...data.meta,demo:false,version:"browser-import"};rebuildIndexes();$("#importStatus").innerHTML=lines.map(esc).join("<br>");renderAll()};

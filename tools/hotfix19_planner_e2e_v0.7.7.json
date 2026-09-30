@@ -1,0 +1,21 @@
+{
+  "version": "hotfix19",
+  "runs": [
+    {
+      "cycle": 1,
+      "ok": true,
+      "errors": []
+    },
+    {
+      "cycle": 2,
+      "ok": true,
+      "errors": []
+    },
+    {
+      "cycle": 3,
+      "ok": true,
+      "errors": []
+    }
+  ],
+  "ok": true
+}

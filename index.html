@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#121821" />
   <title>MH4G 장비 · 스킬 시뮬레이터</title>
-  <link rel="stylesheet" href="./css/app.css?v=0.7.7-chat4-research2-hotfix18" />
+  <link rel="stylesheet" href="./css/app.css?v=0.7.7-chat4-research2-hotfix19" />
 </head>
 <body>
   <div class="app-shell">
@@ -21,6 +21,7 @@
       <nav id="mainNav" class="nav">
         <button data-page="simulator" class="nav-main active">⚒ 스킬 시뮬레이터</button>
         <button data-page="recommend" class="nav-main">★ 추천 장비</button>
+        <button data-page="planner" class="nav-main">☆ 즐겨찾기 · 제작</button>
         <div class="nav-group">
           <button class="nav-main nav-with-chevron nav-group-toggle" data-submenu="weaponSubNav"><span>⚔ 무기</span><span class="nav-chevron">⌄</span></button>
           <div id="weaponSubNav" class="nav-submenu"></div>
@@ -210,6 +211,27 @@
           </div>
         </section>
         <div id="recommendContent"></div>
+      </section>
+
+      <section id="page-planner" class="page">
+        <section class="panel planner-head">
+          <div class="panel-title"><div><h2>즐겨찾기 · 제작 체크리스트</h2><p class="muted">즐겨찾기한 장비/퀘스트를 모아 보고, 제작 목록의 필요 소재와 보유/부족 수량을 계산합니다.</p></div></div>
+          <div class="planner-summary" id="plannerSummary"></div>
+        </section>
+        <section class="planner-layout">
+          <div class="panel planner-section">
+            <div class="panel-title"><div><h2>즐겨찾기</h2></div><button type="button" class="ghost small" id="plannerClearFavorites">전체 해제</button></div>
+            <div id="plannerFavorites" class="planner-favorites"></div>
+          </div>
+          <div class="panel planner-section">
+            <div class="panel-title"><div><h2>제작 목록</h2><p class="muted">방어구는 생산 소재, 무기는 직접 생산이 있으면 생산 소재를 우선하고 없으면 현재 단계 강화 소재를 사용합니다.</p></div><button type="button" class="ghost small" id="plannerClearCraft">전체 비우기</button></div>
+            <div id="plannerCraftList" class="planner-craft-list"></div>
+          </div>
+          <div class="panel planner-section planner-material-section">
+            <div class="panel-title"><div><h2>부족 소재</h2><p class="muted">보유 수량은 이 브라우저에 저장됩니다. 소재명을 누르면 기존 아이템 입수 경로로 이동합니다.</p></div><button type="button" class="ghost small" id="plannerResetInventory">보유수량 초기화</button></div>
+            <div id="plannerMaterials" class="planner-materials"></div>
+          </div>
+        </section>
       </section>
 
       <section id="page-armor" class="page">
@@ -409,6 +431,6 @@ python tools/build_database.py --publish</code></pre>
     <button id="pageJumpTop" class="mobile-page-jump-btn" type="button" aria-label="맨 위로 이동" title="맨 위로">↑</button>
     <button id="pageJumpBottom" class="mobile-page-jump-btn" type="button" aria-label="맨 아래로 이동" title="맨 아래로">↓</button>
   </div>
-  <script type="module" src="./js/app.js?v=0.7.7-chat4-research2-hotfix18"></script>
+  <script type="module" src="./js/app.js?v=0.7.7-chat4-research2-hotfix19"></script>
 </body>
 </html>

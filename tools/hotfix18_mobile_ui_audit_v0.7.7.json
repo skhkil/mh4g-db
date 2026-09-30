@@ -1,9 +1,9 @@
 {
-  "ok": true,
+  "ok": false,
   "version": "0.7.7-chat4-research2-hotfix18",
   "checks": {
-    "version_index": true,
-    "version_app": true,
+    "version_index": false,
+    "version_app": false,
     "version_loader": true,
     "armor_detail_full_width_mobile": true,
     "armor_progress_two_columns_mobile": true,

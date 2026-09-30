@@ -1,0 +1,51 @@
+{
+  "ok": true,
+  "version": "0.7.7-chat4-research2-hotfix19",
+  "checks": {
+    "version_index": true,
+    "version_app_imports": true,
+    "planner_nav": true,
+    "planner_page": true,
+    "favorite_kinds": true,
+    "craft_add": true,
+    "material_aggregation": true,
+    "inventory_input": true,
+    "material_navigation": true,
+    "multi_qty": true,
+    "localstorage": true,
+    "storage_fallback": true,
+    "planner_nav_links": true,
+    "responsive_css": true,
+    "source_counts": true,
+    "armor_material_parse": true,
+    "weapon_material_parse": true
+  },
+  "samples": {
+    "armor": "카브라헬름",
+    "armorMaterials": [
+      [
+        "귀와 큰이빨",
+        2
+      ],
+      [
+        "위압적인 머리뼈",
+        1
+      ],
+      [
+        "귀와 갑각",
+        2
+      ],
+      [
+        "마카라이트광석",
+        2
+      ]
+    ],
+    "weapon": "아이언소드",
+    "weaponMaterials": [
+      [
+        "철광석",
+        3
+      ]
+    ]
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "ok": true,
+  "version": "0.7.7-chat4-research2-hotfix19",
+  "checks": {
+    "planner_structure": true,
+    "planner_e2e_3x": true,
+    "planner_mobile_390": true,
+    "mobile_progression_baseline": true,
+    "backnav_stability_baseline": true,
+    "armor_progression": true,
+    "final_static_commands": true
+  },
+  "commands": [
+    {
+      "cmd": "node --experimental-default-type=module --check js/app.js",
+      "ok": true,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "cmd": "node --experimental-default-type=module --check js/data-loader.js",
+      "ok": true,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "cmd": "node --experimental-default-type=module --check js/engine.js",
+      "ok": true,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "cmd": "python tools/audit_cross_references_v0.7.7.py",
+      "ok": true,
+      "stdout": "{\"hardIssueCount\": 0, \"warningCount\": 1, \"itemIndexedCount\": 1301, \"monsterIndexedCount\": 76, \"skillIndexedCount\": 143, \"monsterMaterialsMissingFromItemDb\": 0, \"monstersAffectedByItemCoverage\": 0}\n",
+      "stderr": ""
+    },
+    {
+      "cmd": "python tools/audit_recommended_loadouts_v0.7.7.py",
+      "ok": true,
+      "stdout": "{\"weaponTypes\": 14, \"entries\": 42, \"variants\": 108, \"lowVariants\": 22, \"highVariants\": 33, \"gVariants\": 53, \"hardErrors\": 0, \"warnings\": 18, \"errors\": [], \"warningRows\": [\"태도/g/가루루가X 세트: 출처 URL 없음\", \"쌍검/g/셀레네X 세트: 출처 URL 없음\", \"해머/g/가루루가X 세트: 출처 URL 없음\", \"수렵피리/g/가루루가X 세트: 출처 URL 없음\", \"랜스/g/나르가X 세트: 출처 URL 없음\", \"슬래시액스/g/나르가X 세트: 출처 URL 없음\", \"슬래시액스/g/고어X 세트: 출처 URL 없음\", \"차지액스/g/셀타스X 세트: 출처 URL 없음\", \"조충곤/g/가루루가X 세트: 출처 URL 없음\", \"라이트보우건/g/스타나이트 거너 세트: 출처 URL 없음\", \"라이트보우건/g/가루루가X 거너 세트: 출처 URL 없음\", \"라이트보우건/g/고어X 거너 세트: 출처 URL 없음\", \"헤비보우건/g/진아마기 거너 세트: 출처 URL 없음\", \"헤비보우건/g/가루루가X 거너 세트: 출처 URL 없음\", \"헤비보우건/g/스타나이트 거너 세트: 출처 URL 없음\", \"활/g/스타나이트 거너 세트: 출처 URL 없음\", \"활/g/셀레네X 거너 세트: 출처 URL 없음\", \"활/g/가루루가X 거너 세트: 출처 URL 없음\"]}\n",
+      "stderr": ""
+    },
+    {
+      "cmd": "node tools/benchmark_armor_search_v0.7.7.mjs",
+      "ok": true,
+      "stdout": "{\n  \"armors\": 3119,\n  \"queries\": [\n    \"예리도\",\n    \"고급귀마개\",\n    \"몸통배가\",\n    \"리오\",\n    \"GX\"\n  ],\n  \"oldMsPerSweep\": 1965.99,\n  \"optimizedMsPerSweep\": 4.96,\n  \"speedup\": 396.38,\n  \"sameSampleCounts\": [\n    {\n      \"q\": \"예리도\",\n      \"old\": 123,\n      \"optimized\": 123\n    },\n    {\n      \"q\": \"고급귀마개\",\n      \"old\": 288,\n      \"optimized\": 288\n    },\n    {\n      \"q\": \"몸통배가\",\n      \"old\": 74,\n      \"optimized\": 74\n    },\n    {\n      \"q\": \"리오\",\n      \"old\": 130,\n      \"optimized\": 130\n    },\n    {\n      \"q\": \"GX\",\n      \"old\": 40,\n      \"optimized\": 40\n    }\n  ]\n}\n",
+      "stderr": ""
+    }
+  ],
+  "note": "Full browser E2E suites were executed separately before packaging; this file aggregates their latest results."
+}
