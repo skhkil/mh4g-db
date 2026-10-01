@@ -1,8 +1,8 @@
 {
   "version": "0.7.7-chat4-itemdb1",
-  "generated": "2026-09-16",
-  "itemCount": 1445,
-  "indexedCount": 1301,
+  "generated": "2026-10-01",
+  "itemCount": 1448,
+  "indexedCount": 1304,
   "items": {
     "item_6ef401578a8b": {
       "name": "회복약",
@@ -261767,6 +261767,54 @@
           "method": "강화",
           "count": 3,
           "materials": "노산룡 푸른큰발톱×3 노산룡 큰발톱×3 태고룡골×5 고룡의 대보옥×1"
+        }
+      ]
+    },
+    "item_web_80ed54c174bb": {
+      "name": "빈티지고기티켓",
+      "acquire": [
+        {
+          "type": "quest",
+          "name": "오늘의 특선: 고기",
+          "level": "",
+          "location": "",
+          "objective": "이벤트/에피소드 보상",
+          "questType": "event"
+        }
+      ],
+      "uses": []
+    },
+    "item_web_a5107065c21e": {
+      "name": "축제북악보",
+      "acquire": [
+        {
+          "type": "quest",
+          "name": "태고의 달인: 배북 난타전",
+          "level": "",
+          "location": "",
+          "objective": "이벤트/에피소드 보상",
+          "questType": "event"
+        }
+      ],
+      "uses": []
+    },
+    "item_web_3aedd968c7f2": {
+      "name": "네코트티켓",
+      "acquire": [
+        {
+          "type": "quest",
+          "name": "번외: 코드 퍼플",
+          "level": "",
+          "location": "",
+          "objective": "이벤트/에피소드 보상",
+          "questType": "event"
+        }
+      ],
+      "uses": [
+        {
+          "type": "note",
+          "result": "Felcote Coat Palico Armor 제작 소재",
+          "note": "Felcote Ticket x4"
         }
       ]
     }

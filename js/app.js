@@ -1968,9 +1968,18 @@ function questMajorRewardNames(q){
   const special=data.eventMajorRewards?.quests?.[q.id]?.rewardLabels||[];
   return [...new Set([...(special||[]),...(questRef(q).rewardItems||[])])];
 }
+function rewardEntityLink(name){
+  const key=String(name||"").trim();if(!key)return "-";
+  if(itemByName.has(key)){const item=itemByName.get(key);return itemLink(key,item?.name||key);}
+  const armor=(data.armors||[]).find(x=>[x.name,x.nameJa,x.nameEn,...(x.aliases||[])].some(v=>String(v||"").trim()===key));
+  if(armor)return refButton(armor.name||key,"armor",{name:armor.name||key});
+  const weapon=(data.weapons||[]).find(x=>[x.name,x.nameJa,x.nameEn,x.mh4uName,x.mh4uNameJa,...(x.aliases||[])].some(v=>String(v||"").trim()===key));
+  if(weapon){const label=String(weapon.name||"").includes("�")?key:(weapon.name||key);return refButton(label,"weapon",{name:weapon.name||key,weapontype:weapon.weaponType||"all"});}
+  return esc(key);
+}
 function questRewardLinks(q){
   const names=questMajorRewardNames(q);if(!names.length)return "-";
-  const shown=names.slice(0,4).map(n=>itemLink(n)).join(' <span class="muted">·</span> ');
+  const shown=names.slice(0,4).map(n=>rewardEntityLink(n)).join(' <span class="muted">·</span> ');
   return shown+(names.length>4?` <span class="quest-more-rewards" title="${esc(names.slice(4).join(" · "))}">+${names.length-4}</span>`:"");
 }
 function questTypeFilterMatch(q,v){

@@ -23958,5 +23958,65 @@
     "mh4uId": 1118,
     "itemType": "Flesh",
     "itemSubType": ""
+  },
+  {
+    "id": "item_web_80ed54c174bb",
+    "name": "빈티지고기티켓",
+    "nameJa": "ビンテージお肉券",
+    "nameEn": "Vintage Meat Ticket",
+    "aliases": [
+      "Vintage Meat Ticket",
+      "ビンテージお肉券"
+    ],
+    "rare": 5,
+    "maxStack": 99,
+    "buyPrice": "-",
+    "sellPrice": "0z",
+    "acquire": "이벤트 퀘스트",
+    "availability": "이벤트 ★4 '오늘의 특선: 고기' 보상",
+    "note": "MH4U 이벤트 전용 티켓. 프로젝트 한글 표기는 일본명 의미를 기준으로 정리했으며 한국판 공식 표기 여부는 확실하지 않음.",
+    "source": "Monster Hunter Wiki MH4U Item List / Event Quests",
+    "itemType": "Event",
+    "itemSubType": "Ticket/Material"
+  },
+  {
+    "id": "item_web_a5107065c21e",
+    "name": "축제북악보",
+    "nameJa": "お祭太鼓の譜面",
+    "nameEn": "Festival Drum Music",
+    "aliases": [
+      "Festival Drum Music",
+      "お祭太鼓の譜面"
+    ],
+    "rare": 5,
+    "maxStack": 99,
+    "buyPrice": "-",
+    "sellPrice": "0z",
+    "acquire": "이벤트 퀘스트",
+    "availability": "이벤트 G★1 '태고의 달인: 배북 난타전' 보상",
+    "note": "MH4U 이벤트 전용 제작 소재. 프로젝트 한글 표기는 일본명 의미를 기준으로 정리했으며 한국판 공식 표기 여부는 확실하지 않음.",
+    "source": "Kiranico MH4U / Monster Hunter Wiki MH4U Item List",
+    "itemType": "Event",
+    "itemSubType": "Ticket/Material"
+  },
+  {
+    "id": "item_web_3aedd968c7f2",
+    "name": "네코트티켓",
+    "nameJa": "ネコートチケット",
+    "nameEn": "Felcote Ticket",
+    "aliases": [
+      "Felcote Ticket",
+      "ネコートチケット"
+    ],
+    "rare": 8,
+    "maxStack": 99,
+    "buyPrice": "-",
+    "sellPrice": "0z",
+    "acquire": "에피소드 퀘스트",
+    "availability": "에피소드 'Code 16010' 보상",
+    "note": "Felcote Coat 동반자 방어구 제작용 티켓. MH4U 영문명 Felcote Ticket.",
+    "source": "Monster Hunter Wiki MH4U Item List / Event Quests / Palico Armor",
+    "itemType": "Event",
+    "itemSubType": "Ticket/Material"
   }
 ]

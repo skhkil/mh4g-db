@@ -1,0 +1,16 @@
+{
+  "version": "ui-reward-hotfix2",
+  "generatedAt": "2026-10-01T05:11:04",
+  "checks": {
+    "jsSyntax": true,
+    "charmLayout": true,
+    "eventRewardEntityLinks": true,
+    "uiRewards": true,
+    "autoBuildStage3_5": true,
+    "complexSearch": true,
+    "backNavStability": true,
+    "autoRankPcMobileFocused": true
+  },
+  "note": "hotfix20 full PC3+mobile1 rerun hit environment Playwright EPIPE/timeout; focused PC1+mobile1 rerun passed.",
+  "ok": true
+}
