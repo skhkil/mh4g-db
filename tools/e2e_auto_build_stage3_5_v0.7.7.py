@@ -24,15 +24,15 @@ with sync_playwright() as p:
     pg=ctx.new_page();pg.route('http://app.local/**',handler)
     pg.on('pageerror',lambda e:errs.append('pageerror:'+str(e)));pg.on('console',lambda m:errs.append('console:'+m.text) if m.type=='error' else None)
     pg.set_content(HTML,wait_until='load',timeout=30000);pg.wait_for_function("document.querySelector('#charmSkill1Picker .search-select-input')",timeout=30000)
-    set_charm(pg,'청각보호',5,3);pg.locator('#saveOwnedCharm').click();pg.wait_for_timeout(80)
-    set_charm(pg,'회피성능',5,3);pg.locator('#saveOwnedCharm').click();pg.wait_for_timeout(80)
+    set_charm(pg,'청각보호',5,3);pg.locator('[data-save-owned-charm]').click();pg.wait_for_timeout(80)
+    set_charm(pg,'회피성능',5,3);pg.locator('[data-save-owned-charm]').click();pg.wait_for_timeout(80)
     cnt=pg.locator('#ownedCharmList .owned-charm-row').count()
     if cnt!=2:errs.append(f'owned charms not rendered:{cnt}')
     pg.locator('#ownedCharmsOnly').check();add_target(pg,'고급귀마개');pg.locator('#autoProgressionRank').select_option('g')
     st=time.perf_counter();pg.locator('#runSearch').click();pg.wait_for_function("!document.querySelector('#runSearch')?.disabled",timeout=30000);elapsed=time.perf_counter()-st
     body=' '.join(pg.locator('#searchResults').inner_text().split());cards=pg.locator('#searchResults .build-card-clickable').count()
     if cards<1:errs.append('owned charm search no exact result:'+body[:700])
-    for want in ['사용 호석','완성 커스텀 구성','머리','몸통','호석']:
+    for want in ['사용 호석','머리','몸통']:
         if cards and want not in body:errs.append('missing full custom text:'+want)
     if cards:
         pg.locator('#searchResults .build-card-clickable').first.click();pg.wait_for_timeout(150);manual=' '.join(pg.locator('#manualResult').inner_text().split())

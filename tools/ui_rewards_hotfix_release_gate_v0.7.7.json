@@ -1,0 +1,77 @@
+{
+  "ok": true,
+  "version": "0.7.7-chat4-ui-reward-hotfix1",
+  "codeMtime": 1790824683.793848,
+  "checks": [
+    {
+      "name": "app_syntax",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "loader_syntax",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "engine_syntax",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "event_rewards_complete",
+      "ok": true,
+      "detail": "events=96, missing=0 []"
+    },
+    {
+      "name": "decoration_unlock_index",
+      "ok": true,
+      "detail": "decos=199, unlockRecords=199"
+    },
+    {
+      "name": "owned_charm_ui_moved",
+      "ok": true,
+      "detail": "old panel absent / inline save present"
+    },
+    {
+      "name": "auto_weapon_type_independent",
+      "ok": true,
+      "detail": "separate weapon type + actual weapon attach"
+    },
+    {
+      "name": "compact_result_cleanup",
+      "ok": true,
+      "detail": "duplicate box absent / compact 3 columns"
+    },
+    {
+      "name": "event_notes_column_removed",
+      "ok": true,
+      "detail": "event header without notes"
+    },
+    {
+      "name": "docs_updated",
+      "ok": true,
+      "detail": "cache/docs current"
+    },
+    {
+      "name": "fresh:ui_rewards_hotfix_e2e_v0.7.7.json",
+      "ok": true,
+      "detail": "report_ok=True, fresh=True"
+    },
+    {
+      "name": "fresh:auto_build_advanced_release_gate_v0.7.7.json",
+      "ok": true,
+      "detail": "report_ok=True, fresh=True"
+    },
+    {
+      "name": "fresh:hotfix17_stability_e2e_v0.7.7.json",
+      "ok": true,
+      "detail": "report_ok=True, fresh=True"
+    },
+    {
+      "name": "fresh:hotfix15_backnav_e2e_v0.7.7.json",
+      "ok": true,
+      "detail": "report_ok=True, fresh=True"
+    }
+  ]
+}

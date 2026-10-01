@@ -1,10 +1,11 @@
-const DATA_VERSION = "0.7.7-chat4-auto-build-advanced-final";
+const DATA_VERSION = "0.7.7-chat4-ui-reward-hotfix1";
 
 const FULL_FILES = {
   skills:"./data/skills.json",
   armors:"./data/armors.json",
   armorSets:"./data/armor_sets.json",
   decorations:"./data/decorations.json",
+  decorationUnlocks:"./data/decoration_unlocks.json",eventMajorRewards:"./data/event_major_rewards.json",
   weapons:"./data/weapons.json",
   weaponSummary:"./data/weapon_summary.json",
   melodies:"./data/melodies.json",
@@ -45,7 +46,7 @@ export const FULL_DATA_KEYS = Object.freeze(Object.keys(FULL_FILES));
 const requestCache = new Map();
 
 function emptyValue(key){
-  return (key==="meta"||key==="siteInfo"||key==="weaponSkillPriorities"||key.endsWith("Index"))?{}:[];
+  return (key==="meta"||key==="siteInfo"||key==="weaponSkillPriorities"||key==="decorationUnlocks"||key==="eventMajorRewards"||key.endsWith("Index"))?{}:[];
 }
 function versioned(url){
   return `${url}?v=${DATA_VERSION}`;
@@ -122,7 +123,7 @@ export function loadData(){
 export function classifyImported(name,json){
   const lower=name.toLowerCase();
   const rules=[
-    ["armor_sets","armorSets"],["armor","armors"],["decor","decorations"],["weapon_summary","weaponSummary"],
+    ["armor_sets","armorSets"],["armor","armors"],["decoration_unlocks","decorationUnlocks"],["event_major_rewards","eventMajorRewards"],["decor","decorations"],["weapon_summary","weaponSummary"],
     ["weapon","weapons"],["skill_reference_index","skillReferenceIndex"],["skill","skills"],["item_reference_index","itemReferenceIndex"],["item","items"],["meal","meals"],
     ["monster_summary","monsterSummary"],["monster_details","monsterDetails"],["monster_rewards","monsterRewards"],["monster_reference_index","monsterReferenceIndex"],
     ["dragon_exchange","dragonExchange"],["dragon_sell","dragonSell"],["dragon_increase","dragonIncrease"],

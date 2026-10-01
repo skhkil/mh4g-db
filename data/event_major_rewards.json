@@ -1,0 +1,274 @@
+{
+  "version": "0.7.7-chat4-event-major-reward1",
+  "generated": "2026-10-01",
+  "note": "이벤트/에피소드 퀘스트의 고유 티켓·콜라보 소재 등 핵심 보상을 우선 표시한다. 고유 보상이 없는 일반 소재형 이벤트는 확인된 메인 보상에서 대표 소재를 표시한다.",
+  "quests": {
+    "event-high-011": {
+      "rewardLabels": [
+        "Vintage Meat Ticket"
+      ],
+      "source": "MH4U Event Quests (Monster Hunter Wiki/Fandom)"
+    },
+    "event-high-029": {
+      "rewardLabels": [
+        "은화룡 비늘+",
+        "폭염주머니",
+        "은화룡 견갑각",
+        "화룡 홍옥"
+      ],
+      "source": "Kiranico MH4U Tower of Trouble main rewards"
+    },
+    "event-high-030": {
+      "rewardLabels": [
+        "금화룡 비늘+",
+        "폭염주머니",
+        "화룡 황액",
+        "자화룡 홍옥"
+      ],
+      "source": "Kiranico MH4U Royal Restoration main rewards"
+    },
+    "event-g-036": {
+      "rewardLabels": [
+        "Festival Drum Music"
+      ],
+      "source": "MH4U Event Quests (Monster Hunter Wiki/Fandom)"
+    },
+    "event-g-037": {
+      "rewardLabels": [
+        "대장로티켓",
+        "은알",
+        "금알"
+      ],
+      "source": "MH4U Event Quests (Monster Hunter Wiki/Fandom)"
+    },
+    "event-g-038": {
+      "rewardLabels": [
+        "대장로티켓"
+      ],
+      "source": "MH4U Event Quests (Monster Hunter Wiki/Fandom)"
+    },
+    "event-g-039": {
+      "rewardLabels": [
+        "대장로티켓"
+      ],
+      "source": "MH4U Event Quests (Monster Hunter Wiki/Fandom)"
+    },
+    "event-g-040": {
+      "rewardLabels": [
+        "몬헌부응원가"
+      ],
+      "source": "MH4U Event Quests (Monster Hunter Wiki/Fandom)"
+    },
+    "event-g-041": {
+      "rewardLabels": [
+        "대장로티켓"
+      ],
+      "source": "MH4U Event Quests (Monster Hunter Wiki/Fandom)"
+    },
+    "event-g-042": {
+      "rewardLabels": [
+        "대장로티켓"
+      ],
+      "source": "MH4U Event Quests (Monster Hunter Wiki/Fandom)"
+    },
+    "event-g-043": {
+      "rewardLabels": [
+        "헌터모집공지",
+        "대장로티켓"
+      ],
+      "source": "MH4U Event Quests (Monster Hunter Wiki/Fandom)"
+    },
+    "event-g-044": {
+      "rewardLabels": [
+        "대장로티켓"
+      ],
+      "source": "MH4U Event Quests (Monster Hunter Wiki/Fandom)"
+    },
+    "event-g-045": {
+      "rewardLabels": [
+        "몬헌부회보지",
+        "대장로티켓"
+      ],
+      "source": "MH4U Event Quests (Monster Hunter Wiki/Fandom)"
+    },
+    "event-g-046": {
+      "rewardLabels": [
+        "대장로티켓"
+      ],
+      "source": "MH4U Event Quests (Monster Hunter Wiki/Fandom)"
+    },
+    "event-g-047": {
+      "rewardLabels": [
+        "페이크카탈로그",
+        "대장로티켓"
+      ],
+      "source": "MH4U Event Quests (Monster Hunter Wiki/Fandom)"
+    },
+    "event-g-048": {
+      "rewardLabels": [
+        "대장로티켓"
+      ],
+      "source": "MH4U Event Quests (Monster Hunter Wiki/Fandom)"
+    },
+    "event-g-049": {
+      "rewardLabels": [
+        "대장로티켓"
+      ],
+      "source": "MH4U Event Quests (Monster Hunter Wiki/Fandom)"
+    },
+    "event-g-050": {
+      "rewardLabels": [
+        "대장로티켓"
+      ],
+      "source": "MH4U Event Quests (Monster Hunter Wiki/Fandom)"
+    },
+    "event-g-056": {
+      "rewardLabels": [
+        "대장로티켓"
+      ],
+      "source": "MH4U Event Quests (Monster Hunter Wiki/Fandom)"
+    },
+    "event-g-057": {
+      "rewardLabels": [
+        "대장로티켓"
+      ],
+      "source": "MH4U Event Quests (Monster Hunter Wiki/Fandom)"
+    },
+    "event-g-058": {
+      "rewardLabels": [
+        "대장로티켓"
+      ],
+      "source": "MH4U Event Quests (Monster Hunter Wiki/Fandom)"
+    },
+    "event-g-059": {
+      "rewardLabels": [
+        "영웅의증표",
+        "대장로티켓"
+      ],
+      "source": "MH4U Event Quests (Monster Hunter Wiki/Fandom)"
+    },
+    "event-g-060": {
+      "rewardLabels": [
+        "대장로티켓"
+      ],
+      "source": "MH4U Event Quests (Monster Hunter Wiki/Fandom)"
+    },
+    "event-g-062": {
+      "rewardLabels": [
+        "대장로티켓S"
+      ],
+      "source": "MH4U Event Quests (Monster Hunter Wiki/Fandom)"
+    },
+    "event-g-063": {
+      "rewardLabels": [
+        "대장로티켓S"
+      ],
+      "source": "MH4U Event Quests (Monster Hunter Wiki/Fandom)"
+    },
+    "event-g-064": {
+      "rewardLabels": [
+        "대장로티켓S"
+      ],
+      "source": "MH4U Event Quests (Monster Hunter Wiki/Fandom)"
+    },
+    "event-g-065": {
+      "rewardLabels": [
+        "대장로티켓"
+      ],
+      "source": "MH4U Event Quests (Monster Hunter Wiki/Fandom)"
+    },
+    "event-g-066": {
+      "rewardLabels": [
+        "대장로티켓S"
+      ],
+      "source": "MH4U Event Quests (Monster Hunter Wiki/Fandom)"
+    },
+    "event-g-067": {
+      "rewardLabels": [
+        "대장로티켓S"
+      ],
+      "source": "MH4U Event Quests (Monster Hunter Wiki/Fandom)"
+    },
+    "event-g-068": {
+      "rewardLabels": [
+        "대장로티켓S"
+      ],
+      "source": "MH4U Event Quests (Monster Hunter Wiki/Fandom)"
+    },
+    "event-g-069": {
+      "rewardLabels": [
+        "대장로티켓S"
+      ],
+      "source": "MH4U Event Quests (Monster Hunter Wiki/Fandom)"
+    },
+    "event-g-070": {
+      "rewardLabels": [
+        "대장로티켓S"
+      ],
+      "source": "MH4U Event Quests (Monster Hunter Wiki/Fandom)"
+    },
+    "event-g-072": {
+      "rewardLabels": [
+        "대장로티켓S"
+      ],
+      "source": "MH4U Event Quests (Monster Hunter Wiki/Fandom)"
+    },
+    "event-g-073": {
+      "rewardLabels": [
+        "대장로티켓S"
+      ],
+      "source": "MH4U Event Quests (Monster Hunter Wiki/Fandom)"
+    },
+    "event-g-074": {
+      "rewardLabels": [
+        "헌터티켓",
+        "대장로티켓S"
+      ],
+      "source": "MH4U Event Quests (Monster Hunter Wiki/Fandom)"
+    },
+    "event-g-075": {
+      "rewardLabels": [
+        "대장로티켓"
+      ],
+      "source": "MH4U Event Quests (Monster Hunter Wiki/Fandom)"
+    },
+    "event-episodic-082": {
+      "rewardLabels": [
+        "Felcote Ticket"
+      ],
+      "source": "MH4U Event Quests (Monster Hunter Wiki/Fandom)"
+    },
+    "event-episodic-083": {
+      "rewardLabels": [
+        "Felcote Ticket"
+      ],
+      "source": "MH4U Event Quests (Monster Hunter Wiki/Fandom)"
+    },
+    "event-episodic-084": {
+      "rewardLabels": [
+        "Hawkeye Earring",
+        "Felcote Ticket"
+      ],
+      "source": "MH4U Event Quests (Monster Hunter Wiki/Fandom)"
+    },
+    "event-episodic-094": {
+      "rewardLabels": [
+        "점보티켓"
+      ],
+      "source": "MH4U Event Quests (Monster Hunter Wiki/Fandom)"
+    },
+    "event-episodic-095": {
+      "rewardLabels": [
+        "점보티켓"
+      ],
+      "source": "MH4U Event Quests (Monster Hunter Wiki/Fandom)"
+    },
+    "event-episodic-096": {
+      "rewardLabels": [
+        "Pride of Harth",
+        "점보티켓"
+      ],
+      "source": "MH4U Event Quests (Monster Hunter Wiki/Fandom)"
+    }
+  }
+}

@@ -17,7 +17,7 @@
   },
   "failures": [],
   "base": {
-    "elapsedMs": 4726,
+    "elapsedMs": 4771,
     "ticks": 20,
     "progressEvents": 21,
     "stats": {
@@ -30,7 +30,7 @@
       "targetCount": 4,
       "profile": "complex4",
       "timedOut": false,
-      "elapsedMs": 4726
+      "elapsedMs": 4770
     },
     "exact": 0,
     "nearMiss": [
@@ -44,18 +44,18 @@
   },
   "assisted": {
     "condition": "회피성능 +5 호석 / 호석 3슬롯 / 무기 3슬롯",
-    "elapsedMs": 6123,
+    "elapsedMs": 6118,
     "stats": {
       "eligible": 1613,
       "finalists": 80,
-      "checkedFinalists": 43,
+      "checkedFinalists": 44,
       "rankedPool": 9,
       "beam": 3000,
       "approximate": true,
       "targetCount": 4,
       "profile": "complex4",
       "timedOut": true,
-      "elapsedMs": 6123
+      "elapsedMs": 6118
     },
     "exact": 5,
     "top": [

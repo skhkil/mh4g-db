@@ -1,7 +1,7 @@
-import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,loadArmorProgression,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-auto-build-advanced-final";
-import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-auto-build-advanced-final";
+import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,loadArmorProgression,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-ui-reward-hotfix1";
+import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-ui-reward-hotfix1";
 
-let data={skills:[],armors:[],armorSets:[],decorations:[],weapons:[],weaponSummary:[],melodies:[],items:[],itemReferenceIndex:{items:{}},skillReferenceIndex:{items:{},categories:[]},meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],monsterReferenceIndex:{items:{}},dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],questReferenceIndex:{quests:{}},siteInfo:{},meta:{},weaponSkillPriorities:{weapons:{}}};
+let data={skills:[],armors:[],armorSets:[],decorations:[],decorationUnlocks:{decorations:{}},eventMajorRewards:{quests:{}},weapons:[],weaponSummary:[],melodies:[],items:[],itemReferenceIndex:{items:{}},skillReferenceIndex:{items:{},categories:[]},meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],monsterReferenceIndex:{items:{}},dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],questReferenceIndex:{quests:{}},siteInfo:{},meta:{},weaponSkillPriorities:{weapons:{}}};
 let targets=[];
 let latestAutoSearchResults=[];
 let currentPage="simulator";
@@ -25,11 +25,11 @@ const WEAPON_SKILL_PRIORITY_NAMES={
   "헤비보우건":{"관통탄강화":5,"통상탄강화":4,"반동":4,"회피거리":4,"장전속도":3},
   "활":{"차지단축":5,"통상탄강화":4,"산탄강화":4,"관통탄강화":4,"장전수":2}
 };
-function weaponPreferredSkillWeights(hunterType="blade"){const type=selectedWeapon()?.weaponType||uiState.manualWeaponType;const src=(type&&type!=="all"?(data.weaponSkillPriorities?.weapons?.[type]||WEAPON_SKILL_PRIORITY_NAMES[type]):null)||data.weaponSkillPriorities?.hunterTypeDefaults?.[hunterType]||{};const byName=new Map((data.skills||[]).map(x=>[x.name,x.id]));return Object.fromEntries(Object.entries(src).map(([name,w])=>[byName.get(name),w]).filter(([id])=>id))}
+function weaponPreferredSkillWeights(hunterType="blade"){const type=uiState.autoWeaponType||"";const src=(type&&type!=="all"?(data.weaponSkillPriorities?.weapons?.[type]||WEAPON_SKILL_PRIORITY_NAMES[type]):null)||data.weaponSkillPriorities?.hunterTypeDefaults?.[hunterType]||{};const byName=new Map((data.skills||[]).map(x=>[x.name,x.id]));return Object.fromEntries(Object.entries(src).map(([name,w])=>[byName.get(name),w]).filter(([id])=>id))}
 
 const MANUAL_CONTAINERS=["weapon",...PARTS,"charm"];
 const uiState={
-  targetActivation:"", manualSet:"", manualWeapon:"", manualWeaponType:"all", manualWeaponRank:"all", manualWeaponElement:"all", manualWeaponSlots:"all",
+  targetActivation:"", autoWeaponType:"대검", ownedCharmsOnly:false, manualSet:"", manualWeapon:"", manualWeaponType:"all", manualWeaponRank:"all", manualWeaponElement:"all", manualWeaponSlots:"all",
   charmSkill1:"",charmPoint1:0,charmSkill2:"",charmPoint2:0,charmSlots:0,
   manual:Object.fromEntries(PARTS.map(p=>[p,""])),
   manualDecorations:Object.fromEntries(MANUAL_CONTAINERS.map(c=>[c,[]]))
@@ -45,7 +45,7 @@ let restoringHistory=false;
 let historyRestoreToken=0;
 try{history.scrollRestoration="manual"}catch{}
 
-const APP_VERSION="0.7.7-chat4-auto-build-advanced-final";
+const APP_VERSION="0.7.7-chat4-ui-reward-hotfix1";
 const boundEventGroups=new Set();
 let appEventsBound=false;
 function ensureRuntimeStatus(){
@@ -400,6 +400,12 @@ function closePickers(exceptRoot=null){
 
 function fillSelectors(){
   mountSearchSelect("#targetSkillPicker",activationOptions(),{value:uiState.targetActivation,placeholder:"발동 스킬·효과 검색 (예: 회심, 귀마개)",emptyLabel:"선택 안 함",onChange:v=>uiState.targetActivation=v});
+  if($("#autoWeaponType")){
+    $("#autoWeaponType").innerHTML=WEAPON_TYPES.filter(t=>data.weapons.some(w=>w.weaponType===t)).map(t=>`<option value="${esc(t)}">${esc(t)}</option>`).join("");
+    if(!WEAPON_TYPES.includes(uiState.autoWeaponType))uiState.autoWeaponType="대검";
+    $("#autoWeaponType").value=uiState.autoWeaponType;
+    $("#autoWeaponType").onchange=e=>{uiState.autoWeaponType=e.target.value||"대검"};
+  }
   const currentType=$("#weaponTypeFilter")?.value||"all";
   if($("#weaponTypeFilter")){
     $("#weaponTypeFilter").innerHTML='<option value="all">전체 무기</option>'+WEAPON_TYPES.filter(t=>data.weapons.some(w=>w.weaponType===t)).map(t=>`<option value="${esc(t)}">${esc(t)}</option>`).join("");
@@ -784,7 +790,7 @@ function renderManualSelectors(){
   box.innerHTML=
     `<div class="manual-equipment-card weapon-card"><div class="manual-equipment-main"><span class="equipment-label">무기</span><div class="manual-weapon-tools"><div class="manual-weapon-filters"><select id="manualWeaponTypeFilter" aria-label="시뮬레이터 무기 종류"><option value="all">전체 무기</option>${manualWeaponTypeOptions().map(t=>`<option value="${esc(t)}">${esc(t)}</option>`).join("")}</select><select id="manualWeaponRankFilter" aria-label="무기 등급"><option value="all">전체 등급</option><option value="g">G급</option><option value="high">상위</option><option value="low">하위</option></select><select id="manualWeaponElementFilter" aria-label="무기 속성"><option value="all">전체 속성</option><option value="불">불</option><option value="물">물</option><option value="번개">번개</option><option value="얼음">얼음</option><option value="용">용</option><option value="독">독</option><option value="마비">마비</option><option value="수면">수면</option><option value="폭파">폭파</option><option value="none">무속성</option></select><select id="manualWeaponSlotFilter" aria-label="무기 슬롯"><option value="all">전체 슬롯</option><option value="3">슬롯 3</option><option value="2">슬롯 2</option><option value="1">슬롯 1</option><option value="0">슬롯 0</option></select><button type="button" id="manualWeaponSearchButton" class="manual-weapon-search-btn">검색</button></div><div id="manual-weapon" class="search-select manual-weapon-results"></div></div>${skillPointsHtml(containerSkillPoints("weapon"),"equipment-skill-points")}</div><div id="deco-editor-weapon" class="manual-deco-editor"></div></div>`+
     PARTS.map(p=>equipmentCard(PART_NAMES[p],p,`manual-${p}`)).join("")+
-    `<div class="manual-equipment-card charm-card"><div class="manual-equipment-main charm-main"><span class="equipment-label">호석</span><div class="manual-charm-inline"><span class="inline-field-label">스킬1</span><div id="charmSkill1Picker" class="search-select compact"></div><input id="charmPoint1" class="charm-point" type="number" min="-20" max="20" value="${uiState.charmPoint1}" /><span class="inline-field-label">스킬2</span><div id="charmSkill2Picker" class="search-select compact"></div><input id="charmPoint2" class="charm-point" type="number" min="-20" max="20" value="${uiState.charmPoint2}" /><span class="inline-field-label">슬롯</span><select id="charmSlots" class="charm-slot-select"><option value="0">---</option><option value="1">O--</option><option value="2">OO-</option><option value="3">OOO</option></select></div>${skillPointsHtml(containerSkillPoints("charm"),"equipment-skill-points")}</div><div id="deco-editor-charm" class="manual-deco-editor"></div></div>`;
+    `<div class="manual-equipment-card charm-card"><div class="manual-equipment-main charm-main"><span class="equipment-label">호석</span><div class="manual-charm-inline"><span class="inline-field-label">스킬1</span><div id="charmSkill1Picker" class="search-select compact"></div><input id="charmPoint1" class="charm-point" type="number" min="-20" max="20" value="${uiState.charmPoint1}" /><span class="inline-field-label">스킬2</span><div id="charmSkill2Picker" class="search-select compact"></div><input id="charmPoint2" class="charm-point" type="number" min="-20" max="20" value="${uiState.charmPoint2}" /><span class="inline-field-label">슬롯</span><select id="charmSlots" class="charm-slot-select"><option value="0">---</option><option value="1">O--</option><option value="2">OO-</option><option value="3">OOO</option></select></div>${skillPointsHtml(containerSkillPoints("charm"),"equipment-skill-points")}<div class="owned-charm-inline"><div class="owned-charm-controls"><button type="button" class="ghost small" data-save-owned-charm>현재 호석 저장</button><label><input id="ownedCharmsOnly" type="checkbox" ${uiState.ownedCharmsOnly?"checked":""}/> 자동조합에서 보유 호석만 사용</label></div><div id="ownedCharmList" class="owned-charm-list"></div></div></div><div id="deco-editor-charm" class="manual-deco-editor"></div></div>`;
 
   const manualTypeEl=$("#manualWeaponTypeFilter");
   const manualRankEl=$("#manualWeaponRankFilter");
@@ -819,26 +825,26 @@ function renderManualSelectors(){
   $("#charmPoint1").oninput=e=>{uiState.charmPoint1=Number(e.target.value||0);renderManualResult()};
   $("#charmPoint2").oninput=e=>{uiState.charmPoint2=Number(e.target.value||0);renderManualResult()};
   $("#charmSlots").value=String(uiState.charmSlots||0);$("#charmSlots").onchange=e=>{uiState.charmSlots=Number(e.target.value||0);pruneDecorations("charm");refreshManualContainer("charm");renderManualResult()};
+  if($("#ownedCharmsOnly"))$("#ownedCharmsOnly").onchange=e=>{uiState.ownedCharmsOnly=!!e.target.checked};
+  renderOwnedCharms();
   MANUAL_CONTAINERS.forEach(mountDecorationEditor);
 }
 
-function renderSkillResult(calc){
+function renderSkillResult(calc,{compact=false}={}){
   const active=calc.activated.length?calc.activated.map(a=>{const st=currentSkillStatus(a.skillId,a.points);return `<span class="skill-active ${a.threshold<0?"skill-negative":""}" title="${esc(st.effect)}">${esc(a.name)}</span>`}).join(""):'<span class="muted">발동 스킬 없음</span>';
-  const rows=Object.entries(calc.points).sort((a,b)=>{
-    const sa=currentSkillStatus(a[0],a[1]),sb=currentSkillStatus(b[0],b[1]);
-    const order={active:0,pending:1,negative:2};return order[sa.tone]-order[sb.tone]||Number(b[1])-Number(a[1])||skillName(a[0]).localeCompare(skillName(b[0]),"ko");
-  }).map(([id,p])=>{
-    const st=currentSkillStatus(id,p),shown=st.active||st.next;
-    const trigger=shown?`${Number(shown.points)>0?"+":""}${shown.points}P`:"";
-    let applied="미발동",effect="발동 조건이 없습니다.";
+  const rows=Object.entries(calc.points).sort((a,b)=>skillName(a[0]).localeCompare(skillName(b[0]),"ko")).map(([id,p])=>{
+    const st=currentSkillStatus(id,p);
+    const trigger=st.active?`${st.active.threshold>0?"+":""}${st.active.threshold}`:(st.next?`${st.next.threshold>0?"+":""}${st.next.threshold}`:"-");
+    let applied="",effect="";
     if(st.active){applied=`<strong>${esc(st.active.name)}</strong><small>${trigger} 발동</small>`;effect=st.effect||"효과 설명 없음"}
     else if(st.next&&st.tone==="pending"){applied=`<span>미발동</span><small>다음 ${trigger} → ${esc(st.next.name)}</small>`;effect=st.effect?`다음 효과: ${st.effect}`:"다음 발동 효과 설명 없음"}
-    else if(st.next&&st.tone==="negative"){applied=`<span>마이너스 포인트</span><small>${trigger} 이하 → ${esc(st.next.name)}</small>`;effect=st.effect?`주의: ${st.effect}`:"마이너스 포인트"}
-    else if(st.tone==="negative"){applied="<span>마이너스 포인트</span>";effect="현재 스킬 포인트가 음수입니다."}
-    return `<tr class="skill-result-row skill-state-${st.tone}"><td class="skill-tree-cell">${esc(skillName(id))}</td><td class="skill-point-cell"><span class="skill-point-badge">${p>0?"+":""}${p}</span></td><td class="skill-activation-cell">${applied}</td><td class="skill-effect-cell">${esc(effect)}</td></tr>`;
+    else{applied='<span>미발동</span>';effect=st.effect||"-"}
+    return compact?`<tr><td>${skillLink(id,skillName(id))}</td><td>${Number(p)>0?"+":""}${Number(p)}</td><td>${applied}</td></tr>`:`<tr><td>${skillLink(id,skillName(id))}</td><td>${Number(p)>0?"+":""}${Number(p)}</td><td>${applied}</td><td>${esc(effect)}</td></tr>`;
   }).join("");
+  if(compact)return `<div class="skill-summary">${active}</div><div class="muted">방어력 ${calc.defense} · ${resistText(calc.resist)} · 몸통배가 ${calc.torsoUpCount}개</div><div class="skill-result-table-wrap compact"><table class="skill-points"><colgroup><col class="col-tree"><col class="col-point"><col class="col-active"></colgroup><thead><tr><th>스킬 계통</th><th>포인트</th><th>발동 스킬</th></tr></thead><tbody>${rows||'<tr><td colspan="3" class="skill-empty-row">포인트 없음</td></tr>'}</tbody></table></div>`;
   return `<div class="skill-summary">${active}</div><div class="muted">방어력 ${calc.defense} · ${resistText(calc.resist)} · 몸통배가 ${calc.torsoUpCount}개</div><div class="skill-result-table-wrap"><table class="skill-points"><colgroup><col class="col-tree"><col class="col-point"><col class="col-active"><col class="col-effect"></colgroup><thead><tr><th>스킬 계통</th><th>포인트</th><th>발동 스킬</th><th>효과</th></tr></thead><tbody>${rows||'<tr><td colspan="4" class="skill-empty-row">포인트 없음</td></tr>'}</tbody></table></div>`;
 }
+
 function manualLoadoutSummary(){
   const w=selectedWeapon();
   const torsoUpCount=$("#includeTorsoUp")?.checked!==false?selectedArmors().filter(a=>a?.part!=="body"&&a?.torsoUp).length:0;
@@ -869,27 +875,27 @@ function renderTargets(){
   box.className="chip-list";const opts=activationOptions();box.innerHTML=targets.map(id=>{const a=opts.find(x=>x.value===id);return `<span class="chip">${esc(a?.name||id)} <button data-remove-target="${esc(id)}">×</button></span>`}).join("");
   $$('[data-remove-target]').forEach(b=>b.onclick=()=>{targets=targets.filter(x=>x!==b.dataset.removeTarget);renderTargets()});
 }
-function buildPlacementPlanHtml(b){
-  const by=Object.fromEntries(MANUAL_CONTAINERS.map(c=>[c,[]]));
-  for(const p of b.decorations||[]){const id=typeof p.deco==="string"?p.deco:p.deco?.id;const d=decorationByIdMap.get(id);if(by[p.container])by[p.container].push(d?.name||id)}
-  const rows=[];
-  rows.push(`<div><b>무기</b><span>${esc(selectedWeapon()?.name||"미선택")} ${slotsText(selectedWeapon()?.slots||0)}${by.weapon.length?` · ${esc(by.weapon.join(" + "))}`:""}</span></div>`);
-  for(const part of PARTS){const a=b.armors.find(x=>x.part===part);rows.push(`<div><b>${PART_NAMES[part]}</b><span>${esc(a?.name||"-")} ${slotsText(a?.slots||0)}${by[part].length?` · ${esc(by[part].join(" + "))}`:""}</span></div>`)}
-  const c=b.searchCharm||charm();rows.push(`<div><b>호석</b><span>${esc(charmLabel(c))}${by.charm.length?` · ${esc(by.charm.join(" + "))}`:""}</span></div>`);
-  return `<div class="build-resource-plan"><div class="build-resource-plan-title">완성 커스텀 구성</div>${rows.join("")}</div>`;
-}
-
 function renderBuildCard(b,i){
   const decolines={};for(const p of b.decorations){const did=typeof p.deco==="string"?p.deco:p.deco?.id;const key=`${p.container}:${did}`;decolines[key]=(decolines[key]||0)+1}
   const decoText=Object.entries(decolines).map(([key,n])=>{const [container,id]=key.split(":"),d=data.decorations.find(x=>x.id===id),label={weapon:"무기",head:"머리",body:"몸통",arms:"팔",waist:"허리",legs:"다리",charm:"호석"}[container]||container;return `${label} ${d?.name||id} ×${n}`}).join(" · ");
   const resistTotal=Object.values(b.calc?.resist||{}).reduce((sum,v)=>sum+Number(v||0),0);
-  return `<article class="build-card build-card-clickable" data-auto-build="${i}" tabindex="0" role="button" aria-label="조합 ${i+1}을 시뮬레이터에 적용"><h3><span>조합 ${i+1}</span><span class="score">DEF ${b.calc.defense} · 내성합 ${resistTotal>=0?"+":""}${resistTotal}</span></h3><div class="build-equipment">${PARTS.map(p=>{const a=b.armors.find(x=>x.part===p);return `<span class="label">${PART_NAMES[p]}</span><span>${esc(a?.name||"-")} <span class="slots">${slotsText(a?.slots)}</span></span>`}).join("")}</div><div class="deco-line">${b.searchCharm?`사용 호석: ${esc(charmLabel(b.searchCharm))}<br>`:""}${decoText?`장식주: ${esc(decoText)}`:"장식주 없음"}</div>${buildPlacementPlanHtml(b)}${renderSkillResult(b.calc)}<div class="build-card-action">카드 클릭 → 시뮬레이터에 적용</div></article>`;
+  return `<article class="build-card build-card-clickable" data-auto-build="${i}" tabindex="0" role="button" aria-label="조합 ${i+1}을 시뮬레이터에 적용"><h3><span>조합 ${i+1}</span><span class="score">DEF ${b.calc.defense} · 내성합 ${resistTotal>=0?"+":""}${resistTotal}</span></h3><div class="build-equipment"><span class="label">무기</span><span>${esc(b.autoWeapon?.name||autoWeaponType())} <span class="slots">${slotsText(b.autoWeapon?.slots||b.autoWeaponRequiredSlots||0)}</span>${b.autoWeaponRequiredSlots?` <small>필요 ${b.autoWeaponRequiredSlots}슬롯</small>`:""}</span>${PARTS.map(p=>{const a=b.armors.find(x=>x.part===p);return `<span class="label">${PART_NAMES[p]}</span><span>${esc(a?.name||"-")} <span class="slots">${slotsText(a?.slots)}</span></span>`}).join("")}</div><div class="deco-line">${b.searchCharm?`사용 호석: ${esc(charmLabel(b.searchCharm))}<br>`:""}${decoText?`장식주: ${esc(decoText)}`:"장식주 없음"}</div>${renderSkillResult(b.calc,{compact:true})}<div class="build-card-action">카드 클릭 → 시뮬레이터에 적용</div></article>`;
 }
+const AUTO_RANK_VALUE={low:0,high:1,g:2};
+function autoWeaponType(){return uiState.autoWeaponType||"대검"}
+function autoHunterType(){return RANGED_TYPES.has(autoWeaponType())?"gunner":"blade"}
+function autoWeaponPool(progression="g"){const max=AUTO_RANK_VALUE[progression]??2;return data.weapons.filter(w=>w.weaponType===autoWeaponType()&&(AUTO_RANK_VALUE[w.rank]??9)<=max)}
+function autoSearchWeaponSlots(progression="g"){const pool=autoWeaponPool(progression);return pool.length?Math.max(...pool.map(w=>Number(w.slots||0))):0}
+function autoWeaponForSlots(requiredSlots=0,progression="g"){const req=Math.max(0,Number(requiredSlots)||0),pool=autoWeaponPool(progression).filter(w=>Number(w.slots||0)>=req);pool.sort((a,b)=>Number(a.slots||0)-Number(b.slots||0)||(AUTO_RANK_VALUE[b.rank]??-1)-(AUTO_RANK_VALUE[a.rank]??-1)||Number(b.attack||0)-Number(a.attack||0)||Number(b.affinity||0)-Number(a.affinity||0)||String(a.name).localeCompare(String(b.name),"ko"));return pool[0]||null}
+function weaponSlotsUsedByBuild(b){return (b?.decorations||[]).reduce((n,p)=>n+(p.container==="weapon"?Number((typeof p.deco==="string"?decorationByIdMap.get(p.deco):p.deco)?.slots||0):0),0)}
+function attachAutoWeapons(result,progression,includeTorsoUp=true){for(const b of [...(result.results||[]),...(result.nearMisses||[])]){const need=weaponSlotsUsedByBuild(b);b.autoWeapon=autoWeaponForSlots(need,progression);b.autoWeaponRequiredSlots=need;if(b.autoWeapon){b.calc=calculateBuild({armors:b.armors||[],charm:b.searchCharm||charm(),weaponSlots:Number(b.autoWeapon.slots||0),decorations:b.decorations||[]},data,includeTorsoUp)}}return result}
+
 function autoSearchConditionText(){
-  const w=selectedWeapon();
+  const progression=$("#autoProgressionRank")?.value||"g";
+  const maxSlots=autoSearchWeaponSlots(progression);
   const c=charm();
   const charmSkills=Object.entries(c.skills||{}).filter(([,v])=>Number(v)!==0).map(([id,v])=>`${skillName(id)} ${Number(v)>0?"+":""}${Number(v)}`);
-  return `무기 ${w?esc(w.name):"미선택"} · 무기 슬롯 ${Number(w?.slots||0)} · ${$("#ownedCharmsOnly")?.checked?`보유 호석만 사용 (${getOwnedCharms().length}개)`:`호석 ${charmSkills.length?charmSkills.map(esc).join(" / "):"스킬 없음"} · 호석 슬롯 ${Number(c.slots||0)}`}`;
+  return `무기종 ${esc(autoWeaponType())} · 검색 가능 최대 무기 슬롯 ${maxSlots} · ${uiState.ownedCharmsOnly?`보유 호석만 사용 (${getOwnedCharms().length}개)`:`호석 ${charmSkills.length?charmSkills.map(esc).join(" / "):"스킬 없음"} · 호석 슬롯 ${Number(c.slots||0)}`}`;
 }
 function renderNearMissCard(b,i){
   const missing=(b.missing||[]).map(x=>`${skillName(x.skillId)} ${Number(x.have||0)}/${Number(x.need||0)} (${Number(x.missing||0)}pt 부족)`).join(" · ");
@@ -899,11 +905,12 @@ function renderNearMissCard(b,i){
     ? (Number(slot.minAdditionalSlots||0)>0?`슬롯만 보강 시 최소 +${Number(slot.minAdditionalSlots)}슬롯 필요`:`현재 남은 슬롯 재배치로 완성 가능`)
     : `추가 9슬롯 이내 장식주만으로는 완성 어려움 · 호석 스킬 자체 보강 필요`;
   const free=`현재 미사용 슬롯 ${Number(slot.currentFreeSlots||0)}칸`;
-  return `<article class="build-card near-miss-card"><h3><span>근접 후보 ${i+1}</span><span class="score">목표 미완성</span></h3><div class="build-equipment">${PARTS.map(p=>{const a=b.armors.find(x=>x.part===p);return `<span class="label">${PART_NAMES[p]}</span><span>${esc(a?.name||"-")} <span class="slots">${slotsText(a?.slots)}</span></span>`}).join("")}</div>${b.searchCharm?`<div class="near-miss-deficit"><b>검토 호석</b> ${esc(charmLabel(b.searchCharm))}</div>`:""}<div class="near-miss-deficit"><b>추가 필요</b> ${esc(missing||"목표 포인트 부족")}</div><div class="near-miss-deficit"><b>완성 가능성</b> ${esc(completion)} · ${esc(free)}</div><div class="near-miss-deficit"><b>필요 호석 충분 조건</b> ${esc(requiredCharmConditionFromNear(b))}</div><div class="muted">현재 조건에서 배치한 장식주 ${decoCount}개 · DEF ${Number(b.calc?.defense||0)} · ${esc(resistText(b.calc?.resist||{}))}</div></article>`;
+  return `<article class="build-card near-miss-card"><h3><span>근접 후보 ${i+1}</span><span class="score">목표 미완성</span></h3><div class="build-equipment"><span class="label">무기</span><span>${esc(b.autoWeapon?.name||autoWeaponType())} <span class="slots">${slotsText(b.autoWeapon?.slots||b.autoWeaponRequiredSlots||0)}</span>${b.autoWeaponRequiredSlots?` <small>필요 ${b.autoWeaponRequiredSlots}슬롯</small>`:""}</span>${PARTS.map(p=>{const a=b.armors.find(x=>x.part===p);return `<span class="label">${PART_NAMES[p]}</span><span>${esc(a?.name||"-")} <span class="slots">${slotsText(a?.slots)}</span></span>`}).join("")}</div>${b.searchCharm?`<div class="near-miss-deficit"><b>검토 호석</b> ${esc(charmLabel(b.searchCharm))}</div>`:""}<div class="near-miss-deficit"><b>추가 필요</b> ${esc(missing||"목표 포인트 부족")}</div><div class="near-miss-deficit"><b>완성 가능성</b> ${esc(completion)} · ${esc(free)}</div><div class="near-miss-deficit"><b>필요 호석 충분 조건</b> ${esc(requiredCharmConditionFromNear(b))}</div><div class="muted">현재 조건에서 배치한 장식주 ${decoCount}개 · DEF ${Number(b.calc?.defense||0)} · ${esc(resistText(b.calc?.resist||{}))}</div></article>`;
 }
 function applyAutoBuildToSimulator(index){
   const b=latestAutoSearchResults[Number(index)];if(!b)return;
   if(b.searchCharm){const e=Object.entries(b.searchCharm.skills||{});uiState.charmSkill1=e[0]?.[0]||"";uiState.charmPoint1=Number(e[0]?.[1]||0);uiState.charmSkill2=e[1]?.[0]||"";uiState.charmPoint2=Number(e[1]?.[1]||0);uiState.charmSlots=Number(b.searchCharm.slots||0)}
+  if(b.autoWeapon){uiState.manualWeapon=b.autoWeapon.id;uiState.manualWeaponType=b.autoWeapon.weaponType||"all"}
   uiState.manualSet="";
   for(const p of PARTS){const a=b.armors.find(x=>x.part===p);uiState.manual[p]=a?.id||"";}
   uiState.manualDecorations=Object.fromEntries(MANUAL_CONTAINERS.map(c=>[c,[]]));
@@ -915,7 +922,7 @@ function applyAutoBuildToSimulator(index){
   document.querySelector("#manualEquipmentBuilder")?.scrollIntoView({behavior:"smooth",block:"start"});
 }
 async function searchAutoWithCharmMode(baseOptions){
-  const ownedOnly=$("#ownedCharmsOnly")?.checked===true;
+  const ownedOnly=uiState.ownedCharmsOnly===true;
   if(!ownedOnly)return await searchBuilds({...baseOptions,charm:charm()},data);
   const owned=getOwnedCharms().map(normalizeCharmRecord);
   if(!owned.length)return {results:[],nearMisses:[],stats:{message:"보유 호석만 사용이 켜져 있지만 등록된 호석이 없습니다."}};
@@ -942,14 +949,14 @@ async function runSearch(){
   const conditionText=autoSearchConditionText();
   $("#searchStats").textContent=`검색 준비 중 · ${conditionText}`;
   try{
-    const simHunter=simulatorSearchHunterType();
+    const simHunter=autoHunterType();
     const progression=$("#autoProgressionRank")?.value||"g";
     const progressionLabel={low:"하위",high:"상위",g:"G급"}[progression]||"전체";
     const r=await searchAutoWithCharmMode({
       targetActivationIds:targets,
       hunterType:simHunter,
       rank:progression,
-      weaponSlots:Number(selectedWeapon()?.slots||0),
+      weaponSlots:autoSearchWeaponSlots(progression),
       allowDecorations:$("#allowDecorations").checked,
       includeTorsoUp:$("#includeTorsoUp").checked,
       limit:Number($("#resultLimit").value||20),
@@ -960,6 +967,7 @@ async function runSearch(){
         else if(p.phase==="ownedCharm")$("#searchStats").textContent=`보유 호석 비교 ${p.current}/${p.total} · ${p.label||""}`;
       }
     });
+    attachAutoWeapons(r,progression,$("#includeTorsoUp").checked);
     latestAutoSearchResults=r.results||[];
     const sec=(Number(r.stats?.elapsedMs||0)/1000).toFixed(1);
     const statusBase=`검색 타입 ${hunterName(simHunter)} · 진행도 ${progressionLabel} · 대상 방어구 ${r.stats.eligible||0}개 · 검증 후보 ${r.stats.checkedFinalists??r.stats.finalists??0}/${r.stats.finalists||0} · ${sec}초 · ${conditionText}`;
@@ -980,7 +988,7 @@ async function runSearch(){
         ? (Number(slot.minAdditionalSlots||0)>0?`장식주 기준 최소 ${Number(slot.minAdditionalSlots)}슬롯을 더 확보하면 완성 가능한 후보입니다.`:`남은 슬롯의 장식주 배치를 다시 최적화하면 완성 가능성이 있습니다.`)
         : `추가 슬롯만으로는 해결하기 어려워 목표 스킬이 붙은 호석 자체가 필요합니다.`;
       const nextStep=`${slotGuide} 필요 호석 충분 조건: ${requiredCharmConditionFromNear(top)}`;
-      $("#searchResults").innerHTML=`<div class="search-guidance"><b>현재 조건에서 완성 조합을 찾지 못했습니다.</b><p>가장 가까운 후보 기준으로 <strong>${esc(missing||"추가 스킬 포인트")}</strong>가 더 필요합니다. ${esc(nextStep)}</p><p class="muted">자동조합은 현재 수동 시뮬레이터에서 선택한 무기 슬롯과 호석 조건을 그대로 사용합니다. 호석 스킬/슬롯도 통합 계산합니다.</p></div>${r.nearMisses.map(renderNearMissCard).join("")}`;
+      $("#searchResults").innerHTML=`<div class="search-guidance"><b>현재 조건에서 완성 조합을 찾지 못했습니다.</b><p>가장 가까운 후보 기준으로 <strong>${esc(missing||"추가 스킬 포인트")}</strong>가 더 필요합니다. ${esc(nextStep)}</p><p class="muted">자동조합은 선택한 무기종에서 필요한 슬롯 수를 만족하는 실제 무기를 함께 찾고, 호석 스킬/슬롯도 통합 계산합니다.</p></div>${r.nearMisses.map(renderNearMissCard).join("")}`;
     }else{
       $("#searchResults").innerHTML='<div class="result-empty">현재 조건의 고속 탐색 범위에서 완성 조합을 찾지 못했습니다. 호석 스킬 또는 무기/호석 슬롯을 추가한 뒤 다시 검색해 보세요.</div>';
     }
@@ -1515,6 +1523,19 @@ function decorationCategories(d){
   }
   return cats;
 }
+
+function decorationUnlockRouteHtml(d){
+  const ref=data.decorationUnlocks?.decorations?.[d.id];
+  if(!ref)return '<span class="muted">확인된 해금 정보 없음</span>';
+  const mats=ref.materials||[];
+  const explicit=mats.flatMap(m=>(m.unlocks||[]).map(u=>({material:m.name,unlock:u})));
+  const keyMaterial=mats.find(m=>!/원주$/.test(m.name||"")&&(m.quests||[]).length)||mats.find(m=>(m.quests||[]).length);
+  const bits=[];
+  if(explicit.length){const x=explicit[0];bits.push(`<div><b>해금 연계</b> ${itemLink(x.material)} · ${esc(x.unlock)}</div>`)}
+  if(keyMaterial){const q=keyMaterial.quests[0];bits.push(`<div><b>소재 경로</b> ${itemLink(keyMaterial.name)} → ${refButton(`${q.level||""} ${q.name||"퀘스트"}`.trim(),"quest",{name:q.name,questtype:q.questType})}</div>`)}
+  if(!bits.length)return '<span class="muted">생산 소재 확인 · 별도 퀘스트 해금은 확인되지 않음</span>';
+  return bits.join("");
+}
 function renderDecoTable(){
   const q=$("#decoSearch").value.trim().toLowerCase();
   const rank=$("#decoRankFilter")?.value||"all",slot=$("#decoSlotFilter")?.value||"all",cat=$("#decoCategoryFilter")?.value||"all";
@@ -1525,8 +1546,8 @@ function renderDecoTable(){
     return !q||decorationSearchCorpus(d).toLowerCase().includes(q);
   });
   list.sort((a,b)=>decoView==="slot"?(a.slots-b.slots||a.name.localeCompare(b.name,"ko")):(Object.keys(a.skills||{}).map(skillName).join("").localeCompare(Object.keys(b.skills||{}).map(skillName).join(""),"ko")||a.name.localeCompare(b.name,"ko")));
-  const rows=list.map(d=>`<tr><td><strong>${esc(d.name)}</strong>${localizedNameSub(d)}</td><td>${d.slots}</td><td>${decorationSkillHtml(d)}</td><td>${rankName(d.rank)}</td><td class="wrap-cell">${materialLinks(d.materials||"")}</td></tr>`);
-  renderTable("#decoTable",["장식주","필요 슬롯","스킬 포인트","등급","생산 소재"],rows);
+  const rows=list.map(d=>`<tr><td><strong>${esc(d.name)}</strong>${localizedNameSub(d)}</td><td>${d.slots}</td><td>${decorationSkillHtml(d)}</td><td>${rankName(d.rank)}</td><td class="wrap-cell">${materialLinks(d.materials||"")}</td><td class="wrap-cell deco-unlock-route">${decorationUnlockRouteHtml(d)}</td></tr>`);
+  renderTable("#decoTable",["장식주","필요 슬롯","스킬 포인트","등급","생산 소재","해금/소재 경로"],rows);
   const info=$("#decoResultInfo");if(info)info.textContent=`${list.length} / ${data.decorations.length}개 장식주`;
 }
 function renderSkillTable(){
@@ -1937,14 +1958,18 @@ function populateQuestAdvancedFilters(){
   const loc=$("#questLocationFilter"),mon=$("#questMonsterFilter"),rewards=$("#questRewardList");
   if(loc){const old=loc.value||"all";const vals=[...new Set(data.quests.map(q=>q.location).filter(Boolean))].sort((a,b)=>a.localeCompare(b,"ko"));loc.innerHTML='<option value="all">전체 맵</option>'+vals.map(x=>`<option value="${esc(x)}">${esc(x)}</option>`).join("");loc.value=vals.includes(old)?old:"all";}
   if(mon){const old=mon.value||"all";const vals=(data.monsterSummary||[]).map(x=>x.name).filter(Boolean).sort((a,b)=>a.localeCompare(b,"ko"));mon.innerHTML='<option value="all">전체 몬스터</option>'+vals.map(x=>`<option value="${esc(x)}">${esc(x)}</option>`).join("");mon.value=vals.includes(old)?old:"all";}
-  if(rewards){const vals=[...new Set(Object.values(data.questReferenceIndex?.quests||{}).flatMap(x=>x.rewardItems||[]))].sort((a,b)=>a.localeCompare(b,"ko"));rewards.innerHTML=vals.map(x=>`<option value="${esc(x)}"></option>`).join("");}
+  if(rewards){const vals=[...new Set([...(Object.values(data.questReferenceIndex?.quests||{}).flatMap(x=>x.rewardItems||[])),...(Object.values(data.eventMajorRewards?.quests||{}).flatMap(x=>x.rewardLabels||[]))])].sort((a,b)=>a.localeCompare(b,"ko"));rewards.innerHTML=vals.map(x=>`<option value="${esc(x)}"></option>`).join("");}
 }
 function questMonsterLinks(q){
   const names=questRef(q).monsters||[];if(!names.length)return "-";
   return names.map(n=>refButton(n,"monster",{monster:n})).join(' <span class="muted">·</span> ');
 }
+function questMajorRewardNames(q){
+  const special=data.eventMajorRewards?.quests?.[q.id]?.rewardLabels||[];
+  return [...new Set([...(special||[]),...(questRef(q).rewardItems||[])])];
+}
 function questRewardLinks(q){
-  const names=questRef(q).rewardItems||[];if(!names.length)return "-";
+  const names=questMajorRewardNames(q);if(!names.length)return "-";
   const shown=names.slice(0,4).map(n=>itemLink(n)).join(' <span class="muted">·</span> ');
   return shown+(names.length>4?` <span class="quest-more-rewards" title="${esc(names.slice(4).join(" · "))}">+${names.length-4}</span>`:"");
 }
@@ -1968,13 +1993,13 @@ function renderQuest(){
   if(keyLabel)keyLabel.style.display=eventView?"none":"";
   const keyOnly=!eventView&&((questView==="key"&&type==="all")||keyBox?.checked);
   const list=data.quests.filter(q=>{
-    const ref=questRef(q),search=`${q.name||""} ${q.nameJa||""} ${q.nameEn||""} ${q.objective||""} ${q.objectiveEn||""} ${q.subObjective||""} ${q.subObjectiveEn||""} ${q.location||""} ${q.eventSeries||""} ${q.note||""} ${(ref.monsters||[]).join(" ")} ${(ref.rewardItems||[]).join(" ")}`.toLowerCase();
-    return (type==="all"?questMatchesView(q):true)&&(level==="all"||q.level===level)&&(!keyOnly||q.key)&&questTypeFilterMatch(q,type)&&(location==="all"||q.location===location)&&(monster==="all"||(ref.monsters||[]).includes(monster))&&(!rewardText||(ref.rewardItems||[]).some(x=>x.toLowerCase().includes(rewardText)))&&(!qtext||search.includes(qtext));
+    const ref=questRef(q),search=`${q.name||""} ${q.nameJa||""} ${q.nameEn||""} ${q.objective||""} ${q.objectiveEn||""} ${q.subObjective||""} ${q.subObjectiveEn||""} ${q.location||""} ${q.eventSeries||""} ${q.note||""} ${(ref.monsters||[]).join(" ")} ${questMajorRewardNames(q).join(" ")}`.toLowerCase();
+    return (type==="all"?questMatchesView(q):true)&&(level==="all"||q.level===level)&&(!keyOnly||q.key)&&questTypeFilterMatch(q,type)&&(location==="all"||q.location===location)&&(monster==="all"||(ref.monsters||[]).includes(monster))&&(!rewardText||questMajorRewardNames(q).some(x=>x.toLowerCase().includes(rewardText)))&&(!qtext||search.includes(qtext));
   });
   if(eventView){
     const questRoot=$("#questTable");if(questRoot)questRoot.className="quest-table-mode quest-table-event";
-    const rows=list.map(q=>`<tr><td>${esc(q.questTypeLabel||q.questType)}</td><td>${esc(q.level)}</td><td><strong>${esc(q.name)}</strong>${localizedNameSub(q)}${plannerIconButton("quest",q.id,{label:`${q.name} 즐겨찾기`})}</td><td class="wrap-cell">${esc(q.objective||"-")}</td><td class="wrap-cell quest-monsters">${questMonsterLinks(q)}</td><td class="wrap-cell quest-rewards">${questRewardLinks(q)}</td><td>${esc(q.location||"-")}</td><td>${esc(q.fee||"-")}</td><td>${esc(q.reward||"-")}</td><td>${esc(q.hrp||"-")}</td><td>${esc(q.time||"-")}</td><td class="wrap-cell">${esc(q.subObjective||"-")}</td><td>${esc(q.subReward||"-")}</td><td>${esc(q.subHrp||"-")}</td><td class="wrap-cell">${esc(q.conditions||"-")}</td><td class="wrap-cell">${esc(q.note||"")}</td></tr>`);
-    renderTable("#questTable",["구분","레벨","퀘스트","클리어 조건","몬스터","주요 보상","장소","계약금","보수금","HRP","시간","서브퀘스트","서브 보수","서브 HRP","특수조건","비고"],rows);return;
+    const rows=list.map(q=>`<tr><td>${esc(q.questTypeLabel||q.questType)}</td><td>${esc(q.level)}</td><td><strong>${esc(q.name)}</strong>${localizedNameSub(q)}${plannerIconButton("quest",q.id,{label:`${q.name} 즐겨찾기`})}</td><td class="wrap-cell">${esc(q.objective||"-")}</td><td class="wrap-cell quest-monsters">${questMonsterLinks(q)}</td><td class="wrap-cell quest-rewards">${questRewardLinks(q)}</td><td>${esc(q.location||"-")}</td><td>${esc(q.fee||"-")}</td><td>${esc(q.reward||"-")}</td><td>${esc(q.hrp||"-")}</td><td>${esc(q.time||"-")}</td><td class="wrap-cell">${esc(q.subObjective||"-")}</td><td>${esc(q.subReward||"-")}</td><td>${esc(q.subHrp||"-")}</td><td class="wrap-cell">${esc(q.conditions||"-")}</td></tr>`);
+    renderTable("#questTable",["구분","레벨","퀘스트","클리어 조건","몬스터","주요 보상","장소","계약금","보수금","HRP","시간","서브퀘스트","서브 보수","서브 HRP","특수조건"],rows);return;
   }
   const detail=questView.endsWith("detail")||questView==="key";
   const questRoot=$("#questTable");if(questRoot)questRoot.className=`quest-table-mode ${detail?"quest-table-detail":"quest-table-summary"}`;
@@ -2103,7 +2128,7 @@ function dataKeysForPage(page){
   if(page==="armor-set")return ["armorSets"];
   if(page==="weapon")return ["weapons","items"];
   if(page==="weapon-summary")return ["weaponSummary"];
-  if(page==="decoration")return ["decorations","items","itemReferenceIndex","skillReferenceIndex"];
+  if(page==="decoration")return ["decorations","decorationUnlocks","items","itemReferenceIndex","skillReferenceIndex"];
   if(page==="skill")return ["items","skillReferenceIndex"];
   if(page==="melody")return ["melodies"];
   if(page==="meal")return ["meals"];
@@ -2117,7 +2142,7 @@ function dataKeysForPage(page){
   if(page==="dragon")return dragonView==="exchange"?["dragonExchange","items"]:dragonView==="sell"?["dragonSell","items"]:["dragonIncrease","items"];
   if(page==="item")return ["items","itemReferenceIndex"];
   if(page==="compose")return ["compositions","items"];
-  if(page==="quest")return ["quests","questReferenceIndex","monsterSummary","items"];
+  if(page==="quest")return ["quests","questReferenceIndex","eventMajorRewards","monsterSummary","items"];
   if(page==="data")return FULL_DATA_KEYS;
   return [];
 }
@@ -2290,6 +2315,7 @@ function bind(){
     if(weaponRow&&!e.target.closest('button,a,input,select,summary')){e.preventDefault();void openWeaponDetail(weaponRow);return;}
     const skillItem=e.target.closest?.('#skillTable .inline-item-link[data-open-item]');
     if(skillItem){e.preventDefault();e.stopPropagation();void openItemByName(skillItem.dataset.openItem);return;}
+    const ownedSave=e.target.closest?.('[data-save-owned-charm]');if(ownedSave){saveCurrentCharmToOwned();return}
     const ownedApply=e.target.closest?.('[data-owned-charm-apply]');
     if(ownedApply){e.preventDefault();e.stopPropagation();applyOwnedCharm(ownedApply.dataset.ownedCharmApply);return;}
     const ownedRemove=e.target.closest?.('[data-owned-charm-remove]');
@@ -2390,7 +2416,7 @@ function bind(){
   }));
   results.push(bindEventGroup("simulator-controls",()=>{
   $("#addTargetSkill").onclick=()=>{const v=uiState.targetActivation;if(v&&!targets.includes(v)){targets.push(v);renderTargets()}};
-  $("#clearTargets").onclick=()=>{targets=[];renderTargets()};$("#calculateManual").onclick=renderManualResult;$("#runSearch").onclick=runSearch;if($("#saveOwnedCharm"))$("#saveOwnedCharm").onclick=saveCurrentCharmToOwned;renderOwnedCharms();
+  $("#clearTargets").onclick=()=>{targets=[];renderTargets()};$("#calculateManual").onclick=renderManualResult;$("#runSearch").onclick=runSearch;renderOwnedCharms();
   $("#saveBuild").onclick=saveCurrentBuild;$("#deleteBuild").onclick=deleteSelectedBuild;$("#savedBuildSelect").onchange=loadSelectedBuild;
 
   $("#hunterType").onchange=()=>{

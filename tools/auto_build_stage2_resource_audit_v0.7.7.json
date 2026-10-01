@@ -23,7 +23,7 @@
       "targetCount": 4,
       "profile": "complex4",
       "timedOut": false,
-      "elapsedMs": 5041
+      "elapsedMs": 4707
     },
     "topNear": {
       "missing": [
@@ -82,14 +82,14 @@
     "stats": {
       "eligible": 1613,
       "finalists": 80,
-      "checkedFinalists": 40,
+      "checkedFinalists": 43,
       "rankedPool": 9,
       "beam": 3000,
       "approximate": true,
       "targetCount": 4,
       "profile": "complex4",
       "timedOut": true,
-      "elapsedMs": 6035
+      "elapsedMs": 6146
     },
     "top": {
       "armors": [

@@ -3,10 +3,10 @@
   "cycles": 15,
   "errors": [],
   "timingMs": {
-    "min": 202.42,
-    "max": 595.47,
-    "avg": 273.61
+    "min": 134.82,
+    "max": 598.84,
+    "avg": 175.88
   },
-  "armorRowsAfterBackNav": 65,
-  "headRowsAfterForwardNav": 14
+  "armorRowsAfterBackNav": 130,
+  "headRowsAfterForwardNav": 28
 }
