@@ -1,5 +1,5 @@
-import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,loadArmorProgression,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-ui-reward-hotfix3";
-import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-ui-reward-hotfix3";
+import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,loadArmorProgression,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-ui-reward-hotfix4";
+import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-ui-reward-hotfix4";
 
 let data={skills:[],armors:[],armorSets:[],decorations:[],decorationUnlocks:{decorations:{}},eventMajorRewards:{quests:{}},weapons:[],weaponSummary:[],melodies:[],items:[],itemReferenceIndex:{items:{}},skillReferenceIndex:{items:{},categories:[]},meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],monsterReferenceIndex:{items:{}},dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],questReferenceIndex:{quests:{}},siteInfo:{},meta:{},weaponSkillPriorities:{weapons:{}}};
 let targets=[];
@@ -46,7 +46,7 @@ let restoringHistory=false;
 let historyRestoreToken=0;
 try{history.scrollRestoration="manual"}catch{}
 
-const APP_VERSION="0.7.7-chat4-ui-reward-hotfix3";
+const APP_VERSION="0.7.7-chat4-ui-reward-hotfix4";
 const boundEventGroups=new Set();
 let appEventsBound=false;
 function ensureRuntimeStatus(){
@@ -839,8 +839,10 @@ function renderSkillResult(calc,{compact=false}={}){
     return ar-br||validName(a.name).localeCompare(validName(b.name),"ko");
   });
   const active=activeRows.length?activeRows.map(a=>{const st=currentSkillStatus(a.skillId,a.points);return `<span class="skill-active ${Number(a.threshold)<0?"skill-negative":""}" title="${esc(st.effect)}">${esc(validName(a.name))}</span>`}).join(""):'<span class="muted">발동 스킬 없음</span>';
-  const skillRowRank=([id,p])=>{const st=currentSkillStatus(id,p);const n=validName(st.active?.name);if(n&&Number(st.active?.points)>0)return 0;if(n&&Number(st.active?.points)<0)return 1;return 2;};
-  const rows=Object.entries(calc.points||{}).sort((a,b)=>skillRowRank(a)-skillRowRank(b)||skillName(a[0]).localeCompare(skillName(b[0]),"ko")).map(([id,p])=>{
+  const rows=Object.entries(calc.points||{}).sort((a,b)=>{
+    const pointDiff=Number(b[1]||0)-Number(a[1]||0);
+    return pointDiff||skillName(a[0]).localeCompare(skillName(b[0]),"ko");
+  }).map(([id,p])=>{
     const st=currentSkillStatus(id,p),activeName=validName(st.active?.name),nextName=validName(st.next?.name);
     const trigger=activeName?`${Number(st.active.points)>0?"+":""}${Number(st.active.points)}`:(nextName?`${Number(st.next.points)>0?"+":""}${Number(st.next.points)}`:"-");
     let applied="",effect="";
