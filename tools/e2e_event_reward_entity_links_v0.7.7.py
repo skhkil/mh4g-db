@@ -20,7 +20,7 @@ with sync_playwright() as p:
   pg.set_content(HTML,wait_until='load',timeout=30000);pg.wait_for_function("document.querySelector('[data-route=\"quest-view\"]')",timeout=30000)
   tests=[
     ('event-high','오늘의 특선: 고기','빈티지고기티켓','item'),
-    ('event-g','태고의 달인: 배북 난타전','축제북악보','item'),
+    ('event-g','태고의 달인: 배북 난타전','태고의 악보','item'),
     ('event-episodic','코드 퍼플','네코트티켓','item'),
     ('event-episodic','코드 화이트','응견의 피어스','armor'),
     ('event-episodic','개기일식','Pride of Harth','weapon'),

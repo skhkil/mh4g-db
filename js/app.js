@@ -1,9 +1,10 @@
-import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,loadArmorProgression,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-ui-reward-hotfix1";
-import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-ui-reward-hotfix1";
+import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,loadArmorProgression,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-ui-reward-hotfix3";
+import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-ui-reward-hotfix3";
 
 let data={skills:[],armors:[],armorSets:[],decorations:[],decorationUnlocks:{decorations:{}},eventMajorRewards:{quests:{}},weapons:[],weaponSummary:[],melodies:[],items:[],itemReferenceIndex:{items:{}},skillReferenceIndex:{items:{},categories:[]},meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],monsterReferenceIndex:{items:{}},dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],questReferenceIndex:{quests:{}},siteInfo:{},meta:{},weaponSkillPriorities:{weapons:{}}};
 let targets=[];
 let latestAutoSearchResults=[];
+let latestAutoSearchNearMisses=[];
 let currentPage="simulator";
 const BUILD_STORAGE_KEY="mh4g-builds-v1";
 const OWNED_CHARMS_STORAGE_KEY="mh4g-owned-charms-v1";
@@ -45,7 +46,7 @@ let restoringHistory=false;
 let historyRestoreToken=0;
 try{history.scrollRestoration="manual"}catch{}
 
-const APP_VERSION="0.7.7-chat4-ui-reward-hotfix1";
+const APP_VERSION="0.7.7-chat4-ui-reward-hotfix3";
 const boundEventGroups=new Set();
 let appEventsBound=false;
 function ensureRuntimeStatus(){
@@ -831,13 +832,20 @@ function renderManualSelectors(){
 }
 
 function renderSkillResult(calc,{compact=false}={}){
-  const active=calc.activated.length?calc.activated.map(a=>{const st=currentSkillStatus(a.skillId,a.points);return `<span class="skill-active ${a.threshold<0?"skill-negative":""}" title="${esc(st.effect)}">${esc(a.name)}</span>`}).join(""):'<span class="muted">발동 스킬 없음</span>';
-  const rows=Object.entries(calc.points).sort((a,b)=>skillName(a[0]).localeCompare(skillName(b[0]),"ko")).map(([id,p])=>{
-    const st=currentSkillStatus(id,p);
-    const trigger=st.active?`${st.active.threshold>0?"+":""}${st.active.threshold}`:(st.next?`${st.next.threshold>0?"+":""}${st.next.threshold}`:"-");
+  const validName=v=>{const t=String(v??"").trim();return t&&t!=="undefined"&&t!=="null"?t:""};
+  const activeRows=(calc.activated||[]).filter(a=>validName(a?.name)).sort((a,b)=>{
+    const an=Number(a?.threshold),bn=Number(b?.threshold);
+    const ar=an>0?0:1,br=bn>0?0:1;
+    return ar-br||validName(a.name).localeCompare(validName(b.name),"ko");
+  });
+  const active=activeRows.length?activeRows.map(a=>{const st=currentSkillStatus(a.skillId,a.points);return `<span class="skill-active ${Number(a.threshold)<0?"skill-negative":""}" title="${esc(st.effect)}">${esc(validName(a.name))}</span>`}).join(""):'<span class="muted">발동 스킬 없음</span>';
+  const skillRowRank=([id,p])=>{const st=currentSkillStatus(id,p);const n=validName(st.active?.name);if(n&&Number(st.active?.points)>0)return 0;if(n&&Number(st.active?.points)<0)return 1;return 2;};
+  const rows=Object.entries(calc.points||{}).sort((a,b)=>skillRowRank(a)-skillRowRank(b)||skillName(a[0]).localeCompare(skillName(b[0]),"ko")).map(([id,p])=>{
+    const st=currentSkillStatus(id,p),activeName=validName(st.active?.name),nextName=validName(st.next?.name);
+    const trigger=activeName?`${Number(st.active.points)>0?"+":""}${Number(st.active.points)}`:(nextName?`${Number(st.next.points)>0?"+":""}${Number(st.next.points)}`:"-");
     let applied="",effect="";
-    if(st.active){applied=`<strong>${esc(st.active.name)}</strong><small>${trigger} 발동</small>`;effect=st.effect||"효과 설명 없음"}
-    else if(st.next&&st.tone==="pending"){applied=`<span>미발동</span><small>다음 ${trigger} → ${esc(st.next.name)}</small>`;effect=st.effect?`다음 효과: ${st.effect}`:"다음 발동 효과 설명 없음"}
+    if(activeName){applied=`<strong>${esc(activeName)}</strong><small>${trigger} 발동</small>`;effect=st.effect||"효과 설명 없음"}
+    else if(nextName&&st.tone==="pending"){applied=`<span>미발동</span><small>다음 ${trigger} → ${esc(nextName)}</small>`;effect=st.effect?`다음 효과: ${st.effect}`:"다음 발동 효과 설명 없음"}
     else{applied='<span>미발동</span>';effect=st.effect||"-"}
     return compact?`<tr><td>${skillLink(id,skillName(id))}</td><td>${Number(p)>0?"+":""}${Number(p)}</td><td>${applied}</td></tr>`:`<tr><td>${skillLink(id,skillName(id))}</td><td>${Number(p)>0?"+":""}${Number(p)}</td><td>${applied}</td><td>${esc(effect)}</td></tr>`;
   }).join("");
@@ -905,10 +913,10 @@ function renderNearMissCard(b,i){
     ? (Number(slot.minAdditionalSlots||0)>0?`슬롯만 보강 시 최소 +${Number(slot.minAdditionalSlots)}슬롯 필요`:`현재 남은 슬롯 재배치로 완성 가능`)
     : `추가 9슬롯 이내 장식주만으로는 완성 어려움 · 호석 스킬 자체 보강 필요`;
   const free=`현재 미사용 슬롯 ${Number(slot.currentFreeSlots||0)}칸`;
-  return `<article class="build-card near-miss-card"><h3><span>근접 후보 ${i+1}</span><span class="score">목표 미완성</span></h3><div class="build-equipment"><span class="label">무기</span><span>${esc(b.autoWeapon?.name||autoWeaponType())} <span class="slots">${slotsText(b.autoWeapon?.slots||b.autoWeaponRequiredSlots||0)}</span>${b.autoWeaponRequiredSlots?` <small>필요 ${b.autoWeaponRequiredSlots}슬롯</small>`:""}</span>${PARTS.map(p=>{const a=b.armors.find(x=>x.part===p);return `<span class="label">${PART_NAMES[p]}</span><span>${esc(a?.name||"-")} <span class="slots">${slotsText(a?.slots)}</span></span>`}).join("")}</div>${b.searchCharm?`<div class="near-miss-deficit"><b>검토 호석</b> ${esc(charmLabel(b.searchCharm))}</div>`:""}<div class="near-miss-deficit"><b>추가 필요</b> ${esc(missing||"목표 포인트 부족")}</div><div class="near-miss-deficit"><b>완성 가능성</b> ${esc(completion)} · ${esc(free)}</div><div class="near-miss-deficit"><b>필요 호석 충분 조건</b> ${esc(requiredCharmConditionFromNear(b))}</div><div class="muted">현재 조건에서 배치한 장식주 ${decoCount}개 · DEF ${Number(b.calc?.defense||0)} · ${esc(resistText(b.calc?.resist||{}))}</div></article>`;
+  return `<article class="build-card near-miss-card build-card-clickable" data-auto-near="${i}" tabindex="0" role="button" aria-label="근접 후보 ${i+1}을 시뮬레이터에 적용"><h3><span>근접 후보 ${i+1}</span><span class="score">목표 미완성</span></h3><div class="build-equipment"><span class="label">무기</span><span>${esc(b.autoWeapon?.name||autoWeaponType())} <span class="slots">${slotsText(b.autoWeapon?.slots||b.autoWeaponRequiredSlots||0)}</span>${b.autoWeaponRequiredSlots?` <small>필요 ${b.autoWeaponRequiredSlots}슬롯</small>`:""}</span>${PARTS.map(p=>{const a=b.armors.find(x=>x.part===p);return `<span class="label">${PART_NAMES[p]}</span><span>${esc(a?.name||"-")} <span class="slots">${slotsText(a?.slots)}</span></span>`}).join("")}</div>${b.searchCharm?`<div class="near-miss-deficit"><b>검토 호석</b> ${esc(charmLabel(b.searchCharm))}</div>`:""}<div class="near-miss-deficit"><b>추가 필요</b> ${esc(missing||"목표 포인트 부족")}</div><div class="near-miss-deficit"><b>완성 가능성</b> ${esc(completion)} · ${esc(free)}</div><div class="near-miss-deficit"><b>필요 호석 충분 조건</b> ${esc(requiredCharmConditionFromNear(b))}</div><div class="muted">현재 조건에서 배치한 장식주 ${decoCount}개 · DEF ${Number(b.calc?.defense||0)} · ${esc(resistText(b.calc?.resist||{}))}</div><div class="build-card-action">근접 후보 적용 → 시뮬레이터에서 직접 보완</div></article>`;
 }
-function applyAutoBuildToSimulator(index){
-  const b=latestAutoSearchResults[Number(index)];if(!b)return;
+function applyAutoBuildRecordToSimulator(b){
+  if(!b)return;
   if(b.searchCharm){const e=Object.entries(b.searchCharm.skills||{});uiState.charmSkill1=e[0]?.[0]||"";uiState.charmPoint1=Number(e[0]?.[1]||0);uiState.charmSkill2=e[1]?.[0]||"";uiState.charmPoint2=Number(e[1]?.[1]||0);uiState.charmSlots=Number(b.searchCharm.slots||0)}
   if(b.autoWeapon){uiState.manualWeapon=b.autoWeapon.id;uiState.manualWeaponType=b.autoWeapon.weaponType||"all"}
   uiState.manualSet="";
@@ -921,6 +929,8 @@ function applyAutoBuildToSimulator(index){
   renderManualSelectors();renderManualResult();
   document.querySelector("#manualEquipmentBuilder")?.scrollIntoView({behavior:"smooth",block:"start"});
 }
+function applyAutoBuildToSimulator(index){applyAutoBuildRecordToSimulator(latestAutoSearchResults[Number(index)])}
+function applyAutoNearMissToSimulator(index){applyAutoBuildRecordToSimulator(latestAutoSearchNearMisses[Number(index)])}
 async function searchAutoWithCharmMode(baseOptions){
   const ownedOnly=uiState.ownedCharmsOnly===true;
   if(!ownedOnly)return await searchBuilds({...baseOptions,charm:charm()},data);
@@ -969,6 +979,7 @@ async function runSearch(){
     });
     attachAutoWeapons(r,progression,$("#includeTorsoUp").checked);
     latestAutoSearchResults=r.results||[];
+    latestAutoSearchNearMisses=r.nearMisses||[];
     const sec=(Number(r.stats?.elapsedMs||0)/1000).toFixed(1);
     const statusBase=`검색 타입 ${hunterName(simHunter)} · 진행도 ${progressionLabel} · 대상 방어구 ${r.stats.eligible||0}개 · 검증 후보 ${r.stats.checkedFinalists??r.stats.finalists??0}/${r.stats.finalists||0} · ${sec}초 · ${conditionText}`;
     if(r.stats.message){
@@ -1597,6 +1608,7 @@ function acquireRefHtml(x,itemName){
   return `<li><span>${esc(x.type||"입수처")}</span></li>`;
 }
 function useRefHtml(x){
+  if(x.type==="externalUse")return `<li><a class="xref-link" href="${esc(x.url||"#")}" target="_blank" rel="noopener noreferrer">${esc(x.name||"외부 사용처")}</a><span>${esc([x.category,x.count?`×${x.count}`:"",x.note||""].filter(Boolean).join(" · "))}</span></li>`;
   if(x.type==="weapon")return `<li>${refButton(`${x.weaponType||"무기"} · ${x.name}`,"weapon",{name:x.name,weapontype:x.weaponType})}<span>${esc([x.method,x.count?`×${x.count}`:""].filter(Boolean).join(" · "))}</span></li>`;
   if(x.type==="armor")return `<li>${refButton(x.name||"방어구","armor",{name:x.name})}<span>${esc([PART_NAMES[x.part]||x.part,x.hunterType?hunterName(x.hunterType):"",x.count?`×${x.count}`:""].filter(Boolean).join(" · "))}</span></li>`;
   if(x.type==="decoration")return `<li>${refButton(x.name||"장식주","decoration",{name:x.name})}<span>${esc([x.slots?`${x.slots}슬롯`:"",x.count?`×${x.count}`:""].filter(Boolean).join(" · "))}</span></li>`;
@@ -1624,7 +1636,8 @@ function buildItemDetailHtml(item,ref){
     ["방어구 생산","use-armor",useCount(x=>x.type==="armor")],
     ["장식주 생산","use-decoration",useCount(x=>x.type==="decoration")],
     ["조합 재료","use-compose",useCount(x=>x.type==="compose")],
-    ["용인 교환 재료","use-exchange",useCount(x=>x.type==="exchange")]
+    ["용인 교환 재료","use-exchange",useCount(x=>x.type==="exchange")],
+    ["오토모·기타 장비","use-external",useCount(x=>x.type==="externalUse")]
   ].filter(([, ,n])=>n);
   return `<section class="panel item-detail-card"><div class="item-detail-head"><div><span class="item-detail-kicker">아이템 상세 · 역참조</span><h2>${esc(item.name)}</h2>${localizedNameSub(item)}</div><button type="button" class="item-detail-close" aria-label="상세 닫기">×</button></div><div class="item-detail-meta"><span>RARE <strong>${item.rare||"-"}</strong></span><span>소지 <strong>${item.maxStack||"-"}</strong></span><span>구매 <strong>${esc(item.buyPrice||"-")}</strong></span><span>판매 <strong>${esc(item.sellPrice||"-")}</strong></span><span>입수 연결 <strong>${acq.length.toLocaleString()}</strong></span><span>사용 연결 <strong>${uses.length.toLocaleString()}</strong></span></div>${item.acquire||item.note?`<div class="item-detail-note">${item.acquire?`<p><b>기본 입수</b> ${esc(item.acquire)}</p>`:""}${item.note?`<p><b>효과/비고</b> ${esc(item.note)}</p>`:""}</div>`:""}<div class="item-xref-columns"><div><h3>어디서 얻나</h3>${acqGroups.length?acqGroups.map(([t,k,n])=>xrefLazyGroup(t,k,n)).join(""):'<p class="muted xref-empty">현재 구조화 데이터에서 확인되는 입수처가 없습니다.</p>'}</div><div><h3>어디에 쓰나</h3>${useGroups.length?useGroups.map(([t,k,n])=>xrefLazyGroup(t,k,n)).join(""):'<p class="muted xref-empty">현재 구조화 데이터에서 확인되는 사용처가 없습니다.</p>'}</div></div><p class="xref-footnote">※ 역참조는 현재 프로젝트의 퀘스트·몬스터 보수·조합·용인족 도매상·무기·방어구·장식주 데이터를 연결해 표시합니다.</p></section>`;
 }
@@ -1639,6 +1652,7 @@ function xrefItemsForKind(ref,kind){
   if(kind==="use-decoration")return [uses.filter(x=>x.type==="decoration"),"use"];
   if(kind==="use-compose")return [uses.filter(x=>x.type==="compose"),"use"];
   if(kind==="use-exchange")return [uses.filter(x=>x.type==="exchange"),"use"];
+  if(kind==="use-external")return [uses.filter(x=>x.type==="externalUse"),"use"];
   return [[],"use"];
 }
 async function hydrateXrefGroup(details){
@@ -1960,8 +1974,35 @@ function populateQuestAdvancedFilters(){
   if(mon){const old=mon.value||"all";const vals=(data.monsterSummary||[]).map(x=>x.name).filter(Boolean).sort((a,b)=>a.localeCompare(b,"ko"));mon.innerHTML='<option value="all">전체 몬스터</option>'+vals.map(x=>`<option value="${esc(x)}">${esc(x)}</option>`).join("");mon.value=vals.includes(old)?old:"all";}
   if(rewards){const vals=[...new Set([...(Object.values(data.questReferenceIndex?.quests||{}).flatMap(x=>x.rewardItems||[])),...(Object.values(data.eventMajorRewards?.quests||{}).flatMap(x=>x.rewardLabels||[]))])].sort((a,b)=>a.localeCompare(b,"ko"));rewards.innerHTML=vals.map(x=>`<option value="${esc(x)}"></option>`).join("");}
 }
+function questTargetMonsters(q){
+  const norm=v=>String(v||"").toLowerCase().replace(/[\s·・･\.\-_'’“”"()（）:：]/g,"");
+  const matchFrom=text=>{
+    const hay=norm(text);if(!hay)return [];
+    const occupied=Array(hay.length).fill(false),matched=[];
+    const candidates=(data.monsterSummary||[]).flatMap(m=>[
+      {name:m.name,alias:m.name},{name:m.name,alias:m.nameEn}
+    ].filter(x=>x.alias)).sort((a,b)=>norm(b.alias).length-norm(a.alias).length);
+    for(const c of candidates){
+      const alias=norm(c.alias);if(!alias)continue;
+      let pos=hay.indexOf(alias);
+      while(pos>=0){
+        const end=pos+alias.length;
+        if(!occupied.slice(pos,end).some(Boolean)){
+          if(!matched.includes(c.name))matched.push(c.name);
+          for(let i=pos;i<end;i++)occupied[i]=true;
+        }
+        pos=hay.indexOf(alias,pos+1);
+      }
+    }
+    return matched;
+  };
+  const objective=[q?.objective,q?.objectiveEn,q?.subObjective,q?.subObjectiveEn].filter(Boolean).join(" \n ");
+  const direct=matchFrom(objective);if(direct.length)return direct;
+  const title=matchFrom([q?.name,q?.nameEn].filter(Boolean).join(" \n "));if(title.length)return title;
+  return [...new Set(questRef(q).monsters||[])];
+}
 function questMonsterLinks(q){
-  const names=questRef(q).monsters||[];if(!names.length)return "-";
+  const names=questTargetMonsters(q);if(!names.length)return "-";
   return names.map(n=>refButton(n,"monster",{monster:n})).join(' <span class="muted">·</span> ');
 }
 function questMajorRewardNames(q){
@@ -1970,7 +2011,8 @@ function questMajorRewardNames(q){
 }
 function rewardEntityLink(name){
   const key=String(name||"").trim();if(!key)return "-";
-  if(itemByName.has(key)){const item=itemByName.get(key);return itemLink(key,item?.name||key);}
+  const item=(data.items||[]).find(x=>[x.name,x.nameJa,x.nameEn,...(x.aliases||[])].some(v=>String(v||"").trim()===key));
+  if(item)return itemLink(item.name,item.name||key);
   const armor=(data.armors||[]).find(x=>[x.name,x.nameJa,x.nameEn,...(x.aliases||[])].some(v=>String(v||"").trim()===key));
   if(armor)return refButton(armor.name||key,"armor",{name:armor.name||key});
   const weapon=(data.weapons||[]).find(x=>[x.name,x.nameJa,x.nameEn,x.mh4uName,x.mh4uNameJa,...(x.aliases||[])].some(v=>String(v||"").trim()===key));
@@ -2002,8 +2044,8 @@ function renderQuest(){
   if(keyLabel)keyLabel.style.display=eventView?"none":"";
   const keyOnly=!eventView&&((questView==="key"&&type==="all")||keyBox?.checked);
   const list=data.quests.filter(q=>{
-    const ref=questRef(q),search=`${q.name||""} ${q.nameJa||""} ${q.nameEn||""} ${q.objective||""} ${q.objectiveEn||""} ${q.subObjective||""} ${q.subObjectiveEn||""} ${q.location||""} ${q.eventSeries||""} ${q.note||""} ${(ref.monsters||[]).join(" ")} ${questMajorRewardNames(q).join(" ")}`.toLowerCase();
-    return (type==="all"?questMatchesView(q):true)&&(level==="all"||q.level===level)&&(!keyOnly||q.key)&&questTypeFilterMatch(q,type)&&(location==="all"||q.location===location)&&(monster==="all"||(ref.monsters||[]).includes(monster))&&(!rewardText||questMajorRewardNames(q).some(x=>x.toLowerCase().includes(rewardText)))&&(!qtext||search.includes(qtext));
+    const ref=questRef(q),search=`${q.name||""} ${q.nameJa||""} ${q.nameEn||""} ${q.objective||""} ${q.objectiveEn||""} ${q.subObjective||""} ${q.subObjectiveEn||""} ${q.location||""} ${q.eventSeries||""} ${q.note||""} ${questTargetMonsters(q).join(" ")} ${questMajorRewardNames(q).join(" ")}`.toLowerCase();
+    return (type==="all"?questMatchesView(q):true)&&(level==="all"||q.level===level)&&(!keyOnly||q.key)&&questTypeFilterMatch(q,type)&&(location==="all"||q.location===location)&&(monster==="all"||questTargetMonsters(q).includes(monster))&&(!rewardText||questMajorRewardNames(q).some(x=>x.toLowerCase().includes(rewardText)))&&(!qtext||search.includes(qtext));
   });
   if(eventView){
     const questRoot=$("#questTable");if(questRoot)questRoot.className="quest-table-mode quest-table-event";
@@ -2331,6 +2373,8 @@ function bind(){
     if(ownedRemove){e.preventDefault();e.stopPropagation();removeOwnedCharm(ownedRemove.dataset.ownedCharmRemove);return;}
     const autoBuild=e.target.closest?.('[data-auto-build]');
     if(autoBuild&&!e.target.closest('button,a,input,select,summary')){e.preventDefault();e.stopPropagation();applyAutoBuildToSimulator(autoBuild.dataset.autoBuild);return;}
+    const autoNear=e.target.closest?.('[data-auto-near]');
+    if(autoNear&&!e.target.closest('button,a,input,select,summary')){e.preventDefault();e.stopPropagation();applyAutoNearMissToSimulator(autoNear.dataset.autoNear);return;}
     const recSim=e.target.closest?.('[data-recommend-sim]');
     if(recSim){e.preventDefault();e.stopPropagation();void openRecommendationInSimulator(recSim.dataset.recommendSim);return;}
     const skillBtn=e.target.closest?.('[data-open-skill]');
@@ -2388,7 +2432,7 @@ function bind(){
     const inv=e.target.closest?.('[data-planner-inventory]');
     if(inv){plannerState.inventory[inv.dataset.plannerInventory]=Math.max(0,Math.min(9999,Number(inv.value)||0));savePlannerState();renderPlanner();return;}
   }));
-  document.addEventListener("keydown",safeUiHandler("document.keydown",e=>{const armorRow=e.target.closest?.('#armorTable tr.armor-db-row[data-armor-id]');if(armorRow&&(e.key==="Enter"||e.key===" ")){e.preventDefault();void toggleArmorProgressRow(armorRow);return;}const bcard=e.target.closest?.('[data-auto-build]');if(bcard&&(e.key==="Enter"||e.key===" ")){e.preventDefault();applyAutoBuildToSimulator(bcard.dataset.autoBuild);return;}const wrow=e.target.closest?.('#weaponTrees tr.weapon-db-row[data-weapon-row]');if(wrow&&(e.key==="Enter"||e.key===" ")){e.preventDefault();void openWeaponDetail(wrow);return;}const row=e.target.closest?.('#skillTable tr.skill-db-row[data-skill-row]');if(row&&(e.key==="Enter"||e.key===" ")){e.preventDefault();void openSkillDetail(row.dataset.skillRow,row);}}));
+  document.addEventListener("keydown",safeUiHandler("document.keydown",e=>{const armorRow=e.target.closest?.('#armorTable tr.armor-db-row[data-armor-id]');if(armorRow&&(e.key==="Enter"||e.key===" ")){e.preventDefault();void toggleArmorProgressRow(armorRow);return;}const bcard=e.target.closest?.('[data-auto-build]');if(bcard&&(e.key==="Enter"||e.key===" ")){e.preventDefault();applyAutoBuildToSimulator(bcard.dataset.autoBuild);return;}const ncard=e.target.closest?.('[data-auto-near]');if(ncard&&(e.key==="Enter"||e.key===" ")){e.preventDefault();applyAutoNearMissToSimulator(ncard.dataset.autoNear);return;}const wrow=e.target.closest?.('#weaponTrees tr.weapon-db-row[data-weapon-row]');if(wrow&&(e.key==="Enter"||e.key===" ")){e.preventDefault();void openWeaponDetail(wrow);return;}const row=e.target.closest?.('#skillTable tr.skill-db-row[data-skill-row]');if(row&&(e.key==="Enter"||e.key===" ")){e.preventDefault();void openSkillDetail(row.dataset.skillRow,row);}}));
   document.addEventListener("toggle",safeUiHandler("document.toggle",e=>{
     const d=e.target;
     if(d?.matches?.("#itemTable details.xref-lazy"))void hydrateXrefGroup(d);

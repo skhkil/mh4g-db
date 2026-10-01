@@ -5441,7 +5441,13 @@
     "acquire": "이벤트 퀘스트 보수",
     "availability": "G급",
     "note": "태고의 달인 ・ 똥배다동! 다운로드 이벤트 퀘스트 클리어 시 보수",
-    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/item/item.htm",
+    "nameEn": "Festival Drum Music",
+    "aliases": [
+      "Festival Drum Music",
+      "お祭り太鼓の譜面",
+      "お祭太鼓の譜面"
+    ]
   },
   {
     "id": "item_801fd850e971",
@@ -23976,26 +23982,6 @@
     "availability": "이벤트 ★4 '오늘의 특선: 고기' 보상",
     "note": "MH4U 이벤트 전용 티켓. 프로젝트 한글 표기는 일본명 의미를 기준으로 정리했으며 한국판 공식 표기 여부는 확실하지 않음.",
     "source": "Monster Hunter Wiki MH4U Item List / Event Quests",
-    "itemType": "Event",
-    "itemSubType": "Ticket/Material"
-  },
-  {
-    "id": "item_web_a5107065c21e",
-    "name": "축제북악보",
-    "nameJa": "お祭太鼓の譜面",
-    "nameEn": "Festival Drum Music",
-    "aliases": [
-      "Festival Drum Music",
-      "お祭太鼓の譜面"
-    ],
-    "rare": 5,
-    "maxStack": 99,
-    "buyPrice": "-",
-    "sellPrice": "0z",
-    "acquire": "이벤트 퀘스트",
-    "availability": "이벤트 G★1 '태고의 달인: 배북 난타전' 보상",
-    "note": "MH4U 이벤트 전용 제작 소재. 프로젝트 한글 표기는 일본명 의미를 기준으로 정리했으며 한국판 공식 표기 여부는 확실하지 않음.",
-    "source": "Kiranico MH4U / Monster Hunter Wiki MH4U Item List",
     "itemType": "Event",
     "itemSubType": "Ticket/Material"
   },

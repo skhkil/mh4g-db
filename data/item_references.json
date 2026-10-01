@@ -63189,7 +63189,32 @@
           "objective": "테츠카브라 1마리와 테츠카브라 아종 1마리 수렵"
         }
       ],
-      "uses": []
+      "uses": [
+        {
+          "type": "externalUse",
+          "name": "러시 해머 (오토모 무기)",
+          "category": "오토모 무기",
+          "count": 2,
+          "url": "https://mh.solohuntercrow.com/article/113280258.html",
+          "note": "E캔 2개 사용"
+        },
+        {
+          "type": "externalUse",
+          "name": "록맨 메트 (오토모 머리)",
+          "category": "오토모 방어구",
+          "count": 2,
+          "url": "https://monsterhunter.fandom.com/wiki/Mega_Man_Palico_Armor_(MH4U)",
+          "note": "E캔 2개 사용"
+        },
+        {
+          "type": "externalUse",
+          "name": "록맨 슈트 (오토모 몸통)",
+          "category": "오토모 방어구",
+          "count": 2,
+          "url": "https://monsterhunter.fandom.com/wiki/Mega_Man_Palico_Armor_(MH4U)",
+          "note": "E캔 2개 사용"
+        }
+      ]
     },
     "item_5653b881bf70": {
       "name": "링",
@@ -261775,46 +261800,70 @@
       "acquire": [
         {
           "type": "quest",
+          "id": "event-high-011",
           "name": "오늘의 특선: 고기",
-          "level": "",
-          "location": "",
-          "objective": "이벤트/에피소드 보상",
-          "questType": "event"
+          "questType": "event",
+          "level": "★4",
+          "location": "유적 평원",
+          "objective": "잘 익은 고기 10개 납품"
         }
       ],
-      "uses": []
-    },
-    "item_web_a5107065c21e": {
-      "name": "축제북악보",
-      "acquire": [
+      "uses": [
         {
-          "type": "quest",
-          "name": "태고의 달인: 배북 난타전",
-          "level": "",
-          "location": "",
-          "objective": "이벤트/에피소드 보상",
-          "questType": "event"
+          "type": "externalUse",
+          "name": "그레이트풀 햄 (해머)",
+          "category": "이벤트 무기",
+          "count": 3,
+          "url": "https://game-cap.com/mh4g/data/buki_gureitofuruhamu.html",
+          "note": "생산에 빈티지고기티켓 3개 사용"
         }
-      ],
-      "uses": []
+      ]
     },
     "item_web_3aedd968c7f2": {
       "name": "네코트티켓",
       "acquire": [
         {
           "type": "quest",
+          "id": "event-episodic-082",
           "name": "번외: 코드 퍼플",
-          "level": "",
-          "location": "",
-          "objective": "이벤트/에피소드 보상",
-          "questType": "event"
+          "questType": "event",
+          "level": "★6",
+          "location": "격투장",
+          "objective": "얀가루루가 1마리 수렵"
         }
       ],
       "uses": [
         {
-          "type": "note",
-          "result": "Felcote Coat Palico Armor 제작 소재",
-          "note": "Felcote Ticket x4"
+          "type": "externalUse",
+          "name": "Felcote Coat (오토모 방어구)",
+          "category": "오토모 방어구",
+          "count": 4,
+          "url": "https://monsterhunter.fandom.com/wiki/MH4U%3A_Palico_Armor",
+          "note": "Felcote Ticket 4개 사용"
+        }
+      ]
+    },
+    "item_de1d9ce2dacc": {
+      "name": "태고의 악보",
+      "acquire": [
+        {
+          "type": "quest",
+          "id": "event-g-036",
+          "name": "태고의 달인: 배북 난타전",
+          "questType": "event",
+          "level": "G★1",
+          "location": "격투장",
+          "objective": "자보아자길 아종 1마리와 바바콩가 1마리 수렵"
+        }
+      ],
+      "uses": [
+        {
+          "type": "weapon",
+          "id": "weapon_a44b933ce264",
+          "name": "수렵의 달인",
+          "weaponType": "수렵피리",
+          "method": "생산",
+          "count": 3
         }
       ]
     }

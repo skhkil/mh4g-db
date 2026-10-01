@@ -1,16 +1,21 @@
 {
-  "ok": true,
+  "ok": false,
   "version": "0.7.7-chat4-research2-hotfix21",
   "checks": {
-    "index_hotfix21": true,
-    "app_hotfix21": true,
+    "index_hotfix21": false,
+    "app_hotfix21": false,
     "engine_profiles": true,
     "engine_yields": true,
     "near_miss_ui": true,
     "condition_summary_ui": true,
     "condition_hint_html": true,
-    "readme_hotfix21_first": true,
-    "work_status_hotfix21_first": true
+    "readme_hotfix21_first": false,
+    "work_status_hotfix21_first": false
   },
-  "errors": []
+  "errors": [
+    "index_hotfix21",
+    "app_hotfix21",
+    "readme_hotfix21_first",
+    "work_status_hotfix21_first"
+  ]
 }
