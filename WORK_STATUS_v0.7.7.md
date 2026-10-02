@@ -912,3 +912,11 @@
 - 모든 런타임 캐시 키를 `0.7.7-chat4-ui-reward-hotfix5`로 통일.
 - `JUMP·작열연투!` 검색/별칭/소재수급 이동 브라우저 E2E 재검증 통과.
 - 수정 패키지: `mh4g-db-v0.7.7_chat4_ui_rewards_hotfix5_cachefix_final.zip`.
+
+
+## 2026-10-02 hotfix6 — 데이터 JSON 캐시 키 누락 수정
+- hotfix5 cachefix 후에도 `js/data-loader.js`의 `DATA_VERSION`이 hotfix1에 남아 있어 `quests.json` 등 데이터 JSON이 구 캐시로 재사용될 수 있던 원인을 확인.
+- `index.html` / `js/app.js` / `js/data-loader.js`의 캐시 버전을 `0.7.7-chat4-ui-reward-hotfix6`로 통일.
+- 이 오류가 `JUMP·작열연투!` 데이터가 ZIP 내부에는 존재하지만 이벤트 G급 화면에서는 보이지 않을 수 있었던 직접 원인.
+- README에도 동일 원인과 수정 내용을 기록.
+- 최종 수정 패키지: `mh4g-db-v0.7.7_chat4_ui_rewards_hotfix6_final.zip`.

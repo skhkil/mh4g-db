@@ -709,3 +709,11 @@
 - hotfix5 데이터 변경이 이전 브라우저 캐시에 가려질 수 있던 문제를 수정했습니다.
 - `app.js`, `data-loader.js`, `engine.js`의 캐시 버전과 앱 버전을 hotfix5로 통일했습니다.
 - 수정 패키지: `mh4g-db-v0.7.7_chat4_ui_rewards_hotfix5_cachefix_final.zip`.
+
+
+### hotfix6 데이터 캐시 수정 및 이벤트 G급 노출 재검증 (2026-10-02)
+- hotfix5 패키지에서 `index.html`/`app.js` 캐시 키는 갱신됐지만 `js/data-loader.js`의 `DATA_VERSION`이 `0.7.7-chat4-ui-reward-hotfix1`에 남아 있던 오류를 수정했습니다.
+- 이 때문에 `data/quests.json` 등 JSON 데이터가 이전 브라우저 캐시에서 재사용되어 `JUMP·작열연투!` 같은 신규 퀘스트가 화면에 보이지 않을 수 있었습니다.
+- `index.html`, `app.js`, `data-loader.js` 런타임/데이터 캐시 키를 모두 `0.7.7-chat4-ui-reward-hotfix6`로 통일했습니다.
+- `JUMP·작열연투!`는 `data/quests.json`의 `eventGroup: g`, `G★3` 이벤트로 존재하며 새 브라우저 프로필에서 `이벤트 G급` 화면 노출을 재검증합니다.
+- 최종 수정 패키지: `mh4g-db-v0.7.7_chat4_ui_rewards_hotfix6_final.zip`.
