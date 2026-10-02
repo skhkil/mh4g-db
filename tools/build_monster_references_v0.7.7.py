@@ -28,16 +28,15 @@ reward_by=collections.defaultdict(set)
 for r in rewards:
     canon=canonical_monster(r.get('monster'))
     if canon in names and clean(r.get('item')): reward_by[canon].add(clean(r['item']))
+# Quest appearances are sourced from the canonical quest reference index.
+# Do not independently re-parse quest names here; that previously caused
+# subspecies/base-species duplication and reverse-reference drift.
+qref=load('quest_reference_index.json').get('quests',{})
 quests_by=collections.defaultdict(list)
 for q in quests:
-    hay=' '.join(str(q.get(k,'') or '') for k in ['name','nameJa','objective','subObjective','note'])
-    candidates=[]
-    for n in names:
-        labels=[n]+CANONICAL_TO_SOURCE.get(n,[])
-        if any(label and label in hay for label in labels): candidates.append(n)
-    hits=[n for n in candidates if not any(n!=m and n in m for m in candidates)]
-    for n in hits:
-        quests_by[n].append({k:q.get(k) for k in ['id','questType','questTypeLabel','level','name','objective','location']})
+    for n in qref.get(q.get('id'),{}).get('monsters',[]):
+        if n in names:
+            quests_by[n].append({k:q.get(k) for k in ['id','questType','questTypeLabel','level','name','objective','location']})
 gear=[]
 for w in weapons:
     for c in w.get('craft') or []:
@@ -61,7 +60,7 @@ for m in mons:
     src=[{'name':i,'id':item_ids.get(i) or item_ids.get(i.replace(' ','')) or ''} for i in specific]
     payload={'monster':m['name'],'items':src,'quests':quests_by[m['name']],'uses':uses}
     fallback[m['name']]=payload
-    fname=re.sub(r'[^a-z0-9_-]+','-',m['id'].lower())+'.json'; (out/fname).write_text(json.dumps(payload,ensure_ascii=False,separators=(',',':')),encoding='utf-8')
+    fname=re.sub(r'[^a-z0-9_-]+','-',m['id'].lower()); (out/f'{fname}.json').write_text(json.dumps(payload,ensure_ascii=False,separators=(',',':')),encoding='utf-8')
     index[m['name']]={'file':fname,'quests':len(payload['quests']),'uses':len(uses),'items':len(src)}
 (D/'monster_reference_index.json').write_text(json.dumps({'version':'0.7.7-chat4-itemdb1','items':index},ensure_ascii=False,separators=(',',':')),encoding='utf-8')
 (D/'monster_references.json').write_text(json.dumps(fallback,ensure_ascii=False,separators=(',',':')),encoding='utf-8')

@@ -1,6 +1,6 @@
 {
-  "version": "0.7.7-chat4-itemdb1",
-  "generated": "2026-10-01",
+  "version": "0.7.7-chat4-xref-hotfix7",
+  "generated": "2026-10-02",
   "itemCount": 1448,
   "indexedCount": 1304,
   "items": {
@@ -62873,7 +62873,17 @@
     },
     "item_0c9affd49572": {
       "name": "몬헌부응원가",
-      "acquire": [],
+      "acquire": [
+        {
+          "type": "quest",
+          "id": "event-g-040",
+          "name": "몬헌부: 사막 응원 특훈",
+          "questType": "event",
+          "level": "G★1",
+          "location": "구사막<낮>",
+          "objective": "도스가레오 1마리 수렵"
+        }
+      ],
       "uses": [
         {
           "type": "weapon",
@@ -62888,7 +62898,17 @@
     },
     "item_ab860a346b6b": {
       "name": "몬헌부회보지",
-      "acquire": [],
+      "acquire": [
+        {
+          "type": "quest",
+          "id": "event-g-045",
+          "name": "몬헌부: 재는 재로",
+          "questType": "event",
+          "level": "G★1",
+          "location": "격투장",
+          "objective": "케차와차 아종 1마리 수렵"
+        }
+      ],
       "uses": [
         {
           "type": "armor",
@@ -63109,7 +63129,17 @@
     },
     "item_62e61b69b78d": {
       "name": "페이크카탈로그",
-      "acquire": [],
+      "acquire": [
+        {
+          "type": "quest",
+          "id": "event-g-047",
+          "name": "헌터의 기록: 잔챙이들",
+          "questType": "event",
+          "level": "G★1",
+          "location": "격투장",
+          "objective": "람포스 10마리와 게네포스 10마리 토벌"
+        }
+      ],
       "uses": [
         {
           "type": "armor",
@@ -64347,7 +64377,35 @@
     },
     "item_3f44553dee76": {
       "name": "점보티켓",
-      "acquire": [],
+      "acquire": [
+        {
+          "type": "quest",
+          "id": "event-episodic-096",
+          "name": "번외: 개기일식",
+          "questType": "event",
+          "level": "★10",
+          "location": "슈레이더성",
+          "objective": "조룡 밀라보레아스 토벌 또는 격퇴"
+        },
+        {
+          "type": "quest",
+          "id": "event-episodic-094",
+          "name": "번외: 번져가는 재앙",
+          "questType": "event",
+          "level": "★9",
+          "location": "천공산",
+          "objective": "가브라스 40마리 토벌"
+        },
+        {
+          "type": "quest",
+          "id": "event-episodic-095",
+          "name": "번외: 폐허를 감싼 안개",
+          "questType": "event",
+          "level": "★10",
+          "location": "전투 구역",
+          "objective": "오오나즈치 토벌 또는 격퇴"
+        }
+      ],
       "uses": [
         {
           "type": "weapon",
@@ -64371,7 +64429,17 @@
     },
     "item_fcef389e8f0f": {
       "name": "헌터티켓",
-      "acquire": [],
+      "acquire": [
+        {
+          "type": "quest",
+          "id": "event-g-074",
+          "name": "보지도 듣지도 말하지도 마라",
+          "questType": "event",
+          "level": "G★3",
+          "location": "유적 평원",
+          "objective": "바바콩가 아종 1마리와 케차와차 1마리와 격앙 라잔 1마리 수렵"
+        }
+      ],
       "uses": [
         {
           "type": "armor",
@@ -69274,7 +69342,188 @@
     },
     "item_64f8e301f2c3": {
       "name": "대장로티켓",
-      "acquire": [],
+      "acquire": [
+        {
+          "type": "quest",
+          "id": "event-g-057",
+          "name": "강한 자만이 살아남는다",
+          "questType": "event",
+          "level": "G★2",
+          "location": "격투장",
+          "objective": "푸루푸루 1마리와 넬스큐라 아종 1마리 수렵"
+        },
+        {
+          "type": "quest",
+          "id": "event-g-075",
+          "name": "공폭룡의 악몽",
+          "questType": "event",
+          "level": "G★3",
+          "location": "천공산",
+          "objective": "광폭 이블조 1마리 수렵"
+        },
+        {
+          "type": "quest",
+          "id": "event-g-065",
+          "name": "궁극의 그라비모스",
+          "questType": "event",
+          "level": "G★3",
+          "location": "격투장",
+          "objective": "극한 상태 그라비모스 1마리 수렵"
+        },
+        {
+          "type": "quest",
+          "id": "event-g-056",
+          "name": "극한의 사냥 찬가",
+          "questType": "event",
+          "level": "G★2",
+          "location": "격투장",
+          "objective": "게리오스 1마리와 진오우거 아종 1마리 수렵"
+        },
+        {
+          "type": "quest",
+          "id": "event-g-037",
+          "name": "나의 루비",
+          "questType": "event",
+          "level": "G★1",
+          "location": "격투장",
+          "objective": "바살모스 아종 1마리 수렵"
+        },
+        {
+          "type": "quest",
+          "id": "event-g-048",
+          "name": "대물 사냥",
+          "questType": "event",
+          "level": "G★1",
+          "location": "격투장",
+          "objective": "도스람포스 1마리 수렵"
+        },
+        {
+          "type": "quest",
+          "id": "event-g-041",
+          "name": "독의 협공",
+          "questType": "event",
+          "level": "G★1",
+          "location": "입체투기장",
+          "objective": "도스이오스 1마리와 게리오스 아종 1마리와 넬스큐라 1마리 수렵"
+        },
+        {
+          "type": "quest",
+          "id": "event-g-039",
+          "name": "매혹의 벚꽃",
+          "questType": "event",
+          "level": "G★1",
+          "location": "구사막<밤>",
+          "objective": "리오레이아 아종 1마리 수렵"
+        },
+        {
+          "type": "quest",
+          "id": "event-g-058",
+          "name": "몬스터 대난투",
+          "questType": "event",
+          "level": "G★2",
+          "location": "격투장",
+          "objective": "가라라아자라 아종 1마리와 울크스스 1마리와 게넬·셀타스 아종 1마리 수렵"
+        },
+        {
+          "type": "quest",
+          "id": "event-g-045",
+          "name": "몬헌부: 재는 재로",
+          "questType": "event",
+          "level": "G★1",
+          "location": "격투장",
+          "objective": "케차와차 아종 1마리 수렵"
+        },
+        {
+          "type": "quest",
+          "id": "event-g-046",
+          "name": "벌레 사냥 주식회사",
+          "questType": "event",
+          "level": "G★1",
+          "location": "격투장",
+          "objective": "브나하브라 50마리 토벌"
+        },
+        {
+          "type": "quest",
+          "id": "event-g-050",
+          "name": "붉음과 하양, 그리고 너",
+          "questType": "event",
+          "level": "G★1",
+          "location": "격투장",
+          "objective": "푸루푸루 1마리와 푸루푸루 아종 1마리 수렵"
+        },
+        {
+          "type": "quest",
+          "id": "event-g-060",
+          "name": "야생의 뿔",
+          "questType": "event",
+          "level": "G★2",
+          "location": "격투장",
+          "objective": "디아블로스 1마리 수렵"
+        },
+        {
+          "type": "quest",
+          "id": "event-g-038",
+          "name": "용감한 전사",
+          "questType": "event",
+          "level": "G★1",
+          "location": "원생림",
+          "objective": "알셀타스 1마리 수렵"
+        },
+        {
+          "type": "quest",
+          "id": "event-g-042",
+          "name": "웅크린 호랑이, 숨은 상어",
+          "questType": "event",
+          "level": "G★1",
+          "location": "격투장",
+          "objective": "자보아자길 1마리와 자보아자길 아종 1마리 수렵"
+        },
+        {
+          "type": "quest",
+          "id": "event-g-044",
+          "name": "작은 산을 넘어서",
+          "questType": "event",
+          "level": "G★1",
+          "location": "격투장",
+          "objective": "얀쿡크 아종 1마리와 테츠카브라 아종 1마리 수렵"
+        },
+        {
+          "type": "quest",
+          "id": "event-g-049",
+          "name": "작지만 큰 다이묘자자미",
+          "questType": "event",
+          "level": "G★1",
+          "location": "격투장",
+          "objective": "다이묘자자미 아종 3마리 수렵"
+        },
+        {
+          "type": "quest",
+          "id": "event-g-059",
+          "name": "헌터의 기록: 리오 부부",
+          "questType": "event",
+          "level": "G★2",
+          "location": "천공산",
+          "objective": "리오레이아 1마리와 리오레우스 1마리 수렵"
+        },
+        {
+          "type": "quest",
+          "id": "event-g-043",
+          "name": "헌터의 기록: 얀쿡크",
+          "questType": "event",
+          "level": "G★1",
+          "location": "유적 평원",
+          "objective": "제한 시간 내 얀쿡크 2마리 수렵 또는 야옹택시 티켓 납품"
+        },
+        {
+          "type": "quest",
+          "id": "event-g-047",
+          "name": "헌터의 기록: 잔챙이들",
+          "questType": "event",
+          "level": "G★1",
+          "location": "격투장",
+          "objective": "람포스 10마리와 게네포스 10마리 토벌"
+        }
+      ],
       "uses": [
         {
           "type": "armor",
@@ -69373,6 +69622,15 @@
       "acquire": [
         {
           "type": "quest",
+          "id": "event-g-079",
+          "name": "JUMP·작열연투!",
+          "questType": "event",
+          "level": "G★3",
+          "location": "구사막<낮>",
+          "objective": "테오·테스카토르 토벌 또는 격퇴"
+        },
+        {
+          "type": "quest",
           "id": "event-g-071",
           "name": "고그마지오스 포격전",
           "questType": "event",
@@ -69391,12 +69649,111 @@
         },
         {
           "type": "quest",
+          "id": "event-g-069",
+          "name": "멈출 수 없는 격앙",
+          "questType": "event",
+          "level": "G★3",
+          "location": "용암섬",
+          "objective": "맹폭 브라키디오스 토벌"
+        },
+        {
+          "type": "quest",
+          "id": "event-g-074",
+          "name": "보지도 듣지도 말하지도 마라",
+          "questType": "event",
+          "level": "G★3",
+          "location": "유적 평원",
+          "objective": "바바콩가 아종 1마리와 케차와차 1마리와 격앙 라잔 1마리 수렵"
+        },
+        {
+          "type": "quest",
+          "id": "event-g-063",
+          "name": "불길한 번개",
+          "questType": "event",
+          "level": "G★3",
+          "location": "구사막<낮>",
+          "objective": "라잔 1마리 수렵"
+        },
+        {
+          "type": "quest",
+          "id": "event-g-064",
+          "name": "사막 공습",
+          "questType": "event",
+          "level": "G★3",
+          "location": "대사막",
+          "objective": "다렌·모란 토벌 또는 격퇴"
+        },
+        {
+          "type": "quest",
+          "id": "event-g-072",
+          "name": "성스러운 바람",
+          "questType": "event",
+          "level": "G★3",
+          "location": "탑 꼭대기",
+          "objective": "키린 아종 토벌"
+        },
+        {
+          "type": "quest",
+          "id": "event-g-067",
+          "name": "승리를 넘어",
+          "questType": "event",
+          "level": "G★3",
+          "location": "용암섬",
+          "objective": "아캄토름 토벌"
+        },
+        {
+          "type": "quest",
+          "id": "event-g-062",
+          "name": "은빛 왕의 잠",
+          "questType": "event",
+          "level": "G★3",
+          "location": "탑 꼭대기",
+          "objective": "리오레우스 희소종 1마리 수렵"
+        },
+        {
+          "type": "quest",
+          "id": "event-g-070",
+          "name": "종언의 연회",
+          "questType": "event",
+          "level": "G★3",
+          "location": "용암섬",
+          "objective": "홍룡 밀라보레아스 토벌 또는 격퇴"
+        },
+        {
+          "type": "quest",
+          "id": "event-g-068",
+          "name": "진홍의 사룡왕",
+          "questType": "event",
+          "level": "G★3",
+          "location": "천검산",
+          "objective": "다라 아마듈라 아종 토벌"
+        },
+        {
+          "type": "quest",
           "id": "event-g-078",
           "name": "진홍의 장막 너머",
           "questType": "event",
           "level": "G★3",
           "location": "용암섬",
           "objective": "홍룡 밀라보레아스 1마리 수렵"
+        },
+        {
+          "type": "quest",
+          "id": "event-g-073",
+          "name": "천검산의 왕",
+          "questType": "event",
+          "level": "G★3",
+          "location": "천검산",
+          "objective": "다라 아마듈라 토벌"
+        },
+        {
+          "type": "quest",
+          "id": "event-g-066",
+          "name": "흑룡을 맞이하라",
+          "questType": "event",
+          "level": "G★3",
+          "location": "슈레이더성",
+          "objective": "밀라보레아스 토벌 또는 격퇴"
         }
       ],
       "uses": [
@@ -69747,6 +70104,15 @@
       "acquire": [
         {
           "type": "quest",
+          "id": "event-g-037",
+          "name": "나의 루비",
+          "questType": "event",
+          "level": "G★1",
+          "location": "격투장",
+          "objective": "바살모스 아종 1마리 수렵"
+        },
+        {
+          "type": "quest",
           "id": "quest_95d2af3e782d",
           "name": "비밀의 알 운반·최후의 난문",
           "questType": "village",
@@ -69804,6 +70170,15 @@
           "level": "★7",
           "location": "대사막",
           "objective": "다렌·모란 토벌 또는 격퇴"
+        },
+        {
+          "type": "quest",
+          "id": "event-g-037",
+          "name": "나의 루비",
+          "questType": "event",
+          "level": "G★1",
+          "location": "격투장",
+          "objective": "바살모스 아종 1마리 수렵"
         },
         {
           "type": "quest",
@@ -83090,6 +83465,15 @@
         },
         {
           "type": "quest",
+          "id": "event-high-030",
+          "name": "왕가의 부흥",
+          "questType": "event",
+          "level": "★7",
+          "location": "탑 꼭대기",
+          "objective": "리오레이아 희소종 1마리 수렵"
+        },
+        {
+          "type": "quest",
           "id": "quest_2e7d588e940b",
           "name": "육지의 여왕, 포획 작전!",
           "questType": "hub",
@@ -83105,6 +83489,15 @@
           "level": "★7",
           "location": "유적 평원",
           "objective": "얀쿡크 아종 1마리 수렵"
+        },
+        {
+          "type": "quest",
+          "id": "event-high-029",
+          "name": "탑의 재앙",
+          "questType": "event",
+          "level": "★7",
+          "location": "탑 꼭대기",
+          "objective": "리오레우스 희소종 1마리 수렵"
         },
         {
           "type": "quest",
@@ -157185,6 +157578,15 @@
         },
         {
           "type": "quest",
+          "id": "event-high-030",
+          "name": "왕가의 부흥",
+          "questType": "event",
+          "level": "★7",
+          "location": "탑 꼭대기",
+          "objective": "리오레이아 희소종 1마리 수렵"
+        },
+        {
+          "type": "quest",
           "id": "quest_2e7d588e940b",
           "name": "육지의 여왕, 포획 작전!",
           "questType": "hub",
@@ -159045,6 +159447,15 @@
           "level": "★7",
           "location": "탑 꼭대기",
           "objective": "리오레이아 1마리와 리오레이아 아종 1마리와 리오레이아 희소종 1마리 수렵"
+        },
+        {
+          "type": "quest",
+          "id": "event-high-030",
+          "name": "왕가의 부흥",
+          "questType": "event",
+          "level": "★7",
+          "location": "탑 꼭대기",
+          "objective": "리오레이아 희소종 1마리 수렵"
         }
       ],
       "uses": [
@@ -163349,6 +163760,15 @@
           "level": "★5",
           "location": "유적 평원",
           "objective": "리오레이아 1마리와 리오레우스 1마리 수렵"
+        },
+        {
+          "type": "quest",
+          "id": "event-high-029",
+          "name": "탑의 재앙",
+          "questType": "event",
+          "level": "★7",
+          "location": "탑 꼭대기",
+          "objective": "리오레우스 희소종 1마리 수렵"
         }
       ],
       "uses": [
@@ -165988,6 +166408,15 @@
           "rank": "high",
           "probability": "15%",
           "count": ""
+        },
+        {
+          "type": "quest",
+          "id": "event-high-029",
+          "name": "탑의 재앙",
+          "questType": "event",
+          "level": "★7",
+          "location": "탑 꼭대기",
+          "objective": "리오레우스 희소종 1마리 수렵"
         }
       ],
       "uses": [
@@ -166374,6 +166803,15 @@
           "rank": "high",
           "probability": "69%",
           "count": ""
+        },
+        {
+          "type": "quest",
+          "id": "event-high-029",
+          "name": "탑의 재앙",
+          "questType": "event",
+          "level": "★7",
+          "location": "탑 꼭대기",
+          "objective": "리오레우스 희소종 1마리 수렵"
         }
       ],
       "uses": [
@@ -168728,6 +169166,15 @@
           "level": "★7",
           "location": "탑 꼭대기",
           "objective": "리오레이아 1마리와 리오레이아 아종 1마리와 리오레이아 희소종 1마리 수렵"
+        },
+        {
+          "type": "quest",
+          "id": "event-high-030",
+          "name": "왕가의 부흥",
+          "questType": "event",
+          "level": "★7",
+          "location": "탑 꼭대기",
+          "objective": "리오레이아 희소종 1마리 수렵"
         }
       ],
       "uses": [
@@ -257804,7 +258251,17 @@
     },
     "item_mh4u_1395": {
       "name": "헌터모집공지",
-      "acquire": [],
+      "acquire": [
+        {
+          "type": "quest",
+          "id": "event-g-043",
+          "name": "헌터의 기록: 얀쿡크",
+          "questType": "event",
+          "level": "G★1",
+          "location": "유적 평원",
+          "objective": "제한 시간 내 얀쿡크 2마리 수렵 또는 야옹택시 티켓 납품"
+        }
+      ],
       "uses": [
         {
           "type": "armor",
@@ -260977,7 +261434,17 @@
     },
     "item_mh4u_1385": {
       "name": "반역Ｊ티켓",
-      "acquire": [],
+      "acquire": [
+        {
+          "type": "quest",
+          "id": "event-g-079",
+          "name": "JUMP·작열연투!",
+          "questType": "event",
+          "level": "G★3",
+          "location": "구사막<낮>",
+          "objective": "테오·테스카토르 토벌 또는 격퇴"
+        }
+      ],
       "uses": [
         {
           "type": "armor",
@@ -261179,7 +261646,17 @@
     },
     "item_mh4u_1396": {
       "name": "영웅의증표",
-      "acquire": [],
+      "acquire": [
+        {
+          "type": "quest",
+          "id": "event-g-059",
+          "name": "헌터의 기록: 리오 부부",
+          "questType": "event",
+          "level": "G★2",
+          "location": "천공산",
+          "objective": "리오레이아 1마리와 리오레우스 1마리 수렵"
+        }
+      ],
       "uses": [
         {
           "type": "armor",
@@ -261824,12 +262301,30 @@
       "acquire": [
         {
           "type": "quest",
+          "id": "event-episodic-083",
+          "name": "번외: 코드 블랙",
+          "questType": "event",
+          "level": "★7",
+          "location": "용암섬",
+          "objective": "아캄토름 토벌"
+        },
+        {
+          "type": "quest",
           "id": "event-episodic-082",
           "name": "번외: 코드 퍼플",
           "questType": "event",
           "level": "★6",
           "location": "격투장",
           "objective": "얀가루루가 1마리 수렵"
+        },
+        {
+          "type": "quest",
+          "id": "event-episodic-084",
+          "name": "번외: 코드 화이트",
+          "questType": "event",
+          "level": "★7",
+          "location": "극권",
+          "objective": "우캄루바스 토벌"
         }
       ],
       "uses": [

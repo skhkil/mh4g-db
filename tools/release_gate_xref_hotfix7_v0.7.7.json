@@ -1,0 +1,28 @@
+{
+  "version": "hotfix7",
+  "generated": "2026-10-02T03:21:47",
+  "checks": {
+    "xref_issue_count_zero": true,
+    "quest_monster_bidirectional": true,
+    "quest_item_bidirectional": true,
+    "generic_multi_complete": true,
+    "readme_hotfix7_top": true,
+    "cache_index": true,
+    "cache_app": true,
+    "cache_data": true,
+    "monster_shards_all_exist": true,
+    "monster_index_no_json_suffix": true
+  },
+  "ok": true,
+  "xref": {
+    "questCount": 548,
+    "monsterCount": 76,
+    "questMonsterLinks": 542,
+    "monsterQuestLinks": 542,
+    "questRewardItemLinks": 2477,
+    "itemQuestAcquireLinks": 2477,
+    "genericMultiQuestCount": 11,
+    "genericMultiMissing": 0,
+    "issueCount": 0
+  }
+}

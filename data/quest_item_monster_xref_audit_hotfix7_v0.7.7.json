@@ -1,0 +1,14 @@
+{
+  "version": "hotfix7",
+  "questCount": 548,
+  "monsterCount": 76,
+  "indexedItemCount": 1304,
+  "questMonsterLinks": 542,
+  "monsterQuestLinks": 542,
+  "questRewardItemLinks": 2477,
+  "itemQuestAcquireLinks": 2477,
+  "genericMultiQuestCount": 11,
+  "genericMultiMissing": 0,
+  "issueCount": 0,
+  "issues": []
+}

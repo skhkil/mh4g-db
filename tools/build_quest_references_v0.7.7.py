@@ -19,7 +19,44 @@ for iid,r in iref.items():
         for qid in ids:
             reward[qid].add(nm)
             reward_details[qid].append({'name':nm,'source':'project-xref'})
-alias={'임계 브라키디오스':['맹폭 브라키디오스'],'혼돈의 고어·마가라':['혼돈에 신음하는 고어·마가라'],'오나즈치':['오오나즈치'],'밀라보레아스':['밀라보레아스 (흑룡)'],'밀라보레아스 (조룡)':['밀라보레아스 (선조룡)'],'도스재기':['도스 재기'],'게넬·셀타스':['게넬셀타스'],'게넬·셀타스 아종':['게넬셀타스 아종']}
+alias={'임계 브라키디오스':['맹폭 브라키디오스'],'혼돈의 고어·마가라':['혼돈에 신음하는 고어·마가라','혼돈의 고어마가라'],'오나즈치':['오오나즈치'],'밀라보레아스':['밀라보레아스 (흑룡)'],'밀라보레아스 (조룡)':['밀라보레아스 (선조룡)'],'도스재기':['도스 재기'],'게넬·셀타스':['게넬셀타스'],'게넬·셀타스 아종':['게넬셀타스 아종']}
+# Generic multi-hunt objectives do not spell out monster names. These were verified against MH4G source data in hotfix7.
+manual_monsters={
+'quest_892cd4874989':['도스이오스','고어·마가라'],
+'quest_edb764c92723':['아르셀타스','바바콩가','게리오스'],
+'quest_ce42de045bec':['리오레이아','리오레우스','티가렉스'],
+'quest_f64398c414f0':['가라라아자라','그라비모스','고어·마가라'],
+'quest_b70696983b12':['그라비모스 아종','티가렉스 아종','브라키디오스'],
+'quest_3d3cab9ceabc':['진오우거 아종','리오레우스 아종','게넬·셀타스','아르셀타스'],
+'quest_34bc81d3575a':['도스이오스','케차와차 아종','가라라아자라'],
+'quest_29711c404465':['테츠카브라 아종','리오레우스','디아블로스'],
+'quest_ec5e4230105d':['진오우거','가라라아자라 아종','티가렉스','그라비모스'],
+'quest_2a1a883d1049':['셀레기오스','디아블로스 아종','라잔'],
+'quest_51193dda98d4':['티가렉스','진오우거','브라키디오스','고어·마가라','셀레기오스'],
+}
+monster_patterns=[]
+for m in mons:
+    labels=[m.get('name','')]+alias.get(m.get('name',''),[])
+    for k in ('nameJa','nameEn'):
+        if m.get(k): labels.append(m[k])
+    for lab in set(labels):
+        if lab: monster_patterns.append((lab,m['name']))
+monster_patterns.sort(key=lambda x:len(x[0]),reverse=True)
+def match_monsters(text):
+    text=str(text or ''); occupied=[]; found=[]
+    for lab,canonical in monster_patterns:
+        start=0
+        while True:
+            i=text.find(lab,start)
+            if i<0: break
+            j=i+len(lab)
+            if not any(i<e and j>s for s,e in occupied):
+                occupied.append((i,j)); found.append((i,canonical))
+            start=max(j,i+1)
+    out=[]
+    for _,name in sorted(found):
+        if name not in out: out.append(name)
+    return out
 def num(s):
     if s is None:return None
     m=re.search(r'[\d,]+',str(s));return int(m.group().replace(',','')) if m else 0
@@ -49,13 +86,13 @@ if DB and DB.exists():
                     reward_details[q['id']].append({'name':nm,'slot':rr['reward_slot'],'percentage':rr['percentage'],'quantity':rr['stack_size'],'source':'mh4u-db'});seen.add(key);imported_rows+=1
         elif cand: ambiguous+=1
         else:no_match+=1
-idx={'version':'0.7.7-chat4-quest1','generated':datetime.datetime.now().isoformat(timespec='seconds'),'quests':{}}
+idx={'version':'0.7.7-chat4-xref-hotfix7','generated':datetime.datetime.now().isoformat(timespec='seconds'),'quests':{}}
 for q in qs:
-    text=' '.join(str(q.get(k,'') or '') for k in ('name','objective','subObjective','conditions','note'))
-    found=[]
-    for m in mons:
-        n=m.get('name',''); names=[n]+alias.get(n,[])
-        if any(x and x in text for x in names):found.append(n)
+    # Objective text is canonical. Longest-name matching prevents base species from being duplicated inside subspecies names.
+    found=manual_monsters.get(q['id']) or match_monsters(' '.join(str(q.get(k,'') or '') for k in ('objective','subObjective')))
+    if not found:
+        # Endless hunts and a few legacy rows omit a monster in the objective; quest-name fallback is used only when objective matching is empty.
+        found=match_monsters(q.get('name',''))
     tags=[]
     if q.get('key'):tags.append('key')
     if '긴급' in str(q.get('note','')):tags.append('urgent')

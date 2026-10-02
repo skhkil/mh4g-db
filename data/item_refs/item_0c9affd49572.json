@@ -1,1 +1,1 @@
-{"id":"item_0c9affd49572","acquire":[],"uses":[{"type":"weapon","id":"weapon_229b8b17f864","name":"몬헌부원특제부채","weaponType":"쌍검","method":"생산","count":3,"materials":"몬헌부응원가×3 사토룡 지느러미++×8 사토룡 홍지느러미×4 중룡골×10"}]}
+{"id":"item_0c9affd49572","acquire":[{"type":"quest","id":"event-g-040","name":"몬헌부: 사막 응원 특훈","questType":"event","level":"G★1","location":"구사막<낮>","objective":"도스가레오 1마리 수렵"}],"uses":[{"type":"weapon","id":"weapon_229b8b17f864","name":"몬헌부원특제부채","weaponType":"쌍검","method":"생산","count":3,"materials":"몬헌부응원가×3 사토룡 지느러미++×8 사토룡 홍지느러미×4 중룡골×10"}]}

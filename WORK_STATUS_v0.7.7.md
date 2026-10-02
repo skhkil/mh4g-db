@@ -920,3 +920,17 @@
 - 이 오류가 `JUMP·작열연투!` 데이터가 ZIP 내부에는 존재하지만 이벤트 G급 화면에서는 보이지 않을 수 있었던 직접 원인.
 - README에도 동일 원인과 수정 내용을 기록.
 - 최종 수정 패키지: `mh4g-db-v0.7.7_chat4_ui_rewards_hotfix6_final.zip`.
+
+
+## 2026-10-02 hotfix7 — 아이템 / 몬스터 / 퀘스트 양방향 역참조 전수검사
+- 전체 퀘스트 548개 / 몬스터 76종 / 아이템 퀘스트 참조를 동일 기준으로 전수 대조.
+- 기존 문제: 퀘스트→몬스터와 몬스터→퀘스트 생성기가 서로 다른 문자열 포함검색을 사용해 아종·희소종에서 원종이 중복되고, 반대로 일부 등장 퀘스트가 누락될 수 있었음.
+- 수정: `quest_reference_index.json`의 몬스터 목록을 단일 원본으로 확정하고 `monster_references.json`/`monster_refs/*`의 등장 퀘스트는 해당 목록을 역전해 생성.
+- `모든 대형 몬스터 수렵` 11개 퀘스트는 MH4G 원자료를 교차검증해 실제 몬스터 목록을 명시. 누락 0건.
+- 이벤트 주요 보상/기존 퀘스트 보상은 `quest_reference_index`와 `item_references`/`item_refs/*`를 양방향 동기화.
+- 최종 감사: 퀘스트→몬스터 542 = 몬스터→퀘스트 542, 퀘스트→보상 아이템 2,477 = 아이템→입수 퀘스트 2,477, 전체 불일치 0건.
+- 감사: `data/quest_item_monster_xref_audit_hotfix7_v0.7.7.json`.
+- 동기화 도구: `tools/sync_quest_item_monster_xrefs_hotfix7_v0.7.7.py`.
+- 캐시 키: `0.7.7-chat4-xref-hotfix7`.
+
+- 최종 ZIP: `mh4g-db-v0.7.7_chat4_xref_hotfix7_final.zip`.
