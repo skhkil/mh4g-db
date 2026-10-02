@@ -1,0 +1,676 @@
+{
+  "version": "0.7.7-chat4-quest-monster-hotfix8",
+  "questCount": 572,
+  "monsterCount": 76,
+  "forwardLinks": 586,
+  "reverseLinks": 586,
+  "checks": [
+    {
+      "name": "quest_count_572",
+      "ok": true,
+      "detail": 572
+    },
+    {
+      "name": "caravan_count_193",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "guild_count_258",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "all_quest_monsters_are_canonical",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "forward_reverse_exact_inverse",
+      "ok": true,
+      "detail": {
+        "forward": 586,
+        "reverse": 586,
+        "missingReverse": [],
+        "extraReverse": []
+      }
+    },
+    {
+      "name": "special_standard_녹슨크샬다오라",
+      "ok": true,
+      "detail": {
+        "expected": [
+          "quest_1dd30bcc8189",
+          "quest_c83c67f7419a",
+          "quest_h8_g3_operation_rust_remover"
+        ],
+        "actual": [
+          "quest_1dd30bcc8189",
+          "quest_c83c67f7419a",
+          "quest_h8_g3_operation_rust_remover"
+        ]
+      }
+    },
+    {
+      "name": "special_standard_혼돈의 고어·마가라",
+      "ok": true,
+      "detail": {
+        "expected": [
+          "quest_5f701615a1a9",
+          "quest_6acd493ed64d",
+          "quest_750a954c6940",
+          "quest_h8_c10_all_in_place"
+        ],
+        "actual": [
+          "quest_5f701615a1a9",
+          "quest_6acd493ed64d",
+          "quest_750a954c6940",
+          "quest_h8_c10_all_in_place"
+        ]
+      }
+    },
+    {
+      "name": "special_standard_임계 브라키디오스",
+      "ok": true,
+      "detail": {
+        "expected": [
+          "quest_6cae3017e9a4"
+        ],
+        "actual": [
+          "quest_6cae3017e9a4"
+        ]
+      }
+    },
+    {
+      "name": "special_standard_광폭 이블조",
+      "ok": true,
+      "detail": {
+        "expected": [
+          "quest_558d05b90a04"
+        ],
+        "actual": [
+          "quest_558d05b90a04"
+        ]
+      }
+    },
+    {
+      "name": "special_standard_밀라보레아스 (홍룡)",
+      "ok": true,
+      "detail": {
+        "expected": [
+          "quest_h8_c10_red_dragon_dawn"
+        ],
+        "actual": [
+          "quest_h8_c10_red_dragon_dawn"
+        ]
+      }
+    },
+    {
+      "name": "special_standard_밀라보레아스 (홍염룡)",
+      "ok": true,
+      "detail": {
+        "expected": [
+          "quest_fe44e93bc43b"
+        ],
+        "actual": [
+          "quest_fe44e93bc43b"
+        ]
+      }
+    },
+    {
+      "name": "furious_rajang_known_appearances",
+      "ok": true,
+      "detail": {
+        "required": [
+          "quest_7550d093194d",
+          "quest_ade6bb5f20bb",
+          "quest_d79e85dfcb06",
+          "quest_h8_c10_bad_hair_rajang",
+          "quest_h8_c6_caravaneer_challenge"
+        ],
+        "actual": [
+          "quest_7550d093194d",
+          "quest_ade6bb5f20bb",
+          "quest_d79e85dfcb06",
+          "quest_h8_c10_bad_hair_rajang",
+          "quest_h8_c6_caravaneer_challenge"
+        ]
+      }
+    },
+    {
+      "name": "spot_quest_c83c67f7419a",
+      "ok": true,
+      "detail": {
+        "quest": "고난도: 불협화음 바람이 불다",
+        "expected": [
+          "녹슨크샬다오라"
+        ],
+        "actual": [
+          "녹슨크샬다오라"
+        ]
+      }
+    },
+    {
+      "name": "spot_quest_h8_g3_operation_rust_remover",
+      "ok": true,
+      "detail": {
+        "quest": "녹슨강룡 대비 방위 작전!",
+        "expected": [
+          "녹슨크샬다오라"
+        ],
+        "actual": [
+          "녹슨크샬다오라"
+        ]
+      }
+    },
+    {
+      "name": "spot_quest_fd112c29a3cc",
+      "ok": true,
+      "detail": {
+        "quest": "강룡 대비 방위 작전!",
+        "expected": [
+          "크샬다오라"
+        ],
+        "actual": [
+          "크샬다오라"
+        ]
+      }
+    },
+    {
+      "name": "spot_quest_5f611f56f63c",
+      "ok": true,
+      "detail": {
+        "quest": "고난도: 강철 모래 폭풍",
+        "expected": [
+          "크샬다오라"
+        ],
+        "actual": [
+          "크샬다오라"
+        ]
+      }
+    },
+    {
+      "name": "spot_quest_5f701615a1a9",
+      "ok": true,
+      "detail": {
+        "quest": "하늘을 보듯 그들을 보라",
+        "expected": [
+          "진오우거 아종",
+          "혼돈의 고어·마가라"
+        ],
+        "actual": [
+          "진오우거 아종",
+          "혼돈의 고어·마가라"
+        ]
+      }
+    },
+    {
+      "name": "spot_quest_6acd493ed64d",
+      "ok": true,
+      "detail": {
+        "quest": "고난도: 숙환, 자각은 멀고",
+        "expected": [
+          "혼돈의 고어·마가라"
+        ],
+        "actual": [
+          "혼돈의 고어·마가라"
+        ]
+      }
+    },
+    {
+      "name": "spot_quest_750a954c6940",
+      "ok": true,
+      "detail": {
+        "quest": "고난도: 벗겨지는 재앙의 외투",
+        "expected": [
+          "혼돈의 고어·마가라"
+        ],
+        "actual": [
+          "혼돈의 고어·마가라"
+        ]
+      }
+    },
+    {
+      "name": "spot_quest_6cae3017e9a4",
+      "ok": true,
+      "detail": {
+        "quest": "고난도: 흩날리는 연폭의 꽃",
+        "expected": [
+          "임계 브라키디오스"
+        ],
+        "actual": [
+          "임계 브라키디오스"
+        ]
+      }
+    },
+    {
+      "name": "spot_quest_ade6bb5f20bb",
+      "ok": true,
+      "detail": {
+        "quest": "고난도: 금사자를 사냥해 다오",
+        "expected": [
+          "격앙 라잔"
+        ],
+        "actual": [
+          "격앙 라잔"
+        ]
+      }
+    },
+    {
+      "name": "spot_quest_fe44e93bc43b",
+      "ok": true,
+      "detail": {
+        "quest": "고난도: 오라, 파멸의 전투여",
+        "expected": [
+          "밀라보레아스 (홍염룡)"
+        ],
+        "actual": [
+          "밀라보레아스 (홍염룡)"
+        ]
+      }
+    },
+    {
+      "name": "spot_quest_558d05b90a04",
+      "ok": true,
+      "detail": {
+        "quest": "하늘을 집어삼키려는 자",
+        "expected": [
+          "광폭 이블조"
+        ],
+        "actual": [
+          "광폭 이블조"
+        ]
+      }
+    },
+    {
+      "name": "spot_quest_h8_c10_masters_test",
+      "ok": true,
+      "detail": {
+        "quest": "고난도: 스승의 시련",
+        "expected": [
+          "셀레기오스",
+          "디아블로스",
+          "이블조"
+        ],
+        "actual": [
+          "셀레기오스",
+          "디아블로스",
+          "이블조"
+        ]
+      }
+    },
+    {
+      "name": "no_base_leak_quest_c83c67f7419a",
+      "ok": true,
+      "detail": [
+        "녹슨크샬다오라"
+      ]
+    },
+    {
+      "name": "no_base_leak_quest_h8_g3_operation_rust_remover",
+      "ok": true,
+      "detail": [
+        "녹슨크샬다오라"
+      ]
+    },
+    {
+      "name": "no_base_leak_quest_6cae3017e9a4",
+      "ok": true,
+      "detail": [
+        "임계 브라키디오스"
+      ]
+    },
+    {
+      "name": "no_base_leak_quest_6acd493ed64d",
+      "ok": true,
+      "detail": [
+        "혼돈의 고어·마가라"
+      ]
+    },
+    {
+      "name": "no_base_leak_quest_750a954c6940",
+      "ok": true,
+      "detail": [
+        "혼돈의 고어·마가라"
+      ]
+    },
+    {
+      "name": "no_base_leak_quest_ade6bb5f20bb",
+      "ok": true,
+      "detail": [
+        "격앙 라잔"
+      ]
+    },
+    {
+      "name": "no_base_leak_quest_558d05b90a04",
+      "ok": true,
+      "detail": [
+        "광폭 이블조"
+      ]
+    },
+    {
+      "name": "verified_quest_5f701615a1a9",
+      "ok": true,
+      "detail": {
+        "expected": [
+          "진오우거 아종",
+          "혼돈의 고어·마가라"
+        ],
+        "actual": [
+          "진오우거 아종",
+          "혼돈의 고어·마가라"
+        ]
+      }
+    },
+    {
+      "name": "verified_quest_6cae3017e9a4",
+      "ok": true,
+      "detail": {
+        "expected": [
+          "임계 브라키디오스"
+        ],
+        "actual": [
+          "임계 브라키디오스"
+        ]
+      }
+    },
+    {
+      "name": "verified_quest_h8_c2_research_velocidrome",
+      "ok": true,
+      "detail": {
+        "expected": [
+          "도스람포스"
+        ],
+        "actual": [
+          "도스람포스"
+        ]
+      }
+    },
+    {
+      "name": "verified_quest_h8_c2_research_yian_kutku",
+      "ok": true,
+      "detail": {
+        "expected": [
+          "얀쿡크"
+        ],
+        "actual": [
+          "얀쿡크"
+        ]
+      }
+    },
+    {
+      "name": "verified_quest_h8_c3_research_basarios",
+      "ok": true,
+      "detail": {
+        "expected": [
+          "바살모스"
+        ],
+        "actual": [
+          "바살모스"
+        ]
+      }
+    },
+    {
+      "name": "verified_quest_h8_c3_unknown_gore",
+      "ok": true,
+      "detail": {
+        "expected": [
+          "고어·마가라"
+        ],
+        "actual": [
+          "고어·마가라"
+        ]
+      }
+    },
+    {
+      "name": "verified_quest_h8_c4_wild_palico_panic",
+      "ok": true,
+      "detail": {
+        "expected": [
+          "바바콩가"
+        ],
+        "actual": [
+          "바바콩가"
+        ]
+      }
+    },
+    {
+      "name": "verified_quest_h8_c4_meownster_hunter_havoc",
+      "ok": true,
+      "detail": {
+        "expected": [
+          "자보아자길"
+        ],
+        "actual": [
+          "자보아자길"
+        ]
+      }
+    },
+    {
+      "name": "verified_quest_h8_c4_gore_magala_drama",
+      "ok": true,
+      "detail": {
+        "expected": [
+          "고어·마가라"
+        ],
+        "actual": [
+          "고어·마가라"
+        ]
+      }
+    },
+    {
+      "name": "verified_quest_h8_c5_research_yian_garuga",
+      "ok": true,
+      "detail": {
+        "expected": [
+          "얀가루루가"
+        ],
+        "actual": [
+          "얀가루루가"
+        ]
+      }
+    },
+    {
+      "name": "verified_quest_h8_c6_research_kirin",
+      "ok": true,
+      "detail": {
+        "expected": [
+          "키린"
+        ],
+        "actual": [
+          "키린"
+        ]
+      }
+    },
+    {
+      "name": "verified_quest_h8_c6_whole_lava_love",
+      "ok": true,
+      "detail": {
+        "expected": [
+          "브라키디오스"
+        ],
+        "actual": [
+          "브라키디오스"
+        ]
+      }
+    },
+    {
+      "name": "verified_quest_h8_c6_fleet_action",
+      "ok": true,
+      "detail": {
+        "expected": [
+          "다렌·모란"
+        ],
+        "actual": [
+          "다렌·모란"
+        ]
+      }
+    },
+    {
+      "name": "verified_quest_h8_c6_deep_trouble",
+      "ok": true,
+      "detail": {
+        "expected": [
+          "테오·테스카토르"
+        ],
+        "actual": [
+          "테오·테스카토르"
+        ]
+      }
+    },
+    {
+      "name": "verified_quest_h8_c6_stand_tall",
+      "ok": true,
+      "detail": {
+        "expected": [
+          "아캄토름"
+        ],
+        "actual": [
+          "아캄토름"
+        ]
+      }
+    },
+    {
+      "name": "verified_quest_h8_c6_wicked_wings",
+      "ok": true,
+      "detail": {
+        "expected": [
+          "크샬다오라"
+        ],
+        "actual": [
+          "크샬다오라"
+        ]
+      }
+    },
+    {
+      "name": "verified_quest_h8_c6_tough_love",
+      "ok": true,
+      "detail": {
+        "expected": [
+          "라잔"
+        ],
+        "actual": [
+          "라잔"
+        ]
+      }
+    },
+    {
+      "name": "verified_quest_h8_c6_caravaneer_challenge",
+      "ok": true,
+      "detail": {
+        "expected": [
+          "격앙 라잔",
+          "진오우거",
+          "샤가르마가라"
+        ],
+        "actual": [
+          "격앙 라잔",
+          "진오우거",
+          "샤가르마가라"
+        ]
+      }
+    },
+    {
+      "name": "verified_quest_h8_c10_red_dragon_dawn",
+      "ok": true,
+      "detail": {
+        "expected": [
+          "밀라보레아스 (홍룡)"
+        ],
+        "actual": [
+          "밀라보레아스 (홍룡)"
+        ]
+      }
+    },
+    {
+      "name": "verified_quest_h8_c10_moving_mountains",
+      "ok": true,
+      "detail": {
+        "expected": [
+          "다렌·모란"
+        ],
+        "actual": [
+          "다렌·모란"
+        ]
+      }
+    },
+    {
+      "name": "verified_quest_h8_c10_into_mist",
+      "ok": true,
+      "detail": {
+        "expected": [
+          "오나즈치"
+        ],
+        "actual": [
+          "오나즈치"
+        ]
+      }
+    },
+    {
+      "name": "verified_quest_h8_c10_elder_dragon_mist",
+      "ok": true,
+      "detail": {
+        "expected": [
+          "오나즈치"
+        ],
+        "actual": [
+          "오나즈치"
+        ]
+      }
+    },
+    {
+      "name": "verified_quest_h8_c10_bad_hair_rajang",
+      "ok": true,
+      "detail": {
+        "expected": [
+          "격앙 라잔"
+        ],
+        "actual": [
+          "격앙 라잔"
+        ]
+      }
+    },
+    {
+      "name": "verified_quest_h8_c10_all_in_place",
+      "ok": true,
+      "detail": {
+        "expected": [
+          "혼돈의 고어·마가라"
+        ],
+        "actual": [
+          "혼돈의 고어·마가라"
+        ]
+      }
+    },
+    {
+      "name": "verified_quest_h8_c10_masters_test",
+      "ok": true,
+      "detail": {
+        "expected": [
+          "셀레기오스",
+          "디아블로스",
+          "이블조"
+        ],
+        "actual": [
+          "셀레기오스",
+          "디아블로스",
+          "이블조"
+        ]
+      }
+    },
+    {
+      "name": "verified_quest_h8_g3_operation_rust_remover",
+      "ok": true,
+      "detail": {
+        "expected": [
+          "녹슨크샬다오라"
+        ],
+        "actual": [
+          "녹슨크샬다오라"
+        ]
+      }
+    }
+  ],
+  "issueCount": 0,
+  "issues": []
+}

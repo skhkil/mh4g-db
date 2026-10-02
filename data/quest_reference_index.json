@@ -1,6 +1,6 @@
 {
-  "version": "0.7.7-chat4-xref-hotfix7",
-  "generated": "2026-10-02T03:20:09",
+  "version": "0.7.7-chat4-xref-hotfix8",
+  "generated": "2026-10-02T06:29:34",
   "quests": {
     "quest_04bc73176056": {
       "monsters": [],
@@ -7351,7 +7351,7 @@
     },
     "quest_1dd30bcc8189": {
       "monsters": [
-        "크샬다오라"
+        "녹슨크샬다오라"
       ],
       "rewardItems": [],
       "rewardDetails": [],
@@ -16501,7 +16501,8 @@
     },
     "quest_5f701615a1a9": {
       "monsters": [
-        "고어·마가라"
+        "진오우거 아종",
+        "혼돈의 고어·마가라"
       ],
       "rewardItems": [],
       "rewardDetails": [],
@@ -16537,7 +16538,7 @@
     },
     "quest_6acd493ed64d": {
       "monsters": [
-        "고어·마가라"
+        "혼돈의 고어·마가라"
       ],
       "rewardItems": [],
       "rewardDetails": [],
@@ -16613,7 +16614,7 @@
     },
     "quest_ade6bb5f20bb": {
       "monsters": [
-        "라잔"
+        "격앙 라잔"
       ],
       "rewardItems": [],
       "rewardDetails": [],
@@ -16675,7 +16676,7 @@
     },
     "quest_c83c67f7419a": {
       "monsters": [
-        "크샬다오라"
+        "녹슨크샬다오라"
       ],
       "rewardItems": [],
       "rewardDetails": [],
@@ -16763,7 +16764,7 @@
     },
     "quest_750a954c6940": {
       "monsters": [
-        "고어·마가라"
+        "혼돈의 고어·마가라"
       ],
       "rewardItems": [],
       "rewardDetails": [],
@@ -16796,7 +16797,7 @@
     },
     "quest_6cae3017e9a4": {
       "monsters": [
-        "브라키디오스"
+        "임계 브라키디오스"
       ],
       "rewardItems": [],
       "rewardDetails": [],
@@ -16829,7 +16830,7 @@
     },
     "quest_fe44e93bc43b": {
       "monsters": [
-        "밀라보레아스"
+        "밀라보레아스 (홍염룡)"
       ],
       "rewardItems": [],
       "rewardDetails": [],
@@ -17188,7 +17189,8 @@
     },
     "event-high-014": {
       "monsters": [
-        "다이묘자자미"
+        "다이묘자자미",
+        "도스가레오스"
       ],
       "rewardItems": [
         "길드티켓S"
@@ -17373,7 +17375,7 @@
     },
     "event-high-023": {
       "monsters": [
-        "밀라보레아스"
+        "밀라보레아스 (홍룡)"
       ],
       "rewardItems": [
         "길드티켓G"
@@ -17454,7 +17456,9 @@
       "questType": "event"
     },
     "event-high-027": {
-      "monsters": [],
+      "monsters": [
+        "다라·아마듈라"
+      ],
       "rewardItems": [
         "사왕룡티켓"
       ],
@@ -17715,7 +17719,9 @@
       "questType": "event"
     },
     "event-g-038": {
-      "monsters": [],
+      "monsters": [
+        "아르셀타스"
+      ],
       "rewardItems": [
         "대장로티켓"
       ],
@@ -17753,7 +17759,9 @@
       "questType": "event"
     },
     "event-g-040": {
-      "monsters": [],
+      "monsters": [
+        "도스가레오스"
+      ],
       "rewardItems": [
         "몬헌부응원가"
       ],
@@ -17773,7 +17781,8 @@
     "event-g-041": {
       "monsters": [
         "도스이오스",
-        "게리오스 아종"
+        "게리오스 아종",
+        "네르스큐라"
       ],
       "rewardItems": [
         "대장로티켓"
@@ -17884,7 +17893,9 @@
       "questType": "event"
     },
     "event-g-046": {
-      "monsters": [],
+      "monsters": [
+        "아르셀타스"
+      ],
       "rewardItems": [
         "대장로티켓"
       ],
@@ -18050,7 +18061,9 @@
       "questType": "event"
     },
     "event-g-054": {
-      "monsters": [],
+      "monsters": [
+        "네르스큐라 아종"
+      ],
       "rewardItems": [
         "모듈기능"
       ],
@@ -18110,7 +18123,8 @@
     },
     "event-g-057": {
       "monsters": [
-        "푸루푸루"
+        "푸루푸루",
+        "네르스큐라 아종"
       ],
       "rewardItems": [
         "대장로티켓"
@@ -18337,7 +18351,9 @@
       "questType": "event"
     },
     "event-g-068": {
-      "monsters": [],
+      "monsters": [
+        "다라·아마듈라 아종"
+      ],
       "rewardItems": [
         "대장로티켓S"
       ],
@@ -18376,7 +18392,7 @@
     },
     "event-g-070": {
       "monsters": [
-        "밀라보레아스"
+        "밀라보레아스 (홍염룡)"
       ],
       "rewardItems": [
         "대장로티켓S"
@@ -18440,7 +18456,9 @@
       "questType": "event"
     },
     "event-g-073": {
-      "monsters": [],
+      "monsters": [
+        "다라·아마듈라"
+      ],
       "rewardItems": [
         "대장로티켓S"
       ],
@@ -18551,7 +18569,7 @@
     },
     "event-g-078": {
       "monsters": [
-        "밀라보레아스"
+        "밀라보레아스 (홍염룡)"
       ],
       "rewardItems": [
         "대장로티켓S",
@@ -18761,7 +18779,9 @@
       "questType": "event"
     },
     "event-episodic-088": {
-      "monsters": [],
+      "monsters": [
+        "아르셀타스 아종"
+      ],
       "rewardItems": [
         "교관티켓"
       ],
@@ -18924,7 +18944,7 @@
     },
     "event-episodic-096": {
       "monsters": [
-        "밀라보레아스"
+        "밀라보레아스 (조룡)"
       ],
       "rewardItems": [
         "점보티켓"
@@ -18992,7 +19012,9 @@
       "questType": "challenge"
     },
     "challenge-24": {
-      "monsters": [],
+      "monsters": [
+        "네르스큐라"
+      ],
       "rewardItems": [],
       "rewardDetails": [],
       "tags": [
@@ -19042,6 +19064,7 @@
     },
     "challenge-28": {
       "monsters": [
+        "아르셀타스",
         "게넬·셀타스"
       ],
       "rewardItems": [],
@@ -19078,7 +19101,9 @@
     "challenge-31": {
       "monsters": [
         "자보아자길",
-        "바바콩가 아종"
+        "네르스큐라",
+        "바바콩가 아종",
+        "네르스큐라 아종"
       ],
       "rewardItems": [],
       "rewardDetails": [],
@@ -19267,6 +19292,250 @@
       "location": "구사막<낮>",
       "level": "G★3",
       "questType": "event"
+    },
+    "quest_h8_c2_research_velocidrome": {
+      "monsters": [
+        "도스람포스"
+      ],
+      "rewardItems": [],
+      "rewardDetails": [],
+      "location": "미지의 삼림",
+      "level": "★2",
+      "questType": "village"
+    },
+    "quest_h8_c2_research_yian_kutku": {
+      "monsters": [
+        "얀쿡크"
+      ],
+      "rewardItems": [],
+      "rewardDetails": [],
+      "location": "미지의 삼림",
+      "level": "★2",
+      "questType": "village"
+    },
+    "quest_h8_c3_research_basarios": {
+      "monsters": [
+        "바살모스"
+      ],
+      "rewardItems": [],
+      "rewardDetails": [],
+      "location": "미지의 삼림",
+      "level": "★3",
+      "questType": "village"
+    },
+    "quest_h8_c3_unknown_gore": {
+      "monsters": [
+        "고어·마가라"
+      ],
+      "rewardItems": [],
+      "rewardDetails": [],
+      "location": "대해",
+      "level": "★3",
+      "questType": "village"
+    },
+    "quest_h8_c4_wild_palico_panic": {
+      "monsters": [
+        "바바콩가"
+      ],
+      "rewardItems": [],
+      "rewardDetails": [],
+      "location": "원생림",
+      "level": "★4",
+      "questType": "village"
+    },
+    "quest_h8_c4_meownster_hunter_havoc": {
+      "monsters": [
+        "자보아자길"
+      ],
+      "rewardItems": [],
+      "rewardDetails": [],
+      "location": "빙해",
+      "level": "★4",
+      "questType": "village"
+    },
+    "quest_h8_c4_gore_magala_drama": {
+      "monsters": [
+        "고어·마가라"
+      ],
+      "rewardItems": [],
+      "rewardDetails": [],
+      "location": "미지의 삼림",
+      "level": "★4",
+      "questType": "village"
+    },
+    "quest_h8_c5_research_yian_garuga": {
+      "monsters": [
+        "얀가루루가"
+      ],
+      "rewardItems": [],
+      "rewardDetails": [],
+      "location": "미지의 삼림",
+      "level": "★5",
+      "questType": "village"
+    },
+    "quest_h8_c6_research_kirin": {
+      "monsters": [
+        "키린"
+      ],
+      "rewardItems": [],
+      "rewardDetails": [],
+      "location": "미지의 삼림",
+      "level": "★6",
+      "questType": "village"
+    },
+    "quest_h8_c6_whole_lava_love": {
+      "monsters": [
+        "브라키디오스"
+      ],
+      "rewardItems": [],
+      "rewardDetails": [],
+      "location": "지저 화산",
+      "level": "★6",
+      "questType": "village"
+    },
+    "quest_h8_c6_fleet_action": {
+      "monsters": [
+        "다렌·모란"
+      ],
+      "rewardItems": [],
+      "rewardDetails": [],
+      "location": "대사막",
+      "level": "★6",
+      "questType": "village"
+    },
+    "quest_h8_c6_deep_trouble": {
+      "monsters": [
+        "테오·테스카토르"
+      ],
+      "rewardItems": [],
+      "rewardDetails": [],
+      "location": "지저 화산",
+      "level": "★6",
+      "questType": "village"
+    },
+    "quest_h8_c6_stand_tall": {
+      "monsters": [
+        "아캄토름"
+      ],
+      "rewardItems": [],
+      "rewardDetails": [],
+      "location": "용암도",
+      "level": "★6",
+      "questType": "village"
+    },
+    "quest_h8_c6_wicked_wings": {
+      "monsters": [
+        "크샬다오라"
+      ],
+      "rewardItems": [],
+      "rewardDetails": [],
+      "location": "빙해",
+      "level": "★6",
+      "questType": "village"
+    },
+    "quest_h8_c6_tough_love": {
+      "monsters": [
+        "라잔"
+      ],
+      "rewardItems": [],
+      "rewardDetails": [],
+      "location": "원생림",
+      "level": "★6",
+      "questType": "village"
+    },
+    "quest_h8_c6_caravaneer_challenge": {
+      "monsters": [
+        "격앙 라잔",
+        "진오우거",
+        "샤가르마가라"
+      ],
+      "rewardItems": [],
+      "rewardDetails": [],
+      "location": "금지된 땅",
+      "level": "★6",
+      "questType": "village"
+    },
+    "quest_h8_c10_red_dragon_dawn": {
+      "monsters": [
+        "밀라보레아스 (홍룡)"
+      ],
+      "rewardItems": [],
+      "rewardDetails": [],
+      "location": "용암도",
+      "level": "★10",
+      "questType": "village"
+    },
+    "quest_h8_c10_moving_mountains": {
+      "monsters": [
+        "다렌·모란"
+      ],
+      "rewardItems": [],
+      "rewardDetails": [],
+      "location": "대사막",
+      "level": "★10",
+      "questType": "village"
+    },
+    "quest_h8_c10_into_mist": {
+      "monsters": [
+        "오나즈치"
+      ],
+      "rewardItems": [],
+      "rewardDetails": [],
+      "location": "미지의 삼림",
+      "level": "★10",
+      "questType": "village"
+    },
+    "quest_h8_c10_elder_dragon_mist": {
+      "monsters": [
+        "오나즈치"
+      ],
+      "rewardItems": [],
+      "rewardDetails": [],
+      "location": "유적 평원",
+      "level": "★10",
+      "questType": "village"
+    },
+    "quest_h8_c10_bad_hair_rajang": {
+      "monsters": [
+        "격앙 라잔"
+      ],
+      "rewardItems": [],
+      "rewardDetails": [],
+      "location": "유적 평원",
+      "level": "★10",
+      "questType": "village"
+    },
+    "quest_h8_c10_all_in_place": {
+      "monsters": [
+        "혼돈의 고어·마가라"
+      ],
+      "rewardItems": [],
+      "rewardDetails": [],
+      "location": "천공산",
+      "level": "★10",
+      "questType": "village"
+    },
+    "quest_h8_c10_masters_test": {
+      "monsters": [
+        "셀레기오스",
+        "디아블로스",
+        "이블조"
+      ],
+      "rewardItems": [],
+      "rewardDetails": [],
+      "location": "격투장",
+      "level": "★10",
+      "questType": "village"
+    },
+    "quest_h8_g3_operation_rust_remover": {
+      "monsters": [
+        "녹슨크샬다오라"
+      ],
+      "rewardItems": [],
+      "rewardDetails": [],
+      "location": "전투 구역",
+      "level": "★3",
+      "questType": "g"
     }
   }
 }

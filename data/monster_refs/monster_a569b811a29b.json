@@ -1,1 +1,1 @@
-{"monster":"밀라보레아스 (홍룡)","items":[],"quests":[],"uses":[]}
+{"monster":"밀라보레아스 (홍룡)","items":[],"quests":[{"id":"event-high-023","questType":"event","questTypeLabel":"이벤트","level":"★7","name":"홍룡 강림","objective":"밀라보레아스 (홍룡) 토벌 또는 격퇴","location":"용암섬"},{"id":"quest_h8_c10_red_dragon_dawn","questType":"village","questTypeLabel":"여단","level":"★10","name":"고난도: 홍룡 탄생","objective":"밀라보레아스 (홍룡) 토벌 또는 격퇴","location":"용암도"}],"uses":[]}

@@ -1,1 +1,1 @@
-{"monster":"다라·아마듈라 아종","items":[],"quests":[{"id":"quest_7b399259fc68","questType":"g","questTypeLabel":"G급","level":"★3","name":"고난도: 불멸을 구가하는 황제","objective":"다라·아마듈라 아종 토벌","location":"천검산"}],"uses":[]}
+{"monster":"다라·아마듈라 아종","items":[],"quests":[{"id":"quest_7b399259fc68","questType":"g","questTypeLabel":"G급","level":"★3","name":"고난도: 불멸을 구가하는 황제","objective":"다라·아마듈라 아종 토벌","location":"천검산"},{"id":"event-g-068","questType":"event","questTypeLabel":"이벤트","level":"G★3","name":"진홍의 사룡왕","objective":"다라 아마듈라 아종 토벌","location":"천검산"}],"uses":[]}

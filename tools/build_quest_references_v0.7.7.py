@@ -19,7 +19,7 @@ for iid,r in iref.items():
         for qid in ids:
             reward[qid].add(nm)
             reward_details[qid].append({'name':nm,'source':'project-xref'})
-alias={'임계 브라키디오스':['맹폭 브라키디오스'],'혼돈의 고어·마가라':['혼돈에 신음하는 고어·마가라','혼돈의 고어마가라'],'오나즈치':['오오나즈치'],'밀라보레아스':['밀라보레아스 (흑룡)'],'밀라보레아스 (조룡)':['밀라보레아스 (선조룡)'],'도스재기':['도스 재기'],'게넬·셀타스':['게넬셀타스'],'게넬·셀타스 아종':['게넬셀타스 아종']}
+alias={'임계 브라키디오스':['맹폭 브라키디오스'],'혼돈의 고어·마가라':['혼돈에 신음하는 고어·마가라','혼돈의 고어마가라','혼돈에 신음하는 고어마가라'],'오나즈치':['오오나즈치'],'밀라보레아스':['밀라보레아스 (흑룡)'],'밀라보레아스 (조룡)':['밀라보레아스 (선조룡)','조룡 밀라보레아스'],'밀라보레아스 (홍룡)':['홍룡 밀라보레아스'],'밀라보레아스 (홍염룡)':['홍염룡 밀라보레아스'],'도스재기':['도스 재기'],'게넬·셀타스':['게넬셀타스'],'게넬·셀타스 아종':['게넬셀타스 아종'],'녹슨크샬다오라':['녹슨 크샬다오라'],'아르셀타스':['알셀타스'],'아르셀타스 아종':['알셀타스 아종'],'도스가레오스':['도스가레오'],'네르스큐라':['넬스큐라'],'네르스큐라 아종':['넬스큐라 아종'],'다라·아마듈라':['다라 아마듈라'],'다라·아마듈라 아종':['다라 아마듈라 아종']}
 # Generic multi-hunt objectives do not spell out monster names. These were verified against MH4G source data in hotfix7.
 manual_monsters={
 'quest_892cd4874989':['도스이오스','고어·마가라'],
@@ -86,10 +86,10 @@ if DB and DB.exists():
                     reward_details[q['id']].append({'name':nm,'slot':rr['reward_slot'],'percentage':rr['percentage'],'quantity':rr['stack_size'],'source':'mh4u-db'});seen.add(key);imported_rows+=1
         elif cand: ambiguous+=1
         else:no_match+=1
-idx={'version':'0.7.7-chat4-xref-hotfix7','generated':datetime.datetime.now().isoformat(timespec='seconds'),'quests':{}}
+idx={'version':'0.7.7-chat4-xref-hotfix8','generated':datetime.datetime.now().isoformat(timespec='seconds'),'quests':{}}
 for q in qs:
     # Objective text is canonical. Longest-name matching prevents base species from being duplicated inside subspecies names.
-    found=manual_monsters.get(q['id']) or match_monsters(' '.join(str(q.get(k,'') or '') for k in ('objective','subObjective')))
+    found=list(q.get('_verifiedMonsters') or []) or manual_monsters.get(q['id']) or match_monsters(' '.join(str(q.get(k,'') or '') for k in ('objective','subObjective')))
     if not found:
         # Endless hunts and a few legacy rows omit a monster in the objective; quest-name fallback is used only when objective matching is empty.
         found=match_monsters(q.get('name',''))

@@ -1,1 +1,1 @@
-{"monster":"밀라보레아스 (홍염룡)","items":[],"quests":[],"uses":[]}
+{"monster":"밀라보레아스 (홍염룡)","items":[],"quests":[{"id":"quest_fe44e93bc43b","questType":"g","questTypeLabel":"G급","level":"★3","name":"고난도: 오라, 파멸의 전투여","objective":"밀라보레아스 (홍염룡) 토벌 또는 격퇴","location":"용암섬"},{"id":"event-g-070","questType":"event","questTypeLabel":"이벤트","level":"G★3","name":"종언의 연회","objective":"밀라보레아스 (홍염룡) 토벌 또는 격퇴","location":"용암섬"},{"id":"event-g-078","questType":"event","questTypeLabel":"이벤트","level":"G★3","name":"진홍의 장막 너머","objective":"밀라보레아스 (홍염룡) 토벌 또는 격퇴","location":"용암섬"}],"uses":[]}
