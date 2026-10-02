@@ -1,6 +1,6 @@
 {
   "version": "0.7.7-chat4-quest1",
-  "generated": "2026-09-16T05:34:48",
+  "generated": "2026-10-02T00:02:01",
   "quests": {
     "quest_04bc73176056": {
       "monsters": [],
@@ -33648,6 +33648,31 @@
       "location": "입체투기장",
       "level": "챌린지",
       "questType": "challenge"
+    },
+    "event-g-079": {
+      "monsters": [
+        "테오·테스카토르"
+      ],
+      "rewardItems": [
+        "대장로티켓S",
+        "반역Ｊ티켓"
+      ],
+      "rewardDetails": [
+        {
+          "name": "반역Ｊ티켓",
+          "source": "MH4G event reward cross-check"
+        },
+        {
+          "name": "대장로티켓S",
+          "source": "MH4G event reward cross-check"
+        }
+      ],
+      "tags": [
+        "event"
+      ],
+      "location": "구사막<낮>",
+      "level": "G★3",
+      "questType": "event"
     }
   }
 }

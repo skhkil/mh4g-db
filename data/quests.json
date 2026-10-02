@@ -7776,7 +7776,10 @@
     "subReward": "-",
     "subHrp": "-",
     "note": "주요 보수: 환수티켓 / 사용처: EX키린U부츠·EX키린U케이프·EX키린U코르노 등 장비 10종",
-    "source": "Monster Hunter Wiki MH4U: Event Quests + 사용자 제공 MH4U DB 비교"
+    "source": "Monster Hunter Wiki MH4U: Event Quests + 사용자 제공 MH4U DB 비교",
+    "aliases": [
+      "Kirin Aquisition"
+    ]
   },
   {
     "id": "event-high-021",
@@ -8359,7 +8362,7 @@
     "level": "G★1",
     "key": false,
     "name": "헌터의 기록: 얀쿡크",
-    "nameJa": "",
+    "nameJa": "ハンター日誌　怪鳥の回",
     "nameEn": "Hunter's Log: Yian Kut-Ku",
     "objective": "제한 시간 내 얀쿡크 2마리 수렵 또는 야옹택시 티켓 납품",
     "objectiveEn": "Hunt 2 Yian Kut-Ku before time expires or deliver Paw Pass Ticket",
@@ -8374,7 +8377,12 @@
     "subReward": "30,000z",
     "subHrp": "2250",
     "note": "",
-    "source": "Monster Hunter Wiki MH4U: Event Quests + 사용자 제공 MH4U DB 비교"
+    "source": "Monster Hunter Wiki MH4U: Event Quests + 사용자 제공 MH4U DB 비교",
+    "aliases": [
+      "Hunter's Log: Yian Kut-Ku",
+      "헌터 일지 괴조 편",
+      "헌터일지 괴조의 회"
+    ]
   },
   {
     "id": "event-g-044",
@@ -10329,5 +10337,36 @@
     "subReward": "-",
     "note": "",
     "source": "사용자 제공 MH4U DB arena_quests + Capcom MH4U 공식 매뉴얼"
+  },
+  {
+    "id": "event-g-079",
+    "questType": "event",
+    "questTypeLabel": "이벤트",
+    "eventGroup": "g",
+    "eventSeries": "JUMP",
+    "level": "G★3",
+    "key": false,
+    "name": "JUMP·작열연투!",
+    "nameJa": "JUMP・灼熱燃闘！",
+    "nameEn": "",
+    "aliases": [
+      "JUMP・작열열투!",
+      "JUMP 작열전투",
+      "JUMP·작열연투"
+    ],
+    "objective": "테오·테스카토르 토벌 또는 격퇴",
+    "objectiveEn": "Slay or repel a Teostra",
+    "location": "구사막<낮>",
+    "fee": "3,100z",
+    "reward": "30,300z",
+    "hrp": "-",
+    "time": "35분",
+    "conditions": "G★3 허가증 · DLC 이벤트",
+    "subObjective": "",
+    "subObjectiveEn": "",
+    "subReward": "-",
+    "subHrp": "-",
+    "note": "주요 보수: 반역Ｊ티켓 · 대장로티켓S / 사용처: 반역왕J 시리즈",
+    "source": "MH4G 국내 인벤 보수표 + MH4G@wiki/Japanese quest data cross-check"
   }
 ]

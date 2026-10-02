@@ -891,3 +891,17 @@
 - 다음 작업: 최종 통합 release gate 통과 후 ZIP 생성.
 - 최종 통합 release gate: `tools/auto_build_advanced_release_gate_v0.7.7.json` 전체 OK.
 - 최종 ZIP: `mh4g-db-v0.7.7_chat4_auto_build_advanced_final.zip`.
+
+## 2026-10-02 채팅 4 — 이벤트 소재수급 퀘스트 연결 전수검사 (hotfix5)
+- 최신 기준 hotfix4에서 방어구 소재수급의 이벤트 퀘스트 참조와 실제 퀘스트 DB를 전수 대조.
+- 검사 결과: 이벤트 소재수급 489행 / 고유 31종 / 수정 후 미매칭 0건.
+- 실제 DB 누락 1건: `JUMP·작열연투!` G★3 이벤트 추가.
+- 별칭 불일치 1건: `헌터 일지 괴조 편` → 기존 `event-g-043 헌터의 기록: 얀쿡크`에 일본 원명/별칭 연결.
+- 영문 오타 1건: `Kirin Aquisition` → `event-high-020 키린 쟁탈전 / Kirin Acquisition`으로 정규화.
+- 관련 armor progression source 22개 파일에서 canonical quest id/name을 반영.
+- 새 JUMP 퀘스트에 테오·테스카토르 및 `반역Ｊ티켓 / 대장로티켓S` 역참조 추가.
+- 브라우저 E2E에서 `반역왕Ｊ해트 → 소재수급 JUMP·작열연투! → 이벤트 G★3 실제 행` 이동 확인.
+- 기존 hotfix3 통합 E2E, hotfix21 복잡검색 PC 2회 + 모바일 1회, 뒤로가기 15회 회귀 통과.
+- 캐시 키 `0.7.7-chat4-ui-reward-hotfix5`.
+- 최종 게이트: `tools/ui_rewards_hotfix5_release_gate_v0.7.7.json` 전체 OK.
+- 최종 ZIP: `mh4g-db-v0.7.7_chat4_ui_rewards_hotfix5_final.zip`.

@@ -690,3 +690,16 @@
 - 추천장비 → 시뮬레이터 → 뒤로가기 25회, 방어구 토글 12회, 뒤/앞 탐색 10회 안정성 회귀 통과.
 - 최종 캐시 키: `0.7.7-chat4-auto-build-advanced-final`.
 - 최종 통합 release gate `tools/auto_build_advanced_release_gate_v0.7.7.json` 전체 통과 후 `mh4g-db-v0.7.7_chat4_auto_build_advanced_final.zip`으로 패키징했습니다.
+
+### 이벤트 소재수급 → 퀘스트 연결 전수검사 hotfix5 (2026-10-02)
+- 방어구 소재수급에서 참조하는 이벤트 퀘스트를 실제 `data/quests.json`과 전수 대조했습니다.
+- 이벤트 소재수급 참조 489행 / 고유 이벤트 퀘스트 31종을 검사했고, 최종 미매칭 0건으로 정리했습니다.
+- 실제 누락이었던 `JUMP·작열연투!`(`JUMP・灼熱燃闘！`) G★3 이벤트를 퀘스트 DB에 추가했습니다.
+  - 목표: 테오·테스카토르 토벌 또는 격퇴
+  - 장소: 구사막<낮>, 제한시간 35분, 계약금 3,100z, 보수금 30,300z
+  - 주요 보수: 반역Ｊ티켓 / 대장로티켓S
+- `헌터 일지 괴조 편`은 기존 `헌터의 기록: 얀쿡크`와 동일 퀘스트로 별칭/일문명을 연결했습니다.
+- `Kirin Aquisition`은 기존 `키린 쟁탈전 / Kirin Acquisition`의 영문 오타로 판정해 별칭 처리하고 소재수급 원본도 정규화했습니다.
+- 퀘스트 검색/소재수급 이동 시 `aliases`도 검색하도록 보강했습니다.
+- 검증: `tools/material_event_quest_link_audit_hotfix5_v0.7.7.json`, `tools/material_event_quest_links_hotfix5_e2e_v0.7.7.json`.
+- 최종 패키지: `mh4g-db-v0.7.7_chat4_ui_rewards_hotfix5_final.zip`.

@@ -1,0 +1,21 @@
+{
+  "version": "0.7.7-hotfix5",
+  "generated": "2026-10-02T00:06:36",
+  "ok": true,
+  "facts": {
+    "jsSyntax": "ok",
+    "material_event_quest_link_audit_hotfix5_v0.7.7.json": true,
+    "material_event_quest_links_hotfix5_e2e_v0.7.7.json": true,
+    "hotfix3_quest_links_near_skill_e2e_v0.7.7.json": true,
+    "hotfix21_complex_search_e2e_v0.7.7.json": true,
+    "hotfix15_backnav_e2e_v0.7.7.json": true,
+    "jumpQuest": {
+      "id": "event-g-079",
+      "name": "JUMP·작열연투!",
+      "level": "G★3",
+      "objective": "테오·테스카토르 토벌 또는 격퇴"
+    },
+    "tempFiles": []
+  },
+  "errors": []
+}

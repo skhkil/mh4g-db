@@ -9,15 +9,16 @@
       "sources": [
         {
           "type": "quest",
-          "id": "",
-          "name": "Kirin Aquisition",
-          "nameEn": "Kirin Aquisition",
-          "level": "Event★6",
-          "questType": "Event",
-          "location": "",
-          "objective": "Slay a Kirin and an Oroshi Kirin",
+          "id": "event-high-020",
+          "name": "키린 쟁탈전",
+          "nameEn": "Kirin Acquisition",
+          "level": "★6",
+          "questType": "event",
+          "location": "탑 꼭대기",
+          "objective": "키린와 키린 아종 토벌",
           "probability": 100,
-          "count": 1
+          "count": 1,
+          "nameJa": "かくもめでたきキリンかな"
         }
       ]
     },
@@ -147,14 +148,15 @@
     ],
     "quests": [
       {
-        "id": "",
-        "name": "Kirin Aquisition",
-        "nameJa": "",
-        "level": "Event★6",
-        "questType": "Event",
-        "location": "",
-        "objective": "Slay a Kirin and an Oroshi Kirin",
-        "note": ""
+        "id": "event-high-020",
+        "name": "키린 쟁탈전",
+        "nameJa": "かくもめでたきキリンかな",
+        "level": "★6",
+        "questType": "event",
+        "location": "탑 꼭대기",
+        "objective": "키린와 키린 아종 토벌",
+        "note": "",
+        "nameEn": "Kirin Acquisition"
       },
       {
         "id": "",

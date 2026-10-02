@@ -1,6 +1,6 @@
 {
   "version": "0.7.7-chat4-event-major-reward1",
-  "generated": "2026-10-01",
+  "generated": "2026-10-02T00:02:01",
   "note": "이벤트/에피소드 퀘스트의 고유 티켓·콜라보 소재 등 핵심 보상을 우선 표시한다. 고유 보상이 없는 일반 소재형 이벤트는 확인된 메인 보상에서 대표 소재를 표시한다.",
   "quests": {
     "event-high-011": {
@@ -269,6 +269,13 @@
         "점보티켓"
       ],
       "source": "MH4U Event Quests (Monster Hunter Wiki/Fandom)"
+    },
+    "event-g-079": {
+      "rewardLabels": [
+        "반역Ｊ티켓",
+        "대장로티켓S"
+      ],
+      "source": "MH4G 국내 인벤 + MH4G Japanese event data"
     }
   }
 }

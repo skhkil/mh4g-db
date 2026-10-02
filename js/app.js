@@ -1715,7 +1715,7 @@ async function followItemReference(btn){
     if($("#questKeyOnly"))$("#questKeyOnly").checked=false;
     if($("#questLocationFilter"))$("#questLocationFilter").value="all";
     if($("#questMonsterFilter")){const mon=$("#questMonsterFilter");mon.value=[...mon.options].some(o=>o.value===monster)?monster:"all";}
-    const exactSource=source&&data.quests.some(q=>q.name===source||q.nameEn===source||q.nameJa===source);
+    const exactSource=source&&data.quests.some(q=>q.name===source||q.nameEn===source||q.nameJa===source||(q.aliases||[]).includes(source));
     if($("#questSearch"))$("#questSearch").value=exactSource?source:"";
     const rewardMatch=reward&&data.quests.some(q=>(!qt||q.questType===qt)&&(!level||q.level===level)&&(questRef(q).rewardItems||[]).includes(reward));
     if($("#questRewardFilter"))$("#questRewardFilter").value=rewardMatch?reward:"";
@@ -2046,7 +2046,7 @@ function renderQuest(){
   if(keyLabel)keyLabel.style.display=eventView?"none":"";
   const keyOnly=!eventView&&((questView==="key"&&type==="all")||keyBox?.checked);
   const list=data.quests.filter(q=>{
-    const ref=questRef(q),search=`${q.name||""} ${q.nameJa||""} ${q.nameEn||""} ${q.objective||""} ${q.objectiveEn||""} ${q.subObjective||""} ${q.subObjectiveEn||""} ${q.location||""} ${q.eventSeries||""} ${q.note||""} ${questTargetMonsters(q).join(" ")} ${questMajorRewardNames(q).join(" ")}`.toLowerCase();
+    const ref=questRef(q),search=`${q.name||""} ${q.nameJa||""} ${q.nameEn||""} ${(q.aliases||[]).join(" ")} ${q.objective||""} ${q.objectiveEn||""} ${q.subObjective||""} ${q.subObjectiveEn||""} ${q.location||""} ${q.eventSeries||""} ${q.note||""} ${questTargetMonsters(q).join(" ")} ${questMajorRewardNames(q).join(" ")}`.toLowerCase();
     return (type==="all"?questMatchesView(q):true)&&(level==="all"||q.level===level)&&(!keyOnly||q.key)&&questTypeFilterMatch(q,type)&&(location==="all"||q.location===location)&&(monster==="all"||questTargetMonsters(q).includes(monster))&&(!rewardText||questMajorRewardNames(q).some(x=>x.toLowerCase().includes(rewardText)))&&(!qtext||search.includes(qtext));
   });
   if(eventView){

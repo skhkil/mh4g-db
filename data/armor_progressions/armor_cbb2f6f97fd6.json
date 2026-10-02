@@ -9,14 +9,15 @@
       "sources": [
         {
           "type": "quest",
-          "id": "",
-          "name": "헌터 일지 괴조 편",
+          "id": "event-g-043",
+          "name": "헌터의 기록: 얀쿡크",
           "nameJa": "ハンター日誌　怪鳥の回",
           "level": "G★1",
           "questType": "event",
-          "location": "유적평원",
-          "objective": "얀쿡 2마리 이상 수렵 후 귀환 또는 네코택 티켓 납품",
-          "note": "기본 보수에서 헌터모집공지를 획득"
+          "location": "유적 평원",
+          "objective": "제한 시간 내 얀쿡크 2마리 수렵 또는 야옹택시 티켓 납품",
+          "note": "기본 보수에서 헌터모집공지를 획득",
+          "nameEn": "Hunter's Log: Yian Kut-Ku"
         }
       ]
     },
@@ -96,14 +97,15 @@
     "monsters": [],
     "quests": [
       {
-        "id": "",
-        "name": "헌터 일지 괴조 편",
+        "id": "event-g-043",
+        "name": "헌터의 기록: 얀쿡크",
         "nameJa": "ハンター日誌　怪鳥の回",
         "level": "G★1",
         "questType": "event",
-        "location": "유적평원",
-        "objective": "얀쿡 2마리 이상 수렵 후 귀환 또는 네코택 티켓 납품",
-        "note": "기본 보수에서 헌터모집공지를 획득"
+        "location": "유적 평원",
+        "objective": "제한 시간 내 얀쿡크 2마리 수렵 또는 야옹택시 티켓 납품",
+        "note": "기본 보수에서 헌터모집공지를 획득",
+        "nameEn": "Hunter's Log: Yian Kut-Ku"
       },
       {
         "id": "",
