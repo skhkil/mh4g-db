@@ -905,3 +905,10 @@
 - 캐시 키 `0.7.7-chat4-ui-reward-hotfix5`.
 - 최종 게이트: `tools/ui_rewards_hotfix5_release_gate_v0.7.7.json` 전체 OK.
 - 최종 ZIP: `mh4g-db-v0.7.7_chat4_ui_rewards_hotfix5_final.zip`.
+
+
+## 2026-10-02 hotfix5 패키징 캐시 수정
+- `index.html`은 hotfix5 캐시 키였지만 `js/app.js` 내부 `data-loader.js`/`engine.js` import 쿼리와 `APP_VERSION`이 hotfix4로 남아 있던 패키징 오류 수정.
+- 모든 런타임 캐시 키를 `0.7.7-chat4-ui-reward-hotfix5`로 통일.
+- `JUMP·작열연투!` 검색/별칭/소재수급 이동 브라우저 E2E 재검증 통과.
+- 수정 패키지: `mh4g-db-v0.7.7_chat4_ui_rewards_hotfix5_cachefix_final.zip`.

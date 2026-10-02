@@ -703,3 +703,9 @@
 - 퀘스트 검색/소재수급 이동 시 `aliases`도 검색하도록 보강했습니다.
 - 검증: `tools/material_event_quest_link_audit_hotfix5_v0.7.7.json`, `tools/material_event_quest_links_hotfix5_e2e_v0.7.7.json`.
 - 최종 패키지: `mh4g-db-v0.7.7_chat4_ui_rewards_hotfix5_final.zip`.
+
+
+### hotfix5 패키징 캐시 수정 (2026-10-02)
+- hotfix5 데이터 변경이 이전 브라우저 캐시에 가려질 수 있던 문제를 수정했습니다.
+- `app.js`, `data-loader.js`, `engine.js`의 캐시 버전과 앱 버전을 hotfix5로 통일했습니다.
+- 수정 패키지: `mh4g-db-v0.7.7_chat4_ui_rewards_hotfix5_cachefix_final.zip`.
