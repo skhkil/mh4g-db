@@ -950,3 +950,16 @@
 - 기존 hotfix3 퀘스트/근접조합 E2E, 복잡 자동조합 PC 2회+모바일 1회, 자동랭킹 smoke PC+모바일, 추천장비→시뮬레이터→뒤로가기 25회/방어구 토글 12회/뒤앞 10회 통과.
 - 캐시 키: `0.7.7-chat4-quest-monster-hotfix8`.
 - 최종 ZIP: `mh4g-db-v0.7.7_chat4_quest_monster_hotfix8_final.zip`.
+
+
+## 2026-10-06 hotfix9 — 자동조합 무기 슬롯 고정 필터
+- 자동조합의 `진행도` 바로 옆에 `무기 슬롯` 선택 추가: 0 / 1 / 2 / 3.
+- 선택한 무기 슬롯을 `searchBuilds(... weaponSlots)`에 그대로 전달해 장식주 배치/완성 가능성 계산에 고정 반영.
+- 자동 선택 실제 무기도 선택한 무기종·진행도 범위에서 `slots === 선택값`인 무기만 허용.
+- solver가 실제 사용한 무기 슬롯 수가 선택값보다 크면 해당 결과는 제외.
+- 결과 카드 → 시뮬레이터 적용 시 동일 자동 선택 무기 유지.
+- G급 대검/고급귀마개 전용 E2E: 0/1/2/3슬롯 각각 정확한 슬롯 무기 확인, 전부 검색/적용 통과.
+- 기존 보유 호석 E2E, hotfix21 복잡검색 PC 2회+모바일 1회, hotfix20 자동랭킹 smoke PC+모바일, hotfix17 안정성 25/12/10회 통과.
+- hotfix8 퀘스트↔몬스터 의미 E2E 재통과.
+- 캐시 키: `0.7.7-chat4-auto-weapon-slot-hotfix9`.
+- 최종 ZIP: `mh4g-db-v0.7.7_chat4_auto_weapon_slot_hotfix9_final.zip`.

@@ -1,5 +1,5 @@
-import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,loadArmorProgression,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-quest-monster-hotfix8";
-import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-quest-monster-hotfix8";
+import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,loadArmorProgression,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-auto-weapon-slot-hotfix9";
+import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-auto-weapon-slot-hotfix9";
 
 let data={skills:[],armors:[],armorSets:[],decorations:[],decorationUnlocks:{decorations:{}},eventMajorRewards:{quests:{}},weapons:[],weaponSummary:[],melodies:[],items:[],itemReferenceIndex:{items:{}},skillReferenceIndex:{items:{},categories:[]},meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],monsterReferenceIndex:{items:{}},dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],questReferenceIndex:{quests:{}},siteInfo:{},meta:{},weaponSkillPriorities:{weapons:{}}};
 let targets=[];
@@ -30,7 +30,7 @@ function weaponPreferredSkillWeights(hunterType="blade"){const type=uiState.auto
 
 const MANUAL_CONTAINERS=["weapon",...PARTS,"charm"];
 const uiState={
-  targetActivation:"", autoWeaponType:"대검", ownedCharmsOnly:false, manualSet:"", manualWeapon:"", manualWeaponType:"all", manualWeaponRank:"all", manualWeaponElement:"all", manualWeaponSlots:"all",
+  targetActivation:"", autoWeaponType:"대검", autoWeaponSlots:0, ownedCharmsOnly:false, manualSet:"", manualWeapon:"", manualWeaponType:"all", manualWeaponRank:"all", manualWeaponElement:"all", manualWeaponSlots:"all",
   charmSkill1:"",charmPoint1:0,charmSkill2:"",charmPoint2:0,charmSlots:0,
   manual:Object.fromEntries(PARTS.map(p=>[p,""])),
   manualDecorations:Object.fromEntries(MANUAL_CONTAINERS.map(c=>[c,[]]))
@@ -46,7 +46,7 @@ let restoringHistory=false;
 let historyRestoreToken=0;
 try{history.scrollRestoration="manual"}catch{}
 
-const APP_VERSION="0.7.7-chat4-quest-monster-hotfix8";
+const APP_VERSION="0.7.7-chat4-auto-weapon-slot-hotfix9";
 const boundEventGroups=new Set();
 let appEventsBound=false;
 function ensureRuntimeStatus(){
@@ -406,6 +406,12 @@ function fillSelectors(){
     if(!WEAPON_TYPES.includes(uiState.autoWeaponType))uiState.autoWeaponType="대검";
     $("#autoWeaponType").value=uiState.autoWeaponType;
     $("#autoWeaponType").onchange=e=>{uiState.autoWeaponType=e.target.value||"대검"};
+  }
+  if($("#autoWeaponSlots")){
+    const slot=Math.max(0,Math.min(3,Number(uiState.autoWeaponSlots)||0));
+    uiState.autoWeaponSlots=slot;
+    $("#autoWeaponSlots").value=String(slot);
+    $("#autoWeaponSlots").onchange=e=>{uiState.autoWeaponSlots=Math.max(0,Math.min(3,Number(e.target.value)||0))};
   }
   const currentType=$("#weaponTypeFilter")?.value||"all";
   if($("#weaponTypeFilter")){
@@ -895,17 +901,17 @@ const AUTO_RANK_VALUE={low:0,high:1,g:2};
 function autoWeaponType(){return uiState.autoWeaponType||"대검"}
 function autoHunterType(){return RANGED_TYPES.has(autoWeaponType())?"gunner":"blade"}
 function autoWeaponPool(progression="g"){const max=AUTO_RANK_VALUE[progression]??2;return data.weapons.filter(w=>w.weaponType===autoWeaponType()&&(AUTO_RANK_VALUE[w.rank]??9)<=max)}
-function autoSearchWeaponSlots(progression="g"){const pool=autoWeaponPool(progression);return pool.length?Math.max(...pool.map(w=>Number(w.slots||0))):0}
-function autoWeaponForSlots(requiredSlots=0,progression="g"){const req=Math.max(0,Number(requiredSlots)||0),pool=autoWeaponPool(progression).filter(w=>Number(w.slots||0)>=req);pool.sort((a,b)=>Number(a.slots||0)-Number(b.slots||0)||(AUTO_RANK_VALUE[b.rank]??-1)-(AUTO_RANK_VALUE[a.rank]??-1)||Number(b.attack||0)-Number(a.attack||0)||Number(b.affinity||0)-Number(a.affinity||0)||String(a.name).localeCompare(String(b.name),"ko"));return pool[0]||null}
+function autoSearchWeaponSlots(){return Math.max(0,Math.min(3,Number(uiState.autoWeaponSlots)||0))}
+function autoWeaponForSlots(requiredSlots=0,progression="g"){const req=Math.max(0,Number(requiredSlots)||0),fixed=autoSearchWeaponSlots();if(req>fixed)return null;const pool=autoWeaponPool(progression).filter(w=>Number(w.slots||0)===fixed);pool.sort((a,b)=>(AUTO_RANK_VALUE[b.rank]??-1)-(AUTO_RANK_VALUE[a.rank]??-1)||Number(b.attack||0)-Number(a.attack||0)||Number(b.affinity||0)-Number(a.affinity||0)||String(a.name).localeCompare(String(b.name),"ko"));return pool[0]||null}
 function weaponSlotsUsedByBuild(b){return (b?.decorations||[]).reduce((n,p)=>n+(p.container==="weapon"?Number((typeof p.deco==="string"?decorationByIdMap.get(p.deco):p.deco)?.slots||0):0),0)}
-function attachAutoWeapons(result,progression,includeTorsoUp=true){for(const b of [...(result.results||[]),...(result.nearMisses||[])]){const need=weaponSlotsUsedByBuild(b);b.autoWeapon=autoWeaponForSlots(need,progression);b.autoWeaponRequiredSlots=need;if(b.autoWeapon){b.calc=calculateBuild({armors:b.armors||[],charm:b.searchCharm||charm(),weaponSlots:Number(b.autoWeapon.slots||0),decorations:b.decorations||[]},data,includeTorsoUp)}}return result}
+function attachAutoWeapons(result,progression,includeTorsoUp=true){const fixed=autoSearchWeaponSlots();for(const b of [...(result.results||[]),...(result.nearMisses||[])]){const need=weaponSlotsUsedByBuild(b);b.autoWeapon=autoWeaponForSlots(need,progression);b.autoWeaponRequiredSlots=need;b.autoWeaponSelectedSlots=fixed;if(b.autoWeapon){b.calc=calculateBuild({armors:b.armors||[],charm:b.searchCharm||charm(),weaponSlots:fixed,decorations:b.decorations||[]},data,includeTorsoUp)}}result.results=(result.results||[]).filter(b=>b.autoWeapon);result.nearMisses=(result.nearMisses||[]).filter(b=>b.autoWeapon);return result}
 
 function autoSearchConditionText(){
   const progression=$("#autoProgressionRank")?.value||"g";
-  const maxSlots=autoSearchWeaponSlots(progression);
+  const fixedSlots=autoSearchWeaponSlots();
   const c=charm();
   const charmSkills=Object.entries(c.skills||{}).filter(([,v])=>Number(v)!==0).map(([id,v])=>`${skillName(id)} ${Number(v)>0?"+":""}${Number(v)}`);
-  return `무기종 ${esc(autoWeaponType())} · 검색 가능 최대 무기 슬롯 ${maxSlots} · ${uiState.ownedCharmsOnly?`보유 호석만 사용 (${getOwnedCharms().length}개)`:`호석 ${charmSkills.length?charmSkills.map(esc).join(" / "):"스킬 없음"} · 호석 슬롯 ${Number(c.slots||0)}`}`;
+  return `무기종 ${esc(autoWeaponType())} · 무기 슬롯 ${fixedSlots} 고정 · ${uiState.ownedCharmsOnly?`보유 호석만 사용 (${getOwnedCharms().length}개)`:`호석 ${charmSkills.length?charmSkills.map(esc).join(" / "):"스킬 없음"} · 호석 슬롯 ${Number(c.slots||0)}`}`;
 }
 function renderNearMissCard(b,i){
   const missing=(b.missing||[]).map(x=>`${skillName(x.skillId)} ${Number(x.have||0)}/${Number(x.need||0)} (${Number(x.missing||0)}pt 부족)`).join(" · ");
@@ -964,11 +970,17 @@ async function runSearch(){
     const simHunter=autoHunterType();
     const progression=$("#autoProgressionRank")?.value||"g";
     const progressionLabel={low:"하위",high:"상위",g:"G급"}[progression]||"전체";
+    const fixedWeaponSlots=autoSearchWeaponSlots();
+    if(!autoWeaponPool(progression).some(w=>Number(w.slots||0)===fixedWeaponSlots)){
+      $("#searchStats").textContent=`${progressionLabel} ${autoWeaponType()} 중 ${fixedWeaponSlots}슬롯 무기가 없어 검색할 수 없습니다.`;
+      $("#searchResults").innerHTML='<div class="result-empty">선택한 진행도·무기종에 해당 슬롯 수의 무기가 없습니다. 무기 슬롯 조건을 바꿔주세요.</div>';
+      return;
+    }
     const r=await searchAutoWithCharmMode({
       targetActivationIds:targets,
       hunterType:simHunter,
       rank:progression,
-      weaponSlots:autoSearchWeaponSlots(progression),
+      weaponSlots:autoSearchWeaponSlots(),
       allowDecorations:$("#allowDecorations").checked,
       includeTorsoUp:$("#includeTorsoUp").checked,
       limit:Number($("#resultLimit").value||20),
@@ -1001,7 +1013,7 @@ async function runSearch(){
         ? (Number(slot.minAdditionalSlots||0)>0?`장식주 기준 최소 ${Number(slot.minAdditionalSlots)}슬롯을 더 확보하면 완성 가능한 후보입니다.`:`남은 슬롯의 장식주 배치를 다시 최적화하면 완성 가능성이 있습니다.`)
         : `추가 슬롯만으로는 해결하기 어려워 목표 스킬이 붙은 호석 자체가 필요합니다.`;
       const nextStep=`${slotGuide} 필요 호석 충분 조건: ${requiredCharmConditionFromNear(top)}`;
-      $("#searchResults").innerHTML=`<div class="search-guidance"><b>현재 조건에서 완성 조합을 찾지 못했습니다.</b><p>가장 가까운 후보 기준으로 <strong>${esc(missing||"추가 스킬 포인트")}</strong>가 더 필요합니다. ${esc(nextStep)}</p><p class="muted">자동조합은 선택한 무기종에서 필요한 슬롯 수를 만족하는 실제 무기를 함께 찾고, 호석 스킬/슬롯도 통합 계산합니다.</p></div>${r.nearMisses.map(renderNearMissCard).join("")}`;
+      $("#searchResults").innerHTML=`<div class="search-guidance"><b>현재 조건에서 완성 조합을 찾지 못했습니다.</b><p>가장 가까운 후보 기준으로 <strong>${esc(missing||"추가 스킬 포인트")}</strong>가 더 필요합니다. ${esc(nextStep)}</p><p class="muted">자동조합은 선택한 무기종·진행도·무기 슬롯 수를 고정해서 실제 무기를 함께 찾고, 호석 스킬/슬롯도 통합 계산합니다.</p></div>${r.nearMisses.map(renderNearMissCard).join("")}`;
     }else{
       $("#searchResults").innerHTML='<div class="result-empty">현재 조건의 고속 탐색 범위에서 완성 조합을 찾지 못했습니다. 호석 스킬 또는 무기/호석 슬롯을 추가한 뒤 다시 검색해 보세요.</div>';
     }
