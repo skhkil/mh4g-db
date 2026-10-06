@@ -1031,7 +1031,7 @@ def derive_melodies(weapons):
 
 SIM_ARMOR_KEYS = ["id","name","nameJa","nameEn","part","hunterType","rank","defense","slots","torsoUp","resistances","materials","skills"]
 SIM_WEAPON_KEYS = ["id","name","nameJa","nameEn","weaponType","attack","element","elementPrimary","elementSecondary","awakenElement","defenseBonus","affinity","affinityText","slots","rank","tree","statReference","sharpness","phial","shelling","notes","melody","melodyEffects","kinsect","arcShot","specialFire","chargeLevels","coatings","reloadRecoilDrift"]
-SIM_ARMOR_SET_KEYS = ["id","name","hunterType","rank","pieces","slots","skills"]
+SIM_ARMOR_SET_KEYS = ["id","name","hunterType","rank","pieces","defense","maxDefense","slots","skills","resistances"]
 
 def compact_rows(rows, keys):
     return [{k: row.get(k) for k in keys} for row in rows]

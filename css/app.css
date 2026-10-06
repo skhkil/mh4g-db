@@ -89,8 +89,8 @@ button{border:1px solid var(--line);background:#202b39;color:white;border-radius
 .manual-builder-grid{grid-template-columns:minmax(0,3fr) minmax(360px,2fr);gap:16px;align-items:start}
 .manual-panel{padding:15px}
 .manual-panel .panel-title h2{margin-bottom:4px}
-.compact-set-picker{display:grid;grid-template-columns:82px minmax(0,1fr);gap:8px;align-items:center;padding:8px 9px;margin:8px 0}
-.compact-set-picker .equipment-label{white-space:nowrap}
+.compact-set-picker{display:grid;grid-template-columns:82px minmax(0,1fr) 158px;gap:8px;align-items:center;padding:8px 9px;margin:8px 0}
+.compact-set-picker .equipment-label{white-space:nowrap}.armor-set-sort{min-width:0;width:100%}
 .manual-equipment-builder{gap:5px}
 .manual-equipment-card{padding:7px 9px;border-radius:8px}
 .manual-equipment-main{grid-template-columns:48px minmax(0,1fr);gap:7px;align-items:center}
@@ -1398,3 +1398,5 @@ button{border:1px solid var(--line);background:#202b39;color:white;border-radius
   .owned-charm-row{display:grid!important;grid-template-columns:minmax(0,1fr) auto;gap:7px;align-items:center}
   .owned-charm-actions{width:auto!important;flex-wrap:nowrap}
 }
+
+@media(max-width:640px){.compact-set-picker{grid-template-columns:70px minmax(0,1fr)}.compact-set-picker .armor-set-sort{grid-column:2}}

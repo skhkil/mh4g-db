@@ -1,5 +1,5 @@
-import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,loadArmorProgression,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-auto-weapon-slot-hotfix9";
-import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-auto-weapon-slot-hotfix9";
+import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,loadArmorProgression,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-armor-set-resist-hotfix10";
+import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-armor-set-resist-hotfix10";
 
 let data={skills:[],armors:[],armorSets:[],decorations:[],decorationUnlocks:{decorations:{}},eventMajorRewards:{quests:{}},weapons:[],weaponSummary:[],melodies:[],items:[],itemReferenceIndex:{items:{}},skillReferenceIndex:{items:{},categories:[]},meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],monsterReferenceIndex:{items:{}},dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],questReferenceIndex:{quests:{}},siteInfo:{},meta:{},weaponSkillPriorities:{weapons:{}}};
 let targets=[];
@@ -30,7 +30,7 @@ function weaponPreferredSkillWeights(hunterType="blade"){const type=uiState.auto
 
 const MANUAL_CONTAINERS=["weapon",...PARTS,"charm"];
 const uiState={
-  targetActivation:"", autoWeaponType:"대검", autoWeaponSlots:0, ownedCharmsOnly:false, manualSet:"", manualWeapon:"", manualWeaponType:"all", manualWeaponRank:"all", manualWeaponElement:"all", manualWeaponSlots:"all",
+  targetActivation:"", autoWeaponType:"대검", autoWeaponSlots:0, ownedCharmsOnly:false, manualSet:"", armorSetSort:"name", manualWeapon:"", manualWeaponType:"all", manualWeaponRank:"all", manualWeaponElement:"all", manualWeaponSlots:"all",
   charmSkill1:"",charmPoint1:0,charmSkill2:"",charmPoint2:0,charmSlots:0,
   manual:Object.fromEntries(PARTS.map(p=>[p,""])),
   manualDecorations:Object.fromEntries(MANUAL_CONTAINERS.map(c=>[c,[]]))
@@ -46,7 +46,7 @@ let restoringHistory=false;
 let historyRestoreToken=0;
 try{history.scrollRestoration="manual"}catch{}
 
-const APP_VERSION="0.7.7-chat4-auto-weapon-slot-hotfix9";
+const APP_VERSION="0.7.7-chat4-armor-set-resist-hotfix10";
 const boundEventGroups=new Set();
 let appEventsBound=false;
 function ensureRuntimeStatus(){
@@ -644,10 +644,21 @@ function weaponPickerOptions(){
     }));
   optionCache.weaponByType.set(key,opts);return opts;
 }
+const ARMOR_SET_RESIST_LABELS={fire:"화",water:"수",thunder:"뇌",ice:"빙",dragon:"용"};
 function armorSetPickerOptions(){
-  if(optionCache.armorSets)return optionCache.armorSets;
-  optionCache.armorSets=data.armorSets.slice().sort((a,b)=>a.name.localeCompare(b.name,"ko")).map(s=>({value:s.id,label:s.name,meta:`${hunterName(s.hunterType)} · ${rankName(s.rank)} · 슬롯 ${Number(s.slots||0)}칸`,search:`${s.name} ${hunterName(s.hunterType)} ${rankName(s.rank)} ${Object.keys(s.skills||{}).map(skillName).join(" ")}`}));
-  return optionCache.armorSets;
+  const sortKey=uiState.armorSetSort||"name";
+  const list=data.armorSets.slice();
+  list.sort((a,b)=>{
+    if(sortKey==="defense")return Number(b.maxDefense||b.defense||0)-Number(a.maxDefense||a.defense||0)||Number(b.defense||0)-Number(a.defense||0)||a.name.localeCompare(b.name,"ko");
+    if(ARMOR_SET_RESIST_LABELS[sortKey])return Number(b.resistances?.[sortKey]||0)-Number(a.resistances?.[sortKey]||0)||Number(b.maxDefense||b.defense||0)-Number(a.maxDefense||a.defense||0)||a.name.localeCompare(b.name,"ko");
+    return a.name.localeCompare(b.name,"ko");
+  });
+  return list.map(s=>({
+    value:s.id,
+    label:s.name,
+    meta:`${hunterName(s.hunterType)} · ${rankName(s.rank)} · 방어 ${Number(s.defense||0)}/${Number(s.maxDefense||s.defense||0)} · ${resistText(s.resistances)} · 슬롯 ${Number(s.slots||0)}칸`,
+    search:`${s.name} ${hunterName(s.hunterType)} ${rankName(s.rank)} 방어 ${s.defense||0} ${s.maxDefense||0} ${resistText(s.resistances)} ${Object.keys(s.skills||{}).map(skillName).join(" ")}`
+  }));
 }
 function simulatorSearchHunterType(){
   const type=selectedWeapon()?.weaponType || (uiState.manualWeaponType!=="all"?uiState.manualWeaponType:"");
@@ -792,6 +803,11 @@ function renderManualSelectors(){
   const setOpts=armorSetPickerOptions();
   if(uiState.manualSet&&!setOpts.some(x=>x.value===uiState.manualSet))uiState.manualSet="";
   mountSearchSelect("#armorSetPicker",setOpts,{value:uiState.manualSet,placeholder:`방어구 세트 검색 (${setOpts.length}개)`,emptyLabel:"세트 선택 안 함",onChange:v=>applyArmorSet(v)});
+  const armorSetSortEl=$("#armorSetSort");
+  if(armorSetSortEl){
+    armorSetSortEl.value=["name","defense","fire","water","thunder","ice","dragon"].includes(uiState.armorSetSort)?uiState.armorSetSort:"name";
+    armorSetSortEl.onchange=()=>{uiState.armorSetSort=armorSetSortEl.value||"name";renderManualSelectors();};
+  }
 
   const box=$("#manualEquipmentBuilder");
   box.innerHTML=

@@ -1,3 +1,17 @@
+## 2026-10-06 - 시뮬레이터 방어구 세트 방어/내성 표시·정렬 hotfix10
+
+- 시뮬레이터 `방어구 세트 검색` 옵션에 방어력 `초기/최종`, 화/수/뇌/빙/용 내성, 총 슬롯 표시.
+- 검색창 우측 정렬 선택 추가: `세트명순 / 최종 방어 높은순 / 화 / 수 / 뇌 / 빙 / 용 내성 높은순`.
+- 내성 정렬은 선택 내성 내림차순 → 최종 방어 내림차순 → 세트명 순으로 안정 정렬.
+- 경량 `data/sim_armor_sets.json` 594세트에 `defense / maxDefense / resistances` 필드를 동기화.
+- `tools/build_database.py`의 `SIM_ARMOR_SET_KEYS`에도 동일 필드를 추가해 재생성 시 유지.
+- 전용 Chromium E2E PC 1365px + 모바일 390px 통과. 방어/5내성 정렬 1위가 원본 데이터와 일치하고 모바일 오버플로 없음.
+- 기존 회귀 재통과: 자동조합 무기 슬롯 0~3, hotfix3 퀘스트/근접후보, hotfix8 퀘스트↔몬스터 의미, hotfix17 추천장비→시뮬레이터→뒤로가기 안정성.
+- ES module 문법 검사 통과: `app.js`, `data-loader.js`, `engine.js`.
+- release audit `tools/armor_set_resist_hotfix10_release_audit_v0.7.7.json` OK.
+- 캐시 키: `0.7.7-chat4-armor-set-resist-hotfix10`.
+- 최종 패키지: `mh4g-db-v0.7.7_chat4_armor_set_resist_hotfix10_final.zip`.
+
 ## 2026-10-01 - 시뮬레이터 스킬 포인트 정렬 hotfix4
 
 - 스킬 결과 행 정렬을 `현재 포인트 내림차순`으로 변경. 동일 포인트는 스킬 계통명 순.
