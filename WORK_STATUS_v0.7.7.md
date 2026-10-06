@@ -1,3 +1,17 @@
+## 2026-10-06 - 몬스터 등장퀘스트 단일 원천화 / 이벤트 연결 전수검사 hotfix11
+
+- 퀘스트 화면의 `questTargetMonsters()`가 목표문을 다시 분석해 `quest_reference_index`와 어긋나던 중복 로직 제거. 인덱스의 확정 몬스터 목록을 1순위 단일 원천으로 사용하고 외부/미인덱스 데이터만 문자열 fallback 사용.
+- `몬스터 → 등장 퀘스트`는 퀘스트 인덱스를 역전해서만 생성. 별도 추측 생성 금지.
+- 메인 목표가 특수개체/아종/희소종일 때 서브 목표의 원종 부위명으로 원종이 중복 추가되는 문제 수정. 대표 오류 `분노의 극치: 격앙 라잔 + 라잔` → `격앙 라잔` 단독.
+- 몬스터 76종 전체를 Chromium에서 순회해 화면 등장퀘스트 행 수와 `monster_reference_index` count 비교: 불일치 0건.
+- `리오레우스 희소종` 실제 화면에서 `이벤트 ★7 · 탑의 재앙`, `이벤트 G★3 · 은빛 왕의 잠` 연결 확인. `리오레이아 희소종`의 `왕가의 부흥`도 확인.
+- 공개 MH4U DB 보정 목록 `bd4/monster-hunter-scripts/db/delta/quest-monsters.csv`의 Silver/Gold Rathalos/Rathian 이벤트 보정 사례를 고정 회귀로 추가.
+- 퀘스트→몬스터 585건 = 몬스터→퀘스트 585건, 76종 퀘스트 링크 0개 몬스터 0종, shard/index count 불일치 0건.
+- 기존 회귀 재통과: hotfix8 퀘스트 의미 E2E, hotfix8 아이템/몬스터 양방향 감사, hotfix9 무기 슬롯 0~3 E2E, hotfix10 방어/내성 정렬 E2E, hotfix17 뒤로가기 안정성 25/12/10.
+- ES module 문법 검사 통과: `app.js`, `data-loader.js`, `engine.js`.
+- 캐시 키: `0.7.7-chat4-monster-link-hotfix11`.
+- 최종 패키지: `mh4g-db-v0.7.7_chat4_monster_link_hotfix11_final.zip`.
+
 ## 2026-10-06 - 시뮬레이터 방어구 세트 방어/내성 표시·정렬 hotfix10
 
 - 시뮬레이터 `방어구 세트 검색` 옵션에 방어력 `초기/최종`, 화/수/뇌/빙/용 내성, 총 슬롯 표시.

@@ -1,0 +1,73 @@
+{
+  "version": "0.7.7-chat4-monster-link-hotfix11",
+  "ok": true,
+  "checks": {
+    "syntax:js/app.js": {
+      "ok": true,
+      "detail": ""
+    },
+    "syntax:js/data-loader.js": {
+      "ok": true,
+      "detail": ""
+    },
+    "syntax:js/engine.js": {
+      "ok": true,
+      "detail": ""
+    },
+    "cache:index.html": {
+      "ok": true,
+      "detail": null
+    },
+    "cache:js/app.js": {
+      "ok": true,
+      "detail": null
+    },
+    "cache:js/data-loader.js": {
+      "ok": true,
+      "detail": null
+    },
+    "audit_issue_zero": {
+      "ok": true,
+      "detail": 0
+    },
+    "audit_76_monsters": {
+      "ok": true,
+      "detail": 76
+    },
+    "audit_forward_reverse": {
+      "ok": true,
+      "detail": {
+        "forward": 585,
+        "reverse": 585
+      }
+    },
+    "e2e_ok": {
+      "ok": true,
+      "detail": []
+    },
+    "e2e_all_76_counts": {
+      "ok": true,
+      "detail": []
+    },
+    "silver_g_event_visible": {
+      "ok": true,
+      "detail": null
+    },
+    "furious_only": {
+      "ok": true,
+      "detail": [
+        "격앙 라잔"
+      ]
+    },
+    "readme_top": {
+      "ok": true,
+      "detail": null
+    },
+    "work_status_top": {
+      "ok": true,
+      "detail": null
+    }
+  },
+  "issueCount": 0,
+  "issues": []
+}

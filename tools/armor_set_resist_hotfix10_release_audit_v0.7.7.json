@@ -1,11 +1,16 @@
 {
-  "ok": true,
+  "ok": false,
   "version": "0.7.7-chat4-armor-set-resist-hotfix10",
   "armorSetCount": 594,
   "checks": {
     "simFieldsSynced": true,
-    "cacheVersionUnified": true,
-    "e2e": true
+    "cacheVersionUnified": false,
+    "e2e": false
   },
-  "issues": []
+  "issues": [
+    "index:cache version missing",
+    "app:cache version missing",
+    "data-loader:cache version missing",
+    "e2e stale"
+  ]
 }

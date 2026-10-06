@@ -4,7 +4,7 @@
     "ok": true,
     "errors": [],
     "metrics": {
-      "initialMs": 1498.75
+      "initialMs": 1167.69
     },
     "recommendBackCycles": 25,
     "armorToggleCycles": 12,

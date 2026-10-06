@@ -1,3 +1,11 @@
+> **2026-10-06 · 몬스터 등장퀘스트 단일 원천화 / 이벤트 연결 전수검사 hotfix11**  
+> 퀘스트 목록 UI가 `quest_reference_index`를 무시하고 목표문을 다시 문자열 분석하던 중복 로직을 제거했습니다. 이제 `퀘스트 → 몬스터` 확정 목록을 단일 원천으로 사용하고, `몬스터 → 등장 퀘스트`는 그 목록을 그대로 역전합니다. 참조가 없는 외부 가져오기 데이터에서만 문자열 분석을 fallback으로 사용합니다.  
+> 이벤트/에피소드/챌린지까지 포함해 몬스터 76종 전체의 실제 브라우저 `등장 퀘스트` 행 수와 `monster_reference_index`를 전수 비교해 불일치 0건을 확인했습니다. 사용자 제보의 `리오레우스 희소종`은 `탑의 재앙`과 `이벤트 G★3 · 은빛 왕의 잠`이 실제 화면에 연결됩니다. 공개 MH4U DB 보정 자료(`bd4/monster-hunter-scripts/db/delta/quest-monsters.csv`)의 `Tower of Trouble → Silver Rathalos`, `Royal Restoration → Gold Rathian`, `Bonus: A Bigger Boat → Gold Rathian 제거`도 회귀 게이트에 고정했습니다.  
+> 추가로 `분노의 극치`에서 메인 목표 `격앙 라잔`과 서브 목표의 일반 `라잔` 표기가 별도 개체로 중복 연결되던 문제를 수정했습니다. 메인 목표가 아종/희소종/특수개체일 때 서브 목표의 원종 부위명은 같은 개체로 처리합니다. 최종 링크는 퀘스트→몬스터 585건 = 몬스터→퀘스트 585건, 76종 UI 표시 count 불일치 0건입니다.  
+> 감사/회귀: `data/monster_link_audit_hotfix11_v0.7.7.json`, `tools/monster_links_hotfix11_e2e_v0.7.7.json` / 동기화 도구: `tools/sync_quest_monster_links_hotfix11_v0.7.7.py`  
+> 캐시 키: `0.7.7-chat4-monster-link-hotfix11`  
+> 최종 패키지: `mh4g-db-v0.7.7_chat4_monster_link_hotfix11_final.zip`  
+
 > **2026-10-06 · 시뮬레이터 방어구 세트 방어/내성 표시·정렬 hotfix10**  
 > 시뮬레이터의 `방어구 세트 검색` 목록에 각 세트의 **방어력(초기/최종), 화/수/뇌/빙/용 내성, 총 슬롯**을 함께 표시합니다. 검색창 우측에 정렬 기준을 추가해 `최종 방어 높은순` 및 `화/수/뇌/빙/용 내성 높은순`으로 즉시 재정렬할 수 있습니다. 동일 내성에서는 최종 방어가 높은 세트를 우선하고, 그 다음 세트명으로 안정 정렬합니다. 시뮬레이터 첫 화면의 경량 `sim_armor_sets.json`에도 `defense / maxDefense / resistances` 필드를 추가하고 `tools/build_database.py`의 생성 키를 갱신해 다음 재생성 때도 값이 유지됩니다.  
 > Chromium 전용 E2E에서 PC 1365px·모바일 390px 모두 정렬/레이아웃을 검증했고, 각 기준 1위는 방어 `드래건Ｘ(770)`, 화 `EX카이저(+30)`, 수 `가노스Ｚ(+30)`, 뇌 `키린S(+30)`, 빙 `크줄라(+35)`, 용 `강자의(+25)`로 데이터와 일치했습니다. 기존 무기 슬롯 0~3 자동조합, hotfix3 퀘스트/근접후보, hotfix8 퀘스트↔몬스터 의미, hotfix17 뒤로가기 안정성 E2E도 재통과했습니다. 캐시 키는 `0.7.7-chat4-armor-set-resist-hotfix10`입니다.  

@@ -1,5 +1,5 @@
-import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,loadArmorProgression,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-armor-set-resist-hotfix10";
-import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-armor-set-resist-hotfix10";
+import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,loadArmorProgression,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-monster-link-hotfix11";
+import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-monster-link-hotfix11";
 
 let data={skills:[],armors:[],armorSets:[],decorations:[],decorationUnlocks:{decorations:{}},eventMajorRewards:{quests:{}},weapons:[],weaponSummary:[],melodies:[],items:[],itemReferenceIndex:{items:{}},skillReferenceIndex:{items:{},categories:[]},meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],monsterReferenceIndex:{items:{}},dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],questReferenceIndex:{quests:{}},siteInfo:{},meta:{},weaponSkillPriorities:{weapons:{}}};
 let targets=[];
@@ -46,7 +46,7 @@ let restoringHistory=false;
 let historyRestoreToken=0;
 try{history.scrollRestoration="manual"}catch{}
 
-const APP_VERSION="0.7.7-chat4-armor-set-resist-hotfix10";
+const APP_VERSION="0.7.7-chat4-monster-link-hotfix11";
 const boundEventGroups=new Set();
 let appEventsBound=false;
 function ensureRuntimeStatus(){
@@ -2005,6 +2005,12 @@ function populateQuestAdvancedFilters(){
   if(rewards){const vals=[...new Set([...(Object.values(data.questReferenceIndex?.quests||{}).flatMap(x=>x.rewardItems||[])),...(Object.values(data.eventMajorRewards?.quests||{}).flatMap(x=>x.rewardLabels||[]))])].sort((a,b)=>a.localeCompare(b,"ko"));rewards.innerHTML=vals.map(x=>`<option value="${esc(x)}"></option>`).join("");}
 }
 function questTargetMonsters(q){
+  // The synchronized quest reference is the single source of truth. Re-parsing the
+  // objective here used to re-introduce base/subspecies/special-form mistakes that
+  // had already been fixed by the quest↔monster audit. Only imported/unindexed
+  // quests fall back to text parsing.
+  const indexed=questRef(q).monsters;
+  if(Array.isArray(indexed)&&indexed.length)return [...new Set(indexed)];
   const norm=v=>String(v||"").toLowerCase().replace(/[\s·・･\.\-_'’“”"()（）:：]/g,"");
   const matchFrom=text=>{
     const hay=norm(text);if(!hay)return [];

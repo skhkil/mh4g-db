@@ -1,0 +1,120 @@
+{
+  "version": "0.7.7-chat4-monster-link-hotfix11",
+  "questCount": 572,
+  "monsterCount": 76,
+  "forwardLinks": 585,
+  "reverseLinks": 585,
+  "eventQuestCount": 97,
+  "monsterQuestLinksByType": {
+    "village": 167,
+    "hub": 158,
+    "g": 119,
+    "event": 117,
+    "challenge": 24
+  },
+  "checkCount": 12,
+  "issueCount": 0,
+  "checks": [
+    {
+      "name": "forward_reverse_exact_inverse",
+      "ok": true,
+      "detail": {
+        "forward": 585,
+        "reverse": 585,
+        "missingReverse": [],
+        "extraReverse": []
+      }
+    },
+    {
+      "name": "all_linked_monsters_are_canonical",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "all_76_monsters_have_quest_links",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "event_quest_count_97",
+      "ok": true,
+      "detail": 97
+    },
+    {
+      "name": "known_external_correction_event-high-029",
+      "ok": true,
+      "detail": {
+        "quest": "탑의 재앙",
+        "expected": [
+          "리오레우스 희소종"
+        ],
+        "actual": [
+          "리오레우스 희소종"
+        ]
+      }
+    },
+    {
+      "name": "known_external_correction_event-high-030",
+      "ok": true,
+      "detail": {
+        "quest": "왕가의 부흥",
+        "expected": [
+          "리오레이아 희소종"
+        ],
+        "actual": [
+          "리오레이아 희소종"
+        ]
+      }
+    },
+    {
+      "name": "known_external_correction_event-episodic-081",
+      "ok": true,
+      "detail": {
+        "quest": "번외: 더 큰 배가 필요해",
+        "expected": [
+          "셀레기오스"
+        ],
+        "actual": [
+          "셀레기오스"
+        ]
+      }
+    },
+    {
+      "name": "silver_rathalos_has_g_event",
+      "ok": true,
+      "detail": [
+        "백일의 왕",
+        "은백의 화륜",
+        "태양과 달이 교차할 때",
+        "고난도: 제왕들을 뵙나이다",
+        "탑의 재앙",
+        "은빛 왕의 잠"
+      ]
+    },
+    {
+      "name": "silver_g_event_targets_only_silver_rathalos",
+      "ok": true,
+      "detail": [
+        "리오레우스 희소종"
+      ]
+    },
+    {
+      "name": "furious_rajang_subtarget_does_not_add_base_rajang",
+      "ok": true,
+      "detail": [
+        "격앙 라잔"
+      ]
+    },
+    {
+      "name": "all_monster_shards_exist",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "monster_shards_match_monolithic_counts",
+      "ok": true,
+      "detail": []
+    }
+  ],
+  "issues": []
+}
