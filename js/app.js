@@ -1,5 +1,5 @@
-import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,loadArmorProgression,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-sim-weapon-hotfix13";
-import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-sim-weapon-hotfix13";
+import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,loadArmorProgression,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-auto-job-hotfix14";
+import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-auto-job-hotfix14";
 
 let data={skills:[],armors:[],armorSets:[],decorations:[],relicWeaponDecorations:[],decorationUnlocks:{decorations:{}},eventMajorRewards:{quests:{}},weapons:[],weaponSummary:[],melodies:[],items:[],itemReferenceIndex:{items:{}},skillReferenceIndex:{items:{},categories:[]},meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],monsterReferenceIndex:{items:{}},dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],questReferenceIndex:{quests:{}},siteInfo:{},meta:{},weaponSkillPriorities:{weapons:{}}};
 let targets=[];
@@ -31,7 +31,7 @@ function weaponPreferredSkillWeights(hunterType="blade"){const type=uiState.auto
 
 const MANUAL_CONTAINERS=["weapon",...PARTS,"charm"];
 const uiState={
-  targetActivation:"", autoWeaponSlots:0, ownedCharmsOnly:false, ownedRelicWeaponsOnly:false, manualSet:"", armorSetSort:"name", manualWeapon:"__crafted_weapon__", manualWeaponMode:"crafted", manualWeaponSlots:0,
+  targetActivation:"", autoHunterType:"blade", autoWeaponSlots:0, ownedCharmsOnly:false, ownedRelicWeaponsOnly:false, manualSet:"", armorSetSort:"name", manualWeapon:"__crafted_weapon__", manualWeaponMode:"crafted", manualWeaponSlots:0,
   charmSkill1:"",charmPoint1:0,charmSkill2:"",charmPoint2:0,charmSlots:0,
   manual:Object.fromEntries(PARTS.map(p=>[p,""])),
   manualDecorations:Object.fromEntries(MANUAL_CONTAINERS.map(c=>[c,[]]))
@@ -47,7 +47,7 @@ let restoringHistory=false;
 let historyRestoreToken=0;
 try{history.scrollRestoration="manual"}catch{}
 
-const APP_VERSION="0.7.7-chat4-sim-weapon-hotfix13";
+const APP_VERSION="0.7.7-chat4-auto-job-hotfix14";
 const boundEventGroups=new Set();
 let appEventsBound=false;
 function ensureRuntimeStatus(){
@@ -407,6 +407,12 @@ function mountTargetSkillPicker(){
 }
 function fillSelectors(){
   mountTargetSkillPicker();
+  if($("#autoHunterType")){
+    const hunterType=uiState.autoHunterType==="gunner"?"gunner":"blade";
+    uiState.autoHunterType=hunterType;
+    $("#autoHunterType").value=hunterType;
+    $("#autoHunterType").onchange=e=>{uiState.autoHunterType=e.target.value==="gunner"?"gunner":"blade"};
+  }
   if($("#autoWeaponSlots")){
     const slot=Math.max(0,Math.min(3,Number(uiState.autoWeaponSlots)||0));
     uiState.autoWeaponSlots=slot;
@@ -1020,7 +1026,8 @@ async function searchAutoResources(baseOptions){
   if(uiState.ownedRelicWeaponsOnly&&!relics.length)return {results:[],nearMisses:[],stats:{message:"보유 발굴무기 사용이 켜져 있지만 등록된 발굴무기가 없습니다."}};
   const req=targetRequirementForActivationIds(targets);
   const orderedCharms=[...charms].sort((a,b)=>scoreOwnedCharm(b,req)-scoreOwnedCharm(a,req));
-  const jobs=[];for(const hunterType of ["blade","gunner"])for(const c of orderedCharms)for(const r of relics)jobs.push({hunterType,c,r});
+  const selectedHunterType=uiState.autoHunterType==="gunner"?"gunner":"blade";
+  const jobs=[];for(const c of orderedCharms)for(const r of relics)jobs.push({hunterType:selectedHunterType,c,r});
   const mergedResults=[],mergedNear=[];let elapsedMs=0,eligible=0,checkedFinalists=0,finalists=0,timedOut=false;
   const perBudget=Math.max(1000,Math.floor(14000/Math.max(1,jobs.length)));
   for(let i=0;i<jobs.length;i++){
@@ -1033,7 +1040,7 @@ async function searchAutoResources(baseOptions){
     mergedResults.push(...(r0.results||[]).map(tag));mergedNear.push(...(r0.nearMisses||[]).map(tag));
   }
   mergedResults.sort(compareMergedAutoResults);mergedNear.sort((a,b)=>Number(!a.slotCompletion?.slotOnlyCompletable)-Number(!b.slotCompletion?.slotOnlyCompletable)||Number(a.slotCompletion?.minAdditionalSlots??99)-Number(b.slotCompletion?.minAdditionalSlots??99)||(a.missingTotal||0)-(b.missingTotal||0));
-  return {results:mergedResults.slice(0,Number(baseOptions.limit||20)),nearMisses:mergedNear.slice(0,3),stats:{eligible,checkedFinalists,finalists,timedOut,elapsedMs,jobs:jobs.length,profile:"dual-hunter-resources"}};
+  return {results:mergedResults.slice(0,Number(baseOptions.limit||20)),nearMisses:mergedNear.slice(0,3),stats:{eligible,checkedFinalists,finalists,timedOut,elapsedMs,jobs:jobs.length,profile:"selected-hunter-resources"}};
 }
 async function runSearch(){
   if(!targets.length){$("#searchResults").innerHTML='<div class="result-empty">먼저 원하는 스킬을 추가하세요.</div>';return}
@@ -1049,7 +1056,8 @@ async function runSearch(){
     }});
     latestAutoSearchResults=r.results||[];latestAutoSearchNearMisses=r.nearMisses||[];
     const sec=(Number(r.stats?.elapsedMs||0)/1000).toFixed(1);
-    const statusBase=`검사/거너 통합 · 진행도 ${progressionLabel} · 조건 ${r.stats.jobs||0}개 비교 · ${sec}초 · ${conditionText}`;
+    const hunterLabel=uiState.autoHunterType==="gunner"?"거너":"검사";
+    const statusBase=`${hunterLabel} · 진행도 ${progressionLabel} · 조건 ${r.stats.jobs||0}개 비교 · ${sec}초 · ${conditionText}`;
     if(r.stats.message)$("#searchStats").textContent=r.stats.message;
     else if(latestAutoSearchResults.length)$("#searchStats").textContent=`${statusBase}${r.stats.timedOut?" · 시간 제한 내 발견된 결과만 표시":""} · 고속 후보검색(완전탐색 아님)`;
     else $("#searchStats").textContent=`${statusBase} · ${r.stats.timedOut?"시간 제한 내 완성 조합 미발견":"완성 조합 미발견"} · 고속 후보검색(완전탐색 아님)`;
@@ -2535,7 +2543,15 @@ function bind(){
   });
   }));
   results.push(bindEventGroup("simulator-controls",()=>{
-  $("#addTargetSkill").onclick=()=>{const v=uiState.targetActivation;if(v&&!targets.includes(v)){targets.push(v);renderTargets()}};
+  $("#addTargetSkill").onclick=()=>{
+    const v=uiState.targetActivation;
+    if(v&&!targets.includes(v)){
+      targets.push(v);
+      renderTargets();
+      uiState.targetActivation="";
+      mountTargetSkillPicker();
+    }
+  };
   $("#clearTargets").onclick=()=>{targets=[];renderTargets()};$("#calculateManual").onclick=renderManualResult;$("#runSearch").onclick=runSearch;renderOwnedCharms();renderOwnedRelicWeapons();
   $("#saveBuild").onclick=saveCurrentBuild;$("#deleteBuild").onclick=deleteSelectedBuild;$("#savedBuildSelect").onchange=loadSelectedBuild;
 

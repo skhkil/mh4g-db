@@ -1,7 +1,7 @@
 import json,re,subprocess
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
-VERSION='0.7.7-chat4-research2-hotfix13'
+VERSION='0.7.7-chat4-auto-job-hotfix14'
 app=(ROOT/'js/app.js').read_text(encoding='utf-8')
 loader=(ROOT/'js/data-loader.js').read_text(encoding='utf-8')
 index=(ROOT/'index.html').read_text(encoding='utf-8')

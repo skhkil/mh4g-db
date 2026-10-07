@@ -1,10 +1,10 @@
 {
-  "ok": false,
-  "version": "0.7.7-chat4-research2-hotfix13",
+  "ok": true,
+  "version": "0.7.7-chat4-auto-job-hotfix14",
   "checks": {
-    "versionApp": false,
-    "versionLoader": false,
-    "versionIndex": false,
+    "versionApp": true,
+    "versionLoader": true,
+    "versionIndex": true,
     "cardCount": true,
     "engineMismatch": true,
     "missingArmor": true,
@@ -38,9 +38,5 @@
       "weaponSlots": false
     }
   },
-  "errors": [
-    "versionApp",
-    "versionLoader",
-    "versionIndex"
-  ]
+  "errors": []
 }

@@ -1,4 +1,4 @@
-const DATA_VERSION = "0.7.7-chat4-sim-weapon-hotfix13";
+const DATA_VERSION = "0.7.7-chat4-auto-job-hotfix14";
 
 const FULL_FILES = {
   skills:"./data/skills.json",
