@@ -1408,7 +1408,7 @@ button{border:1px solid var(--line);background:#202b39;color:white;border-radius
 @media(max-width:640px){.target-skill-filter{min-width:0;flex:1 1 120px}.skill-target-field .search-select{flex:1 1 100%}}
 
 /* hotfix13: simplified simulator weapon model + compact owned assets */
-.manual-weapon-simple{display:grid;grid-template-columns:120px 120px minmax(220px,1fr) auto;gap:7px;align-items:center;min-width:0}
+.manual-weapon-simple{display:grid;grid-template-columns:120px 120px minmax(220px,1fr) 78px;gap:7px;align-items:center;min-width:0}
 .manual-weapon-simple select{width:100%;min-width:0;padding:7px 8px;font-size:11px}
 .manual-weapon-simple .relic-skill-picker{min-width:0}
 .weapon-mode-note{font-size:11px}
@@ -1443,3 +1443,9 @@ button{border:1px solid var(--line);background:#202b39;color:white;border-radius
   .manual-equipment-main.charm-main>.equipment-skill-points,
   .manual-equipment-main.charm-main>.owned-charm-inline{grid-column:1/-1!important;width:100%!important;min-width:0!important}
 }
+
+/* hotfix15: compact save button + click-to-apply owned asset rows */
+.manual-weapon-simple [data-save-owned-relic]{width:78px;min-width:78px;white-space:nowrap;padding-inline:10px;writing-mode:horizontal-tb;word-break:keep-all}
+.owned-asset-apply-row{cursor:pointer}
+.owned-asset-apply-row:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+@media (hover:hover) and (pointer:fine){.owned-asset-apply-row:hover{background:rgba(255,255,255,.035)}}

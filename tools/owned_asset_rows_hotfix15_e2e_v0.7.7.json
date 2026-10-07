@@ -1,0 +1,52 @@
+{
+  "ok": true,
+  "results": [
+    {
+      "width": 984,
+      "saveButtonBox": {
+        "x": 828,
+        "y": -242.71875,
+        "width": 78,
+        "height": 26
+      },
+      "charmLabel": "가드강화 +10 · ---",
+      "relicLabel": "발굴 1슬롯 · 회피술 +2",
+      "rowBox": {
+        "x": 356,
+        "y": 465.28125,
+        "width": 567,
+        "height": 41
+      },
+      "deleteBox": {
+        "x": 882.3125,
+        "y": 473.28125,
+        "width": 38.6875,
+        "height": 26
+      }
+    },
+    {
+      "width": 390,
+      "saveButtonBox": {
+        "x": 83,
+        "y": -417.578125,
+        "width": 78,
+        "height": 26
+      },
+      "charmLabel": "가드강화 +10 · ---",
+      "relicLabel": "발굴 1슬롯 · 회피술 +2",
+      "rowBox": {
+        "x": 39,
+        "y": 465.921875,
+        "width": 312,
+        "height": 40
+      },
+      "deleteBox": {
+        "x": 303.3125,
+        "y": 472.921875,
+        "width": 38.6875,
+        "height": 26
+      }
+    }
+  ],
+  "errors": []
+}
