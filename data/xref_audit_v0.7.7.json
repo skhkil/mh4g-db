@@ -1,6 +1,6 @@
 {
   "version": "0.7.7-chat4-itemdb1",
-  "hardIssueCount": 0,
+  "hardIssueCount": 76,
   "warningCount": 1,
   "itemCount": 1447,
   "itemIndexedCount": 1304,
@@ -16,7 +16,7 @@
     "item.acquire.dragonSell": 48,
     "item.acquire.exchange": 139,
     "item.acquire.monster": 4481,
-    "item.acquire.quest": 2423,
+    "item.acquire.quest": 2477,
     "item.use.armor": 11621,
     "item.use.compose": 336,
     "item.use.decoration": 541,
@@ -24,7 +24,540 @@
     "item.use.externalUse": 5,
     "item.use.weapon": 9025
   },
-  "issues": [],
+  "issues": [
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "아르셀타스",
+        "monster_c75c911722c8"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "아르셀타스 아종",
+        "monster_30b571e90ca7"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "게넬·셀타스",
+        "monster_110cd565db40"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "게넬·셀타스 아종",
+        "monster_b92f48e6e514"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "네르스큐라",
+        "monster_f8b0910be458"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "네르스큐라 아종",
+        "monster_e536a661d09d"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "도스가레오스",
+        "monster_6f965be06141"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "도스재기",
+        "monster_a73b98d0b944"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "도스람포스",
+        "monster_c2d60b6b13b7"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "도스게네포스",
+        "monster_5b731f22ec27"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "도스이오스",
+        "monster_3a5d33386ba9"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "얀쿡크",
+        "monster_eb48d5e7dc99"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "얀쿡크 아종",
+        "monster_52db24e076e3"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "게리오스",
+        "monster_7909ff36357b"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "게리오스 아종",
+        "monster_d50064f75286"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "얀가루루가",
+        "monster_f0f14f5de096"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "다이묘자자미",
+        "monster_8527604e7797"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "다이묘자자미 아종",
+        "monster_bcafff125175"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "케차와차",
+        "monster_50c2282faebf"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "케차와차 아종",
+        "monster_e7725cd9e750"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "울크스스",
+        "monster_e0026a2106a0"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "바바콩가",
+        "monster_70c20bccbbb7"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "바바콩가 아종",
+        "monster_e7d539be6cbe"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "라잔",
+        "monster_ccd85a66ac50"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "격앙 라잔",
+        "monster_5d2b261ab356"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "테츠카브라",
+        "monster_eda79317399f"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "테츠카브라 아종",
+        "monster_3c60c91411b5"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "자보아자길",
+        "monster_29a248ddb29e"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "자보아자길 아종",
+        "monster_9e327e259893"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "가라라아자라",
+        "monster_1fc09bb9ad41"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "가라라아자라 아종",
+        "monster_29c487f90914"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "브라키디오스",
+        "monster_836ee95f0ec6"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "임계 브라키디오스",
+        "monster_4668124f544d"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "이블조",
+        "monster_5256532a45a4"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "광폭 이블조",
+        "monster_7f7c2c902368"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "푸루푸루",
+        "monster_04b2a735f5f0"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "푸루푸루 아종",
+        "monster_ea8ac9827112"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "바살모스",
+        "monster_85fcc1c0a529"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "바살모스 아종",
+        "monster_e5d10185951f"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "그라비모스",
+        "monster_fa70bc20a669"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "그라비모스 아종",
+        "monster_eb863199a36f"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "리오레이아",
+        "monster_0a437979cefc"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "리오레이아 아종",
+        "monster_074d46bb4fb2"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "리오레이아 희소종",
+        "monster_573e9e80d879"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "리오레우스",
+        "monster_4987998fc593"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "리오레우스 아종",
+        "monster_919b97d0f10a"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "리오레우스 희소종",
+        "monster_fcaa117bd72e"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "티가렉스",
+        "monster_38986e1e13fb"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "티가렉스 아종",
+        "monster_1b5ef2a7a699"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "티가렉스 희소종",
+        "monster_3233eb8b7b15"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "모노블로스",
+        "monster_ff9d2a8a319c"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "모노블로스 아종",
+        "monster_82779af5a16a"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "디아블로스",
+        "monster_321e6889c047"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "디아블로스 아종",
+        "monster_d6784e726b19"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "셀레기오스",
+        "monster_749d9a97f1ed"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "아캄토름",
+        "monster_08adaa2710ea"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "우캄루바스",
+        "monster_26ee0bc57b51"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "진오우거",
+        "monster_714e59cec38c"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "진오우거 아종",
+        "monster_c7cfbdbf07a7"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "키린",
+        "monster_d25a2a548008"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "키린 아종",
+        "monster_1d8445bb59ea"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "샤가르마가라",
+        "monster_40f881ac5baa"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "크샬다오라",
+        "monster_610734916c89"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "녹슨크샬다오라",
+        "monster_ff0a7a4c8d9d"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "테오·테스카토르",
+        "monster_65eb49a7b36b"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "오나즈치",
+        "monster_425a7cfad71b"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "다렌·모란",
+        "monster_be54494a9c03"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "다라·아마듈라",
+        "monster_409708ecde3b"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "다라·아마듈라 아종",
+        "monster_fd07105d4890"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "고그마지오스",
+        "monster_f6da870b0ad3"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "고어·마가라",
+        "monster_c28a3c80b825"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "혼돈의 고어·마가라",
+        "monster_e9a394deb403"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "밀라보레아스",
+        "monster_0168790e9024"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "밀라보레아스 (조룡)",
+        "monster_237f47a54bf5"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "밀라보레아스 (홍룡)",
+        "monster_a569b811a29b"
+      ]
+    },
+    {
+      "kind": "missing_monster_ref_file",
+      "detail": [
+        "밀라보레아스 (홍염룡)",
+        "monster_77906b127b97"
+      ]
+    }
+  ],
   "warnings": [
     {
       "kind": "monsters_without_reward_rows",

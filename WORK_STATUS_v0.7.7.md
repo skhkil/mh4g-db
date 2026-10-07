@@ -1044,3 +1044,11 @@
 - hotfix8 퀘스트↔몬스터 의미 E2E 재통과.
 - 캐시 키: `0.7.7-chat4-auto-weapon-slot-hotfix9`.
 - 최종 ZIP: `mh4g-db-v0.7.7_chat4_auto_weapon_slot_hotfix9_final.zip`.
+
+
+## 2026-10-07 · Final STEP 1 + STEP 1.5
+- STEP 1: skills.json 143계통/276 발동스킬 누락 패턴 전수검사. ※1/※2/※3 제거 및 실제 효과 설명으로 보강.
+- 버섯마니아: 기존 items.json의 11종 버섯을 재사용해 효과표 표시, 스킬 화면에서 아이템 상세 링크 연결. 신규 아이템 생성 없음.
+- skills.json의 replacement character(�) 35개 발동스킬 표기/설명을 원문 구분점(·)으로 복구. 얼음내성【소】 `15 5상승` → `15 상승`.
+- STEP 1.5: 모노데블 검사/거너 부위명 및 세트명 복구, 몬스터명/별칭/영문명으로 방어구 세트 검색 가능하도록 역참조 검색 보강.
+- 통합 캐시 키: `0.7.7-final-step1-1.5`.

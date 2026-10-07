@@ -46711,7 +46711,7 @@
   },
   {
     "id": "armor_98bc5e6dcf0f",
-    "name": "모노블로Z암",
+    "name": "모노데블암",
     "nameJa": "モノデビルアーム",
     "part": "arms",
     "hunterType": "blade",
@@ -98400,8 +98400,8 @@
   },
   {
     "id": "armor_b856d3e8f8ea",
-    "name": "모노블로Z가드",
-    "nameJa": "",
+    "name": "모노데블가드",
+    "nameJa": "モノデビルガード",
     "part": "arms",
     "hunterType": "gunner",
     "rank": "g",
@@ -98430,7 +98430,8 @@
       "skill_122ffa46b9a4": 3,
       "skill_bcf68a1ff0a1": -2
     },
-    "rankBasis": "rare8-10"
+    "rankBasis": "rare8-10",
+    "nameEn": "Monodevil Guards"
   },
   {
     "id": "armor_3b74c886a211",

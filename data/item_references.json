@@ -53178,7 +53178,7 @@
         {
           "type": "armor",
           "id": "armor_b856d3e8f8ea",
-          "name": "모노블로Z가드",
+          "name": "모노데블가드",
           "part": "arms",
           "hunterType": "gunner",
           "count": 3,
@@ -53187,7 +53187,7 @@
         {
           "type": "armor",
           "id": "armor_98bc5e6dcf0f",
-          "name": "모노블로Z암",
+          "name": "모노데블암",
           "part": "arms",
           "hunterType": "blade",
           "count": 3,
@@ -171026,7 +171026,7 @@
         {
           "type": "armor",
           "id": "armor_b856d3e8f8ea",
-          "name": "모노블로Z가드",
+          "name": "모노데블가드",
           "part": "arms",
           "hunterType": "gunner",
           "count": 5,
@@ -171035,7 +171035,7 @@
         {
           "type": "armor",
           "id": "armor_98bc5e6dcf0f",
-          "name": "모노블로Z암",
+          "name": "모노데블암",
           "part": "arms",
           "hunterType": "blade",
           "count": 5,
@@ -171236,7 +171236,7 @@
         {
           "type": "armor",
           "id": "armor_b856d3e8f8ea",
-          "name": "모노블로Z가드",
+          "name": "모노데블가드",
           "part": "arms",
           "hunterType": "gunner",
           "count": 2,
@@ -171245,7 +171245,7 @@
         {
           "type": "armor",
           "id": "armor_98bc5e6dcf0f",
-          "name": "모노블로Z암",
+          "name": "모노데블암",
           "part": "arms",
           "hunterType": "blade",
           "count": 2,
@@ -171440,7 +171440,7 @@
         {
           "type": "armor",
           "id": "armor_b856d3e8f8ea",
-          "name": "모노블로Z가드",
+          "name": "모노데블가드",
           "part": "arms",
           "hunterType": "gunner",
           "count": 2,
@@ -171449,7 +171449,7 @@
         {
           "type": "armor",
           "id": "armor_98bc5e6dcf0f",
-          "name": "모노블로Z암",
+          "name": "모노데블암",
           "part": "arms",
           "hunterType": "blade",
           "count": 2,

@@ -1449,3 +1449,12 @@ button{border:1px solid var(--line);background:#202b39;color:white;border-radius
 .owned-asset-apply-row{cursor:pointer}
 .owned-asset-apply-row:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 @media (hover:hover) and (pointer:fine){.owned-asset-apply-row:hover{background:rgba(255,255,255,.035)}}
+
+/* Step 1: 버섯마니아 효과표 */
+.skill-effect-entry + .skill-effect-entry{margin-top:8px}
+.skill-effect-items{margin-top:8px;padding:9px 10px;border:1px solid var(--line);border-radius:10px;background:var(--panel-soft,#f8fafc)}
+.skill-effect-items-title{font-weight:700;margin-bottom:6px}
+.skill-effect-items-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:5px 12px}
+.skill-effect-item{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:6px;font-size:.92em}
+.skill-effect-item strong{font-weight:600}
+@media (max-width:640px){.skill-effect-items-grid{grid-template-columns:1fr}}

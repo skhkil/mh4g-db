@@ -1,5 +1,5 @@
-import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,loadArmorProgression,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-chat4-owned-row-hotfix15";
-import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-chat4-owned-row-hotfix15";
+import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,loadArmorProgression,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-final-step1-1.5";
+import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-final-step1-1.5";
 
 let data={skills:[],armors:[],armorSets:[],decorations:[],relicWeaponDecorations:[],decorationUnlocks:{decorations:{}},eventMajorRewards:{quests:{}},weapons:[],weaponSummary:[],melodies:[],items:[],itemReferenceIndex:{items:{}},skillReferenceIndex:{items:{},categories:[]},meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],monsterReferenceIndex:{items:{}},dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],questReferenceIndex:{quests:{}},siteInfo:{},meta:{},weaponSkillPriorities:{weapons:{}}};
 let targets=[];
@@ -47,7 +47,7 @@ let restoringHistory=false;
 let historyRestoreToken=0;
 try{history.scrollRestoration="manual"}catch{}
 
-const APP_VERSION="0.7.7-chat4-owned-row-hotfix15";
+const APP_VERSION="0.7.7-final-step1-1.5";
 const boundEventGroups=new Set();
 let appEventsBound=false;
 function ensureRuntimeStatus(){
@@ -265,6 +265,15 @@ const SKILL_SEARCH_ALIASES={
   "광격내성":"회심 크리티컬 광룡 무아지경"
 };
 function cleanEffectText(text=""){return String(text||"").replace(/�+/g,"·").replace(/\s+/g," ").trim()}
+function skillEffectItemsHtml(a){
+  const rows=Array.isArray(a?.effectItems)?a.effectItems:[];
+  if(!rows.length)return "";
+  return `<div class="skill-effect-items"><div class="skill-effect-items-title">버섯별 효과</div><div class="skill-effect-items-grid">${rows.map(x=>`<div class="skill-effect-item">${itemLink(x.item)}<span>→</span><strong>${esc(x.effect||"")}</strong></div>`).join("")}</div></div>`;
+}
+function skillActivationEffectHtml(a){
+  if(!a?.description&&!a?.effectItems?.length)return "";
+  return `<div class="skill-effect-entry"><strong>${esc(a.name)}</strong>${a.description?`: ${esc(cleanEffectText(a.description))}`:""}${skillEffectItemsHtml(a)}</div>`;
+}
 function shortEffect(text="",max=54){const t=cleanEffectText(text);return t.length>max?t.slice(0,max-1)+"…":t}
 function skillDefinition(id){return skillById.get(id)||null}
 function skillName(id){return skillDefinition(id)?.name||id}
@@ -1625,7 +1634,7 @@ function renderSkillTable(){
   const q=$("#skillSearch").value.trim().toLowerCase(),cat=$("#skillCategoryFilter")?.value||"all",type=$("#skillTypeFilter")?.value||"all";
   const list=data.skills.filter(s=>{const m=skillReferenceMeta(s.id);if(q&&!skillSearchCorpus(s).toLowerCase().includes(q))return false;if(cat!=="all"&&m.category!==cat)return false;if(type==="composite"&&!m.composite)return false;if(type==="normal"&&m.composite)return false;if(type==="no-deco"&&m.hasDecoration)return false;if(type==="with-deco"&&!m.hasDecoration)return false;return true;});
   const root=$("#skillTable");
-  const rows=list.map(s=>{const m=skillReferenceMeta(s.id);const main=`<tr class="skill-db-row" data-skill-row="${esc(s.id)}" tabindex="0" aria-expanded="false"><td><strong>${esc(s.name)}</strong>${localizedNameSub(s)}<div class="skill-badges"><span class="skill-category-badge">${esc(m.category||"미분류")}</span>${m.composite?'<span class="skill-composite-badge">복합</span>':""}</div></td><td>${(s.activations||[]).map(a=>`${a.points>0?"+":""}${a.points} → <strong>${esc(a.name)}</strong>${localizedNameSub(a)}`).join("<br>")}</td><td>${(s.activations||[]).map(a=>a.description?`<div><strong>${esc(a.name)}</strong>: ${esc(cleanEffectText(a.description))}</div>`:"").filter(Boolean).join("")}</td></tr>`;const detail=`<tr class="skill-detail-row" data-skill-detail="${esc(s.id)}" hidden><td colspan="3"><div class="skill-source-body"></div></td></tr>`;return main+detail;}).join("");
+  const rows=list.map(s=>{const m=skillReferenceMeta(s.id);const main=`<tr class="skill-db-row" data-skill-row="${esc(s.id)}" tabindex="0" aria-expanded="false"><td><strong>${esc(s.name)}</strong>${localizedNameSub(s)}<div class="skill-badges"><span class="skill-category-badge">${esc(m.category||"미분류")}</span>${m.composite?'<span class="skill-composite-badge">복합</span>':""}</div></td><td>${(s.activations||[]).map(a=>`${a.points>0?"+":""}${a.points} → <strong>${esc(a.name)}</strong>${localizedNameSub(a)}`).join("<br>")}</td><td>${(s.activations||[]).map(skillActivationEffectHtml).filter(Boolean).join("")}</td></tr>`;const detail=`<tr class="skill-detail-row" data-skill-detail="${esc(s.id)}" hidden><td colspan="3"><div class="skill-source-body"></div></td></tr>`;return main+detail;}).join("");
   root.innerHTML=`<table class="data-table skill-db-table"><colgroup><col class="skill-col-tree"><col class="skill-col-activation"><col class="skill-col-effect"></colgroup><thead><tr><th>스킬 계통</th><th>발동 조건</th><th>효과 및 비고</th></tr></thead><tbody>${rows||'<tr><td colspan="3" class="result-empty">검색 결과 없음</td></tr>'}</tbody></table>`;
   decorateResponsiveTables(root);bindInlineItemLinks(root);const info=$("#skillResultInfo");if(info)info.textContent=`${list.length} / ${data.skills.length}개 스킬 · 분야는 탐색용 편의 분류`;
 }
@@ -1811,7 +1820,7 @@ function armorSetEligible(s){
 }
 function renderArmorSetTable(){
   const q=$("#armorSetSearch").value.trim().toLowerCase();
-  const rows=data.armorSets.filter(armorSetEligible).filter(s=>{const mats=armorSetMaterials(s);return !q||`${s.name} ${(s.pieces||[]).map(p=>p.name).join(" ")} ${Object.keys(s.skills||{}).map(skillName).join(" ")} ${mats}`.toLowerCase().includes(q)})
+  const rows=data.armorSets.filter(armorSetEligible).filter(s=>{const mats=armorSetMaterials(s);return !q||`${s.name} ${(s.pieces||[]).map(p=>p.name).join(" ")} ${(s.monsterSearchTerms||[]).join(" ")} ${Object.keys(s.skills||{}).map(skillName).join(" ")} ${mats}`.toLowerCase().includes(q)})
     .map(s=>{const mats=armorSetMaterials(s);return `<tr><td><strong>${esc(s.name)}</strong><small>${(s.pieces||[]).map(p=>`${PART_NAMES[p.part]||p.part}:${p.name}`).map(esc).join(" · ")}</small></td><td>${hunterName(s.hunterType)}</td><td>${rankName(s.rank)}</td><td>${s.rare||"-"}</td><td>${s.defense||0} / ${s.maxDefense||s.defense||0}</td><td>${s.slots||0}</td><td>${Object.entries(s.skills||{}).sort((a,b)=>b[1]-a[1]).map(([k,v])=>`${skillLink(k,skillName(k))} ${v>0?"+":""}${v}`).join(", ")}</td><td>${resistText(s.resistances)}</td><td class="wrap-cell">${materialLinks(mats)}</td></tr>`});
   renderTable("#armorSetTable",["세트","타입","등급","RARE","방어(초기/최대)","총 슬롯","스킬 합계","내성 합계","세트 제작 소재"],rows);
 }

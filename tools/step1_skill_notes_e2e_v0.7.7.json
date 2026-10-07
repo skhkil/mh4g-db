@@ -1,0 +1,31 @@
+{
+  "ok": true,
+  "runs": [
+    {
+      "viewport": 1365,
+      "rows": 1,
+      "text": "버섯섭취\n茸食 · Mycology\n유틸·행동\n\t+10 → 버섯마니아\nキノコ大好き · Mushromancer\n\t\n버섯마니아: 버섯을 직접 먹을 수 있게 되며, 버섯 종류에 따라 대응 아이템과 같은 효과를 얻는다. 광역화 적용 여부는 대응 아이템의 원래 효과와 동일하다.\n버섯별 효과\n푸른버섯\n→\n회복약\n니트로버섯\n→\n귀인약\n마비버섯\n→\n경화약\n독광대버섯\n→\n영양제\n녹초버섯\n→\n강주약\n만드라고라\n→\n비약\n두근두근버섯\n→\n위 6종 중 랜덤\n특산버섯\n→\n휴대식량\n엄선버섯\n→\n강주약그레이트\n숙성버섯\n→\n고대의 비약\n슈퍼버섯\n→\n회복약그레이트",
+      "mushroomRows": 11,
+      "itemLinks": 11,
+      "openedItem": true,
+      "scavenger": true,
+      "speedEating": true,
+      "badChar": false,
+      "errors": [],
+      "ok": true
+    },
+    {
+      "viewport": 390,
+      "rows": 1,
+      "text": "버섯섭취\n茸食 · Mycology\n유틸·행동\n\t+10 → 버섯마니아\nキノコ大好き · Mushromancer\n\t\n버섯마니아: 버섯을 직접 먹을 수 있게 되며, 버섯 종류에 따라 대응 아이템과 같은 효과를 얻는다. 광역화 적용 여부는 대응 아이템의 원래 효과와 동일하다.\n버섯별 효과\n푸른버섯\n→\n회복약\n니트로버섯\n→\n귀인약\n마비버섯\n→\n경화약\n독광대버섯\n→\n영양제\n녹초버섯\n→\n강주약\n만드라고라\n→\n비약\n두근두근버섯\n→\n위 6종 중 랜덤\n특산버섯\n→\n휴대식량\n엄선버섯\n→\n강주약그레이트\n숙성버섯\n→\n고대의 비약\n슈퍼버섯\n→\n회복약그레이트",
+      "mushroomRows": 11,
+      "itemLinks": 11,
+      "openedItem": true,
+      "scavenger": true,
+      "speedEating": true,
+      "badChar": false,
+      "errors": [],
+      "ok": true
+    }
+  ]
+}

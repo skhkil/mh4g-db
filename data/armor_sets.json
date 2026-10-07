@@ -48,7 +48,8 @@
       "thunder": 0,
       "ice": 0,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_5f7ec61642cb",
@@ -98,7 +99,8 @@
       "thunder": 0,
       "ice": 0,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_d58b7a7c3366",
@@ -146,7 +148,8 @@
       "thunder": -10,
       "ice": 5,
       "dragon": 0
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_4e636c5f7702",
@@ -191,7 +194,8 @@
       "thunder": 0,
       "ice": 0,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_0278ec3313c6",
@@ -240,7 +244,8 @@
       "thunder": -15,
       "ice": 0,
       "dragon": 0
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_c75f36cc7879",
@@ -288,7 +293,8 @@
       "thunder": -5,
       "ice": -10,
       "dragon": 0
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_9ee88187f92e",
@@ -337,7 +343,8 @@
       "thunder": -10,
       "ice": -5,
       "dragon": 0
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_5a201f7f29fe",
@@ -387,7 +394,8 @@
       "thunder": 10,
       "ice": -5,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_f2409e0d1d8d",
@@ -437,7 +445,8 @@
       "thunder": -5,
       "ice": -5,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_347981d1a29d",
@@ -486,7 +495,8 @@
       "thunder": 10,
       "ice": 5,
       "dragon": -15
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_9dd324892c27",
@@ -535,7 +545,8 @@
       "thunder": 0,
       "ice": 0,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_9f7cc5f4bb45",
@@ -584,7 +595,12 @@
       "thunder": -10,
       "ice": -15,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": [
+      "도스게네포스",
+      "-",
+      "Gendrome"
+    ]
   },
   {
     "id": "armor_set_83ede31c8227",
@@ -633,7 +649,12 @@
       "thunder": -15,
       "ice": 10,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": [
+      "도스이오스",
+      "-",
+      "Iodrome"
+    ]
   },
   {
     "id": "armor_set_3bf89483f13e",
@@ -682,7 +703,12 @@
       "thunder": -5,
       "ice": 10,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": [
+      "울크스스",
+      "백토수",
+      "Lagombi"
+    ]
   },
   {
     "id": "armor_set_06ab8176f203",
@@ -731,7 +757,12 @@
       "thunder": -10,
       "ice": 0,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": [
+      "케차와차",
+      "기원호",
+      "Kecha Wacha"
+    ]
   },
   {
     "id": "armor_set_1c5d478fcedb",
@@ -780,7 +811,8 @@
       "thunder": 5,
       "ice": -5,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_4027d9dcd382",
@@ -829,7 +861,8 @@
       "thunder": 10,
       "ice": -10,
       "dragon": 0
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_22e65903e751",
@@ -879,7 +912,12 @@
       "thunder": -10,
       "ice": 0,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": [
+      "테츠카브라",
+      "귀와",
+      "Tetsucabra"
+    ]
   },
   {
     "id": "armor_set_f17ae210f9e8",
@@ -929,7 +967,12 @@
       "thunder": -10,
       "ice": 5,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": [
+      "네르스큐라",
+      "영지주",
+      "Nerscylla"
+    ]
   },
   {
     "id": "armor_set_b2f3fe794a79",
@@ -979,7 +1022,12 @@
       "thunder": -15,
       "ice": 10,
       "dragon": 0
-    }
+    },
+    "monsterSearchTerms": [
+      "자보아자길",
+      "괴상어",
+      "Zamtrios"
+    ]
   },
   {
     "id": "armor_set_ce436918aae4",
@@ -1029,7 +1077,12 @@
       "thunder": 0,
       "ice": -20,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": [
+      "가라라아자라",
+      "교사룡",
+      "Najarala"
+    ]
   },
   {
     "id": "armor_set_a062d8ceb89f",
@@ -1078,7 +1131,12 @@
       "thunder": 5,
       "ice": 10,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": [
+      "푸루푸루",
+      "-",
+      "Khezu"
+    ]
   },
   {
     "id": "armor_set_2f4590f15821",
@@ -1127,7 +1185,12 @@
       "thunder": -10,
       "ice": 0,
       "dragon": -15
-    }
+    },
+    "monsterSearchTerms": [
+      "리오레이아",
+      "자화룡",
+      "Rathian"
+    ]
   },
   {
     "id": "armor_set_a38f7d0bda02",
@@ -1177,7 +1240,12 @@
       "thunder": 0,
       "ice": -20,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": [
+      "도스람포스",
+      "-",
+      "Velocidrome"
+    ]
   },
   {
     "id": "armor_set_279ff7fe133c",
@@ -1228,7 +1296,12 @@
       "thunder": -10,
       "ice": -15,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": [
+      "얀쿡크",
+      "괴조",
+      "Yian Kut-Ku"
+    ]
   },
   {
     "id": "armor_set_87ff80fa7f3f",
@@ -1278,7 +1351,12 @@
       "thunder": 5,
       "ice": 5,
       "dragon": -15
-    }
+    },
+    "monsterSearchTerms": [
+      "바살모스",
+      "암룡",
+      "Basarios"
+    ]
   },
   {
     "id": "armor_set_74fabeda3dbe",
@@ -1328,7 +1406,8 @@
       "thunder": 0,
       "ice": -5,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_4160ff9a5353",
@@ -1378,7 +1457,8 @@
       "thunder": -5,
       "ice": -5,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_819b271ccc42",
@@ -1428,7 +1508,8 @@
       "thunder": 5,
       "ice": -10,
       "dragon": 0
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_96dd23beb45c",
@@ -1476,7 +1557,8 @@
       "thunder": -10,
       "ice": -20,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_7be0f91bba13",
@@ -1526,7 +1608,8 @@
       "thunder": -5,
       "ice": -5,
       "dragon": 0
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_d273fb3ee197",
@@ -1575,7 +1658,8 @@
       "thunder": 15,
       "ice": -5,
       "dragon": 0
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_1b809665f756",
@@ -1625,7 +1709,8 @@
       "thunder": -10,
       "ice": -5,
       "dragon": 0
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_49f3686eb208",
@@ -1675,7 +1760,12 @@
       "thunder": -15,
       "ice": 5,
       "dragon": -10
-    }
+    },
+    "monsterSearchTerms": [
+      "고어·마가라",
+      "흑식룡",
+      "Gore Magala"
+    ]
   },
   {
     "id": "armor_set_16b716e3d20a",
@@ -1724,7 +1814,12 @@
       "thunder": -10,
       "ice": 0,
       "dragon": -15
-    }
+    },
+    "monsterSearchTerms": [
+      "리오레우스",
+      "화룡",
+      "Rathalos"
+    ]
   },
   {
     "id": "armor_set_6692fc2abde3",
@@ -1773,7 +1868,12 @@
       "thunder": -20,
       "ice": 0,
       "dragon": -10
-    }
+    },
+    "monsterSearchTerms": [
+      "티가렉스",
+      "굉룡",
+      "Tigrex"
+    ]
   },
   {
     "id": "armor_set_70d8de03fb3f",
@@ -1822,7 +1922,12 @@
       "thunder": 10,
       "ice": -20,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": [
+      "진오우거",
+      "뇌랑룡",
+      "Zinogre"
+    ]
   },
   {
     "id": "armor_set_5fa2abef7336",
@@ -1872,7 +1977,8 @@
       "thunder": -7,
       "ice": -7,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_c6aac9c9fa93",
@@ -1921,7 +2027,12 @@
       "thunder": 0,
       "ice": 5,
       "dragon": -10
-    }
+    },
+    "monsterSearchTerms": [
+      "그라비모스",
+      "개룡",
+      "Gravios"
+    ]
   },
   {
     "id": "armor_set_468ed6ea3638",
@@ -1970,7 +2081,12 @@
       "thunder": 0,
       "ice": -10,
       "dragon": 0
-    }
+    },
+    "monsterSearchTerms": [
+      "브라키디오스",
+      "쇄룡",
+      "Brachydios"
+    ]
   },
   {
     "id": "armor_set_64c81577f92e",
@@ -2020,7 +2136,12 @@
       "thunder": -15,
       "ice": 10,
       "dragon": -15
-    }
+    },
+    "monsterSearchTerms": [
+      "다렌·모란",
+      "호산룡",
+      "Dah'ren Mohran"
+    ]
   },
   {
     "id": "armor_set_ef916671c228",
@@ -2070,7 +2191,12 @@
       "thunder": -15,
       "ice": 10,
       "dragon": -15
-    }
+    },
+    "monsterSearchTerms": [
+      "다렌·모란",
+      "호산룡",
+      "Dah'ren Mohran"
+    ]
   },
   {
     "id": "armor_set_f3e4b72036ac",
@@ -2120,7 +2246,12 @@
       "thunder": 0,
       "ice": 5,
       "dragon": -25
-    }
+    },
+    "monsterSearchTerms": [
+      "샤가르마가라",
+      "천회룡",
+      "Shagaru Magala"
+    ]
   },
   {
     "id": "armor_set_3e654b81eee6",
@@ -2170,7 +2301,12 @@
       "thunder": 0,
       "ice": 5,
       "dragon": -25
-    }
+    },
+    "monsterSearchTerms": [
+      "샤가르마가라",
+      "천회룡",
+      "Shagaru Magala"
+    ]
   },
   {
     "id": "armor_set_d20c767add1a",
@@ -2219,7 +2355,12 @@
       "thunder": 5,
       "ice": -10,
       "dragon": 0
-    }
+    },
+    "monsterSearchTerms": [
+      "얀가루루가",
+      "흑랑조",
+      "Yian Garuga"
+    ]
   },
   {
     "id": "armor_set_cbb31388a74c",
@@ -2268,7 +2409,12 @@
       "thunder": 20,
       "ice": 0,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": [
+      "키린 아종",
+      "-",
+      "Oroshi Kirin"
+    ]
   },
   {
     "id": "armor_set_a4757a732b87",
@@ -2319,7 +2465,8 @@
       "thunder": -20,
       "ice": 5,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_01ff5efdf10c",
@@ -2368,7 +2515,8 @@
       "thunder": 5,
       "ice": -5,
       "dragon": -10
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_bcc54fa13496",
@@ -2417,7 +2565,8 @@
       "thunder": 5,
       "ice": -10,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_6f1f5122f52c",
@@ -2467,7 +2616,8 @@
       "thunder": 0,
       "ice": 0,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_b5bd9d820bbf",
@@ -2521,7 +2671,8 @@
       "thunder": 0,
       "ice": -20,
       "dragon": 0
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_96a769951c45",
@@ -2571,7 +2722,8 @@
       "thunder": 0,
       "ice": 10,
       "dragon": -20
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_def1623a66d5",
@@ -2621,7 +2773,8 @@
       "thunder": 0,
       "ice": 10,
       "dragon": -20
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_c2781d4e4494",
@@ -2671,7 +2824,8 @@
       "thunder": 10,
       "ice": 0,
       "dragon": 0
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_2daa832746aa",
@@ -2721,7 +2875,8 @@
       "thunder": 10,
       "ice": -5,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_4070e619de8b",
@@ -2771,7 +2926,8 @@
       "thunder": -5,
       "ice": -5,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_6c62b0f0a188",
@@ -2820,7 +2976,12 @@
       "thunder": 15,
       "ice": 10,
       "dragon": -20
-    }
+    },
+    "monsterSearchTerms": [
+      "리오레우스",
+      "화룡",
+      "Rathalos"
+    ]
   },
   {
     "id": "armor_set_f9d1043eb7ec",
@@ -2870,7 +3031,8 @@
       "thunder": 0,
       "ice": 0,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_142836e1e14d",
@@ -2919,7 +3081,12 @@
       "thunder": -15,
       "ice": -25,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": [
+      "도스게네포스",
+      "-",
+      "Gendrome"
+    ]
   },
   {
     "id": "armor_set_597b6f5108dd",
@@ -2969,7 +3136,12 @@
       "thunder": -20,
       "ice": 15,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": [
+      "도스이오스",
+      "-",
+      "Iodrome"
+    ]
   },
   {
     "id": "armor_set_9970ac463798",
@@ -3019,7 +3191,12 @@
       "thunder": -5,
       "ice": 10,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": [
+      "울크스스",
+      "백토수",
+      "Lagombi"
+    ]
   },
   {
     "id": "armor_set_9d2c713fc890",
@@ -3069,7 +3246,12 @@
       "thunder": -15,
       "ice": 0,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": [
+      "케차와차",
+      "기원호",
+      "Kecha Wacha"
+    ]
   },
   {
     "id": "armor_set_21f375877cc6",
@@ -3119,7 +3301,12 @@
       "thunder": 5,
       "ice": -5,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": [
+      "바바콩가",
+      "도모수",
+      "Congalala"
+    ]
   },
   {
     "id": "armor_set_00d9154d4c51",
@@ -3170,7 +3357,12 @@
       "thunder": 0,
       "ice": -25,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": [
+      "도스람포스",
+      "-",
+      "Velocidrome"
+    ]
   },
   {
     "id": "armor_set_41251e1793c6",
@@ -3222,7 +3414,12 @@
       "thunder": -10,
       "ice": -20,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": [
+      "얀쿡크",
+      "괴조",
+      "Yian Kut-Ku"
+    ]
   },
   {
     "id": "armor_set_d2ed5a4f43d2",
@@ -3272,7 +3469,8 @@
       "thunder": 10,
       "ice": -20,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_2d8b9c7f1790",
@@ -3323,7 +3521,8 @@
       "thunder": -20,
       "ice": 10,
       "dragon": 0
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_7491ff4fa0e6",
@@ -3373,7 +3572,8 @@
       "thunder": 0,
       "ice": -5,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_4e88b2e09b27",
@@ -3422,7 +3622,12 @@
       "thunder": -20,
       "ice": 0,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": [
+      "다이묘자자미",
+      "방패게",
+      "Daimyo Hermitaur"
+    ]
   },
   {
     "id": "armor_set_876afa5a52fb",
@@ -3472,7 +3677,12 @@
       "thunder": 0,
       "ice": -15,
       "dragon": 0
-    }
+    },
+    "monsterSearchTerms": [
+      "아르셀타스",
+      "철갑충",
+      "Seltas"
+    ]
   },
   {
     "id": "armor_set_0b75631ea268",
@@ -3522,7 +3732,8 @@
       "thunder": 0,
       "ice": 0,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_0aaf3ba9c053",
@@ -3572,7 +3783,8 @@
       "thunder": 0,
       "ice": 0,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_6c23d62a8b86",
@@ -3622,7 +3834,8 @@
       "thunder": -15,
       "ice": 5,
       "dragon": 0
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_321a567efbc0",
@@ -3672,7 +3885,8 @@
       "thunder": -20,
       "ice": 0,
       "dragon": 0
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_be33c65c259f",
@@ -3722,7 +3936,8 @@
       "thunder": -5,
       "ice": -15,
       "dragon": 0
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_7eabedfac113",
@@ -3772,7 +3987,8 @@
       "thunder": -15,
       "ice": -10,
       "dragon": 0
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_08dbe2f00e1a",
@@ -3824,7 +4040,8 @@
       "thunder": 0,
       "ice": 10,
       "dragon": 0
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_d88e3a286b3d",
@@ -3876,7 +4093,8 @@
       "thunder": 15,
       "ice": -5,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_58944b70fade",
@@ -3928,7 +4146,8 @@
       "thunder": 15,
       "ice": -5,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_6b61eb4e6397",
@@ -3977,7 +4196,12 @@
       "thunder": -25,
       "ice": 10,
       "dragon": -10
-    }
+    },
+    "monsterSearchTerms": [
+      "자보아자길",
+      "괴상어",
+      "Zamtrios"
+    ]
   },
   {
     "id": "armor_set_c0338cfb5333",
@@ -4027,7 +4251,8 @@
       "thunder": 0,
       "ice": 0,
       "dragon": 0
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_955da0514925",
@@ -4077,7 +4302,8 @@
       "thunder": 0,
       "ice": 0,
       "dragon": 0
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_83802b796a7a",
@@ -4126,7 +4352,8 @@
       "thunder": 0,
       "ice": 0,
       "dragon": 0
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_3fffad6b69ac",
@@ -4175,7 +4402,8 @@
       "thunder": 0,
       "ice": 0,
       "dragon": 0
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_ad5f54f312d7",
@@ -4224,7 +4452,12 @@
       "thunder": 0,
       "ice": -20,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": [
+      "바바콩가 아종",
+      "녹모수",
+      "Emerald Congalala"
+    ]
   },
   {
     "id": "armor_set_1b7e70b578ad",
@@ -4274,7 +4507,8 @@
       "thunder": 15,
       "ice": -10,
       "dragon": 0
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_f1796be71ef5",
@@ -4324,7 +4558,12 @@
       "thunder": -20,
       "ice": 0,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": [
+      "테츠카브라",
+      "귀와",
+      "Tetsucabra"
+    ]
   },
   {
     "id": "armor_set_8ab03cc87296",
@@ -4375,7 +4614,12 @@
       "thunder": -15,
       "ice": 10,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": [
+      "네르스큐라",
+      "영지주",
+      "Nerscylla"
+    ]
   },
   {
     "id": "armor_set_2e62ce81fd9b",
@@ -4426,7 +4670,12 @@
       "thunder": -25,
       "ice": 15,
       "dragon": 0
-    }
+    },
+    "monsterSearchTerms": [
+      "자보아자길",
+      "괴상어",
+      "Zamtrios"
+    ]
   },
   {
     "id": "armor_set_74e561c602eb",
@@ -4476,7 +4725,12 @@
       "thunder": 0,
       "ice": -25,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": [
+      "가라라아자라",
+      "교사룡",
+      "Najarala"
+    ]
   },
   {
     "id": "armor_set_13b77d8bb417",
@@ -4526,7 +4780,12 @@
       "thunder": 5,
       "ice": 10,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": [
+      "푸루푸루",
+      "-",
+      "Khezu"
+    ]
   },
   {
     "id": "armor_set_bde74c750eb2",
@@ -4576,7 +4835,12 @@
       "thunder": -10,
       "ice": 0,
       "dragon": -20
-    }
+    },
+    "monsterSearchTerms": [
+      "리오레이아",
+      "자화룡",
+      "Rathian"
+    ]
   },
   {
     "id": "armor_set_ba62747cbddb",
@@ -4625,7 +4889,12 @@
       "thunder": -10,
       "ice": 0,
       "dragon": -20
-    }
+    },
+    "monsterSearchTerms": [
+      "리오레우스",
+      "화룡",
+      "Rathalos"
+    ]
   },
   {
     "id": "armor_set_b1d07aaffcb0",
@@ -4676,7 +4945,12 @@
       "thunder": -20,
       "ice": 0,
       "dragon": -10
-    }
+    },
+    "monsterSearchTerms": [
+      "티가렉스",
+      "굉룡",
+      "Tigrex"
+    ]
   },
   {
     "id": "armor_set_566afdd4de03",
@@ -4730,7 +5004,12 @@
       "thunder": 15,
       "ice": -20,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": [
+      "진오우거",
+      "뇌랑룡",
+      "Zinogre"
+    ]
   },
   {
     "id": "armor_set_46b6036e73c4",
@@ -4781,7 +5060,8 @@
       "thunder": -8,
       "ice": -10,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_c028164b5959",
@@ -4831,7 +5111,12 @@
       "thunder": 0,
       "ice": 10,
       "dragon": -15
-    }
+    },
+    "monsterSearchTerms": [
+      "그라비모스",
+      "개룡",
+      "Gravios"
+    ]
   },
   {
     "id": "armor_set_aa33cf00d444",
@@ -4882,7 +5167,12 @@
       "thunder": -15,
       "ice": 0,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": [
+      "얀쿡크 아종",
+      "청괴조",
+      "Blue Yian Kut-Ku"
+    ]
   },
   {
     "id": "armor_set_996e8da6d385",
@@ -4932,7 +5222,12 @@
       "thunder": 5,
       "ice": 5,
       "dragon": -15
-    }
+    },
+    "monsterSearchTerms": [
+      "바살모스",
+      "암룡",
+      "Basarios"
+    ]
   },
   {
     "id": "armor_set_fb8618c824fd",
@@ -4982,7 +5277,12 @@
       "thunder": 15,
       "ice": -20,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": [
+      "얀가루루가",
+      "흑랑조",
+      "Yian Garuga"
+    ]
   },
   {
     "id": "armor_set_a0a135f91862",
@@ -5031,7 +5331,12 @@
       "thunder": -15,
       "ice": -20,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": [
+      "모노블로스",
+      "일각룡",
+      "Monoblos"
+    ]
   },
   {
     "id": "armor_set_547d2578dd1c",
@@ -5082,7 +5387,8 @@
       "thunder": 0,
       "ice": 10,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_69656fe83990",
@@ -5131,7 +5437,8 @@
       "thunder": -20,
       "ice": 0,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_dc5527762d2e",
@@ -5181,7 +5488,8 @@
       "thunder": -5,
       "ice": 15,
       "dragon": 0
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_f9ae5f78501c",
@@ -5231,7 +5539,8 @@
       "thunder": 15,
       "ice": -20,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_a699c1a8664d",
@@ -5281,7 +5590,8 @@
       "thunder": 15,
       "ice": -20,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_23abc8fe7033",
@@ -5333,7 +5643,8 @@
       "thunder": -15,
       "ice": 10,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_8774c98526fd",
@@ -5384,7 +5695,12 @@
       "thunder": -15,
       "ice": 10,
       "dragon": -10
-    }
+    },
+    "monsterSearchTerms": [
+      "고어·마가라",
+      "흑식룡",
+      "Gore Magala"
+    ]
   },
   {
     "id": "armor_set_b2ff5a2a9716",
@@ -5434,7 +5750,12 @@
       "thunder": -15,
       "ice": -10,
       "dragon": 0
-    }
+    },
+    "monsterSearchTerms": [
+      "셀레기오스",
+      "천인룡",
+      "Seregios"
+    ]
   },
   {
     "id": "armor_set_0199466de16f",
@@ -5483,7 +5804,8 @@
       "thunder": 15,
       "ice": -10,
       "dragon": 0
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_86c5b07641ec",
@@ -5532,7 +5854,8 @@
       "thunder": 5,
       "ice": 10,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_50c36faa7bcc",
@@ -5582,7 +5905,12 @@
       "thunder": -10,
       "ice": 0,
       "dragon": -20
-    }
+    },
+    "monsterSearchTerms": [
+      "리오레이아 아종",
+      "홍화룡",
+      "Pink Rathian"
+    ]
   },
   {
     "id": "armor_set_1c243d252f9a",
@@ -5632,7 +5960,12 @@
       "thunder": 0,
       "ice": -10,
       "dragon": -20
-    }
+    },
+    "monsterSearchTerms": [
+      "리오레우스 아종",
+      "창화룡",
+      "Azure Rathalos"
+    ]
   },
   {
     "id": "armor_set_3d628e95c5e6",
@@ -5682,7 +6015,12 @@
       "thunder": -10,
       "ice": 0,
       "dragon": -5
-    }
+    },
+    "monsterSearchTerms": [
+      "티가렉스 아종",
+      "흑굉룡",
+      "Brute Tigrex"
+    ]
   },
   {
     "id": "armor_set_690e7f9f82be",
@@ -5733,7 +6071,12 @@
       "thunder": -25,
       "ice": 0,
       "dragon": 20
-    }
+    },
+    "monsterSearchTerms": [
+      "진오우거 아종",
+      "옥랑룡",
+      "Stygian Zinogre"
+    ]
   },
   {
     "id": "armor_set_53628d65324c",
@@ -5783,7 +6126,12 @@
       "thunder": 5,
       "ice": 5,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": [
+      "그라비모스 아종",
+      "흑개룡",
+      "Black Gravios"
+    ]
   },
   {
     "id": "armor_set_5dd3ffc48f4e",
@@ -5835,7 +6183,12 @@
       "thunder": 0,
       "ice": -10,
       "dragon": 0
-    }
+    },
+    "monsterSearchTerms": [
+      "브라키디오스",
+      "쇄룡",
+      "Brachydios"
+    ]
   },
   {
     "id": "armor_set_80b003be214d",
@@ -5885,7 +6238,14 @@
       "thunder": -20,
       "ice": 5,
       "dragon": -20
-    }
+    },
+    "monsterSearchTerms": [
+      "이블조",
+      "공폭룡",
+      "Deviljho",
+      "광폭 이블조",
+      "Savage Deviljho"
+    ]
   },
   {
     "id": "armor_set_867d5e1c4db1",
@@ -5935,7 +6295,12 @@
       "thunder": 0,
       "ice": -15,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": [
+      "바살모스 아종",
+      "도암룡",
+      "Ruby Basarios"
+    ]
   },
   {
     "id": "armor_set_80975b879614",
@@ -5985,7 +6350,12 @@
       "thunder": 25,
       "ice": -5,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": [
+      "키린 아종",
+      "-",
+      "Oroshi Kirin"
+    ]
   },
   {
     "id": "armor_set_96437bf8a9d7",
@@ -6035,7 +6405,12 @@
       "thunder": 15,
       "ice": -5,
       "dragon": -5
-    }
+    },
+    "monsterSearchTerms": [
+      "리오레우스 아종",
+      "창화룡",
+      "Azure Rathalos"
+    ]
   },
   {
     "id": "armor_set_481b4264e3b1",
@@ -6086,7 +6461,8 @@
       "thunder": 0,
       "ice": -5,
       "dragon": 0
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_173007a650e8",
@@ -6136,7 +6512,8 @@
       "thunder": 0,
       "ice": 0,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_dba5be385b3d",
@@ -6185,7 +6562,8 @@
       "thunder": 5,
       "ice": 0,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_645400d57439",
@@ -6234,7 +6612,8 @@
       "thunder": 5,
       "ice": 0,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_59da738773c5",
@@ -6284,7 +6663,8 @@
       "thunder": 0,
       "ice": 0,
       "dragon": 0
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_73eced6d7fb1",
@@ -6334,7 +6714,8 @@
       "thunder": 0,
       "ice": 0,
       "dragon": 0
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_ca51454f3700",
@@ -6384,7 +6765,12 @@
       "thunder": 10,
       "ice": 0,
       "dragon": 0
-    }
+    },
+    "monsterSearchTerms": [
+      "다라·아마듈라",
+      "사왕룡",
+      "Dalamadur"
+    ]
   },
   {
     "id": "armor_set_c32adc1b9273",
@@ -6437,7 +6823,8 @@
       "thunder": 0,
       "ice": 0,
       "dragon": 0
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_2741776eeb96",
@@ -6486,7 +6873,14 @@
       "thunder": 10,
       "ice": 10,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": [
+      "격앙 라잔",
+      "금사자",
+      "Furious Rajang",
+      "라잔",
+      "Rajang"
+    ]
   },
   {
     "id": "armor_set_55da9d0be1df",
@@ -6535,7 +6929,8 @@
       "thunder": 0,
       "ice": -10,
       "dragon": 0
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_5c490d70309b",
@@ -6588,7 +6983,12 @@
       "thunder": 0,
       "ice": 15,
       "dragon": -30
-    }
+    },
+    "monsterSearchTerms": [
+      "샤가르마가라",
+      "천회룡",
+      "Shagaru Magala"
+    ]
   },
   {
     "id": "armor_set_ee62c452e6a6",
@@ -6641,7 +7041,12 @@
       "thunder": 0,
       "ice": 15,
       "dragon": -30
-    }
+    },
+    "monsterSearchTerms": [
+      "샤가르마가라",
+      "천회룡",
+      "Shagaru Magala"
+    ]
   },
   {
     "id": "armor_set_4b5e1bdacbdb",
@@ -6691,7 +7096,14 @@
       "thunder": 15,
       "ice": -30,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": [
+      "격앙 라잔",
+      "금사자",
+      "Furious Rajang",
+      "라잔",
+      "Rajang"
+    ]
   },
   {
     "id": "armor_set_f5abc4e3d33d",
@@ -6741,7 +7153,14 @@
       "thunder": 20,
       "ice": -35,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": [
+      "격앙 라잔",
+      "금사자",
+      "Furious Rajang",
+      "라잔",
+      "Rajang"
+    ]
   },
   {
     "id": "armor_set_476aad3617b7",
@@ -6792,7 +7211,12 @@
       "thunder": -25,
       "ice": 25,
       "dragon": -30
-    }
+    },
+    "monsterSearchTerms": [
+      "크샬다오라",
+      "강룡",
+      "Kushala Daora"
+    ]
   },
   {
     "id": "armor_set_1050bcc8ef9b",
@@ -6843,7 +7267,12 @@
       "thunder": 5,
       "ice": -10,
       "dragon": -10
-    }
+    },
+    "monsterSearchTerms": [
+      "테오·테스카토르",
+      "염왕룡",
+      "Teostra"
+    ]
   },
   {
     "id": "armor_set_96d9c8e57349",
@@ -6893,7 +7322,12 @@
       "thunder": -20,
       "ice": 15,
       "dragon": -20
-    }
+    },
+    "monsterSearchTerms": [
+      "다렌·모란",
+      "호산룡",
+      "Dah'ren Mohran"
+    ]
   },
   {
     "id": "armor_set_eb804c94b208",
@@ -6943,7 +7377,12 @@
       "thunder": -20,
       "ice": 15,
       "dragon": -20
-    }
+    },
+    "monsterSearchTerms": [
+      "다렌·모란",
+      "호산룡",
+      "Dah'ren Mohran"
+    ]
   },
   {
     "id": "armor_set_d0df3529cc3f",
@@ -6996,7 +7435,12 @@
       "thunder": -10,
       "ice": -10,
       "dragon": -15
-    }
+    },
+    "monsterSearchTerms": [
+      "다라·아마듈라",
+      "사왕룡",
+      "Dalamadur"
+    ]
   },
   {
     "id": "armor_set_d3e8180071e1",
@@ -7046,7 +7490,12 @@
       "thunder": -15,
       "ice": 10,
       "dragon": -25
-    }
+    },
+    "monsterSearchTerms": [
+      "아캄토름",
+      "패룡",
+      "Akantor"
+    ]
   },
   {
     "id": "armor_set_70b93f760dc4",
@@ -7096,7 +7545,12 @@
       "thunder": -20,
       "ice": 0,
       "dragon": 20
-    }
+    },
+    "monsterSearchTerms": [
+      "리오레우스 희소종",
+      "은화룡",
+      "Silver Rathalos"
+    ]
   },
   {
     "id": "armor_set_aea444691d45",
@@ -7146,7 +7600,12 @@
       "thunder": -35,
       "ice": 0,
       "dragon": 20
-    }
+    },
+    "monsterSearchTerms": [
+      "리오레이아 희소종",
+      "금화룡",
+      "Gold Rathian"
+    ]
   },
   {
     "id": "armor_set_eb064d7b73d8",
@@ -7197,7 +7656,14 @@
       "thunder": -15,
       "ice": -5,
       "dragon": -5
-    }
+    },
+    "monsterSearchTerms": [
+      "이블조",
+      "공폭룡",
+      "Deviljho",
+      "광폭 이블조",
+      "Savage Deviljho"
+    ]
   },
   {
     "id": "armor_set_8925e3dbb71c",
@@ -7248,7 +7714,12 @@
       "thunder": 10,
       "ice": -15,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": [
+      "티가렉스 희소종",
+      "대굉룡",
+      "Molten Tigrex"
+    ]
   },
   {
     "id": "armor_set_a6f2e600eb3b",
@@ -7297,7 +7768,8 @@
       "thunder": 10,
       "ice": -5,
       "dragon": -30
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_d30242d4d27c",
@@ -7348,7 +7820,8 @@
       "thunder": 5,
       "ice": -15,
       "dragon": -35
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_339aff7aba3f",
@@ -7398,7 +7871,12 @@
       "thunder": -5,
       "ice": 30,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": [
+      "키린 아종",
+      "-",
+      "Oroshi Kirin"
+    ]
   },
   {
     "id": "armor_set_cd00edc583de",
@@ -7448,7 +7926,12 @@
       "thunder": -15,
       "ice": 20,
       "dragon": -10
-    }
+    },
+    "monsterSearchTerms": [
+      "우캄루바스",
+      "붕룡",
+      "Ukanlos"
+    ]
   },
   {
     "id": "armor_set_a2739a401a52",
@@ -7498,7 +7981,8 @@
       "thunder": 10,
       "ice": 10,
       "dragon": -10
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_087a1af859d0",
@@ -7548,7 +8032,8 @@
       "thunder": 0,
       "ice": -10,
       "dragon": -10
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_45656967a1ab",
@@ -7600,7 +8085,8 @@
       "thunder": 5,
       "ice": -30,
       "dragon": -10
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_fc2150ba1f52",
@@ -7651,7 +8137,8 @@
       "thunder": 0,
       "ice": 20,
       "dragon": -5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_125f2bceb585",
@@ -7701,7 +8188,8 @@
       "thunder": -10,
       "ice": 5,
       "dragon": -25
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_a874efed6922",
@@ -7751,7 +8239,8 @@
       "thunder": -10,
       "ice": 5,
       "dragon": -25
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_048868f6e594",
@@ -7802,7 +8291,8 @@
       "thunder": 0,
       "ice": 0,
       "dragon": -10
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_e5b85919a952",
@@ -7853,7 +8343,12 @@
       "thunder": -10,
       "ice": 0,
       "dragon": -20
-    }
+    },
+    "monsterSearchTerms": [
+      "리오레이아",
+      "자화룡",
+      "Rathian"
+    ]
   },
   {
     "id": "armor_set_4415dcf25342",
@@ -7904,7 +8399,12 @@
       "thunder": -10,
       "ice": 0,
       "dragon": -20
-    }
+    },
+    "monsterSearchTerms": [
+      "리오레우스",
+      "화룡",
+      "Rathalos"
+    ]
   },
   {
     "id": "armor_set_6db4d018a474",
@@ -7957,7 +8457,15 @@
       "thunder": -30,
       "ice": 30,
       "dragon": -35
-    }
+    },
+    "monsterSearchTerms": [
+      "리오레우스 희소종",
+      "은화룡",
+      "Silver Rathalos",
+      "크샬다오라",
+      "강룡",
+      "Kushala Daora"
+    ]
   },
   {
     "id": "armor_set_17a53298c06d",
@@ -8008,7 +8516,12 @@
       "thunder": 10,
       "ice": -10,
       "dragon": -20
-    }
+    },
+    "monsterSearchTerms": [
+      "다라·아마듈라",
+      "사왕룡",
+      "Dalamadur"
+    ]
   },
   {
     "id": "armor_set_290fb99e1142",
@@ -8061,7 +8574,15 @@
       "thunder": -25,
       "ice": 0,
       "dragon": -15
-    }
+    },
+    "monsterSearchTerms": [
+      "티가렉스",
+      "굉룡",
+      "Tigrex",
+      "아캄토름",
+      "패룡",
+      "Akantor"
+    ]
   },
   {
     "id": "armor_set_30aee7ae1186",
@@ -8111,7 +8632,12 @@
       "thunder": 0,
       "ice": -20,
       "dragon": -20
-    }
+    },
+    "monsterSearchTerms": [
+      "다렌·모란",
+      "호산룡",
+      "Dah'ren Mohran"
+    ]
   },
   {
     "id": "armor_set_92b35cc0cdad",
@@ -8161,7 +8687,12 @@
       "thunder": 0,
       "ice": -20,
       "dragon": -20
-    }
+    },
+    "monsterSearchTerms": [
+      "다렌·모란",
+      "호산룡",
+      "Dah'ren Mohran"
+    ]
   },
   {
     "id": "armor_set_82c28c2729ba",
@@ -8210,7 +8741,8 @@
       "thunder": 20,
       "ice": -15,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_16a70aeaef70",
@@ -8259,7 +8791,12 @@
       "thunder": 5,
       "ice": 5,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": [
+      "리오레우스",
+      "화룡",
+      "Rathalos"
+    ]
   },
   {
     "id": "armor_set_a87e5938de17",
@@ -8309,7 +8846,8 @@
       "thunder": 0,
       "ice": 20,
       "dragon": 0
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_0d8ef00a4590",
@@ -8360,7 +8898,15 @@
       "thunder": 0,
       "ice": 0,
       "dragon": 0
-    }
+    },
+    "monsterSearchTerms": [
+      "리오레우스 아종",
+      "창화룡",
+      "Azure Rathalos",
+      "리오레이아 희소종",
+      "금화룡",
+      "Gold Rathian"
+    ]
   },
   {
     "id": "armor_set_ebfadb342ed7",
@@ -8418,7 +8964,8 @@
       "thunder": 10,
       "ice": 10,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_6da52f32f3cb",
@@ -8469,7 +9016,12 @@
       "thunder": 5,
       "ice": 30,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": [
+      "키린 아종",
+      "-",
+      "Oroshi Kirin"
+    ]
   },
   {
     "id": "armor_set_55f4b6b818ce",
@@ -8520,7 +9072,8 @@
       "thunder": 10,
       "ice": 0,
       "dragon": 0
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_bdd53bc84bac",
@@ -8572,7 +9125,8 @@
       "thunder": -15,
       "ice": 10,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_32539854b7f3",
@@ -8625,7 +9179,8 @@
       "thunder": -15,
       "ice": 10,
       "dragon": -10
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_2f40caac4d17",
@@ -8679,7 +9234,12 @@
       "thunder": -10,
       "ice": -10,
       "dragon": -15
-    }
+    },
+    "monsterSearchTerms": [
+      "다라·아마듈라",
+      "사왕룡",
+      "Dalamadur"
+    ]
   },
   {
     "id": "armor_set_2bab8227d227",
@@ -8728,7 +9288,12 @@
       "thunder": 10,
       "ice": 10,
       "dragon": -25
-    }
+    },
+    "monsterSearchTerms": [
+      "셀레기오스",
+      "천인룡",
+      "Seregios"
+    ]
   },
   {
     "id": "armor_set_5177a899001b",
@@ -8778,7 +9343,12 @@
       "thunder": -15,
       "ice": -15,
       "dragon": -15
-    }
+    },
+    "monsterSearchTerms": [
+      "진오우거 아종",
+      "옥랑룡",
+      "Stygian Zinogre"
+    ]
   },
   {
     "id": "armor_set_d2369582f695",
@@ -8828,7 +9398,12 @@
       "thunder": -20,
       "ice": -20,
       "dragon": -20
-    }
+    },
+    "monsterSearchTerms": [
+      "테오·테스카토르",
+      "염왕룡",
+      "Teostra"
+    ]
   },
   {
     "id": "armor_set_eea8ced36575",
@@ -8878,7 +9453,12 @@
       "thunder": 5,
       "ice": 5,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": [
+      "크샬다오라",
+      "강룡",
+      "Kushala Daora"
+    ]
   },
   {
     "id": "armor_set_8dd455acbb7e",
@@ -8929,7 +9509,8 @@
       "thunder": 10,
       "ice": -5,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_4358968fae09",
@@ -8979,7 +9560,8 @@
       "thunder": -5,
       "ice": -5,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_a65cfe8e1eb2",
@@ -9029,7 +9611,12 @@
       "thunder": -20,
       "ice": 15,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": [
+      "도스이오스",
+      "-",
+      "Iodrome"
+    ]
   },
   {
     "id": "armor_set_57a938d1bb60",
@@ -9081,7 +9668,8 @@
       "thunder": -10,
       "ice": -15,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_244b566f0e55",
@@ -9132,7 +9720,12 @@
       "thunder": -5,
       "ice": 10,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": [
+      "울크스스",
+      "백토수",
+      "Lagombi"
+    ]
   },
   {
     "id": "armor_set_befd4f682bba",
@@ -9183,7 +9776,12 @@
       "thunder": -15,
       "ice": 0,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": [
+      "케차와차",
+      "기원호",
+      "Kecha Wacha"
+    ]
   },
   {
     "id": "armor_set_7b1480c20864",
@@ -9234,7 +9832,8 @@
       "thunder": -10,
       "ice": -15,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_0d6aaccd1196",
@@ -9285,7 +9884,12 @@
       "thunder": 5,
       "ice": -5,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": [
+      "바바콩가",
+      "도모수",
+      "Congalala"
+    ]
   },
   {
     "id": "armor_set_9971163c10d2",
@@ -9336,7 +9940,12 @@
       "thunder": 0,
       "ice": -20,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": [
+      "바바콩가 아종",
+      "녹모수",
+      "Emerald Congalala"
+    ]
   },
   {
     "id": "armor_set_04829733fa7b",
@@ -9387,7 +9996,8 @@
       "thunder": 15,
       "ice": -10,
       "dragon": 0
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_2dc752b3878e",
@@ -9438,7 +10048,8 @@
       "thunder": 15,
       "ice": -10,
       "dragon": 0
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_ea6c47fc3677",
@@ -9488,7 +10099,12 @@
       "thunder": -20,
       "ice": 0,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": [
+      "다이묘자자미",
+      "방패게",
+      "Daimyo Hermitaur"
+    ]
   },
   {
     "id": "armor_set_cb027ab2c92a",
@@ -9539,7 +10155,12 @@
       "thunder": -10,
       "ice": -20,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": [
+      "다이묘자자미 아종",
+      "방패게",
+      "Plum Daimyo Hermitaur"
+    ]
   },
   {
     "id": "armor_set_4bd980251b17",
@@ -9590,7 +10211,12 @@
       "thunder": -20,
       "ice": 0,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": [
+      "테츠카브라",
+      "귀와",
+      "Tetsucabra"
+    ]
   },
   {
     "id": "armor_set_1cfec36b8b61",
@@ -9641,7 +10267,12 @@
       "thunder": -20,
       "ice": -25,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": [
+      "테츠카브라 아종",
+      "황귀와",
+      "Berserk Tetsucabra"
+    ]
   },
   {
     "id": "armor_set_4b9c1e13214b",
@@ -9693,7 +10324,12 @@
       "thunder": -15,
       "ice": 10,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": [
+      "네르스큐라",
+      "영지주",
+      "Nerscylla"
+    ]
   },
   {
     "id": "armor_set_68f81bb6b751",
@@ -9744,7 +10380,12 @@
       "thunder": -25,
       "ice": 15,
       "dragon": 0
-    }
+    },
+    "monsterSearchTerms": [
+      "자보아자길",
+      "괴상어",
+      "Zamtrios"
+    ]
   },
   {
     "id": "armor_set_b8bd14da79bb",
@@ -9795,7 +10436,12 @@
       "thunder": -20,
       "ice": -25,
       "dragon": 0
-    }
+    },
+    "monsterSearchTerms": [
+      "자보아자길 아종",
+      "호상어",
+      "Tigerstripe Zamtrios"
+    ]
   },
   {
     "id": "armor_set_068ba5322c9c",
@@ -9846,7 +10492,12 @@
       "thunder": 0,
       "ice": -25,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": [
+      "가라라아자라",
+      "교사룡",
+      "Najarala"
+    ]
   },
   {
     "id": "armor_set_3e1f537d904a",
@@ -9897,7 +10548,12 @@
       "thunder": -15,
       "ice": 20,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": [
+      "가라라아자라 아종",
+      "수사룡",
+      "Tidal Najarala"
+    ]
   },
   {
     "id": "armor_set_0f2156fa9227",
@@ -9947,7 +10603,12 @@
       "thunder": 5,
       "ice": 10,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": [
+      "푸루푸루",
+      "-",
+      "Khezu"
+    ]
   },
   {
     "id": "armor_set_9bc7f4a6a248",
@@ -9998,7 +10659,8 @@
       "thunder": 5,
       "ice": 10,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_31620a6151b8",
@@ -10049,7 +10711,12 @@
       "thunder": -10,
       "ice": 0,
       "dragon": -20
-    }
+    },
+    "monsterSearchTerms": [
+      "리오레이아",
+      "자화룡",
+      "Rathian"
+    ]
   },
   {
     "id": "armor_set_b34b1c3e08eb",
@@ -10100,7 +10767,12 @@
       "thunder": -10,
       "ice": 0,
       "dragon": -20
-    }
+    },
+    "monsterSearchTerms": [
+      "리오레이아 아종",
+      "홍화룡",
+      "Pink Rathian"
+    ]
   },
   {
     "id": "armor_set_1b25b351f3b6",
@@ -10151,7 +10823,12 @@
       "thunder": 0,
       "ice": -25,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": [
+      "도스람포스",
+      "-",
+      "Velocidrome"
+    ]
   },
   {
     "id": "armor_set_21faf68f7836",
@@ -10203,7 +10880,12 @@
       "thunder": -10,
       "ice": -20,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": [
+      "얀쿡크",
+      "괴조",
+      "Yian Kut-Ku"
+    ]
   },
   {
     "id": "armor_set_d661b3899ccd",
@@ -10255,7 +10937,12 @@
       "thunder": -15,
       "ice": 0,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": [
+      "얀쿡크 아종",
+      "청괴조",
+      "Blue Yian Kut-Ku"
+    ]
   },
   {
     "id": "armor_set_6ed3e22b9ad9",
@@ -10307,7 +10994,12 @@
       "thunder": 5,
       "ice": 5,
       "dragon": -15
-    }
+    },
+    "monsterSearchTerms": [
+      "바살모스",
+      "암룡",
+      "Basarios"
+    ]
   },
   {
     "id": "armor_set_21d0430fe0b2",
@@ -10359,7 +11051,12 @@
       "thunder": 0,
       "ice": -15,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": [
+      "바살모스 아종",
+      "도암룡",
+      "Ruby Basarios"
+    ]
   },
   {
     "id": "armor_set_2defeb185c40",
@@ -10411,7 +11108,12 @@
       "thunder": 0,
       "ice": -15,
       "dragon": 0
-    }
+    },
+    "monsterSearchTerms": [
+      "아르셀타스",
+      "철갑충",
+      "Seltas"
+    ]
   },
   {
     "id": "armor_set_eb460b044a62",
@@ -10462,7 +11164,8 @@
       "thunder": 5,
       "ice": -10,
       "dragon": 0
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_7363c2cc0986",
@@ -10513,7 +11216,12 @@
       "thunder": -20,
       "ice": 0,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": [
+      "자보아자길",
+      "괴상어",
+      "Zamtrios"
+    ]
   },
   {
     "id": "armor_set_3bb3a278707a",
@@ -10565,7 +11273,8 @@
       "thunder": -10,
       "ice": -20,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_e55266ec9c92",
@@ -10615,7 +11324,8 @@
       "thunder": -5,
       "ice": 15,
       "dragon": 0
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_4bc02a8892a0",
@@ -10667,7 +11377,8 @@
       "thunder": 0,
       "ice": -5,
       "dragon": 0
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_de0b54648faf",
@@ -10717,7 +11428,8 @@
       "thunder": 15,
       "ice": -20,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_7ee9c6ac7ea2",
@@ -10769,7 +11481,8 @@
       "thunder": 15,
       "ice": -5,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_f3e383ac7298",
@@ -10820,7 +11533,8 @@
       "thunder": 0,
       "ice": 0,
       "dragon": 0
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_e6b649a10318",
@@ -10870,7 +11584,12 @@
       "thunder": -15,
       "ice": -10,
       "dragon": 0
-    }
+    },
+    "monsterSearchTerms": [
+      "셀레기오스",
+      "천인룡",
+      "Seregios"
+    ]
   },
   {
     "id": "armor_set_c0a79c436b27",
@@ -10921,7 +11640,12 @@
       "thunder": 0,
       "ice": -15,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": [
+      "네르스큐라 아종",
+      "해지주",
+      "Shrouded Nerscylla"
+    ]
   },
   {
     "id": "armor_set_9700344cc1be",
@@ -10971,7 +11695,12 @@
       "thunder": -10,
       "ice": 0,
       "dragon": -20
-    }
+    },
+    "monsterSearchTerms": [
+      "리오레우스",
+      "화룡",
+      "Rathalos"
+    ]
   },
   {
     "id": "armor_set_c8bbfe2bdd88",
@@ -11022,7 +11751,12 @@
       "thunder": 0,
       "ice": -10,
       "dragon": -20
-    }
+    },
+    "monsterSearchTerms": [
+      "리오레우스 아종",
+      "창화룡",
+      "Azure Rathalos"
+    ]
   },
   {
     "id": "armor_set_654c763ed1eb",
@@ -11074,7 +11808,12 @@
       "thunder": -20,
       "ice": 0,
       "dragon": -10
-    }
+    },
+    "monsterSearchTerms": [
+      "티가렉스",
+      "굉룡",
+      "Tigrex"
+    ]
   },
   {
     "id": "armor_set_28fc641758f6",
@@ -11126,7 +11865,12 @@
       "thunder": -10,
       "ice": 0,
       "dragon": -5
-    }
+    },
+    "monsterSearchTerms": [
+      "티가렉스 아종",
+      "흑굉룡",
+      "Brute Tigrex"
+    ]
   },
   {
     "id": "armor_set_2249f1022549",
@@ -11179,7 +11923,12 @@
       "thunder": 15,
       "ice": -20,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": [
+      "진오우거",
+      "뇌랑룡",
+      "Zinogre"
+    ]
   },
   {
     "id": "armor_set_0eb926333c1a",
@@ -11230,7 +11979,12 @@
       "thunder": -25,
       "ice": 0,
       "dragon": 20
-    }
+    },
+    "monsterSearchTerms": [
+      "진오우거 아종",
+      "옥랑룡",
+      "Stygian Zinogre"
+    ]
   },
   {
     "id": "armor_set_d7ae236e361e",
@@ -11282,7 +12036,8 @@
       "thunder": -8,
       "ice": -10,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_fa0a4bef6c44",
@@ -11334,7 +12089,8 @@
       "thunder": -15,
       "ice": -20,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_26b9918571a6",
@@ -11386,7 +12142,12 @@
       "thunder": 0,
       "ice": 10,
       "dragon": -15
-    }
+    },
+    "monsterSearchTerms": [
+      "그라비모스",
+      "개룡",
+      "Gravios"
+    ]
   },
   {
     "id": "armor_set_5c376e2c3b16",
@@ -11437,7 +12198,12 @@
       "thunder": 5,
       "ice": 5,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": [
+      "그라비모스 아종",
+      "흑개룡",
+      "Black Gravios"
+    ]
   },
   {
     "id": "armor_set_d11ec6b88fba",
@@ -11490,7 +12256,12 @@
       "thunder": 0,
       "ice": -20,
       "dragon": 0
-    }
+    },
+    "monsterSearchTerms": [
+      "디아블로스",
+      "각룡",
+      "Diablos"
+    ]
   },
   {
     "id": "armor_set_22a3b60ec7d7",
@@ -11542,7 +12313,12 @@
       "thunder": 0,
       "ice": -30,
       "dragon": 0
-    }
+    },
+    "monsterSearchTerms": [
+      "디아블로스 아종",
+      "흑각룡",
+      "Black Diablos"
+    ]
   },
   {
     "id": "armor_set_e473cd13eb80",
@@ -11594,7 +12370,14 @@
       "thunder": 0,
       "ice": -10,
       "dragon": 0
-    }
+    },
+    "monsterSearchTerms": [
+      "브라키디오스",
+      "쇄룡",
+      "Brachydios",
+      "임계 브라키디오스",
+      "Raging Brachydios"
+    ]
   },
   {
     "id": "armor_set_d2af7cc36b3a",
@@ -11645,7 +12428,14 @@
       "thunder": -20,
       "ice": 5,
       "dragon": -20
-    }
+    },
+    "monsterSearchTerms": [
+      "이블조",
+      "공폭룡",
+      "Deviljho",
+      "광폭 이블조",
+      "Savage Deviljho"
+    ]
   },
   {
     "id": "armor_set_6fa3c37fc906",
@@ -11697,7 +12487,14 @@
       "thunder": -15,
       "ice": 10,
       "dragon": -20
-    }
+    },
+    "monsterSearchTerms": [
+      "혼돈의 고어·마가라",
+      "흑식룡",
+      "Chaotic Gore Magala",
+      "고어·마가라",
+      "Gore Magala"
+    ]
   },
   {
     "id": "armor_set_7570d5be4bd6",
@@ -11749,7 +12546,12 @@
       "thunder": 15,
       "ice": -20,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": [
+      "얀가루루가",
+      "흑랑조",
+      "Yian Garuga"
+    ]
   },
   {
     "id": "armor_set_877dc34c3b89",
@@ -11800,11 +12602,16 @@
       "thunder": -15,
       "ice": -20,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": [
+      "모노블로스",
+      "일각룡",
+      "Monoblos"
+    ]
   },
   {
     "id": "armor_set_26dc1c87811b",
-    "name": "모노",
+    "name": "모노데블",
     "hunterType": "blade",
     "rank": "g",
     "rare": 9,
@@ -11822,7 +12629,7 @@
       {
         "id": "armor_98bc5e6dcf0f",
         "part": "arms",
-        "name": "모노블로Z암"
+        "name": "모노데블암"
       },
       {
         "id": "armor_df4ccd7bfc31",
@@ -11852,7 +12659,12 @@
       "thunder": -15,
       "ice": -20,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": [
+      "모노블로스 아종",
+      "백일각룡",
+      "White Monoblos"
+    ]
   },
   {
     "id": "armor_set_e7a4395c92f3",
@@ -11904,7 +12716,14 @@
       "thunder": -15,
       "ice": 10,
       "dragon": -10
-    }
+    },
+    "monsterSearchTerms": [
+      "혼돈의 고어·마가라",
+      "흑식룡",
+      "Chaotic Gore Magala",
+      "고어·마가라",
+      "Gore Magala"
+    ]
   },
   {
     "id": "armor_set_6fddb744663b",
@@ -11956,7 +12775,8 @@
       "thunder": -20,
       "ice": 5,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_7d0e942ef113",
@@ -12008,7 +12828,12 @@
       "thunder": 15,
       "ice": -5,
       "dragon": -5
-    }
+    },
+    "monsterSearchTerms": [
+      "가라라아자라 아종",
+      "수사룡",
+      "Tidal Najarala"
+    ]
   },
   {
     "id": "armor_set_d736d12d92b4",
@@ -12059,7 +12884,8 @@
       "thunder": 5,
       "ice": -10,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_68b12f344221",
@@ -12109,7 +12935,8 @@
       "thunder": 0,
       "ice": 0,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_d0c7708752d3",
@@ -12161,7 +12988,8 @@
       "thunder": -15,
       "ice": 10,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_061dce29731e",
@@ -12212,7 +13040,8 @@
       "thunder": 5,
       "ice": 0,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_aa40879ae395",
@@ -12261,7 +13090,8 @@
       "thunder": 0,
       "ice": 0,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_18a060f41108",
@@ -12311,7 +13141,8 @@
       "thunder": 0,
       "ice": 0,
       "dragon": 0
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_b9ead320b5d9",
@@ -12362,7 +13193,8 @@
       "thunder": 0,
       "ice": 0,
       "dragon": 0
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_d2b5ac55f05d",
@@ -12414,7 +13246,12 @@
       "thunder": 0,
       "ice": 15,
       "dragon": -30
-    }
+    },
+    "monsterSearchTerms": [
+      "샤가르마가라",
+      "천회룡",
+      "Shagaru Magala"
+    ]
   },
   {
     "id": "armor_set_19ca423779ee",
@@ -12465,7 +13302,14 @@
       "thunder": 15,
       "ice": -30,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": [
+      "격앙 라잔",
+      "금사자",
+      "Furious Rajang",
+      "라잔",
+      "Rajang"
+    ]
   },
   {
     "id": "armor_set_8e20319b20bc",
@@ -12516,7 +13360,14 @@
       "thunder": 20,
       "ice": -35,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": [
+      "격앙 라잔",
+      "금사자",
+      "Furious Rajang",
+      "라잔",
+      "Rajang"
+    ]
   },
   {
     "id": "armor_set_fcc5731bb39f",
@@ -12568,7 +13419,12 @@
       "thunder": -25,
       "ice": 25,
       "dragon": -30
-    }
+    },
+    "monsterSearchTerms": [
+      "크샬다오라",
+      "강룡",
+      "Kushala Daora"
+    ]
   },
   {
     "id": "armor_set_2540be7f0794",
@@ -12620,7 +13476,8 @@
       "thunder": 10,
       "ice": 30,
       "dragon": -25
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_d8575fd8a180",
@@ -12673,7 +13530,12 @@
       "thunder": 5,
       "ice": -10,
       "dragon": -10
-    }
+    },
+    "monsterSearchTerms": [
+      "테오·테스카토르",
+      "염왕룡",
+      "Teostra"
+    ]
   },
   {
     "id": "armor_set_018a325c38de",
@@ -12725,7 +13587,12 @@
       "thunder": 0,
       "ice": 20,
       "dragon": -5
-    }
+    },
+    "monsterSearchTerms": [
+      "오나즈치",
+      "하룡",
+      "Chameleos"
+    ]
   },
   {
     "id": "armor_set_78eea17dc0d0",
@@ -12777,7 +13644,12 @@
       "thunder": -20,
       "ice": 15,
       "dragon": -20
-    }
+    },
+    "monsterSearchTerms": [
+      "다렌·모란",
+      "호산룡",
+      "Dah'ren Mohran"
+    ]
   },
   {
     "id": "armor_set_66dead786d8a",
@@ -12828,7 +13700,12 @@
       "thunder": 0,
       "ice": 15,
       "dragon": -35
-    }
+    },
+    "monsterSearchTerms": [
+      "고그마지오스",
+      "거극룡",
+      "Gogmazios"
+    ]
   },
   {
     "id": "armor_set_02cb2000efdd",
@@ -12879,7 +13756,8 @@
       "thunder": -10,
       "ice": -10,
       "dragon": -15
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_8eaeae23b9bc",
@@ -12930,7 +13808,12 @@
       "thunder": -15,
       "ice": 10,
       "dragon": -25
-    }
+    },
+    "monsterSearchTerms": [
+      "아캄토름",
+      "패룡",
+      "Akantor"
+    ]
   },
   {
     "id": "armor_set_60297d83a6b0",
@@ -12982,7 +13865,12 @@
       "thunder": -15,
       "ice": 20,
       "dragon": -10
-    }
+    },
+    "monsterSearchTerms": [
+      "우캄루바스",
+      "붕룡",
+      "Ukanlos"
+    ]
   },
   {
     "id": "armor_set_c0afd12ed4fa",
@@ -13034,7 +13922,14 @@
       "thunder": -15,
       "ice": -5,
       "dragon": -5
-    }
+    },
+    "monsterSearchTerms": [
+      "이블조",
+      "공폭룡",
+      "Deviljho",
+      "광폭 이블조",
+      "Savage Deviljho"
+    ]
   },
   {
     "id": "armor_set_11b862963b00",
@@ -13086,7 +13981,12 @@
       "thunder": 10,
       "ice": -15,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": [
+      "티가렉스 희소종",
+      "대굉룡",
+      "Molten Tigrex"
+    ]
   },
   {
     "id": "armor_set_9be1b534a51f",
@@ -13137,7 +14037,14 @@
       "thunder": 0,
       "ice": -15,
       "dragon": 0
-    }
+    },
+    "monsterSearchTerms": [
+      "브라키디오스",
+      "쇄룡",
+      "Brachydios",
+      "임계 브라키디오스",
+      "Raging Brachydios"
+    ]
   },
   {
     "id": "armor_set_ebb05990e0e1",
@@ -13187,7 +14094,8 @@
       "thunder": 5,
       "ice": -15,
       "dragon": -20
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_9925db8d5e37",
@@ -13238,7 +14146,12 @@
       "thunder": 25,
       "ice": -5,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": [
+      "키린 아종",
+      "-",
+      "Oroshi Kirin"
+    ]
   },
   {
     "id": "armor_set_36d610ae35d0",
@@ -13289,7 +14202,12 @@
       "thunder": -5,
       "ice": 30,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": [
+      "키린 아종",
+      "-",
+      "Oroshi Kirin"
+    ]
   },
   {
     "id": "armor_set_925d9c3e2304",
@@ -13341,7 +14259,8 @@
       "thunder": 0,
       "ice": -10,
       "dragon": -10
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_1d539beef597",
@@ -13392,7 +14311,8 @@
       "thunder": 0,
       "ice": -20,
       "dragon": -20
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_c05d6ea6e359",
@@ -13444,7 +14364,8 @@
       "thunder": 5,
       "ice": -30,
       "dragon": -10
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_4064a7e071a0",
@@ -13496,7 +14417,8 @@
       "thunder": -10,
       "ice": 5,
       "dragon": -25
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_62bf1bf1ae21",
@@ -13547,7 +14469,8 @@
       "thunder": 0,
       "ice": 10,
       "dragon": -20
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_d4965bd45f49",
@@ -13598,7 +14521,8 @@
       "thunder": 0,
       "ice": 0,
       "dragon": -25
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_38bfc95831fa",
@@ -13649,7 +14573,8 @@
       "thunder": -15,
       "ice": 5,
       "dragon": -35
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_85a6aee11925",
@@ -13699,7 +14624,8 @@
       "thunder": 0,
       "ice": 0,
       "dragon": -10
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_211807a61013",
@@ -13749,7 +14675,8 @@
       "thunder": 5,
       "ice": 5,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_9e17bec4f021",
@@ -13800,7 +14727,8 @@
       "thunder": -35,
       "ice": 0,
       "dragon": 20
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_0c22c1f40d35",
@@ -13851,7 +14779,8 @@
       "thunder": -20,
       "ice": 0,
       "dragon": 20
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_b0065509523f",
@@ -13904,7 +14833,8 @@
       "thunder": -10,
       "ice": -10,
       "dragon": -15
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_c3e765c00343",
@@ -13955,7 +14885,8 @@
       "thunder": 10,
       "ice": -5,
       "dragon": -35
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_5eaf380e07c8",
@@ -14009,7 +14940,8 @@
       "thunder": -15,
       "ice": 0,
       "dragon": 0
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_99c21ce191ec",
@@ -14058,7 +14990,8 @@
       "thunder": -10,
       "ice": 5,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_c19f12637933",
@@ -14106,7 +15039,8 @@
       "thunder": 0,
       "ice": -5,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_0e6f59a3be4a",
@@ -14155,7 +15089,8 @@
       "thunder": -5,
       "ice": 0,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_dbe7c0bbc7c9",
@@ -14205,7 +15140,8 @@
       "thunder": 0,
       "ice": 0,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_ce37faff98b1",
@@ -14255,7 +15191,8 @@
       "thunder": 15,
       "ice": 0,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_45db2c8c6488",
@@ -14304,7 +15241,8 @@
       "thunder": 5,
       "ice": 5,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_cbb90f65fc4d",
@@ -14353,7 +15291,12 @@
       "thunder": -5,
       "ice": -10,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": [
+      "도스게네포스",
+      "-",
+      "Gendrome"
+    ]
   },
   {
     "id": "armor_set_0e1688df514b",
@@ -14403,7 +15346,12 @@
       "thunder": 5,
       "ice": -15,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": [
+      "도스람포스",
+      "-",
+      "Velocidrome"
+    ]
   },
   {
     "id": "armor_set_b90d38496764",
@@ -14453,7 +15401,8 @@
       "thunder": 5,
       "ice": 0,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_d64432c9c1d6",
@@ -14502,7 +15451,8 @@
       "thunder": 20,
       "ice": 0,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_87714cd8a4dc",
@@ -14552,7 +15502,8 @@
       "thunder": -5,
       "ice": 0,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_d4bc1d4c0817",
@@ -14601,7 +15552,12 @@
       "thunder": -5,
       "ice": 5,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": [
+      "케차와차",
+      "기원호",
+      "Kecha Wacha"
+    ]
   },
   {
     "id": "armor_set_75098df9daba",
@@ -14650,7 +15606,8 @@
       "thunder": 15,
       "ice": -5,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_a3504b2ff91a",
@@ -14699,7 +15656,8 @@
       "thunder": 10,
       "ice": 0,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_0b59619ff361",
@@ -14749,7 +15707,8 @@
       "thunder": 0,
       "ice": 0,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_a4d5aee9b880",
@@ -14798,7 +15757,12 @@
       "thunder": 0,
       "ice": 15,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": [
+      "울크스스",
+      "백토수",
+      "Lagombi"
+    ]
   },
   {
     "id": "armor_set_2ddcd1827ea5",
@@ -14847,7 +15811,12 @@
       "thunder": -10,
       "ice": 15,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": [
+      "도스이오스",
+      "-",
+      "Iodrome"
+    ]
   },
   {
     "id": "armor_set_bbd374344e22",
@@ -14896,7 +15865,8 @@
       "thunder": 15,
       "ice": 10,
       "dragon": -10
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_70731040b27c",
@@ -14946,7 +15916,12 @@
       "thunder": -5,
       "ice": 5,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": [
+      "테츠카브라",
+      "귀와",
+      "Tetsucabra"
+    ]
   },
   {
     "id": "armor_set_d77a2389a802",
@@ -14997,7 +15972,12 @@
       "thunder": -5,
       "ice": -10,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": [
+      "얀쿡크",
+      "괴조",
+      "Yian Kut-Ku"
+    ]
   },
   {
     "id": "armor_set_b654e0436084",
@@ -15047,7 +16027,8 @@
       "thunder": 10,
       "ice": -5,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_1192b22a2b95",
@@ -15097,7 +16078,12 @@
       "thunder": 10,
       "ice": 10,
       "dragon": -10
-    }
+    },
+    "monsterSearchTerms": [
+      "바살모스",
+      "암룡",
+      "Basarios"
+    ]
   },
   {
     "id": "armor_set_dc5987dcb736",
@@ -15147,7 +16133,12 @@
       "thunder": -5,
       "ice": 10,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": [
+      "네르스큐라",
+      "영지주",
+      "Nerscylla"
+    ]
   },
   {
     "id": "armor_set_9d172acadf1c",
@@ -15196,7 +16187,12 @@
       "thunder": 10,
       "ice": 15,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": [
+      "푸루푸루",
+      "-",
+      "Khezu"
+    ]
   },
   {
     "id": "armor_set_1dbccbf006d7",
@@ -15245,7 +16241,12 @@
       "thunder": -5,
       "ice": 5,
       "dragon": -10
-    }
+    },
+    "monsterSearchTerms": [
+      "리오레이아",
+      "자화룡",
+      "Rathian"
+    ]
   },
   {
     "id": "armor_set_53f6009e7927",
@@ -15295,7 +16296,12 @@
       "thunder": -10,
       "ice": 15,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": [
+      "자보아자길",
+      "괴상어",
+      "Zamtrios"
+    ]
   },
   {
     "id": "armor_set_bfadc0b1a7dc",
@@ -15345,7 +16351,12 @@
       "thunder": 5,
       "ice": -15,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": [
+      "가라라아자라",
+      "교사룡",
+      "Najarala"
+    ]
   },
   {
     "id": "armor_set_55dd8fd26b3a",
@@ -15393,7 +16404,8 @@
       "thunder": -5,
       "ice": -15,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_6671fe0cd71a",
@@ -15443,7 +16455,8 @@
       "thunder": 0,
       "ice": 0,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_6703c56d5367",
@@ -15493,7 +16506,8 @@
       "thunder": 15,
       "ice": 5,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_9fcbcbcd48eb",
@@ -15542,7 +16556,12 @@
       "thunder": 15,
       "ice": -15,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": [
+      "진오우거",
+      "뇌랑룡",
+      "Zinogre"
+    ]
   },
   {
     "id": "armor_set_80abc87fe822",
@@ -15592,7 +16611,8 @@
       "thunder": -2,
       "ice": -2,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_0547526b9ead",
@@ -15642,7 +16662,12 @@
       "thunder": -10,
       "ice": 10,
       "dragon": -5
-    }
+    },
+    "monsterSearchTerms": [
+      "고어·마가라",
+      "흑식룡",
+      "Gore Magala"
+    ]
   },
   {
     "id": "armor_set_2ea62b007a7c",
@@ -15691,7 +16716,12 @@
       "thunder": -15,
       "ice": 5,
       "dragon": -5
-    }
+    },
+    "monsterSearchTerms": [
+      "티가렉스",
+      "굉룡",
+      "Tigrex"
+    ]
   },
   {
     "id": "armor_set_c8d3c99eacf3",
@@ -15740,7 +16770,12 @@
       "thunder": 5,
       "ice": -5,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": [
+      "브라키디오스",
+      "쇄룡",
+      "Brachydios"
+    ]
   },
   {
     "id": "armor_set_22122d3ca54a",
@@ -15791,7 +16826,8 @@
       "thunder": -15,
       "ice": 10,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_5ad5e00e81ed",
@@ -15840,7 +16876,12 @@
       "thunder": 5,
       "ice": 10,
       "dragon": -5
-    }
+    },
+    "monsterSearchTerms": [
+      "그라비모스",
+      "개룡",
+      "Gravios"
+    ]
   },
   {
     "id": "armor_set_c142f57b7c63",
@@ -15889,7 +16930,12 @@
       "thunder": -5,
       "ice": 5,
       "dragon": -10
-    }
+    },
+    "monsterSearchTerms": [
+      "리오레우스",
+      "화룡",
+      "Rathalos"
+    ]
   },
   {
     "id": "armor_set_a2e376df3af8",
@@ -15939,7 +16985,8 @@
       "thunder": 5,
       "ice": 5,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_f5ff66612769",
@@ -15993,7 +17040,8 @@
       "thunder": 5,
       "ice": -15,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_9469e0905210",
@@ -16042,7 +17090,12 @@
       "thunder": 10,
       "ice": -5,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": [
+      "얀가루루가",
+      "흑랑조",
+      "Yian Garuga"
+    ]
   },
   {
     "id": "armor_set_bef2fa09b759",
@@ -16091,7 +17144,8 @@
       "thunder": 10,
       "ice": 0,
       "dragon": -5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_74a570d1601e",
@@ -16140,7 +17194,8 @@
       "thunder": 10,
       "ice": -5,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_9511998eb8b9",
@@ -16190,7 +17245,12 @@
       "thunder": 5,
       "ice": 10,
       "dragon": -20
-    }
+    },
+    "monsterSearchTerms": [
+      "샤가르마가라",
+      "천회룡",
+      "Shagaru Magala"
+    ]
   },
   {
     "id": "armor_set_6d9400e47a29",
@@ -16240,7 +17300,12 @@
       "thunder": 5,
       "ice": 10,
       "dragon": -20
-    }
+    },
+    "monsterSearchTerms": [
+      "샤가르마가라",
+      "천회룡",
+      "Shagaru Magala"
+    ]
   },
   {
     "id": "armor_set_9b42ebfb4a42",
@@ -16290,7 +17355,12 @@
       "thunder": -10,
       "ice": 15,
       "dragon": -10
-    }
+    },
+    "monsterSearchTerms": [
+      "다렌·모란",
+      "호산룡",
+      "Dah'ren Mohran"
+    ]
   },
   {
     "id": "armor_set_8aada496a8ce",
@@ -16340,7 +17410,12 @@
       "thunder": -10,
       "ice": 15,
       "dragon": -10
-    }
+    },
+    "monsterSearchTerms": [
+      "다렌·모란",
+      "호산룡",
+      "Dah'ren Mohran"
+    ]
   },
   {
     "id": "armor_set_70512747f9fa",
@@ -16389,7 +17464,12 @@
       "thunder": 25,
       "ice": 5,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": [
+      "키린 아종",
+      "-",
+      "Oroshi Kirin"
+    ]
   },
   {
     "id": "armor_set_a9f8c8e4b622",
@@ -16439,7 +17519,8 @@
       "thunder": 5,
       "ice": 15,
       "dragon": -15
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_f16ccbad561f",
@@ -16489,7 +17570,8 @@
       "thunder": 5,
       "ice": 15,
       "dragon": -15
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_9ba951d54df5",
@@ -16538,7 +17620,12 @@
       "thunder": -20,
       "ice": 15,
       "dragon": -5
-    }
+    },
+    "monsterSearchTerms": [
+      "자보아자길",
+      "괴상어",
+      "Zamtrios"
+    ]
   },
   {
     "id": "armor_set_baf669d81c6f",
@@ -16588,7 +17675,8 @@
       "thunder": 5,
       "ice": 5,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_20bbf53e1a85",
@@ -16638,7 +17726,8 @@
       "thunder": 5,
       "ice": 5,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_f2fd86a2d0e1",
@@ -16690,7 +17779,8 @@
       "thunder": 20,
       "ice": 0,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_dfa8607566f1",
@@ -16742,7 +17832,8 @@
       "thunder": 20,
       "ice": 0,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_b44e70e33e62",
@@ -16794,7 +17885,8 @@
       "thunder": 5,
       "ice": 15,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_e5a254f692b3",
@@ -16843,7 +17935,8 @@
       "thunder": 5,
       "ice": 5,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_3600e9b666ba",
@@ -16892,7 +17985,8 @@
       "thunder": 5,
       "ice": 5,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_a547ad2d4bf5",
@@ -16942,7 +18036,8 @@
       "thunder": 5,
       "ice": 5,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_355e8a51f374",
@@ -16992,7 +18087,8 @@
       "thunder": 5,
       "ice": 5,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_29060e99e13e",
@@ -17042,7 +18138,8 @@
       "thunder": -10,
       "ice": 10,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_920a5d3558a9",
@@ -17092,7 +18189,8 @@
       "thunder": -15,
       "ice": 5,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_43cbb7f9b0b9",
@@ -17142,7 +18240,8 @@
       "thunder": 0,
       "ice": -10,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_c2227ab32159",
@@ -17192,7 +18291,8 @@
       "thunder": -10,
       "ice": -5,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_3de21712ff54",
@@ -17242,7 +18342,8 @@
       "thunder": 0,
       "ice": 0,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_3abae3e4b907",
@@ -17292,7 +18393,8 @@
       "thunder": 15,
       "ice": 0,
       "dragon": 20
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_492f2c0e5b70",
@@ -17342,7 +18444,8 @@
       "thunder": 5,
       "ice": 5,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_dce48fd9bcef",
@@ -17391,7 +18494,12 @@
       "thunder": -10,
       "ice": -20,
       "dragon": 20
-    }
+    },
+    "monsterSearchTerms": [
+      "도스게네포스",
+      "-",
+      "Gendrome"
+    ]
   },
   {
     "id": "armor_set_bafb04f5dcfa",
@@ -17441,7 +18549,8 @@
       "thunder": 15,
       "ice": -15,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_af7c436a311b",
@@ -17491,7 +18600,12 @@
       "thunder": 5,
       "ice": -10,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": [
+      "아르셀타스",
+      "철갑충",
+      "Seltas"
+    ]
   },
   {
     "id": "armor_set_58818fed3326",
@@ -17541,7 +18655,12 @@
       "thunder": 10,
       "ice": 0,
       "dragon": 20
-    }
+    },
+    "monsterSearchTerms": [
+      "바바콩가",
+      "도모수",
+      "Congalala"
+    ]
   },
   {
     "id": "armor_set_10fda5f4fe38",
@@ -17592,7 +18711,12 @@
       "thunder": 5,
       "ice": -20,
       "dragon": 20
-    }
+    },
+    "monsterSearchTerms": [
+      "도스람포스",
+      "-",
+      "Velocidrome"
+    ]
   },
   {
     "id": "armor_set_652ecbf7f902",
@@ -17643,7 +18767,8 @@
       "thunder": -15,
       "ice": 15,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_2e6f4b110ee1",
@@ -17692,7 +18817,12 @@
       "thunder": -15,
       "ice": 5,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": [
+      "다이묘자자미",
+      "방패게",
+      "Daimyo Hermitaur"
+    ]
   },
   {
     "id": "armor_set_890f56225fd0",
@@ -17741,7 +18871,12 @@
       "thunder": 20,
       "ice": 15,
       "dragon": -15
-    }
+    },
+    "monsterSearchTerms": [
+      "리오레우스",
+      "화룡",
+      "Rathalos"
+    ]
   },
   {
     "id": "armor_set_fcd47df6d139",
@@ -17791,7 +18926,12 @@
       "thunder": -10,
       "ice": 5,
       "dragon": 20
-    }
+    },
+    "monsterSearchTerms": [
+      "케차와차",
+      "기원호",
+      "Kecha Wacha"
+    ]
   },
   {
     "id": "armor_set_f0f19f362723",
@@ -17843,7 +18983,12 @@
       "thunder": -5,
       "ice": -15,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": [
+      "얀쿡크",
+      "괴조",
+      "Yian Kut-Ku"
+    ]
   },
   {
     "id": "armor_set_725587553817",
@@ -17893,7 +19038,12 @@
       "thunder": -15,
       "ice": 20,
       "dragon": 20
-    }
+    },
+    "monsterSearchTerms": [
+      "도스이오스",
+      "-",
+      "Iodrome"
+    ]
   },
   {
     "id": "armor_set_ef5dddfce24d",
@@ -17943,7 +19093,12 @@
       "thunder": 0,
       "ice": 15,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": [
+      "울크스스",
+      "백토수",
+      "Lagombi"
+    ]
   },
   {
     "id": "armor_set_e6d62b1fe1ca",
@@ -17993,7 +19148,8 @@
       "thunder": 5,
       "ice": 0,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_1a105acb2153",
@@ -18042,7 +19198,12 @@
       "thunder": 5,
       "ice": -15,
       "dragon": 20
-    }
+    },
+    "monsterSearchTerms": [
+      "바바콩가 아종",
+      "녹모수",
+      "Emerald Congalala"
+    ]
   },
   {
     "id": "armor_set_fba5d353cbe4",
@@ -18093,7 +19254,12 @@
       "thunder": -10,
       "ice": 5,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": [
+      "얀쿡크 아종",
+      "청괴조",
+      "Blue Yian Kut-Ku"
+    ]
   },
   {
     "id": "armor_set_640ba2d0d75b",
@@ -18143,7 +19309,8 @@
       "thunder": 25,
       "ice": -15,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_d690d609cf7a",
@@ -18193,7 +19360,8 @@
       "thunder": 25,
       "ice": -15,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_c76dcb6a350f",
@@ -18243,7 +19411,8 @@
       "thunder": 20,
       "ice": -5,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_2b18ed021092",
@@ -18293,7 +19462,12 @@
       "thunder": -15,
       "ice": 5,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": [
+      "테츠카브라",
+      "귀와",
+      "Tetsucabra"
+    ]
   },
   {
     "id": "armor_set_e4992225d97f",
@@ -18344,7 +19518,12 @@
       "thunder": -10,
       "ice": 15,
       "dragon": 20
-    }
+    },
+    "monsterSearchTerms": [
+      "네르스큐라",
+      "영지주",
+      "Nerscylla"
+    ]
   },
   {
     "id": "armor_set_8ec492312295",
@@ -18394,7 +19573,12 @@
       "thunder": 10,
       "ice": 15,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": [
+      "푸루푸루",
+      "-",
+      "Khezu"
+    ]
   },
   {
     "id": "armor_set_371479212a63",
@@ -18444,7 +19628,12 @@
       "thunder": -5,
       "ice": 5,
       "dragon": -15
-    }
+    },
+    "monsterSearchTerms": [
+      "리오레이아",
+      "자화룡",
+      "Rathian"
+    ]
   },
   {
     "id": "armor_set_fcb75742ff75",
@@ -18494,7 +19683,12 @@
       "thunder": 10,
       "ice": 10,
       "dragon": -10
-    }
+    },
+    "monsterSearchTerms": [
+      "바살모스",
+      "암룡",
+      "Basarios"
+    ]
   },
   {
     "id": "armor_set_8af65e1b2676",
@@ -18547,7 +19741,8 @@
       "thunder": -10,
       "ice": 15,
       "dragon": 20
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_f6f6a9ab386e",
@@ -18601,7 +19796,12 @@
       "thunder": 20,
       "ice": -15,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": [
+      "진오우거",
+      "뇌랑룡",
+      "Zinogre"
+    ]
   },
   {
     "id": "armor_set_a65fd38896e2",
@@ -18650,7 +19850,8 @@
       "thunder": -15,
       "ice": 5,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_879fdd5953d8",
@@ -18701,7 +19902,8 @@
       "thunder": -3,
       "ice": -5,
       "dragon": 20
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_a9cd7d1cec9c",
@@ -18752,7 +19954,12 @@
       "thunder": -20,
       "ice": 20,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": [
+      "자보아자길",
+      "괴상어",
+      "Zamtrios"
+    ]
   },
   {
     "id": "armor_set_c2bb3a99bf9c",
@@ -18802,7 +20009,12 @@
       "thunder": 5,
       "ice": -20,
       "dragon": 20
-    }
+    },
+    "monsterSearchTerms": [
+      "가라라아자라",
+      "교사룡",
+      "Najarala"
+    ]
   },
   {
     "id": "armor_set_fb2076a86e15",
@@ -18853,7 +20065,12 @@
       "thunder": -15,
       "ice": 5,
       "dragon": -5
-    }
+    },
+    "monsterSearchTerms": [
+      "티가렉스",
+      "굉룡",
+      "Tigrex"
+    ]
   },
   {
     "id": "armor_set_02c36e1935b8",
@@ -18904,7 +20121,8 @@
       "thunder": 5,
       "ice": 15,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_19a2b06ee9b7",
@@ -18953,7 +20171,12 @@
       "thunder": -5,
       "ice": 5,
       "dragon": -15
-    }
+    },
+    "monsterSearchTerms": [
+      "리오레우스",
+      "화룡",
+      "Rathalos"
+    ]
   },
   {
     "id": "armor_set_8b569ef7fd23",
@@ -19003,7 +20226,12 @@
       "thunder": 5,
       "ice": 15,
       "dragon": -10
-    }
+    },
+    "monsterSearchTerms": [
+      "그라비모스",
+      "개룡",
+      "Gravios"
+    ]
   },
   {
     "id": "armor_set_0cda0c9d31e4",
@@ -19053,7 +20281,8 @@
       "thunder": 0,
       "ice": 20,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_0299ea4bc692",
@@ -19103,7 +20332,12 @@
       "thunder": 20,
       "ice": -15,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": [
+      "얀가루루가",
+      "흑랑조",
+      "Yian Garuga"
+    ]
   },
   {
     "id": "armor_set_6f8acf74f153",
@@ -19152,7 +20386,12 @@
       "thunder": -10,
       "ice": -15,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": [
+      "모노블로스",
+      "일각룡",
+      "Monoblos"
+    ]
   },
   {
     "id": "armor_set_b5f4b4d6d0de",
@@ -19202,7 +20441,12 @@
       "thunder": -10,
       "ice": -5,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": [
+      "셀레기오스",
+      "천인룡",
+      "Seregios"
+    ]
   },
   {
     "id": "armor_set_0117d6a5af7d",
@@ -19252,7 +20496,8 @@
       "thunder": 5,
       "ice": 5,
       "dragon": 20
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_885859aaee79",
@@ -19301,7 +20546,8 @@
       "thunder": 10,
       "ice": 5,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_7e10d0782702",
@@ -19350,7 +20596,8 @@
       "thunder": 10,
       "ice": 5,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_cebd70b5db73",
@@ -19399,7 +20646,8 @@
       "thunder": 20,
       "ice": -5,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_b25ba27554dc",
@@ -19448,7 +20696,8 @@
       "thunder": 10,
       "ice": 15,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_a2e6458ab80b",
@@ -19498,7 +20747,12 @@
       "thunder": -5,
       "ice": 5,
       "dragon": -15
-    }
+    },
+    "monsterSearchTerms": [
+      "리오레이아 아종",
+      "홍화룡",
+      "Pink Rathian"
+    ]
   },
   {
     "id": "armor_set_91a9a5aaf584",
@@ -19548,7 +20802,12 @@
       "thunder": 5,
       "ice": -10,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": [
+      "바살모스 아종",
+      "도암룡",
+      "Ruby Basarios"
+    ]
   },
   {
     "id": "armor_set_1cccb3be1a15",
@@ -19599,7 +20858,12 @@
       "thunder": -20,
       "ice": 5,
       "dragon": 25
-    }
+    },
+    "monsterSearchTerms": [
+      "진오우거 아종",
+      "옥랑룡",
+      "Stygian Zinogre"
+    ]
   },
   {
     "id": "armor_set_f4ce9697e76b",
@@ -19650,7 +20914,12 @@
       "thunder": -10,
       "ice": 15,
       "dragon": -5
-    }
+    },
+    "monsterSearchTerms": [
+      "고어·마가라",
+      "흑식룡",
+      "Gore Magala"
+    ]
   },
   {
     "id": "armor_set_c50660ea0eb5",
@@ -19700,7 +20969,8 @@
       "thunder": 5,
       "ice": 5,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_b0abe13217eb",
@@ -19750,7 +21020,8 @@
       "thunder": 5,
       "ice": 5,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_d333d6104797",
@@ -19803,7 +21074,8 @@
       "thunder": 5,
       "ice": 5,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_4f3432cfb6a2",
@@ -19853,7 +21125,12 @@
       "thunder": -5,
       "ice": 5,
       "dragon": 0
-    }
+    },
+    "monsterSearchTerms": [
+      "티가렉스 아종",
+      "흑굉룡",
+      "Brute Tigrex"
+    ]
   },
   {
     "id": "armor_set_f6b155b53124",
@@ -19902,7 +21179,14 @@
       "thunder": 15,
       "ice": 15,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": [
+      "격앙 라잔",
+      "금사자",
+      "Furious Rajang",
+      "라잔",
+      "Rajang"
+    ]
   },
   {
     "id": "armor_set_ea5ce4a402d3",
@@ -19952,7 +21236,12 @@
       "thunder": 5,
       "ice": -5,
       "dragon": -15
-    }
+    },
+    "monsterSearchTerms": [
+      "리오레우스 아종",
+      "창화룡",
+      "Azure Rathalos"
+    ]
   },
   {
     "id": "armor_set_7545df5c226f",
@@ -20002,7 +21291,12 @@
       "thunder": 10,
       "ice": 10,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": [
+      "그라비모스 아종",
+      "흑개룡",
+      "Black Gravios"
+    ]
   },
   {
     "id": "armor_set_03f81e5631e3",
@@ -20054,7 +21348,12 @@
       "thunder": 5,
       "ice": -5,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": [
+      "브라키디오스",
+      "쇄룡",
+      "Brachydios"
+    ]
   },
   {
     "id": "armor_set_ab7088647324",
@@ -20105,7 +21404,8 @@
       "thunder": 5,
       "ice": 0,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_9795b51bc5b7",
@@ -20155,7 +21455,12 @@
       "thunder": 20,
       "ice": 0,
       "dragon": 0
-    }
+    },
+    "monsterSearchTerms": [
+      "리오레우스 아종",
+      "창화룡",
+      "Azure Rathalos"
+    ]
   },
   {
     "id": "armor_set_d722aff0b866",
@@ -20205,7 +21510,12 @@
       "thunder": 30,
       "ice": 0,
       "dragon": 20
-    }
+    },
+    "monsterSearchTerms": [
+      "키린 아종",
+      "-",
+      "Oroshi Kirin"
+    ]
   },
   {
     "id": "armor_set_356596d25afc",
@@ -20255,7 +21565,12 @@
       "thunder": 15,
       "ice": 5,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": [
+      "다라·아마듈라",
+      "사왕룡",
+      "Dalamadur"
+    ]
   },
   {
     "id": "armor_set_824adc364227",
@@ -20304,7 +21619,8 @@
       "thunder": 5,
       "ice": -5,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_21a36aebfcb6",
@@ -20354,7 +21670,14 @@
       "thunder": -15,
       "ice": 10,
       "dragon": -15
-    }
+    },
+    "monsterSearchTerms": [
+      "이블조",
+      "공폭룡",
+      "Deviljho",
+      "광폭 이블조",
+      "Savage Deviljho"
+    ]
   },
   {
     "id": "armor_set_4b90f4e9fb1a",
@@ -20403,7 +21726,12 @@
       "thunder": 10,
       "ice": 10,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": [
+      "리오레우스",
+      "화룡",
+      "Rathalos"
+    ]
   },
   {
     "id": "armor_set_2f32bff2e3a8",
@@ -20453,7 +21781,12 @@
       "thunder": -30,
       "ice": 5,
       "dragon": 25
-    }
+    },
+    "monsterSearchTerms": [
+      "리오레이아 희소종",
+      "금화룡",
+      "Gold Rathian"
+    ]
   },
   {
     "id": "armor_set_54d41011160f",
@@ -20504,7 +21837,12 @@
       "thunder": -5,
       "ice": 5,
       "dragon": -15
-    }
+    },
+    "monsterSearchTerms": [
+      "리오레이아",
+      "자화룡",
+      "Rathian"
+    ]
   },
   {
     "id": "armor_set_47ff83c51653",
@@ -20555,7 +21893,12 @@
       "thunder": 15,
       "ice": -10,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": [
+      "티가렉스 희소종",
+      "대굉룡",
+      "Molten Tigrex"
+    ]
   },
   {
     "id": "armor_set_b6c23b08d535",
@@ -20608,7 +21951,15 @@
       "thunder": -20,
       "ice": 5,
       "dragon": -10
-    }
+    },
+    "monsterSearchTerms": [
+      "티가렉스",
+      "굉룡",
+      "Tigrex",
+      "아캄토름",
+      "패룡",
+      "Akantor"
+    ]
   },
   {
     "id": "armor_set_41054ce9f6ea",
@@ -20658,7 +22009,12 @@
       "thunder": -15,
       "ice": 5,
       "dragon": 25
-    }
+    },
+    "monsterSearchTerms": [
+      "리오레우스 희소종",
+      "은화룡",
+      "Silver Rathalos"
+    ]
   },
   {
     "id": "armor_set_294b79fa6f5e",
@@ -20709,7 +22065,12 @@
       "thunder": -5,
       "ice": 5,
       "dragon": -15
-    }
+    },
+    "monsterSearchTerms": [
+      "리오레우스",
+      "화룡",
+      "Rathalos"
+    ]
   },
   {
     "id": "armor_set_9a2edf72ea4d",
@@ -20759,7 +22120,12 @@
       "thunder": 0,
       "ice": 35,
       "dragon": 20
-    }
+    },
+    "monsterSearchTerms": [
+      "키린 아종",
+      "-",
+      "Oroshi Kirin"
+    ]
   },
   {
     "id": "armor_set_340111076378",
@@ -20810,7 +22176,14 @@
       "thunder": -10,
       "ice": 0,
       "dragon": 0
-    }
+    },
+    "monsterSearchTerms": [
+      "이블조",
+      "공폭룡",
+      "Deviljho",
+      "광폭 이블조",
+      "Savage Deviljho"
+    ]
   },
   {
     "id": "armor_set_72e86887ebea",
@@ -20860,7 +22233,12 @@
       "thunder": -15,
       "ice": 20,
       "dragon": -15
-    }
+    },
+    "monsterSearchTerms": [
+      "다렌·모란",
+      "호산룡",
+      "Dah'ren Mohran"
+    ]
   },
   {
     "id": "armor_set_d1e793daa243",
@@ -20910,7 +22288,12 @@
       "thunder": -15,
       "ice": 20,
       "dragon": -15
-    }
+    },
+    "monsterSearchTerms": [
+      "다렌·모란",
+      "호산룡",
+      "Dah'ren Mohran"
+    ]
   },
   {
     "id": "armor_set_a99563c16662",
@@ -20960,7 +22343,12 @@
       "thunder": 5,
       "ice": -15,
       "dragon": -15
-    }
+    },
+    "monsterSearchTerms": [
+      "다렌·모란",
+      "호산룡",
+      "Dah'ren Mohran"
+    ]
   },
   {
     "id": "armor_set_47ba398336e8",
@@ -21010,7 +22398,12 @@
       "thunder": 5,
       "ice": -15,
       "dragon": -15
-    }
+    },
+    "monsterSearchTerms": [
+      "다렌·모란",
+      "호산룡",
+      "Dah'ren Mohran"
+    ]
   },
   {
     "id": "armor_set_c179eb452705",
@@ -21063,7 +22456,12 @@
       "thunder": 5,
       "ice": 20,
       "dragon": -25
-    }
+    },
+    "monsterSearchTerms": [
+      "샤가르마가라",
+      "천회룡",
+      "Shagaru Magala"
+    ]
   },
   {
     "id": "armor_set_5a9df787c454",
@@ -21116,7 +22514,12 @@
       "thunder": 5,
       "ice": 20,
       "dragon": -25
-    }
+    },
+    "monsterSearchTerms": [
+      "샤가르마가라",
+      "천회룡",
+      "Shagaru Magala"
+    ]
   },
   {
     "id": "armor_set_80d4d9edc492",
@@ -21166,7 +22569,14 @@
       "thunder": 20,
       "ice": -25,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": [
+      "격앙 라잔",
+      "금사자",
+      "Furious Rajang",
+      "라잔",
+      "Rajang"
+    ]
   },
   {
     "id": "armor_set_7ed7879de15b",
@@ -21216,7 +22626,14 @@
       "thunder": 25,
       "ice": -30,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": [
+      "격앙 라잔",
+      "금사자",
+      "Furious Rajang",
+      "라잔",
+      "Rajang"
+    ]
   },
   {
     "id": "armor_set_0249c1a71d04",
@@ -21266,7 +22683,12 @@
       "thunder": -10,
       "ice": 15,
       "dragon": -20
-    }
+    },
+    "monsterSearchTerms": [
+      "아캄토름",
+      "패룡",
+      "Akantor"
+    ]
   },
   {
     "id": "armor_set_f37389a6d8cd",
@@ -21316,7 +22738,12 @@
       "thunder": -10,
       "ice": 25,
       "dragon": -5
-    }
+    },
+    "monsterSearchTerms": [
+      "우캄루바스",
+      "붕룡",
+      "Ukanlos"
+    ]
   },
   {
     "id": "armor_set_00daa160ff23",
@@ -21367,7 +22794,12 @@
       "thunder": 10,
       "ice": -5,
       "dragon": -5
-    }
+    },
+    "monsterSearchTerms": [
+      "테오·테스카토르",
+      "염왕룡",
+      "Teostra"
+    ]
   },
   {
     "id": "armor_set_ae34b3eeba9c",
@@ -21418,7 +22850,12 @@
       "thunder": 15,
       "ice": -5,
       "dragon": -15
-    }
+    },
+    "monsterSearchTerms": [
+      "다라·아마듈라",
+      "사왕룡",
+      "Dalamadur"
+    ]
   },
   {
     "id": "armor_set_7a9f5442387c",
@@ -21470,7 +22907,8 @@
       "thunder": 10,
       "ice": -25,
       "dragon": -5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_32f2db285cd4",
@@ -21521,7 +22959,12 @@
       "thunder": -20,
       "ice": 30,
       "dragon": -25
-    }
+    },
+    "monsterSearchTerms": [
+      "크샬다오라",
+      "강룡",
+      "Kushala Daora"
+    ]
   },
   {
     "id": "armor_set_58c7ad373c52",
@@ -21573,7 +23016,15 @@
       "thunder": -25,
       "ice": 35,
       "dragon": -30
-    }
+    },
+    "monsterSearchTerms": [
+      "리오레우스 희소종",
+      "은화룡",
+      "Silver Rathalos",
+      "크샬다오라",
+      "강룡",
+      "Kushala Daora"
+    ]
   },
   {
     "id": "armor_set_5c0f1e039a62",
@@ -21623,7 +23074,8 @@
       "thunder": 10,
       "ice": -5,
       "dragon": -5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_518466196448",
@@ -21676,7 +23128,12 @@
       "thunder": -5,
       "ice": -5,
       "dragon": -10
-    }
+    },
+    "monsterSearchTerms": [
+      "다라·아마듈라",
+      "사왕룡",
+      "Dalamadur"
+    ]
   },
   {
     "id": "armor_set_4cdfdd38186d",
@@ -21727,7 +23184,8 @@
       "thunder": 5,
       "ice": 25,
       "dragon": 0
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_4aeb5a99f043",
@@ -21776,7 +23234,8 @@
       "thunder": 25,
       "ice": -10,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_fa240ad822a0",
@@ -21826,7 +23285,8 @@
       "thunder": 15,
       "ice": 15,
       "dragon": -5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_e323a2b434da",
@@ -21875,7 +23335,8 @@
       "thunder": 15,
       "ice": 0,
       "dragon": -25
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_b5a6a89275a6",
@@ -21926,7 +23387,8 @@
       "thunder": 10,
       "ice": -10,
       "dragon": -30
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_3f08d16823a7",
@@ -21976,7 +23438,8 @@
       "thunder": -5,
       "ice": 10,
       "dragon": -20
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_83f8bdc3a88a",
@@ -22026,7 +23489,8 @@
       "thunder": -5,
       "ice": 10,
       "dragon": -20
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_650a3eadee8a",
@@ -22077,7 +23541,8 @@
       "thunder": 5,
       "ice": 5,
       "dragon": -5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_c0c15bbe0edc",
@@ -22128,7 +23593,12 @@
       "thunder": 10,
       "ice": 35,
       "dragon": 20
-    }
+    },
+    "monsterSearchTerms": [
+      "키린 아종",
+      "-",
+      "Oroshi Kirin"
+    ]
   },
   {
     "id": "armor_set_4de65a9ca04f",
@@ -22179,7 +23649,8 @@
       "thunder": 15,
       "ice": 5,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_88c0583b3feb",
@@ -22229,7 +23700,8 @@
       "thunder": 5,
       "ice": 25,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_562039d93225",
@@ -22280,7 +23752,15 @@
       "thunder": 5,
       "ice": 5,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": [
+      "리오레우스 아종",
+      "창화룡",
+      "Azure Rathalos",
+      "리오레이아 희소종",
+      "금화룡",
+      "Gold Rathian"
+    ]
   },
   {
     "id": "armor_set_b358ed9762f2",
@@ -22338,7 +23818,8 @@
       "thunder": 15,
       "ice": 15,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_905d6c6a9e67",
@@ -22391,7 +23872,8 @@
       "thunder": -10,
       "ice": 15,
       "dragon": 20
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_254f6deb3ccc",
@@ -22444,7 +23926,8 @@
       "thunder": -10,
       "ice": 15,
       "dragon": -5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_72c65d6049d1",
@@ -22498,7 +23981,12 @@
       "thunder": -5,
       "ice": -5,
       "dragon": -10
-    }
+    },
+    "monsterSearchTerms": [
+      "다라·아마듈라",
+      "사왕룡",
+      "Dalamadur"
+    ]
   },
   {
     "id": "armor_set_d6b1db4395c3",
@@ -22547,7 +24035,12 @@
       "thunder": 15,
       "ice": 15,
       "dragon": -20
-    }
+    },
+    "monsterSearchTerms": [
+      "셀레기오스",
+      "천인룡",
+      "Seregios"
+    ]
   },
   {
     "id": "armor_set_02fdaa55bb1d",
@@ -22597,7 +24090,12 @@
       "thunder": -10,
       "ice": -10,
       "dragon": -10
-    }
+    },
+    "monsterSearchTerms": [
+      "진오우거 아종",
+      "옥랑룡",
+      "Stygian Zinogre"
+    ]
   },
   {
     "id": "armor_set_cbff0e69a602",
@@ -22647,7 +24145,12 @@
       "thunder": -15,
       "ice": -15,
       "dragon": -15
-    }
+    },
+    "monsterSearchTerms": [
+      "테오·테스카토르",
+      "염왕룡",
+      "Teostra"
+    ]
   },
   {
     "id": "armor_set_8cf9ee08507d",
@@ -22697,7 +24200,12 @@
       "thunder": 10,
       "ice": 10,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": [
+      "크샬다오라",
+      "강룡",
+      "Kushala Daora"
+    ]
   },
   {
     "id": "armor_set_515d61033cc5",
@@ -22748,7 +24256,8 @@
       "thunder": 15,
       "ice": 0,
       "dragon": 20
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_420104b26089",
@@ -22798,7 +24307,8 @@
       "thunder": 0,
       "ice": 0,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_9e5b3bbdfcf2",
@@ -22848,7 +24358,12 @@
       "thunder": -15,
       "ice": 20,
       "dragon": 20
-    }
+    },
+    "monsterSearchTerms": [
+      "도스이오스",
+      "-",
+      "Iodrome"
+    ]
   },
   {
     "id": "armor_set_bda513f33a82",
@@ -22900,7 +24415,8 @@
       "thunder": -5,
       "ice": -10,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_e1cf0c8da49f",
@@ -22951,7 +24467,12 @@
       "thunder": 0,
       "ice": 15,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": [
+      "울크스스",
+      "백토수",
+      "Lagombi"
+    ]
   },
   {
     "id": "armor_set_76805d1a7606",
@@ -23002,7 +24523,12 @@
       "thunder": -10,
       "ice": 5,
       "dragon": 20
-    }
+    },
+    "monsterSearchTerms": [
+      "케차와차",
+      "기원호",
+      "Kecha Wacha"
+    ]
   },
   {
     "id": "armor_set_377671e61ac8",
@@ -23053,7 +24579,8 @@
       "thunder": -5,
       "ice": -10,
       "dragon": 20
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_7b1d90212932",
@@ -23104,7 +24631,12 @@
       "thunder": 10,
       "ice": 0,
       "dragon": 20
-    }
+    },
+    "monsterSearchTerms": [
+      "바바콩가",
+      "도모수",
+      "Congalala"
+    ]
   },
   {
     "id": "armor_set_4c07bf40986a",
@@ -23155,7 +24687,12 @@
       "thunder": 5,
       "ice": -15,
       "dragon": 20
-    }
+    },
+    "monsterSearchTerms": [
+      "바바콩가 아종",
+      "녹모수",
+      "Emerald Congalala"
+    ]
   },
   {
     "id": "armor_set_0d6d5d187f3e",
@@ -23206,7 +24743,8 @@
       "thunder": 20,
       "ice": -5,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_f64f17cc0f45",
@@ -23257,7 +24795,8 @@
       "thunder": 20,
       "ice": -5,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_d6368c82cb5a",
@@ -23307,7 +24846,12 @@
       "thunder": -15,
       "ice": 5,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": [
+      "다이묘자자미",
+      "방패게",
+      "Daimyo Hermitaur"
+    ]
   },
   {
     "id": "armor_set_2dbb68020807",
@@ -23358,7 +24902,12 @@
       "thunder": -5,
       "ice": -10,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": [
+      "다이묘자자미 아종",
+      "방패게",
+      "Plum Daimyo Hermitaur"
+    ]
   },
   {
     "id": "armor_set_bf007a223dcd",
@@ -23409,7 +24958,12 @@
       "thunder": -15,
       "ice": 5,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": [
+      "테츠카브라",
+      "귀와",
+      "Tetsucabra"
+    ]
   },
   {
     "id": "armor_set_3585a28b2258",
@@ -23460,7 +25014,12 @@
       "thunder": -15,
       "ice": -20,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": [
+      "테츠카브라 아종",
+      "황귀와",
+      "Berserk Tetsucabra"
+    ]
   },
   {
     "id": "armor_set_f46d3eeebb29",
@@ -23512,7 +25071,12 @@
       "thunder": -10,
       "ice": 15,
       "dragon": 20
-    }
+    },
+    "monsterSearchTerms": [
+      "네르스큐라",
+      "영지주",
+      "Nerscylla"
+    ]
   },
   {
     "id": "armor_set_2bb579471c6f",
@@ -23563,7 +25127,12 @@
       "thunder": -20,
       "ice": 20,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": [
+      "자보아자길",
+      "괴상어",
+      "Zamtrios"
+    ]
   },
   {
     "id": "armor_set_3b9a847d8f4f",
@@ -23614,7 +25183,12 @@
       "thunder": -15,
       "ice": -20,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": [
+      "자보아자길 아종",
+      "호상어",
+      "Tigerstripe Zamtrios"
+    ]
   },
   {
     "id": "armor_set_00b3c49d45db",
@@ -23665,7 +25239,12 @@
       "thunder": 5,
       "ice": -20,
       "dragon": 20
-    }
+    },
+    "monsterSearchTerms": [
+      "가라라아자라",
+      "교사룡",
+      "Najarala"
+    ]
   },
   {
     "id": "armor_set_efceea3574b9",
@@ -23716,7 +25295,12 @@
       "thunder": -10,
       "ice": 25,
       "dragon": 20
-    }
+    },
+    "monsterSearchTerms": [
+      "가라라아자라 아종",
+      "수사룡",
+      "Tidal Najarala"
+    ]
   },
   {
     "id": "armor_set_b0a572df21cf",
@@ -23766,7 +25350,12 @@
       "thunder": 10,
       "ice": 15,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": [
+      "푸루푸루",
+      "-",
+      "Khezu"
+    ]
   },
   {
     "id": "armor_set_cf0babee49b1",
@@ -23817,7 +25406,8 @@
       "thunder": 10,
       "ice": 15,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_586a3803bdcb",
@@ -23868,7 +25458,12 @@
       "thunder": -5,
       "ice": 5,
       "dragon": -15
-    }
+    },
+    "monsterSearchTerms": [
+      "리오레이아",
+      "자화룡",
+      "Rathian"
+    ]
   },
   {
     "id": "armor_set_f3c6e3768104",
@@ -23919,7 +25514,12 @@
       "thunder": -5,
       "ice": 5,
       "dragon": -15
-    }
+    },
+    "monsterSearchTerms": [
+      "리오레이아 아종",
+      "홍화룡",
+      "Pink Rathian"
+    ]
   },
   {
     "id": "armor_set_0afad1fdad6d",
@@ -23970,7 +25570,12 @@
       "thunder": 5,
       "ice": -20,
       "dragon": 20
-    }
+    },
+    "monsterSearchTerms": [
+      "도스람포스",
+      "-",
+      "Velocidrome"
+    ]
   },
   {
     "id": "armor_set_6f29e903f35c",
@@ -24022,7 +25627,12 @@
       "thunder": -5,
       "ice": -15,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": [
+      "얀쿡크",
+      "괴조",
+      "Yian Kut-Ku"
+    ]
   },
   {
     "id": "armor_set_e271108a57af",
@@ -24074,7 +25684,12 @@
       "thunder": -10,
       "ice": 5,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": [
+      "얀쿡크 아종",
+      "청괴조",
+      "Blue Yian Kut-Ku"
+    ]
   },
   {
     "id": "armor_set_63d3f69e8c7c",
@@ -24126,7 +25741,12 @@
       "thunder": 10,
       "ice": 10,
       "dragon": -10
-    }
+    },
+    "monsterSearchTerms": [
+      "바살모스",
+      "암룡",
+      "Basarios"
+    ]
   },
   {
     "id": "armor_set_8b6a92c72f7c",
@@ -24178,7 +25798,12 @@
       "thunder": 5,
       "ice": -10,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": [
+      "바살모스 아종",
+      "도암룡",
+      "Ruby Basarios"
+    ]
   },
   {
     "id": "armor_set_2a73099bf5b6",
@@ -24230,7 +25855,12 @@
       "thunder": 5,
       "ice": -10,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": [
+      "아르셀타스",
+      "철갑충",
+      "Seltas"
+    ]
   },
   {
     "id": "armor_set_276d20196665",
@@ -24281,7 +25911,8 @@
       "thunder": 10,
       "ice": -5,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_82333ac89c12",
@@ -24332,7 +25963,12 @@
       "thunder": -15,
       "ice": 5,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": [
+      "자보아자길",
+      "괴상어",
+      "Zamtrios"
+    ]
   },
   {
     "id": "armor_set_d214c54d1e87",
@@ -24384,7 +26020,8 @@
       "thunder": -5,
       "ice": -15,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_5a79983a5888",
@@ -24434,7 +26071,8 @@
       "thunder": 0,
       "ice": 20,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_55e20304c716",
@@ -24486,7 +26124,8 @@
       "thunder": 5,
       "ice": 0,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_04ad47071096",
@@ -24536,7 +26175,8 @@
       "thunder": 25,
       "ice": -15,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_17aa50680d84",
@@ -24588,7 +26228,8 @@
       "thunder": 20,
       "ice": 0,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_32bff72a1f18",
@@ -24639,7 +26280,8 @@
       "thunder": 5,
       "ice": 5,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_bf3474e5af88",
@@ -24690,7 +26332,12 @@
       "thunder": -10,
       "ice": -5,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": [
+      "셀레기오스",
+      "천인룡",
+      "Seregios"
+    ]
   },
   {
     "id": "armor_set_52e29ee4e04c",
@@ -24741,7 +26388,12 @@
       "thunder": 5,
       "ice": -10,
       "dragon": 20
-    }
+    },
+    "monsterSearchTerms": [
+      "네르스큐라 아종",
+      "해지주",
+      "Shrouded Nerscylla"
+    ]
   },
   {
     "id": "armor_set_35ebbb656b5f",
@@ -24791,7 +26443,12 @@
       "thunder": -5,
       "ice": 5,
       "dragon": -15
-    }
+    },
+    "monsterSearchTerms": [
+      "리오레우스",
+      "화룡",
+      "Rathalos"
+    ]
   },
   {
     "id": "armor_set_e775ab78af91",
@@ -24842,7 +26499,12 @@
       "thunder": 5,
       "ice": -5,
       "dragon": -15
-    }
+    },
+    "monsterSearchTerms": [
+      "리오레우스 아종",
+      "창화룡",
+      "Azure Rathalos"
+    ]
   },
   {
     "id": "armor_set_df9b9fc5a0d0",
@@ -24894,7 +26556,12 @@
       "thunder": -15,
       "ice": 5,
       "dragon": -5
-    }
+    },
+    "monsterSearchTerms": [
+      "티가렉스",
+      "굉룡",
+      "Tigrex"
+    ]
   },
   {
     "id": "armor_set_01668ea09896",
@@ -24946,7 +26613,12 @@
       "thunder": -5,
       "ice": 5,
       "dragon": 0
-    }
+    },
+    "monsterSearchTerms": [
+      "티가렉스 아종",
+      "흑굉룡",
+      "Brute Tigrex"
+    ]
   },
   {
     "id": "armor_set_a3ec30ede868",
@@ -24999,7 +26671,12 @@
       "thunder": 20,
       "ice": -15,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": [
+      "진오우거",
+      "뇌랑룡",
+      "Zinogre"
+    ]
   },
   {
     "id": "armor_set_be34562206ac",
@@ -25050,7 +26727,12 @@
       "thunder": -20,
       "ice": 5,
       "dragon": 25
-    }
+    },
+    "monsterSearchTerms": [
+      "진오우거 아종",
+      "옥랑룡",
+      "Stygian Zinogre"
+    ]
   },
   {
     "id": "armor_set_ed1f699ba542",
@@ -25102,7 +26784,8 @@
       "thunder": -3,
       "ice": -5,
       "dragon": 20
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_3d0da1578931",
@@ -25154,7 +26837,8 @@
       "thunder": -10,
       "ice": -15,
       "dragon": 20
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_2c4543f14617",
@@ -25206,7 +26890,12 @@
       "thunder": 5,
       "ice": 15,
       "dragon": -10
-    }
+    },
+    "monsterSearchTerms": [
+      "그라비모스",
+      "개룡",
+      "Gravios"
+    ]
   },
   {
     "id": "armor_set_d1d7c9444529",
@@ -25257,7 +26946,12 @@
       "thunder": 10,
       "ice": 10,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": [
+      "그라비모스 아종",
+      "흑개룡",
+      "Black Gravios"
+    ]
   },
   {
     "id": "armor_set_9299250f4cfb",
@@ -25310,7 +27004,12 @@
       "thunder": 5,
       "ice": -15,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": [
+      "디아블로스",
+      "각룡",
+      "Diablos"
+    ]
   },
   {
     "id": "armor_set_546b871438c5",
@@ -25362,7 +27061,12 @@
       "thunder": 5,
       "ice": -25,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": [
+      "디아블로스 아종",
+      "흑각룡",
+      "Black Diablos"
+    ]
   },
   {
     "id": "armor_set_f88f304607d0",
@@ -25414,7 +27118,14 @@
       "thunder": 5,
       "ice": -5,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": [
+      "브라키디오스",
+      "쇄룡",
+      "Brachydios",
+      "임계 브라키디오스",
+      "Raging Brachydios"
+    ]
   },
   {
     "id": "armor_set_7ba261df1937",
@@ -25465,7 +27176,14 @@
       "thunder": -15,
       "ice": 10,
       "dragon": -15
-    }
+    },
+    "monsterSearchTerms": [
+      "이블조",
+      "공폭룡",
+      "Deviljho",
+      "광폭 이블조",
+      "Savage Deviljho"
+    ]
   },
   {
     "id": "armor_set_12c0ec76c982",
@@ -25517,7 +27235,14 @@
       "thunder": -10,
       "ice": 15,
       "dragon": -15
-    }
+    },
+    "monsterSearchTerms": [
+      "혼돈의 고어·마가라",
+      "흑식룡",
+      "Chaotic Gore Magala",
+      "고어·마가라",
+      "Gore Magala"
+    ]
   },
   {
     "id": "armor_set_40ec093df4d6",
@@ -25569,7 +27294,12 @@
       "thunder": 20,
       "ice": -15,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": [
+      "얀가루루가",
+      "흑랑조",
+      "Yian Garuga"
+    ]
   },
   {
     "id": "armor_set_5c8cb5005b31",
@@ -25620,11 +27350,16 @@
       "thunder": -10,
       "ice": -15,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": [
+      "모노블로스",
+      "일각룡",
+      "Monoblos"
+    ]
   },
   {
     "id": "armor_set_f28af2f1d7c9",
-    "name": "모노",
+    "name": "모노데블",
     "hunterType": "gunner",
     "rank": "g",
     "rare": 9,
@@ -25642,7 +27377,7 @@
       {
         "id": "armor_b856d3e8f8ea",
         "part": "arms",
-        "name": "모노블로Z가드"
+        "name": "모노데블가드"
       },
       {
         "id": "armor_3b74c886a211",
@@ -25673,7 +27408,12 @@
       "thunder": -10,
       "ice": -15,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": [
+      "모노블로스 아종",
+      "백일각룡",
+      "White Monoblos"
+    ]
   },
   {
     "id": "armor_set_afd4dad48a9d",
@@ -25725,7 +27465,14 @@
       "thunder": -10,
       "ice": 15,
       "dragon": -5
-    }
+    },
+    "monsterSearchTerms": [
+      "혼돈의 고어·마가라",
+      "흑식룡",
+      "Chaotic Gore Magala",
+      "고어·마가라",
+      "Gore Magala"
+    ]
   },
   {
     "id": "armor_set_ff6185c179bf",
@@ -25777,7 +27524,8 @@
       "thunder": -15,
       "ice": 10,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_7b7d259f4a38",
@@ -25829,7 +27577,12 @@
       "thunder": 20,
       "ice": 0,
       "dragon": 0
-    }
+    },
+    "monsterSearchTerms": [
+      "가라라아자라 아종",
+      "수사룡",
+      "Tidal Najarala"
+    ]
   },
   {
     "id": "armor_set_41fd5cef1738",
@@ -25880,7 +27633,8 @@
       "thunder": 10,
       "ice": -5,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_9253f0d4150f",
@@ -25930,7 +27684,8 @@
       "thunder": 5,
       "ice": 5,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_b9d30cfa5552",
@@ -25983,7 +27738,8 @@
       "thunder": -10,
       "ice": 15,
       "dragon": 20
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_19424bdd2a6e",
@@ -26034,7 +27790,8 @@
       "thunder": 10,
       "ice": 5,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_6dffa91546a6",
@@ -26083,7 +27840,8 @@
       "thunder": 5,
       "ice": 5,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_065915c16960",
@@ -26133,7 +27891,8 @@
       "thunder": 5,
       "ice": 5,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_6daf430f02c1",
@@ -26184,7 +27943,8 @@
       "thunder": 5,
       "ice": 5,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_0f523fff89b0",
@@ -26236,7 +27996,12 @@
       "thunder": 5,
       "ice": 20,
       "dragon": -25
-    }
+    },
+    "monsterSearchTerms": [
+      "샤가르마가라",
+      "천회룡",
+      "Shagaru Magala"
+    ]
   },
   {
     "id": "armor_set_b60ef3419eef",
@@ -26287,7 +28052,14 @@
       "thunder": 20,
       "ice": -25,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": [
+      "격앙 라잔",
+      "금사자",
+      "Furious Rajang",
+      "라잔",
+      "Rajang"
+    ]
   },
   {
     "id": "armor_set_fe1937c933e3",
@@ -26338,7 +28110,14 @@
       "thunder": 25,
       "ice": -30,
       "dragon": 15
-    }
+    },
+    "monsterSearchTerms": [
+      "격앙 라잔",
+      "금사자",
+      "Furious Rajang",
+      "라잔",
+      "Rajang"
+    ]
   },
   {
     "id": "armor_set_0f41e294dbcc",
@@ -26390,7 +28169,12 @@
       "thunder": -20,
       "ice": 30,
       "dragon": -25
-    }
+    },
+    "monsterSearchTerms": [
+      "크샬다오라",
+      "강룡",
+      "Kushala Daora"
+    ]
   },
   {
     "id": "armor_set_3726d8c8d8de",
@@ -26442,7 +28226,8 @@
       "thunder": 15,
       "ice": 35,
       "dragon": -20
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_fd5cbf3ceee7",
@@ -26495,7 +28280,12 @@
       "thunder": 10,
       "ice": -5,
       "dragon": -5
-    }
+    },
+    "monsterSearchTerms": [
+      "테오·테스카토르",
+      "염왕룡",
+      "Teostra"
+    ]
   },
   {
     "id": "armor_set_c6a8c66684da",
@@ -26547,7 +28337,12 @@
       "thunder": 5,
       "ice": 25,
       "dragon": 0
-    }
+    },
+    "monsterSearchTerms": [
+      "오나즈치",
+      "하룡",
+      "Chameleos"
+    ]
   },
   {
     "id": "armor_set_bf4677d91949",
@@ -26599,7 +28394,12 @@
       "thunder": -15,
       "ice": 20,
       "dragon": -15
-    }
+    },
+    "monsterSearchTerms": [
+      "다렌·모란",
+      "호산룡",
+      "Dah'ren Mohran"
+    ]
   },
   {
     "id": "armor_set_090c73e745af",
@@ -26651,7 +28451,12 @@
       "thunder": 5,
       "ice": 20,
       "dragon": -30
-    }
+    },
+    "monsterSearchTerms": [
+      "고그마지오스",
+      "거극룡",
+      "Gogmazios"
+    ]
   },
   {
     "id": "armor_set_c51b6d40ab6a",
@@ -26702,7 +28507,8 @@
       "thunder": -5,
       "ice": -5,
       "dragon": -10
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_2b54b052649a",
@@ -26753,7 +28559,12 @@
       "thunder": -10,
       "ice": 15,
       "dragon": -20
-    }
+    },
+    "monsterSearchTerms": [
+      "아캄토름",
+      "패룡",
+      "Akantor"
+    ]
   },
   {
     "id": "armor_set_aad13de3150f",
@@ -26804,7 +28615,12 @@
       "thunder": -10,
       "ice": 25,
       "dragon": -5
-    }
+    },
+    "monsterSearchTerms": [
+      "우캄루바스",
+      "붕룡",
+      "Ukanlos"
+    ]
   },
   {
     "id": "armor_set_f439afb13696",
@@ -26856,7 +28672,14 @@
       "thunder": -10,
       "ice": 0,
       "dragon": 0
-    }
+    },
+    "monsterSearchTerms": [
+      "이블조",
+      "공폭룡",
+      "Deviljho",
+      "광폭 이블조",
+      "Savage Deviljho"
+    ]
   },
   {
     "id": "armor_set_d90a365d7fff",
@@ -26908,7 +28731,12 @@
       "thunder": 15,
       "ice": -10,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": [
+      "티가렉스 희소종",
+      "대굉룡",
+      "Molten Tigrex"
+    ]
   },
   {
     "id": "armor_set_b8b6c529df30",
@@ -26959,7 +28787,14 @@
       "thunder": 5,
       "ice": -10,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": [
+      "브라키디오스",
+      "쇄룡",
+      "Brachydios",
+      "임계 브라키디오스",
+      "Raging Brachydios"
+    ]
   },
   {
     "id": "armor_set_be136ed4bf0b",
@@ -27009,7 +28844,8 @@
       "thunder": 10,
       "ice": -10,
       "dragon": -25
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_4958d9a1dd14",
@@ -27060,7 +28896,12 @@
       "thunder": 30,
       "ice": 0,
       "dragon": 20
-    }
+    },
+    "monsterSearchTerms": [
+      "키린 아종",
+      "-",
+      "Oroshi Kirin"
+    ]
   },
   {
     "id": "armor_set_376c0222e38e",
@@ -27111,7 +28952,12 @@
       "thunder": 0,
       "ice": 35,
       "dragon": 20
-    }
+    },
+    "monsterSearchTerms": [
+      "키린 아종",
+      "-",
+      "Oroshi Kirin"
+    ]
   },
   {
     "id": "armor_set_7dc1f860c8a8",
@@ -27163,7 +29009,8 @@
       "thunder": 10,
       "ice": -5,
       "dragon": -5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_0caa3c1977a3",
@@ -27214,7 +29061,8 @@
       "thunder": 5,
       "ice": -15,
       "dragon": -15
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_d34bd89375d5",
@@ -27266,7 +29114,8 @@
       "thunder": 10,
       "ice": -25,
       "dragon": -5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_15b4f211ce8a",
@@ -27318,7 +29167,8 @@
       "thunder": -5,
       "ice": 10,
       "dragon": -20
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_55b32d533b95",
@@ -27369,7 +29219,8 @@
       "thunder": 5,
       "ice": 15,
       "dragon": -15
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_d1e037fa0a40",
@@ -27420,7 +29271,8 @@
       "thunder": 0,
       "ice": 0,
       "dragon": -20
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_f9b81ec81c8c",
@@ -27471,7 +29323,8 @@
       "thunder": -10,
       "ice": 10,
       "dragon": -30
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_e47571d70fda",
@@ -27521,7 +29374,8 @@
       "thunder": 5,
       "ice": 5,
       "dragon": -5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_195edf7dffba",
@@ -27571,7 +29425,8 @@
       "thunder": 10,
       "ice": 10,
       "dragon": 10
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_f270f102c1f3",
@@ -27622,7 +29477,8 @@
       "thunder": -30,
       "ice": 5,
       "dragon": 25
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_8c5fff67a607",
@@ -27673,7 +29529,8 @@
       "thunder": -15,
       "ice": 5,
       "dragon": 25
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_6c0324570974",
@@ -27726,7 +29583,8 @@
       "thunder": -5,
       "ice": -5,
       "dragon": -10
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_80f11c9b86bd",
@@ -27777,7 +29635,8 @@
       "thunder": 15,
       "ice": 0,
       "dragon": -30
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_12c2c950696b",
@@ -27831,7 +29690,8 @@
       "thunder": -10,
       "ice": 5,
       "dragon": 5
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_de87a19244fd",
@@ -27881,7 +29741,8 @@
       "thunder": -20,
       "ice": -20,
       "dragon": -20
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_92f56d0e05b1",
@@ -27931,7 +29792,8 @@
       "thunder": -15,
       "ice": -15,
       "dragon": -15
-    }
+    },
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_7206757172d3",
@@ -27981,7 +29843,8 @@
       "ice": -5,
       "dragon": 0
     },
-    "restored": true
+    "restored": true,
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_8358b4670e5d",
@@ -28031,7 +29894,8 @@
       "ice": 0,
       "dragon": 5
     },
-    "restored": true
+    "restored": true,
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_d82b33431cba",
@@ -28082,7 +29946,8 @@
       "ice": 10,
       "dragon": 0
     },
-    "restored": true
+    "restored": true,
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_8906a6279de8",
@@ -28133,7 +29998,8 @@
       "ice": 15,
       "dragon": 5
     },
-    "restored": true
+    "restored": true,
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_55a2e5e0f2e2",
@@ -28184,7 +30050,8 @@
       "ice": -20,
       "dragon": 10
     },
-    "restored": true
+    "restored": true,
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_2d15d7146281",
@@ -28235,7 +30102,8 @@
       "ice": -15,
       "dragon": 10
     },
-    "restored": true
+    "restored": true,
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_2a65f21d67a4",
@@ -28288,7 +30156,8 @@
       "ice": -5,
       "dragon": 5
     },
-    "restored": true
+    "restored": true,
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_033dd0a7845d",
@@ -28341,7 +30210,8 @@
       "ice": 0,
       "dragon": 10
     },
-    "restored": true
+    "restored": true,
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_5bace0ef9872",
@@ -28393,7 +30263,8 @@
       "ice": 0,
       "dragon": 0
     },
-    "restored": true
+    "restored": true,
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_7aaf14c75acc",
@@ -28445,7 +30316,8 @@
       "ice": 5,
       "dragon": 5
     },
-    "restored": true
+    "restored": true,
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_4e2f3487b451",
@@ -28498,7 +30370,8 @@
       "ice": 10,
       "dragon": -20
     },
-    "restored": true
+    "restored": true,
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_b3b093642614",
@@ -28551,7 +30424,8 @@
       "ice": 15,
       "dragon": -15
     },
-    "restored": true
+    "restored": true,
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_810e39be89e6",
@@ -28603,7 +30477,8 @@
       "ice": 0,
       "dragon": 10
     },
-    "restored": true
+    "restored": true,
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_7b7a18341ee0",
@@ -28655,7 +30530,8 @@
       "ice": 5,
       "dragon": 15
     },
-    "restored": true
+    "restored": true,
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_d422616311c8",
@@ -28705,7 +30581,8 @@
       "ice": 0,
       "dragon": 10
     },
-    "restored": true
+    "restored": true,
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_5c4b7ec87c5e",
@@ -28755,7 +30632,8 @@
       "ice": 5,
       "dragon": 15
     },
-    "restored": true
+    "restored": true,
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_e1482dbd9edb",
@@ -28806,7 +30684,8 @@
       "ice": 0,
       "dragon": 0
     },
-    "restored": true
+    "restored": true,
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_97b51e58c109",
@@ -28857,7 +30736,8 @@
       "ice": 5,
       "dragon": 5
     },
-    "restored": true
+    "restored": true,
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_32e3095b47cc",
@@ -28909,7 +30789,8 @@
       "ice": 0,
       "dragon": 0
     },
-    "restored": true
+    "restored": true,
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_d8021cd4adcb",
@@ -28961,7 +30842,8 @@
       "ice": 5,
       "dragon": 5
     },
-    "restored": true
+    "restored": true,
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_330fd5525941",
@@ -29014,7 +30896,8 @@
       "ice": 15,
       "dragon": -30
     },
-    "restored": true
+    "restored": true,
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_f3fecc1e8331",
@@ -29067,7 +30950,8 @@
       "ice": 20,
       "dragon": -25
     },
-    "restored": true
+    "restored": true,
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_1ad1a21521b2",
@@ -29120,7 +31004,8 @@
       "ice": 15,
       "dragon": -20
     },
-    "restored": true
+    "restored": true,
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_2b7fa802306e",
@@ -29173,7 +31058,8 @@
       "ice": 20,
       "dragon": -15
     },
-    "restored": true
+    "restored": true,
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_81693f0fc6f7",
@@ -29226,7 +31112,8 @@
       "ice": 15,
       "dragon": -20
     },
-    "restored": true
+    "restored": true,
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_13e1bda804b1",
@@ -29279,7 +31166,8 @@
       "ice": 20,
       "dragon": -15
     },
-    "restored": true
+    "restored": true,
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_75a26b72f2d8",
@@ -29331,7 +31219,8 @@
       "ice": -20,
       "dragon": -20
     },
-    "restored": true
+    "restored": true,
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_661ecea97bb4",
@@ -29383,7 +31272,8 @@
       "ice": -15,
       "dragon": -15
     },
-    "restored": true
+    "restored": true,
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_33c365a43500",
@@ -29436,7 +31326,8 @@
       "ice": 5,
       "dragon": -25
     },
-    "restored": true
+    "restored": true,
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_d146ba0ea30b",
@@ -29489,7 +31380,8 @@
       "ice": 10,
       "dragon": -20
     },
-    "restored": true
+    "restored": true,
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_1a7ab58501bf",
@@ -29541,7 +31433,8 @@
       "ice": 10,
       "dragon": -20
     },
-    "restored": true
+    "restored": true,
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_bd6de4db5b50",
@@ -29593,7 +31486,8 @@
       "ice": 15,
       "dragon": -15
     },
-    "restored": true
+    "restored": true,
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_d9318e5dca5d",
@@ -29646,7 +31540,8 @@
       "ice": -10,
       "dragon": 20
     },
-    "restored": true
+    "restored": true,
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_af4ff91c76f4",
@@ -29699,7 +31594,8 @@
       "ice": -5,
       "dragon": 25
     },
-    "restored": true
+    "restored": true,
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_bf1b0dbc728d",
@@ -29751,7 +31647,8 @@
       "ice": -5,
       "dragon": -30
     },
-    "restored": true
+    "restored": true,
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_9cde7e4ce27e",
@@ -29803,7 +31700,8 @@
       "ice": 0,
       "dragon": -25
     },
-    "restored": true
+    "restored": true,
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_e223246d7add",
@@ -29854,7 +31752,8 @@
       "ice": -25,
       "dragon": -25
     },
-    "restored": true
+    "restored": true,
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_a82e65ccf424",
@@ -29905,7 +31804,8 @@
       "ice": -20,
       "dragon": -20
     },
-    "restored": true
+    "restored": true,
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_f6a3d45131f9",
@@ -29957,7 +31857,8 @@
       "ice": 0,
       "dragon": -25
     },
-    "restored": true
+    "restored": true,
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_e99615d1f503",
@@ -30009,7 +31910,8 @@
       "ice": 0,
       "dragon": -20
     },
-    "restored": true
+    "restored": true,
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_b328766e11c6",
@@ -30060,7 +31962,8 @@
       "ice": -15,
       "dragon": -35
     },
-    "restored": true
+    "restored": true,
+    "monsterSearchTerms": []
   },
   {
     "id": "armor_set_8e7a4ae22d90",
@@ -30111,6 +32014,7 @@
       "ice": -10,
       "dragon": -30
     },
-    "restored": true
+    "restored": true,
+    "monsterSearchTerms": []
   }
 ]

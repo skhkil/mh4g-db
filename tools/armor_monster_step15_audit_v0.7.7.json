@@ -1,0 +1,59 @@
+{
+  "version": "0.7.7-final-step1-armor-audit1",
+  "scope": "monster-armor reverse tracking and armor-set search audit",
+  "counts": {
+    "armors": 3119,
+    "armorSets": 594,
+    "monsterRefs": 76,
+    "monsterArmorUseRefs": 2738
+  },
+  "fixes": [
+    {
+      "id": "armor_98bc5e6dcf0f",
+      "before": {
+        "name": "모노데블암"
+      },
+      "after": {
+        "name": "모노데블암"
+      }
+    },
+    {
+      "id": "armor_b856d3e8f8ea",
+      "before": {
+        "name": "모노데블가드",
+        "nameJa": "モノデビルガード",
+        "nameEn": "Monodevil Guards"
+      },
+      "after": {
+        "name": "모노데블가드",
+        "nameJa": "モノデビルガード",
+        "nameEn": "Monodevil Guards"
+      }
+    }
+  ],
+  "monodevilSetIds": [
+    "armor_set_26dc1c87811b",
+    "armor_set_f28af2f1d7c9"
+  ],
+  "monsterAliasCoverage": {
+    "0": 284,
+    "1": 278,
+    "2": 32
+  },
+  "structural": {
+    "missingSetPieceRefs": [],
+    "normalizedDuplicateSetGroups": [
+      [
+        "armor_set_78eea17dc0d0",
+        "armor_set_81693f0fc6f7"
+      ],
+      [
+        "armor_set_bf4677d91949",
+        "armor_set_13e1bda804b1"
+      ]
+    ]
+  },
+  "notes": [
+    "monsterSearchTerms are derived only when all pieces in a set are present in the existing monster reference uses."
+  ]
+}
