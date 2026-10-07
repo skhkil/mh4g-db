@@ -1,0 +1,41 @@
+{
+  "version": "0.7.7-chat4-final-audit-hotfix16",
+  "step1": {
+    "checkedSkills": 143,
+    "changedCount": 3,
+    "danglingFootnoteCount": 0
+  },
+  "step2": {
+    "itemCount": 1447,
+    "indexedItemCount": 1304,
+    "questCount": 572,
+    "itemQuestAcquireLinks": 2477,
+    "questItemReverseLinks": 2477,
+    "eventItemQuestLinks": 114,
+    "eventQuestCountReferenced": 97,
+    "externalMajorRewardQuestCount": 43,
+    "externalRewardLabelsChecked": 59,
+    "issueCount": 0
+  },
+  "step3": {
+    "scenarioCount": 14,
+    "calculationRowsChecked": 42,
+    "completedScenarioCount": 13,
+    "nearMissRowsChecked": 3,
+    "failureCount": 0
+  },
+  "syntaxChecks": [
+    "js/app.js",
+    "js/data-loader.js",
+    "js/engine.js"
+  ],
+  "browserE2E": [
+    "owned asset rows PC/mobile",
+    "auto job PC/mobile",
+    "quest Korean IME PC/mobile",
+    "armor set resist sorting PC/mobile",
+    "monster links 76 species",
+    "back navigation 15 cycles"
+  ],
+  "knownLimit": "All 2,477 generated item↔quest links were structurally audited; independent external-source cross-check in this pass covered the curated event major-reward set (43 quests / 59 labels), not every ordinary quest reward row individually."
+}
