@@ -1,0 +1,24 @@
+{
+  "ok": true,
+  "facts": [
+    {
+      "width": 1365,
+      "duringComposition": 0,
+      "afterCompositionEnd": 1,
+      "afterCompositionEarly": 0,
+      "before90ms": 0,
+      "after90ms": 1,
+      "resultRows": 10
+    },
+    {
+      "width": 390,
+      "duringComposition": 0,
+      "afterCompositionEnd": 1,
+      "afterCompositionEarly": 0,
+      "before90ms": 0,
+      "after90ms": 1,
+      "resultRows": 10
+    }
+  ],
+  "errors": []
+}

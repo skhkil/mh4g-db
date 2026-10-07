@@ -1,0 +1,27 @@
+{
+  "ok": true,
+  "version": "0.7.7-chat4-relic-sim-hotfix12",
+  "checks": {
+    "relicDecorationCount": 52,
+    "relicSkillFamilies": 10,
+    "slotCounts": {
+      "1": 14,
+      "2": 17,
+      "3": 21
+    },
+    "versionApp": true,
+    "versionLoader": true,
+    "versionIndex": true,
+    "simLoadsSkillReference": true,
+    "simLoadsRelicDecorations": true,
+    "targetCompositeFilter": true,
+    "targetRelicSlotFilter": true,
+    "manualModeFilter": true,
+    "relicWeaponFixed": true,
+    "relicExactSlotPicker": true,
+    "questCorpusCache": true,
+    "questIMEGuard": true,
+    "questDebounce90": true
+  },
+  "errors": []
+}

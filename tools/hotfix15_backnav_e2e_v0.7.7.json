@@ -3,9 +3,9 @@
   "cycles": 15,
   "errors": [],
   "timingMs": {
-    "min": 154.74,
-    "max": 368.29,
-    "avg": 204.28
+    "min": 131.52,
+    "max": 291.21,
+    "avg": 163.14
   },
   "armorRowsAfterBackNav": 130,
   "headRowsAfterForwardNav": 28

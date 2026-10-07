@@ -1,10 +1,11 @@
-const DATA_VERSION = "0.7.7-chat4-monster-link-hotfix11";
+const DATA_VERSION = "0.7.7-chat4-relic-sim-hotfix12";
 
 const FULL_FILES = {
   skills:"./data/skills.json",
   armors:"./data/armors.json",
   armorSets:"./data/armor_sets.json",
   decorations:"./data/decorations.json",
+  relicWeaponDecorations:"./data/relic_weapon_decorations.json",
   decorationUnlocks:"./data/decoration_unlocks.json",eventMajorRewards:"./data/event_major_rewards.json",
   weapons:"./data/weapons.json",
   weaponSummary:"./data/weapon_summary.json",
@@ -36,6 +37,8 @@ const SIMULATOR_FILES = {
   armors:"./data/sim_armors.json",
   armorSets:"./data/sim_armor_sets.json",
   decorations:"./data/decorations.json",
+  relicWeaponDecorations:"./data/relic_weapon_decorations.json",
+  skillReferenceIndex:"./data/skill_reference_index.json",
   weapons:"./data/sim_weapons.json",
   meta:"./data/meta.json",
   recommendedLoadouts:"./data/recommended_loadouts.json",

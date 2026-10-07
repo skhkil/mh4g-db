@@ -1400,3 +1400,9 @@ button{border:1px solid var(--line);background:#202b39;color:white;border-radius
 }
 
 @media(max-width:640px){.compact-set-picker{grid-template-columns:70px minmax(0,1fr)}.compact-set-picker .armor-set-sort{grid-column:2}}
+
+/* hotfix12: target skill filters + manual relic weapon mode */
+.skill-target-field .searchable-row{flex-wrap:wrap}
+.target-skill-filter{min-width:118px}
+.manual-weapon-filters #manualWeaponModeFilter{font-weight:700}
+@media(max-width:640px){.target-skill-filter{min-width:0;flex:1 1 120px}.skill-target-field .search-select{flex:1 1 100%}}

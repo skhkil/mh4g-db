@@ -1,6 +1,8 @@
 {
-  "version": "0.7.7-chat4-monster-link-hotfix11",
-  "ok": false,
+  "version": "0.7.7-chat4-relic-sim-hotfix12",
+  "ok": true,
+  "checkCount": 19,
+  "issueCount": 0,
   "checks": {
     "syntax:js/app.js": {
       "ok": true,
@@ -15,49 +17,52 @@
       "detail": ""
     },
     "cache:index.html": {
-      "ok": false,
+      "ok": true,
       "detail": null
     },
     "cache:js/app.js": {
-      "ok": false,
+      "ok": true,
       "detail": null
     },
     "cache:js/data-loader.js": {
-      "ok": false,
-      "detail": null
-    },
-    "audit_issue_zero": {
-      "ok": true,
-      "detail": 0
-    },
-    "audit_76_monsters": {
-      "ok": true,
-      "detail": 76
-    },
-    "audit_forward_reverse": {
-      "ok": true,
-      "detail": {
-        "forward": 585,
-        "reverse": 585
-      }
-    },
-    "e2e_ok": {
-      "ok": true,
-      "detail": []
-    },
-    "e2e_all_76_counts": {
-      "ok": true,
-      "detail": []
-    },
-    "silver_g_event_visible": {
       "ok": true,
       "detail": null
     },
-    "furious_only": {
+    "feature_audit": {
       "ok": true,
-      "detail": [
-        "격앙 라잔"
-      ]
+      "detail": []
+    },
+    "feature_e2e": {
+      "ok": true,
+      "detail": []
+    },
+    "quest_ime_e2e": {
+      "ok": true,
+      "detail": []
+    },
+    "monster_e2e": {
+      "ok": true,
+      "detail": []
+    },
+    "weapon_slot_e2e": {
+      "ok": true,
+      "detail": []
+    },
+    "armor_resist_e2e": {
+      "ok": true,
+      "detail": []
+    },
+    "backnav_e2e": {
+      "ok": true,
+      "detail": []
+    },
+    "complex_e2e": {
+      "ok": true,
+      "detail": null
+    },
+    "autorank_smoke": {
+      "ok": true,
+      "detail": null
     },
     "readme_top": {
       "ok": true,
@@ -66,21 +71,19 @@
     "work_status_top": {
       "ok": true,
       "detail": null
+    },
+    "relic_data_nonempty": {
+      "ok": true,
+      "detail": 52
+    },
+    "relic_exact_slots": {
+      "ok": true,
+      "detail": [
+        1,
+        2,
+        3
+      ]
     }
   },
-  "issueCount": 3,
-  "issues": [
-    {
-      "name": "cache:index.html",
-      "detail": null
-    },
-    {
-      "name": "cache:js/app.js",
-      "detail": null
-    },
-    {
-      "name": "cache:js/data-loader.js",
-      "detail": null
-    }
-  ]
+  "issues": []
 }
