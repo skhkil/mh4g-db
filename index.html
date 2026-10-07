@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#121821" />
   <title>MH4G 장비 · 스킬 시뮬레이터</title>
-  <link rel="stylesheet" href="./css/app.css?v=0.7.7-chat4-relic-sim-hotfix12" />
+  <link rel="stylesheet" href="./css/app.css?v=0.7.7-chat4-sim-weapon-hotfix13" />
 </head>
 <body>
   <div class="app-shell">
@@ -186,22 +186,8 @@
                 <label>스킬 추가</label>
                 <div class="row searchable-row">
                   <div id="targetSkillPicker" class="search-select"></div>
-                  <select id="targetSkillTypeFilter" class="target-skill-filter" aria-label="스킬 유형 필터">
-                    <option value="all">전체 스킬</option>
-                    <option value="composite">복합스킬</option>
-                  </select>
-                  <select id="targetRelicSlotFilter" class="target-skill-filter" aria-label="발굴무기 장식 슬롯 필터">
-                    <option value="all">전체 슬롯</option>
-                    <option value="1">발굴 1슬롯</option>
-                    <option value="2">발굴 2슬롯</option>
-                    <option value="3">발굴 3슬롯</option>
-                  </select>
                   <button id="addTargetSkill">추가</button>
                 </div>
-              </div>
-              <div class="field auto-weapon-type-field">
-                <label for="autoWeaponType">무기종</label>
-                <select id="autoWeaponType" aria-label="자동 조합 무기종"></select>
               </div>
               <div class="search-options compact-skill-options">
                 <label>진행도
@@ -221,6 +207,8 @@
                 </label>
                 <label><input id="allowDecorations" type="checkbox" checked /> 장식주 사용</label>
                 <label><input id="includeTorsoUp" type="checkbox" checked /> 몸통배가 고려</label>
+                <label><input id="ownedCharmsOnly" type="checkbox" /> 보유호석 사용</label>
+                <label><input id="ownedRelicWeaponsOnly" type="checkbox" /> 보유 발굴무기 사용</label>
                 <label>결과 수
                   <select id="resultLimit">
                     <option>10</option><option selected>20</option><option>50</option>
@@ -230,7 +218,7 @@
               </div>
             </div>
             <div id="targetSkills" class="chip-list empty-state">선택된 스킬이 없습니다.</div>
-            <p class="muted auto-search-condition-note">자동조합은 위에서 고른 무기종·진행도·무기 슬롯 수를 고정 조건으로 사용하며, 해당 슬롯 수의 실제 무기를 결과에 함께 제시합니다. 스킬 추가의 복합스킬/발굴 슬롯 필터는 발굴무기 고정 장식품으로 얻을 수 있는 복합스킬을 빠르게 찾기 위한 필터입니다. 호석은 수동 호석 입력값 또는 저장한 보유 호석을 사용합니다.</p>
+            <p class="muted auto-search-condition-note">자동조합은 진행도와 무기 슬롯을 기준으로 계산합니다. 보유호석 사용을 켜면 저장한 호석만 비교하고, 보유 발굴무기 사용을 켜면 저장한 발굴무기의 고정 복합스킬을 사용하며 일반 무기 슬롯은 비활성화됩니다.</p>
           </div>
           <div class="skill-auto-results">
             <div id="searchStats" class="muted search-stats"></div>
@@ -471,6 +459,6 @@ python tools/build_database.py --publish</code></pre>
     <button id="pageJumpTop" class="mobile-page-jump-btn" type="button" aria-label="맨 위로 이동" title="맨 위로">↑</button>
     <button id="pageJumpBottom" class="mobile-page-jump-btn" type="button" aria-label="맨 아래로 이동" title="맨 아래로">↓</button>
   </div>
-  <script type="module" src="./js/app.js?v=0.7.7-chat4-relic-sim-hotfix12"></script>
+  <script type="module" src="./js/app.js?v=0.7.7-chat4-sim-weapon-hotfix13"></script>
 </body>
 </html>

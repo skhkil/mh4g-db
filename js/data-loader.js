@@ -1,4 +1,4 @@
-const DATA_VERSION = "0.7.7-chat4-relic-sim-hotfix12";
+const DATA_VERSION = "0.7.7-chat4-sim-weapon-hotfix13";
 
 const FULL_FILES = {
   skills:"./data/skills.json",
