@@ -1,12 +1,12 @@
 {
   "ok": false,
   "version": "0.7.7-chat4-research2-hotfix21",
-  "codeMtime": 1790833624.9737241,
+  "codeMtime": 1791423457.0245035,
   "steps": [
     {
       "name": "app_module_syntax",
       "ok": true,
-      "elapsedSec": 0.04,
+      "elapsedSec": 0.02,
       "stdout": "",
       "stderr": ""
     },
@@ -20,15 +20,15 @@
     {
       "name": "engine_module_syntax",
       "ok": true,
-      "elapsedSec": 0.04,
+      "elapsedSec": 0.02,
       "stdout": "",
       "stderr": ""
     },
     {
       "name": "hotfix21_structure",
       "ok": false,
-      "elapsedSec": 1.06,
-      "stdout": "{\n  \"ok\": false,\n  \"version\": \"0.7.7-chat4-research2-hotfix21\",\n  \"checks\": {\n    \"index_hotfix21\": false,\n    \"app_hotfix21\": false,\n    \"engine_profiles\": true,\n    \"engine_yields\": true,\n    \"near_miss_ui\": true,\n    \"condition_summary_ui\": true,\n    \"condition_hint_html\": true,\n    \"readme_hotfix21_first\": false,\n    \"work_status_hotfix21_first\": false\n  },\n  \"errors\": [\n    \"index_hotfix21\",\n    \"app_hotfix21\",\n    \"readme_hotfix21_first\",\n    \"work_status_hotfix21_first\"\n  ]\n}\n",
+      "elapsedSec": 0.63,
+      "stdout": "{\n  \"ok\": false,\n  \"version\": \"0.7.7-chat4-research2-hotfix21\",\n  \"checks\": {\n    \"index_hotfix21\": false,\n    \"app_hotfix21\": false,\n    \"engine_profiles\": true,\n    \"engine_yields\": true,\n    \"near_miss_ui\": true,\n    \"condition_summary_ui\": true,\n    \"condition_hint_html\": false,\n    \"readme_hotfix21_first\": false,\n    \"work_status_hotfix21_first\": false\n  },\n  \"errors\": [\n    \"index_hotfix21\",\n    \"app_hotfix21\",\n    \"condition_hint_html\",\n    \"readme_hotfix21_first\",\n    \"work_status_hotfix21_first\"\n  ]\n}\n",
       "stderr": ""
     }
   ]

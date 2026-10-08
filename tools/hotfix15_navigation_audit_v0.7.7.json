@@ -1,11 +1,11 @@
 {
   "ok": true,
-  "version": "0.7.7-chat4-research2-hotfix15",
+  "version": "0.7.7-step4-final-release",
   "checks": {
     "es_module_syntax_all": true,
     "cache_version_consistent": true,
     "bind_one_shot_guard": true,
-    "bind_called_once": true,
+    "bind_called_bootstrap_and_retry": true,
     "popstate_restore_only": true,
     "pageshow_no_rebind_or_rerender": true,
     "no_pagehide_history_mutation": true,
@@ -39,5 +39,5 @@
     "simArmors": 3119,
     "recommendCards": 108
   },
-  "bindCallCount": 1
+  "bindCallCount": 2
 }

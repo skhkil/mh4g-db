@@ -1,5 +1,5 @@
-import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,loadArmorProgression,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-step2-final-xref";
-import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-step2-final-xref";
+import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,loadArmorProgression,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-step4-final-release";
+import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-step4-final-release";
 
 let data={skills:[],armors:[],armorSets:[],decorations:[],relicWeaponDecorations:[],decorationUnlocks:{decorations:{}},questUnlockIndex:{quests:{},targets:{}},eventMajorRewards:{quests:{}},weapons:[],weaponSummary:[],melodies:[],items:[],itemReferenceIndex:{items:{}},skillReferenceIndex:{items:{},categories:[]},meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],monsterReferenceIndex:{items:{}},dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],questReferenceIndex:{quests:{}},siteInfo:{},meta:{},weaponSkillPriorities:{weapons:{}}};
 let targets=[];
@@ -47,7 +47,7 @@ let restoringHistory=false;
 let historyRestoreToken=0;
 try{history.scrollRestoration="manual"}catch{}
 
-const APP_VERSION="0.7.7-step2-final-xref";
+const APP_VERSION="0.7.7-step4-final-release";
 const boundEventGroups=new Set();
 let appEventsBound=false;
 function ensureRuntimeStatus(){
@@ -1465,6 +1465,7 @@ function renderWeaponTreeFilter(){
 function weaponTableColumns(type){
   const cols=[
     {key:"name",label:"명칭",className:"col-name"},
+    {key:"level",label:"레벨",className:"col-level"},
     {key:"attack",label:"공격력",className:"col-attack"},
     {key:"element",label:"속성/특수",className:"col-element"},
     {key:"affinity",label:"회심",className:"col-affinity"},
@@ -1480,6 +1481,7 @@ function weaponCell(w,col){
     const prefix=w.treePrefix?`<span class="tree-prefix">${esc(w.treePrefix)}</span>`:"";
     return `${prefix}${w.isFinal?'<span class="final-mark">■</span> ':''}<strong>${esc(w.name)}</strong>${localizedNameSub(w)}${plannerIconButton("weapon",w.id,{craft:true,label:`${w.name} 즐겨찾기/제작`})}`;
   }
+  if(col.key==="level") return w.rarityRef?`Lv.${w.rarityRef}`:"-";
   if(col.key==="attack") return w.attack??"-";
   if(col.key==="element") return esc(weaponPropertyBits(w).join(" · ")||"-");
   if(col.key==="affinity") return weaponAffinityText(w);

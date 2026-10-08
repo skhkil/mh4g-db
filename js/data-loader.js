@@ -1,4 +1,4 @@
-const DATA_VERSION = "0.7.7-step2-final-xref";
+const DATA_VERSION = "0.7.7-step4-final-release";
 
 const FULL_FILES = {
   skills:"./data/skills.json",

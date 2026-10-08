@@ -1,0 +1,109 @@
+{
+  "ok": true,
+  "version": "0.7.7-step4-final-release",
+  "checks": {
+    "syntax_app": true,
+    "syntax_data-loader": true,
+    "syntax_engine": true,
+    "cache_key_index": true,
+    "cache_key_app": true,
+    "cache_key_loader": true,
+    "no_step3_probe_tmp": true,
+    "step2_integrity": true,
+    "step1_e2e": true,
+    "step15_e2e": true,
+    "step2_merge_e2e": true,
+    "step2_unlock_e2e": true,
+    "owned_rows_e2e": true,
+    "backnav_e2e": true,
+    "step3_calc": true,
+    "step3_complex": true,
+    "step3_parity": true,
+    "hotfix21_runtime": true,
+    "hotfix21_complex_e2e": true,
+    "hotfix20_smoke": true,
+    "hotfix15_navigation": true,
+    "step2_invariants": true
+  },
+  "errors": [],
+  "details": {
+    "syntax_app": "",
+    "syntax_data-loader": "",
+    "syntax_engine": "",
+    "step2_integrity": {
+      "file": "step2_final_integrity_audit_v0.7.7.json",
+      "version": null
+    },
+    "step1_e2e": {
+      "file": "step1_skill_notes_e2e_v0.7.7.json",
+      "version": null
+    },
+    "step15_e2e": {
+      "file": "armor_monster_search_step15_e2e_v0.7.7.json",
+      "version": null
+    },
+    "step2_merge_e2e": {
+      "file": "step2_final_merge_e2e_v0.7.7.json",
+      "version": null
+    },
+    "step2_unlock_e2e": {
+      "file": "step2_unlock_xref_e2e_v0.7.7.json",
+      "version": null
+    },
+    "owned_rows_e2e": {
+      "file": "owned_asset_rows_hotfix15_e2e_v0.7.7.json",
+      "version": null
+    },
+    "backnav_e2e": {
+      "file": "hotfix15_backnav_e2e_v0.7.7.json",
+      "version": null
+    },
+    "step3_calc": {
+      "file": "step3_calculation_integrity_audit_v0.7.7.json",
+      "version": "0.7.7-step3-calculation-integrity-2"
+    },
+    "step3_complex": {
+      "file": "step3_complex_profiles_audit_v0.7.7.json",
+      "version": "0.7.7-step3-complex-profiles"
+    },
+    "step3_parity": {
+      "file": "step3_auto_manual_parity_e2e_v0.7.7.json",
+      "version": "0.7.7-step3-auto-manual-parity"
+    },
+    "hotfix21_runtime": {
+      "file": "hotfix21_runtime_audit_v0.7.7.json",
+      "version": "0.7.7-chat4-research2-hotfix21"
+    },
+    "hotfix21_complex_e2e": {
+      "file": "hotfix21_complex_search_e2e_v0.7.7.json",
+      "version": "hotfix21"
+    },
+    "hotfix20_smoke": {
+      "file": "hotfix20_auto_rank_smoke_e2e_v0.7.7.json",
+      "version": "hotfix20"
+    },
+    "hotfix15_navigation": {
+      "file": "hotfix15_navigation_audit_v0.7.7.json",
+      "version": "0.7.7-step4-final-release"
+    },
+    "step2_invariants": {
+      "questCount": 595,
+      "restoredJapaneseEvents": 23,
+      "verifiedMh4gEventPairs": 41,
+      "questToItem": 5539,
+      "itemToQuest": 5539,
+      "questToMonster": 610,
+      "monsterToQuest": 610,
+      "unlockRelations": 232,
+      "unlockForward": 232,
+      "unlockReverse": 232,
+      "wyporiumExchangeRows": 139,
+      "wyporiumTargets": 139,
+      "decorationTargets": 42,
+      "needsReviewUnlocks": 18,
+      "issues": [],
+      "ok": true,
+      "note": "Prior STEP2 reported 611 monster links; reproducible current canonical source yields 610 after replaying the 572-base graph + 23 restored events. No mismatch exists between forward/reverse graphs."
+    }
+  }
+}

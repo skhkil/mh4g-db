@@ -43,12 +43,12 @@ def run_case(browser,cycle,viewport):
     if elapsed>10:errors.append(f'search too slow:{elapsed:.2f}s')
     if ticks<5:errors.append(f'ui did not yield enough:ticks={ticks}')
     if '고속 후보검색' not in stats:errors.append('search status missing approximate notice:'+stats)
-    if '무기종 대검' not in stats or '무기 슬롯 0 고정' not in stats or '호석 슬롯 0' not in stats:errors.append('search condition summary missing:'+stats)
+    if '검사' not in stats or '제작무기 0슬롯' not in stats or '현재 호석' not in stats:errors.append('search condition summary missing:'+stats)
     exact=page.locator('#searchResults .build-card-clickable').count()
     near=page.locator('#searchResults .near-miss-card').count()
     if exact==0:
         if near<1:errors.append('no exact result and no near miss')
-        for want in ['현재 조건에서 완성 조합을 찾지 못했습니다','회피성능','pt 부족','자동조합은 선택한 무기종·진행도·무기 슬롯 수를 고정해서 실제 무기를 함께 찾고']:
+        for want in ['현재 조건에서 완성 조합을 찾지 못했습니다','회피성능','pt 부족','제작무기는 선택한 일반 슬롯만 사용하고']:
             if want not in body:errors.append('near miss guidance missing:'+want+' / '+body[:1000])
     if page.locator('#runSearch').is_disabled():errors.append('search button remained disabled')
     st=page.locator('#appRuntimeStatus')

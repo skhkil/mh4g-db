@@ -1,0 +1,361 @@
+{
+  "ok": true,
+  "version": "0.7.7-step3-calculation-integrity-2",
+  "checks": {
+    "torso_count_2": true,
+    "body_skill_multiplied": true,
+    "body_negative_multiplied": true,
+    "negative_activation_detected": true,
+    "defense_sum": true,
+    "resistance_sum": true,
+    "torso_disabled_count_0": true,
+    "torso_disabled_points": true,
+    "scenario_고급귀마개_has_result": true,
+    "scenario_고급귀마개_0_skill_4d4485c17552_meets": true,
+    "scenario_고급귀마개_0_slot_capacity": true,
+    "scenario_고급귀마개_0_metrics_slots": true,
+    "scenario_고급귀마개_1_skill_4d4485c17552_meets": true,
+    "scenario_고급귀마개_1_slot_capacity": true,
+    "scenario_고급귀마개_1_metrics_slots": true,
+    "scenario_고급귀마개_2_skill_4d4485c17552_meets": true,
+    "scenario_고급귀마개_2_slot_capacity": true,
+    "scenario_고급귀마개_2_metrics_slots": true,
+    "scenario_고급귀마개_3_skill_4d4485c17552_meets": true,
+    "scenario_고급귀마개_3_slot_capacity": true,
+    "scenario_고급귀마개_3_metrics_slots": true,
+    "scenario_고급귀마개_4_skill_4d4485c17552_meets": true,
+    "scenario_고급귀마개_4_slot_capacity": true,
+    "scenario_고급귀마개_4_metrics_slots": true,
+    "scenario_예리도레벨+1_has_result": true,
+    "scenario_예리도레벨+1_0_skill_dc306dbb4ef6_meets": true,
+    "scenario_예리도레벨+1_0_slot_capacity": true,
+    "scenario_예리도레벨+1_0_metrics_slots": true,
+    "scenario_예리도레벨+1_1_skill_dc306dbb4ef6_meets": true,
+    "scenario_예리도레벨+1_1_slot_capacity": true,
+    "scenario_예리도레벨+1_1_metrics_slots": true,
+    "scenario_예리도레벨+1_2_skill_dc306dbb4ef6_meets": true,
+    "scenario_예리도레벨+1_2_slot_capacity": true,
+    "scenario_예리도레벨+1_2_metrics_slots": true,
+    "scenario_예리도레벨+1_3_skill_dc306dbb4ef6_meets": true,
+    "scenario_예리도레벨+1_3_slot_capacity": true,
+    "scenario_예리도레벨+1_3_metrics_slots": true,
+    "scenario_예리도레벨+1_4_skill_dc306dbb4ef6_meets": true,
+    "scenario_예리도레벨+1_4_slot_capacity": true,
+    "scenario_예리도레벨+1_4_metrics_slots": true,
+    "scenario_고급귀마개+숫돌사용고속화_has_result": true,
+    "scenario_고급귀마개+숫돌사용고속화_0_skill_4d4485c17552_meets": true,
+    "scenario_고급귀마개+숫돌사용고속화_0_skill_e43cf9f6c27e_meets": true,
+    "scenario_고급귀마개+숫돌사용고속화_0_slot_capacity": true,
+    "scenario_고급귀마개+숫돌사용고속화_0_metrics_slots": true,
+    "scenario_고급귀마개+숫돌사용고속화_1_skill_4d4485c17552_meets": true,
+    "scenario_고급귀마개+숫돌사용고속화_1_skill_e43cf9f6c27e_meets": true,
+    "scenario_고급귀마개+숫돌사용고속화_1_slot_capacity": true,
+    "scenario_고급귀마개+숫돌사용고속화_1_metrics_slots": true,
+    "scenario_고급귀마개+숫돌사용고속화_2_skill_4d4485c17552_meets": true,
+    "scenario_고급귀마개+숫돌사용고속화_2_skill_e43cf9f6c27e_meets": true,
+    "scenario_고급귀마개+숫돌사용고속화_2_slot_capacity": true,
+    "scenario_고급귀마개+숫돌사용고속화_2_metrics_slots": true,
+    "scenario_고급귀마개+숫돌사용고속화_3_skill_4d4485c17552_meets": true,
+    "scenario_고급귀마개+숫돌사용고속화_3_skill_e43cf9f6c27e_meets": true,
+    "scenario_고급귀마개+숫돌사용고속화_3_slot_capacity": true,
+    "scenario_고급귀마개+숫돌사용고속화_3_metrics_slots": true,
+    "scenario_고급귀마개+숫돌사용고속화_4_skill_4d4485c17552_meets": true,
+    "scenario_고급귀마개+숫돌사용고속화_4_skill_e43cf9f6c27e_meets": true,
+    "scenario_고급귀마개+숫돌사용고속화_4_slot_capacity": true,
+    "scenario_고급귀마개+숫돌사용고속화_4_metrics_slots": true,
+    "scenario_고급귀마개+통찰력+1_has_result": true,
+    "scenario_고급귀마개+통찰력+1_0_skill_4d4485c17552_meets": true,
+    "scenario_고급귀마개+통찰력+1_0_skill_25c2859f7595_meets": true,
+    "scenario_고급귀마개+통찰력+1_0_slot_capacity": true,
+    "scenario_고급귀마개+통찰력+1_0_metrics_slots": true,
+    "scenario_고급귀마개+통찰력+1_1_skill_4d4485c17552_meets": true,
+    "scenario_고급귀마개+통찰력+1_1_skill_25c2859f7595_meets": true,
+    "scenario_고급귀마개+통찰력+1_1_slot_capacity": true,
+    "scenario_고급귀마개+통찰력+1_1_metrics_slots": true,
+    "scenario_고급귀마개+통찰력+1_2_skill_4d4485c17552_meets": true,
+    "scenario_고급귀마개+통찰력+1_2_skill_25c2859f7595_meets": true,
+    "scenario_고급귀마개+통찰력+1_2_slot_capacity": true,
+    "scenario_고급귀마개+통찰력+1_2_metrics_slots": true,
+    "scenario_고급귀마개+통찰력+1_3_skill_4d4485c17552_meets": true,
+    "scenario_고급귀마개+통찰력+1_3_skill_25c2859f7595_meets": true,
+    "scenario_고급귀마개+통찰력+1_3_slot_capacity": true,
+    "scenario_고급귀마개+통찰력+1_3_metrics_slots": true,
+    "scenario_고급귀마개+통찰력+1_4_skill_4d4485c17552_meets": true,
+    "scenario_고급귀마개+통찰력+1_4_skill_25c2859f7595_meets": true,
+    "scenario_고급귀마개+통찰력+1_4_slot_capacity": true,
+    "scenario_고급귀마개+통찰력+1_4_metrics_slots": true,
+    "scenario_세균연구가+명검_has_result": true,
+    "scenario_세균연구가+명검_0_skill_d6ea8f6b4907_meets": true,
+    "scenario_세균연구가+명검_0_skill_0a0d7a1a0dde_meets": true,
+    "scenario_세균연구가+명검_0_slot_capacity": true,
+    "scenario_세균연구가+명검_0_metrics_slots": true,
+    "scenario_세균연구가+명검_1_skill_d6ea8f6b4907_meets": true,
+    "scenario_세균연구가+명검_1_skill_0a0d7a1a0dde_meets": true,
+    "scenario_세균연구가+명검_1_slot_capacity": true,
+    "scenario_세균연구가+명검_1_metrics_slots": true,
+    "scenario_세균연구가+명검_2_skill_d6ea8f6b4907_meets": true,
+    "scenario_세균연구가+명검_2_skill_0a0d7a1a0dde_meets": true,
+    "scenario_세균연구가+명검_2_slot_capacity": true,
+    "scenario_세균연구가+명검_2_metrics_slots": true,
+    "scenario_세균연구가+명검_3_skill_d6ea8f6b4907_meets": true,
+    "scenario_세균연구가+명검_3_skill_0a0d7a1a0dde_meets": true,
+    "scenario_세균연구가+명검_3_slot_capacity": true,
+    "scenario_세균연구가+명검_3_metrics_slots": true,
+    "scenario_세균연구가+명검_4_skill_d6ea8f6b4907_meets": true,
+    "scenario_세균연구가+명검_4_skill_0a0d7a1a0dde_meets": true,
+    "scenario_세균연구가+명검_4_slot_capacity": true,
+    "scenario_세균연구가+명검_4_metrics_slots": true,
+    "resource_satisfied_has_result": true,
+    "resource_satisfied_top_no_negative": true,
+    "resource_satisfied_target_exact": true
+  },
+  "errors": [],
+  "scenarioResults": [
+    {
+      "names": [
+        "고급귀마개"
+      ],
+      "stats": {
+        "eligible": 1613,
+        "finalists": 700,
+        "checkedFinalists": 60,
+        "rankedPool": 60,
+        "beam": 12000,
+        "approximate": true,
+        "targetCount": 1,
+        "profile": "deep",
+        "timedOut": false,
+        "elapsedMs": 2159
+      },
+      "top": {
+        "armors": [
+          "가루루가페이크",
+          "밀라아르마하이드",
+          "가루루가암",
+          "엑스제로Z코일",
+          "길드나이트Ｘ부츠"
+        ],
+        "points": {
+          "skill_4d4485c17552": 15
+        },
+        "metrics": {
+          "negativeSkillCount": 0,
+          "negativeSkillSeverity": 0,
+          "decorationCount": 0,
+          "usedDecorationSlots": 0,
+          "distinctDecorationTypes": 0,
+          "targetWastePoints": 0,
+          "targetUpgradeSteps": 0,
+          "extraPositiveSkillCount": 1,
+          "preferredSkillScore": 0,
+          "preferredSkillCount": 0,
+          "rankMaxDowngrade": 2,
+          "rankTotalDowngrade": 2,
+          "currentRankPieces": 4,
+          "defense": 406,
+          "resistanceTotal": 0,
+          "resistanceMinimum": -6,
+          "remainingSlots": 14
+        }
+      }
+    },
+    {
+      "names": [
+        "예리도레벨+1"
+      ],
+      "stats": {
+        "eligible": 1613,
+        "finalists": 700,
+        "checkedFinalists": 60,
+        "rankedPool": 60,
+        "beam": 12000,
+        "approximate": true,
+        "targetCount": 1,
+        "profile": "deep",
+        "timedOut": false,
+        "elapsedMs": 2224
+      },
+      "top": {
+        "armors": [
+          "반역왕Ｊ해트",
+          "카이저X메일",
+          "반역왕Ｊ글러브",
+          "황천【띠】",
+          "GX헌터퀴스"
+        ],
+        "points": {
+          "skill_dc306dbb4ef6": 10
+        },
+        "metrics": {
+          "negativeSkillCount": 0,
+          "negativeSkillSeverity": 0,
+          "decorationCount": 0,
+          "usedDecorationSlots": 0,
+          "distinctDecorationTypes": 0,
+          "targetWastePoints": 0,
+          "targetUpgradeSteps": 0,
+          "extraPositiveSkillCount": 0,
+          "preferredSkillScore": 0,
+          "preferredSkillCount": 0,
+          "rankMaxDowngrade": 0,
+          "rankTotalDowngrade": 0,
+          "currentRankPieces": 5,
+          "defense": 541,
+          "resistanceTotal": -51,
+          "resistanceMinimum": -15,
+          "remainingSlots": 11
+        }
+      }
+    },
+    {
+      "names": [
+        "고급귀마개",
+        "숫돌사용고속화"
+      ],
+      "stats": {
+        "eligible": 1613,
+        "finalists": 700,
+        "checkedFinalists": 60,
+        "rankedPool": 60,
+        "beam": 12000,
+        "approximate": true,
+        "targetCount": 2,
+        "profile": "deep",
+        "timedOut": false,
+        "elapsedMs": 2738
+      },
+      "top": {
+        "armors": [
+          "가루루가페이크",
+          "배틀메일",
+          "헬리오스Ｘ암",
+          "그리드Z펄드",
+          "르와가Ｘ감바"
+        ],
+        "points": {
+          "skill_4d4485c17552": 15,
+          "skill_e43cf9f6c27e": 10
+        },
+        "metrics": {
+          "negativeSkillCount": 0,
+          "negativeSkillSeverity": 0,
+          "decorationCount": 1,
+          "usedDecorationSlots": 1,
+          "distinctDecorationTypes": 1,
+          "targetWastePoints": 0,
+          "targetUpgradeSteps": 0,
+          "extraPositiveSkillCount": 0,
+          "preferredSkillScore": 0,
+          "preferredSkillCount": 0,
+          "rankMaxDowngrade": 2,
+          "rankTotalDowngrade": 2,
+          "currentRankPieces": 4,
+          "defense": 362,
+          "resistanceTotal": -4,
+          "resistanceMinimum": -3,
+          "remainingSlots": 6
+        }
+      }
+    },
+    {
+      "names": [
+        "고급귀마개",
+        "통찰력+1"
+      ],
+      "stats": {
+        "eligible": 1613,
+        "finalists": 700,
+        "checkedFinalists": 60,
+        "rankedPool": 60,
+        "beam": 12000,
+        "approximate": true,
+        "targetCount": 2,
+        "profile": "deep",
+        "timedOut": false,
+        "elapsedMs": 3391
+      },
+      "top": {
+        "armors": [
+          "가루루가페이크",
+          "아캄토X우룬테",
+          "리오소울Z암",
+          "밀라루츠스파인",
+          "가루루가X그리브"
+        ],
+        "points": {
+          "skill_4d4485c17552": 15,
+          "skill_25c2859f7595": 20
+        },
+        "metrics": {
+          "negativeSkillCount": 0,
+          "negativeSkillSeverity": 0,
+          "decorationCount": 0,
+          "usedDecorationSlots": 0,
+          "distinctDecorationTypes": 0,
+          "targetWastePoints": 0,
+          "targetUpgradeSteps": 2,
+          "extraPositiveSkillCount": 0,
+          "preferredSkillScore": 0,
+          "preferredSkillCount": 0,
+          "rankMaxDowngrade": 0,
+          "rankTotalDowngrade": 0,
+          "currentRankPieces": 5,
+          "defense": 459,
+          "resistanceTotal": -2,
+          "resistanceMinimum": -13,
+          "remainingSlots": 11
+        }
+      }
+    },
+    {
+      "names": [
+        "세균연구가",
+        "명검"
+      ],
+      "stats": {
+        "eligible": 1613,
+        "finalists": 700,
+        "checkedFinalists": 362,
+        "rankedPool": 60,
+        "beam": 12000,
+        "approximate": true,
+        "targetCount": 2,
+        "profile": "deep",
+        "timedOut": false,
+        "elapsedMs": 7837
+      },
+      "top": {
+        "armors": [
+          "반역왕Ｊ해트",
+          "리벨리언X메일",
+          "반역왕Ｊ글러브",
+          "그리드Z펄드",
+          "카이저X그리브"
+        ],
+        "points": {
+          "skill_d6ea8f6b4907": 13,
+          "skill_0a0d7a1a0dde": 12
+        },
+        "metrics": {
+          "negativeSkillCount": 1,
+          "negativeSkillSeverity": 10,
+          "decorationCount": 1,
+          "usedDecorationSlots": 1,
+          "distinctDecorationTypes": 1,
+          "targetWastePoints": 5,
+          "targetUpgradeSteps": 0,
+          "extraPositiveSkillCount": 0,
+          "preferredSkillScore": 0,
+          "preferredSkillCount": 0,
+          "rankMaxDowngrade": 0,
+          "rankTotalDowngrade": 0,
+          "currentRankPieces": 5,
+          "defense": 527,
+          "resistanceTotal": -53,
+          "resistanceMinimum": -14,
+          "remainingSlots": 5
+        }
+      }
+    }
+  ]
+}

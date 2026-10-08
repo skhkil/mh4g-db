@@ -133,12 +133,15 @@ function deficitScore(points, req){
 
 function armorScore(a, req){
   let s = Number(a.slots||0)*0.65;
-  for(const [id,need] of Object.entries(req)){
+  const entries=Object.entries(req||{}).filter(([,need])=>Number(need)>0);
+  for(const [id,need] of entries){
     const v = Number(a.skills?.[id]||0);
     if(v>0) s += Math.min(v,need)*2.2;
     if(v<0) s += v*0.35;
   }
-  if(a.torsoUp) s += 4;
+  // 몸통배가는 아직 채워야 할 목표 스킬이 있을 때만 후보 생성에 가점을 준다.
+  // 호석/발굴무기만으로 목표가 완성된 경우 불필요한 몸통배가 세트가 빔을 점유하는 것을 막는다.
+  if(a.torsoUp && entries.length) s += 4;
   return s;
 }
 
@@ -466,6 +469,9 @@ export async function searchBuilds(options, data){
   if(!Object.keys(req).length && !requireTorsoUp) return {results:[],nearMisses:[],stats:{message:"목표 스킬 없음"}};
 
   const targetCount=Object.keys(req).length+(requireTorsoUp?1:0);
+  // 후보 생성 단계에서는 현재 호석(보유 발굴무기 고정 스킬을 합산한 값 포함)으로
+  // 이미 충족한 포인트를 다시 방어구에서 쫓지 않는다. 최종 검증은 여전히 전체 req로 수행한다.
+  const generationReq=Object.fromEntries(Object.entries(req).map(([id,need])=>[id,Math.max(0,Number(need||0)-Math.max(0,Number(charm?.skills?.[id]||0))) ]).filter(([,need])=>need>0));
   const profile=autoSearchProfile(targetCount);
   const budget=Math.max(1000,Number(timeBudgetMs||profile.timeBudgetMs));
   const startedAt=Date.now();
@@ -479,7 +485,7 @@ export async function searchBuilds(options, data){
   });
 
   const byPart=Object.fromEntries(PARTS.map(p=>[p, eligible.filter(a=>a.part===p)
-    .sort((a,b)=>armorScore(b,req)-armorScore(a,req)||compareArmorGenerationTie(a,b,rank))
+    .sort((a,b)=>armorScore(b,generationReq)-armorScore(a,generationReq)||compareArmorGenerationTie(a,b,rank))
     .slice(0,profile.partLimit)]));
 
   if(PARTS.some(p=>byPart[p].length===0)){
@@ -495,7 +501,7 @@ export async function searchBuilds(options, data){
     for(const st of beam){
       for(const armor of byPart[part]){
         const arr=[...st.armors,armor];
-        let score=arr.reduce((sum,a)=>sum+armorScore(a,req),0);
+        let score=arr.reduce((sum,a)=>sum+armorScore(a,generationReq),0);
         if(requireTorsoUp && arr.some(a=>a?.part!=="body"&&a?.torsoUp)) score+=18;
         const body=arr.find(a=>a.part==="body");
         const torso=includeTorsoUp ? arr.filter(a=>a.torsoUp).length : 0;

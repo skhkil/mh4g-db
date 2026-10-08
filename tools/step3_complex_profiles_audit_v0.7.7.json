@@ -1,0 +1,48 @@
+{
+  "version": "0.7.7-step3-complex-profiles",
+  "ok": true,
+  "runs": [
+    {
+      "names": [
+        "고급귀마개",
+        "숫돌사용고속화",
+        "통찰력+1"
+      ],
+      "elapsedMs": 5521,
+      "profile": "balanced3",
+      "exact": 5,
+      "near": 0,
+      "timedOut": false,
+      "pass": true
+    },
+    {
+      "names": [
+        "고급귀마개",
+        "숫돌사용고속화",
+        "통찰력+1",
+        "회피성능+2"
+      ],
+      "elapsedMs": 8149,
+      "profile": "complex4",
+      "exact": 5,
+      "near": 3,
+      "timedOut": true,
+      "pass": true
+    },
+    {
+      "names": [
+        "고급귀마개",
+        "숫돌사용고속화",
+        "통찰력+1",
+        "회피성능+2",
+        "예리도레벨+1"
+      ],
+      "elapsedMs": 5999,
+      "profile": "complex5",
+      "exact": 0,
+      "near": 3,
+      "timedOut": false,
+      "pass": true
+    }
+  ]
+}
