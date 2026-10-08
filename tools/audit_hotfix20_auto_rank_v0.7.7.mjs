@@ -48,7 +48,7 @@ check('resistance_metrics_match_calc',g.results.every(b=>{
   return Number(b.metrics.resistanceTotal)===vals.reduce((s,v)=>s+v,0)&&Number(b.metrics.resistanceMinimum)===Math.min(...vals);
 }));
 
-function metricTuple(b){const m=b.metrics||{};return [m.negativeSkillCount,m.negativeSkillSeverity,m.usedDecorationSlots,m.decorationCount,m.distinctDecorationTypes,m.targetWastePoints,-m.targetUpgradeSteps,-m.extraPositiveSkillCount,m.rankMaxDowngrade,m.rankTotalDowngrade,-m.defense,-m.resistanceTotal,-m.resistanceMinimum,-m.remainingSlots].map(Number)}
+function metricTuple(b){const m=b.metrics||{};return [-m.preferredSkillScore,-m.preferredSkillCount,-m.extraPositiveSkillCount,-m.targetUpgradeSteps,m.negativeSkillCount,m.negativeSkillSeverity,-m.remainingSlots,m.targetWastePoints,m.usedDecorationSlots,m.decorationCount,m.distinctDecorationTypes,m.rankMaxDowngrade,m.rankTotalDowngrade,-m.defense,-m.resistanceTotal,-m.resistanceMinimum].map(Number)}
 function leq(a,b){for(let i=0;i<a.length;i++){if(a[i]<b[i])return true;if(a[i]>b[i])return false}return true}
 check('ranking_lexicographic_order',g.results.every((b,i,arr)=>i===0||leq(metricTuple(arr[i-1]),metricTuple(b))));
 

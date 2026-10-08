@@ -53,7 +53,8 @@ for(const names of scenarios){
 const edgemaster=activation('명검');
 const satisfied=await searchBuilds({targetActivationIds:[edgemaster.activationId],hunterType:'blade',rank:'g',charm:{skills:{[edgemaster.skillId]:10},slots:0},weaponSlots:0,allowDecorations:true,includeTorsoUp:true,limit:5,timeBudgetMs:7000},data);
 expect('resource_satisfied_has_result',satisfied.results.length>0,JSON.stringify(satisfied.stats));
-expect('resource_satisfied_top_no_negative',(satisfied.results[0]?.metrics?.negativeSkillCount||0)===0,JSON.stringify(satisfied.results[0]?.metrics||{}));
+expect('resource_satisfied_extra_priority',Number(satisfied.results[0]?.metrics?.extraPositiveSkillCount||0)>=Math.max(...satisfied.results.slice(1).map(x=>Number(x?.metrics?.extraPositiveSkillCount||0)),0),JSON.stringify(satisfied.results.slice(0,3).map(x=>x.metrics)));
+expect('resource_satisfied_has_negative_free_alternative',satisfied.results.some(x=>(x?.metrics?.negativeSkillCount||0)===0),JSON.stringify(satisfied.results.slice(0,5).map(x=>x.metrics)));
 expect('resource_satisfied_target_exact',Number(satisfied.results[0]?.calc?.points?.[edgemaster.skillId]||0)===10,`have=${satisfied.results[0]?.calc?.points?.[edgemaster.skillId]}`);
 
 const report={ok:errors.length===0,version:'0.7.7-step3-calculation-integrity-2',checks,errors,scenarioResults};

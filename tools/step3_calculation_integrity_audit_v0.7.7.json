@@ -106,7 +106,8 @@
     "scenario_세균연구가+명검_4_slot_capacity": true,
     "scenario_세균연구가+명검_4_metrics_slots": true,
     "resource_satisfied_has_result": true,
-    "resource_satisfied_top_no_negative": true,
+    "resource_satisfied_extra_priority": true,
+    "resource_satisfied_has_negative_free_alternative": true,
     "resource_satisfied_target_exact": true
   },
   "errors": [],
@@ -125,37 +126,37 @@
         "targetCount": 1,
         "profile": "deep",
         "timedOut": false,
-        "elapsedMs": 4829
+        "elapsedMs": 3829
       },
       "top": {
         "armors": [
           "가루루가페이크",
-          "밀라아르마하이드",
-          "가루루가암",
-          "엑스제로Z코일",
-          "길드나이트Ｘ부츠"
+          "가루루가X메일",
+          "반역왕Ｊ글러브",
+          "그리드Z펄드",
+          "르와가Ｘ감바"
         ],
         "points": {
-          "skill_4d4485c17552": 15
+          "skill_4d4485c17552": 30
         },
         "metrics": {
           "negativeSkillCount": 0,
           "negativeSkillSeverity": 0,
-          "decorationCount": 0,
-          "usedDecorationSlots": 0,
-          "distinctDecorationTypes": 0,
-          "targetWastePoints": 0,
+          "decorationCount": 4,
+          "usedDecorationSlots": 9,
+          "distinctDecorationTypes": 3,
+          "targetWastePoints": 15,
           "targetUpgradeSteps": 0,
-          "extraPositiveSkillCount": 1,
+          "extraPositiveSkillCount": 3,
           "preferredSkillScore": 0,
           "preferredSkillCount": 0,
-          "rankMaxDowngrade": 2,
-          "rankTotalDowngrade": 2,
-          "currentRankPieces": 4,
-          "defense": 406,
-          "resistanceTotal": 0,
-          "resistanceMinimum": -6,
-          "remainingSlots": 14
+          "rankMaxDowngrade": 0,
+          "rankTotalDowngrade": 0,
+          "currentRankPieces": 5,
+          "defense": 435,
+          "resistanceTotal": -19,
+          "resistanceMinimum": -8,
+          "remainingSlots": 0
         }
       }
     },
@@ -173,7 +174,7 @@
         "targetCount": 1,
         "profile": "deep",
         "timedOut": false,
-        "elapsedMs": 2751
+        "elapsedMs": 3223
       },
       "top": {
         "armors": [
@@ -187,11 +188,11 @@
           "skill_dc306dbb4ef6": 20
         },
         "metrics": {
-          "negativeSkillCount": 1,
-          "negativeSkillSeverity": 10,
-          "decorationCount": 0,
-          "usedDecorationSlots": 0,
-          "distinctDecorationTypes": 0,
+          "negativeSkillCount": 0,
+          "negativeSkillSeverity": 0,
+          "decorationCount": 1,
+          "usedDecorationSlots": 1,
+          "distinctDecorationTypes": 1,
           "targetWastePoints": 10,
           "targetUpgradeSteps": 0,
           "extraPositiveSkillCount": 2,
@@ -203,7 +204,7 @@
           "defense": 530,
           "resistanceTotal": -51,
           "resistanceMinimum": -14,
-          "remainingSlots": 3
+          "remainingSlots": 2
         }
       }
     },
@@ -222,7 +223,7 @@
         "targetCount": 2,
         "profile": "deep",
         "timedOut": false,
-        "elapsedMs": 4107
+        "elapsedMs": 3789
       },
       "top": {
         "armors": [
@@ -239,12 +240,12 @@
         "metrics": {
           "negativeSkillCount": 0,
           "negativeSkillSeverity": 0,
-          "decorationCount": 2,
-          "usedDecorationSlots": 2,
-          "distinctDecorationTypes": 1,
+          "decorationCount": 5,
+          "usedDecorationSlots": 9,
+          "distinctDecorationTypes": 3,
           "targetWastePoints": 17,
           "targetUpgradeSteps": 0,
-          "extraPositiveSkillCount": 0,
+          "extraPositiveSkillCount": 2,
           "preferredSkillScore": 0,
           "preferredSkillCount": 0,
           "rankMaxDowngrade": 0,
@@ -253,7 +254,7 @@
           "defense": 435,
           "resistanceTotal": -19,
           "resistanceMinimum": -8,
-          "remainingSlots": 7
+          "remainingSlots": 0
         }
       }
     },
@@ -272,38 +273,38 @@
         "targetCount": 2,
         "profile": "deep",
         "timedOut": false,
-        "elapsedMs": 5034
+        "elapsedMs": 4543
       },
       "top": {
         "armors": [
           "가루루가페이크",
           "가루루가X메일",
           "리오소울Z암",
-          "그리드Z펄드",
+          "리오소울Z코일",
           "리오소울Z그리브"
         ],
         "points": {
-          "skill_4d4485c17552": 25,
-          "skill_25c2859f7595": 14
+          "skill_4d4485c17552": 23,
+          "skill_25c2859f7595": 20
         },
         "metrics": {
           "negativeSkillCount": 0,
           "negativeSkillSeverity": 0,
-          "decorationCount": 1,
-          "usedDecorationSlots": 2,
-          "distinctDecorationTypes": 1,
-          "targetWastePoints": 14,
-          "targetUpgradeSteps": 0,
+          "decorationCount": 4,
+          "usedDecorationSlots": 8,
+          "distinctDecorationTypes": 4,
+          "targetWastePoints": 8,
+          "targetUpgradeSteps": 2,
           "extraPositiveSkillCount": 2,
           "preferredSkillScore": 0,
           "preferredSkillCount": 0,
           "rankMaxDowngrade": 0,
           "rankTotalDowngrade": 0,
           "currentRankPieces": 5,
-          "defense": 431,
-          "resistanceTotal": -4,
-          "resistanceMinimum": -7,
-          "remainingSlots": 7
+          "defense": 417,
+          "resistanceTotal": 0,
+          "resistanceMinimum": -9,
+          "remainingSlots": 3
         }
       }
     },
@@ -315,14 +316,14 @@
       "stats": {
         "eligible": 1613,
         "finalists": 700,
-        "checkedFinalists": 362,
+        "checkedFinalists": 408,
         "rankedPool": 60,
         "beam": 12000,
         "approximate": true,
         "targetCount": 2,
         "profile": "deep",
         "timedOut": false,
-        "elapsedMs": 8030
+        "elapsedMs": 9101
       },
       "top": {
         "armors": [
@@ -333,17 +334,17 @@
           "카이저X그리브"
         ],
         "points": {
-          "skill_d6ea8f6b4907": 13,
+          "skill_d6ea8f6b4907": 15,
           "skill_0a0d7a1a0dde": 12
         },
         "metrics": {
-          "negativeSkillCount": 1,
-          "negativeSkillSeverity": 10,
-          "decorationCount": 1,
-          "usedDecorationSlots": 1,
-          "distinctDecorationTypes": 1,
-          "targetWastePoints": 5,
-          "targetUpgradeSteps": 0,
+          "negativeSkillCount": 0,
+          "negativeSkillSeverity": 0,
+          "decorationCount": 3,
+          "usedDecorationSlots": 5,
+          "distinctDecorationTypes": 2,
+          "targetWastePoints": 2,
+          "targetUpgradeSteps": 1,
           "extraPositiveSkillCount": 0,
           "preferredSkillScore": 0,
           "preferredSkillCount": 0,
@@ -353,7 +354,7 @@
           "defense": 527,
           "resistanceTotal": -53,
           "resistanceMinimum": -14,
-          "remainingSlots": 5
+          "remainingSlots": 1
         }
       }
     }

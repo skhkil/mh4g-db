@@ -96,11 +96,11 @@
     "topMetrics": {
       "negativeSkillCount": 1,
       "negativeSkillSeverity": 10,
-      "decorationCount": 1,
-      "usedDecorationSlots": 1,
+      "decorationCount": 2,
+      "usedDecorationSlots": 2,
       "distinctDecorationTypes": 1,
-      "targetWastePoints": 5,
-      "targetUpgradeSteps": 0,
+      "targetWastePoints": 2,
+      "targetUpgradeSteps": 1,
       "extraPositiveSkillCount": 0,
       "preferredSkillScore": 0,
       "preferredSkillCount": 0,
@@ -110,14 +110,14 @@
       "defense": 527,
       "resistanceTotal": -53,
       "resistanceMinimum": -14,
-      "remainingSlots": 2
+      "remainingSlots": 1
     },
     "topActivated": [
       {
         "skillId": "skill_d6ea8f6b4907",
-        "points": 13,
-        "name": "세균연구가",
-        "threshold": 10
+        "points": 15,
+        "name": "바이오닥터",
+        "threshold": 15
       },
       {
         "skillId": "skill_0a0d7a1a0dde",

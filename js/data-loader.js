@@ -1,4 +1,4 @@
-const DATA_VERSION = "0.7.7-auto-optimizer2";
+const DATA_VERSION = "0.7.7-auto-optimizer3";
 
 const FULL_FILES = {
   skills:"./data/skills.json",

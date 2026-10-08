@@ -192,6 +192,29 @@ function preferredSkillMetrics(calc,preferredSkillWeights={}){
   return {preferredSkillScore,preferredSkillCount};
 }
 
+function residualCompletionPotential(calc,req,skills,decorations,freeSlots=0){
+  const slots=Math.max(0,Number(freeSlots||0));
+  if(slots<=0)return {count:0,score:0};
+  const targetIds=new Set(Object.keys(req||{}));
+  let count=0,score=0;
+  for(const skill of skills||[]){
+    if(targetIds.has(skill.id))continue;
+    const have=Number(calc?.points?.[skill.id]||0);
+    const next=(skill.activations||[]).map(a=>Number(a.points)).filter(v=>v>0&&v>have).sort((a,b)=>a-b)[0];
+    if(!Number.isFinite(next))continue;
+    const need=next-have;
+    let minSlots=Infinity;
+    for(const d of decorations||[]){
+      const gain=Math.max(0,Number(d?.skills?.[skill.id]||0));
+      const ds=Math.max(1,Number(d?.slots||0));
+      if(!gain)continue;
+      minSlots=Math.min(minSlots,Math.ceil(need/gain)*ds);
+    }
+    if(minSlots<=slots){count+=1;score+=Math.max(1,slots-minSlots+1);}
+  }
+  return {count,score};
+}
+
 function practicalBuildMetrics(armors,progression,calc,containers,usedDecorationSlots){
   const max=Number.isFinite(RANK_ORDER[progression])?RANK_ORDER[progression]:RANK_ORDER.g;
   const downgrades=armors.map(a=>Math.max(0,max-(RANK_ORDER[a?.rank]??0)));
@@ -572,30 +595,127 @@ function compareResidualStates(a,b){
     ||a.addedCount-b.addedCount;
 }
 
+function repackDecorationPlacements(containers,placements,torsoUpCount=0){
+  const caps=Object.fromEntries((containers||[]).map(c=>[c.id,Number(c.capacity||0)]));
+  const fixed=[];const movable=[];
+  for(const p of placements||[]){
+    if(torsoUpCount>0&&p?.container==='body')fixed.push(p);else movable.push(p);
+  }
+  for(const p of fixed)caps[p.container]=Math.max(0,Number(caps[p.container]||0)-Number(p?.deco?.slots||0));
+  const order=Object.fromEntries((containers||[]).map((c,i)=>[c.id,i]));
+  const eligibleIds=(containers||[]).map(c=>c.id).filter(id=>!(torsoUpCount>0&&id==='body'));
+  const sorted=[...movable].sort((a,b)=>Number(b?.deco?.slots||0)-Number(a?.deco?.slots||0));
+  const out=[...fixed];
+  for(const p of sorted){
+    const slots=Math.max(1,Number(p?.deco?.slots||0));
+    const fit=eligibleIds.filter(id=>Number(caps[id]||0)>=slots).sort((a,b)=>Number(caps[a])-Number(caps[b])||(order[a]??99)-(order[b]??99));
+    if(!fit.length)return placements;
+    const id=fit[0];caps[id]-=slots;out.push({...p,container:id});
+  }
+  return out;
+}
+
+function optimizePartialSkillCompletions(basePoints,containers,placements,decorations,req,torsoUpCount,skills,preferredSkillWeights={},maxStates=180){
+  const remainingContainers=remainingContainersAfterPlacements(containers,placements);
+  const free=remainingContainers.reduce((sum,c)=>sum+Number(c?.capacity||0),0);
+  if(free<=0)return {placements,points:basePoints};
+  const targetIds=new Set(Object.keys(req||{}));
+  const partials=[];
+  for(const skill of skills||[]){
+    if(targetIds.has(skill.id))continue;
+    const have=Number(basePoints?.[skill.id]||0);
+    if(have<=0)continue;
+    const next=(skill.activations||[]).map(a=>Number(a.points)).filter(v=>v>0&&v>have).sort((a,b)=>a-b)[0];
+    if(!Number.isFinite(next))continue;
+    const gap=next-have;
+    let minSlots=Infinity;
+    for(const d of decorations||[]){
+      const gain=Math.max(0,Number(d?.skills?.[skill.id]||0));
+      const ds=Math.max(1,Number(d?.slots||0));
+      if(!gain)continue;
+      minSlots=Math.min(minSlots,Math.ceil(gap/gain)*ds);
+    }
+    if(minSlots<=free)partials.push({id:skill.id,next,gap,minSlots,preferred:Number(preferredSkillWeights?.[skill.id]||0)});
+  }
+  partials.sort((a,b)=>b.preferred-a.preferred||a.minSlots-b.minSlots||a.gap-b.gap).splice(6);
+  if(!partials.length)return {placements,points:basePoints};
+  const combos=[];
+  const build=(start,left,arr)=>{
+    if(arr.length)combos.push([...arr]);
+    if(left<=0)return;
+    for(let i=start;i<partials.length;i++){arr.push(partials[i]);build(i+1,left-1,arr);arr.pop();}
+  };
+  build(0,Math.min(3,partials.length),[]);
+  combos.sort((a,b)=>b.length-a.length||b.reduce((s,x)=>s+x.preferred,0)-a.reduce((s,x)=>s+x.preferred,0)||a.reduce((s,x)=>s+x.minSlots,0)-b.reduce((s,x)=>s+x.minSlots,0));
+  let best={placements,points:basePoints};
+  let bestState={points:basePoints,remaining:Object.fromEntries(remainingContainers.map(c=>[c.id,Number(c.capacity||0)])),addedCount:0};
+  bestState.metrics=residualStateMetrics(bestState.points,req,skills,preferredSkillWeights,bestState.remaining);
+  for(const combo of combos.slice(0,28)){
+    if(combo.reduce((sum,x)=>sum+x.minSlots,0)>free)continue;
+    const extReq={...req};for(const x of combo)extReq[x.id]=x.next;
+    const solved=solveDecorations(basePoints,remainingContainers,decorations,extReq,torsoUpCount,maxStates);
+    if(!solved.complete||!targetRequirementsSatisfied(solved.points,extReq))continue;
+    const rem=remainingContainerCapacities(remainingContainers,solved.placements||[]);
+    const state={points:solved.points,remaining:rem,addedCount:(solved.placements||[]).length};
+    state.metrics=residualStateMetrics(state.points,req,skills,preferredSkillWeights,state.remaining);
+    if(compareResidualStates(state,bestState)<0){bestState=state;best={placements:[...(placements||[]),...(solved.placements||[])],points:solved.points};}
+  }
+  return best;
+}
+
 function optimizeResidualDecorations(basePoints,containers,placements,decorations,req,torsoUpCount,skills,preferredSkillWeights={},maxStates=260){
   const remaining=remainingContainerCapacities(containers,placements);
-  if(Object.values(remaining).every(v=>Number(v)<=0))return {placements,points:basePoints};
+  const totalFree=Object.values(remaining).reduce((s,v)=>s+Number(v||0),0);
+  if(totalFree<=0)return {placements,points:basePoints};
   const baseActivated=getActivatedSkills(basePoints,skills);
   const negativeIds=new Set(baseActivated.filter(a=>Number(a.threshold)<0).map(a=>a.skillId));
   const targetIds=new Set(Object.keys(req||{}));
-  const usefulSkillIds=new Set(negativeIds);
+  const completion=[];
   for(const s of skills||[]){
     const have=Number(basePoints?.[s.id]||0);
-    if((s.activations||[]).some(a=>Number(a.points)>have&&Number(a.points)>0))usefulSkillIds.add(s.id);
+    const next=(s.activations||[]).map(a=>Number(a.points)).filter(v=>v>0&&v>have).sort((a,b)=>a-b)[0];
+    if(!Number.isFinite(next))continue;
+    const gap=next-have;
+    let minSlots=Infinity;
+    for(const d of decorations||[]){
+      const gain=Math.max(0,Number(d?.skills?.[s.id]||0));
+      const ds=Math.max(1,Number(d?.slots||0));
+      if(!gain)continue;
+      minSlots=Math.min(minSlots,Math.ceil(gap/gain)*ds);
+    }
+    if(minSlots<=totalFree)completion.push({id:s.id,next,gap,minSlots,partial:have>0,preferred:Number(preferredSkillWeights?.[s.id]||0),target:targetIds.has(s.id)});
   }
+  completion.sort((a,b)=>Number(b.partial)-Number(a.partial)||b.preferred-a.preferred||a.minSlots-b.minSlots||a.gap-b.gap||Number(a.target)-Number(b.target));
+  const partialCompletion=completion.filter(x=>x.partial);
+  const completionSkillIds=new Set([...partialCompletion.map(x=>x.id),...completion.filter(x=>!x.partial).slice(0,12).map(x=>x.id)]);
+  const usefulSkillIds=new Set([...negativeIds,...completionSkillIds]);
+  const completionMeta=Object.fromEntries(completion.map(x=>[x.id,x]));
   const candidates=(decorations||[])
     .filter(d=>Number(d.slots)>=1&&Number(d.slots)<=3)
     .filter(d=>Object.entries(d.skills||{}).some(([id,v])=>Number(v)>0&&usefulSkillIds.has(id)))
     .sort((a,b)=>{
-      const av=Object.entries(a.skills||{}).reduce((sum,[id,v])=>sum+(usefulSkillIds.has(id)?Math.max(0,Number(v)||0):0),0)/Math.max(1,Number(a.slots||1));
-      const bv=Object.entries(b.skills||{}).reduce((sum,[id,v])=>sum+(usefulSkillIds.has(id)?Math.max(0,Number(v)||0):0),0)/Math.max(1,Number(b.slots||1));
-      return bv-av||Number(a.slots||0)-Number(b.slots||0);
+      const score=d=>{
+        const ds=Math.max(1,Number(d.slots||1));
+        let best=0;
+        for(const [id,vRaw] of Object.entries(d.skills||{})){
+          const v=Math.max(0,Number(vRaw)||0);if(!v||!usefulSkillIds.has(id))continue;
+          const meta=completionMeta[id];
+          if(meta){
+            const completionBoost=v>=meta.gap?6:0;
+            const partialBoost=meta.partial?10:0;
+            const preferredBoost=Math.max(0,meta.preferred)*2;
+            best=Math.max(best,partialBoost+completionBoost+preferredBoost+(v/ds)*3+1/Math.max(1,meta.minSlots));
+          }else if(negativeIds.has(id))best=Math.max(best,(v/ds)*2);
+        }
+        return best;
+      };
+      return score(b)-score(a)||Number(a.slots||0)-Number(b.slots||0);
     }).slice(0,36);
   if(!candidates.length)return {placements,points:basePoints};
   const seed={points:{...basePoints},remaining:{...remaining},added:[],addedCount:0};
   seed.metrics=residualStateMetrics(seed.points,req,skills,preferredSkillWeights,seed.remaining);
   let states=[seed],best=seed;
-  const maxSteps=Math.min(8,Object.values(remaining).reduce((s,v)=>s+Number(v||0),0));
+  const maxSteps=Math.min(8,totalFree);
   const relevantIds=[...usefulSkillIds];
   for(let step=0;step<maxSteps;step++){
     const expanded=[...states];
@@ -693,7 +813,7 @@ export async function searchBuilds(options, data){
         const targetState=extendTargetGenerationState(st,armor,req,includeTorsoUp);
         const efficiency=targetWasteForGeneration(targetState.targetPoints,req,targetMeta);
         const feasibility=useFeasibility?generationFeasibility(targetState,req,decorationEfficiency,fixedGenerationSlots+arr.reduce((sum,a)=>sum+Number(a?.slots||0),0)+Number(futureMaxSlots[partIndex]||0)):null;
-        next.push({armors:arr,score,efficientScore:score-efficiency.waste*3+efficiency.upgradeSteps*1.5,feasibility,...targetState});
+        next.push({armors:arr,score,efficientScore:score+efficiency.upgradeSteps*1.5,feasibility,targetWaste:efficiency.waste,...targetState});
       }
     }
     beam=selectGenerationBeam(next,profile.beamWidth,useFeasibility);
@@ -764,19 +884,26 @@ export async function searchBuilds(options, data){
   if(allowDecorations&&rankedPool.length){
     const provisional=[...rankedPool].sort(compareRankedBuilds);
     const byFree=[...rankedPool].sort((a,b)=>(b.metrics?.remainingSlots||0)-(a.metrics?.remainingSlots||0)||compareRankedBuilds(a,b));
+    const byPotential=[...rankedPool].sort((a,b)=>{
+      const ap=residualCompletionPotential(a.calc,req,data.skills,data.decorations,a.metrics?.remainingSlots);
+      const bp=residualCompletionPotential(b.calc,req,data.skills,data.decorations,b.metrics?.remainingSlots);
+      return bp.count-ap.count||bp.score-ap.score||compareRankedBuilds(a,b);
+    });
     const selected=new Set();
-    const optimizeCap=Math.min(rankedPool.length,targetCount>=4?Math.max(4,Math.min(6,Number(limit||20))):Math.max(2,Math.min(3,Number(limit||20))));
-    for(const item of provisional.slice(0,targetCount>=4?optimizeCap:Math.ceil(optimizeCap/2)))selected.add(item);
-    for(const item of byFree.slice(0,optimizeCap)){
-      if(selected.size>=optimizeCap)break;
-      if(Number(item.metrics?.remainingSlots||0)>0)selected.add(item);
-    }
+    const optimizeCap=Math.min(rankedPool.length,targetCount>=4?Math.max(8,Math.min(14,Number(limit||20)+4)):Math.max(3,Math.min(5,Number(limit||20)+1)));
+    const laneCap=targetCount>=4?Math.max(4,Math.ceil(optimizeCap/2)):Math.max(2,Math.ceil(optimizeCap/2));
+    const addLane=(list,predicate=()=>true)=>{for(const item of list.slice(0,laneCap)){if(selected.size>=optimizeCap)break;if(predicate(item))selected.add(item);}};
+    addLane(provisional);
+    addLane(byPotential,item=>Number(item.metrics?.remainingSlots||0)>0);
+    addLane(byFree,item=>Number(item.metrics?.remainingSlots||0)>0);
     for(const item of selected){
       if(targetCount<4&&Number(item.metrics?.remainingSlots||0)<=0)continue;
       const {points,torsoUpCount}=baseBuildPoints(item.armors,charm,includeTorsoUp);
       const containers=containersForBuild(item.armors,charm.slots,weaponSlots);
       const compact=compactDecorationPlacements(points,item.decorations||[],data.decorations,req,torsoUpCount);
-      const optimized=optimizeResidualDecorations(compact.points,containers,compact.placements,data.decorations,req,torsoUpCount,data.skills,preferredSkillWeights,targetCount>=4?60:20);
+      const repackedPlacements=repackDecorationPlacements(containers,compact.placements,torsoUpCount);
+      const partial=optimizePartialSkillCompletions(compact.points,containers,repackedPlacements,data.decorations,req,torsoUpCount,data.skills,preferredSkillWeights,targetCount>=4?180:80);
+      const optimized=optimizeResidualDecorations(partial.points,containers,partial.placements,data.decorations,req,torsoUpCount,data.skills,preferredSkillWeights,targetCount>=4?60:20);
       const calc=calculateBuild({armors:item.armors,charm,weaponSlots,decorations:optimized.placements},data,includeTorsoUp);
       if(!targetRequirementsSatisfied(calc.points,req))continue;
       const decoMetrics=decorationBurden(optimized.placements);

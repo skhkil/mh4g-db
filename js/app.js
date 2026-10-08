@@ -1,5 +1,5 @@
-import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,loadArmorProgression,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-auto-optimizer2";
-import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-auto-optimizer2";
+import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,loadArmorProgression,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-auto-optimizer3";
+import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-auto-optimizer3";
 
 let data={skills:[],armors:[],armorSets:[],decorations:[],relicWeaponDecorations:[],decorationUnlocks:{decorations:{}},questUnlockIndex:{quests:{},targets:{}},eventMajorRewards:{quests:{}},weapons:[],weaponSummary:[],melodies:[],items:[],itemReferenceIndex:{items:{}},skillReferenceIndex:{items:{},categories:[]},meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],monsterReferenceIndex:{items:{}},dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],questReferenceIndex:{quests:{}},siteInfo:{},meta:{},weaponSkillPriorities:{weapons:{}}};
 let targets=[];
@@ -47,7 +47,7 @@ let restoringHistory=false;
 let historyRestoreToken=0;
 try{history.scrollRestoration="manual"}catch{}
 
-const APP_VERSION="0.7.7-auto-optimizer2";
+const APP_VERSION="0.7.7-auto-optimizer3";
 const boundEventGroups=new Set();
 let appEventsBound=false;
 function ensureRuntimeStatus(){

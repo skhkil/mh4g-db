@@ -7,7 +7,7 @@ OUT=ROOT/'tools'/'step3b_optimizer_e2e_v0.7.7.json'
 HTML=(ROOT/'index.html').read_text(encoding='utf-8').replace('<head>','<head><base href="http://app.local/">',1)
 EVASION='skill_977515684794'
 CHARMS=[{'id':'ukau-evasion5-s3','skills':{EVASION:5},'slots':3}]
-TARGETS=['심안','약점특효','회피성능+3','공격력UP【소】','예리도레벨+1']
+TARGETS=['심안','약점특효','회피성능+3','예리도레벨+1']
 UKAU=['우캄루X사쿠파케','카이저X메일','우캄루X사쿰페','카이저X펄드','우캄루X케마르']
 
 def handler(route):
@@ -49,11 +49,13 @@ def run(browser,width):
         txt=' '.join(matched.inner_text().split())
         for t in TARGETS:
             if t not in txt:errs.append('target missing:'+t)
-        if '내진' not in txt:errs.append('residual extra skill 내진 missing')
-        if '항진주【1】' not in txt:errs.append('항진주【1】 missing')
+        for extra in ['공격력UP【소】','내진']:
+            if extra not in txt:errs.append('residual extra skill missing:'+extra)
+        for deco in ['공격주【3】','통격주【1】','항진주【1】']:
+            if deco not in txt:errs.append('optimized decoration missing:'+deco)
         matched.click();pg.wait_for_timeout(200)
         manual=' '.join(pg.locator('#manualResult').inner_text().split())
-        for t in TARGETS+['내진']:
+        for t in TARGETS+['공격력UP【소】','내진']:
             if t not in manual:errs.append('manual apply missing:'+t)
     result={'width':width,'ok':not errs,'errors':errs,'cards':cards.count(),'matchedText':(' '.join(matched.inner_text().split())[:1800] if matched else None),'sampleCards':texts[:3]}
     ctx.close();return result

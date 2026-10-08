@@ -8,7 +8,7 @@
         "숫돌사용고속화",
         "통찰력+1"
       ],
-      "elapsedMs": 8265,
+      "elapsedMs": 7499,
       "profile": "balanced3",
       "exact": 5,
       "near": 0,
@@ -22,7 +22,7 @@
         "통찰력+1",
         "회피성능+2"
       ],
-      "elapsedMs": 8299,
+      "elapsedMs": 8767,
       "profile": "complex4",
       "exact": 5,
       "near": 3,
@@ -37,7 +37,7 @@
         "회피성능+2",
         "예리도레벨+1"
       ],
-      "elapsedMs": 8089,
+      "elapsedMs": 8064,
       "profile": "complex5",
       "exact": 3,
       "near": 3,
