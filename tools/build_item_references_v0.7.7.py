@@ -73,27 +73,18 @@ for qid,row in (qref.get('quests') or {}).items():
     q=qby.get(qid,{})
     for name in row.get('rewardItems') or []:
         add(name,'acquire',{'type':'quest','id':qid,'name':q.get('name',''),'questType':q.get('questType',row.get('questType','')),'level':q.get('level',row.get('level','')),'location':q.get('location',row.get('location','')),'objective':q.get('objective','')})
-# Event/episode quest notes: only parse the declared 주요 보수 segment, never the old 사용처 text.
-for q in quests:
-    note=str(q.get('note') or '')
-    m=re.search(r'주요\s*보수\s*:\s*([^/]+)',note)
-    if not m: continue
-    segment=m.group(1).strip()
-    found=material_matches(segment)
-    if not found and segment in by_name: found=[(segment,None)]
-    for name,_ in found:
-        add(name,'acquire',{'type':'quest','id':q.get('id'),'name':q.get('name',''),'questType':q.get('questType',''),'level':q.get('level',''),'location':q.get('location',''),'objective':q.get('objective','')})
+# STEP 2 final: quest acquisitions come only from canonical quest_reference_index.json.
 # Keep only useful entries, sort stable for UI.
 for rid,v in refs.items():
     v['acquire'].sort(key=lambda x:(x.get('type',''),x.get('monster',''),x.get('name',''),str(x.get('no',''))))
     v['uses'].sort(key=lambda x:(x.get('type',''),x.get('weaponType',''),x.get('name',''),x.get('result','')))
 useful={k:v for k,v in refs.items() if v['acquire'] or v['uses']}
-out={'version':'0.7.7-chat4-itemdb1','generated':'2026-09-16','itemCount':len(items),'indexedCount':len(useful),'items':useful}
+out={'version':'0.7.7-step2-final-xref','generated':'2026-10-08','itemCount':len(items),'indexedCount':len(useful),'items':useful}
 json.dump(out,open(P/'data/item_references.json','w',encoding='utf-8'),ensure_ascii=False,indent=2)
 # Runtime performance: keep the monolithic audit/source file, but serve one small reference file per item.
 shard_dir=P/'data'/'item_refs'; shard_dir.mkdir(exist_ok=True)
 for old_file in shard_dir.glob('*.json'): old_file.unlink()
-index={'version':'0.7.7-chat4-itemdb1','generated':'2026-09-16','items':{}}
+index={'version':'0.7.7-step2-final-xref','generated':'2026-10-08','items':{}}
 for iid,v in useful.items():
     payload={'id':iid,'acquire':v['acquire'],'uses':v['uses']}
     json.dump(payload,open(shard_dir/f'{iid}.json','w',encoding='utf-8'),ensure_ascii=False,separators=(',',':'))

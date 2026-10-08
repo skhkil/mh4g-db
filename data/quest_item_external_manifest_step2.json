@@ -1,0 +1,213 @@
+{
+  "version": "0.7.7-step2",
+  "generated": "2026-10-07T04:47:41",
+  "source": "https://w.atwiki.jp/3dsmh4g/pages/155.html + https://w.atwiki.jp/3dsmh4g/pages/173.html",
+  "policy": "Quest→Reward가 단일 원천. Item→Acquisition은 quest_reference_index에서 역생성.",
+  "verifiedPairs": [
+    {
+      "questNameJa": "USJ・火竜達の舞い",
+      "itemName": "스튜디오패스"
+    },
+    {
+      "questNameJa": "JUMP・新たなライバル！",
+      "itemName": "재보J티켓"
+    },
+    {
+      "questNameJa": "OP・イャンクックを追え！",
+      "itemName": "50베리의 수배서"
+    },
+    {
+      "questNameJa": "ケロロ軍曹・スカウト大作戦",
+      "itemName": "케른스타"
+    },
+    {
+      "questNameJa": "ネギま！・闇の世界に忍ぶ影",
+      "itemName": "매거진티켓"
+    },
+    {
+      "questNameJa": "武装戦線・男たちの覚悟！",
+      "itemName": "무장의 초대장"
+    },
+    {
+      "questNameJa": "ファミ通・突進と回転の脅威",
+      "itemName": "패미통 티켓"
+    },
+    {
+      "questNameJa": "犬夜叉・大妖の牙を巡る狩猟",
+      "itemName": "고대요괴의 이빨"
+    },
+    {
+      "questNameJa": "モンハン部・ガブラス狩猟戦線",
+      "itemName": "몬헌부가입신청서"
+    },
+    {
+      "questNameJa": "ユニクロ・アイデアを求めて",
+      "itemName": "몬클로티켓"
+    },
+    {
+      "questNameJa": "USJ・蒼と金の熱き競演！",
+      "itemName": "스튜디오G패스"
+    },
+    {
+      "questNameJa": "USJ・ザボアザギル3D",
+      "itemName": "스튜디오P패스"
+    },
+    {
+      "questNameJa": "JUMP・黒雷に染まる銀世界",
+      "itemName": "해적J티켓"
+    },
+    {
+      "questNameJa": "JUMP・極小鎧竜大熱戦",
+      "itemName": "전설J돛"
+    },
+    {
+      "questNameJa": "JUMP・決戦、炎の王！！",
+      "itemName": "전설J해적모자"
+    },
+    {
+      "questNameJa": "OP・最強の宴",
+      "itemName": "억만개의 수배서"
+    },
+    {
+      "questNameJa": "OP・氷の国から来た牙獣",
+      "itemName": "현상범수배서"
+    },
+    {
+      "questNameJa": "マガジン・鋼龍飛翔！",
+      "itemName": "명천의 별들"
+    },
+    {
+      "questNameJa": "クローズ・ヘッド達の激突！",
+      "itemName": "영란최강의 증표"
+    },
+    {
+      "questNameJa": "範馬刃牙・地上最強の食卓",
+      "itemName": "지상최강의 증명"
+    },
+    {
+      "questNameJa": "範馬刃牙・男一代",
+      "itemName": "용맹함의 그림"
+    },
+    {
+      "questNameJa": "ユニクロ・果てしなき挑戦",
+      "itemName": "유니클로티켓"
+    },
+    {
+      "questNameJa": "ファミ通・ケチャワチャ包囲網",
+      "itemName": "엠블럼티켓"
+    },
+    {
+      "questNameJa": "サンデー・闇に巣食う者",
+      "itemName": "선데이티켓"
+    },
+    {
+      "questNameJa": "銀の匙・卵の試食パーティ",
+      "itemName": "에조노티켓"
+    },
+    {
+      "questNameJa": "コロコロ・モンスターじゃい！",
+      "itemName": "골골티켓"
+    },
+    {
+      "questNameJa": "電撃・赤き飛竜の双雷",
+      "itemName": "전격티켓"
+    },
+    {
+      "questNameJa": "電撃・閃烈なる狩人達",
+      "itemName": "전격G티켓"
+    },
+    {
+      "questNameJa": "カプ本・マスコット対決！",
+      "itemName": "캡진수렵증간호"
+    },
+    {
+      "questNameJa": "モンハン部・赤組白組応援歌",
+      "itemName": "몬헌부인증서"
+    },
+    {
+      "questNameJa": "ゼルダの伝説・力と知恵と勇気",
+      "itemName": "트라이포스"
+    },
+    {
+      "questNameJa": "ゼルダの伝説・決戦の猛炎覇竜",
+      "itemName": "여신의 불꽃"
+    },
+    {
+      "questNameJa": "マリオ・キノコ好きブラザーズ",
+      "itemName": "슈퍼버섯"
+    },
+    {
+      "questNameJa": "砂漠に鳴らせ、勝ちどきの銅鑼",
+      "itemName": "호산룡티켓"
+    },
+    {
+      "questNameJa": "邪王の怒りは天蓋を衝きて",
+      "itemName": "사왕룡티켓"
+    },
+    {
+      "questNameJa": "金の仁王、並び立つ",
+      "itemName": "금사자티켓"
+    },
+    {
+      "questNameJa": "時代を翔ける龍",
+      "itemName": "흑식룡티켓"
+    },
+    {
+      "questNameJa": "大自然に響く狩猟讃歌",
+      "itemName": "뱀·개구리티켓"
+    },
+    {
+      "questNameJa": "かくもめでたきキリンかな",
+      "itemName": "환수티켓"
+    },
+    {
+      "questNameJa": "ファミ通・特別取材、天廻龍",
+      "itemName": "패미통쿠폰"
+    },
+    {
+      "questNameJa": "七つの大罪・魔神の眷属",
+      "itemName": "대죄인의 몽타주"
+    }
+  ],
+  "restoredQuestIds": [
+    "event-step2-jp-001",
+    "event-step2-jp-002",
+    "event-step2-jp-003",
+    "event-step2-jp-004",
+    "event-step2-jp-005",
+    "event-step2-jp-006",
+    "event-step2-jp-007",
+    "event-step2-jp-008",
+    "event-step2-jp-009",
+    "event-step2-jp-010",
+    "event-step2-jp-011",
+    "event-step2-jp-012",
+    "event-step2-jp-013",
+    "event-step2-jp-014",
+    "event-step2-jp-015",
+    "event-step2-jp-016",
+    "event-step2-jp-017",
+    "event-step2-jp-018",
+    "event-step2-jp-019",
+    "event-step2-jp-020",
+    "event-step2-jp-021",
+    "event-step2-jp-022",
+    "event-step2-jp-023"
+  ],
+  "missingItems": [],
+  "missingQuests": [],
+  "unresolvedNotes": [
+    {
+      "item": "포졸의 일기",
+      "status": "외부 MH4G 원문명/퀘스트명을 신뢰 가능한 자료에서 재확인하지 못해 링크 보류"
+    },
+    {
+      "item": "바르바레티켓",
+      "status": "MH4U DB quest_rewards/arena_rewards에 직접 보상행 없음; 이벤트 퀘스트 보상으로 단정하지 않고 링크 보류"
+    },
+    {
+      "item": "길드티켓",
+      "status": "여러 하위 이벤트의 확률 보상인 범용 티켓이므로 특정 1개 퀘스트로 단일 연결하지 않음"
+    }
+  ]
+}

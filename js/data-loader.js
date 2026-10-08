@@ -1,4 +1,4 @@
-const DATA_VERSION = "0.7.7-final-step1-1.5";
+const DATA_VERSION = "0.7.7-step2-final-xref";
 
 const FULL_FILES = {
   skills:"./data/skills.json",
@@ -6,7 +6,9 @@ const FULL_FILES = {
   armorSets:"./data/armor_sets.json",
   decorations:"./data/decorations.json",
   relicWeaponDecorations:"./data/relic_weapon_decorations.json",
-  decorationUnlocks:"./data/decoration_unlocks.json",eventMajorRewards:"./data/event_major_rewards.json",
+  decorationUnlocks:"./data/decoration_unlocks.json",
+  questUnlockIndex:"./data/quest_unlock_index.json",
+  eventMajorRewards:"./data/event_major_rewards.json",
   weapons:"./data/weapons.json",
   weaponSummary:"./data/weapon_summary.json",
   melodies:"./data/melodies.json",
@@ -49,7 +51,7 @@ export const FULL_DATA_KEYS = Object.freeze(Object.keys(FULL_FILES));
 const requestCache = new Map();
 
 function emptyValue(key){
-  return (key==="meta"||key==="siteInfo"||key==="weaponSkillPriorities"||key==="decorationUnlocks"||key==="eventMajorRewards"||key.endsWith("Index"))?{}:[];
+  return (key==="meta"||key==="siteInfo"||key==="weaponSkillPriorities"||key==="decorationUnlocks"||key==="questUnlockIndex"||key==="eventMajorRewards"||key.endsWith("Index"))?{}:[];
 }
 function versioned(url){
   return `${url}?v=${DATA_VERSION}`;
@@ -126,7 +128,7 @@ export function loadData(){
 export function classifyImported(name,json){
   const lower=name.toLowerCase();
   const rules=[
-    ["armor_sets","armorSets"],["armor","armors"],["decoration_unlocks","decorationUnlocks"],["event_major_rewards","eventMajorRewards"],["decor","decorations"],["weapon_summary","weaponSummary"],
+    ["armor_sets","armorSets"],["armor","armors"],["quest_unlock_index","questUnlockIndex"],["decoration_unlocks","decorationUnlocks"],["event_major_rewards","eventMajorRewards"],["decor","decorations"],["weapon_summary","weaponSummary"],
     ["weapon","weapons"],["skill_reference_index","skillReferenceIndex"],["skill","skills"],["item_reference_index","itemReferenceIndex"],["item","items"],["meal","meals"],
     ["monster_summary","monsterSummary"],["monster_details","monsterDetails"],["monster_rewards","monsterRewards"],["monster_reference_index","monsterReferenceIndex"],
     ["dragon_exchange","dragonExchange"],["dragon_sell","dragonSell"],["dragon_increase","dragonIncrease"],

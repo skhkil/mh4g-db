@@ -1,1 +1,1 @@
-{"id":"item_88cce141bb35","acquire":[],"uses":[{"type":"weapon","id":"weapon_7fa6a6f4afbf","name":"날이 부러진 검","weaponType":"한손검","method":"생산","count":3,"materials":"대죄인의 몽타주×3 오싹한 부리×1 교사룡 중소리갑각×5 고대의 거룡골×7"}]}
+{"id":"item_88cce141bb35","acquire":[{"type":"quest","id":"event-step2-jp-023","name":"일곱 개의 대죄·마신의 권속","questType":"event","level":"G★1","location":"원생림","objective":"가라라아자라 1마리 수렵"}],"uses":[{"type":"weapon","id":"weapon_7fa6a6f4afbf","name":"날이 부러진 검","weaponType":"한손검","method":"생산","count":3,"materials":"대죄인의 몽타주×3 오싹한 부리×1 교사룡 중소리갑각×5 고대의 거룡골×7"}]}

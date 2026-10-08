@@ -1,0 +1,19 @@
+{
+  "questCount": 595,
+  "restoredJapaneseEvents": 23,
+  "verifiedMh4gEventPairs": 41,
+  "questToItem": 5539,
+  "itemToQuest": 5539,
+  "questToMonster": 610,
+  "monsterToQuest": 610,
+  "unlockRelations": 232,
+  "unlockForward": 232,
+  "unlockReverse": 232,
+  "wyporiumExchangeRows": 139,
+  "wyporiumTargets": 139,
+  "decorationTargets": 42,
+  "needsReviewUnlocks": 18,
+  "issues": [],
+  "ok": true,
+  "note": "Prior STEP2 reported 611 monster links; reproducible current canonical source yields 610 after replaying the 572-base graph + 23 restored events. No mismatch exists between forward/reverse graphs."
+}

@@ -1,1 +1,1 @@
-{"id":"item_77665ac97313","acquire":[],"uses":[{"type":"armor","id":"armor_b8ab045ab4b2","name":"케로로페이크","part":"head","hunterType":"both","count":3,"materials":"ケロンスタ ー *3 위압적인 머리뼈*2 괴상어 톱니*2 개구리기름*3"}]}
+{"id":"item_77665ac97313","acquire":[{"type":"quest","id":"event-step2-jp-003","name":"케로로 중사·스카우트 대작전","questType":"event","level":"★2","location":"빙해","objective":"테츠카브라와 자보아자길 수렵"}],"uses":[{"type":"armor","id":"armor_b8ab045ab4b2","name":"케로로페이크","part":"head","hunterType":"both","count":3,"materials":"ケロンスタ ー *3 위압적인 머리뼈*2 괴상어 톱니*2 개구리기름*3"}]}

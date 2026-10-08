@@ -1,1 +1,1 @@
-{"id":"item_cd7901fa5dea","acquire":[{"type":"compose","no":50,"materialA":"소형나무통폭탄","materialB":"아이룰루","successRate":"90%","yield":"1"},{"type":"dragonSell","line":"사냥에 편리한 물건","points":"148"}],"uses":[]}
+{"id":"item_cd7901fa5dea","acquire":[{"type":"compose","no":50,"materialA":"소형나무통폭탄","materialB":"아이룰루","successRate":"90%","yield":"1"},{"type":"dragonSell","line":"사냥에 편리한 물건","points":"148"},{"type":"quest","id":"quest_4c5c7c76a518","name":"용사는 제왕의 불꽃을 받고","questType":"village","level":"★8","location":"지저 화산","objective":"리오레우스 1마리 수렵"}],"uses":[]}

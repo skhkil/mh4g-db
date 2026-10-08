@@ -1,1 +1,1 @@
-{"id":"item_mh4u_1396","acquire":[{"type":"quest","id":"event-g-059","name":"헌터의 기록: 리오 부부","questType":"event","level":"G★2","location":"천공산","objective":"리오레이아 1마리와 리오레우스 1마리 수렵"}],"uses":[{"type":"armor","id":"armor_e2aa66b20762","name":"고맙냥의 민폐(有難ネコ迷惑)","part":"head","hunterType":"both","count":2,"materials":"영웅의증표*2 · 발바닥스탬프*2 · 아이룰루*20 · 대장로티켓*1"}]}
+{"id":"item_mh4u_1396","acquire":[],"uses":[{"type":"armor","id":"armor_e2aa66b20762","name":"고맙냥의 민폐(有難ネコ迷惑)","part":"head","hunterType":"both","count":2,"materials":"영웅의증표*2 · 발바닥스탬프*2 · 아이룰루*20 · 대장로티켓*1"}]}

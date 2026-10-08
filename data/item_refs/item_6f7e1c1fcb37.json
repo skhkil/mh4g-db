@@ -1,1 +1,1 @@
-{"id":"item_6f7e1c1fcb37","acquire":[],"uses":[{"type":"weapon","id":"weapon_79304aad5ba5","name":"차지폭스","weaponType":"차지액스","method":"생산","count":3,"materials":"ファミ通ク ーポン×3 천회룡 강정화발톱×8 멜랑제광석×10 大長老チケットS×2"}]}
+{"id":"item_6f7e1c1fcb37","acquire":[{"type":"quest","id":"event-step2-jp-022","name":"패미통·특별취재, 천회룡!","questType":"event","level":"G★3","location":"금지된 땅","objective":"샤가르마가라 1마리 토벌"}],"uses":[{"type":"weapon","id":"weapon_79304aad5ba5","name":"차지폭스","weaponType":"차지액스","method":"생산","count":3,"materials":"ファミ通ク ーポン×3 천회룡 강정화발톱×8 멜랑제광석×10 大長老チケットS×2"}]}

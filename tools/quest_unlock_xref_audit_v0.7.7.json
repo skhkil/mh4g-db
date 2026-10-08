@@ -1,0 +1,12 @@
+{
+  "ok": true,
+  "relationCount": 232,
+  "forwardCount": 232,
+  "reverseCount": 232,
+  "wyporiumExchangeRows": 139,
+  "wyporiumTargets": 139,
+  "decorationTargets": 42,
+  "unresolvedCount": 0,
+  "needsReviewCount": 18,
+  "issues": []
+}

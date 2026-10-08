@@ -1,7 +1,7 @@
-import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,loadArmorProgression,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-final-step1-1.5";
-import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-final-step1-1.5";
+import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,loadArmorProgression,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-step2-final-xref";
+import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-step2-final-xref";
 
-let data={skills:[],armors:[],armorSets:[],decorations:[],relicWeaponDecorations:[],decorationUnlocks:{decorations:{}},eventMajorRewards:{quests:{}},weapons:[],weaponSummary:[],melodies:[],items:[],itemReferenceIndex:{items:{}},skillReferenceIndex:{items:{},categories:[]},meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],monsterReferenceIndex:{items:{}},dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],questReferenceIndex:{quests:{}},siteInfo:{},meta:{},weaponSkillPriorities:{weapons:{}}};
+let data={skills:[],armors:[],armorSets:[],decorations:[],relicWeaponDecorations:[],decorationUnlocks:{decorations:{}},questUnlockIndex:{quests:{},targets:{}},eventMajorRewards:{quests:{}},weapons:[],weaponSummary:[],melodies:[],items:[],itemReferenceIndex:{items:{}},skillReferenceIndex:{items:{},categories:[]},meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],monsterReferenceIndex:{items:{}},dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],questReferenceIndex:{quests:{}},siteInfo:{},meta:{},weaponSkillPriorities:{weapons:{}}};
 let targets=[];
 let latestAutoSearchResults=[];
 let latestAutoSearchNearMisses=[];
@@ -47,7 +47,7 @@ let restoringHistory=false;
 let historyRestoreToken=0;
 try{history.scrollRestoration="manual"}catch{}
 
-const APP_VERSION="0.7.7-final-step1-1.5";
+const APP_VERSION="0.7.7-step2-final-xref";
 const boundEventGroups=new Set();
 let appEventsBound=false;
 function ensureRuntimeStatus(){
@@ -1604,18 +1604,41 @@ function decorationCategories(d){
   return cats;
 }
 
+function questUnlocks(q){return data.questUnlockIndex?.quests?.[q?.id]?.unlocks||[]}
+function unlockQuestLink(x){return refButton(`${x.level||""} ${x.questName||"퀘스트"}`.trim(),"quest",{name:x.questName,questtype:x.questType})}
+function unlockTargetHtml(x){
+  const warn=x.confidence==="needs-review"?' <span class="muted" title="외부 자료에서 선행조건 이견/추가조건 가능성이 있어 검토 표시">⚠ 검토</span>':'';
+  if(x.targetType==="wyporium_exchange")return `${refButton(x.name||"용인족 교환","dragon",{view:"exchange",name:(x.name||"").replace(/^용인족 교환 · /,"")})}<small>${esc(x.effect||"")}${warn}</small>`;
+  if(x.targetType==="decoration")return `${refButton(x.name||"장식주","decoration",{name:x.name})}<small>${esc(x.effect||"")}${warn}</small>`;
+  return `<span><b>${esc(x.name||x.targetType||"해금")}</b><small>${esc(x.effect||"")}${warn}</small></span>`;
+}
+function questUnlockHtml(q){
+  const rows=questUnlocks(q);if(!rows.length)return "-";
+  const direct=rows.filter(x=>x.relation!=="indirect_material"), indirect=rows.filter(x=>x.relation==="indirect_material");
+  const chosen=[...direct.slice(0,3),...(direct.length?[]:indirect.slice(0,2))];
+  const rest=rows.length-chosen.length;
+  return `<div class="quest-unlock-list">${chosen.map(unlockTargetHtml).join("")}${rest>0?`<small class="muted">외 ${rest}건</small>`:""}</div>`;
+}
+function targetUnlockQuests(type,id){return data.questUnlockIndex?.targets?.[`${type}:${id}`]?.quests||[]}
+function targetQuestLinks(type,id){
+  const rows=targetUnlockQuests(type,id);if(!rows.length)return "";
+  const uniq=[];const seen=new Set();for(const x of rows){if(!seen.has(x.questId)){seen.add(x.questId);uniq.push(x)}}
+  return uniq.map(x=>`${unlockQuestLink(x)}${x.confidence==="needs-review"?' <span class="muted">⚠</span>':''}`).join(' <span class="muted">·</span> ');
+}
 function decorationUnlockRouteHtml(d){
+  const reverse=targetUnlockQuests("decoration",d.id);
+  if(reverse.length){
+    const unique=[];const seen=new Set();for(const x of reverse){if(!seen.has(x.questId)){seen.add(x.questId);unique.push(x)}}
+    return `<div><b>선행 퀘스트</b> ${unique.slice(0,4).map(unlockQuestLink).join(' <span class="muted">·</span> ')}</div><small class="muted">※ 직접 레시피 해금이 아니라 용인족 교환 소재가 열려 제작 경로가 생기는 관계입니다.</small>`;
+  }
   const ref=data.decorationUnlocks?.decorations?.[d.id];
   if(!ref)return '<span class="muted">확인된 해금 정보 없음</span>';
   const mats=ref.materials||[];
-  const explicit=mats.flatMap(m=>(m.unlocks||[]).map(u=>({material:m.name,unlock:u})));
   const keyMaterial=mats.find(m=>!/원주$/.test(m.name||"")&&(m.quests||[]).length)||mats.find(m=>(m.quests||[]).length);
-  const bits=[];
-  if(explicit.length){const x=explicit[0];bits.push(`<div><b>해금 연계</b> ${itemLink(x.material)} · ${esc(x.unlock)}</div>`)}
-  if(keyMaterial){const q=keyMaterial.quests[0];bits.push(`<div><b>소재 경로</b> ${itemLink(keyMaterial.name)} → ${refButton(`${q.level||""} ${q.name||"퀘스트"}`.trim(),"quest",{name:q.name,questtype:q.questType})}</div>`)}
-  if(!bits.length)return '<span class="muted">생산 소재 확인 · 별도 퀘스트 해금은 확인되지 않음</span>';
-  return bits.join("");
+  if(keyMaterial){const q=keyMaterial.quests[0];return `<div><b>소재 경로</b> ${itemLink(keyMaterial.name)} → ${refButton(`${q.level||""} ${q.name||"퀘스트"}`.trim(),"quest",{name:q.name,questtype:q.questType})}</div>`}
+  return '<span class="muted">생산 소재 확인 · 별도 퀘스트 해금은 확인되지 않음</span>';
 }
+
 function renderDecoTable(){
   const q=$("#decoSearch").value.trim().toLowerCase();
   const rank=$("#decoRankFilter")?.value||"all",slot=$("#decoSlotFilter")?.value||"all",cat=$("#decoCategoryFilter")?.value||"all";
@@ -1997,8 +2020,8 @@ function renderMonster(){
 function renderDragon(){
   const q=$("#dragonSearch").value.trim().toLowerCase();
   if(dragonView==="exchange"){
-    const rows=data.dragonExchange.filter(x=>!q||`${x.result} ${x.required} ${x.unlock}`.toLowerCase().includes(q)).map(x=>`<tr><td>${itemLink(x.result)}</td><td>${itemLink(x.required)}</td><td class="wrap-cell">${esc(x.unlock)}</td></tr>`);
-    renderTable("#dragonTable",["교환 아이템","필요 아이템","해금 조건/퀘스트"],rows);
+    const rows=data.dragonExchange.map((x,i)=>({...x,_index:i})).filter(x=>!q||`${x.result} ${x.required} ${x.unlock}`.toLowerCase().includes(q)).map(x=>{const links=targetQuestLinks("wyporium_exchange",`exchange:${x._index}`);return `<tr><td>${itemLink(x.result)}</td><td>${itemLink(x.required)}</td><td class="wrap-cell">${links||esc(x.unlock)}${links?`<small class="muted">${esc(x.unlock)}</small>`:""}</td></tr>`});
+    renderTable("#dragonTable",["교환 아이템","필요 아이템","해금 퀘스트"],rows);
   }else if(dragonView==="sell"){
     const rows=data.dragonSell.filter(x=>!q||`${x.line} ${x.name}`.toLowerCase().includes(q)).map(x=>`<tr><td>${esc(x.line)}</td><td>${itemLink(x.name)}</td><td>${esc(x.points)}</td></tr>`);
     renderTable("#dragonTable",["목록","물품","필요 여단P"],rows);
@@ -2113,7 +2136,7 @@ function questTypeFilterMatch(q,v){
 function questSearchCorpus(q){
   const key=String(q?.id||q?.name||"");
   if(questSearchCorpusCache.has(key))return questSearchCorpusCache.get(key);
-  const corpus=`${q.name||""} ${q.nameJa||""} ${q.nameEn||""} ${(q.aliases||[]).join(" ")} ${q.objective||""} ${q.objectiveEn||""} ${q.subObjective||""} ${q.subObjectiveEn||""} ${q.location||""} ${q.eventSeries||""} ${q.note||""} ${questTargetMonsters(q).join(" ")} ${questMajorRewardNames(q).join(" ")}`.toLowerCase();
+  const corpus=`${q.name||""} ${q.nameJa||""} ${q.nameEn||""} ${(q.aliases||[]).join(" ")} ${q.objective||""} ${q.objectiveEn||""} ${q.subObjective||""} ${q.subObjectiveEn||""} ${q.location||""} ${q.eventSeries||""} ${q.note||""} ${questTargetMonsters(q).join(" ")} ${questMajorRewardNames(q).join(" ")} ${questUnlocks(q).map(x=>`${x.name||""} ${x.effect||""}`).join(" ")}`.toLowerCase();
   questSearchCorpusCache.set(key,corpus);return corpus;
 }
 function renderQuest(){
@@ -2130,13 +2153,13 @@ function renderQuest(){
   });
   if(eventView){
     const questRoot=$("#questTable");if(questRoot)questRoot.className="quest-table-mode quest-table-event";
-    const rows=list.map(q=>`<tr><td>${esc(q.questTypeLabel||q.questType)}</td><td>${esc(q.level)}</td><td><strong>${esc(q.name)}</strong>${localizedNameSub(q)}${plannerIconButton("quest",q.id,{label:`${q.name} 즐겨찾기`})}</td><td class="wrap-cell">${esc(q.objective||"-")}</td><td class="wrap-cell quest-monsters">${questMonsterLinks(q)}</td><td class="wrap-cell quest-rewards">${questRewardLinks(q)}</td><td>${esc(q.location||"-")}</td><td>${esc(q.fee||"-")}</td><td>${esc(q.reward||"-")}</td><td>${esc(q.hrp||"-")}</td><td>${esc(q.time||"-")}</td><td class="wrap-cell">${esc(q.subObjective||"-")}</td><td>${esc(q.subReward||"-")}</td><td>${esc(q.subHrp||"-")}</td><td class="wrap-cell">${esc(q.conditions||"-")}</td></tr>`);
-    renderTable("#questTable",["구분","레벨","퀘스트","클리어 조건","몬스터","주요 보상","장소","계약금","보수금","HRP","시간","서브퀘스트","서브 보수","서브 HRP","특수조건"],rows);return;
+    const rows=list.map(q=>`<tr><td>${esc(q.questTypeLabel||q.questType)}</td><td>${esc(q.level)}</td><td><strong>${esc(q.name)}</strong>${localizedNameSub(q)}${plannerIconButton("quest",q.id,{label:`${q.name} 즐겨찾기`})}</td><td class="wrap-cell">${esc(q.objective||"-")}</td><td class="wrap-cell quest-monsters">${questMonsterLinks(q)}</td><td class="wrap-cell quest-rewards">${questRewardLinks(q)}</td><td class="wrap-cell quest-unlocks">${questUnlockHtml(q)}</td><td>${esc(q.location||"-")}</td><td>${esc(q.fee||"-")}</td><td>${esc(q.reward||"-")}</td><td>${esc(q.hrp||"-")}</td><td>${esc(q.time||"-")}</td><td class="wrap-cell">${esc(q.subObjective||"-")}</td><td>${esc(q.subReward||"-")}</td><td>${esc(q.subHrp||"-")}</td><td class="wrap-cell">${esc(q.conditions||"-")}</td></tr>`);
+    renderTable("#questTable",["구분","레벨","퀘스트","클리어 조건","몬스터","주요 보상","클리어 해금","장소","계약금","보수금","HRP","시간","서브퀘스트","서브 보수","서브 HRP","특수조건"],rows);return;
   }
   const detail=questView.endsWith("detail")||questView==="key";
   const questRoot=$("#questTable");if(questRoot)questRoot.className=`quest-table-mode ${detail?"quest-table-detail":"quest-table-summary"}`;
-  const rows=list.map(q=>detail?`<tr><td>${esc(q.questTypeLabel)}</td><td>${esc(q.level)}</td><td>${q.key?"○":""}</td><td><strong>${esc(q.name)}</strong>${localizedNameSub(q)}${plannerIconButton("quest",q.id,{label:`${q.name} 즐겨찾기`})}</td><td class="wrap-cell">${esc(q.objective)}</td><td class="wrap-cell quest-monsters">${questMonsterLinks(q)}</td><td class="wrap-cell quest-rewards">${questRewardLinks(q)}</td><td>${esc(q.location)}</td><td>${esc(q.fee)}</td><td>${esc(q.reward)}</td><td>${esc(q.time)}</td><td>${esc(q.conditions)}</td><td>${esc(q.note)}</td></tr>`:`<tr><td>${esc(q.level)}</td><td>${q.key?"○":""}</td><td><strong>${esc(q.name)}</strong>${localizedNameSub(q)}${plannerIconButton("quest",q.id,{label:`${q.name} 즐겨찾기`})}</td><td class="wrap-cell">${esc(q.objective)}</td><td class="wrap-cell quest-monsters">${questMonsterLinks(q)}</td><td class="wrap-cell quest-rewards">${questRewardLinks(q)}</td><td>${esc(q.location)}</td><td>${esc(q.note)}</td></tr>`);
-  renderTable("#questTable",detail?["구분","레벨","키","퀘스트","클리어 조건","몬스터","주요 보상","장소","계약금","보수금","시간","특수조건","비고"]:["레벨","키","퀘스트","클리어 조건","몬스터","주요 보상","장소","비고"],rows);
+  const rows=list.map(q=>detail?`<tr><td>${esc(q.questTypeLabel)}</td><td>${esc(q.level)}</td><td>${q.key?"○":""}</td><td><strong>${esc(q.name)}</strong>${localizedNameSub(q)}${plannerIconButton("quest",q.id,{label:`${q.name} 즐겨찾기`})}</td><td class="wrap-cell">${esc(q.objective)}</td><td class="wrap-cell quest-monsters">${questMonsterLinks(q)}</td><td class="wrap-cell quest-rewards">${questRewardLinks(q)}</td><td class="wrap-cell quest-unlocks">${questUnlockHtml(q)}</td><td>${esc(q.location)}</td><td>${esc(q.fee)}</td><td>${esc(q.reward)}</td><td>${esc(q.time)}</td><td>${esc(q.conditions)}</td><td>${esc(q.note)}</td></tr>`:`<tr><td>${esc(q.level)}</td><td>${q.key?"○":""}</td><td><strong>${esc(q.name)}</strong>${localizedNameSub(q)}${plannerIconButton("quest",q.id,{label:`${q.name} 즐겨찾기`})}</td><td class="wrap-cell">${esc(q.objective)}</td><td class="wrap-cell quest-monsters">${questMonsterLinks(q)}</td><td class="wrap-cell quest-rewards">${questRewardLinks(q)}</td><td class="wrap-cell quest-unlocks">${questUnlockHtml(q)}</td><td>${esc(q.location)}</td><td>${esc(q.note)}</td></tr>`);
+  renderTable("#questTable",detail?["구분","레벨","키","퀘스트","클리어 조건","몬스터","주요 보상","클리어 해금","장소","계약금","보수금","시간","특수조건","비고"]:["레벨","키","퀘스트","클리어 조건","몬스터","주요 보상","클리어 해금","장소","비고"],rows);
 }
 
 function eventViewTitleText(view){
@@ -2260,7 +2283,7 @@ function dataKeysForPage(page){
   if(page==="armor-set")return ["armorSets"];
   if(page==="weapon")return ["weapons","items"];
   if(page==="weapon-summary")return ["weaponSummary"];
-  if(page==="decoration")return ["decorations","decorationUnlocks","items","itemReferenceIndex","skillReferenceIndex"];
+  if(page==="decoration")return ["decorations","decorationUnlocks","questUnlockIndex","items","itemReferenceIndex","skillReferenceIndex"];
   if(page==="skill")return ["items","skillReferenceIndex"];
   if(page==="melody")return ["melodies"];
   if(page==="meal")return ["meals"];
@@ -2271,10 +2294,10 @@ function dataKeysForPage(page){
     if(monsterView==="uses")return ["monsterSummary","monsterReferenceIndex","items"];
     return ["monsterSummary"];
   }
-  if(page==="dragon")return dragonView==="exchange"?["dragonExchange","items"]:dragonView==="sell"?["dragonSell","items"]:["dragonIncrease","items"];
+  if(page==="dragon")return dragonView==="exchange"?["dragonExchange","questUnlockIndex","items"]:dragonView==="sell"?["dragonSell","items"]:["dragonIncrease","items"];
   if(page==="item")return ["items","itemReferenceIndex"];
   if(page==="compose")return ["compositions","items"];
-  if(page==="quest")return ["quests","questReferenceIndex","eventMajorRewards","monsterSummary","items"];
+  if(page==="quest")return ["quests","questReferenceIndex","questUnlockIndex","eventMajorRewards","monsterSummary","items"];
   if(page==="data")return FULL_DATA_KEYS;
   return [];
 }
@@ -2498,6 +2521,8 @@ function bind(){
     if(monsterNav){e.preventDefault();replaceCurrentHistoryState();followItemReference(monsterNav).then(pushCurrentHistoryState);return;}
     const questNav=e.target.closest?.('#questTable [data-item-nav]');
     if(questNav){e.preventDefault();e.stopPropagation();replaceCurrentHistoryState();followItemReference(questNav).then(pushCurrentHistoryState);return;}
+    const unlockNav=e.target.closest?.('#dragonTable [data-item-nav],#decoTable [data-item-nav]');
+    if(unlockNav){e.preventDefault();e.stopPropagation();replaceCurrentHistoryState();followItemReference(unlockNav).then(pushCurrentHistoryState);return;}
     const armorProgressNav=e.target.closest?.('#armorTable .armor-detail-row [data-item-nav]');
     if(armorProgressNav){e.preventDefault();e.stopPropagation();replaceCurrentHistoryState();followItemReference(armorProgressNav).then(pushCurrentHistoryState);return;}
     const inline=e.target.closest?.('[data-open-item]');

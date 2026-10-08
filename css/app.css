@@ -1458,3 +1458,10 @@ button{border:1px solid var(--line);background:#202b39;color:white;border-radius
 .skill-effect-item{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:6px;font-size:.92em}
 .skill-effect-item strong{font-weight:600}
 @media (max-width:640px){.skill-effect-items-grid{grid-template-columns:1fr}}
+/* STEP2 unlock xref */
+#page-quest .quest-unlocks{min-width:190px;white-space:normal}
+.quest-unlock-list{display:grid;gap:6px}
+.quest-unlock-list>span,.quest-unlock-list>.xref-link{display:block}
+.quest-unlock-list small{display:block;margin-top:2px;line-height:1.35}
+.deco-unlock-route small{display:block;margin-top:4px;line-height:1.35}
+@media (max-width:640px){#page-quest .quest-unlocks{min-width:0;white-space:normal!important;overflow-wrap:anywhere}}

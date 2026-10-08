@@ -1,1 +1,1 @@
-{"id":"item_6bc9d47e8202","acquire":[{"type":"dragonSell","line":"예사롭지 않은 물건","points":"192"}],"uses":[]}
+{"id":"item_6bc9d47e8202","acquire":[{"type":"dragonSell","line":"예사롭지 않은 물건","points":"192"},{"type":"quest","id":"quest_84a212472a75","name":"가브라스 만끽 투어!!","questType":"g","level":"★2","location":"구사막<밤>","objective":"가브라스 15마리 토벌"}],"uses":[]}

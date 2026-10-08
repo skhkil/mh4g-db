@@ -1,1 +1,1 @@
-{"id":"item_4c852071f6e8","acquire":[],"uses":[{"type":"compose","result":"소형나무통폭탄","no":43,"successRate":"90%"}]}
+{"id":"item_4c852071f6e8","acquire":[{"type":"quest","id":"quest_4c5c7c76a518","name":"용사는 제왕의 불꽃을 받고","questType":"village","level":"★8","location":"지저 화산","objective":"리오레우스 1마리 수렵"}],"uses":[{"type":"compose","result":"소형나무통폭탄","no":43,"successRate":"90%"}]}

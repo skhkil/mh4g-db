@@ -1,0 +1,1563 @@
+{
+  "questCount": 595,
+  "monsterLinkedQuests": 483,
+  "rewardLinkedQuests": 422,
+  "rewardItemLinks": 5539,
+  "mh4uUniqueMatches": 387,
+  "mh4uAmbiguousMatches": 38,
+  "mh4uNoMatches": 68,
+  "mh4uRewardRowsImported": 8042,
+  "verifiedMh4gEventPairs": 41,
+  "arenaChallengeMatches": 24,
+  "arenaRewardRowsImported": 0,
+  "matchMethods": {
+    "quest_070438711bf3": {
+      "mh4uQuestId": 24,
+      "method": "signature+location+monsters"
+    },
+    "quest_740440eac878": {
+      "mh4uQuestId": 25,
+      "method": "signature+location+monsters"
+    },
+    "quest_48c9220cbb8a": {
+      "mh4uQuestId": 28,
+      "method": "signature+location"
+    },
+    "quest_ee24232b79fa": {
+      "mh4uQuestId": 29,
+      "method": "signature+location+monsters"
+    },
+    "quest_7bc37042d0cd": {
+      "mh4uQuestId": 30,
+      "method": "signature+location"
+    },
+    "quest_f4c5907f7c6f": {
+      "mh4uQuestId": 31,
+      "method": "signature+location"
+    },
+    "quest_e7f591833ab9": {
+      "mh4uQuestId": 32,
+      "method": "signature+location+monsters"
+    },
+    "quest_b6e2f26dfd3f": {
+      "mh4uQuestId": 33,
+      "method": "signature+location+monsters+type"
+    },
+    "quest_34c9976cf096": {
+      "mh4uQuestId": 34,
+      "method": "signature+location"
+    },
+    "quest_74f2df2167f4": {
+      "mh4uQuestId": 35,
+      "method": "signature+location+monsters"
+    },
+    "quest_a77ac5cf16f0": {
+      "mh4uQuestId": 37,
+      "method": "signature+location+monsters"
+    },
+    "quest_f73015af0f94": {
+      "mh4uQuestId": 38,
+      "method": "signature+location"
+    },
+    "quest_4a21d771fa27": {
+      "mh4uQuestId": 39,
+      "method": "signature+location"
+    },
+    "quest_a47b984d1ba2": {
+      "mh4uQuestId": 40,
+      "method": "signature+location+monsters"
+    },
+    "quest_b8ec494e4209": {
+      "mh4uQuestId": 41,
+      "method": "signature+location"
+    },
+    "quest_78004798c0cb": {
+      "mh4uQuestId": 42,
+      "method": "signature+location"
+    },
+    "quest_136317d5818c": {
+      "mh4uQuestId": 44,
+      "method": "signature+location"
+    },
+    "quest_32f70d2f3db2": {
+      "mh4uQuestId": 45,
+      "method": "signature+location"
+    },
+    "quest_959bc1df1f08": {
+      "mh4uQuestId": 46,
+      "method": "signature+location+monsters"
+    },
+    "quest_d1f98d17e42c": {
+      "mh4uQuestId": 48,
+      "method": "signature+location+monsters+type"
+    },
+    "quest_9fc562ed8b00": {
+      "mh4uQuestId": 50,
+      "method": "signature+location"
+    },
+    "quest_a9407befa8db": {
+      "mh4uQuestId": 51,
+      "method": "signature+location"
+    },
+    "quest_5d82eef4cc9a": {
+      "mh4uQuestId": 52,
+      "method": "signature+location+monsters+type"
+    },
+    "quest_7fd6abde4a88": {
+      "mh4uQuestId": 55,
+      "method": "signature+location+monsters"
+    },
+    "quest_3369573f73a8": {
+      "mh4uQuestId": 56,
+      "method": "signature+location+monsters"
+    },
+    "quest_bc91727d5d71": {
+      "mh4uQuestId": 58,
+      "method": "signature+location+monsters"
+    },
+    "quest_9aaf19e9bdef": {
+      "mh4uQuestId": 61,
+      "method": "signature+location"
+    },
+    "quest_9c00b502aede": {
+      "mh4uQuestId": 62,
+      "method": "signature+location"
+    },
+    "quest_4dd00ba4ff1c": {
+      "mh4uQuestId": 63,
+      "method": "signature+location+monsters"
+    },
+    "quest_0f728e9bc4a2": {
+      "mh4uQuestId": 64,
+      "method": "signature+location"
+    },
+    "quest_58b541ef0006": {
+      "mh4uQuestId": 65,
+      "method": "signature+location"
+    },
+    "quest_a19e73f48917": {
+      "mh4uQuestId": 66,
+      "method": "signature+location+monsters"
+    },
+    "quest_d5450ca250d2": {
+      "mh4uQuestId": 68,
+      "method": "signature+location"
+    },
+    "quest_c882b2b1157f": {
+      "mh4uQuestId": 70,
+      "method": "signature+location+monsters"
+    },
+    "quest_67c9850c9ca0": {
+      "mh4uQuestId": 71,
+      "method": "signature+location+monsters"
+    },
+    "quest_d48f67435ffa": {
+      "mh4uQuestId": 72,
+      "method": "signature+location+monsters"
+    },
+    "quest_0c445478641f": {
+      "mh4uQuestId": 73,
+      "method": "signature+location+monsters"
+    },
+    "quest_cfc300b6f607": {
+      "mh4uQuestId": 74,
+      "method": "signature+location+monsters"
+    },
+    "quest_6bc5bc4dac34": {
+      "mh4uQuestId": 75,
+      "method": "signature+location"
+    },
+    "quest_a0cfa2232945": {
+      "mh4uQuestId": 77,
+      "method": "signature+location+monsters"
+    },
+    "quest_eec14fa5174a": {
+      "mh4uQuestId": 78,
+      "method": "signature+location+monsters"
+    },
+    "quest_ecce8449a471": {
+      "mh4uQuestId": 79,
+      "method": "signature+location"
+    },
+    "quest_96d3a2d3b764": {
+      "mh4uQuestId": 80,
+      "method": "signature+location+monsters"
+    },
+    "quest_f8cd21f762d9": {
+      "mh4uQuestId": 82,
+      "method": "signature+location+monsters"
+    },
+    "quest_bb7160014100": {
+      "mh4uQuestId": 81,
+      "method": "signature+location+monsters"
+    },
+    "quest_cab31d106113": {
+      "mh4uQuestId": 83,
+      "method": "signature+location+monsters"
+    },
+    "quest_95d2af3e782d": {
+      "mh4uQuestId": 85,
+      "method": "signature+location"
+    },
+    "quest_974b5d8ee2ca": {
+      "mh4uQuestId": 86,
+      "method": "signature+location"
+    },
+    "quest_77e4a665d76b": {
+      "mh4uQuestId": 87,
+      "method": "signature+location+monsters"
+    },
+    "quest_76dfdde9b483": {
+      "mh4uQuestId": 88,
+      "method": "signature+location+monsters"
+    },
+    "quest_dd9c8bb55208": {
+      "mh4uQuestId": 89,
+      "method": "signature+location+monsters"
+    },
+    "quest_cb3739907105": {
+      "mh4uQuestId": 90,
+      "method": "signature+location+monsters"
+    },
+    "quest_071057ed413e": {
+      "mh4uQuestId": 91,
+      "method": "signature+location+monsters"
+    },
+    "quest_90a686543b59": {
+      "mh4uQuestId": 92,
+      "method": "signature+location+monsters"
+    },
+    "quest_63b6f3a463c9": {
+      "mh4uQuestId": 93,
+      "method": "signature+location+monsters"
+    },
+    "quest_10e8277ac568": {
+      "mh4uQuestId": 94,
+      "method": "signature+location+monsters"
+    },
+    "quest_232d4ae038ef": {
+      "mh4uQuestId": 96,
+      "method": "signature+location+monsters"
+    },
+    "quest_cb7caab8d88c": {
+      "mh4uQuestId": 95,
+      "method": "signature+location+monsters"
+    },
+    "quest_b6414e9129be": {
+      "mh4uQuestId": 97,
+      "method": "signature+location+monsters"
+    },
+    "quest_c027c812ddb9": {
+      "mh4uQuestId": 99,
+      "method": "signature+location+monsters"
+    },
+    "quest_953d6f4b1e99": {
+      "mh4uQuestId": 100,
+      "method": "signature+location+monsters"
+    },
+    "quest_7250db499f20": {
+      "mh4uQuestId": 101,
+      "method": "signature+location+monsters"
+    },
+    "quest_42054b5c5948": {
+      "mh4uQuestId": 103,
+      "method": "signature+location+monsters"
+    },
+    "quest_4031d2ea6cb3": {
+      "mh4uQuestId": 104,
+      "method": "signature+location+monsters"
+    },
+    "quest_e838897ef9d0": {
+      "mh4uQuestId": 113,
+      "method": "signature+location"
+    },
+    "quest_f5be7e36ba21": {
+      "mh4uQuestId": 114,
+      "method": "signature+location"
+    },
+    "quest_facc367582fc": {
+      "mh4uQuestId": 115,
+      "method": "signature+location"
+    },
+    "quest_0aed53c41d47": {
+      "mh4uQuestId": 116,
+      "method": "signature+location"
+    },
+    "quest_fbb602ec6610": {
+      "mh4uQuestId": 117,
+      "method": "signature+location+monsters"
+    },
+    "quest_8e3dee44782c": {
+      "mh4uQuestId": 118,
+      "method": "signature+location+monsters"
+    },
+    "quest_8679c07fa9e8": {
+      "mh4uQuestId": 120,
+      "method": "signature+location+monsters"
+    },
+    "quest_4583d9b9f804": {
+      "mh4uQuestId": 122,
+      "method": "signature+location+monsters"
+    },
+    "quest_5f59634872c0": {
+      "mh4uQuestId": 123,
+      "method": "signature+location+monsters"
+    },
+    "quest_6e34f8a128e1": {
+      "mh4uQuestId": 124,
+      "method": "signature+location+monsters"
+    },
+    "quest_eb466ff893cd": {
+      "mh4uQuestId": 126,
+      "method": "signature+location+monsters"
+    },
+    "quest_736e3b37613a": {
+      "mh4uQuestId": 129,
+      "method": "signature+location"
+    },
+    "quest_f20fafe74fb8": {
+      "mh4uQuestId": 128,
+      "method": "signature+location"
+    },
+    "quest_087485498f7f": {
+      "mh4uQuestId": 130,
+      "method": "signature+location"
+    },
+    "quest_8c8d298bbc3a": {
+      "mh4uQuestId": 131,
+      "method": "signature+location"
+    },
+    "quest_b33d6d6fa941": {
+      "mh4uQuestId": 132,
+      "method": "signature+location"
+    },
+    "quest_61a62961c033": {
+      "mh4uQuestId": 133,
+      "method": "signature+location"
+    },
+    "quest_ce647e0a3da2": {
+      "mh4uQuestId": 134,
+      "method": "signature+location+monsters"
+    },
+    "quest_6d3c162bef24": {
+      "mh4uQuestId": 135,
+      "method": "signature+location+monsters"
+    },
+    "quest_59021e270196": {
+      "mh4uQuestId": 136,
+      "method": "signature+location"
+    },
+    "quest_3647a4f85bd8": {
+      "mh4uQuestId": 137,
+      "method": "signature+location+monsters"
+    },
+    "quest_7369cbe2c308": {
+      "mh4uQuestId": 138,
+      "method": "signature+location"
+    },
+    "quest_8afa3c2773fe": {
+      "mh4uQuestId": 139,
+      "method": "signature+location+monsters"
+    },
+    "quest_fedaf92e5054": {
+      "mh4uQuestId": 140,
+      "method": "signature+location+monsters"
+    },
+    "quest_1a5a588f1905": {
+      "mh4uQuestId": 141,
+      "method": "signature+location+monsters"
+    },
+    "quest_21266f8e3370": {
+      "mh4uQuestId": 142,
+      "method": "signature+location"
+    },
+    "quest_484abe61afe3": {
+      "mh4uQuestId": 143,
+      "method": "signature+location+monsters"
+    },
+    "quest_4c5c7c76a518": {
+      "mh4uQuestId": 144,
+      "method": "signature+location+monsters"
+    },
+    "quest_6b0c0cda7fae": {
+      "mh4uQuestId": 145,
+      "method": "signature+location+monsters"
+    },
+    "quest_8db42d1723f6": {
+      "mh4uQuestId": 146,
+      "method": "signature+location+monsters"
+    },
+    "quest_d1233aeae8a8": {
+      "mh4uQuestId": 147,
+      "method": "signature+location+monsters"
+    },
+    "quest_b974c5bfa829": {
+      "mh4uQuestId": 148,
+      "method": "signature+location+monsters"
+    },
+    "quest_ce2a7880cd78": {
+      "mh4uQuestId": 149,
+      "method": "signature+location"
+    },
+    "quest_35ae50f70f84": {
+      "mh4uQuestId": 150,
+      "method": "signature+location"
+    },
+    "quest_2539c87d5ea2": {
+      "mh4uQuestId": 151,
+      "method": "signature+location"
+    },
+    "quest_5a7dc41eea5c": {
+      "mh4uQuestId": 152,
+      "method": "signature+location"
+    },
+    "quest_d69c3722c9db": {
+      "mh4uQuestId": 153,
+      "method": "signature+location+monsters"
+    },
+    "quest_9fe057165b4d": {
+      "mh4uQuestId": 154,
+      "method": "signature+location+monsters"
+    },
+    "quest_97e80b427aa1": {
+      "mh4uQuestId": 156,
+      "method": "signature+location+monsters"
+    },
+    "quest_b22bb5f83dbf": {
+      "mh4uQuestId": 157,
+      "method": "signature+location+monsters"
+    },
+    "quest_8e7af5454aaf": {
+      "mh4uQuestId": 158,
+      "method": "signature+location+monsters"
+    },
+    "quest_b166b3db08bc": {
+      "mh4uQuestId": 159,
+      "method": "signature+location+monsters"
+    },
+    "quest_82f01467720b": {
+      "mh4uQuestId": 160,
+      "method": "signature+location+monsters"
+    },
+    "quest_4c67b0828d18": {
+      "mh4uQuestId": 161,
+      "method": "signature+location+monsters"
+    },
+    "quest_26c1b1fd1bd3": {
+      "mh4uQuestId": 162,
+      "method": "signature+location+monsters"
+    },
+    "quest_ea3e957c3a19": {
+      "mh4uQuestId": 163,
+      "method": "signature+location+monsters"
+    },
+    "quest_7fbccbc2892f": {
+      "mh4uQuestId": 185,
+      "method": "signature+location+monsters"
+    },
+    "quest_898451dcdaad": {
+      "mh4uQuestId": 165,
+      "method": "signature+location+monsters"
+    },
+    "quest_6d54690b9d39": {
+      "mh4uQuestId": 166,
+      "method": "signature+location"
+    },
+    "quest_8cad00f48f80": {
+      "mh4uQuestId": 167,
+      "method": "signature+location+monsters"
+    },
+    "quest_558d05b90a04": {
+      "mh4uQuestId": 168,
+      "method": "signature+location+monsters"
+    },
+    "quest_3edb7fb965b4": {
+      "mh4uQuestId": 169,
+      "method": "signature+location+monsters"
+    },
+    "quest_f68ae8a26cc4": {
+      "mh4uQuestId": 170,
+      "method": "signature+location+monsters"
+    },
+    "quest_b94fd1039cff": {
+      "mh4uQuestId": 171,
+      "method": "signature+location+monsters"
+    },
+    "quest_4cf3da8b1aba": {
+      "mh4uQuestId": 172,
+      "method": "signature+location+monsters"
+    },
+    "quest_9ce7a7c069d4": {
+      "mh4uQuestId": 173,
+      "method": "signature+location+monsters"
+    },
+    "quest_8a15b898130c": {
+      "mh4uQuestId": 174,
+      "method": "signature+location+monsters"
+    },
+    "quest_b2b9c1686139": {
+      "mh4uQuestId": 175,
+      "method": "signature+location+monsters"
+    },
+    "quest_9ace85f24bd9": {
+      "mh4uQuestId": 176,
+      "method": "signature+location+monsters"
+    },
+    "quest_b9acc83a4fd6": {
+      "mh4uQuestId": 177,
+      "method": "signature+location+monsters"
+    },
+    "quest_0f898b4f0376": {
+      "mh4uQuestId": 178,
+      "method": "signature+location+monsters"
+    },
+    "quest_55ee96fdc95e": {
+      "mh4uQuestId": 180,
+      "method": "signature+location+monsters"
+    },
+    "quest_4ed5cedce25a": {
+      "mh4uQuestId": 181,
+      "method": "signature+location+monsters"
+    },
+    "quest_c1121e9ce93d": {
+      "mh4uQuestId": 182,
+      "method": "signature+location+monsters"
+    },
+    "quest_9f218b9cad90": {
+      "mh4uQuestId": 183,
+      "method": "signature+location+monsters"
+    },
+    "quest_fcc1f3928b5f": {
+      "mh4uQuestId": 184,
+      "method": "signature+location+monsters"
+    },
+    "quest_6decd0ffe635": {
+      "mh4uQuestId": 194,
+      "method": "signature+location"
+    },
+    "quest_cab9bfab30f1": {
+      "mh4uQuestId": 195,
+      "method": "signature+location"
+    },
+    "quest_90450d210b78": {
+      "mh4uQuestId": 196,
+      "method": "signature+location"
+    },
+    "quest_c9b8f2109983": {
+      "mh4uQuestId": 197,
+      "method": "signature+location"
+    },
+    "quest_8cde78bcd70f": {
+      "mh4uQuestId": 198,
+      "method": "signature+location"
+    },
+    "quest_e748b6fb269f": {
+      "mh4uQuestId": 201,
+      "method": "signature+location"
+    },
+    "quest_b07080b08d94": {
+      "mh4uQuestId": 203,
+      "method": "signature+location+monsters"
+    },
+    "quest_f444cb15828a": {
+      "mh4uQuestId": 204,
+      "method": "signature+location+monsters"
+    },
+    "quest_5507e56b8663": {
+      "mh4uQuestId": 206,
+      "method": "signature+location+monsters"
+    },
+    "quest_8fad53edc7ac": {
+      "mh4uQuestId": 207,
+      "method": "signature+location+monsters"
+    },
+    "quest_621ac5ccf722": {
+      "mh4uQuestId": 208,
+      "method": "signature+location+monsters"
+    },
+    "quest_97a3bc00b4f5": {
+      "mh4uQuestId": 209,
+      "method": "signature+location+monsters"
+    },
+    "quest_1842526676d1": {
+      "mh4uQuestId": 210,
+      "method": "signature+location"
+    },
+    "quest_d1cb7edf5e5a": {
+      "mh4uQuestId": 211,
+      "method": "signature+location"
+    },
+    "quest_9d7ca21bfb43": {
+      "mh4uQuestId": 212,
+      "method": "signature+location+monsters"
+    },
+    "quest_795ffe8aa9f9": {
+      "mh4uQuestId": 213,
+      "method": "signature+location"
+    },
+    "quest_2491b2b49f0e": {
+      "mh4uQuestId": 216,
+      "method": "signature+location"
+    },
+    "quest_b37014b2837f": {
+      "mh4uQuestId": 217,
+      "method": "signature+location"
+    },
+    "quest_1c89244e03fb": {
+      "mh4uQuestId": 218,
+      "method": "signature+location+monsters"
+    },
+    "quest_9a600fa87321": {
+      "mh4uQuestId": 219,
+      "method": "signature+location+monsters"
+    },
+    "quest_ad219f85d5bd": {
+      "mh4uQuestId": 220,
+      "method": "signature+location+monsters"
+    },
+    "quest_cb488289ca1e": {
+      "mh4uQuestId": 221,
+      "method": "signature+location+monsters"
+    },
+    "quest_5cd0d1847c31": {
+      "mh4uQuestId": 222,
+      "method": "signature+location+monsters"
+    },
+    "quest_5eb81561dddd": {
+      "mh4uQuestId": 223,
+      "method": "signature+location+monsters"
+    },
+    "quest_425e96d363db": {
+      "mh4uQuestId": 224,
+      "method": "signature+location+monsters"
+    },
+    "quest_3ffd107dcb43": {
+      "mh4uQuestId": 225,
+      "method": "signature+location+monsters"
+    },
+    "quest_41dd85017c7e": {
+      "mh4uQuestId": 226,
+      "method": "signature+location+monsters"
+    },
+    "quest_76c8091617f7": {
+      "mh4uQuestId": 227,
+      "method": "signature+location+monsters"
+    },
+    "quest_5be21b560f1d": {
+      "mh4uQuestId": 228,
+      "method": "signature+location+monsters"
+    },
+    "quest_6792d008b7f4": {
+      "mh4uQuestId": 229,
+      "method": "signature+location"
+    },
+    "quest_22b894006212": {
+      "mh4uQuestId": 230,
+      "method": "signature+location"
+    },
+    "quest_05ea06f5af23": {
+      "mh4uQuestId": 231,
+      "method": "signature+location+monsters"
+    },
+    "quest_4eef9c5c2a85": {
+      "mh4uQuestId": 232,
+      "method": "signature+location+monsters"
+    },
+    "quest_5255ac43b0ab": {
+      "mh4uQuestId": 233,
+      "method": "signature+location"
+    },
+    "quest_5787ee991fdd": {
+      "mh4uQuestId": 236,
+      "method": "signature+location"
+    },
+    "quest_b6afa4c5faf3": {
+      "mh4uQuestId": 237,
+      "method": "signature+location+monsters"
+    },
+    "quest_91d70091aba7": {
+      "mh4uQuestId": 238,
+      "method": "signature+location+monsters"
+    },
+    "quest_93f8b9b8f016": {
+      "mh4uQuestId": 239,
+      "method": "signature+location+monsters"
+    },
+    "quest_fc04823d9381": {
+      "mh4uQuestId": 240,
+      "method": "signature+location+monsters"
+    },
+    "quest_6f4a2c478f4b": {
+      "mh4uQuestId": 241,
+      "method": "signature+location+monsters"
+    },
+    "quest_df32b3d1ae77": {
+      "mh4uQuestId": 242,
+      "method": "signature+location+monsters"
+    },
+    "quest_0882b262798f": {
+      "mh4uQuestId": 243,
+      "method": "signature+location+monsters"
+    },
+    "quest_9614555c71aa": {
+      "mh4uQuestId": 244,
+      "method": "signature+location+monsters"
+    },
+    "quest_0efe7871e974": {
+      "mh4uQuestId": 245,
+      "method": "signature+location+monsters"
+    },
+    "quest_61dbbf2a12a9": {
+      "mh4uQuestId": 246,
+      "method": "signature+location+monsters"
+    },
+    "quest_deb0fb6a2f42": {
+      "mh4uQuestId": 247,
+      "method": "signature+location+monsters"
+    },
+    "quest_2533c067b6a6": {
+      "mh4uQuestId": 248,
+      "method": "signature+location+monsters"
+    },
+    "quest_08e655e96e91": {
+      "mh4uQuestId": 249,
+      "method": "signature+location+monsters"
+    },
+    "quest_c4972135d468": {
+      "mh4uQuestId": 250,
+      "method": "signature+location+monsters"
+    },
+    "quest_4a3f258f2bd0": {
+      "mh4uQuestId": 251,
+      "method": "signature+location+monsters"
+    },
+    "quest_639b098ab7b2": {
+      "mh4uQuestId": 252,
+      "method": "signature+location+monsters"
+    },
+    "quest_909e7cb3b3db": {
+      "mh4uQuestId": 253,
+      "method": "signature+location+monsters"
+    },
+    "quest_111ce0cd35ce": {
+      "mh4uQuestId": 254,
+      "method": "signature+location"
+    },
+    "quest_aad6dac0c35e": {
+      "mh4uQuestId": 255,
+      "method": "signature+location"
+    },
+    "quest_988d298d0abd": {
+      "mh4uQuestId": 256,
+      "method": "signature+location"
+    },
+    "quest_64f661e2dbc5": {
+      "mh4uQuestId": 259,
+      "method": "signature+location+monsters"
+    },
+    "quest_fa361f40ffab": {
+      "mh4uQuestId": 260,
+      "method": "signature+location+monsters"
+    },
+    "quest_01927c041da0": {
+      "mh4uQuestId": 261,
+      "method": "signature+location+monsters"
+    },
+    "quest_b12dd04b2a60": {
+      "mh4uQuestId": 262,
+      "method": "signature+location+monsters"
+    },
+    "quest_4e2dd6b4ac66": {
+      "mh4uQuestId": 263,
+      "method": "signature+location+monsters"
+    },
+    "quest_6fb1bffb05e4": {
+      "mh4uQuestId": 265,
+      "method": "signature+location+monsters"
+    },
+    "quest_d4cff4d8bd9a": {
+      "mh4uQuestId": 266,
+      "method": "signature+location+monsters"
+    },
+    "quest_495a9c28a8ca": {
+      "mh4uQuestId": 267,
+      "method": "signature+location+monsters"
+    },
+    "quest_a8e7e542992d": {
+      "mh4uQuestId": 268,
+      "method": "signature+location+monsters"
+    },
+    "quest_12e4cf9146da": {
+      "mh4uQuestId": 269,
+      "method": "signature+location"
+    },
+    "quest_d631ad0ed3af": {
+      "mh4uQuestId": 270,
+      "method": "signature+location"
+    },
+    "quest_a39f331a8387": {
+      "mh4uQuestId": 271,
+      "method": "signature+location+monsters"
+    },
+    "quest_376c60d3c4ad": {
+      "mh4uQuestId": 272,
+      "method": "signature+location+monsters"
+    },
+    "quest_a3ba618ffb70": {
+      "mh4uQuestId": 273,
+      "method": "signature+location+monsters"
+    },
+    "quest_5765af93954d": {
+      "mh4uQuestId": 274,
+      "method": "signature+location+monsters"
+    },
+    "quest_edb764c92723": {
+      "mh4uQuestId": 275,
+      "method": "signature+location+monsters"
+    },
+    "quest_60c4132772d3": {
+      "mh4uQuestId": 276,
+      "method": "signature+location"
+    },
+    "quest_0bb4556e3b4f": {
+      "mh4uQuestId": 277,
+      "method": "signature+location"
+    },
+    "quest_0935da1bd70f": {
+      "mh4uQuestId": 278,
+      "method": "signature+location"
+    },
+    "quest_00a4e739bbf9": {
+      "mh4uQuestId": 279,
+      "method": "signature+location+monsters"
+    },
+    "quest_3ab29e3e3412": {
+      "mh4uQuestId": 280,
+      "method": "signature+location"
+    },
+    "quest_b084e5decec0": {
+      "mh4uQuestId": 281,
+      "method": "signature+location"
+    },
+    "quest_ecc7db567099": {
+      "mh4uQuestId": 283,
+      "method": "signature+location"
+    },
+    "quest_c32936ed44d8": {
+      "mh4uQuestId": 284,
+      "method": "signature+location+monsters"
+    },
+    "quest_d497a4f5f929": {
+      "mh4uQuestId": 285,
+      "method": "signature+location+monsters"
+    },
+    "quest_787f57466fa2": {
+      "mh4uQuestId": 286,
+      "method": "signature+location+monsters"
+    },
+    "quest_707b1e2e14b6": {
+      "mh4uQuestId": 287,
+      "method": "signature+location+monsters"
+    },
+    "quest_613f43c61011": {
+      "mh4uQuestId": 288,
+      "method": "signature+location+monsters"
+    },
+    "quest_6bce739eab3e": {
+      "mh4uQuestId": 289,
+      "method": "signature+location+monsters"
+    },
+    "quest_be13d9a412f4": {
+      "mh4uQuestId": 290,
+      "method": "signature+location+monsters"
+    },
+    "quest_b7cd32269cf6": {
+      "mh4uQuestId": 291,
+      "method": "signature+location+monsters"
+    },
+    "quest_2e7d588e940b": {
+      "mh4uQuestId": 292,
+      "method": "signature+location+monsters"
+    },
+    "quest_7c8090059148": {
+      "mh4uQuestId": 293,
+      "method": "signature+location+monsters"
+    },
+    "quest_afa8a84e367e": {
+      "mh4uQuestId": 294,
+      "method": "signature+location+monsters"
+    },
+    "quest_09370b86261d": {
+      "mh4uQuestId": 295,
+      "method": "signature+location+monsters"
+    },
+    "quest_deaf912e8797": {
+      "mh4uQuestId": 296,
+      "method": "signature+location+monsters"
+    },
+    "quest_c8ebdea729fb": {
+      "mh4uQuestId": 297,
+      "method": "signature+location+monsters"
+    },
+    "quest_41e531636c3d": {
+      "mh4uQuestId": 298,
+      "method": "signature+location+monsters"
+    },
+    "quest_2ffe6d8ecac5": {
+      "mh4uQuestId": 299,
+      "method": "signature+location+monsters"
+    },
+    "quest_03c07d629d32": {
+      "mh4uQuestId": 300,
+      "method": "signature+location+monsters"
+    },
+    "quest_ce42de045bec": {
+      "mh4uQuestId": 301,
+      "method": "signature+location+monsters"
+    },
+    "quest_f64398c414f0": {
+      "mh4uQuestId": 302,
+      "method": "signature+location+monsters"
+    },
+    "quest_9b0946397902": {
+      "mh4uQuestId": 303,
+      "method": "signature+location+monsters"
+    },
+    "quest_c5221056b63e": {
+      "mh4uQuestId": 304,
+      "method": "signature+location+monsters"
+    },
+    "quest_b5f19500cacd": {
+      "mh4uQuestId": 305,
+      "method": "signature+location+monsters"
+    },
+    "quest_f23559df0a9a": {
+      "mh4uQuestId": 306,
+      "method": "signature+location+monsters"
+    },
+    "quest_574bea001059": {
+      "mh4uQuestId": 307,
+      "method": "signature+location+monsters"
+    },
+    "quest_1fd8d3210efe": {
+      "mh4uQuestId": 308,
+      "method": "signature+location+monsters"
+    },
+    "quest_cda9fbd9e5e4": {
+      "mh4uQuestId": 309,
+      "method": "signature+location+monsters"
+    },
+    "quest_3b652f73e5d1": {
+      "mh4uQuestId": 310,
+      "method": "signature+location+monsters"
+    },
+    "quest_a0cc1d4382d5": {
+      "mh4uQuestId": 311,
+      "method": "signature+location+monsters"
+    },
+    "quest_b70696983b12": {
+      "mh4uQuestId": 312,
+      "method": "signature+location+monsters"
+    },
+    "quest_3d3cab9ceabc": {
+      "mh4uQuestId": 313,
+      "method": "signature+location+monsters"
+    },
+    "quest_3b3fcf3cb090": {
+      "mh4uQuestId": 314,
+      "method": "signature+location+monsters"
+    },
+    "quest_77ae660f0c59": {
+      "mh4uQuestId": 315,
+      "method": "signature+location+monsters"
+    },
+    "quest_981147d20feb": {
+      "mh4uQuestId": 316,
+      "method": "signature+location+monsters"
+    },
+    "quest_84a1b8d93006": {
+      "mh4uQuestId": 317,
+      "method": "signature+location+monsters"
+    },
+    "quest_b7446e1ad8c5": {
+      "mh4uQuestId": 318,
+      "method": "signature+location+monsters"
+    },
+    "quest_2e9178b2eef2": {
+      "mh4uQuestId": 319,
+      "method": "signature+location+monsters"
+    },
+    "quest_22f99e08c56b": {
+      "mh4uQuestId": 320,
+      "method": "signature+location+monsters"
+    },
+    "quest_34b0d01cc325": {
+      "mh4uQuestId": 321,
+      "method": "signature+location+monsters"
+    },
+    "quest_505140ba4d22": {
+      "mh4uQuestId": 322,
+      "method": "signature+location+monsters"
+    },
+    "quest_9db671d359b3": {
+      "mh4uQuestId": 323,
+      "method": "signature+location+monsters"
+    },
+    "quest_69d42234f9d8": {
+      "mh4uQuestId": 324,
+      "method": "signature+location+monsters"
+    },
+    "quest_588ce5dcef2f": {
+      "mh4uQuestId": 325,
+      "method": "signature+location+monsters"
+    },
+    "quest_7ab72b456e55": {
+      "mh4uQuestId": 331,
+      "method": "signature+location+monsters"
+    },
+    "quest_8b4ef0cbd721": {
+      "mh4uQuestId": 332,
+      "method": "signature+location+monsters"
+    },
+    "quest_b183399093f5": {
+      "mh4uQuestId": 333,
+      "method": "signature+location+monsters"
+    },
+    "quest_79e450b3f167": {
+      "mh4uQuestId": 334,
+      "method": "signature+location+monsters"
+    },
+    "quest_6068888eacce": {
+      "mh4uQuestId": 336,
+      "method": "signature+location+monsters"
+    },
+    "quest_b9b2554f19d6": {
+      "mh4uQuestId": 337,
+      "method": "signature+location+monsters"
+    },
+    "quest_e33e2ed0e7f6": {
+      "mh4uQuestId": 338,
+      "method": "signature+location+monsters"
+    },
+    "quest_7550d093194d": {
+      "mh4uQuestId": 339,
+      "method": "signature+location+monsters"
+    },
+    "quest_2fc115cc5349": {
+      "mh4uQuestId": 340,
+      "method": "signature+location+monsters"
+    },
+    "quest_40e711339d0b": {
+      "mh4uQuestId": 341,
+      "method": "signature+location+monsters"
+    },
+    "quest_c6f1f318fa3a": {
+      "mh4uQuestId": 342,
+      "method": "signature+location+monsters"
+    },
+    "quest_d79e85dfcb06": {
+      "mh4uQuestId": 345,
+      "method": "signature+location+monsters"
+    },
+    "quest_c1d2049ca823": {
+      "mh4uQuestId": 346,
+      "method": "signature+location+monsters"
+    },
+    "quest_537d901d0476": {
+      "mh4uQuestId": 343,
+      "method": "signature+location+monsters"
+    },
+    "quest_020561836e5b": {
+      "mh4uQuestId": 347,
+      "method": "signature+location+monsters"
+    },
+    "quest_22e10254434b": {
+      "mh4uQuestId": 348,
+      "method": "signature+location+monsters"
+    },
+    "quest_4ba50a85f235": {
+      "mh4uQuestId": 349,
+      "method": "signature+location"
+    },
+    "quest_deeeb2353b4e": {
+      "mh4uQuestId": 350,
+      "method": "signature+location"
+    },
+    "quest_41c602f1acbb": {
+      "mh4uQuestId": 351,
+      "method": "signature+location"
+    },
+    "quest_9ce7a8013e4d": {
+      "mh4uQuestId": 352,
+      "method": "signature+location"
+    },
+    "quest_878ae511470d": {
+      "mh4uQuestId": 353,
+      "method": "signature+location"
+    },
+    "quest_55e676d31de4": {
+      "mh4uQuestId": 354,
+      "method": "signature+location"
+    },
+    "quest_0dd78d372bed": {
+      "mh4uQuestId": 355,
+      "method": "signature+location"
+    },
+    "quest_a9e8d5f2a884": {
+      "mh4uQuestId": 356,
+      "method": "signature+location"
+    },
+    "quest_158a1e40e3fd": {
+      "mh4uQuestId": 357,
+      "method": "signature+location+monsters"
+    },
+    "quest_b62295f557a2": {
+      "mh4uQuestId": 358,
+      "method": "signature+location+monsters"
+    },
+    "quest_f8a1d6bc7b8c": {
+      "mh4uQuestId": 359,
+      "method": "signature+location+monsters"
+    },
+    "quest_96a0768f03c1": {
+      "mh4uQuestId": 360,
+      "method": "signature+location+monsters"
+    },
+    "quest_d0e066a915d7": {
+      "mh4uQuestId": 361,
+      "method": "signature+location+monsters+type"
+    },
+    "quest_b6356dcbf633": {
+      "mh4uQuestId": 362,
+      "method": "signature+location+monsters"
+    },
+    "quest_1ce3f838fbc5": {
+      "mh4uQuestId": 363,
+      "method": "signature+location+monsters"
+    },
+    "quest_8934caccd88d": {
+      "mh4uQuestId": 364,
+      "method": "signature+location+monsters"
+    },
+    "quest_76d149729d00": {
+      "mh4uQuestId": 365,
+      "method": "signature+location+monsters"
+    },
+    "quest_02a27127a4bd": {
+      "mh4uQuestId": 366,
+      "method": "signature+location+monsters"
+    },
+    "quest_ba9ba3160ee6": {
+      "mh4uQuestId": 367,
+      "method": "signature+location+monsters"
+    },
+    "quest_441a732378ee": {
+      "mh4uQuestId": 368,
+      "method": "signature+location+monsters"
+    },
+    "quest_6d1bb5b5a153": {
+      "mh4uQuestId": 369,
+      "method": "signature+location+monsters"
+    },
+    "quest_10dfbb180688": {
+      "mh4uQuestId": 370,
+      "method": "signature+location+monsters"
+    },
+    "quest_5388f4904089": {
+      "mh4uQuestId": 371,
+      "method": "signature+location+monsters"
+    },
+    "quest_fd91a4df3e64": {
+      "mh4uQuestId": 372,
+      "method": "signature+location+monsters+type"
+    },
+    "quest_3acd1d4e240d": {
+      "mh4uQuestId": 373,
+      "method": "signature+location+monsters"
+    },
+    "quest_c735f32369a7": {
+      "mh4uQuestId": 374,
+      "method": "signature+location+monsters"
+    },
+    "quest_6199c640e193": {
+      "mh4uQuestId": 375,
+      "method": "signature+location+monsters"
+    },
+    "quest_dfd1dc269fbb": {
+      "mh4uQuestId": 376,
+      "method": "signature+location+monsters+type"
+    },
+    "quest_b4fdb01f1faf": {
+      "mh4uQuestId": 377,
+      "method": "signature+location"
+    },
+    "quest_b93ea51259c1": {
+      "mh4uQuestId": 378,
+      "method": "signature+location+monsters"
+    },
+    "quest_34c4c6e69f39": {
+      "mh4uQuestId": 379,
+      "method": "signature+location+monsters"
+    },
+    "quest_154770b228c6": {
+      "mh4uQuestId": 380,
+      "method": "signature+location+monsters"
+    },
+    "quest_e8599d14eef3": {
+      "mh4uQuestId": 381,
+      "method": "signature+location+monsters"
+    },
+    "quest_ddba3c82a2ca": {
+      "mh4uQuestId": 382,
+      "method": "signature+location+monsters"
+    },
+    "quest_791bf119fbb1": {
+      "mh4uQuestId": 383,
+      "method": "signature+location+monsters"
+    },
+    "quest_34bc81d3575a": {
+      "mh4uQuestId": 384,
+      "method": "signature+location+monsters"
+    },
+    "quest_ac82e21ee7d4": {
+      "mh4uQuestId": 385,
+      "method": "signature+location"
+    },
+    "quest_1d3a7541325c": {
+      "mh4uQuestId": 386,
+      "method": "signature+location"
+    },
+    "quest_639314ee08af": {
+      "mh4uQuestId": 387,
+      "method": "signature+location"
+    },
+    "quest_1a6c517ffcba": {
+      "mh4uQuestId": 388,
+      "method": "signature+location+monsters"
+    },
+    "quest_01f652f00cff": {
+      "mh4uQuestId": 389,
+      "method": "signature+location+monsters"
+    },
+    "quest_84a212472a75": {
+      "mh4uQuestId": 390,
+      "method": "signature+location"
+    },
+    "quest_87b8fb458d09": {
+      "mh4uQuestId": 391,
+      "method": "signature+location+monsters"
+    },
+    "quest_63069558a922": {
+      "mh4uQuestId": 392,
+      "method": "signature+location+monsters"
+    },
+    "quest_70d4ffe27b98": {
+      "mh4uQuestId": 393,
+      "method": "signature+location+monsters"
+    },
+    "quest_c702d6fa12b8": {
+      "mh4uQuestId": 394,
+      "method": "signature+location+monsters"
+    },
+    "quest_6264179fe7bf": {
+      "mh4uQuestId": 395,
+      "method": "signature+monsters+type"
+    },
+    "quest_7ff59cb784c3": {
+      "mh4uQuestId": 396,
+      "method": "signature+location+monsters"
+    },
+    "quest_7cc5446dd731": {
+      "mh4uQuestId": 397,
+      "method": "signature+location+monsters"
+    },
+    "quest_a9737e277201": {
+      "mh4uQuestId": 398,
+      "method": "signature+location+monsters"
+    },
+    "quest_bef96347c7fd": {
+      "mh4uQuestId": 399,
+      "method": "signature+location+monsters"
+    },
+    "quest_b785da0a4345": {
+      "mh4uQuestId": 400,
+      "method": "signature+location+monsters"
+    },
+    "quest_74c13ad8a405": {
+      "mh4uQuestId": 401,
+      "method": "signature+location+monsters"
+    },
+    "quest_1afa515da814": {
+      "mh4uQuestId": 402,
+      "method": "signature+location+monsters"
+    },
+    "quest_5d1580008587": {
+      "mh4uQuestId": 403,
+      "method": "signature+location+monsters"
+    },
+    "quest_3e84e2f8d418": {
+      "mh4uQuestId": 404,
+      "method": "signature+location+monsters"
+    },
+    "quest_fb29a0a1c4a5": {
+      "mh4uQuestId": 405,
+      "method": "signature+location+monsters"
+    },
+    "quest_021280fb72f7": {
+      "mh4uQuestId": 406,
+      "method": "signature+location+monsters"
+    },
+    "quest_218304dbc7f7": {
+      "mh4uQuestId": 407,
+      "method": "signature+location+monsters"
+    },
+    "quest_675f7e12f313": {
+      "mh4uQuestId": 408,
+      "method": "signature+location+monsters"
+    },
+    "quest_29711c404465": {
+      "mh4uQuestId": 409,
+      "method": "signature+location+monsters"
+    },
+    "quest_ce8882c2e85f": {
+      "mh4uQuestId": 410,
+      "method": "signature+location+monsters"
+    },
+    "quest_2e65697c3bd5": {
+      "mh4uQuestId": 411,
+      "method": "signature+location+monsters"
+    },
+    "quest_d6778fe54d09": {
+      "mh4uQuestId": 412,
+      "method": "signature+location+monsters"
+    },
+    "quest_a3419dab00a8": {
+      "mh4uQuestId": 413,
+      "method": "signature+location+monsters"
+    },
+    "quest_2010db9a3653": {
+      "mh4uQuestId": 414,
+      "method": "signature+location+monsters"
+    },
+    "quest_5f701615a1a9": {
+      "mh4uQuestId": 415,
+      "method": "signature+location+monsters"
+    },
+    "quest_ec5e4230105d": {
+      "mh4uQuestId": 416,
+      "method": "signature+location+monsters"
+    },
+    "quest_fcac29491ae6": {
+      "mh4uQuestId": 417,
+      "method": "signature+location+monsters"
+    },
+    "quest_6acd493ed64d": {
+      "mh4uQuestId": 418,
+      "method": "signature+location+monsters"
+    },
+    "quest_162de09abb69": {
+      "mh4uQuestId": 419,
+      "method": "signature+location+monsters"
+    },
+    "quest_89431b6e4aae": {
+      "mh4uQuestId": 420,
+      "method": "signature+location+monsters"
+    },
+    "quest_5f611f56f63c": {
+      "mh4uQuestId": 421,
+      "method": "signature+location+monsters"
+    },
+    "quest_dc5739e82eff": {
+      "mh4uQuestId": 422,
+      "method": "signature+location+monsters"
+    },
+    "quest_3c5b6b21c366": {
+      "mh4uQuestId": 423,
+      "method": "signature+location+monsters"
+    },
+    "quest_ade6bb5f20bb": {
+      "mh4uQuestId": 424,
+      "method": "signature+location+monsters"
+    },
+    "quest_5f13f4d16f40": {
+      "mh4uQuestId": 425,
+      "method": "signature+location+monsters"
+    },
+    "quest_2a1a883d1049": {
+      "mh4uQuestId": 426,
+      "method": "signature+location+monsters"
+    },
+    "quest_38e67f37969d": {
+      "mh4uQuestId": 427,
+      "method": "signature+location+monsters"
+    },
+    "quest_25a2826be921": {
+      "mh4uQuestId": 428,
+      "method": "signature+location+monsters"
+    },
+    "quest_c83c67f7419a": {
+      "mh4uQuestId": 429,
+      "method": "signature+location+monsters"
+    },
+    "quest_0e84bc6cdd74": {
+      "mh4uQuestId": 430,
+      "method": "signature+location+monsters"
+    },
+    "quest_ad05c9c3ced3": {
+      "mh4uQuestId": 431,
+      "method": "signature+location+monsters"
+    },
+    "quest_7d233a786ba9": {
+      "mh4uQuestId": 434,
+      "method": "signature+location+monsters"
+    },
+    "quest_10d68940ec3d": {
+      "mh4uQuestId": 432,
+      "method": "signature+location+monsters"
+    },
+    "quest_3da0da3c1e31": {
+      "mh4uQuestId": 433,
+      "method": "signature+location+monsters"
+    },
+    "quest_e719a2c69de0": {
+      "mh4uQuestId": 435,
+      "method": "signature+location+monsters"
+    },
+    "quest_3253363d7878": {
+      "mh4uQuestId": 436,
+      "method": "signature+location+monsters"
+    },
+    "quest_750a954c6940": {
+      "mh4uQuestId": 437,
+      "method": "signature+location+monsters"
+    },
+    "quest_7b399259fc68": {
+      "mh4uQuestId": 438,
+      "method": "signature+location+monsters"
+    },
+    "quest_c5290e05c951": {
+      "mh4uQuestId": 439,
+      "method": "signature+location+monsters"
+    },
+    "quest_6cae3017e9a4": {
+      "mh4uQuestId": 440,
+      "method": "signature+location+monsters"
+    },
+    "quest_5646ab5053cd": {
+      "mh4uQuestId": 441,
+      "method": "signature+location+monsters"
+    },
+    "quest_8c9815f28f48": {
+      "mh4uQuestId": 442,
+      "method": "signature+location+monsters"
+    },
+    "quest_fe44e93bc43b": {
+      "mh4uQuestId": 443,
+      "method": "signature+location+monsters"
+    },
+    "quest_51193dda98d4": {
+      "mh4uQuestId": 444,
+      "method": "signature+location+monsters"
+    },
+    "quest_fd112c29a3cc": {
+      "mh4uQuestId": 447,
+      "method": "signature+location+monsters"
+    },
+    "quest_74a6cdc89551": {
+      "mh4uQuestId": 446,
+      "method": "signature+location+monsters"
+    },
+    "quest_411638a92516": {
+      "mh4uQuestId": 445,
+      "method": "signature+location+monsters"
+    },
+    "quest_02e4c80b2102": {
+      "mh4uQuestId": 451,
+      "method": "signature+location+monsters"
+    },
+    "quest_9860f91bb588": {
+      "mh4uQuestId": 448,
+      "method": "verified-jp-identity"
+    },
+    "quest_4e611f1e8606": {
+      "mh4uQuestId": 450,
+      "method": "signature+location+monsters"
+    },
+    "event-episodic-079": {
+      "mh4uQuestId": 700,
+      "method": "event-name"
+    },
+    "event-episodic-080": {
+      "mh4uQuestId": 701,
+      "method": "event-name"
+    },
+    "event-episodic-081": {
+      "mh4uQuestId": 702,
+      "method": "event-name"
+    },
+    "event-episodic-082": {
+      "mh4uQuestId": 703,
+      "method": "event-name"
+    },
+    "event-episodic-083": {
+      "mh4uQuestId": 704,
+      "method": "event-name"
+    },
+    "event-episodic-084": {
+      "mh4uQuestId": 705,
+      "method": "event-name"
+    },
+    "event-episodic-085": {
+      "mh4uQuestId": 706,
+      "method": "event-name"
+    },
+    "event-episodic-086": {
+      "mh4uQuestId": 707,
+      "method": "event-name"
+    },
+    "event-episodic-087": {
+      "mh4uQuestId": 708,
+      "method": "event-name"
+    },
+    "event-episodic-088": {
+      "mh4uQuestId": 709,
+      "method": "event-name"
+    },
+    "event-episodic-089": {
+      "mh4uQuestId": 710,
+      "method": "event-name"
+    },
+    "event-episodic-090": {
+      "mh4uQuestId": 711,
+      "method": "event-name"
+    },
+    "event-episodic-091": {
+      "mh4uQuestId": 712,
+      "method": "event-name"
+    },
+    "event-episodic-092": {
+      "mh4uQuestId": 713,
+      "method": "event-name"
+    },
+    "event-episodic-093": {
+      "mh4uQuestId": 714,
+      "method": "event-name"
+    },
+    "quest_h8_c2_research_velocidrome": {
+      "mh4uQuestId": 26,
+      "method": "signature+location+monsters"
+    },
+    "quest_h8_c2_research_yian_kutku": {
+      "mh4uQuestId": 27,
+      "method": "signature+location+monsters"
+    },
+    "quest_h8_c4_gore_magala_drama": {
+      "mh4uQuestId": 59,
+      "method": "signature+location+monsters"
+    },
+    "quest_h8_g3_operation_rust_remover": {
+      "mh4uQuestId": 449,
+      "method": "verified-jp-identity"
+    }
+  }
+}
