@@ -1,0 +1,65 @@
+{
+  "ok": true,
+  "ukau": {
+    "stats": {
+      "eligible": 1613,
+      "finalists": 100,
+      "checkedFinalists": 100,
+      "rankedPool": 4,
+      "beam": 3000,
+      "approximate": true,
+      "targetCount": 5,
+      "profile": "complex5",
+      "timedOut": false,
+      "elapsedMs": 16329
+    },
+    "armors": [
+      "우캄루X사쿠파케",
+      "카이저X메일",
+      "우캄루X사쿰페",
+      "카이저X펄드",
+      "우캄루X케마르"
+    ],
+    "activated": [
+      "회피성능+3",
+      "심안",
+      "예리도레벨+1",
+      "약점특효",
+      "내진",
+      "공격력UP【소】"
+    ],
+    "decorations": [
+      "공격주【3】",
+      "회피주【2】",
+      "회피주【2】",
+      "회피주【2】",
+      "회피주【2】",
+      "회피주【2】",
+      "통격주【1】",
+      "항진주【1】"
+    ],
+    "metrics": {
+      "negativeSkillCount": 0,
+      "negativeSkillSeverity": 0,
+      "decorationCount": 8,
+      "usedDecorationSlots": 15,
+      "distinctDecorationTypes": 4,
+      "targetWastePoints": 0,
+      "targetUpgradeSteps": 0,
+      "extraPositiveSkillCount": 1,
+      "preferredSkillScore": 0,
+      "preferredSkillCount": 0,
+      "rankMaxDowngrade": 0,
+      "rankTotalDowngrade": 0,
+      "currentRankPieces": 5,
+      "defense": 536,
+      "resistanceTotal": -28,
+      "resistanceMinimum": -12,
+      "remainingSlots": 1
+    }
+  },
+  "synthetic": {
+    "oneSlot": "extra skill first",
+    "twoSlots": "extra skill + negative cleanup"
+  }
+}

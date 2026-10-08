@@ -210,17 +210,17 @@ function practicalBuildMetrics(armors,progression,calc,containers,usedDecoration
 
 function compareRankedMetrics(a,b){
   const am=a.metrics||{},bm=b.metrics||{};
-  return (am.negativeSkillCount||0)-(bm.negativeSkillCount||0)
-    ||(am.negativeSkillSeverity||0)-(bm.negativeSkillSeverity||0)
-    ||(am.targetWastePoints||0)-(bm.targetWastePoints||0)
-    ||(bm.targetUpgradeSteps||0)-(am.targetUpgradeSteps||0)
-    ||(bm.remainingSlots||0)-(am.remainingSlots||0)
-    ||(bm.preferredSkillScore||0)-(am.preferredSkillScore||0)
+  return (bm.preferredSkillScore||0)-(am.preferredSkillScore||0)
     ||(bm.preferredSkillCount||0)-(am.preferredSkillCount||0)
+    ||(bm.extraPositiveSkillCount||0)-(am.extraPositiveSkillCount||0)
+    ||(bm.targetUpgradeSteps||0)-(am.targetUpgradeSteps||0)
+    ||(am.negativeSkillCount||0)-(bm.negativeSkillCount||0)
+    ||(am.negativeSkillSeverity||0)-(bm.negativeSkillSeverity||0)
+    ||(bm.remainingSlots||0)-(am.remainingSlots||0)
+    ||(am.targetWastePoints||0)-(bm.targetWastePoints||0)
     ||(am.usedDecorationSlots||0)-(bm.usedDecorationSlots||0)
     ||(am.decorationCount||0)-(bm.decorationCount||0)
     ||(am.distinctDecorationTypes||0)-(bm.distinctDecorationTypes||0)
-    ||(bm.extraPositiveSkillCount||0)-(am.extraPositiveSkillCount||0)
     ||(am.rankMaxDowngrade||0)-(bm.rankMaxDowngrade||0)
     ||(am.rankTotalDowngrade||0)-(bm.rankTotalDowngrade||0)
     ||(bm.defense||0)-(am.defense||0)
@@ -335,6 +335,7 @@ function solveDecorations(basePoints, containers, decorations, req, torsoUpCount
   return {placements:bestPartial?.placements||[],points:bestPartial?.points||{...basePoints},complete:false};
 }
 
+
 function requirementDeficits(points,req){
   return Object.entries(req).map(([skillId,needRaw])=>{
     const need=Number(needRaw)||0,have=Number(points?.[skillId]||0);
@@ -425,32 +426,209 @@ function extendTargetGenerationState(st,armor,req,includeTorsoUp){
   return {targetPoints,targetTorsoUpCount:torsoUpCount,bodyTargetSkills};
 }
 
-function selectGenerationBeam(next,width){
+
+function buildDecorationEfficiency(req, decorations){
+  const best={};
+  for(const skillId of Object.keys(req||{})){
+    const options=(decorations||[]).filter(d=>Number(d?.slots)>=1&&Number(d?.skills?.[skillId]||0)>0);
+    best[skillId]=options.reduce((m,d)=>Math.max(m,Number(d.skills?.[skillId]||0)/Math.max(1,Number(d.slots||1))),0);
+  }
+  return best;
+}
+
+function generationFeasibility(state,req,decoEfficiency,availableSlots){
+  let missingSkillCount=0,missingTotal=0,estimatedSlots=0,hit=0;
+  for(const [id,needRaw] of Object.entries(req||{})){
+    const need=Number(needRaw)||0,have=Number(state?.targetPoints?.[id]||0);
+    const missing=Math.max(0,need-have);
+    if(missing>0){
+      missingSkillCount+=1;missingTotal+=missing;
+      const eff=Number(decoEfficiency?.[id]||0);
+      estimatedSlots+=eff>0?missing/eff:99;
+    }
+    hit+=Math.min(need,Math.max(0,have));
+  }
+  const slack=Number(availableSlots||0)-estimatedSlots;
+  return {missingSkillCount,missingTotal,estimatedSlots,completionSlack:slack,targetHit:hit};
+}
+
+function compareGenerationFeasibility(a,b){
+  const af=a.feasibility||{},bf=b.feasibility||{};
+  return (af.missingSkillCount||0)-(bf.missingSkillCount||0)
+    ||(bf.completionSlack??-999)-(af.completionSlack??-999)
+    ||(af.missingTotal||0)-(bf.missingTotal||0)
+    ||(bf.targetHit||0)-(af.targetHit||0)
+    ||b.efficientScore-a.efficientScore
+    ||b.score-a.score;
+}
+
+function selectGenerationBeam(next,width,useFeasibility=false){
   const original=[...next].sort((a,b)=>b.score-a.score);
   const efficient=[...next].sort((a,b)=>b.efficientScore-a.efficientScore||b.score-a.score);
-  const out=[],seen=new Set();let oi=0,ei=0;
-  const pushFrom=list=>{while(list===original?oi<list.length:ei<list.length){const idx=list===original?oi++:ei++;const n=list[idx],sig=buildSignature(n.armors);if(seen.has(sig))continue;seen.add(sig);out.push(n);return true;}return false;};
-  while(out.length<width&&(oi<original.length||ei<efficient.length)){
-    for(let k=0;k<3&&out.length<width;k++)if(!pushFrom(original))break;
-    if(out.length<width)pushFrom(efficient);
+  if(!useFeasibility){
+    const out=[],seen=new Set();let oi=0,ei=0;
+    const pushFrom=list=>{while(list===original?oi<list.length:ei<list.length){const idx=list===original?oi++:ei++;const n=list[idx],sig=buildSignature(n.armors);if(seen.has(sig))continue;seen.add(sig);out.push(n);return true;}return false;};
+    while(out.length<width&&(oi<original.length||ei<efficient.length)){
+      for(let k=0;k<3&&out.length<width;k++)if(!pushFrom(original))break;
+      if(out.length<width)pushFrom(efficient);
+    }
+    return out;
+  }
+  const feasible=[...next].sort(compareGenerationFeasibility);
+  const out=[],seen=new Set();let oi=0,ei=0,fi=0;
+  const pushFrom=(list,key)=>{
+    let i=key==='o'?oi:key==='e'?ei:fi;
+    while(i<list.length){const n=list[i++],sig=buildSignature(n.armors);if(seen.has(sig))continue;seen.add(sig);out.push(n);if(key==='o')oi=i;else if(key==='e')ei=i;else fi=i;return true;}
+    if(key==='o')oi=i;else if(key==='e')ei=i;else fi=i;return false;
+  };
+  while(out.length<width&&(oi<original.length||ei<efficient.length||fi<feasible.length)){
+    if(out.length<width)pushFrom(feasible,'f');
+    if(out.length<width)pushFrom(efficient,'e');
+    for(let k=0;k<2&&out.length<width;k++)if(!pushFrom(original,'o'))break;
   }
   return out;
 }
 
-function selectFinalistsWithTargetEfficiency(beam,limit){
+function selectFinalistsWithTargetEfficiency(beam,limit,useFeasibility=false){
   const original=[...beam].sort((a,b)=>b.score-a.score);
   const efficient=[...beam].sort((a,b)=>b.efficientScore-a.efficientScore||b.score-a.score);
-  const out=[],seen=new Set();let oi=0,ei=0;
-  const push=(list,key)=>{let i=key==='o'?oi:ei;while(i<list.length){const n=list[i++],sig=buildSignature(n.armors);if(seen.has(sig))continue;seen.add(sig);out.push(n);if(key==='o')oi=i;else ei=i;return true;}if(key==='o')oi=i;else ei=i;return false;};
-  while(out.length<limit&&(oi<original.length||ei<efficient.length)){
-    push(efficient,'e');
+  const out=[],seen=new Set();let oi=0,ei=0,fi=0;
+  const feasible=useFeasibility?[...beam].sort(compareGenerationFeasibility):[];
+  const push=(list,key)=>{
+    let i=key==='o'?oi:key==='e'?ei:fi;
+    while(i<list.length){const n=list[i++],sig=buildSignature(n.armors);if(seen.has(sig))continue;seen.add(sig);out.push(n);if(key==='o')oi=i;else if(key==='e')ei=i;else fi=i;return true;}
+    if(key==='o')oi=i;else if(key==='e')ei=i;else fi=i;return false;
+  };
+  while(out.length<limit&&(oi<original.length||ei<efficient.length||(useFeasibility&&fi<feasible.length))){
+    if(useFeasibility){for(let k=0;k<2&&out.length<limit;k++)if(!push(feasible,'f'))break;}
+    if(out.length<limit)push(efficient,'e');
     if(out.length<limit)push(original,'o');
   }
   return out;
 }
 
+
+function compactDecorationPlacements(basePoints,placements,decorations,req,torsoUpCount){
+  let current=[...(placements||[])];
+  const calcPoints=list=>{
+    const points={...basePoints};
+    for(const placed of list)skillMapAdd(points,placed.deco?.skills,placed.container==='body'?1+torsoUpCount:1);
+    return points;
+  };
+  const used=list=>list.reduce((sum,p)=>sum+Number(p?.deco?.slots||0),0);
+  const overage=points=>Object.entries(req||{}).reduce((sum,[id,need])=>sum+Math.max(0,Number(points?.[id]||0)-Number(need||0)),0);
+  let changed=true,guard=0;
+  while(changed&&guard++<12){
+    changed=false;
+    outer:
+    for(let i=0;i<current.length;i++){
+      const old=current[i],oldSlots=Number(old?.deco?.slots||0);
+      const alternatives=[null,...(decorations||[]).filter(d=>Number(d?.slots||0)<oldSlots&&Number(d?.slots||0)>=1&&Object.keys(req||{}).some(id=>Number(d?.skills?.[id]||0)>0))];
+      let bestList=current,bestPoints=calcPoints(current),bestUsed=used(current),bestOver=overage(bestPoints);
+      for(const deco of alternatives){
+        const trial=current.slice();
+        if(deco)trial[i]={deco,container:old.container};else trial.splice(i,1);
+        const pts=calcPoints(trial);
+        if(!targetRequirementsSatisfied(pts,req))continue;
+        const u=used(trial),o=overage(pts);
+        if(u<bestUsed||(u===bestUsed&&o<bestOver)){bestList=trial;bestPoints=pts;bestUsed=u;bestOver=o;}
+      }
+      if(bestList!==current){current=bestList;changed=true;break outer;}
+    }
+  }
+  return {placements:current,points:calcPoints(current)};
+}
+
+function remainingContainerCapacities(containers,placements=[]){
+  const remaining=Object.fromEntries((containers||[]).map(c=>[c.id,Number(c.capacity||0)]));
+  for(const placed of placements||[]){
+    const id=placed?.container,slots=Number(placed?.deco?.slots||0);
+    if(id in remaining)remaining[id]=Math.max(0,Number(remaining[id]||0)-slots);
+  }
+  return remaining;
+}
+
+function residualStateMetrics(points,req,skills,preferredSkillWeights,remaining){
+  const calc={points,activated:getActivatedSkills(points,skills)};
+  const targetIds=new Set(Object.keys(req||{}));
+  const positive=calc.activated.filter(a=>Number(a.threshold)>0);
+  const extraPositiveSkillCount=positive.filter(a=>!targetIds.has(a.skillId)).length;
+  const targetEff=targetPointEfficiency(calc,req,skills);
+  const neg=negativeSkillBurden(calc);
+  const pref=preferredSkillMetrics(calc,preferredSkillWeights);
+  const remainingSlots=Object.values(remaining||{}).reduce((s,v)=>s+Number(v||0),0);
+  return {extraPositiveSkillCount,targetUpgradeSteps:targetEff.targetUpgradeSteps,...neg,...pref,remainingSlots};
+}
+
+function compareResidualStates(a,b){
+  const am=a.metrics||{},bm=b.metrics||{};
+  return (bm.preferredSkillScore||0)-(am.preferredSkillScore||0)
+    ||(bm.preferredSkillCount||0)-(am.preferredSkillCount||0)
+    ||(bm.extraPositiveSkillCount||0)-(am.extraPositiveSkillCount||0)
+    ||(bm.targetUpgradeSteps||0)-(am.targetUpgradeSteps||0)
+    ||(am.negativeSkillCount||0)-(bm.negativeSkillCount||0)
+    ||(am.negativeSkillSeverity||0)-(bm.negativeSkillSeverity||0)
+    ||(bm.remainingSlots||0)-(am.remainingSlots||0)
+    ||a.addedCount-b.addedCount;
+}
+
+function optimizeResidualDecorations(basePoints,containers,placements,decorations,req,torsoUpCount,skills,preferredSkillWeights={},maxStates=260){
+  const remaining=remainingContainerCapacities(containers,placements);
+  if(Object.values(remaining).every(v=>Number(v)<=0))return {placements,points:basePoints};
+  const baseActivated=getActivatedSkills(basePoints,skills);
+  const negativeIds=new Set(baseActivated.filter(a=>Number(a.threshold)<0).map(a=>a.skillId));
+  const targetIds=new Set(Object.keys(req||{}));
+  const usefulSkillIds=new Set(negativeIds);
+  for(const s of skills||[]){
+    const have=Number(basePoints?.[s.id]||0);
+    if((s.activations||[]).some(a=>Number(a.points)>have&&Number(a.points)>0))usefulSkillIds.add(s.id);
+  }
+  const candidates=(decorations||[])
+    .filter(d=>Number(d.slots)>=1&&Number(d.slots)<=3)
+    .filter(d=>Object.entries(d.skills||{}).some(([id,v])=>Number(v)>0&&usefulSkillIds.has(id)))
+    .sort((a,b)=>{
+      const av=Object.entries(a.skills||{}).reduce((sum,[id,v])=>sum+(usefulSkillIds.has(id)?Math.max(0,Number(v)||0):0),0)/Math.max(1,Number(a.slots||1));
+      const bv=Object.entries(b.skills||{}).reduce((sum,[id,v])=>sum+(usefulSkillIds.has(id)?Math.max(0,Number(v)||0):0),0)/Math.max(1,Number(b.slots||1));
+      return bv-av||Number(a.slots||0)-Number(b.slots||0);
+    }).slice(0,36);
+  if(!candidates.length)return {placements,points:basePoints};
+  const seed={points:{...basePoints},remaining:{...remaining},added:[],addedCount:0};
+  seed.metrics=residualStateMetrics(seed.points,req,skills,preferredSkillWeights,seed.remaining);
+  let states=[seed],best=seed;
+  const maxSteps=Math.min(8,Object.values(remaining).reduce((s,v)=>s+Number(v||0),0));
+  const relevantIds=[...usefulSkillIds];
+  for(let step=0;step<maxSteps;step++){
+    const expanded=[...states];
+    for(const st of states){
+      for(const deco of candidates){
+        const slots=Number(deco.slots||0);
+        for(const [container,freeRaw] of Object.entries(st.remaining)){
+          if(Number(freeRaw)<slots)continue;
+          const ns={points:{...st.points},remaining:{...st.remaining},added:[...st.added,{deco,container}],addedCount:st.addedCount+1};
+          ns.remaining[container]-=slots;
+          skillMapAdd(ns.points,deco.skills,container==='body'?1+torsoUpCount:1);
+          if(!targetRequirementsSatisfied(ns.points,req))continue;
+          ns.metrics=residualStateMetrics(ns.points,req,skills,preferredSkillWeights,ns.remaining);
+          expanded.push(ns);
+          if(compareResidualStates(ns,best)<0)best=ns;
+        }
+      }
+    }
+    const dedup=new Map();
+    for(const st of expanded){
+      const pts=relevantIds.map(id=>`${id}:${Math.max(-20,Math.min(30,Number(st.points?.[id]||0)))}`).join(',');
+      const rem=Object.entries(st.remaining).map(([k,v])=>`${k}:${v}`).join(',');
+      const key=pts+'|'+rem;
+      const old=dedup.get(key);if(!old||compareResidualStates(st,old)<0)dedup.set(key,st);
+    }
+    states=[...dedup.values()].sort(compareResidualStates).slice(0,maxStates);
+    if(states[0]&&compareResidualStates(states[0],best)<0)best=states[0];
+  }
+  return {placements:[...(placements||[]),...best.added],points:best.points,residualMetrics:best.metrics};
+}
+
 function autoSearchProfile(targetCount){
-  if(targetCount>=5)return {name:"complex5",partLimit:32,beamWidth:2000,finalists:60,decoStates:160,timeBudgetMs:5000};
+  if(targetCount>=5)return {name:"complex5",partLimit:36,beamWidth:3000,finalists:100,decoStates:220,timeBudgetMs:10000};
   if(targetCount>=4)return {name:"complex4",partLimit:36,beamWidth:3000,finalists:80,decoStates:220,timeBudgetMs:6000};
   if(targetCount===3)return {name:"balanced3",partLimit:46,beamWidth:6500,finalists:260,decoStates:900,timeBudgetMs:8000};
   return {name:"deep",partLimit:55,beamWidth:12000,finalists:700,decoStates:1800,timeBudgetMs:12000};
@@ -493,6 +671,10 @@ export async function searchBuilds(options, data){
   }
 
   const targetMeta=buildTargetGenerationMeta(req,data.skills);
+  const useFeasibility=targetCount>=4;
+  const decorationEfficiency=useFeasibility?buildDecorationEfficiency(req,data.decorations):null;
+  const fixedGenerationSlots=useFeasibility?Math.max(0,Number(charm?.slots||0))+Math.max(0,Number(weaponSlots||0)):0;
+  const futureMaxSlots=useFeasibility?Object.fromEntries(PARTS.map((p,i)=>[i,PARTS.slice(i+1).reduce((sum,rp)=>sum+Math.max(...byPart[rp].map(a=>Number(a?.slots||0))),0)])):{};
   const initialTargetPoints=Object.fromEntries(Object.keys(req).map(id=>[id,Number(charm?.skills?.[id]||0)]));
   let beam=[{armors:[],score:0,efficientScore:0,targetPoints:initialTargetPoints,targetTorsoUpCount:0,bodyTargetSkills:null}];
   for(let partIndex=0;partIndex<PARTS.length;partIndex++){
@@ -510,15 +692,16 @@ export async function searchBuilds(options, data){
         }
         const targetState=extendTargetGenerationState(st,armor,req,includeTorsoUp);
         const efficiency=targetWasteForGeneration(targetState.targetPoints,req,targetMeta);
-        next.push({armors:arr,score,efficientScore:score-efficiency.waste*3+efficiency.upgradeSteps*1.5,...targetState});
+        const feasibility=useFeasibility?generationFeasibility(targetState,req,decorationEfficiency,fixedGenerationSlots+arr.reduce((sum,a)=>sum+Number(a?.slots||0),0)+Number(futureMaxSlots[partIndex]||0)):null;
+        next.push({armors:arr,score,efficientScore:score-efficiency.waste*3+efficiency.upgradeSteps*1.5,feasibility,...targetState});
       }
     }
-    beam=selectGenerationBeam(next,profile.beamWidth);
+    beam=selectGenerationBeam(next,profile.beamWidth,useFeasibility);
     progress({phase:"armor",current:partIndex+1,total:PARTS.length,beam:beam.length});
     await yieldUi();
   }
 
-  const finalists=selectFinalistsWithTargetEfficiency(beam,profile.finalists);
+  const finalists=selectFinalistsWithTargetEfficiency(beam,profile.finalists,useFeasibility);
   const rankedPool=[];
   const nearMissPool=[];
   const poolTarget=Math.min(profile.finalists,Math.max(60,Number(limit||20)*5));
@@ -573,6 +756,40 @@ export async function searchBuilds(options, data){
       await yieldUi();
     }
     if(rankedPool.length>=poolTarget)break;
+  }
+
+  // 요청 스킬을 완성한 후보 가운데 실제로 여유 슬롯이 있는 일부만 2차 최적화한다.
+  // 1차 전수 탐색에서 매 후보마다 후처리를 돌리면 단순 1~2스킬 검색도 지나치게 느려지므로,
+  // 기본 완성도가 높은 후보 + 잔여 슬롯이 많은 후보의 합집합에만 적용한다.
+  if(allowDecorations&&rankedPool.length){
+    const provisional=[...rankedPool].sort(compareRankedBuilds);
+    const byFree=[...rankedPool].sort((a,b)=>(b.metrics?.remainingSlots||0)-(a.metrics?.remainingSlots||0)||compareRankedBuilds(a,b));
+    const selected=new Set();
+    const optimizeCap=Math.min(rankedPool.length,targetCount>=4?Math.max(4,Math.min(6,Number(limit||20))):Math.max(2,Math.min(3,Number(limit||20))));
+    for(const item of provisional.slice(0,targetCount>=4?optimizeCap:Math.ceil(optimizeCap/2)))selected.add(item);
+    for(const item of byFree.slice(0,optimizeCap)){
+      if(selected.size>=optimizeCap)break;
+      if(Number(item.metrics?.remainingSlots||0)>0)selected.add(item);
+    }
+    for(const item of selected){
+      if(targetCount<4&&Number(item.metrics?.remainingSlots||0)<=0)continue;
+      const {points,torsoUpCount}=baseBuildPoints(item.armors,charm,includeTorsoUp);
+      const containers=containersForBuild(item.armors,charm.slots,weaponSlots);
+      const compact=compactDecorationPlacements(points,item.decorations||[],data.decorations,req,torsoUpCount);
+      const optimized=optimizeResidualDecorations(compact.points,containers,compact.placements,data.decorations,req,torsoUpCount,data.skills,preferredSkillWeights,targetCount>=4?60:20);
+      const calc=calculateBuild({armors:item.armors,charm,weaponSlots,decorations:optimized.placements},data,includeTorsoUp);
+      if(!targetRequirementsSatisfied(calc.points,req))continue;
+      const decoMetrics=decorationBurden(optimized.placements);
+      item.decorations=optimized.placements;
+      item.calc=calc;
+      item.metrics={
+        ...negativeSkillBurden(calc),
+        ...decoMetrics,
+        ...targetPointEfficiency(calc,req,data.skills),
+        ...preferredSkillMetrics(calc,preferredSkillWeights),
+        ...practicalBuildMetrics(item.armors,rank,calc,containers,decoMetrics.usedDecorationSlots)
+      };
+    }
   }
 
   rankedPool.sort(compareRankedBuilds);

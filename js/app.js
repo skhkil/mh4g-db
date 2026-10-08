@@ -1,5 +1,5 @@
-import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,loadArmorProgression,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-step4-final-release";
-import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-step4-final-release";
+import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,loadArmorProgression,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-auto-optimizer2";
+import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-auto-optimizer2";
 
 let data={skills:[],armors:[],armorSets:[],decorations:[],relicWeaponDecorations:[],decorationUnlocks:{decorations:{}},questUnlockIndex:{quests:{},targets:{}},eventMajorRewards:{quests:{}},weapons:[],weaponSummary:[],melodies:[],items:[],itemReferenceIndex:{items:{}},skillReferenceIndex:{items:{},categories:[]},meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],monsterReferenceIndex:{items:{}},dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],questReferenceIndex:{quests:{}},siteInfo:{},meta:{},weaponSkillPriorities:{weapons:{}}};
 let targets=[];
@@ -47,7 +47,7 @@ let restoringHistory=false;
 let historyRestoreToken=0;
 try{history.scrollRestoration="manual"}catch{}
 
-const APP_VERSION="0.7.7-step4-final-release";
+const APP_VERSION="0.7.7-auto-optimizer2";
 const boundEventGroups=new Set();
 let appEventsBound=false;
 function ensureRuntimeStatus(){
@@ -485,7 +485,7 @@ function applyOwnedCharm(index){const c=getOwnedCharms()[Number(index)];if(!c)re
 function removeOwnedCharm(index){const list=getOwnedCharms();list.splice(Number(index),1);setOwnedCharms(list);renderOwnedCharms()}
 function targetRequirementForActivationIds(ids){const out={};for(const aid of ids||[])for(const sk of data.skills||[])for(const a of sk.activations||[])if(a.id===aid&&Number(a.points)>0)out[sk.id]=Math.max(Number(out[sk.id]||0),Number(a.points)||0);return out}
 function scoreOwnedCharm(c,req){let s=Number(c.slots||0)*0.75;for(const [id,need] of Object.entries(req||{}))s+=Math.min(Math.max(0,Number(c.skills?.[id]||0)),Number(need))*4;return s}
-function compareMergedAutoResults(a,b){const am=a.metrics||{},bm=b.metrics||{};return (am.negativeSkillCount||0)-(bm.negativeSkillCount||0)||(am.targetWastePoints||0)-(bm.targetWastePoints||0)||(bm.remainingSlots||0)-(am.remainingSlots||0)||(am.usedDecorationSlots||0)-(bm.usedDecorationSlots||0)||(bm.defense||0)-(am.defense||0)}
+function compareMergedAutoResults(a,b){const am=a.metrics||{},bm=b.metrics||{};return (bm.preferredSkillScore||0)-(am.preferredSkillScore||0)||(bm.preferredSkillCount||0)-(am.preferredSkillCount||0)||(bm.extraPositiveSkillCount||0)-(am.extraPositiveSkillCount||0)||(bm.targetUpgradeSteps||0)-(am.targetUpgradeSteps||0)||(am.negativeSkillCount||0)-(bm.negativeSkillCount||0)||(am.negativeSkillSeverity||0)-(bm.negativeSkillSeverity||0)||(bm.remainingSlots||0)-(am.remainingSlots||0)||(am.targetWastePoints||0)-(bm.targetWastePoints||0)||(am.usedDecorationSlots||0)-(bm.usedDecorationSlots||0)||(bm.defense||0)-(am.defense||0)}
 function requiredCharmConditionFromNear(near){const misses=near?.missing||[];if(!misses.length)return "추가 호석 조건 산출 불가";const parts=misses.map(x=>`${skillName(x.skillId)} +${Number(x.missing||0)}`);return `${parts.join(" / ")} · 슬롯3이면 장식주 보완 여지 증가 (충분 조건)`}
 
 function getSavedBuilds(){try{const v=JSON.parse(localStorage.getItem(BUILD_STORAGE_KEY)||"[]");return Array.isArray(v)?v:[]}catch{return []}}
