@@ -37,10 +37,19 @@ def run(width,height):
         pg.fill('#relicAttackInput','1728'); pg.wait_for_timeout(50)
         out['attackInfer']='340 + 공격보정 20' in pg.locator('#relicAttackResult').inner_text()
         out['sourceLinks']=pg.locator('#relicEquipmentSources a').count()
+        # G-rank guild quest derivation: forward + reverse
+        pg.select_option('#relicDerivSource','알셀타스'); pg.wait_for_timeout(50)
+        d1=pg.locator('#relicDerivSourceResult').inner_text()
+        out['deriveForward']='라잔' in d1 and '일반 출현' in d1
+        pg.select_option('#relicDerivTarget','라잔'); pg.wait_for_timeout(50)
+        d2=pg.locator('#relicDerivTargetResult').inner_text()
+        out['deriveReverse']='알셀타스' in d2 and '케차와차' in d2
+        out['qualitySplit']=all(x in txt for x in ['MH4 참고 규칙','보물구역 · 파란 광석','MH4G · 클리어 보상 품질 구간','Lv86~100','Lv126~135','Lv136~140'])
+        out['qualityExamples']=all(x in txt for x in ['테오 70%','샤가르 126~135','봉인 무기 20%'])
         out['overflow']=pg.evaluate('document.documentElement.scrollWidth > document.documentElement.clientWidth + 2')
         out['errors']=errors
         b.close()
-    out['ok']=out['allGroupCards']==11 and out['group9'] and out['agito'] and out['silverSoulPool'] and out['attackTable'] and out['attackInfer'] and out['sourceLinks']>=4 and not out['overflow'] and not errors
+    out['ok']=out['allGroupCards']==11 and out['group9'] and out['agito'] and out['silverSoulPool'] and out['attackTable'] and out['attackInfer'] and out['sourceLinks']>=6 and out['deriveForward'] and out['deriveReverse'] and out['qualitySplit'] and out['qualityExamples'] and not out['overflow'] and not errors
     return out
 
 res=[run(1365,900),run(390,844)]

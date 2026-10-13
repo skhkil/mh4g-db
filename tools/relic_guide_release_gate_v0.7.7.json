@@ -1,5 +1,5 @@
 {
-  "version": "0.7.7-relic-guide1",
+  "version": "0.7.7-relic-guide3",
   "ok": true,
   "checks": {
     "cache_index.html": true,
@@ -16,7 +16,11 @@
     "data_exists": true,
     "groups_11": true,
     "weapon_types_14": true,
-    "armor_groups_11": true
+    "armor_groups_11": true,
+    "derivation_entries": true,
+    "quality_bands_5": true,
+    "quality_route_split": true,
+    "quality_86_glory": true
   },
   "errors": []
 }

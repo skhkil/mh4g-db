@@ -333,5 +333,17 @@
   ],
   "armorGroups": 11,
   "attackRawTypes": 6,
-  "sources": 4
+  "sources": 7,
+  "derivationEntries": 159,
+  "derivationSources": 41,
+  "derivationTargets": 24,
+  "derivationChecks": {
+    "alceltas_to_rajang": true,
+    "gore_to_shagaru": true,
+    "rathalos_sub_to_kushala": true,
+    "rajang_reverse_has_alceltas": true
+  },
+  "gradeRows": 5,
+  "qualityBands": 5,
+  "qualityExamples": 6
 }

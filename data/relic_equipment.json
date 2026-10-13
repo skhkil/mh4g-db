@@ -1,5 +1,5 @@
 {
-  "version": "0.7.7-relic-guide1",
+  "version": "0.7.7-relic-guide3",
   "title": "MH4G 발굴장비 가이드",
   "sources": [
     {
@@ -13,6 +13,11 @@
       "kind": "domestic"
     },
     {
+      "label": "루리웹 · MH4 영광의무기 노가다/보상 품질 정리",
+      "url": "https://bbs.ruliweb.com/game/79458/read/6677885",
+      "kind": "domestic-reference"
+    },
+    {
       "label": "MH4G@wiki · G급発掘装備",
       "url": "https://w.atwiki.jp/3dsmh4g/pages/257.html",
       "kind": "crosscheck"
@@ -21,34 +26,57 @@
       "label": "MH4G攻略 · 封じられし武器",
       "url": "https://game-cap.com/mh4g/data/item_fujirareshibuki.html",
       "kind": "crosscheck"
+    },
+    {
+      "label": "MH4G攻略DB · 탐색→길드퀘스트 파생표",
+      "url": "https://mh4info.com/?p=1278",
+      "kind": "crosscheck"
+    },
+    {
+      "label": "MH4G@wiki · 길드퀘스트 보상/발굴장비",
+      "url": "https://w.atwiki.jp/3dsmh4g/pages/395.html",
+      "kind": "crosscheck"
     }
   ],
   "notes": [
     "봉인된 무기/방어구의 외형 테이블은 다른 감정품(상처입은/역전/영웅/영광)과 다르므로 혼용하지 않습니다.",
     "2두 길드퀘스트는 원칙적으로 왼쪽 아이콘 몬스터 그룹의 발굴 외형을 따릅니다.",
+    "감정품 품질은 반드시 ‘맵 채굴/보물구역’과 ‘퀘스트 클리어 보상’을 구분해 봅니다. MH4의 Lv91 규칙을 MH4G G급 클리어 보상에 그대로 적용하지 않습니다.",
+    "탐색→길드퀘스트 파생은 확정이 아니라 추첨입니다. 탐색에서 해당 대형 몬스터를 토벌하거나 유실물을 줍고 조사보고를 제출하면, 그 몬스터에 대응하는 파생 후보 중에서 추첨됩니다.",
     "일부 방어구 A~F 세부 조합은 원본 위키에도 미확정/예외 보고가 남아 있어, 이 화면은 그룹별 확인된 외형 풀을 우선 표시합니다."
   ],
   "grades": [
     {
       "name": "상처입은 무기",
-      "questLevel": "Lv1+",
-      "rarity": "RARE 1~3"
+      "questLevel": "저레벨 길퀘/탐색",
+      "rarity": "RARE 1~3",
+      "detail": "감정 전 명칭. 실제 획득 구간과 품질은 채굴/클리어 보상을 구분해서 봐야 함."
     },
     {
       "name": "역전의 무기",
-      "questLevel": "Lv31+",
-      "rarity": "RARE 4~5"
+      "questLevel": "중저레벨 이후",
+      "rarity": "RARE 3~6",
+      "detail": "감정 전 명칭. MH4/MH4G 및 획득 방식에 따라 영광과 혼재하는 구간이 존재."
     },
     {
       "name": "영광의 무기",
-      "questLevel": "Lv86+",
-      "rarity": "RARE 6~7"
+      "questLevel": "획득 방식·몬스터별 상이",
+      "rarity": "RARE 4~7",
+      "detail": "‘Lv91부터’ 하나로 고정하지 않음. MH4 보물구역 채굴 규칙과 MH4G 클리어 보상 규칙을 별도 표에서 확인."
+    },
+    {
+      "name": "영웅의 무기",
+      "questLevel": "MH4G G급 고레벨",
+      "rarity": "G급 발굴",
+      "mh4gOnly": true,
+      "detail": "MH4G에서 추가된 감정품. 116~135 등 고레벨 클리어 보상에서 영광/봉인과 혼재 사례가 확인됨."
     },
     {
       "name": "봉인된 무기",
-      "questLevel": "Lv126+",
+      "questLevel": "MH4G Lv126+ 고레벨부터 출현 사례",
       "rarity": "RARE 8~10",
-      "mh4gOnly": true
+      "mh4gOnly": true,
+      "detail": "Lv126부터 모든 몬스터에서 보장되는 것이 아님. 몬스터와 126~135/136~140 구간에 따라 확률이 크게 다름."
     }
   ],
   "sealedGroups": [
@@ -665,5 +693,933 @@
       "element": "370 (각성 400)",
       "status": "-"
     }
+  },
+  "guildQuestDerivation": {
+    "rank": "G",
+    "title": "G급 탐색 → 길드퀘스트 파생",
+    "description": "G급 탐색에서 토벌(또는 유실물 조사보고)한 몬스터에 따라 추첨되는 길드퀘스트 후보입니다. 일반 출현·레어 예보·난입 몬스터를 구분합니다.",
+    "entries": [
+      {
+        "source": "알셀타스",
+        "target": "도스람포스",
+        "appearance": "normal"
+      },
+      {
+        "source": "알셀타스",
+        "target": "얀쿡",
+        "appearance": "normal"
+      },
+      {
+        "source": "알셀타스",
+        "target": "라잔",
+        "appearance": "normal"
+      },
+      {
+        "source": "알셀타스 아종",
+        "target": "도스람포스",
+        "appearance": "normal"
+      },
+      {
+        "source": "알셀타스 아종",
+        "target": "얀쿡",
+        "appearance": "normal"
+      },
+      {
+        "source": "알셀타스 아종",
+        "target": "오나즈치",
+        "appearance": "normal"
+      },
+      {
+        "source": "게넬·셀타스",
+        "target": "브라키디오스",
+        "appearance": "normal"
+      },
+      {
+        "source": "게넬·셀타스",
+        "target": "고어·마가라",
+        "appearance": "normal"
+      },
+      {
+        "source": "게넬·셀타스",
+        "target": "샤가르마가라",
+        "appearance": "normal"
+      },
+      {
+        "source": "게넬·셀타스",
+        "target": "크샬다오라",
+        "appearance": "normal"
+      },
+      {
+        "source": "게넬·셀타스 아종",
+        "target": "브라키디오스",
+        "appearance": "normal"
+      },
+      {
+        "source": "게넬·셀타스 아종",
+        "target": "고어·마가라",
+        "appearance": "normal"
+      },
+      {
+        "source": "게넬·셀타스 아종",
+        "target": "샤가르마가라",
+        "appearance": "normal"
+      },
+      {
+        "source": "게넬·셀타스 아종",
+        "target": "테오·테스카토르",
+        "appearance": "normal"
+      },
+      {
+        "source": "도스람포스",
+        "target": "도스람포스",
+        "appearance": "normal"
+      },
+      {
+        "source": "도스람포스",
+        "target": "얀쿡",
+        "appearance": "normal"
+      },
+      {
+        "source": "도스람포스",
+        "target": "오나즈치",
+        "appearance": "normal"
+      },
+      {
+        "source": "얀쿡",
+        "target": "얀쿡",
+        "appearance": "normal"
+      },
+      {
+        "source": "얀쿡",
+        "target": "얀쿡 아종",
+        "appearance": "normal"
+      },
+      {
+        "source": "얀쿡",
+        "target": "라잔",
+        "appearance": "normal"
+      },
+      {
+        "source": "얀쿡",
+        "target": "바살모스",
+        "appearance": "normal"
+      },
+      {
+        "source": "다이묘자자미",
+        "target": "얀쿡",
+        "appearance": "normal"
+      },
+      {
+        "source": "다이묘자자미",
+        "target": "다이묘자자미 아종",
+        "appearance": "normal"
+      },
+      {
+        "source": "다이묘자자미",
+        "target": "라잔",
+        "appearance": "normal"
+      },
+      {
+        "source": "다이묘자자미",
+        "target": "바살모스",
+        "appearance": "normal"
+      },
+      {
+        "source": "케차와차",
+        "target": "도스람포스",
+        "appearance": "normal"
+      },
+      {
+        "source": "케차와차",
+        "target": "얀쿡",
+        "appearance": "normal"
+      },
+      {
+        "source": "케차와차",
+        "target": "라잔",
+        "appearance": "normal"
+      },
+      {
+        "source": "케차와차",
+        "target": "바살모스",
+        "appearance": "normal"
+      },
+      {
+        "source": "테츠카브라",
+        "target": "다이묘자자미 아종",
+        "appearance": "normal"
+      },
+      {
+        "source": "테츠카브라",
+        "target": "라잔",
+        "appearance": "normal"
+      },
+      {
+        "source": "테츠카브라",
+        "target": "이블조",
+        "appearance": "normal"
+      },
+      {
+        "source": "테츠카브라",
+        "target": "바살모스",
+        "appearance": "normal"
+      },
+      {
+        "source": "테츠카브라 아종",
+        "target": "다이묘자자미 아종",
+        "appearance": "normal"
+      },
+      {
+        "source": "테츠카브라 아종",
+        "target": "바살모스 아종",
+        "appearance": "normal"
+      },
+      {
+        "source": "테츠카브라 아종",
+        "target": "티가렉스 아종",
+        "appearance": "normal"
+      },
+      {
+        "source": "테츠카브라 아종",
+        "target": "키린 아종",
+        "appearance": "normal"
+      },
+      {
+        "source": "가라라아자라",
+        "target": "얀가루루가",
+        "appearance": "normal"
+      },
+      {
+        "source": "가라라아자라",
+        "target": "브라키디오스",
+        "appearance": "normal"
+      },
+      {
+        "source": "가라라아자라",
+        "target": "티가렉스",
+        "appearance": "normal"
+      },
+      {
+        "source": "가라라아자라",
+        "target": "고어·마가라",
+        "appearance": "normal"
+      },
+      {
+        "source": "가라라아자라",
+        "target": "키린",
+        "appearance": "normal"
+      },
+      {
+        "source": "푸루푸루",
+        "target": "디아블로스",
+        "appearance": "normal"
+      },
+      {
+        "source": "푸루푸루",
+        "target": "고어·마가라",
+        "appearance": "normal"
+      },
+      {
+        "source": "푸루푸루",
+        "target": "진오우거 아종",
+        "appearance": "normal"
+      },
+      {
+        "source": "푸루푸루",
+        "target": "크샬다오라",
+        "appearance": "normal"
+      },
+      {
+        "source": "푸루푸루 아종",
+        "target": "브라키디오스",
+        "appearance": "normal"
+      },
+      {
+        "source": "푸루푸루 아종",
+        "target": "디아블로스 아종",
+        "appearance": "normal"
+      },
+      {
+        "source": "푸루푸루 아종",
+        "target": "진오우거",
+        "appearance": "normal"
+      },
+      {
+        "source": "푸루푸루 아종",
+        "target": "키린",
+        "appearance": "normal"
+      },
+      {
+        "source": "바살모스",
+        "target": "바살모스",
+        "appearance": "normal"
+      },
+      {
+        "source": "바살모스",
+        "target": "바살모스 아종",
+        "appearance": "normal"
+      },
+      {
+        "source": "바살모스",
+        "target": "티가렉스",
+        "appearance": "normal"
+      },
+      {
+        "source": "바살모스",
+        "target": "키린",
+        "appearance": "normal"
+      },
+      {
+        "source": "그라비모스",
+        "target": "얀가루루가",
+        "appearance": "normal"
+      },
+      {
+        "source": "그라비모스",
+        "target": "라잔",
+        "appearance": "normal"
+      },
+      {
+        "source": "그라비모스",
+        "target": "고어·마가라",
+        "appearance": "normal"
+      },
+      {
+        "source": "그라비모스",
+        "target": "테오·테스카토르",
+        "appearance": "normal"
+      },
+      {
+        "source": "그라비모스 아종",
+        "target": "라잔",
+        "appearance": "normal"
+      },
+      {
+        "source": "그라비모스 아종",
+        "target": "디아블로스 아종",
+        "appearance": "normal"
+      },
+      {
+        "source": "그라비모스 아종",
+        "target": "샤가르마가라",
+        "appearance": "normal"
+      },
+      {
+        "source": "그라비모스 아종",
+        "target": "크샬다오라",
+        "appearance": "normal"
+      },
+      {
+        "source": "리오레이아 아종",
+        "target": "디아블로스",
+        "appearance": "normal"
+      },
+      {
+        "source": "리오레이아 아종",
+        "target": "셀레기오스",
+        "appearance": "normal"
+      },
+      {
+        "source": "리오레이아 아종",
+        "target": "진오우거 아종",
+        "appearance": "normal"
+      },
+      {
+        "source": "리오레이아 아종",
+        "target": "키린",
+        "appearance": "normal"
+      },
+      {
+        "source": "리오레우스 아종",
+        "target": "얀가루루가",
+        "appearance": "normal"
+      },
+      {
+        "source": "리오레우스 아종",
+        "target": "라잔",
+        "appearance": "normal"
+      },
+      {
+        "source": "리오레우스 아종",
+        "target": "샤가르마가라",
+        "appearance": "normal"
+      },
+      {
+        "source": "리오레우스 아종",
+        "target": "크샬다오라",
+        "appearance": "normal"
+      },
+      {
+        "source": "모노블로스",
+        "target": "얀가루루가",
+        "appearance": "normal"
+      },
+      {
+        "source": "모노블로스",
+        "target": "이블조",
+        "appearance": "normal"
+      },
+      {
+        "source": "모노블로스",
+        "target": "고어·마가라",
+        "appearance": "normal"
+      },
+      {
+        "source": "모노블로스",
+        "target": "테오·테스카토르",
+        "appearance": "normal"
+      },
+      {
+        "source": "디아블로스",
+        "target": "디아블로스",
+        "appearance": "normal"
+      },
+      {
+        "source": "디아블로스",
+        "target": "디아블로스 아종",
+        "appearance": "normal"
+      },
+      {
+        "source": "디아블로스",
+        "target": "키린 아종",
+        "appearance": "normal"
+      },
+      {
+        "source": "디아블로스",
+        "target": "크샬다오라",
+        "appearance": "normal"
+      },
+      {
+        "source": "넬스큐라 아종",
+        "target": "다이묘자자미 아종",
+        "appearance": "rare"
+      },
+      {
+        "source": "넬스큐라 아종",
+        "target": "셀레기오스",
+        "appearance": "rare"
+      },
+      {
+        "source": "넬스큐라 아종",
+        "target": "진오우거 아종",
+        "appearance": "rare"
+      },
+      {
+        "source": "넬스큐라 아종",
+        "target": "키린 아종",
+        "appearance": "rare"
+      },
+      {
+        "source": "얀쿡 아종",
+        "target": "얀쿡",
+        "appearance": "rare"
+      },
+      {
+        "source": "얀쿡 아종",
+        "target": "얀쿡 아종",
+        "appearance": "rare"
+      },
+      {
+        "source": "얀쿡 아종",
+        "target": "다이묘자자미 아종",
+        "appearance": "rare"
+      },
+      {
+        "source": "얀쿡 아종",
+        "target": "오나즈치",
+        "appearance": "rare"
+      },
+      {
+        "source": "얀가루루가",
+        "target": "얀가루루가",
+        "appearance": "rare"
+      },
+      {
+        "source": "얀가루루가",
+        "target": "디아블로스 아종",
+        "appearance": "rare"
+      },
+      {
+        "source": "얀가루루가",
+        "target": "셀레기오스",
+        "appearance": "rare"
+      },
+      {
+        "source": "얀가루루가",
+        "target": "키린 아종",
+        "appearance": "rare"
+      },
+      {
+        "source": "케차와차 아종",
+        "target": "얀쿡 아종",
+        "appearance": "rare"
+      },
+      {
+        "source": "케차와차 아종",
+        "target": "바살모스 아종",
+        "appearance": "rare"
+      },
+      {
+        "source": "케차와차 아종",
+        "target": "오나즈치",
+        "appearance": "rare"
+      },
+      {
+        "source": "가라라아자라 아종",
+        "target": "얀가루루가",
+        "appearance": "rare"
+      },
+      {
+        "source": "가라라아자라 아종",
+        "target": "브라키디오스",
+        "appearance": "rare"
+      },
+      {
+        "source": "가라라아자라 아종",
+        "target": "티가렉스 아종",
+        "appearance": "rare"
+      },
+      {
+        "source": "가라라아자라 아종",
+        "target": "진오우거 아종",
+        "appearance": "rare"
+      },
+      {
+        "source": "가라라아자라 아종",
+        "target": "키린 아종",
+        "appearance": "rare"
+      },
+      {
+        "source": "광폭 이블조",
+        "target": "얀가루루가",
+        "appearance": "rare"
+      },
+      {
+        "source": "광폭 이블조",
+        "target": "라잔",
+        "appearance": "rare"
+      },
+      {
+        "source": "광폭 이블조",
+        "target": "이블조",
+        "appearance": "rare"
+      },
+      {
+        "source": "광폭 이블조",
+        "target": "키린 아종",
+        "appearance": "rare"
+      },
+      {
+        "source": "바살모스 아종",
+        "target": "바살모스",
+        "appearance": "rare"
+      },
+      {
+        "source": "바살모스 아종",
+        "target": "바살모스 아종",
+        "appearance": "rare"
+      },
+      {
+        "source": "바살모스 아종",
+        "target": "티가렉스 아종",
+        "appearance": "rare"
+      },
+      {
+        "source": "바살모스 아종",
+        "target": "키린 아종",
+        "appearance": "rare"
+      },
+      {
+        "source": "모노블로스 아종",
+        "target": "라잔",
+        "appearance": "rare"
+      },
+      {
+        "source": "모노블로스 아종",
+        "target": "이블조",
+        "appearance": "rare"
+      },
+      {
+        "source": "모노블로스 아종",
+        "target": "디아블로스 아종",
+        "appearance": "rare"
+      },
+      {
+        "source": "모노블로스 아종",
+        "target": "테오·테스카토르",
+        "appearance": "rare"
+      },
+      {
+        "source": "디아블로스 아종",
+        "target": "얀가루루가",
+        "appearance": "rare"
+      },
+      {
+        "source": "디아블로스 아종",
+        "target": "디아블로스",
+        "appearance": "rare"
+      },
+      {
+        "source": "디아블로스 아종",
+        "target": "디아블로스 아종",
+        "appearance": "rare"
+      },
+      {
+        "source": "디아블로스 아종",
+        "target": "테오·테스카토르",
+        "appearance": "rare"
+      },
+      {
+        "source": "셀레기오스",
+        "target": "얀가루루가",
+        "appearance": "rare"
+      },
+      {
+        "source": "셀레기오스",
+        "target": "셀레기오스",
+        "appearance": "rare"
+      },
+      {
+        "source": "셀레기오스",
+        "target": "고어·마가라",
+        "appearance": "rare"
+      },
+      {
+        "source": "셀레기오스",
+        "target": "키린 아종",
+        "appearance": "rare"
+      },
+      {
+        "source": "고어·마가라",
+        "target": "고어·마가라",
+        "appearance": "rare"
+      },
+      {
+        "source": "고어·마가라",
+        "target": "샤가르마가라",
+        "appearance": "rare"
+      },
+      {
+        "source": "고어·마가라",
+        "target": "테오·테스카토르",
+        "appearance": "rare"
+      },
+      {
+        "source": "넬스큐라",
+        "target": "다이묘자자미 아종",
+        "appearance": "intruder"
+      },
+      {
+        "source": "넬스큐라",
+        "target": "이블조",
+        "appearance": "intruder"
+      },
+      {
+        "source": "넬스큐라",
+        "target": "바살모스 아종",
+        "appearance": "intruder"
+      },
+      {
+        "source": "넬스큐라",
+        "target": "진오우거",
+        "appearance": "intruder"
+      },
+      {
+        "source": "게료스",
+        "target": "도스람포스",
+        "appearance": "intruder"
+      },
+      {
+        "source": "게료스",
+        "target": "얀쿡 아종",
+        "appearance": "intruder"
+      },
+      {
+        "source": "게료스",
+        "target": "키린",
+        "appearance": "intruder"
+      },
+      {
+        "source": "게료스 아종",
+        "target": "도스람포스",
+        "appearance": "intruder"
+      },
+      {
+        "source": "게료스 아종",
+        "target": "얀쿡 아종",
+        "appearance": "intruder"
+      },
+      {
+        "source": "게료스 아종",
+        "target": "키린",
+        "appearance": "intruder"
+      },
+      {
+        "source": "다이묘자자미 아종",
+        "target": "얀쿡 아종",
+        "appearance": "intruder"
+      },
+      {
+        "source": "다이묘자자미 아종",
+        "target": "다이묘자자미 아종",
+        "appearance": "intruder"
+      },
+      {
+        "source": "다이묘자자미 아종",
+        "target": "바살모스",
+        "appearance": "intruder"
+      },
+      {
+        "source": "다이묘자자미 아종",
+        "target": "오나즈치",
+        "appearance": "intruder"
+      },
+      {
+        "source": "바바콩가",
+        "target": "얀쿡",
+        "appearance": "intruder"
+      },
+      {
+        "source": "바바콩가",
+        "target": "바살모스 아종",
+        "appearance": "intruder"
+      },
+      {
+        "source": "바바콩가",
+        "target": "키린",
+        "appearance": "intruder"
+      },
+      {
+        "source": "바바콩가 아종",
+        "target": "바살모스 아종",
+        "appearance": "intruder"
+      },
+      {
+        "source": "바바콩가 아종",
+        "target": "디아블로스",
+        "appearance": "intruder"
+      },
+      {
+        "source": "바바콩가 아종",
+        "target": "진오우거",
+        "appearance": "intruder"
+      },
+      {
+        "source": "바바콩가 아종",
+        "target": "키린",
+        "appearance": "intruder"
+      },
+      {
+        "source": "이블조",
+        "target": "이블조",
+        "appearance": "intruder"
+      },
+      {
+        "source": "이블조",
+        "target": "바살모스 아종",
+        "appearance": "intruder"
+      },
+      {
+        "source": "이블조",
+        "target": "키린",
+        "appearance": "intruder"
+      },
+      {
+        "source": "이블조",
+        "target": "키린 아종",
+        "appearance": "intruder"
+      },
+      {
+        "source": "리오레이아",
+        "target": "디아블로스 아종",
+        "appearance": "intruder"
+      },
+      {
+        "source": "리오레이아",
+        "target": "셀레기오스",
+        "appearance": "intruder"
+      },
+      {
+        "source": "리오레이아",
+        "target": "진오우거",
+        "appearance": "intruder"
+      },
+      {
+        "source": "리오레이아",
+        "target": "크샬다오라",
+        "appearance": "intruder"
+      },
+      {
+        "source": "리오레우스",
+        "target": "얀가루루가",
+        "appearance": "intruder"
+      },
+      {
+        "source": "리오레우스",
+        "target": "고어·마가라",
+        "appearance": "intruder"
+      },
+      {
+        "source": "리오레우스",
+        "target": "키린 아종",
+        "appearance": "intruder"
+      },
+      {
+        "source": "리오레우스",
+        "target": "테오·테스카토르",
+        "appearance": "intruder"
+      },
+      {
+        "source": "티가렉스",
+        "target": "얀가루루가",
+        "appearance": "intruder"
+      },
+      {
+        "source": "티가렉스",
+        "target": "브라키디오스",
+        "appearance": "intruder"
+      },
+      {
+        "source": "티가렉스",
+        "target": "티가렉스",
+        "appearance": "intruder"
+      },
+      {
+        "source": "티가렉스",
+        "target": "티가렉스 아종",
+        "appearance": "intruder"
+      },
+      {
+        "source": "티가렉스",
+        "target": "크샬다오라",
+        "appearance": "intruder"
+      }
+    ],
+    "source": "https://w.atwiki.jp/3dsmh4g/pages/134.html",
+    "initialLevelNote": "파생 초기 레벨은 여러 공략 DB 사이에 일부 상충 표기가 있어 이 표에서는 후보 관계만 확정값으로 제공합니다."
+  },
+  "qualityGuide": {
+    "title": "발굴장비 품질 구간 · 획득 방식별",
+    "summary": "같은 ‘길드퀘스트 레벨’이라도 보물구역/파란 광석 채굴과 퀘스트 클리어 보상은 품질 결정 규칙이 다릅니다. MH4 자료의 Lv91 규칙을 MH4G 클리어 보상에 그대로 적용하지 않습니다.",
+    "mh4Reference": {
+      "label": "MH4 참고 규칙 (사용자 제공 루리웹 자료)",
+      "note": "MH4 원본 기준. MH4G에 그대로 대입하지 말고 ‘왜 Lv91 이야기가 나오는지’ 이해하기 위한 참고표입니다.",
+      "rows": [
+        {
+          "route": "보물구역 · 파란 광석",
+          "level": "Lv91+",
+          "quality": "발굴무기가 나올 경우 영광의 무기 계열",
+          "note": "몬스터 위험도와 무관한 채굴 쪽 규칙으로 정리된 자료. 매번 장비가 나온다는 뜻은 아님."
+        },
+        {
+          "route": "수렵/토벌 완료 보상",
+          "level": "Lv91+",
+          "quality": "몬스터 위험도에 따라 영광/역전 혼재",
+          "note": "상위험군은 영광 중심, 중위험군은 영광+역전, 저위험군은 역전 중심으로 정리된 MH4 당시 자료."
+        }
+      ]
+    },
+    "mh4gRules": [
+      {
+        "route": "맵 채굴/채집",
+        "rule": "대형 몬스터와 무관하게 퀘스트 Lv로 테이블 결정",
+        "detail": "MH4G@wiki 길드퀘스트 채집 항목의 원칙. G급(86~140) 세부 감정품 확률표는 현재 교차검증 가능한 자료가 불완전하여 고정 수치로 단정하지 않음."
+      },
+      {
+        "route": "퀘스트 클리어 보상",
+        "rule": "퀘스트 Lv + 대상 몬스터 보상 테이블",
+        "detail": "86~100 / 101~115 / 116~125 / 126~135 / 136~140 구간에서 같은 감정품의 확률이 달라지며, 몬스터마다 배분이 다름."
+      },
+      {
+        "route": "2두 길드퀘스트 클리어 보상",
+        "rule": "보상 테이블은 더 높은 쪽 몬스터 보정 사용",
+        "detail": "MH4G@wiki 설명 기준. 채굴 테이블과는 별개."
+      }
+    ],
+    "mh4gBands": [
+      {
+        "level": "Lv86~100",
+        "quality": "영광이 이미 출현 가능",
+        "examples": "테오 70%, 샤가르 70%, 라잔 60%, 도스람포스 10% 등",
+        "note": "‘영광은 91부터만’으로 고정할 수 없는 근거. 몬스터별 확률 차이가 큼."
+      },
+      {
+        "level": "Lv101~115",
+        "quality": "영광 비중 상승 구간",
+        "examples": "테오·샤가르·라잔·이블조 90% 사례",
+        "note": "몬스터별로 다르며 모든 보상이 영광이라는 뜻은 아님."
+      },
+      {
+        "level": "Lv116~125",
+        "quality": "영광 + 영웅 혼재",
+        "examples": "고어 116~125: 영광 무기 80% + 영웅 무기 25%",
+        "note": "상위 감정품이 섞이기 시작하는 구간으로 확인됨."
+      },
+      {
+        "level": "Lv126~135",
+        "quality": "영웅 중심 + 일부 봉인 출현",
+        "examples": "샤가르 126~135: 영웅 무기 90% + 봉인 무기 20%",
+        "note": "봉인은 가능해지지만 보장 아님. 몬스터마다 봉인 출현률 차이가 큼."
+      },
+      {
+        "level": "Lv136~140",
+        "quality": "봉인 비중 크게 상승",
+        "examples": "샤가르 136~140: 봉인 무기 80%; 라잔 60% + 봉인×2 50% 항목",
+        "note": "종결 발굴 파밍 핵심 구간. 영웅도 함께 남는 사례가 있음."
+      }
+    ],
+    "evidenceExamples": [
+      {
+        "monster": "도스람포스",
+        "level": "86~100",
+        "glory": "10%",
+        "sealed": "-",
+        "memo": "저위험군도 MH4G 클리어 보상에서 영광이 출현하는 사례가 있어 MH4의 ‘저위험=역전만’ 규칙을 그대로 적용하면 안 됨."
+      },
+      {
+        "monster": "라잔",
+        "level": "86~100",
+        "glory": "60%",
+        "sealed": "-",
+        "memo": "고위험군의 초기 G급 구간 예시."
+      },
+      {
+        "monster": "고어·마가라",
+        "level": "116~125",
+        "glory": "80%",
+        "hero": "25%",
+        "sealed": "-",
+        "memo": "영광과 영웅이 한 보상 테이블에 함께 존재."
+      },
+      {
+        "monster": "샤가르마가라",
+        "level": "126~135",
+        "glory": "-",
+        "hero": "90%",
+        "sealed": "20%",
+        "memo": "126부터 봉인 가능하지만 영웅 비중이 더 높은 사례."
+      },
+      {
+        "monster": "샤가르마가라",
+        "level": "136~140",
+        "glory": "-",
+        "hero": "50%",
+        "sealed": "80%",
+        "memo": "140 근처에서 봉인 비중 상승."
+      },
+      {
+        "monster": "라잔",
+        "level": "136~140",
+        "glory": "-",
+        "hero": "50%",
+        "sealed": "60% (+ 봉인×2 50% 항목)",
+        "memo": "보상량 항목까지 있어서 단순 1개 확률과 구분 필요."
+      }
+    ],
+    "cautions": [
+      "표의 %는 Game-Cap에서 ‘1회 퀘스트에서 해당 항목을 얻을 확률’로 표기한 값이며, 보상칸 전체가 그 감정품만 된다는 뜻이 아닙니다.",
+      "MH4의 Lv91 보물구역 규칙과 MH4G의 G급 클리어 보상 확률표는 서로 다른 규칙입니다.",
+      "MH4G G급 채굴 감정품의 세부 확률/고정 구간은 현재 확보한 교차검증 자료가 불완전하므로 확정 수치로 표시하지 않습니다."
+    ]
   }
 }

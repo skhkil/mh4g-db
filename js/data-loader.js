@@ -1,4 +1,4 @@
-const DATA_VERSION = "0.7.7-relic-guide1";
+const DATA_VERSION = "0.7.7-relic-guide3";
 
 const FULL_FILES = {
   skills:"./data/skills.json",
