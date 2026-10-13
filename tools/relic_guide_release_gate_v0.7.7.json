@@ -1,0 +1,22 @@
+{
+  "version": "0.7.7-relic-guide1",
+  "ok": true,
+  "checks": {
+    "cache_index.html": true,
+    "cache_js/app.js": true,
+    "cache_js/data-loader.js": true,
+    "syntax_js/app.js": true,
+    "syntax_js/data-loader.js": true,
+    "syntax_js/engine.js": true,
+    "relic_audit": true,
+    "relic_e2e": true,
+    "optimizer_e2e": true,
+    "backnav": true,
+    "readme_top": true,
+    "data_exists": true,
+    "groups_11": true,
+    "weapon_types_14": true,
+    "armor_groups_11": true
+  },
+  "errors": []
+}

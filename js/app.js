@@ -1,7 +1,7 @@
-import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,loadArmorProgression,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-auto-optimizer3";
-import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-auto-optimizer3";
+import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,loadArmorProgression,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-relic-guide1";
+import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-relic-guide1";
 
-let data={skills:[],armors:[],armorSets:[],decorations:[],relicWeaponDecorations:[],decorationUnlocks:{decorations:{}},questUnlockIndex:{quests:{},targets:{}},eventMajorRewards:{quests:{}},weapons:[],weaponSummary:[],melodies:[],items:[],itemReferenceIndex:{items:{}},skillReferenceIndex:{items:{},categories:[]},meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],monsterReferenceIndex:{items:{}},dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],questReferenceIndex:{quests:{}},siteInfo:{},meta:{},weaponSkillPriorities:{weapons:{}}};
+let data={skills:[],armors:[],armorSets:[],decorations:[],relicWeaponDecorations:[],decorationUnlocks:{decorations:{}},questUnlockIndex:{quests:{},targets:{}},eventMajorRewards:{quests:{}},weapons:[],weaponSummary:[],melodies:[],items:[],itemReferenceIndex:{items:{}},skillReferenceIndex:{items:{},categories:[]},meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],monsterReferenceIndex:{items:{}},dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],questReferenceIndex:{quests:{}},siteInfo:{},meta:{},weaponSkillPriorities:{weapons:{}},relicEquipment:{}};
 let targets=[];
 let latestAutoSearchResults=[];
 let latestAutoSearchNearMisses=[];
@@ -47,7 +47,7 @@ let restoringHistory=false;
 let historyRestoreToken=0;
 try{history.scrollRestoration="manual"}catch{}
 
-const APP_VERSION="0.7.7-auto-optimizer3";
+const APP_VERSION="0.7.7-relic-guide1";
 const boundEventGroups=new Set();
 let appEventsBound=false;
 function ensureRuntimeStatus(){
@@ -1396,6 +1396,7 @@ function renderWeaponSubNav(){
     if(t==="수렵피리") buttons.push(`<button type="button" class="weapon-sub-btn sub-special melody-under-horn" data-special-page="melody">┗ 선율표</button>`);
   }
   buttons.push(`<button type="button" class="weapon-sub-btn sub-special weapon-summary-link" data-special-page="weapon-summary">속성별 무기요약</button>`);
+  buttons.push(`<button type="button" class="weapon-sub-btn sub-special" data-special-page="relic-equipment">발굴장비 · 봉인된무구</button>`);
   box.innerHTML=buttons.join("");
   box.querySelectorAll('[data-weapon-type]').forEach(b=>b.onclick=e=>{e.stopPropagation();armorViewMode="all";$("#weaponTypeFilter").value=b.dataset.weaponType;syncWeaponSubActive();void navigatePage("weapon")});
   box.querySelectorAll('[data-special-page]').forEach(b=>b.onclick=e=>{e.stopPropagation();void navigatePage(b.dataset.specialPage)});
@@ -1857,6 +1858,70 @@ function renderWeaponSummary(){
   renderTable("#weaponSummaryTable",["무기","속성","각성 불필요","각성 필요"],rows);
 }
 
+
+function normalizeJaWeaponName(v){return String(v||"").replace(/[\s　]/g,"").replace(/[‐‑‒–—―]/g,"-").trim()}
+function relicWeaponBaseMatch(jp,type){
+  const key=normalizeJaWeaponName(jp);if(!key||key==="-")return null;
+  return (data.weapons||[]).find(w=>w.weaponType===type&&[w.mh4uNameJa,w.nameJa].some(n=>normalizeJaWeaponName(n)===key))||null;
+}
+function relicAppearanceLabel(jp,type){
+  if(!jp||jp==="-")return '<span class="muted">해당 없음</span>';
+  const w=relicWeaponBaseMatch(jp,type);
+  return w?`<strong>${esc(w.name)}</strong><small class="relic-ja-name">${esc(jp)}</small>`:`<strong>${esc(jp)}</strong><small class="relic-ja-name">일본 원문 외형명</small>`;
+}
+function relicGroupByMonster(name){
+  const key=String(name||"").trim();return (data.relicEquipment?.sealedGroups||[]).find(g=>(g.monsters||[]).includes(key))||null;
+}
+function renderRelicEquipment(){
+  const d=data.relicEquipment||{},groups=d.sealedGroups||[],types=Object.keys(d.weaponAppearances||{});
+  const monsterSel=$("#relicMonsterFilter"),typeSel=$("#relicWeaponTypeFilter"),root=$("#relicEquipmentContent"),sources=$("#relicEquipmentSources");
+  if(!root||!monsterSel||!typeSel)return;
+  const oldMonster=monsterSel.value||"all",oldType=typeSel.value||types[0]||"대검";
+  const monsterOpts=groups.flatMap(g=>(g.monsters||[]).map(m=>({name:m,group:g.id}))).sort((a,b)=>a.name.localeCompare(b.name,"ko"));
+  monsterSel.innerHTML='<option value="all">전체 그룹</option>'+monsterOpts.map(x=>`<option value="${esc(x.name)}">${esc(x.name)} · 그룹${x.group}</option>`).join("");
+  monsterSel.value=monsterOpts.some(x=>x.name===oldMonster)?oldMonster:"all";
+  typeSel.innerHTML=types.map(t=>`<option value="${esc(t)}">${esc(t)}</option>`).join("");typeSel.value=types.includes(oldType)?oldType:(types[0]||"");
+  monsterSel.onchange=renderRelicEquipment;typeSel.onchange=renderRelicEquipment;
+  if(sources)sources.innerHTML=(d.sources||[]).map(x=>`<a href="${esc(x.url)}" target="_blank" rel="noopener noreferrer" class="source-link relic-source-link">${esc(x.label)} ↗</a>`).join("");
+  const selectedMonster=monsterSel.value,selectedGroup=selectedMonster==="all"?null:relicGroupByMonster(selectedMonster),type=typeSel.value;
+  const groupsShown=selectedGroup?[selectedGroup]:groups;
+  const appearance=d.weaponAppearances?.[type]||[];
+  const groupCards=groupsShown.map(g=>{
+    const jp=appearance[Number(g.id)-1]||"-",armors=d.armorAppearancePools?.[String(g.id)]||[];
+    return `<article class="relic-group-card"><div class="relic-group-title"><b>그룹 ${g.id}</b><span>${(g.monsters||[]).map(esc).join(" · ")}</span></div><div class="relic-group-grid"><div><small>봉인된 ${esc(type)} 외형</small>${relicAppearanceLabel(jp,type)}</div><div><small>발굴방어구 외형 풀</small><div class="relic-chip-wrap">${armors.map(a=>`<span class="mini-chip">${esc(a)}</span>`).join("")||'<span class="muted">-</span>'}</div></div></div></article>`;
+  }).join("");
+  const gradeRows=(d.grades||[]).map(x=>`<tr><td><strong>${esc(x.name)}</strong>${x.mh4gOnly?'<small>MH4G 전용</small>':''}</td><td>${esc(x.questLevel)}</td><td>${esc(x.rarity)}</td></tr>`).join("");
+  const rawRows=(d.attackRawTypes||[]).map(x=>`<tr><td><strong>${x.raw}</strong></td><td>${x.upgradeRaw}</td><td>${x.affinityStart>0?'+':''}${x.affinityStart}% → ${x.affinityEnd>0?'+':''}${x.affinityEnd}%</td><td>${x.defenseStart>=0?'+':''}${x.defenseStart} → ${x.defenseEnd>=0?'+':''}${x.defenseEnd}</td><td class="wrap-cell">${esc(x.note)}</td></tr>`).join("");
+  const atk=(d.weaponAttackTables||[]).find(x=>x.weaponType===type),special=d.weaponSpecialNotes?.[type]||"",cap=d.elementCaps?.[type];
+  const attackCells=(d.attackRawTypes||[]).map(x=>`<td>${atk?.displayAttack?.[String(x.raw)]??"-"}</td>`).join("");
+  const groupMatrix=groups.map(g=>`<tr${selectedGroup&&selectedGroup.id===g.id?' class="relic-selected-row"':''}><td><strong>${g.id}</strong></td><td class="wrap-cell">${(g.monsters||[]).map(esc).join(" · ")}</td><td>${relicAppearanceLabel(appearance[Number(g.id)-1]||"-",type)}</td><td class="wrap-cell">${(d.armorAppearancePools?.[String(g.id)]||[]).map(a=>`<span class="mini-chip">${esc(a)}</span>`).join(" ")}</td></tr>`).join("");
+  root.innerHTML=`
+    ${selectedGroup?`<section class="panel relic-selected-summary"><h3>${esc(selectedMonster)} → 발굴 그룹 ${selectedGroup.id}</h3><p class="muted">2두 길드퀘스트는 원칙적으로 왼쪽 아이콘 몬스터의 그룹을 기준으로 봅니다.</p></section>`:""}
+    <section class="panel"><div class="panel-title"><div><h2>몬스터 → 발굴 외형 역조회</h2><p class="muted">봉인된 무구 기준입니다. 무기 외형과 방어구 외형은 다른 감정품 등급과 테이블이 다릅니다.</p></div></div><div class="relic-group-cards">${groupCards}</div></section>
+    <section class="panel"><div class="panel-title"><div><h2>${esc(type)} · 전체 그룹 외형표</h2><p class="muted">방어구는 그룹별 확인된 외형 풀입니다. A~F 세부 조합에는 원본 자료의 미확정/예외 보고가 남아 있습니다.</p></div></div><div class="table-panel"><table class="data-table relic-matrix-table"><thead><tr><th>그룹</th><th>몬스터</th><th>${esc(type)} 외형</th><th>방어구 외형 풀</th></tr></thead><tbody>${groupMatrix}</tbody></table></div></section>
+    <section class="panel"><div class="panel-title"><div><h2>감정품 등급</h2><p class="muted">길드퀘스트 레벨에 따른 발굴무기 계열의 기준입니다.</p></div></div><div class="table-panel"><table class="data-table"><thead><tr><th>감정명</th><th>퀘스트 레벨</th><th>RARE</th></tr></thead><tbody>${gradeRows}</tbody></table></div></section>
+    <section class="panel"><div class="panel-title"><div><h2>G급 봉인 발굴무기 · 공격력 판별</h2><p class="muted">표시 공격력은 무기별 표시배율을 적용한 값입니다. 기본배율 240/250/270/290/310/340 계열의 강화 특성을 비교합니다.</p></div></div>
+      <div class="relic-attack-summary"><b>${esc(type)}</b><span>표시배율 ×${atk?.displayMultiplier??"-"}</span>${special?`<span>${esc(special)}</span>`:""}${cap?`<span>속성 상한 ${esc(cap.element)} · 상태이상 ${esc(cap.status)}</span>`:""}</div>
+      <div class="relic-attack-check"><label>표시 공격력 판별<input id="relicAttackInput" type="number" inputmode="numeric" min="0" step="1" placeholder="예: ${type==='대검'?'1728':(atk?.displayAttack?.['340']||'')}" /></label><div id="relicAttackResult" class="muted">표시 공격력을 입력하면 기본배율 후보를 계산합니다.</div></div>
+      <div class="table-panel"><table class="data-table relic-attack-table"><thead><tr><th>기본배율</th>${(d.attackRawTypes||[]).map(x=>`<th>${x.raw}</th>`).join("")}</tr></thead><tbody><tr><td><b>표시 공격력</b></td>${attackCells}</tr></tbody></table></div>
+      <div class="table-panel"><table class="data-table"><thead><tr><th>초기 배율</th><th>Lv4 배율</th><th>회심</th><th>방어</th><th>강화 특성</th></tr></thead><tbody>${rawRows}</tbody></table></div>
+    </section>
+    <section class="panel relic-guide-notes"><h2>주의사항</h2>${(d.notes||[]).map(x=>`<p>• ${esc(x)}</p>`).join("")}</section>`;
+  const attackInput=$("#relicAttackInput"),attackResult=$("#relicAttackResult");
+  if(attackInput&&attackResult){
+    attackInput.oninput=()=>{
+      const shown=Number(attackInput.value),mult=Number(atk?.displayMultiplier)||0;if(!shown||!mult){attackResult.textContent="표시 공격력을 입력하면 기본배율 후보를 계산합니다.";return}
+      const inferred=shown/mult,candidates=[];
+      for(const x of d.attackRawTypes||[]){
+        if(Math.abs(inferred-Number(x.raw))<0.001)candidates.push(`기본배율 ${x.raw} 계열`);
+        if((type==="대검"||type==="해머")&&(Math.abs(inferred-(Number(x.raw)+10))<0.001||Math.abs(inferred-(Number(x.raw)+20))<0.001))candidates.push(`기본배율 ${x.raw} + 공격보정 ${Math.round(inferred-Number(x.raw))}`);
+      }
+      attackResult.innerHTML=candidates.length?`환산 배율 <b>${Number.isInteger(inferred)?inferred:inferred.toFixed(2)}</b> · ${candidates.map(esc).join(" / ")}`:`환산 배율 <b>${Number.isInteger(inferred)?inferred:inferred.toFixed(2)}</b> · 봉인된 무기 주요 계열과 정확히 일치하지 않음`;
+    };
+  }
+  decorateResponsiveTables(root);
+}
+
 function renderMelodyTable(){
   const q=$("#melodySearch").value.trim().toLowerCase();
   const rows=data.melodies.filter(x=>!q||`${x.notes} ${(x.effects||[]).join(" ")} ${(x.weapons||[]).join(" ")}`.toLowerCase().includes(q))
@@ -2172,6 +2237,7 @@ function pageTitleForState(page){
   if(page==="source") return sourceView==="history"?["이력","원본 MH4G DB 업데이트 이력"]:["메인","원본 MH4G DB 안내"];
   if(page==="armor-set") return [`${hunterName($("#hunterType").value)} 방어구 세트`,"5부위 세트의 방어·슬롯·스킬 합계를 조회합니다."];
   if(page==="weapon-summary") return ["속성별 무기요약","무기별 속성 및 각성 필요 여부를 비교합니다."];
+  if(page==="relic-equipment") return ["발굴장비 · 봉인된무구","몬스터별 발굴 외형과 G급 봉인 발굴무기 성능표를 조회합니다."];
   if(page==="melody") return ["수렵피리 선율표","음색 조합별 선율 효과와 해당 무기를 조회합니다."];
   if(page==="meal") return ["식사","식재료 조합과 조리법에 따른 식사효과·야옹스킬을 조회합니다."];
   if(page==="monster"){
@@ -2285,6 +2351,7 @@ function dataKeysForPage(page){
   if(page==="armor-set")return ["armorSets"];
   if(page==="weapon")return ["weapons","items"];
   if(page==="weapon-summary")return ["weaponSummary"];
+  if(page==="relic-equipment")return ["relicEquipment","weapons"];
   if(page==="decoration")return ["decorations","decorationUnlocks","questUnlockIndex","items","itemReferenceIndex","skillReferenceIndex"];
   if(page==="skill")return ["items","skillReferenceIndex"];
   if(page==="melody")return ["melodies"];
@@ -2325,6 +2392,7 @@ function renderPageData(page){
   else if(page==="armor-set")renderArmorSetTable();
   else if(page==="weapon"){renderWeaponTreeFilter();renderWeaponTrees()}
   else if(page==="weapon-summary")renderWeaponSummary();
+  else if(page==="relic-equipment")renderRelicEquipment();
   else if(page==="melody")renderMelodyTable();
   else if(page==="decoration")renderDecoTable();
   else if(page==="skill")renderSkillTable();

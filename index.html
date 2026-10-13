@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#121821" />
   <title>MH4G 장비 · 스킬 시뮬레이터</title>
-  <link rel="stylesheet" href="./css/app.css?v=0.7.7-auto-optimizer3" />
+  <link rel="stylesheet" href="./css/app.css?v=0.7.7-relic-guide1" />
 </head>
 <body>
   <div class="app-shell">
@@ -317,6 +317,19 @@
         <div id="weaponTrees" class="weapon-tree-list"></div>
       </section>
 
+
+      <section id="page-relic-equipment" class="page">
+        <section class="panel relic-guide-head">
+          <div class="panel-title"><div><h2>발굴장비 · 봉인된 무구</h2><p class="muted">길드퀘스트 몬스터 그룹에서 나오는 발굴무기 외형과 발굴방어구 외형을 역조회하고, G급 봉인 발굴무기의 공격력 계열을 비교합니다.</p></div></div>
+          <div class="filters relic-guide-filters">
+            <label>몬스터<select id="relicMonsterFilter"><option value="all">전체 그룹</option></select></label>
+            <label>무기종<select id="relicWeaponTypeFilter"></select></label>
+          </div>
+          <div id="relicEquipmentSources" class="relic-source-list"></div>
+        </section>
+        <div id="relicEquipmentContent"></div>
+      </section>
+
       <section id="page-decoration" class="page">
         <div class="toolbar deco-filter-toolbar">
           <input id="decoSearch" class="search-input" placeholder="장식주명·스킬·효과 검색 (예: 회심)" />
@@ -465,6 +478,6 @@ python tools/build_database.py --publish</code></pre>
     <button id="pageJumpTop" class="mobile-page-jump-btn" type="button" aria-label="맨 위로 이동" title="맨 위로">↑</button>
     <button id="pageJumpBottom" class="mobile-page-jump-btn" type="button" aria-label="맨 아래로 이동" title="맨 아래로">↓</button>
   </div>
-  <script type="module" src="./js/app.js?v=0.7.7-auto-optimizer3"></script>
+  <script type="module" src="./js/app.js?v=0.7.7-relic-guide1"></script>
 </body>
 </html>

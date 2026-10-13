@@ -1,0 +1,337 @@
+{
+  "ok": true,
+  "issues": [],
+  "groups": 11,
+  "weaponTypes": 14,
+  "appearanceEntries": 133,
+  "normalWeaponNameMatches": 52,
+  "unmatchedAppearanceNames": [
+    {
+      "weaponType": "대검",
+      "jp": "41式対飛竜大剣"
+    },
+    {
+      "weaponType": "대검",
+      "jp": "41式対飛竜大剣"
+    },
+    {
+      "weaponType": "대검",
+      "jp": "ジークムント"
+    },
+    {
+      "weaponType": "대검",
+      "jp": "ジークムント"
+    },
+    {
+      "weaponType": "대검",
+      "jp": "雷剣"
+    },
+    {
+      "weaponType": "대검",
+      "jp": "封龍剣"
+    },
+    {
+      "weaponType": "대검",
+      "jp": "封龍剣"
+    },
+    {
+      "weaponType": "대검",
+      "jp": "雷剣"
+    },
+    {
+      "weaponType": "대검",
+      "jp": "輝剣"
+    },
+    {
+      "weaponType": "대검",
+      "jp": "海帝剣"
+    },
+    {
+      "weaponType": "태도",
+      "jp": "凍刃"
+    },
+    {
+      "weaponType": "태도",
+      "jp": "凍刃"
+    },
+    {
+      "weaponType": "태도",
+      "jp": "飛竜刀"
+    },
+    {
+      "weaponType": "태도",
+      "jp": "飛竜刀"
+    },
+    {
+      "weaponType": "태도",
+      "jp": "軍刀"
+    },
+    {
+      "weaponType": "태도",
+      "jp": "軍刀"
+    },
+    {
+      "weaponType": "태도",
+      "jp": "天上天下無双刀"
+    },
+    {
+      "weaponType": "태도",
+      "jp": "ラスティクレイモア"
+    },
+    {
+      "weaponType": "태도",
+      "jp": "冥刀"
+    },
+    {
+      "weaponType": "한손검",
+      "jp": "マスターバング"
+    },
+    {
+      "weaponType": "한손검",
+      "jp": "マスターバング"
+    },
+    {
+      "weaponType": "한손검",
+      "jp": "ヒドゥンエッジ"
+    },
+    {
+      "weaponType": "한손검",
+      "jp": "フロストエッジ"
+    },
+    {
+      "weaponType": "한손검",
+      "jp": "チュクチュク"
+    },
+    {
+      "weaponType": "한손검",
+      "jp": "ヒドゥンエッジ"
+    },
+    {
+      "weaponType": "한손검",
+      "jp": "エペ＝ギルタナス"
+    },
+    {
+      "weaponType": "한손검",
+      "jp": "峰山小太刀"
+    },
+    {
+      "weaponType": "쌍검",
+      "jp": "王双刃"
+    },
+    {
+      "weaponType": "쌍검",
+      "jp": "テッセン"
+    },
+    {
+      "weaponType": "쌍검",
+      "jp": "テッセン"
+    },
+    {
+      "weaponType": "쌍검",
+      "jp": "王双刃"
+    },
+    {
+      "weaponType": "쌍검",
+      "jp": "ニヴルプリザード"
+    },
+    {
+      "weaponType": "쌍검",
+      "jp": "祭囃子・無形ノ調"
+    },
+    {
+      "weaponType": "쌍검",
+      "jp": "海王双刃"
+    },
+    {
+      "weaponType": "해머",
+      "jp": "ウォーバッシュ"
+    },
+    {
+      "weaponType": "해머",
+      "jp": "ウォーバッシュ"
+    },
+    {
+      "weaponType": "해머",
+      "jp": "ヒドゥンブレイカー"
+    },
+    {
+      "weaponType": "해머",
+      "jp": "ヒドゥンブレイカー"
+    },
+    {
+      "weaponType": "해머",
+      "jp": "ねこハンマー"
+    },
+    {
+      "weaponType": "해머",
+      "jp": "ナナ＝トリ"
+    },
+    {
+      "weaponType": "해머",
+      "jp": "鬼鉄丸"
+    },
+    {
+      "weaponType": "해머",
+      "jp": "ねこハンマー"
+    },
+    {
+      "weaponType": "해머",
+      "jp": "クリスタルノヴァ"
+    },
+    {
+      "weaponType": "해머",
+      "jp": "ドラゴンブレイカー"
+    },
+    {
+      "weaponType": "수렵피리",
+      "jp": "ウネリシェルン"
+    },
+    {
+      "weaponType": "수렵피리",
+      "jp": "ウネリシェルン"
+    },
+    {
+      "weaponType": "수렵피리",
+      "jp": "ソニックビードロー"
+    },
+    {
+      "weaponType": "수렵피리",
+      "jp": "ヒドゥントーン"
+    },
+    {
+      "weaponType": "수렵피리",
+      "jp": "ソニックビードロー"
+    },
+    {
+      "weaponType": "수렵피리",
+      "jp": "ヒドゥントーン"
+    },
+    {
+      "weaponType": "수렵피리",
+      "jp": "獄琴"
+    },
+    {
+      "weaponType": "랜스",
+      "jp": "合戦槍"
+    },
+    {
+      "weaponType": "랜스",
+      "jp": "合戦槍"
+    },
+    {
+      "weaponType": "랜스",
+      "jp": "竜騎槍"
+    },
+    {
+      "weaponType": "랜스",
+      "jp": "竜騎槍"
+    },
+    {
+      "weaponType": "랜스",
+      "jp": "エストック"
+    },
+    {
+      "weaponType": "랜스",
+      "jp": "七星槍"
+    },
+    {
+      "weaponType": "건랜스",
+      "jp": "砕牙砲"
+    },
+    {
+      "weaponType": "슬래시액스",
+      "jp": "豪剣斧"
+    },
+    {
+      "weaponType": "슬래시액스",
+      "jp": "ヒドゥンアックス"
+    },
+    {
+      "weaponType": "슬래시액스",
+      "jp": "モーターバースト"
+    },
+    {
+      "weaponType": "슬래시액스",
+      "jp": "王剣斧"
+    },
+    {
+      "weaponType": "슬래시액스",
+      "jp": "激流斧"
+    },
+    {
+      "weaponType": "조충곤",
+      "jp": "セクトハルバー"
+    },
+    {
+      "weaponType": "조충곤",
+      "jp": "セクトハルバー"
+    },
+    {
+      "weaponType": "조충곤",
+      "jp": "セクトハルバー"
+    },
+    {
+      "weaponType": "라이트보우건",
+      "jp": "ベルクーツ"
+    },
+    {
+      "weaponType": "라이트보우건",
+      "jp": "ベルクーツ"
+    },
+    {
+      "weaponType": "라이트보우건",
+      "jp": "雷砲"
+    },
+    {
+      "weaponType": "라이트보우건",
+      "jp": "フリルパラソル"
+    },
+    {
+      "weaponType": "헤비보우건",
+      "jp": "デュエルスタップ"
+    },
+    {
+      "weaponType": "헤비보우건",
+      "jp": "デュエルスタップ"
+    },
+    {
+      "weaponType": "헤비보우건",
+      "jp": "ギガン＝ショット"
+    },
+    {
+      "weaponType": "헤비보우건",
+      "jp": "ギガン＝ショット"
+    },
+    {
+      "weaponType": "헤비보우건",
+      "jp": "カホウ"
+    },
+    {
+      "weaponType": "활",
+      "jp": "クイーンブラスター"
+    },
+    {
+      "weaponType": "활",
+      "jp": "クイーンブラスター"
+    },
+    {
+      "weaponType": "활",
+      "jp": "プロミネンスボウ"
+    },
+    {
+      "weaponType": "활",
+      "jp": "プロミネンスボウ"
+    },
+    {
+      "weaponType": "활",
+      "jp": "龍弓"
+    },
+    {
+      "weaponType": "활",
+      "jp": "エクリプスボウ"
+    }
+  ],
+  "armorGroups": 11,
+  "attackRawTypes": 6,
+  "sources": 4
+}

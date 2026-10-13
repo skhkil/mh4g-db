@@ -1,4 +1,4 @@
-const DATA_VERSION = "0.7.7-auto-optimizer3";
+const DATA_VERSION = "0.7.7-relic-guide1";
 
 const FULL_FILES = {
   skills:"./data/skills.json",
@@ -29,7 +29,8 @@ const FULL_FILES = {
   siteInfo:"./data/site_info.json",
   meta:"./data/meta.json",
   recommendedLoadouts:"./data/recommended_loadouts.json",
-  weaponSkillPriorities:"./data/weapon_skill_priorities.json"
+  weaponSkillPriorities:"./data/weapon_skill_priorities.json",
+  relicEquipment:"./data/relic_equipment.json"
 };
 
 // 시뮬레이터 첫 화면에 필요한 필드만 담은 경량 데이터.
@@ -51,7 +52,7 @@ export const FULL_DATA_KEYS = Object.freeze(Object.keys(FULL_FILES));
 const requestCache = new Map();
 
 function emptyValue(key){
-  return (key==="meta"||key==="siteInfo"||key==="weaponSkillPriorities"||key==="decorationUnlocks"||key==="questUnlockIndex"||key==="eventMajorRewards"||key.endsWith("Index"))?{}:[];
+  return (key==="meta"||key==="siteInfo"||key==="weaponSkillPriorities"||key==="decorationUnlocks"||key==="questUnlockIndex"||key==="eventMajorRewards"||key==="relicEquipment"||key.endsWith("Index"))?{}:[];
 }
 function versioned(url){
   return `${url}?v=${DATA_VERSION}`;
@@ -129,7 +130,7 @@ export function classifyImported(name,json){
   const lower=name.toLowerCase();
   const rules=[
     ["armor_sets","armorSets"],["armor","armors"],["quest_unlock_index","questUnlockIndex"],["decoration_unlocks","decorationUnlocks"],["event_major_rewards","eventMajorRewards"],["decor","decorations"],["weapon_summary","weaponSummary"],
-    ["weapon","weapons"],["skill_reference_index","skillReferenceIndex"],["skill","skills"],["item_reference_index","itemReferenceIndex"],["item","items"],["meal","meals"],
+    ["relic_equipment","relicEquipment"],["weapon","weapons"],["skill_reference_index","skillReferenceIndex"],["skill","skills"],["item_reference_index","itemReferenceIndex"],["item","items"],["meal","meals"],
     ["monster_summary","monsterSummary"],["monster_details","monsterDetails"],["monster_rewards","monsterRewards"],["monster_reference_index","monsterReferenceIndex"],
     ["dragon_exchange","dragonExchange"],["dragon_sell","dragonSell"],["dragon_increase","dragonIncrease"],
     ["composition","compositions"],["quest_reference_index","questReferenceIndex"],["quest","quests"],["melod","melodies"],["site_info","siteInfo"]

@@ -1465,3 +1465,35 @@ button{border:1px solid var(--line);background:#202b39;color:white;border-radius
 .quest-unlock-list small{display:block;margin-top:2px;line-height:1.35}
 .deco-unlock-route small{display:block;margin-top:4px;line-height:1.35}
 @media (max-width:640px){#page-quest .quest-unlocks{min-width:0;white-space:normal!important;overflow-wrap:anywhere}}
+
+/* v0.7.7 relic guide */
+.relic-guide-filters{align-items:end}
+.relic-source-list{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.relic-source-link{font-size:.88rem}
+.relic-group-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+.relic-group-card{border:1px solid var(--border);border-radius:12px;padding:12px;background:var(--panel-2,#111923)}
+.relic-group-title{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap;margin-bottom:10px}
+.relic-group-title b{font-size:1.02rem}
+.relic-group-title span{color:var(--muted);font-size:.88rem}
+.relic-group-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.5fr);gap:12px}
+.relic-group-grid>div{min-width:0}
+.relic-group-grid small{display:block;color:var(--muted);margin-bottom:5px}
+.relic-ja-name{display:block;color:var(--muted);margin-top:3px;word-break:break-all}
+.relic-chip-wrap{display:flex;flex-wrap:wrap;gap:5px}
+.relic-selected-row td{background:color-mix(in srgb,var(--accent,#67a9ff) 10%,transparent)}
+.relic-attack-summary{display:flex;flex-wrap:wrap;gap:8px 14px;margin:0 0 12px;padding:10px 12px;border:1px solid var(--border);border-radius:10px}
+.relic-attack-summary span{color:var(--muted)}
+.relic-guide-notes p{margin:.45rem 0;color:var(--muted)}
+.relic-matrix-table td:nth-child(3){min-width:170px}
+.relic-attack-table th,.relic-attack-table td{text-align:center;white-space:nowrap}
+@media(max-width:720px){
+  .relic-group-grid{grid-template-columns:1fr}
+  .relic-group-cards{grid-template-columns:1fr}
+  .relic-source-list{display:grid;grid-template-columns:1fr}
+  .relic-source-link{display:block}
+}
+.relic-attack-check{display:grid;grid-template-columns:minmax(220px,320px) 1fr;gap:12px;align-items:end;margin:0 0 12px}
+.relic-attack-check label{display:grid;gap:5px}
+.relic-attack-check input{width:100%}
+.relic-attack-check #relicAttackResult{padding:9px 10px;border:1px dashed var(--border);border-radius:8px;min-height:42px}
+@media(max-width:720px){.relic-attack-check{grid-template-columns:1fr}}

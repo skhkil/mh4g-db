@@ -1,0 +1,33 @@
+{
+  "ok": true,
+  "runs": [
+    {
+      "viewport": 1365,
+      "title": "발굴장비 · 봉인된무구",
+      "allGroupCards": 11,
+      "group9": true,
+      "agito": true,
+      "silverSoulPool": true,
+      "attackTable": true,
+      "attackInfer": true,
+      "sourceLinks": 4,
+      "overflow": false,
+      "errors": [],
+      "ok": true
+    },
+    {
+      "viewport": 390,
+      "title": "발굴장비 · 봉인된무구",
+      "allGroupCards": 11,
+      "group9": true,
+      "agito": true,
+      "silverSoulPool": true,
+      "attackTable": true,
+      "attackInfer": true,
+      "sourceLinks": 4,
+      "overflow": false,
+      "errors": [],
+      "ok": true
+    }
+  ]
+}
