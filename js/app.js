@@ -1,5 +1,5 @@
-import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,loadArmorProgression,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-relic-guide3";
-import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-relic-guide3";
+import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,loadArmorProgression,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-monster-filter1";
+import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-monster-filter1";
 
 let data={skills:[],armors:[],armorSets:[],decorations:[],relicWeaponDecorations:[],decorationUnlocks:{decorations:{}},questUnlockIndex:{quests:{},targets:{}},eventMajorRewards:{quests:{}},weapons:[],weaponSummary:[],melodies:[],items:[],itemReferenceIndex:{items:{}},skillReferenceIndex:{items:{},categories:[]},meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],monsterReferenceIndex:{items:{}},dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],questReferenceIndex:{quests:{}},siteInfo:{},meta:{},weaponSkillPriorities:{weapons:{}},relicEquipment:{}};
 let targets=[];
@@ -47,7 +47,7 @@ let restoringHistory=false;
 let historyRestoreToken=0;
 try{history.scrollRestoration="manual"}catch{}
 
-const APP_VERSION="0.7.7-relic-guide3";
+const APP_VERSION="0.7.7-monster-filter1";
 const boundEventGroups=new Set();
 let appEventsBound=false;
 function ensureRuntimeStatus(){
@@ -1329,7 +1329,7 @@ function armorSetMaterials(set){
 function captureAppHistoryState(){
   return {
     mh4g:true,page:currentPage,selectedItemId:String(selectedItemId||""),itemSearch:$("#itemSearch")?.value||"",
-    monsterSelected:$("#monsterSelect")?.value||"all",sourceView,armorViewMode,decoView,monsterView,dragonView,questView,
+    monsterSelected:$("#monsterSelect")?.value||"all",monsterElementFilter:$("#monsterElementFilter")?.value||"all",monsterAilmentFilter:$("#monsterAilmentFilter")?.value||"all",sourceView,armorViewMode,decoView,monsterView,dragonView,questView,
     recommendWeaponType,recommendRank,scrollY:Math.max(0,Math.round(window.scrollY||0))
   };
 }
@@ -1365,7 +1365,7 @@ async function restoreAppHistoryState(state){
     if($("#itemSearch"))$("#itemSearch").value=state.itemSearch||"";
     selectedItemId=String(state.selectedItemId||"");
     await openPage(state.page||"simulator");
-    if(state.page==="monster"&&$("#monsterSelect")){const wanted=state.monsterSelected||"all";if([...$("#monsterSelect").options].some(o=>o.value===wanted))$("#monsterSelect").value=wanted;renderMonster();}
+    if(state.page==="monster"&&$("#monsterSelect")){const wanted=state.monsterSelected||"all";if([...$("#monsterSelect").options].some(o=>o.value===wanted))$("#monsterSelect").value=wanted;if($("#monsterElementFilter"))$("#monsterElementFilter").value=state.monsterElementFilter||"all";if($("#monsterAilmentFilter"))$("#monsterAilmentFilter").value=state.monsterAilmentFilter||"all";renderMonster();}
     requestAnimationFrame(()=>window.scrollTo({top:Number(state.scrollY)||0,behavior:"auto"}));
   }finally{if(restoreToken===historyRestoreToken)restoringHistory=false}
 }
@@ -2014,11 +2014,31 @@ function monsterSearchMatch(mon,q){
   if(!q)return true;
   return `${mon.name||""} ${mon.nameEn||""} ${mon.species||""} ${mon.materialName||""} ${mon.traits||""}`.toLowerCase().includes(q);
 }
+const MONSTER_FILTER_LABELS=Object.freeze({
+  fire:"불",water:"물",thunder:"뇌",ice:"빙",dragon:"용",
+  poison:"독",sleep:"수면",paralysis:"마비",blast:"폭파"
+});
+function monsterGradeEffective(v){return v==="◎"||v==="○"}
+function monsterWeakFilterMatch(mon){
+  const element=$("#monsterElementFilter")?.value||"all";
+  const ailment=$("#monsterAilmentFilter")?.value||"all";
+  if(element!=="all"&&!monsterGradeEffective(mon.elements?.[element]))return false;
+  if(ailment!=="all"&&!monsterGradeEffective(mon.ailments?.[ailment]))return false;
+  return true;
+}
+function monsterFilterBadges(mon){
+  const element=$("#monsterElementFilter")?.value||"all";
+  const ailment=$("#monsterAilmentFilter")?.value||"all";
+  const out=[];
+  if(element!=="all")out.push(`<i class="monster-filter-grade">${esc(MONSTER_FILTER_LABELS[element])} ${esc(mon.elements?.[element]||"-")}</i>`);
+  if(ailment!=="all")out.push(`<i class="monster-filter-grade">${esc(MONSTER_FILTER_LABELS[ailment])} ${esc(mon.ailments?.[ailment]||"-")}</i>`);
+  return out.length?`<span class="monster-filter-grades">${out.join("")}</span>`:"";
+}
 function renderMonsterRoster(){
   const q=$("#monsterSearch").value.trim().toLowerCase();
-  const list=(data.monsterSummary||[]).filter(x=>monsterSearchMatch(x,q));
+  const list=(data.monsterSummary||[]).filter(x=>monsterSearchMatch(x,q)&&monsterWeakFilterMatch(x));
   $("#monsterRankFilter").style.display="none";
-  $("#monsterContent").innerHTML=`<div class="monster-roster">${list.map(x=>`<button type="button" class="panel monster-roster-card" data-monster-card="${esc(x.name)}"><span class="monster-roster-text"><strong>${esc(x.name)}</strong><small>${esc(x.nameEn||"")}</small><span>${esc(x.species||"")}</span><em>절 ${esc(x.weakspots?.cut||"-")} · 타 ${esc(x.weakspots?.impact||"-")} · 탄 ${esc(x.weakspots?.shot||"-")}</em></span></button>`).join("")||'<div class="panel result-empty">검색 결과 없음</div>'}</div>`;
+  $("#monsterContent").innerHTML=`<div class="monster-roster">${list.map(x=>`<button type="button" class="panel monster-roster-card" data-monster-card="${esc(x.name)}"><span class="monster-roster-text"><strong>${esc(x.name)}</strong><small>${esc(x.nameEn||"")}</small><span>${esc(x.species||"")}</span><em>절 ${esc(x.weakspots?.cut||"-")} · 타 ${esc(x.weakspots?.impact||"-")} · 탄 ${esc(x.weakspots?.shot||"-")}</em>${monsterFilterBadges(x)}</span></button>`).join("")||'<div class="panel result-empty">선택한 약점 조건에 맞는 몬스터가 없습니다.</div>'}</div>`;
 }
 function monsterTabs(){
   const tabs=[["basic","기본정보"],["detail","육질"],["rewards","보수·소재"],["quests","등장 퀘스트"],["uses","제작 사용처"]];
@@ -2725,7 +2745,7 @@ function bind(){
   $("#melodySearch").oninput=renderMelodyTable;
   $("#decoSearch").oninput=renderDecoTable;$("#decoRankFilter").onchange=renderDecoTable;$("#decoSlotFilter").onchange=renderDecoTable;$("#decoCategoryFilter").onchange=renderDecoTable;$("#skillSearch").oninput=renderSkillTable;$("#skillCategoryFilter").onchange=renderSkillTable;$("#skillTypeFilter").onchange=renderSkillTable;
   $("#mealSearch").oninput=renderMealGrid;$("#mealIngredientFilter").onchange=renderMealGrid;
-  $("#monsterSearch").oninput=()=>{if($("#monsterSelect").value!=="all")$("#monsterSelect").value="all";renderMonster()};$("#monsterSelect").onchange=()=>{monsterView="basic";$("#monsterSearch").value="";renderMonster()};$("#monsterRankFilter").onchange=renderMonster;
+  $("#monsterSearch").oninput=()=>{if($("#monsterSelect").value!=="all")$("#monsterSelect").value="all";renderMonster()};$("#monsterSelect").onchange=()=>{monsterView="basic";$("#monsterSearch").value="";renderMonster()};$("#monsterElementFilter").onchange=()=>{if($("#monsterSelect").value!=="all")$("#monsterSelect").value="all";renderMonster()};$("#monsterAilmentFilter").onchange=()=>{if($("#monsterSelect").value!=="all")$("#monsterSelect").value="all";renderMonster()};$("#monsterRankFilter").onchange=renderMonster;
   $("#dragonSearch").oninput=renderDragon;
   $("#itemSearch").oninput=renderItemTable;
   $("#composeSearch").oninput=renderCompose;

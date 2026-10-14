@@ -1,0 +1,31 @@
+{
+  "ok": true,
+  "runs": [
+    {
+      "viewport": 1365,
+      "filters": true,
+      "thunderCount": 33,
+      "thunderAllEffective": true,
+      "thunderBadges": true,
+      "andCount": 21,
+      "andBadges": true,
+      "historyPreserved": true,
+      "overflow": false,
+      "errors": [],
+      "ok": true
+    },
+    {
+      "viewport": 390,
+      "filters": true,
+      "thunderCount": 33,
+      "thunderAllEffective": true,
+      "thunderBadges": true,
+      "andCount": 21,
+      "andBadges": true,
+      "historyPreserved": true,
+      "overflow": false,
+      "errors": [],
+      "ok": true
+    }
+  ]
+}

@@ -639,6 +639,9 @@ button{border:1px solid var(--line);background:#202b39;color:white;border-radius
 
 /* 2026-09-15 chat4 monster integrated bestiary */
 .monster-toolbar .monster-rank-filter{display:none}
+.monster-weak-filter{min-width:132px}
+.monster-filter-grades{display:flex;flex-wrap:wrap;gap:4px;margin-top:3px}
+.monster-filter-grade{font-style:normal;font-size:9px;line-height:1.2;padding:2px 5px;border:1px solid var(--border);border-radius:999px;color:var(--text);background:var(--panel-2)}
 .monster-roster{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px}
 .monster-roster-card{display:flex;align-items:center;gap:12px;width:100%;text-align:left;cursor:pointer;color:var(--text);background:var(--panel)}
 .monster-roster-card:hover{border-color:#4c6683;background:#17212d}
