@@ -65250,768 +65250,13 @@
     ],
     "uses": [
       {
-        "type": "weapon",
-        "id": "weapon_610a299940d8",
-        "name": "거대한 검린의 조각",
-        "weaponType": "대검",
-        "method": "생산",
-        "viaItems": [
-          "사왕룡 부채칼비늘",
-          "사왕룡 칼비늘"
-        ]
-      },
-      {
-        "type": "weapon",
-        "id": "weapon_dfbc7b97a575",
-        "name": "개수일촉참격 다이트",
-        "weaponType": "대검",
-        "method": "강화",
-        "viaItems": [
-          "사왕룡 부채칼비늘"
-        ]
-      },
-      {
-        "type": "weapon",
-        "id": "weapon_5e84ca9b58ff",
-        "name": "단죄왕 월다이트",
-        "weaponType": "대검",
-        "method": "강화",
-        "viaItems": [
-          "사왕룡 꼬리비늘",
-          "사왕룡 미갑각"
-        ]
-      },
-      {
-        "type": "weapon",
-        "id": "weapon_2101806d9a54",
-        "name": "흉인을 두른 무구",
-        "weaponType": "차지액스",
-        "method": "생산",
-        "viaItems": [
-          "사왕룡 미갑각",
-          "사왕룡 부채칼비늘",
-          "사왕룡 칼비늘"
-        ]
-      },
-      {
-        "type": "weapon",
-        "id": "weapon_2612c3f21c8d",
-        "name": "성화요원장기 마키나",
-        "weaponType": "차지액스",
-        "method": "강화",
-        "viaItems": [
-          "사왕룡 갈고리발톱",
-          "사왕룡 꼬리비늘",
-          "사왕룡 부채칼비늘"
-        ]
-      },
-      {
-        "type": "weapon",
-        "id": "weapon_18137102a3d2",
-        "name": "해방왕 아델마키나",
-        "weaponType": "차지액스",
-        "method": "강화",
-        "viaItems": [
-          "사왕룡 부채칼비늘",
-          "사왕룡 칼비늘"
-        ]
-      },
-      {
-        "type": "weapon",
-        "id": "weapon_ecd4e45249a4",
-        "name": "극갑을 배합한 장도",
-        "weaponType": "조충곤",
-        "method": "생산",
-        "viaItems": [
-          "사왕룡 미갑각",
-          "사왕룡 부채칼비늘"
-        ]
-      },
-      {
-        "type": "weapon",
-        "id": "weapon_791021e4bfaf",
-        "name": "극갑을 배합한 장도+",
-        "weaponType": "조충곤",
-        "method": "강화",
-        "viaItems": [
-          "사왕룡 갈고리발톱"
-        ]
-      },
-      {
-        "type": "weapon",
-        "id": "weapon_743d7b264628",
-        "name": "혼연일체체도 야마타",
-        "weaponType": "조충곤",
-        "method": "강화",
-        "viaItems": [
-          "사왕룡 미갑각"
-        ]
-      },
-      {
-        "type": "weapon",
-        "id": "weapon_c100bc3c9b4b",
-        "name": "태연왕 야마타오진",
-        "weaponType": "조충곤",
-        "method": "강화",
-        "viaItems": [
-          "사왕룡 미갑각"
-        ]
-      },
-      {
-        "type": "weapon",
-        "id": "weapon_9119379e2695",
-        "name": "관파하는 흑침의 경노",
-        "weaponType": "라이트보우건",
-        "method": "생산",
-        "viaItems": [
-          "사왕룡 갈고리발톱",
-          "사왕룡 흉갑각"
-        ]
-      },
-      {
-        "type": "weapon",
-        "id": "weapon_f53af76675d0",
-        "name": "허무로 되돌리는 시모",
-        "weaponType": "라이트보우건",
-        "method": "강화",
-        "viaItems": [
-          "사왕룡 미갑각"
-        ]
-      },
-      {
-        "type": "weapon",
-        "id": "weapon_87eefe46abdd",
-        "name": "저격왕 시모야르스크",
-        "weaponType": "라이트보우건",
-        "method": "강화",
-        "viaItems": [
-          "사왕룡 갈고리발톱"
-        ]
-      },
-      {
-        "type": "weapon",
-        "id": "weapon_54eceacc9f70",
-        "name": "비틀린 꼬리뼈의 석궁",
-        "weaponType": "헤비보우건",
-        "method": "생산",
-        "viaItems": [
-          "사왕룡 강철가죽",
-          "사왕룡 꼬리비늘",
-          "사왕룡 예안"
-        ]
-      },
-      {
-        "type": "weapon",
-        "id": "weapon_b108082371f1",
-        "name": "일천사해포착 나센",
-        "weaponType": "헤비보우건",
-        "method": "강화",
-        "viaItems": [
-          "사왕룡 강철가죽",
-          "사왕룡 칼비늘"
-        ]
-      },
-      {
-        "type": "weapon",
-        "id": "weapon_ac28fcedf908",
-        "name": "와권왕 나센로벨",
-        "weaponType": "헤비보우건",
-        "method": "강화",
-        "viaItems": [
-          "사왕룡 예안",
-          "사왕룡 칼비늘"
-        ]
-      },
-      {
-        "type": "weapon",
-        "id": "weapon_e8207f8fc5db",
-        "name": "꼬리날을 본뜬 태도",
-        "weaponType": "태도",
-        "method": "생산",
-        "viaItems": [
-          "사왕룡 강철가죽",
-          "사왕룡 칼비늘",
-          "사왕룡 흉갑각"
-        ]
-      },
-      {
-        "type": "weapon",
-        "id": "weapon_d2d859d409dd",
-        "name": "위풍당당체도 지겐",
-        "weaponType": "태도",
-        "method": "강화",
-        "viaItems": [
-          "사왕룡 부채칼비늘",
-          "사왕룡 칼비늘"
-        ]
-      },
-      {
-        "type": "weapon",
-        "id": "weapon_fd291acc7d5a",
-        "name": "일섬왕 지겐파웰",
-        "weaponType": "태도",
-        "method": "강화",
-        "viaItems": [
-          "사왕룡 갈고리발톱",
-          "사왕룡 예안"
-        ]
-      },
-      {
-        "type": "weapon",
-        "id": "weapon_c03da02df70c",
-        "name": "첨예발톱과 강피방패",
-        "weaponType": "한손검",
-        "method": "생산",
-        "viaItems": [
-          "사왕룡 강철가죽",
-          "사왕룡 미갑각",
-          "사왕룡 부채칼비늘"
-        ]
-      },
-      {
-        "type": "weapon",
-        "id": "weapon_e77b0864900a",
-        "name": "이율배반의 창방패 카이트",
-        "weaponType": "한손검",
-        "method": "강화",
-        "viaItems": [
-          "사왕룡 부채칼비늘",
-          "사왕룡 칼비늘",
-          "사왕룡 흉갑각"
-        ]
-      },
-      {
-        "type": "weapon",
-        "id": "weapon_8c70a8364e6c",
-        "name": "미궁왕 무엘카이트",
-        "weaponType": "한손검",
-        "method": "강화",
-        "viaItems": [
-          "사왕룡 갈고리발톱",
-          "사왕룡 예안"
-        ]
-      },
-      {
-        "type": "weapon",
-        "id": "weapon_a5d2d1e935f5",
-        "name": "흑가시를 묶은 날",
-        "weaponType": "쌍검",
-        "method": "생산",
-        "viaItems": [
-          "사왕룡 갈고리발톱",
-          "사왕룡 예안",
-          "사왕룡 흉갑각"
-        ]
-      },
-      {
-        "type": "weapon",
-        "id": "weapon_f13632f5e716",
-        "name": "삼라만상파열 그루카",
-        "weaponType": "쌍검",
-        "method": "강화",
-        "viaItems": [
-          "사왕룡 미갑각",
-          "사왕룡 부채칼비늘"
-        ]
-      },
-      {
-        "type": "weapon",
-        "id": "weapon_a01e8da983bf",
-        "name": "참렬왕 그루칸바르",
-        "weaponType": "쌍검",
-        "method": "강화",
-        "viaItems": [
-          "사왕룡 갈고리발톱",
-          "사왕룡 칼비늘"
-        ]
-      },
-      {
-        "type": "weapon",
-        "id": "weapon_9f7d25dd858e",
-        "name": "혼돈의 골괴추",
-        "weaponType": "해머",
-        "method": "생산",
-        "viaItems": [
-          "사왕룡 강철가죽",
-          "사왕룡 미갑각",
-          "사왕룡 칼비늘",
-          "사왕룡 흉갑각"
-        ]
-      },
-      {
-        "type": "weapon",
-        "id": "weapon_26f163840f28",
-        "name": "칠난팔고를 부수는 라그나",
-        "weaponType": "해머",
-        "method": "강화",
-        "viaItems": [
-          "사왕룡 갈고리발톱",
-          "사왕룡 강철가죽"
-        ]
-      },
-      {
-        "type": "weapon",
-        "id": "weapon_24bd1d926b27",
-        "name": "격진왕 라그나드워드",
-        "weaponType": "해머",
-        "method": "강화",
-        "viaItems": [
-          "사왕룡 강철가죽",
-          "사왕룡 칼비늘"
-        ]
-      },
-      {
-        "type": "weapon",
-        "id": "weapon_3b8df0f2e9a7",
-        "name": "예안을 품은 전곡기",
-        "weaponType": "수렵피리",
-        "method": "생산",
-        "viaItems": [
-          "사왕룡 갈고리발톱",
-          "사왕룡 예안",
-          "사왕룡 흉갑각"
-        ]
-      },
-      {
-        "type": "weapon",
-        "id": "weapon_7192279348a4",
-        "name": "환희전율반향 무지카",
-        "weaponType": "수렵피리",
-        "method": "강화",
-        "viaItems": [
-          "사왕룡 미갑각",
-          "사왕룡 부채칼비늘",
-          "사왕룡 예안"
-        ]
-      },
-      {
-        "type": "weapon",
-        "id": "weapon_9031ad4b9fe0",
-        "name": "광소왕 무지카오르게이",
-        "weaponType": "수렵피리",
-        "method": "강화",
-        "viaItems": [
-          "사왕룡 갈고리발톱",
-          "사왕룡 흉갑각"
-        ]
-      },
-      {
-        "type": "weapon",
-        "id": "weapon_b1b1cf4e2b7b",
-        "name": "밀집된 강각의 창",
-        "weaponType": "랜스",
-        "method": "생산",
-        "viaItems": [
-          "사왕룡 갈고리발톱",
-          "사왕룡 꼬리비늘",
-          "사왕룡 부채칼비늘"
-        ]
-      },
-      {
-        "type": "weapon",
-        "id": "weapon_be4bbaf6c603",
-        "name": "확고부동불변 이지스",
-        "weaponType": "랜스",
-        "method": "강화",
-        "viaItems": [
-          "사왕룡 꼬리비늘",
-          "사왕룡 미갑각"
-        ]
-      },
-      {
-        "type": "weapon",
-        "id": "weapon_3461139c8f20",
-        "name": "철벽왕 이지스레드",
-        "weaponType": "랜스",
-        "method": "강화",
-        "viaItems": [
-          "사왕룡 갈고리발톱",
-          "사왕룡 강철가죽"
-        ]
-      },
-      {
-        "type": "weapon",
-        "id": "weapon_e08630b2aa38",
-        "name": "요동치는 흉성의 총창",
-        "weaponType": "건랜스",
-        "method": "생산",
-        "viaItems": [
-          "사왕룡 강철가죽"
-        ]
-      },
-      {
-        "type": "weapon",
-        "id": "weapon_184525b17715",
-        "name": "진천동지붕괴 궁그",
-        "weaponType": "건랜스",
-        "method": "강화",
-        "viaItems": [
-          "사왕룡 부채칼비늘",
-          "사왕룡 흉갑각"
-        ]
-      },
-      {
-        "type": "weapon",
-        "id": "weapon_fef50759e658",
-        "name": "파쇄왕 궁그볼드",
-        "weaponType": "건랜스",
-        "method": "강화",
-        "viaItems": [
-          "사왕룡 부채칼비늘",
-          "사왕룡 흉갑각"
-        ]
-      },
-      {
-        "type": "weapon",
-        "id": "weapon_e652b8bf0d5d",
-        "name": "첨예비늘을 이은 도끼",
-        "weaponType": "슬래시액스",
-        "method": "생산",
-        "viaItems": [
-          "사왕룡 갈고리발톱",
-          "사왕룡 강철가죽",
-          "사왕룡 꼬리비늘",
-          "사왕룡 부채칼비늘"
-        ]
-      },
-      {
-        "type": "weapon",
-        "id": "weapon_87e3f75d48eb",
-        "name": "발산개세난인 가게키",
-        "weaponType": "슬래시액스",
-        "method": "강화",
-        "viaItems": [
-          "사왕룡 미갑각",
-          "사왕룡 부채칼비늘",
-          "사왕룡 예안"
-        ]
-      },
-      {
-        "type": "weapon",
-        "id": "weapon_d0526ea0bd0a",
-        "name": "난세왕 텐마가게키",
-        "weaponType": "슬래시액스",
-        "method": "강화",
-        "viaItems": [
-          "사왕룡 갈고리발톱",
-          "사왕룡 미갑각"
-        ]
-      },
-      {
-        "type": "armor",
-        "id": "armor_7be3a66606e6",
-        "name": "유쿠모의 삿갓·천",
-        "part": "head",
-        "hunterType": "blade",
-        "viaItems": [
-          "사왕룡 강철가죽",
-          "사왕룡 예안"
-        ]
-      },
-      {
-        "type": "armor",
-        "id": "armor_46a5d1f78f63",
-        "name": "유쿠모의 상의·천",
-        "part": "body",
-        "hunterType": "blade",
-        "viaItems": [
-          "사왕룡 강철가죽",
-          "사왕룡 흉갑각"
-        ]
-      },
-      {
-        "type": "armor",
-        "id": "armor_24cf71bdab55",
-        "name": "유쿠모의 장갑·천",
-        "part": "arms",
-        "hunterType": "blade",
-        "viaItems": [
-          "사왕룡 갈고리발톱",
-          "사왕룡 강철가죽"
-        ]
-      },
-      {
-        "type": "armor",
-        "id": "armor_ce56b523b42d",
-        "name": "유쿠모의 띠·천",
-        "part": "waist",
-        "hunterType": "blade",
-        "viaItems": [
-          "사왕룡 강철가죽"
-        ]
-      },
-      {
-        "type": "armor",
-        "id": "armor_f8fc7ee6f82c",
-        "name": "유쿠모의 하의·천",
-        "part": "legs",
-        "hunterType": "blade",
-        "viaItems": [
-          "사왕룡 강철가죽",
-          "사왕룡 꼬리비늘"
-        ]
-      },
-      {
-        "type": "armor",
-        "id": "armor_61aa9e6861e9",
-        "name": "리벨리언헬름",
-        "part": "head",
-        "hunterType": "blade",
-        "viaItems": [
-          "사왕룡 꼬리비늘",
-          "사왕룡 예안"
-        ]
-      },
-      {
-        "type": "armor",
-        "id": "armor_ec880a6ff51b",
-        "name": "리벨리언메일",
-        "part": "body",
-        "hunterType": "blade",
-        "viaItems": [
-          "사왕룡 강철가죽",
-          "사왕룡 칼비늘",
-          "사왕룡 흉갑각"
-        ]
-      },
-      {
-        "type": "armor",
-        "id": "armor_42d6add905f5",
-        "name": "리벨리언암",
-        "part": "arms",
-        "hunterType": "blade",
-        "viaItems": [
-          "사왕룡 꼬리비늘",
-          "사왕룡 부채칼비늘"
-        ]
-      },
-      {
-        "type": "armor",
-        "id": "armor_2ff25b6c961b",
-        "name": "리벨리언코일",
-        "part": "waist",
-        "hunterType": "blade",
-        "viaItems": [
-          "사왕룡 갈고리발톱",
-          "사왕룡 강철가죽",
-          "사왕룡 꼬리비늘"
-        ]
-      },
-      {
-        "type": "armor",
-        "id": "armor_33dddecb884f",
-        "name": "리벨리언그리브",
-        "part": "legs",
-        "hunterType": "blade",
-        "viaItems": [
-          "사왕룡 갈고리발톱",
-          "사왕룡 꼬리비늘"
-        ]
-      },
-      {
-        "type": "armor",
-        "id": "armor_056b538bca41",
-        "name": "EX카이저크라운",
-        "part": "head",
-        "hunterType": "blade",
-        "viaItems": [
-          "사왕룡 갈고리발톱"
-        ]
-      },
-      {
-        "type": "armor",
-        "id": "armor_476b6f0155f0",
-        "name": "EX카이저메일",
-        "part": "body",
-        "hunterType": "blade",
-        "viaItems": [
-          "사왕룡 흉갑각"
-        ]
-      },
-      {
-        "type": "armor",
-        "id": "armor_80b63a69b3a4",
-        "name": "EX카이저암",
-        "part": "arms",
-        "hunterType": "blade",
-        "viaItems": [
-          "사왕룡 칼비늘"
-        ]
-      },
-      {
-        "type": "armor",
-        "id": "armor_5c6cf56b0102",
-        "name": "EX카이저코일",
-        "part": "waist",
-        "hunterType": "blade",
-        "viaItems": [
-          "사왕룡 꼬리비늘"
-        ]
-      },
-      {
         "type": "armor",
         "id": "armor_5789175a04f8",
         "name": "EX카이저그리브",
         "part": "legs",
         "hunterType": "blade",
-        "viaItems": [
-          "사왕룡 강철가죽"
-        ]
-      },
-      {
-        "type": "armor",
-        "id": "armor_a26357052352",
-        "name": "EX리벨리언헬름",
-        "part": "head",
-        "hunterType": "blade",
-        "viaItems": [
-          "사왕룡 예안"
-        ]
-      },
-      {
-        "type": "armor",
-        "id": "armor_39a95abdee29",
-        "name": "EX리벨리언메일",
-        "part": "body",
-        "hunterType": "blade",
-        "viaItems": [
-          "사왕룡 흉갑각"
-        ]
-      },
-      {
-        "type": "armor",
-        "id": "armor_6f12eebb7bc3",
-        "name": "EX리벨리언암",
-        "part": "arms",
-        "hunterType": "blade",
-        "viaItems": [
-          "사왕룡 부채칼비늘"
-        ]
-      },
-      {
-        "type": "armor",
-        "id": "armor_06b1855ed1cc",
-        "name": "EX리벨리언코일",
-        "part": "waist",
-        "hunterType": "blade",
-        "viaItems": [
-          "사왕룡 갈고리발톱",
-          "사왕룡 꼬리비늘"
-        ]
-      },
-      {
-        "type": "armor",
-        "id": "armor_f2d629f61ff4",
-        "name": "EX리벨리언그리브",
-        "part": "legs",
-        "hunterType": "blade",
-        "viaItems": [
-          "사왕룡 갈고리발톱"
-        ]
-      },
-      {
-        "type": "armor",
-        "id": "armor_49400edeb233",
-        "name": "리벨리언X헬름",
-        "part": "head",
-        "hunterType": "blade",
-        "viaItems": [
-          "사왕룡 예안"
-        ]
-      },
-      {
-        "type": "armor",
-        "id": "armor_560f2d971718",
-        "name": "유쿠모의 삿갓·지",
-        "part": "head",
-        "hunterType": "gunner",
-        "viaItems": [
-          "사왕룡 강철가죽",
-          "사왕룡 예안"
-        ]
-      },
-      {
-        "type": "armor",
-        "id": "armor_f32ef76ec1cd",
-        "name": "유쿠모의 상의·지",
-        "part": "body",
-        "hunterType": "gunner",
-        "viaItems": [
-          "사왕룡 강철가죽",
-          "사왕룡 흉갑각"
-        ]
-      },
-      {
-        "type": "armor",
-        "id": "armor_f1c2a83f4314",
-        "name": "유쿠모의 장갑·지",
-        "part": "arms",
-        "hunterType": "gunner",
-        "viaItems": [
-          "사왕룡 갈고리발톱",
-          "사왕룡 강철가죽"
-        ]
-      },
-      {
-        "type": "armor",
-        "id": "armor_7881817d69d5",
-        "name": "유쿠모의 띠·지",
-        "part": "waist",
-        "hunterType": "gunner",
-        "viaItems": [
-          "사왕룡 강철가죽"
-        ]
-      },
-      {
-        "type": "armor",
-        "id": "armor_601a23637ce6",
-        "name": "유쿠모의 하의·지",
-        "part": "legs",
-        "hunterType": "gunner",
-        "viaItems": [
-          "사왕룡 강철가죽",
-          "사왕룡 꼬리비늘"
-        ]
-      },
-      {
-        "type": "armor",
-        "id": "armor_ca24cea4ff46",
-        "name": "EX카이저마스크",
-        "part": "head",
-        "hunterType": "gunner",
-        "viaItems": [
-          "사왕룡 갈고리발톱"
-        ]
-      },
-      {
-        "type": "armor",
-        "id": "armor_9219c39e4f8a",
-        "name": "EX카이저리지스트",
-        "part": "body",
-        "hunterType": "gunner",
-        "viaItems": [
-          "사왕룡 흉갑각"
-        ]
-      },
-      {
-        "type": "armor",
-        "id": "armor_5dbbee46d4da",
-        "name": "EX카이저가드",
-        "part": "arms",
-        "hunterType": "gunner",
-        "viaItems": [
-          "사왕룡 칼비늘"
-        ]
-      },
-      {
-        "type": "armor",
-        "id": "armor_882f270efe48",
-        "name": "EX카이저코트",
-        "part": "waist",
-        "hunterType": "gunner",
-        "viaItems": [
-          "사왕룡 꼬리비늘"
-        ]
+        "count": 4,
+        "materials": "염왕룡티켓*2 염왕룡 꼬리*3 사왕룡 강철가죽*4 고룡골*3"
       },
       {
         "type": "armor",
@@ -66019,20 +65264,8 @@
         "name": "EX카이저레깅스",
         "part": "legs",
         "hunterType": "gunner",
-        "viaItems": [
-          "사왕룡 강철가죽"
-        ]
-      },
-      {
-        "type": "armor",
-        "id": "armor_b759cac114fa",
-        "name": "라이엇캡",
-        "part": "head",
-        "hunterType": "gunner",
-        "viaItems": [
-          "사왕룡 꼬리비늘",
-          "사왕룡 예안"
-        ]
+        "count": 4,
+        "materials": "염왕룡티켓*2 염왕룡 꼬리*3 사왕룡 강철가죽*4 고룡골*3"
       },
       {
         "type": "armor",
@@ -66040,22 +65273,8 @@
         "name": "라이엇리지스트",
         "part": "body",
         "hunterType": "gunner",
-        "viaItems": [
-          "사왕룡 강철가죽",
-          "사왕룡 칼비늘",
-          "사왕룡 흉갑각"
-        ]
-      },
-      {
-        "type": "armor",
-        "id": "armor_82611c5d31ab",
-        "name": "라이엇가드",
-        "part": "arms",
-        "hunterType": "gunner",
-        "viaItems": [
-          "사왕룡 꼬리비늘",
-          "사왕룡 부채칼비늘"
-        ]
+        "count": 5,
+        "materials": "사왕룡 강철가죽*5 사왕룡 흉갑각*3 사왕룡 칼비늘*2 천회룡 광옥*1"
       },
       {
         "type": "armor",
@@ -66063,52 +65282,222 @@
         "name": "라이엇코트",
         "part": "waist",
         "hunterType": "gunner",
-        "viaItems": [
-          "사왕룡 갈고리발톱",
-          "사왕룡 강철가죽",
-          "사왕룡 꼬리비늘"
-        ]
+        "count": 5,
+        "materials": "사왕룡 강철가죽*5 사왕룡 꼬리비늘*4 사왕룡 갈고리발톱*2 흉성의 파편*6"
       },
       {
         "type": "armor",
-        "id": "armor_a24c09d19688",
-        "name": "라이엇레깅스",
-        "part": "legs",
+        "id": "armor_ec880a6ff51b",
+        "name": "리벨리언메일",
+        "part": "body",
+        "hunterType": "blade",
+        "count": 5,
+        "materials": "사왕룡 강철가죽*5 사왕룡 흉갑각*3 사왕룡 칼비늘*2 천회룡 광옥*1"
+      },
+      {
+        "type": "armor",
+        "id": "armor_2ff25b6c961b",
+        "name": "리벨리언코일",
+        "part": "waist",
+        "hunterType": "blade",
+        "count": 5,
+        "materials": "사왕룡 강철가죽*5 사왕룡 꼬리비늘*4 사왕룡 갈고리발톱*2 흉성의 파편*6"
+      },
+      {
+        "type": "armor",
+        "id": "armor_7881817d69d5",
+        "name": "유쿠모의 띠·지",
+        "part": "waist",
         "hunterType": "gunner",
-        "viaItems": [
-          "사왕룡 갈고리발톱",
-          "사왕룡 꼬리비늘"
-        ]
+        "count": 3,
+        "materials": "사왕룡 강철가죽*3 흉성의 파편*1 소용돌이뼈*2"
       },
       {
         "type": "armor",
-        "id": "armor_80a04c4d9ce3",
-        "name": "EX라이엇캡",
+        "id": "armor_ce56b523b42d",
+        "name": "유쿠모의 띠·천",
+        "part": "waist",
+        "hunterType": "blade",
+        "count": 3,
+        "materials": "사왕룡 강철가죽*3 흉성의 파편*1 소용돌이뼈*2"
+      },
+      {
+        "type": "armor",
+        "id": "armor_560f2d971718",
+        "name": "유쿠모의 삿갓·지",
         "part": "head",
         "hunterType": "gunner",
-        "viaItems": [
-          "사왕룡 예안"
-        ]
+        "count": 3,
+        "materials": "사왕룡 강철가죽*3 흉성의 파편*1 사왕룡 예안*1 환조 날개*1"
       },
       {
         "type": "armor",
-        "id": "armor_45b62bdf84c1",
-        "name": "EX라이엇리지스트",
+        "id": "armor_7be3a66606e6",
+        "name": "유쿠모의 삿갓·천",
+        "part": "head",
+        "hunterType": "blade",
+        "count": 3,
+        "materials": "사왕룡 강철가죽*3 흉성의 파편*1 사왕룡 예안*1 환조 날개*1"
+      },
+      {
+        "type": "armor",
+        "id": "armor_f32ef76ec1cd",
+        "name": "유쿠모의 상의·지",
         "part": "body",
         "hunterType": "gunner",
-        "viaItems": [
-          "사왕룡 흉갑각"
-        ]
+        "count": 3,
+        "materials": "사왕룡 강철가죽*3 흉성의 파편*1 사왕룡 흉갑각*3"
       },
       {
         "type": "armor",
-        "id": "armor_0b03f9459dfe",
-        "name": "EX라이엇가드",
+        "id": "armor_46a5d1f78f63",
+        "name": "유쿠모의 상의·천",
+        "part": "body",
+        "hunterType": "blade",
+        "count": 3,
+        "materials": "사왕룡 강철가죽*3 흉성의 파편*1 사왕룡 흉갑각*3"
+      },
+      {
+        "type": "armor",
+        "id": "armor_f1c2a83f4314",
+        "name": "유쿠모의 장갑·지",
         "part": "arms",
         "hunterType": "gunner",
-        "viaItems": [
-          "사왕룡 부채칼비늘"
-        ]
+        "count": 3,
+        "materials": "사왕룡 강철가죽*3 흉성의 파편*1 사왕룡 갈고리발톱*2"
+      },
+      {
+        "type": "armor",
+        "id": "armor_24cf71bdab55",
+        "name": "유쿠모의 장갑·천",
+        "part": "arms",
+        "hunterType": "blade",
+        "count": 3,
+        "materials": "사왕룡 강철가죽*3 흉성의 파편*1 사왕룡 갈고리발톱*2"
+      },
+      {
+        "type": "armor",
+        "id": "armor_601a23637ce6",
+        "name": "유쿠모의 하의·지",
+        "part": "legs",
+        "hunterType": "gunner",
+        "count": 3,
+        "materials": "사왕룡 강철가죽*3 흉성의 파편*1 사왕룡 꼬리비늘*3"
+      },
+      {
+        "type": "armor",
+        "id": "armor_f8fc7ee6f82c",
+        "name": "유쿠모의 하의·천",
+        "part": "legs",
+        "hunterType": "blade",
+        "count": 3,
+        "materials": "사왕룡 강철가죽*3 흉성의 파편*1 사왕룡 꼬리비늘*3"
+      },
+      {
+        "type": "decoration",
+        "id": "deco_8d09c2123623",
+        "name": "무결주【2】",
+        "slots": 2,
+        "count": 2,
+        "materials": "금강원주×1 옥랑룡 첨예발톱×2 사왕룡 강철가죽×2"
+      },
+      {
+        "type": "decoration",
+        "id": "deco_cc651c88b3d4",
+        "name": "박피주【3】",
+        "slots": 3,
+        "count": 1,
+        "materials": "금강원주×1 사왕룡 강철가죽×1 대지의 용옥×1"
+      },
+      {
+        "type": "weapon",
+        "id": "weapon_e08630b2aa38",
+        "name": "요동치는 흉성의 총창",
+        "weaponType": "건랜스",
+        "method": "생산",
+        "count": 5,
+        "materials": "사왕룡 강철가죽×5 소용돌이뼈×6 흉성의 파편×3 플루크라이트광석×10"
+      },
+      {
+        "type": "weapon",
+        "id": "weapon_3461139c8f20",
+        "name": "철벽왕 이지스레드",
+        "weaponType": "랜스",
+        "method": "강화",
+        "count": 4,
+        "materials": "사왕룡 강철가죽×4 사왕룡 갈고리발톱×2 하룡 가죽++×4 태고룡골×4"
+      },
+      {
+        "type": "weapon",
+        "id": "weapon_e652b8bf0d5d",
+        "name": "첨예비늘을 이은 도끼",
+        "weaponType": "슬래시액스",
+        "method": "생산",
+        "count": 4,
+        "materials": "사왕룡 갈고리발톱×4 사왕룡 강철가죽×4 사왕룡 꼬리비늘×3 사왕룡 부채칼비늘×1"
+      },
+      {
+        "type": "weapon",
+        "id": "weapon_e8207f8fc5db",
+        "name": "꼬리날을 본뜬 태도",
+        "weaponType": "태도",
+        "method": "생산",
+        "count": 4,
+        "materials": "사왕룡 칼비늘×6 사왕룡 강철가죽×4 사왕룡 흉갑각×2 소용돌이뼈×6"
+      },
+      {
+        "type": "weapon",
+        "id": "weapon_c03da02df70c",
+        "name": "첨예발톱과 강피방패",
+        "weaponType": "한손검",
+        "method": "생산",
+        "count": 3,
+        "materials": "사왕룡 부채칼비늘×4 사왕룡 미갑각×3 사왕룡 강철가죽×3 소용돌이뼈×6"
+      },
+      {
+        "type": "weapon",
+        "id": "weapon_24bd1d926b27",
+        "name": "격진왕 라그나드워드",
+        "weaponType": "해머",
+        "method": "강화",
+        "count": 7,
+        "materials": "사왕룡 강철가죽×7 사왕룡 칼비늘×5 염왕룡 중갑각×4 태고룡골×4"
+      },
+      {
+        "type": "weapon",
+        "id": "weapon_26f163840f28",
+        "name": "칠난팔고를 부수는 라그나",
+        "weaponType": "해머",
+        "method": "강화",
+        "count": 8,
+        "materials": "사왕룡 강철가죽×8 사왕룡 갈고리발톱×3 소용돌이뼈×6 천검의 용옥×1"
+      },
+      {
+        "type": "weapon",
+        "id": "weapon_9f7d25dd858e",
+        "name": "혼돈의 골괴추",
+        "weaponType": "해머",
+        "method": "생산",
+        "count": 6,
+        "materials": "사왕룡 강철가죽×6 사왕룡 칼비늘×4 사왕룡 흉갑각×4 사왕룡 미갑각×4"
+      },
+      {
+        "type": "weapon",
+        "id": "weapon_54eceacc9f70",
+        "name": "비틀린 꼬리뼈의 석궁",
+        "weaponType": "헤비보우건",
+        "method": "생산",
+        "count": 6,
+        "materials": "사왕룡 강철가죽×6 사왕룡 꼬리비늘×4 소용돌이뼈×6 사왕룡 예안×2"
+      },
+      {
+        "type": "weapon",
+        "id": "weapon_b108082371f1",
+        "name": "일천사해포착 나센",
+        "weaponType": "헤비보우건",
+        "method": "강화",
+        "count": 8,
+        "materials": "사왕룡 강철가죽×8 사왕룡 칼비늘×4 흉성의 파편×4 천검의 용옥×1"
       },
       {
         "type": "armor",
@@ -66116,20 +65505,148 @@
         "name": "EX라이엇코트",
         "part": "waist",
         "hunterType": "gunner",
-        "viaItems": [
-          "사왕룡 갈고리발톱",
-          "사왕룡 꼬리비늘"
-        ]
+        "count": 6,
+        "materials": "사왕룡티켓*1 사왕룡 꼬리비늘*6 사왕룡 갈고리발톱*4 흉성의 파편*2"
       },
       {
         "type": "armor",
-        "id": "armor_c2b8681e28f4",
-        "name": "EX라이엇레깅스",
+        "id": "armor_06b1855ed1cc",
+        "name": "EX리벨리언코일",
+        "part": "waist",
+        "hunterType": "blade",
+        "count": 6,
+        "materials": "사왕룡티켓*1 사왕룡 꼬리비늘*6 사왕룡 갈고리발톱*4 흉성의 파편*2"
+      },
+      {
+        "type": "armor",
+        "id": "armor_5c6cf56b0102",
+        "name": "EX카이저코일",
+        "part": "waist",
+        "hunterType": "blade",
+        "count": 4,
+        "materials": "염왕룡티켓*1 염왕룡 견갑각*5 사왕룡 꼬리비늘*4 고룡골*3"
+      },
+      {
+        "type": "armor",
+        "id": "armor_882f270efe48",
+        "name": "EX카이저코트",
+        "part": "waist",
+        "hunterType": "gunner",
+        "count": 4,
+        "materials": "염왕룡티켓*1 염왕룡 견갑각*5 사왕룡 꼬리비늘*4 고룡골*3"
+      },
+      {
+        "type": "armor",
+        "id": "armor_82611c5d31ab",
+        "name": "라이엇가드",
+        "part": "arms",
+        "hunterType": "gunner",
+        "count": 4,
+        "materials": "사왕룡 꼬리비늘*4 사왕룡 부채칼비늘*3 천검의 용옥*1 은화룡 견갑각*8"
+      },
+      {
+        "type": "armor",
+        "id": "armor_a24c09d19688",
+        "name": "라이엇레깅스",
         "part": "legs",
         "hunterType": "gunner",
-        "viaItems": [
-          "사왕룡 갈고리발톱"
-        ]
+        "count": 4,
+        "materials": "사왕룡 꼬리비늘*4 사왕룡 갈고리발톱*4 천검의 용옥*1 금화룡 견갑각*8"
+      },
+      {
+        "type": "armor",
+        "id": "armor_b759cac114fa",
+        "name": "라이엇캡",
+        "part": "head",
+        "hunterType": "gunner",
+        "count": 4,
+        "materials": "사왕룡 꼬리비늘*4 사왕룡 예안*2 소용돌이뼈*4 흑식룡 첨예촉각*1"
+      },
+      {
+        "type": "armor",
+        "id": "armor_33dddecb884f",
+        "name": "리벨리언그리브",
+        "part": "legs",
+        "hunterType": "blade",
+        "count": 4,
+        "materials": "사왕룡 꼬리비늘*4 사왕룡 갈고리발톱*4 천검의 용옥*1 금화룡 견갑각*8"
+      },
+      {
+        "type": "armor",
+        "id": "armor_42d6add905f5",
+        "name": "리벨리언암",
+        "part": "arms",
+        "hunterType": "blade",
+        "count": 4,
+        "materials": "사왕룡 꼬리비늘*4 사왕룡 부채칼비늘*3 천검의 용옥*1 은화룡 견갑각*8"
+      },
+      {
+        "type": "armor",
+        "id": "armor_61aa9e6861e9",
+        "name": "리벨리언헬름",
+        "part": "head",
+        "hunterType": "blade",
+        "count": 4,
+        "materials": "사왕룡 꼬리비늘*4 사왕룡 예안*2 소용돌이뼈*4 흑식룡 첨예촉각*1"
+      },
+      {
+        "type": "exchange",
+        "result": "황흑룡 역린",
+        "unlock": "집회소★7 - 고난도: 천고불후를 읊는 왕 集 会 所★7「千古不易を謳う王」"
+      },
+      {
+        "type": "weapon",
+        "id": "weapon_5e84ca9b58ff",
+        "name": "단죄왕 월다이트",
+        "weaponType": "대검",
+        "method": "강화",
+        "count": 6,
+        "materials": "사왕룡 미갑각×4 사왕룡 꼬리비늘×6 강룡 강발톱×2 태고룡골×4"
+      },
+      {
+        "type": "weapon",
+        "id": "weapon_b1b1cf4e2b7b",
+        "name": "밀집된 강각의 창",
+        "weaponType": "랜스",
+        "method": "생산",
+        "count": 8,
+        "materials": "사왕룡 꼬리비늘×8 사왕룡 갈고리발톱×2 사왕룡 부채칼비늘×2 소용돌이뼈×6"
+      },
+      {
+        "type": "weapon",
+        "id": "weapon_be4bbaf6c603",
+        "name": "확고부동불변 이지스",
+        "weaponType": "랜스",
+        "method": "강화",
+        "count": 8,
+        "materials": "사왕룡 꼬리비늘×8 사왕룡 미갑각×2 흉성의 파편×4 천검의 용옥×1"
+      },
+      {
+        "type": "weapon",
+        "id": "weapon_2612c3f21c8d",
+        "name": "성화요원장기 마키나",
+        "weaponType": "차지액스",
+        "method": "강화",
+        "count": 4,
+        "materials": "사왕룡 부채칼비늘×1 사왕룡 꼬리비늘×4 사왕룡 갈고리발톱×5 흉성의 파편×3"
+      },
+      {
+        "type": "armor",
+        "id": "armor_80a04c4d9ce3",
+        "name": "EX라이엇캡",
+        "part": "head",
+        "hunterType": "gunner",
+        "count": 3,
+        "materials": "사왕룡티켓*1 사왕룡 예안*3 소용돌이뼈*8 흉성의 파편*2"
+      },
+      {
+        "type": "armor",
+        "id": "armor_a26357052352",
+        "name": "EX리벨리언헬름",
+        "part": "head",
+        "hunterType": "blade",
+        "count": 3,
+        "materials": "사왕룡티켓*1 사왕룡 예안*3 소용돌이뼈*8 흉성의 파편*2"
       },
       {
         "type": "armor",
@@ -66137,51 +65654,419 @@
         "name": "라이엇X캡",
         "part": "head",
         "hunterType": "gunner",
-        "viaItems": [
-          "사왕룡 예안"
-        ]
+        "count": 2,
+        "materials": "사왕룡 두툼미비늘*4 사왕룡 예안*2 소용돌이뼈*4 천검의 용신옥*1"
       },
       {
-        "type": "decoration",
-        "id": "deco_8d09c2123623",
-        "name": "무결주【2】",
-        "slots": 2,
-        "viaItems": [
-          "사왕룡 강철가죽"
-        ]
+        "type": "armor",
+        "id": "armor_49400edeb233",
+        "name": "리벨리언X헬름",
+        "part": "head",
+        "hunterType": "blade",
+        "count": 2,
+        "materials": "사왕룡 두툼미비늘*4 사왕룡 예안*2 소용돌이뼈*4 천검의 용신옥*1"
       },
       {
-        "type": "decoration",
-        "id": "deco_77a0721d76ba",
-        "name": "장인주【3】",
-        "slots": 3,
-        "viaItems": [
-          "사왕룡 갈고리발톱"
-        ]
+        "type": "exchange",
+        "result": "황흑룡 익막",
+        "unlock": "집회소★7 - 고난도: 천고불후를 읊는 왕 集 会 所★7「千古不易を謳う王」"
+      },
+      {
+        "type": "weapon",
+        "id": "weapon_3b8df0f2e9a7",
+        "name": "예안을 품은 전곡기",
+        "weaponType": "수렵피리",
+        "method": "생산",
+        "count": 2,
+        "materials": "사왕룡 흉갑각×6 사왕룡 갈고리발톱×2 소용돌이뼈×6 사왕룡 예안×2"
+      },
+      {
+        "type": "weapon",
+        "id": "weapon_7192279348a4",
+        "name": "환희전율반향 무지카",
+        "weaponType": "수렵피리",
+        "method": "강화",
+        "count": 2,
+        "materials": "사왕룡 미갑각×6 사왕룡 부채칼비늘×2 사왕룡 예안×2 천검의 용옥×1"
+      },
+      {
+        "type": "weapon",
+        "id": "weapon_87e3f75d48eb",
+        "name": "발산개세난인 가게키",
+        "weaponType": "슬래시액스",
+        "method": "강화",
+        "count": 2,
+        "materials": "사왕룡 부채칼비늘×3 사왕룡 미갑각×4 사왕룡 예안×2 천검의 용옥×1"
+      },
+      {
+        "type": "weapon",
+        "id": "weapon_a5d2d1e935f5",
+        "name": "흑가시를 묶은 날",
+        "weaponType": "쌍검",
+        "method": "생산",
+        "count": 2,
+        "materials": "사왕룡 갈고리발톱×2 사왕룡 흉갑각×2 소용돌이뼈×4 사왕룡 예안×2"
+      },
+      {
+        "type": "weapon",
+        "id": "weapon_fd291acc7d5a",
+        "name": "일섬왕 지겐파웰",
+        "weaponType": "태도",
+        "method": "강화",
+        "count": 2,
+        "materials": "사왕룡 예안×2 사왕룡 갈고리발톱×4 하룡 질긴꼬리×2 태고룡골×4"
+      },
+      {
+        "type": "weapon",
+        "id": "weapon_8c70a8364e6c",
+        "name": "미궁왕 무엘카이트",
+        "weaponType": "한손검",
+        "method": "강화",
+        "count": 2,
+        "materials": "사왕룡 갈고리발톱×3 사왕룡 예안×2 하룡 강뿔×3 태고룡골×5"
+      },
+      {
+        "type": "weapon",
+        "id": "weapon_ac28fcedf908",
+        "name": "와권왕 나센로벨",
+        "weaponType": "헤비보우건",
+        "method": "강화",
+        "count": 2,
+        "materials": "사왕룡 칼비늘×5 사왕룡 예안×2 천검의 용옥×1 태고룡골×6"
+      },
+      {
+        "type": "armor",
+        "id": "armor_45b62bdf84c1",
+        "name": "EX라이엇리지스트",
+        "part": "body",
+        "hunterType": "gunner",
+        "count": 4,
+        "materials": "사왕룡티켓*1 사왕룡 흉갑각*4 천회룡 광옥*3 길드티켓G*2"
+      },
+      {
+        "type": "armor",
+        "id": "armor_39a95abdee29",
+        "name": "EX리벨리언메일",
+        "part": "body",
+        "hunterType": "blade",
+        "count": 4,
+        "materials": "사왕룡티켓*1 사왕룡 흉갑각*4 천회룡 광옥*3 길드티켓G*2"
+      },
+      {
+        "type": "armor",
+        "id": "armor_9219c39e4f8a",
+        "name": "EX카이저리지스트",
+        "part": "body",
+        "hunterType": "gunner",
+        "count": 3,
+        "materials": "염왕룡티켓*1 염룡 견갑각*6 사왕룡 흉갑각*3 고룡골*3"
+      },
+      {
+        "type": "armor",
+        "id": "armor_476b6f0155f0",
+        "name": "EX카이저메일",
+        "part": "body",
+        "hunterType": "blade",
+        "count": 3,
+        "materials": "염왕룡티켓*1 염룡 견갑각*6 사왕룡 흉갑각*3 고룡골*3"
+      },
+      {
+        "type": "weapon",
+        "id": "weapon_184525b17715",
+        "name": "진천동지붕괴 궁그",
+        "weaponType": "건랜스",
+        "method": "강화",
+        "count": 4,
+        "materials": "사왕룡 흉갑각×4 사왕룡 부채칼비늘×3 소용돌이뼈×8 천검의 용옥×1"
+      },
+      {
+        "type": "weapon",
+        "id": "weapon_fef50759e658",
+        "name": "파쇄왕 궁그볼드",
+        "weaponType": "건랜스",
+        "method": "강화",
+        "count": 4,
+        "materials": "사왕룡 흉갑각×4 사왕룡 부채칼비늘×5 소용돌이뼈×4 태고룡골×4"
+      },
+      {
+        "type": "weapon",
+        "id": "weapon_9119379e2695",
+        "name": "관파하는 흑침의 경노",
+        "weaponType": "라이트보우건",
+        "method": "생산",
+        "count": 5,
+        "materials": "사왕룡 흉갑각×5 사왕룡 갈고리발톱×4 사왕룡 부채칼비늘x2 흉성의 파편×2"
+      },
+      {
+        "type": "weapon",
+        "id": "weapon_9031ad4b9fe0",
+        "name": "광소왕 무지카오르게이",
+        "weaponType": "수렵피리",
+        "method": "강화",
+        "count": 4,
+        "materials": "사왕룡 흉갑각×4 사왕룡 갈고리발톱×2 하룡 가죽++×5 태고룡골×6"
+      },
+      {
+        "type": "weapon",
+        "id": "weapon_e77b0864900a",
+        "name": "이율배반의 창방패 카이트",
+        "weaponType": "한손검",
+        "method": "강화",
+        "count": 3,
+        "materials": "사왕룡 부채칼비늘×4 사왕룡 칼비늘×3 사왕룡 흉갑각×3 천검의 용옥×1"
+      },
+      {
+        "type": "armor",
+        "id": "armor_5dbbee46d4da",
+        "name": "EX카이저가드",
+        "part": "arms",
+        "hunterType": "gunner",
+        "count": 3,
+        "materials": "염왕룡티켓*2 염룡 첨예뿔*3 사왕룡 칼비늘*3 고룡골*3"
+      },
+      {
+        "type": "armor",
+        "id": "armor_80b63a69b3a4",
+        "name": "EX카이저암",
+        "part": "arms",
+        "hunterType": "blade",
+        "count": 3,
+        "materials": "염왕룡티켓*2 염룡 첨예뿔*3 사왕룡 칼비늘*3 고룡골*3"
+      },
+      {
+        "type": "weapon",
+        "id": "weapon_610a299940d8",
+        "name": "거대한 검린의 조각",
+        "weaponType": "대검",
+        "method": "생산",
+        "count": 4,
+        "materials": "사왕룡 부채칼비늘×2 사왕룡 칼비늘×4 옥염석×8 고룡의 피×6"
+      },
+      {
+        "type": "weapon",
+        "id": "weapon_a01e8da983bf",
+        "name": "참렬왕 그루칸바르",
+        "weaponType": "쌍검",
+        "method": "강화",
+        "count": 3,
+        "materials": "사왕룡 갈고리발톱×2 사왕룡 칼비늘×3 강룡 강날개×2 태고룡골×4"
+      },
+      {
+        "type": "weapon",
+        "id": "weapon_18137102a3d2",
+        "name": "해방왕 아델마키나",
+        "weaponType": "차지액스",
+        "method": "강화",
+        "count": 3,
+        "materials": "사왕룡 부채칼비늘×1 사왕룡 칼비늘×3 하룡 강뿔×3 태고룡골×6"
+      },
+      {
+        "type": "weapon",
+        "id": "weapon_2101806d9a54",
+        "name": "흉인을 두른 무구",
+        "weaponType": "차지액스",
+        "method": "생산",
+        "count": 6,
+        "materials": "사왕룡 부채칼비늘×2 사왕룡 미갑각×5 사왕룡 칼비늘×6 소용돌이뼈×2"
+      },
+      {
+        "type": "weapon",
+        "id": "weapon_d2d859d409dd",
+        "name": "위풍당당체도 지겐",
+        "weaponType": "태도",
+        "method": "강화",
+        "count": 8,
+        "materials": "사왕룡 칼비늘×8 사왕룡 부채칼비늘×2 흉성의 파편×3 천검의 용옥×1"
+      },
+      {
+        "type": "armor",
+        "id": "armor_c2b8681e28f4",
+        "name": "EX라이엇레깅스",
+        "part": "legs",
+        "hunterType": "gunner",
+        "count": 6,
+        "materials": "사왕룡티켓*1 사왕룡 갈고리발톱*6 천검의 용옥*2 길드티켓G*2"
+      },
+      {
+        "type": "armor",
+        "id": "armor_f2d629f61ff4",
+        "name": "EX리벨리언그리브",
+        "part": "legs",
+        "hunterType": "blade",
+        "count": 6,
+        "materials": "사왕룡티켓*1 사왕룡 갈고리발톱*6 천검의 용옥*2 길드티켓G*2"
+      },
+      {
+        "type": "armor",
+        "id": "armor_ca24cea4ff46",
+        "name": "EX카이저마스크",
+        "part": "head",
+        "hunterType": "gunner",
+        "count": 3,
+        "materials": "염왕룡티켓*2 염왕룡 갈기*4 사왕룡 갈고리발톱*3 염룡 보옥*1"
+      },
+      {
+        "type": "armor",
+        "id": "armor_056b538bca41",
+        "name": "EX카이저크라운",
+        "part": "head",
+        "hunterType": "blade",
+        "count": 3,
+        "materials": "염왕룡티켓*2 염왕룡 갈기*4 사왕룡 갈고리발톱*3 염룡 보옥*1"
       },
       {
         "type": "decoration",
         "id": "deco_7f3581d0ac23",
         "name": "속공주【3】",
         "slots": 3,
-        "viaItems": [
-          "사왕룡 갈고리발톱"
-        ]
+        "count": 2,
+        "materials": "유리원주×1 사왕룡 갈고리발톱×2 뇌랑룡 전기갑각+×1"
       },
       {
         "type": "decoration",
-        "id": "deco_cc651c88b3d4",
-        "name": "박피주【3】",
+        "id": "deco_77a0721d76ba",
+        "name": "장인주【3】",
         "slots": 3,
-        "viaItems": [
-          "사왕룡 강철가죽"
-        ]
+        "count": 1,
+        "materials": "유리원주×1 사왕룡 갈고리발톱×1 공폭룡 보옥×1"
+      },
+      {
+        "type": "weapon",
+        "id": "weapon_87eefe46abdd",
+        "name": "저격왕 시모야르스크",
+        "weaponType": "라이트보우건",
+        "method": "강화",
+        "count": 4,
+        "materials": "사왕룡 갈고리발톱×4 흑개룡 중갑각×6 흑개룡 중두갑각×2 태고룡골×6"
+      },
+      {
+        "type": "weapon",
+        "id": "weapon_d0526ea0bd0a",
+        "name": "난세왕 텐마가게키",
+        "weaponType": "슬래시액스",
+        "method": "강화",
+        "count": 4,
+        "materials": "사왕룡 갈고리발톱×4 사왕룡 미갑각×5 코스모라이트광석×10 태고룡골×4"
+      },
+      {
+        "type": "weapon",
+        "id": "weapon_791021e4bfaf",
+        "name": "극갑을 배합한 장도+",
+        "weaponType": "조충곤",
+        "method": "강화",
+        "count": 2,
+        "materials": "소용돌이뼈×2 사왕룡 갈고리발톱×2 ●엽충Lv4소재"
+      },
+      {
+        "type": "weapon",
+        "id": "weapon_f53af76675d0",
+        "name": "허무로 되돌리는 시모",
+        "weaponType": "라이트보우건",
+        "method": "강화",
+        "count": 4,
+        "materials": "사왕룡 미갑각×4 흉성의 파편×3 소용돌이뼈×3 천검의 용옥×1"
+      },
+      {
+        "type": "weapon",
+        "id": "weapon_f13632f5e716",
+        "name": "삼라만상파열 그루카",
+        "weaponType": "쌍검",
+        "method": "강화",
+        "count": 4,
+        "materials": "사왕룡 부채칼비늘×4 사왕룡 미갑각×4 소용돌이뼈×10 천검의 용옥×1"
+      },
+      {
+        "type": "weapon",
+        "id": "weapon_ecd4e45249a4",
+        "name": "극갑을 배합한 장도",
+        "weaponType": "조충곤",
+        "method": "생산",
+        "count": 3,
+        "materials": "사왕룡 미갑각×3 사왕룡 부채칼비늘×5 소용돌이뼈×4"
+      },
+      {
+        "type": "weapon",
+        "id": "weapon_c100bc3c9b4b",
+        "name": "태연왕 야마타오진",
+        "weaponType": "조충곤",
+        "method": "강화",
+        "count": 5,
+        "materials": "사왕룡 미갑각×5 염왕룡 강뿔×2 ●엽충Lv10소재"
+      },
+      {
+        "type": "weapon",
+        "id": "weapon_743d7b264628",
+        "name": "혼연일체체도 야마타",
+        "weaponType": "조충곤",
+        "method": "강화",
+        "count": 3,
+        "materials": "사왕룡 미갑각×3 천검의 용옥×1 ●엽충Lv7소재"
+      },
+      {
+        "type": "armor",
+        "id": "armor_0b03f9459dfe",
+        "name": "EX라이엇가드",
+        "part": "arms",
+        "hunterType": "gunner",
+        "count": 4,
+        "materials": "사왕룡티켓*1 사왕룡 부채칼비늘*4 천검의 용옥*2 흉성의 파편*2"
+      },
+      {
+        "type": "armor",
+        "id": "armor_6f12eebb7bc3",
+        "name": "EX리벨리언암",
+        "part": "arms",
+        "hunterType": "blade",
+        "count": 4,
+        "materials": "사왕룡티켓*1 사왕룡 부채칼비늘*4 천검의 용옥*2 흉성의 파편*2"
+      },
+      {
+        "type": "weapon",
+        "id": "weapon_dfbc7b97a575",
+        "name": "개수일촉참격 다이트",
+        "weaponType": "대검",
+        "method": "강화",
+        "count": 3,
+        "materials": "사왕룡 부채칼비늘×3 소용돌이뼈×6 흉성의 파편×4 천검의 용옥×1"
       }
     ]
   },
   "다라·아마듈라 아종": {
     "monster": "다라·아마듈라 아종",
-    "items": [],
+    "items": [
+      {
+        "name": "사황룡 강고리발톱",
+        "id": "item_mh4u_1071"
+      },
+      {
+        "name": "사황룡 두툼미비늘",
+        "id": "item_mh4u_1067"
+      },
+      {
+        "name": "사황룡 두툼철가죽",
+        "id": "item_mh4u_1066"
+      },
+      {
+        "name": "사황룡 두툼칼비늘",
+        "id": "item_mh4u_1068"
+      },
+      {
+        "name": "사황룡 예안",
+        "id": "item_mh4u_1069"
+      },
+      {
+        "name": "사황룡 중미갑각",
+        "id": "item_mh4u_1072"
+      },
+      {
+        "name": "사황룡 중흉갑각",
+        "id": "item_mh4u_1070"
+      },
+      {
+        "name": "사황룡 큰부채비늘",
+        "id": "item_mh4u_1073"
+      }
+    ],
     "quests": [
       {
         "id": "event-g-068",
@@ -66202,7 +66087,265 @@
         "location": "천검산"
       }
     ],
-    "uses": []
+    "uses": [
+      {
+        "type": "armor",
+        "id": "armor_c9bc63cdf152",
+        "name": "라이엇Z리지스트",
+        "part": "body",
+        "hunterType": "gunner",
+        "count": 5,
+        "materials": "사황룡 두툼철가죽*5 사황룡 중흉갑각*3 사황룡 두툼칼비늘*2 강룡 중갑각*6"
+      },
+      {
+        "type": "armor",
+        "id": "armor_806d87ee6434",
+        "name": "라이엇Z코트",
+        "part": "waist",
+        "hunterType": "gunner",
+        "count": 5,
+        "materials": "사황룡 두툼철가죽*5 사황룡 두툼미비늘*4 사황룡 강고리발톱*2 흉성의 파편*6"
+      },
+      {
+        "type": "armor",
+        "id": "armor_a5abc6acc482",
+        "name": "리벨리언Z메일",
+        "part": "body",
+        "hunterType": "blade",
+        "count": 5,
+        "materials": "사황룡 두툼철가죽*5 사황룡 중흉갑각*3 사황룡 두툼칼비늘*2 강룡 중갑각*6"
+      },
+      {
+        "type": "armor",
+        "id": "armor_a2411878410a",
+        "name": "리벨리언Z코일",
+        "part": "waist",
+        "hunterType": "blade",
+        "count": 5,
+        "materials": "사황룡 두툼철가죽*5 사황룡 두툼미비늘*4 사황룡 강고리발톱*2 흉성의 파편*6"
+      },
+      {
+        "type": "exchange",
+        "result": "황흑룡 천린",
+        "unlock": "G★3 - 불멸을 구가하는 황제 G★3「高難度：不朽不滅を謳う帝」"
+      },
+      {
+        "type": "weapon",
+        "id": "weapon_6e913a649807",
+        "name": "황총창 다라베르펜",
+        "weaponType": "건랜스",
+        "method": "강화",
+        "count": 5,
+        "materials": "사황룡 두툼철가죽×5 사황룡 큰부채비늘×5 사황룡 중흉갑각×4 소용돌이뼈×4"
+      },
+      {
+        "type": "weapon",
+        "id": "weapon_7af98ae2261a",
+        "name": "황검부 다라위시",
+        "weaponType": "슬래시액스",
+        "method": "강화",
+        "count": 4,
+        "materials": "사황룡 강고리발톱×4 사황룡 두툼철가죽×4 사황룡 두툼미비늘×3 사황룡 큰부채비늘×1"
+      },
+      {
+        "type": "weapon",
+        "id": "weapon_9602d46af2b7",
+        "name": "황곤 다라사르타레",
+        "weaponType": "조충곤",
+        "method": "강화",
+        "count": 4,
+        "materials": "사황룡 큰부채비늘×2 사황룡 두툼철가죽×4 ●엽충Lv11소재"
+      },
+      {
+        "type": "weapon",
+        "id": "weapon_5f2485e235af",
+        "name": "황도 다라울크",
+        "weaponType": "태도",
+        "method": "강화",
+        "count": 4,
+        "materials": "사황룡 두툼칼비늘×8 사황룡 큰부채비늘×2 사황룡 두툼철가죽×4 사황룡 예안×2"
+      },
+      {
+        "type": "weapon",
+        "id": "weapon_0dfd5e8eea61",
+        "name": "황사 다라스케일",
+        "weaponType": "한손검",
+        "method": "강화",
+        "count": 3,
+        "materials": "사황룡 큰부채비늘×4 사황룡 중미갑각×3 사황룡 두툼철가죽×3 소용돌이뼈×6"
+      },
+      {
+        "type": "weapon",
+        "id": "weapon_9c4c9e387671",
+        "name": "황추 다라안고니아",
+        "weaponType": "해머",
+        "method": "강화",
+        "count": 8,
+        "materials": "사황룡 두툼철가죽×8 사황룡 강고리발톱×3 소용돌이뼈×6 천검의 용신옥×1"
+      },
+      {
+        "type": "weapon",
+        "id": "weapon_73dc0be2a3e4",
+        "name": "황포 다라그롭스",
+        "weaponType": "헤비보우건",
+        "method": "강화",
+        "count": 8,
+        "materials": "사황룡 두툼철가죽×8 사황룡 두툼미비늘×4 사황룡 예안×2 코스모라이트광석×6"
+      },
+      {
+        "type": "armor",
+        "id": "armor_b3dc6bb999fd",
+        "name": "라이엇Z가드",
+        "part": "arms",
+        "hunterType": "gunner",
+        "count": 4,
+        "materials": "사황룡 두툼미비늘*4 사황룡 큰부채비늘*3 천검의 용옥*1 하룡 가죽++*6"
+      },
+      {
+        "type": "armor",
+        "id": "armor_d52495790878",
+        "name": "라이엇Z레깅스",
+        "part": "legs",
+        "hunterType": "gunner",
+        "count": 4,
+        "materials": "사황룡 두툼미비늘*4 사황룡 강고리발톱*4 천검의 용신옥*1 염왕룡 중갑각*6"
+      },
+      {
+        "type": "armor",
+        "id": "armor_7bd448b17508",
+        "name": "라이엇Z캡",
+        "part": "head",
+        "hunterType": "gunner",
+        "count": 4,
+        "materials": "사황룡 두툼미비늘*4 사황룡 예안*2 소용돌이뼈*4 천검의 용신옥*1"
+      },
+      {
+        "type": "armor",
+        "id": "armor_dd226f7c8b5b",
+        "name": "리벨리언Z그리브",
+        "part": "legs",
+        "hunterType": "blade",
+        "count": 4,
+        "materials": "사황룡 두툼미비늘*4 사황룡 강고리발톱*4 천검의 용신옥*1 염왕룡 중갑각*6"
+      },
+      {
+        "type": "armor",
+        "id": "armor_2bf09a29fd6b",
+        "name": "리벨리언Z암",
+        "part": "arms",
+        "hunterType": "blade",
+        "count": 4,
+        "materials": "사황룡 두툼미비늘*4 사황룡 큰부채비늘*3 천검의 용옥*1 하룡 가죽++*6"
+      },
+      {
+        "type": "armor",
+        "id": "armor_b2b0aea518ee",
+        "name": "리벨리언Z헬름",
+        "part": "head",
+        "hunterType": "blade",
+        "count": 4,
+        "materials": "사황룡 두툼미비늘*4 사황룡 예안*2 소용돌이뼈*4 천검의 용신옥*1"
+      },
+      {
+        "type": "weapon",
+        "id": "weapon_942958bf2304",
+        "name": "사황노 레제마듈라",
+        "weaponType": "라이트보우건",
+        "method": "강화",
+        "count": 5,
+        "materials": "사황룡 중흉갑각×8 사황룡 강고리발톱×5 사황룡 두툼미비늘×5 천검의 용신옥×1"
+      },
+      {
+        "type": "weapon",
+        "id": "weapon_dd88371aafcb",
+        "name": "황창 다라프리제",
+        "weaponType": "랜스",
+        "method": "강화",
+        "count": 8,
+        "materials": "사황룡 두툼미비늘×8 사황룡 중미갑각×2 코스모라이트광석×8 천검의 용신옥×1"
+      },
+      {
+        "type": "weapon",
+        "id": "weapon_00f99a6bb127",
+        "name": "사황검 레브리마듈라",
+        "weaponType": "대검",
+        "method": "강화",
+        "count": 6,
+        "materials": "사왕룡 큰부채비늘×3 사황룡 두툼칼비늘×6 사황룡 예안×2 천검의 용신옥×1"
+      },
+      {
+        "type": "weapon",
+        "id": "weapon_0e517d3d2e41",
+        "name": "황검 다라트라옴",
+        "weaponType": "대검",
+        "method": "강화",
+        "count": 6,
+        "materials": "사황룡 큰부채비늘×3 사황룡 두툼칼비늘×6 소용돌이뼈×6 태고룡골×8"
+      },
+      {
+        "type": "weapon",
+        "id": "weapon_119539c59d4e",
+        "name": "황순부 다라칼테리아",
+        "weaponType": "차지액스",
+        "method": "강화",
+        "count": 6,
+        "materials": "사황룡 큰부채비늘×2 사황룡 중미갑각×5 사황룡 두툼칼비늘×6 퓨어크리스털×2"
+      },
+      {
+        "type": "weapon",
+        "id": "weapon_86e6e2f1cfc4",
+        "name": "사황포 오뷰마듈라",
+        "weaponType": "헤비보우건",
+        "method": "강화",
+        "count": 8,
+        "materials": "사황룡 두툼칼비늘×8 사황룡 큰부채비늘×4 천검의 용신옥×1 패왕의 증표G×3"
+      },
+      {
+        "type": "weapon",
+        "id": "weapon_6866b3954216",
+        "name": "황현 다라블루트",
+        "weaponType": "수렵피리",
+        "method": "강화",
+        "count": 2,
+        "materials": "사황룡 중미갑각×6 사황룡 강고리발톱×3 사황룡 예안×2 천검의 용신옥×1"
+      },
+      {
+        "type": "weapon",
+        "id": "weapon_4119cee4d47d",
+        "name": "황극 다라앰버",
+        "weaponType": "쌍검",
+        "method": "강화",
+        "count": 2,
+        "materials": "사황룡 큰부채비늘×4 사황룡 강고리발톱×2 사황룡 중흉갑각×2 사황룡 예안×2"
+      },
+      {
+        "type": "weapon",
+        "id": "weapon_27c3fe5cb9d0",
+        "name": "황노 다라히트",
+        "weaponType": "라이트보우건",
+        "method": "강화",
+        "count": 6,
+        "materials": "사황룡 중흉갑각×6 사황룡 강고리발톱×5 사왕룡 큰부채비늘×2 소용돌이뼈×5"
+      },
+      {
+        "type": "weapon",
+        "id": "weapon_dc929502ad47",
+        "name": "사검부 옵타마듈라",
+        "weaponType": "슬래시액스",
+        "method": "강화",
+        "count": 2,
+        "materials": "사황룡 큰부채비늘×3 사황룡 중미갑각×4 사황룡 중흉갑각×2 천검의 용신옥×1"
+      },
+      {
+        "type": "weapon",
+        "id": "weapon_54f8835575d3",
+        "name": "사황현 크로흐마듈라",
+        "weaponType": "수렵피리",
+        "method": "강화",
+        "count": 3,
+        "materials": "사왕룡 중미갑각×6 사황룡 강고리발톱×3 사왕룡 큰부채비늘×2 고룡의 대보옥×1"
+      }
+    ]
   },
   "고그마지오스": {
     "monster": "고그마지오스",

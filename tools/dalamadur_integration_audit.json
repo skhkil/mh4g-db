@@ -1,0 +1,21 @@
+{
+  "scope": "MH4G Dalamadur normal/subspecies link and condition repair",
+  "monsters": {
+    "다라·아마듈라": {
+      "materials": 8,
+      "uses": 88,
+      "rewards": 38
+    },
+    "다라·아마듈라 아종": {
+      "materials": 8,
+      "uses": 29,
+      "rewards": 41
+    }
+  },
+  "sourceURLs": [
+    "https://w.atwiki.jp/3dsmh4g/pages/331.html",
+    "https://w.atwiki.jp/3dsmh4g/pages/371.html",
+    "https://mh4info.com/m/d/103"
+  ],
+  "warning": "Acquisition probabilities remain sourced from original database, not all independently verified against MH4G Japanese primary material"
+}

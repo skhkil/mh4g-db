@@ -1,0 +1,15 @@
+{
+  "total": 4481,
+  "mh4g_source_attached": 3,
+  "independently_verified_at_row_level": 0,
+  "pending_value_level_verification": 4481,
+  "legacy_status_counts": {
+    "method_explicit": 2212,
+    "mh4u_correlated": 1358,
+    "needs_detail": 186,
+    "confirmed_category": 691,
+    "needs_source": 31,
+    "source_attached": 3
+  },
+  "note": "Previous status does not establish per-row MH4G verification. This audit intentionally makes no claims of game-value correctness."
+}

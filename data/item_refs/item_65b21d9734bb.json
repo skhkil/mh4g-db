@@ -1,1 +1,1 @@
-{"id":"item_65b21d9734bb","acquire":[{"type":"monster","monster":"도스가레오스","method":"최대 1회","rank":"high","probability":"1 0%","count":""}],"uses":[]}
+{"name":"어룡의 간","acquire":[{"type":"monster","monster":"도스가레오스","method":"유실물","rank":"high","probability":"10%","count":"","acquisitionCategory":"drop","verificationStatus":"mh4u_correlated","maxAttempts":1,"originalMethod":"최대 1회","originalProbability":"1 0%","probabilityNormalization":"removed_internal_whitespace","corroboration":"MH4U hunting_rewards: Shiny Drop; MH4G source verification pending"}],"uses":[]}

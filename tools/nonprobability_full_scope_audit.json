@@ -1,0 +1,212 @@
+{
+  "scope": "확률 제외, 기존 등록 데이터와 참조의 전수 일관성 감사",
+  "sourceFile": "mh4g-db-v0.7.7_integrated_delivery.zip",
+  "counts": {
+    "item_references": 1306,
+    "acquire_compose": 167,
+    "use_compose": 336,
+    "use_decoration": 541,
+    "use_weapon": 9024,
+    "use_armor": 11621,
+    "acquire_dragonSell": 48,
+    "acquire_quest": 5539,
+    "acquire_dragonIncrease": 38,
+    "acquire_monster": 4481,
+    "use_exchange": 127,
+    "acquire_exchange": 139,
+    "monster_references": 76,
+    "monster_item_links": 592,
+    "monster_quest_links": 610,
+    "quest_references": 595,
+    "quest_reward_links": 5539,
+    "monster_reward_source_rows": 4542
+  },
+  "rawIssues": {
+    "reward_unknown_item_name": 527,
+    "reward_unknown_monster": 82
+  },
+  "unmatchedAfterRemovingQuantityAndSpacing": 29,
+  "unmatchedRows": [
+    {
+      "monster": "아캄토름",
+      "method": "갈무리",
+      "item": "진횽련석",
+      "rank": "g"
+    },
+    {
+      "monster": "아캄토름",
+      "method": "최대 3회",
+      "item": "진횽련석",
+      "rank": "g"
+    },
+    {
+      "monster": "아캄토름",
+      "method": "파괴 시 보수",
+      "item": "진횽련석×2",
+      "rank": "g"
+    },
+    {
+      "monster": "고그마지오스",
+      "method": "꼬리 파괴 낙하물",
+      "item": "구속용발리스타탄",
+      "rank": "g"
+    },
+    {
+      "monster": "몬스터",
+      "method": "입수방법",
+      "item": "상위",
+      "rank": "low"
+    },
+    {
+      "monster": "몬스터",
+      "method": "입수방법",
+      "item": "극한상태(상위)",
+      "rank": "high"
+    },
+    {
+      "monster": "몬스터",
+      "method": "입수방법",
+      "item": "G급",
+      "rank": "g"
+    },
+    {
+      "monster": "몬스터",
+      "method": "입수방법",
+      "item": "극한상태(G급)",
+      "rank": "extreme"
+    },
+    {
+      "monster": "몬스터",
+      "method": "입수방법",
+      "item": "아이템명칭(한)",
+      "rank": "low"
+    },
+    {
+      "monster": "몬스터",
+      "method": "입수방법",
+      "item": "아이템명칭(한)",
+      "rank": "high"
+    },
+    {
+      "monster": "몬스터",
+      "method": "입수방법",
+      "item": "아이템명칭(한)",
+      "rank": "g"
+    },
+    {
+      "monster": "몬스터",
+      "method": "입수방법",
+      "item": "아이템명칭(한)",
+      "rank": "extreme"
+    },
+    {
+      "monster": "몬스터",
+      "method": "입수방법",
+      "item": "하위",
+      "rank": "low"
+    },
+    {
+      "monster": "몬스터",
+      "method": "입수방법",
+      "item": "상위",
+      "rank": "high"
+    },
+    {
+      "monster": "몬스터",
+      "method": "입수방법",
+      "item": "G급",
+      "rank": "g"
+    },
+    {
+      "monster": "몬스터",
+      "method": "입수방법",
+      "item": "극한상태",
+      "rank": "extreme"
+    },
+    {
+      "monster": "몬스터",
+      "method": "입수방법",
+      "item": "아이템명칭(한)",
+      "rank": "low"
+    },
+    {
+      "monster": "몬스터",
+      "method": "입수방법",
+      "item": "아이템명칭(한)",
+      "rank": "high"
+    },
+    {
+      "monster": "몬스터",
+      "method": "입수방법",
+      "item": "아이템명칭(한)",
+      "rank": "g"
+    },
+    {
+      "monster": "몬스터",
+      "method": "입수방법",
+      "item": "아이템명칭(한)",
+      "rank": "extreme"
+    },
+    {
+      "monster": "테오·테스카토르",
+      "method": "갈무리",
+      "item": "염왕룡 첨예발톱",
+      "rank": "high"
+    },
+    {
+      "monster": "테오·테스카토르",
+      "method": "갈무리",
+      "item": "염왕룡 강발톱",
+      "rank": "g"
+    },
+    {
+      "monster": "테오·테스카토르",
+      "method": "날개",
+      "item": "염왕룡 익막",
+      "rank": "high"
+    },
+    {
+      "monster": "테오·테스카토르",
+      "method": "날개",
+      "item": "염왕룡 익막",
+      "rank": "g"
+    },
+    {
+      "monster": "테오·테스카토르",
+      "method": "파괴 시 보수",
+      "item": "염왕룡 첨예발톱",
+      "rank": "high"
+    },
+    {
+      "monster": "테오·테스카토르",
+      "method": "파괴 시 보수",
+      "item": "염왕룡 강발톱",
+      "rank": "g"
+    },
+    {
+      "monster": "맹폭 브라키디오스",
+      "method": "갈무리",
+      "item": "불멸의 노 심갑각",
+      "rank": "g"
+    },
+    {
+      "monster": "맹폭 브라키디오스",
+      "method": "최대 3회",
+      "item": "불멸의 노 심갑각",
+      "rank": "g"
+    },
+    {
+      "monster": "푸루푸루 아종",
+      "method": "파괴 시 보수",
+      "item": "알비노설로인",
+      "rank": "g"
+    }
+  ],
+  "unmatchedMonsterNames": {
+    "오오나즈치": 19,
+    "혼돈에 신음하는 고어·마가라": 27,
+    "몬스터": 16,
+    "맹폭 브라키디오스": 20
+  },
+  "limitation": "DB 원본에 등록되지 않은 퀘스트/소재는 내부 참조 감사만으로 탐지 불가능; 일본 MH4G 원자료의 완전 대조는 별도"
+}

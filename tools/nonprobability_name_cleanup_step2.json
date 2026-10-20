@@ -1,0 +1,539 @@
+{
+  "scope": "monster_rewards 이름 정규화 / 표 헤더 제거. 확률값 미수정",
+  "sourceCount": 4542,
+  "outputCount": 4526,
+  "removedHeaders": [
+    {
+      "id": "reward_0de7b03ed7e8",
+      "monster": "몬스터",
+      "method": "입수방법",
+      "count": "",
+      "rank": "low",
+      "item": "상위",
+      "itemJa": "상위",
+      "probability": "상위",
+      "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
+    },
+    {
+      "id": "reward_a5b20cc49b6f",
+      "monster": "몬스터",
+      "method": "입수방법",
+      "count": "",
+      "rank": "high",
+      "item": "극한상태(상위)",
+      "itemJa": "극한상태(상위)",
+      "probability": "극한상태(상위)",
+      "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
+    },
+    {
+      "id": "reward_989847863133",
+      "monster": "몬스터",
+      "method": "입수방법",
+      "count": "",
+      "rank": "g",
+      "item": "G급",
+      "itemJa": "G급",
+      "probability": "G급",
+      "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
+    },
+    {
+      "id": "reward_c24782784a61",
+      "monster": "몬스터",
+      "method": "입수방법",
+      "count": "",
+      "rank": "extreme",
+      "item": "극한상태(G급)",
+      "itemJa": "극한상태(G급)",
+      "probability": "극한상태(G급)",
+      "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
+    },
+    {
+      "id": "reward_8c4ef867c370",
+      "monster": "몬스터",
+      "method": "입수방법",
+      "count": "",
+      "rank": "low",
+      "item": "아이템명칭(한)",
+      "itemJa": "아이템명칭(일)",
+      "probability": "확률",
+      "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
+    },
+    {
+      "id": "reward_6e29d861b2fb",
+      "monster": "몬스터",
+      "method": "입수방법",
+      "count": "",
+      "rank": "high",
+      "item": "아이템명칭(한)",
+      "itemJa": "아이템명칭(일)",
+      "probability": "확률",
+      "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
+    },
+    {
+      "id": "reward_b08413dfc2a4",
+      "monster": "몬스터",
+      "method": "입수방법",
+      "count": "",
+      "rank": "g",
+      "item": "아이템명칭(한)",
+      "itemJa": "아이템명칭(일)",
+      "probability": "확률",
+      "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
+    },
+    {
+      "id": "reward_625d197e02d7",
+      "monster": "몬스터",
+      "method": "입수방법",
+      "count": "",
+      "rank": "extreme",
+      "item": "아이템명칭(한)",
+      "itemJa": "아이템명칭(일)",
+      "probability": "확률",
+      "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
+    },
+    {
+      "id": "reward_83ef9b664fb4",
+      "monster": "몬스터",
+      "method": "입수방법",
+      "count": "",
+      "rank": "low",
+      "item": "하위",
+      "itemJa": "하위",
+      "probability": "하위",
+      "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
+    },
+    {
+      "id": "reward_81e91633cf4f",
+      "monster": "몬스터",
+      "method": "입수방법",
+      "count": "",
+      "rank": "high",
+      "item": "상위",
+      "itemJa": "상위",
+      "probability": "상위",
+      "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
+    },
+    {
+      "id": "reward_f765380614dc",
+      "monster": "몬스터",
+      "method": "입수방법",
+      "count": "",
+      "rank": "g",
+      "item": "G급",
+      "itemJa": "G급",
+      "probability": "G급",
+      "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
+    },
+    {
+      "id": "reward_087e6b8a0594",
+      "monster": "몬스터",
+      "method": "입수방법",
+      "count": "",
+      "rank": "extreme",
+      "item": "극한상태",
+      "itemJa": "극한상태",
+      "probability": "극한상태",
+      "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
+    },
+    {
+      "id": "reward_2eac58de91db",
+      "monster": "몬스터",
+      "method": "입수방법",
+      "count": "",
+      "rank": "low",
+      "item": "아이템명칭(한)",
+      "itemJa": "아이템명칭(일)",
+      "probability": "확률",
+      "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
+    },
+    {
+      "id": "reward_575a2762c6ff",
+      "monster": "몬스터",
+      "method": "입수방법",
+      "count": "",
+      "rank": "high",
+      "item": "아이템명칭(한)",
+      "itemJa": "아이템명칭(일)",
+      "probability": "확률",
+      "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
+    },
+    {
+      "id": "reward_765b736e7551",
+      "monster": "몬스터",
+      "method": "입수방법",
+      "count": "",
+      "rank": "g",
+      "item": "아이템명칭(한)",
+      "itemJa": "아이템명칭(일)",
+      "probability": "확률",
+      "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
+    },
+    {
+      "id": "reward_a66458ee8a58",
+      "monster": "몬스터",
+      "method": "입수방법",
+      "count": "",
+      "rank": "extreme",
+      "item": "아이템명칭(한)",
+      "itemJa": "아이템명칭(일)",
+      "probability": "확률",
+      "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
+    }
+  ],
+  "aliasesUpdated": [
+    {
+      "id": "reward_cdb783a2efc8",
+      "old": "오오나즈치",
+      "new": "오나즈치"
+    },
+    {
+      "id": "reward_ced69b6b3bbc",
+      "old": "오오나즈치",
+      "new": "오나즈치"
+    },
+    {
+      "id": "reward_40723ee12570",
+      "old": "오오나즈치",
+      "new": "오나즈치"
+    },
+    {
+      "id": "reward_c29a592f6fcc",
+      "old": "오오나즈치",
+      "new": "오나즈치"
+    },
+    {
+      "id": "reward_212ac1d22e44",
+      "old": "오오나즈치",
+      "new": "오나즈치"
+    },
+    {
+      "id": "reward_eb17469635fb",
+      "old": "오오나즈치",
+      "new": "오나즈치"
+    },
+    {
+      "id": "reward_a534f03e3dff",
+      "old": "오오나즈치",
+      "new": "오나즈치"
+    },
+    {
+      "id": "reward_b846b1256dda",
+      "old": "오오나즈치",
+      "new": "오나즈치"
+    },
+    {
+      "id": "reward_3807c958a920",
+      "old": "오오나즈치",
+      "new": "오나즈치"
+    },
+    {
+      "id": "reward_3fff37475a10",
+      "old": "오오나즈치",
+      "new": "오나즈치"
+    },
+    {
+      "id": "reward_0ef98ef9bbd8",
+      "old": "오오나즈치",
+      "new": "오나즈치"
+    },
+    {
+      "id": "reward_b84420e79364",
+      "old": "오오나즈치",
+      "new": "오나즈치"
+    },
+    {
+      "id": "reward_0bc4c1ad6a57",
+      "old": "오오나즈치",
+      "new": "오나즈치"
+    },
+    {
+      "id": "reward_a0bf02b3c2d1",
+      "old": "오오나즈치",
+      "new": "오나즈치"
+    },
+    {
+      "id": "reward_b2f1e63b311e",
+      "old": "오오나즈치",
+      "new": "오나즈치"
+    },
+    {
+      "id": "reward_380c5acb82bf",
+      "old": "오오나즈치",
+      "new": "오나즈치"
+    },
+    {
+      "id": "reward_16a019fbdfc0",
+      "old": "오오나즈치",
+      "new": "오나즈치"
+    },
+    {
+      "id": "reward_f732f159a690",
+      "old": "오오나즈치",
+      "new": "오나즈치"
+    },
+    {
+      "id": "reward_761123d03211",
+      "old": "오오나즈치",
+      "new": "오나즈치"
+    },
+    {
+      "id": "reward_ab0750b8f518",
+      "old": "혼돈에 신음하는 고어·마가라",
+      "new": "혼돈의 고어·마가라"
+    },
+    {
+      "id": "reward_f72c50579714",
+      "old": "혼돈에 신음하는 고어·마가라",
+      "new": "혼돈의 고어·마가라"
+    },
+    {
+      "id": "reward_f071d488adee",
+      "old": "혼돈에 신음하는 고어·마가라",
+      "new": "혼돈의 고어·마가라"
+    },
+    {
+      "id": "reward_6db379eb3a63",
+      "old": "혼돈에 신음하는 고어·마가라",
+      "new": "혼돈의 고어·마가라"
+    },
+    {
+      "id": "reward_ca90422ccb4c",
+      "old": "혼돈에 신음하는 고어·마가라",
+      "new": "혼돈의 고어·마가라"
+    },
+    {
+      "id": "reward_b4775f7ccca6",
+      "old": "혼돈에 신음하는 고어·마가라",
+      "new": "혼돈의 고어·마가라"
+    },
+    {
+      "id": "reward_fb3826440e5e",
+      "old": "혼돈에 신음하는 고어·마가라",
+      "new": "혼돈의 고어·마가라"
+    },
+    {
+      "id": "reward_786f10ba2ae0",
+      "old": "혼돈에 신음하는 고어·마가라",
+      "new": "혼돈의 고어·마가라"
+    },
+    {
+      "id": "reward_c7dcfe9f639c",
+      "old": "혼돈에 신음하는 고어·마가라",
+      "new": "혼돈의 고어·마가라"
+    },
+    {
+      "id": "reward_be75f75aad34",
+      "old": "혼돈에 신음하는 고어·마가라",
+      "new": "혼돈의 고어·마가라"
+    },
+    {
+      "id": "reward_ed6c7ab9847a",
+      "old": "혼돈에 신음하는 고어·마가라",
+      "new": "혼돈의 고어·마가라"
+    },
+    {
+      "id": "reward_a4e907dd3c2f",
+      "old": "혼돈에 신음하는 고어·마가라",
+      "new": "혼돈의 고어·마가라"
+    },
+    {
+      "id": "reward_2a356904f050",
+      "old": "혼돈에 신음하는 고어·마가라",
+      "new": "혼돈의 고어·마가라"
+    },
+    {
+      "id": "reward_31d590a2097c",
+      "old": "혼돈에 신음하는 고어·마가라",
+      "new": "혼돈의 고어·마가라"
+    },
+    {
+      "id": "reward_ad6c6aa3e831",
+      "old": "혼돈에 신음하는 고어·마가라",
+      "new": "혼돈의 고어·마가라"
+    },
+    {
+      "id": "reward_9a912a715079",
+      "old": "혼돈에 신음하는 고어·마가라",
+      "new": "혼돈의 고어·마가라"
+    },
+    {
+      "id": "reward_7d8a77fcb4a3",
+      "old": "혼돈에 신음하는 고어·마가라",
+      "new": "혼돈의 고어·마가라"
+    },
+    {
+      "id": "reward_d039669d7877",
+      "old": "혼돈에 신음하는 고어·마가라",
+      "new": "혼돈의 고어·마가라"
+    },
+    {
+      "id": "reward_160f3f2f5aba",
+      "old": "혼돈에 신음하는 고어·마가라",
+      "new": "혼돈의 고어·마가라"
+    },
+    {
+      "id": "reward_f19cc9568ce8",
+      "old": "혼돈에 신음하는 고어·마가라",
+      "new": "혼돈의 고어·마가라"
+    },
+    {
+      "id": "reward_e553b9f6b325",
+      "old": "혼돈에 신음하는 고어·마가라",
+      "new": "혼돈의 고어·마가라"
+    },
+    {
+      "id": "reward_955f35355577",
+      "old": "혼돈에 신음하는 고어·마가라",
+      "new": "혼돈의 고어·마가라"
+    },
+    {
+      "id": "reward_086f55b8cf73",
+      "old": "혼돈에 신음하는 고어·마가라",
+      "new": "혼돈의 고어·마가라"
+    },
+    {
+      "id": "reward_9b86965a5bbf",
+      "old": "혼돈에 신음하는 고어·마가라",
+      "new": "혼돈의 고어·마가라"
+    },
+    {
+      "id": "reward_eb0a258ed16e",
+      "old": "혼돈에 신음하는 고어·마가라",
+      "new": "혼돈의 고어·마가라"
+    },
+    {
+      "id": "reward_bf15f49e6ea1",
+      "old": "혼돈에 신음하는 고어·마가라",
+      "new": "혼돈의 고어·마가라"
+    },
+    {
+      "id": "reward_244bd9ef6047",
+      "old": "혼돈에 신음하는 고어·마가라",
+      "new": "혼돈의 고어·마가라"
+    },
+    {
+      "id": "reward_385cfb7204c0",
+      "old": "맹폭 브라키디오스",
+      "new": "임계 브라키디오스"
+    },
+    {
+      "id": "reward_6d4f8fcc28c0",
+      "old": "맹폭 브라키디오스",
+      "new": "임계 브라키디오스"
+    },
+    {
+      "id": "reward_fe880d974de3",
+      "old": "맹폭 브라키디오스",
+      "new": "임계 브라키디오스"
+    },
+    {
+      "id": "reward_c12a0b2f09b1",
+      "old": "맹폭 브라키디오스",
+      "new": "임계 브라키디오스"
+    },
+    {
+      "id": "reward_2a3f3ff0796b",
+      "old": "맹폭 브라키디오스",
+      "new": "임계 브라키디오스"
+    },
+    {
+      "id": "reward_dd5086b6cd49",
+      "old": "맹폭 브라키디오스",
+      "new": "임계 브라키디오스"
+    },
+    {
+      "id": "reward_66143a322c4d",
+      "old": "맹폭 브라키디오스",
+      "new": "임계 브라키디오스"
+    },
+    {
+      "id": "reward_ab5ddda4c858",
+      "old": "맹폭 브라키디오스",
+      "new": "임계 브라키디오스"
+    },
+    {
+      "id": "reward_165bddfc6ec5",
+      "old": "맹폭 브라키디오스",
+      "new": "임계 브라키디오스"
+    },
+    {
+      "id": "reward_1df9debf9d4e",
+      "old": "맹폭 브라키디오스",
+      "new": "임계 브라키디오스"
+    },
+    {
+      "id": "reward_f46c4ce066c3",
+      "old": "맹폭 브라키디오스",
+      "new": "임계 브라키디오스"
+    },
+    {
+      "id": "reward_cd3d751c6028",
+      "old": "맹폭 브라키디오스",
+      "new": "임계 브라키디오스"
+    },
+    {
+      "id": "reward_7f7f2a8b141e",
+      "old": "맹폭 브라키디오스",
+      "new": "임계 브라키디오스"
+    },
+    {
+      "id": "reward_31d89e280f41",
+      "old": "맹폭 브라키디오스",
+      "new": "임계 브라키디오스"
+    },
+    {
+      "id": "reward_dc78c251ca52",
+      "old": "맹폭 브라키디오스",
+      "new": "임계 브라키디오스"
+    },
+    {
+      "id": "reward_7aefe317848d",
+      "old": "맹폭 브라키디오스",
+      "new": "임계 브라키디오스"
+    },
+    {
+      "id": "reward_408eba8aa87a",
+      "old": "맹폭 브라키디오스",
+      "new": "임계 브라키디오스"
+    },
+    {
+      "id": "reward_888ecb2d25e1",
+      "old": "맹폭 브라키디오스",
+      "new": "임계 브라키디오스"
+    },
+    {
+      "id": "reward_45cd957b935f",
+      "old": "맹폭 브라키디오스",
+      "new": "임계 브라키디오스"
+    },
+    {
+      "id": "reward_c4c15e1cddc3",
+      "old": "맹폭 브라키디오스",
+      "new": "임계 브라키디오스"
+    }
+  ],
+  "aliasCount": 66,
+  "unverifiedItemNameCases": "잔여 소재명 불일치는 MH4G 명칭 대조 필요; 임의 수정하지 않음",
+  "itemNamesCorrected": [
+    [
+      "reward_6b5b964ff472",
+      "진횽련석",
+      "진홍련석"
+    ],
+    [
+      "reward_0f774b12403e",
+      "진횽련석",
+      "진홍련석"
+    ],
+    [
+      "reward_c01da3e4deaa",
+      "진횽련석×2",
+      "진홍련석×2"
+    ],
+    [
+      "reward_ba61ad26bd90",
+      "구속용발리스타탄",
+      "단발식구속탄"
+    ]
+  ]
+}

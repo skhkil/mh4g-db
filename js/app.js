@@ -1695,29 +1695,36 @@ function refButton(label,type,attrs={}){
 }
 function monsterAcquireMeta(x){
   const raw=String(x.method||"").trim(), count=String(x.count||"").trim();
-  const max=raw.match(/^최대\s*(\d+)회$/), times=count.match(/^(\d+)회$/);
-  let kind="기타 / 조건부", label=raw||"획득 방식 미확인", verified=true;
-  if(max){kind="방식 미확인";label="획득 방식 미확인";verified=false;}
-  else if(/포획/.test(raw)){kind="포획 보수";label=raw;}
-  else if(/파괴|뿔|볏|날개|앞다리|뒷다리|앞발톱|흉부/.test(raw)){kind="부위 파괴 / 조건";label=raw;}
-  else if(/낙하물|落とし物/.test(raw)){kind="유실물";label=raw;}
-  else if(/채굴|채집/.test(raw)){kind="채굴 / 채집";label=raw;}
-  else if(/꼬리|갈무리|본체|몸통|입 속|죽은척/.test(raw)){kind="갈무리";label=raw;}
-  else if(/보수/.test(raw)){kind="보수 / 조건";label=raw;}
-  const attempts=max?Number(max[1]):times?Number(times[1]):null;
-  const attemptsDescription=max?`원본: 최대 ${attempts}회 (방식 미확인)`:times?`원본 횟수: ${attempts}회`:"";
+  const category=String(x.acquisitionCategory||"");
+  const verify=String(x.verificationStatus||"");
+  const fallbackMax=String(x.originalMethod||raw).match(/^최대\s*(\d+)회$/);
+  const times=count.match(/^(\d+)회$/);
+  const categories={dispatch_reward:"떠돌이 헌터 파견",drop:"유실물",possible_drop:"획득 방식 미확인",capture:"포획 보수",carve:"갈무리",part_condition:"부위 조건 / 파괴 보수",gather:"채굴 / 채집",frenzy:"광룡화 관련",special_condition:"기타 / 조건부"};
+  let kind=categories[category]||"기타 / 조건부",label=raw||"획득 방식 미확인";
+  if(!category){
+    if(fallbackMax){kind="획득 방식 미확인";label="획득 방식 미확인";}
+    else if(/포획/.test(raw))kind="포획 보수";
+    else if(/낙하물|유실물/.test(raw))kind="유실물";
+    else if(/갈무리|꼬리/.test(raw))kind="갈무리";
+    else if(/파괴/.test(raw))kind="부위 조건 / 파괴 보수";
+  }
+  const attempts=Number(x.maxAttempts)|| (fallbackMax?Number(fallbackMax[1]):times?Number(times[1]):null);
+  const attemptsDescription=attempts?(category==="drop"?`유실물 최대 ${attempts}회`:category==="possible_drop"||fallbackMax?`원본 횟수 최대 ${attempts}회 (방식 검증 필요)`:times?`획득 ${attempts}회`:`최대 ${attempts}회`):"";
   const probability=String(x.probability||"").trim();
   const validProbability=/^(?:100|\d{1,2})(?:\.\d+)?%$/.test(probability);
-  return {kind,label,verified,attempts,attemptsDescription,probability:validProbability?probability:"",rawProbability:validProbability?"":probability};
+  const needsCheck=verify==="needs_source"||verify==="needs_detail"||verify==="mh4u_correlated"||(!category&&!!fallbackMax);
+  const notice=verify==="mh4u_correlated"?"MH4U 보조 DB에서 유실물로 일치 · MH4G 원자료 검증 대기":verify==="needs_source"?"원본의 획득 경로 누락 · MH4G 원자료 대조 필요":verify==="needs_detail"?"획득 부위·발생 조건 세부 확인 필요":(!category&&fallbackMax)?"원본 획득 방식 확인 필요":"";
+  return {kind,label,attempts,attemptsDescription,condition:String(x.condition||x.conditionNote||""),probability:validProbability?probability:"",rawProbability:validProbability?"":probability,needsCheck,notice,originalProbability:String(x.originalProbability||"")};
 }
 function monsterAcquireItemHtml(x,itemName){
   const m=monsterAcquireMeta(x);
   const bits=[`<span class="item-acq-method">${esc(m.label)}</span>`,
     m.attemptsDescription?`<span class="item-acq-chip">${esc(m.attemptsDescription)}</span>`:"",
-    x.rank?`<span class="item-acq-chip">${esc(rankName(x.rank))}</span>`:"",
+    m.condition?`<span class="item-acq-chip">발생 조건: ${esc(m.condition)}</span>`:"",
+    x.rank?`<span class="item-acq-chip">${esc(x.rank==="extreme"?"G급 · 극한상태":rankName(x.rank))}</span>`:"",
     m.probability?`<span class="item-acq-chip">표기 확률 ${esc(m.probability)}</span>`:"",
     m.rawProbability?`<span class="item-acq-chip item-acq-warning">확률 원문 ${esc(m.rawProbability)} · 검증 필요</span>`:"",
-    !m.verified?`<span class="item-acq-warning">갈무리·유실물 등 원래 획득 방식 확인 필요</span>`:""].filter(Boolean).join("");
+    m.needsCheck?`<span class="item-acq-warning">${esc(m.notice)}</span>`:""].filter(Boolean).join("");
   return `<li class="item-acq-entry"><div>${refButton(x.monster||"몬스터","monster",{monster:x.monster,item:itemName})}<small>${esc(m.kind)}</small></div><div class="item-acq-info">${bits}</div></li>`;
 }
 function acquireRefHtml(x,itemName){

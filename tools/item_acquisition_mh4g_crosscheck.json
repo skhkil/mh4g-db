@@ -1,0 +1,220 @@
+{
+  "totalMonsterRecords": 4481,
+  "mh4gCrosscheckedDalamadurSubspeciesRecords": 18,
+  "crosschecked": [
+    {
+      "item": "퓨어크리스털",
+      "method": "운석 채굴",
+      "probability": "8%"
+    },
+    {
+      "item": "코스모라이트광석",
+      "method": "운석 채굴",
+      "probability": "12%"
+    },
+    {
+      "item": "소용돌이뼈",
+      "method": "뒷다리 파괴 보수",
+      "probability": "30%"
+    },
+    {
+      "item": "천검의 용옥",
+      "method": "머리 2회 파괴 보수",
+      "probability": "8%"
+    },
+    {
+      "item": "천검의 용신옥",
+      "method": "꼬리",
+      "probability": "3%"
+    },
+    {
+      "item": "천검의 용신옥",
+      "method": "꼬리",
+      "probability": "3%"
+    },
+    {
+      "item": "천검의 용신옥",
+      "method": "머리 2회 파괴 보수",
+      "probability": "5%"
+    },
+    {
+      "item": "천검의 용신옥",
+      "method": "등 2회 파괴 보수",
+      "probability": "4%"
+    },
+    {
+      "item": "흉성의 파편",
+      "method": "운석 채굴",
+      "probability": "80%"
+    },
+    {
+      "item": "사황룡 두툼미비늘",
+      "method": "뒷다리 파괴 보수",
+      "probability": "45%"
+    },
+    {
+      "item": "사황룡 두툼칼비늘",
+      "method": "꼬리",
+      "probability": "22%"
+    },
+    {
+      "item": "사황룡 두툼칼비늘",
+      "method": "등 2회 파괴 보수",
+      "probability": "16%"
+    },
+    {
+      "item": "사황룡 두툼칼비늘",
+      "method": "뒷다리 파괴 보수",
+      "probability": "25%"
+    },
+    {
+      "item": "사황룡 예안",
+      "method": "머리 파괴 보수",
+      "probability": "85%"
+    },
+    {
+      "item": "사황룡 중흉갑각",
+      "method": "흉부 파괴 보수",
+      "probability": "70%"
+    },
+    {
+      "item": "사황룡 강고리발톱",
+      "method": "앞다리 양쪽 파괴 보수",
+      "probability": "2%"
+    },
+    {
+      "item": "사황룡 중미갑각",
+      "method": "꼬리",
+      "probability": "75%"
+    },
+    {
+      "item": "사황룡 큰부채비늘",
+      "method": "등 파괴 보수",
+      "probability": "72%"
+    }
+  ],
+  "remainingDalamadurSubspeciesRecords": [
+    {
+      "item": "고룡의 피",
+      "method": "가슴 2회 파괴 보수",
+      "probability": "10%"
+    },
+    {
+      "item": "소용돌이뼈",
+      "method": "몸통",
+      "probability": "10%"
+    },
+    {
+      "item": "소용돌이뼈",
+      "method": "꼬리",
+      "probability": "16%"
+    },
+    {
+      "item": "소용돌이뼈",
+      "method": "파괴 시 보수",
+      "probability": "10%"
+    },
+    {
+      "item": "천검의 용옥",
+      "method": "몸통",
+      "probability": "4%"
+    },
+    {
+      "item": "천검의 용옥",
+      "method": "꼬리",
+      "probability": "5%"
+    },
+    {
+      "item": "천검의 용옥",
+      "method": "등 2회 파괴 보수",
+      "probability": "6%"
+    },
+    {
+      "item": "천검의 용신옥",
+      "method": "몸통",
+      "probability": "2%"
+    },
+    {
+      "item": "사황룡 두툼철가죽",
+      "method": "갈무리",
+      "probability": "64%"
+    },
+    {
+      "item": "사황룡 두툼철가죽",
+      "method": "꼬리",
+      "probability": "30%"
+    },
+    {
+      "item": "사황룡 두툼미비늘",
+      "method": "갈무리",
+      "probability": "46%"
+    },
+    {
+      "item": "사황룡 두툼미비늘",
+      "method": "꼬리 파괴 보수",
+      "probability": "20%"
+    },
+    {
+      "item": "사황룡 두툼칼비늘",
+      "method": "갈무리",
+      "probability": "80%"
+    },
+    {
+      "item": "사황룡 두툼칼비늘",
+      "method": "2회 파괴 시 보수",
+      "probability": "20%"
+    },
+    {
+      "item": "사황룡 두툼칼비늘",
+      "method": "좌우모두 파괴 시 보수",
+      "probability": "20%"
+    },
+    {
+      "item": "사황룡 예안",
+      "method": "머리 올라타기 2회",
+      "probability": "20%"
+    },
+    {
+      "item": "사황룡 예안",
+      "method": "머리 2회 파괴 보수",
+      "probability": "2%"
+    },
+    {
+      "item": "사황룡 중흉갑각",
+      "method": "몸통",
+      "probability": "12%"
+    },
+    {
+      "item": "사황룡 강고리발톱",
+      "method": "몸통",
+      "probability": "8%"
+    },
+    {
+      "item": "사황룡 강고리발톱",
+      "method": "앞다리",
+      "probability": "75%"
+    },
+    {
+      "item": "사황룡 중미갑각",
+      "method": "하반신",
+      "probability": "68%"
+    },
+    {
+      "item": "사황룡 중미갑각",
+      "method": "꼬리 파괴 보수",
+      "probability": "2%"
+    },
+    {
+      "item": "사황룡 큰부채비늘",
+      "method": "등 2회 파괴 보수",
+      "probability": "2%"
+    }
+  ],
+  "fullDatasetIndependentlyMH4GVerified": false,
+  "importantLimit": "데이터 4,481건의 형식 일치와 개별 획득 확률의 게임 기준 검증은 다릅니다. 미확인 확률은 기존 값 유지.",
+  "sources": [
+    "https://mh4info.com/m/d/103",
+    "https://w.atwiki.jp/3dsmh4g/pages/371.html",
+    "https://w.atwiki.jp/3dsmh4g/pages/331.html"
+  ]
+}

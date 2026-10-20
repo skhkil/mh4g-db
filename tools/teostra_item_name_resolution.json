@@ -1,0 +1,46 @@
+{
+  "modified": [
+    [
+      "reward_7579ece880df",
+      "염왕룡 첨예발톱",
+      "염룡 첨예발톱"
+    ],
+    [
+      "reward_1c03db5132c8",
+      "염왕룡 강발톱",
+      "염룡 강발톱"
+    ],
+    [
+      "reward_1aa540233be8",
+      "염왕룡 갈기×2",
+      "염왕룡 갈기"
+    ],
+    [
+      "reward_b08bef2f51f1",
+      "염왕룡 갈기×2",
+      "염왕룡 갈기"
+    ],
+    [
+      "reward_48eb5b521858",
+      "염왕룡 익막",
+      "염룡 익막"
+    ],
+    [
+      "reward_3192adf7fb06",
+      "염왕룡 익막",
+      "염룡 익막"
+    ],
+    [
+      "reward_361dbfb44164",
+      "염왕룡 첨예발톱",
+      "염룡 첨예발톱"
+    ],
+    [
+      "reward_69ef15ff0ccc",
+      "염왕룡 강발톱",
+      "염룡 강발톱"
+    ]
+  ],
+  "probabilitiesUnchanged": true,
+  "note": "Only item names/ rewardQuantity normalized from master DB aliases; source records keep itemJa"
+}

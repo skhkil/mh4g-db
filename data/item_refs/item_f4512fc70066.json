@@ -1,1 +1,1 @@
-{"id":"item_f4512fc70066","acquire":[],"uses":[{"type":"weapon","id":"weapon_357aa1ec2289","name":"스타나이트소드","weaponType":"한손검","method":"생산","count":3,"materials":"스튜디오W패스×3 굉룡 강발톱×6 굉룡 중이빨×6 대룡옥×1"}]}
+{"name":"스튜디오W패스","acquire":[],"uses":[{"type":"weapon","id":"weapon_357aa1ec2289","name":"스타나이트소드","weaponType":"한손검","method":"생산","count":3,"materials":"스튜디오W패스×3 굉룡 강발톱×6 굉룡 중이빨×6 대룡옥×1"}]}

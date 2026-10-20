@@ -60,7 +60,7 @@
     "method": "갈무리",
     "count": "4회",
     "rank": "g",
-    "item": "진횽련석",
+    "item": "진홍련석",
     "itemJa": "真紅蓮石",
     "probability": "10%",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
@@ -247,7 +247,7 @@
     "method": "최대 3회",
     "count": "",
     "rank": "g",
-    "item": "진횽련석",
+    "item": "진홍련석",
     "itemJa": "真紅蓮石",
     "probability": "8%",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
@@ -456,7 +456,7 @@
     "method": "파괴 시 보수",
     "count": "",
     "rank": "g",
-    "item": "진횽련석×2",
+    "item": "진홍련석×2",
     "itemJa": "真 紅蓮石×2",
     "probability": "10%",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
@@ -6656,7 +6656,7 @@
   },
   {
     "id": "reward_cdb783a2efc8",
-    "monster": "오오나즈치",
+    "monster": "오나즈치",
     "method": "갈무리",
     "count": "",
     "rank": "g",
@@ -6667,7 +6667,7 @@
   },
   {
     "id": "reward_ced69b6b3bbc",
-    "monster": "오오나즈치",
+    "monster": "오나즈치",
     "method": "갈무리",
     "count": "4회",
     "rank": "g",
@@ -6678,7 +6678,7 @@
   },
   {
     "id": "reward_40723ee12570",
-    "monster": "오오나즈치",
+    "monster": "오나즈치",
     "method": "갈무리",
     "count": "4회",
     "rank": "g",
@@ -6689,7 +6689,7 @@
   },
   {
     "id": "reward_c29a592f6fcc",
-    "monster": "오오나즈치",
+    "monster": "오나즈치",
     "method": "갈무리",
     "count": "4회",
     "rank": "g",
@@ -6700,7 +6700,7 @@
   },
   {
     "id": "reward_212ac1d22e44",
-    "monster": "오오나즈치",
+    "monster": "오나즈치",
     "method": "갈무리",
     "count": "4회",
     "rank": "g",
@@ -6711,7 +6711,7 @@
   },
   {
     "id": "reward_eb17469635fb",
-    "monster": "오오나즈치",
+    "monster": "오나즈치",
     "method": "갈무리",
     "count": "4회",
     "rank": "g",
@@ -6722,7 +6722,7 @@
   },
   {
     "id": "reward_a534f03e3dff",
-    "monster": "오오나즈치",
+    "monster": "오나즈치",
     "method": "꼬리 갈무리",
     "count": "",
     "rank": "g",
@@ -6733,7 +6733,7 @@
   },
   {
     "id": "reward_b846b1256dda",
-    "monster": "오오나즈치",
+    "monster": "오나즈치",
     "method": "꼬리 갈무리",
     "count": "1회",
     "rank": "g",
@@ -6744,7 +6744,7 @@
   },
   {
     "id": "reward_3807c958a920",
-    "monster": "오오나즈치",
+    "monster": "오나즈치",
     "method": "꼬리 갈무리",
     "count": "1회",
     "rank": "g",
@@ -6755,7 +6755,7 @@
   },
   {
     "id": "reward_3fff37475a10",
-    "monster": "오오나즈치",
+    "monster": "오나즈치",
     "method": "꼬리 갈무리",
     "count": "1회",
     "rank": "g",
@@ -6766,7 +6766,7 @@
   },
   {
     "id": "reward_0ef98ef9bbd8",
-    "monster": "오오나즈치",
+    "monster": "오나즈치",
     "method": "꼬리 갈무리",
     "count": "1회",
     "rank": "g",
@@ -6777,7 +6777,7 @@
   },
   {
     "id": "reward_b84420e79364",
-    "monster": "오오나즈치",
+    "monster": "오나즈치",
     "method": "낙하물",
     "count": "",
     "rank": "g",
@@ -6788,7 +6788,7 @@
   },
   {
     "id": "reward_0bc4c1ad6a57",
-    "monster": "오오나즈치",
+    "monster": "오나즈치",
     "method": "최대 2회",
     "count": "",
     "rank": "g",
@@ -6799,7 +6799,7 @@
   },
   {
     "id": "reward_a0bf02b3c2d1",
-    "monster": "오오나즈치",
+    "monster": "오나즈치",
     "method": "최대 2회",
     "count": "",
     "rank": "g",
@@ -6810,7 +6810,7 @@
   },
   {
     "id": "reward_b2f1e63b311e",
-    "monster": "오오나즈치",
+    "monster": "오나즈치",
     "method": "최대 2회",
     "count": "",
     "rank": "g",
@@ -6821,7 +6821,7 @@
   },
   {
     "id": "reward_380c5acb82bf",
-    "monster": "오오나즈치",
+    "monster": "오나즈치",
     "method": "뿔",
     "count": "",
     "rank": "g",
@@ -6832,7 +6832,7 @@
   },
   {
     "id": "reward_16a019fbdfc0",
-    "monster": "오오나즈치",
+    "monster": "오나즈치",
     "method": "파괴 시 보수",
     "count": "",
     "rank": "g",
@@ -6843,7 +6843,7 @@
   },
   {
     "id": "reward_f732f159a690",
-    "monster": "오오나즈치",
+    "monster": "오나즈치",
     "method": "등/날개",
     "count": "",
     "rank": "g",
@@ -6854,7 +6854,7 @@
   },
   {
     "id": "reward_761123d03211",
-    "monster": "오오나즈치",
+    "monster": "오나즈치",
     "method": "파괴 시 보수",
     "count": "",
     "rank": "g",
@@ -17491,7 +17491,7 @@
   },
   {
     "id": "reward_ab0750b8f518",
-    "monster": "혼돈에 신음하는 고어·마가라",
+    "monster": "혼돈의 고어·마가라",
     "method": "갈무리",
     "count": "",
     "rank": "g",
@@ -17502,7 +17502,7 @@
   },
   {
     "id": "reward_f72c50579714",
-    "monster": "혼돈에 신음하는 고어·마가라",
+    "monster": "혼돈의 고어·마가라",
     "method": "갈무리",
     "count": "3회",
     "rank": "g",
@@ -17513,7 +17513,7 @@
   },
   {
     "id": "reward_f071d488adee",
-    "monster": "혼돈에 신음하는 고어·마가라",
+    "monster": "혼돈의 고어·마가라",
     "method": "갈무리",
     "count": "3회",
     "rank": "g",
@@ -17524,7 +17524,7 @@
   },
   {
     "id": "reward_6db379eb3a63",
-    "monster": "혼돈에 신음하는 고어·마가라",
+    "monster": "혼돈의 고어·마가라",
     "method": "갈무리",
     "count": "3회",
     "rank": "g",
@@ -17535,7 +17535,7 @@
   },
   {
     "id": "reward_ca90422ccb4c",
-    "monster": "혼돈에 신음하는 고어·마가라",
+    "monster": "혼돈의 고어·마가라",
     "method": "갈무리",
     "count": "3회",
     "rank": "g",
@@ -17546,7 +17546,7 @@
   },
   {
     "id": "reward_b4775f7ccca6",
-    "monster": "혼돈에 신음하는 고어·마가라",
+    "monster": "혼돈의 고어·마가라",
     "method": "꼬리",
     "count": "",
     "rank": "g",
@@ -17557,7 +17557,7 @@
   },
   {
     "id": "reward_fb3826440e5e",
-    "monster": "혼돈에 신음하는 고어·마가라",
+    "monster": "혼돈의 고어·마가라",
     "method": "꼬리",
     "count": "1회",
     "rank": "g",
@@ -17568,7 +17568,7 @@
   },
   {
     "id": "reward_786f10ba2ae0",
-    "monster": "혼돈에 신음하는 고어·마가라",
+    "monster": "혼돈의 고어·마가라",
     "method": "꼬리",
     "count": "1회",
     "rank": "g",
@@ -17579,7 +17579,7 @@
   },
   {
     "id": "reward_c7dcfe9f639c",
-    "monster": "혼돈에 신음하는 고어·마가라",
+    "monster": "혼돈의 고어·마가라",
     "method": "낙하물",
     "count": "",
     "rank": "g",
@@ -17590,7 +17590,7 @@
   },
   {
     "id": "reward_be75f75aad34",
-    "monster": "혼돈에 신음하는 고어·마가라",
+    "monster": "혼돈의 고어·마가라",
     "method": "최대 3회",
     "count": "",
     "rank": "g",
@@ -17601,7 +17601,7 @@
   },
   {
     "id": "reward_ed6c7ab9847a",
-    "monster": "혼돈에 신음하는 고어·마가라",
+    "monster": "혼돈의 고어·마가라",
     "method": "최대 3회",
     "count": "",
     "rank": "g",
@@ -17612,7 +17612,7 @@
   },
   {
     "id": "reward_a4e907dd3c2f",
-    "monster": "혼돈에 신음하는 고어·마가라",
+    "monster": "혼돈의 고어·마가라",
     "method": "최대 3회",
     "count": "",
     "rank": "g",
@@ -17623,7 +17623,7 @@
   },
   {
     "id": "reward_2a356904f050",
-    "monster": "혼돈에 신음하는 고어·마가라",
+    "monster": "혼돈의 고어·마가라",
     "method": "포획",
     "count": "",
     "rank": "g",
@@ -17634,7 +17634,7 @@
   },
   {
     "id": "reward_31d590a2097c",
-    "monster": "혼돈에 신음하는 고어·마가라",
+    "monster": "혼돈의 고어·마가라",
     "method": "포획",
     "count": "",
     "rank": "g",
@@ -17645,7 +17645,7 @@
   },
   {
     "id": "reward_ad6c6aa3e831",
-    "monster": "혼돈에 신음하는 고어·마가라",
+    "monster": "혼돈의 고어·마가라",
     "method": "포획",
     "count": "",
     "rank": "g",
@@ -17656,7 +17656,7 @@
   },
   {
     "id": "reward_9a912a715079",
-    "monster": "혼돈에 신음하는 고어·마가라",
+    "monster": "혼돈의 고어·마가라",
     "method": "포획",
     "count": "",
     "rank": "g",
@@ -17667,7 +17667,7 @@
   },
   {
     "id": "reward_7d8a77fcb4a3",
-    "monster": "혼돈에 신음하는 고어·마가라",
+    "monster": "혼돈의 고어·마가라",
     "method": "촉각(2회 파괴)",
     "count": "",
     "rank": "g",
@@ -17678,7 +17678,7 @@
   },
   {
     "id": "reward_d039669d7877",
-    "monster": "혼돈에 신음하는 고어·마가라",
+    "monster": "혼돈의 고어·마가라",
     "method": "날개 어느 한쪽이든",
     "count": "",
     "rank": "g",
@@ -17689,7 +17689,7 @@
   },
   {
     "id": "reward_160f3f2f5aba",
-    "monster": "혼돈에 신음하는 고어·마가라",
+    "monster": "혼돈의 고어·마가라",
     "method": "파괴 시 보수",
     "count": "",
     "rank": "g",
@@ -17700,7 +17700,7 @@
   },
   {
     "id": "reward_f19cc9568ce8",
-    "monster": "혼돈에 신음하는 고어·마가라",
+    "monster": "혼돈의 고어·마가라",
     "method": "좌날개다리",
     "count": "",
     "rank": "g",
@@ -17711,7 +17711,7 @@
   },
   {
     "id": "reward_e553b9f6b325",
-    "monster": "혼돈에 신음하는 고어·마가라",
+    "monster": "혼돈의 고어·마가라",
     "method": "파괴 시 보수",
     "count": "",
     "rank": "g",
@@ -17722,7 +17722,7 @@
   },
   {
     "id": "reward_955f35355577",
-    "monster": "혼돈에 신음하는 고어·마가라",
+    "monster": "혼돈의 고어·마가라",
     "method": "우날개다리",
     "count": "",
     "rank": "g",
@@ -17733,7 +17733,7 @@
   },
   {
     "id": "reward_086f55b8cf73",
-    "monster": "혼돈에 신음하는 고어·마가라",
+    "monster": "혼돈의 고어·마가라",
     "method": "파괴 시 보수",
     "count": "",
     "rank": "g",
@@ -17744,7 +17744,7 @@
   },
   {
     "id": "reward_9b86965a5bbf",
-    "monster": "혼돈에 신음하는 고어·마가라",
+    "monster": "혼돈의 고어·마가라",
     "method": "파괴 시 보수",
     "count": "",
     "rank": "g",
@@ -17755,7 +17755,7 @@
   },
   {
     "id": "reward_eb0a258ed16e",
-    "monster": "혼돈에 신음하는 고어·마가라",
+    "monster": "혼돈의 고어·마가라",
     "method": "광룡화 바이러스",
     "count": "",
     "rank": "g",
@@ -17766,7 +17766,7 @@
   },
   {
     "id": "reward_bf15f49e6ea1",
-    "monster": "혼돈에 신음하는 고어·마가라",
+    "monster": "혼돈의 고어·마가라",
     "method": "광룡화 바이러스",
     "count": "",
     "rank": "g",
@@ -17777,7 +17777,7 @@
   },
   {
     "id": "reward_244bd9ef6047",
-    "monster": "혼돈에 신음하는 고어·마가라",
+    "monster": "혼돈의 고어·마가라",
     "method": "광룡화 바이러스",
     "count": "",
     "rank": "g",
@@ -17891,7 +17891,7 @@
     "method": "꼬리 파괴 낙하물",
     "count": "",
     "rank": "g",
-    "item": "구속용발리스타탄",
+    "item": "단발식구속탄",
     "itemJa": "単発式拘束 弾",
     "probability": "100%",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
@@ -23133,94 +23133,6 @@
     "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
   },
   {
-    "id": "reward_0de7b03ed7e8",
-    "monster": "몬스터",
-    "method": "입수방법",
-    "count": "",
-    "rank": "low",
-    "item": "상위",
-    "itemJa": "상위",
-    "probability": "상위",
-    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
-  },
-  {
-    "id": "reward_a5b20cc49b6f",
-    "monster": "몬스터",
-    "method": "입수방법",
-    "count": "",
-    "rank": "high",
-    "item": "극한상태(상위)",
-    "itemJa": "극한상태(상위)",
-    "probability": "극한상태(상위)",
-    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
-  },
-  {
-    "id": "reward_989847863133",
-    "monster": "몬스터",
-    "method": "입수방법",
-    "count": "",
-    "rank": "g",
-    "item": "G급",
-    "itemJa": "G급",
-    "probability": "G급",
-    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
-  },
-  {
-    "id": "reward_c24782784a61",
-    "monster": "몬스터",
-    "method": "입수방법",
-    "count": "",
-    "rank": "extreme",
-    "item": "극한상태(G급)",
-    "itemJa": "극한상태(G급)",
-    "probability": "극한상태(G급)",
-    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
-  },
-  {
-    "id": "reward_8c4ef867c370",
-    "monster": "몬스터",
-    "method": "입수방법",
-    "count": "",
-    "rank": "low",
-    "item": "아이템명칭(한)",
-    "itemJa": "아이템명칭(일)",
-    "probability": "확률",
-    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
-  },
-  {
-    "id": "reward_6e29d861b2fb",
-    "monster": "몬스터",
-    "method": "입수방법",
-    "count": "",
-    "rank": "high",
-    "item": "아이템명칭(한)",
-    "itemJa": "아이템명칭(일)",
-    "probability": "확률",
-    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
-  },
-  {
-    "id": "reward_b08413dfc2a4",
-    "monster": "몬스터",
-    "method": "입수방법",
-    "count": "",
-    "rank": "g",
-    "item": "아이템명칭(한)",
-    "itemJa": "아이템명칭(일)",
-    "probability": "확률",
-    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
-  },
-  {
-    "id": "reward_625d197e02d7",
-    "monster": "몬스터",
-    "method": "입수방법",
-    "count": "",
-    "rank": "extreme",
-    "item": "아이템명칭(한)",
-    "itemJa": "아이템명칭(일)",
-    "probability": "확률",
-    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
-  },
-  {
     "id": "reward_a17568004184",
     "monster": "셀레기오스",
     "method": "갈무리",
@@ -24728,94 +24640,6 @@
     "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
   },
   {
-    "id": "reward_83ef9b664fb4",
-    "monster": "몬스터",
-    "method": "입수방법",
-    "count": "",
-    "rank": "low",
-    "item": "하위",
-    "itemJa": "하위",
-    "probability": "하위",
-    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
-  },
-  {
-    "id": "reward_81e91633cf4f",
-    "monster": "몬스터",
-    "method": "입수방법",
-    "count": "",
-    "rank": "high",
-    "item": "상위",
-    "itemJa": "상위",
-    "probability": "상위",
-    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
-  },
-  {
-    "id": "reward_f765380614dc",
-    "monster": "몬스터",
-    "method": "입수방법",
-    "count": "",
-    "rank": "g",
-    "item": "G급",
-    "itemJa": "G급",
-    "probability": "G급",
-    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
-  },
-  {
-    "id": "reward_087e6b8a0594",
-    "monster": "몬스터",
-    "method": "입수방법",
-    "count": "",
-    "rank": "extreme",
-    "item": "극한상태",
-    "itemJa": "극한상태",
-    "probability": "극한상태",
-    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
-  },
-  {
-    "id": "reward_2eac58de91db",
-    "monster": "몬스터",
-    "method": "입수방법",
-    "count": "",
-    "rank": "low",
-    "item": "아이템명칭(한)",
-    "itemJa": "아이템명칭(일)",
-    "probability": "확률",
-    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
-  },
-  {
-    "id": "reward_575a2762c6ff",
-    "monster": "몬스터",
-    "method": "입수방법",
-    "count": "",
-    "rank": "high",
-    "item": "아이템명칭(한)",
-    "itemJa": "아이템명칭(일)",
-    "probability": "확률",
-    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
-  },
-  {
-    "id": "reward_765b736e7551",
-    "monster": "몬스터",
-    "method": "입수방법",
-    "count": "",
-    "rank": "g",
-    "item": "아이템명칭(한)",
-    "itemJa": "아이템명칭(일)",
-    "probability": "확률",
-    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
-  },
-  {
-    "id": "reward_a66458ee8a58",
-    "monster": "몬스터",
-    "method": "입수방법",
-    "count": "",
-    "rank": "extreme",
-    "item": "아이템명칭(한)",
-    "itemJa": "아이템명칭(일)",
-    "probability": "확률",
-    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
-  },
-  {
     "id": "reward_4ac918884b49",
     "monster": "다이묘자자미",
     "method": "갈무리",
@@ -25737,7 +25561,10 @@
     "item": "흉성의 파편",
     "itemJa": "凶星の破片",
     "probability": "50%",
-    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm",
+    "acquisitionCategory": "gather",
+    "conditionNote": "운석 공격 후 드물게 남는 잔해를 곡괭이로 채굴. 시간이 지나면 사라짐",
+    "verificationStatus": "mh4g_wiki_condition_checked"
   },
   {
     "id": "reward_2368032c7cdf",
@@ -25748,7 +25575,10 @@
     "item": "레비테라이트광석",
     "itemJa": "レビテライト 鉱 石",
     "probability": "30%",
-    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm",
+    "acquisitionCategory": "gather",
+    "conditionNote": "운석 공격 후 드물게 남는 잔해를 곡괭이로 채굴. 시간이 지나면 사라짐",
+    "verificationStatus": "mh4g_wiki_condition_checked"
   },
   {
     "id": "reward_2fb0b5459176",
@@ -25759,7 +25589,10 @@
     "item": "플루크라이트광석",
     "itemJa": "フルクライト 鉱 石",
     "probability": "12%",
-    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm",
+    "acquisitionCategory": "gather",
+    "conditionNote": "운석 공격 후 드물게 남는 잔해를 곡괭이로 채굴. 시간이 지나면 사라짐",
+    "verificationStatus": "mh4g_wiki_condition_checked"
   },
   {
     "id": "reward_18cbb699051a",
@@ -25770,7 +25603,10 @@
     "item": "노바크리스털",
     "itemJa": "ノヴァクリスタル",
     "probability": "8%",
-    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm",
+    "acquisitionCategory": "gather",
+    "conditionNote": "운석 공격 후 드물게 남는 잔해를 곡괭이로 채굴. 시간이 지나면 사라짐",
+    "verificationStatus": "mh4g_wiki_condition_checked"
   },
   {
     "id": "reward_d3ed1346158e",
@@ -25847,7 +25683,11 @@
     "item": "천검의 용옥",
     "itemJa": "天 剣 の龍玉",
     "probability": "5%",
-    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm",
+    "part": "머리",
+    "acquisitionCategory": "part_break",
+    "conditionNote": "머리 2회 파괴 시 보수",
+    "verificationStatus": "mh4g_wiki_condition_checked"
   },
   {
     "id": "reward_ab19b090a702",
@@ -25858,7 +25698,11 @@
     "item": "사왕룡 예안×2",
     "itemJa": "蛇王龍の睨眼×2",
     "probability": "2%",
-    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm",
+    "part": "머리",
+    "acquisitionCategory": "part_break",
+    "conditionNote": "머리 2회 파괴 시 보수",
+    "verificationStatus": "mh4g_wiki_condition_checked"
   },
   {
     "id": "reward_bf02444f3c4d",
@@ -25880,7 +25724,11 @@
     "item": "사왕룡 칼비늘",
     "itemJa": "蛇王龍の 剣 鱗",
     "probability": "20%",
-    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm",
+    "part": "흉부",
+    "acquisitionCategory": "part_break",
+    "conditionNote": "흉부 2회 파괴 시 보수",
+    "verificationStatus": "mh4g_wiki_condition_checked"
   },
   {
     "id": "reward_ba48b112ff91",
@@ -25891,7 +25739,11 @@
     "item": "고룡의 피×2",
     "itemJa": "古龍の血×2",
     "probability": "10%",
-    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm",
+    "part": "흉부",
+    "acquisitionCategory": "part_break",
+    "conditionNote": "흉부 2회 파괴 시 보수",
+    "verificationStatus": "mh4g_wiki_condition_checked"
   },
   {
     "id": "reward_4c789d9c3e6b",
@@ -25913,7 +25765,11 @@
     "item": "사왕룡 칼비늘",
     "itemJa": "蛇王龍の 剣 鱗",
     "probability": "16%",
-    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm",
+    "part": "등",
+    "acquisitionCategory": "part_break",
+    "conditionNote": "등 2회 파괴 시 보수",
+    "verificationStatus": "mh4g_wiki_condition_checked"
   },
   {
     "id": "reward_20c14c7b9819",
@@ -25924,7 +25780,11 @@
     "item": "천검의 용옥",
     "itemJa": "天 剣 の龍玉",
     "probability": "4%",
-    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm",
+    "part": "등",
+    "acquisitionCategory": "part_break",
+    "conditionNote": "등 2회 파괴 시 보수",
+    "verificationStatus": "mh4g_wiki_condition_checked"
   },
   {
     "id": "reward_afe3d0eccbb9",
@@ -25935,7 +25795,11 @@
     "item": "사왕룡 부채칼비늘×2",
     "itemJa": "蛇王龍の扇刃×2",
     "probability": "2%",
-    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm",
+    "part": "등",
+    "acquisitionCategory": "part_break",
+    "conditionNote": "등 2회 파괴 시 보수",
+    "verificationStatus": "mh4g_wiki_condition_checked"
   },
   {
     "id": "reward_7d8d3eef0f0b",
@@ -25957,7 +25821,11 @@
     "item": "사왕룡 칼비늘",
     "itemJa": "蛇王龍の 剣 鱗",
     "probability": "20%",
-    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm",
+    "part": "앞다리",
+    "acquisitionCategory": "part_break",
+    "conditionNote": "앞다리 좌우모두 파괴 시 보수",
+    "verificationStatus": "mh4g_wiki_condition_checked"
   },
   {
     "id": "reward_79197fb796de",
@@ -25968,7 +25836,11 @@
     "item": "사왕룡 갈고리발톱×2",
     "itemJa": "蛇王龍の鉤爪×2",
     "probability": "2%",
-    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm",
+    "part": "앞다리",
+    "acquisitionCategory": "part_break",
+    "conditionNote": "앞다리 좌우모두 파괴 시 보수",
+    "verificationStatus": "mh4g_wiki_condition_checked"
   },
   {
     "id": "reward_ead8e7234fb5",
@@ -25990,7 +25862,11 @@
     "item": "사왕룡 꼬리비늘",
     "itemJa": "蛇王龍の尾鱗",
     "probability": "35%",
-    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm",
+    "part": "뒷다리",
+    "acquisitionCategory": "part_break",
+    "conditionNote": "뒷다리 파괴 시 보수",
+    "verificationStatus": "mh4g_wiki_condition_checked"
   },
   {
     "id": "reward_62da8a61d579",
@@ -26001,7 +25877,11 @@
     "item": "사왕룡 칼비늘",
     "itemJa": "蛇王龍の 剣 鱗",
     "probability": "15%",
-    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm",
+    "part": "뒷다리",
+    "acquisitionCategory": "part_break",
+    "conditionNote": "뒷다리 파괴 시 보수",
+    "verificationStatus": "mh4g_wiki_condition_checked"
   },
   {
     "id": "reward_da8e00cb19ff",
@@ -26023,7 +25903,11 @@
     "item": "사왕룡 꼬리비늘× 2",
     "itemJa": "蛇王龍の尾鱗×2",
     "probability": "2 0%",
-    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm",
+    "part": "하반신",
+    "acquisitionCategory": "part_break",
+    "conditionNote": "하반신 파괴 시 보수",
+    "verificationStatus": "mh4g_wiki_condition_checked"
   },
   {
     "id": "reward_b093ff7613db",
@@ -26034,7 +25918,11 @@
     "item": "소용돌이뼈×2",
     "itemJa": "渦 巻 骨×2",
     "probability": "10%",
-    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm",
+    "part": "하반신",
+    "acquisitionCategory": "part_break",
+    "conditionNote": "하반신 파괴 시 보수",
+    "verificationStatus": "mh4g_wiki_condition_checked"
   },
   {
     "id": "reward_9ba565558346",
@@ -26045,7 +25933,11 @@
     "item": "사왕룡 미갑각×2",
     "itemJa": "蛇王龍の尾 殻 ×2",
     "probability": "2 %",
-    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm",
+    "part": "하반신",
+    "acquisitionCategory": "part_break",
+    "conditionNote": "하반신 파괴 시 보수",
+    "verificationStatus": "mh4g_wiki_condition_checked"
   },
   {
     "id": "reward_9069e7ab419f",
@@ -26177,7 +26069,10 @@
     "item": "흉성의 파편",
     "itemJa": "凶星の破片",
     "probability": "80%",
-    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm",
+    "acquisitionCategory": "gather",
+    "conditionNote": "운석 공격 후 드물게 남는 잔해를 곡괭이로 채굴. 시간이 지나면 사라짐",
+    "verificationStatus": "mh4g_wiki_condition_checked"
   },
   {
     "id": "reward_64ab5e792b0d",
@@ -26188,7 +26083,10 @@
     "item": "코스모라이트광석",
     "itemJa": "コスモライト 鉱石",
     "probability": "12%",
-    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm",
+    "acquisitionCategory": "gather",
+    "conditionNote": "운석 공격 후 드물게 남는 잔해를 곡괭이로 채굴. 시간이 지나면 사라짐",
+    "verificationStatus": "mh4g_wiki_condition_checked"
   },
   {
     "id": "reward_fa3eae72a7ff",
@@ -26199,7 +26097,10 @@
     "item": "퓨어크리스털",
     "itemJa": "ピュアクリスタル",
     "probability": "8%",
-    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm",
+    "acquisitionCategory": "gather",
+    "conditionNote": "운석 공격 후 드물게 남는 잔해를 곡괭이로 채굴. 시간이 지나면 사라짐",
+    "verificationStatus": "mh4g_wiki_condition_checked"
   },
   {
     "id": "reward_f155b7c519c7",
@@ -26276,7 +26177,11 @@
     "item": "천검의 용옥",
     "itemJa": "天 剣 の龍玉",
     "probability": "8%",
-    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm",
+    "part": "머리",
+    "acquisitionCategory": "part_break",
+    "conditionNote": "머리 2회 파괴 시 보수",
+    "verificationStatus": "mh4g_wiki_condition_checked"
   },
   {
     "id": "reward_57a8ac99f464",
@@ -26287,7 +26192,11 @@
     "item": "천검의 용신옥",
     "itemJa": "天 剣 の龍神玉",
     "probability": "5%",
-    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm",
+    "part": "머리",
+    "acquisitionCategory": "part_break",
+    "conditionNote": "머리 2회 파괴 시 보수",
+    "verificationStatus": "mh4g_wiki_condition_checked"
   },
   {
     "id": "reward_f0b4096a8f26",
@@ -26298,7 +26207,11 @@
     "item": "사황룡 예안×2",
     "itemJa": "蛇帝龍の睨眼×2",
     "probability": "2%",
-    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm",
+    "part": "머리",
+    "acquisitionCategory": "part_break",
+    "conditionNote": "머리 2회 파괴 시 보수",
+    "verificationStatus": "mh4g_wiki_condition_checked"
   },
   {
     "id": "reward_4ab50c7b602d",
@@ -26320,7 +26233,11 @@
     "item": "사황룡 두툼칼비늘",
     "itemJa": "蛇帝龍の厚 剣鱗",
     "probability": "20%",
-    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm",
+    "part": "흉부",
+    "acquisitionCategory": "part_break",
+    "conditionNote": "흉부 2회 파괴 시 보수",
+    "verificationStatus": "mh4g_wiki_condition_checked"
   },
   {
     "id": "reward_8876332799e5",
@@ -26331,7 +26248,11 @@
     "item": "고룡의 피×2",
     "itemJa": "古龍の血×2",
     "probability": "10%",
-    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm",
+    "part": "흉부",
+    "acquisitionCategory": "part_break",
+    "conditionNote": "흉부 2회 파괴 시 보수",
+    "verificationStatus": "mh4g_wiki_condition_checked"
   },
   {
     "id": "reward_e295cb531074",
@@ -26353,7 +26274,11 @@
     "item": "사황룡 두툼칼비늘",
     "itemJa": "蛇帝龍の厚 剣鱗",
     "probability": "16%",
-    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm",
+    "part": "등",
+    "acquisitionCategory": "part_break",
+    "conditionNote": "등 2회 파괴 시 보수",
+    "verificationStatus": "mh4g_wiki_condition_checked"
   },
   {
     "id": "reward_be34b91c2700",
@@ -26364,7 +26289,11 @@
     "item": "천검의 용옥",
     "itemJa": "天 剣 の龍玉",
     "probability": "6%",
-    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm",
+    "part": "등",
+    "acquisitionCategory": "part_break",
+    "conditionNote": "등 2회 파괴 시 보수",
+    "verificationStatus": "mh4g_wiki_condition_checked"
   },
   {
     "id": "reward_fe1db12c1b77",
@@ -26375,7 +26304,11 @@
     "item": "천검의 용신옥",
     "itemJa": "天 剣 の龍神玉",
     "probability": "4%",
-    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm",
+    "part": "등",
+    "acquisitionCategory": "part_break",
+    "conditionNote": "등 2회 파괴 시 보수",
+    "verificationStatus": "mh4g_wiki_condition_checked"
   },
   {
     "id": "reward_936fd91f3777",
@@ -26386,7 +26319,11 @@
     "item": "사황룡 큰부채비늘×2",
     "itemJa": "蛇帝龍の大扇刃×2",
     "probability": "2%",
-    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm",
+    "part": "등",
+    "acquisitionCategory": "part_break",
+    "conditionNote": "등 2회 파괴 시 보수",
+    "verificationStatus": "mh4g_wiki_condition_checked"
   },
   {
     "id": "reward_43931799a0a6",
@@ -26408,7 +26345,11 @@
     "item": "사황룡 두툼칼비늘",
     "itemJa": "蛇帝龍の厚剣鱗",
     "probability": "20%",
-    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm",
+    "part": "앞다리",
+    "acquisitionCategory": "part_break",
+    "conditionNote": "앞다리 좌우모두 파괴 시 보수",
+    "verificationStatus": "mh4g_wiki_condition_checked"
   },
   {
     "id": "reward_01e3ddbad511",
@@ -26419,7 +26360,11 @@
     "item": "사황룡 강고리발톱×2",
     "itemJa": "蛇帝龍の剛鉤爪×2",
     "probability": "2%",
-    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm",
+    "part": "앞다리",
+    "acquisitionCategory": "part_break",
+    "conditionNote": "앞다리 좌우모두 파괴 시 보수",
+    "verificationStatus": "mh4g_wiki_condition_checked"
   },
   {
     "id": "reward_9d6d0d12bbd9",
@@ -26441,7 +26386,11 @@
     "item": "소용돌이뼈×2",
     "itemJa": "渦 巻 骨×2",
     "probability": "30%",
-    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm",
+    "part": "뒷다리",
+    "acquisitionCategory": "part_break",
+    "conditionNote": "뒷다리 파괴 시 보수",
+    "verificationStatus": "mh4g_wiki_condition_checked"
   },
   {
     "id": "reward_afdc501949fb",
@@ -26452,7 +26401,11 @@
     "item": "사황룡 두툼칼비늘",
     "itemJa": "蛇帝龍の厚剣鱗",
     "probability": "25%",
-    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm",
+    "part": "뒷다리",
+    "acquisitionCategory": "part_break",
+    "conditionNote": "뒷다리 파괴 시 보수",
+    "verificationStatus": "mh4g_wiki_condition_checked"
   },
   {
     "id": "reward_e315e694c6be",
@@ -26474,7 +26427,11 @@
     "item": "사황룡 두툼미비늘×2",
     "itemJa": "蛇帝龍の厚尾鱗×2",
     "probability": "20%",
-    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm",
+    "part": "하반신",
+    "acquisitionCategory": "part_break",
+    "conditionNote": "하반신 파괴 시 보수",
+    "verificationStatus": "mh4g_wiki_condition_checked"
   },
   {
     "id": "reward_948c6cb2c0b0",
@@ -26485,7 +26442,11 @@
     "item": "소용돌이뼈×2",
     "itemJa": "渦 巻 骨×2",
     "probability": "10%",
-    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm",
+    "part": "하반신",
+    "acquisitionCategory": "part_break",
+    "conditionNote": "하반신 파괴 시 보수",
+    "verificationStatus": "mh4g_wiki_condition_checked"
   },
   {
     "id": "reward_127f163a453d",
@@ -26496,7 +26457,11 @@
     "item": "사황룡 중미갑각×2",
     "itemJa": "蛇帝龍の重尾殻×2",
     "probability": "2%",
-    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm",
+    "part": "하반신",
+    "acquisitionCategory": "part_break",
+    "conditionNote": "하반신 파괴 시 보수",
+    "verificationStatus": "mh4g_wiki_condition_checked"
   },
   {
     "id": "reward_ba0b2a2997a0",
@@ -30992,7 +30957,7 @@
     "method": "갈무리",
     "count": "3회",
     "rank": "high",
-    "item": "염왕룡 첨예발톱",
+    "item": "염룡 첨예발톱",
     "itemJa": "炎王龍の尖爪",
     "probability": "8%",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
@@ -31003,7 +30968,7 @@
     "method": "갈무리",
     "count": "3회",
     "rank": "g",
-    "item": "염왕룡 강발톱",
+    "item": "염룡 강발톱",
     "itemJa": "炎王龍の剛爪",
     "probability": "8%",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
@@ -31256,10 +31221,11 @@
     "method": "파괴 시 보수",
     "count": "",
     "rank": "high",
-    "item": "염왕룡 갈기×2",
+    "item": "염왕룡 갈기",
     "itemJa": "炎王龍のたてがみ×2",
     "probability": "10%",
-    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm",
+    "rewardQuantity": 2
   },
   {
     "id": "reward_b08bef2f51f1",
@@ -31267,10 +31233,11 @@
     "method": "파괴 시 보수",
     "count": "",
     "rank": "g",
-    "item": "염왕룡 갈기×2",
+    "item": "염왕룡 갈기",
     "itemJa": "炎王龍のたてがみ×2",
     "probability": "1 0%",
-    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
+    "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm",
+    "rewardQuantity": 2
   },
   {
     "id": "reward_520ad4b78dba",
@@ -31300,7 +31267,7 @@
     "method": "날개",
     "count": "",
     "rank": "high",
-    "item": "염왕룡 익막",
+    "item": "염룡 익막",
     "itemJa": "炎王龍の翼膜",
     "probability": "65%",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
@@ -31311,7 +31278,7 @@
     "method": "날개",
     "count": "",
     "rank": "g",
-    "item": "염왕룡 익막",
+    "item": "염룡 익막",
     "itemJa": "炎王龍の翼膜",
     "probability": "65%",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
@@ -31322,7 +31289,7 @@
     "method": "파괴 시 보수",
     "count": "",
     "rank": "high",
-    "item": "염왕룡 첨예발톱",
+    "item": "염룡 첨예발톱",
     "itemJa": "炎王龍の尖爪",
     "probability": "35%",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
@@ -31333,7 +31300,7 @@
     "method": "파괴 시 보수",
     "count": "",
     "rank": "g",
-    "item": "염왕룡 강발톱",
+    "item": "염룡 강발톱",
     "itemJa": "炎王龍の剛爪",
     "probability": "3 5%",
     "source": "https://flashkiller.cafe24.com/mh4g/monster/galmuri.htm"
@@ -41438,7 +41405,7 @@
   },
   {
     "id": "reward_385cfb7204c0",
-    "monster": "맹폭 브라키디오스",
+    "monster": "임계 브라키디오스",
     "method": "갈무리",
     "count": "",
     "rank": "g",
@@ -41449,7 +41416,7 @@
   },
   {
     "id": "reward_6d4f8fcc28c0",
-    "monster": "맹폭 브라키디오스",
+    "monster": "임계 브라키디오스",
     "method": "갈무리",
     "count": "3회",
     "rank": "g",
@@ -41460,7 +41427,7 @@
   },
   {
     "id": "reward_fe880d974de3",
-    "monster": "맹폭 브라키디오스",
+    "monster": "임계 브라키디오스",
     "method": "갈무리",
     "count": "3회",
     "rank": "g",
@@ -41471,7 +41438,7 @@
   },
   {
     "id": "reward_c12a0b2f09b1",
-    "monster": "맹폭 브라키디오스",
+    "monster": "임계 브라키디오스",
     "method": "갈무리",
     "count": "3회",
     "rank": "g",
@@ -41482,7 +41449,7 @@
   },
   {
     "id": "reward_2a3f3ff0796b",
-    "monster": "맹폭 브라키디오스",
+    "monster": "임계 브라키디오스",
     "method": "갈무리",
     "count": "3회",
     "rank": "g",
@@ -41493,7 +41460,7 @@
   },
   {
     "id": "reward_dd5086b6cd49",
-    "monster": "맹폭 브라키디오스",
+    "monster": "임계 브라키디오스",
     "method": "갈무리",
     "count": "3회",
     "rank": "g",
@@ -41504,7 +41471,7 @@
   },
   {
     "id": "reward_66143a322c4d",
-    "monster": "맹폭 브라키디오스",
+    "monster": "임계 브라키디오스",
     "method": "꼬리",
     "count": "",
     "rank": "g",
@@ -41515,7 +41482,7 @@
   },
   {
     "id": "reward_ab5ddda4c858",
-    "monster": "맹폭 브라키디오스",
+    "monster": "임계 브라키디오스",
     "method": "꼬리",
     "count": "1회",
     "rank": "g",
@@ -41526,7 +41493,7 @@
   },
   {
     "id": "reward_165bddfc6ec5",
-    "monster": "맹폭 브라키디오스",
+    "monster": "임계 브라키디오스",
     "method": "꼬리",
     "count": "1회",
     "rank": "g",
@@ -41537,7 +41504,7 @@
   },
   {
     "id": "reward_1df9debf9d4e",
-    "monster": "맹폭 브라키디오스",
+    "monster": "임계 브라키디오스",
     "method": "꼬리",
     "count": "1회",
     "rank": "g",
@@ -41548,7 +41515,7 @@
   },
   {
     "id": "reward_f46c4ce066c3",
-    "monster": "맹폭 브라키디오스",
+    "monster": "임계 브라키디오스",
     "method": "낙하물",
     "count": "",
     "rank": "g",
@@ -41559,7 +41526,7 @@
   },
   {
     "id": "reward_cd3d751c6028",
-    "monster": "맹폭 브라키디오스",
+    "monster": "임계 브라키디오스",
     "method": "최대 3회",
     "count": "",
     "rank": "g",
@@ -41570,7 +41537,7 @@
   },
   {
     "id": "reward_7f7f2a8b141e",
-    "monster": "맹폭 브라키디오스",
+    "monster": "임계 브라키디오스",
     "method": "최대 3회",
     "count": "",
     "rank": "g",
@@ -41581,7 +41548,7 @@
   },
   {
     "id": "reward_31d89e280f41",
-    "monster": "맹폭 브라키디오스",
+    "monster": "임계 브라키디오스",
     "method": "최대 3회",
     "count": "",
     "rank": "g",
@@ -41592,7 +41559,7 @@
   },
   {
     "id": "reward_dc78c251ca52",
-    "monster": "맹폭 브라키디오스",
+    "monster": "임계 브라키디오스",
     "method": "머리",
     "count": "",
     "rank": "g",
@@ -41603,7 +41570,7 @@
   },
   {
     "id": "reward_7aefe317848d",
-    "monster": "맹폭 브라키디오스",
+    "monster": "임계 브라키디오스",
     "method": "파괴 시 보수",
     "count": "",
     "rank": "g",
@@ -41614,7 +41581,7 @@
   },
   {
     "id": "reward_408eba8aa87a",
-    "monster": "맹폭 브라키디오스",
+    "monster": "임계 브라키디오스",
     "method": "앞다리",
     "count": "",
     "rank": "g",
@@ -41625,7 +41592,7 @@
   },
   {
     "id": "reward_888ecb2d25e1",
-    "monster": "맹폭 브라키디오스",
+    "monster": "임계 브라키디오스",
     "method": "파괴 시 보수",
     "count": "",
     "rank": "g",
@@ -41636,7 +41603,7 @@
   },
   {
     "id": "reward_45cd957b935f",
-    "monster": "맹폭 브라키디오스",
+    "monster": "임계 브라키디오스",
     "method": "파괴 시 보수",
     "count": "",
     "rank": "g",
@@ -41647,7 +41614,7 @@
   },
   {
     "id": "reward_c4c15e1cddc3",
-    "monster": "맹폭 브라키디오스",
+    "monster": "임계 브라키디오스",
     "method": "파괴 시 보수",
     "count": "",
     "rank": "g",

@@ -1,0 +1,64 @@
+{
+  "total": 4481,
+  "categories": {
+    "drop": 522,
+    "special_condition": 113,
+    "part_condition": 1051,
+    "dispatch_reward": 691,
+    "gather": 38,
+    "carve": 1126,
+    "capture": 680,
+    "frenzy": 229,
+    "possible_drop": 31
+  },
+  "examples": {
+    "drop": {
+      "item_id": "item_4146cd96e0f6",
+      "name": "단발식구속탄",
+      "method": "꼬리 파괴 낙하물"
+    },
+    "special_condition": {
+      "item_id": "item_a7867c6acf3f",
+      "name": "푸른버섯",
+      "method": "꼬리에 버섯이 있을 때"
+    },
+    "part_condition": {
+      "item_id": "item_7f553e0e08dd",
+      "name": "니트로버섯",
+      "method": "꼬리 파괴"
+    },
+    "dispatch_reward": {
+      "item_id": "item_a86a937adb56",
+      "name": "철광석",
+      "method": "떠돌이 헌터 파견 보수"
+    },
+    "gather": {
+      "item_id": "item_829d3591a0d0",
+      "name": "대지의 결정",
+      "method": "채굴"
+    },
+    "carve": {
+      "item_id": "item_8f142f2db297",
+      "name": "마카라이트광석",
+      "method": "갈무리"
+    },
+    "capture": {
+      "item_id": "item_8f142f2db297",
+      "name": "마카라이트광석",
+      "method": "포획"
+    },
+    "frenzy": {
+      "item_id": "item_6a4d6a12ffb3",
+      "name": "광룡결정의 조각",
+      "method": "광룡화 관련 보수"
+    },
+    "possible_drop": {
+      "item_id": "item_313aca229596",
+      "name": "용의 눈물방울",
+      "method": "획득 방식 미확인"
+    }
+  },
+  "shardMismatch": [],
+  "missingVerification": [],
+  "malformedProbabilities": []
+}

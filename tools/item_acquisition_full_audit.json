@@ -1,0 +1,68 @@
+{
+  "totalMonsterAcquisitions": 4481,
+  "categories": [
+    {
+      "category": "capture",
+      "verification": "method_explicit",
+      "count": 680
+    },
+    {
+      "category": "carve",
+      "verification": "method_explicit",
+      "count": 1126
+    },
+    {
+      "category": "dispatch_reward",
+      "verification": "confirmed_category",
+      "count": 691
+    },
+    {
+      "category": "drop",
+      "verification": "method_explicit",
+      "count": 166
+    },
+    {
+      "category": "drop",
+      "verification": "mh4u_correlated",
+      "count": 341
+    },
+    {
+      "category": "drop",
+      "verification": "source_attached",
+      "count": 3
+    },
+    {
+      "category": "frenzy",
+      "verification": "needs_detail",
+      "count": 229
+    },
+    {
+      "category": "gather",
+      "verification": "method_explicit",
+      "count": 38
+    },
+    {
+      "category": "part_condition",
+      "verification": "method_explicit",
+      "count": 698
+    },
+    {
+      "category": "part_condition",
+      "verification": "needs_detail",
+      "count": 353
+    },
+    {
+      "category": "possible_drop",
+      "verification": "needs_source",
+      "count": 43
+    },
+    {
+      "category": "special_condition",
+      "verification": "needs_detail",
+      "count": 113
+    }
+  ],
+  "unvalidatedProbabilities": [],
+  "unvalidatedProbabilityCount": 0,
+  "note": "All records are structured; needs_source/needs_detail remain unverified. Missing methods are NOT asserted as drops."
+}
