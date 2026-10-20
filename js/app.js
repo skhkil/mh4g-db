@@ -1693,8 +1693,35 @@ function refButton(label,type,attrs={}){
   const dataAttrs=Object.entries(attrs).filter(([,v])=>v!==undefined&&v!==null&&String(v)!=="").map(([k,v])=>` data-nav-${k}="${esc(String(v))}"`).join("");
   return `<button type="button" class="xref-link" data-item-nav="${esc(type)}"${dataAttrs}>${esc(label)}</button>`;
 }
+function monsterAcquireMeta(x){
+  const raw=String(x.method||"").trim(), count=String(x.count||"").trim();
+  const max=raw.match(/^최대\s*(\d+)회$/), times=count.match(/^(\d+)회$/);
+  let kind="기타 / 조건부", label=raw||"획득 방식 미확인", verified=true;
+  if(max){kind="방식 미확인";label="획득 방식 미확인";verified=false;}
+  else if(/포획/.test(raw)){kind="포획 보수";label=raw;}
+  else if(/파괴|뿔|볏|날개|앞다리|뒷다리|앞발톱|흉부/.test(raw)){kind="부위 파괴 / 조건";label=raw;}
+  else if(/낙하물|落とし物/.test(raw)){kind="유실물";label=raw;}
+  else if(/채굴|채집/.test(raw)){kind="채굴 / 채집";label=raw;}
+  else if(/꼬리|갈무리|본체|몸통|입 속|죽은척/.test(raw)){kind="갈무리";label=raw;}
+  else if(/보수/.test(raw)){kind="보수 / 조건";label=raw;}
+  const attempts=max?Number(max[1]):times?Number(times[1]):null;
+  const attemptsDescription=max?`원본: 최대 ${attempts}회 (방식 미확인)`:times?`원본 횟수: ${attempts}회`:"";
+  const probability=String(x.probability||"").trim();
+  const validProbability=/^(?:100|\d{1,2})(?:\.\d+)?%$/.test(probability);
+  return {kind,label,verified,attempts,attemptsDescription,probability:validProbability?probability:"",rawProbability:validProbability?"":probability};
+}
+function monsterAcquireItemHtml(x,itemName){
+  const m=monsterAcquireMeta(x);
+  const bits=[`<span class="item-acq-method">${esc(m.label)}</span>`,
+    m.attemptsDescription?`<span class="item-acq-chip">${esc(m.attemptsDescription)}</span>`:"",
+    x.rank?`<span class="item-acq-chip">${esc(rankName(x.rank))}</span>`:"",
+    m.probability?`<span class="item-acq-chip">표기 확률 ${esc(m.probability)}</span>`:"",
+    m.rawProbability?`<span class="item-acq-chip item-acq-warning">확률 원문 ${esc(m.rawProbability)} · 검증 필요</span>`:"",
+    !m.verified?`<span class="item-acq-warning">갈무리·유실물 등 원래 획득 방식 확인 필요</span>`:""].filter(Boolean).join("");
+  return `<li class="item-acq-entry"><div>${refButton(x.monster||"몬스터","monster",{monster:x.monster,item:itemName})}<small>${esc(m.kind)}</small></div><div class="item-acq-info">${bits}</div></li>`;
+}
 function acquireRefHtml(x,itemName){
-  if(x.type==="monster")return `<li>${refButton(x.monster||"몬스터","monster",{monster:x.monster,item:itemName})}<span>${esc([x.method,x.count,x.rank?rankName(x.rank):"",x.probability].filter(Boolean).join(" · "))}</span></li>`;
+  if(x.type==="monster")return monsterAcquireItemHtml(x,itemName);
   if(x.type==="quest")return `<li>${refButton(`${x.level||""} ${x.name||"퀘스트"}`.trim(),"quest",{name:x.name,questtype:x.questType})}<span>${esc([x.location,x.objective].filter(Boolean).join(" · "))}</span></li>`;
   if(x.type==="compose")return `<li>${refButton(`조합 No.${x.no}: ${x.materialA} + ${x.materialB}`,"compose",{name:itemName})}<span>${esc([x.successRate,x.yield?`생산 ${x.yield}`:""].filter(Boolean).join(" · "))}</span></li>`;
   if(x.type==="exchange")return `<li>${refButton(`용인 교환: ${x.required} → ${itemName}`,"dragon",{view:"exchange",name:itemName})}<span>${esc(x.unlock||"")}</span></li>`;
@@ -1722,7 +1749,7 @@ function buildItemDetailHtml(item,ref){
   const useCount=t=>uses.reduce((n,x)=>n+(t(x)?1:0),0);
   const acqGroups=[
     ["퀘스트 보수","acq-quest",count(x=>x.type==="quest")],
-    ["몬스터 갈무리/보수","acq-monster",count(x=>x.type==="monster")],
+    ["몬스터 소재 획득 · 갈무리/포획/부위 파괴 등","acq-monster",count(x=>x.type==="monster")],
     ["조합","acq-compose",count(x=>x.type==="compose")],
     ["용인족 도매상","acq-dragon",count(x=>["exchange","dragonSell","dragonIncrease"].includes(x.type))]
   ].filter(([, ,n])=>n);
@@ -1758,7 +1785,7 @@ async function hydrateXrefGroup(details){
   const [items,kind]=xrefItemsForKind(ref,details.dataset.xrefKind||"");
   const body=details.querySelector(".xref-lazy-body");if(!body)return;
   const renderer=kind==="acquire"?(x=>acquireRefHtml(x,item.name)):useRefHtml;
-  body.innerHTML=`<ul>${items.map(renderer).join("")}</ul>`;
+  body.innerHTML=details.dataset.xrefKind==="acq-monster"?`<p class="item-acq-help">획득 방식과 시도 횟수, 표기 확률은 서로 다릅니다. ‘최대 N회’만 남은 기록은 원본에 방식이 없어 미확인으로 표시합니다. 확률은 원본의 개별 표기이며 퀘스트당 획득 확률이 아닙니다.</p><ul>${items.slice().sort((a,b)=>{const order={"갈무리":0,"포획 보수":1,"부위 파괴 / 조건":2,"유실물":3,"채굴 / 채집":4,"보수 / 조건":5,"기타 / 조건부":6,"방식 미확인":7};return (order[monsterAcquireMeta(a).kind]??9)-(order[monsterAcquireMeta(b).kind]??9)}).map(renderer).join("")}</ul>`:`<ul>${items.map(renderer).join("")}</ul>`;
   details.dataset.loaded="1";
 }
 function removeItemDetailRow(){
@@ -1895,6 +1922,13 @@ function renderRelicEquipment(){
   const mh4RefRows=(qg.mh4Reference?.rows||[]).map(x=>`<tr><td>${esc(x.route)}</td><td>${esc(x.level)}</td><td class="wrap-cell"><strong>${esc(x.quality)}</strong></td><td class="wrap-cell">${esc(x.note||"")}</td></tr>`).join("");
   const mh4gRuleRows=(qg.mh4gRules||[]).map(x=>`<tr><td><strong>${esc(x.route)}</strong></td><td class="wrap-cell">${esc(x.rule)}</td><td class="wrap-cell">${esc(x.detail||"")}</td></tr>`).join("");
   const mh4gBandRows=(qg.mh4gBands||[]).map(x=>`<tr><td><strong>${esc(x.level)}</strong></td><td class="wrap-cell">${esc(x.quality)}</td><td class="wrap-cell">${esc(x.examples||"")}</td><td class="wrap-cell">${esc(x.note||"")}</td></tr>`).join("");
+  const rewardSlotRows=(qg.monsterRewardSlots||[]).map(x=>`<tr><td><strong>${esc(x.monster)}</strong></td><td>${esc(x.singleSlots)}</td><td class="wrap-cell">${esc(x.note||'')}</td></tr>`).join("");
+  const pairRuleRows=(qg.pairRules||[]).map(x=>`<p>※ ${esc(x)}</p>`).join("");
+  const pointRows=(qg.rewardPointExamples||[]).map(x=>`<tr><td>${esc(x.monster)}</td><td>${esc(x.points)}</td></tr>`).join("");
+  const pointBandRows=(qg.rewardPointBands||[]).map(x=>`<tr><td>${esc(x.points)}</td><td>${esc(x.slots)}</td></tr>`).join("");
+  const otherRewardRows=(qg.otherRewards136140||[]).map(x=>`<tr><td>${esc(x.monster)}</td><td class="wrap-cell">${(x.outcomes||[]).map(y=>`${esc(y.item)} ×${y.count} (${y.probability}%)`).join(" · ")}</td></tr>`).join("");
+  const farmingRows=(qg.farmingExamples||[]).map(x=>`<tr><td><strong>${esc(x.combination)}</strong></td><td>${esc(x.points)}</td><td>${esc(x.commonSlots)}</td><td class="wrap-cell">${esc(x.purpose)}</td><td class="wrap-cell">${esc(x.note)}</td></tr>`).join("");
+  const commonRewards=(qg.rewardCalculation136140?.followingCommonSlots||[]).map(x=>`${esc(x.name)} ${x.probability}%`).join(" · ");
   const evidenceRows=(qg.evidenceExamples||[]).map(x=>`<tr><td>${esc(x.monster)}</td><td>${esc(x.level)}</td><td>${esc(x.glory||'-')}</td><td>${esc(x.hero||'-')}</td><td>${esc(x.sealed||'-')}</td><td class="wrap-cell">${esc(x.memo||"")}</td></tr>`).join("");
   const deriv=d.guildQuestDerivation||{},derivRows=deriv.entries||[];
   const derivSources=[...new Set(derivRows.map(x=>x.source))].sort((a,b)=>a.localeCompare(b,"ko"));
@@ -1917,6 +1951,22 @@ function renderRelicEquipment(){
       <div class="table-panel"><table class="data-table"><thead><tr><th>획득 방식</th><th>결정 규칙</th><th>설명</th></tr></thead><tbody>${mh4gRuleRows}</tbody></table></div>
       <h3 class="relic-subhead">MH4G · 클리어 보상 품질 구간</h3>
       <div class="table-panel"><table class="data-table"><thead><tr><th>길퀘 Lv</th><th>확인된 흐름</th><th>대표 사례</th><th>해석</th></tr></thead><tbody>${mh4gBandRows}</tbody></table></div>
+      <h3 class="relic-subhead">MH4G · 길드퀘스트 몬스터별 단일 보상칸 (${(qg.monsterRewardSlots||[]).length}종)</h3>
+      <p class="muted">이 수치는 감정품 획득 확률이나 품질 등급이 아닌, 길드퀘스트의 단일 몬스터 기준 보상칸 범위입니다. 극한상태 보정은 별도이며 일부 미확인 항목은 임의로 채우지 않았습니다. <a href="${esc(qg.rewardSource||'#')}" target="_blank" rel="noopener noreferrer">MH4G@wiki 원문 ↗</a></p>
+      <div class="table-panel"><table class="data-table"><thead><tr><th>몬스터</th><th>단일 보상칸</th><th>구분</th></tr></thead><tbody>${rewardSlotRows}</tbody></table></div>
+      <h3 class="relic-subhead">MH4G · 2두 길드퀘스트 보상 주의</h3>
+      <div class="relic-quality-cautions">${pairRuleRows}</div>
+      <h3 class="relic-subhead">MH4G Lv136~140 · 보상 포인트 및 공통 보상칸</h3>
+      <p class="muted">아래는 확인된 대표 포인트와 합산 구간입니다. 전체 몬스터 포인트표로 오해하지 마세요. <a href="${esc(qg.rewardCalculation136140?.source||'#')}" target="_blank" rel="noopener noreferrer">일본 MH4G 조사 원문 ↗</a></p>
+      <div class="table-panel"><table class="data-table"><thead><tr><th>몬스터·상태</th><th>포인트</th></tr></thead><tbody>${pointRows}</tbody></table></div>
+      <div class="table-panel"><table class="data-table"><thead><tr><th>합산 포인트</th><th>공통 보상칸</th></tr></thead><tbody>${pointBandRows}</tbody></table></div>
+      <p class="muted">공통 보상 첫 칸: ${esc(qg.rewardCalculation136140?.firstCommonSlot||'')} / 이후 각 칸: ${commonRewards}. 단, 공통 봉인 추첨에는 몬스터 보상군 조건이 따릅니다.</p>
+      <h3 class="relic-subhead">Lv136~140 · 몬스터별 기타 보상 1칸 확률</h3>
+      <div class="table-panel"><table class="data-table"><thead><tr><th>몬스터·상태</th><th>1칸의 확률 분포 (수량 별도)</th></tr></thead><tbody>${otherRewardRows}</tbody></table></div>
+      <h3 class="relic-subhead">추천 파밍 조합 · 보상 구조 비교</h3>
+      <p class="muted">비교는 보상 구조이며 사냥 속도·파티별 시간당 효율 순위가 아닙니다. 포인트와 보상칸은 Lv136~140 조건입니다.</p>
+      <div class="table-panel"><table class="data-table"><thead><tr><th>조합</th><th>포인트</th><th>공통칸</th><th>목적</th><th>주의</th></tr></thead><tbody>${farmingRows}</tbody></table></div>
+      <div class="relic-quality-cautions">${(qg.farmingExclusions||[]).map(x=>`<p>※ ${esc(x)}</p>`).join('')}</div>
       <details class="relic-quality-evidence"><summary>몬스터별 실제 보상 사례 보기</summary><div class="table-panel"><table class="data-table"><thead><tr><th>몬스터</th><th>Lv</th><th>영광</th><th>영웅</th><th>봉인</th><th>메모</th></tr></thead><tbody>${evidenceRows}</tbody></table></div></details>
       <div class="relic-quality-cautions">${(qg.cautions||[]).map(x=>`<p>※ ${esc(x)}</p>`).join('')}</div>
     </section>

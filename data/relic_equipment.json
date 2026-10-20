@@ -1,5 +1,5 @@
 {
-  "version": "0.7.7-relic-guide3",
+  "version": "0.7.7-relic-reward-roster-step1",
   "title": "MH4G 발굴장비 가이드",
   "sources": [
     {
@@ -1532,8 +1532,8 @@
       },
       {
         "route": "2두 길드퀘스트 클리어 보상",
-        "rule": "보상 테이블은 더 높은 쪽 몬스터 보정 사용",
-        "detail": "MH4G@wiki 설명 기준. 채굴 테이블과는 별개."
+        "rule": "몬스터별 기타 보상 1칸씩 + 몬스터 포인트 합산으로 공통 보상칸 산정",
+        "detail": "Lv136~140 기준. 좌측 아이콘 몬스터가 발굴무기 종류·외형 기준. 공통 봉인 보상 추첨 대상 조건과 각 몬스터 기타 보상 확률을 구분."
       }
     ],
     "mh4gBands": [
@@ -1620,6 +1620,451 @@
       "표의 %는 Game-Cap에서 ‘1회 퀘스트에서 해당 항목을 얻을 확률’로 표기한 값이며, 보상칸 전체가 그 감정품만 된다는 뜻이 아닙니다.",
       "MH4의 Lv91 보물구역 규칙과 MH4G의 G급 클리어 보상 확률표는 서로 다른 규칙입니다.",
       "MH4G G급 채굴 감정품의 세부 확률/고정 구간은 현재 확보한 교차검증 자료가 불완전하므로 확정 수치로 표시하지 않습니다."
+    ],
+    "monsterRewardSlots": [
+      {
+        "monster": "도스람포스",
+        "singleSlots": "2~3",
+        "note": "기본 단일 보상칸(발굴 감정품 개수 아님)"
+      },
+      {
+        "monster": "바살모스",
+        "singleSlots": "2~4",
+        "note": "기본 단일 보상칸(발굴 감정품 개수 아님)"
+      },
+      {
+        "monster": "바살모스 아종",
+        "singleSlots": "2~4",
+        "note": "기본 단일 보상칸(발굴 감정품 개수 아님)"
+      },
+      {
+        "monster": "얀쿡",
+        "singleSlots": "3~4",
+        "note": "기본 단일 보상칸(발굴 감정품 개수 아님)"
+      },
+      {
+        "monster": "키린",
+        "singleSlots": "3~4",
+        "note": "기본 단일 보상칸(발굴 감정품 개수 아님)"
+      },
+      {
+        "monster": "얀쿡 아종",
+        "singleSlots": "3~5",
+        "note": "기본 단일 보상칸(발굴 감정품 개수 아님)"
+      },
+      {
+        "monster": "키린 아종",
+        "singleSlots": "3~5",
+        "note": "기본 단일 보상칸(발굴 감정품 개수 아님)"
+      },
+      {
+        "monster": "티가렉스",
+        "singleSlots": "4~5",
+        "note": "기본 단일 보상칸(발굴 감정품 개수 아님)"
+      },
+      {
+        "monster": "브라키디오스",
+        "singleSlots": "4~5",
+        "note": "기본 단일 보상칸(발굴 감정품 개수 아님)"
+      },
+      {
+        "monster": "얀가루루가",
+        "singleSlots": "4~6",
+        "note": "기본 단일 보상칸(발굴 감정품 개수 아님)"
+      },
+      {
+        "monster": "진오우거",
+        "singleSlots": "4~6",
+        "note": "기본 단일 보상칸(발굴 감정품 개수 아님)"
+      },
+      {
+        "monster": "티가렉스 아종",
+        "singleSlots": "4~6",
+        "note": "기본 단일 보상칸(발굴 감정품 개수 아님)"
+      },
+      {
+        "monster": "진오우거 아종",
+        "singleSlots": "5~7",
+        "note": "기본 단일 보상칸(발굴 감정품 개수 아님)"
+      },
+      {
+        "monster": "고어·마가라",
+        "singleSlots": "5~8",
+        "note": "기본 단일 보상칸(발굴 감정품 개수 아님)"
+      },
+      {
+        "monster": "크샬다오라",
+        "singleSlots": "6~8",
+        "note": "기본 단일 보상칸(발굴 감정품 개수 아님)"
+      },
+      {
+        "monster": "라잔",
+        "singleSlots": "6~8",
+        "note": "기본 단일 보상칸(발굴 감정품 개수 아님)"
+      },
+      {
+        "monster": "샤가르마가라",
+        "singleSlots": "7~9",
+        "note": "기본 단일 보상칸(발굴 감정품 개수 아님)"
+      },
+      {
+        "monster": "테오·테스카토르",
+        "singleSlots": "8~10",
+        "note": "기본 단일 보상칸(발굴 감정품 개수 아님)"
+      },
+      {
+        "monster": "다이묘자자미 아종",
+        "singleSlots": "3~5",
+        "note": "기본 단일 보상칸(발굴 감정품 개수 아님)"
+      },
+      {
+        "monster": "디아블로스 아종",
+        "singleSlots": "5~7",
+        "note": "기본 단일 보상칸(발굴 감정품 개수 아님)"
+      },
+      {
+        "monster": "셀레기오스",
+        "singleSlots": "6~8",
+        "note": "기본 단일 보상칸(발굴 감정품 개수 아님)"
+      },
+      {
+        "monster": "이블조",
+        "singleSlots": "6~8",
+        "note": "기본 단일 보상칸(발굴 감정품 개수 아님)"
+      },
+      {
+        "monster": "오오나즈치",
+        "singleSlots": "6~8",
+        "note": "기본 단일 보상칸(발굴 감정품 개수 아님)"
+      },
+      {
+        "monster": "디아블로스",
+        "singleSlots": "미확인",
+        "note": "현재 인용 자료에서 기본 단일 범위 미확인"
+      }
+    ],
+    "rewardSource": "https://w.atwiki.jp/3dsmh4g/pages/395.html",
+    "pairRules": [
+      "2두 조합은 두 몬스터 포인트를 합산하여 공통 보상칸 수를 정하며, 단일 보상칸을 더하지 않습니다.",
+      "기타 보상은 몬스터당 1칸으로 2두면 2칸 별도입니다.",
+      "발굴 장비 종류·외형은 왼쪽 아이콘 몬스터 기준입니다.",
+      "고룡+라잔 조합은 정상 조합으로 검증되지 않아 추천에 포함하지 않습니다."
+    ],
+    "rewardCalculation136140": {
+      "level": "Lv136~140",
+      "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html",
+      "firstCommonSlot": "극상 연마재 100%",
+      "followingCommonSlots": [
+        {
+          "name": "봉인된 무기",
+          "probability": 12
+        },
+        {
+          "name": "봉인된 방어구",
+          "probability": 16
+        },
+        {
+          "name": "기타",
+          "probability": 72
+        }
+      ],
+      "note": "공통 보상칸은 몬스터별 기타 보상과 별개. 봉인이 공통 보상에 나오는 것은 대상 몬스터의 보상군 조건이 필요."
+    },
+    "rewardPointBands": [
+      {
+        "points": 18,
+        "slots": "12~16"
+      },
+      {
+        "points": 15,
+        "slots": "10~13"
+      },
+      {
+        "points": 12,
+        "slots": "8~10"
+      },
+      {
+        "points": 11,
+        "slots": "8~9"
+      },
+      {
+        "points": 10,
+        "slots": "7~9"
+      }
+    ],
+    "rewardPointExamples": [
+      {
+        "monster": "테오·테스카토르",
+        "points": 12
+      },
+      {
+        "monster": "샤가르마가라",
+        "points": 10
+      },
+      {
+        "monster": "크샬다오라",
+        "points": 9
+      },
+      {
+        "monster": "라잔 (극한상태)",
+        "points": 9
+      },
+      {
+        "monster": "이블조 (극한상태)",
+        "points": 9
+      },
+      {
+        "monster": "셀레기오스 (극한상태)",
+        "points": 9
+      },
+      {
+        "monster": "진오우거 (극한상태)",
+        "points": 8
+      },
+      {
+        "monster": "바살모스 아종",
+        "points": 2
+      },
+      {
+        "monster": "도스람포스",
+        "points": 1
+      }
+    ],
+    "otherRewards136140": [
+      {
+        "monster": "테오·테스카토르",
+        "outcomes": [
+          {
+            "item": "봉인된 무기",
+            "count": 1,
+            "probability": 40
+          },
+          {
+            "item": "봉인된 방어구",
+            "count": 1,
+            "probability": 40
+          },
+          {
+            "item": "봉인된 무기",
+            "count": 2,
+            "probability": 10
+          },
+          {
+            "item": "봉인된 방어구",
+            "count": 2,
+            "probability": 10
+          }
+        ]
+      },
+      {
+        "monster": "샤가르마가라",
+        "outcomes": [
+          {
+            "item": "봉인된 무기",
+            "count": 1,
+            "probability": 40
+          },
+          {
+            "item": "봉인된 방어구",
+            "count": 1,
+            "probability": 40
+          },
+          {
+            "item": "봉인된 무기",
+            "count": 2,
+            "probability": 10
+          },
+          {
+            "item": "봉인된 방어구",
+            "count": 2,
+            "probability": 10
+          }
+        ]
+      },
+      {
+        "monster": "크샬다오라",
+        "outcomes": [
+          {
+            "item": "봉인된 무기",
+            "count": 1,
+            "probability": 40
+          },
+          {
+            "item": "봉인된 방어구",
+            "count": 1,
+            "probability": 40
+          },
+          {
+            "item": "봉인된 무기",
+            "count": 2,
+            "probability": 10
+          },
+          {
+            "item": "봉인된 방어구",
+            "count": 2,
+            "probability": 10
+          }
+        ]
+      },
+      {
+        "monster": "라잔 (극한상태)",
+        "outcomes": [
+          {
+            "item": "봉인된 무기",
+            "count": 2,
+            "probability": 50
+          },
+          {
+            "item": "봉인된 방어구",
+            "count": 2,
+            "probability": 50
+          }
+        ]
+      },
+      {
+        "monster": "이블조 (극한상태)",
+        "outcomes": [
+          {
+            "item": "봉인된 무기",
+            "count": 2,
+            "probability": 50
+          },
+          {
+            "item": "봉인된 방어구",
+            "count": 2,
+            "probability": 50
+          }
+        ]
+      },
+      {
+        "monster": "셀레기오스 (극한상태)",
+        "outcomes": [
+          {
+            "item": "봉인된 무기",
+            "count": 1,
+            "probability": 40
+          },
+          {
+            "item": "봉인된 방어구",
+            "count": 1,
+            "probability": 40
+          },
+          {
+            "item": "봉인된 무기",
+            "count": 2,
+            "probability": 10
+          },
+          {
+            "item": "봉인된 방어구",
+            "count": 2,
+            "probability": 10
+          }
+        ]
+      },
+      {
+        "monster": "진오우거 (극한상태)",
+        "outcomes": [
+          {
+            "item": "봉인된 무기",
+            "count": 1,
+            "probability": 50
+          },
+          {
+            "item": "봉인된 방어구",
+            "count": 1,
+            "probability": 50
+          }
+        ]
+      },
+      {
+        "monster": "바살모스 아종",
+        "outcomes": [
+          {
+            "item": "봉인된 무기",
+            "count": 1,
+            "probability": 7
+          },
+          {
+            "item": "봉인된 방어구",
+            "count": 1,
+            "probability": 8
+          },
+          {
+            "item": "영웅 무기",
+            "count": 1,
+            "probability": 42
+          },
+          {
+            "item": "영웅 방어구",
+            "count": 1,
+            "probability": 43
+          }
+        ]
+      }
+    ],
+    "farmingExamples": [
+      {
+        "combination": "테오 단일",
+        "points": "12",
+        "commonSlots": "8~10",
+        "purpose": "단일 퀘스트 보상칸 확보",
+        "note": "고룡 단일 퀘스트. 사냥 난도·시간은 개인별 차이",
+        "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html"
+      },
+      {
+        "combination": "샤가르마가라 단일",
+        "points": "10",
+        "commonSlots": "7~9",
+        "purpose": "고룡 단일 파밍",
+        "note": "봉인 확률은 Lv136~140 조건 적용",
+        "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html"
+      },
+      {
+        "combination": "라잔 단일 (극한)",
+        "points": "9",
+        "commonSlots": "6~8",
+        "purpose": "기타 보상 2개 묶음 확률",
+        "note": "극한상태 대응 필요",
+        "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html"
+      },
+      {
+        "combination": "라잔×2 (극한)",
+        "points": "18",
+        "commonSlots": "12~16",
+        "purpose": "공통 보상칸 수 극대화",
+        "note": "각 몬스터 기타 보상 1칸씩 별도. 18칸이 아님",
+        "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html"
+      },
+      {
+        "combination": "티가렉스 아종+라잔",
+        "points": "15 (조건부)",
+        "commonSlots": "10~13 (15pt일 때)",
+        "purpose": "왼쪽 몬스터 발굴외형과 오른쪽 라잔 보상",
+        "note": "정확한 상태별 포인트는 개별 퀘스트 조건 확인 필요",
+        "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html"
+      },
+      {
+        "combination": "도스람포스+라잔 (극한)",
+        "points": "10",
+        "commonSlots": "7~9",
+        "purpose": "오른쪽 라잔 조합",
+        "note": "왼쪽 몬스터가 발굴장비 외형을 결정",
+        "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html"
+      },
+      {
+        "combination": "바살모스 아종+라잔 (극한)",
+        "points": "11",
+        "commonSlots": "8~9",
+        "purpose": "왼쪽 외형 지정 + 기타 보상 2칸",
+        "note": "일본 원문에 실제 계산 사례",
+        "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html"
+      }
+    ],
+    "farmingExclusions": [
+      "테오+라잔: 정상 생성되는 2두 길드퀘스트라는 근거가 없어 추천 조합에서 제외.",
+      "2두 공통 보상칸을 두 단일퀘 보상칸 합으로 계산하지 않음.",
+      "몬스터별 기타 보상은 각각 1칸이며, 보상 결과가 ×2면 하나의 칸에서 2개 획득.",
+      "보상칸·봉인 확률이 시간당 효율 순위를 보장하지 않음."
     ]
   }
 }

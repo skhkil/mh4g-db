@@ -1,4 +1,4 @@
-const DATA_VERSION = "0.7.7-monster-filter1";
+const DATA_VERSION = "0.7.7-item-acquisition1";
 
 const FULL_FILES = {
   skills:"./data/skills.json",
