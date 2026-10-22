@@ -48,6 +48,8 @@
         </div>
         <button data-route="armor-other" class="nav-main">🧥 기타방어구</button>
 
+        <button data-page="charm-guide" class="nav-main">◇ 호석</button>
+
         <div class="nav-group">
           <button class="nav-main nav-with-chevron nav-group-toggle" data-submenu="decoSubNav"><span>◆ 장신구</span><span class="nav-chevron">⌄</span></button>
           <div id="decoSubNav" class="nav-submenu">
@@ -328,6 +330,19 @@
           <div id="relicEquipmentSources" class="relic-source-list"></div>
         </section>
         <div id="relicEquipmentContent"></div>
+      </section>
+
+      <section id="page-charm-guide" class="page">
+        <div class="toolbar">
+          <input id="charmGuideSearch" class="search-input" placeholder="스킬 검색 (예: 장인, 회피성능, 약점특효)" aria-label="호석 스킬 검색" />
+          <select id="charmGuideFamily" class="toolbar-select" aria-label="호석 종류"><option value="all">전체 호석 종류</option></select>
+          <select id="charmGuideSlots" class="toolbar-select" aria-label="최대 슬롯"><option value="all">전체 슬롯</option><option value="2">최대 2슬롯</option><option value="3">최대 3슬롯</option></select>
+        </div>
+        <p class="muted">스킬별 1번/2번 호석 포인트 범위와 종류별 최대 슬롯을 조회합니다. 최대 슬롯과 스킬 최대치가 동시에 생성된다는 뜻은 아닙니다. 아래 범위는 확인된 항목만 수록했습니다.</p>
+        <div id="charmGuideFamilies" class="panel table-panel"></div>
+        <div id="charmGuideCount" class="muted result-info"></div>
+        <div class="panel table-panel"><div id="charmGuideResults"></div></div>
+        <p class="muted">자료: <a href="https://game-cap.com/mh4g/data/omamori.html" target="_blank" rel="noopener noreferrer">MH4G 호석 스킬값</a>, <a href="https://w.atwiki.jp/3dsmh4g/pages/109.html" target="_blank" rel="noopener noreferrer">MH4G@wiki 호석 목록</a>. 자동조합과 수동 호석 등록에는 영향을 주지 않습니다.</p>
       </section>
 
       <section id="page-decoration" class="page">

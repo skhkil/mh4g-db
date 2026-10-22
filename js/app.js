@@ -2505,6 +2505,31 @@ async function ensureFullData(keys){
   if(missing.includes("questReferenceIndex")||missing.includes("monsterSummary"))populateQuestAdvancedFilters();
   return true;
 }
+
+let charmGuideData=null;
+async function renderCharmGuide(){
+  const target=$("#charmGuideResults");if(!target)return;
+  if(!charmGuideData){try{const resp=await fetch("./data/charm_guide.json");if(!resp.ok)throw Error(resp.status);charmGuideData=await resp.json()}catch(e){target.textContent="호석 DB를 읽을 수 없습니다.";return}}
+  const fam=charmGuideData.families;
+  const familySelect=$("#charmGuideFamily");
+  if(familySelect.options.length===1)fam.forEach(f=>familySelect.add(new Option(f.name,f.id)));
+  const q=$("#charmGuideSearch").value.trim().toLowerCase(), selected=familySelect.value, slots=$("#charmGuideSlots").value;
+  const shown=fam.filter(f=>(selected==="all"||selected===f.id)&&(slots==="all"||f.slots===Number(slots)));
+  const familyRows=shown.map(f=>`<tr><td><strong>${esc(f.name)}</strong></td><td>${esc(f.rarity)}</td><td>${f.slots}슬롯</td><td>${esc(f.route)}</td></tr>`);
+  renderTable("#charmGuideFamilies",["부적 계열","레어도","최대 슬롯","주요 입수처"],familyRows);
+  const rows=[];
+  for(const [name,values] of Object.entries(charmGuideData.skills)){
+    if(q&&!name.toLowerCase().includes(q))continue;
+    for(let i=0;i<fam.length;i++){
+      if(!shown.some(f=>f.id===fam[i].id))continue;
+      const x=values[i];if(!x||(!x[0]&&!x[1]))continue;
+      rows.push(`<tr><td><strong>${esc(name)}</strong></td><td>${esc(fam[i].name)}</td><td>${esc(x[0]||"불가")}</td><td>${esc(x[1]||"불가")}</td><td>${fam[i].slots}</td></tr>`);
+    }
+  }
+  $("#charmGuideCount").textContent=`확인된 스킬 ${Object.keys(charmGuideData.skills).length}종 · 검색 결과 ${rows.length}개 (전체 스킬 DB 확장 예정)`;
+  renderTable("#charmGuideResults",["스킬","호석 계열","1번 스킬 범위","2번 스킬 범위","최대 슬롯"],rows);
+}
+
 function renderPageData(page){
   if(page==="source")renderSourcePage();
   else if(page==="recommend")renderRecommendedLoadouts();
@@ -2516,6 +2541,7 @@ function renderPageData(page){
   else if(page==="relic-equipment")renderRelicEquipment();
   else if(page==="melody")renderMelodyTable();
   else if(page==="decoration")renderDecoTable();
+  else if(page==="charm-guide")void renderCharmGuide();
   else if(page==="skill")renderSkillTable();
   else if(page==="meal")renderMealGrid();
   else if(page==="monster")renderMonster();
@@ -2529,7 +2555,7 @@ async function openPage(page){
   $$('.nav-main[data-page]').forEach(x=>x.classList.toggle('active',x.dataset.page===page&&(!x.dataset.sourceView||x.dataset.sourceView===sourceView)));
   $$('.page').forEach(p=>p.classList.remove('active'));
   const section=$(`#page-${page}`); if(section)section.classList.add('active');
-  const titles={simulator:["스킬 시뮬레이터","방어구 + 호석 + 장식주 조합을 계산합니다."],recommend:["추천 장비","무기종·진행도별 장비 구성을 확인합니다."],planner:["즐겨찾기 · 제작","저장한 장비·퀘스트와 제작 소재 체크리스트를 관리합니다."],armor:["방어구 상세","타입·등급·부위 조건으로 방어구를 조회합니다."],weapon:["무기 DB","무기 종류·파생·예리도와 제작 정보를 조회합니다."],decoration:[decoView==="slot"?"장신구 · 소켓별":"장신구 · 종류별","슬롯·스킬 포인트·생산소재를 조회합니다."],skill:["스킬 DB","스킬 계통과 발동 조건·효과를 조회합니다."],item:["아이템 DB","아이템 입수방법과 효과를 조회합니다."],data:["데이터 관리","실제 JSON 데이터 상태와 업데이트 방법을 확인합니다."]};
+  const titles={simulator:["스킬 시뮬레이터","방어구 + 호석 + 장식주 조합을 계산합니다."],recommend:["추천 장비","무기종·진행도별 장비 구성을 확인합니다."],planner:["즐겨찾기 · 제작","저장한 장비·퀘스트와 제작 소재 체크리스트를 관리합니다."],armor:["방어구 상세","타입·등급·부위 조건으로 방어구를 조회합니다."],weapon:["무기 DB","무기 종류·파생·예리도와 제작 정보를 조회합니다."],"charm-guide":["호석","입수처별 호석 스킬 범위와 최대 슬롯을 검색합니다."],decoration:[decoView==="slot"?"장신구 · 소켓별":"장신구 · 종류별","슬롯·스킬 포인트·생산소재를 조회합니다."],skill:["스킬 DB","스킬 계통과 발동 조건·효과를 조회합니다."],item:["아이템 DB","아이템 입수방법과 효과를 조회합니다."],data:["데이터 관리","실제 JSON 데이터 상태와 업데이트 방법을 확인합니다."]};
   const dynamic=pageTitleForState(page);
   const title=dynamic||titles[page]||["MH4G DB",""];
   if($("#pageTitle"))$("#pageTitle").textContent=title[0];
@@ -2800,6 +2826,7 @@ function bind(){
   $("#weaponSearch").oninput=renderWeaponTrees;$("#weaponTypeFilter").onchange=()=>{renderWeaponTreeFilter();renderWeaponTrees()};$("#weaponTreeFilter").onchange=renderWeaponTrees;$("#weaponElementFilter").onchange=renderWeaponTrees;$("#weaponSort").onchange=renderWeaponTrees;
   $("#weaponSummarySearch").oninput=renderWeaponSummary;$("#weaponSummaryType").onchange=renderWeaponSummary;
   $("#melodySearch").oninput=renderMelodyTable;
+  $("#charmGuideSearch").oninput=()=>void renderCharmGuide();$("#charmGuideFamily").onchange=()=>void renderCharmGuide();$("#charmGuideSlots").onchange=()=>void renderCharmGuide();
   $("#decoSearch").oninput=renderDecoTable;$("#decoRankFilter").onchange=renderDecoTable;$("#decoSlotFilter").onchange=renderDecoTable;$("#decoCategoryFilter").onchange=renderDecoTable;$("#skillSearch").oninput=renderSkillTable;$("#skillCategoryFilter").onchange=renderSkillTable;$("#skillTypeFilter").onchange=renderSkillTable;
   $("#mealSearch").oninput=renderMealGrid;$("#mealIngredientFilter").onchange=renderMealGrid;
   $("#monsterSearch").oninput=()=>{if($("#monsterSelect").value!=="all")$("#monsterSelect").value="all";renderMonster()};$("#monsterSelect").onchange=()=>{monsterView="basic";$("#monsterSearch").value="";renderMonster()};$("#monsterElementFilter").onchange=()=>{if($("#monsterSelect").value!=="all")$("#monsterSelect").value="all";renderMonster()};$("#monsterAilmentFilter").onchange=()=>{if($("#monsterSelect").value!=="all")$("#monsterSelect").value="all";renderMonster()};$("#monsterRankFilter").onchange=renderMonster;
