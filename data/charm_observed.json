@@ -1,0 +1,576 @@
+{
+  "records": [
+    {
+      "family": "각인된 부적 (현자/기적)",
+      "skill1": "도공",
+      "value1": 4,
+      "skill2": "예리도",
+      "value2": 5,
+      "slots": 3,
+      "source": "https://w.atwiki.jp/airu_ob/pages/460.html",
+      "evidence": "MH4G 플레이어 실제 입수 기록 (자기 보고)"
+    },
+    {
+      "family": "각인된 부적 (현자/기적)",
+      "skill1": "도공",
+      "value1": 4,
+      "skill2": "근성",
+      "value2": 2,
+      "slots": 3,
+      "source": "https://w.atwiki.jp/airu_ob/pages/460.html",
+      "evidence": "MH4G 플레이어 실제 입수 기록 (자기 보고)"
+    },
+    {
+      "family": "각인된 부적 (현자/기적)",
+      "skill1": "도공",
+      "value1": 4,
+      "skill2": "특수공격",
+      "value2": 4,
+      "slots": 2,
+      "source": "https://w.atwiki.jp/airu_ob/pages/460.html",
+      "evidence": "MH4G 플레이어 실제 입수 기록 (자기 보고)"
+    },
+    {
+      "family": "각인된 부적 (현자/기적)",
+      "skill1": "도공",
+      "value1": 4,
+      "skill2": "포술",
+      "value2": 12,
+      "slots": 0,
+      "source": "https://w.atwiki.jp/airu_ob/pages/460.html",
+      "evidence": "MH4G 플레이어 실제 입수 기록 (자기 보고)"
+    },
+    {
+      "family": "각인된 부적 (현자/기적)",
+      "skill1": "도공",
+      "value1": 3,
+      "skill2": "회피성능",
+      "value2": 7,
+      "slots": 1,
+      "source": "https://w.atwiki.jp/airu_ob/pages/460.html",
+      "evidence": "MH4G 플레이어 실제 입수 기록 (자기 보고)"
+    },
+    {
+      "family": "각인된 부적 (현자/기적)",
+      "skill1": "도공",
+      "value1": 2,
+      "skill2": "회피성능",
+      "value2": 8,
+      "slots": 0,
+      "source": "https://w.atwiki.jp/airu_ob/pages/460.html",
+      "evidence": "MH4G 플레이어 실제 입수 기록 (자기 보고)"
+    },
+    {
+      "family": "각인된 부적 (현자/기적)",
+      "skill1": "사수",
+      "value1": 3,
+      "skill2": "회피성능",
+      "value2": 4,
+      "slots": 3,
+      "source": "https://w.atwiki.jp/airu_ob/pages/460.html",
+      "evidence": "MH4G 플레이어 실제 입수 기록 (자기 보고)"
+    },
+    {
+      "family": "각인된 부적 (현자/기적)",
+      "skill1": "사수",
+      "value1": 2,
+      "skill2": "달인",
+      "value2": 12,
+      "slots": 0,
+      "source": "https://w.atwiki.jp/airu_ob/pages/460.html",
+      "evidence": "MH4G 플레이어 실제 입수 기록 (자기 보고)"
+    },
+    {
+      "family": "각인된 부적 (현자/기적)",
+      "skill1": "강격",
+      "value1": 4,
+      "skill2": "납도",
+      "value2": 2,
+      "slots": 3,
+      "source": "https://w.atwiki.jp/airu_ob/pages/460.html",
+      "evidence": "MH4G 플레이어 실제 입수 기록 (자기 보고)"
+    },
+    {
+      "family": "각인된 부적 (현자/기적)",
+      "skill1": "강격",
+      "value1": 4,
+      "skill2": "달인",
+      "value2": 9,
+      "slots": 0,
+      "source": "https://w.atwiki.jp/airu_ob/pages/460.html",
+      "evidence": "MH4G 플레이어 실제 입수 기록 (자기 보고)"
+    },
+    {
+      "family": "각인된 부적 (현자/기적)",
+      "skill1": "강격",
+      "value1": 3,
+      "skill2": "관통탄강화",
+      "value2": 6,
+      "slots": 3,
+      "source": "https://w.atwiki.jp/airu_ob/pages/460.html",
+      "evidence": "MH4G 플레이어 실제 입수 기록 (자기 보고)"
+    },
+    {
+      "family": "각인된 부적 (현자/기적)",
+      "skill1": "강격",
+      "value1": 2,
+      "skill2": "공격",
+      "value2": 11,
+      "slots": 1,
+      "source": "https://w.atwiki.jp/airu_ob/pages/460.html",
+      "evidence": "MH4G 플레이어 실제 입수 기록 (자기 보고)"
+    },
+    {
+      "family": "각인된 부적 (현자/기적)",
+      "skill1": "방패술",
+      "value1": 3,
+      "skill2": "산탄강화",
+      "value2": 8,
+      "slots": 3,
+      "source": "https://w.atwiki.jp/airu_ob/pages/460.html",
+      "evidence": "MH4G 플레이어 실제 입수 기록 (자기 보고)"
+    },
+    {
+      "family": "각인된 부적 (현자/기적)",
+      "skill1": "결벽",
+      "value1": 4,
+      "skill2": "참술",
+      "value2": 1,
+      "slots": 3,
+      "source": "https://w.atwiki.jp/airu_ob/pages/460.html",
+      "evidence": "MH4G 플레이어 실제 입수 기록 (자기 보고)"
+    },
+    {
+      "family": "각인된 부적 (현자/기적)",
+      "skill1": "결벽",
+      "value1": 3,
+      "skill2": "달인",
+      "value2": 13,
+      "slots": 0,
+      "source": "https://w.atwiki.jp/airu_ob/pages/460.html",
+      "evidence": "MH4G 플레이어 실제 입수 기록 (자기 보고)"
+    },
+    {
+      "family": "각인된 부적 (현자/기적)",
+      "skill1": "결벽",
+      "value1": 2,
+      "skill2": "공격",
+      "value2": 14,
+      "slots": 1,
+      "source": "https://w.atwiki.jp/airu_ob/pages/460.html",
+      "evidence": "MH4G 플레이어 실제 입수 기록 (자기 보고)"
+    },
+    {
+      "family": "각인된 부적 (현자/기적)",
+      "skill1": "강욕",
+      "value1": 3,
+      "skill2": "달인",
+      "value2": 14,
+      "slots": 3,
+      "source": "https://w.atwiki.jp/airu_ob/pages/460.html",
+      "evidence": "MH4G 플레이어 실제 입수 기록 (자기 보고)"
+    },
+    {
+      "family": "각인된 부적 (현자/기적)",
+      "skill1": "속성해방",
+      "value1": 6,
+      "skill2": "발도회심",
+      "value2": 5,
+      "slots": 0,
+      "source": "https://w.atwiki.jp/airu_ob/pages/460.html",
+      "evidence": "MH4G 플레이어 실제 입수 기록 (자기 보고)"
+    },
+    {
+      "family": "각인된 부적 (현자/기적)",
+      "skill1": "속성해방",
+      "value1": 6,
+      "skill2": "달인",
+      "value2": 8,
+      "slots": 2,
+      "source": "https://w.atwiki.jp/airu_ob/pages/460.html",
+      "evidence": "MH4G 플레이어 실제 입수 기록 (자기 보고)"
+    },
+    {
+      "family": "각인된 부적 (현자/기적)",
+      "skill1": "속성해방",
+      "value1": 5,
+      "skill2": "특수회심",
+      "value2": 2,
+      "slots": 3,
+      "source": "https://w.atwiki.jp/airu_ob/pages/460.html",
+      "evidence": "MH4G 플레이어 실제 입수 기록 (자기 보고)"
+    },
+    {
+      "family": "각인된 부적 (현자/기적)",
+      "skill1": "속성해방",
+      "value1": 5,
+      "skill2": "달인",
+      "value2": 12,
+      "slots": 0,
+      "source": "https://w.atwiki.jp/airu_ob/pages/460.html",
+      "evidence": "MH4G 플레이어 실제 입수 기록 (자기 보고)"
+    },
+    {
+      "family": "각인된 부적 (현자/기적)",
+      "skill1": "속성해방",
+      "value1": 5,
+      "skill2": "특수공격",
+      "value2": 3,
+      "slots": 3,
+      "source": "https://w.atwiki.jp/airu_ob/pages/460.html",
+      "evidence": "MH4G 플레이어 실제 입수 기록 (자기 보고)"
+    },
+    {
+      "family": "각인된 부적 (현자/기적)",
+      "skill1": "속성해방",
+      "value1": 5,
+      "skill2": "예리도",
+      "value2": 5,
+      "slots": 2,
+      "source": "https://w.atwiki.jp/airu_ob/pages/460.html",
+      "evidence": "MH4G 플레이어 실제 입수 기록 (자기 보고)"
+    },
+    {
+      "family": "각인된 부적 (현자/기적)",
+      "skill1": "속성해방",
+      "value1": 4,
+      "skill2": "숫돌사용고속화",
+      "value2": 7,
+      "slots": 3,
+      "source": "https://w.atwiki.jp/airu_ob/pages/460.html",
+      "evidence": "MH4G 플레이어 실제 입수 기록 (자기 보고)"
+    },
+    {
+      "family": "각인된 부적 (현자/기적)",
+      "skill1": "속성해방",
+      "value1": 4,
+      "skill2": "발도회심",
+      "value2": 4,
+      "slots": 3,
+      "source": "https://w.atwiki.jp/airu_ob/pages/460.html",
+      "evidence": "MH4G 플레이어 실제 입수 기록 (자기 보고)"
+    },
+    {
+      "family": "각인된 부적 (현자/기적)",
+      "skill1": "검술",
+      "value1": 6,
+      "skill2": "폭탄강화",
+      "value2": 8,
+      "slots": 2,
+      "source": "https://w.atwiki.jp/airu_ob/pages/460.html",
+      "evidence": "MH4G 플레이어 실제 입수 기록 (자기 보고)"
+    },
+    {
+      "family": "각인된 부적 (현자/기적)",
+      "skill1": "검술",
+      "value1": 6,
+      "skill2": "집중",
+      "value2": 1,
+      "slots": 3,
+      "source": "https://w.atwiki.jp/airu_ob/pages/460.html",
+      "evidence": "MH4G 플레이어 실제 입수 기록 (자기 보고)"
+    },
+    {
+      "family": "각인된 부적 (현자/기적)",
+      "skill1": "장인",
+      "value1": 6,
+      "skill2": "가호",
+      "value2": 2,
+      "slots": 3,
+      "source": "https://w.atwiki.jp/airu_ob/pages/460.html",
+      "evidence": "MH4G 플레이어 실제 입수 기록 (자기 보고)"
+    },
+    {
+      "family": "각인된 부적 (현자/기적)",
+      "skill1": "장인",
+      "value1": 6,
+      "skill2": "공격",
+      "value2": 12,
+      "slots": 2,
+      "source": "https://w.atwiki.jp/airu_ob/pages/460.html",
+      "evidence": "MH4G 플레이어 실제 입수 기록 (자기 보고)"
+    },
+    {
+      "family": "각인된 부적 (현자/기적)",
+      "skill1": "장인",
+      "value1": 6,
+      "skill2": "청각보호",
+      "value2": 1,
+      "slots": 2,
+      "source": "https://w.atwiki.jp/airu_ob/pages/460.html",
+      "evidence": "MH4G 플레이어 실제 입수 기록 (자기 보고)"
+    },
+    {
+      "family": "각인된 부적 (현자/기적)",
+      "skill1": "장인",
+      "value1": 6,
+      "skill2": "회피성능",
+      "value2": 6,
+      "slots": 2,
+      "source": "https://w.atwiki.jp/airu_ob/pages/460.html",
+      "evidence": "MH4G 플레이어 실제 입수 기록 (자기 보고)"
+    },
+    {
+      "family": "각인된 부적 (현자/기적)",
+      "skill1": "반동",
+      "value1": 6,
+      "skill2": "공격",
+      "value2": 12,
+      "slots": 3,
+      "source": "https://w.atwiki.jp/airu_ob/pages/460.html",
+      "evidence": "MH4G 플레이어 실제 입수 기록 (자기 보고)"
+    },
+    {
+      "family": "각인된 부적 (현자/기적)",
+      "skill1": "반동",
+      "value1": 6,
+      "skill2": "통상탄강화",
+      "value2": 7,
+      "slots": 0,
+      "source": "https://w.atwiki.jp/airu_ob/pages/460.html",
+      "evidence": "MH4G 플레이어 실제 입수 기록 (자기 보고)"
+    },
+    {
+      "family": "각인된 부적 (현자/기적)",
+      "skill1": "투혼",
+      "value1": 3,
+      "skill2": "공격",
+      "value2": 14,
+      "slots": 3,
+      "source": "https://w.atwiki.jp/airu_ob/pages/460.html",
+      "evidence": "MH4G 플레이어 실제 입수 기록 (자기 보고)"
+    },
+    {
+      "family": "각인된 부적 (현자/기적)",
+      "skill1": "투혼",
+      "value1": 3,
+      "skill2": "특수회심",
+      "value2": 5,
+      "slots": 3,
+      "source": "https://w.atwiki.jp/airu_ob/pages/460.html",
+      "evidence": "MH4G 플레이어 실제 입수 기록 (자기 보고)"
+    },
+    {
+      "family": "각인된 부적 (현자/기적)",
+      "skill1": "투혼",
+      "value1": 3,
+      "skill2": "특수회심",
+      "value2": 7,
+      "slots": 2,
+      "source": "https://w.atwiki.jp/airu_ob/pages/460.html",
+      "evidence": "MH4G 플레이어 실제 입수 기록 (자기 보고)"
+    },
+    {
+      "family": "각인된 부적 (현자/기적)",
+      "skill1": "투혼",
+      "value1": 2,
+      "skill2": "집중",
+      "value2": 5,
+      "slots": 2,
+      "source": "https://w.atwiki.jp/airu_ob/pages/460.html",
+      "evidence": "MH4G 플레이어 실제 입수 기록 (자기 보고)"
+    },
+    {
+      "family": "각인된 부적 (현자/기적)",
+      "skill1": "통격",
+      "value1": 6,
+      "skill2": "",
+      "value2": null,
+      "slots": 3,
+      "source": "https://w.atwiki.jp/airu_ob/pages/460.html",
+      "evidence": "MH4G 플레이어 실제 입수 기록 (자기 보고)"
+    },
+    {
+      "family": "각인된 부적 (현자/기적)",
+      "skill1": "통격",
+      "value1": 6,
+      "skill2": "발도회심",
+      "value2": 7,
+      "slots": 0,
+      "source": "https://w.atwiki.jp/airu_ob/pages/460.html",
+      "evidence": "MH4G 플레이어 실제 입수 기록 (자기 보고)"
+    },
+    {
+      "family": "각인된 부적 (현자/기적)",
+      "skill1": "통격",
+      "value1": 6,
+      "skill2": "청각보호",
+      "value2": 5,
+      "slots": 0,
+      "source": "https://w.atwiki.jp/airu_ob/pages/460.html",
+      "evidence": "MH4G 플레이어 실제 입수 기록 (자기 보고)"
+    },
+    {
+      "family": "각인된 부적 (현자/기적)",
+      "skill1": "청각보호",
+      "value1": 8,
+      "skill2": "",
+      "value2": null,
+      "slots": 2,
+      "source": "https://w.atwiki.jp/airu_ob/pages/460.html",
+      "evidence": "MH4G 플레이어 실제 입수 기록 (자기 보고)"
+    },
+    {
+      "family": "각인된 부적 (현자/기적)",
+      "skill1": "청각보호",
+      "value1": 8,
+      "skill2": "달인",
+      "value2": 12,
+      "slots": 0,
+      "source": "https://w.atwiki.jp/airu_ob/pages/460.html",
+      "evidence": "MH4G 플레이어 실제 입수 기록 (자기 보고)"
+    },
+    {
+      "family": "각인된 부적 (현자/기적)",
+      "skill1": "청각보호",
+      "value1": 7,
+      "skill2": "",
+      "value2": null,
+      "slots": 3,
+      "source": "https://w.atwiki.jp/airu_ob/pages/460.html",
+      "evidence": "MH4G 플레이어 실제 입수 기록 (자기 보고)"
+    },
+    {
+      "family": "각인된 부적 (현자/기적)",
+      "skill1": "청각보호",
+      "value1": 7,
+      "skill2": "본기",
+      "value2": 4,
+      "slots": 2,
+      "source": "https://w.atwiki.jp/airu_ob/pages/460.html",
+      "evidence": "MH4G 플레이어 실제 입수 기록 (자기 보고)"
+    },
+    {
+      "family": "각인된 부적 (현자/기적)",
+      "skill1": "청각보호",
+      "value1": 7,
+      "skill2": "예리도",
+      "value2": 4,
+      "slots": 1,
+      "source": "https://w.atwiki.jp/airu_ob/pages/460.html",
+      "evidence": "MH4G 플레이어 실제 입수 기록 (자기 보고)"
+    },
+    {
+      "family": "각인된 부적 (현자/기적)",
+      "skill1": "예리도",
+      "value1": 8,
+      "skill2": "집중",
+      "value2": 1,
+      "slots": 3,
+      "source": "https://w.atwiki.jp/airu_ob/pages/460.html",
+      "evidence": "MH4G 플레이어 실제 입수 기록 (자기 보고)"
+    },
+    {
+      "family": "각인된 부적 (현자/기적)",
+      "skill1": "예리도",
+      "value1": 6,
+      "skill2": "공격",
+      "value2": 14,
+      "slots": 0,
+      "source": "https://w.atwiki.jp/airu_ob/pages/460.html",
+      "evidence": "MH4G 플레이어 실제 입수 기록 (자기 보고)"
+    },
+    {
+      "family": "각인된 부적 (현자/기적)",
+      "skill1": "집중",
+      "value1": 6,
+      "skill2": "",
+      "value2": null,
+      "slots": 2,
+      "source": "https://w.atwiki.jp/airu_ob/pages/460.html",
+      "evidence": "MH4G 플레이어 실제 입수 기록 (자기 보고)"
+    },
+    {
+      "family": "각인된 부적 (현자/기적)",
+      "skill1": "집중",
+      "value1": 6,
+      "skill2": "발도회심",
+      "value2": 7,
+      "slots": 0,
+      "source": "https://w.atwiki.jp/airu_ob/pages/460.html",
+      "evidence": "MH4G 플레이어 실제 입수 기록 (자기 보고)"
+    },
+    {
+      "family": "각인된 부적 (현자/기적)",
+      "skill1": "근성",
+      "value1": 5,
+      "skill2": "관통탄강화",
+      "value2": 6,
+      "slots": 3,
+      "source": "https://w.atwiki.jp/airu_ob/pages/460.html",
+      "evidence": "MH4G 플레이어 실제 입수 기록 (자기 보고)"
+    },
+    {
+      "family": "각인된 부적 (현자/기적)",
+      "skill1": "근성",
+      "value1": 3,
+      "skill2": "공격",
+      "value2": 11,
+      "slots": 3,
+      "source": "https://w.atwiki.jp/airu_ob/pages/460.html",
+      "evidence": "MH4G 플레이어 실제 입수 기록 (자기 보고)"
+    },
+    {
+      "family": "각인된 부적 (현자/기적)",
+      "skill1": "장전수",
+      "value1": 3,
+      "skill2": "회피성능",
+      "value2": 9,
+      "slots": 0,
+      "source": "https://w.atwiki.jp/airu_ob/pages/460.html",
+      "evidence": "MH4G 플레이어 실제 입수 기록 (자기 보고)"
+    },
+    {
+      "family": "풍화된 부적 (하늘)",
+      "skill1": "장인",
+      "value1": 5,
+      "skill2": "용속성공격",
+      "value2": 14,
+      "slots": 0,
+      "source": "https://w.atwiki.jp/airu_ob/pages/460.html",
+      "evidence": "MH4G 플레이어 실제 입수 기록 (자기 보고)"
+    },
+    {
+      "family": "풍화된 부적 (하늘)",
+      "skill1": "장전속도",
+      "value1": 7,
+      "skill2": "",
+      "value2": null,
+      "slots": 3,
+      "source": "https://w.atwiki.jp/airu_ob/pages/460.html",
+      "evidence": "MH4G 플레이어 실제 입수 기록 (자기 보고)"
+    },
+    {
+      "family": "풍화된 부적 (하늘)",
+      "skill1": "속사",
+      "value1": 5,
+      "skill2": "발도감기",
+      "value2": -1,
+      "slots": 3,
+      "source": "https://w.atwiki.jp/airu_ob/pages/460.html",
+      "evidence": "MH4G 플레이어 실제 입수 기록 (자기 보고)"
+    },
+    {
+      "family": "풍화된 부적 (하늘)",
+      "skill1": "청각보호",
+      "value1": 6,
+      "skill2": "포술",
+      "value2": 13,
+      "slots": 2,
+      "source": "https://w.atwiki.jp/airu_ob/pages/460.html",
+      "evidence": "MH4G 플레이어 실제 입수 기록 (자기 보고)"
+    },
+    {
+      "family": "풍화된 부적 (하늘)",
+      "skill1": "특수공격",
+      "value1": 7,
+      "skill2": "본기",
+      "value2": 5,
+      "slots": 3,
+      "source": "https://w.atwiki.jp/airu_ob/pages/460.html",
+      "evidence": "MH4G 플레이어 실제 입수 기록 (자기 보고)"
+    }
+  ],
+  "description": "MH4G 유저 실물 입수 기록. 전체 가능한 조합의 완전목록이 아님",
+  "source": "https://w.atwiki.jp/airu_ob/pages/460.html"
+}

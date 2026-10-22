@@ -2506,28 +2506,19 @@ async function ensureFullData(keys){
   return true;
 }
 
-let charmGuideData=null;
+let charmObservedData=null;
 async function renderCharmGuide(){
   const target=$("#charmGuideResults");if(!target)return;
-  if(!charmGuideData){try{const resp=await fetch("./data/charm_guide.json");if(!resp.ok)throw Error(resp.status);charmGuideData=await resp.json()}catch(e){target.textContent="호석 DB를 읽을 수 없습니다.";return}}
-  const fam=charmGuideData.families;
-  const familySelect=$("#charmGuideFamily");
-  if(familySelect.options.length===1)fam.forEach(f=>familySelect.add(new Option(f.name,f.id)));
-  const q=$("#charmGuideSearch").value.trim().toLowerCase(), selected=familySelect.value, slots=$("#charmGuideSlots").value;
-  const shown=fam.filter(f=>(selected==="all"||selected===f.id)&&(slots==="all"||f.slots===Number(slots)));
-  const familyRows=shown.map(f=>`<tr><td><strong>${esc(f.name)}</strong></td><td>${esc(f.rarity)}</td><td>${f.slots}슬롯</td><td>${esc(f.route)}</td></tr>`);
-  renderTable("#charmGuideFamilies",["부적 계열","레어도","최대 슬롯","주요 입수처"],familyRows);
-  const rows=[];
-  for(const [name,values] of Object.entries(charmGuideData.skills)){
-    if(q&&!name.toLowerCase().includes(q))continue;
-    for(let i=0;i<fam.length;i++){
-      if(!shown.some(f=>f.id===fam[i].id))continue;
-      const x=values[i];if(!x||(!x[0]&&!x[1]))continue;
-      rows.push(`<tr><td><strong>${esc(name)}</strong></td><td>${esc(fam[i].name)}</td><td>${esc(x[0]||"불가")}</td><td>${esc(x[1]||"불가")}</td><td>${fam[i].slots}</td></tr>`);
-    }
+  if(!charmObservedData){
+    try{const response=await fetch("./data/charm_observed.json");if(!response.ok)throw Error(response.status);charmObservedData=await response.json()}
+    catch(e){target.textContent="실물 호석 DB 파일을 읽지 못했습니다.";return;}
   }
-  $("#charmGuideCount").textContent=`확인된 스킬 ${Object.keys(charmGuideData.skills).length}종 · 검색 결과 ${rows.length}개 (전체 스킬 DB 확장 예정)`;
-  renderTable("#charmGuideResults",["스킬","호석 계열","1번 스킬 범위","2번 스킬 범위","최대 슬롯"],rows);
+  const words=($("#charmObservedSearch")?.value||"").toLocaleLowerCase().trim().split(/\s+/).filter(Boolean);
+  const fam=$("#charmObservedFamily")?.value||"all",slot=$("#charmObservedSlot")?.value||"all";
+  const result=charmObservedData.records.filter(r=>(fam==="all"||r.family.startsWith(fam))&&(slot==="all"||r.slots===Number(slot))&&words.every(w=>`${r.skill1} ${r.skill2}`.toLocaleLowerCase().includes(w)));
+  const rows=result.map(r=>`<tr><td>${esc(r.family)}</td><td><strong>${esc(r.skill1)} ${r.value1>0?"+":""}${r.value1}</strong></td><td>${r.skill2?`${esc(r.skill2)} ${r.value2>0?"+":""}${r.value2}`:"없음"}</td><td>${r.slots?"○".repeat(r.slots):"—"} (${r.slots})</td><td>실제 입수 보고</td></tr>`);
+  $("#charmGuideCount").textContent=`실물 보고 ${charmObservedData.records.length}건 중 ${result.length}건 검색 · 미등재 조합은 불가능하다는 뜻이 아닙니다.`;
+  renderTable("#charmGuideResults",["호석 계열","첫 번째 스킬","두 번째 스킬","슬롯","근거"],rows);
 }
 
 function renderPageData(page){
@@ -2826,7 +2817,8 @@ function bind(){
   $("#weaponSearch").oninput=renderWeaponTrees;$("#weaponTypeFilter").onchange=()=>{renderWeaponTreeFilter();renderWeaponTrees()};$("#weaponTreeFilter").onchange=renderWeaponTrees;$("#weaponElementFilter").onchange=renderWeaponTrees;$("#weaponSort").onchange=renderWeaponTrees;
   $("#weaponSummarySearch").oninput=renderWeaponSummary;$("#weaponSummaryType").onchange=renderWeaponSummary;
   $("#melodySearch").oninput=renderMelodyTable;
-  $("#charmGuideSearch").oninput=()=>void renderCharmGuide();$("#charmGuideFamily").onchange=()=>void renderCharmGuide();$("#charmGuideSlots").onchange=()=>void renderCharmGuide();
+  ["charmObservedSearch","charmObservedFamily","charmObservedSlot"].forEach(id=>{$("#"+id).addEventListener("input",()=>void renderCharmGuide());});
+
   $("#decoSearch").oninput=renderDecoTable;$("#decoRankFilter").onchange=renderDecoTable;$("#decoSlotFilter").onchange=renderDecoTable;$("#decoCategoryFilter").onchange=renderDecoTable;$("#skillSearch").oninput=renderSkillTable;$("#skillCategoryFilter").onchange=renderSkillTable;$("#skillTypeFilter").onchange=renderSkillTable;
   $("#mealSearch").oninput=renderMealGrid;$("#mealIngredientFilter").onchange=renderMealGrid;
   $("#monsterSearch").oninput=()=>{if($("#monsterSelect").value!=="all")$("#monsterSelect").value="all";renderMonster()};$("#monsterSelect").onchange=()=>{monsterView="basic";$("#monsterSearch").value="";renderMonster()};$("#monsterElementFilter").onchange=()=>{if($("#monsterSelect").value!=="all")$("#monsterSelect").value="all";renderMonster()};$("#monsterAilmentFilter").onchange=()=>{if($("#monsterSelect").value!=="all")$("#monsterSelect").value="all";renderMonster()};$("#monsterRankFilter").onchange=renderMonster;

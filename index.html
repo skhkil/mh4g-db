@@ -333,16 +333,18 @@
       </section>
 
       <section id="page-charm-guide" class="page">
-        <div class="toolbar">
-          <input id="charmGuideSearch" class="search-input" placeholder="스킬 검색 (예: 장인, 회피성능, 약점특효)" aria-label="호석 스킬 검색" />
-          <select id="charmGuideFamily" class="toolbar-select" aria-label="호석 종류"><option value="all">전체 호석 종류</option></select>
-          <select id="charmGuideSlots" class="toolbar-select" aria-label="최대 슬롯"><option value="all">전체 슬롯</option><option value="2">최대 2슬롯</option><option value="3">최대 3슬롯</option></select>
+        <h3>호석 실물 조합 DB</h3>
+        <p class="muted">MH4G 플레이어가 직접 입수했다고 기록한 <strong>스킬1 + 스킬2 + 슬롯</strong> 조합입니다. 존재 가능한 모든 조합을 뜻하지 않으며, 미등록 조합도 획득 가능할 수 있습니다.</p>
+        <div class="panel" style="padding:16px;margin:12px 0">
+          <div class="toolbar" style="display:flex;flex-wrap:wrap;gap:8px;align-items:center">
+            <input id="charmObservedSearch" class="search-input" type="search" placeholder="스킬명 검색 (예: 장인 회피성능)" aria-label="스킬 검색" style="min-width:220px;flex:1" />
+            <select id="charmObservedFamily" class="toolbar-select" aria-label="호석 계열"><option value="all">모든 계열</option><option value="각인된">각인된 부적</option><option value="풍화된">풍화된 부적</option></select>
+            <select id="charmObservedSlot" class="toolbar-select" aria-label="슬롯 수"><option value="all">모든 슬롯</option><option value="0">0슬롯</option><option value="1">1슬롯</option><option value="2">2슬롯</option><option value="3">3슬롯</option></select>
+          </div>
         </div>
-        <p class="muted">스킬별 1번/2번 호석 포인트 범위와 종류별 최대 슬롯을 조회합니다. 최대 슬롯과 스킬 최대치가 동시에 생성된다는 뜻은 아닙니다. 아래 범위는 확인된 항목만 수록했습니다.</p>
-        <div id="charmGuideFamilies" class="panel table-panel"></div>
         <div id="charmGuideCount" class="muted result-info"></div>
         <div class="panel table-panel"><div id="charmGuideResults"></div></div>
-        <p class="muted">자료: <a href="https://game-cap.com/mh4g/data/omamori.html" target="_blank" rel="noopener noreferrer">MH4G 호석 스킬값</a>, <a href="https://w.atwiki.jp/3dsmh4g/pages/109.html" target="_blank" rel="noopener noreferrer">MH4G@wiki 호석 목록</a>. 자동조합과 수동 호석 등록에는 영향을 주지 않습니다.</p>
+        <p class="muted">출처: <a href="https://w.atwiki.jp/airu_ob/pages/460.html" target="_blank" rel="noopener noreferrer">MH4G 플레이어 실물 호석 기록</a>. 실제 입수 보고를 전사한 자료로 전수 목록이 아닙니다. 다른 계열·스킬에 대한 데이터 확장이 필요합니다. 자동조합 및 수동 호석 저장은 변경하지 않았습니다.</p>
       </section>
 
       <section id="page-decoration" class="page">
