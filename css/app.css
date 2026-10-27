@@ -1537,3 +1537,13 @@ button{border:1px solid var(--line);background:#202b39;color:white;border-radius
 
 .manual-armor-mode{max-width:116px;min-width:96px;padding:7px;font-size:12px}
 @media(max-width:600px){.manual-armor-mode{max-width:100%;min-width:90px}}
+/* Per-piece relic armor controls: visible only in relic mode. */
+.relic-armor-inline-tools[hidden]{display:none!important}
+.relic-armor-inline-tools{display:flex;flex-wrap:wrap;align-items:center;gap:6px;min-width:0}
+.relic-armor-inline-details{position:relative;min-width:0}
+.relic-armor-inline-details>summary{list-style:none;cursor:pointer;border:1px solid var(--line,#6665);border-radius:7px;padding:7px 9px;font-size:12px;white-space:nowrap}
+.relic-armor-inline-details>summary::-webkit-details-marker{display:none}
+.relic-armor-inline-details[open]{flex-basis:100%}
+.relic-armor-inline-details[open]>summary{display:inline-block}
+.relic-armor-inline-details .relic-armor-form,.relic-armor-inline-details .owned-assets-body{padding:10px 0}
+@media(max-width:600px){.relic-armor-inline-tools{flex-basis:100%}.relic-armor-inline-details[open]{width:100%}}
