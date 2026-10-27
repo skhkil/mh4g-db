@@ -1531,3 +1531,9 @@ button{border:1px solid var(--line);background:#202b39;color:white;border-radius
 #itemTable .item-acq-warning{font-size:10px;color:#dfae70}
 #itemTable .item-acq-help{font-size:11px;line-height:1.6;padding:9px 11px;margin:0;color:var(--muted)}
 @media(max-width:600px){#itemTable .xref-group li.item-acq-entry{grid-template-columns:1fr;gap:5px}#itemTable .item-acq-info{justify-content:flex-start;text-align:left}}
+
+/* 보유 발굴방어구 입력 */
+.relic-armor-editor{min-width:0;flex:1}.relic-armor-fields{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:8px}.relic-armor-fields label{display:flex;flex-direction:column;gap:4px;font-size:12px}.relic-armor-fields input,.relic-armor-fields select{max-width:100%;min-width:0;padding:7px}.relic-armor-management .manual-equipment-main{align-items:start}.relic-armor-form{padding:10px}.relic-armor-form .muted{font-size:12px}
+
+.manual-armor-mode{max-width:116px;min-width:96px;padding:7px;font-size:12px}
+@media(max-width:600px){.manual-armor-mode{max-width:100%;min-width:90px}}

@@ -1,0 +1,18 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {calculateBuild,searchBuilds} from '../js/engine.js';
+const read=n=>JSON.parse(fs.readFileSync(new URL('../data/'+n,import.meta.url)));
+const data={armors:read('sim_armors.json'),skills:read('skills.json'),decorations:read('decorations.json')};
+const skill=data.skills.find(s=>/도공/.test(s.name));
+assert.ok(skill,'도공 skill');
+const relic={id:'owned_relic_armor_regression',name:'발굴 팔 테스트',part:'arms',hunterType:'blade',rank:'g',slots:0,defense:120,resistances:{fire:3,water:0,thunder:0,ice:0,dragon:1},skills:{[skill.id]:5},torsoUp:false,isOwnedRelicArmor:true};
+const other=['head','body','waist','legs'].map(part=>data.armors.find(a=>a.part===part&&a.hunterType==='blade'));
+assert.equal(other.length,4);
+const calc=calculateBuild({armors:[...other,relic]},data);
+assert.equal(calc.points[skill.id],other.reduce((v,a)=>v+(a.skills?.[skill.id]||0),5));
+assert.equal(calc.defense,other.reduce((v,a)=>v+a.defense,120));
+assert.equal(calc.resist.fire,other.reduce((v,a)=>v+(a.resistances?.fire||0),3));
+const base={targetActivationIds:[data.skills.find(s=>s.activations?.some(a=>a.points===10))?.activations.find(a=>a.points===10)?.id].filter(Boolean),hunterType:'blade',rank:'g',charm:{skills:{},slots:0},weaponSlots:0,allowDecorations:true,includeTorsoUp:true,limit:5,timeBudgetMs:1500};
+const output=await searchBuilds({...base,extraArmors:[relic]},data);
+assert.ok(!output.stats?.message,'automated search reports error');
+console.log(JSON.stringify({passed:true,skill:skill.id,defense:calc.defense,points:calc.points[skill.id],eligible:output.stats.eligible,finalists:output.stats.finalists}));

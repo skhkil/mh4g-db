@@ -759,7 +759,7 @@ export async function searchBuilds(options, data){
     targetActivationIds=[], hunterType="blade", rank="all",
     charm={skills:{},slots:0}, weaponSlots=0,
     allowDecorations=true, includeTorsoUp=true, limit=20,
-    preferredSkillWeights={}, onProgress=null, timeBudgetMs=null
+    preferredSkillWeights={}, onProgress=null, timeBudgetMs=null, extraArmors=[]
   } = options;
 
   const requireTorsoUp=targetActivationIds.includes("__torso_up__");
@@ -776,7 +776,7 @@ export async function searchBuilds(options, data){
   const progress=payload=>{try{if(typeof onProgress==="function")onProgress(payload)}catch{}};
   const yieldUi=()=>new Promise(r=>setTimeout(r,0));
 
-  const eligible = data.armors.filter(a=>{
+  const eligible = [...data.armors,...extraArmors].filter(a=>{
     const typeOk = hunterType==="both" || a.hunterType==="both" || a.hunterType===hunterType;
     const rankOk = progressionRankAllows(a.rank,rank);
     return typeOk && rankOk;
@@ -784,7 +784,7 @@ export async function searchBuilds(options, data){
 
   const byPart=Object.fromEntries(PARTS.map(p=>[p, eligible.filter(a=>a.part===p)
     .sort((a,b)=>armorScore(b,generationReq)-armorScore(a,generationReq)||compareArmorGenerationTie(a,b,rank))
-    .slice(0,profile.partLimit)]));
+    .slice(0,profile.partLimit).concat(eligible.filter(a=>a.part===p&&a.isOwnedRelicArmor)).filter((a,i,arr)=>arr.findIndex(b=>b.id===a.id)===i)]));
 
   if(PARTS.some(p=>byPart[p].length===0)){
     return {results:[],nearMisses:[],stats:{message:"필요한 방어구 부위 데이터가 부족합니다."}};

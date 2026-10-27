@@ -4,14 +4,14 @@
     "stats": {
       "eligible": 1613,
       "finalists": 100,
-      "checkedFinalists": 73,
+      "checkedFinalists": 100,
       "rankedPool": 4,
       "beam": 3000,
       "approximate": true,
       "targetCount": 5,
       "profile": "complex5",
-      "timedOut": true,
-      "elapsedMs": 20262
+      "timedOut": false,
+      "elapsedMs": 15868
     },
     "armors": [
       "우캄루X사쿠파케",
@@ -69,7 +69,7 @@
       "targetCount": 4,
       "profile": "complex4",
       "timedOut": false,
-      "elapsedMs": 12227
+      "elapsedMs": 7867
     },
     "armors": [
       "우캄루X사쿠파케",
