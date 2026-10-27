@@ -494,29 +494,33 @@ function renderOwnedRelicArmorList(){
   const root=$(`#ownedRelicArmorList-${part}`);if(!root)continue;
   const members=list.map((a,i)=>({a,i})).filter(x=>x.a.part===part);
   root.innerHTML=`<div class="owned-assets-body">${members.length?members.map(({a,i})=>`<div class="owned-charm-row owned-asset-apply-row" tabindex="0" role="button" data-owned-relic-armor-row="${i}"><span class="owned-item-label">${esc(relicArmorLabel(a))}</span><span class="owned-charm-actions"><button type="button" class="ghost small" data-owned-relic-armor-remove="${i}">삭제</button></span></div>`).join(""):'<div class="muted owned-empty">등록된 발굴방어구가 없습니다.</div>'}</div>`;
-  const title=$(`#ownedRelicArmorCount-${part}`);if(title)title.textContent=`보유방어구 펼치기 (${members.length})`;
+  const title=$(`#ownedRelicArmorCount-${part}`);if(title)title.textContent=`보유 방어구 (${members.length})`;
  }
 }
-function renderRelicArmorEditor(){
+function renderRelicArmorEditor(part){
+ const box=$("#ownedRelicArmorEditor");if(!box)return;
  const skillIds=new Set((data.relicWeaponDecorations||[]).filter(x=>x.relicOnly).flatMap(x=>Object.keys(x.skills||{})));
- // 발굴 고정 장식주 DB에 기재된 계열만 표시한다. 일반 장식주용 스킬 전체를 노출하지 않는다.
  const skillOptions=(data.skills||[]).filter(x=>skillIds.has(x.id)).sort((a,b)=>a.name.localeCompare(b.name,"ko")).map(x=>`<option value="${esc(x.id)}">${esc(x.name)}</option>`).join("");
- for(const part of PARTS){
-  const box=$(`#ownedRelicArmorEditor-${part}`);if(!box)continue;
-  box.innerHTML=`<div class="relic-armor-fields"><label>이름<input data-relic-field="name" type="text" placeholder="발굴 ${PART_NAMES[part]} 방어구"></label><label>방어력<input data-relic-field="defense" type="number" value="100" min="0" max="999"></label><label>고정 스킬<select data-relic-field="skill"><option value="">선택</option>${skillOptions}</select></label><label>스킬 포인트<input data-relic-field="points" type="number" value="3" min="-20" max="20"></label>${["fire","water","thunder","ice","dragon"].map((k,i)=>`<label>${["화","수","뇌","빙","용"][i]} 내성<input data-relic-field="res-${k}" type="number" value="0" min="-99" max="99"></label>`).join("")}</div><p class="muted">고정 스킬 장식주는 교체할 수 없으며, 일반 슬롯 0으로 등록됩니다.</p><button type="button" class="ghost small" data-save-relic-armor="${part}">방어구저장</button>`;
- }
- renderOwnedRelicArmorList();
+ box.innerHTML=`<div class="relic-armor-fields"><label>이름<input data-relic-field="name" type="text" placeholder="발굴 ${PART_NAMES[part]} 방어구"></label><label>방어력<input data-relic-field="defense" type="number" value="100" min="0" max="999"></label><label>고정 스킬<select data-relic-field="skill"><option value="">선택</option>${skillOptions}</select></label><label>스킬 포인트<input data-relic-field="points" type="number" value="3" min="-20" max="20"></label>${["fire","water","thunder","ice","dragon"].map((k,i)=>`<label>${["화","수","뇌","빙","용"][i]} 내성<input data-relic-field="res-${k}" type="number" value="0" min="-99" max="99"></label>`).join("")}</div><p class="muted">고정 스킬은 교체할 수 없으며, 일반 슬롯은 0으로 등록됩니다.</p><div class="relic-armor-dialog-actions"><button type="button" class="ghost small" data-close-relic-armor>취소</button><button type="button" class="primary small" data-save-relic-armor="${part}">저장</button></div>`;
 }
+function openRelicArmorDialog(part){
+ if(!PARTS.includes(part)||uiState.manualArmorModes[part]!=="relic")return;
+ const dialog=$("#relicArmorDialog");if(!dialog)return;
+ $("#relicArmorDialogTitle").textContent=`${PART_NAMES[part]} 발굴 방어구 등록`;
+ renderRelicArmorEditor(part);
+ if(typeof dialog.showModal==="function")dialog.showModal();else dialog.setAttribute("open","");
+}
+function closeRelicArmorDialog(){const dialog=$("#relicArmorDialog");if(dialog?.open){if(typeof dialog.close==="function")dialog.close();else dialog.removeAttribute("open")}}
 function saveOwnedRelicArmor(part){
  if(!PARTS.includes(part))return;
- const box=$(`#ownedRelicArmorEditor-${part}`);if(!box)return;
+ const box=$("#ownedRelicArmorEditor");if(!box)return;
  const field=name=>box.querySelector(`[data-relic-field="${name}"]`)?.value;
  const skillId=field("skill");
  if(!skillId||!skillById.has(skillId)){showRuntimeStatus("발굴 방어구 고정 스킬을 선택하세요.","info");return}
  const skills={[skillId]:Number(field("points"))||0};if(!skills[skillId]){showRuntimeStatus("스킬 포인트를 입력하세요.","info");return}
  const resistances=Object.fromEntries(["fire","water","thunder","ice","dragon"].map(k=>[k,Number(field(`res-${k}`))||0]));
  const a=normalizeRelicArmorRecord({part,name:field("name"),hunterType:"both",defense:field("defense"),slots:0,skills,resistances});
- const list=getOwnedRelicArmors();list.push(a);setOwnedRelicArmors(list);syncOwnedRelicArmorIndexes();renderManualSelectors();renderManualResult();
+ const list=getOwnedRelicArmors();list.push(a);setOwnedRelicArmors(list);syncOwnedRelicArmorIndexes();closeRelicArmorDialog();renderManualSelectors();renderManualResult();
 }
 function applyOwnedRelicArmor(index){const a=getOwnedRelicArmors()[Number(index)];if(!a)return;uiState.manualArmorModes[a.part]="relic";uiState.manual[a.part]=a.id;uiState.manualDecorations[a.part]=[];renderManualSelectors();renderManualResult()}
 function removeOwnedRelicArmor(index){const list=getOwnedRelicArmors();const removed=list.splice(Number(index),1)[0];setOwnedRelicArmors(list);if(removed&&uiState.manual[removed.part]===removed.id){uiState.manual[removed.part]="";uiState.manualDecorations[removed.part]=[]}syncOwnedRelicArmorIndexes();renderOwnedRelicArmorList();renderManualSelectors();renderManualResult()}
@@ -930,10 +934,10 @@ function renderManualSelectors(){
   const box=$("#manualEquipmentBuilder");
   box.innerHTML=
     `<div class="manual-equipment-card weapon-card"><div class="manual-equipment-main"><span class="equipment-label">무기</span><div class="manual-weapon-tools">${weaponControls}</div>${skillPointsHtml(containerSkillPoints("weapon"),"equipment-skill-points")}</div><div id="deco-editor-weapon" class="manual-deco-editor"></div></div>`+
-    PARTS.map(p=>equipmentCard(PART_NAMES[p],p,`manual-${p}`,`<select id="manual-armor-mode-${p}" class="manual-armor-mode" aria-label="${PART_NAMES[p]} 방어구 유형"><option value="crafted">제작방어구</option><option value="relic">발굴방어구</option></select><div class="relic-armor-inline-tools" id="relic-armor-tools-${p}" ${uiState.manualArmorModes[p]==="relic"?"":"hidden"}><details class="relic-armor-inline-details"><summary id="ownedRelicArmorCount-${p}">보유방어구 펼치기</summary><div id="ownedRelicArmorList-${p}"></div></details><details class="relic-armor-inline-details"><summary>방어구 등록</summary><div class="relic-armor-form" id="ownedRelicArmorEditor-${p}"></div></details></div>`)).join("")+
-    `<div class="manual-equipment-card charm-card"><div class="manual-equipment-main charm-main"><span class="equipment-label">호석</span><div class="manual-charm-inline"><span class="inline-field-label">스킬1</span><div id="charmSkill1Picker" class="search-select compact"></div><input id="charmPoint1" class="charm-point" type="number" min="-20" max="20" value="${uiState.charmPoint1}" /><span class="inline-field-label">스킬2</span><div id="charmSkill2Picker" class="search-select compact"></div><input id="charmPoint2" class="charm-point" type="number" min="-20" max="20" value="${uiState.charmPoint2}" /><span class="inline-field-label">슬롯</span><select id="charmSlots" class="charm-slot-select"><option value="0">---</option><option value="1">O--</option><option value="2">OO-</option><option value="3">OOO</option></select></div>${skillPointsHtml(containerSkillPoints("charm"),"equipment-skill-points")}<div class="owned-charm-inline"><div class="owned-charm-controls"><button type="button" class="ghost small" data-save-owned-charm>현재 호석 저장</button></div><div id="ownedCharmList" class="owned-charm-list"></div></div></div><div id="deco-editor-charm" class="manual-deco-editor"></div></div>`;
+    PARTS.map(p=>equipmentCard(PART_NAMES[p],p,`manual-${p}`,`<div class="relic-armor-controls"><select id="manual-armor-mode-${p}" class="manual-armor-mode" aria-label="${PART_NAMES[p]} 방어구 유형"><option value="crafted">제작방어구</option><option value="relic">발굴방어구</option></select><div class="relic-armor-inline-tools" id="relic-armor-tools-${p}" ${uiState.manualArmorModes[p]==="relic"?"":"hidden"}><details class="relic-armor-inline-details"><summary id="ownedRelicArmorCount-${p}">보유 방어구</summary><div class="relic-armor-dropdown" id="ownedRelicArmorList-${p}"></div></details><button type="button" class="ghost small relic-armor-add" data-open-relic-armor="${p}">등록</button></div></div>`)).join("")+
+    `<div class="manual-equipment-card charm-card"><div class="manual-equipment-main charm-main"><span class="equipment-label">호석</span><div class="manual-charm-inline"><span class="inline-field-label">스킬1</span><div id="charmSkill1Picker" class="search-select compact"></div><input id="charmPoint1" class="charm-point" type="number" min="-20" max="20" value="${uiState.charmPoint1}" /><span class="inline-field-label">스킬2</span><div id="charmSkill2Picker" class="search-select compact"></div><input id="charmPoint2" class="charm-point" type="number" min="-20" max="20" value="${uiState.charmPoint2}" /><span class="inline-field-label">슬롯</span><select id="charmSlots" class="charm-slot-select"><option value="0">---</option><option value="1">O--</option><option value="2">OO-</option><option value="3">OOO</option></select></div>${skillPointsHtml(containerSkillPoints("charm"),"equipment-skill-points")}<div class="owned-charm-inline"><div class="owned-charm-controls"><button type="button" class="ghost small" data-save-owned-charm>현재 호석 저장</button></div><div id="ownedCharmList" class="owned-charm-list"></div></div></div><div id="deco-editor-charm" class="manual-deco-editor"></div></div><dialog id="relicArmorDialog" class="relic-armor-dialog" aria-labelledby="relicArmorDialogTitle"><div class="relic-armor-dialog-head"><strong id="relicArmorDialogTitle">발굴 방어구 등록</strong><button type="button" class="ghost small" data-close-relic-armor aria-label="닫기">✕</button></div><div id="ownedRelicArmorEditor" class="relic-armor-form"></div></dialog>`;
 
-  renderRelicArmorEditor();
+  renderOwnedRelicArmorList();
   const manualModeEl=$("#manualWeaponModeFilter"),manualSlotEl=$("#manualWeaponSlotFilter");
   manualModeEl.value=relic?"relic":"crafted";
   manualSlotEl.value=String(slots);
@@ -2741,6 +2745,8 @@ function bind(){
     if(ownedRemove){e.preventDefault();e.stopPropagation();removeOwnedCharm(ownedRemove.dataset.ownedCharmRemove);return;}
     const ownedRow=e.target.closest?.('[data-owned-charm-row]');
     if(ownedRow&&!e.target.closest('button,a,input,select,summary')){e.preventDefault();applyOwnedCharm(ownedRow.dataset.ownedCharmRow);return;}
+    const armorOpen=e.target.closest?.('[data-open-relic-armor]');if(armorOpen){e.preventDefault();openRelicArmorDialog(armorOpen.dataset.openRelicArmor);return}
+    const armorClose=e.target.closest?.('[data-close-relic-armor]');if(armorClose){e.preventDefault();closeRelicArmorDialog();return}
     const armorSave=e.target.closest?.('[data-save-relic-armor]');if(armorSave){e.preventDefault();saveOwnedRelicArmor(armorSave.dataset.saveRelicArmor);return}
     const armorRemove=e.target.closest?.('[data-owned-relic-armor-remove]');if(armorRemove){e.preventDefault();e.stopPropagation();removeOwnedRelicArmor(armorRemove.dataset.ownedRelicArmorRemove);return}
     const armorApply=e.target.closest?.('[data-owned-relic-armor-row]');if(armorApply&&!e.target.closest('button,a,input,select,summary')){e.preventDefault();applyOwnedRelicArmor(armorApply.dataset.ownedRelicArmorRow);return}

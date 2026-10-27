@@ -1547,3 +1547,23 @@ button{border:1px solid var(--line);background:#202b39;color:white;border-radius
 .relic-armor-inline-details[open]>summary{display:inline-block}
 .relic-armor-inline-details .relic-armor-form,.relic-armor-inline-details .owned-assets-body{padding:10px 0}
 @media(max-width:600px){.relic-armor-inline-tools{flex-basis:100%}.relic-armor-inline-details[open]{width:100%}}
+
+/* Relic armor controls v3: compact inline actions with non-expanding dropdown/modal. */
+.manual-equipment-main:has(.relic-armor-controls){grid-template-columns:58px minmax(0,1fr) auto minmax(80px,auto);align-items:start}
+.relic-armor-controls{display:flex;align-items:center;gap:7px;flex-wrap:nowrap;min-width:0}
+.relic-armor-inline-tools{display:flex;align-items:center;gap:7px;flex-wrap:nowrap;min-width:0}
+.relic-armor-inline-details{position:relative;flex:none}
+.relic-armor-inline-details[open]{flex-basis:auto;width:auto}
+.relic-armor-inline-details>summary,.relic-armor-add{min-height:33px;display:inline-flex!important;align-items:center;justify-content:center;white-space:nowrap}
+.relic-armor-dropdown{position:absolute;z-index:80;right:0;top:calc(100% + 5px);width:min(430px,80vw);max-height:300px;overflow:auto;background:#141e2a;border:1px solid #3a4b60;box-shadow:0 12px 25px #0009;border-radius:9px}
+.relic-armor-inline-details .owned-assets-body{padding:5px!important}
+.relic-armor-dialog{border:1px solid #42536a;border-radius:13px;background:#111b27;color:var(--text,#e5e9f0);padding:20px;width:min(600px,calc(100vw - 30px));max-height:min(84vh,800px);overflow:auto;box-shadow:0 20px 65px #000b}
+.relic-armor-dialog::backdrop{background:#000b}
+.relic-armor-dialog-head{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-bottom:16px;font-size:16px}
+.relic-armor-dialog .relic-armor-form{padding:0}
+.relic-armor-dialog .relic-armor-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.relic-armor-dialog .relic-armor-fields label{min-width:0}
+.relic-armor-dialog .relic-armor-fields input,.relic-armor-dialog .relic-armor-fields select{width:100%}
+.relic-armor-dialog-actions{display:flex;justify-content:flex-end;gap:8px;margin-top:18px}
+@media(max-width:800px){.manual-equipment-main:has(.relic-armor-controls){grid-template-columns:58px minmax(0,1fr);}.relic-armor-controls{grid-column:2;flex-wrap:wrap}.manual-equipment-main:has(.relic-armor-controls)>.equipment-skill-points{grid-column:2}.relic-armor-inline-tools{flex-basis:auto}}
+@media(max-width:460px){.relic-armor-dialog .relic-armor-fields{grid-template-columns:1fr}.relic-armor-dropdown{right:auto;left:0;width:min(330px,80vw)}}
