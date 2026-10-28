@@ -821,7 +821,18 @@ function skillPointsHtml(points={},className="equipment-skill-points",empty="스
   const base=skillPointsPlain(points,empty),text=suffix&&base!==empty?`${base}${suffix}`:base;
   return `<span class="${className} ${base===empty?"is-empty":""}" title="${esc(text)}">${esc(text)}</span>`;
 }
+function refreshManualArmorDetails(){
+  for(const part of PARTS){
+    const info=document.querySelector(`#manual-armor-info-${part}`);
+    if(!info)continue;
+    const armor=armorById.get(uiState.manual[part]);
+    if(!armor){info.textContent="방어구 선택 시 방어력·내성이 표시됩니다.";info.classList.add("is-empty");continue;}
+    info.textContent=`방어력 ${Number(armor.defense||0)}${Number(armor.maxDefense||0)>Number(armor.defense||0)?` / 최대 ${Number(armor.maxDefense)}`:""} · ${resistText(armor.resistances)} · 슬롯 ${slotsText(armor.slots)}`;
+    info.classList.remove("is-empty");
+  }
+}
 function refreshManualSkillPointDisplays(){
+  refreshManualArmorDetails();
   for(const container of MANUAL_CONTAINERS){
     const card=$("#deco-editor-"+container)?.closest(".manual-equipment-card");
     const el=card?.querySelector(".equipment-skill-points");
@@ -889,7 +900,8 @@ function applyArmorSet(id){
   renderManualSelectors();renderManualResult();
 }
 function equipmentCard(label,container,pickerId,extra=""){
-  return `<div class="manual-equipment-card"><div class="manual-equipment-main"><span class="equipment-label">${label}</span><div id="${pickerId}" class="search-select"></div>${extra}${skillPointsHtml(containerSkillPoints(container),"equipment-skill-points","스킬 없음",container==="body"&&torsoUpMultiplier()>1?` · 몸통×${torsoUpMultiplier()}`:"")}</div><div id="deco-editor-${container}" class="manual-deco-editor"></div></div>`;
+  const armorInfo=PARTS.includes(container)?`<div id="manual-armor-info-${container}" class="manual-armor-detail">방어구 선택 시 방어력·내성이 표시됩니다.</div>`:"";
+  return `<div class="manual-equipment-card"><div class="manual-equipment-main"><span class="equipment-label">${label}</span><div id="${pickerId}" class="search-select"></div>${extra}${skillPointsHtml(containerSkillPoints(container),"equipment-skill-points","스킬 없음",container==="body"&&torsoUpMultiplier()>1?` · 몸통×${torsoUpMultiplier()}`:"")}${armorInfo}</div><div id="deco-editor-${container}" class="manual-deco-editor"></div></div>`;
 }
 function relicDecorationOptionsForSlots(slots){
   return (data.relicWeaponDecorations||[])
@@ -986,6 +998,7 @@ function renderManualSelectors(){
   renderOwnedCharms();
   if(!relic)mountDecorationEditor("weapon");
   PARTS.forEach(mountDecorationEditor);mountDecorationEditor("charm");
+  refreshManualSkillPointDisplays();
 }
 
 function renderSkillResult(calc,{compact=false}={}){

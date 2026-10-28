@@ -1567,3 +1567,17 @@ button{border:1px solid var(--line);background:#202b39;color:white;border-radius
 .relic-armor-dialog-actions{display:flex;justify-content:flex-end;gap:8px;margin-top:18px}
 @media(max-width:800px){.manual-equipment-main:has(.relic-armor-controls){grid-template-columns:58px minmax(0,1fr);}.relic-armor-controls{grid-column:2;flex-wrap:wrap}.manual-equipment-main:has(.relic-armor-controls)>.equipment-skill-points{grid-column:2}.relic-armor-inline-tools{flex-basis:auto}}
 @media(max-width:460px){.relic-armor-dialog .relic-armor-fields{grid-template-columns:1fr}.relic-armor-dropdown{right:auto;left:0;width:min(330px,80vw)}}
+
+/* Complete armor details — no ellipsis in manual simulator */
+.manual-equipment-main:has(.relic-armor-controls){grid-template-columns:58px minmax(0,1fr) auto!important;align-items:center}
+.manual-equipment-main:has(.relic-armor-controls)>.equipment-skill-points,
+.manual-equipment-main:has(.relic-armor-controls)>.manual-armor-detail{grid-column:2 / -1;text-align:left;min-width:0}
+.manual-equipment-main:has(.relic-armor-controls)>.equipment-skill-points{display:block;white-space:normal!important;overflow:visible!important;text-overflow:clip!important;overflow-wrap:anywhere;line-height:1.6;font-size:11px}
+.manual-armor-detail{font-size:11px;line-height:1.55;color:#a8bfd7;white-space:normal;overflow-wrap:anywhere}
+.manual-armor-detail.is-empty{color:#637083}
+@media(max-width:800px){
+ .manual-equipment-main:has(.relic-armor-controls){grid-template-columns:48px minmax(0,1fr)!important}
+ .manual-equipment-main:has(.relic-armor-controls)>.relic-armor-controls{grid-column:2}
+ .manual-equipment-main:has(.relic-armor-controls)>.equipment-skill-points,
+ .manual-equipment-main:has(.relic-armor-controls)>.manual-armor-detail{grid-column:2 / -1}
+}
