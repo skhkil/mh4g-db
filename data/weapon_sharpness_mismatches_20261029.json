@@ -1,0 +1,722 @@
+[
+  {
+    "id": "weapon_b984df26d523",
+    "name": "버스터소드+",
+    "mh4u_id": 5004,
+    "mode": "normal",
+    "current": "llll llll lllllllll lll llllllllllllllllllll",
+    "reference": "6.6.14.4.0.0.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_b984df26d523",
+    "name": "버스터소드+",
+    "mh4u_id": 5004,
+    "mode": "plus",
+    "current": "llll llll lllllllll llllllll lllllllllllllll",
+    "reference": "6.6.14.12.0.0.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_37e77aa0af48",
+    "name": "에인션트블레이드",
+    "mh4u_id": 5177,
+    "mode": "normal",
+    "current": "l llll lllllllllllllllllll llllll llllllllll",
+    "reference": "2.8.26.10.0.0.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_37e77aa0af48",
+    "name": "에인션트블레이드",
+    "mh4u_id": 5177,
+    "mode": "plus",
+    "current": "l llll lllllllllllllllllll llllll lllll lllll",
+    "reference": "2.8.26.10.8.0.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_a3ef5a4639eb",
+    "name": "카이제르베어러",
+    "mh4u_id": 6637,
+    "mode": "normal",
+    "current": "llllll llll lllll llllllllll lllllllllllllll",
+    "reference": "8.7.8.15.0.0.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_a3ef5a4639eb",
+    "name": "카이제르베어러",
+    "mh4u_id": 6637,
+    "mode": "plus",
+    "current": "llllll llll lllll lllllllllllllll llllllllll",
+    "reference": "8.7.8.23.0.0.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_5a8e9f7a0c0d",
+    "name": "건곤의 화룡곤",
+    "mh4u_id": 6816,
+    "mode": "normal",
+    "current": "lllllll lll llllllllll lllllllll l llllllllll",
+    "reference": "10.4.16.14.2.0.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_5a8e9f7a0c0d",
+    "name": "건곤의 화룡곤",
+    "mh4u_id": 6816,
+    "mode": "plus",
+    "current": "lllllll lll llllllllll lllllllll llllll lllll",
+    "reference": "10.4.16.14.10.0.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_823a6df7de06",
+    "name": "양의의 염룡곤",
+    "mh4u_id": 6817,
+    "mode": "normal",
+    "current": "lllllll llll llllllllllll lllllllll lll lllll",
+    "reference": "10.6.19.15.4.0.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_823a6df7de06",
+    "name": "양의의 염룡곤",
+    "mh4u_id": 6817,
+    "mode": "plus",
+    "current": "lllllll llll llllllllllll lllllllll llllll ll",
+    "reference": "10.6.19.15.8.4.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_13b42c42be75",
+    "name": "앙크of체커",
+    "mh4u_id": 5395,
+    "mode": "normal",
+    "current": "llllllllllllllllllll l ll lllllll llllllllll",
+    "reference": "30.2.4.10.0.0.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_13b42c42be75",
+    "name": "앙크of체커",
+    "mh4u_id": 5395,
+    "mode": "plus",
+    "current": "llllllllllllllllllll l ll lllllllllll l lllll",
+    "reference": "30.2.4.16.2.0.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_d64ee0b549a7",
+    "name": "쿠드라�파르칸",
+    "mh4u_id": 5439,
+    "mode": "normal",
+    "current": "lllllll llll llllllllllll lllllllll llllll ll",
+    "reference": "11.6.18.14.9.4.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_d64ee0b549a7",
+    "name": "쿠드라�파르칸",
+    "mh4u_id": 5439,
+    "mode": "plus",
+    "current": "lllllll llll llllllllllll lllllllll llllll llllll l",
+    "reference": "11.6.18.14.9.9.2",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_689bacc889a8",
+    "name": "라이트닝베인",
+    "mh4u_id": 5446,
+    "mode": "normal",
+    "current": "lllllllll lllllll llllllll llllll llllllllll",
+    "reference": "13.11.13.9.0.0.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_689bacc889a8",
+    "name": "라이트닝베인",
+    "mh4u_id": 5446,
+    "mode": "plus",
+    "current": "lllllllll lllllll llllllll lllllll llll lllll",
+    "reference": "13.11.13.12.5.0.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_0b78ef14e6dd",
+    "name": "스케일소드",
+    "mh4u_id": 5493,
+    "mode": "normal",
+    "current": "llllll lll llllllllll llllll lllllllllllllll",
+    "reference": "8.5.16.10.0.0.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_0b78ef14e6dd",
+    "name": "스케일소드",
+    "mh4u_id": 5493,
+    "mode": "plus",
+    "current": "llllll lll llllllllll llllllllll l llllllllll",
+    "reference": "8.5.16.15.2.0.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_b3fdbaff97d9",
+    "name": "조스클리버",
+    "mh4u_id": 5630,
+    "mode": "normal",
+    "current": "lllllllllllllllllll ll llllll lll llllllllll",
+    "reference": "29.3.10.4.0.0.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_b3fdbaff97d9",
+    "name": "조스클리버",
+    "mh4u_id": 5630,
+    "mode": "plus",
+    "current": "lllllllllllllllllll ll llllll llllllll lllll",
+    "reference": "29.3.10.12.0.0.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_a6f6d2201b01",
+    "name": "조스클리버+",
+    "mh4u_id": 5631,
+    "mode": "normal",
+    "current": "llllllllllllllllllll l ll lllllll llllllllll",
+    "reference": "30.2.3.11.0.0.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_a6f6d2201b01",
+    "name": "조스클리버+",
+    "mh4u_id": 5631,
+    "mode": "plus",
+    "current": "llllllllllllllllllll l ll lllllllllll l lllll",
+    "reference": "30.2.3.17.2.0.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_4b08a33e346f",
+    "name": "쿨클리버",
+    "mh4u_id": 5632,
+    "mode": "normal",
+    "current": "lllllllllll llllllllll lllll llllll lll lllll",
+    "reference": "16.16.8.10.4.0.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_4b08a33e346f",
+    "name": "쿨클리버",
+    "mh4u_id": 5632,
+    "mode": "plus",
+    "current": "lllllllllll llllllllll lllll llllll lllll lll",
+    "reference": "16.16.8.10.7.5.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_e3ab37d78e7f",
+    "name": "프로즌클리버",
+    "mh4u_id": 5633,
+    "mode": "normal",
+    "current": "lll lll lllllllllllllllll llllllll llll lllll",
+    "reference": "4.4.27.13.6.0.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_e3ab37d78e7f",
+    "name": "프로즌클리버",
+    "mh4u_id": 5633,
+    "mode": "plus",
+    "current": "lll lll lllllllllllllllll llllllll llll lllll",
+    "reference": "4.4.27.13.6.8.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_86abd29aa525",
+    "name": "뇌쌍검 트윈크루스",
+    "mh4u_id": 5677,
+    "mode": "normal",
+    "current": "lll llllllllllllllll lll ll lllllllllll lllll",
+    "reference": "5.25.5.3.16.0.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_86abd29aa525",
+    "name": "뇌쌍검 트윈크루스",
+    "mh4u_id": 5677,
+    "mode": "plus",
+    "current": "lll llllllllllllllll lll ll lllllllllllllll l",
+    "reference": "5.25.5.3.22.2.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_e3cad963a306",
+    "name": "가노스마체테",
+    "mh4u_id": 5700,
+    "mode": "normal",
+    "current": "llllllllllllllllllll l ll lllllll llllllllll",
+    "reference": "30.2.3.11.0.0.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_e3cad963a306",
+    "name": "가노스마체테",
+    "mh4u_id": 5700,
+    "mode": "plus",
+    "current": "llllllllllllllllllll l ll lllllllllll l lllll",
+    "reference": "30.2.3.17.2.0.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_7af1fd7bd878",
+    "name": "블리드배싱",
+    "mh4u_id": 5799,
+    "mode": "normal",
+    "current": "lll llllll llllllllllllllll llllllll ll lllll",
+    "reference": "4.9.25.13.3.0.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_7af1fd7bd878",
+    "name": "블리드배싱",
+    "mh4u_id": 5799,
+    "mode": "plus",
+    "current": "lll llllll llllllllllllllll llllllll lllllll",
+    "reference": "4.9.25.13.11.0.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_c44160bb6812",
+    "name": "왕추 카미나리",
+    "mh4u_id": 5809,
+    "mode": "normal",
+    "current": "lllll llll llllllllllll llll lllllllllllllll",
+    "reference": "7.6.19.6.0.0.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_c44160bb6812",
+    "name": "왕추 카미나리",
+    "mh4u_id": 5809,
+    "mode": "plus",
+    "current": "lllll llll llllllllllll lllllllll llllllllll",
+    "reference": "7.6.19.14.0.0.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_997726104d8f",
+    "name": "굉추【호환】",
+    "mh4u_id": 5842,
+    "mode": "normal",
+    "current": "llllllllll llll lllllll lllllll ll llllllllll",
+    "reference": "14.7.11.11.3.0.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_997726104d8f",
+    "name": "굉추【호환】",
+    "mh4u_id": 5842,
+    "mode": "plus",
+    "current": "llllllllll llll lllllll lllllll lllllll lllll",
+    "reference": "14.7.11.11.11.0.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_00bf4d3230f6",
+    "name": "충추【호해】",
+    "mh4u_id": 5844,
+    "mode": "normal",
+    "current": "llll llllllllllllllll lll ll lllll llllllllll",
+    "reference": "5.25.5.3.8.0.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_00bf4d3230f6",
+    "name": "충추【호해】",
+    "mh4u_id": 5844,
+    "mode": "plus",
+    "current": "llll llllllllllllllll lll ll llllllllll lllll",
+    "reference": "5.25.5.3.16.0.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_fd8a28f9e7e4",
+    "name": "그래비톤해머",
+    "mh4u_id": 5849,
+    "mode": "normal",
+    "current": "lllll llll llllllllllll llll lllllllllllllll",
+    "reference": "6.7.19.6.0.0.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_fd8a28f9e7e4",
+    "name": "그래비톤해머",
+    "mh4u_id": 5849,
+    "mode": "plus",
+    "current": "lllll llll llllllllllll lllllllll llllllllll",
+    "reference": "6.7.19.14.0.0.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_22aa25e0415a",
+    "name": "패티푸시",
+    "mh4u_id": 5853,
+    "mode": "normal",
+    "current": "lllll llll llllllllllll llll lllllllllllllll",
+    "reference": "7.6.19.6.0.0.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_22aa25e0415a",
+    "name": "패티푸시",
+    "mh4u_id": 5853,
+    "mode": "plus",
+    "current": "lllll llll llllllllllll lllllllll llllllllll",
+    "reference": "7.6.19.14.0.0.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_7688f0317bc8",
+    "name": "젬헤드",
+    "mh4u_id": 5894,
+    "mode": "normal",
+    "current": "llllllllllll lllllllll lllllll lllllll lllll",
+    "reference": "21.13.11.9.0.0.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_7688f0317bc8",
+    "name": "젬헤드",
+    "mh4u_id": 5894,
+    "mode": "plus",
+    "current": "llllllllllll lllllllll lllllll lllllll l llll",
+    "reference": "21.13.11.9.2.6.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_1e4a7d978be1",
+    "name": "검은고양이스탬프",
+    "mh4u_id": 5912,
+    "mode": "normal",
+    "current": "lllllllllll l llll l llllllll lllllllllllllll",
+    "reference": "16.2.6.2.12.0.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_1e4a7d978be1",
+    "name": "검은고양이스탬프",
+    "mh4u_id": 5912,
+    "mode": "plus",
+    "current": "lllllllllll l llll l lllllllllllll llllllllll",
+    "reference": "16.2.6.2.20.0.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_83cc41892dee",
+    "name": "업추 다그다",
+    "mh4u_id": 5926,
+    "mode": "normal",
+    "current": "lll lllllll llllllllllllllll llllll l ll lllll",
+    "reference": "4.11.25.11.1.2.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_83cc41892dee",
+    "name": "업추 다그다",
+    "mh4u_id": 5926,
+    "mode": "plus",
+    "current": "lll lllllll llllllllllllllll llllll l lllllll",
+    "reference": "4.11.25.11.1.10.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_4a0163b9095b",
+    "name": "테오크라테르",
+    "mh4u_id": 5953,
+    "mode": "normal",
+    "current": "llllllllllllllllllll l ll lllllllllll l lllll",
+    "reference": "31.2.3.16.2.0.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_4a0163b9095b",
+    "name": "테오크라테르",
+    "mh4u_id": 5953,
+    "mode": "plus",
+    "current": "llllllllllllllllllll l ll lllllllllll lllll l",
+    "reference": "31.2.3.16.8.2.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_6d0a2f06c199",
+    "name": "테오크라리아",
+    "mh4u_id": 5954,
+    "mode": "normal",
+    "current": "llll lll lllllllllllll lllllllllllll ll lllll",
+    "reference": "7.6.19.19.3.0.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_6d0a2f06c199",
+    "name": "테오크라리아",
+    "mh4u_id": 5954,
+    "mode": "plus",
+    "current": "llll lll lllllllllllll lllllllllllll llllll l",
+    "reference": "7.6.19.19.9.2.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_4d1c2eebf5e4",
+    "name": "샤미센【까마귀】",
+    "mh4u_id": 6056,
+    "mode": "normal",
+    "current": "lllllllllll llllllllll lllll llllll lll lllll",
+    "reference": "16.16.8.10.4.0.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_4d1c2eebf5e4",
+    "name": "샤미센【까마귀】",
+    "mh4u_id": 6056,
+    "mode": "plus",
+    "current": "lllllllllll llllllllll lllll llllll lllll lll",
+    "reference": "16.16.8.10.7.5.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_6866b3954216",
+    "name": "황현 다라블루트",
+    "mh4u_id": 6089,
+    "mode": "normal",
+    "current": "lllllllllll llllll ll lllllll lllllll ll llllllllll",
+    "reference": "17.9.3.11.10.4.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_6866b3954216",
+    "name": "황현 다라블루트",
+    "mh4u_id": 6089,
+    "mode": "plus",
+    "current": "lllllllllll llllll ll lllllll lllllll lllllll lllll",
+    "reference": "17.9.3.11.10.12.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_bdbd990fb7cd",
+    "name": "THE세이지",
+    "mh4u_id": 6142,
+    "mode": "normal",
+    "current": "15.11.12.6.8.2.0",
+    "reference": "10.6.18.14.10.4.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_bdbd990fb7cd",
+    "name": "THE세이지",
+    "mh4u_id": 6142,
+    "mode": "plus",
+    "current": "15.11.12.6.8.10.0",
+    "reference": "10.6.18.14.10.9.2",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_4ec29a14c7c2",
+    "name": "THE팔라딘",
+    "mh4u_id": 6143,
+    "mode": "normal",
+    "current": "15.11.12.6.8.2.0",
+    "reference": "15.11.12.8.4.12.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_4ec29a14c7c2",
+    "name": "THE팔라딘",
+    "mh4u_id": 6143,
+    "mode": "plus",
+    "current": "15.11.12.6.8.10.0",
+    "reference": "15.11.12.8.4.13.6",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_f14252052f31",
+    "name": "비애의 중창",
+    "mh4u_id": 6249,
+    "mode": "normal",
+    "current": "llllllllllll ll llll lllllllll lll llllllllll",
+    "reference": "18.3.7.13.5.0.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_f14252052f31",
+    "name": "비애의 중창",
+    "mh4u_id": 6249,
+    "mode": "plus",
+    "current": "llllllllllll ll llll lllllllll llllllll lllll",
+    "reference": "18.3.7.13.13.0.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_573cfb3c1e07",
+    "name": "스카이스크레이퍼",
+    "mh4u_id": 6292,
+    "mode": "normal",
+    "current": "llllllllllllllllllllllllllllllllllllllll",
+    "reference": "16.2.7.2.31.4.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_573cfb3c1e07",
+    "name": "스카이스크레이퍼",
+    "mh4u_id": 6292,
+    "mode": "plus",
+    "current": "llllllllllllllllllllllllllllllllllllllll",
+    "reference": "16.2.7.2.31.11.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_35d507bf22e0",
+    "name": "테오엑시스",
+    "mh4u_id": 6295,
+    "mode": "normal",
+    "current": "llllllll llllllllllll lllllll llll lll llllll lllll",
+    "reference": "12.18.11.6.5.10.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_35d507bf22e0",
+    "name": "테오엑시스",
+    "mh4u_id": 6295,
+    "mode": "plus",
+    "current": "llllllll llllllllllll lllllll llll lll lllllllll ll",
+    "reference": "12.18.11.6.5.14.3",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_f4b48c6bf940",
+    "name": "창귀총창포",
+    "mh4u_id": 6335,
+    "mode": "normal",
+    "current": "lllll lll lllllllllllll llll lllllllllllllll",
+    "reference": "7.5.20.6.0.0.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_f4b48c6bf940",
+    "name": "창귀총창포",
+    "mh4u_id": 6335,
+    "mode": "plus",
+    "current": "lllll lll lllllllllllll lllllllll llllllllll",
+    "reference": "7.5.20.14.0.0.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_011e19a2597b",
+    "name": "창귀총창포【귀존】",
+    "mh4u_id": 6336,
+    "mode": "normal",
+    "current": "lllll lll lllllllllllll lllllllll llllllllll",
+    "reference": "7.5.20.14.0.0.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_011e19a2597b",
+    "name": "창귀총창포【귀존】",
+    "mh4u_id": 6336,
+    "mode": "plus",
+    "current": "lllll lll lllllllllllll llllllllll llll lllll",
+    "reference": "7.5.20.16.6.0.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_dd60cf2d2820",
+    "name": "호숭총창【호오리】",
+    "mh4u_id": 6423,
+    "mode": "normal",
+    "current": "lllllll lllll llllllll lllllll lllllll l lllll",
+    "reference": "12.8.17.12.11.2.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_dd60cf2d2820",
+    "name": "호숭총창【호오리】",
+    "mh4u_id": 6423,
+    "mode": "plus",
+    "current": "lllllll lllll llllllll lllllll lllllll lll lll",
+    "reference": "12.8.17.12.11.4.5",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_b2d8ff38e034",
+    "name": "붕총창 파시캄루바스",
+    "mh4u_id": 6445,
+    "mode": "normal",
+    "current": "lllllllllll l lllll lll llllllllllllllllllll",
+    "reference": "28.2.10.6.0.0.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_b2d8ff38e034",
+    "name": "붕총창 파시캄루바스",
+    "mh4u_id": 6445,
+    "mode": "plus",
+    "current": "lllllllllll l lllll lllll lll lllllllllllllll",
+    "reference": "28.2.10.10.4.0.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_04d18d385171",
+    "name": "엘다오르블리지아",
+    "mh4u_id": 6455,
+    "mode": "normal",
+    "current": "llllll llllll llll lll llllllllllllllll lll ll",
+    "reference": "12.10.8.6.28.3.2",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_04d18d385171",
+    "name": "엘다오르블리지아",
+    "mh4u_id": 6455,
+    "mode": "plus",
+    "current": "llllll llllll llll lll llllllllllllllll lll ll",
+    "reference": "12.10.8.6.28.3.2",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_31b8173ba25a",
+    "name": "홍창검부",
+    "mh4u_id": 6501,
+    "mode": "normal",
+    "current": "llllllllllll ll llll lllllllll llllllll lllll",
+    "reference": "18.3.7.13.13.0.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_31b8173ba25a",
+    "name": "홍창검부",
+    "mh4u_id": 6501,
+    "mode": "plus",
+    "current": "llllllllllll ll llll lllllllll llllllllll lll",
+    "reference": "18.3.7.13.16.5.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_c0fff3daba27",
+    "name": "알트로열",
+    "mh4u_id": 6623,
+    "mode": "normal",
+    "current": "5.25.5.3.8.0.0",
+    "reference": "23.7.8.8.9.7.0",
+    "confidence": "high"
+  },
+  {
+    "id": "weapon_c0fff3daba27",
+    "name": "알트로열",
+    "mh4u_id": 6623,
+    "mode": "plus",
+    "current": "5.25.5.3.16.0.0",
+    "reference": "23.7.8.8.9.14.0",
+    "confidence": "high"
+  }
+]

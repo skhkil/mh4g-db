@@ -1,0 +1,58 @@
+[
+  {
+    "id": "weapon_fecc86637e91",
+    "weapon": "블레이즈블레이드+",
+    "method": "생산",
+    "before": "홍련석×3 드래그라이트광석×15 레비테라이트광석×3 마카라이트광석×10",
+    "after": "홍련석×3 드래그라이트광석×15 마카라이트광석×10",
+    "sources": [
+      "https://mh4info.com/weapon/?no=1"
+    ],
+    "basis": "MH4G 직접 생산: 일본 무기 DB에서는 레비테라이트광석 없음"
+  },
+  {
+    "id": "weapon_27e22bf94f93",
+    "weapon": "철도【재계】",
+    "method": "강화",
+    "before": "철광석×5 용골【소】",
+    "after": "철광석×5 용골【소】×2",
+    "sources": [
+      "https://mh4info.com/weapon/?no=2"
+    ],
+    "basis": "용골【소】 수량 2. spwiki/atwiki에는 수량 누락"
+  },
+  {
+    "id": "weapon_557c6a29de58",
+    "weapon": "귀곡참파도�명검",
+    "method": "강화",
+    "before": "카브레라이트광석×15 유니온광석× 전격주머니×5 알비노 설로인×1",
+    "after": "카브레라이트광석×15 유니온광석×5 전격주머니×5 알비노 설로인×1",
+    "sources": [
+      "https://spwiki.net/mh4g/wikis/132.html",
+      "https://www.kuroyonhon.com/mh4g/sozai/374.php"
+    ],
+    "basis": "spwiki와 kuroyonhon에 유니온광석 5개. mh4info 0개 및 atwiki 수량 누락"
+  },
+  {
+    "id": "weapon_da61ac03b6a6",
+    "weapon": "블로스크로스",
+    "method": "강화",
+    "before": "견고히 말린 흑뿔×2 흑각룡 중갑×4 각룡 중미갑×2 각룡 중갑×4",
+    "after": "견고히 말린 흑뿔×2 흑각룡 중갑×4 각룡 중미갑×4 각룡 중갑×4",
+    "sources": [
+      "https://mh4info.com/weapon/?no=4"
+    ],
+    "basis": "일본 MH4G 강화표 角竜の重尾甲×4"
+  },
+  {
+    "id": "weapon_f0cb2972c155",
+    "weapon": "실버루크",
+    "method": "강화",
+    "before": "은화룡 꼬리×1 은화룡 견갑각×3 ×3 은화룡 비늘+×5",
+    "after": "은화룡 꼬리×1 은화룡 견갑각×3 은화룡 비늘+×5",
+    "sources": [
+      "https://mh4info.com/weapon/?no=8"
+    ],
+    "basis": "독립 소재 없이 중복된 ×3 삭제"
+  }
+]

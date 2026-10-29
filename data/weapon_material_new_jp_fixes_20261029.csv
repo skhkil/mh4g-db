@@ -1,0 +1,6 @@
+id,weapon,method,before,after,sources,basis
+weapon_fecc86637e91,블레이즈블레이드+,생산,홍련석×3 드래그라이트광석×15 레비테라이트광석×3 마카라이트광석×10,홍련석×3 드래그라이트광석×15 마카라이트광석×10,https://mh4info.com/weapon/?no=1,MH4G 직접 생산: 일본 무기 DB에서는 레비테라이트광석 없음
+weapon_27e22bf94f93,철도【재계】,강화,철광석×5 용골【소】,철광석×5 용골【소】×2,https://mh4info.com/weapon/?no=2,용골【소】 수량 2. spwiki/atwiki에는 수량 누락
+weapon_557c6a29de58,귀곡참파도�명검,강화,카브레라이트광석×15 유니온광석× 전격주머니×5 알비노 설로인×1,카브레라이트광석×15 유니온광석×5 전격주머니×5 알비노 설로인×1,https://spwiki.net/mh4g/wikis/132.html | https://www.kuroyonhon.com/mh4g/sozai/374.php,spwiki와 kuroyonhon에 유니온광석 5개. mh4info 0개 및 atwiki 수량 누락
+weapon_da61ac03b6a6,블로스크로스,강화,견고히 말린 흑뿔×2 흑각룡 중갑×4 각룡 중미갑×2 각룡 중갑×4,견고히 말린 흑뿔×2 흑각룡 중갑×4 각룡 중미갑×4 각룡 중갑×4,https://mh4info.com/weapon/?no=4,일본 MH4G 강화표 角竜の重尾甲×4
+weapon_f0cb2972c155,실버루크,강화,은화룡 꼬리×1 은화룡 견갑각×3 ×3 은화룡 비늘+×5,은화룡 꼬리×1 은화룡 견갑각×3 은화룡 비늘+×5,https://mh4info.com/weapon/?no=8,독립 소재 없이 중복된 ×3 삭제

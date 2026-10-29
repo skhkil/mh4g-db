@@ -1,0 +1,5171 @@
+[
+  {
+    "id": "weapon_b984df26d523",
+    "name": "버스터소드+",
+    "mh4uWeaponId": 5004,
+    "before": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 4
+          },
+          {
+            "color": "orange",
+            "length": 4
+          },
+          {
+            "color": "yellow",
+            "length": 9
+          },
+          {
+            "color": "green",
+            "length": 3
+          },
+          {
+            "color": "gray",
+            "length": 20
+          }
+        ],
+        "total": 40,
+        "raw": "llll llll lllllllll lll llllllllllllllllllll"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 4
+          },
+          {
+            "color": "orange",
+            "length": 4
+          },
+          {
+            "color": "yellow",
+            "length": 9
+          },
+          {
+            "color": "green",
+            "length": 8
+          },
+          {
+            "color": "gray",
+            "length": 15
+          }
+        ],
+        "total": 40,
+        "raw": "llll llll lllllllll llllllll lllllllllllllll"
+      },
+      "confidence": "high",
+      "method": "run-inference",
+      "coloredDelta": 5
+    },
+    "after": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 6
+          },
+          {
+            "color": "orange",
+            "length": 6
+          },
+          {
+            "color": "yellow",
+            "length": 14
+          },
+          {
+            "color": "green",
+            "length": 4
+          }
+        ],
+        "total": 30,
+        "raw": "6.6.14.4.0.0.0"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 6
+          },
+          {
+            "color": "orange",
+            "length": 6
+          },
+          {
+            "color": "yellow",
+            "length": 14
+          },
+          {
+            "color": "green",
+            "length": 12
+          }
+        ],
+        "total": 38,
+        "raw": "6.6.14.12.0.0.0"
+      },
+      "confidence": "high",
+      "method": "mh4u-db",
+      "coloredDelta": 8,
+      "source": "MonsterHunter4UDatabase/mh4u.db",
+      "sourceWeaponId": 5004,
+      "matchMethod": "mh4uWeaponId"
+    }
+  },
+  {
+    "id": "weapon_37e77aa0af48",
+    "name": "에인션트블레이드",
+    "mh4uWeaponId": 5177,
+    "before": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 1
+          },
+          {
+            "color": "orange",
+            "length": 4
+          },
+          {
+            "color": "yellow",
+            "length": 19
+          },
+          {
+            "color": "green",
+            "length": 6
+          },
+          {
+            "color": "gray",
+            "length": 10
+          }
+        ],
+        "total": 40,
+        "raw": "l llll lllllllllllllllllll llllll llllllllll"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 1
+          },
+          {
+            "color": "orange",
+            "length": 4
+          },
+          {
+            "color": "yellow",
+            "length": 19
+          },
+          {
+            "color": "green",
+            "length": 6
+          },
+          {
+            "color": "blue",
+            "length": 5
+          },
+          {
+            "color": "gray",
+            "length": 5
+          }
+        ],
+        "total": 40,
+        "raw": "l llll lllllllllllllllllll llllll lllll lllll"
+      },
+      "confidence": "high",
+      "method": "run-inference",
+      "coloredDelta": 5
+    },
+    "after": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 2
+          },
+          {
+            "color": "orange",
+            "length": 8
+          },
+          {
+            "color": "yellow",
+            "length": 26
+          },
+          {
+            "color": "green",
+            "length": 10
+          }
+        ],
+        "total": 46,
+        "raw": "2.8.26.10.0.0.0"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 2
+          },
+          {
+            "color": "orange",
+            "length": 8
+          },
+          {
+            "color": "yellow",
+            "length": 26
+          },
+          {
+            "color": "green",
+            "length": 10
+          },
+          {
+            "color": "blue",
+            "length": 8
+          }
+        ],
+        "total": 54,
+        "raw": "2.8.26.10.8.0.0"
+      },
+      "confidence": "high",
+      "method": "mh4u-db",
+      "coloredDelta": 8,
+      "source": "MonsterHunter4UDatabase/mh4u.db",
+      "sourceWeaponId": 5177,
+      "matchMethod": "mh4uWeaponId"
+    }
+  },
+  {
+    "id": "weapon_a3ef5a4639eb",
+    "name": "카이제르베어러",
+    "mh4uWeaponId": 6637,
+    "before": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 6
+          },
+          {
+            "color": "orange",
+            "length": 4
+          },
+          {
+            "color": "yellow",
+            "length": 5
+          },
+          {
+            "color": "green",
+            "length": 10
+          },
+          {
+            "color": "gray",
+            "length": 15
+          }
+        ],
+        "total": 40,
+        "raw": "llllll llll lllll llllllllll lllllllllllllll"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 6
+          },
+          {
+            "color": "orange",
+            "length": 4
+          },
+          {
+            "color": "yellow",
+            "length": 5
+          },
+          {
+            "color": "green",
+            "length": 15
+          },
+          {
+            "color": "gray",
+            "length": 10
+          }
+        ],
+        "total": 40,
+        "raw": "llllll llll lllll lllllllllllllll llllllllll"
+      },
+      "confidence": "high",
+      "method": "run-inference",
+      "coloredDelta": 5
+    },
+    "after": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 8
+          },
+          {
+            "color": "orange",
+            "length": 7
+          },
+          {
+            "color": "yellow",
+            "length": 8
+          },
+          {
+            "color": "green",
+            "length": 15
+          }
+        ],
+        "total": 38,
+        "raw": "8.7.8.15.0.0.0"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 8
+          },
+          {
+            "color": "orange",
+            "length": 7
+          },
+          {
+            "color": "yellow",
+            "length": 8
+          },
+          {
+            "color": "green",
+            "length": 23
+          }
+        ],
+        "total": 46,
+        "raw": "8.7.8.23.0.0.0"
+      },
+      "confidence": "high",
+      "method": "mh4u-db",
+      "coloredDelta": 8,
+      "source": "MonsterHunter4UDatabase/mh4u.db",
+      "sourceWeaponId": 6637,
+      "matchMethod": "mh4uWeaponId"
+    }
+  },
+  {
+    "id": "weapon_5a8e9f7a0c0d",
+    "name": "건곤의 화룡곤",
+    "mh4uWeaponId": 6816,
+    "before": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 7
+          },
+          {
+            "color": "orange",
+            "length": 3
+          },
+          {
+            "color": "yellow",
+            "length": 10
+          },
+          {
+            "color": "green",
+            "length": 9
+          },
+          {
+            "color": "blue",
+            "length": 1
+          },
+          {
+            "color": "gray",
+            "length": 10
+          }
+        ],
+        "total": 40,
+        "raw": "lllllll lll llllllllll lllllllll l llllllllll"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 7
+          },
+          {
+            "color": "orange",
+            "length": 3
+          },
+          {
+            "color": "yellow",
+            "length": 10
+          },
+          {
+            "color": "green",
+            "length": 9
+          },
+          {
+            "color": "blue",
+            "length": 6
+          },
+          {
+            "color": "gray",
+            "length": 5
+          }
+        ],
+        "total": 40,
+        "raw": "lllllll lll llllllllll lllllllll llllll lllll"
+      },
+      "confidence": "high",
+      "method": "run-inference",
+      "coloredDelta": 5
+    },
+    "after": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 10
+          },
+          {
+            "color": "orange",
+            "length": 4
+          },
+          {
+            "color": "yellow",
+            "length": 16
+          },
+          {
+            "color": "green",
+            "length": 14
+          },
+          {
+            "color": "blue",
+            "length": 2
+          }
+        ],
+        "total": 46,
+        "raw": "10.4.16.14.2.0.0"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 10
+          },
+          {
+            "color": "orange",
+            "length": 4
+          },
+          {
+            "color": "yellow",
+            "length": 16
+          },
+          {
+            "color": "green",
+            "length": 14
+          },
+          {
+            "color": "blue",
+            "length": 10
+          }
+        ],
+        "total": 54,
+        "raw": "10.4.16.14.10.0.0"
+      },
+      "confidence": "high",
+      "method": "mh4u-db",
+      "coloredDelta": 8,
+      "source": "MonsterHunter4UDatabase/mh4u.db",
+      "sourceWeaponId": 6816,
+      "matchMethod": "mh4uWeaponId"
+    }
+  },
+  {
+    "id": "weapon_823a6df7de06",
+    "name": "양의의 염룡곤",
+    "mh4uWeaponId": 6817,
+    "before": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 7
+          },
+          {
+            "color": "orange",
+            "length": 4
+          },
+          {
+            "color": "yellow",
+            "length": 12
+          },
+          {
+            "color": "green",
+            "length": 9
+          },
+          {
+            "color": "blue",
+            "length": 3
+          },
+          {
+            "color": "gray",
+            "length": 5
+          }
+        ],
+        "total": 40,
+        "raw": "lllllll llll llllllllllll lllllllll lll lllll"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 7
+          },
+          {
+            "color": "orange",
+            "length": 4
+          },
+          {
+            "color": "yellow",
+            "length": 12
+          },
+          {
+            "color": "green",
+            "length": 9
+          },
+          {
+            "color": "blue",
+            "length": 6
+          },
+          {
+            "color": "white",
+            "length": 2
+          }
+        ],
+        "total": 40,
+        "raw": "lllllll llll llllllllllll lllllllll llllll ll"
+      },
+      "confidence": "high",
+      "method": "run-inference",
+      "coloredDelta": 5
+    },
+    "after": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 10
+          },
+          {
+            "color": "orange",
+            "length": 6
+          },
+          {
+            "color": "yellow",
+            "length": 19
+          },
+          {
+            "color": "green",
+            "length": 15
+          },
+          {
+            "color": "blue",
+            "length": 4
+          }
+        ],
+        "total": 54,
+        "raw": "10.6.19.15.4.0.0"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 10
+          },
+          {
+            "color": "orange",
+            "length": 6
+          },
+          {
+            "color": "yellow",
+            "length": 19
+          },
+          {
+            "color": "green",
+            "length": 15
+          },
+          {
+            "color": "blue",
+            "length": 8
+          },
+          {
+            "color": "white",
+            "length": 4
+          }
+        ],
+        "total": 62,
+        "raw": "10.6.19.15.8.4.0"
+      },
+      "confidence": "high",
+      "method": "mh4u-db",
+      "coloredDelta": 8,
+      "source": "MonsterHunter4UDatabase/mh4u.db",
+      "sourceWeaponId": 6817,
+      "matchMethod": "mh4uWeaponId"
+    }
+  },
+  {
+    "id": "weapon_13b42c42be75",
+    "name": "앙크of체커",
+    "mh4uWeaponId": 5395,
+    "before": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 20
+          },
+          {
+            "color": "orange",
+            "length": 1
+          },
+          {
+            "color": "yellow",
+            "length": 2
+          },
+          {
+            "color": "green",
+            "length": 7
+          },
+          {
+            "color": "gray",
+            "length": 10
+          }
+        ],
+        "total": 40,
+        "raw": "llllllllllllllllllll l ll lllllll llllllllll"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 20
+          },
+          {
+            "color": "orange",
+            "length": 1
+          },
+          {
+            "color": "yellow",
+            "length": 2
+          },
+          {
+            "color": "green",
+            "length": 11
+          },
+          {
+            "color": "blue",
+            "length": 1
+          },
+          {
+            "color": "gray",
+            "length": 5
+          }
+        ],
+        "total": 40,
+        "raw": "llllllllllllllllllll l ll lllllllllll l lllll"
+      },
+      "confidence": "high",
+      "method": "run-inference",
+      "coloredDelta": 5
+    },
+    "after": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 30
+          },
+          {
+            "color": "orange",
+            "length": 2
+          },
+          {
+            "color": "yellow",
+            "length": 4
+          },
+          {
+            "color": "green",
+            "length": 10
+          }
+        ],
+        "total": 46,
+        "raw": "30.2.4.10.0.0.0"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 30
+          },
+          {
+            "color": "orange",
+            "length": 2
+          },
+          {
+            "color": "yellow",
+            "length": 4
+          },
+          {
+            "color": "green",
+            "length": 16
+          },
+          {
+            "color": "blue",
+            "length": 2
+          }
+        ],
+        "total": 54,
+        "raw": "30.2.4.16.2.0.0"
+      },
+      "confidence": "high",
+      "method": "mh4u-db",
+      "coloredDelta": 8,
+      "source": "MonsterHunter4UDatabase/mh4u.db",
+      "sourceWeaponId": 5395,
+      "matchMethod": "mh4uWeaponId"
+    }
+  },
+  {
+    "id": "weapon_d64ee0b549a7",
+    "name": "쿠드라�파르칸",
+    "mh4uWeaponId": 5439,
+    "before": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 7
+          },
+          {
+            "color": "orange",
+            "length": 4
+          },
+          {
+            "color": "yellow",
+            "length": 12
+          },
+          {
+            "color": "green",
+            "length": 9
+          },
+          {
+            "color": "blue",
+            "length": 6
+          },
+          {
+            "color": "white",
+            "length": 2
+          }
+        ],
+        "total": 40,
+        "raw": "lllllll llll llllllllllll lllllllll llllll ll"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 7
+          },
+          {
+            "color": "orange",
+            "length": 4
+          },
+          {
+            "color": "yellow",
+            "length": 12
+          },
+          {
+            "color": "green",
+            "length": 9
+          },
+          {
+            "color": "blue",
+            "length": 6
+          },
+          {
+            "color": "white",
+            "length": 6
+          },
+          {
+            "color": "purple",
+            "length": 1
+          }
+        ],
+        "total": 45,
+        "raw": "lllllll llll llllllllllll lllllllll llllll llllll l"
+      },
+      "confidence": "high",
+      "method": "run-inference",
+      "coloredDelta": 5
+    },
+    "after": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 11
+          },
+          {
+            "color": "orange",
+            "length": 6
+          },
+          {
+            "color": "yellow",
+            "length": 18
+          },
+          {
+            "color": "green",
+            "length": 14
+          },
+          {
+            "color": "blue",
+            "length": 9
+          },
+          {
+            "color": "white",
+            "length": 4
+          }
+        ],
+        "total": 62,
+        "raw": "11.6.18.14.9.4.0"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 11
+          },
+          {
+            "color": "orange",
+            "length": 6
+          },
+          {
+            "color": "yellow",
+            "length": 18
+          },
+          {
+            "color": "green",
+            "length": 14
+          },
+          {
+            "color": "blue",
+            "length": 9
+          },
+          {
+            "color": "white",
+            "length": 9
+          },
+          {
+            "color": "purple",
+            "length": 2
+          }
+        ],
+        "total": 69,
+        "raw": "11.6.18.14.9.9.2"
+      },
+      "confidence": "high",
+      "method": "mh4u-db",
+      "coloredDelta": 7,
+      "source": "MonsterHunter4UDatabase/mh4u.db",
+      "sourceWeaponId": 5439,
+      "matchMethod": "mh4uWeaponId"
+    }
+  },
+  {
+    "id": "weapon_689bacc889a8",
+    "name": "라이트닝베인",
+    "mh4uWeaponId": 5446,
+    "before": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 9
+          },
+          {
+            "color": "orange",
+            "length": 7
+          },
+          {
+            "color": "yellow",
+            "length": 8
+          },
+          {
+            "color": "green",
+            "length": 6
+          },
+          {
+            "color": "gray",
+            "length": 10
+          }
+        ],
+        "total": 40,
+        "raw": "lllllllll lllllll llllllll llllll llllllllll"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 9
+          },
+          {
+            "color": "orange",
+            "length": 7
+          },
+          {
+            "color": "yellow",
+            "length": 8
+          },
+          {
+            "color": "green",
+            "length": 7
+          },
+          {
+            "color": "blue",
+            "length": 4
+          },
+          {
+            "color": "gray",
+            "length": 5
+          }
+        ],
+        "total": 40,
+        "raw": "lllllllll lllllll llllllll lllllll llll lllll"
+      },
+      "confidence": "high",
+      "method": "run-inference",
+      "coloredDelta": 5
+    },
+    "after": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 13
+          },
+          {
+            "color": "orange",
+            "length": 11
+          },
+          {
+            "color": "yellow",
+            "length": 13
+          },
+          {
+            "color": "green",
+            "length": 9
+          }
+        ],
+        "total": 46,
+        "raw": "13.11.13.9.0.0.0"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 13
+          },
+          {
+            "color": "orange",
+            "length": 11
+          },
+          {
+            "color": "yellow",
+            "length": 13
+          },
+          {
+            "color": "green",
+            "length": 12
+          },
+          {
+            "color": "blue",
+            "length": 5
+          }
+        ],
+        "total": 54,
+        "raw": "13.11.13.12.5.0.0"
+      },
+      "confidence": "high",
+      "method": "mh4u-db",
+      "coloredDelta": 8,
+      "source": "MonsterHunter4UDatabase/mh4u.db",
+      "sourceWeaponId": 5446,
+      "matchMethod": "mh4uWeaponId"
+    }
+  },
+  {
+    "id": "weapon_0b78ef14e6dd",
+    "name": "스케일소드",
+    "mh4uWeaponId": 5493,
+    "before": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 6
+          },
+          {
+            "color": "orange",
+            "length": 3
+          },
+          {
+            "color": "yellow",
+            "length": 10
+          },
+          {
+            "color": "green",
+            "length": 6
+          },
+          {
+            "color": "gray",
+            "length": 15
+          }
+        ],
+        "total": 40,
+        "raw": "llllll lll llllllllll llllll lllllllllllllll"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 6
+          },
+          {
+            "color": "orange",
+            "length": 3
+          },
+          {
+            "color": "yellow",
+            "length": 10
+          },
+          {
+            "color": "green",
+            "length": 10
+          },
+          {
+            "color": "blue",
+            "length": 1
+          },
+          {
+            "color": "gray",
+            "length": 10
+          }
+        ],
+        "total": 40,
+        "raw": "llllll lll llllllllll llllllllll l llllllllll"
+      },
+      "confidence": "high",
+      "method": "run-inference",
+      "coloredDelta": 5
+    },
+    "after": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 8
+          },
+          {
+            "color": "orange",
+            "length": 5
+          },
+          {
+            "color": "yellow",
+            "length": 16
+          },
+          {
+            "color": "green",
+            "length": 10
+          }
+        ],
+        "total": 39,
+        "raw": "8.5.16.10.0.0.0"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 8
+          },
+          {
+            "color": "orange",
+            "length": 5
+          },
+          {
+            "color": "yellow",
+            "length": 16
+          },
+          {
+            "color": "green",
+            "length": 15
+          },
+          {
+            "color": "blue",
+            "length": 2
+          }
+        ],
+        "total": 46,
+        "raw": "8.5.16.15.2.0.0"
+      },
+      "confidence": "high",
+      "method": "mh4u-db",
+      "coloredDelta": 7,
+      "source": "MonsterHunter4UDatabase/mh4u.db",
+      "sourceWeaponId": 5493,
+      "matchMethod": "mh4uWeaponId"
+    }
+  },
+  {
+    "id": "weapon_b3fdbaff97d9",
+    "name": "조스클리버",
+    "mh4uWeaponId": 5630,
+    "before": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 19
+          },
+          {
+            "color": "orange",
+            "length": 2
+          },
+          {
+            "color": "yellow",
+            "length": 6
+          },
+          {
+            "color": "green",
+            "length": 3
+          },
+          {
+            "color": "gray",
+            "length": 10
+          }
+        ],
+        "total": 40,
+        "raw": "lllllllllllllllllll ll llllll lll llllllllll"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 19
+          },
+          {
+            "color": "orange",
+            "length": 2
+          },
+          {
+            "color": "yellow",
+            "length": 6
+          },
+          {
+            "color": "green",
+            "length": 8
+          },
+          {
+            "color": "gray",
+            "length": 5
+          }
+        ],
+        "total": 40,
+        "raw": "lllllllllllllllllll ll llllll llllllll lllll"
+      },
+      "confidence": "high",
+      "method": "run-inference",
+      "coloredDelta": 5
+    },
+    "after": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 29
+          },
+          {
+            "color": "orange",
+            "length": 3
+          },
+          {
+            "color": "yellow",
+            "length": 10
+          },
+          {
+            "color": "green",
+            "length": 4
+          }
+        ],
+        "total": 46,
+        "raw": "29.3.10.4.0.0.0"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 29
+          },
+          {
+            "color": "orange",
+            "length": 3
+          },
+          {
+            "color": "yellow",
+            "length": 10
+          },
+          {
+            "color": "green",
+            "length": 12
+          }
+        ],
+        "total": 54,
+        "raw": "29.3.10.12.0.0.0"
+      },
+      "confidence": "high",
+      "method": "mh4u-db",
+      "coloredDelta": 8,
+      "source": "MonsterHunter4UDatabase/mh4u.db",
+      "sourceWeaponId": 5630,
+      "matchMethod": "mh4uWeaponId"
+    }
+  },
+  {
+    "id": "weapon_a6f6d2201b01",
+    "name": "조스클리버+",
+    "mh4uWeaponId": 5631,
+    "before": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 20
+          },
+          {
+            "color": "orange",
+            "length": 1
+          },
+          {
+            "color": "yellow",
+            "length": 2
+          },
+          {
+            "color": "green",
+            "length": 7
+          },
+          {
+            "color": "gray",
+            "length": 10
+          }
+        ],
+        "total": 40,
+        "raw": "llllllllllllllllllll l ll lllllll llllllllll"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 20
+          },
+          {
+            "color": "orange",
+            "length": 1
+          },
+          {
+            "color": "yellow",
+            "length": 2
+          },
+          {
+            "color": "green",
+            "length": 11
+          },
+          {
+            "color": "blue",
+            "length": 1
+          },
+          {
+            "color": "gray",
+            "length": 5
+          }
+        ],
+        "total": 40,
+        "raw": "llllllllllllllllllll l ll lllllllllll l lllll"
+      },
+      "confidence": "high",
+      "method": "run-inference",
+      "coloredDelta": 5
+    },
+    "after": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 30
+          },
+          {
+            "color": "orange",
+            "length": 2
+          },
+          {
+            "color": "yellow",
+            "length": 3
+          },
+          {
+            "color": "green",
+            "length": 11
+          }
+        ],
+        "total": 46,
+        "raw": "30.2.3.11.0.0.0"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 30
+          },
+          {
+            "color": "orange",
+            "length": 2
+          },
+          {
+            "color": "yellow",
+            "length": 3
+          },
+          {
+            "color": "green",
+            "length": 17
+          },
+          {
+            "color": "blue",
+            "length": 2
+          }
+        ],
+        "total": 54,
+        "raw": "30.2.3.17.2.0.0"
+      },
+      "confidence": "high",
+      "method": "mh4u-db",
+      "coloredDelta": 8,
+      "source": "MonsterHunter4UDatabase/mh4u.db",
+      "sourceWeaponId": 5631,
+      "matchMethod": "mh4uWeaponId"
+    }
+  },
+  {
+    "id": "weapon_4b08a33e346f",
+    "name": "쿨클리버",
+    "mh4uWeaponId": 5632,
+    "before": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 11
+          },
+          {
+            "color": "orange",
+            "length": 10
+          },
+          {
+            "color": "yellow",
+            "length": 5
+          },
+          {
+            "color": "green",
+            "length": 6
+          },
+          {
+            "color": "blue",
+            "length": 3
+          },
+          {
+            "color": "gray",
+            "length": 5
+          }
+        ],
+        "total": 40,
+        "raw": "lllllllllll llllllllll lllll llllll lll lllll"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 11
+          },
+          {
+            "color": "orange",
+            "length": 10
+          },
+          {
+            "color": "yellow",
+            "length": 5
+          },
+          {
+            "color": "green",
+            "length": 6
+          },
+          {
+            "color": "blue",
+            "length": 5
+          },
+          {
+            "color": "white",
+            "length": 3
+          }
+        ],
+        "total": 40,
+        "raw": "lllllllllll llllllllll lllll llllll lllll lll"
+      },
+      "confidence": "high",
+      "method": "run-inference",
+      "coloredDelta": 5
+    },
+    "after": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 16
+          },
+          {
+            "color": "orange",
+            "length": 16
+          },
+          {
+            "color": "yellow",
+            "length": 8
+          },
+          {
+            "color": "green",
+            "length": 10
+          },
+          {
+            "color": "blue",
+            "length": 4
+          }
+        ],
+        "total": 54,
+        "raw": "16.16.8.10.4.0.0"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 16
+          },
+          {
+            "color": "orange",
+            "length": 16
+          },
+          {
+            "color": "yellow",
+            "length": 8
+          },
+          {
+            "color": "green",
+            "length": 10
+          },
+          {
+            "color": "blue",
+            "length": 7
+          },
+          {
+            "color": "white",
+            "length": 5
+          }
+        ],
+        "total": 62,
+        "raw": "16.16.8.10.7.5.0"
+      },
+      "confidence": "high",
+      "method": "mh4u-db",
+      "coloredDelta": 8,
+      "source": "MonsterHunter4UDatabase/mh4u.db",
+      "sourceWeaponId": 5632,
+      "matchMethod": "mh4uWeaponId"
+    }
+  },
+  {
+    "id": "weapon_e3ab37d78e7f",
+    "name": "프로즌클리버",
+    "mh4uWeaponId": 5633,
+    "before": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 3
+          },
+          {
+            "color": "orange",
+            "length": 3
+          },
+          {
+            "color": "yellow",
+            "length": 17
+          },
+          {
+            "color": "green",
+            "length": 8
+          },
+          {
+            "color": "blue",
+            "length": 4
+          },
+          {
+            "color": "gray",
+            "length": 5
+          }
+        ],
+        "total": 40,
+        "raw": "lll lll lllllllllllllllll llllllll llll lllll"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 3
+          },
+          {
+            "color": "orange",
+            "length": 3
+          },
+          {
+            "color": "yellow",
+            "length": 17
+          },
+          {
+            "color": "green",
+            "length": 8
+          },
+          {
+            "color": "blue",
+            "length": 4
+          },
+          {
+            "color": "white",
+            "length": 5
+          }
+        ],
+        "total": 40,
+        "raw": "lll lll lllllllllllllllll llllllll llll lllll"
+      },
+      "confidence": "high",
+      "method": "run-inference",
+      "coloredDelta": 5
+    },
+    "after": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 4
+          },
+          {
+            "color": "orange",
+            "length": 4
+          },
+          {
+            "color": "yellow",
+            "length": 27
+          },
+          {
+            "color": "green",
+            "length": 13
+          },
+          {
+            "color": "blue",
+            "length": 6
+          }
+        ],
+        "total": 54,
+        "raw": "4.4.27.13.6.0.0"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 4
+          },
+          {
+            "color": "orange",
+            "length": 4
+          },
+          {
+            "color": "yellow",
+            "length": 27
+          },
+          {
+            "color": "green",
+            "length": 13
+          },
+          {
+            "color": "blue",
+            "length": 6
+          },
+          {
+            "color": "white",
+            "length": 8
+          }
+        ],
+        "total": 62,
+        "raw": "4.4.27.13.6.8.0"
+      },
+      "confidence": "high",
+      "method": "mh4u-db",
+      "coloredDelta": 8,
+      "source": "MonsterHunter4UDatabase/mh4u.db",
+      "sourceWeaponId": 5633,
+      "matchMethod": "mh4uWeaponId"
+    }
+  },
+  {
+    "id": "weapon_86abd29aa525",
+    "name": "뇌쌍검 트윈크루스",
+    "mh4uWeaponId": 5677,
+    "before": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 3
+          },
+          {
+            "color": "orange",
+            "length": 16
+          },
+          {
+            "color": "yellow",
+            "length": 3
+          },
+          {
+            "color": "green",
+            "length": 2
+          },
+          {
+            "color": "blue",
+            "length": 11
+          },
+          {
+            "color": "gray",
+            "length": 5
+          }
+        ],
+        "total": 40,
+        "raw": "lll llllllllllllllll lll ll lllllllllll lllll"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 3
+          },
+          {
+            "color": "orange",
+            "length": 16
+          },
+          {
+            "color": "yellow",
+            "length": 3
+          },
+          {
+            "color": "green",
+            "length": 2
+          },
+          {
+            "color": "blue",
+            "length": 15
+          },
+          {
+            "color": "white",
+            "length": 1
+          }
+        ],
+        "total": 40,
+        "raw": "lll llllllllllllllll lll ll lllllllllllllll l"
+      },
+      "confidence": "high",
+      "method": "run-inference",
+      "coloredDelta": 5
+    },
+    "after": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 5
+          },
+          {
+            "color": "orange",
+            "length": 25
+          },
+          {
+            "color": "yellow",
+            "length": 5
+          },
+          {
+            "color": "green",
+            "length": 3
+          },
+          {
+            "color": "blue",
+            "length": 16
+          }
+        ],
+        "total": 54,
+        "raw": "5.25.5.3.16.0.0"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 5
+          },
+          {
+            "color": "orange",
+            "length": 25
+          },
+          {
+            "color": "yellow",
+            "length": 5
+          },
+          {
+            "color": "green",
+            "length": 3
+          },
+          {
+            "color": "blue",
+            "length": 22
+          },
+          {
+            "color": "white",
+            "length": 2
+          }
+        ],
+        "total": 62,
+        "raw": "5.25.5.3.22.2.0"
+      },
+      "confidence": "high",
+      "method": "mh4u-db",
+      "coloredDelta": 8,
+      "source": "MonsterHunter4UDatabase/mh4u.db",
+      "sourceWeaponId": 5677,
+      "matchMethod": "mh4uWeaponId"
+    }
+  },
+  {
+    "id": "weapon_e3cad963a306",
+    "name": "가노스마체테",
+    "mh4uWeaponId": 5700,
+    "before": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 20
+          },
+          {
+            "color": "orange",
+            "length": 1
+          },
+          {
+            "color": "yellow",
+            "length": 2
+          },
+          {
+            "color": "green",
+            "length": 7
+          },
+          {
+            "color": "gray",
+            "length": 10
+          }
+        ],
+        "total": 40,
+        "raw": "llllllllllllllllllll l ll lllllll llllllllll"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 20
+          },
+          {
+            "color": "orange",
+            "length": 1
+          },
+          {
+            "color": "yellow",
+            "length": 2
+          },
+          {
+            "color": "green",
+            "length": 11
+          },
+          {
+            "color": "blue",
+            "length": 1
+          },
+          {
+            "color": "gray",
+            "length": 5
+          }
+        ],
+        "total": 40,
+        "raw": "llllllllllllllllllll l ll lllllllllll l lllll"
+      },
+      "confidence": "high",
+      "method": "run-inference",
+      "coloredDelta": 5
+    },
+    "after": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 30
+          },
+          {
+            "color": "orange",
+            "length": 2
+          },
+          {
+            "color": "yellow",
+            "length": 3
+          },
+          {
+            "color": "green",
+            "length": 11
+          }
+        ],
+        "total": 46,
+        "raw": "30.2.3.11.0.0.0"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 30
+          },
+          {
+            "color": "orange",
+            "length": 2
+          },
+          {
+            "color": "yellow",
+            "length": 3
+          },
+          {
+            "color": "green",
+            "length": 17
+          },
+          {
+            "color": "blue",
+            "length": 2
+          }
+        ],
+        "total": 54,
+        "raw": "30.2.3.17.2.0.0"
+      },
+      "confidence": "high",
+      "method": "mh4u-db",
+      "coloredDelta": 8,
+      "source": "MonsterHunter4UDatabase/mh4u.db",
+      "sourceWeaponId": 5700,
+      "matchMethod": "mh4uWeaponId"
+    }
+  },
+  {
+    "id": "weapon_7af1fd7bd878",
+    "name": "블리드배싱",
+    "mh4uWeaponId": 5799,
+    "before": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 3
+          },
+          {
+            "color": "orange",
+            "length": 6
+          },
+          {
+            "color": "yellow",
+            "length": 16
+          },
+          {
+            "color": "green",
+            "length": 8
+          },
+          {
+            "color": "blue",
+            "length": 2
+          },
+          {
+            "color": "gray",
+            "length": 5
+          }
+        ],
+        "total": 40,
+        "raw": "lll llllll llllllllllllllll llllllll ll lllll"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 3
+          },
+          {
+            "color": "orange",
+            "length": 6
+          },
+          {
+            "color": "yellow",
+            "length": 16
+          },
+          {
+            "color": "green",
+            "length": 8
+          },
+          {
+            "color": "blue",
+            "length": 7
+          }
+        ],
+        "total": 40,
+        "raw": "lll llllll llllllllllllllll llllllll lllllll"
+      },
+      "confidence": "high",
+      "method": "run-inference",
+      "coloredDelta": 5
+    },
+    "after": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 4
+          },
+          {
+            "color": "orange",
+            "length": 9
+          },
+          {
+            "color": "yellow",
+            "length": 25
+          },
+          {
+            "color": "green",
+            "length": 13
+          },
+          {
+            "color": "blue",
+            "length": 3
+          }
+        ],
+        "total": 54,
+        "raw": "4.9.25.13.3.0.0"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 4
+          },
+          {
+            "color": "orange",
+            "length": 9
+          },
+          {
+            "color": "yellow",
+            "length": 25
+          },
+          {
+            "color": "green",
+            "length": 13
+          },
+          {
+            "color": "blue",
+            "length": 11
+          }
+        ],
+        "total": 62,
+        "raw": "4.9.25.13.11.0.0"
+      },
+      "confidence": "high",
+      "method": "mh4u-db",
+      "coloredDelta": 8,
+      "source": "MonsterHunter4UDatabase/mh4u.db",
+      "sourceWeaponId": 5799,
+      "matchMethod": "mh4uWeaponId"
+    }
+  },
+  {
+    "id": "weapon_c44160bb6812",
+    "name": "왕추 카미나리",
+    "mh4uWeaponId": 5809,
+    "before": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 5
+          },
+          {
+            "color": "orange",
+            "length": 4
+          },
+          {
+            "color": "yellow",
+            "length": 12
+          },
+          {
+            "color": "green",
+            "length": 4
+          },
+          {
+            "color": "gray",
+            "length": 15
+          }
+        ],
+        "total": 40,
+        "raw": "lllll llll llllllllllll llll lllllllllllllll"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 5
+          },
+          {
+            "color": "orange",
+            "length": 4
+          },
+          {
+            "color": "yellow",
+            "length": 12
+          },
+          {
+            "color": "green",
+            "length": 9
+          },
+          {
+            "color": "gray",
+            "length": 10
+          }
+        ],
+        "total": 40,
+        "raw": "lllll llll llllllllllll lllllllll llllllllll"
+      },
+      "confidence": "high",
+      "method": "run-inference",
+      "coloredDelta": 5
+    },
+    "after": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 7
+          },
+          {
+            "color": "orange",
+            "length": 6
+          },
+          {
+            "color": "yellow",
+            "length": 19
+          },
+          {
+            "color": "green",
+            "length": 6
+          }
+        ],
+        "total": 38,
+        "raw": "7.6.19.6.0.0.0"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 7
+          },
+          {
+            "color": "orange",
+            "length": 6
+          },
+          {
+            "color": "yellow",
+            "length": 19
+          },
+          {
+            "color": "green",
+            "length": 14
+          }
+        ],
+        "total": 46,
+        "raw": "7.6.19.14.0.0.0"
+      },
+      "confidence": "high",
+      "method": "mh4u-db",
+      "coloredDelta": 8,
+      "source": "MonsterHunter4UDatabase/mh4u.db",
+      "sourceWeaponId": 5809,
+      "matchMethod": "mh4uWeaponId"
+    }
+  },
+  {
+    "id": "weapon_997726104d8f",
+    "name": "굉추【호환】",
+    "mh4uWeaponId": 5842,
+    "before": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 10
+          },
+          {
+            "color": "orange",
+            "length": 4
+          },
+          {
+            "color": "yellow",
+            "length": 7
+          },
+          {
+            "color": "green",
+            "length": 7
+          },
+          {
+            "color": "blue",
+            "length": 2
+          },
+          {
+            "color": "gray",
+            "length": 10
+          }
+        ],
+        "total": 40,
+        "raw": "llllllllll llll lllllll lllllll ll llllllllll"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 10
+          },
+          {
+            "color": "orange",
+            "length": 4
+          },
+          {
+            "color": "yellow",
+            "length": 7
+          },
+          {
+            "color": "green",
+            "length": 7
+          },
+          {
+            "color": "blue",
+            "length": 7
+          },
+          {
+            "color": "gray",
+            "length": 5
+          }
+        ],
+        "total": 40,
+        "raw": "llllllllll llll lllllll lllllll lllllll lllll"
+      },
+      "confidence": "high",
+      "method": "run-inference",
+      "coloredDelta": 5
+    },
+    "after": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 14
+          },
+          {
+            "color": "orange",
+            "length": 7
+          },
+          {
+            "color": "yellow",
+            "length": 11
+          },
+          {
+            "color": "green",
+            "length": 11
+          },
+          {
+            "color": "blue",
+            "length": 3
+          }
+        ],
+        "total": 46,
+        "raw": "14.7.11.11.3.0.0"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 14
+          },
+          {
+            "color": "orange",
+            "length": 7
+          },
+          {
+            "color": "yellow",
+            "length": 11
+          },
+          {
+            "color": "green",
+            "length": 11
+          },
+          {
+            "color": "blue",
+            "length": 11
+          }
+        ],
+        "total": 54,
+        "raw": "14.7.11.11.11.0.0"
+      },
+      "confidence": "high",
+      "method": "mh4u-db",
+      "coloredDelta": 8,
+      "source": "MonsterHunter4UDatabase/mh4u.db",
+      "sourceWeaponId": 5842,
+      "matchMethod": "mh4uWeaponId"
+    }
+  },
+  {
+    "id": "weapon_00bf4d3230f6",
+    "name": "충추【호해】",
+    "mh4uWeaponId": 5844,
+    "before": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 4
+          },
+          {
+            "color": "orange",
+            "length": 16
+          },
+          {
+            "color": "yellow",
+            "length": 3
+          },
+          {
+            "color": "green",
+            "length": 2
+          },
+          {
+            "color": "blue",
+            "length": 5
+          },
+          {
+            "color": "gray",
+            "length": 10
+          }
+        ],
+        "total": 40,
+        "raw": "llll llllllllllllllll lll ll lllll llllllllll"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 4
+          },
+          {
+            "color": "orange",
+            "length": 16
+          },
+          {
+            "color": "yellow",
+            "length": 3
+          },
+          {
+            "color": "green",
+            "length": 2
+          },
+          {
+            "color": "blue",
+            "length": 10
+          },
+          {
+            "color": "gray",
+            "length": 5
+          }
+        ],
+        "total": 40,
+        "raw": "llll llllllllllllllll lll ll llllllllll lllll"
+      },
+      "confidence": "high",
+      "method": "run-inference",
+      "coloredDelta": 5
+    },
+    "after": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 5
+          },
+          {
+            "color": "orange",
+            "length": 25
+          },
+          {
+            "color": "yellow",
+            "length": 5
+          },
+          {
+            "color": "green",
+            "length": 3
+          },
+          {
+            "color": "blue",
+            "length": 8
+          }
+        ],
+        "total": 46,
+        "raw": "5.25.5.3.8.0.0"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 5
+          },
+          {
+            "color": "orange",
+            "length": 25
+          },
+          {
+            "color": "yellow",
+            "length": 5
+          },
+          {
+            "color": "green",
+            "length": 3
+          },
+          {
+            "color": "blue",
+            "length": 16
+          }
+        ],
+        "total": 54,
+        "raw": "5.25.5.3.16.0.0"
+      },
+      "confidence": "high",
+      "method": "mh4u-db",
+      "coloredDelta": 8,
+      "source": "MonsterHunter4UDatabase/mh4u.db",
+      "sourceWeaponId": 5844,
+      "matchMethod": "mh4uWeaponId"
+    }
+  },
+  {
+    "id": "weapon_fd8a28f9e7e4",
+    "name": "그래비톤해머",
+    "mh4uWeaponId": 5849,
+    "before": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 5
+          },
+          {
+            "color": "orange",
+            "length": 4
+          },
+          {
+            "color": "yellow",
+            "length": 12
+          },
+          {
+            "color": "green",
+            "length": 4
+          },
+          {
+            "color": "gray",
+            "length": 15
+          }
+        ],
+        "total": 40,
+        "raw": "lllll llll llllllllllll llll lllllllllllllll"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 5
+          },
+          {
+            "color": "orange",
+            "length": 4
+          },
+          {
+            "color": "yellow",
+            "length": 12
+          },
+          {
+            "color": "green",
+            "length": 9
+          },
+          {
+            "color": "gray",
+            "length": 10
+          }
+        ],
+        "total": 40,
+        "raw": "lllll llll llllllllllll lllllllll llllllllll"
+      },
+      "confidence": "high",
+      "method": "run-inference",
+      "coloredDelta": 5
+    },
+    "after": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 6
+          },
+          {
+            "color": "orange",
+            "length": 7
+          },
+          {
+            "color": "yellow",
+            "length": 19
+          },
+          {
+            "color": "green",
+            "length": 6
+          }
+        ],
+        "total": 38,
+        "raw": "6.7.19.6.0.0.0"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 6
+          },
+          {
+            "color": "orange",
+            "length": 7
+          },
+          {
+            "color": "yellow",
+            "length": 19
+          },
+          {
+            "color": "green",
+            "length": 14
+          }
+        ],
+        "total": 46,
+        "raw": "6.7.19.14.0.0.0"
+      },
+      "confidence": "high",
+      "method": "mh4u-db",
+      "coloredDelta": 8,
+      "source": "MonsterHunter4UDatabase/mh4u.db",
+      "sourceWeaponId": 5849,
+      "matchMethod": "mh4uWeaponId"
+    }
+  },
+  {
+    "id": "weapon_22aa25e0415a",
+    "name": "패티푸시",
+    "mh4uWeaponId": 5853,
+    "before": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 5
+          },
+          {
+            "color": "orange",
+            "length": 4
+          },
+          {
+            "color": "yellow",
+            "length": 12
+          },
+          {
+            "color": "green",
+            "length": 4
+          },
+          {
+            "color": "gray",
+            "length": 15
+          }
+        ],
+        "total": 40,
+        "raw": "lllll llll llllllllllll llll lllllllllllllll"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 5
+          },
+          {
+            "color": "orange",
+            "length": 4
+          },
+          {
+            "color": "yellow",
+            "length": 12
+          },
+          {
+            "color": "green",
+            "length": 9
+          },
+          {
+            "color": "gray",
+            "length": 10
+          }
+        ],
+        "total": 40,
+        "raw": "lllll llll llllllllllll lllllllll llllllllll"
+      },
+      "confidence": "high",
+      "method": "run-inference",
+      "coloredDelta": 5
+    },
+    "after": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 7
+          },
+          {
+            "color": "orange",
+            "length": 6
+          },
+          {
+            "color": "yellow",
+            "length": 19
+          },
+          {
+            "color": "green",
+            "length": 6
+          }
+        ],
+        "total": 38,
+        "raw": "7.6.19.6.0.0.0"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 7
+          },
+          {
+            "color": "orange",
+            "length": 6
+          },
+          {
+            "color": "yellow",
+            "length": 19
+          },
+          {
+            "color": "green",
+            "length": 14
+          }
+        ],
+        "total": 46,
+        "raw": "7.6.19.14.0.0.0"
+      },
+      "confidence": "high",
+      "method": "mh4u-db",
+      "coloredDelta": 8,
+      "source": "MonsterHunter4UDatabase/mh4u.db",
+      "sourceWeaponId": 5853,
+      "matchMethod": "mh4uWeaponId"
+    }
+  },
+  {
+    "id": "weapon_7688f0317bc8",
+    "name": "젬헤드",
+    "mh4uWeaponId": 5894,
+    "before": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 12
+          },
+          {
+            "color": "orange",
+            "length": 9
+          },
+          {
+            "color": "yellow",
+            "length": 7
+          },
+          {
+            "color": "green",
+            "length": 7
+          },
+          {
+            "color": "gray",
+            "length": 5
+          }
+        ],
+        "total": 40,
+        "raw": "llllllllllll lllllllll lllllll lllllll lllll"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 12
+          },
+          {
+            "color": "orange",
+            "length": 9
+          },
+          {
+            "color": "yellow",
+            "length": 7
+          },
+          {
+            "color": "green",
+            "length": 7
+          },
+          {
+            "color": "blue",
+            "length": 1
+          },
+          {
+            "color": "white",
+            "length": 4
+          }
+        ],
+        "total": 40,
+        "raw": "llllllllllll lllllllll lllllll lllllll l llll"
+      },
+      "confidence": "high",
+      "method": "run-inference",
+      "coloredDelta": 5
+    },
+    "after": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 21
+          },
+          {
+            "color": "orange",
+            "length": 13
+          },
+          {
+            "color": "yellow",
+            "length": 11
+          },
+          {
+            "color": "green",
+            "length": 9
+          }
+        ],
+        "total": 54,
+        "raw": "21.13.11.9.0.0.0"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 21
+          },
+          {
+            "color": "orange",
+            "length": 13
+          },
+          {
+            "color": "yellow",
+            "length": 11
+          },
+          {
+            "color": "green",
+            "length": 9
+          },
+          {
+            "color": "blue",
+            "length": 2
+          },
+          {
+            "color": "white",
+            "length": 6
+          }
+        ],
+        "total": 62,
+        "raw": "21.13.11.9.2.6.0"
+      },
+      "confidence": "high",
+      "method": "mh4u-db",
+      "coloredDelta": 8,
+      "source": "MonsterHunter4UDatabase/mh4u.db",
+      "sourceWeaponId": 5894,
+      "matchMethod": "mh4uWeaponId"
+    }
+  },
+  {
+    "id": "weapon_1e4a7d978be1",
+    "name": "검은고양이스탬프",
+    "mh4uWeaponId": 5912,
+    "before": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 11
+          },
+          {
+            "color": "orange",
+            "length": 1
+          },
+          {
+            "color": "yellow",
+            "length": 4
+          },
+          {
+            "color": "green",
+            "length": 1
+          },
+          {
+            "color": "blue",
+            "length": 8
+          },
+          {
+            "color": "gray",
+            "length": 15
+          }
+        ],
+        "total": 40,
+        "raw": "lllllllllll l llll l llllllll lllllllllllllll"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 11
+          },
+          {
+            "color": "orange",
+            "length": 1
+          },
+          {
+            "color": "yellow",
+            "length": 4
+          },
+          {
+            "color": "green",
+            "length": 1
+          },
+          {
+            "color": "blue",
+            "length": 13
+          },
+          {
+            "color": "gray",
+            "length": 10
+          }
+        ],
+        "total": 40,
+        "raw": "lllllllllll l llll l lllllllllllll llllllllll"
+      },
+      "confidence": "high",
+      "method": "run-inference",
+      "coloredDelta": 5
+    },
+    "after": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 16
+          },
+          {
+            "color": "orange",
+            "length": 2
+          },
+          {
+            "color": "yellow",
+            "length": 6
+          },
+          {
+            "color": "green",
+            "length": 2
+          },
+          {
+            "color": "blue",
+            "length": 12
+          }
+        ],
+        "total": 38,
+        "raw": "16.2.6.2.12.0.0"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 16
+          },
+          {
+            "color": "orange",
+            "length": 2
+          },
+          {
+            "color": "yellow",
+            "length": 6
+          },
+          {
+            "color": "green",
+            "length": 2
+          },
+          {
+            "color": "blue",
+            "length": 20
+          }
+        ],
+        "total": 46,
+        "raw": "16.2.6.2.20.0.0"
+      },
+      "confidence": "high",
+      "method": "mh4u-db",
+      "coloredDelta": 8,
+      "source": "MonsterHunter4UDatabase/mh4u.db",
+      "sourceWeaponId": 5912,
+      "matchMethod": "mh4uWeaponId"
+    }
+  },
+  {
+    "id": "weapon_83cc41892dee",
+    "name": "업추 다그다",
+    "mh4uWeaponId": 5926,
+    "before": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 3
+          },
+          {
+            "color": "orange",
+            "length": 7
+          },
+          {
+            "color": "yellow",
+            "length": 16
+          },
+          {
+            "color": "green",
+            "length": 6
+          },
+          {
+            "color": "blue",
+            "length": 1
+          },
+          {
+            "color": "white",
+            "length": 2
+          },
+          {
+            "color": "gray",
+            "length": 5
+          }
+        ],
+        "total": 40,
+        "raw": "lll lllllll llllllllllllllll llllll l ll lllll"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 3
+          },
+          {
+            "color": "orange",
+            "length": 7
+          },
+          {
+            "color": "yellow",
+            "length": 16
+          },
+          {
+            "color": "green",
+            "length": 6
+          },
+          {
+            "color": "blue",
+            "length": 1
+          },
+          {
+            "color": "white",
+            "length": 7
+          }
+        ],
+        "total": 40,
+        "raw": "lll lllllll llllllllllllllll llllll l lllllll"
+      },
+      "confidence": "high",
+      "method": "run-inference",
+      "coloredDelta": 5
+    },
+    "after": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 4
+          },
+          {
+            "color": "orange",
+            "length": 11
+          },
+          {
+            "color": "yellow",
+            "length": 25
+          },
+          {
+            "color": "green",
+            "length": 11
+          },
+          {
+            "color": "blue",
+            "length": 1
+          },
+          {
+            "color": "white",
+            "length": 2
+          }
+        ],
+        "total": 54,
+        "raw": "4.11.25.11.1.2.0"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 4
+          },
+          {
+            "color": "orange",
+            "length": 11
+          },
+          {
+            "color": "yellow",
+            "length": 25
+          },
+          {
+            "color": "green",
+            "length": 11
+          },
+          {
+            "color": "blue",
+            "length": 1
+          },
+          {
+            "color": "white",
+            "length": 10
+          }
+        ],
+        "total": 62,
+        "raw": "4.11.25.11.1.10.0"
+      },
+      "confidence": "high",
+      "method": "mh4u-db",
+      "coloredDelta": 8,
+      "source": "MonsterHunter4UDatabase/mh4u.db",
+      "sourceWeaponId": 5926,
+      "matchMethod": "mh4uWeaponId"
+    }
+  },
+  {
+    "id": "weapon_4a0163b9095b",
+    "name": "테오크라테르",
+    "mh4uWeaponId": 5953,
+    "before": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 20
+          },
+          {
+            "color": "orange",
+            "length": 1
+          },
+          {
+            "color": "yellow",
+            "length": 2
+          },
+          {
+            "color": "green",
+            "length": 11
+          },
+          {
+            "color": "blue",
+            "length": 1
+          },
+          {
+            "color": "gray",
+            "length": 5
+          }
+        ],
+        "total": 40,
+        "raw": "llllllllllllllllllll l ll lllllllllll l lllll"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 20
+          },
+          {
+            "color": "orange",
+            "length": 1
+          },
+          {
+            "color": "yellow",
+            "length": 2
+          },
+          {
+            "color": "green",
+            "length": 11
+          },
+          {
+            "color": "blue",
+            "length": 5
+          },
+          {
+            "color": "white",
+            "length": 1
+          }
+        ],
+        "total": 40,
+        "raw": "llllllllllllllllllll l ll lllllllllll lllll l"
+      },
+      "confidence": "high",
+      "method": "run-inference",
+      "coloredDelta": 5
+    },
+    "after": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 31
+          },
+          {
+            "color": "orange",
+            "length": 2
+          },
+          {
+            "color": "yellow",
+            "length": 3
+          },
+          {
+            "color": "green",
+            "length": 16
+          },
+          {
+            "color": "blue",
+            "length": 2
+          }
+        ],
+        "total": 54,
+        "raw": "31.2.3.16.2.0.0"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 31
+          },
+          {
+            "color": "orange",
+            "length": 2
+          },
+          {
+            "color": "yellow",
+            "length": 3
+          },
+          {
+            "color": "green",
+            "length": 16
+          },
+          {
+            "color": "blue",
+            "length": 8
+          },
+          {
+            "color": "white",
+            "length": 2
+          }
+        ],
+        "total": 62,
+        "raw": "31.2.3.16.8.2.0"
+      },
+      "confidence": "high",
+      "method": "mh4u-db",
+      "coloredDelta": 8,
+      "source": "MonsterHunter4UDatabase/mh4u.db",
+      "sourceWeaponId": 5953,
+      "matchMethod": "mh4uWeaponId"
+    }
+  },
+  {
+    "id": "weapon_6d0a2f06c199",
+    "name": "테오크라리아",
+    "mh4uWeaponId": 5954,
+    "before": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 4
+          },
+          {
+            "color": "orange",
+            "length": 3
+          },
+          {
+            "color": "yellow",
+            "length": 13
+          },
+          {
+            "color": "green",
+            "length": 13
+          },
+          {
+            "color": "blue",
+            "length": 2
+          },
+          {
+            "color": "gray",
+            "length": 5
+          }
+        ],
+        "total": 40,
+        "raw": "llll lll lllllllllllll lllllllllllll ll lllll"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 4
+          },
+          {
+            "color": "orange",
+            "length": 3
+          },
+          {
+            "color": "yellow",
+            "length": 13
+          },
+          {
+            "color": "green",
+            "length": 13
+          },
+          {
+            "color": "blue",
+            "length": 6
+          },
+          {
+            "color": "white",
+            "length": 1
+          }
+        ],
+        "total": 40,
+        "raw": "llll lll lllllllllllll lllllllllllll llllll l"
+      },
+      "confidence": "high",
+      "method": "run-inference",
+      "coloredDelta": 5
+    },
+    "after": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 7
+          },
+          {
+            "color": "orange",
+            "length": 6
+          },
+          {
+            "color": "yellow",
+            "length": 19
+          },
+          {
+            "color": "green",
+            "length": 19
+          },
+          {
+            "color": "blue",
+            "length": 3
+          }
+        ],
+        "total": 54,
+        "raw": "7.6.19.19.3.0.0"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 7
+          },
+          {
+            "color": "orange",
+            "length": 6
+          },
+          {
+            "color": "yellow",
+            "length": 19
+          },
+          {
+            "color": "green",
+            "length": 19
+          },
+          {
+            "color": "blue",
+            "length": 9
+          },
+          {
+            "color": "white",
+            "length": 2
+          }
+        ],
+        "total": 62,
+        "raw": "7.6.19.19.9.2.0"
+      },
+      "confidence": "high",
+      "method": "mh4u-db",
+      "coloredDelta": 8,
+      "source": "MonsterHunter4UDatabase/mh4u.db",
+      "sourceWeaponId": 5954,
+      "matchMethod": "mh4uWeaponId"
+    }
+  },
+  {
+    "id": "weapon_4d1c2eebf5e4",
+    "name": "샤미센【까마귀】",
+    "mh4uWeaponId": 6056,
+    "before": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 11
+          },
+          {
+            "color": "orange",
+            "length": 10
+          },
+          {
+            "color": "yellow",
+            "length": 5
+          },
+          {
+            "color": "green",
+            "length": 6
+          },
+          {
+            "color": "blue",
+            "length": 3
+          },
+          {
+            "color": "gray",
+            "length": 5
+          }
+        ],
+        "total": 40,
+        "raw": "lllllllllll llllllllll lllll llllll lll lllll"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 11
+          },
+          {
+            "color": "orange",
+            "length": 10
+          },
+          {
+            "color": "yellow",
+            "length": 5
+          },
+          {
+            "color": "green",
+            "length": 6
+          },
+          {
+            "color": "blue",
+            "length": 5
+          },
+          {
+            "color": "white",
+            "length": 3
+          }
+        ],
+        "total": 40,
+        "raw": "lllllllllll llllllllll lllll llllll lllll lll"
+      },
+      "confidence": "high",
+      "method": "run-inference",
+      "coloredDelta": 5
+    },
+    "after": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 16
+          },
+          {
+            "color": "orange",
+            "length": 16
+          },
+          {
+            "color": "yellow",
+            "length": 8
+          },
+          {
+            "color": "green",
+            "length": 10
+          },
+          {
+            "color": "blue",
+            "length": 4
+          }
+        ],
+        "total": 54,
+        "raw": "16.16.8.10.4.0.0"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 16
+          },
+          {
+            "color": "orange",
+            "length": 16
+          },
+          {
+            "color": "yellow",
+            "length": 8
+          },
+          {
+            "color": "green",
+            "length": 10
+          },
+          {
+            "color": "blue",
+            "length": 7
+          },
+          {
+            "color": "white",
+            "length": 5
+          }
+        ],
+        "total": 62,
+        "raw": "16.16.8.10.7.5.0"
+      },
+      "confidence": "high",
+      "method": "mh4u-db",
+      "coloredDelta": 8,
+      "source": "MonsterHunter4UDatabase/mh4u.db",
+      "sourceWeaponId": 6056,
+      "matchMethod": "mh4uWeaponId"
+    }
+  },
+  {
+    "id": "weapon_6866b3954216",
+    "name": "황현 다라블루트",
+    "mh4uWeaponId": 6089,
+    "before": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 11
+          },
+          {
+            "color": "orange",
+            "length": 6
+          },
+          {
+            "color": "yellow",
+            "length": 2
+          },
+          {
+            "color": "green",
+            "length": 7
+          },
+          {
+            "color": "blue",
+            "length": 7
+          },
+          {
+            "color": "white",
+            "length": 2
+          },
+          {
+            "color": "gray",
+            "length": 10
+          }
+        ],
+        "total": 45,
+        "raw": "lllllllllll llllll ll lllllll lllllll ll llllllllll"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 11
+          },
+          {
+            "color": "orange",
+            "length": 6
+          },
+          {
+            "color": "yellow",
+            "length": 2
+          },
+          {
+            "color": "green",
+            "length": 7
+          },
+          {
+            "color": "blue",
+            "length": 7
+          },
+          {
+            "color": "white",
+            "length": 7
+          },
+          {
+            "color": "gray",
+            "length": 5
+          }
+        ],
+        "total": 45,
+        "raw": "lllllllllll llllll ll lllllll lllllll lllllll lllll"
+      },
+      "confidence": "high",
+      "method": "run-inference",
+      "coloredDelta": 5
+    },
+    "after": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 17
+          },
+          {
+            "color": "orange",
+            "length": 9
+          },
+          {
+            "color": "yellow",
+            "length": 3
+          },
+          {
+            "color": "green",
+            "length": 11
+          },
+          {
+            "color": "blue",
+            "length": 10
+          },
+          {
+            "color": "white",
+            "length": 4
+          }
+        ],
+        "total": 54,
+        "raw": "17.9.3.11.10.4.0"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 17
+          },
+          {
+            "color": "orange",
+            "length": 9
+          },
+          {
+            "color": "yellow",
+            "length": 3
+          },
+          {
+            "color": "green",
+            "length": 11
+          },
+          {
+            "color": "blue",
+            "length": 10
+          },
+          {
+            "color": "white",
+            "length": 12
+          }
+        ],
+        "total": 62,
+        "raw": "17.9.3.11.10.12.0"
+      },
+      "confidence": "high",
+      "method": "mh4u-db",
+      "coloredDelta": 8,
+      "source": "MonsterHunter4UDatabase/mh4u.db",
+      "sourceWeaponId": 6089,
+      "matchMethod": "mh4uWeaponId"
+    }
+  },
+  {
+    "id": "weapon_bdbd990fb7cd",
+    "name": "THE세이지",
+    "mh4uWeaponId": 6142,
+    "before": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 15
+          },
+          {
+            "color": "orange",
+            "length": 11
+          },
+          {
+            "color": "yellow",
+            "length": 12
+          },
+          {
+            "color": "green",
+            "length": 6
+          },
+          {
+            "color": "blue",
+            "length": 8
+          },
+          {
+            "color": "white",
+            "length": 2
+          }
+        ],
+        "total": 54,
+        "raw": "15.11.12.6.8.2.0"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 15
+          },
+          {
+            "color": "orange",
+            "length": 11
+          },
+          {
+            "color": "yellow",
+            "length": 12
+          },
+          {
+            "color": "green",
+            "length": 6
+          },
+          {
+            "color": "blue",
+            "length": 8
+          },
+          {
+            "color": "white",
+            "length": 10
+          }
+        ],
+        "total": 62,
+        "raw": "15.11.12.6.8.10.0"
+      },
+      "confidence": "high",
+      "method": "mh4u-db",
+      "coloredDelta": 8,
+      "source": "MonsterHunter4UDatabase/mh4u.db",
+      "sourceWeaponId": 6141,
+      "sourceName": "L'Égide",
+      "sourceNameJa": "THEガーディアン",
+      "matchMethod": "jp-exact"
+    },
+    "after": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 10
+          },
+          {
+            "color": "orange",
+            "length": 6
+          },
+          {
+            "color": "yellow",
+            "length": 18
+          },
+          {
+            "color": "green",
+            "length": 14
+          },
+          {
+            "color": "blue",
+            "length": 10
+          },
+          {
+            "color": "white",
+            "length": 4
+          }
+        ],
+        "total": 62,
+        "raw": "10.6.18.14.10.4.0"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 10
+          },
+          {
+            "color": "orange",
+            "length": 6
+          },
+          {
+            "color": "yellow",
+            "length": 18
+          },
+          {
+            "color": "green",
+            "length": 14
+          },
+          {
+            "color": "blue",
+            "length": 10
+          },
+          {
+            "color": "white",
+            "length": 9
+          },
+          {
+            "color": "purple",
+            "length": 2
+          }
+        ],
+        "total": 69,
+        "raw": "10.6.18.14.10.9.2"
+      },
+      "confidence": "high",
+      "method": "mh4u-db",
+      "coloredDelta": 7,
+      "source": "MonsterHunter4UDatabase/mh4u.db",
+      "sourceWeaponId": 6142,
+      "sourceName": "L'Égide",
+      "sourceNameJa": "THEガーディアン",
+      "matchMethod": "mh4uWeaponId"
+    }
+  },
+  {
+    "id": "weapon_4ec29a14c7c2",
+    "name": "THE팔라딘",
+    "mh4uWeaponId": 6143,
+    "before": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 15
+          },
+          {
+            "color": "orange",
+            "length": 11
+          },
+          {
+            "color": "yellow",
+            "length": 12
+          },
+          {
+            "color": "green",
+            "length": 6
+          },
+          {
+            "color": "blue",
+            "length": 8
+          },
+          {
+            "color": "white",
+            "length": 2
+          }
+        ],
+        "total": 54,
+        "raw": "15.11.12.6.8.2.0"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 15
+          },
+          {
+            "color": "orange",
+            "length": 11
+          },
+          {
+            "color": "yellow",
+            "length": 12
+          },
+          {
+            "color": "green",
+            "length": 6
+          },
+          {
+            "color": "blue",
+            "length": 8
+          },
+          {
+            "color": "white",
+            "length": 10
+          }
+        ],
+        "total": 62,
+        "raw": "15.11.12.6.8.10.0"
+      },
+      "confidence": "high",
+      "method": "mh4u-db",
+      "coloredDelta": 8,
+      "source": "MonsterHunter4UDatabase/mh4u.db",
+      "sourceWeaponId": 6141,
+      "sourceName": "L'Égide",
+      "sourceNameJa": "THEガーディアン",
+      "matchMethod": "jp-exact"
+    },
+    "after": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 15
+          },
+          {
+            "color": "orange",
+            "length": 11
+          },
+          {
+            "color": "yellow",
+            "length": 12
+          },
+          {
+            "color": "green",
+            "length": 8
+          },
+          {
+            "color": "blue",
+            "length": 4
+          },
+          {
+            "color": "white",
+            "length": 12
+          }
+        ],
+        "total": 62,
+        "raw": "15.11.12.8.4.12.0"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 15
+          },
+          {
+            "color": "orange",
+            "length": 11
+          },
+          {
+            "color": "yellow",
+            "length": 12
+          },
+          {
+            "color": "green",
+            "length": 8
+          },
+          {
+            "color": "blue",
+            "length": 4
+          },
+          {
+            "color": "white",
+            "length": 13
+          },
+          {
+            "color": "purple",
+            "length": 6
+          }
+        ],
+        "total": 69,
+        "raw": "15.11.12.8.4.13.6"
+      },
+      "confidence": "high",
+      "method": "mh4u-db",
+      "coloredDelta": 7,
+      "source": "MonsterHunter4UDatabase/mh4u.db",
+      "sourceWeaponId": 6143,
+      "sourceName": "L'Égide",
+      "sourceNameJa": "THEガーディアン",
+      "matchMethod": "mh4uWeaponId"
+    }
+  },
+  {
+    "id": "weapon_f14252052f31",
+    "name": "비애의 중창",
+    "mh4uWeaponId": 6249,
+    "before": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 12
+          },
+          {
+            "color": "orange",
+            "length": 2
+          },
+          {
+            "color": "yellow",
+            "length": 4
+          },
+          {
+            "color": "green",
+            "length": 9
+          },
+          {
+            "color": "blue",
+            "length": 3
+          },
+          {
+            "color": "gray",
+            "length": 10
+          }
+        ],
+        "total": 40,
+        "raw": "llllllllllll ll llll lllllllll lll llllllllll"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 12
+          },
+          {
+            "color": "orange",
+            "length": 2
+          },
+          {
+            "color": "yellow",
+            "length": 4
+          },
+          {
+            "color": "green",
+            "length": 9
+          },
+          {
+            "color": "blue",
+            "length": 8
+          },
+          {
+            "color": "gray",
+            "length": 5
+          }
+        ],
+        "total": 40,
+        "raw": "llllllllllll ll llll lllllllll llllllll lllll"
+      },
+      "confidence": "high",
+      "method": "run-inference",
+      "coloredDelta": 5
+    },
+    "after": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 18
+          },
+          {
+            "color": "orange",
+            "length": 3
+          },
+          {
+            "color": "yellow",
+            "length": 7
+          },
+          {
+            "color": "green",
+            "length": 13
+          },
+          {
+            "color": "blue",
+            "length": 5
+          }
+        ],
+        "total": 46,
+        "raw": "18.3.7.13.5.0.0"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 18
+          },
+          {
+            "color": "orange",
+            "length": 3
+          },
+          {
+            "color": "yellow",
+            "length": 7
+          },
+          {
+            "color": "green",
+            "length": 13
+          },
+          {
+            "color": "blue",
+            "length": 13
+          }
+        ],
+        "total": 54,
+        "raw": "18.3.7.13.13.0.0"
+      },
+      "confidence": "high",
+      "method": "mh4u-db",
+      "coloredDelta": 8,
+      "source": "MonsterHunter4UDatabase/mh4u.db",
+      "sourceWeaponId": 6249,
+      "matchMethod": "mh4uWeaponId"
+    }
+  },
+  {
+    "id": "weapon_573cfb3c1e07",
+    "name": "스카이스크레이퍼",
+    "mh4uWeaponId": 6292,
+    "before": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 40
+          }
+        ],
+        "total": 40,
+        "raw": "llllllllllllllllllllllllllllllllllllllll"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 40
+          }
+        ],
+        "total": 40,
+        "raw": "llllllllllllllllllllllllllllllllllllllll"
+      },
+      "confidence": "high",
+      "method": "run-inference",
+      "coloredDelta": 0
+    },
+    "after": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 16
+          },
+          {
+            "color": "orange",
+            "length": 2
+          },
+          {
+            "color": "yellow",
+            "length": 7
+          },
+          {
+            "color": "green",
+            "length": 2
+          },
+          {
+            "color": "blue",
+            "length": 31
+          },
+          {
+            "color": "white",
+            "length": 4
+          }
+        ],
+        "total": 62,
+        "raw": "16.2.7.2.31.4.0"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 16
+          },
+          {
+            "color": "orange",
+            "length": 2
+          },
+          {
+            "color": "yellow",
+            "length": 7
+          },
+          {
+            "color": "green",
+            "length": 2
+          },
+          {
+            "color": "blue",
+            "length": 31
+          },
+          {
+            "color": "white",
+            "length": 11
+          }
+        ],
+        "total": 69,
+        "raw": "16.2.7.2.31.11.0"
+      },
+      "confidence": "high",
+      "method": "mh4u-db",
+      "coloredDelta": 7,
+      "source": "MonsterHunter4UDatabase/mh4u.db",
+      "sourceWeaponId": 6292,
+      "matchMethod": "mh4uWeaponId"
+    }
+  },
+  {
+    "id": "weapon_35d507bf22e0",
+    "name": "테오엑시스",
+    "mh4uWeaponId": 6295,
+    "before": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 8
+          },
+          {
+            "color": "orange",
+            "length": 12
+          },
+          {
+            "color": "yellow",
+            "length": 7
+          },
+          {
+            "color": "green",
+            "length": 4
+          },
+          {
+            "color": "blue",
+            "length": 3
+          },
+          {
+            "color": "white",
+            "length": 6
+          },
+          {
+            "color": "gray",
+            "length": 5
+          }
+        ],
+        "total": 45,
+        "raw": "llllllll llllllllllll lllllll llll lll llllll lllll"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 8
+          },
+          {
+            "color": "orange",
+            "length": 12
+          },
+          {
+            "color": "yellow",
+            "length": 7
+          },
+          {
+            "color": "green",
+            "length": 4
+          },
+          {
+            "color": "blue",
+            "length": 3
+          },
+          {
+            "color": "white",
+            "length": 9
+          },
+          {
+            "color": "purple",
+            "length": 2
+          }
+        ],
+        "total": 45,
+        "raw": "llllllll llllllllllll lllllll llll lll lllllllll ll"
+      },
+      "confidence": "high",
+      "method": "run-inference",
+      "coloredDelta": 5
+    },
+    "after": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 12
+          },
+          {
+            "color": "orange",
+            "length": 18
+          },
+          {
+            "color": "yellow",
+            "length": 11
+          },
+          {
+            "color": "green",
+            "length": 6
+          },
+          {
+            "color": "blue",
+            "length": 5
+          },
+          {
+            "color": "white",
+            "length": 10
+          }
+        ],
+        "total": 62,
+        "raw": "12.18.11.6.5.10.0"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 12
+          },
+          {
+            "color": "orange",
+            "length": 18
+          },
+          {
+            "color": "yellow",
+            "length": 11
+          },
+          {
+            "color": "green",
+            "length": 6
+          },
+          {
+            "color": "blue",
+            "length": 5
+          },
+          {
+            "color": "white",
+            "length": 14
+          },
+          {
+            "color": "purple",
+            "length": 3
+          }
+        ],
+        "total": 69,
+        "raw": "12.18.11.6.5.14.3"
+      },
+      "confidence": "high",
+      "method": "mh4u-db",
+      "coloredDelta": 7,
+      "source": "MonsterHunter4UDatabase/mh4u.db",
+      "sourceWeaponId": 6295,
+      "matchMethod": "mh4uWeaponId"
+    }
+  },
+  {
+    "id": "weapon_f4b48c6bf940",
+    "name": "창귀총창포",
+    "mh4uWeaponId": 6335,
+    "before": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 5
+          },
+          {
+            "color": "orange",
+            "length": 3
+          },
+          {
+            "color": "yellow",
+            "length": 13
+          },
+          {
+            "color": "green",
+            "length": 4
+          },
+          {
+            "color": "gray",
+            "length": 15
+          }
+        ],
+        "total": 40,
+        "raw": "lllll lll lllllllllllll llll lllllllllllllll"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 5
+          },
+          {
+            "color": "orange",
+            "length": 3
+          },
+          {
+            "color": "yellow",
+            "length": 13
+          },
+          {
+            "color": "green",
+            "length": 9
+          },
+          {
+            "color": "gray",
+            "length": 10
+          }
+        ],
+        "total": 40,
+        "raw": "lllll lll lllllllllllll lllllllll llllllllll"
+      },
+      "confidence": "high",
+      "method": "run-inference",
+      "coloredDelta": 5
+    },
+    "after": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 7
+          },
+          {
+            "color": "orange",
+            "length": 5
+          },
+          {
+            "color": "yellow",
+            "length": 20
+          },
+          {
+            "color": "green",
+            "length": 6
+          }
+        ],
+        "total": 38,
+        "raw": "7.5.20.6.0.0.0"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 7
+          },
+          {
+            "color": "orange",
+            "length": 5
+          },
+          {
+            "color": "yellow",
+            "length": 20
+          },
+          {
+            "color": "green",
+            "length": 14
+          }
+        ],
+        "total": 46,
+        "raw": "7.5.20.14.0.0.0"
+      },
+      "confidence": "high",
+      "method": "mh4u-db",
+      "coloredDelta": 8,
+      "source": "MonsterHunter4UDatabase/mh4u.db",
+      "sourceWeaponId": 6335,
+      "matchMethod": "mh4uWeaponId"
+    }
+  },
+  {
+    "id": "weapon_011e19a2597b",
+    "name": "창귀총창포【귀존】",
+    "mh4uWeaponId": 6336,
+    "before": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 5
+          },
+          {
+            "color": "orange",
+            "length": 3
+          },
+          {
+            "color": "yellow",
+            "length": 13
+          },
+          {
+            "color": "green",
+            "length": 9
+          },
+          {
+            "color": "gray",
+            "length": 10
+          }
+        ],
+        "total": 40,
+        "raw": "lllll lll lllllllllllll lllllllll llllllllll"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 5
+          },
+          {
+            "color": "orange",
+            "length": 3
+          },
+          {
+            "color": "yellow",
+            "length": 13
+          },
+          {
+            "color": "green",
+            "length": 10
+          },
+          {
+            "color": "blue",
+            "length": 4
+          },
+          {
+            "color": "gray",
+            "length": 5
+          }
+        ],
+        "total": 40,
+        "raw": "lllll lll lllllllllllll llllllllll llll lllll"
+      },
+      "confidence": "high",
+      "method": "run-inference",
+      "coloredDelta": 5
+    },
+    "after": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 7
+          },
+          {
+            "color": "orange",
+            "length": 5
+          },
+          {
+            "color": "yellow",
+            "length": 20
+          },
+          {
+            "color": "green",
+            "length": 14
+          }
+        ],
+        "total": 46,
+        "raw": "7.5.20.14.0.0.0"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 7
+          },
+          {
+            "color": "orange",
+            "length": 5
+          },
+          {
+            "color": "yellow",
+            "length": 20
+          },
+          {
+            "color": "green",
+            "length": 16
+          },
+          {
+            "color": "blue",
+            "length": 6
+          }
+        ],
+        "total": 54,
+        "raw": "7.5.20.16.6.0.0"
+      },
+      "confidence": "high",
+      "method": "mh4u-db",
+      "coloredDelta": 8,
+      "source": "MonsterHunter4UDatabase/mh4u.db",
+      "sourceWeaponId": 6336,
+      "matchMethod": "mh4uWeaponId"
+    }
+  },
+  {
+    "id": "weapon_dd60cf2d2820",
+    "name": "호숭총창【호오리】",
+    "mh4uWeaponId": 6423,
+    "before": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 7
+          },
+          {
+            "color": "orange",
+            "length": 5
+          },
+          {
+            "color": "yellow",
+            "length": 8
+          },
+          {
+            "color": "green",
+            "length": 7
+          },
+          {
+            "color": "blue",
+            "length": 7
+          },
+          {
+            "color": "white",
+            "length": 1
+          },
+          {
+            "color": "gray",
+            "length": 5
+          }
+        ],
+        "total": 40,
+        "raw": "lllllll lllll llllllll lllllll lllllll l lllll"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 7
+          },
+          {
+            "color": "orange",
+            "length": 5
+          },
+          {
+            "color": "yellow",
+            "length": 8
+          },
+          {
+            "color": "green",
+            "length": 7
+          },
+          {
+            "color": "blue",
+            "length": 7
+          },
+          {
+            "color": "white",
+            "length": 3
+          },
+          {
+            "color": "purple",
+            "length": 3
+          }
+        ],
+        "total": 40,
+        "raw": "lllllll lllll llllllll lllllll lllllll lll lll"
+      },
+      "confidence": "high",
+      "method": "run-inference",
+      "coloredDelta": 5
+    },
+    "after": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 12
+          },
+          {
+            "color": "orange",
+            "length": 8
+          },
+          {
+            "color": "yellow",
+            "length": 17
+          },
+          {
+            "color": "green",
+            "length": 12
+          },
+          {
+            "color": "blue",
+            "length": 11
+          },
+          {
+            "color": "white",
+            "length": 2
+          }
+        ],
+        "total": 62,
+        "raw": "12.8.17.12.11.2.0"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 12
+          },
+          {
+            "color": "orange",
+            "length": 8
+          },
+          {
+            "color": "yellow",
+            "length": 17
+          },
+          {
+            "color": "green",
+            "length": 12
+          },
+          {
+            "color": "blue",
+            "length": 11
+          },
+          {
+            "color": "white",
+            "length": 4
+          },
+          {
+            "color": "purple",
+            "length": 5
+          }
+        ],
+        "total": 69,
+        "raw": "12.8.17.12.11.4.5"
+      },
+      "confidence": "high",
+      "method": "mh4u-db",
+      "coloredDelta": 7,
+      "source": "MonsterHunter4UDatabase/mh4u.db",
+      "sourceWeaponId": 6423,
+      "matchMethod": "mh4uWeaponId"
+    }
+  },
+  {
+    "id": "weapon_b2d8ff38e034",
+    "name": "붕총창 파시캄루바스",
+    "mh4uWeaponId": 6445,
+    "before": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 11
+          },
+          {
+            "color": "orange",
+            "length": 1
+          },
+          {
+            "color": "yellow",
+            "length": 5
+          },
+          {
+            "color": "green",
+            "length": 3
+          },
+          {
+            "color": "gray",
+            "length": 20
+          }
+        ],
+        "total": 40,
+        "raw": "lllllllllll l lllll lll llllllllllllllllllll"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 11
+          },
+          {
+            "color": "orange",
+            "length": 1
+          },
+          {
+            "color": "yellow",
+            "length": 5
+          },
+          {
+            "color": "green",
+            "length": 5
+          },
+          {
+            "color": "blue",
+            "length": 3
+          },
+          {
+            "color": "gray",
+            "length": 15
+          }
+        ],
+        "total": 40,
+        "raw": "lllllllllll l lllll lllll lll lllllllllllllll"
+      },
+      "confidence": "high",
+      "method": "run-inference",
+      "coloredDelta": 5
+    },
+    "after": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 28
+          },
+          {
+            "color": "orange",
+            "length": 2
+          },
+          {
+            "color": "yellow",
+            "length": 10
+          },
+          {
+            "color": "green",
+            "length": 6
+          }
+        ],
+        "total": 46,
+        "raw": "28.2.10.6.0.0.0"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 28
+          },
+          {
+            "color": "orange",
+            "length": 2
+          },
+          {
+            "color": "yellow",
+            "length": 10
+          },
+          {
+            "color": "green",
+            "length": 10
+          },
+          {
+            "color": "blue",
+            "length": 4
+          }
+        ],
+        "total": 54,
+        "raw": "28.2.10.10.4.0.0"
+      },
+      "confidence": "high",
+      "method": "mh4u-db",
+      "coloredDelta": 8,
+      "source": "MonsterHunter4UDatabase/mh4u.db",
+      "sourceWeaponId": 6445,
+      "matchMethod": "mh4uWeaponId"
+    }
+  },
+  {
+    "id": "weapon_04d18d385171",
+    "name": "엘다오르블리지아",
+    "mh4uWeaponId": 6455,
+    "before": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 6
+          },
+          {
+            "color": "orange",
+            "length": 6
+          },
+          {
+            "color": "yellow",
+            "length": 4
+          },
+          {
+            "color": "green",
+            "length": 3
+          },
+          {
+            "color": "blue",
+            "length": 16
+          },
+          {
+            "color": "white",
+            "length": 3
+          },
+          {
+            "color": "purple",
+            "length": 2
+          }
+        ],
+        "total": 40,
+        "raw": "llllll llllll llll lll llllllllllllllll lll ll"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 6
+          },
+          {
+            "color": "orange",
+            "length": 6
+          },
+          {
+            "color": "yellow",
+            "length": 4
+          },
+          {
+            "color": "green",
+            "length": 3
+          },
+          {
+            "color": "blue",
+            "length": 16
+          },
+          {
+            "color": "white",
+            "length": 3
+          },
+          {
+            "color": "purple",
+            "length": 2
+          }
+        ],
+        "total": 40,
+        "raw": "llllll llllll llll lll llllllllllllllll lll ll"
+      },
+      "confidence": "high",
+      "method": "run-inference",
+      "coloredDelta": 0
+    },
+    "after": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 12
+          },
+          {
+            "color": "orange",
+            "length": 10
+          },
+          {
+            "color": "yellow",
+            "length": 8
+          },
+          {
+            "color": "green",
+            "length": 6
+          },
+          {
+            "color": "blue",
+            "length": 28
+          },
+          {
+            "color": "white",
+            "length": 3
+          },
+          {
+            "color": "purple",
+            "length": 2
+          }
+        ],
+        "total": 69,
+        "raw": "12.10.8.6.28.3.2"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 12
+          },
+          {
+            "color": "orange",
+            "length": 10
+          },
+          {
+            "color": "yellow",
+            "length": 8
+          },
+          {
+            "color": "green",
+            "length": 6
+          },
+          {
+            "color": "blue",
+            "length": 28
+          },
+          {
+            "color": "white",
+            "length": 3
+          },
+          {
+            "color": "purple",
+            "length": 2
+          }
+        ],
+        "total": 69,
+        "raw": "12.10.8.6.28.3.2"
+      },
+      "confidence": "high",
+      "method": "mh4u-db",
+      "coloredDelta": 0,
+      "source": "MonsterHunter4UDatabase/mh4u.db",
+      "sourceWeaponId": 6455,
+      "matchMethod": "mh4uWeaponId"
+    }
+  },
+  {
+    "id": "weapon_31b8173ba25a",
+    "name": "홍창검부",
+    "mh4uWeaponId": 6501,
+    "before": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 12
+          },
+          {
+            "color": "orange",
+            "length": 2
+          },
+          {
+            "color": "yellow",
+            "length": 4
+          },
+          {
+            "color": "green",
+            "length": 9
+          },
+          {
+            "color": "blue",
+            "length": 8
+          },
+          {
+            "color": "gray",
+            "length": 5
+          }
+        ],
+        "total": 40,
+        "raw": "llllllllllll ll llll lllllllll llllllll lllll"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 12
+          },
+          {
+            "color": "orange",
+            "length": 2
+          },
+          {
+            "color": "yellow",
+            "length": 4
+          },
+          {
+            "color": "green",
+            "length": 9
+          },
+          {
+            "color": "blue",
+            "length": 10
+          },
+          {
+            "color": "white",
+            "length": 3
+          }
+        ],
+        "total": 40,
+        "raw": "llllllllllll ll llll lllllllll llllllllll lll"
+      },
+      "confidence": "high",
+      "method": "run-inference",
+      "coloredDelta": 5
+    },
+    "after": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 18
+          },
+          {
+            "color": "orange",
+            "length": 3
+          },
+          {
+            "color": "yellow",
+            "length": 7
+          },
+          {
+            "color": "green",
+            "length": 13
+          },
+          {
+            "color": "blue",
+            "length": 13
+          }
+        ],
+        "total": 54,
+        "raw": "18.3.7.13.13.0.0"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 18
+          },
+          {
+            "color": "orange",
+            "length": 3
+          },
+          {
+            "color": "yellow",
+            "length": 7
+          },
+          {
+            "color": "green",
+            "length": 13
+          },
+          {
+            "color": "blue",
+            "length": 16
+          },
+          {
+            "color": "white",
+            "length": 5
+          }
+        ],
+        "total": 62,
+        "raw": "18.3.7.13.16.5.0"
+      },
+      "confidence": "high",
+      "method": "mh4u-db",
+      "coloredDelta": 8,
+      "source": "MonsterHunter4UDatabase/mh4u.db",
+      "sourceWeaponId": 6501,
+      "matchMethod": "mh4uWeaponId"
+    }
+  },
+  {
+    "id": "weapon_c0fff3daba27",
+    "name": "알트로열",
+    "mh4uWeaponId": 6623,
+    "before": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 5
+          },
+          {
+            "color": "orange",
+            "length": 25
+          },
+          {
+            "color": "yellow",
+            "length": 5
+          },
+          {
+            "color": "green",
+            "length": 3
+          },
+          {
+            "color": "blue",
+            "length": 8
+          }
+        ],
+        "total": 46,
+        "raw": "5.25.5.3.8.0.0"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 5
+          },
+          {
+            "color": "orange",
+            "length": 25
+          },
+          {
+            "color": "yellow",
+            "length": 5
+          },
+          {
+            "color": "green",
+            "length": 3
+          },
+          {
+            "color": "blue",
+            "length": 16
+          }
+        ],
+        "total": 54,
+        "raw": "5.25.5.3.16.0.0"
+      },
+      "confidence": "high",
+      "method": "mh4u-db",
+      "coloredDelta": 8,
+      "source": "MonsterHunter4UDatabase/mh4u.db",
+      "sourceWeaponId": 6621,
+      "sourceName": "Mundus Altus",
+      "sourceNameJa": "アルトエレガン",
+      "matchMethod": "jp-exact"
+    },
+    "after": {
+      "normal": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 23
+          },
+          {
+            "color": "orange",
+            "length": 7
+          },
+          {
+            "color": "yellow",
+            "length": 8
+          },
+          {
+            "color": "green",
+            "length": 8
+          },
+          {
+            "color": "blue",
+            "length": 9
+          },
+          {
+            "color": "white",
+            "length": 7
+          }
+        ],
+        "total": 62,
+        "raw": "23.7.8.8.9.7.0"
+      },
+      "plus": {
+        "segments": [
+          {
+            "color": "red",
+            "length": 23
+          },
+          {
+            "color": "orange",
+            "length": 7
+          },
+          {
+            "color": "yellow",
+            "length": 8
+          },
+          {
+            "color": "green",
+            "length": 8
+          },
+          {
+            "color": "blue",
+            "length": 9
+          },
+          {
+            "color": "white",
+            "length": 14
+          }
+        ],
+        "total": 69,
+        "raw": "23.7.8.8.9.14.0"
+      },
+      "confidence": "high",
+      "method": "mh4u-db",
+      "coloredDelta": 7,
+      "source": "MonsterHunter4UDatabase/mh4u.db",
+      "sourceWeaponId": 6623,
+      "sourceName": "Mundus Altus",
+      "sourceNameJa": "アルトエレガン",
+      "matchMethod": "mh4uWeaponId"
+    }
+  }
+]
