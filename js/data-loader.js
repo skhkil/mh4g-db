@@ -1,4 +1,4 @@
-const DATA_VERSION = "0.7.7-nonprob-final1";
+const DATA_VERSION = "0.7.7-weapon-sharpfix-20261029";
 
 const FULL_FILES = {
   skills:"./data/skills.json",
