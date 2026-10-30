@@ -2848,18 +2848,18 @@ function bind(){
 
   // Sidebar accordion: only one expandable section remains open.
   const closeNavSubmenus=(except=null)=>{
-    $('#mainNav .nav-submenu.open').forEach(menu=>{
+    $$('#mainNav .nav-submenu.open').forEach(menu=>{
       if(menu!==except)menu.classList.remove("open");
     });
   };
-  $('.nav-group-toggle').forEach(b=>b.onclick=e=>{
+  $$('.nav-group-toggle').forEach(b=>b.onclick=e=>{
     e.stopPropagation();
     const menu=$(`#${b.dataset.submenu}`);
     const wasOpen=menu?.classList.contains("open");
     closeNavSubmenus();
     if(menu&&!wasOpen)menu.classList.add("open");
   });
-  $('.nav-main[data-page]').forEach(b=>b.onclick=e=>{
+  $$('.nav-main[data-page]').forEach(b=>b.onclick=e=>{
     e.stopPropagation();
     closeNavSubmenus();
     const targetPage=b.dataset.page;
@@ -2867,7 +2867,7 @@ function bind(){
     if(targetPage===currentPage&&targetSource===sourceView){void openPage(targetPage);return;}
     void navigatePage(targetPage,{source:b.dataset.sourceView||null});
   });
-  $('[data-route]').forEach(b=>b.onclick=e=>{
+  $$('[data-route]').forEach(b=>b.onclick=e=>{
     e.stopPropagation();
     closeNavSubmenus(b.closest(".nav-submenu"));
     replaceCurrentHistoryState();
