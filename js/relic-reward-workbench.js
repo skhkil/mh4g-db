@@ -1,6 +1,6 @@
 
 const KEY="mh4g-relic-farm-records-v1";
-let loaded=null, selected="",level=131,purpose="sphere",pair="single",minutes=30,success=90;
+let loaded=null, selected="",level=131,purpose="sphere",pair="single",duoLeft="도스람포스",duoRight="라잔",minutes=30,success=90;
 const make=(tag,cls,text)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(text!==undefined)e.textContent=text;return e};
 const choice=(items,value,change)=>{const s=make("select");for(const [v,t] of items){const o=make("option",null,t);o.value=v;o.selected=v===value;s.append(o)}s.onchange=()=>change(s.value);return s};
 const field=(name,control)=>{const l=make("label","rr-field");l.append(make("span",null,name),control);return l};
@@ -39,32 +39,39 @@ function render(d,host){
  for(const x of loaded.verifiedLevelBands){const el=make("div",level>=x.min&&level<=x.max?"rr-band rr-current":"rr-band");const rateFor=rate(selected,x.min);el.append(make("b",null,x.label),make("span",null,"천갑옥: "+(g&&x.max>=g.minLevel?"출현 가능 구간":"출현 조건 미달/미확인")),make("span",null,"봉인 무기: "+(rateFor?rateFor.percent+"% (1회)":"미확인")));matrix.append(el)}
  compare.append(matrix);top.append(compare);
  host.append(top);
- const duo=make("section","panel rr-workbench rr-duo");const duoTitle=make("div","rr-heading");duoTitle.append(make("span","rr-step","02 · 보상 구조 비교"),make("h2",null,"2두 길퀘 보상 분석"),make("p","rr-note","왜 비교하나요? 2두는 두 몬스터의 보상 포인트를 합산해 공통 보상칸을 결정하며, 각 몬스터의 기타 보상은 별도로 추첨되기 때문입니다."));duo.append(duoTitle);
- const help=make("div","rr-explain");for(const [title,description] of [["공통 보상칸","몬스터 포인트 합산 → 공통 보상칸. 단일 보상칸을 서로 더하지 않습니다."],["기타 보상","각 몬스터에서 1칸씩. ×2는 한 칸에서 2개 지급이라는 뜻입니다."],["외형 기준","왼쪽 아이콘 몬스터의 그룹으로 발굴 외형이 결정됩니다."]]){const e=make("div","rr-explain-item");e.append(make("strong",null,title),make("p",null,description));help.append(e)}duo.append(help);
- notice(duo,"아래 선택지는 전체 조합 목록이 아니라 일본 자료의 보상 계산 예시입니다. 실제 생성 가능한 조합인지 별도 확인이 필요한 사례도 포함됩니다.");
- const options=[["single","1두 · "+selected],...loaded.duoPresets.map(x=>[x.id,x.label])];
- duo.append(field("비교 대상",choice(options,pair,v=>{pair=v;render(d,host)})));
- const current=loaded.duoPresets.find(x=>x.id===pair);
- const box=make("div","rr-pair-output");
- if(!current){box.append(make("strong",null,"1두 "+selected),make("p",null,"기본 단일 보상칸 "+(slots?.singleSlots||"미확인")+" · Lv136~140 대표 포인트는 조건별 기존 원본표를 참고"))}
- else{box.append(make("strong",null,current.label));
- box.append(make("p",null,"왼쪽 몬스터: "+current.left+" · 오른쪽 몬스터: "+current.right));
- box.append(make("p",null,"공통 보상 포인트: "+(current.points??"상태별 검증 필요")+" · 공통 보상칸: "+(current.slots??"미확인")));
- box.append(make("p",null,"외형은 왼쪽 몬스터 그룹 기준. 각 몬스터의 기타 보상은 공통 보상칸과 별개입니다."));
- const leftGroup=(d.sealedGroups||[]).find(g=>g.monsters?.includes(current.left));
- const rightGroup=(d.sealedGroups||[]).find(g=>g.monsters?.includes(current.right));
- box.append(make("p",null,"외형 그룹: 왼쪽 "+(leftGroup?.id??"미확인")+" / 오른쪽 "+(rightGroup?.id??"미확인")+" → 왼쪽 그룹 적용"));
- if(current.explanation)box.append(make("p","rr-note",current.explanation));
- const other=(name,state)=>d.qualityGuide?.otherRewards136140?.find(z=>z.monster===name+(state==="extreme"?" (극한상태)":""));
- const describe=(name,state)=>{const v=other(name,state);return v?.outcomes?.length?name+": "+v.outcomes.map(z=>z.item+" ×"+z.count+" ("+z.probability+"%)").join(" · "):name+": 이 상태의 기타 보상표 미확인"};
- const details=make("details","rr-more");details.append(make("summary",null,"몬스터별 기타 보상 상세"));
- const left=make("p","rr-note",describe(current.left,current.leftState)),right=make("p","rr-note",describe(current.right,current.rightState));
- details.append(left,right);box.append(details);
- if(current.support==="conditional_unverified")box.append(make("p","rr-note","조건부 사례이므로 미확인 수치를 채우지 않았습니다."));
- if(current.support==="illustrative"||current.support==="article_point_example")box.append(make("p","rr-note","원문의 보상 포인트 계산 예시이며, 실제 생성 가능한 퀘스트 조합인지 독립 검증되지는 않았습니다."));
- if(level<136)box.append(make("p","rr-note","주의: 현재 선택한 Lv"+level+"에는 Lv136~140 보상 포인트·칸 자료를 그대로 적용할 수 없습니다."));
- }
- duo.append(box);host.append(duo);
+
+ const duo=make("section","panel rr-workbench rr-duo");
+ const duoHeading=make("div","rr-heading");duoHeading.append(make("span","rr-step","02 · 2두 길퀘"),make("h2",null,"2두 길퀘 보상 계산"),make("p","rr-note","두 몬스터의 포인트를 합산해 공통 보상칸 범위를 계산합니다. Lv136~140의 원문 상태값 기준이며, 계산 가능하다고 실제 생성 가능한 조합인 것은 아닙니다."));duo.append(duoHeading);
+ const explanation=make("div","rr-explain");
+ for(const [title,desc] of [["공통 보상","두 몬스터의 포인트를 합산해 결정. 단일 보상칸을 더하지 않습니다."],["기타 보상","몬스터마다 별도 1칸. ×2는 한 칸에서 2개를 받는 뜻입니다."],["발굴 외형","왼쪽 아이콘 몬스터가 외형 그룹을 결정합니다."]]){const x=make("div","rr-explain-item");x.append(make("strong",null,title),make("p",null,desc));explanation.append(x)}duo.append(explanation);
+ const duoDb=loaded.duoDatabase;
+ if(duoDb){
+  const choices=duoDb.eligibleMonsters.map(x=>[x.name,x.name+" · "+x.points+"pt"]);
+  if(!choices.some(x=>x[0]===duoLeft))duoLeft="도스람포스";
+  if(!choices.some(x=>x[0]===duoRight))duoRight="라잔";
+  const duoSelectors=make("div","rr-fields rr-duo-fields");
+  duoSelectors.append(field("왼쪽 몬스터 · 외형 기준",choice(choices,duoLeft,v=>{duoLeft=v;render(d,host)})));
+  duoSelectors.append(field("오른쪽 몬스터",choice(choices,duoRight,v=>{duoRight=v;render(d,host)})));
+  duo.append(duoSelectors);
+  const l=duoDb.eligibleMonsters.find(x=>x.name===duoLeft),r=duoDb.eligibleMonsters.find(x=>x.name===duoRight);
+  const sum=l.points+r.points,range=duoDb.pointSlotBands.find(x=>x.points===sum);
+  const output=make("div","rr-pair-output");output.append(make("strong",null,duoLeft+" + "+duoRight));
+  const metrics=make("div","rr-facts");
+  for(const [k,v] of [["보상 포인트",sum+"pt ("+l.points+" + "+r.points+")"],["공통 보상칸",range?range.min+"~"+range.max+"칸":"미확인"],["현재 레벨",level>=136?"Lv"+level+" · 범위 적용":"Lv"+level+" · 136 이상에서만 적용"],["외형 그룹",String(d.sealedGroups?.find(g=>g.monsters?.includes(duoLeft))?.id??"미확인")+"그룹 (왼쪽 기준)"]]){
+   const item=make("div","rr-fact");item.append(make("small",null,k),make("strong",null,v));metrics.append(item)
+  }output.append(metrics);
+  notice(output,"적용 상태: "+duoLeft+" ["+l.defaultState+"] / "+duoRight+" ["+r.defaultState+"]. 원문에 기재된 상태 기준이며 현재 퀘스트의 실제 상태는 별도로 확인해야 합니다.");
+  notice(output,"중요: 포인트 계산은 실제 길퀘 생성 가능성을 증명하지 않습니다. 미검증 조합의 결과는 가상 비교입니다.");
+  const detail=make("details","rr-more");detail.append(make("summary",null,"몬스터별 기타 보상 상세"));
+  for(const x of [l,r]){const key=x.name+(x.defaultState==="extreme"?" (극한상태)":"");const record=d.qualityGuide?.otherRewards136140?.find(z=>z.monster===key);notice(detail,x.name+": "+(record?record.outcomes.map(y=>y.item+" ×"+y.count+" ("+y.probability+"%)").join(" · "):"해당 상태 자료 미확인"))}
+  output.append(detail);duo.append(output);
+  const samples=make("details","rr-more");samples.append(make("summary",null,"원문 계산 예시 "+loaded.duoPresets.length+"건"));
+  const sampleList=make("div","rr-preset-list");
+  for(const p of loaded.duoPresets){const btn=make("button","rr-preset",p.label+" · "+(p.computedPoints??p.points??"?")+"pt");btn.onclick=()=>{duoLeft=p.left;duoRight=p.right;render(d,host)};sampleList.append(btn)}
+  samples.append(sampleList);duo.append(samples);
+  const exceptions=make("details","rr-more");exceptions.append(make("summary",null,"2두 대상 제외 몬스터 및 검증 한계"));notice(exceptions,duoDb.singleOnlyMonsters.map(x=>x.name).join(" · "));notice(exceptions,duoDb.caution);duo.append(exceptions);
+ }else notice(duo,"2두 보상 포인트 데이터가 없습니다.");
+ host.append(duo);
  const farm=make("section","panel rr-workbench");farm.append(make("div","rr-heading"));farm.firstChild.append(make("span","rr-step","03 · 목적별 파밍"),make("h2",null,"목적에 맞는 후보 조회"));
  const sourceNames=purpose==="sphere"?names.filter(n=>group(n)):(purpose==="weapon"?names.filter(n=>rate(n,level)):purpose==="armor"?[]:names);
  const ranked=sourceNames.map(name=>{const g=group(name),r=rate(name,level);const verified=(purpose==="sphere"?g&&level>=g.minLevel:purpose==="weapon"?Boolean(r):true);return {name,g,r,verified}}).filter(x=>x.verified);
