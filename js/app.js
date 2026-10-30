@@ -2010,11 +2010,14 @@ function setRelicGuideTab(tab){
   const typeLabel=$("#relicWeaponTypeFilter")?.closest("label");
   if(typeLabel)typeLabel.hidden=next!=="appearance"&&next!=="attack";
 }
+// Only the derivation search UI state is shared across render calls.
+// The underlying 159 candidate relationships stay in data/relic_equipment.json.
+const relicDerivUi={mode:"target",selected:{source:"",target:""},filter:"all"};
 function renderRelicEquipment(){
   const d=data.relicEquipment||{},groups=d.sealedGroups||[],types=Object.keys(d.weaponAppearances||{});
   const monsterSel=$("#relicMonsterFilter"),typeSel=$("#relicWeaponTypeFilter"),root=$("#relicEquipmentContent"),sources=$("#relicEquipmentSources");
   if(!root||!monsterSel||!typeSel)return;
-  const previousValues={source:$("#relicDerivSource")?.value||"",target:$("#relicDerivTarget")?.value||"",attack:$("#relicAttackInput")?.value||""};
+  const previousValues={attack:$("#relicAttackInput")?.value||""};
   const oldMonster=monsterSel.value||"all",oldType=typeSel.value||types[0]||"대검";
   const monsterOpts=groups.flatMap(g=>(g.monsters||[]).map(m=>({name:m,group:g.id}))).sort((a,b)=>a.name.localeCompare(b.name,"ko"));
   monsterSel.innerHTML='<option value="all">전체 그룹</option>'+monsterOpts.map(x=>`<option value="${esc(x.name)}">${esc(x.name)} · 그룹${x.group}</option>`).join("");
@@ -2045,21 +2048,36 @@ function renderRelicEquipment(){
   const deriv=d.guildQuestDerivation||{},derivRows=deriv.entries||[];
   const derivSources=[...new Set(derivRows.map(x=>x.source))].sort((a,b)=>a.localeCompare(b,"ko"));
   const derivTargets=[...new Set(derivRows.map(x=>x.target))].sort((a,b)=>a.localeCompare(b,"ko"));
-  const derivSourceOptions=derivSources.map(x=>`<option value="${esc(x)}">${esc(x)}</option>`).join("");
-  const derivTargetOptions=derivTargets.map(x=>`<option value="${esc(x)}">${esc(x)}</option>`).join("");
   const rawRows=(d.attackRawTypes||[]).map(x=>`<tr><td><strong>${x.raw}</strong></td><td>${x.upgradeRaw}</td><td>${x.affinityStart>0?'+':''}${x.affinityStart}% → ${x.affinityEnd>0?'+':''}${x.affinityEnd}%</td><td>${x.defenseStart>=0?'+':''}${x.defenseStart} → ${x.defenseEnd>=0?'+':''}${x.defenseEnd}</td><td class="wrap-cell">${esc(x.note)}</td></tr>`).join("");
   const atk=(d.weaponAttackTables||[]).find(x=>x.weaponType===type),special=d.weaponSpecialNotes?.[type]||"",cap=d.elementCaps?.[type];
   const attackCells=(d.attackRawTypes||[]).map(x=>`<td>${atk?.displayAttack?.[String(x.raw)]??"-"}</td>`).join("");
   const groupMatrix=groups.map(g=>`<tr${selectedGroup&&selectedGroup.id===g.id?' class="relic-selected-row"':''}><td><strong>${g.id}</strong></td><td class="wrap-cell">${(g.monsters||[]).map(esc).join(" · ")}</td><td>${relicAppearanceLabel(appearance[Number(g.id)-1]||"-",type)}</td><td class="wrap-cell">${(d.armorAppearancePools?.[String(g.id)]||[]).map(a=>`<span class="mini-chip">${esc(a)}</span>`).join(" ")}</td></tr>`).join("");
   root.innerHTML=`
     <div id="relicPanel-derivation" class="relic-tab-panel" data-relic-panel="derivation" role="tabpanel" aria-labelledby="relicTab-derivation">
-    <section class="panel relic-derivation-panel"><div class="panel-title"><div><h2>G급 탐색 → 길드퀘스트 파생</h2><p class="muted">${esc(deriv.description||"")}</p></div></div>
-      <div class="relic-derivation-grid">
-        <div class="relic-derivation-box"><label>탐색에서 잡을 몬스터<select id="relicDerivSource"><option value="">선택</option>${derivSourceOptions}</select></label><div id="relicDerivSourceResult" class="relic-derivation-result muted">몬스터를 선택하면 파생 가능한 길드퀘스트 후보를 표시합니다.</div></div>
-        <div class="relic-derivation-box"><label>원하는 길드퀘스트<select id="relicDerivTarget"><option value="">선택</option>${derivTargetOptions}</select></label><div id="relicDerivTargetResult" class="relic-derivation-result muted">원하는 길드퀘스트 몬스터를 선택하면 어떤 탐색 몬스터를 노려야 하는지 역추적합니다.</div></div>
-      </div>
-      <p class="relic-derivation-note">※ 토벌이 가장 유리하며 유실물 조사보고도 파생 확률에 가산됩니다. 후보가 여러 개면 그중 하나가 추첨되므로 특정 몬스터를 잡았다고 특정 길드퀘가 100% 나오는 구조는 아닙니다. ${esc(deriv.initialLevelNote||"")}</p>
-    </section>
+      <section class="panel relic-derivation-panel">
+        <div class="panel-title"><div><h2>G급 탐색 → 길드퀘스트 파생</h2><p class="muted">${esc(deriv.description||"")}</p></div></div>
+        <div class="relic-deriv-mode" role="group" aria-label="길퀘 파생 검색 방향">
+          <button type="button" data-deriv-mode="target" aria-pressed="true">원하는 길퀘 찾기</button>
+          <button type="button" data-deriv-mode="source" aria-pressed="false">탐색 몬스터로 찾기</button>
+        </div>
+        <div class="relic-deriv-search" id="relicDerivSearchWrap">
+          <label id="relicDerivSearchLabel" for="relicDerivSearch">원하는 길드퀘스트 몬스터</label>
+          <input id="relicDerivSearch" type="search" autocomplete="off" spellcheck="false" placeholder="몬스터 이름 검색" aria-controls="relicDerivSuggestions" aria-expanded="false" />
+          <div id="relicDerivSuggestions" class="relic-deriv-suggestions" hidden></div>
+        </div>
+        <div class="relic-deriv-results-header">
+          <div><h3 id="relicDerivResultsTitle">탐색 몬스터 후보</h3><p id="relicDerivSelection" class="muted">원하는 길퀘 몬스터를 검색해 선택하세요.</p></div>
+          <span id="relicDerivResultCount" class="relic-deriv-count" aria-live="polite"></span>
+        </div>
+        <div id="relicDerivFilters" class="relic-deriv-filters" role="group" aria-label="탐색 출현 유형 필터" hidden>
+          <button type="button" data-deriv-type="all" aria-pressed="true">전체 <span data-deriv-count="all">0</span></button>
+          <button type="button" data-deriv-type="normal" aria-pressed="false">일반 <span data-deriv-count="normal">0</span></button>
+          <button type="button" data-deriv-type="rare" aria-pressed="false">레어 <span data-deriv-count="rare">0</span></button>
+          <button type="button" data-deriv-type="intruder" aria-pressed="false">난입 <span data-deriv-count="intruder">0</span></button>
+        </div>
+        <div id="relicDerivResults" class="relic-deriv-cards" aria-live="polite"><div class="relic-deriv-empty">검색할 몬스터를 선택하면 파생 후보가 표시됩니다.</div></div>
+        <p class="relic-derivation-note">※ 이 표는 <strong>파생 후보 관계</strong>이며 확정 획득이나 확률 순위가 아닙니다. 토벌 및 유실물 조사보고가 파생 추첨에 영향을 줍니다. ${esc(deriv.initialLevelNote||"")}</p>
+      </section>
     </div>
     <div id="relicPanel-appearance" class="relic-tab-panel" data-relic-panel="appearance" role="tabpanel" aria-labelledby="relicTab-appearance" hidden>
     ${selectedGroup?`<section class="panel relic-selected-summary"><h3>${esc(selectedMonster)} → 발굴 그룹 ${selectedGroup.id}</h3><p class="muted">2두 길드퀘스트는 원칙적으로 왼쪽 아이콘 몬스터의 그룹을 기준으로 봅니다.</p></section>`:""}
@@ -2106,23 +2124,121 @@ function renderRelicEquipment(){
     </section>
     </div>
 `;
-  const derivSource=$("#relicDerivSource"),derivTarget=$("#relicDerivTarget"),derivSourceResult=$("#relicDerivSourceResult"),derivTargetResult=$("#relicDerivTargetResult");
-  const renderDerivSource=()=>{
-    const key=derivSource?.value||"",rows=key?derivRows.filter(x=>x.source===key):[];
-    if(!derivSourceResult)return;
-    const appearanceLabel={normal:"일반 출현",rare:"레어 예보",intruder:"난입"};
-    derivSourceResult.innerHTML=rows.length?rows.map(x=>`<div class="relic-derivation-line"><b>${esc(x.target)}</b><span>${esc(appearanceLabel[x.appearance]||x.appearance||"")}</span></div>`).join(""):"몬스터를 선택하면 파생 가능한 길드퀘스트 후보를 표시합니다.";
+  // Searchable one-direction-at-a-time derivation browser.
+  const derivSearch=$("#relicDerivSearch"),derivSuggest=$("#relicDerivSuggestions"),derivFilters=$("#relicDerivFilters");
+  const derivCards=$("#relicDerivResults"),derivSelection=$("#relicDerivSelection"),derivTitle=$("#relicDerivResultsTitle"),derivCount=$("#relicDerivResultCount");
+  const derivNames={source:derivSources,target:derivTargets};
+  const derivAppearance={normal:"일반 출현",rare:"레어 예보",intruder:"난입"};
+  const derivOrder={normal:0,rare:1,intruder:2};
+  const derivOtherMode=mode=>mode==="target"?"source":"target";
+  const hideDerivSuggestions=()=>{
+    derivSuggest.hidden=true;
+    derivSearch.setAttribute("aria-expanded","false");
   };
-  const renderDerivTarget=()=>{
-    const key=derivTarget?.value||"",rows=key?derivRows.filter(x=>x.target===key).sort((a,b)=>Number(b.initialLevel)-Number(a.initialLevel)||a.source.localeCompare(b.source,"ko")):[];
-    if(!derivTargetResult)return;
-    const appearanceLabel={normal:"일반 출현",rare:"레어 예보",intruder:"난입"};
-    const order={normal:0,rare:1,intruder:2};
-    rows.sort((a,b)=>(order[a.appearance]??9)-(order[b.appearance]??9)||a.source.localeCompare(b.source,"ko"));
-    derivTargetResult.innerHTML=rows.length?rows.map(x=>`<div class="relic-derivation-line"><b>${esc(x.source)}</b><span>${esc(appearanceLabel[x.appearance]||x.appearance||"")}</span></div>`).join(""):"원하는 길드퀘스트 몬스터를 선택하면 어떤 탐색 몬스터를 노려야 하는지 역추적합니다.";
+  const updateDerivSuggestions=()=>{
+    const query=derivSearch.value.trim().toLocaleLowerCase("ko");
+    const matches=derivNames[relicDerivUi.mode].filter(name=>name.toLocaleLowerCase("ko").includes(query));
+    const display=matches.slice(0,10);
+    derivSuggest.innerHTML=display.map(name=>`<button type="button" data-deriv-pick="${esc(name)}">${esc(name)}</button>`).join("")
+      +(matches.length>display.length?`<p class="relic-deriv-suggestion-more">추가 ${matches.length-display.length}종 · 이름을 입력해 좁혀보세요.</p>`:"")
+      +(!matches.length?`<p class="relic-deriv-suggestion-more">일치하는 몬스터가 없습니다.</p>`:"");
+    derivSuggest.hidden=false;
+    derivSearch.setAttribute("aria-expanded","true");
   };
-  if(derivSource){derivSource.value=previousValues.source;derivSource.onchange=renderDerivSource;renderDerivSource()}
-  if(derivTarget){derivTarget.value=previousValues.target;derivTarget.onchange=renderDerivTarget;renderDerivTarget()}
+  const renderDerivCards=()=>{
+    const {mode,selected,filter}=relicDerivUi;
+    const name=selected[mode];
+    const rows=name?derivRows.filter(row=>row[mode]===name).sort((a,b)=>(derivOrder[a.appearance]??9)-(derivOrder[b.appearance]??9)||a[derivOtherMode(mode)].localeCompare(b[derivOtherMode(mode)],"ko")):[];
+    const counts={all:rows.length,normal:0,rare:0,intruder:0};
+    rows.forEach(row=>{if(Object.hasOwn(counts,row.appearance))counts[row.appearance]++});
+    const matching=filter==="all"?rows:rows.filter(row=>row.appearance===filter);
+    derivTitle.textContent=mode==="target"?"탐색 몬스터 후보":"파생 가능한 길퀘";
+    derivSelection.textContent=name?`${name} · 후보 관계를 조회했습니다.`:mode==="target"?"원하는 길퀘 몬스터를 검색해 선택하세요.":"탐색에서 잡을 몬스터를 검색해 선택하세요.";
+    derivCount.textContent=name?`${matching.length} / ${rows.length}종`:"";
+    derivFilters.hidden=!name;
+    derivFilters.querySelectorAll("[data-deriv-type]").forEach(button=>{
+      const key=button.dataset.derivType,active=filter===key;
+      button.setAttribute("aria-pressed",String(active));
+      button.disabled=counts[key]===0&&key!=="all";
+      button.querySelector("[data-deriv-count]").textContent=String(counts[key]);
+    });
+    if(!name){derivCards.innerHTML=`<div class="relic-deriv-empty">몬스터 이름을 검색해 선택하면 결과가 표시됩니다.</div>`;return;}
+    if(!matching.length){derivCards.innerHTML=`<div class="relic-deriv-empty">해당 출현 유형의 파생 후보가 없습니다.</div>`;return;}
+    const other=derivOtherMode(mode);
+    derivCards.innerHTML=matching.map(row=>{
+      const candidate=row[other],type=row.appearance;
+      return `<button type="button" class="relic-deriv-card" data-deriv-follow="${esc(candidate)}">
+        <span class="relic-deriv-card-top"><strong>${esc(candidate)}</strong><span class="relic-deriv-kind relic-deriv-kind-${esc(type)}">${esc(derivAppearance[type]||type)}</span></span>
+        <span class="relic-deriv-card-bottom">${mode==="target"?"탐색에서 수렵 · 클릭하면 이 몬스터의 파생 길퀘 조회":"파생 길드퀘스트 · 클릭하면 이 길퀘의 탐색 후보 조회"} <span aria-hidden="true">→</span></span>
+      </button>`;
+    }).join("");
+  };
+  const updateDerivMode=()=>{
+    const mode=relicDerivUi.mode;
+    $$("#relicPanel-derivation [data-deriv-mode]").forEach(button=>button.setAttribute("aria-pressed",String(button.dataset.derivMode===mode)));
+    $("#relicDerivSearchLabel").textContent=mode==="target"?"원하는 길드퀘스트 몬스터":"탐색에서 잡을 몬스터";
+    derivSearch.placeholder=mode==="target"?"길퀘 몬스터 이름 검색 (24종)":"탐색 몬스터 이름 검색 (41종)";
+    derivSearch.value=relicDerivUi.selected[mode]||"";
+    renderDerivCards();
+  };
+  const selectDerivMonster=name=>{
+    if(!derivNames[relicDerivUi.mode].includes(name))return;
+    relicDerivUi.selected[relicDerivUi.mode]=name;
+    relicDerivUi.filter="all";
+    derivSearch.value=name;
+    hideDerivSuggestions();
+    renderDerivCards();
+  };
+  $$("#relicPanel-derivation [data-deriv-mode]").forEach(button=>button.onclick=()=>{
+    if(relicDerivUi.mode===button.dataset.derivMode)return;
+    relicDerivUi.mode=button.dataset.derivMode;
+    relicDerivUi.filter="all";
+    hideDerivSuggestions();
+    updateDerivMode();
+  });
+  derivSearch.onfocus=updateDerivSuggestions;
+  derivSearch.oninput=()=>{
+    if(derivSearch.value!==relicDerivUi.selected[relicDerivUi.mode]){
+      relicDerivUi.selected[relicDerivUi.mode]="";
+      relicDerivUi.filter="all";
+      renderDerivCards();
+    }
+    updateDerivSuggestions();
+  };
+  derivSearch.onkeydown=e=>{
+    if(e.key==="Escape"){hideDerivSuggestions();return;}
+    if(e.key==="ArrowDown"){e.preventDefault();if(derivSuggest.hidden)updateDerivSuggestions();derivSuggest.querySelector("[data-deriv-pick]")?.focus();return;}
+    if(e.key==="Enter"){
+      const first=derivSuggest.querySelector("[data-deriv-pick]");
+      const exact=derivNames[relicDerivUi.mode].find(x=>x===derivSearch.value.trim());
+      if(exact||(!derivSuggest.hidden&&first)){e.preventDefault();selectDerivMonster(exact||first.dataset.derivPick);}
+    }
+  };
+  derivSuggest.onclick=e=>{const button=e.target.closest("[data-deriv-pick]");if(button)selectDerivMonster(button.dataset.derivPick);};
+  $("#relicDerivSearchWrap").addEventListener("focusout",e=>{
+    if(!e.currentTarget.contains(e.relatedTarget))hideDerivSuggestions();
+  });
+  derivFilters.onclick=e=>{
+    const button=e.target.closest("[data-deriv-type]");
+    if(!button||button.disabled)return;
+    relicDerivUi.filter=button.dataset.derivType;
+    renderDerivCards();
+  };
+  derivCards.onclick=e=>{
+    const button=e.target.closest("[data-deriv-follow]");
+    if(!button)return;
+    const name=button.dataset.derivFollow;
+    const nextMode=derivOtherMode(relicDerivUi.mode);
+    if(!derivNames[nextMode].includes(name))return;
+    relicDerivUi.mode=nextMode;
+    relicDerivUi.selected[nextMode]=name;
+    relicDerivUi.filter="all";
+    hideDerivSuggestions();
+    updateDerivMode();
+    derivSearch.focus({preventScroll:true});
+    hideDerivSuggestions();
+  };
+  updateDerivMode();
   const attackInput=$("#relicAttackInput"),attackResult=$("#relicAttackResult");
   if(attackInput&&attackResult){
     attackInput.value=previousValues.attack;

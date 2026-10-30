@@ -1606,3 +1606,45 @@ button{border:1px solid var(--line);background:#202b39;color:white;border-radius
   #page-relic-equipment .relic-tab-bar{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;overflow:visible;scroll-snap-type:none;padding:0}
   #page-relic-equipment .relic-tab-button{width:100%;min-width:0;min-height:48px;flex:none;padding:10px 6px;scroll-snap-align:none;font-size:12px;line-height:1.35;white-space:normal;word-break:keep-all;overflow-wrap:break-word}
 }
+
+/* Relic derivation search: purpose-first UI, no unsupported probability labels. */
+#page-relic-equipment .relic-derivation-panel{display:grid;gap:15px}
+#page-relic-equipment .relic-deriv-mode{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;padding:5px;background:#101823;border:1px solid var(--line);border-radius:12px}
+#page-relic-equipment .relic-deriv-mode button{min-width:0;min-height:42px;border:1px solid transparent;background:transparent;color:var(--muted);font-size:13px;font-weight:700;text-align:center;white-space:normal;word-break:keep-all}
+#page-relic-equipment .relic-deriv-mode button[aria-pressed="true"]{background:#243a54;color:#fff;border-color:#51749e;box-shadow:0 2px 10px #0003}
+#page-relic-equipment .relic-deriv-search{position:relative;display:grid;gap:8px;min-width:0;max-width:650px}
+#page-relic-equipment .relic-deriv-search label{font-size:13px;font-weight:700;color:var(--text)}
+#page-relic-equipment .relic-deriv-search input{width:100%;min-width:0;min-height:46px;padding:11px 14px;font-size:14px}
+#page-relic-equipment .relic-deriv-suggestions{position:absolute;z-index:16;left:0;right:0;top:100%;max-height:310px;overflow-y:auto;padding:6px;background:#111d2b;border:1px solid #466383;border-radius:10px;box-shadow:0 12px 26px #0008}
+#page-relic-equipment .relic-deriv-suggestions[hidden],#page-relic-equipment .relic-deriv-filters[hidden]{display:none!important}
+#page-relic-equipment .relic-deriv-suggestions button{display:block;width:100%;padding:11px 12px;color:#d9e5f2;border:0;border-radius:7px;background:transparent;text-align:left;font-size:13px}
+#page-relic-equipment .relic-deriv-suggestions button:hover,#page-relic-equipment .relic-deriv-suggestions button:focus-visible{background:#29425e;color:#fff}
+#page-relic-equipment .relic-deriv-suggestion-more{margin:0;padding:8px 12px;color:var(--muted);font-size:12px}
+#page-relic-equipment .relic-deriv-results-header{display:flex;gap:10px;align-items:center;justify-content:space-between;border-top:1px solid var(--line);padding-top:16px}
+#page-relic-equipment .relic-deriv-results-header h3{margin:0 0 5px;font-size:16px}
+#page-relic-equipment .relic-deriv-results-header p{margin:0;font-size:12px}
+#page-relic-equipment .relic-deriv-count{flex:0 0 auto;font-size:12px;color:var(--accent2);font-weight:700}
+#page-relic-equipment .relic-deriv-filters{display:flex;gap:6px;flex-wrap:wrap}
+#page-relic-equipment .relic-deriv-filters button{border:1px solid var(--line);border-radius:999px;background:#141f2c;padding:7px 12px;color:var(--muted);font-size:12px}
+#page-relic-equipment .relic-deriv-filters button[aria-pressed="true"]{border-color:#648ebc;background:#213c57;color:#fff;font-weight:700}
+#page-relic-equipment .relic-deriv-filters button:disabled{opacity:.42;cursor:default}
+#page-relic-equipment .relic-deriv-filters span{font-variant-numeric:tabular-nums}
+#page-relic-equipment .relic-deriv-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;min-width:0}
+#page-relic-equipment .relic-deriv-card{display:flex;flex-direction:column;align-items:stretch;gap:12px;min-width:0;width:100%;padding:15px;border:1px solid #31455c;border-radius:11px;background:#182434;color:#e4eefa;text-align:left}
+#page-relic-equipment .relic-deriv-card:hover,#page-relic-equipment .relic-deriv-card:focus-visible{border-color:#7195be;background:#23344a;outline-offset:2px}
+#page-relic-equipment .relic-deriv-card-top{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap}
+#page-relic-equipment .relic-deriv-card-top strong{font-size:15px;word-break:keep-all;overflow-wrap:anywhere}
+#page-relic-equipment .relic-deriv-kind{padding:4px 8px;border-radius:999px;border:1px solid #416078;color:#bbd7e7;font-size:11px;white-space:nowrap}
+#page-relic-equipment .relic-deriv-kind-rare{border-color:#906f42;color:#f4d293}
+#page-relic-equipment .relic-deriv-kind-intruder{border-color:#9b627a;color:#f1bacd}
+#page-relic-equipment .relic-deriv-card-bottom{display:flex;justify-content:space-between;gap:8px;font-size:11px;line-height:1.5;color:#9fb4cc}
+#page-relic-equipment .relic-deriv-card-bottom span{color:var(--accent2);font-size:14px}
+#page-relic-equipment .relic-deriv-empty{grid-column:1/-1;padding:30px 15px;border:1px dashed #35495f;border-radius:10px;text-align:center;color:var(--muted);font-size:13px}
+#page-relic-equipment .relic-derivation-note{margin:0;padding-top:10px;border-top:1px solid var(--line)}
+@media(max-width:720px){
+  #page-relic-equipment .relic-deriv-cards{grid-template-columns:minmax(0,1fr)}
+  #page-relic-equipment .relic-derivation-panel{gap:12px}
+  #page-relic-equipment .relic-deriv-mode button{font-size:12px;padding:9px 6px}
+  #page-relic-equipment .relic-deriv-card{padding:12px}
+  #page-relic-equipment .relic-deriv-card-bottom{font-size:10px}
+}
