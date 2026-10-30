@@ -34,6 +34,7 @@ export function physicalIndex(raw,aff,sharpness=1){
  return raw*affinityFactor*sharpness;
 }
 function render(d,type,guide,host,decorations=[]){
+ const retainedTables=[...host.querySelectorAll(".table-panel")];
  host.replaceChildren();
  const sharpnessApplicable=!["라이트보우건","헤비보우건","활"].includes(type);
  const form=node("section","panel rp-panel"),head=node("div","rr-heading");
@@ -72,7 +73,7 @@ function render(d,type,guide,host,decorations=[]){
  const status=node("p","rr-note");owner.append(status);form.append(owner);
  const run=node("button","rp-run","성능 분석하기"),result=node("div","rp-results");run.type="button";form.append(run,result);
  const refs=node("details","rp-reference");refs.append(node("summary",null,"기존 무기별 기본배율·강화 표 참고"));
- for(const t of host.querySelectorAll(".table-panel")){t.classList.add("rp-reference-table");refs.append(t)}
+ for(const t of retainedTables){t.classList.add("rp-reference-table");refs.append(t)}
  form.append(refs);
  const legacy=host.querySelector(".relic-attack-check");if(legacy)legacy.hidden=true;
  host.insertBefore(form,host.firstChild);
@@ -154,7 +155,7 @@ function render(d,type,guide,host,decorations=[]){
   if(mode==="fixed"&&!fixedList.some(x=>x.id===state.fixedDecorationId)){status.textContent="고정 장식주가 있는 무기는 실제 장식주 종류를 선택해야 시뮬레이터에 적용할 수 있습니다. 선택하지 않아도 미확인으로 저장됩니다.";}
   const deco=fixedList.find(x=>x.id===state.fixedDecorationId),confirmed=mode!=="fixed"||!!deco;
   const p={weaponType:type,name:state[nameKey]||"",level:lv,attack:shown,affinity,defense,sharp:state.sharp,element:state.element,special:{...state.special}};
-  const record={id:state.editingId||"relic_perf_"+Date.now()+"_"+Math.random().toString(36).slice(2,8),slotMode:!confirmed?"unknown":mode,slots,decorationId:confirmed&&mode==="fixed"?deco.id:"",skills:confirmed&&mode==="fixed"?{...deco.skills}:{},performance:p};
+  const record={id:state.editingId||"relic_perf_"+Date.now()+"_"+Math.random().toString(36).slice(2,8),slotMode:!confirmed?"unknown":mode,slots:!confirmed?0:slots,decorationId:confirmed&&mode==="fixed"?deco.id:"",skills:confirmed&&mode==="fixed"?{...deco.skills}:{},performance:p};
   const all=records(),idx=all.findIndex(x=>x.id===record.id),dup=idx<0?all.findIndex(x=>x.performance&&signature(x)===signature(record)):-1;
   if(idx>=0)all[idx]=record;else if(dup>=0){record.id=all[dup].id;all[dup]=record}else all.push(record);
   try{localStorage.setItem(STORE,JSON.stringify(all))}catch(e){status.textContent="로컬 저장 실패: "+e.message;return}
