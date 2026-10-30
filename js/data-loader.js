@@ -1,4 +1,4 @@
-const DATA_VERSION = "0.7.7-weapon-sharpfix-20261029";
+const DATA_VERSION = "0.7.7-relic-names-20261030";
 
 const FULL_FILES = {
   skills:"./data/skills.json",
@@ -62,8 +62,8 @@ async function fetchJson(key,url){
   if(requestCache.has(cacheKey)) return requestCache.get(cacheKey);
   const promise=(async()=>{
     try{
-      // 버전 쿼리로 새 배포는 갱신하고, 같은 버전은 브라우저 캐시를 적극 사용한다.
-      const r=await fetch(versioned(url),{cache:"force-cache"});
+      // 대부분 데이터는 버전 캐시를 사용하지만, 발굴 가이드 명칭은 새로고침 시 재검증한다.
+      const r=await fetch(versioned(url),{cache:key==="relicEquipment"?"no-cache":"force-cache"});
       if(!r.ok) throw new Error(`${r.status}`);
       return await r.json();
     }catch(e){
