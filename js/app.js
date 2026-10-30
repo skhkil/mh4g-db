@@ -1471,7 +1471,6 @@ function renderWeaponSubNav(){
     if(t==="수렵피리") buttons.push(`<button type="button" class="weapon-sub-btn sub-special melody-under-horn" data-special-page="melody">┗ 선율표</button>`);
   }
   buttons.push(`<button type="button" class="weapon-sub-btn sub-special weapon-summary-link" data-special-page="weapon-summary">속성별 무기요약</button>`);
-  buttons.push(`<button type="button" class="weapon-sub-btn sub-special" data-special-page="relic-equipment">발굴장비 · 봉인된무구</button>`);
   box.innerHTML=buttons.join("");
   box.querySelectorAll('[data-weapon-type]').forEach(b=>b.onclick=e=>{e.stopPropagation();armorViewMode="all";$("#weaponTypeFilter").value=b.dataset.weaponType;syncWeaponSubActive();void navigatePage("weapon")});
   box.querySelectorAll('[data-special-page]').forEach(b=>b.onclick=e=>{e.stopPropagation();void navigatePage(b.dataset.specialPage)});
