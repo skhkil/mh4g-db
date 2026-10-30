@@ -89,6 +89,15 @@ function render(d,host){
 export async function mountRelicRewards(d){
  const area=document.getElementById("relicPanel-rewards");if(!area)return;
  let root=area.querySelector("#relicRewardWorkbench");if(!root){root=make("div","rr-shell");root.id="relicRewardWorkbench";area.insertBefore(root,area.firstChild)}
+ let legacy=area.querySelector("#relicRewardLegacy");
+ if(!legacy){
+  legacy=make("details","panel rr-legacy");legacy.id="relicRewardLegacy";
+  legacy.append(make("summary",null,"기존 보상 상세표 · MH4/MH4G 출처 자료 펼쳐보기"));
+  for(const node of [...area.children]){
+   if(node!==root&&node.id!=="relicFarmTarget"&&node!==legacy)legacy.append(node);
+  }
+  area.append(legacy);
+ }
  try{if(!loaded){const x=await fetch("./data/relic_reward_workbench.json?v=0.7.7-relic-rewards-steps1-4",{cache:"no-cache"});if(!x.ok)throw Error("HTTP "+x.status);loaded=await x.json()}
  if(!loaded?.verifiedLevelBands||!loaded?.duoPresets)throw Error("Invalid reward workbench data");
  const prior=readRecords();if(!selected&&prior["테오·테스카토르"]){minutes=prior["테오·테스카토르"].minutes;success=prior["테오·테스카토르"].success}
