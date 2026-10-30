@@ -2846,20 +2846,30 @@ function bind(){
   results.push(bindEventGroup("navigation",()=>{
   $("#sidebarToggle").onclick=()=>{$(".app-shell").classList.toggle("sidebar-collapsed");const collapsed=$(".app-shell").classList.contains("sidebar-collapsed");$("#sidebarToggle").title=collapsed?"좌측 메뉴 펼치기":"좌측 메뉴 접기";};
 
-  $$('.nav-group-toggle').forEach(b=>b.onclick=e=>{
+  // Sidebar accordion: only one expandable section remains open.
+  const closeNavSubmenus=(except=null)=>{
+    $('#mainNav .nav-submenu.open').forEach(menu=>{
+      if(menu!==except)menu.classList.remove("open");
+    });
+  };
+  $('.nav-group-toggle').forEach(b=>b.onclick=e=>{
     e.stopPropagation();
     const menu=$(`#${b.dataset.submenu}`);
-    if(menu)menu.classList.toggle("open");
+    const wasOpen=menu?.classList.contains("open");
+    closeNavSubmenus();
+    if(menu&&!wasOpen)menu.classList.add("open");
   });
-  $$('.nav-main[data-page]').forEach(b=>b.onclick=e=>{
+  $('.nav-main[data-page]').forEach(b=>b.onclick=e=>{
     e.stopPropagation();
+    closeNavSubmenus();
     const targetPage=b.dataset.page;
     const targetSource=b.dataset.sourceView||sourceView;
     if(targetPage===currentPage&&targetSource===sourceView){void openPage(targetPage);return;}
     void navigatePage(targetPage,{source:b.dataset.sourceView||null});
   });
-  $$('[data-route]').forEach(b=>b.onclick=e=>{
+  $('[data-route]').forEach(b=>b.onclick=e=>{
     e.stopPropagation();
+    closeNavSubmenus(b.closest(".nav-submenu"));
     replaceCurrentHistoryState();
     void handleRoute(b).then(pushCurrentHistoryState);
   });
