@@ -1812,3 +1812,36 @@ button{border:1px solid var(--line);background:#202b39;color:white;border-radius
 #page-relic-equipment .rr-legacy .table-panel{overflow-x:auto}
 @media(max-width:1000px){#page-relic-equipment .rr-band-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:700px){#page-relic-equipment .rr-fields{grid-template-columns:minmax(0,1fr)}#page-relic-equipment .rr-facts,#page-relic-equipment .rr-candidate-list{grid-template-columns:minmax(0,1fr)}#page-relic-equipment .rr-band-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+
+/* Reward / farming: shared visual rhythm with the core simulator panels */
+#page-relic-equipment .rr-shell{gap:18px}
+#page-relic-equipment .rr-workbench{gap:16px;padding:20px 22px;border-radius:12px}
+#page-relic-equipment .rr-heading{display:grid;gap:7px;padding-bottom:14px;border-bottom:1px solid var(--line)}
+#page-relic-equipment .rr-heading h2{font-size:18px;margin:0;letter-spacing:-.025em}
+#page-relic-equipment .rr-step{font-size:11px;font-weight:800;letter-spacing:.045em;color:var(--accent2)}
+#page-relic-equipment .rr-heading .rr-note{max-width:760px}
+#page-relic-equipment .rr-fields{gap:12px;align-items:end}
+#page-relic-equipment .rr-field{gap:8px;font-size:12px;font-weight:600}
+#page-relic-equipment .rr-field select,#page-relic-equipment .rr-field input{min-height:44px;border-radius:8px;padding:10px 12px;font-size:13px;font-weight:500}
+#page-relic-equipment .rr-facts{gap:10px}
+#page-relic-equipment .rr-fact{padding:15px 16px;gap:8px;border-radius:9px;background:var(--panel2);border:1px solid var(--line)}
+#page-relic-equipment .rr-fact strong{font-size:15px}
+#page-relic-equipment .rr-band-grid{gap:10px}
+#page-relic-equipment .rr-band{padding:13px;gap:10px}
+#page-relic-equipment .rr-explain{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+#page-relic-equipment .rr-explain-item{padding:14px;background:var(--panel2);border:1px solid var(--line);border-radius:9px;min-width:0}
+#page-relic-equipment .rr-explain-item strong{font-size:13px;color:var(--accent2)}
+#page-relic-equipment .rr-explain-item p{font-size:12px;color:var(--muted);margin:7px 0 0;line-height:1.65;word-break:keep-all}
+#page-relic-equipment .rr-pair-output{padding:16px;gap:11px;background:var(--panel2);border-color:var(--line)}
+#page-relic-equipment .rr-pair-output>strong{font-size:16px}
+#page-relic-equipment .rr-pair-output .rr-more{border-top:1px solid var(--line);padding-top:10px}
+#page-relic-equipment .rr-pair-output .rr-more .rr-note{padding:6px 0}
+#page-relic-equipment .rr-candidate-list{gap:10px}
+#page-relic-equipment .rr-candidate{background:var(--panel2);border-color:var(--line);padding:13px 14px;gap:8px}
+#page-relic-equipment .rr-candidate button{min-height:36px;border-radius:8px}
+#page-relic-equipment .rr-save{min-height:42px;padding:10px 15px}
+#page-relic-equipment .rr-source,#page-relic-equipment .rr-legacy{padding:18px 22px}
+#page-relic-equipment .rr-source>summary,#page-relic-equipment .rr-legacy>summary{padding:1px 0;font-size:14px;line-height:1.6}
+@media(max-width:850px){#page-relic-equipment .rr-explain{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:700px){#page-relic-equipment .rr-workbench{padding:16px;gap:14px}#page-relic-equipment .rr-fact{padding:12px 13px}#page-relic-equipment .rr-heading h2{font-size:16px}#page-relic-equipment .rr-source,#page-relic-equipment .rr-legacy{padding:16px}}
