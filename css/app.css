@@ -1857,3 +1857,23 @@ button{border:1px solid var(--line);background:#202b39;color:white;border-radius
 #page-relic-equipment .rr-duo .rr-more .rr-note{margin-top:10px}
 @media(max-width:760px){#page-relic-equipment .rr-preset-list{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:550px){#page-relic-equipment .rr-duo-fields,#page-relic-equipment .rr-preset-list{grid-template-columns:minmax(0,1fr)}}
+
+
+/* Step 4 mining and step 5 saved appearance integration */
+#page-relic-equipment .rr-mining-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+#page-relic-equipment .rr-mining-card{padding:16px;background:var(--panel2);border:1px solid var(--line);border-radius:10px;display:grid;gap:11px}
+#page-relic-equipment .rr-mining-card h3{margin:0;font-size:15px}
+#page-relic-equipment .rr-mining-rates{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+#page-relic-equipment .rr-mining-rate{padding:12px;border-radius:8px;border:1px solid var(--line);display:grid;gap:6px}
+#page-relic-equipment .rr-mining-rate small{font-size:11px;color:var(--muted)}
+#page-relic-equipment .rr-mining-rate strong{font-size:22px;color:var(--accent2)}
+#page-relic-equipment .rr-mining-patterns{display:grid;gap:8px;margin:12px 0}
+#page-relic-equipment .rr-mining-pattern{display:grid;grid-template-columns:76px 1fr auto;gap:10px;align-items:center;border:1px solid var(--line);border-radius:8px;padding:10px;font-size:12px}
+#page-relic-equipment .rr-mining-pattern small{color:var(--muted)}
+#page-relic-equipment .rr-mining-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:12px}
+#page-relic-equipment .rr-mining-links a{font-size:12px;color:var(--accent2)}
+#page-relic-equipment .rr-caution{padding:10px 12px;border-left:3px solid var(--warn);background:var(--panel2);border-radius:4px}
+#page-relic-equipment .rr-goal-monsters{display:flex;gap:8px;flex-wrap:wrap}
+#page-relic-equipment .rr-goal-monsters button{min-height:40px;padding:9px 13px;font-size:12px}
+#page-relic-equipment .rr-goal-bridge>.rr-field{max-width:500px}
+@media(max-width:700px){#page-relic-equipment .rr-mining-grid{grid-template-columns:minmax(0,1fr)}#page-relic-equipment .rr-mining-pattern{grid-template-columns:65px 1fr}#page-relic-equipment .rr-mining-pattern small{grid-column:2}}
