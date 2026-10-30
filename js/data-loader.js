@@ -1,4 +1,4 @@
-const DATA_VERSION = "0.7.7-relic-names-20261030";
+const DATA_VERSION = "0.7.7-relic-ko-labels-20261030";
 
 const FULL_FILES = {
   skills:"./data/skills.json",
