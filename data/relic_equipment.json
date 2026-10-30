@@ -700,32 +700,32 @@
     "description": "G급 탐색에서 토벌(또는 유실물 조사보고)한 몬스터에 따라 추첨되는 길드퀘스트 후보입니다. 일반 출현·레어 예보·난입 몬스터를 구분합니다.",
     "entries": [
       {
-        "source": "알셀타스",
+        "source": "아르셀타스",
         "target": "도스람포스",
         "appearance": "normal"
       },
       {
-        "source": "알셀타스",
-        "target": "얀쿡",
+        "source": "아르셀타스",
+        "target": "얀쿡크",
         "appearance": "normal"
       },
       {
-        "source": "알셀타스",
+        "source": "아르셀타스",
         "target": "라잔",
         "appearance": "normal"
       },
       {
-        "source": "알셀타스 아종",
+        "source": "아르셀타스 아종",
         "target": "도스람포스",
         "appearance": "normal"
       },
       {
-        "source": "알셀타스 아종",
-        "target": "얀쿡",
+        "source": "아르셀타스 아종",
+        "target": "얀쿡크",
         "appearance": "normal"
       },
       {
-        "source": "알셀타스 아종",
+        "source": "아르셀타스 아종",
         "target": "오나즈치",
         "appearance": "normal"
       },
@@ -776,7 +776,7 @@
       },
       {
         "source": "도스람포스",
-        "target": "얀쿡",
+        "target": "얀쿡크",
         "appearance": "normal"
       },
       {
@@ -785,28 +785,28 @@
         "appearance": "normal"
       },
       {
-        "source": "얀쿡",
-        "target": "얀쿡",
+        "source": "얀쿡크",
+        "target": "얀쿡크",
         "appearance": "normal"
       },
       {
-        "source": "얀쿡",
-        "target": "얀쿡 아종",
+        "source": "얀쿡크",
+        "target": "얀쿡크 아종",
         "appearance": "normal"
       },
       {
-        "source": "얀쿡",
+        "source": "얀쿡크",
         "target": "라잔",
         "appearance": "normal"
       },
       {
-        "source": "얀쿡",
+        "source": "얀쿡크",
         "target": "바살모스",
         "appearance": "normal"
       },
       {
         "source": "다이묘자자미",
-        "target": "얀쿡",
+        "target": "얀쿡크",
         "appearance": "normal"
       },
       {
@@ -831,7 +831,7 @@
       },
       {
         "source": "케차와차",
-        "target": "얀쿡",
+        "target": "얀쿡크",
         "appearance": "normal"
       },
       {
@@ -1090,42 +1090,42 @@
         "appearance": "normal"
       },
       {
-        "source": "넬스큐라 아종",
+        "source": "네르스큐라 아종",
         "target": "다이묘자자미 아종",
         "appearance": "rare"
       },
       {
-        "source": "넬스큐라 아종",
+        "source": "네르스큐라 아종",
         "target": "셀레기오스",
         "appearance": "rare"
       },
       {
-        "source": "넬스큐라 아종",
+        "source": "네르스큐라 아종",
         "target": "진오우거 아종",
         "appearance": "rare"
       },
       {
-        "source": "넬스큐라 아종",
+        "source": "네르스큐라 아종",
         "target": "키린 아종",
         "appearance": "rare"
       },
       {
-        "source": "얀쿡 아종",
-        "target": "얀쿡",
+        "source": "얀쿡크 아종",
+        "target": "얀쿡크",
         "appearance": "rare"
       },
       {
-        "source": "얀쿡 아종",
-        "target": "얀쿡 아종",
+        "source": "얀쿡크 아종",
+        "target": "얀쿡크 아종",
         "appearance": "rare"
       },
       {
-        "source": "얀쿡 아종",
+        "source": "얀쿡크 아종",
         "target": "다이묘자자미 아종",
         "appearance": "rare"
       },
       {
-        "source": "얀쿡 아종",
+        "source": "얀쿡크 아종",
         "target": "오나즈치",
         "appearance": "rare"
       },
@@ -1151,7 +1151,7 @@
       },
       {
         "source": "케차와차 아종",
-        "target": "얀쿡 아종",
+        "target": "얀쿡크 아종",
         "appearance": "rare"
       },
       {
@@ -1305,58 +1305,58 @@
         "appearance": "rare"
       },
       {
-        "source": "넬스큐라",
+        "source": "네르스큐라",
         "target": "다이묘자자미 아종",
         "appearance": "intruder"
       },
       {
-        "source": "넬스큐라",
+        "source": "네르스큐라",
         "target": "이블조",
         "appearance": "intruder"
       },
       {
-        "source": "넬스큐라",
+        "source": "네르스큐라",
         "target": "바살모스 아종",
         "appearance": "intruder"
       },
       {
-        "source": "넬스큐라",
+        "source": "네르스큐라",
         "target": "진오우거",
         "appearance": "intruder"
       },
       {
-        "source": "게료스",
+        "source": "게리오스",
         "target": "도스람포스",
         "appearance": "intruder"
       },
       {
-        "source": "게료스",
-        "target": "얀쿡 아종",
+        "source": "게리오스",
+        "target": "얀쿡크 아종",
         "appearance": "intruder"
       },
       {
-        "source": "게료스",
+        "source": "게리오스",
         "target": "키린",
         "appearance": "intruder"
       },
       {
-        "source": "게료스 아종",
+        "source": "게리오스 아종",
         "target": "도스람포스",
         "appearance": "intruder"
       },
       {
-        "source": "게료스 아종",
-        "target": "얀쿡 아종",
+        "source": "게리오스 아종",
+        "target": "얀쿡크 아종",
         "appearance": "intruder"
       },
       {
-        "source": "게료스 아종",
+        "source": "게리오스 아종",
         "target": "키린",
         "appearance": "intruder"
       },
       {
         "source": "다이묘자자미 아종",
-        "target": "얀쿡 아종",
+        "target": "얀쿡크 아종",
         "appearance": "intruder"
       },
       {
@@ -1376,7 +1376,7 @@
       },
       {
         "source": "바바콩가",
-        "target": "얀쿡",
+        "target": "얀쿡크",
         "appearance": "intruder"
       },
       {
@@ -1638,7 +1638,7 @@
         "note": "기본 단일 보상칸(발굴 감정품 개수 아님)"
       },
       {
-        "monster": "얀쿡",
+        "monster": "얀쿡크",
         "singleSlots": "3~4",
         "note": "기본 단일 보상칸(발굴 감정품 개수 아님)"
       },
@@ -1648,7 +1648,7 @@
         "note": "기본 단일 보상칸(발굴 감정품 개수 아님)"
       },
       {
-        "monster": "얀쿡 아종",
+        "monster": "얀쿡크 아종",
         "singleSlots": "3~5",
         "note": "기본 단일 보상칸(발굴 감정품 개수 아님)"
       },
@@ -1733,7 +1733,7 @@
         "note": "기본 단일 보상칸(발굴 감정품 개수 아님)"
       },
       {
-        "monster": "오오나즈치",
+        "monster": "오나즈치",
         "singleSlots": "6~8",
         "note": "기본 단일 보상칸(발굴 감정품 개수 아님)"
       },
