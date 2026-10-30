@@ -1,6 +1,6 @@
 
 const KEY="mh4g-relic-appearance-goals-v1";
-let query="",goalOnly=false,series="all",letter="all",armorOpen=false,focusAfterRender=false;
+let query="",goalOnly=false,series="all",letter="all",armorOpen=false;
 let farm=null;
 function goals(){try{const a=JSON.parse(localStorage.getItem(KEY)||"[]");return Array.isArray(a)?a.filter(x=>x&&typeof x.id==="string"):[]}catch{return []}}
 function writeGoals(a){try{localStorage.setItem(KEY,JSON.stringify(a));return true}catch{return false}}
@@ -27,40 +27,57 @@ function jumpGroup(d,group,refresh){
 function renderSearch(d,refresh,changeTab){
  const existing=document.getElementById("relicReverseSearch");if(!existing)return;
  existing.replaceChildren();
- const all=index(d),saved=goals(),q=query.trim().toLocaleLowerCase();
- const matched=all.filter(x=>(!goalOnly||saved.some(g=>g.id===idOf(x)))&&(!q||[x.ko,x.jp,x.type,...monsters(d,x.groups)].join(" ").toLocaleLowerCase().includes(q)));
+ const all=index(d);
  const top=el("div","relic-search-top");
  const title=el("div");title.append(el("h3",null,"외형 이름으로 역검색"),el("p","muted","한글·일본어·몬스터 검색 · 봉인된 무구 기준"));
- top.append(title,el("span","muted",matched.length+" / "+all.length+"종"));existing.append(top);
+ const count=el("span","muted");top.append(title,count);existing.append(top);
  const bar=el("div","relic-search-controls"),input=el("input");input.type="search";input.placeholder="천상천하무쌍도 / アギト / 라잔";input.value=query;
- input.setAttribute("aria-label","발굴 외형 검색");input.oninput=()=>{query=input.value;renderSearch(d,refresh,changeTab);const next=document.getElementById("relicReverseSearch")?.querySelector("input[type=search]");next?.focus({preventScroll:true});next?.setSelectionRange(query.length,query.length)};
- const label=el("label","relic-goal-filter"),check=el("input");check.type="checkbox";check.checked=goalOnly;check.onchange=()=>{goalOnly=check.checked;renderSearch(d,refresh,changeTab)};
- label.append(check,document.createTextNode(" 저장 목표만 보기 ("+saved.length+")"));bar.append(input,label);existing.append(bar);
+ input.setAttribute("aria-label","발굴 외형 검색");
+ const label=el("label","relic-goal-filter"),check=el("input");check.type="checkbox";check.checked=goalOnly;
+ const goalCount=el("span");label.append(check,goalCount);bar.append(input,label);existing.append(bar);
  const list=el("div","relic-search-list");existing.append(list);
- for(const x of matched.slice(0,70)){
-  const box=el("article","relic-search-item"),head=el("div","relic-search-item-head"),name=el("div","relic-search-name");
-  name.append(el("small",null,x.type),el("strong",null,x.ko),el("span",null,x.jp));name.lastChild.lang="ja";
-  const id=idOf(x),on=saved.some(g=>g.id===id);
-  const favorite=action(on?"★ 목표 해제":"☆ 목표 저장",()=>{
-   const prev=goals(),next=prev.some(g=>g.id===id)?prev.filter(g=>g.id!==id):[...prev,{id,kind:x.kind,type:x.type,jp:x.jp}];
-   if(writeGoals(next))renderSearch(d,refresh,changeTab);
-  },"relic-favorite");favorite.setAttribute("aria-pressed",String(on));
-  head.append(name,favorite);box.append(head);
-  const groups=el("div","relic-result-groups");
-  for(const gid of x.groups)groups.append(action("그룹 "+gid+" · "+monsters(d,[gid]).join(" / "),()=>jumpGroup(d,gid,refresh),"relic-group-link"));
-  box.append(groups);
-  if(x.kind==="armor"){
-   const options=x.groups.flatMap(g=>(d.armorSeriesGuide?.rows||[]).filter(r=>(r.groups?.[String(g)]||[]).includes(x.jp)).map(r=>g+"그룹 · "+r.series+" "+r.letter));
-   if(options.length){const detail=el("details","relic-match-series"),summary=el("summary",null,"방어구 계열·A~F 후보 보기");detail.append(summary,el("div","relic-series-hints",options.join(" · ")));box.append(detail)}
+ // Keep the actual input element mounted throughout typing. Replacing it on each
+ // input event interrupts Korean/other IME composition and breaks the caret.
+ function updateResults(){
+  const saved=goals(),q=query.trim().toLocaleLowerCase();
+  const matched=all.filter(x=>(!goalOnly||saved.some(g=>g.id===idOf(x)))&&(!q||[x.ko,x.jp,x.type,...monsters(d,x.groups)].join(" ").toLocaleLowerCase().includes(q)));
+  count.textContent=matched.length+" / "+all.length+"종";
+  goalCount.textContent="저장 목표만 보기 ("+saved.length+")";
+  list.replaceChildren();
+  for(const x of matched.slice(0,70)){
+   const box=el("article","relic-search-item"),head=el("div","relic-search-item-head"),name=el("div","relic-search-name");
+   name.append(el("small",null,x.type),el("strong",null,x.ko),el("span",null,x.jp));name.lastChild.lang="ja";
+   const id=idOf(x),on=saved.some(g=>g.id===id);
+   const favorite=action(on?"★ 목표 해제":"☆ 목표 저장",()=>{
+    const prev=goals(),next=prev.some(g=>g.id===id)?prev.filter(g=>g.id!==id):[...prev,{id,kind:x.kind,type:x.type,jp:x.jp}];
+    if(writeGoals(next))updateResults();
+   },"relic-favorite");favorite.setAttribute("aria-pressed",String(on));
+   head.append(name,favorite);box.append(head);
+   const groups=el("div","relic-result-groups");
+   for(const gid of x.groups)groups.append(action("그룹 "+gid+" · "+monsters(d,[gid]).join(" / "),()=>jumpGroup(d,gid,refresh),"relic-group-link"));
+   box.append(groups);
+   if(x.kind==="armor"){
+    const options=x.groups.flatMap(g=>(d.armorSeriesGuide?.rows||[]).filter(r=>(r.groups?.[String(g)]||[]).includes(x.jp)).map(r=>g+"그룹 · "+r.series+" "+r.letter));
+    if(options.length){const detail=el("details","relic-match-series"),summary=el("summary",null,"방어구 계열·A~F 후보 보기");detail.append(summary,el("div","relic-series-hints",options.join(" · ")));box.append(detail)}
+   }
+   box.append(action("보상·파밍 정보 →",()=>{
+    farm={name:x.ko,groups:x.groups,monsters:monsters(d,x.groups)};
+    changeTab("rewards");renderFarm(d);
+   },"relic-farm-link"));
+   list.append(box);
   }
-  box.append(action("보상·파밍 정보 →",()=>{
-   farm={name:x.ko,groups:x.groups,monsters:monsters(d,x.groups)};
-   changeTab("rewards");renderFarm(d);
-  },"relic-farm-link"));
-  list.append(box);
+  if(matched.length>70)list.append(el("p","muted","앞의 70개만 표시됩니다. 검색어로 범위를 좁혀 주세요."));
+  if(!matched.length)list.append(el("p","muted","일치하는 외형이 없습니다."));
  }
- if(matched.length>70)list.append(el("p","muted","앞의 70개만 표시됩니다. 검색어로 범위를 좁혀 주세요."));
- if(!matched.length)list.append(el("p","muted","일치하는 외형이 없습니다."));
+ let composing=false;
+ input.addEventListener("compositionstart",()=>{composing=true});
+ input.addEventListener("compositionend",()=>{composing=false;query=input.value;updateResults()});
+ input.addEventListener("input",e=>{
+  if(composing||e.isComposing)return;
+  query=input.value;updateResults();
+ });
+ check.onchange=()=>{goalOnly=check.checked;updateResults()};
+ updateResults();
 }
 function renderArmor(d,refresh){
  const target=document.getElementById("relicArmorSeriesHost");if(!target)return;
