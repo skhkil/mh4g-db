@@ -1774,3 +1774,7 @@ button{border:1px solid var(--line);background:#202b39;color:white;border-radius
 #page-relic-equipment .relic-farm-target p{margin:0;line-height:1.6}
 @media(max-width:900px){#page-relic-equipment .relic-series-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:680px){#page-relic-equipment .relic-search-list,#page-relic-equipment .relic-series-grid{grid-template-columns:minmax(0,1fr)}#page-relic-equipment .relic-search-item-head{flex-wrap:wrap}}
+
+/* Relic reverse search: compact default and incremental results */
+#page-relic-equipment .relic-search-placeholder{grid-column:1/-1;margin:0;padding:14px 12px;border:1px dashed var(--line);border-radius:8px;line-height:1.6}
+#page-relic-equipment .relic-more-results{grid-column:1/-1;min-height:42px;background:#223950;border-color:#52749a;color:#d7e9ff;font-size:12px;font-weight:700}
