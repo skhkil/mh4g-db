@@ -1,5 +1,5 @@
 {
-  "version": "0.7.7-relic-reward-workbench1",
+  "version": "0.7.7-relic-reward-duo-ui2",
   "sources": {
     "wikiRewards": "https://w.atwiki.jp/3dsmh4g/pages/395.html",
     "armorSphere": "https://w.atwiki.jp/3dsmh4g/pages/131.html",
@@ -348,6 +348,43 @@
       "slots": null,
       "support": "conditional_unverified",
       "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html"
+    },
+    {
+      "id": "deviljho-seregios-extreme",
+      "label": "이블조(극한) + 셀레기오스(극한)",
+      "left": "이블조",
+      "right": "셀레기오스",
+      "leftState": "extreme",
+      "rightState": "extreme",
+      "points": 18,
+      "slots": "12~16",
+      "support": "article_point_example",
+      "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html",
+      "explanation": "원문 9+9=18pt 계산 예시. 실제 해당 길퀘 생성 여부는 이 자료만으로 확정하지 않습니다."
+    },
+    {
+      "id": "seregios-double-extreme",
+      "label": "셀레기오스(극한) ×2",
+      "left": "셀레기오스",
+      "right": "셀레기오스",
+      "leftState": "extreme",
+      "rightState": "extreme",
+      "points": 18,
+      "slots": "12~16",
+      "support": "article_point_example",
+      "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html",
+      "explanation": "원문 9+9=18pt 보상칸 설명 예시. 생성 가능 조합의 독립 확인 자료는 별개입니다."
+    },
+    {
+      "id": "kirin-sub-drome-example",
+      "label": "키린 아종 + 도스람포스",
+      "left": "키린 아종",
+      "right": "도스람포스",
+      "points": 5,
+      "slots": null,
+      "support": "article_point_example",
+      "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html",
+      "explanation": "원문 4+1=5pt 사례. 현재 검증 데이터에 5pt 보상칸 범위가 없어 계산하지 않습니다."
     }
   ],
   "verification": {
@@ -362,5 +399,14 @@
       "multi-monster sealed weapon per-quest probability cannot be inferred by combining single-quest probabilities",
       "any no-record probability means unknown, not zero"
     ]
+  },
+  "duoGuidance": {
+    "title": "2두를 비교하는 이유",
+    "points": "2두 길드퀘스트는 두 몬스터의 보상 포인트를 더해 공통 보상칸 범위를 결정합니다. 단일 퀘스트의 보상칸 수를 단순히 더하는 방식이 아닙니다.",
+    "additional": "공통 보상칸과 별개로 몬스터별 기타 보상 1칸씩이 있습니다. ×2 보상은 별도 두 칸이 아니라 한 칸에서 두 개입니다.",
+    "appearance": "발굴무기 외형은 왼쪽 아이콘 몬스터 그룹이 기준입니다. 점수·보상 효율과 무기 외형을 따로 살펴야 합니다.",
+    "restrictions": "원문 보상 포인트 예시만으로 실제 생성 가능한 2두 길퀘 조합을 모두 입증할 수 없습니다. 임의 조합은 계산 가정으로만 표시합니다.",
+    "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html",
+    "rankScope": "Lv136~140"
   }
 }
