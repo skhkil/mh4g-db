@@ -1732,3 +1732,45 @@ button{border:1px solid var(--line);background:#202b39;color:white;border-radius
 #page-relic-equipment .relic-appearance-table-armor{display:inline-flex;flex-direction:column;vertical-align:top;border:1px solid #40546b;background:#192a3a;border-radius:8px;padding:7px 9px;margin:2px 5px 2px 0;font-size:11px;white-space:normal}
 #page-relic-equipment .relic-matrix-table td:nth-child(3){min-width:160px;white-space:normal}
 @media(max-width:640px){#page-relic-equipment .relic-appearance-armor{max-width:100%}}
+
+
+/* Relic reverse search, saved goals and sourced A–F armor chart */
+#page-relic-equipment .relic-search-panel{display:grid;gap:12px;min-width:0}
+#page-relic-equipment .relic-search-top{display:flex;justify-content:space-between;align-items:start;gap:10px;flex-wrap:wrap}
+#page-relic-equipment .relic-search-top h3{font-size:17px;margin:0 0 6px}
+#page-relic-equipment .relic-search-top p{margin:0}
+#page-relic-equipment .relic-search-controls{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+#page-relic-equipment .relic-search-controls>input{flex:1 1 260px;min-width:0;min-height:44px}
+#page-relic-equipment .relic-goal-filter{font-size:12px;color:#c6d7e7;display:flex;align-items:center;gap:7px}
+#page-relic-equipment .relic-search-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+#page-relic-equipment .relic-search-item{border:1px solid #344b65;background:#152434;border-radius:11px;padding:13px;min-width:0;display:grid;gap:10px;align-content:start}
+#page-relic-equipment .relic-search-item-head{display:flex;align-items:start;justify-content:space-between;gap:9px}
+#page-relic-equipment .relic-search-name{display:flex;flex-direction:column;min-width:0;gap:4px}
+#page-relic-equipment .relic-search-name small{color:#9db6d0;font-size:10px}
+#page-relic-equipment .relic-search-name strong{font-size:16px;line-height:1.4;overflow-wrap:anywhere}
+#page-relic-equipment .relic-search-name span{font-size:11px;color:#9db6d0;overflow-wrap:anywhere}
+#page-relic-equipment .relic-favorite{flex:0 0 auto;padding:7px 9px;font-size:11px;white-space:nowrap}
+#page-relic-equipment .relic-favorite[aria-pressed=true]{color:#ffd982;border-color:#be9a5d}
+#page-relic-equipment .relic-result-groups{display:flex;flex-direction:column;gap:5px}
+#page-relic-equipment .relic-group-link{text-align:left;font-size:11px;background:#23394d;white-space:normal;line-height:1.5;overflow-wrap:anywhere}
+#page-relic-equipment .relic-farm-link{width:100%;font-size:12px;color:#d0e8ff;border-color:#4c739c}
+#page-relic-equipment .relic-match-series summary{cursor:pointer;font-size:11px;color:#b5cce3}
+#page-relic-equipment .relic-series-hints{font-size:11px;color:#aebfd4;line-height:1.6;margin-top:8px}
+#page-relic-equipment .relic-series-panel>summary{cursor:pointer;display:grid;gap:5px}
+#page-relic-equipment .relic-series-panel>summary strong{font-size:15px}
+#page-relic-equipment .relic-series-panel>summary small{font-size:11px;color:var(--muted)}
+#page-relic-equipment .relic-series-panel>p{line-height:1.6}
+#page-relic-equipment .relic-series-panel>a{font-size:12px;color:var(--accent2)}
+#page-relic-equipment .relic-series-filters{display:flex;flex-wrap:wrap;gap:12px;margin:14px 0}
+#page-relic-equipment .relic-series-filters label{display:grid;gap:5px;font-size:12px;color:var(--muted)}
+#page-relic-equipment .relic-series-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}
+#page-relic-equipment .relic-series-card{background:#132132;border:1px solid #344a62;border-radius:9px;padding:10px;min-width:0}
+#page-relic-equipment .relic-series-card h4{font-size:13px;margin:0 0 8px}
+#page-relic-equipment .relic-series-row{display:grid;grid-template-columns:56px 1fr;gap:6px;padding:5px 0;border-top:1px solid #293b4f;font-size:11px}
+#page-relic-equipment .relic-series-row>span{color:var(--muted)}
+#page-relic-equipment .relic-series-name{display:inline-flex;flex-direction:column;margin:0 8px 6px 0;gap:2px;overflow-wrap:anywhere}
+#page-relic-equipment .relic-series-name small{font-size:10px;color:#9db6d0}
+#page-relic-equipment .relic-farm-target{display:grid;gap:5px}
+#page-relic-equipment .relic-farm-target p{margin:0;line-height:1.6}
+@media(max-width:900px){#page-relic-equipment .relic-series-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:680px){#page-relic-equipment .relic-search-list,#page-relic-equipment .relic-series-grid{grid-template-columns:minmax(0,1fr)}#page-relic-equipment .relic-search-item-head{flex-wrap:wrap}}
