@@ -63,7 +63,9 @@ function renderSearch(d,refresh,changeTab){
    }
    box.append(action("보상·파밍 정보 →",()=>{
     farm={name:x.ko,groups:x.groups,monsters:monsters(d,x.groups)};
+    window.__mh4gRelicRewardTarget={monster:farm.monsters[0]||"",goalId:idOf(x)};
     changeTab("rewards");renderFarm(d);
+    document.dispatchEvent(new CustomEvent("mh4g-relic-reward-target"));
    },"relic-farm-link"));
    list.append(box);
   }
