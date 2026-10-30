@@ -2017,21 +2017,41 @@ function renderRelicEquipment(){
   const d=data.relicEquipment||{},groups=d.sealedGroups||[],types=Object.keys(d.weaponAppearances||{});
   const monsterSel=$("#relicMonsterFilter"),typeSel=$("#relicWeaponTypeFilter"),root=$("#relicEquipmentContent"),sources=$("#relicEquipmentSources");
   if(!root||!monsterSel||!typeSel)return;
-  const previousValues={attack:$("#relicAttackInput")?.value||""};
+  const previousValues={attack:$("#relicAttackInput")?.value||"",appearanceTableOpen:$("#relicAppearanceDirectory")?.open||false};
   const oldMonster=monsterSel.value||"all",oldType=typeSel.value||types[0]||"대검";
   const monsterOpts=groups.flatMap(g=>(g.monsters||[]).map(m=>({name:m,group:g.id}))).sort((a,b)=>a.name.localeCompare(b.name,"ko"));
-  monsterSel.innerHTML='<option value="all">전체 그룹</option>'+monsterOpts.map(x=>`<option value="${esc(x.name)}">${esc(x.name)} · 그룹${x.group}</option>`).join("");
+  monsterSel.innerHTML='<option value="all">몬스터 선택</option>'+monsterOpts.map(x=>`<option value="${esc(x.name)}">${esc(x.name)} · 그룹${x.group}</option>`).join("");
   monsterSel.value=monsterOpts.some(x=>x.name===oldMonster)?oldMonster:"all";
   typeSel.innerHTML=types.map(t=>`<option value="${esc(t)}">${esc(t)}</option>`).join("");typeSel.value=types.includes(oldType)?oldType:(types[0]||"");
   monsterSel.onchange=renderRelicEquipment;typeSel.onchange=renderRelicEquipment;
   if(sources)sources.innerHTML=(d.sources||[]).map(x=>`<a href="${esc(x.url)}" target="_blank" rel="noopener noreferrer" class="source-link relic-source-link">${esc(x.label)} ↗</a>`).join("");
   const selectedMonster=monsterSel.value,selectedGroup=selectedMonster==="all"?null:relicGroupByMonster(selectedMonster),type=typeSel.value;
-  const groupsShown=selectedGroup?[selectedGroup]:groups;
   const appearance=d.weaponAppearances?.[type]||[];
-  const groupCards=groupsShown.map(g=>{
-    const jp=appearance[Number(g.id)-1]||"-",armors=d.armorAppearancePools?.[String(g.id)]||[];
-    return `<article class="relic-group-card"><div class="relic-group-title"><b>그룹 ${g.id}</b><span>${(g.monsters||[]).map(esc).join(" · ")}</span></div><div class="relic-group-grid"><div><small>봉인된 ${esc(type)} 외형</small>${relicAppearanceLabel(jp,type)}</div><div><small>발굴방어구 외형 풀</small><div class="relic-chip-wrap">${armors.map(a=>`<span class="mini-chip">${esc(a)}</span>`).join("")||'<span class="muted">-</span>'}</div></div></div></article>`;
-  }).join("");
+  const groupCards=selectedGroup?(()=>{
+    const g=selectedGroup,jp=appearance[Number(g.id)-1]||"-",armors=d.armorAppearancePools?.[String(g.id)]||[];
+    return `<div id="relicAppearanceResult" class="relic-appearance-selected">
+      <div class="relic-appearance-summary">
+        <div><span class="relic-appearance-eyebrow">선택한 길드퀘스트 몬스터</span><h3>${esc(selectedMonster)} <span>그룹 ${esc(g.id)}</span></h3>
+        <p>같은 그룹: ${(g.monsters||[]).map(esc).join(" · ")}</p></div>
+        <div class="relic-appearance-group-mark" aria-label="발굴 외형 그룹 ${esc(g.id)}">${esc(g.id)}<small>GROUP</small></div>
+      </div>
+      <div class="relic-appearance-features">
+        <section class="relic-appearance-feature"><div class="relic-appearance-feature-heading"><span>01</span><div><h4>봉인된 ${esc(type)} 외형</h4><p>선택한 무기종의 발굴 외형</p></div></div>
+          <div class="relic-appearance-weapon-name">${relicAppearanceLabel(jp,type)}</div></section>
+        <section class="relic-appearance-feature"><div class="relic-appearance-feature-heading"><span>02</span><div><h4>발굴방어구 외형 풀</h4><p>그룹 ${esc(g.id)}에 등록된 외형 종류 ${armors.length}개</p></div></div>
+          <div class="relic-appearance-armors">${armors.map(a=>`<span class="relic-appearance-armor">${esc(a)}</span>`).join("")||'<span class="muted">확인된 외형 없음</span>'}</div></section>
+      </div>
+    </div>`;
+  })():`<div class="relic-appearance-empty">
+    <div class="relic-appearance-empty-icon" aria-hidden="true">◇</div>
+    <h3>몬스터를 선택하면 발굴 외형이 표시됩니다</h3>
+    <p>위에서 몬스터와 무기종을 선택하거나, 아래 그룹 바로가기를 눌러보세요.</p>
+  </div>
+  <div class="relic-appearance-quick-head"><h3>그룹 바로가기</h3><span>전체 ${groups.length}그룹</span></div>
+  <div class="relic-appearance-quick-grid">${groups.map(g=>`<button type="button" class="relic-appearance-quick" data-relic-appearance-monster="${esc((g.monsters||[])[0]||"")}">
+    <b>그룹 ${esc(g.id)}</b><span>${(g.monsters||[]).map(esc).join(" · ")}</span>
+    <span class="relic-appearance-quick-arrow" aria-hidden="true">→</span>
+  </button>`).join("")}</div>`;
   const gradeRows=(d.grades||[]).map(x=>`<tr><td><strong>${esc(x.name)}</strong>${x.mh4gOnly?'<small>MH4G 전용</small>':''}</td><td>${esc(x.questLevel)}</td><td>${esc(x.rarity)}</td><td class="wrap-cell">${esc(x.detail||"")}</td></tr>`).join("");
   const qg=d.qualityGuide||{};
   const mh4RefRows=(qg.mh4Reference?.rows||[]).map(x=>`<tr><td>${esc(x.route)}</td><td>${esc(x.level)}</td><td class="wrap-cell"><strong>${esc(x.quality)}</strong></td><td class="wrap-cell">${esc(x.note||"")}</td></tr>`).join("");
@@ -2051,7 +2071,7 @@ function renderRelicEquipment(){
   const rawRows=(d.attackRawTypes||[]).map(x=>`<tr><td><strong>${x.raw}</strong></td><td>${x.upgradeRaw}</td><td>${x.affinityStart>0?'+':''}${x.affinityStart}% → ${x.affinityEnd>0?'+':''}${x.affinityEnd}%</td><td>${x.defenseStart>=0?'+':''}${x.defenseStart} → ${x.defenseEnd>=0?'+':''}${x.defenseEnd}</td><td class="wrap-cell">${esc(x.note)}</td></tr>`).join("");
   const atk=(d.weaponAttackTables||[]).find(x=>x.weaponType===type),special=d.weaponSpecialNotes?.[type]||"",cap=d.elementCaps?.[type];
   const attackCells=(d.attackRawTypes||[]).map(x=>`<td>${atk?.displayAttack?.[String(x.raw)]??"-"}</td>`).join("");
-  const groupMatrix=groups.map(g=>`<tr${selectedGroup&&selectedGroup.id===g.id?' class="relic-selected-row"':''}><td><strong>${g.id}</strong></td><td class="wrap-cell">${(g.monsters||[]).map(esc).join(" · ")}</td><td>${relicAppearanceLabel(appearance[Number(g.id)-1]||"-",type)}</td><td class="wrap-cell">${(d.armorAppearancePools?.[String(g.id)]||[]).map(a=>`<span class="mini-chip">${esc(a)}</span>`).join(" ")}</td></tr>`).join("");
+  const groupMatrix=groups.map(g=>`<tr${selectedGroup&&selectedGroup.id===g.id?' class="relic-selected-row"':''}><td><button type="button" class="relic-appearance-table-pick" data-relic-appearance-monster="${esc((g.monsters||[])[0]||"")}" aria-label="그룹 ${g.id} 외형 조회">${g.id} →</button></td><td class="wrap-cell">${(g.monsters||[]).map(esc).join(" · ")}</td><td>${relicAppearanceLabel(appearance[Number(g.id)-1]||"-",type)}</td><td class="wrap-cell">${(d.armorAppearancePools?.[String(g.id)]||[]).map(a=>`<span class="mini-chip">${esc(a)}</span>`).join(" ")}</td></tr>`).join("");
   root.innerHTML=`
     <div id="relicPanel-derivation" class="relic-tab-panel" data-relic-panel="derivation" role="tabpanel" aria-labelledby="relicTab-derivation">
       <section class="panel relic-derivation-panel">
@@ -2080,9 +2100,19 @@ function renderRelicEquipment(){
       </section>
     </div>
     <div id="relicPanel-appearance" class="relic-tab-panel" data-relic-panel="appearance" role="tabpanel" aria-labelledby="relicTab-appearance" hidden>
-    ${selectedGroup?`<section class="panel relic-selected-summary"><h3>${esc(selectedMonster)} → 발굴 그룹 ${selectedGroup.id}</h3><p class="muted">2두 길드퀘스트는 원칙적으로 왼쪽 아이콘 몬스터의 그룹을 기준으로 봅니다.</p></section>`:""}
-    <section class="panel"><div class="panel-title"><div><h2>몬스터 → 발굴 외형 역조회</h2><p class="muted">봉인된 무구 기준입니다. 무기 외형과 방어구 외형은 다른 감정품 등급과 테이블이 다릅니다.</p></div></div><div class="relic-group-cards">${groupCards}</div></section>
-    <section class="panel"><div class="panel-title"><div><h2>${esc(type)} · 전체 그룹 외형표</h2><p class="muted">방어구는 그룹별 확인된 외형 풀입니다. A~F 세부 조합에는 원본 자료의 미확정/예외 보고가 남아 있습니다.</p></div></div><div class="table-panel"><table class="data-table relic-matrix-table"><thead><tr><th>그룹</th><th>몬스터</th><th>${esc(type)} 외형</th><th>방어구 외형 풀</th></tr></thead><tbody>${groupMatrix}</tbody></table></div></section>
+      <section class="panel relic-appearance-panel">
+        <div class="relic-appearance-panel-head">
+          <div><h2>몬스터별 발굴 외형</h2><p>선택한 길드퀘스트 몬스터가 속한 그룹의 무기·방어구 외형을 확인하세요.</p></div>
+          <div class="relic-appearance-kpis"><span><b>${types.length}</b> 무기종</span><span><b>${groups.length}</b> 그룹</span></div>
+        </div>
+        ${groupCards}
+        <p class="relic-appearance-footnote">※ 봉인된 무기 외형 기준입니다. 무기·방어구는 감정품 종류에 따라 테이블이 다를 수 있습니다. 2두 길퀘는 원칙적으로 왼쪽 아이콘 몬스터 그룹을 참고하세요. 방어구 A~F 세부 조합에는 미확정·예외 사례가 있습니다.</p>
+      </section>
+      <details id="relicAppearanceDirectory" class="panel relic-appearance-directory" ${previousValues.appearanceTableOpen?"open":""}>
+        <summary><span><strong>11개 그룹 전체 외형 비교표</strong><small>선택한 ${esc(type)}와 발굴방어구 외형을 그룹별로 비교</small></span><span class="relic-appearance-directory-action">펼치기 / 접기</span></summary>
+        <div class="table-panel"><table class="data-table relic-matrix-table"><thead><tr><th>그룹</th><th>몬스터</th><th>${esc(type)} 외형</th><th>방어구 외형 풀</th></tr></thead><tbody>${groupMatrix}</tbody></table></div>
+        <p class="relic-appearance-directory-note">그룹 번호를 누르면 해당 그룹의 몬스터를 선택해 위쪽 결과에서 확인할 수 있습니다.</p>
+      </details>
     </div>
     <div id="relicPanel-rewards" class="relic-tab-panel" data-relic-panel="rewards" role="tabpanel" aria-labelledby="relicTab-rewards" hidden>
     <section class="panel"><div class="panel-title"><div><h2>감정품 등급</h2><p class="muted">감정품 이름 자체와 실제 획득 품질 구간은 별개입니다. 아래 획득 방식별 표와 함께 보세요.</p></div></div><div class="table-panel"><table class="data-table"><thead><tr><th>감정명</th><th>주요 구간</th><th>RARE</th><th>실제 적용 주의</th></tr></thead><tbody>${gradeRows}</tbody></table></div></section>
@@ -2268,6 +2298,17 @@ function renderRelicEquipment(){
       tabButtons[next].focus();
     };
   });
+  const appearancePanel=$("#relicPanel-appearance");
+  if(appearancePanel)appearancePanel.onclick=e=>{
+    const button=e.target.closest("[data-relic-appearance-monster]");
+    if(!button)return;
+    const name=button.dataset.relicAppearanceMonster;
+    if(!monsterOpts.some(x=>x.name===name))return;
+    monsterSel.value=name;
+    const fromDirectory=Boolean(button.closest("#relicAppearanceDirectory"));
+    renderRelicEquipment();
+    if(fromDirectory)$("#relicAppearanceResult")?.scrollIntoView({block:"start",behavior:"smooth"});
+  };
   setRelicGuideTab(relicActiveTab);
   decorateResponsiveTables(root);
 }
