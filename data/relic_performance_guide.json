@@ -1,0 +1,414 @@
+{
+  "version": "0.7.7-relic-performance-45-20261030",
+  "sourceNumbers": {
+    "affinity": "https://mh4info.com/?p=1348",
+    "sharpness": "https://mh4info.com/?p=1348",
+    "relicProfiles": "https://w.atwiki.jp/otameshine/pages/43.html",
+    "specials": "https://mh4info.com/?p=1283",
+    "official": "https://game.capcom.com/manual/MH4G/ja/page-72.html"
+  },
+  "critBonus": 0.25,
+  "sharpness": {
+    "unknown": {
+      "label": "확인 안 함",
+      "factor": null
+    },
+    "naturalPurple": {
+      "label": "기본 보라 20",
+      "factor": 1.44,
+      "needsHandicraft": false,
+      "color": "purple",
+      "length": 20
+    },
+    "handicraftPurple40": {
+      "label": "장인 보라 40",
+      "factor": 1.44,
+      "needsHandicraft": true,
+      "color": "purple",
+      "length": 40
+    },
+    "handicraftPurple20": {
+      "label": "장인 보라 20",
+      "factor": 1.44,
+      "needsHandicraft": true,
+      "color": "purple",
+      "length": 20
+    },
+    "longWhite": {
+      "label": "흰 예리도 위주",
+      "factor": 1.32,
+      "needsHandicraft": false,
+      "color": "white",
+      "length": null
+    }
+  },
+  "sharpnessFallback": 1.32,
+  "slots": [
+    [
+      "unknown",
+      "미입력"
+    ],
+    [
+      "none",
+      "슬롯 없음"
+    ],
+    [
+      "empty1",
+      "빈 슬롯 1개"
+    ],
+    [
+      "empty2",
+      "빈 슬롯 2개"
+    ],
+    [
+      "empty3",
+      "빈 슬롯 3개"
+    ],
+    [
+      "fixed",
+      "고정 장식주 있음"
+    ]
+  ],
+  "weaponSpecial": {
+    "대검": {
+      "focus": "모아베기·발도 중심: 높은 기대 물리 공격력과 예리도 유지가 핵심",
+      "source": "https://game.capcom.com/manual/MH4G/ja/page-72.html"
+    },
+    "태도": {
+      "focus": "기인 게이지·회심 운용: 회심 보정과 실전 예리도 유지 확인",
+      "source": "https://game.capcom.com/manual/MH4G/ja/page-72.html"
+    },
+    "한손검": {
+      "focus": "손수가 많은 공격과 상태이상 활용, 방어 보너스 및 남는 슬롯도 비교",
+      "source": "https://game.capcom.com/manual/MH4G/ja/page-72.html"
+    },
+    "쌍검": {
+      "focus": "연속타 특성상 속성 상성·예리도 소비·회심 유지가 중요",
+      "source": "https://game.capcom.com/manual/MH4G/ja/page-72.html"
+    },
+    "해머": {
+      "focus": "머리 타격 중심: 물리 공격력·회심·예리도와 기절 운영을 별도로 평가",
+      "source": "https://game.capcom.com/manual/MH4G/ja/page-72.html"
+    },
+    "수렵피리": {
+      "focus": "선율이 공격력 못지않게 중요. 실제 연주 유지 여부에 따라 가치가 변함",
+      "fields": [
+        {
+          "id": "melody",
+          "label": "주로 사용하는 선율",
+          "options": [
+            [
+              "unknown",
+              "미확인"
+            ],
+            [
+              "attack",
+              "공격력 UP 선율"
+            ],
+            [
+              "utility",
+              "유틸리티·생존 선율"
+            ],
+            [
+              "other",
+              "기타 선율"
+            ]
+          ]
+        }
+      ],
+      "interpretations": {
+        "attack": "공격력 UP 선율 보유: 연주를 유지한다면 본인·파티의 물리 성능에 유리합니다. 선율 효과를 무기 자체 공격력에 중복 곱하지 않았습니다.",
+        "utility": "유틸리티 선율: 개인 공격 지표에는 반영되지 않지만 파티·생존 효용이 있습니다.",
+        "other": "선율 효과는 연주표를 확인해야 합니다."
+      },
+      "source": "https://w.atwiki.jp/otameshine/pages/43.html"
+    },
+    "랜스": {
+      "focus": "가드·회피 중심: 공격 지표 외에 방어 보너스와 슬롯 활용 비교",
+      "source": "https://game.capcom.com/manual/MH4G/ja/page-72.html"
+    },
+    "건랜스": {
+      "focus": "포격은 물리 배율·회심·예리도만으로 피해량을 계산할 수 없음",
+      "fields": [
+        {
+          "id": "shell",
+          "label": "포격 종류",
+          "options": [
+            [
+              "unknown",
+              "미확인"
+            ],
+            [
+              "normal",
+              "일반형"
+            ],
+            [
+              "long",
+              "방사형"
+            ],
+            [
+              "wide",
+              "확산형"
+            ]
+          ]
+        },
+        {
+          "id": "shellLevel",
+          "label": "포격 레벨",
+          "options": [
+            [
+              "unknown",
+              "미확인"
+            ],
+            [
+              "4",
+              "Lv4"
+            ],
+            [
+              "5",
+              "Lv5"
+            ]
+          ]
+        }
+      ],
+      "interpretations": {
+        "normal": "일반형: 장전수 5발, 풀버스트 활용에 유리합니다.",
+        "long": "방사형: 장전수 3발, 긴 전방 사정거리가 특징입니다.",
+        "wide": "확산형: 장전수 2발, 한 발의 위력이 높은 유형입니다."
+      },
+      "source": "https://game.capcom.com/manual/MH4G/ja/page-109.html"
+    },
+    "슬래시액스": {
+      "focus": "검 모드의 병 종류에 따라 운용 가치가 크게 달라짐",
+      "fields": [
+        {
+          "id": "phial",
+          "label": "병 종류",
+          "options": [
+            [
+              "unknown",
+              "미확인"
+            ],
+            [
+              "power",
+              "강격병"
+            ],
+            [
+              "element",
+              "강속성병"
+            ]
+          ]
+        }
+      ],
+      "interpretations": {
+        "power": "강격병: 검 모드의 물리 공격 운용에 유리합니다. 병 보정을 단순 물리 지표에 중복 곱하지 않았습니다.",
+        "element": "강속성병: 공격 대상의 속성 육질과 무기 속성값이 중요합니다. 몬스터 없이 단순 화력 우열은 매기지 않습니다."
+      },
+      "source": "https://w.atwiki.jp/otameshine/pages/43.html"
+    },
+    "차지액스": {
+      "focus": "병 피해와 물리 타격은 서로 다른 계산 영역. 초고출력 활용도 고려",
+      "fields": [
+        {
+          "id": "phial",
+          "label": "병 종류",
+          "options": [
+            [
+              "unknown",
+              "미확인"
+            ],
+            [
+              "impact",
+              "유탄병"
+            ],
+            [
+              "element",
+              "강속성병"
+            ]
+          ]
+        }
+      ],
+      "interpretations": {
+        "impact": "유탄병: 기절·육질 무시 계열 특성이 있으나 병 폭발량은 이 물리 지표에 포함하지 않습니다.",
+        "element": "강속성병: 실제 속성 육질과 비각성 속성값에 의존합니다. 입력 공격력만으로 병 피해를 구할 수 없습니다."
+      },
+      "source": "https://w.atwiki.jp/otameshine/pages/43.html"
+    },
+    "조충곤": {
+      "focus": "벌레 성능·채취 엑기스 유지가 실제 운용에 중요",
+      "fields": [
+        {
+          "id": "kinsect",
+          "label": "벌레 성장 방향",
+          "options": [
+            [
+              "unknown",
+              "미확인"
+            ],
+            [
+              "speed",
+              "속도"
+            ],
+            [
+              "power",
+              "파워"
+            ],
+            [
+              "stamina",
+              "체력"
+            ],
+            [
+              "balance",
+              "밸런스"
+            ]
+          ]
+        }
+      ],
+      "interpretations": {
+        "speed": "속도형: 엑기스 채집 편의성에 유리합니다.",
+        "power": "파워형: 벌레의 공격 성능이 중심입니다.",
+        "stamina": "체력형: 벌레 운용의 지속성을 고려합니다.",
+        "balance": "밸런스형: 여러 능력을 균형 있게 갖춘 유형입니다."
+      },
+      "source": "https://w.atwiki.jp/otameshine/pages/43.html"
+    },
+    "라이트보우건": {
+      "focus": "속사 탄종과 장전·반동·장탄수 확인이 핵심. 공격 지표는 탄 피해 기대값이 아님",
+      "fields": [
+        {
+          "id": "primaryAmmo",
+          "label": "주력 속사 탄",
+          "options": [
+            [
+              "unknown",
+              "미확인"
+            ],
+            [
+              "normal2",
+              "통상탄 Lv2"
+            ],
+            [
+              "pierce2",
+              "관통탄 Lv2"
+            ],
+            [
+              "element",
+              "속성탄"
+            ],
+            [
+              "status",
+              "상태이상탄"
+            ],
+            [
+              "other",
+              "기타"
+            ]
+          ]
+        }
+      ],
+      "interpretations": {
+        "normal2": "통상탄 Lv2 속사 운용: 탄의 발수·장탄수·반동을 함께 확인하세요.",
+        "pierce2": "관통탄 Lv2 속사 운용: 히트 수와 몬스터 체형에 따라 효율이 달라집니다.",
+        "element": "속성탄 속사 운용: 몬스터 속성 육질에 따라 성능이 달라집니다.",
+        "status": "상태이상탄 운용: 공격력보다 서포트·탄 보급이 중요할 수 있습니다."
+      },
+      "source": "https://w.atwiki.jp/otameshine/pages/43.html"
+    },
+    "헤비보우건": {
+      "focus": "앉아쏘기 탄종·장탄수·반동·장전 성능을 확인해야 함",
+      "fields": [
+        {
+          "id": "crouchAmmo",
+          "label": "앉아쏘기 주요 탄",
+          "options": [
+            [
+              "unknown",
+              "미확인"
+            ],
+            [
+              "normal2",
+              "통상탄 Lv2"
+            ],
+            [
+              "pierce2",
+              "관통탄 Lv2"
+            ],
+            [
+              "element",
+              "속성탄"
+            ],
+            [
+              "other",
+              "기타"
+            ]
+          ]
+        }
+      ],
+      "interpretations": {
+        "normal2": "통상탄 앉아쏘기: 안정적으로 약점 부위를 노리는 플레이에 적합할 수 있습니다.",
+        "pierce2": "관통탄 앉아쏘기: 체형·관통 히트 수에 영향받습니다.",
+        "element": "속성탄 앉아쏘기: 속성 육질에 따라 효율이 달라집니다."
+      },
+      "source": "https://w.atwiki.jp/otameshine/pages/43.html"
+    },
+    "활": {
+      "focus": "모으기 단계의 화살 유형·레벨·강사 여부와 장착 가능한 병이 핵심",
+      "fields": [
+        {
+          "id": "charge",
+          "label": "주력 화살",
+          "options": [
+            [
+              "unknown",
+              "미확인"
+            ],
+            [
+              "rapid",
+              "연사"
+            ],
+            [
+              "spread",
+              "확산"
+            ],
+            [
+              "pierce",
+              "관통"
+            ]
+          ]
+        },
+        {
+          "id": "shot",
+          "label": "사격 특성",
+          "options": [
+            [
+              "unknown",
+              "미확인"
+            ],
+            [
+              "power",
+              "강사"
+            ],
+            [
+              "arc",
+              "곡사"
+            ]
+          ]
+        }
+      ],
+      "interpretations": {
+        "rapid": "연사: 약점 집중 사격에 맞는 탄착 운용을 고려하세요.",
+        "spread": "확산: 거리와 적중 화살 수가 중요합니다.",
+        "pierce": "관통: 몬스터 크기·히트 수에 따라 효과가 달라집니다."
+      },
+      "source": "https://w.atwiki.jp/otameshine/pages/43.html"
+    }
+  },
+  "notes": [
+    "기대 물리 지표=무기 자체 진공격력×(1+무기 자체 회심률/100×0.25)×선택한 예리도 배율. 음수 회심은 역회심에 따른 기대 손실로 같은 식을 사용.",
+    "근접 무기의 보라 1.44·흰 1.32 배율은 실제 운영 색을 유지한다는 가정. 연마·지속·장인 외 스킬 보정, 육질, 모션값, 속성 피해, 포격·병·탄·벌레 피해는 제외.",
+    "거너 3종은 예리도 배율을 적용하지 않으며 모션/탄/거리/병 보정을 계산하지 않으므로 실제 원거리 피해량과 비교할 수 없음.",
+    "강화 전후 예상은 해당 초기 계열/특수 보정이 Lv4에도 유지된다는 가정, 일부 단계의 회심·방어 수치는 미확인.",
+    "최고·하위 1% 또는 종결 판정은 출현 확률 분포와 실제 사냥 전제조건이 검증되지 않아 표시하지 않음.",
+    "무기종 고유 옵션의 설명은 정성적 참고이며 포격·선율·병 효과의 별도 피해를 숫자에 더하지 않음."
+  ]
+}
