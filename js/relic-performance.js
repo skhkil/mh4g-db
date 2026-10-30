@@ -1,5 +1,5 @@
 
-let state={level:"1",attack:"",affinity:"",defense:"",sharp:"unknown",slots:"unknown",element:"",special:{}},loaded=null,loading=null,sequence=0;
+let state={level:"1",attack:"",affinity:"",defense:"",sharp:"unknown",slots:"unknown",element:"",fixedDecorationId:"",editingId:"",special:{}},loaded=null,loading=null,sequence=0;
 const node=(t,c,v)=>{const x=document.createElement(t);if(c)x.className=c;if(v!==undefined)x.textContent=v;return x};
 const select=(options,value,onChange)=>{const s=node("select");for(const [v,label] of options){const o=node("option",null,label);o.value=v;s.append(o)}s.value=value;s.onchange=()=>onChange(s.value);return s};
 const field=(label,control)=>{const l=node("label","rp-field");l.append(node("span",null,label),control);return l};
@@ -33,7 +33,7 @@ export function physicalIndex(raw,aff,sharpness=1){
  const affinityFactor=1+(aff/100)*0.25;
  return raw*affinityFactor*sharpness;
 }
-function render(d,type,guide,host){
+function render(d,type,guide,host,decorations=[]){
  host.replaceChildren();
  const sharpnessApplicable=!["라이트보우건","헤비보우건","활"].includes(type);
  const form=node("section","panel rp-panel"),head=node("div","rr-heading");
@@ -52,10 +52,24 @@ function render(d,type,guide,host){
  extra.append(field("슬롯 구성",select(guide.slots,state.slots,x=>{state.slots=x})));
  extra.append(field("속성/상태이상 메모",num(state.element,"해당 수치 · 선택",x=>{state.element=x})));
  optional.append(extra);
+ const fixedList=(decorations||[]).filter(x=>x.relicOnly&&x.fixedDecoration);
+ const fixedPicker=select([["","고정 장식주 선택"],...fixedList.map(x=>[x.id,x.name])],state.fixedDecorationId,x=>{state.fixedDecorationId=x});
+ optional.append(field("고정 장식주 (고정 장식 선택 시)",fixedPicker));
  const profile=guide.weaponSpecial[type],specialControls=node("div","rp-fields");
  for(const spec of profile.fields||[])specialControls.append(field(spec.label,select(spec.options,state.special[type+"-"+spec.id]||"unknown",v=>{state.special[type+"-"+spec.id]=v})));
  if(profile.fields?.length)optional.append(node("h3",null,type+" 전용 옵션"),specialControls);
  form.append(optional);
+ const owner=node("section","rp-owned");owner.append(node("h3",null,"STEP 6 · 보유 발굴무기 저장 및 연동"));
+ text(owner,"이름·성능·슬롯을 기존 보유 발굴무기 저장소에 보관합니다. 슬롯 미확인이나 고정 장식주 미선택 무기는 자동조합에 투입하지 않습니다.");
+ const ownedList=node("div","rp-owned-fields");
+ const nickname=node("input");nickname.type="text";nickname.maxLength=55;nickname.placeholder="구분용 이름 (선택)";
+ const nameKey="mh4g-relic-performance-name";nickname.value=state[nameKey]||"";nickname.oninput=()=>{state[nameKey]=nickname.value};
+ const existing=node("select");existing.setAttribute("aria-label","저장된 발굴무기 불러오기");
+ ownedList.append(field("무기 구분 이름",nickname),field("저장한 무기 불러오기",existing));
+ owner.append(ownedList);
+ const ownerActions=node("div","rp-owned-actions"),save=node("button","rp-run","현재 무기 저장"),discard=node("button","ghost","새 무기로 입력");
+ ownerActions.append(save,discard);owner.append(ownerActions);
+ const status=node("p","rr-note");owner.append(status);form.append(owner);
  const run=node("button","rp-run","성능 분석하기"),result=node("div","rp-results");run.type="button";form.append(run,result);
  const refs=node("details","rp-reference");refs.append(node("summary",null,"기존 무기별 기본배율·강화 표 참고"));
  for(const t of host.querySelectorAll(".table-panel")){t.classList.add("rp-reference-table");refs.append(t)}
@@ -111,14 +125,52 @@ function render(d,type,guide,host){
   result.append(tips);
   text(result,"계산은 무기 자체 진공격력·회심·지정 예리도만 사용하며, 스킬/부적/도핑·속성육질·포격·병·탄·사격보정·모션값은 제외. 서로 다른 무기종 지표를 직접 비교하지 마세요.");
  }
+ const STORE="mh4g-owned-relic-weapons-v1";
+ const records=()=>{try{const a=JSON.parse(localStorage.getItem(STORE)||"[]");return Array.isArray(a)?a:[]}catch{return []}};
+ const signature=x=>JSON.stringify([x.performance?.weaponType,x.performance?.attack,x.performance?.level,x.performance?.affinity,x.performance?.defense,x.slotMode,x.slots,x.decorationId,x.performance?.sharp,x.performance?.element]);
+ function refreshOwned(){
+  const items=records().filter(x=>x.performance?.weaponType===type);
+  existing.replaceChildren();const def=node("option",null,"새 무기 등록");def.value="";existing.append(def);
+  for(const item of items){const o=node("option",null,item.performance?.name||type+" "+item.performance?.attack||item.id);o.value=item.id;existing.append(o)}
+  existing.value=state.editingId;if(existing.value!==state.editingId){state.editingId="";existing.value=""}
+  save.textContent=state.editingId?"선택한 무기 갱신":"현재 무기 저장";
+ }
+ existing.onchange=()=>{
+  state.editingId=existing.value;const item=records().find(x=>x.id===existing.value);if(!item){refreshOwned();return}
+  const p=item.performance||{};state.attack=String(p.attack||"");state.level=String(p.level||"1");state.affinity=p.affinity===null?"":String(p.affinity??"");state.defense=p.defense===null?"":String(p.defense??"");
+  state.sharp=p.sharp||"unknown";state.element=p.element||"";state.slots=item.slotMode==="empty"?({0:"none",1:"empty1",2:"empty2",3:"empty3"}[item.slots]||"unknown"):item.slotMode==="fixed"?"fixed":"unknown";
+  state.fixedDecorationId=item.decorationId||"";state[nameKey]=p.name||"";
+  state.special={...state.special,...(p.special||{})};
+  render(d,type,guide,host,decorations);
+ };
+ discard.onclick=()=>{state.editingId="";state.attack="";state.affinity="";state.defense="";state.level="1";state.sharp="unknown";state.slots="unknown";state.element="";state.fixedDecorationId="";state[nameKey]="";render(d,type,guide,host,decorations)};
+ save.onclick=()=>{
+  const shown=Number(state.attack),lv=Number(state.level);
+  const affinity=state.affinity.trim()===""?null:Number(state.affinity),defense=state.defense.trim()===""?null:Number(state.defense);
+  if(!Number.isInteger(shown)||shown<=0||!Number.isInteger(lv)||lv<1||lv>4){status.textContent="공격력과 강화 단계를 먼저 입력하세요.";return}
+  if(affinity!==null&&(!Number.isInteger(affinity)||affinity< -100||affinity>100)){status.textContent="회심률 입력을 확인하세요.";return}
+  if(defense!==null&&(!Number.isInteger(defense)||defense<0)){status.textContent="방어력 입력을 확인하세요.";return}
+  const slot=state.slots,mode=slot==="fixed"?"fixed":slot==="unknown"?"unknown":"empty",slots=slot==="fixed"?Number(fixedList.find(x=>x.id===state.fixedDecorationId)?.slots||0):slot==="unknown"?0:slot==="none"?0:Number(slot.replace("empty",""));
+  if(mode==="fixed"&&!fixedList.some(x=>x.id===state.fixedDecorationId)){status.textContent="고정 장식주가 있는 무기는 실제 장식주 종류를 선택해야 시뮬레이터에 적용할 수 있습니다. 선택하지 않아도 미확인으로 저장됩니다.";}
+  const deco=fixedList.find(x=>x.id===state.fixedDecorationId),confirmed=mode!=="fixed"||!!deco;
+  const p={weaponType:type,name:state[nameKey]||"",level:lv,attack:shown,affinity,defense,sharp:state.sharp,element:state.element,special:{...state.special}};
+  const record={id:state.editingId||"relic_perf_"+Date.now()+"_"+Math.random().toString(36).slice(2,8),slotMode:!confirmed?"unknown":mode,slots,decorationId:confirmed&&mode==="fixed"?deco.id:"",skills:confirmed&&mode==="fixed"?{...deco.skills}:{},performance:p};
+  const all=records(),idx=all.findIndex(x=>x.id===record.id),dup=idx<0?all.findIndex(x=>x.performance&&signature(x)===signature(record)):-1;
+  if(idx>=0)all[idx]=record;else if(dup>=0){record.id=all[dup].id;all[dup]=record}else all.push(record);
+  try{localStorage.setItem(STORE,JSON.stringify(all))}catch(e){status.textContent="로컬 저장 실패: "+e.message;return}
+  state.editingId=record.id;status.textContent="보유 발굴무기 목록에 저장됨"+(record.slotMode==="unknown"?" · 슬롯 정보 미확인으로 스킬조합 제외":"");
+  document.dispatchEvent(new CustomEvent("mh4g-owned-relic-weapons-changed"));
+  refreshOwned();
+ };
+ refreshOwned();
  run.onclick=calculate;if(state.attack)calculate();
 }
-export async function mountRelicPerformance(d,type){
+export async function mountRelicPerformance(d,type,decorations=[]){
  const id=++sequence;const host=document.querySelector("#relicPanel-attack > .panel");if(!host)return;
  try{
   if(!loading)loading=fetch("./data/relic_performance_guide.json?v=0.7.7-relic-performance45",{cache:"no-cache"}).then(r=>{if(!r.ok)throw Error("HTTP "+r.status);return r.json()}).then(v=>{loaded=v;return v}).catch(e=>{loading=null;throw e});
   const guide=loaded||await loading;
   if(id!==sequence||!host.isConnected)return;
-  render(d,type,guide,host);
+  render(d,type,guide,host,decorations);
  }catch(e){if(id!==sequence||!host.isConnected)return;host.append(node("p","rp-caution","성능 분석 자료를 불러오지 못했습니다: "+e.message))}
 }
