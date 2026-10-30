@@ -1845,3 +1845,15 @@ button{border:1px solid var(--line);background:#202b39;color:white;border-radius
 #page-relic-equipment .rr-source>summary,#page-relic-equipment .rr-legacy>summary{padding:1px 0;font-size:14px;line-height:1.6}
 @media(max-width:850px){#page-relic-equipment .rr-explain{grid-template-columns:minmax(0,1fr)}}
 @media(max-width:700px){#page-relic-equipment .rr-workbench{padding:16px;gap:14px}#page-relic-equipment .rr-fact{padding:12px 13px}#page-relic-equipment .rr-heading h2{font-size:16px}#page-relic-equipment .rr-source,#page-relic-equipment .rr-legacy{padding:16px}}
+
+
+/* Expanded dual-monster reward calculator */
+#page-relic-equipment .rr-duo-fields{grid-template-columns:repeat(2,minmax(0,1fr))}
+#page-relic-equipment .rr-duo .rr-pair-output .rr-facts{margin:2px 0 6px}
+#page-relic-equipment .rr-preset-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;padding:12px 0 2px}
+#page-relic-equipment .rr-preset{font-size:12px;line-height:1.5;white-space:normal;text-align:left;min-height:42px;word-break:keep-all;padding:10px}
+#page-relic-equipment .rr-duo .rr-more{border-top:1px solid var(--line);padding-top:11px}
+#page-relic-equipment .rr-duo .rr-more summary{font-weight:700;font-size:12px;cursor:pointer}
+#page-relic-equipment .rr-duo .rr-more .rr-note{margin-top:10px}
+@media(max-width:760px){#page-relic-equipment .rr-preset-list{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:550px){#page-relic-equipment .rr-duo-fields,#page-relic-equipment .rr-preset-list{grid-template-columns:minmax(0,1fr)}}
