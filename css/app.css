@@ -1581,3 +1581,27 @@ button{border:1px solid var(--line);background:#202b39;color:white;border-radius
  .manual-equipment-main:has(.relic-armor-controls)>.equipment-skill-points,
  .manual-equipment-main:has(.relic-armor-controls)>.manual-armor-detail{grid-column:2 / -1}
 }
+
+/* 2026-10-30: four-purpose relic guide tabs (existing data and calculation unchanged). */
+#page-relic-equipment .relic-tab-bar{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin:18px 0 10px}
+#page-relic-equipment .relic-tab-button{min-width:0;min-height:43px;padding:9px 8px;border:1px solid var(--line);border-radius:9px;background:var(--panel2);color:var(--muted);text-align:center;font-size:13px;font-weight:700;white-space:nowrap}
+#page-relic-equipment .relic-tab-button:hover{color:var(--text);border-color:#58799b}
+#page-relic-equipment .relic-tab-button[aria-selected="true"]{color:#f2f7ff;background:#20364f;border-color:var(--accent);box-shadow:inset 0 -2px var(--accent)}
+#page-relic-equipment .relic-tab-button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+#page-relic-equipment .relic-tab-lead{margin:0 0 12px;line-height:1.55}
+#page-relic-equipment .relic-guide-filters{margin:10px 0 0}
+#page-relic-equipment .relic-guide-filters[hidden],
+#page-relic-equipment .relic-guide-filters label[hidden],
+#page-relic-equipment .relic-tab-panel[hidden]{display:none!important}
+#page-relic-equipment .relic-source-details{margin-top:12px;border-top:1px solid var(--line);padding-top:10px}
+#page-relic-equipment .relic-source-details summary{display:list-item;cursor:pointer;color:var(--muted);font-size:12px;line-height:1.5}
+#page-relic-equipment .relic-source-details[open] summary{color:var(--accent2)}
+#page-relic-equipment #relicEquipmentContent{margin-top:14px}
+#page-relic-equipment .relic-tab-panel{display:grid;gap:14px;min-width:0}
+#page-relic-equipment .relic-tab-panel>.panel{min-width:0;margin:0}
+#page-relic-equipment .relic-guide-details>summary{cursor:pointer;font-weight:700}
+#page-relic-equipment .relic-guide-details[open]>summary{margin-bottom:10px}
+@media(max-width:700px){
+  #page-relic-equipment .relic-tab-bar{display:flex;overflow-x:auto;gap:6px;scroll-snap-type:x proximity;padding:1px 0 7px}
+  #page-relic-equipment .relic-tab-button{flex:0 0 auto;min-width:112px;padding:10px 12px;scroll-snap-align:start;font-size:12px}
+}

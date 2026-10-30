@@ -1980,10 +1980,41 @@ function relicAppearanceLabel(jp,type){
 function relicGroupByMonster(name){
   const key=String(name||"").trim();return (data.relicEquipment?.sealedGroups||[]).find(g=>(g.monsters||[]).includes(key))||null;
 }
+
+const RELIC_GUIDE_TABS=["derivation","appearance","rewards","attack"];
+let relicActiveTab="derivation";
+function setRelicGuideTab(tab){
+  const next=RELIC_GUIDE_TABS.includes(tab)?tab:"derivation";
+  relicActiveTab=next;
+  const page=$("#page-relic-equipment");if(!page)return;
+  const descriptions={
+    derivation:"탐색에서 잡을 몬스터를 선택하거나 원하는 길퀘로 역추적하세요.",
+    appearance:"몬스터와 무기종을 선택해 발굴 외형 그룹을 확인하세요.",
+    rewards:"길퀘 레벨별 발굴품 품질과 몬스터 보상·파밍 데이터를 비교하세요.",
+    attack:"무기종과 표시 공격력을 입력해 봉인된 발굴무기의 배율을 판별하세요."
+  };
+  const lead=$("#relicTabLead");if(lead)lead.textContent=descriptions[next];
+  $$('#page-relic-equipment [data-relic-tab]').forEach(button=>{
+    const active=button.dataset.relicTab===next;
+    button.classList.toggle("active",active);
+    button.setAttribute("aria-selected",String(active));
+    button.tabIndex=active?0:-1;
+  });
+  $$('#page-relic-equipment [data-relic-panel]').forEach(panel=>{
+    panel.hidden=panel.dataset.relicPanel!==next;
+  });
+  const filters=page.querySelector(".relic-guide-filters");
+  if(filters)filters.hidden=next!=="appearance"&&next!=="attack";
+  const monsterLabel=$("#relicMonsterFilter")?.closest("label");
+  if(monsterLabel)monsterLabel.hidden=next!=="appearance";
+  const typeLabel=$("#relicWeaponTypeFilter")?.closest("label");
+  if(typeLabel)typeLabel.hidden=next!=="appearance"&&next!=="attack";
+}
 function renderRelicEquipment(){
   const d=data.relicEquipment||{},groups=d.sealedGroups||[],types=Object.keys(d.weaponAppearances||{});
   const monsterSel=$("#relicMonsterFilter"),typeSel=$("#relicWeaponTypeFilter"),root=$("#relicEquipmentContent"),sources=$("#relicEquipmentSources");
   if(!root||!monsterSel||!typeSel)return;
+  const previousValues={source:$("#relicDerivSource")?.value||"",target:$("#relicDerivTarget")?.value||"",attack:$("#relicAttackInput")?.value||""};
   const oldMonster=monsterSel.value||"all",oldType=typeSel.value||types[0]||"대검";
   const monsterOpts=groups.flatMap(g=>(g.monsters||[]).map(m=>({name:m,group:g.id}))).sort((a,b)=>a.name.localeCompare(b.name,"ko"));
   monsterSel.innerHTML='<option value="all">전체 그룹</option>'+monsterOpts.map(x=>`<option value="${esc(x.name)}">${esc(x.name)} · 그룹${x.group}</option>`).join("");
@@ -2021,9 +2052,21 @@ function renderRelicEquipment(){
   const attackCells=(d.attackRawTypes||[]).map(x=>`<td>${atk?.displayAttack?.[String(x.raw)]??"-"}</td>`).join("");
   const groupMatrix=groups.map(g=>`<tr${selectedGroup&&selectedGroup.id===g.id?' class="relic-selected-row"':''}><td><strong>${g.id}</strong></td><td class="wrap-cell">${(g.monsters||[]).map(esc).join(" · ")}</td><td>${relicAppearanceLabel(appearance[Number(g.id)-1]||"-",type)}</td><td class="wrap-cell">${(d.armorAppearancePools?.[String(g.id)]||[]).map(a=>`<span class="mini-chip">${esc(a)}</span>`).join(" ")}</td></tr>`).join("");
   root.innerHTML=`
+    <div id="relicPanel-derivation" class="relic-tab-panel" data-relic-panel="derivation" role="tabpanel" aria-labelledby="relicTab-derivation">
+    <section class="panel relic-derivation-panel"><div class="panel-title"><div><h2>G급 탐색 → 길드퀘스트 파생</h2><p class="muted">${esc(deriv.description||"")}</p></div></div>
+      <div class="relic-derivation-grid">
+        <div class="relic-derivation-box"><label>탐색에서 잡을 몬스터<select id="relicDerivSource"><option value="">선택</option>${derivSourceOptions}</select></label><div id="relicDerivSourceResult" class="relic-derivation-result muted">몬스터를 선택하면 파생 가능한 길드퀘스트 후보를 표시합니다.</div></div>
+        <div class="relic-derivation-box"><label>원하는 길드퀘스트<select id="relicDerivTarget"><option value="">선택</option>${derivTargetOptions}</select></label><div id="relicDerivTargetResult" class="relic-derivation-result muted">원하는 길드퀘스트 몬스터를 선택하면 어떤 탐색 몬스터를 노려야 하는지 역추적합니다.</div></div>
+      </div>
+      <p class="relic-derivation-note">※ 토벌이 가장 유리하며 유실물 조사보고도 파생 확률에 가산됩니다. 후보가 여러 개면 그중 하나가 추첨되므로 특정 몬스터를 잡았다고 특정 길드퀘가 100% 나오는 구조는 아닙니다. ${esc(deriv.initialLevelNote||"")}</p>
+    </section>
+    </div>
+    <div id="relicPanel-appearance" class="relic-tab-panel" data-relic-panel="appearance" role="tabpanel" aria-labelledby="relicTab-appearance" hidden>
     ${selectedGroup?`<section class="panel relic-selected-summary"><h3>${esc(selectedMonster)} → 발굴 그룹 ${selectedGroup.id}</h3><p class="muted">2두 길드퀘스트는 원칙적으로 왼쪽 아이콘 몬스터의 그룹을 기준으로 봅니다.</p></section>`:""}
     <section class="panel"><div class="panel-title"><div><h2>몬스터 → 발굴 외형 역조회</h2><p class="muted">봉인된 무구 기준입니다. 무기 외형과 방어구 외형은 다른 감정품 등급과 테이블이 다릅니다.</p></div></div><div class="relic-group-cards">${groupCards}</div></section>
     <section class="panel"><div class="panel-title"><div><h2>${esc(type)} · 전체 그룹 외형표</h2><p class="muted">방어구는 그룹별 확인된 외형 풀입니다. A~F 세부 조합에는 원본 자료의 미확정/예외 보고가 남아 있습니다.</p></div></div><div class="table-panel"><table class="data-table relic-matrix-table"><thead><tr><th>그룹</th><th>몬스터</th><th>${esc(type)} 외형</th><th>방어구 외형 풀</th></tr></thead><tbody>${groupMatrix}</tbody></table></div></section>
+    </div>
+    <div id="relicPanel-rewards" class="relic-tab-panel" data-relic-panel="rewards" role="tabpanel" aria-labelledby="relicTab-rewards" hidden>
     <section class="panel"><div class="panel-title"><div><h2>감정품 등급</h2><p class="muted">감정품 이름 자체와 실제 획득 품질 구간은 별개입니다. 아래 획득 방식별 표와 함께 보세요.</p></div></div><div class="table-panel"><table class="data-table"><thead><tr><th>감정명</th><th>주요 구간</th><th>RARE</th><th>실제 적용 주의</th></tr></thead><tbody>${gradeRows}</tbody></table></div></section>
     <section class="panel relic-quality-panel"><div class="panel-title"><div><h2>${esc(qg.title||'발굴장비 품질 구간')}</h2><p class="muted">${esc(qg.summary||'')}</p></div></div>
       <div class="relic-quality-callout"><strong>${esc(qg.mh4Reference?.label||'MH4 참고 규칙')}</strong><span>${esc(qg.mh4Reference?.note||'')}</span></div>
@@ -2051,20 +2094,18 @@ function renderRelicEquipment(){
       <details class="relic-quality-evidence"><summary>몬스터별 실제 보상 사례 보기</summary><div class="table-panel"><table class="data-table"><thead><tr><th>몬스터</th><th>Lv</th><th>영광</th><th>영웅</th><th>봉인</th><th>메모</th></tr></thead><tbody>${evidenceRows}</tbody></table></div></details>
       <div class="relic-quality-cautions">${(qg.cautions||[]).map(x=>`<p>※ ${esc(x)}</p>`).join('')}</div>
     </section>
-    <section class="panel relic-derivation-panel"><div class="panel-title"><div><h2>G급 탐색 → 길드퀘스트 파생</h2><p class="muted">${esc(deriv.description||"")}</p></div></div>
-      <div class="relic-derivation-grid">
-        <div class="relic-derivation-box"><label>탐색에서 잡을 몬스터<select id="relicDerivSource"><option value="">선택</option>${derivSourceOptions}</select></label><div id="relicDerivSourceResult" class="relic-derivation-result muted">몬스터를 선택하면 파생 가능한 길드퀘스트 후보를 표시합니다.</div></div>
-        <div class="relic-derivation-box"><label>원하는 길드퀘스트<select id="relicDerivTarget"><option value="">선택</option>${derivTargetOptions}</select></label><div id="relicDerivTargetResult" class="relic-derivation-result muted">원하는 길드퀘스트 몬스터를 선택하면 어떤 탐색 몬스터를 노려야 하는지 역추적합니다.</div></div>
-      </div>
-      <p class="relic-derivation-note">※ 토벌이 가장 유리하며 유실물 조사보고도 파생 확률에 가산됩니다. 후보가 여러 개면 그중 하나가 추첨되므로 특정 몬스터를 잡았다고 특정 길드퀘가 100% 나오는 구조는 아닙니다. ${esc(deriv.initialLevelNote||"")}</p>
-    </section>
+
+    <details class="panel relic-guide-notes relic-guide-details"><summary>추가 주의사항 및 참고 기준</summary>${(d.notes||[]).map(x=>`<p>• ${esc(x)}</p>`).join("")}</details>
+    </div>
+    <div id="relicPanel-attack" class="relic-tab-panel" data-relic-panel="attack" role="tabpanel" aria-labelledby="relicTab-attack" hidden>
     <section class="panel"><div class="panel-title"><div><h2>G급 봉인 발굴무기 · 공격력 판별</h2><p class="muted">표시 공격력은 무기별 표시배율을 적용한 값입니다. 기본배율 240/250/270/290/310/340 계열의 강화 특성을 비교합니다.</p></div></div>
       <div class="relic-attack-summary"><b>${esc(type)}</b><span>표시배율 ×${atk?.displayMultiplier??"-"}</span>${special?`<span>${esc(special)}</span>`:""}${cap?`<span>속성 상한 ${esc(cap.element)} · 상태이상 ${esc(cap.status)}</span>`:""}</div>
       <div class="relic-attack-check"><label>표시 공격력 판별<input id="relicAttackInput" type="number" inputmode="numeric" min="0" step="1" placeholder="예: ${type==='대검'?'1728':(atk?.displayAttack?.['340']||'')}" /></label><div id="relicAttackResult" class="muted">표시 공격력을 입력하면 기본배율 후보를 계산합니다.</div></div>
       <div class="table-panel"><table class="data-table relic-attack-table"><thead><tr><th>기본배율</th>${(d.attackRawTypes||[]).map(x=>`<th>${x.raw}</th>`).join("")}</tr></thead><tbody><tr><td><b>표시 공격력</b></td>${attackCells}</tr></tbody></table></div>
       <div class="table-panel"><table class="data-table"><thead><tr><th>초기 배율</th><th>Lv4 배율</th><th>회심</th><th>방어</th><th>강화 특성</th></tr></thead><tbody>${rawRows}</tbody></table></div>
     </section>
-    <section class="panel relic-guide-notes"><h2>주의사항</h2>${(d.notes||[]).map(x=>`<p>• ${esc(x)}</p>`).join("")}</section>`;
+    </div>
+`;
   const derivSource=$("#relicDerivSource"),derivTarget=$("#relicDerivTarget"),derivSourceResult=$("#relicDerivSourceResult"),derivTargetResult=$("#relicDerivTargetResult");
   const renderDerivSource=()=>{
     const key=derivSource?.value||"",rows=key?derivRows.filter(x=>x.source===key):[];
@@ -2080,10 +2121,11 @@ function renderRelicEquipment(){
     rows.sort((a,b)=>(order[a.appearance]??9)-(order[b.appearance]??9)||a.source.localeCompare(b.source,"ko"));
     derivTargetResult.innerHTML=rows.length?rows.map(x=>`<div class="relic-derivation-line"><b>${esc(x.source)}</b><span>${esc(appearanceLabel[x.appearance]||x.appearance||"")}</span></div>`).join(""):"원하는 길드퀘스트 몬스터를 선택하면 어떤 탐색 몬스터를 노려야 하는지 역추적합니다.";
   };
-  if(derivSource){derivSource.onchange=renderDerivSource;renderDerivSource()}
-  if(derivTarget){derivTarget.onchange=renderDerivTarget;renderDerivTarget()}
+  if(derivSource){derivSource.value=previousValues.source;derivSource.onchange=renderDerivSource;renderDerivSource()}
+  if(derivTarget){derivTarget.value=previousValues.target;derivTarget.onchange=renderDerivTarget;renderDerivTarget()}
   const attackInput=$("#relicAttackInput"),attackResult=$("#relicAttackResult");
   if(attackInput&&attackResult){
+    attackInput.value=previousValues.attack;
     attackInput.oninput=()=>{
       const shown=Number(attackInput.value),mult=Number(atk?.displayMultiplier)||0;if(!shown||!mult){attackResult.textContent="표시 공격력을 입력하면 기본배율 후보를 계산합니다.";return}
       const inferred=shown/mult,candidates=[];
@@ -2093,7 +2135,24 @@ function renderRelicEquipment(){
       }
       attackResult.innerHTML=candidates.length?`환산 배율 <b>${Number.isInteger(inferred)?inferred:inferred.toFixed(2)}</b> · ${candidates.map(esc).join(" / ")}`:`환산 배율 <b>${Number.isInteger(inferred)?inferred:inferred.toFixed(2)}</b> · 봉인된 무기 주요 계열과 정확히 일치하지 않음`;
     };
+    if(attackInput.value)attackInput.oninput();
   }
+  const tabButtons=$$('#page-relic-equipment [data-relic-tab]');
+  tabButtons.forEach((button,index)=>{
+    button.onclick=()=>setRelicGuideTab(button.dataset.relicTab);
+    button.onkeydown=e=>{
+      let next=-1;
+      if(e.key==="ArrowRight")next=(index+1)%tabButtons.length;
+      else if(e.key==="ArrowLeft")next=(index-1+tabButtons.length)%tabButtons.length;
+      else if(e.key==="Home")next=0;
+      else if(e.key==="End")next=tabButtons.length-1;
+      if(next<0)return;
+      e.preventDefault();
+      setRelicGuideTab(tabButtons[next].dataset.relicTab);
+      tabButtons[next].focus();
+    };
+  });
+  setRelicGuideTab(relicActiveTab);
   decorateResponsiveTables(root);
 }
 
