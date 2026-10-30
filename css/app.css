@@ -1718,3 +1718,17 @@ button{border:1px solid var(--line);background:#202b39;color:white;border-radius
 @media(max-width:350px){
   #page-relic-equipment .relic-appearance-quick-grid{grid-template-columns:minmax(0,1fr)}
 }
+
+/* Korean-first relic appearance name hierarchy */
+#page-relic-equipment .relic-appearance-weapon-name>strong,
+#page-relic-equipment .relic-appearance-armor>strong,
+#page-relic-equipment .relic-appearance-table-armor>strong,
+#page-relic-equipment .relic-matrix-table td strong{display:block;line-height:1.45;overflow-wrap:anywhere}
+#page-relic-equipment .relic-appearance-weapon-name .relic-ja-name,
+#page-relic-equipment .relic-appearance-armor .relic-ja-name,
+#page-relic-equipment .relic-appearance-table-armor .relic-ja-name,
+#page-relic-equipment .relic-matrix-table td .relic-ja-name{display:block;margin-top:4px;font-size:10px;font-weight:400;line-height:1.45;color:#9aafc5;overflow-wrap:anywhere}
+#page-relic-equipment .relic-appearance-armor{display:flex;flex-direction:column;min-width:0}
+#page-relic-equipment .relic-appearance-table-armor{display:inline-flex;flex-direction:column;vertical-align:top;border:1px solid #40546b;background:#192a3a;border-radius:8px;padding:7px 9px;margin:2px 5px 2px 0;font-size:11px;white-space:normal}
+#page-relic-equipment .relic-matrix-table td:nth-child(3){min-width:160px;white-space:normal}
+@media(max-width:640px){#page-relic-equipment .relic-appearance-armor{max-width:100%}}
