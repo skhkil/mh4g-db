@@ -2,7 +2,7 @@ import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,load
 import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-monster-filter1";
 import {enhanceRelicAppearance} from "./relic-enhancements.js?v=0.7.7-relic-attack-step3";
 import {mountRelicRewards} from "./relic-reward-workbench.js?v=0.7.7-relic-attack-step3";
-import {mountRelicPerformance} from "./relic-performance.js?v=0.7.7-relic-performance45";
+import {mountRelicPerformance} from "./relic-performance.js?v=0.7.7-relic-owned-step6";
 
 let data={skills:[],armors:[],armorSets:[],decorations:[],relicWeaponDecorations:[],decorationUnlocks:{decorations:{}},questUnlockIndex:{quests:{},targets:{}},eventMajorRewards:{quests:{}},weapons:[],weaponSummary:[],melodies:[],items:[],itemReferenceIndex:{items:{}},skillReferenceIndex:{items:{},categories:[]},meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],monsterReferenceIndex:{items:{}},dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],questReferenceIndex:{quests:{}},siteInfo:{},meta:{},weaponSkillPriorities:{weapons:{}},relicEquipment:{}};
 let targets=[];
