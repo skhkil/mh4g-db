@@ -80,8 +80,9 @@ function mountPanel(d,type,host,decors){
   detailResult.replaceChildren();const cap=d.elementCaps?.[type],value=Number(elem.value),st=Number(status.value);
   const sharpInfo=d.attackProgression.sharpening.categories.find(x=>x.id===sharp.value);
   if(sharpInfo?.id!=="unknown")detailResult.append(el("p","rr-note","예리도: "+sharpInfo.label+" · "+sharpInfo.note));
-  if(elem.value)detailResult.append(el("p","rr-note","속성 "+elem.value+" · 기존 DB 참고 상한: "+(cap?.element??"무기종별 상한 자료 없음")+" · 세부 출현 조합 판정 미완료"));
-  if(status.value)detailResult.append(el("p","rr-note","상태이상 "+status.value+" · 기존 DB 참고 상한: "+(cap?.status??"무기종별 상한 자료 없음")+" · 세부 출현 조합 판정 미완료"));
+  const checkCap=(name,text,ref)=>{if(!text)return;const numeric=Number(text),ceiling=Number(String(ref??"").match(/^\\d+/)?.[0]);if(!Number.isFinite(numeric)||numeric<0){detailResult.append(el("p","rp-caution",name+" 수치는 0 이상의 숫자로 입력하세요."));return}if(Number.isFinite(ceiling)&&numeric>ceiling){detailResult.append(el("p","rp-caution",name+" "+numeric+" · 일반 참고 상한 "+ceiling+" 초과. 각성 수치·무기종을 확인하세요."));return}detailResult.append(el("p","rr-note",name+" "+numeric+" · 기존 DB 참고 상한: "+(ref??"없음")+" · 실제 출현 조합 판정은 미완료"))};
+  checkCap("속성",elem.value,cap?.element);
+  checkCap("상태이상",status.value,cap?.status);
   const deco=(decors||[]).find(x=>x.id===decoSelect.value);
   detailResult.append(el("p","rr-note","슬롯 "+slots.value+" · "+(deco?deco.name:"고정 장식주 선택 안 함")+" · 실제 출현 가능한 조합의 전수검증이 완료되지 않아 적합성은 확정하지 않습니다."));
  }
