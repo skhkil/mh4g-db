@@ -2955,5 +2955,221 @@
         }
       }
     ]
+  },
+  "attackProgression": {
+    "source": "https://w.atwiki.jp/3dsmh4g/pages/257.html",
+    "crosscheck": "https://w.atwiki.jp/otameshine/pages/43.html",
+    "scope": "MH4G G급 봉인된 발굴무기, Lv1~4. null은 원문 독립 검증 부족으로 미확인.",
+    "stages": {
+      "240": {
+        "raw": [
+          240,
+          250,
+          260,
+          270
+        ],
+        "affinity": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "defense": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "250": {
+        "raw": [
+          250,
+          null,
+          null,
+          270
+        ],
+        "affinity": [
+          10,
+          null,
+          null,
+          15
+        ],
+        "defense": [
+          20,
+          null,
+          null,
+          30
+        ]
+      },
+      "270": {
+        "raw": [
+          270,
+          280,
+          290,
+          300
+        ],
+        "affinity": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "defense": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "290": {
+        "raw": [
+          290,
+          290,
+          290,
+          290
+        ],
+        "affinity": [
+          10,
+          15,
+          20,
+          25
+        ],
+        "defense": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "310": {
+        "raw": [
+          310,
+          310,
+          310,
+          310
+        ],
+        "affinity": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "defense": [
+          5,
+          null,
+          null,
+          50
+        ]
+      },
+      "340": {
+        "raw": [
+          340,
+          340,
+          340,
+          340
+        ],
+        "affinity": [
+          -25,
+          -20,
+          -15,
+          -10
+        ],
+        "defense": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "bonusRules": {
+      "대검": {
+        "key": "raw",
+        "increments": [
+          0,
+          10,
+          20
+        ]
+      },
+      "해머": {
+        "key": "raw",
+        "increments": [
+          0,
+          10,
+          20
+        ]
+      },
+      "태도": {
+        "key": "affinity",
+        "increments": [
+          0,
+          10,
+          20
+        ]
+      },
+      "쌍검": {
+        "key": "affinity",
+        "increments": [
+          0,
+          10,
+          20
+        ]
+      },
+      "한손검": {
+        "key": "defense",
+        "increments": [
+          0,
+          20,
+          35
+        ]
+      },
+      "랜스": {
+        "key": "defense",
+        "increments": [
+          0,
+          20,
+          35
+        ]
+      }
+    },
+    "sharpening": {
+      "source": "https://wikiwiki.jp/nenaiko/%E3%83%A2%E3%83%B3%E3%83%8F%E3%83%B3%E7%94%A8%E8%AA%9E/%E3%82%B9%E3%82%B7%E3%83%AD%E3%83%BC",
+      "categories": [
+        {
+          "id": "unknown",
+          "label": "미확인",
+          "note": "예리도를 아직 확인하지 않음"
+        },
+        {
+          "id": "natural-purple",
+          "label": "기본 보라 20 · 장인 무효",
+          "note": "스무라(素紫) 유형. 장인 없이 보라 예리도 사용"
+        },
+        {
+          "id": "handicraft-purple-40",
+          "label": "장인 적용 시 보라 40",
+          "note": "장인 효과가 필요한 보라 40형"
+        },
+        {
+          "id": "handicraft-purple-20",
+          "label": "장인 적용 시 보라 20",
+          "note": "장인 효과가 필요한 보라 20형"
+        },
+        {
+          "id": "long-white",
+          "label": "긴 흰 예리도형",
+          "note": "시로나가스(白長) 유형. 정확한 눈금은 무기 화면 확인"
+        }
+      ],
+      "verification": "분류 참고용으로만 사용. 해당 공격 계열·무기종과 조합 가능 여부의 완전한 패턴 DB는 미확인."
+    },
+    "slotSource": "https://mh4info.com/?p=1283",
+    "attributeVerification": "기존 14무기별 속성 상한 검증 범위까지만 판정. 개별 속성값 출현 테이블/일반·각성 차이는 완전 검증 전.",
+    "notes": [
+      "공격력에 발동 스킬/도핑이 포함되면 일치 검사를 하지 마세요. 게임 내 무기 자체 공격력을 입력해야 합니다.",
+      "Lv2~3의 250·310 일부 중간 수치가 null로 남아 있으며 추측값을 대입하지 않습니다.",
+      "표시 공격력만 같은 계열(예: Lv4의 240·250)도 회심·방어로 구분할 수 있습니다.",
+      "강화로 예리도·속성·슬롯 자체는 변하지 않는다는 기존 MH4 자료는 있으나 G급 봉인 전체 패턴은 별도 검증이 필요합니다."
+    ]
   }
 }
