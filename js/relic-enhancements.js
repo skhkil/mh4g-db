@@ -51,7 +51,10 @@ function renderSearch(d,refresh,changeTab){
    const id=idOf(x),on=saved.some(g=>g.id===id);
    const favorite=action(on?"★ 목표 해제":"☆ 목표 저장",()=>{
     const prev=goals(),next=prev.some(g=>g.id===id)?prev.filter(g=>g.id!==id):[...prev,{id,kind:x.kind,type:x.type,jp:x.jp}];
-    if(writeGoals(next))updateResults();
+    if(writeGoals(next)){
+     updateResults();
+     document.dispatchEvent(new CustomEvent("mh4g-relic-goals-changed",{detail:{id,saved:next.some(g=>g.id===id)}}));
+    }
    },"relic-favorite");favorite.setAttribute("aria-pressed",String(on));
    head.append(name,favorite);box.append(head);
    const groups=el("div","relic-result-groups");
