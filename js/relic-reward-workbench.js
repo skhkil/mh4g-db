@@ -79,11 +79,12 @@ function render(d,host){
   const sum=l.points+r.points,range=duoDb.pointSlotBands.find(x=>x.points===sum);
   const output=make("div","rr-pair-output");output.append(make("strong",null,duoLeft+" + "+duoRight));
   const metrics=make("div","rr-facts");
-  for(const [k,v] of [["보상 포인트",sum+"pt ("+l.points+" + "+r.points+")"],["공통 보상칸",range?range.min+"~"+range.max+"칸":"미확인"],["현재 레벨",level>=136?"Lv"+level+" · 범위 적용":"Lv"+level+" · 136 이상에서만 적용"],["외형 그룹",String(d.sealedGroups?.find(g=>g.monsters?.includes(duoLeft))?.id??"미확인")+"그룹 (왼쪽 기준)"]]){
+  for(const [k,v] of [["보상 포인트",level<136?"Lv136~140 전용":sum+"pt ("+l.points+" + "+r.points+")"],["공통 보상칸",level<136?"Lv136~140에서만 적용":range?range.min+"~"+range.max+"칸":"미확인"],["현재 레벨",level>=136?"Lv"+level+" · 범위 적용":"Lv"+level+" · 136 이상에서만 적용"],["외형 그룹",String(d.sealedGroups?.find(g=>g.monsters?.includes(duoLeft))?.id??"미확인")+"그룹 (왼쪽 기준)"]]){
    const item=make("div","rr-fact");item.append(make("small",null,k),make("strong",null,v));metrics.append(item)
   }output.append(metrics);
   notice(output,"적용 상태: "+duoLeft+" ["+l.defaultState+"] / "+duoRight+" ["+r.defaultState+"]. 원문에 기재된 상태 기준이며 현재 퀘스트의 실제 상태는 별도로 확인해야 합니다.");
   notice(output,"중요: 포인트 계산은 실제 길퀘 생성 가능성을 증명하지 않습니다. 미검증 조합의 결과는 가상 비교입니다.");
+  if(level<136)notice(output,"현재 길퀘 레벨에서는 이 포인트·보상칸 수치를 적용할 수 없습니다. Lv136 이상을 선택해 확인하세요.");
   const detail=make("details","rr-more");detail.append(make("summary",null,"몬스터별 기타 보상 상세"));
   for(const x of [l,r]){const key=x.name+(x.defaultState==="extreme"?" (극한상태)":"");const record=d.qualityGuide?.otherRewards136140?.find(z=>z.monster===key);notice(detail,x.name+": "+(record?record.outcomes.map(y=>y.item+" ×"+y.count+" ("+y.probability+"%)").join(" · "):"해당 상태 자료 미확인"))}
   output.append(detail);duo.append(output);
@@ -116,7 +117,9 @@ function render(d,host){
  host.append(end);
 }
 let rewardTargetListenerBound=false;
+let rewardLoadPromise=null,rewardMountSequence=0;
 export async function mountRelicRewards(d){
+ const requestNumber=++rewardMountSequence;
  const area=document.getElementById("relicPanel-rewards");if(!area)return;
  if(!rewardTargetListenerBound){
   document.addEventListener("mh4g-relic-reward-target",()=>{
@@ -139,8 +142,20 @@ export async function mountRelicRewards(d){
   }
   area.append(legacy);
  }
- try{if(!loaded){const x=await fetch("./data/relic_reward_workbench.json?v=0.7.7-relic-mining-bridge5",{cache:"no-cache"});if(!x.ok)throw Error("HTTP "+x.status);loaded=await x.json()}
- if(!loaded?.verifiedLevelBands||!loaded?.duoPresets)throw Error("Invalid reward workbench data");
- render(d,root);
- }catch(e){root.replaceChildren();notice(root,"보상 분석 데이터를 불러오지 못했습니다: "+e.message)}
+ try{
+  if(!loaded){
+   if(!rewardLoadPromise)rewardLoadPromise=fetch("./data/relic_reward_workbench.json?v=0.7.7-relic-final-audit1",{cache:"no-cache"})
+    .then(x=>{if(!x.ok)throw Error("HTTP "+x.status);return x.json()})
+    .catch(error=>{rewardLoadPromise=null;throw error});
+   loaded=await rewardLoadPromise;
+  }
+  if(!loaded?.verifiedLevelBands||!loaded?.duoPresets)throw Error("Invalid reward workbench data");
+  if(requestNumber!==rewardMountSequence)return;
+  const liveRoot=area.querySelector("#relicRewardWorkbench");
+  if(liveRoot?.isConnected)render(d,liveRoot);
+ }catch(e){
+  if(requestNumber!==rewardMountSequence)return;
+  const liveRoot=area.querySelector("#relicRewardWorkbench");
+  if(liveRoot?.isConnected){liveRoot.replaceChildren();notice(liveRoot,"보상 분석 데이터를 불러오지 못했습니다: "+e.message)}
+ }
 }
