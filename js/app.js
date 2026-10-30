@@ -1974,8 +1974,12 @@ function relicWeaponBaseMatch(jp,type){
 }
 function relicAppearanceLabel(jp,type){
   if(!jp||jp==="-")return '<span class="muted">해당 없음</span>';
-  const w=relicWeaponBaseMatch(jp,type);
-  return w?`<strong>${esc(w.name)}</strong><small class="relic-ja-name">${esc(jp)}</small>`:`<strong>${esc(jp)}</strong><small class="relic-ja-name">일본 원문 외형명</small>`;
+  const ko=data.relicEquipment?.weaponAppearanceNamesKo?.[jp]||relicWeaponBaseMatch(jp,type)?.name||jp;
+  return `<strong>${esc(ko)}</strong><small class="relic-ja-name" lang="ja">${esc(jp)}</small>`;
+}
+function relicArmorAppearanceLabel(jp){
+  const ko=data.relicEquipment?.armorAppearanceNamesKo?.[jp]||jp;
+  return `<strong>${esc(ko)}</strong><small class="relic-ja-name" lang="ja">${esc(jp)}</small>`;
 }
 function relicGroupByMonster(name){
   const key=String(name||"").trim();return (data.relicEquipment?.sealedGroups||[]).find(g=>(g.monsters||[]).includes(key))||null;
@@ -2039,7 +2043,7 @@ function renderRelicEquipment(){
         <section class="relic-appearance-feature"><div class="relic-appearance-feature-heading"><span>01</span><div><h4>봉인된 ${esc(type)} 외형</h4><p>선택한 무기종의 발굴 외형</p></div></div>
           <div class="relic-appearance-weapon-name">${relicAppearanceLabel(jp,type)}</div></section>
         <section class="relic-appearance-feature"><div class="relic-appearance-feature-heading"><span>02</span><div><h4>발굴방어구 외형 풀</h4><p>그룹 ${esc(g.id)}에 등록된 외형 종류 ${armors.length}개</p></div></div>
-          <div class="relic-appearance-armors">${armors.map(a=>`<span class="relic-appearance-armor">${esc(a)}</span>`).join("")||'<span class="muted">확인된 외형 없음</span>'}</div></section>
+          <div class="relic-appearance-armors">${armors.map(a=>`<span class="relic-appearance-armor">${relicArmorAppearanceLabel(a)}</span>`).join("")||'<span class="muted">확인된 외형 없음</span>'}</div></section>
       </div>
     </div>`;
   })():`<div class="relic-appearance-empty">
@@ -2071,7 +2075,7 @@ function renderRelicEquipment(){
   const rawRows=(d.attackRawTypes||[]).map(x=>`<tr><td><strong>${x.raw}</strong></td><td>${x.upgradeRaw}</td><td>${x.affinityStart>0?'+':''}${x.affinityStart}% → ${x.affinityEnd>0?'+':''}${x.affinityEnd}%</td><td>${x.defenseStart>=0?'+':''}${x.defenseStart} → ${x.defenseEnd>=0?'+':''}${x.defenseEnd}</td><td class="wrap-cell">${esc(x.note)}</td></tr>`).join("");
   const atk=(d.weaponAttackTables||[]).find(x=>x.weaponType===type),special=d.weaponSpecialNotes?.[type]||"",cap=d.elementCaps?.[type];
   const attackCells=(d.attackRawTypes||[]).map(x=>`<td>${atk?.displayAttack?.[String(x.raw)]??"-"}</td>`).join("");
-  const groupMatrix=groups.map(g=>`<tr${selectedGroup&&selectedGroup.id===g.id?' class="relic-selected-row"':''}><td><button type="button" class="relic-appearance-table-pick" data-relic-appearance-monster="${esc((g.monsters||[])[0]||"")}" aria-label="그룹 ${g.id} 외형 조회">${g.id} →</button></td><td class="wrap-cell">${(g.monsters||[]).map(esc).join(" · ")}</td><td>${relicAppearanceLabel(appearance[Number(g.id)-1]||"-",type)}</td><td class="wrap-cell">${(d.armorAppearancePools?.[String(g.id)]||[]).map(a=>`<span class="mini-chip">${esc(a)}</span>`).join(" ")}</td></tr>`).join("");
+  const groupMatrix=groups.map(g=>`<tr${selectedGroup&&selectedGroup.id===g.id?' class="relic-selected-row"':''}><td><button type="button" class="relic-appearance-table-pick" data-relic-appearance-monster="${esc((g.monsters||[])[0]||"")}" aria-label="그룹 ${g.id} 외형 조회">${g.id} →</button></td><td class="wrap-cell">${(g.monsters||[]).map(esc).join(" · ")}</td><td>${relicAppearanceLabel(appearance[Number(g.id)-1]||"-",type)}</td><td class="wrap-cell">${(d.armorAppearancePools?.[String(g.id)]||[]).map(a=>`<span class="relic-appearance-table-armor">${relicArmorAppearanceLabel(a)}</span>`).join(" ")}</td></tr>`).join("");
   root.innerHTML=`
     <div id="relicPanel-derivation" class="relic-tab-panel" data-relic-panel="derivation" role="tabpanel" aria-labelledby="relicTab-derivation">
       <section class="panel relic-derivation-panel">
