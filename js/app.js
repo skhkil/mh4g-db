@@ -1,5 +1,6 @@
 import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,loadArmorProgression,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-relic-ko-labels-20261030";
 import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-monster-filter1";
+import {enhanceRelicAppearance} from "./relic-enhancements.js?v=0.7.7-relic-goals-af1";
 
 let data={skills:[],armors:[],armorSets:[],decorations:[],relicWeaponDecorations:[],decorationUnlocks:{decorations:{}},questUnlockIndex:{quests:{},targets:{}},eventMajorRewards:{quests:{}},weapons:[],weaponSummary:[],melodies:[],items:[],itemReferenceIndex:{items:{}},skillReferenceIndex:{items:{},categories:[]},meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],monsterReferenceIndex:{items:{}},dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],questReferenceIndex:{quests:{}},siteInfo:{},meta:{},weaponSkillPriorities:{weapons:{}},relicEquipment:{}};
 let targets=[];
@@ -2314,6 +2315,7 @@ function renderRelicEquipment(){
     if(fromDirectory)$("#relicAppearanceResult")?.scrollIntoView({block:"start",behavior:"smooth"});
   };
   setRelicGuideTab(relicActiveTab);
+  enhanceRelicAppearance(d,renderRelicEquipment,setRelicGuideTab);
   decorateResponsiveTables(root);
 }
 
