@@ -1,5 +1,5 @@
 {
-  "version": "0.7.7-relic-duo-database2",
+  "version": "0.7.7-relic-duo-selector3",
   "sources": {
     "wikiRewards": "https://w.atwiki.jp/3dsmh4g/pages/395.html",
     "armorSphere": "https://w.atwiki.jp/3dsmh4g/pages/131.html",
@@ -646,54 +646,6 @@
     ],
     "pointSlotBands": [
       {
-        "points": 1,
-        "min": 2,
-        "max": 3,
-        "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html"
-      },
-      {
-        "points": 2,
-        "min": 2,
-        "max": 4,
-        "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html"
-      },
-      {
-        "points": 3,
-        "min": 3,
-        "max": 4,
-        "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html"
-      },
-      {
-        "points": 4,
-        "min": 3,
-        "max": 5,
-        "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html"
-      },
-      {
-        "points": 5,
-        "min": 4,
-        "max": 5,
-        "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html"
-      },
-      {
-        "points": 6,
-        "min": 4,
-        "max": 6,
-        "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html"
-      },
-      {
-        "points": 7,
-        "min": 5,
-        "max": 7,
-        "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html"
-      },
-      {
-        "points": 8,
-        "min": 5,
-        "max": 8,
-        "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html"
-      },
-      {
         "points": 9,
         "min": 6,
         "max": 8,
@@ -718,33 +670,9 @@
         "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html"
       },
       {
-        "points": 13,
-        "min": 9,
-        "max": 11,
-        "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html"
-      },
-      {
-        "points": 14,
-        "min": 9,
-        "max": 12,
-        "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html"
-      },
-      {
         "points": 15,
         "min": 10,
         "max": 13,
-        "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html"
-      },
-      {
-        "points": 16,
-        "min": 11,
-        "max": 14,
-        "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html"
-      },
-      {
-        "points": 17,
-        "min": 12,
-        "max": 15,
         "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html"
       },
       {
@@ -756,7 +684,7 @@
     ],
     "generationStatus": "not_all_combinations_independently_verified",
     "caution": "두 몬스터 모두 2두 대상 몬스터인 경우에만 포인트 비교를 지원합니다. 수치상 합산이 가능하다는 사실은 특정 조합이 실제 길드퀘스트로 생성됨을 보장하지 않습니다.",
-    "pointCaution": "보상 포인트·공통칸은 Lv136~140, 원문에 명시된 상태(극한/광룡화 등) 기준으로만 산출합니다. 낮은 레벨과 다른 상태에 확대 적용하지 않습니다.",
+    "pointCaution": "Lv136~140 원문 상태 기준 포인트 합산. 공통칸은 독립 근거가 확인된 9, 10, 11, 12, 15, 18pt 구간만 표시하고, 나머지는 수치 미확인으로 표시합니다.",
     "sources": [
       "https://ryogakucx.blog.fc2.com/blog-entry-104.html",
       "https://ryogakucx.blog.fc2.com/blog-entry-112.html",
