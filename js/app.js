@@ -35,7 +35,7 @@ function weaponPreferredSkillWeights(hunterType="blade"){const type=uiState.auto
 
 const MANUAL_CONTAINERS=["weapon",...PARTS,"charm"];
 const uiState={
-  targetActivation:"", autoHunterType:"blade", autoWeaponSlots:0, ownedCharmsOnly:false, ownedRelicWeaponsOnly:false, ownedRelicArmorsOnly:false, manualSet:"", armorSetSort:"name", manualWeapon:"__crafted_weapon__", manualWeaponMode:"crafted", manualWeaponSlots:0,
+  targetActivation:"", autoHunterType:"blade", autoWeaponSlots:0, ownedCharmsOnly:false, ownedRelicWeaponsOnly:false, ownedRelicArmorsOnly:false, manualSet:"", armorSetSort:"name", manualWeapon:"__crafted_weapon__", manualWeaponMode:"crafted", manualWeaponSlots:0, manualRelicSlotMode:"fixed",
   charmSkill1:"",charmPoint1:0,charmSkill2:"",charmPoint2:0,charmSlots:0,
   manualArmorModes:Object.fromEntries(PARTS.map(p=>[p,"crafted"])),
   manual:Object.fromEntries(PARTS.map(p=>[p,""])),
@@ -529,12 +529,23 @@ function applyOwnedRelicArmor(index){const a=getOwnedRelicArmors()[Number(index)
 function removeOwnedRelicArmor(index){const list=getOwnedRelicArmors();const removed=list.splice(Number(index),1)[0];setOwnedRelicArmors(list);if(removed&&uiState.manual[removed.part]===removed.id){uiState.manual[removed.part]="";uiState.manualDecorations[removed.part]=[]}syncOwnedRelicArmorIndexes();renderOwnedRelicArmorList();renderManualSelectors();renderManualResult()}
 function getOwnedRelicWeapons(){try{const v=JSON.parse(localStorage.getItem(OWNED_RELIC_WEAPONS_STORAGE_KEY)||"[]");ownedRelicWeaponsMemory=Array.isArray(v)?v:[];return ownedRelicWeaponsMemory}catch{return ownedRelicWeaponsMemory}}
 function setOwnedRelicWeapons(list){ownedRelicWeaponsMemory=Array.isArray(list)?list:[];try{localStorage.setItem(OWNED_RELIC_WEAPONS_STORAGE_KEY,JSON.stringify(ownedRelicWeaponsMemory));return true}catch{return false}}
-function normalizeRelicWeaponRecord(r={}){const deco=decorationById(r.decorationId)||r.deco||null;const skills={...(deco?.skills||r.skills||{})};const slots=Math.max(1,Math.min(3,Number(r.slots||deco?.slots)||3));return {id:String(r.id||`relic_${Date.now()}_${Math.random().toString(36).slice(2,8)}`),decorationId:String(r.decorationId||deco?.id||""),skills,slots}}
-function relicWeaponLabel(r){const ss=Object.entries(r?.skills||{}).map(([id,v])=>`${skillName(id)} ${Number(v)>0?"+":""}${Number(v)}`);return `발굴 ${Number(r?.slots||0)}슬롯 · ${ss.length?ss.join(" / "):"복합스킬 없음"}`}
-function currentRelicWeaponRecord(){if(uiState.manualWeaponMode!=="relic")return null;const id=(uiState.manualDecorations.weapon||[])[0];const d=decorationById(id);if(!d?.relicOnly)return null;return normalizeRelicWeaponRecord({decorationId:d.id,deco:d,slots:d.slots})}
+function normalizeRelicWeaponRecord(r={}){
+ const deco=decorationById(r.decorationId)||r.deco||null;
+ const mode=r.slotMode==="unknown"?"unknown":r.slotMode==="empty"?"empty":"fixed";
+ const hasSlots=r.slots!==null&&r.slots!==undefined&&r.slots!=="";
+ const slots=Math.max(mode==="fixed"?1:0,Math.min(3,hasSlots?Number(r.slots):Number(deco?.slots)||3));
+ return {...r,id:String(r.id||`relic_${Date.now()}_${Math.random().toString(36).slice(2,8)}`),slotMode:mode,slots,
+ decorationId:mode==="fixed"?String(r.decorationId||deco?.id||""):"",skills:mode==="fixed"?{...(deco?.skills||r.skills||{})}:{},
+ performance:r.performance&&typeof r.performance==="object"?{...r.performance}:null};
+}
+function relicWeaponUsable(r){const x=normalizeRelicWeaponRecord(r);return x.slotMode==="empty"||x.slotMode==="fixed"&&!!decorationById(x.decorationId)&&Number(decorationById(x.decorationId)?.slots)===x.slots;}
+function relicWeaponLabel(r){const x=normalizeRelicWeaponRecord(r),p=x.performance,ss=Object.entries(x.skills||{}).map(([id,v])=>`${skillName(id)} ${Number(v)>0?"+":""}${Number(v)}`);
+ return `${p?`${p.weaponType||"발굴무기"} · 공격 ${p.attack||"?"} · Lv${p.level||"?"}`:"발굴무기"} · ${x.slotMode==="empty"?`빈 슬롯 ${x.slots}개`:x.slotMode==="fixed"?`${x.slots}슬롯 고정 · ${ss.join(" / ")||"장식주 선택 필요"}`:"슬롯 정보 미확인"}`;
+}
+function currentRelicWeaponRecord(){if(uiState.manualWeaponMode!=="relic")return null;if(uiState.manualRelicSlotMode==="empty")return normalizeRelicWeaponRecord({slotMode:"empty",slots:Number(uiState.manualWeaponSlots)||0});const id=(uiState.manualDecorations.weapon||[])[0],d=decorationById(id);if(!d?.relicOnly)return null;return normalizeRelicWeaponRecord({slotMode:"fixed",decorationId:d.id,deco:d,slots:d.slots})}
 function renderOwnedRelicWeapons(){const root=$("#ownedRelicWeaponList");if(!root)return;const list=getOwnedRelicWeapons();root.innerHTML=`<details class="owned-assets-details"><summary>보유 발굴무기 ${list.length}개</summary><div class="owned-assets-body">${list.length?list.map((r,i)=>`<div class="owned-charm-row owned-asset-apply-row" data-owned-relic-row="${i}" tabindex="0" role="button" aria-label="${esc(relicWeaponLabel(r))} 적용"><span class="owned-item-label">${esc(relicWeaponLabel(r))}</span><span class="owned-charm-actions"><button type="button" class="ghost small" data-owned-relic-remove="${i}" aria-label="${esc(relicWeaponLabel(r))} 삭제">삭제</button></span></div>`).join(""):'<div class="muted owned-empty">등록된 보유 발굴무기가 없습니다.</div>'}</div></details>`}
 function saveCurrentRelicWeapon(){const r=currentRelicWeaponRecord();if(!r){showRuntimeStatus("저장할 발굴무기 복합스킬을 먼저 선택하세요.","info");return}const list=getOwnedRelicWeapons();const sig=JSON.stringify({decorationId:r.decorationId,slots:r.slots});if(!list.some(x=>JSON.stringify({decorationId:x.decorationId||"",slots:Number(x.slots)||0})===sig)){list.push(r);setOwnedRelicWeapons(list)}renderOwnedRelicWeapons()}
-function applyOwnedRelicWeapon(index){const r=normalizeRelicWeaponRecord(getOwnedRelicWeapons()[Number(index)]||{});if(!r.decorationId)return;uiState.manualWeaponMode="relic";uiState.manualWeaponSlots=String(r.slots);uiState.manualWeapon="__relic_weapon__";uiState.manualDecorations.weapon=[r.decorationId];renderManualSelectors();renderManualResult();renderOwnedRelicWeapons()}
+function applyOwnedRelicWeapon(index){const original=getOwnedRelicWeapons()[Number(index)];if(!original||!relicWeaponUsable(original))return;const r=normalizeRelicWeaponRecord(original);uiState.manualWeaponMode="relic";uiState.manualRelicSlotMode=r.slotMode;uiState.manualWeaponSlots=String(r.slots);uiState.manualWeapon="__relic_weapon__";uiState.manualDecorations.weapon=r.slotMode==="fixed"?[r.decorationId]:[];renderManualSelectors();renderManualResult();renderOwnedRelicWeapons()}
 function removeOwnedRelicWeapon(index){const list=getOwnedRelicWeapons();list.splice(Number(index),1);setOwnedRelicWeapons(list);renderOwnedRelicWeapons()}
 function saveCurrentCharmToOwned(){const c=normalizeCharmRecord(charm());if(!Object.keys(c.skills).length&&!c.slots){showRuntimeStatus("저장할 호석 스킬 또는 슬롯을 먼저 입력하세요.","info");return}const list=getOwnedCharms();const sig=JSON.stringify({skills:c.skills,slots:c.slots});if(!list.some(x=>JSON.stringify({skills:x.skills||{},slots:Number(x.slots)||0})===sig)){list.push(c);setOwnedCharms(list)}renderOwnedCharms()}
 function applyOwnedCharm(index){const c=getOwnedCharms()[Number(index)];if(!c)return;const e=Object.entries(c.skills||{});uiState.charmSkill1=e[0]?.[0]||"";uiState.charmPoint1=Number(e[0]?.[1]||0);uiState.charmSkill2=e[1]?.[0]||"";uiState.charmPoint2=Number(e[1]?.[1]||0);uiState.charmSlots=Number(c.slots||0);renderManualSelectors();renderManualResult();renderOwnedCharms()}
@@ -559,7 +570,7 @@ function saveCurrentBuild(){
   const rec={
     id:existingIndex>=0?list[existingIndex].id:`build_${Date.now()}_${Math.random().toString(36).slice(2,7)}`,name,
     targets:[...targets],
-    manualSet:uiState.manualSet,manualWeapon:uiState.manualWeapon,manualWeaponMode:uiState.manualWeaponMode,manualWeaponSlots:uiState.manualWeaponSlots,manual:{...uiState.manual},
+    manualSet:uiState.manualSet,manualWeapon:uiState.manualWeapon,manualWeaponMode:uiState.manualWeaponMode,manualWeaponSlots:uiState.manualWeaponSlots,manualRelicSlotMode:uiState.manualRelicSlotMode,manual:{...uiState.manual},
     charmSkill1:uiState.charmSkill1,charmPoint1:uiState.charmPoint1,charmSkill2:uiState.charmSkill2,charmPoint2:uiState.charmPoint2,charmSlots:uiState.charmSlots,
     manualDecorations:Object.fromEntries(MANUAL_CONTAINERS.map(c=>[c,[...(uiState.manualDecorations[c]||[])]]))
   };
@@ -569,7 +580,7 @@ function saveCurrentBuild(){
 function loadSelectedBuild(){
   const rec=getSavedBuilds().find(x=>x.id===$("#savedBuildSelect")?.value);if(!rec)return;
   targets=[...(rec.targets||[])];
-  uiState.manualSet=rec.manualSet||"";uiState.manualWeaponMode=rec.manualWeaponMode==="relic"?"relic":"crafted";uiState.manualWeapon=uiState.manualWeaponMode==="relic"?"__relic_weapon__":"__crafted_weapon__";uiState.manualWeaponSlots=String(rec.manualWeaponSlots??(uiState.manualWeaponMode==="relic"?3:0));uiState.manual={...Object.fromEntries(PARTS.map(p=>[p,""])),...(rec.manual||{})};
+  uiState.manualSet=rec.manualSet||"";uiState.manualWeaponMode=rec.manualWeaponMode==="relic"?"relic":"crafted";uiState.manualWeapon=uiState.manualWeaponMode==="relic"?"__relic_weapon__":"__crafted_weapon__";uiState.manualWeaponSlots=String(rec.manualWeaponSlots??(uiState.manualWeaponMode==="relic"?3:0));uiState.manualRelicSlotMode=rec.manualRelicSlotMode==="empty"?"empty":"fixed";uiState.manual={...Object.fromEntries(PARTS.map(p=>[p,""])),...(rec.manual||{})};
   uiState.charmSkill1=rec.charmSkill1||"";uiState.charmPoint1=Number(rec.charmPoint1||0);uiState.charmSkill2=rec.charmSkill2||"";uiState.charmPoint2=Number(rec.charmPoint2||0);uiState.charmSlots=Number(rec.charmSlots||0);
   uiState.manualDecorations=Object.fromEntries(MANUAL_CONTAINERS.map(c=>[c,[...(rec.manualDecorations?.[c]||[])]]));
   if($("#buildName")) $("#buildName").value=rec.name||"";
