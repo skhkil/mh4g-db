@@ -112,8 +112,16 @@ function render(d,host){
  notice(end,"2두 조합 결과와 단일 몬스터 1회 확률을 곱하거나 합산해 정확한 보상 기대값을 계산하지 않습니다.");
  host.append(end);
 }
+let rewardTargetListenerBound=false;
 export async function mountRelicRewards(d){
  const area=document.getElementById("relicPanel-rewards");if(!area)return;
+ if(!rewardTargetListenerBound){
+  document.addEventListener("mh4g-relic-reward-target",()=>{
+   const host=document.getElementById("relicRewardWorkbench");
+   if(host&&loaded)render(d,host);
+  });
+  rewardTargetListenerBound=true;
+ }
  let root=area.querySelector("#relicRewardWorkbench");if(!root){root=make("div","rr-shell");root.id="relicRewardWorkbench";area.insertBefore(root,area.firstChild)}
  let legacy=area.querySelector("#relicRewardLegacy");
  if(!legacy){
