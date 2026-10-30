@@ -1,0 +1,366 @@
+{
+  "version": "0.7.7-relic-reward-workbench1",
+  "sources": {
+    "wikiRewards": "https://w.atwiki.jp/3dsmh4g/pages/395.html",
+    "armorSphere": "https://w.atwiki.jp/3dsmh4g/pages/131.html",
+    "sealedWeaponOneQuest": "https://game-cap.com/mh4g/data/item_fujirareshibuki.html",
+    "commonSlots": "https://ryogakucx.blog.fc2.com/blog-entry-104.html",
+    "examples": "https://dive2electro.blog.fc2.com/blog-entry-147.html"
+  },
+  "verifiedLevelBands": [
+    {
+      "min": 86,
+      "max": 100,
+      "label": "Lv86~100"
+    },
+    {
+      "min": 101,
+      "max": 115,
+      "label": "Lv101~115"
+    },
+    {
+      "min": 116,
+      "max": 125,
+      "label": "Lv116~125"
+    },
+    {
+      "min": 126,
+      "max": 135,
+      "label": "Lv126~135"
+    },
+    {
+      "min": 136,
+      "max": 140,
+      "label": "Lv136~140"
+    }
+  ],
+  "armorSphereGroups": [
+    {
+      "id": 1,
+      "minLevel": 136,
+      "monsters": [
+        "도스람포스",
+        "얀쿡크",
+        "얀쿡크 아종",
+        "다이묘자자미 아종",
+        "바살모스",
+        "바살모스 아종"
+      ]
+    },
+    {
+      "id": 2,
+      "minLevel": 126,
+      "monsters": [
+        "얀가루루가",
+        "티가렉스",
+        "티가렉스 아종",
+        "디아블로스",
+        "셀레기오스",
+        "고어·마가라",
+        "진오우거",
+        "키린"
+      ]
+    },
+    {
+      "id": 3,
+      "minLevel": 116,
+      "monsters": [
+        "디아블로스 아종",
+        "브라키디오스",
+        "이블조",
+        "진오우거 아종",
+        "라잔",
+        "키린 아종",
+        "샤가르마가라",
+        "크샬다오라",
+        "테오·테스카토르",
+        "오나즈치"
+      ]
+    }
+  ],
+  "sealedWeaponPerQuest": [
+    {
+      "monster": "이블조",
+      "band": "136-140",
+      "percent": 60,
+      "quantity": 1,
+      "unit": "quest_once",
+      "source": "https://game-cap.com/mh4g/data/item_fujirareshibuki.html"
+    },
+    {
+      "monster": "얀가루루가",
+      "band": "136-140",
+      "percent": 20,
+      "quantity": 1,
+      "unit": "quest_once",
+      "source": "https://game-cap.com/mh4g/data/item_fujirareshibuki.html"
+    },
+    {
+      "monster": "얀쿡크",
+      "band": "136-140",
+      "percent": 5,
+      "quantity": 1,
+      "unit": "quest_once",
+      "source": "https://game-cap.com/mh4g/data/item_fujirareshibuki.html"
+    },
+    {
+      "monster": "얀쿡크 아종",
+      "band": "136-140",
+      "percent": 5,
+      "quantity": 1,
+      "unit": "quest_once",
+      "source": "https://game-cap.com/mh4g/data/item_fujirareshibuki.html"
+    },
+    {
+      "monster": "오나즈치",
+      "band": "136-140",
+      "percent": 80,
+      "quantity": 1,
+      "unit": "quest_once",
+      "source": "https://game-cap.com/mh4g/data/item_fujirareshibuki.html"
+    },
+    {
+      "monster": "키린",
+      "band": "136-140",
+      "percent": 30,
+      "quantity": 1,
+      "unit": "quest_once",
+      "source": "https://game-cap.com/mh4g/data/item_fujirareshibuki.html"
+    },
+    {
+      "monster": "키린 아종",
+      "band": "136-140",
+      "percent": 60,
+      "quantity": 1,
+      "unit": "quest_once",
+      "source": "https://game-cap.com/mh4g/data/item_fujirareshibuki.html"
+    },
+    {
+      "monster": "크샬다오라",
+      "band": "136-140",
+      "percent": 80,
+      "quantity": 1,
+      "unit": "quest_once",
+      "source": "https://game-cap.com/mh4g/data/item_fujirareshibuki.html"
+    },
+    {
+      "monster": "샤가르마가라",
+      "band": "136-140",
+      "percent": 80,
+      "quantity": 1,
+      "unit": "quest_once",
+      "source": "https://game-cap.com/mh4g/data/item_fujirareshibuki.html"
+    },
+    {
+      "monster": "진오우거",
+      "band": "136-140",
+      "percent": 80,
+      "quantity": 1,
+      "unit": "quest_once",
+      "source": "https://game-cap.com/mh4g/data/item_fujirareshibuki.html"
+    },
+    {
+      "monster": "진오우거 아종",
+      "band": "136-140",
+      "percent": 70,
+      "quantity": 1,
+      "unit": "quest_once",
+      "source": "https://game-cap.com/mh4g/data/item_fujirareshibuki.html"
+    },
+    {
+      "monster": "셀레기오스",
+      "band": "136-140",
+      "percent": 80,
+      "quantity": 1,
+      "unit": "quest_once",
+      "source": "https://game-cap.com/mh4g/data/item_fujirareshibuki.html"
+    },
+    {
+      "monster": "다이묘자자미 아종",
+      "band": "136-140",
+      "percent": 5,
+      "quantity": 1,
+      "unit": "quest_once",
+      "source": "https://game-cap.com/mh4g/data/item_fujirareshibuki.html"
+    },
+    {
+      "monster": "디아블로스",
+      "band": "136-140",
+      "percent": 80,
+      "quantity": 1,
+      "unit": "quest_once",
+      "source": "https://game-cap.com/mh4g/data/item_fujirareshibuki.html"
+    },
+    {
+      "monster": "디아블로스 아종",
+      "band": "136-140",
+      "percent": 70,
+      "quantity": 1,
+      "unit": "quest_once",
+      "source": "https://game-cap.com/mh4g/data/item_fujirareshibuki.html"
+    },
+    {
+      "monster": "티가렉스",
+      "band": "136-140",
+      "percent": 80,
+      "quantity": 1,
+      "unit": "quest_once",
+      "source": "https://game-cap.com/mh4g/data/item_fujirareshibuki.html"
+    },
+    {
+      "monster": "티가렉스 아종",
+      "band": "136-140",
+      "percent": 25,
+      "quantity": 1,
+      "unit": "quest_once",
+      "source": "https://game-cap.com/mh4g/data/item_fujirareshibuki.html"
+    },
+    {
+      "monster": "테오·테스카토르",
+      "band": "136-140",
+      "percent": 80,
+      "quantity": 1,
+      "unit": "quest_once",
+      "source": "https://game-cap.com/mh4g/data/item_fujirareshibuki.html"
+    },
+    {
+      "monster": "도스람포스",
+      "band": "136-140",
+      "percent": 5,
+      "quantity": 1,
+      "unit": "quest_once",
+      "source": "https://game-cap.com/mh4g/data/item_fujirareshibuki.html"
+    },
+    {
+      "monster": "바살모스",
+      "band": "136-140",
+      "percent": 5,
+      "quantity": 1,
+      "unit": "quest_once",
+      "source": "https://game-cap.com/mh4g/data/item_fujirareshibuki.html"
+    },
+    {
+      "monster": "바살모스 아종",
+      "band": "136-140",
+      "percent": 5,
+      "quantity": 1,
+      "unit": "quest_once",
+      "source": "https://game-cap.com/mh4g/data/item_fujirareshibuki.html"
+    },
+    {
+      "monster": "브라키디오스",
+      "band": "136-140",
+      "percent": 60,
+      "quantity": 1,
+      "unit": "quest_once",
+      "source": "https://game-cap.com/mh4g/data/item_fujirareshibuki.html"
+    },
+    {
+      "monster": "라잔",
+      "band": "136-140",
+      "percent": 60,
+      "quantity": 1,
+      "unit": "quest_once",
+      "source": "https://game-cap.com/mh4g/data/item_fujirareshibuki.html"
+    },
+    {
+      "monster": "이블조",
+      "band": "126-135",
+      "percent": 15,
+      "quantity": 1,
+      "unit": "quest_once",
+      "source": "https://game-cap.com/mh4g/data/item_fujirareshibuki.html"
+    },
+    {
+      "monster": "오나즈치",
+      "band": "126-135",
+      "percent": 20,
+      "quantity": 1,
+      "unit": "quest_once",
+      "source": "https://game-cap.com/mh4g/data/item_fujirareshibuki.html"
+    },
+    {
+      "monster": "크샬다오라",
+      "band": "126-135",
+      "percent": 25,
+      "quantity": 1,
+      "unit": "quest_once",
+      "source": "https://game-cap.com/mh4g/data/item_fujirareshibuki.html"
+    },
+    {
+      "monster": "샤가르마가라",
+      "band": "126-135",
+      "percent": 20,
+      "quantity": 1,
+      "unit": "quest_once",
+      "source": "https://game-cap.com/mh4g/data/item_fujirareshibuki.html"
+    },
+    {
+      "monster": "라잔",
+      "band": "126-135",
+      "percent": 15,
+      "quantity": 1,
+      "unit": "quest_once",
+      "source": "https://game-cap.com/mh4g/data/item_fujirareshibuki.html"
+    }
+  ],
+  "duoPresets": [
+    {
+      "id": "rajang-two",
+      "label": "라잔×2 (극한)",
+      "left": "라잔",
+      "right": "라잔",
+      "leftState": "extreme",
+      "rightState": "extreme",
+      "points": 18,
+      "slots": "12~16",
+      "support": "illustrative",
+      "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html"
+    },
+    {
+      "id": "basarios-sub-rajang",
+      "label": "바살모스 아종 + 라잔 (극한)",
+      "left": "바살모스 아종",
+      "right": "라잔",
+      "rightState": "extreme",
+      "points": 11,
+      "slots": "8~9",
+      "support": "example",
+      "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html"
+    },
+    {
+      "id": "drome-rajang",
+      "label": "도스람포스 + 라잔 (극한)",
+      "left": "도스람포스",
+      "right": "라잔",
+      "rightState": "extreme",
+      "points": 10,
+      "slots": "7~9",
+      "support": "example",
+      "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html"
+    },
+    {
+      "id": "tigrex-sub-rajang",
+      "label": "티가렉스 아종 + 라잔",
+      "left": "티가렉스 아종",
+      "right": "라잔",
+      "points": null,
+      "slots": null,
+      "support": "conditional_unverified",
+      "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html"
+    }
+  ],
+  "verification": {
+    "armorSphereThresholds": "wiki_tabulated",
+    "perQuestRates": "game_cap_quest_once",
+    "duoPresets": "specific_article_examples",
+    "notes": [
+      "single-slot row for 디아블로스 is currently 미확인, not a numeric range",
+      "rare weapon one-quest acquisition probabilities are not common-slot per-box probabilities",
+      "the probability of 天鎧玉 per quest is not verified and is not to be modeled",
+      "2-monster point totals may be shown only for source-backed preset states; unknown variants not extrapolated",
+      "multi-monster sealed weapon per-quest probability cannot be inferred by combining single-quest probabilities",
+      "any no-record probability means unknown, not zero"
+    ]
+  }
+}
