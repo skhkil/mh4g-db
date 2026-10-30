@@ -1,0 +1,29 @@
+{
+  "auditedDate": "2026-10-30",
+  "scope": "Existing reward entries and new structured lookup source coherence",
+  "existing": {
+    "singleSlotRows": 24,
+    "pointExamples": 9,
+    "otherRewardRows": 8,
+    "farmingExamples": 7
+  },
+  "validated": {
+    "armorSphereMonsterCount": 24,
+    "sealedWeaponOneQuestRecords": 28,
+    "duoPresets": 4
+  },
+  "limits": [
+    "single-slot row for 디아블로스 is currently 미확인, not a numeric range",
+    "rare weapon one-quest acquisition probabilities are not common-slot per-box probabilities",
+    "the probability of 天鎧玉 per quest is not verified and is not to be modeled",
+    "2-monster point totals may be shown only for source-backed preset states; unknown variants not extrapolated",
+    "multi-monster sealed weapon per-quest probability cannot be inferred by combining single-quest probabilities",
+    "any no-record probability means unknown, not zero"
+  ],
+  "checks": {
+    "unknownMonsterReferences": [],
+    "duplicateArmorNames": [],
+    "duplicateSealedWeaponRates": [],
+    "nonPercentValues": []
+  }
+}
