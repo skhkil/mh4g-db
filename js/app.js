@@ -547,6 +547,7 @@ function renderOwnedRelicWeapons(){const root=$("#ownedRelicWeaponList");if(!roo
 function saveCurrentRelicWeapon(){const r=currentRelicWeaponRecord();if(!r){showRuntimeStatus("저장할 발굴무기 복합스킬을 먼저 선택하세요.","info");return}const list=getOwnedRelicWeapons();const sig=JSON.stringify({decorationId:r.decorationId,slots:r.slots});if(!list.some(x=>JSON.stringify({decorationId:x.decorationId||"",slots:Number(x.slots)||0})===sig)){list.push(r);setOwnedRelicWeapons(list)}renderOwnedRelicWeapons()}
 function applyOwnedRelicWeapon(index){const original=getOwnedRelicWeapons()[Number(index)];if(!original||!relicWeaponUsable(original))return;const r=normalizeRelicWeaponRecord(original);uiState.manualWeaponMode="relic";uiState.manualRelicSlotMode=r.slotMode;uiState.manualWeaponSlots=String(r.slots);uiState.manualWeapon="__relic_weapon__";uiState.manualDecorations.weapon=r.slotMode==="fixed"?[r.decorationId]:[];renderManualSelectors();renderManualResult();renderOwnedRelicWeapons()}
 function removeOwnedRelicWeapon(index){const list=getOwnedRelicWeapons();list.splice(Number(index),1);setOwnedRelicWeapons(list);renderOwnedRelicWeapons()}
+document.addEventListener("mh4g-owned-relic-weapons-changed",()=>{renderOwnedRelicWeapons()});
 function saveCurrentCharmToOwned(){const c=normalizeCharmRecord(charm());if(!Object.keys(c.skills).length&&!c.slots){showRuntimeStatus("저장할 호석 스킬 또는 슬롯을 먼저 입력하세요.","info");return}const list=getOwnedCharms();const sig=JSON.stringify({skills:c.skills,slots:c.slots});if(!list.some(x=>JSON.stringify({skills:x.skills||{},slots:Number(x.slots)||0})===sig)){list.push(c);setOwnedCharms(list)}renderOwnedCharms()}
 function applyOwnedCharm(index){const c=getOwnedCharms()[Number(index)];if(!c)return;const e=Object.entries(c.skills||{});uiState.charmSkill1=e[0]?.[0]||"";uiState.charmPoint1=Number(e[0]?.[1]||0);uiState.charmSkill2=e[1]?.[0]||"";uiState.charmPoint2=Number(e[1]?.[1]||0);uiState.charmSlots=Number(c.slots||0);renderManualSelectors();renderManualResult();renderOwnedCharms()}
 function removeOwnedCharm(index){const list=getOwnedCharms();list.splice(Number(index),1);setOwnedCharms(list);renderOwnedCharms()}
@@ -2332,7 +2333,7 @@ function renderRelicEquipment(){
   setRelicGuideTab(relicActiveTab);
   enhanceRelicAppearance(d,renderRelicEquipment,setRelicGuideTab);
   void mountRelicRewards(d).catch(error=>console.error("relic rewards workbench",error));
-  void mountRelicPerformance(d,type);
+  void mountRelicPerformance(d,type,data.relicWeaponDecorations);
   decorateResponsiveTables(root);
 }
 
