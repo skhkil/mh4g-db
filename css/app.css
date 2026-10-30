@@ -1877,3 +1877,25 @@ button{border:1px solid var(--line);background:#202b39;color:white;border-radius
 #page-relic-equipment .rr-goal-monsters button{min-height:40px;padding:9px 13px;font-size:12px}
 #page-relic-equipment .rr-goal-bridge>.rr-field{max-width:500px}
 @media(max-width:700px){#page-relic-equipment .rr-mining-grid{grid-template-columns:minmax(0,1fr)}#page-relic-equipment .rr-mining-pattern{grid-template-columns:65px 1fr}#page-relic-equipment .rr-mining-pattern small{grid-column:2}}
+
+
+/* Relic performance analyser STEP 1-3 */
+#page-relic-equipment .rp-panel{display:grid;gap:15px;min-width:0;padding:20px 22px}
+#page-relic-equipment .rp-panel .rr-heading{margin:0}
+#page-relic-equipment .rp-fields{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+#page-relic-equipment .rp-field{display:grid;gap:7px;min-width:0;font-size:12px;color:var(--muted);font-weight:600}
+#page-relic-equipment .rp-field input,#page-relic-equipment .rp-field select{width:100%;min-width:0;min-height:43px;padding:9px 10px;border-radius:8px;color:var(--text)}
+#page-relic-equipment .rp-run{justify-self:start;min-height:42px;padding:9px 17px;border-radius:8px}
+#page-relic-equipment .rp-results{display:grid;gap:9px;min-width:0}
+#page-relic-equipment .rp-candidate{padding:12px 14px;display:grid;gap:5px;background:var(--panel2);border:1px solid var(--line);border-radius:9px}
+#page-relic-equipment .rp-candidate strong{font-size:14px}
+#page-relic-equipment .rp-candidate span,#page-relic-equipment .rp-candidate small{font-size:12px;color:var(--muted)}
+#page-relic-equipment .rp-caution{padding:11px 13px;margin:0;background:var(--panel2);border-left:3px solid var(--warn);border-radius:5px;font-size:12px;line-height:1.65}
+#page-relic-equipment .rp-extra,#page-relic-equipment .rp-reference{border-top:1px solid var(--line);padding-top:12px;min-width:0}
+#page-relic-equipment .rp-extra summary,#page-relic-equipment .rp-reference summary{cursor:pointer;font-weight:700;padding:7px 0;font-size:13px}
+#page-relic-equipment .rp-extra>.rp-fields{margin:10px 0}
+#page-relic-equipment .rp-deco{margin:10px 0;max-width:540px}
+#page-relic-equipment .rp-reference .table-panel{margin-top:12px;overflow:auto;max-width:100%}
+#page-relic-equipment #relicPanel-attack>.panel>.relic-attack-summary{margin-bottom:12px}
+@media(max-width:850px){#page-relic-equipment .rp-fields{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:550px){#page-relic-equipment .rp-panel{padding:15px}#page-relic-equipment .rp-fields{grid-template-columns:minmax(0,1fr)}}
