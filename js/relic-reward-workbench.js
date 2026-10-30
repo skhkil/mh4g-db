@@ -14,7 +14,7 @@ function notice(target,text){target.append(make("p","rr-note",text))}
 function render(d,host){
  host.replaceChildren();const names=[...new Set((d.qualityGuide?.monsterRewardSlots||[]).map(x=>x.monster))];
  if(!selected||!names.includes(selected))selected=names.includes("테오·테스카토르")?"테오·테스카토르":names[0];
- const top=make("section","panel rr-workbench");top.append(make("h2",null,"선택한 길퀘 보상 분석"));
+ const top=make("section","panel rr-workbench rr-lookup");const heading=make("div","rr-heading");heading.append(make("span","rr-step","01 · 보상 조회"),make("h2",null,"선택한 길퀘 보상 분석"));top.append(heading);
  notice(top,"몬스터·레벨·파밍 목적을 선택하면 관련 보상만 보여줍니다. 수치는 확인된 자료만 사용합니다.");
  const selectors=make("div","rr-fields");
  selectors.append(field("몬스터",choice(names.map(n=>[n,n]),selected,v=>{selected=v;const r=readRecords()[v];if(r){minutes=r.minutes;success=r.success}pair="single";render(d,host)})));
@@ -39,8 +39,9 @@ function render(d,host){
  for(const x of loaded.verifiedLevelBands){const el=make("div",level>=x.min&&level<=x.max?"rr-band rr-current":"rr-band");const rateFor=rate(selected,x.min);el.append(make("b",null,x.label),make("span",null,"천갑옥: "+(g&&x.max>=g.minLevel?"출현 가능 구간":"출현 조건 미달/미확인")),make("span",null,"봉인 무기: "+(rateFor?rateFor.percent+"% (1회)":"미확인")));matrix.append(el)}
  compare.append(matrix);top.append(compare);
  host.append(top);
- const duo=make("section","panel rr-workbench");duo.append(make("h2",null,"2두 길퀘 보상 비교"));
- notice(duo,"일본 분석 자료에 기재된 조합만 표시합니다. 극한상태·보상 포인트가 확인되지 않은 조건은 계산하지 않습니다.");
+ const duo=make("section","panel rr-workbench rr-duo");const duoTitle=make("div","rr-heading");duoTitle.append(make("span","rr-step","02 · 보상 구조 비교"),make("h2",null,"2두 길퀘 보상 분석"),make("p","rr-note","왜 비교하나요? 2두는 두 몬스터의 보상 포인트를 합산해 공통 보상칸을 결정하며, 각 몬스터의 기타 보상은 별도로 추첨되기 때문입니다."));duo.append(duoTitle);
+ const help=make("div","rr-explain");for(const [title,description] of [["공통 보상칸","몬스터 포인트 합산 → 공통 보상칸. 단일 보상칸을 서로 더하지 않습니다."],["기타 보상","각 몬스터에서 1칸씩. ×2는 한 칸에서 2개 지급이라는 뜻입니다."],["외형 기준","왼쪽 아이콘 몬스터의 그룹으로 발굴 외형이 결정됩니다."]]){const e=make("div","rr-explain-item");e.append(make("strong",null,title),make("p",null,description));help.append(e)}duo.append(help);
+ notice(duo,"아래 선택지는 전체 조합 목록이 아니라 일본 자료의 보상 계산 예시입니다. 실제 생성 가능한 조합인지 별도 확인이 필요한 사례도 포함됩니다.");
  const options=[["single","1두 · "+selected],...loaded.duoPresets.map(x=>[x.id,x.label])];
  duo.append(field("비교 대상",choice(options,pair,v=>{pair=v;render(d,host)})));
  const current=loaded.duoPresets.find(x=>x.id===pair);
@@ -50,11 +51,21 @@ function render(d,host){
  box.append(make("p",null,"왼쪽 몬스터: "+current.left+" · 오른쪽 몬스터: "+current.right));
  box.append(make("p",null,"공통 보상 포인트: "+(current.points??"상태별 검증 필요")+" · 공통 보상칸: "+(current.slots??"미확인")));
  box.append(make("p",null,"외형은 왼쪽 몬스터 그룹 기준. 각 몬스터의 기타 보상은 공통 보상칸과 별개입니다."));
+ const leftGroup=(d.sealedGroups||[]).find(g=>g.monsters?.includes(current.left));
+ const rightGroup=(d.sealedGroups||[]).find(g=>g.monsters?.includes(current.right));
+ box.append(make("p",null,"외형 그룹: 왼쪽 "+(leftGroup?.id??"미확인")+" / 오른쪽 "+(rightGroup?.id??"미확인")+" → 왼쪽 그룹 적용"));
+ if(current.explanation)box.append(make("p","rr-note",current.explanation));
+ const other=(name,state)=>d.qualityGuide?.otherRewards136140?.find(z=>z.monster===name+(state==="extreme"?" (극한상태)":""));
+ const describe=(name,state)=>{const v=other(name,state);return v?.outcomes?.length?name+": "+v.outcomes.map(z=>z.item+" ×"+z.count+" ("+z.probability+"%)").join(" · "):name+": 이 상태의 기타 보상표 미확인"};
+ const details=make("details","rr-more");details.append(make("summary",null,"몬스터별 기타 보상 상세"));
+ const left=make("p","rr-note",describe(current.left,current.leftState)),right=make("p","rr-note",describe(current.right,current.rightState));
+ details.append(left,right);box.append(details);
  if(current.support==="conditional_unverified")box.append(make("p","rr-note","조건부 사례이므로 미확인 수치를 채우지 않았습니다."));
+ if(current.support==="illustrative"||current.support==="article_point_example")box.append(make("p","rr-note","원문의 보상 포인트 계산 예시이며, 실제 생성 가능한 퀘스트 조합인지 독립 검증되지는 않았습니다."));
  if(level<136)box.append(make("p","rr-note","주의: 현재 선택한 Lv"+level+"에는 Lv136~140 보상 포인트·칸 자료를 그대로 적용할 수 없습니다."));
  }
  duo.append(box);host.append(duo);
- const farm=make("section","panel rr-workbench");farm.append(make("h2",null,"목적별 파밍 후보"));
+ const farm=make("section","panel rr-workbench");farm.append(make("div","rr-heading"));farm.firstChild.append(make("span","rr-step","03 · 목적별 파밍"),make("h2",null,"목적에 맞는 후보 조회"));
  const sourceNames=purpose==="sphere"?names.filter(n=>group(n)):(purpose==="weapon"?names.filter(n=>rate(n,level)):purpose==="armor"?[]:names);
  const ranked=sourceNames.map(name=>{const g=group(name),r=rate(name,level);const verified=(purpose==="sphere"?g&&level>=g.minLevel:purpose==="weapon"?Boolean(r):true);return {name,g,r,verified}}).filter(x=>x.verified);
  if(purpose==="armor")notice(farm,"봉인 방어구의 1회 퀘스트 획득 확률에 대한 동일 기준 자료가 부족해 수치 순위를 제공하지 않습니다. 기존 Lv136~140 기타 보상 표를 참고하세요.");
@@ -68,8 +79,8 @@ function render(d,host){
  }
  farm.append(rows);if(!ranked.length)notice(farm,"선택 조건에서 검증된 후보가 없습니다.");
  }host.append(farm);
- const efficiency=make("section","panel rr-workbench");efficiency.append(make("h2",null,"나의 파밍 효율"));
- const timeFields=make("div","rr-fields");const time=make("input");time.type="number";time.min="1";time.max="240";time.value=minutes;
+ const efficiency=make("section","panel rr-workbench");efficiency.append(make("div","rr-heading"));efficiency.firstChild.append(make("span","rr-step","04 · 개인별 효율"),make("h2",null,"내 사냥 기록으로 비교"));
+ const timeFields=make("div","rr-fields rr-metrics-fields");const time=make("input");time.type="number";time.min="1";time.max="240";time.value=minutes;
  const prob=make("input");prob.type="number";prob.min="1";prob.max="100";prob.value=success;
  const update=()=>{minutes=Math.max(1,Number(time.value)||1);success=Math.min(100,Math.max(1,Number(prob.value)||1));showMetrics()};
  time.oninput=update;prob.oninput=update;
