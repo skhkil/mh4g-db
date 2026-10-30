@@ -1,5 +1,5 @@
 {
-  "version": "0.7.7-relic-reward-duo-ui2",
+  "version": "0.7.7-relic-duo-database2",
   "sources": {
     "wikiRewards": "https://w.atwiki.jp/3dsmh4g/pages/395.html",
     "armorSphere": "https://w.atwiki.jp/3dsmh4g/pages/131.html",
@@ -315,7 +315,11 @@
       "points": 18,
       "slots": "12~16",
       "support": "illustrative",
-      "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html"
+      "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html",
+      "computedPoints": 18,
+      "computedSlots": "12~16",
+      "questExistence": "documented_in_guides",
+      "note": "원자료에 보상 계산 예시로 제시됨. 실제 생성 가능 여부는 별도 판단."
     },
     {
       "id": "basarios-sub-rajang",
@@ -326,7 +330,11 @@
       "points": 11,
       "slots": "8~9",
       "support": "example",
-      "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html"
+      "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html",
+      "computedPoints": 11,
+      "computedSlots": "8~9",
+      "questExistence": "independently_unverified",
+      "note": "원자료에 보상 계산 예시로 제시됨. 실제 생성 가능 여부는 별도 판단."
     },
     {
       "id": "drome-rajang",
@@ -337,7 +345,11 @@
       "points": 10,
       "slots": "7~9",
       "support": "example",
-      "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html"
+      "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html",
+      "computedPoints": 10,
+      "computedSlots": "7~9",
+      "questExistence": "independently_unverified",
+      "note": "원자료에 보상 계산 예시로 제시됨. 실제 생성 가능 여부는 별도 판단."
     },
     {
       "id": "tigrex-sub-rajang",
@@ -347,7 +359,11 @@
       "points": null,
       "slots": null,
       "support": "conditional_unverified",
-      "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html"
+      "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html",
+      "computedPoints": 15,
+      "computedSlots": "10~13",
+      "questExistence": "independently_unverified",
+      "note": "몬스터 포인트 표로 계산은 가능하지만 조합·상태·실제 생성 가능 여부는 미검증."
     },
     {
       "id": "deviljho-seregios-extreme",
@@ -360,7 +376,11 @@
       "slots": "12~16",
       "support": "article_point_example",
       "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html",
-      "explanation": "원문 9+9=18pt 계산 예시. 실제 해당 길퀘 생성 여부는 이 자료만으로 확정하지 않습니다."
+      "explanation": "원문 9+9=18pt 계산 예시. 실제 해당 길퀘 생성 여부는 이 자료만으로 확정하지 않습니다.",
+      "computedPoints": 18,
+      "computedSlots": "12~16",
+      "questExistence": "independently_unverified",
+      "note": "원자료에 보상 계산 예시로 제시됨. 실제 생성 가능 여부는 별도 판단."
     },
     {
       "id": "seregios-double-extreme",
@@ -373,7 +393,11 @@
       "slots": "12~16",
       "support": "article_point_example",
       "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html",
-      "explanation": "원문 9+9=18pt 보상칸 설명 예시. 생성 가능 조합의 독립 확인 자료는 별개입니다."
+      "explanation": "원문 9+9=18pt 보상칸 설명 예시. 생성 가능 조합의 독립 확인 자료는 별개입니다.",
+      "computedPoints": 18,
+      "computedSlots": "12~16",
+      "questExistence": "independently_unverified",
+      "note": "원자료에 보상 계산 예시로 제시됨. 실제 생성 가능 여부는 별도 판단."
     },
     {
       "id": "kirin-sub-drome-example",
@@ -384,7 +408,39 @@
       "slots": null,
       "support": "article_point_example",
       "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html",
-      "explanation": "원문 4+1=5pt 사례. 현재 검증 데이터에 5pt 보상칸 범위가 없어 계산하지 않습니다."
+      "explanation": "원문 4+1=5pt 사례. 현재 검증 데이터에 5pt 보상칸 범위가 없어 계산하지 않습니다.",
+      "computedPoints": 5,
+      "computedSlots": "4~5",
+      "questExistence": "independently_unverified",
+      "note": "원자료에 보상 계산 예시로 제시됨. 실제 생성 가능 여부는 별도 판단."
+    },
+    {
+      "id": "kirin-sub-kirin",
+      "label": "키린 아종 + 키린",
+      "left": "키린 아종",
+      "right": "키린",
+      "points": 8,
+      "slots": "5~8",
+      "computedPoints": 8,
+      "computedSlots": "5~8",
+      "support": "reward_example",
+      "questExistence": "example_in_guide_not_comprehensively_verified",
+      "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html",
+      "note": "원문에 봉인 공통 추첨 가능 조합으로 언급되어 있으나 실제 생성 조건 전수검증은 별도."
+    },
+    {
+      "id": "kirin-kirin",
+      "label": "키린 ×2",
+      "left": "키린",
+      "right": "키린",
+      "points": 8,
+      "slots": "5~8",
+      "computedPoints": 8,
+      "computedSlots": "5~8",
+      "support": "reward_example",
+      "questExistence": "example_in_guide_not_comprehensively_verified",
+      "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html",
+      "note": "원문에서 공통 봉인 추첨이 되지 않는 예로 제시. 포인트만으로 봉인 추첨 가능을 단정할 수 없음."
     }
   ],
   "verification": {
@@ -408,5 +464,303 @@
     "restrictions": "원문 보상 포인트 예시만으로 실제 생성 가능한 2두 길퀘 조합을 모두 입증할 수 없습니다. 임의 조합은 계산 가정으로만 표시합니다.",
     "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html",
     "rankScope": "Lv136~140"
+  },
+  "duoDatabase": {
+    "scopeLevel": "136-140",
+    "eligibleMonsters": [
+      {
+        "name": "이블조",
+        "points": 9,
+        "defaultState": "extreme",
+        "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html",
+        "confidence": "source_point_table"
+      },
+      {
+        "name": "라잔",
+        "points": 9,
+        "defaultState": "extreme",
+        "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html",
+        "confidence": "source_point_table"
+      },
+      {
+        "name": "셀레기오스",
+        "points": 9,
+        "defaultState": "extreme",
+        "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html",
+        "confidence": "source_point_table"
+      },
+      {
+        "name": "디아블로스",
+        "points": 8,
+        "defaultState": "extreme",
+        "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html",
+        "confidence": "source_point_table"
+      },
+      {
+        "name": "진오우거",
+        "points": 8,
+        "defaultState": "extreme",
+        "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html",
+        "confidence": "source_point_table"
+      },
+      {
+        "name": "진오우거 아종",
+        "points": 7,
+        "defaultState": "normal",
+        "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html",
+        "confidence": "source_point_table"
+      },
+      {
+        "name": "티가렉스",
+        "points": 7,
+        "defaultState": "extreme",
+        "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html",
+        "confidence": "source_point_table"
+      },
+      {
+        "name": "디아블로스 아종",
+        "points": 7,
+        "defaultState": "frenzy",
+        "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html",
+        "confidence": "source_point_table"
+      },
+      {
+        "name": "티가렉스 아종",
+        "points": 6,
+        "defaultState": "frenzy",
+        "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html",
+        "confidence": "source_point_table"
+      },
+      {
+        "name": "브라키디오스",
+        "points": 5,
+        "defaultState": "frenzy",
+        "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html",
+        "confidence": "source_point_table"
+      },
+      {
+        "name": "얀가루루가",
+        "points": 5,
+        "defaultState": "frenzy",
+        "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html",
+        "confidence": "source_point_table"
+      },
+      {
+        "name": "키린",
+        "points": 4,
+        "defaultState": "normal",
+        "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html",
+        "confidence": "source_point_table"
+      },
+      {
+        "name": "키린 아종",
+        "points": 4,
+        "defaultState": "normal",
+        "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html",
+        "confidence": "source_point_table"
+      },
+      {
+        "name": "다이묘자자미 아종",
+        "points": 4,
+        "defaultState": "frenzy",
+        "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html",
+        "confidence": "source_point_table"
+      },
+      {
+        "name": "얀쿡크 아종",
+        "points": 4,
+        "defaultState": "frenzy",
+        "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html",
+        "confidence": "source_point_table"
+      },
+      {
+        "name": "얀쿡크",
+        "points": 3,
+        "defaultState": "frenzy",
+        "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html",
+        "confidence": "source_point_table"
+      },
+      {
+        "name": "바살모스 아종",
+        "points": 2,
+        "defaultState": "frenzy",
+        "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html",
+        "confidence": "source_point_table"
+      },
+      {
+        "name": "바살모스",
+        "points": 1,
+        "defaultState": "frenzy",
+        "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html",
+        "confidence": "source_point_table"
+      },
+      {
+        "name": "도스람포스",
+        "points": 1,
+        "defaultState": "frenzy",
+        "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html",
+        "confidence": "source_point_table"
+      }
+    ],
+    "singleOnlyMonsters": [
+      {
+        "name": "테오·테스카토르",
+        "reason": "2두 길드퀘로 생성되지 않는 것으로 기재",
+        "sources": [
+          "https://ryogakucx.blog.fc2.com/blog-entry-112.html",
+          "https://ryogakucx.blog.fc2.com/blog-entry-104.html"
+        ]
+      },
+      {
+        "name": "샤가르마가라",
+        "reason": "2두 길드퀘로 생성되지 않는 것으로 기재",
+        "sources": [
+          "https://ryogakucx.blog.fc2.com/blog-entry-112.html",
+          "https://ryogakucx.blog.fc2.com/blog-entry-104.html"
+        ]
+      },
+      {
+        "name": "크샬다오라",
+        "reason": "2두 길드퀘로 생성되지 않는 것으로 기재",
+        "sources": [
+          "https://ryogakucx.blog.fc2.com/blog-entry-112.html",
+          "https://ryogakucx.blog.fc2.com/blog-entry-104.html"
+        ]
+      },
+      {
+        "name": "오나즈치",
+        "reason": "2두 길드퀘로 생성되지 않는 것으로 기재",
+        "sources": [
+          "https://ryogakucx.blog.fc2.com/blog-entry-112.html",
+          "https://ryogakucx.blog.fc2.com/blog-entry-104.html"
+        ]
+      },
+      {
+        "name": "고어·마가라",
+        "reason": "2두 길드퀘로 생성되지 않는 것으로 기재",
+        "sources": [
+          "https://ryogakucx.blog.fc2.com/blog-entry-112.html",
+          "https://ryogakucx.blog.fc2.com/blog-entry-104.html"
+        ]
+      }
+    ],
+    "pointSlotBands": [
+      {
+        "points": 1,
+        "min": 2,
+        "max": 3,
+        "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html"
+      },
+      {
+        "points": 2,
+        "min": 2,
+        "max": 4,
+        "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html"
+      },
+      {
+        "points": 3,
+        "min": 3,
+        "max": 4,
+        "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html"
+      },
+      {
+        "points": 4,
+        "min": 3,
+        "max": 5,
+        "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html"
+      },
+      {
+        "points": 5,
+        "min": 4,
+        "max": 5,
+        "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html"
+      },
+      {
+        "points": 6,
+        "min": 4,
+        "max": 6,
+        "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html"
+      },
+      {
+        "points": 7,
+        "min": 5,
+        "max": 7,
+        "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html"
+      },
+      {
+        "points": 8,
+        "min": 5,
+        "max": 8,
+        "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html"
+      },
+      {
+        "points": 9,
+        "min": 6,
+        "max": 8,
+        "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html"
+      },
+      {
+        "points": 10,
+        "min": 7,
+        "max": 9,
+        "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html"
+      },
+      {
+        "points": 11,
+        "min": 8,
+        "max": 9,
+        "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html"
+      },
+      {
+        "points": 12,
+        "min": 8,
+        "max": 10,
+        "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html"
+      },
+      {
+        "points": 13,
+        "min": 9,
+        "max": 11,
+        "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html"
+      },
+      {
+        "points": 14,
+        "min": 9,
+        "max": 12,
+        "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html"
+      },
+      {
+        "points": 15,
+        "min": 10,
+        "max": 13,
+        "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html"
+      },
+      {
+        "points": 16,
+        "min": 11,
+        "max": 14,
+        "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html"
+      },
+      {
+        "points": 17,
+        "min": 12,
+        "max": 15,
+        "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html"
+      },
+      {
+        "points": 18,
+        "min": 12,
+        "max": 16,
+        "source": "https://ryogakucx.blog.fc2.com/blog-entry-104.html"
+      }
+    ],
+    "generationStatus": "not_all_combinations_independently_verified",
+    "caution": "두 몬스터 모두 2두 대상 몬스터인 경우에만 포인트 비교를 지원합니다. 수치상 합산이 가능하다는 사실은 특정 조합이 실제 길드퀘스트로 생성됨을 보장하지 않습니다.",
+    "pointCaution": "보상 포인트·공통칸은 Lv136~140, 원문에 명시된 상태(극한/광룡화 등) 기준으로만 산출합니다. 낮은 레벨과 다른 상태에 확대 적용하지 않습니다.",
+    "sources": [
+      "https://ryogakucx.blog.fc2.com/blog-entry-104.html",
+      "https://ryogakucx.blog.fc2.com/blog-entry-112.html",
+      "https://w.atwiki.jp/3dsmh4g/pages/395.html"
+    ]
   }
 }
