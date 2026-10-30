@@ -1,5 +1,8 @@
 
 let loaded=null, selected="",level=131,purpose="sphere",pair="single",duoLeft="도스람포스",duoRight="라잔";
+import {mountRelicMining} from "./relic-mining-guide.js?v=0.7.7-relic-mining-4";
+const REWARD_GOAL_KEY="mh4g-relic-appearance-goals-v1";
+let activeGoalId="";
 const make=(tag,cls,text)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(text!==undefined)e.textContent=text;return e};
 const choice=(items,value,change)=>{const s=make("select");for(const [v,t] of items){const o=make("option",null,t);o.value=v;o.selected=v===value;s.append(o)}s.onchange=()=>change(s.value);return s};
 const field=(name,control)=>{const l=make("label","rr-field");l.append(make("span",null,name),control);return l};
@@ -10,10 +13,28 @@ function notice(target,text){target.append(make("p","rr-note",text))}
 function render(d,host){
  host.replaceChildren();const names=[...new Set((d.qualityGuide?.monsterRewardSlots||[]).map(x=>x.monster))];
  if(!selected||!names.includes(selected))selected=names.includes("테오·테스카토르")?"테오·테스카토르":names[0];
- const top=make("section","panel rr-workbench rr-lookup");const heading=make("div","rr-heading");heading.append(make("span","rr-step","01 · 보상 조회"),make("h2",null,"선택한 길퀘 보상 분석"));top.append(heading);
+ const goals=(()=>{try{const a=JSON.parse(localStorage.getItem(REWARD_GOAL_KEY)||"[]");return Array.isArray(a)?a:[]}catch{return []}})();
+ const goalPanel=make("section","panel rr-workbench rr-goal-bridge");
+ const goalHead=make("div","rr-heading");goalHead.append(make("span","rr-step","저장한 외형 연동"),make("h2",null,"목표 발굴 외형 · 길퀘 연결"));goalPanel.append(goalHead);
+ if(goals.length){
+  const all=[];for(const [type,arr] of Object.entries(d.weaponAppearances||{}))for(const jp of new Set(arr.filter(x=>x&&x!=="-")))all.push({id:["weapon",type,jp].join("|"),name:d.weaponAppearanceNamesKo?.[jp]||jp,groups:arr.flatMap((x,i)=>x===jp?[i+1]:[])});
+  for(const jp of new Set(Object.values(d.armorAppearancePools||{}).flat()))all.push({id:["armor","방어구",jp].join("|"),name:d.armorAppearanceNamesKo?.[jp]||jp,groups:Object.entries(d.armorAppearancePools||{}).filter(([g,arr])=>arr.includes(jp)).map(([g])=>Number(g))});
+  const matched=goals.map(g=>all.find(x=>x.id===g.id)).filter(Boolean);
+  if(matched.length){
+   if(!matched.some(g=>g.id===activeGoalId))activeGoalId=matched[0].id;
+   goalPanel.append(field("저장한 외형",choice(matched.map(x=>[x.id,x.name]),activeGoalId,v=>{activeGoalId=v;render(d,host)})));
+   const g=matched.find(x=>x.id===activeGoalId);
+   const monsters=[...new Set(g.groups.flatMap(id=>d.sealedGroups?.find(x=>Number(x.id)===id)?.monsters||[]))];
+   notice(goalPanel,"외형 그룹 "+g.groups.join(", ")+" · 해당 길퀘 몬스터: "+monsters.join(" / ")+" · 발굴 장비 획득은 확정이 아닙니다.");
+   const buttons=make("div","rr-goal-monsters");
+   for(const monster of monsters){const b=make("button",null,monster+" 조회");b.onclick=()=>{selected=monster;render(d,host)};buttons.append(b)}goalPanel.append(buttons)
+  }else notice(goalPanel,"저장된 외형을 현재 발굴 DB에서 찾을 수 없습니다.");
+ }else notice(goalPanel,"발굴 외형 탭에서 ☆ 목표 저장을 누르면 관련 길퀘 후보가 여기에 표시됩니다.");
+ host.append(goalPanel);
+  const top=make("section","panel rr-workbench rr-lookup");const heading=make("div","rr-heading");heading.append(make("span","rr-step","01 · 보상 조회"),make("h2",null,"선택한 길퀘 보상 분석"));top.append(heading);
  notice(top,"몬스터·레벨·파밍 목적을 선택하면 관련 보상만 보여줍니다. 수치는 확인된 자료만 사용합니다.");
  const selectors=make("div","rr-fields");
- selectors.append(field("몬스터",choice(names.map(n=>[n,n]),selected,v=>{selected=v;const r=readRecords()[v];if(r){minutes=r.minutes;success=r.success}pair="single";render(d,host)})));
+ selectors.append(field("몬스터",choice(names.map(n=>[n,n]),selected,v=>{selected=v;render(d,host)})));
  const lv=make("input");lv.type="number";lv.min="86";lv.max="140";lv.step="1";lv.value=level;lv.onchange=()=>{level=Math.min(140,Math.max(86,Number(lv.value)||86));render(d,host)};
  selectors.append(field("길퀘 레벨 (86~140)",lv));
  selectors.append(field("파밍 목표",choice([["sphere","천갑옥"],["weapon","봉인 무기"],["armor","봉인 방어구"],["any","전체 보상"]],purpose,v=>{purpose=v;render(d,host)})));
@@ -82,7 +103,9 @@ function render(d,host){
  }
  farm.append(rows);if(!ranked.length)notice(farm,"선택 조건에서 검증된 후보가 없습니다.");
  }host.append(farm);
- const end=make("details","panel rr-source");end.append(make("summary",null,"계산 기준 및 원본 자료"));
+ const mining=make("section","panel rr-workbench rr-mining");mining.id="relicMiningGuide";host.append(mining);
+ void mountRelicMining(mining,level).catch(e=>{mining.textContent="채굴 자료 표시 오류: "+e.message});
+  const end=make("details","panel rr-source");end.append(make("summary",null,"계산 기준 및 원본 자료"));
  for(const [key,url] of Object.entries(loaded.sources)){const a=make("a",null,key+" · 출처");a.href=url;a.rel="noopener noreferrer";a.target="_blank";end.append(a)}
  notice(end,"2두 조합 결과와 단일 몬스터 1회 확률을 곱하거나 합산해 정확한 보상 기대값을 계산하지 않습니다.");
  host.append(end);
