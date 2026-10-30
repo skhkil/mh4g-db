@@ -1,0 +1,73 @@
+{
+  "version": "0.7.7-relic-mining-step4-20261030",
+  "scope": "MH4G G급 길드퀘스트 발굴장비 채굴 및 보물구역",
+  "sources": {
+    "wikiGuildQuest": "https://w.atwiki.jp/3dsmh4g/pages/395.html",
+    "wikiExploration": "https://w.atwiki.jp/3dsmh4g/pages/134.html",
+    "miningAnalysis": "https://ryogakucx.blog.fc2.com/blog-entry-104.html",
+    "encyclopedia": "https://wikiwiki.jp/nenaiko/%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0/%E7%99%BA%E6%8E%98%E8%A3%85%E5%82%99"
+  },
+  "probabilityScope": "파란 광석 채굴에서 각 발굴 감정품을 뽑는 추첨 비율(일본 플레이어 분석 자료). 퀘스트당 획득 확률 아님.",
+  "miningNodes": [
+    {
+      "id": "fixed",
+      "name": "고정 파란 광석",
+      "location": "보물구역 · 미로 · 부서진 기둥 구조의 고정 채굴 지점",
+      "sealedWeaponPercent": 7,
+      "sealedArmorPercent": 11,
+      "probabilityType": "single_mining_roll",
+      "source": "miningAnalysis",
+      "status": "community_analysis_not_official"
+    },
+    {
+      "id": "random",
+      "name": "무작위 파란 광석",
+      "location": "일반 구역에서 무작위로 등장하는 파란 채굴 지점",
+      "sealedWeaponPercent": 4,
+      "sealedArmorPercent": 7,
+      "probabilityType": "single_mining_roll",
+      "source": "miningAnalysis",
+      "status": "community_analysis_not_official"
+    }
+  ],
+  "treasurePatterns": [
+    {
+      "id": "1-2-3",
+      "areas": "수변 → 폐허 → 지하",
+      "fixedBlueNodes": 3,
+      "source": "wikiExploration"
+    },
+    {
+      "id": "1-2-4",
+      "areas": "수변 → 폐허 → 화단",
+      "fixedBlueNodes": 3,
+      "source": "wikiExploration"
+    },
+    {
+      "id": "2-3-4",
+      "areas": "폐허 → 지하 → 화단",
+      "fixedBlueNodes": 2,
+      "source": "wikiExploration"
+    },
+    {
+      "id": "2-3",
+      "areas": "폐허 → 지하",
+      "fixedBlueNodes": 2,
+      "source": "wikiExploration"
+    }
+  ],
+  "treasureRules": [
+    "길드퀘스트 클리어·실패·리타이어 후 확률적으로 보물구역 출현 알림이 뜨며, 알림 다음 출발에서 등장합니다.",
+    "보물구역이 어느 위치에 끼어드는지와 지형 구조는 해당 길드퀘스트 생성 시 정해진 맵 구성을 따릅니다.",
+    "한 길드퀘스트에서 보물구역 맵은 하나만 출현하며, 출현 여부 자체는 별도 추첨입니다.",
+    "보물구역 발견 확률의 최고 약 20%는 위키의 개략 설명이며 모든 레벨에 고정 적용하는 값이 아닙니다."
+  ],
+  "restrictions": [
+    "무기·방어구 합계 추첨 비율과 실제 한 번 채굴에서 나오는 아이템 수량을 동일시하지 않습니다.",
+    "4개 보물구역 패턴은 위키에 명시적으로 열거된 사례이며 가능한 모든 맵 구조를 보장하는 완전 목록이 아닙니다.",
+    "파란 광석 7%를 보물구역 출현 확률이나 길퀘 클리어 보상 확률과 곱해 정확한 퀘스트당 획득률을 계산하지 않습니다.",
+    "채굴과 클리어 보상은 완전히 다른 추첨 경로입니다. 전자의 확률을 후자의 확률에 더하지 않습니다.",
+    "봉인 감정품 획득 가능 레벨·위험군·상태에 따른 세부 채굴 확률표가 완성되지 않았으므로 위 비율을 모든 Lv86~140에 일률 적용하지 않습니다."
+  ],
+  "note": "명시된 7/11% 및 4/7%는 일본 플레이어 분석 자료에 기록된 수치로, 캡콤 공식 확률표로 독립 검증된 것은 아닙니다."
+}
