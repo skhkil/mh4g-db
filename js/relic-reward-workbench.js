@@ -14,6 +14,8 @@ function render(d,host){
  host.replaceChildren();const names=[...new Set((d.qualityGuide?.monsterRewardSlots||[]).map(x=>x.monster))];
  if(!selected||!names.includes(selected))selected=names.includes("테오·테스카토르")?"테오·테스카토르":names[0];
  const goals=(()=>{try{const a=JSON.parse(localStorage.getItem(REWARD_GOAL_KEY)||"[]");return Array.isArray(a)?a:[]}catch{return []}})();
+ const request=window.__mh4gRelicRewardTarget;
+ if(request?.monster&&names.includes(request.monster)){selected=request.monster;if(request.goalId)activeGoalId=request.goalId;window.__mh4gRelicRewardTarget=null;}
  const goalPanel=make("section","panel rr-workbench rr-goal-bridge");
  const goalHead=make("div","rr-heading");goalHead.append(make("span","rr-step","저장한 외형 연동"),make("h2",null,"목표 발굴 외형 · 길퀘 연결"));goalPanel.append(goalHead);
  if(goals.length){
@@ -122,7 +124,7 @@ export async function mountRelicRewards(d){
   }
   area.append(legacy);
  }
- try{if(!loaded){const x=await fetch("./data/relic_reward_workbench.json?v=0.7.7-relic-rewards-steps1-4",{cache:"no-cache"});if(!x.ok)throw Error("HTTP "+x.status);loaded=await x.json()}
+ try{if(!loaded){const x=await fetch("./data/relic_reward_workbench.json?v=0.7.7-relic-mining-bridge5",{cache:"no-cache"});if(!x.ok)throw Error("HTTP "+x.status);loaded=await x.json()}
  if(!loaded?.verifiedLevelBands||!loaded?.duoPresets)throw Error("Invalid reward workbench data");
  render(d,root);
  }catch(e){root.replaceChildren();notice(root,"보상 분석 데이터를 불러오지 못했습니다: "+e.message)}
