@@ -1,0 +1,217 @@
+{
+  "version": "0.7.7-relic-traits3b-20261030",
+  "scope": "MH4G G급 봉인된 발굴무기 참고 수치. 각성 수치는 스킬 없이 비활성인 숨은 속성에 해당.",
+  "sources": {
+    "values": "https://w.atwiki.jp/otameshine/pages/43.html",
+    "ranges": "https://r77tchan.github.io/MH4/html/elementValue.html",
+    "sharpness": "https://mixi.jp/view_diary.pl?from=neighbor_prev&id=1938297329&org_id=1938414534&owner_id=3561822",
+    "mechanics": "https://mh4info.com/?p=1283",
+    "fixedDecos": "https://bozumemo.blogspot.com/2014/11/4g_6.html",
+    "wiki": "https://w.atwiki.jp/3dsmh4g/pages/166.html"
+  },
+  "weaponGroups": [
+    {
+      "id": "heavy",
+      "names": [
+        "대검",
+        "수렵피리"
+      ],
+      "normalElement": [
+        630,
+        670,
+        700,
+        750
+      ],
+      "awakenedElement": [
+        660,
+        690,
+        720,
+        810
+      ],
+      "normalStatus": [
+        360,
+        400,
+        450
+      ],
+      "awakenedStatus": [
+        390,
+        430,
+        480
+      ]
+    },
+    {
+      "id": "medium",
+      "names": [
+        "태도",
+        "해머",
+        "랜스",
+        "건랜스",
+        "슬래시액스",
+        "차지액스"
+      ],
+      "normalElement": [
+        420,
+        450,
+        470,
+        500
+      ],
+      "awakenedElement": [
+        440,
+        460,
+        480,
+        540
+      ],
+      "normalStatus": [
+        240,
+        270,
+        300
+      ],
+      "awakenedStatus": [
+        260,
+        290,
+        320
+      ]
+    },
+    {
+      "id": "light",
+      "names": [
+        "한손검",
+        "쌍검",
+        "조충곤",
+        "활"
+      ],
+      "normalElement": [
+        310,
+        330,
+        350,
+        370
+      ],
+      "awakenedElement": [
+        330,
+        340,
+        360,
+        400
+      ],
+      "normalStatus": [
+        180,
+        200,
+        220
+      ],
+      "awakenedStatus": [
+        190,
+        210,
+        240
+      ],
+      "statusExceptions": [
+        "활"
+      ]
+    }
+  ],
+  "gunnerUnverified": [
+    "라이트보우건",
+    "헤비보우건"
+  ],
+  "attributeKinds": [
+    [
+      "none",
+      "무속성"
+    ],
+    [
+      "fire",
+      "불"
+    ],
+    [
+      "water",
+      "물"
+    ],
+    [
+      "thunder",
+      "번개"
+    ],
+    [
+      "ice",
+      "얼음"
+    ],
+    [
+      "dragon",
+      "용"
+    ],
+    [
+      "poison",
+      "독"
+    ],
+    [
+      "paralysis",
+      "마비"
+    ],
+    [
+      "sleep",
+      "수면"
+    ],
+    [
+      "blast",
+      "폭파"
+    ]
+  ],
+  "sharpnessTypes": [
+    {
+      "id": "unknown",
+      "label": "아직 확인 안 함",
+      "note": "예리도를 선택하지 않음"
+    },
+    {
+      "id": "natural-purple",
+      "label": "기본 보라 20 / 흰 80",
+      "note": "스무라(素紫): 장인 없이 보라 예리도 사용"
+    },
+    {
+      "id": "handicraft-purple-40",
+      "label": "장인 보라 40 / 흰 60",
+      "note": "장인 적용 시 보라 40형"
+    },
+    {
+      "id": "handicraft-purple-20",
+      "label": "장인 보라 20 / 흰 50",
+      "note": "장인 적용 시 보라 20형"
+    },
+    {
+      "id": "long-white",
+      "label": "긴 흰 예리도",
+      "note": "시로나가스(白長): 상한/정확한 구간은 무기 화면 기준"
+    }
+  ],
+  "blademasterOnlyPrefixes": [
+    "발굴 회피술주",
+    "발굴 상태내성주",
+    "발굴 도공주"
+  ],
+  "gunnerOnlyPrefixes": [
+    "발굴 분노주",
+    "발굴 완강주",
+    "발굴 사수주"
+  ],
+  "slotModes": [
+    [
+      "unknown",
+      "미확인"
+    ],
+    [
+      "empty",
+      "빈 슬롯"
+    ],
+    [
+      "fixed",
+      "고정 장식주"
+    ]
+  ],
+  "restrictions": [
+    "봉인된 발굴무기의 속성·상태이상 값은 무기군마다 정해진 이산 목록으로 제한합니다. 각성 필요 여부를 반드시 구분합니다.",
+    "단일 무기에 속성 한 종류 또는 상태이상 한 종류 또는 무속성으로 입력합니다. 둘을 동시에 입력하지 않습니다.",
+    "활은 해당 참고 자료에서 상태이상치 숫자 테이블 대신 병·사격 타입으로 다루므로 상태이상치 판별에서 제외합니다.",
+    "보우건은 탄종·반동·장전 등 별도 특수 성능 판별이 필요해 이 수치 테이블을 강제 적용하지 않습니다.",
+    "예리도 네 가지는 선호 참고 분류입니다. 무기 공격 계열별 예리도 결합 가능성/희소도 전수 표가 없어 개별 조합을 확정하지 않습니다.",
+    "기존 발굴 고정 장식주 DB에 등록된 후보만 보여주고, 무기군과 크기가 맞는지 1차로 제한합니다. 상세 품질 등급·공격 계열 결합 검증은 아직 불완전합니다.",
+    "고정 장식주는 해제 불가. 빈 슬롯과 동일한 슬롯 수의 장식주 후보를 한꺼번에 선택하지 않습니다.",
+    "이 화면은 무기종 자체 수치의 출현 패턴 검토이며 합법/불법 판별을 위한 완전한 판정기나 최종 종결 등급표가 아닙니다."
+  ]
+}
