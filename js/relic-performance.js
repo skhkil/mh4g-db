@@ -5,25 +5,26 @@ const select=(options,value,onChange)=>{const s=node("select");for(const [v,labe
 const field=(label,control)=>{const l=node("label","rp-field");l.append(node("span",null,label),control);return l};
 const num=(value,ph,onChange)=>{const x=node("input");x.type="number";x.inputMode="numeric";x.step="1";x.placeholder=ph;x.value=value;x.oninput=()=>onChange(x.value);return x};
 const text=(host,value,cls="rr-note")=>host.append(node("p",cls,value));
-export function predictRelic(d,type,level,shown,affinity,defense){
+export function predictRelic(d,type,level,shown,affinity,defense,sharpness="unknown"){
  const table=d.weaponAttackTables?.find(x=>x.weaponType===type),p=d.attackProgression;
  if(!table||!p||!Number.isInteger(level)||level<1||level>4||!Number.isInteger(shown)||shown<=0)return [];
  const rule=p.bonusRules?.[type],result=[];
+ const naturalBonuses=sharpness==="naturalPurple"?[20]:sharpness==="unknown"&& !["라이트보우건","헤비보우건","활"].includes(type)?[0,20]:[0];
  for(const [base,seq] of Object.entries(p.stages)){
   const i=level-1;
-  for(const bonus of rule?.increments||[0]){
+  for(const bonus of rule?.increments||[0])for(const naturalBonus of naturalBonuses){
    if(!Number.isFinite(seq.raw[i]))continue;
    const raw=seq.raw[i]+(rule?.key==="raw"?bonus:0);
-   const a=seq.affinity[i]===null?null:seq.affinity[i]+(rule?.key==="affinity"?bonus:0);
+   const a=seq.affinity[i]===null?null:seq.affinity[i]+(rule?.key==="affinity"?bonus:0)+naturalBonus;
    const df=seq.defense[i]===null?null:seq.defense[i]+(rule?.key==="defense"?bonus:0);
    if(Math.round(raw*table.displayMultiplier)!==shown)continue;
    if(Number.isFinite(affinity)&&a!==null&&a!==affinity)continue;
    if(Number.isFinite(defense)&&df!==null&&df!==defense)continue;
    const next=p.stages[base],last=3;
    const finalRaw=next.raw[last]===null?null:next.raw[last]+(rule?.key==="raw"?bonus:0);
-   const finalAffinity=next.affinity[last]===null?null:next.affinity[last]+(rule?.key==="affinity"?bonus:0);
+   const finalAffinity=next.affinity[last]===null?null:next.affinity[last]+(rule?.key==="affinity"?bonus:0)+naturalBonus;
    const finalDefense=next.defense[last]===null?null:next.defense[last]+(rule?.key==="defense"?bonus:0);
-   result.push({base,bonus,raw,affinity:a,defense:df,finalRaw,finalAffinity,finalDefense,finalDisplay:finalRaw===null?null:Math.round(finalRaw*table.displayMultiplier),uncertain:a===null||df===null});
+   result.push({base,bonus,naturalBonus,raw,affinity:a,defense:df,finalRaw,finalAffinity,finalDefense,finalDisplay:finalRaw===null?null:Math.round(finalRaw*table.displayMultiplier),uncertain:a===null||df===null});
   }
  }
  return result;
@@ -38,8 +39,8 @@ function render(d,type,guide,host,decorations=[]){
  host.replaceChildren();
  const sharpnessApplicable=!["라이트보우건","헤비보우건","활"].includes(type);
  const form=node("section","panel rp-panel"),head=node("div","rr-heading");
- head.append(node("span","rr-step","무기 성능 분석 · STEP 4~5"),node("h2",null,"발굴무기 성능·강화 가치 분석"));
- text(head,"공격력과 회심을 입력하면 기대 물리 성능을 계산합니다. 예리도·슬롯·무기별 특수옵션은 선택 입력이며, 확인되지 않은 값은 추정하지 않습니다.");
+ head.append(node("span","rr-step","무기 성능 판별 · 강화 테이블"),node("h2",null,"발굴무기 강화 수치 조회"));
+ text(head,"감정한 무기의 공격력·회심률을 넣으면 MH4G 고정 성능 테이블에서 Lv1~4 수치를 찾아줍니다. 유형을 구분하려면 예리도 유형도 지정하세요.");
  form.append(head);
  const inputs=node("div","rp-fields");
  inputs.append(field("강화 단계",select([["1","Lv1 미강화"],["2","Lv2"],["3","Lv3"],["4","Lv4 최종"]],state.level,x=>{state.level=x;render(d,type,guide,host)})));
@@ -49,7 +50,7 @@ function render(d,type,guide,host,decorations=[]){
  form.append(inputs);
  const optional=node("details","rp-extra");optional.append(node("summary",null,"예리도·속성·슬롯 추가 입력 (선택)"));
  const extra=node("div","rp-fields");
- if(sharpnessApplicable)extra.append(field("실전 유지 예리도",select(Object.entries(guide.sharpness).map(([id,x])=>[id,x.label]),state.sharp,x=>{state.sharp=x})));
+ if(sharpnessApplicable)extra.append(field("발굴 예리도 유형",select(Object.entries(guide.sharpness).map(([id,x])=>[id,x.label]),state.sharp,x=>{state.sharp=x})));
  extra.append(field("슬롯 구성",select(guide.slots,state.slots,x=>{state.slots=x})));
  extra.append(field("속성/상태이상 메모",num(state.element,"해당 수치 · 선택",x=>{state.element=x})));
  optional.append(extra);
@@ -71,7 +72,7 @@ function render(d,type,guide,host,decorations=[]){
  const ownerActions=node("div","rp-owned-actions"),save=node("button","rp-run","현재 무기 저장"),discard=node("button","ghost","새 무기로 입력");
  ownerActions.append(save,discard);owner.append(ownerActions);
  const status=node("p","rr-note");owner.append(status);form.append(owner);
- const run=node("button","rp-run","성능 분석하기"),result=node("div","rp-results");run.type="button";form.append(run,result);
+ const run=node("button","rp-run","강화 수치 조회"),result=node("div","rp-results");run.type="button";form.append(run,result);
  const refs=node("details","rp-reference");refs.append(node("summary",null,"기존 무기별 기본배율·강화 표 참고"));
  for(const t of retainedTables){t.classList.add("rp-reference-table");refs.append(t)}
  form.append(refs);
@@ -83,48 +84,38 @@ function render(d,type,guide,host,decorations=[]){
   if(!state.attack||!Number.isInteger(shown)||shown<=0){text(result,"무기 표시 공격력을 입력해 주세요.","rp-caution");return}
   const af=state.affinity.trim()===""?NaN:Number(state.affinity),def=state.defense.trim()===""?NaN:Number(state.defense);
   if(state.affinity.trim()!==""&&(!Number.isInteger(af)||af< -100||af>100)){text(result,"회심률은 -100~100의 정수로 입력해 주세요.","rp-caution");return}
-  if(state.defense.trim()!==""&&(!Number.isInteger(def)||def<0)){text(result,"무기 방어 보너스는 0 이상의 정수로 입력해 주세요.","rp-caution");return}
-  const candidates=predictRelic(d,type,lv,shown,af,def);
-  const table=d.weaponAttackTables.find(t=>t.weaponType===type),raw=shown/table.displayMultiplier;
-  const sharp=sharpnessApplicable?guide.sharpness[state.sharp]:null;
-  const chosenFactor=sharpnessApplicable?(sharp?.factor??null):1;
-  const actualAff=Number.isFinite(af)?af:(candidates.length===1?candidates[0].affinity:null);
-  const metrics=node("div","rp-metrics");
-  const metric=(label,value,detail)=>{const x=node("div","rp-metric");x.append(node("small",null,label),node("strong",null,value));if(detail)x.append(node("span",null,detail));metrics.append(x)};
-  metric("현재 환산 공격배율",raw.toFixed(2),"무기 자체 공격력 ÷ 표시배율");
-  metric("회심 기대 물리배율",actualAff===null?"회심 입력 필요":physicalIndex(raw,actualAff).toFixed(2),"예리도 보정 전 · 모션/육질 제외");
-  metric("예리도까지 반영",chosenFactor===null?"예리도 미선택":actualAff===null?"회심 입력 필요":physicalIndex(raw,actualAff,chosenFactor).toFixed(2),!sharpnessApplicable?"거너: 예리도 미적용":"선택한 예리도를 계속 유지한다고 가정");
-  metric("공격 계열 후보",String(candidates.length)+"건",candidates.length>1?"회심·방어 입력 시 후보 축소 가능":"확인된 데이터 기준");
-  result.append(metrics);
-  if(!candidates.length){text(result,"초기 계열을 확정할 근거가 없습니다. 수치·강화 단계·스킬/도핑 보정 여부를 확인해 주세요. 일부 중간 강화 데이터는 미확인입니다.","rp-caution")}
-  else{
-   const cards=node("div","rp-candidate-list");
-   for(const c of candidates){
-    const card=node("article","rp-candidate");
-    card.append(node("strong",null,"초기 "+c.base+" 계열"+(c.bonus?" · 추가 보정 +"+c.bonus:"")));
-    const current=node("p",null,"현재 공격배율 "+c.raw+" · 회심 "+(c.affinity??"미확인")+"% · 방어 "+(c.defense??"미확인"));card.append(current);
-    const lastLine=node("p",null,"Lv4 예상 표시 공격력 "+(c.finalDisplay??"미확인")+" · 회심 "+(c.finalAffinity===null?"미확인":c.finalAffinity+"%")+" · 방어 "+(c.finalDefense===null?"미확인":c.finalDefense));
-    card.append(lastLine);
-    if(c.finalRaw!==null&&c.finalAffinity!==null){
-     const fin=physicalIndex(c.finalRaw,c.finalAffinity,chosenFactor??1);
-     const start=Number.isFinite(actualAff)?physicalIndex(raw,actualAff,chosenFactor??1):null;
-     card.append(node("p","rp-gain","Lv4 회심 반영 지표 "+fin.toFixed(2)+(start!==null?" · 현재 대비 "+(fin-start>=0?"+":"")+(fin-start).toFixed(2):"")));
-    }
-    if(c.uncertain)text(card,"강화 단계의 회심·방어 수치 일부 미검증","rr-note");
-    cards.append(card)
-   }
-   result.append(cards);
+  if(state.defense.trim()!==""&&(!Number.isInteger(def)||def<0)){text(result,"방어력 보너스는 0 이상의 정수로 입력해 주세요.","rp-caution");return}
+  const candidates=predictRelic(d,type,lv,shown,af,def,sharpnessApplicable?state.sharp:"longWhite");
+  if(!candidates.length){
+    text(result,"일치하는 고정 성능 유형이 없습니다. 무기 자체 수치인지, 선택한 강화 단계와 예리도가 맞는지 확인해 주세요. 자료가 미확인인 유형은 조회되지 않을 수 있습니다.","rp-caution");
+    return;
   }
-  const tips=node("div","rp-tips"),heading=node("h3",null,"이 무기에서 중요한 점");tips.append(heading);
-  text(tips,profile.focus);
-  if(sharpnessApplicable&&sharp?.needsHandicraft)text(tips,"선택한 보라 예리도는 장인 적용을 가정했어. 장인 없이 사용할 때는 이 예리도 지표가 적용되지 않아.");
-  if(sharpnessApplicable&&sharp?.color==="purple")text(tips,"보라 유지 중에만 해당 배율을 적용. 실제 예리도 소모를 고려하지 않아.");
-  if(state.slots==="empty3")text(tips,"빈 슬롯 3개는 스킬 구성의 유연성이 큰 장점이야. 공격 지표에는 더하지 않았어.");
-  else if(state.slots==="fixed")text(tips,"고정 장식주는 슬롯의 스킬 효과를 확인해야 해. 빈 슬롯 3개와 동일하게 평가할 수 없어.");
-  for(const f of profile.fields||[]){const value=state.special[type+"-"+f.id];if(value&&value!=="unknown"&&profile.interpretations?.[value])text(tips,profile.interpretations[value]);}
-  if(state.element)text(tips,"속성·상태이상 "+state.element+"은 입력 메모로만 사용해. 속성 육질·무기 모션·각성 여부가 없으므로 물리 지표에 더하지 않았어.");
-  result.append(tips);
-  text(result,"계산은 무기 자체 진공격력·회심·지정 예리도만 사용하며, 스킬/부적/도핑·속성육질·포격·병·탄·사격보정·모션값은 제외. 서로 다른 무기종 지표를 직접 비교하지 마세요.");
+  const unique=[...new Map(candidates.map(c=>[[c.base,c.bonus,c.naturalBonus].join("|"),c])).values()];
+  const summary=node("p","rr-note",unique.length===1?"고정 테이블 일치 · 강화 단계별 수치":"일치하는 유형 "+unique.length+"개 · 회심/방어/예리도 선택으로 후보를 좁힐 수 있습니다.");
+  result.append(summary);
+  const table=d.weaponAttackTables.find(t=>t.weaponType===type);
+  for(const c of unique){
+    const card=node("article","rp-candidate");
+    card.append(node("h3",null,"공격 계열 "+c.base+(c.bonus?" · 무기종 추가 +"+c.bonus:"")+(c.naturalBonus?" · 기본 보라 회심 +20%":"")));
+    const grid=node("div","rp-candidate-table");
+    const tab=node("table");tab.className="table-panel";
+    const thead=node("thead"),tr=node("tr");
+    for(const title of ["강화","공격력","회심률","방어 보너스"])tr.append(node("th",null,title));
+    thead.append(tr);tab.append(thead);
+    const tbody=node("tbody"),p=d.attackProgression,seq=p.stages[c.base],rule=p.bonusRules?.[type];
+    for(let i=0;i<4;i++){
+      const raw=seq.raw[i]===null?null:seq.raw[i]+(rule?.key==="raw"?c.bonus:0);
+      const a=seq.affinity[i]===null?null:seq.affinity[i]+(rule?.key==="affinity"?c.bonus:0)+c.naturalBonus;
+      const df=seq.defense[i]===null?null:seq.defense[i]+(rule?.key==="defense"?c.bonus:0);
+      const row=node("tr");
+      for(const v of ["Lv"+(i+1)+(i===lv-1?" (현재)":""),raw===null?"미확인":String(Math.round(raw*table.displayMultiplier)),a===null?"미확인":(a>0?"+":"")+a+"%",df===null?"미확인":"+"+df])row.append(node("td",null,v));
+      tbody.append(row);
+    }
+    tab.append(tbody);grid.append(tab);card.append(grid);
+    if(seq.raw.some(x=>x===null)||seq.affinity.some(x=>x===null)||seq.defense.some(x=>x===null))text(card,"일부 중간 단계는 검증된 수치가 없어 미확인으로 표시합니다.","rr-note");
+    result.append(card);
+  }
+  text(result,"공격력·회심률·방어 보너스는 발굴무기 자체 수치를 기준으로 조회합니다. 속성·예리도·고정 장식주는 강화로 증가하지 않습니다. 자료: MH4G@wiki G급 발굴장비 / otameshine 발굴장비 표.","rr-note");
  }
  const STORE="mh4g-owned-relic-weapons-v1";
  const records=()=>{try{const a=JSON.parse(localStorage.getItem(STORE)||"[]");return Array.isArray(a)?a:[]}catch{return []}};
