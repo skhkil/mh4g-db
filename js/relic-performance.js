@@ -64,19 +64,19 @@ function render(d,type,guide,host,decorations=[],traits=null){
  const candidatesFor=(shown,af=NaN,def=NaN)=>state.attack?predictRelic(d,type,stage,shown,af,def,sharpnessApplicable?state.sharp:"unknown"):[];
  const all=state.attack?candidatesFor(Number(state.attack)):[];
  const affinityValues=[...new Set(all.map(x=>x.affinity).filter(Number.isFinite))].sort((a,b)=>a-b);
- if(state.affinity&&!affinityValues.includes(Number(state.affinity))){state.affinity="";state.defense=""}
+ const affinityMismatch=state.affinity!==""&&!affinityValues.includes(Number(state.affinity));
  const aff=state.affinity===""?NaN:Number(state.affinity);
  const afterAff=state.affinity===""?all:candidatesFor(Number(state.attack),aff);
  const defenses=[...new Set(afterAff.map(x=>x.defense).filter(Number.isFinite))].sort((a,b)=>a-b);
- if(state.defense&&!defenses.includes(Number(state.defense)))state.defense="";
+ const defenseMismatch=state.defense!==""&&!defenses.includes(Number(state.defense));
  inputs.append(field("강화 단계",select([["1","Lv1 미강화"],["2","Lv2"],["3","Lv3"],["4","Lv4 최종"]],state.level,x=>change("level",x,["attack","affinity","defense"]))));
  inputs.append(field("표시 공격력",select([["","공격력 선택"],...attacks.map(v=>[String(v),String(v)])],state.attack,x=>change("attack",x,["affinity","defense"]))));
- inputs.append(field("회심률",select([["","회심률 선택"],...affinityValues.map(v=>[String(v),(v>0?"+":"")+v+"%"])],state.affinity,x=>change("affinity",x,["defense"]))));
- inputs.append(field("방어력 보너스",select([["","선택 안 함"],...defenses.map(v=>[String(v),"+"+v])],state.defense,x=>change("defense",x))));
+ inputs.append(field("회심률",select([["","회심률 선택"],...affinityValues.map(v=>[String(v),(v>0?"+":"")+v+"%"]),...(affinityMismatch?[[state.affinity,(Number(state.affinity)>0?"+":"")+state.affinity+"% (선택값 · 불일치)"]]:[])],state.affinity,x=>change("affinity",x,["defense"]))));
+ inputs.append(field("방어력 보너스",select([["","선택 안 함"],...defenses.map(v=>[String(v),"+"+v]),...(defenseMismatch?[[state.defense,"+"+state.defense+" (선택값 · 불일치)"]]:[])],state.defense,x=>change("defense",x))));
  form.append(inputs);
  const optional=node("details","rp-extra");optional.open=true;optional.append(node("summary",null,"예리도 · 속성 · 슬롯"));
  const extra=node("div","rp-fields");
- if(sharpnessApplicable)extra.append(field("예리도 유형",select(Object.entries(guide.sharpness).map(([id,x])=>[id,x.label]),state.sharp,x=>change("sharp",x,["attack","affinity","defense"]))));
+ if(sharpnessApplicable)extra.append(field("예리도 유형",select(Object.entries(guide.sharpness).map(([id,x])=>[id,x.label]),state.sharp,x=>change("sharp",x))));
  const group=traits?.weaponGroups?.find(g=>g.names.includes(type));
  const kinds=traits?.attributeKinds||[["none","무속성"],["fire","불"],["water","물"],["thunder","번개"],["ice","얼음"],["dragon","용"],["poison","독"],["paralysis","마비"],["sleep","수면"],["blast","폭파"]];
  const allowedKinds=(!group||isGunner)?[["none","무속성/미확인"]]:kinds.filter(([k])=>!group.statusExceptions?.includes(type)||!["poison","paralysis","sleep","blast"].includes(k));
@@ -124,7 +124,7 @@ function render(d,type,guide,host,decorations=[],traits=null){
   if(state.defense.trim()!==""&&(!Number.isInteger(def)||def<0)){text(result,"방어력 보너스는 0 이상의 정수로 입력해 주세요.","rp-caution");return}
   const candidates=predictRelic(d,type,lv,shown,af,def,sharpnessApplicable?state.sharp:"unknown");
   if(!candidates.length){
-    text(result,"일치하는 고정 성능 유형이 없습니다. 무기 자체 수치인지, 선택한 강화 단계와 예리도가 맞는지 확인해 주세요. 자료가 미확인인 유형은 조회되지 않을 수 있습니다.","rp-caution");
+    text(result,"선택한 공격력·회심·방어·예리도의 조합이 현재 테이블에 없습니다. 기존 선택값은 유지됩니다. 공격력과 회심을 다시 확인하거나 예리도를 미확인으로 바꿔 비교하세요.","rp-caution");
     return;
   }
   const unique=[...new Map(candidates.map(c=>[[c.base,c.bonus,c.variant].join("|"),c])).values()];
