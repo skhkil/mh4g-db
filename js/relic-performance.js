@@ -16,7 +16,8 @@ export function predictRelic(d,type,level,shown,affinity,defense,sharpness="unkn
   for(const variant of (fixedBonuses[type]?variants:["handicraft"])){
    const bonus=fixedBonuses[type]?.[variant]??0, naturalBonus=0;
    if(!Number.isFinite(seq.raw[i]))continue;
-   const raw=seq.raw[i]+(rule?.key==="raw"?bonus:0);
+   const stageBonus=rule?.key==="raw"&&base==="250"?Math.max(0,bonus-10):bonus;
+   const raw=seq.raw[i]+(rule?.key==="raw"?stageBonus:0);
    const a=seq.affinity[i]===null?null:seq.affinity[i]+(rule?.key==="affinity"?bonus:0)+naturalBonus;
    const df=seq.defense[i]===null?null:seq.defense[i]+(rule?.key==="defense"?bonus:0);
    if(Math.round(raw*table.displayMultiplier)!==shown)continue;
@@ -106,7 +107,8 @@ function render(d,type,guide,host,decorations=[]){
     thead.append(tr);tab.append(thead);
     const tbody=node("tbody"),p=d.attackProgression,seq=p.stages[c.base],rule=p.bonusRules?.[type];
     for(let i=0;i<4;i++){
-      const raw=seq.raw[i]===null?null:seq.raw[i]+(rule?.key==="raw"?c.bonus:0);
+      const stageBonus=rule?.key==="raw"&&c.base==="250"&&i===0?Math.max(0,c.bonus-10):c.bonus;
+      const raw=seq.raw[i]===null?null:seq.raw[i]+(rule?.key==="raw"?stageBonus:0);
       const a=seq.affinity[i]===null?null:seq.affinity[i]+(rule?.key==="affinity"?c.bonus:0)+c.naturalBonus;
       const df=seq.defense[i]===null?null:seq.defense[i]+(rule?.key==="defense"?c.bonus:0);
       const row=node("tr");
