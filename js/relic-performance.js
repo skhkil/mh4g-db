@@ -16,7 +16,7 @@ export function predictRelic(d,type,level,shown,affinity,defense,sharpness="unkn
   for(const variant of (fixedBonuses[type]?variants:["handicraft"])){
    const bonus=fixedBonuses[type]?.[variant]??0, naturalBonus=0;
    if(!Number.isFinite(seq.raw[i]))continue;
-   const stageBonus=rule?.key==="raw"&&base==="250"?Math.max(0,bonus-10):bonus;
+   const stageBonus=rule?.key==="raw"&&base==="250"&&i===0?Math.max(0,bonus-10):bonus;
    const raw=seq.raw[i]+(rule?.key==="raw"?stageBonus:0);
    const a=seq.affinity[i]===null?null:seq.affinity[i]+(rule?.key==="affinity"?bonus:0)+naturalBonus;
    const df=seq.defense[i]===null?null:seq.defense[i]+(rule?.key==="defense"?bonus:0);
@@ -38,7 +38,7 @@ export function physicalIndex(raw,aff,sharpness=1){
  return raw*affinityFactor*sharpness;
 }
 function render(d,type,guide,host,decorations=[],traits=null){
- const retainedTables=[...host.querySelectorAll(".table-panel")];
+ const retainedTables=[...host.querySelectorAll(":scope > .table-panel, :scope > .rp-reference .rp-reference-table, :scope > .panel > .table-panel")];
  host.replaceChildren();
  const sharpnessApplicable=!["라이트보우건","헤비보우건","활"].includes(type);
  const form=node("section","panel rp-panel"),head=node("div","rr-heading");
@@ -79,8 +79,6 @@ function render(d,type,guide,host,decorations=[],traits=null){
  if(sharpnessApplicable)extra.append(field("예리도 유형",select(Object.entries(guide.sharpness).map(([id,x])=>[id,x.label]),state.sharp,x=>change("sharp",x,["attack","affinity","defense"]))));
  const group=traits?.weaponGroups?.find(g=>g.names.includes(type));
  const kinds=traits?.attributeKinds||[["none","무속성"],["fire","불"],["water","물"],["thunder","번개"],["ice","얼음"],["dragon","용"],["poison","독"],["paralysis","마비"],["sleep","수면"],["blast","폭파"]];
- const isStatus=["poison","paralysis","sleep","blast"].includes(state.attributeKind);
- const supported=!!group&&!(group.statusExceptions||[]).includes(type)&&!isGunner;
  const allowedKinds=(!group||isGunner)?[["none","무속성/미확인"]]:kinds.filter(([k])=>!group.statusExceptions?.includes(type)||!["poison","paralysis","sleep","blast"].includes(k));
  if(!allowedKinds.some(([k])=>k===state.attributeKind))state.attributeKind="none";
  const valueKey=(["poison","paralysis","sleep","blast"].includes(state.attributeKind)?"Status":"Element");
