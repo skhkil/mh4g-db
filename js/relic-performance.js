@@ -9,10 +9,12 @@ export function predictRelic(d,type,level,shown,affinity,defense,sharpness="unkn
  const table=d.weaponAttackTables?.find(x=>x.weaponType===type),p=d.attackProgression;
  if(!table||!p||!Number.isInteger(level)||level<1||level>4||!Number.isInteger(shown)||shown<=0)return [];
  const rule=p.bonusRules?.[type],result=[];
- const naturalBonuses=sharpness==="naturalPurple"?[20]:sharpness==="unknown"&& !["라이트보우건","헤비보우건","활"].includes(type)?[0,20]:[0];
+ const variants=sharpness==="naturalPurple"?["natural"]:sharpness==="unknown"?["natural","handicraft"]:["handicraft"];
+ const fixedBonuses={대검:{natural:20,handicraft:10},해머:{natural:20,handicraft:10},태도:{natural:20,handicraft:10},쌍검:{natural:20,handicraft:10},한손검:{natural:35,handicraft:20},랜스:{natural:35,handicraft:20}};
  for(const [base,seq] of Object.entries(p.stages)){
   const i=level-1;
-  for(const bonus of rule?.increments||[0])for(const naturalBonus of naturalBonuses){
+  for(const variant of (fixedBonuses[type]?variants:["handicraft"])){
+   const bonus=fixedBonuses[type]?.[variant]??0, naturalBonus=0;
    if(!Number.isFinite(seq.raw[i]))continue;
    const raw=seq.raw[i]+(rule?.key==="raw"?bonus:0);
    const a=seq.affinity[i]===null?null:seq.affinity[i]+(rule?.key==="affinity"?bonus:0)+naturalBonus;
@@ -24,7 +26,7 @@ export function predictRelic(d,type,level,shown,affinity,defense,sharpness="unkn
    const finalRaw=next.raw[last]===null?null:next.raw[last]+(rule?.key==="raw"?bonus:0);
    const finalAffinity=next.affinity[last]===null?null:next.affinity[last]+(rule?.key==="affinity"?bonus:0)+naturalBonus;
    const finalDefense=next.defense[last]===null?null:next.defense[last]+(rule?.key==="defense"?bonus:0);
-   result.push({base,bonus,naturalBonus,raw,affinity:a,defense:df,finalRaw,finalAffinity,finalDefense,finalDisplay:finalRaw===null?null:Math.round(finalRaw*table.displayMultiplier),uncertain:a===null||df===null});
+   result.push({base,bonus,naturalBonus,variant,raw,affinity:a,defense:df,finalRaw,finalAffinity,finalDefense,finalDisplay:finalRaw===null?null:Math.round(finalRaw*table.displayMultiplier),uncertain:a===null||df===null});
   }
  }
  return result;
@@ -90,13 +92,13 @@ function render(d,type,guide,host,decorations=[]){
     text(result,"일치하는 고정 성능 유형이 없습니다. 무기 자체 수치인지, 선택한 강화 단계와 예리도가 맞는지 확인해 주세요. 자료가 미확인인 유형은 조회되지 않을 수 있습니다.","rp-caution");
     return;
   }
-  const unique=[...new Map(candidates.map(c=>[[c.base,c.bonus,c.naturalBonus].join("|"),c])).values()];
+  const unique=[...new Map(candidates.map(c=>[[c.base,c.bonus,c.variant].join("|"),c])).values()];
   const summary=node("p","rr-note",unique.length===1?"고정 테이블 일치 · 강화 단계별 수치":"일치하는 유형 "+unique.length+"개 · 회심/방어/예리도 선택으로 후보를 좁힐 수 있습니다.");
   result.append(summary);
   const table=d.weaponAttackTables.find(t=>t.weaponType===type);
   for(const c of unique){
     const card=node("article","rp-candidate");
-    card.append(node("h3",null,"공격 계열 "+c.base+(c.bonus?" · 무기종 추가 +"+c.bonus:"")+(c.naturalBonus?" · 기본 보라 회심 +20%":"")));
+    card.append(node("h3",null,"공격 계열 "+c.base+(c.variant==="natural"?" · 기본 보라 20":c.variant==="handicraft"?" · 예리도+1 보라 유형":"")));
     const grid=node("div","rp-candidate-table");
     const tab=node("table");tab.className="table-panel";
     const thead=node("thead"),tr=node("tr");
@@ -160,7 +162,7 @@ function render(d,type,guide,host,decorations=[]){
 export async function mountRelicPerformance(d,type,decorations=[]){
  const id=++sequence;const host=document.querySelector("#relicPanel-attack > .panel");if(!host)return;
  try{
-  if(!loading)loading=fetch("./data/relic_performance_guide.json?v=0.7.7-relic-performance45",{cache:"no-cache"}).then(r=>{if(!r.ok)throw Error("HTTP "+r.status);return r.json()}).then(v=>{loaded=v;return v}).catch(e=>{loading=null;throw e});
+  if(!loading)loading=fetch("./data/relic_performance_guide.json?v=0.7.8-relic-fixed-lookup",{cache:"no-cache"}).then(r=>{if(!r.ok)throw Error("HTTP "+r.status);return r.json()}).then(v=>{loaded=v;return v}).catch(e=>{loading=null;throw e});
   const guide=loaded||await loading;
   if(id!==sequence||!host.isConnected)return;
   render(d,type,guide,host,decorations);
