@@ -1951,3 +1951,9 @@ button{border:1px solid var(--line);background:#202b39;color:white;border-radius
 #page-relic-equipment .rp-panel .rp-special>summary{cursor:pointer;font-size:12px;font-weight:700}
 @media(max-width:1350px){#page-relic-equipment .rp-panel>.rp-fields{grid-template-columns:repeat(4,minmax(0,1fr))}}
 @media(max-width:700px){#page-relic-equipment .rp-panel>.rp-fields{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* Keep fixed decoration immediately beside the slot selector in all layouts */
+#page-relic-equipment .rp-panel>.rp-fields .rp-slot-pair{grid-column:span 2;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;min-width:0}
+#page-relic-equipment .rp-panel>.rp-fields .rp-slot-pair .rp-field{min-width:0}
+#page-relic-equipment .rp-panel>.rp-fields .rp-slot-pair select:disabled{opacity:.55;cursor:not-allowed}
+@media(max-width:700px){#page-relic-equipment .rp-panel>.rp-fields .rp-slot-pair{grid-column:span 2}}
