@@ -1985,3 +1985,20 @@ button{border:1px solid var(--line);background:#202b39;color:white;border-radius
 #page-relic-equipment .rp-result-layout .rp-materials>.rr-note{margin:0;font-size:11px;line-height:1.6}
 #page-relic-equipment .rp-result-candidates{min-width:0;display:grid;gap:9px}
 @media(max-width:1100px){#page-relic-equipment .rp-result-layout{grid-template-columns:minmax(0,1fr)}}
+
+
+/* Unified four-level relic material table, consistent with the growth result */
+#page-relic-equipment .rp-result-layout{grid-template-columns:minmax(350px,1fr) minmax(0,1.8fr);align-items:stretch}
+#page-relic-equipment .rp-result-layout>.rp-materials{align-content:start;gap:12px}
+#page-relic-equipment .rp-result-layout .rp-materials h3{font-size:15px;line-height:1.5}
+#page-relic-equipment .rp-result-layout .rp-materials .rp-upgrade-material-table{table-layout:auto;width:100%;border-collapse:collapse}
+#page-relic-equipment .rp-result-layout .rp-materials .rp-upgrade-material-table th,
+#page-relic-equipment .rp-result-layout .rp-materials .rp-upgrade-material-table td{font-size:13px;line-height:1.5;padding:12px 8px;text-align:center;vertical-align:middle}
+#page-relic-equipment .rp-result-layout .rp-materials .rp-upgrade-material-table th{font-weight:700;white-space:nowrap}
+#page-relic-equipment .rp-result-layout .rp-materials .rp-upgrade-material-table td:first-child{font-weight:700;white-space:nowrap}
+#page-relic-equipment .rp-result-layout .rp-materials .rp-upgrade-material-table td:nth-child(2){text-align:center;white-space:normal}
+#page-relic-equipment .rp-result-layout .rp-materials .rp-material-entry{padding:3px 0;min-height:22px;white-space:nowrap}
+#page-relic-equipment .rp-result-layout .rp-material-totals{display:flex;gap:8px;flex-wrap:wrap;justify-content:space-between;align-items:center;padding:11px 4px;border-top:1px solid var(--line);font-size:13px}
+#page-relic-equipment .rp-result-layout .rp-materials>.rr-note{font-size:12px;line-height:1.6}
+@media(max-width:1200px){#page-relic-equipment .rp-result-layout{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:550px){#page-relic-equipment .rp-result-layout .rp-materials .rp-upgrade-material-table th,#page-relic-equipment .rp-result-layout .rp-materials .rp-upgrade-material-table td{font-size:12px;padding:9px 4px}}
