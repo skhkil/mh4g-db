@@ -1971,3 +1971,17 @@ button{border:1px solid var(--line);background:#202b39;color:white;border-radius
 #page-relic-equipment .rp-panel .rp-candidate-table th,
 #page-relic-equipment .rp-panel .rp-candidate-table td{padding:9px 8px}
 @media(max-width:700px){#page-relic-equipment .rp-panel>.rp-fields .rp-attribute-group{grid-column:span 2;grid-template-columns:repeat(3,minmax(0,1fr))}}
+
+
+/* Relic result: compact materials rail beside level-by-level performance */
+#page-relic-equipment .rp-result-layout{display:grid;grid-template-columns:minmax(270px,0.9fr) minmax(0,2.1fr);align-items:start;gap:12px;min-width:0}
+#page-relic-equipment .rp-result-layout>.rp-materials{min-width:0;display:grid;gap:9px;padding:12px 14px;background:var(--panel2);border:1px solid var(--line);border-radius:9px}
+#page-relic-equipment .rp-result-layout .rp-materials h3{font-size:14px;margin:0}
+#page-relic-equipment .rp-result-layout .rp-materials h4{font-size:12px;margin:7px 0 0;color:var(--muted)}
+#page-relic-equipment .rp-result-layout .rp-materials .table-panel{width:100%;max-width:100%;border-collapse:collapse;margin:0}
+#page-relic-equipment .rp-result-layout .rp-materials th,#page-relic-equipment .rp-result-layout .rp-materials td{padding:8px 5px;font-size:11px;line-height:1.4;text-align:center;white-space:nowrap}
+#page-relic-equipment .rp-result-layout .rp-polish-material-table td:first-child{text-align:left}
+#page-relic-equipment .rp-result-layout .rp-polish-material-table td:last-child{text-align:right;font-weight:700}
+#page-relic-equipment .rp-result-layout .rp-materials>.rr-note{margin:0;font-size:11px;line-height:1.6}
+#page-relic-equipment .rp-result-candidates{min-width:0;display:grid;gap:9px}
+@media(max-width:1100px){#page-relic-equipment .rp-result-layout{grid-template-columns:minmax(0,1fr)}}
