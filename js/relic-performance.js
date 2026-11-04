@@ -85,10 +85,14 @@ function render(d,type,guide,host,decorations=[],traits=null){
  if(state.attributeKind!=="none"&&group)extra.append(field("발동 조건",select([["normal","일반"],["awakened","각성 필요"]],state.attributeActivation,x=>{state.attributeActivation=x;state.element="";refresh()})));
  if(state.attributeKind!=="none"&&group)extra.append(field("속성치",select([["","수치 선택"],...values.map(v=>[String(v),String(v)])],state.element,x=>change("element",x))));
 
- extra.append(field("슬롯 구성",select(guide.slots,state.slots,x=>{state.slots=x;if(x!=="fixed")state.fixedDecorationId="";refresh()})));
+ const slotPair=node("div","rp-slot-pair");
+ slotPair.append(field("슬롯 구성",select(guide.slots,state.slots,x=>{state.slots=x;if(x!=="fixed")state.fixedDecorationId="";refresh()})));
  const fixedList=(decorations||[]).filter(x=>x.relicOnly&&x.fixedDecoration);
  const fixedPicker=select([["","고정 장식주 선택"],...fixedList.map(x=>[x.id,x.name])],state.fixedDecorationId,x=>{state.fixedDecorationId=x;refresh()});
- if(state.slots==="fixed")extra.append(field("고정 장식주",fixedPicker));
+ fixedPicker.disabled=state.slots!=="fixed";
+ fixedPicker.title=fixedPicker.disabled?"슬롯 구성에서 고정 장식주 있음을 선택하세요.":"고정 장식주 선택";
+ slotPair.append(field("고정 장식주",fixedPicker));
+ extra.append(slotPair);
  const profile=guide.weaponSpecial[type],specialControls=node("div","rp-fields");
  for(const spec of profile.fields||[])specialControls.append(field(spec.label,select(spec.options,state.special[type+"-"+spec.id]||"unknown",v=>{state.special[type+"-"+spec.id]=v;refresh()})));
  form.append(inputs);
