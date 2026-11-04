@@ -144,29 +144,38 @@ function render(d,type,guide,host,decorations=[],traits=null){
   };
   const upgrade=enhance[rarity];
   const materials=node("section","rp-materials");
-  materials.append(node("h3",null,"연마 해제 · 강화 비용"));
+  materials.append(node("h3",null,"레벨별 연마 · 강화 재료"));
   if(upgrade){
-    materials.append(node("h4",null,"연마 해제 재료"));
-    const polishTable=node("table","table-panel rp-polish-material-table");
-    const polishBody=node("tbody");
-    for(const [item,count] of [["성석의 결정",4],["극상 연마재",3],["순수한 광룡결정",2],["극룡옥",2]]){const rr=node("tr");rr.append(node("td",null,item),node("td",null,"×"+count));polishBody.append(rr)}
-    polishTable.append(polishBody);materials.append(polishTable);
-    materials.append(node("h4",null,"레벨별 강화 재료 · 포인트"));
-    materials.append(node("p","rr-note","주의: 극룡옥 ×3은 RARE 9 생산무기의 극한강화 재료입니다. 봉인된 발굴무기의 연마는 극룡옥 ×2이며 발굴무기는 극한강화 대상이 아닙니다."));
     const matTable=node("table","table-panel rp-upgrade-material-table"),mh=node("thead"),hr=node("tr");
-    for(const label of ["강화 단계","필요 강화재료","필요 수량","여단 포인트"])hr.append(node("th",null,label));
+    for(const label of ["단계","필요 재료","수량","여단 포인트"])hr.append(node("th",null,label));
     mh.append(hr);matTable.append(mh);
-    const mb=node("tbody");
+    const mb=node("tbody"),polishItems=[["성석의 결정",4],["극상 연마재",3],["순수한 광룡결정",2],["극룡옥",2]];
+    const polishRow=node("tr","rp-material-polish");
+    const polishStage=node("td",null,"Lv1");
+    const polishNames=node("td"),polishCounts=node("td");
+    for(const [item,count] of polishItems){
+      polishNames.append(node("div","rp-material-entry",item));
+      polishCounts.append(node("div","rp-material-entry","×"+count));
+    }
+    const polishPoints=node("td",null,"—");
+    polishPoints.title="연마 해제 포인트: 미확인";
+    polishRow.append(polishStage,polishNames,polishCounts,polishPoints);
+    mb.append(polishRow);
     upgrade.forEach(([item,count,points],i)=>{
       const rr=node("tr");
-      for(const val of ["Lv"+(i+1)+" → Lv"+(i+2),item,String(count),points.toLocaleString()+" pt"])rr.append(node("td",null,val));
+      for(const val of ["Lv"+(i+2),item,"×"+count,points.toLocaleString()+" pt"])rr.append(node("td",null,val));
       mb.append(rr);
     });
     matTable.append(mb);materials.append(matTable);
-    materials.append(node("p","rr-note","봉인된 무기 기준 · 영웅 무기는 별도 비용 적용"));
-    materials.append(node("p","rr-note","Lv1 → Lv4 총합: 진갑옥 ×3 · 강갑옥 ×3 · 천갑옥 ×3 · 여단 포인트 "+upgrade.reduce((sum,row)=>sum+row[2],0).toLocaleString()+" pt (연마 재료 별도)"));
+    const totals=node("div","rp-material-totals");
+    totals.append(node("strong",null,"Lv2~Lv4 강화 합계"));
+    totals.append(node("span",null,"진갑옥 ×3 · 강갑옥 ×3 · 천갑옥 ×3"));
+    totals.append(node("strong",null,upgrade.reduce((sum,row)=>sum+row[2],0).toLocaleString()+" pt"));
+    materials.append(totals);
+    const note=node("p","rr-note","Lv1은 연마 해제 재료, Lv2~Lv4는 각 단계 강화 재료야. 여단 포인트는 확인된 강화 비용만 합산했어.");
+    materials.append(note);
   }else{
-    materials.append(node("p","rr-note","RARE 7 이하 강화재료는 발굴 등급과 성장 유형에 따라 달라집니다. 확인되지 않은 재료를 임의로 표시하지 않습니다."));
+    materials.append(node("p","rr-note","RARE 7 이하 연마 및 강화 재료는 현재 검증되지 않아 표시하지 않습니다."));
   }
   const sideBySide=node("div","rp-result-layout");
   const candidatesWrap=node("div","rp-result-candidates");
