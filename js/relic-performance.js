@@ -148,6 +148,7 @@ function render(d,type,guide,host,decorations=[],traits=null){
   if(upgrade){
     const polish=node("p","rr-note","봉인된 발굴무기 연마(장착 가능 상태로 해제): 성석의 결정 ×4 · 극상 연마재 ×3 · 순수한 광룡결정 ×2 · 극룡옥 ×2 (RARE 8~10 공통)");
     materials.append(polish);
+    materials.append(node("p","rr-note","주의: 극룡옥 ×3은 RARE 9 생산무기의 극한강화 재료입니다. 봉인된 발굴무기의 연마는 극룡옥 ×2이며 발굴무기는 극한강화 대상이 아닙니다."));
     const matTable=node("table","table-panel rp-upgrade-material-table"),mh=node("thead"),hr=node("tr");
     for(const label of ["강화 단계","필요 강화재료","필요 수량","여단 포인트"])hr.append(node("th",null,label));
     mh.append(hr);matTable.append(mh);
