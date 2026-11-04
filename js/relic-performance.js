@@ -43,7 +43,7 @@ function render(d,type,guide,host,decorations=[],traits=null){
  const sharpnessApplicable=!["라이트보우건","헤비보우건","활"].includes(type);
  const form=node("section","panel rp-panel"),head=node("div","rr-heading");
  head.append(node("span","rr-step","무기 성능 판별 · 강화 테이블"),node("h2",null,"발굴무기 강화 수치 조회"));
- text(head,"Lv1 감정 수치만 선택하면 Lv2~Lv4 강화 결과가 아래에 바로 표시됩니다.");
+ text(head,"Lv1 감정 수치를 선택하면 Lv2~Lv4 성장 수치와 단계별 강화 재료를 확인할 수 있습니다.");
  form.append(head);
  const inputs=node("div","rp-fields");
  const refresh=()=>render(d,type,guide,host,decorations,traits);
@@ -158,6 +158,7 @@ function render(d,type,guide,host,decorations=[],traits=null){
       mb.append(rr);
     });
     matTable.append(mb);materials.append(matTable);
+    materials.append(node("p","rr-note","봉인된 무기 강화 자료 기준. 동일 레어도의 영웅 무기는 강화 포인트가 다릅니다. 참고: MH4G 발굴무기 정리 (xxxdracuraxxx.blog.2nt.com/blog-entry-2928.html)"));
     materials.append(node("p","rr-note","Lv1 → Lv4 총합: 진갑옥 ×3 · 강갑옥 ×3 · 천갑옥 ×3 · 여단 포인트 "+upgrade.reduce((sum,row)=>sum+row[2],0).toLocaleString()+" pt (연마 재료 별도)"));
   }else{
     materials.append(node("p","rr-note","RARE 7 이하 강화재료는 발굴 등급과 성장 유형에 따라 달라집니다. 확인되지 않은 재료를 임의로 표시하지 않습니다."));
@@ -228,7 +229,7 @@ function render(d,type,guide,host,decorations=[],traits=null){
   const slot=state.slots,mode=slot==="fixed"?"fixed":slot==="unknown"?"unknown":"empty",slots=slot==="fixed"?Number(fixedList.find(x=>x.id===state.fixedDecorationId)?.slots||0):slot==="unknown"?0:slot==="none"?0:Number(slot.replace("empty",""));
   if(mode==="fixed"&&!fixedList.some(x=>x.id===state.fixedDecorationId)){status.textContent="고정 장식주가 있는 무기는 실제 장식주 종류를 선택해야 시뮬레이터에 적용할 수 있습니다. 선택하지 않아도 미확인으로 저장됩니다.";}
   const deco=fixedList.find(x=>x.id===state.fixedDecorationId),confirmed=mode!=="fixed"||!!deco;
-  const p={weaponType:type,name:state[nameKey]||"",level:lv,attack:shown,affinity,defense,sharp:state.sharp,element:state.element,attributeKind:state.attributeKind,attributeActivation:state.attributeActivation,special:{...state.special}};
+  const p={weaponType:type,name:state[nameKey]||"",level:lv,attack:shown,affinity,defense,sharp:state.sharp,element:state.element,attributeKind:state.attributeKind,attributeActivation:state.attributeActivation,rarity:Number(state.rarity),special:{...state.special}};
   const record={id:state.editingId||"relic_perf_"+Date.now()+"_"+Math.random().toString(36).slice(2,8),slotMode:!confirmed?"unknown":mode,slots:!confirmed?0:slots,decorationId:confirmed&&mode==="fixed"?deco.id:"",skills:confirmed&&mode==="fixed"?{...deco.skills}:{},performance:p};
   const all=records(),idx=all.findIndex(x=>x.id===record.id),dup=idx<0?all.findIndex(x=>x.performance&&signature(x)===signature(record)):-1;
   if(idx>=0)all[idx]=record;else if(dup>=0){record.id=all[dup].id;all[dup]=record}else all.push(record);
