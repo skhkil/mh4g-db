@@ -81,9 +81,14 @@ function render(d,type,guide,host,decorations=[],traits=null){
  const valueKey=(["poison","paralysis","sleep","blast"].includes(state.attributeKind)?"Status":"Element");
  const values=state.attributeKind==="none"?[]:group?.[(state.attributeActivation==="awakened"?"awakened":"normal")+valueKey]||[];
  if(state.element&&!values.includes(Number(state.element)))state.element="";
- extra.append(field("속성·상태이상",select(allowedKinds,state.attributeKind,x=>{state.attributeKind=x;state.element="";refresh()})));
- if(state.attributeKind!=="none"&&group)extra.append(field("발동 조건",select([["normal","일반"],["awakened","각성 필요"]],state.attributeActivation,x=>{state.attributeActivation=x;state.element="";refresh()})));
- if(state.attributeKind!=="none"&&group)extra.append(field("속성치",select([["","수치 선택"],...values.map(v=>[String(v),String(v)])],state.element,x=>change("element",x))));
+ const attributeGroup=node("div","rp-attribute-group");
+ attributeGroup.append(field("속성·상태이상",select(allowedKinds,state.attributeKind,x=>{state.attributeKind=x;state.element="";refresh()})));
+ const activationPicker=select([["normal","일반"],["awakened","각성 필요"]],state.attributeActivation,x=>{state.attributeActivation=x;state.element="";refresh()});
+ activationPicker.disabled=state.attributeKind==="none"||!group||isGunner;
+ const valuePicker=select([["","수치 선택"],...values.map(v=>[String(v),String(v)])],state.element,x=>change("element",x));
+ valuePicker.disabled=state.attributeKind==="none"||!group||!values.length;
+ attributeGroup.append(field("발동 조건",activationPicker),field("속성치",valuePicker));
+ extra.append(attributeGroup);
 
  const slotPair=node("div","rp-slot-pair");
  slotPair.append(field("슬롯 구성",select(guide.slots,state.slots,x=>{state.slots=x;if(x!=="fixed")state.fixedDecorationId="";refresh()})));
@@ -137,23 +142,27 @@ function render(d,type,guide,host,decorations=[],traits=null){
     const grid=node("div","rp-candidate-table");
     const tab=node("table");tab.className="table-panel";
     const thead=node("thead"),tr=node("tr");
-    for(const title of ["단계","공격력","회심률","방어력"])tr.append(node("th",null,title));
+    for(const title of ["단계","공격력","회심률","방어력","속성·상태이상","예리도","슬롯","고정 장식주"])tr.append(node("th",null,title));
     thead.append(tr);tab.append(thead);
     const tbody=node("tbody"),p=d.attackProgression,seq=p.stages[c.base],rule=p.bonusRules?.[type];
+    const attrName=kinds.find(([k])=>k===state.attributeKind)?.[1]||"무속성";
+    const attrText=state.attributeKind==="none"?"무속성":attrName+" "+(state.element||"미선택")+(state.attributeActivation==="awakened"?" (각성)":"");
+    const sharpText=sharpnessApplicable?(guide.sharpness[state.sharp]?.label||"미확인"):"해당 없음";
+    const slotText=state.slots==="fixed"?"고정 장식주":state.slots==="unknown"?"미확인":state.slots==="none"?"0":state.slots.replace("empty","");
+    const decoText=state.slots==="fixed"?(fixedList.find(x=>x.id===state.fixedDecorationId)?.name||"미선택"):"—";
     for(let i=1;i<4;i++){
       const stageBonus=rule?.key==="raw"&&c.base==="250"&&i===0?Math.max(0,c.bonus-10):c.bonus;
       const raw=seq.raw[i]===null?null:seq.raw[i]+(rule?.key==="raw"?stageBonus:0);
       const a=seq.affinity[i]===null?null:seq.affinity[i]+(rule?.key==="affinity"?c.bonus:0)+c.naturalBonus;
       const df=seq.defense[i]===null?null:seq.defense[i]+(rule?.key==="defense"?c.bonus:0);
       const row=node("tr");
-      for(const v of ["Lv"+(i+1),raw===null?"미확인":String(Math.round(raw*table.displayMultiplier)),a===null?"미확인":(a>0?"+":"")+a+"%",df===null?"미확인":"+"+df])row.append(node("td",null,v));
+      for(const v of ["Lv"+(i+1),raw===null?"미확인":String(Math.round(raw*table.displayMultiplier)),a===null?"미확인":(a>0?"+":"")+a+"%",df===null?"미확인":"+"+df,attrText,sharpText,slotText,decoText])row.append(node("td",null,v));
       tbody.append(row);
     }
     tab.append(tbody);grid.append(tab);card.append(grid);
     if(seq.raw.some(x=>x===null)||seq.affinity.some(x=>x===null)||seq.defense.some(x=>x===null))text(card,"일부 중간 단계는 검증된 수치가 없어 미확인으로 표시합니다.","rr-note");
     result.append(card);
   }
-  if(state.attributeKind!=="none")text(result,"선택 속성: "+(kinds.find(([k])=>k===state.attributeKind)?.[1]||state.attributeKind)+" "+(state.element||"미선택")+(state.attributeActivation==="awakened"?" (각성 필요)":"")+" · Lv2~Lv4 동일","rr-note");
   text(result,"강화표는 확인된 공격 계열만 표시합니다. 일부 중간 수치와 속성·공격 유형의 조합 가능성은 미검증입니다. 자료: MH4G@wiki / otameshine.","rr-note");
  }
  const STORE="mh4g-owned-relic-weapons-v1";
@@ -206,7 +215,7 @@ function render(d,type,guide,host,decorations=[],traits=null){
 export async function mountRelicPerformance(d,type,decorations=[]){
  const id=++sequence;const host=document.querySelector("#relicPanel-attack > .panel");if(!host)return;
  try{
-  if(!loading)loading=fetch("./data/relic_performance_guide.json?v=0.7.11-relic-compact",{cache:"no-cache"}).then(r=>{if(!r.ok)throw Error("HTTP "+r.status);return r.json()}).then(v=>{loaded=v;return v}).catch(e=>{loading=null;throw e});
+  if(!loading)loading=fetch("./data/relic_performance_guide.json?v=0.7.13-relic-attributes",{cache:"no-cache"}).then(r=>{if(!r.ok)throw Error("HTTP "+r.status);return r.json()}).then(v=>{loaded=v;return v}).catch(e=>{loading=null;throw e});
   const guide=loaded||await loading;
   const traits=await fetch("./data/relic_weapon_traits.json?v=0.7.9-relic-select-stats",{cache:"no-cache"}).then(r=>{if(!r.ok)throw Error("traits HTTP "+r.status);return r.json()});
   if(id!==sequence||!host.isConnected)return;
