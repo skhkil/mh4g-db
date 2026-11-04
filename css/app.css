@@ -1957,3 +1957,17 @@ button{border:1px solid var(--line);background:#202b39;color:white;border-radius
 #page-relic-equipment .rp-panel>.rp-fields .rp-slot-pair .rp-field{min-width:0}
 #page-relic-equipment .rp-panel>.rp-fields .rp-slot-pair select:disabled{opacity:.55;cursor:not-allowed}
 @media(max-width:700px){#page-relic-equipment .rp-panel>.rp-fields .rp-slot-pair{grid-column:span 2}}
+
+/* Attribute selectors remain in stable adjacent cells, regardless of activation */
+#page-relic-equipment .rp-panel>.rp-fields .rp-attribute-group{grid-column:span 3;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;min-width:0}
+#page-relic-equipment .rp-panel>.rp-fields .rp-attribute-group .rp-field{min-width:0}
+#page-relic-equipment .rp-panel>.rp-fields .rp-attribute-group select:disabled{opacity:.55;cursor:not-allowed}
+/* Relic upgrades: uniform centered columns, with overflow only on narrow screens */
+#page-relic-equipment .rp-panel .rp-candidate-table{overflow-x:auto}
+#page-relic-equipment .rp-panel .rp-candidate-table table{width:100%;table-layout:auto}
+#page-relic-equipment .rp-panel .rp-candidate-table th,
+#page-relic-equipment .rp-panel .rp-candidate-table td,
+#page-relic-equipment .rp-panel .rp-candidate-table td:first-child{text-align:center;vertical-align:middle}
+#page-relic-equipment .rp-panel .rp-candidate-table th,
+#page-relic-equipment .rp-panel .rp-candidate-table td{padding:9px 8px}
+@media(max-width:700px){#page-relic-equipment .rp-panel>.rp-fields .rp-attribute-group{grid-column:span 2;grid-template-columns:repeat(3,minmax(0,1fr))}}
