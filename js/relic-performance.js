@@ -1,5 +1,5 @@
 
-let state={level:"1",attack:"",affinity:"",defense:"",sharp:"unknown",slots:"unknown",element:"",attributeKind:"none",attributeActivation:"normal",fixedDecorationId:"",editingId:"",special:{}},loaded=null,loading=null,sequence=0;
+let state={level:"1",attack:"",affinity:"",defense:"",sharp:"unknown",slots:"unknown",element:"",attributeKind:"none",attributeActivation:"normal",fixedDecorationId:"",editingId:"",rarity:"10",special:{}},loaded=null,loading=null,sequence=0;
 const node=(t,c,v)=>{const x=document.createElement(t);if(c)x.className=c;if(v!==undefined)x.textContent=v;return x};
 const select=(options,value,onChange)=>{const s=node("select");for(const [v,label] of options){const o=node("option",null,label);o.value=v;s.append(o)}s.value=value;s.onchange=()=>onChange(s.value);return s};
 const field=(label,control)=>{const l=node("label","rp-field");l.append(node("span",null,label),control);return l};
@@ -98,6 +98,7 @@ function render(d,type,guide,host,decorations=[],traits=null){
  fixedPicker.title=fixedPicker.disabled?"슬롯 구성에서 고정 장식주 있음을 선택하세요.":"고정 장식주 선택";
  slotPair.append(field("고정 장식주",fixedPicker));
  extra.append(slotPair);
+ extra.append(field("발굴 레어도",select([["10","RARE 10"],["9","RARE 9"],["8","RARE 8"],["7","RARE 7 이하 · 자료 확인 중"]],state.rarity,x=>change("rarity",x))));
  const profile=guide.weaponSpecial[type],specialControls=node("div","rp-fields");
  for(const spec of profile.fields||[])specialControls.append(field(spec.label,select(spec.options,state.special[type+"-"+spec.id]||"unknown",v=>{state.special[type+"-"+spec.id]=v;refresh()})));
  form.append(inputs);
@@ -135,6 +136,33 @@ function render(d,type,guide,host,decorations=[],traits=null){
   const unique=[...new Map(candidates.map(c=>[[c.base,c.bonus,c.variant].join("|"),c])).values()];
   const summary=node("p","rr-note",unique.length===1?"Lv1 기준 · Lv2~Lv4 강화 결과":"가능한 성장 유형 "+unique.length+"개 · 회심/방어/예리도로 구분하세요.");
   result.append(summary);
+  const rarity=Number(state.rarity);
+  const enhance={
+    8:[["진갑옥",3,9200],["강갑옥",3,10800],["천갑옥",3,12800]],
+    9:[["진갑옥",3,11600],["강갑옥",3,13400],["천갑옥",3,15200]],
+    10:[["진갑옥",3,14000],["강갑옥",3,16000],["천갑옥",3,18000]]
+  };
+  const upgrade=enhance[rarity];
+  const materials=node("section","rp-materials");
+  materials.append(node("h3",null,"연마 해제 · 단계별 강화재료"));
+  if(upgrade){
+    const polish=node("p","rr-note","봉인된 발굴무기 연마(장착 가능 상태로 해제): 성석의 결정 ×4 · 극상 연마재 ×3 · 순수한 광룡결정 ×2 · 극룡옥 ×2 (RARE 8~10 공통)");
+    materials.append(polish);
+    const matTable=node("table","table-panel rp-upgrade-material-table"),mh=node("thead"),hr=node("tr");
+    for(const label of ["강화 단계","필요 강화재료","필요 수량","여단 포인트"])hr.append(node("th",null,label));
+    mh.append(hr);matTable.append(mh);
+    const mb=node("tbody");
+    upgrade.forEach(([item,count,points],i)=>{
+      const rr=node("tr");
+      for(const val of ["Lv"+(i+1)+" → Lv"+(i+2),item,String(count),points.toLocaleString()+" pt"])rr.append(node("td",null,val));
+      mb.append(rr);
+    });
+    matTable.append(mb);materials.append(matTable);
+    materials.append(node("p","rr-note","Lv1 → Lv4 총합: 진갑옥 ×3 · 강갑옥 ×3 · 천갑옥 ×3 · 여단 포인트 "+upgrade.reduce((sum,row)=>sum+row[2],0).toLocaleString()+" pt (연마 재료 별도)"));
+  }else{
+    materials.append(node("p","rr-note","RARE 7 이하 강화재료는 발굴 등급과 성장 유형에 따라 달라집니다. 확인되지 않은 재료를 임의로 표시하지 않습니다."));
+  }
+  result.append(materials);
   const table=d.weaponAttackTables.find(t=>t.weaponType===type);
   for(const c of unique){
     const card=node("article","rp-candidate");
@@ -186,11 +214,11 @@ function render(d,type,guide,host,decorations=[],traits=null){
   }
   state.attack=String(prior.attack||"");state.level="1";state.affinity=prior.affinity===null?"":String(prior.affinity??"");state.defense=prior.defense===null?"":String(prior.defense??"");
   state.sharp=p.sharp||"unknown";state.element=String(p.element||"");state.attributeKind=p.attributeKind||"none";state.attributeActivation=p.attributeActivation||"normal";state.slots=item.slotMode==="empty"?({0:"none",1:"empty1",2:"empty2",3:"empty3"}[item.slots]||"unknown"):item.slotMode==="fixed"?"fixed":"unknown";
-  state.fixedDecorationId=item.decorationId||"";state[nameKey]=p.name||"";
+  state.fixedDecorationId=item.decorationId||"";state.rarity=String(p.rarity||state.rarity||"10");state[nameKey]=p.name||"";
   state.special={...state.special,...(p.special||{})};
   render(d,type,guide,host,decorations,traits);
  };
- discard.onclick=()=>{state.editingId="";state.attack="";state.affinity="";state.defense="";state.level="1";state.sharp="unknown";state.slots="unknown";state.element="";state.attributeKind="none";state.attributeActivation="normal";state.fixedDecorationId="";state[nameKey]="";render(d,type,guide,host,decorations,traits)};
+ discard.onclick=()=>{state.editingId="";state.attack="";state.affinity="";state.defense="";state.level="1";state.sharp="unknown";state.slots="unknown";state.element="";state.attributeKind="none";state.attributeActivation="normal";state.fixedDecorationId="";state.rarity="10";state[nameKey]="";render(d,type,guide,host,decorations,traits)};
  save.onclick=()=>{
   const shown=Number(state.attack),lv=1;
   const affinity=state.affinity.trim()===""?null:Number(state.affinity),defense=state.defense.trim()===""?null:Number(state.defense);
