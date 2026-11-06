@@ -1,4 +1,4 @@
-import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,loadArmorProgression,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-relic-ko-labels-20261030";
+import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,loadArmorProgression,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-relic-chameleos-name-20261106";
 import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-monster-filter1";
 import {enhanceRelicAppearance} from "./relic-enhancements.js?v=0.7.7-relic-attack-step3";
 import {mountRelicRewards} from "./relic-reward-workbench.js?v=0.7.7-relic-attack-step3";
