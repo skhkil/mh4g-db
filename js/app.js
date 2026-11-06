@@ -2128,6 +2128,7 @@ function renderRelicEquipment(){
           <div class="relic-appearance-kpis"><span><b>${types.length}</b> 무기종</span><span><b>${groups.length}</b> 그룹</span></div>
         </div>
         ${groupCards}
+        <p class="relic-appearance-footnote"><a href="https://monsterhunter.fandom.com/wiki/MH4U:_Relic_Weapons" target="_blank" rel="noopener noreferrer">발굴무기 디자인 이미지 보기 · Monster Hunter Wiki (MH4U)</a> — 무기종별 외형 이미지 참고자료</p>
         <p class="relic-appearance-footnote">※ 봉인된 무기 외형 기준입니다. 무기·방어구는 감정품 종류에 따라 테이블이 다를 수 있습니다. 2두 길퀘는 원칙적으로 왼쪽 아이콘 몬스터 그룹을 참고하세요. 방어구 A~F 세부 조합에는 미확정·예외 사례가 있습니다.</p>
       </section>
       <details id="relicAppearanceDirectory" class="panel relic-appearance-directory" ${previousValues.appearanceTableOpen?"open":""}>
