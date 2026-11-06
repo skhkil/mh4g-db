@@ -2189,7 +2189,7 @@ function renderRelicEquipment(){
   };
   const updateDerivSuggestions=()=>{
     const query=derivSearch.value.trim().toLocaleLowerCase("ko");
-    const matches=derivNames[relicDerivUi.mode].filter(name=>name.toLocaleLowerCase("ko").includes(query));
+    const matches=derivNames[relicDerivUi.mode].filter(name=>name.toLocaleLowerCase("ko").includes(query)||(name==="오오나즈치"&&"오나즈치".includes(query)));
     const display=matches.slice(0,10);
     derivSuggest.innerHTML=display.map(name=>`<button type="button" data-deriv-pick="${esc(name)}">${esc(name)}</button>`).join("")
       +(matches.length>display.length?`<p class="relic-deriv-suggestion-more">추가 ${matches.length-display.length}종 · 이름을 입력해 좁혀보세요.</p>`:"")
