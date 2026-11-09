@@ -2,6 +2,7 @@
 (()=>{
 "use strict";
 const KEYS=["mh4g-builds-v1","mh4g-owned-charms-v1","mh4g-owned-relic-weapons-v1","mh4g-owned-relic-armors-v1","mh4g-planner-v1"];
+const WORKER_URL="https://mh4g-sync.skhkil.workers.dev";
 const CONF="mh4g-sync-config-v1",BASE="mh4g-sync-baseline-v1",BACKUP="mh4g-sync-backups-v1";
 const fallback=()=>({favorites:{weapon:[],armor:[],recommend:[],quest:[]},craft:{},inventory:{}});
 const parse=(s,d)=>{try{return JSON.parse(s)}catch{return d}};
@@ -11,7 +12,6 @@ const config=()=>parse(localStorage.getItem(CONF),{})||{};
 const saveConfig=x=>localStorage.setItem(CONF,JSON.stringify(x));
 const status=(s,error=false)=>{const el=document.getElementById("mhSyncStatus");if(el){el.textContent=s;el.style.color=error?"#eea399":""}};
 const btn=(s)=>document.getElementById(s);
-const validateUrl=x=>{try{const u=new URL(x.trim());if(u.protocol!=="https:"||u.username||u.password||u.search||u.hash)throw 0;return u.origin}catch{throw new Error("HTTPS Worker 주소를 입력해 주세요.")}};
 let busy=false,paused=false;
 function backup(note){
   const stored=parse(localStorage.getItem(BACKUP),[]);
@@ -53,7 +53,7 @@ function mergeInitial(local,remote){
   return result;
 }
 async function api(method,body){
- const c=config(),url=validateUrl(c.url||"");
+ const c=config(),url=WORKER_URL;
  if(!/^[a-zA-Z0-9_-]{43}$/.test(c.code||""))throw new Error("연결 코드가 올바르지 않습니다.");
  const res=await fetch(url+"/v1/sync",{method,headers:{"Authorization":"Bearer "+c.code,...(body?{"Content-Type":"application/json"}:{})},body:body?JSON.stringify(body):undefined,cache:"no-store"});
  let data;try{data=await res.json()}catch{throw new Error("서버 응답을 읽을 수 없습니다.")}
@@ -62,14 +62,14 @@ async function api(method,body){
  return data;
 }
 function makeCode(){const b=crypto.getRandomValues(new Uint8Array(32));return btoa(String.fromCharCode(...b)).replace(/\+/g,"-").replace(/\//g,"_").replace(/=/g,"")}
-function connected(){const c=config();return Boolean(c.url&&c.code)}
+function connected(){const c=config();return Boolean(c.code)}
 function setRevision(revision,data){const c=config();saveConfig({...c,revision});localStorage.setItem(BASE,signature(data))}
 function lock(e){paused=true;status(e.message||String(e),true);btn("mhSyncResolve").hidden=false}
 async function connect(newCode){
  if(busy)return;busy=true;
  const priorConfig=config();
  try{
-   const url=validateUrl(btn("mhSyncUrl").value),code=newCode?makeCode():btn("mhSyncCode").value.trim();
+   const url=WORKER_URL,code=newCode?makeCode():btn("mhSyncCode").value.trim();
    if(!/^[A-Za-z0-9_-]{43}$/.test(code))throw new Error("연결 코드는 43자리여야 합니다.");
    saveConfig({url,code,revision:0});
    const remote=await api("GET");
@@ -122,7 +122,7 @@ async function resolve(){
  }catch(e){status(e.message,true)}finally{busy=false;render()}
 }
 function render(){
- const c=config();btn("mhSyncUrl").value=c.url||btn("mhSyncUrl").value;
+ const c=config();
  if(connected()){btn("mhSyncCode").value=c.code;btn("mhSyncCreate").hidden=true;btn("mhSyncJoin").hidden=true;btn("mhSyncDisconnect").hidden=false;btn("mhSyncNow").hidden=false}
  else{btn("mhSyncCreate").hidden=false;btn("mhSyncJoin").hidden=false;btn("mhSyncDisconnect").hidden=true;btn("mhSyncNow").hidden=true}
 }
@@ -132,7 +132,6 @@ function init(){
  const panel=document.createElement("dialog");panel.id="mhSyncDialog";panel.style.cssText="box-sizing:border-box;max-width:min(94vw,510px);width:100%;max-height:86dvh;overflow-y:auto;border:1px solid #64748b;border-radius:12px;padding:20px;color:#e5e7eb;background:#1d2530;box-shadow:0 20px 60px #0009";
  panel.innerHTML='<div style="display:flex;justify-content:space-between;align-items:center;gap:12px"><h2 style="margin:0;font-size:clamp(18px,5vw,24px);line-height:1.35;min-width:0">☁ 세팅 자동 동기화</h2><button type="button" id="mhSyncClose">닫기 ×</button></div>'+
  '<p style="font-size:13px;line-height:1.55">Google 로그인 없이 회사 PC와 모바일을 연결합니다. 최초 1회 연결 코드 입력 후 자동 동기화됩니다. 연결 코드는 비밀번호와 같으니 타인에게 공개하지 마세요.</p>'+
- '<label style="display:block;margin:12px 0">Cloudflare Worker HTTPS 주소<input id="mhSyncUrl" placeholder="https://mh4g-sync.계정.workers.dev" style="box-sizing:border-box;width:100%;padding:10px;margin-top:5px"></label>'+
  '<label style="display:block;margin:12px 0">연결 코드<input id="mhSyncCode" type="password" placeholder="다른 기기에서 받은 43자리 코드" autocomplete="off" style="box-sizing:border-box;width:100%;padding:10px;margin-top:5px;font-family:monospace"></label>'+
  '<div id="mhSyncStatus" role="status" style="font-size:13px;min-height:32px">미연결 · 현재 세팅은 기존처럼 이 브라우저에 저장됩니다.</div>'+
  '<div style="display:flex;gap:8px;flex-wrap:wrap"><button id="mhSyncCreate">새 연결 만들기</button><button id="mhSyncJoin">기존 코드로 연결</button><button id="mhSyncCopy">코드 복사</button><button id="mhSyncNow" hidden>지금 동기화</button><button id="mhSyncResolve" hidden>충돌 해결</button><button id="mhSyncDisconnect" hidden>연결 해제</button></div>'+
