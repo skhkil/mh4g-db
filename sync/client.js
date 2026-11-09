@@ -14,7 +14,8 @@ const btn=(s)=>document.getElementById(s);
 const validateUrl=x=>{try{const u=new URL(x.trim());if(u.protocol!=="https:"||u.username||u.password||u.search||u.hash)throw 0;return u.origin}catch{throw new Error("HTTPS Worker 주소를 입력해 주세요.")}};
 let busy=false,paused=false;
 function backup(note){
-  const copies=parse(localStorage.getItem(BACKUP),[]);
+  const stored=parse(localStorage.getItem(BACKUP),[]);
+  const copies=Array.isArray(stored)?stored:[];
   copies.unshift({at:new Date().toISOString(),note,data:snapshot()});
   localStorage.setItem(BACKUP,JSON.stringify(copies.slice(0,3)));
 }
@@ -66,10 +67,11 @@ function setRevision(revision,data){const c=config();saveConfig({...c,revision})
 function lock(e){paused=true;status(e.message||String(e),true);btn("mhSyncResolve").hidden=false}
 async function connect(newCode){
  if(busy)return;busy=true;
+ const priorConfig=config();
  try{
    const url=validateUrl(btn("mhSyncUrl").value),code=newCode?makeCode():btn("mhSyncCode").value.trim();
    if(!/^[A-Za-z0-9_-]{43}$/.test(code))throw new Error("연결 코드는 43자리여야 합니다.");
-   const prior=config();saveConfig({url,code,revision:0});
+   saveConfig({url,code,revision:0});
    const remote=await api("GET");
    if(newCode&&remote.exists)throw new Error("연결 코드가 이미 사용 중입니다.");
    const local=snapshot();let data=local,revision=remote.revision||0;
@@ -78,15 +80,16 @@ async function connect(newCode){
        Boolean(Object.keys(local[KEYS[4]]?.craft||{}).length||Object.keys(local[KEYS[4]]?.inventory||{}).length);
      if(hasLocal){
        if(!confirm("이 기기의 데이터와 클라우드 데이터를 병합할까요?\n중복 ID의 장비는 복제하여 보존하고, 제작 수량/보유 소재의 충돌은 현재 기기 값을 우선합니다.\n변경 전 로컬 백업도 보존합니다."))throw new Error("연결을 취소했습니다.");
-       data=mergeInitial(local,remote.data);backup("최초 연결 전"); // remote copy remains on server until PUT succeeds
-     }else{data=remote.data;saveLocal(data)}
+       data=mergeInitial(local,remote.data); // remote copy remains on server until PUT succeeds
+     }else{data=remote.data}
    }
    const updated=await api("PUT",{revision,data});revision=updated.revision;
+   if(signature(snapshot())!==signature(data))saveLocal(data);
    setRevision(revision,data);
    btn("mhSyncCode").value=code;btn("mhSyncResolve").hidden=true;paused=false;
    status("연결됨 · 자동 동기화 활성화 (버전 "+revision+")");
    if(remote.exists)alert("연결 완료. 클라우드 데이터를 적용했습니다. 화면에 반영하려면 새로고침하세요.");
- }catch(e){if(newCode||!connected())saveConfig({});status(e.message,true)}
+ }catch(e){saveConfig(priorConfig);status(e.message,true)}
  finally{busy=false;render()}
 }
 async function sync(){
@@ -126,11 +129,11 @@ function render(){
 function init(){
  const button=document.createElement("button");button.type="button";button.textContent="☁ 세팅 동기화";button.id="mhSyncOpen";button.style.cssText="margin-left:auto;cursor:pointer;padding:8px 12px;border-radius:8px;border:1px solid #64748b;background:transparent;color:inherit;white-space:nowrap";
  (document.querySelector(".topbar")||document.body).append(button);
- const panel=document.createElement("dialog");panel.id="mhSyncDialog";panel.style.cssText="max-width:min(94vw,510px);width:100%;border:1px solid #64748b;border-radius:12px;padding:20px;color:#e5e7eb;background:#1d2530;box-shadow:0 20px 60px #0009";
- panel.innerHTML='<div style="display:flex;justify-content:space-between;align-items:center;gap:12px"><h2 style="margin:0">☁ 세팅 자동 동기화</h2><button type="button" id="mhSyncClose">닫기 ×</button></div>'+
+ const panel=document.createElement("dialog");panel.id="mhSyncDialog";panel.style.cssText="box-sizing:border-box;max-width:min(94vw,510px);width:100%;max-height:86dvh;overflow-y:auto;border:1px solid #64748b;border-radius:12px;padding:20px;color:#e5e7eb;background:#1d2530;box-shadow:0 20px 60px #0009";
+ panel.innerHTML='<div style="display:flex;justify-content:space-between;align-items:center;gap:12px"><h2 style="margin:0;font-size:clamp(18px,5vw,24px);line-height:1.35;min-width:0">☁ 세팅 자동 동기화</h2><button type="button" id="mhSyncClose">닫기 ×</button></div>'+
  '<p style="font-size:13px;line-height:1.55">Google 로그인 없이 회사 PC와 모바일을 연결합니다. 최초 1회 연결 코드 입력 후 자동 동기화됩니다. 연결 코드는 비밀번호와 같으니 타인에게 공개하지 마세요.</p>'+
  '<label style="display:block;margin:12px 0">Cloudflare Worker HTTPS 주소<input id="mhSyncUrl" placeholder="https://mh4g-sync.계정.workers.dev" style="box-sizing:border-box;width:100%;padding:10px;margin-top:5px"></label>'+
- '<label style="display:block;margin:12px 0">연결 코드<input id="mhSyncCode" placeholder="다른 기기에서 받은 43자리 코드" autocomplete="off" style="box-sizing:border-box;width:100%;padding:10px;margin-top:5px;font-family:monospace"></label>'+
+ '<label style="display:block;margin:12px 0">연결 코드<input id="mhSyncCode" type="password" placeholder="다른 기기에서 받은 43자리 코드" autocomplete="off" style="box-sizing:border-box;width:100%;padding:10px;margin-top:5px;font-family:monospace"></label>'+
  '<div id="mhSyncStatus" role="status" style="font-size:13px;min-height:32px">미연결 · 현재 세팅은 기존처럼 이 브라우저에 저장됩니다.</div>'+
  '<div style="display:flex;gap:8px;flex-wrap:wrap"><button id="mhSyncCreate">새 연결 만들기</button><button id="mhSyncJoin">기존 코드로 연결</button><button id="mhSyncCopy">코드 복사</button><button id="mhSyncNow" hidden>지금 동기화</button><button id="mhSyncResolve" hidden>충돌 해결</button><button id="mhSyncDisconnect" hidden>연결 해제</button></div>'+
  '<p style="font-size:12px;line-height:1.5;margin-top:13px">동기화: 저장 세팅 · 보유 호석 · 발굴무기 · 발굴방어구 · 즐겨찾기/제작 목록. 로컬 백업은 적용 직전 보관됩니다. 동시 수정 충돌 시 자동 동기화를 중지합니다.</p>';
