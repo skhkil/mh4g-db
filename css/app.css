@@ -1411,7 +1411,7 @@ button{border:1px solid var(--line);background:#202b39;color:white;border-radius
 @media(max-width:640px){.target-skill-filter{min-width:0;flex:1 1 120px}.skill-target-field .search-select{flex:1 1 100%}}
 
 /* hotfix13: simplified simulator weapon model + compact owned assets */
-.manual-weapon-simple{display:grid;grid-template-columns:120px 120px minmax(220px,1fr) 78px;gap:7px;align-items:center;min-width:0}
+.manual-weapon-simple{display:grid;grid-template-columns:100px 100px 120px minmax(180px,1fr) 78px;gap:7px;align-items:center;min-width:0}
 .manual-weapon-simple select{width:100%;min-width:0;padding:7px 8px;font-size:11px}
 .manual-weapon-simple .relic-skill-picker{min-width:0}
 .weapon-mode-note{font-size:11px}
@@ -2021,4 +2021,52 @@ button{border:1px solid var(--line);background:#202b39;color:white;border-radius
     overflow-wrap:anywhere;
   }
   #page-simulator .build-save-controls>button{min-height:40px}
+}
+
+
+/* 2026-11-10: relic weapon has FIVE controls, not four. Keep the skill picker readable
+   when the simulator is in a narrow desktop column (viewport media queries alone miss this). */
+.manual-weapon-tools{container-name:mh4g-weapon-tools;container-type:inline-size}
+#page-simulator .manual-weapon-simple .relic-skill-picker{width:100%;min-width:0}
+#manualRelicDecorationPicker .search-select-menu{
+  box-sizing:border-box;
+  width:100%;
+  min-width:0;
+}
+#manualRelicDecorationPicker .search-select-option{
+  min-width:0;
+  white-space:nowrap;
+  word-break:keep-all;
+  overflow:hidden;
+}
+#manualRelicDecorationPicker .search-select-label{
+  white-space:nowrap;
+  word-break:keep-all;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+@media(min-width:761px){
+  @container mh4g-weapon-tools (max-width:800px){
+    .manual-weapon-simple{
+      grid-template-columns:repeat(3,minmax(0,1fr));
+    }
+    .manual-weapon-simple .relic-skill-picker{
+      grid-column:1 / span 2;
+    }
+    .manual-weapon-simple [data-save-owned-relic]{
+      grid-column:3;
+      width:100%;
+      min-width:0;
+    }
+  }
+  @container mh4g-weapon-tools (max-width:460px){
+    .manual-weapon-simple{
+      grid-template-columns:repeat(2,minmax(0,1fr));
+    }
+    .manual-weapon-simple .relic-skill-picker,
+    .manual-weapon-simple [data-save-owned-relic]{
+      grid-column:1/-1;
+      width:100%;
+    }
+  }
 }
