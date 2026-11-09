@@ -1,0 +1,11 @@
+name = "mh4g-sync"
+main = "worker.js"
+compatibility_date = "2026-11-09"
+
+[vars]
+ALLOWED_ORIGIN = "https://skhkil.github.io"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "mh4g-sync"
+database_id = "REPLACE_WITH_CLOUDFLARE_D1_DATABASE_ID"
