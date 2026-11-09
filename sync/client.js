@@ -12,7 +12,7 @@ const config=()=>parse(localStorage.getItem(CONF),{})||{};
 const saveConfig=x=>localStorage.setItem(CONF,JSON.stringify(x));
 const status=(s,error=false)=>{const el=document.getElementById("mhSyncStatus");if(el){el.textContent=s;el.style.color=error?"#eea399":""}};
 const btn=(s)=>document.getElementById(s);
-let busy=false,paused=false;
+let busy=false,paused=false,uploadTimer=null,pendingRefresh=false;
 function backup(note){
   const stored=parse(localStorage.getItem(BACKUP),[]);
   const copies=Array.isArray(stored)?stored:[];
@@ -65,6 +65,10 @@ function makeCode(){const b=crypto.getRandomValues(new Uint8Array(32));return bt
 function connected(){const c=config();return Boolean(c.code)}
 function setRevision(revision,data){const c=config();saveConfig({...c,revision});localStorage.setItem(BASE,signature(data))}
 function lock(e){paused=true;status(e.message||String(e),true);btn("mhSyncResolve").hidden=false}
+function editing(){const el=document.activeElement;return document.hasFocus()&&Boolean(el&&(el.matches?.("input,textarea,select,[contenteditable=true]")||el.isContentEditable))}
+function tryRefresh(){if(!pendingRefresh||document.hidden||editing()||btn("mhSyncDialog")?.open)return;pendingRefresh=false;location.reload()}
+function refreshSoon(){pendingRefresh=true;status("다른 기기의 변경을 받았습니다. 화면을 자동 갱신합니다.");tryRefresh()}
+function scheduleSync(){if(!connected()||paused)return;clearTimeout(uploadTimer);uploadTimer=setTimeout(()=>{uploadTimer=null;if(busy){scheduleSync();return}void sync()},400)}
 async function connect(newCode){
  if(busy)return;busy=true;
  const priorConfig=config();
@@ -88,7 +92,7 @@ async function connect(newCode){
    setRevision(revision,data);
    btn("mhSyncCode").value=code;btn("mhSyncResolve").hidden=true;paused=false;
    status("연결됨 · 자동 동기화 활성화 (버전 "+revision+")");
-   if(remote.exists)alert("연결 완료. 클라우드 데이터를 적용했습니다. 화면에 반영하려면 새로고침하세요.");
+   if(remote.exists)refreshSoon();
  }catch(e){saveConfig(priorConfig);status(e.message,true)}
  finally{busy=false;render()}
 }
@@ -96,16 +100,22 @@ async function sync(){
  if(busy||paused||!connected())return;
  busy=true;
  try{
-   const remote=await api("GET"),current=snapshot(),base=localStorage.getItem(BASE),here=signature(current),localChanged=base!==here;
+   const current=snapshot(),base=localStorage.getItem(BASE),here=signature(current);
+   const remote=await api("GET");
+   if(signature(snapshot())!==here){scheduleSync();return}
+   const localChanged=base!==here;
    if(!remote.exists){lock(new Error("클라우드 데이터가 사라졌습니다. 자동 덮어쓰기를 중지합니다."));return}
    const c=config(),remoteChanged=remote.revision!==c.revision;
    if(localChanged&&remoteChanged){lock(new Error("두 기기에서 동시에 변경했습니다. 자동 덮어쓰기를 중지합니다."));return}
    if(remoteChanged){
+     // Do not overwrite changes made while the remote GET was in flight.
+     if(signature(snapshot())!==here){scheduleSync();return}
      saveLocal(remote.data);setRevision(remote.revision,remote.data);
-     status("다른 기기의 변경을 받았습니다. 새로고침하면 화면에 반영됩니다.");
+     refreshSoon();
    }else if(localChanged){
      const result=await api("PUT",{revision:c.revision,data:current});
      setRevision(result.revision,current);status("저장됨 · 버전 "+result.revision);
+     if(signature(snapshot())!==here)scheduleSync();
    }else status("동기화됨 · 버전 "+c.revision);
  }catch(e){if(e.conflict)lock(e);else status("연결 오류 · 로컬 저장 유지: "+e.message,true)}
  finally{busy=false;render()}
@@ -116,7 +126,7 @@ async function resolve(){
  if(busy)return;busy=true;
  try{
    const remote=await api("GET");if(!remote.exists)throw new Error("원격 데이터 없음");
-   if(decision==="1"){saveLocal(remote.data);setRevision(remote.revision,remote.data);alert("백업 후 클라우드 데이터를 적용했습니다. 새로고침하세요.");}
+   if(decision==="1"){saveLocal(remote.data);setRevision(remote.revision,remote.data);refreshSoon();}
    else{backup("충돌 덮어쓰기 전");const data=snapshot();const v=await api("PUT",{revision:remote.revision,data});setRevision(v.revision,data)}
    paused=false;btn("mhSyncResolve").hidden=true;status("충돌 해결 완료");
  }catch(e){status(e.message,true)}finally{busy=false;render()}
@@ -138,15 +148,23 @@ function init(){
  '<p style="font-size:12px;line-height:1.5;margin-top:13px">동기화: 저장 세팅 · 보유 호석 · 발굴무기 · 발굴방어구 · 즐겨찾기/제작 목록. 로컬 백업은 적용 직전 보관됩니다. 동시 수정 충돌 시 자동 동기화를 중지합니다.</p>';
  document.body.append(panel);
  btn("mhSyncOpen").onclick=()=>{render();panel.showModal()};
- btn("mhSyncClose").onclick=()=>panel.close();
+ btn("mhSyncClose").onclick=()=>{panel.close();tryRefresh()};
  btn("mhSyncCreate").onclick=()=>connect(true);
  btn("mhSyncJoin").onclick=()=>connect(false);
  btn("mhSyncNow").onclick=()=>sync();
  btn("mhSyncResolve").onclick=resolve;
  btn("mhSyncDisconnect").onclick=()=>{if(confirm("연결 정보를 이 기기에서 해제할까요? 로컬 세팅은 유지됩니다. 연결 코드를 잃으면 클라우드 복구가 어려울 수 있습니다.")){localStorage.removeItem(CONF);localStorage.removeItem(BASE);paused=false;status("연결 해제됨");render()}};
  btn("mhSyncCopy").onclick=async()=>{const code=btn("mhSyncCode").value;if(!code)return;try{await navigator.clipboard.writeText(code);status("연결 코드 복사됨")}catch{btn("mhSyncCode").select();status("코드가 선택됐습니다. 직접 복사하세요.")}};
- render();setInterval(sync,45000);document.addEventListener("visibilitychange",()=>{if(!document.hidden)void sync()});
- if(connected()){status("기존 연결 발견 · 동기화 확인 중");setTimeout(sync,1500)}
+ render();
+ // Save/delete actions push after a short debounce; polling pulls changes from other devices.
+ window.addEventListener("mh4g:sync-change",scheduleSync);
+ window.addEventListener("storage",e=>{if(KEYS.includes(e.key))scheduleSync()});
+ setInterval(()=>{if(!document.hidden)void sync()},10000);
+ document.addEventListener("visibilitychange",()=>{if(!document.hidden){void sync();tryRefresh()}});
+ window.addEventListener("focus",()=>{void sync();tryRefresh()});
+ document.addEventListener("focusout",()=>setTimeout(tryRefresh,0));
+ panel.addEventListener("close",tryRefresh);
+ if(connected()){status("기존 연결 발견 · 동기화 확인 중");setTimeout(sync,1200)}
 }
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();
 })();
