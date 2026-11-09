@@ -2002,3 +2002,23 @@ button{border:1px solid var(--line);background:#202b39;color:white;border-radius
 #page-relic-equipment .rp-result-layout .rp-materials>.rr-note{font-size:12px;line-height:1.6}
 @media(max-width:1200px){#page-relic-equipment .rp-result-layout{grid-template-columns:minmax(0,1fr)}}
 @media(max-width:550px){#page-relic-equipment .rp-result-layout .rp-materials .rp-upgrade-material-table th,#page-relic-equipment .rp-result-layout .rp-materials .rp-upgrade-material-table td{font-size:12px;padding:9px 4px}}
+
+/* 2026-11-09: prevent saved-build controls from overflowing narrow mobile panels */
+#page-simulator .build-save-box,
+#page-simulator .build-save-controls{min-width:0;max-width:100%;box-sizing:border-box}
+#page-simulator .build-save-controls>*{min-width:0;max-width:100%;box-sizing:border-box}
+@media(max-width:700px){
+  #page-simulator .build-save-controls{display:grid;grid-template-columns:minmax(0,1fr);gap:8px}
+  #page-simulator .build-save-controls>input,
+  #page-simulator .build-save-controls>select,
+  #page-simulator .build-save-controls>button{
+    grid-column:1/-1;
+    width:100%;
+    min-width:0;
+    max-width:100%;
+    box-sizing:border-box;
+    white-space:normal;
+    overflow-wrap:anywhere;
+  }
+  #page-simulator .build-save-controls>button{min-height:40px}
+}
