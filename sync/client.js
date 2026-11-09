@@ -5,7 +5,7 @@ const KEYS=["mh4g-builds-v1","mh4g-owned-charms-v1","mh4g-owned-relic-weapons-v1
 const CONF="mh4g-sync-config-v1",BASE="mh4g-sync-baseline-v1",BACKUP="mh4g-sync-backups-v1";
 const fallback=()=>({favorites:{weapon:[],armor:[],recommend:[],quest:[]},craft:{},inventory:{}});
 const parse=(s,d)=>{try{return JSON.parse(s)}catch{return d}};
-const snapshot=()=>Object.fromEntries(KEYS.map((k,i)=>[k,parse(localStorage.getItem(k),i===4?fallback():[])]));
+const snapshot=()=>Object.fromEntries(KEYS.map((k,i)=>{const v=parse(localStorage.getItem(k),i===4?fallback():[]);return [k,v===null?(i===4?fallback():[]):v]}));
 const signature=x=>JSON.stringify(x);
 const config=()=>parse(localStorage.getItem(CONF),{})||{};
 const saveConfig=x=>localStorage.setItem(CONF,JSON.stringify(x));
