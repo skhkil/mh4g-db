@@ -161,7 +161,7 @@ const resistText=r=>`화 ${r?.fire??0} / 수 ${r?.water??0} / 뇌 ${r?.thunder??
 const PLANNER_STORAGE_KEY="mh4g-planner-v1";
 let plannerMemoryStorage="";
 function plannerStorageGet(){try{return localStorage.getItem(PLANNER_STORAGE_KEY)}catch{return plannerMemoryStorage||null}}
-function plannerStorageSet(value){plannerMemoryStorage=String(value||"");try{localStorage.setItem(PLANNER_STORAGE_KEY,plannerMemoryStorage);return true}catch{return false}}
+function plannerStorageSet(value){plannerMemoryStorage=String(value||"");try{localStorage.setItem(PLANNER_STORAGE_KEY,plannerMemoryStorage);window.dispatchEvent(new Event("mh4g:sync-change"));return true}catch{return false}}
 const EMPTY_PLANNER_STATE=()=>({favorites:{weapon:[],armor:[],recommend:[],quest:[]},craft:{},inventory:{}});
 function loadPlannerState(){
   const base=EMPTY_PLANNER_STATE();
@@ -473,7 +473,7 @@ function charm(){
 
 let ownedCharmsMemory=[],ownedRelicWeaponsMemory=[],ownedRelicArmorsMemory=[];
 function getOwnedCharms(){try{const v=JSON.parse(localStorage.getItem(OWNED_CHARMS_STORAGE_KEY)||"[]");ownedCharmsMemory=Array.isArray(v)?v:[];return ownedCharmsMemory}catch{return ownedCharmsMemory}}
-function setOwnedCharms(list){ownedCharmsMemory=Array.isArray(list)?list:[];try{localStorage.setItem(OWNED_CHARMS_STORAGE_KEY,JSON.stringify(ownedCharmsMemory));return true}catch{return false}}
+function setOwnedCharms(list){ownedCharmsMemory=Array.isArray(list)?list:[];try{localStorage.setItem(OWNED_CHARMS_STORAGE_KEY,JSON.stringify(ownedCharmsMemory));window.dispatchEvent(new Event("mh4g:sync-change"));return true}catch{return false}}
 function normalizeCharmRecord(c={}){const skills={};for(const [id,v] of Object.entries(c.skills||{})){const n=Number(v)||0;if(id&&n)skills[id]=n}return {id:String(c.id||`charm_${Date.now()}_${Math.random().toString(36).slice(2,8)}`),skills,slots:Math.max(0,Math.min(3,Number(c.slots)||0))}}
 function charmLabel(c){const ss=Object.entries(c?.skills||{}).map(([id,v])=>`${skillName(id)} ${Number(v)>0?"+":""}${Number(v)}`);return `${ss.length?ss.join(" / "):"스킬 없음"} · ${slotsText(c?.slots||0)}`}
 function renderOwnedCharms(){const root=$("#ownedCharmList");if(!root)return;const list=getOwnedCharms();root.innerHTML=`<details class="owned-assets-details"><summary>보유 호석 ${list.length}개</summary><div class="owned-assets-body">${list.length?list.map((c,i)=>`<div class="owned-charm-row owned-asset-apply-row" data-owned-charm-row="${i}" tabindex="0" role="button" aria-label="${esc(charmLabel(c))} 적용"><span class="owned-item-label">${esc(charmLabel(c))}</span><span class="owned-charm-actions"><button type="button" class="ghost small" data-owned-charm-remove="${i}" aria-label="${esc(charmLabel(c))} 삭제">삭제</button></span></div>`).join(""):'<div class="muted owned-empty">등록된 보유 호석이 없습니다.</div>'}</div></details>`}
@@ -481,7 +481,7 @@ function renderOwnedCharms(){const root=$("#ownedCharmList");if(!root)return;con
 // 발굴 방어구는 일반 방어구 DB와 분리하여 사용자 브라우저에만 보관한다.
 // 'slots'는 고정 복합스킬 장식의 점유분을 제외하고 실제 비어 있는 슬롯 수이다.
 function getOwnedRelicArmors(){try{const v=JSON.parse(localStorage.getItem(OWNED_RELIC_ARMORS_STORAGE_KEY)||"[]");ownedRelicArmorsMemory=Array.isArray(v)?v.map(normalizeRelicArmorRecord):[];return ownedRelicArmorsMemory}catch{return ownedRelicArmorsMemory}}
-function setOwnedRelicArmors(list){ownedRelicArmorsMemory=list.map(normalizeRelicArmorRecord);try{localStorage.setItem(OWNED_RELIC_ARMORS_STORAGE_KEY,JSON.stringify(ownedRelicArmorsMemory));return true}catch{return false}}
+function setOwnedRelicArmors(list){ownedRelicArmorsMemory=list.map(normalizeRelicArmorRecord);try{localStorage.setItem(OWNED_RELIC_ARMORS_STORAGE_KEY,JSON.stringify(ownedRelicArmorsMemory));window.dispatchEvent(new Event("mh4g:sync-change"));return true}catch{return false}}
 function normalizeRelicArmorRecord(r={}){
  const part=PARTS.includes(r.part)?r.part:"head";
  const raw=String(r.name||"").trim();const name=raw||`발굴 ${PART_NAMES[part]} 방어구`;
@@ -528,7 +528,7 @@ function saveOwnedRelicArmor(part){
 function applyOwnedRelicArmor(index){const a=getOwnedRelicArmors()[Number(index)];if(!a)return;uiState.manualArmorModes[a.part]="relic";uiState.manual[a.part]=a.id;uiState.manualDecorations[a.part]=[];renderManualSelectors();renderManualResult()}
 function removeOwnedRelicArmor(index){const list=getOwnedRelicArmors();const removed=list.splice(Number(index),1)[0];setOwnedRelicArmors(list);if(removed&&uiState.manual[removed.part]===removed.id){uiState.manual[removed.part]="";uiState.manualDecorations[removed.part]=[]}syncOwnedRelicArmorIndexes();renderOwnedRelicArmorList();renderManualSelectors();renderManualResult()}
 function getOwnedRelicWeapons(){try{const v=JSON.parse(localStorage.getItem(OWNED_RELIC_WEAPONS_STORAGE_KEY)||"[]");ownedRelicWeaponsMemory=Array.isArray(v)?v:[];return ownedRelicWeaponsMemory}catch{return ownedRelicWeaponsMemory}}
-function setOwnedRelicWeapons(list){ownedRelicWeaponsMemory=Array.isArray(list)?list:[];try{localStorage.setItem(OWNED_RELIC_WEAPONS_STORAGE_KEY,JSON.stringify(ownedRelicWeaponsMemory));return true}catch{return false}}
+function setOwnedRelicWeapons(list){ownedRelicWeaponsMemory=Array.isArray(list)?list:[];try{localStorage.setItem(OWNED_RELIC_WEAPONS_STORAGE_KEY,JSON.stringify(ownedRelicWeaponsMemory));window.dispatchEvent(new Event("mh4g:sync-change"));return true}catch{return false}}
 function normalizeRelicWeaponRecord(r={}){
  const deco=decorationById(r.decorationId)||r.deco||null;
  const mode=r.slotMode==="unknown"?"unknown":r.slotMode==="empty"?"empty":"fixed";
@@ -557,7 +557,7 @@ function compareMergedAutoResults(a,b){const am=a.metrics||{},bm=b.metrics||{};r
 function requiredCharmConditionFromNear(near){const misses=near?.missing||[];if(!misses.length)return "추가 호석 조건 산출 불가";const parts=misses.map(x=>`${skillName(x.skillId)} +${Number(x.missing||0)}`);return `${parts.join(" / ")} · 슬롯3이면 장식주 보완 여지 증가 (충분 조건)`}
 
 function getSavedBuilds(){try{const v=JSON.parse(localStorage.getItem(BUILD_STORAGE_KEY)||"[]");return Array.isArray(v)?v:[]}catch{return []}}
-function setSavedBuilds(list){localStorage.setItem(BUILD_STORAGE_KEY,JSON.stringify(list))}
+function setSavedBuilds(list){localStorage.setItem(BUILD_STORAGE_KEY,JSON.stringify(list));window.dispatchEvent(new Event("mh4g:sync-change"))}
 function renderSavedBuilds(selectedId=""){
   const el=$("#savedBuildSelect"); if(!el)return;
   const list=getSavedBuilds();
