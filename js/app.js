@@ -476,7 +476,7 @@ function getOwnedCharms(){try{const v=JSON.parse(localStorage.getItem(OWNED_CHAR
 function setOwnedCharms(list){ownedCharmsMemory=Array.isArray(list)?list:[];try{localStorage.setItem(OWNED_CHARMS_STORAGE_KEY,JSON.stringify(ownedCharmsMemory));window.dispatchEvent(new Event("mh4g:sync-change"));return true}catch{return false}}
 function normalizeCharmRecord(c={}){const skills={};for(const [id,v] of Object.entries(c.skills||{})){const n=Number(v)||0;if(id&&n)skills[id]=n}return {id:String(c.id||`charm_${Date.now()}_${Math.random().toString(36).slice(2,8)}`),skills,slots:Math.max(0,Math.min(3,Number(c.slots)||0))}}
 function charmLabel(c){const ss=Object.entries(c?.skills||{}).map(([id,v])=>`${skillName(id)} ${Number(v)>0?"+":""}${Number(v)}`);return `${ss.length?ss.join(" / "):"스킬 없음"} · ${slotsText(c?.slots||0)}`}
-function renderOwnedCharms(){const root=$("#ownedCharmList");if(!root)return;const list=getOwnedCharms();root.innerHTML=`<details class="owned-assets-details"><summary>보유 호석 ${list.length}개</summary><div class="owned-assets-body">${list.length?list.map((c,i)=>`<div class="owned-charm-row owned-asset-apply-row" data-owned-charm-row="${i}" tabindex="0" role="button" aria-label="${esc(charmLabel(c))} 적용"><span class="owned-item-label">${esc(charmLabel(c))}</span><span class="owned-charm-actions"><button type="button" class="ghost small" data-owned-charm-remove="${i}" aria-label="${esc(charmLabel(c))} 삭제">삭제</button></span></div>`).join(""):'<div class="muted owned-empty">등록된 보유 호석이 없습니다.</div>'}<div style="padding:10px 4px 2px;display:flex;gap:8px;align-items:center;flex-wrap:wrap"><button type="button" class="ghost small" data-owned-charm-import-ten="1">수정 호석 10개 동기화 반영</button><span class="muted" style="font-size:12px">현재 브라우저에서 기존 호석을 교체·추가 (원본 백업)</span></div></div></details>`}
+function renderOwnedCharms(){const root=$("#ownedCharmList");if(!root)return;const list=getOwnedCharms();root.innerHTML=`<details class="owned-assets-details"><summary>보유 호석 ${list.length}개</summary><div class="owned-assets-body">${list.length?list.map((c,i)=>`<div class="owned-charm-row owned-asset-apply-row" data-owned-charm-row="${i}" tabindex="0" role="button" aria-label="${esc(charmLabel(c))} 적용"><span class="owned-item-label">${esc(charmLabel(c))}</span><span class="owned-charm-actions"><button type="button" class="ghost small" data-owned-charm-remove="${i}" aria-label="${esc(charmLabel(c))} 삭제">삭제</button></span></div>`).join(""):'<div class="muted owned-empty">등록된 보유 호석이 없습니다.</div>'}</div></details>`}
 
 // 발굴 방어구는 일반 방어구 DB와 분리하여 사용자 브라우저에만 보관한다.
 // 'slots'는 고정 복합스킬 장식의 점유분을 제외하고 실제 비어 있는 슬롯 수이다.
@@ -582,6 +582,92 @@ function importEditedOwnedCharms20261111(){
    showRuntimeStatus(result,"success");
    window.alert(result);
  }catch(error){window.alert("호석 반영 실패: "+(error?.message||String(error)));}
+}
+
+
+const OWNED_CHARM_BULK_BACKUPS="mh4g-owned-charms-bulk-backups-v1";
+const CHARM_BATCH_ALIASES={회성:"회피성능",약특:"통격",청각:"청각보호",통강:"통상탄강화",용속공격:"용속성공격",화내성:"불내성"};
+function charmBatchSignature(c){return JSON.stringify([Object.entries(c?.skills||{}).filter(([,v])=>Number(v)!==0).map(([id,v])=>[id,Number(v)]).sort((a,b)=>a[0].localeCompare(b[0])),Number(c?.slots)||0]);}
+function parseCharmBatchSpec(raw){
+ const parts=String(raw).split(/\s*(?:\/|,|\||\t)\s*/).map(x=>x.trim()).filter(Boolean);
+ if(parts.length<2||parts.length>3)throw Error("스킬 1~2개와 슬롯을 / 로 구분해 줘.");
+ const sl=parts.pop().replace(/\s/g,"").toUpperCase();
+ const m=sl.match(/^(?:([0-3])슬(?:롯)?|슬롯([0-3])|([0-3]))$/);
+ const slots=m?Number(m[1]??m[2]??m[3]):/^[O-]{3}$/.test(sl)?(sl.match(/O/g)||[]).length:-1;
+ if(slots<0||slots>3)throw Error("슬롯을 0~3슬롯 또는 OOO 형태로 적어 줘.");
+ const skills={};
+ for(const piece of parts){
+   const p=piece.match(/^(.+?)\s*([+-]\s*\d{1,2}|\d{1,2})$/);if(!p)throw Error("스킬 형식 오류: "+piece);
+   const name=CHARM_BATCH_ALIASES[p[1].trim()]||p[1].trim();
+   const candidates=(data.skills||[]).filter(x=>x.name===name||x.nameJa===name||x.nameEn===name);
+   if(candidates.length!==1)throw Error("스킬을 찾지 못했어: "+name);
+   const amount=Number(p[2].replace(/\s/g,""));if(!Number.isInteger(amount)||amount===0||Math.abs(amount)>30)throw Error("포인트 오류: "+piece);
+   if(Object.hasOwn(skills,candidates[0].id))throw Error("중복 스킬: "+name);
+   skills[candidates[0].id]=amount;
+ }
+ return {skills,slots};
+}
+function parseCharmBatchRows(text){
+ const rules=[];
+ String(text||"").split(/\r?\n/).forEach((raw,i)=>{
+   let line=raw.trim();if(!line||line.startsWith("#"))return;
+   const removing=/^삭제\s*:/.test(line);if(removing)line=line.replace(/^삭제\s*:/,"").trim();
+   const pieces=line.split(/\s*(?:=>|→)\s*/);
+   if(pieces.length>2||pieces.some(x=>!x.trim())||(removing&&pieces.length>1))throw Error((i+1)+"행 입력 형식 오류");
+   try{const items=pieces.map(parseCharmBatchSpec);rules.push({line:i+1,type:removing?"delete":items.length===2?"edit":"add",old:removing?items[0]:items.length===2?items[0]:null,now:removing?null:items[items.length-1]});}
+   catch(e){throw Error((i+1)+"행: "+e.message);}
+ });
+ if(!rules.length||rules.length>200)throw Error("한 번에 1~200개 호석을 입력해 줘.");
+ return rules;
+}
+function planCharmBatch(original,rules){
+ const list=original.map(x=>({...x,skills:{...(x.skills||{})}}));let added=0,edited=0,deleted=0,skipped=0;
+ for(const item of rules){
+   const next=item.now?charmBatchSignature(item.now):null;
+   if(item.type==="add"){
+     if(list.some(c=>charmBatchSignature(c)===next)){skipped++;continue;}
+     list.push(normalizeCharmRecord(item.now));added++;continue;
+   }
+   const old=charmBatchSignature(item.old),idx=list.findIndex(c=>charmBatchSignature(c)===old);
+   if(idx<0){if(item.type==="edit"&&list.some(c=>charmBatchSignature(c)===next)){skipped++;continue;}throw Error(item.line+"행: 수정·삭제 대상 호석이 없어.");}
+   if(item.type==="delete"){list.splice(idx,1);deleted++;continue;}
+   if(old===next){skipped++;continue;}
+   if(list.some((c,i)=>i!==idx&&charmBatchSignature(c)===next))throw Error(item.line+"행: 수정 결과가 다른 보유호석과 중복돼.");
+   list[idx]={...list[idx],skills:{...item.now.skills},slots:item.now.slots};edited++;
+ }
+ return {list,added,edited,deleted,skipped};
+}
+function charmBatchBackup(list){
+ let v=[];try{v=JSON.parse(localStorage.getItem(OWNED_CHARM_BULK_BACKUPS)||"[]")}catch{}
+ if(!Array.isArray(v))v=[];
+ v.unshift({at:new Date().toISOString(),charms:list});
+ localStorage.setItem(OWNED_CHARM_BULK_BACKUPS,JSON.stringify(v.slice(0,5)));
+}
+function charmBatchStatus(message){const e=$("#ownedCharmBulkStatus");if(e)e.textContent=message;}
+function charmBatchApply(){
+ try{
+   const source=$("#ownedCharmBulkText")?.value||"",original=getOwnedCharms(),plan=planCharmBatch(original,parseCharmBatchRows(source));
+   if(!plan.added&&!plan.edited&&!plan.deleted){charmBatchStatus("이미 있는 호석 "+plan.skipped+"개. 변경 사항이 없어.");return;}
+   if(!window.confirm("호석 "+original.length+"개에서 추가 "+plan.added+", 수정 "+plan.edited+", 삭제 "+plan.deleted+"개를 반영할까? 변경 전 백업을 남겨."))return;
+   charmBatchBackup(original);if(!setOwnedCharms(plan.list))throw Error("저장 실패");
+   renderOwnedCharms();charmBatchStatus("완료: 추가 "+plan.added+" · 수정 "+plan.edited+" · 삭제 "+plan.deleted+" · 중복 "+plan.skipped+" · 현재 "+plan.list.length+"개. 동기화 연결 시 전송돼.");
+ }catch(e){charmBatchStatus("적용하지 않았어: "+(e?.message||String(e)));}
+}
+function charmBatchExport(){
+ const list=getOwnedCharms(),e=$("#ownedCharmBulkText");if(!e)return;
+ e.value=list.map(c=>Object.entries(c.skills||{}).filter(([,v])=>Number(v)!==0).map(([id,v])=>skillName(id)+(Number(v)>0?"+":"")+Number(v)).join(" / ")+" / "+Number(c.slots||0)+"슬롯").join("\n");
+ charmBatchStatus("현재 호석 "+list.length+"개를 입력창에 불러왔어. 적용 버튼 전에는 변경되지 않아.");
+}
+function charmBatchUndo(){
+ try{
+   const v=JSON.parse(localStorage.getItem(OWNED_CHARM_BULK_BACKUPS)||"[]");
+   if(!Array.isArray(v)||!v.length){charmBatchStatus("복원할 이전 일괄작업이 없어.");return;}
+   if(!Array.isArray(v[0].charms))throw Error("백업 형식 오류");
+   if(!window.confirm("최근 일괄작업 이전 호석 "+v[0].charms.length+"개로 되돌릴까?"))return;
+   if(!setOwnedCharms(v[0].charms))throw Error("복원 실패");
+   localStorage.setItem(OWNED_CHARM_BULK_BACKUPS,JSON.stringify(v.slice(1)));
+   renderOwnedCharms();charmBatchStatus("호석 "+v[0].charms.length+"개로 복원했어.");
+ }catch(e){charmBatchStatus("되돌리기 실패: "+(e?.message||String(e)));}
 }
 
 function saveCurrentCharmToOwned(){const c=normalizeCharmRecord(charm());if(!Object.keys(c.skills).length&&!c.slots){showRuntimeStatus("저장할 호석 스킬 또는 슬롯을 먼저 입력하세요.","info");return}const list=getOwnedCharms();const sig=JSON.stringify({skills:c.skills,slots:c.slots});if(!list.some(x=>JSON.stringify({skills:x.skills||{},slots:Number(x.slots)||0})===sig)){list.push(c);setOwnedCharms(list)}renderOwnedCharms()}
@@ -999,7 +1085,8 @@ function renderManualSelectors(){
   box.innerHTML=
     `<div class="manual-equipment-card weapon-card"><div class="manual-equipment-main"><span class="equipment-label">무기</span><div class="manual-weapon-tools">${weaponControls}</div>${skillPointsHtml(containerSkillPoints("weapon"),"equipment-skill-points")}</div><div id="deco-editor-weapon" class="manual-deco-editor"></div></div>`+
     PARTS.map(p=>equipmentCard(PART_NAMES[p],p,`manual-${p}`,`<div class="relic-armor-controls"><select id="manual-armor-mode-${p}" class="manual-armor-mode" aria-label="${PART_NAMES[p]} 방어구 유형"><option value="crafted">제작방어구</option><option value="relic">발굴방어구</option></select><div class="relic-armor-inline-tools" id="relic-armor-tools-${p}" ${uiState.manualArmorModes[p]==="relic"?"":"hidden"}><details class="relic-armor-inline-details"><summary id="ownedRelicArmorCount-${p}">보유 방어구</summary><div class="relic-armor-dropdown" id="ownedRelicArmorList-${p}"></div></details><button type="button" class="ghost small relic-armor-add" data-open-relic-armor="${p}">등록</button></div></div>`)).join("")+
-    `<div class="manual-equipment-card charm-card"><div class="manual-equipment-main charm-main"><span class="equipment-label">호석</span><div class="manual-charm-inline"><span class="inline-field-label">스킬1</span><div id="charmSkill1Picker" class="search-select compact"></div><input id="charmPoint1" class="charm-point" type="number" min="-20" max="20" value="${uiState.charmPoint1}" /><span class="inline-field-label">스킬2</span><div id="charmSkill2Picker" class="search-select compact"></div><input id="charmPoint2" class="charm-point" type="number" min="-20" max="20" value="${uiState.charmPoint2}" /><span class="inline-field-label">슬롯</span><select id="charmSlots" class="charm-slot-select"><option value="0">---</option><option value="1">O--</option><option value="2">OO-</option><option value="3">OOO</option></select></div>${skillPointsHtml(containerSkillPoints("charm"),"equipment-skill-points")}<div class="owned-charm-inline"><div class="owned-charm-controls"><button type="button" class="ghost small" data-save-owned-charm>현재 호석 저장</button></div><div id="ownedCharmList" class="owned-charm-list"></div></div></div><div id="deco-editor-charm" class="manual-deco-editor"></div></div><dialog id="relicArmorDialog" class="relic-armor-dialog" aria-labelledby="relicArmorDialogTitle"><div class="relic-armor-dialog-head"><strong id="relicArmorDialogTitle">발굴 방어구 등록</strong><button type="button" class="ghost small" data-close-relic-armor aria-label="닫기">✕</button></div><div id="ownedRelicArmorEditor" class="relic-armor-form"></div></dialog>`;
+    `<div class="manual-equipment-card charm-card"><div class="manual-equipment-main charm-main"><span class="equipment-label">호석</span><div class="manual-charm-inline"><span class="inline-field-label">스킬1</span><div id="charmSkill1Picker" class="search-select compact"></div><input id="charmPoint1" class="charm-point" type="number" min="-20" max="20" value="${uiState.charmPoint1}" /><span class="inline-field-label">스킬2</span><div id="charmSkill2Picker" class="search-select compact"></div><input id="charmPoint2" class="charm-point" type="number" min="-20" max="20" value="${uiState.charmPoint2}" /><span class="inline-field-label">슬롯</span><select id="charmSlots" class="charm-slot-select"><option value="0">---</option><option value="1">O--</option><option value="2">OO-</option><option value="3">OOO</option></select></div>${skillPointsHtml(containerSkillPoints("charm"),"equipment-skill-points")}<div class="owned-charm-inline"><div class="owned-charm-controls"><button type="button" class="ghost small" data-save-owned-charm>현재 호석 저장</button><button type="button" class="ghost small" data-owned-charm-bulk-toggle>호석 일괄관리</button></div><section id="ownedCharmBulkPanel" class="owned-charm-bulk-panel" hidden><b>보유 호석 일괄관리</b><p class="muted">한 줄에 호석 하나씩 입력해. 기존 호석 수정: <code>기존 호석 =&gt; 변경 호석</code>, 삭제: <code>삭제: 호석</code>. 기존 목록 백업 후 저장해.</p><pre class="owned-charm-bulk-example">도공+4 / 회피성능+9 / 3슬롯
+장인+5 / 3슬롯 =&gt; 장인+6 / 청각보호+5 / 3슬롯</pre><textarea id="ownedCharmBulkText" rows="5" spellcheck="false" placeholder="도공+4 / 회피성능+9 / 3슬롯&#10;통격+6 / 공격+14 / 3슬롯"></textarea><div class="owned-charm-bulk-actions"><button type="button" class="ghost small" data-owned-charm-bulk-export>현재 호석 불러오기</button><button type="button" class="ghost small" data-owned-charm-bulk-apply>일괄 적용</button><button type="button" class="ghost small" data-owned-charm-bulk-undo>최근 작업 되돌리기</button><button type="button" class="ghost small" data-owned-charm-import-ten>11/11 수정 호석 10개 재검사</button></div><p class="muted" id="ownedCharmBulkStatus" role="status">적용 버튼 전에는 목록이 변경되지 않아.</p></section><div id="ownedCharmList" class="owned-charm-list"></div></div></div><div id="deco-editor-charm" class="manual-deco-editor"></div></div><dialog id="relicArmorDialog" class="relic-armor-dialog" aria-labelledby="relicArmorDialogTitle"><div class="relic-armor-dialog-head"><strong id="relicArmorDialogTitle">발굴 방어구 등록</strong><button type="button" class="ghost small" data-close-relic-armor aria-label="닫기">✕</button></div><div id="ownedRelicArmorEditor" class="relic-armor-form"></div></dialog>`;
 
   renderOwnedRelicArmorList();
   const manualModeEl=$("#manualWeaponModeFilter"),manualSlotEl=$("#manualWeaponSlotFilter");
@@ -3030,6 +3117,10 @@ function bind(){
     if(weaponRow&&!e.target.closest('button,a,input,select,summary')){e.preventDefault();void openWeaponDetail(weaponRow);return;}
     const skillItem=e.target.closest?.('#skillTable .inline-item-link[data-open-item]');
     if(skillItem){e.preventDefault();e.stopPropagation();void openItemByName(skillItem.dataset.openItem);return;}
+    const bulkToggle=e.target.closest?.('[data-owned-charm-bulk-toggle]');if(bulkToggle){e.preventDefault();e.stopPropagation();const el=$("#ownedCharmBulkPanel");if(el)el.hidden=!el.hidden;return;}
+    const bulkApply=e.target.closest?.('[data-owned-charm-bulk-apply]');if(bulkApply){e.preventDefault();e.stopPropagation();charmBatchApply();return;}
+    const bulkExport=e.target.closest?.('[data-owned-charm-bulk-export]');if(bulkExport){e.preventDefault();e.stopPropagation();charmBatchExport();return;}
+    const bulkUndo=e.target.closest?.('[data-owned-charm-bulk-undo]');if(bulkUndo){e.preventDefault();e.stopPropagation();charmBatchUndo();return;}
     const editedCharmImport=e.target.closest?.('[data-owned-charm-import-ten]');if(editedCharmImport){e.preventDefault();e.stopPropagation();importEditedOwnedCharms20261111();return;}
     const ownedSave=e.target.closest?.('[data-save-owned-charm]');if(ownedSave){saveCurrentCharmToOwned();return}
     const ownedRemove=e.target.closest?.('[data-owned-charm-remove]');
