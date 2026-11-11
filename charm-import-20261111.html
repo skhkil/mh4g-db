@@ -1,0 +1,46 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="dark"><title>MH4G 호석 10개 일괄 반영</title><style>*{box-sizing:border-box}body{margin:0;padding:18px 12px;background:#111820;color:#eef5fc;font:15px/1.7 system-ui,-apple-system,sans-serif}main{max-width:740px;margin:auto}h1{font-size:25px}p,small{color:#b4c5d7}article{padding:20px;margin:20px 0;border:1px solid #354658;border-radius:14px;background:#1c2733}ul{padding-left:24px}li{padding:5px 0;border-bottom:1px solid #304353}li:last-child{border:0}button,a{display:inline-block;margin:8px 8px 6px 0;padding:11px 16px;border-radius:9px;background:#365c84;color:#fff;border:1px solid #7090af;text-decoration:none;font-weight:700;font-size:15px;cursor:pointer}a{background:transparent}button:disabled{opacity:.5}#status{margin-top:12px;white-space:pre-line;color:#a8d8ff}</style></head><body><main><h1>수정 호석 10개 일괄 반영</h1><p>시뮬레이터의 <b>현재 브라우저에 저장된 보유호석</b> 목록을 수정하는 전용 페이지야. 기존 항목과 일치하면 교체하고, 없으면 추가해. 다른 호석·장비 세팅은 그대로 두고 적용 전 목록을 백업해.</p><article><b>적용 대상</b><ul id="items"></ul><button id="apply" type="button">보유 호석 10개 반영</button><a href="./">취소하고 시뮬레이터 열기</a><div role="status" id="status"></div></article><p><small>PC·모바일 자동 동기화를 쓰고 있다면 반영 후 동기화 상태도 확인해 줘.</small></p></main><script>"use strict";
+const K="mh4g-owned-charms-v1",BK="mh4g-charm-import-backup-20261111",SB="mh4g-sync-backups-v1";
+const rows=[{"label":"도공+4 / 회피성능+9","out":[["skill_0a0d7a1a0dde",4],["skill_977515684794",9]],"from":[[0,[["skill_0a0d7a1a0dde",2]]]]},{"label":"도공+4 / 청각보호+5","out":[["skill_0a0d7a1a0dde",4],["skill_4d4485c17552",5]],"from":[[0,[["skill_0a0d7a1a0dde",3],["skill_a9d9b5fe31e4",8]]]]},{"label":"도공+4 / 예리도+5","out":[["skill_0a0d7a1a0dde",4],["skill_82680c9bf0f3",5]],"from":[[0,[["skill_0a0d7a1a0dde",4],["skill_82680c9bf0f3",5]]]]},{"label":"통격+6 / 공격+14","out":[["skill_aa8a7d803517",6],["skill_2a9c189a93d7",14]],"from":[[0,[["skill_771a2a6d9d1e",5],["skill_2a9c189a93d7",13]]],[0,[["skill_771a2a6d9d1e",4],["skill_2a9c189a93d7",13]]]]},{"label":"중격+6 / 회피성능+9","out":[["skill_91feda75c5e9",6],["skill_977515684794",9]],"from":[[0,[["skill_91feda75c5e9",6],["skill_977515684794",8]]]]},{"label":"청각보호+8 / 회피성능+9","out":[["skill_4d4485c17552",8],["skill_977515684794",9]],"from":[[0,[["skill_4d4485c17552",4],["skill_977515684794",4]]]]},{"label":"장인+6 / 회피성능+9","out":[["skill_dc306dbb4ef6",6],["skill_977515684794",9]],"from":[[3,[["skill_dc306dbb4ef6",5]]]]},{"label":"장인+6 / 청각보호+5","out":[["skill_dc306dbb4ef6",6],["skill_4d4485c17552",5]],"from":[[3,[["skill_dc306dbb4ef6",5],["skill_4d4485c17552",5]]],[3,[["skill_dc306dbb4ef6",5]]]]},{"label":"통격+6 / 투혼+6","out":[["skill_aa8a7d803517",6],["skill_a71c734bea26",6]],"from":[[3,[["skill_a71c734bea26",4],["skill_d565a104e42c",-7]]]]},{"label":"장인+6 / 공격+14","out":[["skill_dc306dbb4ef6",6],["skill_2a9c189a93d7",14]],"from":[[0,[["skill_dc306dbb4ef6",4],["skill_c21e79dfed09",5]]]]}];
+const status=document.getElementById("status"),btn=document.getElementById("apply");
+document.getElementById("items").innerHTML=rows.map((r,i)=>'<li>'+(i+1)+'. '+r.label+' · 3슬롯</li>').join("");
+const sig=(skills,slots)=>JSON.stringify([Object.entries(skills||{}).filter(([,v])=>Number(v)!==0).map(([k,v])=>[k,Number(v)]).sort((a,b)=>a[0].localeCompare(b[0])),Number(slots)||0]);
+function getList(){const x=JSON.parse(localStorage.getItem(K)||"[]");if(!Array.isArray(x))throw Error("호석 저장 데이터가 배열이 아니야.");return x;}
+function merge(original){
+  const list=structuredClone(original);
+  let changed=0,added=0,already=0;
+  for(const idx of [7,6,0,1,2,3,4,5,8,9]){
+    const r=rows[idx],target=Object.fromEntries(r.out),tag=sig(target,3);
+    if(list.some(c=>sig(c.skills,c.slots)===tag)){already++;continue;}
+    const ix=list.findIndex(c=>r.from.some(([slot,pairs])=>sig(c.skills,c.slots)===sig(Object.fromEntries(pairs),slot)));
+    if(ix>=0){list[ix]={...list[ix],skills:target,slots:3};changed++;}
+    else{list.push({id:"import_20261111_"+String(idx+1),skills:target,slots:3});added++;}
+  }
+  return {list,changed,added,already};
+}
+function backup(before){
+ const keys=["mh4g-builds-v1",K,"mh4g-owned-relic-weapons-v1","mh4g-owned-relic-armors-v1","mh4g-planner-v1"];
+ const data={};
+ for(const key of keys){try{data[key]=JSON.parse(localStorage.getItem(key)||"null")}catch{data[key]=null;}}
+ let backs=[];try{backs=JSON.parse(localStorage.getItem(SB)||"[]")}catch{}
+ if(!Array.isArray(backs))backs=[];
+ backs.unshift({at:new Date().toISOString(),note:"호석 10개 적용 직전",data});
+ localStorage.setItem(SB,JSON.stringify(backs.slice(0,3)));
+ localStorage.setItem(BK,JSON.stringify({at:new Date().toISOString(),charms:before}));
+}
+try{status.textContent="현재 이 브라우저의 보유 호석 "+getList().length+"개 확인."}
+catch(e){status.textContent="저장소 오류: "+e.message;btn.disabled=true;}
+btn.onclick=()=>{
+ let original,m;
+ try{original=getList();m=merge(original)}
+ catch(e){status.textContent="호석 검사 오류: "+e.message;return;}
+ if(m.changed+m.added===0){status.textContent="이미 수정된 10개가 모두 등록되어 있어.";return;}
+ if(!confirm("수정 호석 10개를 이 브라우저의 보유호석에 반영할까?\n기존 목록에서 교체 "+m.changed+"개 / 신규 "+m.added+"개\n다른 호석은 유지하고 백업을 남겨."))return;
+ btn.disabled=true;
+ try{
+   backup(original);
+   localStorage.setItem(K,JSON.stringify(m.list));
+   if(JSON.stringify(getList())!==JSON.stringify(m.list))throw Error("저장 결과가 일치하지 않아.");
+   status.textContent="완료! 교체 "+m.changed+"개, 추가 "+m.added+"개, 이미 등록 "+m.already+"개. 총 "+m.list.length+"개.";
+   setTimeout(()=>location.replace("./"),1000);
+ }catch(e){status.textContent="저장 실패: "+e.message;btn.disabled=false;}
+};</script></body></html>
