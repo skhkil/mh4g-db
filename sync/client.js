@@ -136,6 +136,57 @@ function render(){
  if(connected()){btn("mhSyncCode").value=c.code;btn("mhSyncCreate").hidden=true;btn("mhSyncJoin").hidden=true;btn("mhSyncDisconnect").hidden=false;btn("mhSyncNow").hidden=false}
  else{btn("mhSyncCreate").hidden=false;btn("mhSyncJoin").hidden=false;btn("mhSyncDisconnect").hidden=true;btn("mhSyncNow").hidden=true}
 }
+
+// Import explicitly selected owned charms from a one-time URL fragment.
+// Keeps unrelated charms intact, replaces matching old values, and deduplicates repeated imports.
+function importOwnedCharmLink(){
+ const match=location.hash.match(/^#mh4g-charm-import=([A-Za-z0-9_-]{16,8192})$/);
+ if(!match)return;
+ const clearLink=()=>history.replaceState(history.state,"",location.pathname+location.search);
+ try{
+   const decoded=atob(match[1].replace(/-/g,"+").replace(/_/g,"/"));
+   const payload=JSON.parse(decoded);
+   if(payload?.v!==1||!Array.isArray(payload.p)||payload.p.length<1||payload.p.length>30)throw new Error("호석 데이터 형식이 올바르지 않습니다.");
+   const parseSkills=entries=>{
+     if(!Array.isArray(entries)||entries.length<1||entries.length>2)throw new Error("스킬 수가 올바르지 않습니다.");
+     const result={};
+     for(const pair of entries){
+       if(!Array.isArray(pair)||pair.length!==2||!/^skill_[a-f0-9]{12}$/.test(pair[0])||!Number.isInteger(pair[1])||pair[1]===0||Math.abs(pair[1])>40||Object.hasOwn(result,pair[0]))throw new Error("스킬 ID 또는 포인트 값이 잘못되었습니다.");
+       result[pair[0]]=pair[1];
+     }
+     return result;
+   };
+   const key="mh4g-owned-charms-v1",original=parse(localStorage.getItem(key),[]);
+   if(!Array.isArray(original))throw new Error("보유 호석 저장소가 손상되었습니다.");
+   const list=structuredClone(original);
+   const sig=(skills,slots)=>JSON.stringify([Object.entries(skills||{}).filter(([,v])=>Number(v)!==0).map(([k,v])=>[k,Number(v)]).sort((a,b)=>a[0].localeCompare(b[0])),Number(slots)||0]);
+   let replaced=0,added=0,already=0,removedOld=0;
+   for(let i=0;i<payload.p.length;i++){
+     const row=payload.p[i];
+     if(!Array.isArray(row)||row.length!==3||!Number.isInteger(row[0])||row[0]<0||row[0]>3)throw new Error("기존 호석 슬롯 형식이 잘못되었습니다.");
+     const oldSkills=parseSkills(row[1]),newSkills=parseSkills(row[2]);
+     const oldSignature=sig(oldSkills,row[0]),newSignature=sig(newSkills,3);
+     const previous=list.findIndex(c=>sig(c?.skills,c?.slots)===oldSignature);
+     const hasNew=list.some(c=>sig(c?.skills,c?.slots)===newSignature);
+     if(previous!==-1){
+       if(hasNew){list.splice(previous,1);removedOld++;}
+       else{list[previous]={...list[previous],skills:newSkills,slots:3};replaced++;}
+     }else if(hasNew)already++;
+     else{list.push({id:"charm_import_"+Date.now()+"_"+i,skills:newSkills,slots:3});added++;}
+   }
+   if(!confirm("보유 호석 "+payload.p.length+"개를 현재 목록에 반영할까요?\n기존 원본 호석은 교체하고, 등록되지 않은 호석은 추가합니다.\n다른 호석과 저장 세팅은 보존하며 변경 전 백업을 남깁니다.")){clearLink();return;}
+   const changed=replaced+added+removedOld;
+   if(changed){
+     backup("호석 링크 가져오기 전");
+     localStorage.setItem(key,JSON.stringify(list));
+     window.dispatchEvent(new Event("mh4g:sync-change"));
+   }
+   clearLink();
+   alert("보유 호석 반영 완료\n교체 "+replaced+"개 · 신규 "+added+"개 · 기존 중복 정리 "+removedOld+"개 · 이미 등록 "+already+"개\n총 "+list.length+"개. 변경 내용을 화면에 반영합니다.");
+   if(changed)location.reload();
+ }catch(e){clearLink();alert("호석 가져오기 실패: "+(e?.message||String(e)));}
+}
+
 function init(){
  const button=document.createElement("button");button.type="button";button.textContent="☁ 세팅 동기화";button.id="mhSyncOpen";button.style.cssText="margin-left:auto;cursor:pointer;padding:8px 12px;border-radius:8px;border:1px solid #64748b;background:transparent;color:inherit;white-space:nowrap";
  (document.querySelector(".topbar")||document.body).append(button);
@@ -165,6 +216,7 @@ function init(){
  document.addEventListener("focusout",()=>setTimeout(tryRefresh,0));
  panel.addEventListener("close",tryRefresh);
  if(connected()){status("기존 연결 발견 · 동기화 확인 중");setTimeout(sync,1200)}
+ importOwnedCharmLink();
 }
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();
 })();
