@@ -1355,6 +1355,18 @@ button{border:1px solid var(--line);background:#202b39;color:white;border-radius
 .owned-charm-actions{display:flex;gap:6px}
 @media(max-width:640px){.owned-charm-row{align-items:flex-start}.owned-charm-actions{width:100%}}
 
+/* Owned charm batch controls (PC / mobile). */
+.owned-charm-bulk-panel{margin:9px 0 5px;padding:12px;border:1px solid var(--line);border-radius:10px;background:rgba(120,147,180,.045);display:grid;gap:8px;min-width:0;color:var(--text)}
+.owned-charm-bulk-panel[hidden]{display:none!important}
+.owned-charm-bulk-panel>strong{font-size:14px}
+.owned-charm-bulk-panel p{font-size:12px;line-height:1.55;margin:0}
+.owned-charm-bulk-panel code{font-size:11px;overflow-wrap:anywhere}
+.owned-charm-bulk-panel textarea{box-sizing:border-box;width:100%;min-width:0;min-height:125px;resize:vertical;border:1px solid var(--line);border-radius:8px;padding:10px;background:var(--panel,#101923);color:var(--text);font:12px/1.6 ui-monospace,Consolas,"Noto Sans Mono",monospace}
+.owned-charm-bulk-example{margin:0;padding:8px 10px;border-radius:6px;background:rgba(0,0,0,.14);font-size:11px;line-height:1.55;white-space:pre-wrap;overflow-wrap:anywhere}
+.owned-charm-bulk-actions{display:flex;flex-wrap:wrap;gap:7px}
+.owned-charm-bulk-actions button{white-space:normal}
+@media(max-width:640px){.owned-charm-bulk-panel{padding:10px}.owned-charm-bulk-panel textarea{font-size:13px}.owned-charm-bulk-actions button{flex:1 1 45%}}
+
 /* hotfix: charm editor readability across desktop/tablet/fold
    Keep the full charm input on one horizontal line whenever the viewport can afford it.
    Only phones collapse the editor into compact rows. */
