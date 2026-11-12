@@ -84,8 +84,8 @@ async function connect(newCode,requireExisting=false,requestedCode=""){
    if(requireExisting&&!remote.exists)throw new Error("입력한 코드에 해당하는 클라우드 기록이 없습니다. 현재 모바일 연결은 유지됩니다.");
    if(requireExisting){
      const fp=await fingerprintCode(code);
-     if(!confirm("전환할 클라우드의 연결 식별자: "+fp+"\\n대상 클라우드 버전: "+remote.revision+
-       "\\n\\nPC 연결 진단에 표시된 식별자와 정확히 같은지 확인하세요.\\n다르면 취소를 누르세요. 이 연결로 전환하겠습니까?"))
+     if(!confirm("전환할 클라우드의 연결 식별자: "+fp+"\n대상 클라우드 버전: "+remote.revision+
+       "\n\nPC 연결 진단에 표시된 식별자와 정확히 같은지 확인하세요.\n다르면 취소를 누르세요. 이 연결로 전환하겠습니까?"))
        throw new Error("연결 전환을 취소했습니다. 기존 연결은 유지됩니다.");
    }
    const local=snapshot();let data=local,revision=remote.revision||0;
@@ -93,7 +93,7 @@ async function connect(newCode,requireExisting=false,requestedCode=""){
      const hasLocal=KEYS.slice(0,4).some(k=>Array.isArray(local[k])&&local[k].length)||
        Boolean(Object.keys(local[KEYS[4]]?.craft||{}).length||Object.keys(local[KEYS[4]]?.inventory||{}).length);
      if(hasLocal){
-       if(!confirm("이 기기의 데이터와 대상 클라우드 데이터를 병합할까요?\\n중복 ID의 장비는 복제하여 보존하고, 제작 수량/보유 소재의 충돌은 현재 기기 값을 우선합니다.\\n변경 전 로컬 백업도 보존합니다."))
+       if(!confirm("이 기기의 데이터와 대상 클라우드 데이터를 병합할까요?\n중복 ID의 장비는 복제하여 보존하고, 제작 수량/보유 소재의 충돌은 현재 기기 값을 우선합니다.\n변경 전 로컬 백업도 보존합니다."))
          throw new Error("연결을 취소했습니다. 기존 연결은 유지됩니다.");
        data=mergeInitial(local,remote.data);
      }else data=remote.data;
