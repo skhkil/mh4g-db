@@ -69,7 +69,7 @@ function editing(){const el=document.activeElement;return document.hasFocus()&&B
 function tryRefresh(){if(!pendingRefresh||document.hidden||editing()||btn("mhSyncDialog")?.open)return;pendingRefresh=false;location.reload()}
 function refreshSoon(){pendingRefresh=true;status("다른 기기의 변경을 받았습니다. 화면을 자동 갱신합니다.");tryRefresh()}
 function scheduleSync(){if(!connected()||paused)return;clearTimeout(uploadTimer);uploadTimer=setTimeout(()=>{uploadTimer=null;if(busy){scheduleSync();return}void sync()},400)}
-async function connect(newCode){
+async function connect(newCode,requireExisting=false){
  if(busy)return;busy=true;
  const priorConfig=config();
  try{
@@ -78,6 +78,7 @@ async function connect(newCode){
    saveConfig({url,code,revision:0});
    const remote=await api("GET");
    if(newCode&&remote.exists)throw new Error("연결 코드가 이미 사용 중입니다.");
+   if(requireExisting&&!remote.exists)throw new Error("입력한 코드에 해당하는 클라우드 기록이 없습니다. 기존 연결은 유지됩니다.");
    const local=snapshot();let data=local,revision=remote.revision||0;
    if(remote.exists){
      const hasLocal=KEYS.slice(0,4).some(k=>Array.isArray(local[k])&&local[k].length)||
@@ -140,20 +141,46 @@ async function resolve(){
    paused=false;lockReason="";btn("mhSyncResolve").hidden=true;status("충돌 해결 완료 · 자동 동기화 재개");
  }catch(e){status(e.message,true)}finally{busy=false;render()}
 }
+async function connectionFingerprint(){
+ const code=config().code;
+ if(!/^[A-Za-z0-9_-]{43}$/.test(code||""))return "미연결";
+ const bytes=new TextEncoder().encode(code);
+ const hash=await crypto.subtle.digest("SHA-256",bytes);
+ return [...new Uint8Array(hash)].slice(0,6).map(b=>b.toString(16).padStart(2,"0")).join("").toUpperCase();
+}
+function downloadLocalBackup(){
+ try{
+   const payload={format:"mh4g-sync-local-backup-v1",createdAt:new Date().toISOString(),data:snapshot()};
+   const blob=new Blob([JSON.stringify(payload,null,2)],{type:"application/json;charset=utf-8"});
+   const url=URL.createObjectURL(blob),a=document.createElement("a");
+   a.href=url;a.download="mh4g-local-backup-"+new Date().toISOString().slice(0,10)+".json";
+   document.body.append(a);a.click();a.remove();
+   setTimeout(()=>URL.revokeObjectURL(url),2000);
+   status("현재 기기 데이터 JSON 백업 다운로드를 요청했습니다. 파일이 저장됐는지 확인하세요.");
+ }catch(e){status("백업 생성 실패: "+(e?.message||String(e)),true)}
+}
 async function diagnose(){
  const el=btn("mhSyncDiagnostics");if(!el)return;
  if(!connected()){el.textContent="진단: 연결 코드가 없습니다. 기존 코드로 연결하거나 새 연결을 만드세요.";return}
  el.textContent="진단 중 · 서버 연결 확인...";
+ let fingerprint="확인 실패";
+ try{fingerprint=await connectionFingerprint()}catch{}
+ const c=config(),local=snapshot();
+ const pending=localStorage.getItem(BASE)!==signature(local);
+ const summary="연결 식별자 "+fingerprint+" (PC·모바일에서 일치해야 함) · 이 기기 버전 "+(c.revision??"미설정")+
+  " · 로컬 변경 "+(pending?"있음":"없음")+
+  " · 자동 동기화 "+(paused?"중지":"활성")+
+  " · 저장 세팅 "+(Array.isArray(local["mh4g-builds-v1"])?local["mh4g-builds-v1"].length:0)+"건"+
+  " · 보유 호석 "+(Array.isArray(local["mh4g-owned-charms-v1"])?local["mh4g-owned-charms-v1"].length:0)+"개";
  try{
-   const remote=await api("GET"),c=config(),local=snapshot();
-   const pending=localStorage.getItem(BASE)!==signature(local);
-   el.textContent="서버 응답 정상 · 클라우드 "+(remote.exists?"존재 (버전 "+remote.revision+")":"없음")+" · 이 기기 버전 "+(c.revision??"미설정")+" · 로컬 변경 "+(pending?"있음":"없음")+" · 자동 동기화 "+(paused?"중지":"활성")+(paused?" · 충돌 해결 필요":"");
- }catch(e){el.textContent="진단 실패 · "+(e?.message||String(e))+" · 현재 기기 로컬 데이터는 유지됩니다."}
+   const remote=await api("GET");
+   el.textContent=summary+" · 서버 응답 정상 · 클라우드 "+(remote.exists?"존재 (버전 "+remote.revision+")":"없음")+(paused?" · 충돌 해결 필요":"");
+ }catch(e){el.textContent=summary+" · 서버 진단 실패: "+(e?.message||String(e))}
 }
 function render(){
  const c=config();
- if(connected()){btn("mhSyncCode").value=c.code;btn("mhSyncCreate").hidden=true;btn("mhSyncJoin").hidden=true;btn("mhSyncDisconnect").hidden=false;btn("mhSyncNow").hidden=false;btn("mhSyncCheck").hidden=false}
- else{btn("mhSyncCreate").hidden=false;btn("mhSyncJoin").hidden=false;btn("mhSyncDisconnect").hidden=true;btn("mhSyncNow").hidden=true;btn("mhSyncCheck").hidden=true}
+ if(connected()){btn("mhSyncCode").value=c.code;btn("mhSyncCreate").hidden=true;btn("mhSyncJoin").hidden=true;btn("mhSyncSwitch").hidden=false;btn("mhSyncDisconnect").hidden=false;btn("mhSyncNow").hidden=false;btn("mhSyncCheck").hidden=false}
+ else{btn("mhSyncCreate").hidden=false;btn("mhSyncJoin").hidden=false;btn("mhSyncSwitch").hidden=true;btn("mhSyncDisconnect").hidden=true;btn("mhSyncNow").hidden=true;btn("mhSyncCheck").hidden=true}
 }
 
 // Import explicitly selected owned charms from a one-time URL fragment.
@@ -214,7 +241,7 @@ function init(){
  '<p style="font-size:13px;line-height:1.55">Google 로그인 없이 회사 PC와 모바일을 연결합니다. 최초 1회 연결 코드 입력 후 자동 동기화됩니다. 연결 코드는 비밀번호와 같으니 타인에게 공개하지 마세요.</p>'+
  '<label style="display:block;margin:12px 0">연결 코드<input id="mhSyncCode" type="password" placeholder="다른 기기에서 받은 43자리 코드" autocomplete="off" style="box-sizing:border-box;width:100%;padding:10px;margin-top:5px;font-family:monospace"></label>'+
  '<div id="mhSyncStatus" role="status" style="font-size:13px;min-height:32px">미연결 · 현재 세팅은 기존처럼 이 브라우저에 저장됩니다.</div>'+
- '<div style="display:flex;gap:8px;flex-wrap:wrap"><button id="mhSyncCreate">새 연결 만들기</button><button id="mhSyncJoin">기존 코드로 연결</button><button id="mhSyncCopy">코드 복사</button><button id="mhSyncNow" hidden>지금 동기화</button><button id="mhSyncCheck" hidden>연결 진단</button><button id="mhSyncResolve" hidden>충돌 해결</button><button id="mhSyncDisconnect" hidden>연결 해제</button></div>'+ 
+ '<div style="display:flex;gap:8px;flex-wrap:wrap"><button id="mhSyncCreate">새 연결 만들기</button><button id="mhSyncJoin">기존 코드로 연결</button><button id="mhSyncSwitch" hidden>기존 코드로 안전하게 전환</button><button id="mhSyncCopy">코드 복사</button><button id="mhSyncNow" hidden>지금 동기화</button><button id="mhSyncCheck" hidden>연결 진단</button><button id="mhSyncDownload">이 기기 데이터 백업(JSON)</button><button id="mhSyncResolve" hidden>충돌 해결</button><button id="mhSyncDisconnect" hidden>연결 해제</button></div>'+ 
  '<div id="mhSyncDiagnostics" role="status" style="font-size:12px;line-height:1.5;margin-top:10px;overflow-wrap:anywhere"></div>'+
  '<p style="font-size:12px;line-height:1.5;margin-top:13px">동기화: 저장 세팅 · 보유 호석 · 발굴무기 · 발굴방어구 · 즐겨찾기/제작 목록. 로컬 백업은 적용 직전 보관됩니다. 동시 수정 충돌 시 자동 동기화를 중지합니다.</p>';
  document.body.append(panel);
@@ -222,6 +249,11 @@ function init(){
  btn("mhSyncClose").onclick=()=>{panel.close();tryRefresh()};
  btn("mhSyncCreate").onclick=()=>connect(true);
  btn("mhSyncJoin").onclick=()=>connect(false);
+ btn("mhSyncSwitch").onclick=()=>{
+   if(!confirm("현재 기기 데이터와 기존 연결은 그대로 두고, 입력한 다른 연결 코드로 전환합니다. 먼저 '이 기기 데이터 백업'을 각 기기에서 다운로드했는지 확인하세요. 진행할까요?"))return;
+   void connect(false,true);
+ };
+ btn("mhSyncDownload").onclick=downloadLocalBackup;
  btn("mhSyncNow").onclick=()=>{void sync(true)};
  btn("mhSyncCheck").onclick=()=>{void diagnose()};
  btn("mhSyncResolve").onclick=resolve;
