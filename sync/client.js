@@ -12,7 +12,7 @@ const config=()=>parse(localStorage.getItem(CONF),{})||{};
 const saveConfig=x=>localStorage.setItem(CONF,JSON.stringify(x));
 const status=(s,error=false)=>{const el=document.getElementById("mhSyncStatus");if(el){el.textContent=s;el.style.color=error?"#eea399":""}};
 const btn=(s)=>document.getElementById(s);
-let busy=false,paused=false,uploadTimer=null,pendingRefresh=false;
+let busy=false,paused=false,uploadTimer=null,pendingRefresh=false,lockReason="";
 function backup(note){
   const stored=parse(localStorage.getItem(BACKUP),[]);
   const copies=Array.isArray(stored)?stored:[];
@@ -64,7 +64,7 @@ async function api(method,body){
 function makeCode(){const b=crypto.getRandomValues(new Uint8Array(32));return btoa(String.fromCharCode(...b)).replace(/\+/g,"-").replace(/\//g,"_").replace(/=/g,"")}
 function connected(){const c=config();return Boolean(c.code)}
 function setRevision(revision,data){const c=config();saveConfig({...c,revision});localStorage.setItem(BASE,signature(data))}
-function lock(e){paused=true;status(e.message||String(e),true);btn("mhSyncResolve").hidden=false}
+function lock(e){paused=true;lockReason=e.message||String(e);status(lockReason+" · 자동 동기화 중지. 충돌 해결을 눌러주세요.",true);btn("mhSyncResolve").hidden=false}
 function editing(){const el=document.activeElement;return document.hasFocus()&&Boolean(el&&(el.matches?.("input,textarea,select,[contenteditable=true]")||el.isContentEditable))}
 function tryRefresh(){if(!pendingRefresh||document.hidden||editing()||btn("mhSyncDialog")?.open)return;pendingRefresh=false;location.reload()}
 function refreshSoon(){pendingRefresh=true;status("다른 기기의 변경을 받았습니다. 화면을 자동 갱신합니다.");tryRefresh()}
@@ -90,15 +90,18 @@ async function connect(newCode){
    const updated=await api("PUT",{revision,data});revision=updated.revision;
    if(signature(snapshot())!==signature(data))saveLocal(data);
    setRevision(revision,data);
-   btn("mhSyncCode").value=code;btn("mhSyncResolve").hidden=true;paused=false;
+   btn("mhSyncCode").value=code;btn("mhSyncResolve").hidden=true;paused=false;lockReason="";
    status("연결됨 · 자동 동기화 활성화 (버전 "+revision+")");
    if(remote.exists)refreshSoon();
  }catch(e){saveConfig(priorConfig);status(e.message,true)}
  finally{busy=false;render()}
 }
-async function sync(){
- if(busy||paused||!connected())return;
+async function sync(manual=false){
+ if(!connected()){if(manual)status("미연결 · 새 연결을 만들거나 기존 코드로 연결하세요.",true);return}
+ if(paused){if(manual){status((lockReason||"동기화 충돌 발생")+" · 먼저 충돌 해결을 눌러주세요.",true);btn("mhSyncResolve").hidden=false}return}
+ if(busy){if(manual)status("이미 동기화 작업이 진행 중입니다.");return}
  busy=true;
+ if(manual)status("서버에 동기화 요청 중...");
  try{
    const current=snapshot(),base=localStorage.getItem(BASE),here=signature(current);
    const remote=await api("GET");
@@ -121,20 +124,36 @@ async function sync(){
  finally{busy=false;render()}
 }
 async function resolve(){
- const decision=prompt("충돌 해결: 1 = 클라우드 데이터로 복원 (현재 로컬 자동 백업), 2 = 로컬 데이터로 클라우드 덮어쓰기\n취소하려면 빈칸 또는 취소");
+ const decision=prompt("충돌 해결: 1 = 클라우드 데이터로 복원 (로컬 백업), 2 = 현재 기기 데이터로 클라우드 복구/덮어쓰기\n※ 2번은 클라우드를 덮어쓰므로 최신 데이터가 있는 기기에서만 실행하세요.\n취소하려면 빈칸 또는 취소");
  if(!["1","2"].includes(decision))return;
  if(busy)return;busy=true;
  try{
-   const remote=await api("GET");if(!remote.exists)throw new Error("원격 데이터 없음");
-   if(decision==="1"){saveLocal(remote.data);setRevision(remote.revision,remote.data);refreshSoon();}
-   else{backup("충돌 덮어쓰기 전");const data=snapshot();const v=await api("PUT",{revision:remote.revision,data});setRevision(v.revision,data)}
-   paused=false;btn("mhSyncResolve").hidden=true;status("충돌 해결 완료");
+   const remote=await api("GET");
+   if(decision==="1"){
+     if(!remote.exists)throw new Error("클라우드에 복원할 데이터가 없습니다. 현재 기기의 데이터로 복구하려면 2를 선택하세요.");
+     saveLocal(remote.data);setRevision(remote.revision,remote.data);refreshSoon();
+   }else{
+     if(!confirm(remote.exists?"현재 기기의 데이터를 클라우드에 덮어쓰시겠습니까? 다른 기기 변경 사항을 잃을 수 있습니다.":"클라우드 기록이 없습니다. 현재 기기의 로컬 데이터를 클라우드에 다시 생성할까요?"))return;
+     backup("충돌 덮어쓰기/클라우드 복구 전");const data=snapshot();
+     const v=await api("PUT",{revision:remote.exists?remote.revision:0,data});setRevision(v.revision,data);
+   }
+   paused=false;lockReason="";btn("mhSyncResolve").hidden=true;status("충돌 해결 완료 · 자동 동기화 재개");
  }catch(e){status(e.message,true)}finally{busy=false;render()}
+}
+async function diagnose(){
+ const el=btn("mhSyncDiagnostics");if(!el)return;
+ if(!connected()){el.textContent="진단: 연결 코드가 없습니다. 기존 코드로 연결하거나 새 연결을 만드세요.";return}
+ el.textContent="진단 중 · 서버 연결 확인...";
+ try{
+   const remote=await api("GET"),c=config(),local=snapshot();
+   const pending=localStorage.getItem(BASE)!==signature(local);
+   el.textContent="서버 응답 정상 · 클라우드 "+(remote.exists?"존재 (버전 "+remote.revision+")":"없음")+" · 이 기기 버전 "+(c.revision??"미설정")+" · 로컬 변경 "+(pending?"있음":"없음")+" · 자동 동기화 "+(paused?"중지":"활성")+(paused?" · 충돌 해결 필요":"");
+ }catch(e){el.textContent="진단 실패 · "+(e?.message||String(e))+" · 현재 기기 로컬 데이터는 유지됩니다."}
 }
 function render(){
  const c=config();
- if(connected()){btn("mhSyncCode").value=c.code;btn("mhSyncCreate").hidden=true;btn("mhSyncJoin").hidden=true;btn("mhSyncDisconnect").hidden=false;btn("mhSyncNow").hidden=false}
- else{btn("mhSyncCreate").hidden=false;btn("mhSyncJoin").hidden=false;btn("mhSyncDisconnect").hidden=true;btn("mhSyncNow").hidden=true}
+ if(connected()){btn("mhSyncCode").value=c.code;btn("mhSyncCreate").hidden=true;btn("mhSyncJoin").hidden=true;btn("mhSyncDisconnect").hidden=false;btn("mhSyncNow").hidden=false;btn("mhSyncCheck").hidden=false}
+ else{btn("mhSyncCreate").hidden=false;btn("mhSyncJoin").hidden=false;btn("mhSyncDisconnect").hidden=true;btn("mhSyncNow").hidden=true;btn("mhSyncCheck").hidden=true}
 }
 
 // Import explicitly selected owned charms from a one-time URL fragment.
@@ -195,16 +214,18 @@ function init(){
  '<p style="font-size:13px;line-height:1.55">Google 로그인 없이 회사 PC와 모바일을 연결합니다. 최초 1회 연결 코드 입력 후 자동 동기화됩니다. 연결 코드는 비밀번호와 같으니 타인에게 공개하지 마세요.</p>'+
  '<label style="display:block;margin:12px 0">연결 코드<input id="mhSyncCode" type="password" placeholder="다른 기기에서 받은 43자리 코드" autocomplete="off" style="box-sizing:border-box;width:100%;padding:10px;margin-top:5px;font-family:monospace"></label>'+
  '<div id="mhSyncStatus" role="status" style="font-size:13px;min-height:32px">미연결 · 현재 세팅은 기존처럼 이 브라우저에 저장됩니다.</div>'+
- '<div style="display:flex;gap:8px;flex-wrap:wrap"><button id="mhSyncCreate">새 연결 만들기</button><button id="mhSyncJoin">기존 코드로 연결</button><button id="mhSyncCopy">코드 복사</button><button id="mhSyncNow" hidden>지금 동기화</button><button id="mhSyncResolve" hidden>충돌 해결</button><button id="mhSyncDisconnect" hidden>연결 해제</button></div>'+
+ '<div style="display:flex;gap:8px;flex-wrap:wrap"><button id="mhSyncCreate">새 연결 만들기</button><button id="mhSyncJoin">기존 코드로 연결</button><button id="mhSyncCopy">코드 복사</button><button id="mhSyncNow" hidden>지금 동기화</button><button id="mhSyncCheck" hidden>연결 진단</button><button id="mhSyncResolve" hidden>충돌 해결</button><button id="mhSyncDisconnect" hidden>연결 해제</button></div>'+ 
+ '<div id="mhSyncDiagnostics" role="status" style="font-size:12px;line-height:1.5;margin-top:10px;overflow-wrap:anywhere"></div>'+
  '<p style="font-size:12px;line-height:1.5;margin-top:13px">동기화: 저장 세팅 · 보유 호석 · 발굴무기 · 발굴방어구 · 즐겨찾기/제작 목록. 로컬 백업은 적용 직전 보관됩니다. 동시 수정 충돌 시 자동 동기화를 중지합니다.</p>';
  document.body.append(panel);
- btn("mhSyncOpen").onclick=()=>{render();panel.showModal()};
+ btn("mhSyncOpen").onclick=()=>{render();if(paused)status((lockReason||"동기화 충돌")+" · 충돌 해결이 필요합니다.",true);panel.showModal()};
  btn("mhSyncClose").onclick=()=>{panel.close();tryRefresh()};
  btn("mhSyncCreate").onclick=()=>connect(true);
  btn("mhSyncJoin").onclick=()=>connect(false);
- btn("mhSyncNow").onclick=()=>sync();
+ btn("mhSyncNow").onclick=()=>{void sync(true)};
+ btn("mhSyncCheck").onclick=()=>{void diagnose()};
  btn("mhSyncResolve").onclick=resolve;
- btn("mhSyncDisconnect").onclick=()=>{if(confirm("연결 정보를 이 기기에서 해제할까요? 로컬 세팅은 유지됩니다. 연결 코드를 잃으면 클라우드 복구가 어려울 수 있습니다.")){localStorage.removeItem(CONF);localStorage.removeItem(BASE);paused=false;status("연결 해제됨");render()}};
+ btn("mhSyncDisconnect").onclick=()=>{if(confirm("연결 정보를 이 기기에서 해제할까요? 로컬 세팅은 유지됩니다. 연결 코드를 잃으면 클라우드 복구가 어려울 수 있습니다.")){localStorage.removeItem(CONF);localStorage.removeItem(BASE);paused=false;lockReason="";status("연결 해제됨");render()}};
  btn("mhSyncCopy").onclick=async()=>{const code=btn("mhSyncCode").value;if(!code)return;try{await navigator.clipboard.writeText(code);status("연결 코드 복사됨")}catch{btn("mhSyncCode").select();status("코드가 선택됐습니다. 직접 복사하세요.")}};
  render();
  // Save/delete actions push after a short debounce; polling pulls changes from other devices.
