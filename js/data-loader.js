@@ -1,4 +1,4 @@
-const DATA_VERSION = "0.7.7-relic-chameleos-name-20261106";
+const DATA_VERSION = "0.7.21-relic-shironaga-20261113";
 
 const FULL_FILES = {
   skills:"./data/skills.json",
