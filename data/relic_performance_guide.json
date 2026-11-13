@@ -34,6 +34,13 @@
       "color": "purple",
       "length": 20
     },
+    "handicraftPurple10": {
+      "label": "장인 보라 10 · 긴 흰 예리도 (시로나가스)",
+      "factor": 1.44,
+      "needsHandicraft": true,
+      "color": "purple",
+      "length": 10
+    },
     "longWhite": {
       "label": "흰 예리도 위주",
       "factor": 1.32,
