@@ -1,8 +1,8 @@
-import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,loadArmorProgression,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.7-relic-chameleos-name-20261106";
+import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,loadArmorProgression,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.21-relic-shironaga-20261113";
 import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-monster-filter1";
 import {enhanceRelicAppearance} from "./relic-enhancements.js?v=0.7.7-relic-attack-step3";
 import {mountRelicRewards} from "./relic-reward-workbench.js?v=0.7.7-relic-attack-step3";
-import {mountRelicPerformance} from "./relic-performance.js?v=0.7.16-unified-materials";
+import {mountRelicPerformance} from "./relic-performance.js?v=0.7.21-shironaga-20261113";
 
 let data={skills:[],armors:[],armorSets:[],decorations:[],relicWeaponDecorations:[],decorationUnlocks:{decorations:{}},questUnlockIndex:{quests:{},targets:{}},eventMajorRewards:{quests:{}},weapons:[],weaponSummary:[],melodies:[],items:[],itemReferenceIndex:{items:{}},skillReferenceIndex:{items:{},categories:[]},meals:[],monsterSummary:[],monsterDetails:[],monsterRewards:[],monsterReferenceIndex:{items:{}},dragonExchange:[],dragonSell:[],dragonIncrease:[],compositions:[],quests:[],questReferenceIndex:{quests:{}},siteInfo:{},meta:{},weaponSkillPriorities:{weapons:{}},relicEquipment:{}};
 let targets=[];
