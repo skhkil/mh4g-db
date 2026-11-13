@@ -9,12 +9,13 @@ export function predictRelic(d,type,level,shown,affinity,defense,sharpness="unkn
  const table=d.weaponAttackTables?.find(x=>x.weaponType===type),p=d.attackProgression;
  if(!table||!p||!Number.isInteger(level)||level<1||level>4||!Number.isInteger(shown)||shown<=0)return [];
  const rule=p.bonusRules?.[type],result=[];
- const variants=sharpness==="naturalPurple"?["natural"]:sharpness==="unknown"?["natural","handicraft"]:["handicraft"];
+ const variants=sharpness==="naturalPurple"?["natural"]:sharpness==="handicraftPurple10"?["shironaga"]:sharpness==="unknown"?["natural","handicraft","shironaga"]:["handicraft"];
  const fixedBonuses={대검:{natural:20,handicraft:10},해머:{natural:20,handicraft:10},태도:{natural:20,handicraft:10},쌍검:{natural:20,handicraft:10},한손검:{natural:35,handicraft:20},랜스:{natural:35,handicraft:20}};
  for(const [base,seq] of Object.entries(p.stages)){
   const i=level-1;
   for(const variant of (fixedBonuses[type]?variants:["handicraft"])){
-   const bonus=fixedBonuses[type]?.[variant]??0, naturalBonus=0;
+   // 시로나가스(장인 보라10)는 스무라(기본 보라20)와 같은 발굴 보너스 계열이다.
+   const bonus=fixedBonuses[type]?.[variant==="shironaga"?"natural":variant]??0, naturalBonus=0;
    if(!Number.isFinite(seq.raw[i]))continue;
    const stageBonus=rule?.key==="raw"&&base==="250"&&i===0?Math.max(0,bonus-10):bonus;
    const raw=seq.raw[i]+(rule?.key==="raw"?stageBonus:0);
@@ -184,7 +185,7 @@ function render(d,type,guide,host,decorations=[],traits=null){
   const table=d.weaponAttackTables.find(t=>t.weaponType===type);
   for(const c of unique){
     const card=node("article","rp-candidate");
-    card.append(node("h3",null,"공격 계열 "+c.base+(c.variant==="natural"?" · 기본 보라 20":c.variant==="handicraft"?" · 예리도+1 보라 유형":"")));
+    card.append(node("h3",null,"공격 계열 "+c.base+(c.variant==="natural"?" · 기본 보라 20":c.variant==="shironaga"?" · 장인 보라 10 · 긴 흰 예리도":c.variant==="handicraft"?" · 예리도+1 보라 유형":"")));
     const grid=node("div","rp-candidate-table");
     const tab=node("table");tab.className="table-panel";
     const thead=node("thead"),tr=node("tr");
@@ -209,7 +210,7 @@ function render(d,type,guide,host,decorations=[],traits=null){
     if(seq.raw.some(x=>x===null)||seq.affinity.some(x=>x===null)||seq.defense.some(x=>x===null))text(card,"일부 중간 단계는 검증된 수치가 없어 미확인으로 표시합니다.","rr-note");
     candidatesWrap.append(card);
   }
-  text(result,"강화표는 확인된 공격 계열만 표시합니다. 일부 중간 수치와 속성·공격 유형의 조합 가능성은 미검증입니다. 자료: MH4G@wiki / otameshine.","rr-note");
+  text(result,"강화표는 확인된 공격 계열만 표시합니다. 시로나가스(장인 보라 10)는 기본 보라형과 동일한 발굴 보너스로 계산합니다. 일부 중간 수치와 속성·공격 유형의 조합 가능성은 미검증입니다. 자료: MH4G@wiki / otameshine / 실물 발굴 기록.","rr-note");
  }
  const STORE="mh4g-owned-relic-weapons-v1";
  const records=()=>{try{const a=JSON.parse(localStorage.getItem(STORE)||"[]");return Array.isArray(a)?a:[]}catch{return []}};
@@ -261,9 +262,9 @@ function render(d,type,guide,host,decorations=[],traits=null){
 export async function mountRelicPerformance(d,type,decorations=[]){
  const id=++sequence;const host=document.querySelector("#relicPanel-attack > .panel");if(!host)return;
  try{
-  if(!loading)loading=fetch("./data/relic_performance_guide.json?v=0.7.13-relic-attributes",{cache:"no-cache"}).then(r=>{if(!r.ok)throw Error("HTTP "+r.status);return r.json()}).then(v=>{loaded=v;return v}).catch(e=>{loading=null;throw e});
+  if(!loading)loading=fetch("./data/relic_performance_guide.json?v=0.7.21-shironaga-20261113",{cache:"no-cache"}).then(r=>{if(!r.ok)throw Error("HTTP "+r.status);return r.json()}).then(v=>{loaded=v;return v}).catch(e=>{loading=null;throw e});
   const guide=loaded||await loading;
-  const traits=await fetch("./data/relic_weapon_traits.json?v=0.7.9-relic-select-stats",{cache:"no-cache"}).then(r=>{if(!r.ok)throw Error("traits HTTP "+r.status);return r.json()});
+  const traits=await fetch("./data/relic_weapon_traits.json?v=0.7.21-shironaga-20261113",{cache:"no-cache"}).then(r=>{if(!r.ok)throw Error("traits HTTP "+r.status);return r.json()});
   if(id!==sequence||!host.isConnected)return;
   render(d,type,guide,host,decorations,traits);
  }catch(e){if(id!==sequence||!host.isConnected)return;host.append(node("p","rp-caution","성능 분석 자료를 불러오지 못했습니다: "+e.message))}
