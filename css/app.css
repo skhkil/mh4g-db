@@ -2082,3 +2082,7 @@ button{border:1px solid var(--line);background:#202b39;color:white;border-radius
     }
   }
 }
+
+/* MH4G 방어구 외형 도감: 검사/거너 서브메뉴 공통 외부 링크 */
+.nav .nav-submenu .armor-appearance-link{display:block;padding:7px 10px;border-radius:7px;color:var(--accent2);font-size:12px;line-height:1.5;text-decoration:none;overflow-wrap:anywhere}
+.nav .nav-submenu .armor-appearance-link:hover,.nav .nav-submenu .armor-appearance-link:focus-visible{background:#1c2734;color:#fff;outline:1px solid var(--accent)}
