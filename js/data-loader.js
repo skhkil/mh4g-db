@@ -1,4 +1,4 @@
-const DATA_VERSION = "0.7.23-collab-audit-20261116";
+const DATA_VERSION = "0.7.24-collab-audit-20261116";
 
 const FULL_FILES = {
   skills:"./data/skills.json",
