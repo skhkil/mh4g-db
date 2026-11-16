@@ -1,0 +1,1248 @@
+{
+  "workbook": "MH4G.xlsx",
+  "sheet": "약점표",
+  "scope": "원본 기호와 약점부위를 그대로 보관. 등급 기호를 수치로 변환하지 않음. 상태별 변화는 별도 확인 필요.",
+  "records": [
+    {
+      "name": "가라라아자라",
+      "material": "교사룡",
+      "elements": {
+        "fire": "▲",
+        "water": "○",
+        "thunder": "△",
+        "ice": "◎",
+        "dragon": "▲"
+      },
+      "weakspots": {
+        "cut": "머리/뒷다리/꼬리",
+        "impact": "머리/뒷다리/꼬리",
+        "shot": "머리/뒷다리/꼬리"
+      },
+      "sourceRow": 4
+    },
+    {
+      "name": "가라라아자라 아종",
+      "material": "수사룡",
+      "elements": {
+        "fire": "◎",
+        "water": "▲",
+        "thunder": "○",
+        "ice": "×",
+        "dragon": "▲"
+      },
+      "weakspots": {
+        "cut": "앞다리/방수갑각",
+        "impact": "방수갑각/앞다리",
+        "shot": "앞다리/뒷다리/방수갑"
+      },
+      "sourceRow": 5
+    },
+    {
+      "name": "게넬 셀타스",
+      "material": "중갑충",
+      "elements": {
+        "fire": "◎",
+        "water": "×",
+        "thunder": "△",
+        "ice": "○",
+        "dragon": "×"
+      },
+      "weakspots": {
+        "cut": "머리",
+        "impact": "머리",
+        "shot": "머리/배"
+      },
+      "sourceRow": 6
+    },
+    {
+      "name": "게넬 셀타스 아종",
+      "material": "포갑충",
+      "elements": {
+        "fire": "×",
+        "water": "△",
+        "thunder": "△",
+        "ice": "◎",
+        "dragon": "×"
+      },
+      "weakspots": {
+        "cut": "머리",
+        "impact": "머리",
+        "shot": "머리/배"
+      },
+      "sourceRow": 7
+    },
+    {
+      "name": "게리오스",
+      "material": "독괴조",
+      "elements": {
+        "fire": "◎",
+        "water": "△",
+        "thunder": "×",
+        "ice": "○",
+        "dragon": "△"
+      },
+      "weakspots": {
+        "cut": "꼬리/머리/배/등",
+        "impact": "머리",
+        "shot": "꼬리/머리"
+      },
+      "sourceRow": 8
+    },
+    {
+      "name": "게리오스 아종",
+      "material": "독괴조",
+      "elements": {
+        "fire": "◎",
+        "water": "△",
+        "thunder": "×",
+        "ice": "○",
+        "dragon": "△"
+      },
+      "weakspots": {
+        "cut": "꼬리/머리/배/등",
+        "impact": "머리",
+        "shot": "꼬리/머리"
+      },
+      "sourceRow": 9
+    },
+    {
+      "name": "고어 마가라",
+      "material": "흑식룡",
+      "elements": {
+        "fire": "○",
+        "water": "×",
+        "thunder": "△",
+        "ice": "▲",
+        "dragon": "△"
+      },
+      "weakspots": {
+        "cut": "머리/앞다리=꼬리",
+        "impact": "머리/앞다리=꼬리",
+        "shot": "머리/뒷다리"
+      },
+      "sourceRow": 10
+    },
+    {
+      "name": "고어 마가라 (혼돈)",
+      "material": "흑식룡",
+      "elements": {
+        "fire": "◎",
+        "water": "×",
+        "thunder": "△",
+        "ice": "▲",
+        "dragon": "○"
+      },
+      "weakspots": {
+        "cut": "머리/꼬리",
+        "impact": "머리/꼬리",
+        "shot": "머리/뒷다리"
+      },
+      "sourceRow": 11
+    },
+    {
+      "name": "그라비모스",
+      "material": "개룡",
+      "elements": {
+        "fire": "▲",
+        "water": "◎",
+        "thunder": "▲",
+        "ice": "△",
+        "dragon": "◎"
+      },
+      "weakspots": {
+        "cut": "배/등",
+        "impact": "배/등",
+        "shot": "배"
+      },
+      "sourceRow": 13
+    },
+    {
+      "name": "그라비모스 아종",
+      "material": "흑개룡",
+      "elements": {
+        "fire": "▲",
+        "water": "◎",
+        "thunder": "▲",
+        "ice": "×",
+        "dragon": "△"
+      },
+      "weakspots": {
+        "cut": "배/등",
+        "impact": "배/등",
+        "shot": "배"
+      },
+      "sourceRow": 14
+    },
+    {
+      "name": "네르스큐라",
+      "material": "영지주",
+      "elements": {
+        "fire": "○",
+        "water": "×",
+        "thunder": "○",
+        "ice": "▲",
+        "dragon": "×"
+      },
+      "weakspots": {
+        "cut": "배/머리",
+        "impact": "머리/배",
+        "shot": "독가시/머리/배"
+      },
+      "sourceRow": 15
+    },
+    {
+      "name": "네르스큐라 아종",
+      "material": "해지주",
+      "elements": {
+        "fire": "△",
+        "water": "×",
+        "thunder": "×",
+        "ice": "○",
+        "dragon": "×"
+      },
+      "weakspots": {
+        "cut": "배/머리",
+        "impact": "머리/배",
+        "shot": "머리"
+      },
+      "sourceRow": 16
+    },
+    {
+      "name": "다이묘자자미",
+      "material": "방패게",
+      "elements": {
+        "fire": "◎",
+        "water": "△",
+        "thunder": "◎",
+        "ice": "○",
+        "dragon": "×"
+      },
+      "weakspots": {
+        "cut": "머리",
+        "impact": "머리/몸통/팔",
+        "shot": "-"
+      },
+      "sourceRow": 20
+    },
+    {
+      "name": "다이묘자자미 아종",
+      "material": "방패게",
+      "elements": {
+        "fire": "△",
+        "water": "▲",
+        "thunder": "○",
+        "ice": "◎",
+        "dragon": "×"
+      },
+      "weakspots": {
+        "cut": "머리",
+        "impact": "머리/몸통/팔",
+        "shot": "-"
+      },
+      "sourceRow": 21
+    },
+    {
+      "name": "도스가레오스",
+      "material": "사토룡",
+      "elements": {
+        "fire": "×",
+        "water": "○",
+        "thunder": "○",
+        "ice": "◎",
+        "dragon": "▲"
+      },
+      "weakspots": {
+        "cut": "목/등=날개/배",
+        "impact": "목/배/등=날개",
+        "shot": "목/배/등=날개=머리"
+      },
+      "sourceRow": 22
+    },
+    {
+      "name": "도스게네포스",
+      "material": "=",
+      "elements": {
+        "fire": "○",
+        "water": "○",
+        "thunder": "◎",
+        "ice": "◎",
+        "dragon": "△"
+      },
+      "weakspots": {
+        "cut": "머리/몸통",
+        "impact": "머리/몸통",
+        "shot": "머리/몸통"
+      },
+      "sourceRow": 23
+    },
+    {
+      "name": "도스람포스",
+      "material": "=",
+      "elements": {
+        "fire": "◎",
+        "water": "◎",
+        "thunder": "◎",
+        "ice": "◎",
+        "dragon": "△"
+      },
+      "weakspots": {
+        "cut": "머리/몸통",
+        "impact": "머리/몸통",
+        "shot": "머리/몸통"
+      },
+      "sourceRow": 24
+    },
+    {
+      "name": "도스이오스",
+      "material": "=",
+      "elements": {
+        "fire": "○",
+        "water": "◎",
+        "thunder": "◎",
+        "ice": "△",
+        "dragon": "△"
+      },
+      "weakspots": {
+        "cut": "몸통",
+        "impact": "몸통",
+        "shot": "몽통/머리"
+      },
+      "sourceRow": 25
+    },
+    {
+      "name": "도스재기",
+      "material": "구룡",
+      "elements": {
+        "fire": "◎",
+        "water": "○",
+        "thunder": "○",
+        "ice": "○",
+        "dragon": "▲"
+      },
+      "weakspots": {
+        "cut": "머리/몸통",
+        "impact": "머리/몸통",
+        "shot": "머리/몸통"
+      },
+      "sourceRow": 26
+    },
+    {
+      "name": "디아블로스",
+      "material": "각룡",
+      "elements": {
+        "fire": "×",
+        "water": "△",
+        "thunder": "△",
+        "ice": "○",
+        "dragon": "△"
+      },
+      "weakspots": {
+        "cut": "배/꼬리/목",
+        "impact": "배/목",
+        "shot": "꼬리/날개"
+      },
+      "sourceRow": 27
+    },
+    {
+      "name": "디아블로스 아종",
+      "material": "흑각룡",
+      "elements": {
+        "fire": "×",
+        "water": "△",
+        "thunder": "△",
+        "ice": "○",
+        "dragon": "△"
+      },
+      "weakspots": {
+        "cut": "배/꼬리/목",
+        "impact": "배/목",
+        "shot": "꼬리/날개"
+      },
+      "sourceRow": 28
+    },
+    {
+      "name": "라잔",
+      "material": "금사자",
+      "elements": {
+        "fire": "×",
+        "water": "▲",
+        "thunder": "×",
+        "ice": "○",
+        "dragon": "×"
+      },
+      "weakspots": {
+        "cut": "머리/꼬리/뒷다리/몸통",
+        "impact": "머리/몸통/뒷다리/꼬리",
+        "shot": "머리/몸통/뒷다리"
+      },
+      "sourceRow": 30
+    },
+    {
+      "name": "격앙 라잔",
+      "material": "금사자",
+      "elements": {
+        "fire": "×",
+        "water": "▲",
+        "thunder": "×",
+        "ice": "○",
+        "dragon": "×"
+      },
+      "weakspots": {
+        "cut": "머리/꼬리/뒷다리/몸통",
+        "impact": "머리/몸통/뒷다리/꼬리",
+        "shot": "머리/몸통/뒷다리"
+      },
+      "sourceRow": 31
+    },
+    {
+      "name": "리오레우스",
+      "material": "화룡",
+      "elements": {
+        "fire": "×",
+        "water": "△",
+        "thunder": "○",
+        "ice": "△",
+        "dragon": "◎"
+      },
+      "weakspots": {
+        "cut": "머리/꼬리",
+        "impact": "머리/배",
+        "shot": "머리/다리"
+      },
+      "sourceRow": 32
+    },
+    {
+      "name": "리오레우스 아종",
+      "material": "창화룡",
+      "elements": {
+        "fire": "×",
+        "water": "△",
+        "thunder": "△",
+        "ice": "○",
+        "dragon": "◎"
+      },
+      "weakspots": {
+        "cut": "머리/다리",
+        "impact": "머리/다리",
+        "shot": "배/머리"
+      },
+      "sourceRow": 33
+    },
+    {
+      "name": "리오레우스 희소종",
+      "material": "은화룡",
+      "elements": {
+        "fire": "×",
+        "water": "◎",
+        "thunder": "○",
+        "ice": "△",
+        "dragon": "×"
+      },
+      "weakspots": {
+        "cut": "등/머리",
+        "impact": "등/머리",
+        "shot": "다리"
+      },
+      "sourceRow": 34
+    },
+    {
+      "name": "리오레이아",
+      "material": "자화룡",
+      "elements": {
+        "fire": "×",
+        "water": "△",
+        "thunder": "○",
+        "ice": "△",
+        "dragon": "◎"
+      },
+      "weakspots": {
+        "cut": "머리/배",
+        "impact": "머리/배",
+        "shot": "머리/배=다리"
+      },
+      "sourceRow": 35
+    },
+    {
+      "name": "리오레이아 아종",
+      "material": "홍화룡",
+      "elements": {
+        "fire": "×",
+        "water": "△",
+        "thunder": "○",
+        "ice": "△",
+        "dragon": "◎"
+      },
+      "weakspots": {
+        "cut": "배/다리/머리",
+        "impact": "다리/배/머리",
+        "shot": "배/다리/머리"
+      },
+      "sourceRow": 36
+    },
+    {
+      "name": "리오레이아 희소종",
+      "material": "금화룡",
+      "elements": {
+        "fire": "×",
+        "water": "○",
+        "thunder": "◎",
+        "ice": "△",
+        "dragon": "×"
+      },
+      "weakspots": {
+        "cut": "머리=등/꼬리끝",
+        "impact": "머리=등/꼬리끝",
+        "shot": "다리"
+      },
+      "sourceRow": 37
+    },
+    {
+      "name": "모노블로스",
+      "material": "일각룡",
+      "elements": {
+        "fire": "△",
+        "water": "×",
+        "thunder": "◎",
+        "ice": "◎",
+        "dragon": "×"
+      },
+      "weakspots": {
+        "cut": "꼬리/날개/목=배",
+        "impact": "목/꼬리=날개",
+        "shot": "꼬리끝/목/배=날개=다리"
+      },
+      "sourceRow": 38
+    },
+    {
+      "name": "모노블로스 아종",
+      "material": "백일각룡",
+      "elements": {
+        "fire": "△",
+        "water": "×",
+        "thunder": "◎",
+        "ice": "◎",
+        "dragon": "×"
+      },
+      "weakspots": {
+        "cut": "꼬리/날개/목=배",
+        "impact": "목/꼬리=날개",
+        "shot": "꼬리끝/목/배=날개=다리"
+      },
+      "sourceRow": 39
+    },
+    {
+      "name": "미라 보레아스",
+      "material": "흑룡",
+      "elements": {
+        "fire": "△",
+        "water": "▲",
+        "thunder": "▲",
+        "ice": "△",
+        "dragon": "◎"
+      },
+      "weakspots": {
+        "cut": "얼굴/머리",
+        "impact": "얼굴/머리",
+        "shot": "얼굴"
+      },
+      "sourceRow": 40
+    },
+    {
+      "name": "미라보레아스 (홍)",
+      "material": "홍룡",
+      "elements": {
+        "fire": "△",
+        "water": "▲",
+        "thunder": "▲",
+        "ice": "▲",
+        "dragon": "◎"
+      },
+      "weakspots": {
+        "cut": "얼굴",
+        "impact": "얼굴",
+        "shot": "얼굴"
+      },
+      "sourceRow": 41
+    },
+    {
+      "name": "미라보레아스 (백)",
+      "material": "선조룡",
+      "elements": {
+        "fire": "△",
+        "water": "▲",
+        "thunder": "▲",
+        "ice": "△",
+        "dragon": "◎"
+      },
+      "weakspots": {
+        "cut": "얼굴/머리",
+        "impact": "얼굴/머리",
+        "shot": "얼굴"
+      },
+      "sourceRow": 42
+    },
+    {
+      "name": "바바콩가",
+      "material": "도모수",
+      "elements": {
+        "fire": "◎",
+        "water": "△",
+        "thunder": "△",
+        "ice": "△",
+        "dragon": "×"
+      },
+      "weakspots": {
+        "cut": "머리/앞다리",
+        "impact": "머리",
+        "shot": "머리"
+      },
+      "sourceRow": 43
+    },
+    {
+      "name": "바바콩가 아종",
+      "material": "녹모수",
+      "elements": {
+        "fire": "△",
+        "water": "○",
+        "thunder": "△",
+        "ice": "◎",
+        "dragon": "×"
+      },
+      "weakspots": {
+        "cut": "꼬리/머리=뒷다리",
+        "impact": "머리/뒷다리",
+        "shot": "머리"
+      },
+      "sourceRow": 44
+    },
+    {
+      "name": "바살모스",
+      "material": "암룡",
+      "elements": {
+        "fire": "△",
+        "water": "○",
+        "thunder": "△",
+        "ice": "△",
+        "dragon": "○"
+      },
+      "weakspots": {
+        "cut": "배/등",
+        "impact": "배/등",
+        "shot": "배"
+      },
+      "sourceRow": 45
+    },
+    {
+      "name": "바살모스 아종",
+      "material": "도암룡",
+      "elements": {
+        "fire": "△",
+        "water": "△",
+        "thunder": "△",
+        "ice": "○",
+        "dragon": "▲"
+      },
+      "weakspots": {
+        "cut": "배",
+        "impact": "배",
+        "shot": "배"
+      },
+      "sourceRow": 46
+    },
+    {
+      "name": "브라키디오스",
+      "material": "쇄룡",
+      "elements": {
+        "fire": "×",
+        "water": "○",
+        "thunder": "△",
+        "ice": "○",
+        "dragon": "▲"
+      },
+      "weakspots": {
+        "cut": "머리/앞다리",
+        "impact": "머리/앞다리",
+        "shot": "머리/꼬리"
+      },
+      "sourceRow": 47
+    },
+    {
+      "name": "브라키디오스 (맹폭)",
+      "material": "쇄룡",
+      "elements": {
+        "fire": "×",
+        "water": "○",
+        "thunder": "△",
+        "ice": "○",
+        "dragon": "▲"
+      },
+      "weakspots": {
+        "cut": "머리",
+        "impact": "머리/앞다리",
+        "shot": "머리/꼬리"
+      },
+      "sourceRow": 48
+    },
+    {
+      "name": "샤가르마가라",
+      "material": "천회룡",
+      "elements": {
+        "fire": "○",
+        "water": "×",
+        "thunder": "△",
+        "ice": "▲",
+        "dragon": "◎"
+      },
+      "weakspots": {
+        "cut": "머리",
+        "impact": "머리",
+        "shot": "머리/뒷다리"
+      },
+      "sourceRow": 49
+    },
+    {
+      "name": "셀레기오스",
+      "material": "천인룡",
+      "elements": {
+        "fire": "×",
+        "water": "△",
+        "thunder": "○",
+        "ice": "△",
+        "dragon": "▲"
+      },
+      "weakspots": {
+        "cut": "배/다리",
+        "impact": "배/다리",
+        "shot": "배/다리/목"
+      },
+      "sourceRow": 50
+    },
+    {
+      "name": "아르셀타스",
+      "material": "철갑충",
+      "elements": {
+        "fire": "○",
+        "water": "△",
+        "thunder": "◎",
+        "ice": "△",
+        "dragon": "×"
+      },
+      "weakspots": {
+        "cut": "배/머리/다리",
+        "impact": "머리=배/다리",
+        "shot": "배/머리/다리/손톱"
+      },
+      "sourceRow": 52
+    },
+    {
+      "name": "아르셀타스 아종",
+      "material": "부갑충",
+      "elements": {
+        "fire": "△",
+        "water": "△",
+        "thunder": "○",
+        "ice": "◎",
+        "dragon": "×"
+      },
+      "weakspots": {
+        "cut": "배/머리/다리",
+        "impact": "머리=배/다리",
+        "shot": "배/머리/다리/손톱"
+      },
+      "sourceRow": 53
+    },
+    {
+      "name": "아캄토룸",
+      "material": "패룡",
+      "elements": {
+        "fire": "×",
+        "water": "△",
+        "thunder": "○",
+        "ice": "▲",
+        "dragon": "◎"
+      },
+      "weakspots": {
+        "cut": "머리/배/등",
+        "impact": "머리/배",
+        "shot": "머리"
+      },
+      "sourceRow": 54
+    },
+    {
+      "name": "얀가루루가",
+      "material": "흑랑조",
+      "elements": {
+        "fire": "▲",
+        "water": "◎",
+        "thunder": "▲",
+        "ice": "○",
+        "dragon": "△"
+      },
+      "weakspots": {
+        "cut": "머리/꼬리끝",
+        "impact": "머리/날개",
+        "shot": "머리"
+      },
+      "sourceRow": 55
+    },
+    {
+      "name": "얀쿡크",
+      "material": "괴조",
+      "elements": {
+        "fire": "△",
+        "water": "○",
+        "thunder": "◎",
+        "ice": "◎",
+        "dragon": "▲"
+      },
+      "weakspots": {
+        "cut": "날개/배/꼬리/머리",
+        "impact": "머리/배/꼬리",
+        "shot": "머리/날개/배/꼬리"
+      },
+      "sourceRow": 56
+    },
+    {
+      "name": "얀쿡크 아종",
+      "material": "청괴조",
+      "elements": {
+        "fire": "△",
+        "water": "◎",
+        "thunder": "◎",
+        "ice": "○",
+        "dragon": "▲"
+      },
+      "weakspots": {
+        "cut": "배/날개/머리",
+        "impact": "배/머리",
+        "shot": "머리/배/날개"
+      },
+      "sourceRow": 57
+    },
+    {
+      "name": "우캄루바스",
+      "material": "봉룡",
+      "elements": {
+        "fire": "◎",
+        "water": "▲",
+        "thunder": "○",
+        "ice": "×",
+        "dragon": "△"
+      },
+      "weakspots": {
+        "cut": "머리",
+        "impact": "앞가슴/머리",
+        "shot": "머리"
+      },
+      "sourceRow": 58
+    },
+    {
+      "name": "울크스스",
+      "material": "백토수",
+      "elements": {
+        "fire": "◎",
+        "water": "×",
+        "thunder": "○",
+        "ice": "×",
+        "dragon": "×"
+      },
+      "weakspots": {
+        "cut": "엉덩이/머리",
+        "impact": "머리/엉덩이",
+        "shot": "머리"
+      },
+      "sourceRow": 59
+    },
+    {
+      "name": "오오나즈치",
+      "material": "하룡",
+      "elements": {
+        "fire": "◎",
+        "water": "×",
+        "thunder": "○",
+        "ice": "×",
+        "dragon": "◎"
+      },
+      "weakspots": {
+        "cut": "머리",
+        "impact": "머리",
+        "shot": "-"
+      },
+      "sourceRow": 60
+    },
+    {
+      "name": "이블죠",
+      "material": "공폭룡",
+      "elements": {
+        "fire": "△",
+        "water": "△",
+        "thunder": "○",
+        "ice": "▲",
+        "dragon": "○"
+      },
+      "weakspots": {
+        "cut": "앞가슴/머리",
+        "impact": "앞가슴/머리",
+        "shot": "머리=앞가슴"
+      },
+      "sourceRow": 61
+    },
+    {
+      "name": "분노한 이블죠",
+      "material": "공폭룡",
+      "elements": {
+        "fire": "○",
+        "water": "○",
+        "thunder": "◎",
+        "ice": "○",
+        "dragon": "○"
+      },
+      "weakspots": {
+        "cut": "앞가슴/머리",
+        "impact": "머리/앞가슴",
+        "shot": "앞가슴/머리"
+      },
+      "sourceRow": 62
+    },
+    {
+      "name": "자보아자길",
+      "material": "괴상어",
+      "elements": {
+        "fire": "◎",
+        "water": "×",
+        "thunder": "◎",
+        "ice": "×",
+        "dragon": "△"
+      },
+      "weakspots": {
+        "cut": "배/지느러미=꼬리",
+        "impact": "배/지느러미=머리",
+        "shot": "배/머리"
+      },
+      "sourceRow": 63
+    },
+    {
+      "name": "자보아자길 아종",
+      "material": "호상어",
+      "elements": {
+        "fire": "▲",
+        "water": "×",
+        "thunder": "○",
+        "ice": "◎",
+        "dragon": "△"
+      },
+      "weakspots": {
+        "cut": "배/지느러미",
+        "impact": "배/지느러미=머리",
+        "shot": "배"
+      },
+      "sourceRow": 64
+    },
+    {
+      "name": "진오우거",
+      "material": "뇌랑룡",
+      "elements": {
+        "fire": "△",
+        "water": "△",
+        "thunder": "×",
+        "ice": "○",
+        "dragon": "△"
+      },
+      "weakspots": {
+        "cut": "머리/등/뒷다리",
+        "impact": "머리/뒷다리",
+        "shot": "머리"
+      },
+      "sourceRow": 65
+    },
+    {
+      "name": "진오우거(초대전)",
+      "material": "뇌랑룡",
+      "elements": {
+        "fire": "○",
+        "water": "○",
+        "thunder": "×",
+        "ice": "○",
+        "dragon": "△"
+      },
+      "weakspots": {
+        "cut": "등/머리/뒷다리",
+        "impact": "머리=등/뒷다리",
+        "shot": "머리/등"
+      },
+      "sourceRow": 66
+    },
+    {
+      "name": "진오우거 아종",
+      "material": "옥랑룡",
+      "elements": {
+        "fire": "△",
+        "water": "○",
+        "thunder": "○",
+        "ice": "△",
+        "dragon": "×"
+      },
+      "weakspots": {
+        "cut": "머리/등",
+        "impact": "머리",
+        "shot": "머리"
+      },
+      "sourceRow": 67
+    },
+    {
+      "name": "진오우거 아종(용광)",
+      "material": "옥랑룡",
+      "elements": {
+        "fire": "△",
+        "water": "○",
+        "thunder": "◎",
+        "ice": "△",
+        "dragon": "×"
+      },
+      "weakspots": {
+        "cut": "등/머리",
+        "impact": "등/머리",
+        "shot": "머리=등"
+      },
+      "sourceRow": 68
+    },
+    {
+      "name": "케차와차",
+      "material": "기원호",
+      "elements": {
+        "fire": "◎",
+        "water": "×",
+        "thunder": "△",
+        "ice": "△",
+        "dragon": "×"
+      },
+      "weakspots": {
+        "cut": "머리/꼬리/다리",
+        "impact": "머리/꼬리=다리",
+        "shot": "머리/꼬리"
+      },
+      "sourceRow": 69
+    },
+    {
+      "name": "케차와차 아종",
+      "material": "백원호",
+      "elements": {
+        "fire": "×",
+        "water": "◎",
+        "thunder": "△",
+        "ice": "△",
+        "dragon": "×"
+      },
+      "weakspots": {
+        "cut": "머리/꼬리/다리",
+        "impact": "머리/꼬리=다리",
+        "shot": "머리/꼬리"
+      },
+      "sourceRow": 70
+    },
+    {
+      "name": "크샬다오라",
+      "material": "강룡",
+      "elements": {
+        "fire": "△",
+        "water": "▲",
+        "thunder": "◎",
+        "ice": "×",
+        "dragon": "◎"
+      },
+      "weakspots": {
+        "cut": "머리",
+        "impact": "배/머리",
+        "shot": "-"
+      },
+      "sourceRow": 71
+    },
+    {
+      "name": "녹슨 크샬다오라",
+      "material": "창강",
+      "elements": {
+        "fire": "×",
+        "water": "◎",
+        "thunder": "▲",
+        "ice": "×",
+        "dragon": "◎"
+      },
+      "weakspots": {
+        "cut": "머리",
+        "impact": "머리",
+        "shot": "-"
+      },
+      "sourceRow": 72
+    },
+    {
+      "name": "키린",
+      "material": "키린",
+      "elements": {
+        "fire": "△",
+        "water": "△",
+        "thunder": "×",
+        "ice": "△",
+        "dragon": "▲"
+      },
+      "weakspots": {
+        "cut": "머리",
+        "impact": "머리",
+        "shot": "머리"
+      },
+      "sourceRow": 73
+    },
+    {
+      "name": "키린 아종",
+      "material": "키린",
+      "elements": {
+        "fire": "△",
+        "water": "△",
+        "thunder": "△",
+        "ice": "×",
+        "dragon": "▲"
+      },
+      "weakspots": {
+        "cut": "머리",
+        "impact": "머리",
+        "shot": "머리"
+      },
+      "sourceRow": 74
+    },
+    {
+      "name": "테오 테스카토르",
+      "material": "염왕룜",
+      "elements": {
+        "fire": "×",
+        "water": "○",
+        "thunder": "△",
+        "ice": "○",
+        "dragon": "○"
+      },
+      "weakspots": {
+        "cut": "머리/뒷다리=꼬리",
+        "impact": "머리/뒷다리/배",
+        "shot": "꼬리/머리"
+      },
+      "sourceRow": 75
+    },
+    {
+      "name": "테츠카브라",
+      "material": "귀와",
+      "elements": {
+        "fire": "×",
+        "water": "◎",
+        "thunder": "○",
+        "ice": "△",
+        "dragon": "▲"
+      },
+      "weakspots": {
+        "cut": "머리/앞다리",
+        "impact": "머리/이빨",
+        "shot": "머리"
+      },
+      "sourceRow": 76
+    },
+    {
+      "name": "테츠카브라 아종",
+      "material": "황귀와",
+      "elements": {
+        "fire": "×",
+        "water": "△",
+        "thunder": "○",
+        "ice": "◎",
+        "dragon": "▲"
+      },
+      "weakspots": {
+        "cut": "머리",
+        "impact": "머리/이빨",
+        "shot": "머리"
+      },
+      "sourceRow": 77
+    },
+    {
+      "name": "티가렉스",
+      "material": "굉룡",
+      "elements": {
+        "fire": "×",
+        "water": "△",
+        "thunder": "○",
+        "ice": "△",
+        "dragon": "△"
+      },
+      "weakspots": {
+        "cut": "머리",
+        "impact": "머리",
+        "shot": "머리"
+      },
+      "sourceRow": 78
+    },
+    {
+      "name": "티가렉스 아종",
+      "material": "흑굉룡",
+      "elements": {
+        "fire": "×",
+        "water": "○",
+        "thunder": "△",
+        "ice": "△",
+        "dragon": "△"
+      },
+      "weakspots": {
+        "cut": "머리",
+        "impact": "머리",
+        "shot": "머리"
+      },
+      "sourceRow": 79
+    },
+    {
+      "name": "티가렉스 희소종",
+      "material": "대굉룡",
+      "elements": {
+        "fire": "×",
+        "water": "○",
+        "thunder": "▲",
+        "ice": "△",
+        "dragon": "△"
+      },
+      "weakspots": {
+        "cut": "발톱/머리/앞다리/꼬리",
+        "impact": "머리/발톱/앞/뒷다리",
+        "shot": "발톱/머리/머리=앞다리"
+      },
+      "sourceRow": 80
+    },
+    {
+      "name": "푸루푸루",
+      "material": "진주색",
+      "elements": {
+        "fire": "◎",
+        "water": "▲",
+        "thunder": "×",
+        "ice": "▲",
+        "dragon": "▲"
+      },
+      "weakspots": {
+        "cut": "목/머리/몸통",
+        "impact": "머리/목/몸통",
+        "shot": "머리/목"
+      },
+      "sourceRow": 81
+    },
+    {
+      "name": "푸루푸루 아종",
+      "material": "매혹색",
+      "elements": {
+        "fire": "▲",
+        "water": "◎",
+        "thunder": "×",
+        "ice": "▲",
+        "dragon": "▲"
+      },
+      "weakspots": {
+        "cut": "목/머리/몸통",
+        "impact": "머리/목/몸통",
+        "shot": "머리/목"
+      },
+      "sourceRow": 82
+    }
+  ]
+}
