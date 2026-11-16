@@ -84,7 +84,7 @@ async function loadMap(fileMap,keys=Object.keys(fileMap)){
   if(Array.isArray(result.weapons)){
     const collab=await fetchJson("collabAdditions","./data/collab_additions_20261116.json");
     if(Array.isArray(collab?.weapons)){
-      const key=x=>String(x||"").normalize("NFKC").replace(/\\s+/g,"");
+      const key=x=>String(x||"").normalize("NFKC").replace(/\s+/g,"");
       const seenIds=new Set(result.weapons.map(x=>String(x.id||"")));
       const seenNames=new Set(result.weapons.map(x=>key(x.nameJa)).filter(Boolean));
       for(const weapon of collab.weapons){
