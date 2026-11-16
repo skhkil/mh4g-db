@@ -1,5 +1,5 @@
 {
-  "version": "0.7.23-collab-audit-20261116",
+  "version": "0.7.24-collab-audit-20261116",
   "demo": false,
   "source": "https://flashkiller.cafe24.com/mh4g/main.htm",
   "counts": {
@@ -10,7 +10,7 @@
     "weapons": 2318,
     "weapon_summary": 117,
     "melodies": 40,
-    "items": 524,
+    "items": 1449,
     "meals": 84,
     "monster_summary": 80,
     "monster_details": 76,
@@ -214,6 +214,7 @@
     "knownExistingDuplicateEvents": 1,
     "report": "data/collaboration_audit_20261116.json",
     "overlay": "data/collab_additions_20261116.json",
-    "sourceNote": "Japanese MH4/4G original collaboration event references; Korean release coverage not asserted"
+    "sourceNote": "Japanese MH4/4G original collaboration event references; Korean release coverage not asserted",
+    "addedMaterialItemsOverlay": 2
   }
 }
