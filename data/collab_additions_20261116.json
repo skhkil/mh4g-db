@@ -49,6 +49,102 @@
       "chargeLevels": null,
       "coatings": null,
       "reloadRecoilDrift": null
+    },
+    {
+      "elementSecondary": null,
+      "awakenElement": null,
+      "defenseBonus": 0,
+      "affinityText": "-40",
+      "slots": 0,
+      "rankRaw": "상위/이벤트",
+      "rowOrder": 2317,
+      "treePrefix": "",
+      "source": "https://game-cap.com/mh4g/data/buki_gureitofuruhamu.html",
+      "statReference": "https://game-cap.com/mh4g/data/buki_gureitofuruhamu.html",
+      "sharpness": null,
+      "phial": null,
+      "shelling": null,
+      "melody": null,
+      "melodyEffects": null,
+      "kinsect": null,
+      "arcShot": null,
+      "specialFire": null,
+      "chargeLevels": null,
+      "coatings": null,
+      "reloadRecoilDrift": null,
+      "id": "weapon_event_greatful_ham",
+      "name": "그레이트풀햄",
+      "nameJa": "グレイトフルハム",
+      "nameEn": "Grateful Ham",
+      "weaponType": "해머",
+      "attack": 1040,
+      "element": "불 130",
+      "elementPrimary": {
+        "type": "불",
+        "value": 130
+      },
+      "affinity": -40,
+      "rank": "high",
+      "price": "45000z",
+      "tree": "그레이트풀햄 파생계",
+      "treeOrder": 0,
+      "isFinal": false,
+      "rarityRef": 7,
+      "craft": [
+        {
+          "method": "생산",
+          "materials": "빈티지고기티켓×3 잘 익은 고기×20 폭염주머니×6 견룡골×8"
+        }
+      ],
+      "notes": "MH4G 이벤트 '肉好きのための肉の宴'. 상위 제작형. 통상 예리도 최종 녹색, 장인 적용 시 청색. 전체 게이지 길이는 미검증."
+    },
+    {
+      "elementSecondary": null,
+      "awakenElement": null,
+      "defenseBonus": 0,
+      "affinityText": "-40",
+      "slots": 0,
+      "rankRaw": "G급",
+      "rowOrder": 2318,
+      "treePrefix": "",
+      "source": "https://game-cap.com/mh4g/data/buki_hamuobuhamuzu.html",
+      "statReference": "https://game-cap.com/mh4g/data/buki_hamuobuhamuzu.html",
+      "sharpness": null,
+      "phial": null,
+      "shelling": null,
+      "melody": null,
+      "melodyEffects": null,
+      "kinsect": null,
+      "arcShot": null,
+      "specialFire": null,
+      "chargeLevels": null,
+      "coatings": null,
+      "reloadRecoilDrift": null,
+      "id": "weapon_event_ham_of_hams",
+      "name": "햄오브햄즈",
+      "nameJa": "ハムオブハムズ",
+      "nameEn": "Ham of Hams",
+      "weaponType": "해머",
+      "attack": 1560,
+      "element": "불 180",
+      "elementPrimary": {
+        "type": "불",
+        "value": 180
+      },
+      "affinity": -40,
+      "rank": "g",
+      "price": "-",
+      "tree": "그레이트풀햄 파생계",
+      "treeOrder": 1,
+      "isFinal": true,
+      "rarityRef": 10,
+      "craft": [
+        {
+          "method": "강화",
+          "materials": "빈티지고기티켓×1 업염주머니×6 중룡골×8 진홍련석×4"
+        }
+      ],
+      "notes": "그레이트풀햄 강화. 기본 청색. 장인 시 청색 확장. 완전한 예리도 길이는 미검증, 강화 비용은 자료간 상이하여 미표기."
     }
   ],
   "armorOverrides": [
