@@ -953,3 +953,14 @@
 - `js/app.js` 발굴방어구 등록 스킬 목록을 당시 실물 발굴방어구에서 보고된 **19개 고정 복합스킬 계통** 별도 목록으로 수정. 일본 스킬명으로 실제 `data/skills.json` 항목을 매칭하며 `참격술 · 심검일체` 포함. 선택 시 참고 실물 스킬 포인트 입력, 사용자가 실제 보유 장비 수치를 최종 확인. 기존 보유 방어구 저장값은 자동 수정/삭제하지 않음. 참고: https://ameblo.jp/hunter-mon/entry-12094287772.html 및 https://game-cap.com/mh4g/data/make2352.html .
 - `index.html` 왼쪽 `📚 무기 모션 · 몬냥대`를 외부 페이지 링크에서 `data-page="workbook-reference"` 기반 **SPA 메뉴 버튼**으로 변경. 같은 오른쪽 메인 프레임 `#page-workbook-reference`에서 `workbook-reference.html?embedded=1`을 표시. 별도 페이지 상단 헤더 숨김/내부 콘텐츠 높이 자동 조절 및 CSS 연결. 기존 데이터/자동조합 엔진 원본 변경 없음.
 - 캐시 갱신: `js/app.js?v=0.7.22-relic-armor-workbook-spa-20261116`, `css/app.css?v=0.7.22-relic-armor-workbook-spa-20261116`. 정적 검증: JS V8 구문 파싱, 발굴방어구 19개 일본명과 실제 스킬 DB 19/19 매칭, 페이지 ID/SPA 버튼/임베드 모드/캐시 연결 확인. GitHub Pages 실제 PC·모바일 브라우저 E2E는 아직 미검증.
+
+## 2026-11-16 — MH4G 콜라보 이벤트/장비 전수 대조
+
+- 일본판 MH4→MH4G 계승 및 MH4G 신규 콜라보 이벤트 주요 목록 **52건**을 `data/quests.json`과 대조. 52건 모두 검색 가능하며 기존 중복 1건(`USJ・ザボアザギル3D`, ID 2개)은 참조 보존을 위해 유지하고 점검 기록에 표시. 원문 대조 목록: `data/collaboration_audit_20261116.json`.
+- 누락 콜라보 이벤트 3건 보강: `JUMP・双黒のライバル達！`, `電撃の交差する白き稲妻！`, `マギ・炎の魔人からの試練`. 보상 소재는 `data/event_major_rewards.json`에도 연결. 기존 USJ `蒼と金の饗宴！` 일본어 오기를 수정. 신규 한글 이벤트명은 일본명 번역 표기이며 국내 정식 명칭 또는 국내 이벤트 다운로드 가능 여부까지 증명한 것은 아님.
+- 메트로이드 방어구의 **개별 16부위**는 기존 `armors.json`/경량 DB에 있었지만 세트 묶음이 빠져 있었음. 남성용 바리아슈트(검사/건너), 여성용 제로슈트(검사/건너) 총 4종을 `armor_sets.json`, `sim_armor_sets.json`에 추가. 각 세트는 **머리/몸통/팔/다리 4부위, 허리 없음, 7슬롯**. 기존 부위 스킬·소재 사용. 제로슈트 최종 방어력은 검사 4부위 568(142×4), 건너 368(92×4)로 외부 자료와 재검증하여 정정. 개별 방어구 `maxDefense`는 런타임 보강 자료에서 교정.
+- 이벤트 무기 DB 누락 3종을 `data/collab_additions_20261116.json`에 등록: 마기 대검 `아몬의 검`, 고기 축제 이벤트 해머 `그레이트풀햄`, 그 강화형 `햄오브햄즈`. `js/data-loader.js`가 경량/전체 무기 DB 조회 시 동일 일본명·ID 중복 없이 결합하도록 처리. 대용량 원본 `weapons.json`, `sim_weapons.json`은 보존. 예리도 전체 게이지가 검증되지 않은 3종은 모양을 지어내지 않고 `sharpness:null`로 두고 확인된 특징을 설명에 기록.
+- 기존 한국어 스킬 발동명 **도공 +10 = 명검**은 사용자 확인에 따라 그대로 유지.
+- 프런트 캐시 변경: `js/data-loader.js` 데이터 버전 `0.7.23-collab-audit-20261116`, `js/app.js`의 로더 import와 `index.html`의 app 캐시 버전을 동기화.
+- 범위 한계: 일본 원본 콜라보 기준으로 조사. **오토모 전용 콜라보 무기·방어구는 현재 헌터 장비 스킬 시뮬레이터 대상이 아니어서 별도 통합하지 않음**. 일부 이벤트 한글 현지화 명칭/실제 배포 확인 필요. GitHub Pages PC·모바일 실기 E2E는 미검증이며 데이터 정합성/정적 구문·참조를 확인함.
+- 참고: <https://w.atwiki.jp/3dsmh4g/pages/173.html>, <https://mh4info.com/quest/?no=3>, <https://monhammer.com/archives/6309.html>, <https://game-cap.com/mh4g/data/bougu_zerosutsubodi.html>.
