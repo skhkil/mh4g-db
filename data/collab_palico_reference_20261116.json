@@ -1,0 +1,57 @@
+{
+  "version": "2026-11-16",
+  "scope": "MH4G/MH4U 콜라보 동반자 장비 중 출처로 존재가 확인된 목록 (헌터 장비와 분리)",
+  "status": "partial_verified_catalog_not_gameplay_simulator",
+  "notice": "이 파일은 콜라보 동반자 장비 누락을 추적하기 위한 참조 데이터이며 기존 헌터 장비 계산에는 자동 편입되지 않는다. 모든 콜라보 장비의 완전한 목록이라고 주장하지 않는다.",
+  "entries": [
+    {
+      "collab": "슈퍼 마리오",
+      "questEn": "Mario: Oh, Brothers!",
+      "rewardEn": "Super Mushroom",
+      "weapons": [
+        "Invincible Hammer",
+        "Invincible Hammer S"
+      ],
+      "armorSets": [
+        "F Mario Set",
+        "F Mario S Set",
+        "F Luigi Set",
+        "F Luigi S Set"
+      ],
+      "category": "palico",
+      "source": "https://www.monsterhunterwiki.org/wiki/MH4U/Quests/Event_Quests",
+      "verification": "퀘스트 보상과 제작명 교차 확인"
+    },
+    {
+      "collab": "메가맨",
+      "questEn": "Protector of Peace",
+      "weapons": [
+        "Rush Hammer"
+      ],
+      "armorSets": [
+        "Mega Man Palico Armor"
+      ],
+      "category": "palico",
+      "source": "https://news.capcomusa.com/lets/browse/monster-hunter-4u-palicoes-get-equipped-with-mega-man-gear",
+      "verification": "Capcom 공식 보도에서 무기와 방어구 존재 확인; 한국어 이름·개별 수치 미검증"
+    },
+    {
+      "collab": "스트리트 파이터",
+      "questEn": "Fight for the Future",
+      "weapons": [
+        "Chun-Li Bracelets"
+      ],
+      "armorSets": [
+        "Chun-Li Palico Armor"
+      ],
+      "category": "palico",
+      "source": "https://monsterhunter.fandom.com/wiki/MH4U:_Event_Quests",
+      "verification": "기존 사용자 extdata 대조 v52 CSV; 상세 수치 미검증"
+    }
+  ],
+  "outstanding": [
+    "콜라보 동반자 전체 장비 및 단계별 강화 소재 전수 비교 미완료",
+    "기존 헌터 UI에 표시하는 전용 섹션 미구현",
+    "일본/해외판 차이와 한국어 정식 번역 미검증"
+  ]
+}
