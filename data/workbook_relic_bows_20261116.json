@@ -8,57 +8,57 @@
     {
       "id": 1,
       "charges": "확산2 확산2 관통4 연사5",
-      "arc": "",
-      "coatings": "폭렬형",
+      "arc": "폭렬형",
+      "coatings": "강-독-마-수-접-페-멸-폭",
       "sourceRow": 7
     },
     {
       "id": 2,
       "charges": "연사3 확산3 연사4 연사5",
-      "arc": "",
-      "coatings": "폭렬형",
+      "arc": "폭렬형",
+      "coatings": "강-독-마-수-접-페-멸-폭",
       "sourceRow": 8
     },
     {
       "id": 3,
       "charges": "확산3 연사4 관통4 확산5",
-      "arc": "",
-      "coatings": "방산형",
+      "arc": "방산형",
+      "coatings": "강-독-마-수-접-페-멸-폭",
       "sourceRow": 9
     },
     {
       "id": 4,
       "charges": "연사3 연사4 확산5 확산5",
-      "arc": "",
-      "coatings": "집중형",
+      "arc": "집중형",
+      "coatings": "강-독-마-수-접-페-멸-폭",
       "sourceRow": 10
     },
     {
       "id": 5,
       "charges": "연사3 관통2 연사4 관통4",
-      "arc": "",
-      "coatings": "강사형",
+      "arc": "강사형",
+      "coatings": "강-독-마-수-접-페-멸-폭",
       "sourceRow": 11
     },
     {
       "id": 6,
       "charges": "관통2 관통3 관통4 관통5",
-      "arc": "",
-      "coatings": "강사형",
+      "arc": "강사형",
+      "coatings": "강-독-마-수-접-페-멸-폭",
       "sourceRow": 12
     },
     {
       "id": 7,
       "charges": "관통3 확산4 연사5 연사5",
-      "arc": "",
-      "coatings": "강사형",
+      "arc": "강사형",
+      "coatings": "강-독-마-수-접-페-멸-폭",
       "sourceRow": 13
     },
     {
       "id": 8,
       "charges": "연사3 확산3 확산4",
-      "arc": "",
-      "coatings": "강사형",
+      "arc": "강사형",
+      "coatings": "강-독-마-수-접-페-멸-폭",
       "sourceRow": 14
     }
   ]
