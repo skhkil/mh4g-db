@@ -1,0 +1,54 @@
+{
+  "version": "2026-11-16",
+  "note": "원본 weapons/sim_weapons 용량 및 국내 DB 원문 보존을 위해 런타임에서 병합하는 일본 MH4G 콜라보 누락분. 기존과 중복될 경우 삽입하지 않음.",
+  "weapons": [
+    {
+      "id": "weapon_collab_magi_amons_sword",
+      "name": "아몬의 검",
+      "nameJa": "アモンの剣",
+      "nameEn": "Amon's Sword",
+      "weaponType": "대검",
+      "attack": 1296,
+      "element": "불 520",
+      "elementPrimary": {
+        "type": "불",
+        "value": 520
+      },
+      "elementSecondary": null,
+      "awakenElement": null,
+      "defenseBonus": 0,
+      "affinity": 20,
+      "affinityText": "20",
+      "slots": 0,
+      "rank": "g",
+      "rankRaw": "G급",
+      "price": "120000z",
+      "tree": "아몬의 검 파생계",
+      "treeOrder": 0,
+      "rowOrder": 2316,
+      "treePrefix": "",
+      "isFinal": true,
+      "craft": [
+        {
+          "method": "생산",
+          "materials": "バルバッドの宝剣×3 大轟竜の剛爆爪×4 真紅蓮石×2 轟竜の天鱗×1"
+        }
+      ],
+      "source": "https://monhammer.com/archives/10142.html",
+      "rarityRef": 10,
+      "statReference": "https://monhammer.com/archives/10142.html",
+      "sharpness": null,
+      "notes": "기본 흰 예리도 10. 장인 시 흰 +30·보라 20. 예리도 전체 길이는 미검증으로 차트 미기록. 한글 명칭은 번역 표기.",
+      "phial": null,
+      "shelling": null,
+      "melody": null,
+      "melodyEffects": null,
+      "kinsect": null,
+      "arcShot": null,
+      "specialFire": null,
+      "chargeLevels": null,
+      "coatings": null,
+      "reloadRecoilDrift": null
+    }
+  ]
+}
