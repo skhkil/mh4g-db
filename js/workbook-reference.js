@@ -65,6 +65,14 @@
     for(const [name,value] of rows){const dt=document.createElement("dt");dt.textContent=name;const dd=document.createElement("dd");dd.textContent=String(value||"—");dl.append(dt,dd)}
     host.append(dl);
   }
+  const verifiedAliases={
+    "게넬·셀타스":"게넬 셀타스","게넬·셀타스 아종":"게넬 셀타스 아종",
+    "고어·마가라":"고어 마가라","혼돈에 신음하는 고어·마가라":"고어 마가라 (혼돈)",
+    "밀라보레아스 (흑룡)":"미라 보레아스","밀라보레아스 (선조룡)":"미라보레아스 (백)",
+    "맹폭 브라키디오스":"브라키디오스 (맹폭)","아캄토름":"아캄토룸",
+    "오나즈치":"오오나즈치","이블조":"이블죠","광폭 이블조":"분노한 이블죠",
+    "녹슨크샬다오라":"녹슨 크샬다오라","테오·테스카토르":"테오 테스카토르"
+  };
   function renderWeak(){
     const monster=$("weakMonster").value;
     const attack=$("weakAttack").value;
@@ -83,10 +91,10 @@
       for(const item of parts){const li=document.createElement("li");li.textContent=item.part+"  —  "+item.text;ol.append(li)}
       host.append(ol);
     }
-    const excel=state.excelWeak.find(x=>norm(x.name)===norm(monster));
+    const excel=state.excelWeak.find(x=>norm(x.name)===norm(verifiedAliases[monster]||monster));
     if(!excel){addMessage(compare,"엑셀 약점표에 동일한 이름이 없습니다. 이름을 임의로 매칭하지 않았습니다.");return}
     labeled(compare,[
-      ["절단",excel.weakspots.cut],["타격",excel.weakspots.impact],["탄",excel.weakspots.shot],
+      ["원본 표기",excel.name],["절단",excel.weakspots.cut],["타격",excel.weakspots.impact],["탄",excel.weakspots.shot],
       ["불",excel.elements.fire],["물",excel.elements.water],["번개",excel.elements.thunder],
       ["얼음",excel.elements.ice],["용",excel.elements.dragon],["원본 행",excel.sourceRow]
     ]);
