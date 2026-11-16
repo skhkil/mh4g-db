@@ -1,0 +1,2077 @@
+{
+  "workbook": "MH4G.xlsx",
+  "extractedAt": "2026-11-16",
+  "interpretation": "엑셀 원문값을 정리한 참고 자료. 외부 검증/원래 계산 조건 확인 전 실제 피해량 또는 확정 확률로 사용 금지.",
+  "sheet": "몬냥대",
+  "sources": [
+    "http://cafe.naver.com/monhun/752556",
+    "http://wiki.mh4g.org/data/1779.html"
+  ],
+  "probabilityCaution": "sourceValue는 원문 그대로입니다. 1, 0.75, 0.55 등의 확률 모수와 추첨 조건 미검증. %변환 금지.",
+  "records": [
+    {
+      "group": "상위 근거리 (식량 1)",
+      "region": "숲",
+      "target": "채취",
+      "item": "소박한 편린+",
+      "sourceValue": "1",
+      "sourceRow": 8
+    },
+    {
+      "group": "상위 근거리 (식량 1)",
+      "region": "숲",
+      "target": "채취",
+      "item": "소박한 편린+",
+      "sourceValue": "0.75",
+      "sourceRow": 9
+    },
+    {
+      "group": "상위 근거리 (식량 1)",
+      "region": "숲",
+      "target": "채취",
+      "item": "소박한 편린+",
+      "sourceValue": "0.55",
+      "sourceRow": 10
+    },
+    {
+      "group": "상위 근거리 (식량 1)",
+      "region": "숲",
+      "target": "채취",
+      "item": "근사한 편린+",
+      "sourceValue": "0.3",
+      "sourceRow": 11
+    },
+    {
+      "group": "상위 근거리 (식량 1)",
+      "region": "숲",
+      "target": "가구아",
+      "item": "환조의 편린+",
+      "sourceValue": "1",
+      "sourceRow": 12
+    },
+    {
+      "group": "상위 근거리 (식량 1)",
+      "region": "숲",
+      "target": "가구아",
+      "item": "소박한 편린+",
+      "sourceValue": "0.75",
+      "sourceRow": 13
+    },
+    {
+      "group": "상위 근거리 (식량 1)",
+      "region": "숲",
+      "target": "가구아",
+      "item": "청웅수의 편린+",
+      "sourceValue": "0.55",
+      "sourceRow": 14
+    },
+    {
+      "group": "상위 근거리 (식량 1)",
+      "region": "숲",
+      "target": "가구아",
+      "item": "환조의 편린+",
+      "sourceValue": "0.3",
+      "sourceRow": 15
+    },
+    {
+      "group": "상위 근거리 (식량 1)",
+      "region": "사막",
+      "target": "리노프로스",
+      "item": "초식룡의 편린+",
+      "sourceValue": "1",
+      "sourceRow": 16
+    },
+    {
+      "group": "상위 근거리 (식량 1)",
+      "region": "사막",
+      "target": "리노프로스",
+      "item": "초식룡의 편린+",
+      "sourceValue": "0.75",
+      "sourceRow": 17
+    },
+    {
+      "group": "상위 근거리 (식량 1)",
+      "region": "사막",
+      "target": "리노프로스",
+      "item": "소박한 편린+",
+      "sourceValue": "0.55",
+      "sourceRow": 18
+    },
+    {
+      "group": "상위 근거리 (식량 1)",
+      "region": "사막",
+      "target": "리노프로스",
+      "item": "구룡의 편린+",
+      "sourceValue": "0.3",
+      "sourceRow": 19
+    },
+    {
+      "group": "상위 근거리 (식량 1)",
+      "region": "사막",
+      "target": "가레오스",
+      "item": "사토룡의 편린+",
+      "sourceValue": "1",
+      "sourceRow": 20
+    },
+    {
+      "group": "상위 근거리 (식량 1)",
+      "region": "사막",
+      "target": "가레오스",
+      "item": "사토룡의 편린+",
+      "sourceValue": "0.3",
+      "sourceRow": 21
+    },
+    {
+      "group": "상위 근거리 (식량 1)",
+      "region": "사막",
+      "target": "가레오스",
+      "item": "소박한 편린+",
+      "sourceValue": "0.3",
+      "sourceRow": 22
+    },
+    {
+      "group": "상위 근거리 (식량 1)",
+      "region": "사막",
+      "target": "가레오스",
+      "item": "잠구룡의 편린+",
+      "sourceValue": "0.15",
+      "sourceRow": 23
+    },
+    {
+      "group": "상위 근거리 (식량 1)",
+      "region": "화산",
+      "target": "즈와로포스",
+      "item": "수피룡의 편린+",
+      "sourceValue": "1",
+      "sourceRow": 24
+    },
+    {
+      "group": "상위 근거리 (식량 1)",
+      "region": "화산",
+      "target": "즈와로포스",
+      "item": "적갑수의 편린+",
+      "sourceValue": "0.3",
+      "sourceRow": 25
+    },
+    {
+      "group": "상위 근거리 (식량 1)",
+      "region": "화산",
+      "target": "즈와로포스",
+      "item": "수피룡의 편린+",
+      "sourceValue": "0.3",
+      "sourceRow": 26
+    },
+    {
+      "group": "상위 근거리 (식량 1)",
+      "region": "화산",
+      "target": "즈와로포스",
+      "item": "소박한 편린+",
+      "sourceValue": "0.3",
+      "sourceRow": 27
+    },
+    {
+      "group": "상위 근거리 (식량 1)",
+      "region": "설산",
+      "target": "브나하브라",
+      "item": "비갑충의 편린+",
+      "sourceValue": "1",
+      "sourceRow": 28
+    },
+    {
+      "group": "상위 근거리 (식량 1)",
+      "region": "설산",
+      "target": "브나하브라",
+      "item": "대저의 편린+",
+      "sourceValue": "0.3",
+      "sourceRow": 29
+    },
+    {
+      "group": "상위 근거리 (식량 1)",
+      "region": "설산",
+      "target": "브나하브라",
+      "item": "비갑충의 편린+",
+      "sourceValue": "0.3",
+      "sourceRow": 30
+    },
+    {
+      "group": "상위 근거리 (식량 1)",
+      "region": "설산",
+      "target": "브나하브라",
+      "item": "소박한 편린+",
+      "sourceValue": "0.3",
+      "sourceRow": 31
+    },
+    {
+      "group": "상위 보통 (식량 2)",
+      "region": "숲",
+      "target": "케차와차",
+      "item": "기원호의 편린+",
+      "sourceValue": "1",
+      "sourceRow": 36
+    },
+    {
+      "group": "상위 보통 (식량 2)",
+      "region": "숲",
+      "target": "케차와차",
+      "item": "기원호의 편린+",
+      "sourceValue": "0.3",
+      "sourceRow": 37
+    },
+    {
+      "group": "상위 보통 (식량 2)",
+      "region": "숲",
+      "target": "케차와차",
+      "item": "괴조의 편린+",
+      "sourceValue": "0.3",
+      "sourceRow": 38
+    },
+    {
+      "group": "상위 보통 (식량 2)",
+      "region": "숲",
+      "target": "케차와차",
+      "item": "소박한 편린+",
+      "sourceValue": "0.3",
+      "sourceRow": 39
+    },
+    {
+      "group": "상위 보통 (식량 2)",
+      "region": "숲",
+      "target": "바바콩가",
+      "item": "도모수의 편린+",
+      "sourceValue": "1",
+      "sourceRow": 40
+    },
+    {
+      "group": "상위 보통 (식량 2)",
+      "region": "숲",
+      "target": "바바콩가",
+      "item": "도모수의 편린+",
+      "sourceValue": "0.75",
+      "sourceRow": 41
+    },
+    {
+      "group": "상위 보통 (식량 2)",
+      "region": "숲",
+      "target": "바바콩가",
+      "item": "근사한 편린+",
+      "sourceValue": "0.55",
+      "sourceRow": 42
+    },
+    {
+      "group": "상위 보통 (식량 2)",
+      "region": "숲",
+      "target": "바바콩가",
+      "item": "독구룡의 편린+",
+      "sourceValue": "0.3",
+      "sourceRow": 43
+    },
+    {
+      "group": "상위 보통 (식량 2)",
+      "region": "숲",
+      "target": "얀쿡크",
+      "item": "괴조의 편린+",
+      "sourceValue": "1",
+      "sourceRow": 44
+    },
+    {
+      "group": "상위 보통 (식량 2)",
+      "region": "숲",
+      "target": "얀쿡크",
+      "item": "근사한 편린+",
+      "sourceValue": "0.75",
+      "sourceRow": 45
+    },
+    {
+      "group": "상위 보통 (식량 2)",
+      "region": "숲",
+      "target": "얀쿡크",
+      "item": "괴조의 편린+",
+      "sourceValue": "0.55",
+      "sourceRow": 46
+    },
+    {
+      "group": "상위 보통 (식량 2)",
+      "region": "숲",
+      "target": "얀쿡크",
+      "item": "채조의 편린+",
+      "sourceValue": "0.3",
+      "sourceRow": 47
+    },
+    {
+      "group": "상위 보통 (식량 2)",
+      "region": "사막",
+      "target": "채취",
+      "item": "소박한 편린+",
+      "sourceValue": "1",
+      "sourceRow": 48
+    },
+    {
+      "group": "상위 보통 (식량 2)",
+      "region": "사막",
+      "target": "채취",
+      "item": "근사한 편린+",
+      "sourceValue": "1",
+      "sourceRow": 49
+    },
+    {
+      "group": "상위 보통 (식량 2)",
+      "region": "사막",
+      "target": "채취",
+      "item": "근사한 편린+",
+      "sourceValue": "0.75",
+      "sourceRow": 50
+    },
+    {
+      "group": "상위 보통 (식량 2)",
+      "region": "사막",
+      "target": "채취",
+      "item": "소박한 편린+",
+      "sourceValue": "0.55",
+      "sourceRow": 51
+    },
+    {
+      "group": "상위 보통 (식량 2)",
+      "region": "사막",
+      "target": "채취",
+      "item": "소박한 편린+",
+      "sourceValue": "0.3",
+      "sourceRow": 52
+    },
+    {
+      "group": "상위 보통 (식량 2)",
+      "region": "화산",
+      "target": "테츠카브라",
+      "item": "귀와의 편린+",
+      "sourceValue": "1",
+      "sourceRow": 53
+    },
+    {
+      "group": "상위 보통 (식량 2)",
+      "region": "화산",
+      "target": "테츠카브라",
+      "item": "폭추룡의 편린+",
+      "sourceValue": "0.75",
+      "sourceRow": 54
+    },
+    {
+      "group": "상위 보통 (식량 2)",
+      "region": "화산",
+      "target": "테츠카브라",
+      "item": "귀와의 편린+",
+      "sourceValue": "0.55",
+      "sourceRow": 55
+    },
+    {
+      "group": "상위 보통 (식량 2)",
+      "region": "화산",
+      "target": "테츠카브라",
+      "item": "소박한 편린+",
+      "sourceValue": "0.3",
+      "sourceRow": 56
+    },
+    {
+      "group": "상위 보통 (식량 2)",
+      "region": "화산",
+      "target": "리오레이아",
+      "item": "자화룡의 편린+",
+      "sourceValue": "1",
+      "sourceRow": 57
+    },
+    {
+      "group": "상위 보통 (식량 2)",
+      "region": "화산",
+      "target": "리오레이아",
+      "item": "자화룡의 편린+",
+      "sourceValue": "0.75",
+      "sourceRow": 58
+    },
+    {
+      "group": "상위 보통 (식량 2)",
+      "region": "화산",
+      "target": "리오레이아",
+      "item": "독구룡의 편린+",
+      "sourceValue": "0.55",
+      "sourceRow": 59
+    },
+    {
+      "group": "상위 보통 (식량 2)",
+      "region": "화산",
+      "target": "리오레이아",
+      "item": "근사한 편린+",
+      "sourceValue": "0.3",
+      "sourceRow": 60
+    },
+    {
+      "group": "상위 보통 (식량 2)",
+      "region": "설산",
+      "target": "울크스스",
+      "item": "백토수의 편린+",
+      "sourceValue": "1",
+      "sourceRow": 61
+    },
+    {
+      "group": "상위 보통 (식량 2)",
+      "region": "설산",
+      "target": "울크스스",
+      "item": "백토수의 편린+",
+      "sourceValue": "0.75",
+      "sourceRow": 62
+    },
+    {
+      "group": "상위 보통 (식량 2)",
+      "region": "설산",
+      "target": "울크스스",
+      "item": "근사한 편린+",
+      "sourceValue": "0.3",
+      "sourceRow": 63
+    },
+    {
+      "group": "상위 보통 (식량 2)",
+      "region": "설산",
+      "target": "울크스스",
+      "item": "괴상어의 편린+",
+      "sourceValue": "0.3",
+      "sourceRow": 64
+    },
+    {
+      "group": "상위 보통 (식량 2)",
+      "region": "설산",
+      "target": "자보아자길",
+      "item": "괴상어의 편린+",
+      "sourceValue": "1",
+      "sourceRow": 65
+    },
+    {
+      "group": "상위 보통 (식량 2)",
+      "region": "설산",
+      "target": "자보아자길",
+      "item": "괴상어의 편린+",
+      "sourceValue": "0.75",
+      "sourceRow": 66
+    },
+    {
+      "group": "상위 보통 (식량 2)",
+      "region": "설산",
+      "target": "자보아자길",
+      "item": "소박한 편린+",
+      "sourceValue": "0.3",
+      "sourceRow": 67
+    },
+    {
+      "group": "상위 보통 (식량 2)",
+      "region": "설산",
+      "target": "자보아자길",
+      "item": "백토수의 편린+",
+      "sourceValue": "0.3",
+      "sourceRow": 68
+    },
+    {
+      "group": "상위 보통 (식량 2)",
+      "region": "설산",
+      "target": "푸루푸루",
+      "item": "진주색의 편린+",
+      "sourceValue": "1",
+      "sourceRow": 69
+    },
+    {
+      "group": "상위 보통 (식량 2)",
+      "region": "설산",
+      "target": "푸루푸루",
+      "item": "토사룡의 편린+",
+      "sourceValue": "0.75",
+      "sourceRow": 70
+    },
+    {
+      "group": "상위 보통 (식량 2)",
+      "region": "설산",
+      "target": "푸루푸루",
+      "item": "진주색의 편린+",
+      "sourceValue": "0.3",
+      "sourceRow": 71
+    },
+    {
+      "group": "상위 보통 (식량 2)",
+      "region": "설산",
+      "target": "푸루푸루",
+      "item": "근사한 편린+",
+      "sourceValue": "0.3",
+      "sourceRow": 72
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "숲",
+      "target": "바살모스",
+      "item": "암룡의 편린+",
+      "sourceValue": "1",
+      "sourceRow": 77
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "숲",
+      "target": "바살모스",
+      "item": "암룡의 편린+",
+      "sourceValue": "0.55",
+      "sourceRow": 78
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "숲",
+      "target": "바살모스",
+      "item": "채조의 편린+",
+      "sourceValue": "0.55",
+      "sourceRow": 79
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "숲",
+      "target": "바살모스",
+      "item": "근사한 편린+",
+      "sourceValue": "0.3",
+      "sourceRow": 80
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "숲",
+      "target": "진오우거",
+      "item": "뇌랑룡의 편린+",
+      "sourceValue": "1",
+      "sourceRow": 81
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "숲",
+      "target": "진오우거",
+      "item": "뇌랑룡의 편린+",
+      "sourceValue": "0.55",
+      "sourceRow": 82
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "숲",
+      "target": "진오우거",
+      "item": "신룡의 편린+",
+      "sourceValue": "0.55",
+      "sourceRow": 83
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "숲",
+      "target": "진오우거",
+      "item": "근사한 편린+",
+      "sourceValue": "0.3",
+      "sourceRow": 84
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "숲",
+      "target": "셀레기오스",
+      "item": "천인룡의 편린+",
+      "sourceValue": "1",
+      "sourceRow": 85
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "숲",
+      "target": "셀레기오스",
+      "item": "천인룡의 편린+",
+      "sourceValue": "0.55",
+      "sourceRow": 86
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "숲",
+      "target": "셀레기오스",
+      "item": "미추룡의 편린+",
+      "sourceValue": "0.55",
+      "sourceRow": 87
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "숲",
+      "target": "셀레기오스",
+      "item": "근사한 편린+",
+      "sourceValue": "0.3",
+      "sourceRow": 88
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "숲",
+      "target": "고어마가라",
+      "item": "흑식룡의 편린+",
+      "sourceValue": "1",
+      "sourceRow": 89
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "숲",
+      "target": "고어마가라",
+      "item": "일각룡의 편린+",
+      "sourceValue": "1",
+      "sourceRow": 90
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "숲",
+      "target": "고어마가라",
+      "item": "흑식룡의 편린+",
+      "sourceValue": "0.75",
+      "sourceRow": 91
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "숲",
+      "target": "고어마가라",
+      "item": "일각룡의 편린+",
+      "sourceValue": "0.55",
+      "sourceRow": 92
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "숲",
+      "target": "고어마가라",
+      "item": "근사한 편린+",
+      "sourceValue": "0.3",
+      "sourceRow": 93
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "숲",
+      "target": "오나즈치",
+      "item": "하룡의 편린+",
+      "sourceValue": "1",
+      "sourceRow": 94
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "숲",
+      "target": "오나즈치",
+      "item": "하룡의 편린+",
+      "sourceValue": "0.55",
+      "sourceRow": 95
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "숲",
+      "target": "오나즈치",
+      "item": "공폭룡의 편린+",
+      "sourceValue": "0.3",
+      "sourceRow": 96
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "숲",
+      "target": "다라 아마듈라",
+      "item": "사왕룡의 편린+",
+      "sourceValue": "1",
+      "sourceRow": 97
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "숲",
+      "target": "다라 아마듈라",
+      "item": "사왕룡의 편린+",
+      "sourceValue": "0.3",
+      "sourceRow": 98
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "숲",
+      "target": "다라 아마듈라",
+      "item": "폭풍룡(남룡)의 편린+",
+      "sourceValue": "0.3",
+      "sourceRow": 99
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "숲",
+      "target": "다라 아마듈라",
+      "item": "거극룡의 편린+",
+      "sourceValue": "0.3",
+      "sourceRow": 100
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "사막",
+      "target": "게넬 셀타스",
+      "item": "중갑충의 편린+",
+      "sourceValue": "1",
+      "sourceRow": 101
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "사막",
+      "target": "게넬 셀타스",
+      "item": "각룡의 편린+",
+      "sourceValue": "0.55",
+      "sourceRow": 102
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "사막",
+      "target": "게넬 셀타스",
+      "item": "중갑충의 편린+",
+      "sourceValue": "0.55",
+      "sourceRow": 103
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "사막",
+      "target": "게넬 셀타스",
+      "item": "근사한 편린+",
+      "sourceValue": "0.3",
+      "sourceRow": 104
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "사막",
+      "target": "네르스큐라",
+      "item": "영지주의 편린+",
+      "sourceValue": "1",
+      "sourceRow": 105
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "사막",
+      "target": "네르스큐라",
+      "item": "방패게의 편린+",
+      "sourceValue": "0.55",
+      "sourceRow": 106
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "사막",
+      "target": "네르스큐라",
+      "item": "영지주의 편린+",
+      "sourceValue": "0.55",
+      "sourceRow": 107
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "사막",
+      "target": "네르스큐라",
+      "item": "근사한 편린+",
+      "sourceValue": "0.3",
+      "sourceRow": 108
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "사막",
+      "target": "모노블로스",
+      "item": "일각룡의 편린+",
+      "sourceValue": "1",
+      "sourceRow": 109
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "사막",
+      "target": "모노블로스",
+      "item": "교사룡의 편린+",
+      "sourceValue": "0.55",
+      "sourceRow": 110
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "사막",
+      "target": "모노블로스",
+      "item": "일각룡의 편린+",
+      "sourceValue": "0.55",
+      "sourceRow": 111
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "사막",
+      "target": "모노블로스",
+      "item": "근사한 편린+",
+      "sourceValue": "0.3",
+      "sourceRow": 112
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "사막",
+      "target": "셀레기오스",
+      "item": "천인룡의 편린+",
+      "sourceValue": "1",
+      "sourceRow": 113
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "사막",
+      "target": "셀레기오스",
+      "item": "천인룡의 편린+",
+      "sourceValue": "0.55",
+      "sourceRow": 114
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "사막",
+      "target": "셀레기오스",
+      "item": "개룡의 편린+",
+      "sourceValue": "0.55",
+      "sourceRow": 115
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "사막",
+      "target": "셀레기오스",
+      "item": "근사한 편린+",
+      "sourceValue": "0.3",
+      "sourceRow": 116
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "사막",
+      "target": "샤가르마가라",
+      "item": "천회룡의 편린+",
+      "sourceValue": "1",
+      "sourceRow": 117
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "사막",
+      "target": "샤가르마가라",
+      "item": "독괴조의 편린+",
+      "sourceValue": "0.55",
+      "sourceRow": 118
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "사막",
+      "target": "샤가르마가라",
+      "item": "천회룡의 편린+",
+      "sourceValue": "0.3",
+      "sourceRow": 119
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "화산",
+      "target": "채취",
+      "item": "소박한 편린+",
+      "sourceValue": "1",
+      "sourceRow": 120
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "화산",
+      "target": "채취",
+      "item": "근사한 편린+",
+      "sourceValue": "1",
+      "sourceRow": 121
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "화산",
+      "target": "채취",
+      "item": "소박한 편린+",
+      "sourceValue": "0.55",
+      "sourceRow": 122
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "화산",
+      "target": "채취",
+      "item": "근사한 편린+",
+      "sourceValue": "0.3",
+      "sourceRow": 123
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "화산",
+      "target": "채취",
+      "item": "근사한 편린+",
+      "sourceValue": "0.3",
+      "sourceRow": 124
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "화산",
+      "target": "리오레우스",
+      "item": "화룡의 편린+",
+      "sourceValue": "1",
+      "sourceRow": 125
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "화산",
+      "target": "리오레우스",
+      "item": "화룡의 편린+",
+      "sourceValue": "0.75",
+      "sourceRow": 126
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "화산",
+      "target": "리오레우스",
+      "item": "염과룡의 편린+",
+      "sourceValue": "0.55",
+      "sourceRow": 127
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "화산",
+      "target": "리오레우스",
+      "item": "근사한 편린+",
+      "sourceValue": "0.3",
+      "sourceRow": 128
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "화산",
+      "target": "얀가루루가",
+      "item": "흑랑조의 편린+",
+      "sourceValue": "1",
+      "sourceRow": 129
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "화산",
+      "target": "얀가루루가",
+      "item": "흑랑조의 편린+",
+      "sourceValue": "0.55",
+      "sourceRow": 130
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "화산",
+      "target": "얀가루루가",
+      "item": "염과룡의 편린+",
+      "sourceValue": "0.55",
+      "sourceRow": 131
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "화산",
+      "target": "얀가루루가",
+      "item": "근사한 편린+",
+      "sourceValue": "0.3",
+      "sourceRow": 132
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "화산",
+      "target": "브라키디오스",
+      "item": "쇄룡의 편린+",
+      "sourceValue": "1",
+      "sourceRow": 133
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "화산",
+      "target": "브라키디오스",
+      "item": "쇄룡의 편린+",
+      "sourceValue": "0.75",
+      "sourceRow": 134
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "화산",
+      "target": "브라키디오스",
+      "item": "개룡의 편린+",
+      "sourceValue": "0.55",
+      "sourceRow": 135
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "화산",
+      "target": "브라키디오스",
+      "item": "근사한 편린+",
+      "sourceValue": "0.3",
+      "sourceRow": 136
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "화산",
+      "target": "테오 테스카토르",
+      "item": "염왕룡의 편린+",
+      "sourceValue": "1",
+      "sourceRow": 137
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "화산",
+      "target": "테오 테스카토르",
+      "item": "염왕룡의 편린+",
+      "sourceValue": "0.55",
+      "sourceRow": 138
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "화산",
+      "target": "테오 테스카토르",
+      "item": "황흑룡의 편린+",
+      "sourceValue": "0.3",
+      "sourceRow": 139
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "화산",
+      "target": "테오 테스카토르",
+      "item": "봉산룡의 편린+",
+      "sourceValue": "0.3",
+      "sourceRow": 140
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "화산",
+      "target": "아캄토름",
+      "item": "패룡의 편린+",
+      "sourceValue": "1",
+      "sourceRow": 141
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "화산",
+      "target": "아캄토름",
+      "item": "패룡의 편린+",
+      "sourceValue": "0.75",
+      "sourceRow": 142
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "화산",
+      "target": "아캄토름",
+      "item": "공폭룡의 편린+",
+      "sourceValue": "0.3",
+      "sourceRow": 143
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "설산",
+      "target": "채취",
+      "item": "소박한 편린+",
+      "sourceValue": "1",
+      "sourceRow": 144
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "설산",
+      "target": "채취",
+      "item": "근사한 편린+",
+      "sourceValue": "1",
+      "sourceRow": 145
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "설산",
+      "target": "채취",
+      "item": "소박한 편린+",
+      "sourceValue": "0.55",
+      "sourceRow": 146
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "설산",
+      "target": "채취",
+      "item": "근사한 편린+",
+      "sourceValue": "0.3",
+      "sourceRow": 147
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "설산",
+      "target": "채취",
+      "item": "근사한 편린+",
+      "sourceValue": "0.3",
+      "sourceRow": 148
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "설산",
+      "target": "티가렉스",
+      "item": "굉룡의 편린+",
+      "sourceValue": "1",
+      "sourceRow": 149
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "설산",
+      "target": "티가렉스",
+      "item": "면구룡의 편린+",
+      "sourceValue": "0.55",
+      "sourceRow": 150
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "설산",
+      "target": "티가렉스",
+      "item": "굉룡의 편린+",
+      "sourceValue": "0.55",
+      "sourceRow": 151
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "설산",
+      "target": "티가렉스",
+      "item": "편린+",
+      "sourceValue": "0.3",
+      "sourceRow": 152
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "설산",
+      "target": "키린",
+      "item": "키린의 편린+",
+      "sourceValue": "1",
+      "sourceRow": 153
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "설산",
+      "target": "키린",
+      "item": "독괴룡의 편린+",
+      "sourceValue": "0.55",
+      "sourceRow": 154
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "설산",
+      "target": "키린",
+      "item": "키린의 편린+",
+      "sourceValue": "0.3",
+      "sourceRow": 155
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "설산",
+      "target": "크샬다오라",
+      "item": "강룡의 편린+",
+      "sourceValue": "1",
+      "sourceRow": 156
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "설산",
+      "target": "크샬다오라",
+      "item": "강룡의 편린+",
+      "sourceValue": "0.3",
+      "sourceRow": 157
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "설산",
+      "target": "크샬다오라",
+      "item": "붕룡의 편린+",
+      "sourceValue": "0.3",
+      "sourceRow": 158
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "설산",
+      "target": "크샬다오라",
+      "item": "호산룡의 편린+",
+      "sourceValue": "0.3",
+      "sourceRow": 159
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "설산",
+      "target": "라잔",
+      "item": "금사자의 편린+",
+      "sourceValue": "1",
+      "sourceRow": 160
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "설산",
+      "target": "라잔",
+      "item": "금사자의 편린+",
+      "sourceValue": "0.55",
+      "sourceRow": 161
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "설산",
+      "target": "라잔",
+      "item": "빙아룡의 편린+",
+      "sourceValue": "0.55",
+      "sourceRow": 162
+    },
+    {
+      "group": "상위 원거리 (식량 3)",
+      "region": "설산",
+      "target": "라잔",
+      "item": "근사한 편린+",
+      "sourceValue": "0.3",
+      "sourceRow": 163
+    },
+    {
+      "group": "하위 근거리 (식량 1)",
+      "region": "숲",
+      "target": "채취",
+      "item": "소박한 편린",
+      "sourceValue": "1",
+      "sourceRow": 168
+    },
+    {
+      "group": "하위 근거리 (식량 1)",
+      "region": "숲",
+      "target": "채취",
+      "item": "소박한 편린",
+      "sourceValue": "0.75",
+      "sourceRow": 169
+    },
+    {
+      "group": "하위 근거리 (식량 1)",
+      "region": "숲",
+      "target": "채취",
+      "item": "근사한 편린",
+      "sourceValue": "0.55",
+      "sourceRow": 170
+    },
+    {
+      "group": "하위 근거리 (식량 1)",
+      "region": "숲",
+      "target": "가구아",
+      "item": "환조의 편린",
+      "sourceValue": "1",
+      "sourceRow": 171
+    },
+    {
+      "group": "하위 근거리 (식량 1)",
+      "region": "숲",
+      "target": "가구아",
+      "item": "소박한 편린",
+      "sourceValue": "0.75",
+      "sourceRow": 172
+    },
+    {
+      "group": "하위 근거리 (식량 1)",
+      "region": "숲",
+      "target": "가구아",
+      "item": "청웅수의 편린",
+      "sourceValue": "0.3",
+      "sourceRow": 173
+    },
+    {
+      "group": "하위 근거리 (식량 1)",
+      "region": "숲",
+      "target": "가구아",
+      "item": "환조의 편린",
+      "sourceValue": "0.3",
+      "sourceRow": 174
+    },
+    {
+      "group": "하위 근거리 (식량 1)",
+      "region": "사막",
+      "target": "리프노스",
+      "item": "초식룡의 편린",
+      "sourceValue": "1",
+      "sourceRow": 175
+    },
+    {
+      "group": "하위 근거리 (식량 1)",
+      "region": "사막",
+      "target": "리프노스",
+      "item": "소박한 편린",
+      "sourceValue": "0.75",
+      "sourceRow": 176
+    },
+    {
+      "group": "하위 근거리 (식량 1)",
+      "region": "사막",
+      "target": "리프노스",
+      "item": "초식룡의 편린",
+      "sourceValue": "0.55",
+      "sourceRow": 177
+    },
+    {
+      "group": "하위 근거리 (식량 1)",
+      "region": "사막",
+      "target": "리프노스",
+      "item": "구룡의 편린",
+      "sourceValue": "0.55",
+      "sourceRow": 178
+    },
+    {
+      "group": "하위 근거리 (식량 1)",
+      "region": "화산",
+      "target": "즈와프로스",
+      "item": "수피룡의 편린",
+      "sourceValue": "1",
+      "sourceRow": 179
+    },
+    {
+      "group": "하위 근거리 (식량 1)",
+      "region": "화산",
+      "target": "즈와프로스",
+      "item": "수피룡의 편린",
+      "sourceValue": "0.55",
+      "sourceRow": 180
+    },
+    {
+      "group": "하위 근거리 (식량 1)",
+      "region": "화산",
+      "target": "즈와프로스",
+      "item": "적갑수의 편린",
+      "sourceValue": "0.55",
+      "sourceRow": 181
+    },
+    {
+      "group": "하위 근거리 (식량 1)",
+      "region": "화산",
+      "target": "즈와프로스",
+      "item": "근사한 편린",
+      "sourceValue": "0.55",
+      "sourceRow": 182
+    },
+    {
+      "group": "하위 근거리 (식량 1)",
+      "region": "설산",
+      "target": "브나하브라",
+      "item": "비갑충의 편린",
+      "sourceValue": "1",
+      "sourceRow": 183
+    },
+    {
+      "group": "하위 근거리 (식량 1)",
+      "region": "설산",
+      "target": "브나하브라",
+      "item": "비갑충의 편린",
+      "sourceValue": "0.55",
+      "sourceRow": 184
+    },
+    {
+      "group": "하위 근거리 (식량 1)",
+      "region": "설산",
+      "target": "브나하브라",
+      "item": "대저의 편린",
+      "sourceValue": "0.55",
+      "sourceRow": 185
+    },
+    {
+      "group": "하위 근거리 (식량 1)",
+      "region": "설산",
+      "target": "브나하브라",
+      "item": "근사한 편린",
+      "sourceValue": "0.55",
+      "sourceRow": 186
+    },
+    {
+      "group": "하위 보통 (식량 2)",
+      "region": "숲",
+      "target": "케차와차",
+      "item": "기원호의 편린",
+      "sourceValue": "1",
+      "sourceRow": 191
+    },
+    {
+      "group": "하위 보통 (식량 2)",
+      "region": "숲",
+      "target": "케차와차",
+      "item": "기원호의 편린",
+      "sourceValue": "0.55",
+      "sourceRow": 192
+    },
+    {
+      "group": "하위 보통 (식량 2)",
+      "region": "숲",
+      "target": "케차와차",
+      "item": "괴조의 편린",
+      "sourceValue": "0.55",
+      "sourceRow": 193
+    },
+    {
+      "group": "하위 보통 (식량 2)",
+      "region": "숲",
+      "target": "케차와차",
+      "item": "소박한 편린",
+      "sourceValue": "0.55",
+      "sourceRow": 194
+    },
+    {
+      "group": "하위 보통 (식량 2)",
+      "region": "숲",
+      "target": "리오레이아",
+      "item": "자화룡의 편린",
+      "sourceValue": "1",
+      "sourceRow": 195
+    },
+    {
+      "group": "하위 보통 (식량 2)",
+      "region": "숲",
+      "target": "리오레이아",
+      "item": "자화룡의 편린",
+      "sourceValue": "0.55",
+      "sourceRow": 196
+    },
+    {
+      "group": "하위 보통 (식량 2)",
+      "region": "숲",
+      "target": "리오레이아",
+      "item": "물컹물컹한 편린",
+      "sourceValue": "0.55",
+      "sourceRow": 197
+    },
+    {
+      "group": "하위 보통 (식량 2)",
+      "region": "숲",
+      "target": "리오레이아",
+      "item": "근사한 편린",
+      "sourceValue": "0.55",
+      "sourceRow": 198
+    },
+    {
+      "group": "하위 보통 (식량 2)",
+      "region": "사막",
+      "target": "채취",
+      "item": "소박한 편린",
+      "sourceValue": "1",
+      "sourceRow": 199
+    },
+    {
+      "group": "하위 보통 (식량 2)",
+      "region": "사막",
+      "target": "채취",
+      "item": "소박한 편린",
+      "sourceValue": "0.75",
+      "sourceRow": 200
+    },
+    {
+      "group": "하위 보통 (식량 2)",
+      "region": "사막",
+      "target": "채취",
+      "item": "근사한 편린",
+      "sourceValue": "0.75",
+      "sourceRow": 201
+    },
+    {
+      "group": "하위 보통 (식량 2)",
+      "region": "사막",
+      "target": "테츠카브라",
+      "item": "귀와의 편린",
+      "sourceValue": "1",
+      "sourceRow": 202
+    },
+    {
+      "group": "하위 보통 (식량 2)",
+      "region": "사막",
+      "target": "테츠카브라",
+      "item": "귀와의 편린",
+      "sourceValue": "0.75",
+      "sourceRow": 203
+    },
+    {
+      "group": "하위 보통 (식량 2)",
+      "region": "사막",
+      "target": "테츠카브라",
+      "item": "토사룡의 편린",
+      "sourceValue": "0.55",
+      "sourceRow": 204
+    },
+    {
+      "group": "하위 보통 (식량 2)",
+      "region": "사막",
+      "target": "테츠카브라",
+      "item": "소박한 편린",
+      "sourceValue": "0.3",
+      "sourceRow": 205
+    },
+    {
+      "group": "하위 보통 (식량 2)",
+      "region": "화산",
+      "target": "테츠카브라",
+      "item": "귀와의 편린",
+      "sourceValue": "1",
+      "sourceRow": 206
+    },
+    {
+      "group": "하위 보통 (식량 2)",
+      "region": "화산",
+      "target": "테츠카브라",
+      "item": "폭추룡의 편린",
+      "sourceValue": "0.75",
+      "sourceRow": 207
+    },
+    {
+      "group": "하위 보통 (식량 2)",
+      "region": "화산",
+      "target": "테츠카브라",
+      "item": "귀와의 편린",
+      "sourceValue": "0.55",
+      "sourceRow": 208
+    },
+    {
+      "group": "하위 보통 (식량 2)",
+      "region": "화산",
+      "target": "테츠카브라",
+      "item": "소박한 편린",
+      "sourceValue": "0.15",
+      "sourceRow": 209
+    },
+    {
+      "group": "하위 보통 (식량 2)",
+      "region": "화산",
+      "target": "리오레이아",
+      "item": "자화룡의 편린",
+      "sourceValue": "1",
+      "sourceRow": 210
+    },
+    {
+      "group": "하위 보통 (식량 2)",
+      "region": "화산",
+      "target": "리오레이아",
+      "item": "자화룡의 편린",
+      "sourceValue": "0.55",
+      "sourceRow": 211
+    },
+    {
+      "group": "하위 보통 (식량 2)",
+      "region": "화산",
+      "target": "리오레이아",
+      "item": "독구룡의 편린",
+      "sourceValue": "0.55",
+      "sourceRow": 212
+    },
+    {
+      "group": "하위 보통 (식량 2)",
+      "region": "화산",
+      "target": "리오레이아",
+      "item": "근사한 편린",
+      "sourceValue": "0.55",
+      "sourceRow": 213
+    },
+    {
+      "group": "하위 보통 (식량 2)",
+      "region": "설산",
+      "target": "자보아자길",
+      "item": "괴상어의 편린",
+      "sourceValue": "1",
+      "sourceRow": 214
+    },
+    {
+      "group": "하위 보통 (식량 2)",
+      "region": "설산",
+      "target": "자보아자길",
+      "item": "괴상어의 편린",
+      "sourceValue": "0.75",
+      "sourceRow": 215
+    },
+    {
+      "group": "하위 보통 (식량 2)",
+      "region": "설산",
+      "target": "자보아자길",
+      "item": "백토수의 편린",
+      "sourceValue": "0.55",
+      "sourceRow": 216
+    },
+    {
+      "group": "하위 보통 (식량 2)",
+      "region": "설산",
+      "target": "자보아자길",
+      "item": "근사한 편린",
+      "sourceValue": "0.55",
+      "sourceRow": 217
+    },
+    {
+      "group": "하위 원거리 (식량 3)",
+      "region": "숲",
+      "target": "게넬셀타스",
+      "item": "중갑충의 편린",
+      "sourceValue": "1",
+      "sourceRow": 222
+    },
+    {
+      "group": "하위 원거리 (식량 3)",
+      "region": "숲",
+      "target": "게넬셀타스",
+      "item": "중갑충의 편린",
+      "sourceValue": "0.75",
+      "sourceRow": 223
+    },
+    {
+      "group": "하위 원거리 (식량 3)",
+      "region": "숲",
+      "target": "게넬셀타스",
+      "item": "미추룡의 편린",
+      "sourceValue": "0.55",
+      "sourceRow": 224
+    },
+    {
+      "group": "하위 원거리 (식량 3)",
+      "region": "숲",
+      "target": "게넬셀타스",
+      "item": "근사한 편린",
+      "sourceValue": "0.15",
+      "sourceRow": 225
+    },
+    {
+      "group": "하위 원거리 (식량 3)",
+      "region": "숲",
+      "target": "진오우거",
+      "item": "뇌랑룡의 편린",
+      "sourceValue": "1",
+      "sourceRow": 226
+    },
+    {
+      "group": "하위 원거리 (식량 3)",
+      "region": "숲",
+      "target": "진오우거",
+      "item": "뇌랑룡의 편린",
+      "sourceValue": "0.75",
+      "sourceRow": 227
+    },
+    {
+      "group": "하위 원거리 (식량 3)",
+      "region": "숲",
+      "target": "진오우거",
+      "item": "신룡의 편린",
+      "sourceValue": "0.55",
+      "sourceRow": 228
+    },
+    {
+      "group": "하위 원거리 (식량 3)",
+      "region": "숲",
+      "target": "진오우거",
+      "item": "근사한 편린",
+      "sourceValue": "0.55",
+      "sourceRow": 229
+    },
+    {
+      "group": "하위 원거리 (식량 3)",
+      "region": "숲",
+      "target": "네르스큐라",
+      "item": "영지주의 편린",
+      "sourceValue": "1",
+      "sourceRow": 230
+    },
+    {
+      "group": "하위 원거리 (식량 3)",
+      "region": "숲",
+      "target": "네르스큐라",
+      "item": "채조의 편린",
+      "sourceValue": "0.75",
+      "sourceRow": 231
+    },
+    {
+      "group": "하위 원거리 (식량 3)",
+      "region": "숲",
+      "target": "네르스큐라",
+      "item": "영지주의 편린",
+      "sourceValue": "0.55",
+      "sourceRow": 232
+    },
+    {
+      "group": "하위 원거리 (식량 3)",
+      "region": "숲",
+      "target": "네르스큐라",
+      "item": "소박한 편린",
+      "sourceValue": "0.15",
+      "sourceRow": 233
+    },
+    {
+      "group": "하위 원거리 (식량 3)",
+      "region": "숲",
+      "target": "다라 아마듈라",
+      "item": "사왕룡의 편린",
+      "sourceValue": "1",
+      "sourceRow": 234
+    },
+    {
+      "group": "하위 원거리 (식량 3)",
+      "region": "숲",
+      "target": "다라 아마듈라",
+      "item": "사왕룡의 편린",
+      "sourceValue": "0.55",
+      "sourceRow": 235
+    },
+    {
+      "group": "하위 원거리 (식량 3)",
+      "region": "숲",
+      "target": "다라 아마듈라",
+      "item": "폭풍룡(남룡)의 편린",
+      "sourceValue": "0.55",
+      "sourceRow": 236
+    },
+    {
+      "group": "하위 원거리 (식량 3)",
+      "region": "사막",
+      "target": "게넬셀타스",
+      "item": "중갑충의 편린",
+      "sourceValue": "1",
+      "sourceRow": 237
+    },
+    {
+      "group": "하위 원거리 (식량 3)",
+      "region": "사막",
+      "target": "게넬셀타스",
+      "item": "중갑충의 편린",
+      "sourceValue": "0.75",
+      "sourceRow": 238
+    },
+    {
+      "group": "하위 원거리 (식량 3)",
+      "region": "사막",
+      "target": "게넬셀타스",
+      "item": "각룡의 편린",
+      "sourceValue": "0.55",
+      "sourceRow": 239
+    },
+    {
+      "group": "하위 원거리 (식량 3)",
+      "region": "사막",
+      "target": "게넬셀타스",
+      "item": "근사한 편린",
+      "sourceValue": "0.15",
+      "sourceRow": 240
+    },
+    {
+      "group": "하위 원거리 (식량 3)",
+      "region": "사막",
+      "target": "샤가르마가라",
+      "item": "천회룡의 편린",
+      "sourceValue": "1",
+      "sourceRow": 241
+    },
+    {
+      "group": "하위 원거리 (식량 3)",
+      "region": "사막",
+      "target": "샤가르마가라",
+      "item": "흑식룡의 편린",
+      "sourceValue": "0.55",
+      "sourceRow": 242
+    },
+    {
+      "group": "하위 원거리 (식량 3)",
+      "region": "사막",
+      "target": "샤가르마가라",
+      "item": "천회룡의 편린",
+      "sourceValue": "0.3",
+      "sourceRow": 243
+    },
+    {
+      "group": "하위 원거리 (식량 3)",
+      "region": "사막",
+      "target": "티가렉스",
+      "item": "굉룡의 편린",
+      "sourceValue": "1",
+      "sourceRow": 244
+    },
+    {
+      "group": "하위 원거리 (식량 3)",
+      "region": "사막",
+      "target": "티가렉스",
+      "item": "교사룡의 편린",
+      "sourceValue": "0.75",
+      "sourceRow": 245
+    },
+    {
+      "group": "하위 원거리 (식량 3)",
+      "region": "사막",
+      "target": "티가렉스",
+      "item": "근사한 편린",
+      "sourceValue": "0.55",
+      "sourceRow": 246
+    },
+    {
+      "group": "하위 원거리 (식량 3)",
+      "region": "사막",
+      "target": "티가렉스",
+      "item": "굉룡의 편린",
+      "sourceValue": "0.3",
+      "sourceRow": 247
+    },
+    {
+      "group": "하위 원거리 (식량 3)",
+      "region": "사막",
+      "target": "네르스큐라",
+      "item": "영지주의 편린",
+      "sourceValue": "1",
+      "sourceRow": 248
+    },
+    {
+      "group": "하위 원거리 (식량 3)",
+      "region": "사막",
+      "target": "네르스큐라",
+      "item": "잠구룡의 편린",
+      "sourceValue": "0.75",
+      "sourceRow": 249
+    },
+    {
+      "group": "하위 원거리 (식량 3)",
+      "region": "사막",
+      "target": "네르스큐라",
+      "item": "영지주의 편린",
+      "sourceValue": "0.55",
+      "sourceRow": 250
+    },
+    {
+      "group": "하위 원거리 (식량 3)",
+      "region": "사막",
+      "target": "네르스큐라",
+      "item": "소박한 편린",
+      "sourceValue": "0.3",
+      "sourceRow": 251
+    },
+    {
+      "group": "하위 원거리 (식량 3)",
+      "region": "화산",
+      "target": "채취",
+      "item": "근사한 편린",
+      "sourceValue": "1",
+      "sourceRow": 252
+    },
+    {
+      "group": "하위 원거리 (식량 3)",
+      "region": "화산",
+      "target": "채취",
+      "item": "근사한 편린",
+      "sourceValue": "0.75",
+      "sourceRow": 253
+    },
+    {
+      "group": "하위 원거리 (식량 3)",
+      "region": "화산",
+      "target": "채취",
+      "item": "소박한 편린",
+      "sourceValue": "0.3",
+      "sourceRow": 254
+    },
+    {
+      "group": "하위 원거리 (식량 3)",
+      "region": "화산",
+      "target": "리오레우스",
+      "item": "화룡의 편린",
+      "sourceValue": "1",
+      "sourceRow": 255
+    },
+    {
+      "group": "하위 원거리 (식량 3)",
+      "region": "화산",
+      "target": "리오레우스",
+      "item": "화룡의 편린",
+      "sourceValue": "0.75",
+      "sourceRow": 256
+    },
+    {
+      "group": "하위 원거리 (식량 3)",
+      "region": "화산",
+      "target": "리오레우스",
+      "item": "염과룡의 편린",
+      "sourceValue": "0.55",
+      "sourceRow": 257
+    },
+    {
+      "group": "하위 원거리 (식량 3)",
+      "region": "화산",
+      "target": "리오레우스",
+      "item": "근사한 편린",
+      "sourceValue": "0.15",
+      "sourceRow": 258
+    },
+    {
+      "group": "하위 원거리 (식량 3)",
+      "region": "화산",
+      "target": "라잔",
+      "item": "금사자의 편린",
+      "sourceValue": "1",
+      "sourceRow": 259
+    },
+    {
+      "group": "하위 원거리 (식량 3)",
+      "region": "화산",
+      "target": "라잔",
+      "item": "금사자의 편린",
+      "sourceValue": "0.55",
+      "sourceRow": 260
+    },
+    {
+      "group": "하위 원거리 (식량 3)",
+      "region": "화산",
+      "target": "라잔",
+      "item": "쇄룡의 편린",
+      "sourceValue": "0.55",
+      "sourceRow": 261
+    },
+    {
+      "group": "하위 원거리 (식량 3)",
+      "region": "화산",
+      "target": "아캄토룸",
+      "item": "패룡의 편린",
+      "sourceValue": "1",
+      "sourceRow": 262
+    },
+    {
+      "group": "하위 원거리 (식량 3)",
+      "region": "화산",
+      "target": "아캄토룸",
+      "item": "패룡의 편린",
+      "sourceValue": "0.55",
+      "sourceRow": 263
+    },
+    {
+      "group": "하위 원거리 (식량 3)",
+      "region": "화산",
+      "target": "아캄토룸",
+      "item": "봉산룡의 편린",
+      "sourceValue": "0.55",
+      "sourceRow": 264
+    },
+    {
+      "group": "하위 원거리 (식량 3)",
+      "region": "화산",
+      "target": "아캄토룸",
+      "item": "황흑룡의 편린",
+      "sourceValue": "0.55",
+      "sourceRow": 265
+    },
+    {
+      "group": "하위 원거리 (식량 3)",
+      "region": "화산",
+      "target": "테오 테스카토르",
+      "item": "염왕룡의 편린",
+      "sourceValue": "1",
+      "sourceRow": 266
+    },
+    {
+      "group": "하위 원거리 (식량 3)",
+      "region": "화산",
+      "target": "테오 테스카토르",
+      "item": "염왕룡의 편린",
+      "sourceValue": "0.75",
+      "sourceRow": 267
+    },
+    {
+      "group": "하위 원거리 (식량 3)",
+      "region": "화산",
+      "target": "테오 테스카토르",
+      "item": "공폭룡의 편린",
+      "sourceValue": "0.55",
+      "sourceRow": 268
+    },
+    {
+      "group": "하위 원거리 (식량 3)",
+      "region": "설산",
+      "target": "채취",
+      "item": "근사한 편린",
+      "sourceValue": "1",
+      "sourceRow": 269
+    },
+    {
+      "group": "하위 원거리 (식량 3)",
+      "region": "설산",
+      "target": "채취",
+      "item": "근사한 편린",
+      "sourceValue": "0.75",
+      "sourceRow": 270
+    },
+    {
+      "group": "하위 원거리 (식량 3)",
+      "region": "설산",
+      "target": "채취",
+      "item": "소박한 편린",
+      "sourceValue": "0.3",
+      "sourceRow": 271
+    },
+    {
+      "group": "하위 원거리 (식량 3)",
+      "region": "설산",
+      "target": "키린",
+      "item": "키린의 편린",
+      "sourceValue": "1",
+      "sourceRow": 272
+    },
+    {
+      "group": "하위 원거리 (식량 3)",
+      "region": "설산",
+      "target": "키린",
+      "item": "독괴룡의 편린",
+      "sourceValue": "0.75",
+      "sourceRow": 273
+    },
+    {
+      "group": "하위 원거리 (식량 3)",
+      "region": "설산",
+      "target": "키린",
+      "item": "봉산룡의 편린",
+      "sourceValue": "0.55",
+      "sourceRow": 274
+    },
+    {
+      "group": "하위 원거리 (식량 3)",
+      "region": "설산",
+      "target": "키린",
+      "item": "키린의 편린",
+      "sourceValue": "0.15",
+      "sourceRow": 275
+    },
+    {
+      "group": "하위 원거리 (식량 3)",
+      "region": "설산",
+      "target": "티가렉스",
+      "item": "굉룡의 편린",
+      "sourceValue": "1",
+      "sourceRow": 276
+    },
+    {
+      "group": "하위 원거리 (식량 3)",
+      "region": "설산",
+      "target": "티가렉스",
+      "item": "굉룡의 편린",
+      "sourceValue": "0.55",
+      "sourceRow": 277
+    },
+    {
+      "group": "하위 원거리 (식량 3)",
+      "region": "설산",
+      "target": "티가렉스",
+      "item": "면구룡의 편린",
+      "sourceValue": "0.55",
+      "sourceRow": 278
+    },
+    {
+      "group": "하위 원거리 (식량 3)",
+      "region": "설산",
+      "target": "티가렉스",
+      "item": "근사한 편린",
+      "sourceValue": "1",
+      "sourceRow": 279
+    },
+    {
+      "group": "하위 원거리 (식량 3)",
+      "region": "설산",
+      "target": "라잔",
+      "item": "금사자의 편린",
+      "sourceValue": "0.55",
+      "sourceRow": 280
+    },
+    {
+      "group": "하위 원거리 (식량 3)",
+      "region": "설산",
+      "target": "라잔",
+      "item": "금사자의 편린",
+      "sourceValue": "0.55",
+      "sourceRow": 281
+    },
+    {
+      "group": "하위 원거리 (식량 3)",
+      "region": "설산",
+      "target": "라잔",
+      "item": "빙아룡의 편린",
+      "sourceValue": "0.55",
+      "sourceRow": 282
+    },
+    {
+      "group": "하위 원거리 (식량 3)",
+      "region": "설산",
+      "target": "크샬다오라",
+      "item": "강룡의 편린",
+      "sourceValue": "1",
+      "sourceRow": 283
+    },
+    {
+      "group": "하위 원거리 (식량 3)",
+      "region": "설산",
+      "target": "크샬다오라",
+      "item": "강룡의 편린",
+      "sourceValue": "0.75",
+      "sourceRow": 284
+    },
+    {
+      "group": "하위 원거리 (식량 3)",
+      "region": "설산",
+      "target": "크샬다오라",
+      "item": "붕룡의 편린",
+      "sourceValue": "0.55",
+      "sourceRow": 285
+    }
+  ]
+}
