@@ -119,10 +119,13 @@
     setupTabs();
     const keys=Object.keys(dataUrls);
     const results=await Promise.allSettled(keys.map(load));
+    const failures=[];
     for(let i=0;i<keys.length;i++){
       if(results[i].status==="fulfilled")state[keys[i]]=results[i].value;
-      else console.warn("자료 로딩 실패",keys[i],results[i].reason);
+      else {failures.push(keys[i]);console.warn("자료 로딩 실패",keys[i],results[i].reason);}
     }
+    const status=$("loadStatus");
+    if(status){status.hidden=failures.length===0;status.textContent=failures.length?"일부 자료를 불러오지 못했습니다: "+failures.join(", ")+" (배포 상태를 확인하거나 새로고침해 주세요.)":"";}
     setOptions($("motionWeapon"),state.motion.map(x=>x.weapon),"모든 무기");
     setOptions($("catGroup"),state.cat.map(x=>x.group),"전체 랭크/식량");
     setOptions($("catRegion"),state.cat.map(x=>x.region),"전체 지역");
