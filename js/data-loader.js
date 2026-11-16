@@ -1,4 +1,4 @@
-const DATA_VERSION = "0.7.21-relic-shironaga-20261113";
+const DATA_VERSION = "0.7.23-collab-audit-20261116";
 
 const FULL_FILES = {
   skills:"./data/skills.json",
@@ -77,7 +77,27 @@ async function fetchJson(key,url){
 async function loadMap(fileMap,keys=Object.keys(fileMap)){
   const selected=keys.filter(k=>fileMap[k]);
   const rows=await Promise.all(selected.map(async k=>[k,await fetchJson(k,fileMap[k])]));
-  return Object.fromEntries(rows);
+  const result=Object.fromEntries(rows);
+
+  // 일본판 MH4G 콜라보 무기 누락분: 대형 원본 JSON은 그대로 두고 동일 ID/일본명 중복 없이 병합.
+  // 시뮬레이터 경량 데이터 및 전체 무기 DB 조회 모두에 적용한다.
+  if(Array.isArray(result.weapons)){
+    const collab=await fetchJson("collabAdditions","./data/collab_additions_20261116.json");
+    if(Array.isArray(collab?.weapons)){
+      const key=x=>String(x||"").normalize("NFKC").replace(/\\s+/g,"");
+      const seenIds=new Set(result.weapons.map(x=>String(x.id||"")));
+      const seenNames=new Set(result.weapons.map(x=>key(x.nameJa)).filter(Boolean));
+      for(const weapon of collab.weapons){
+        const id=String(weapon.id||"");
+        const nameJa=key(weapon.nameJa);
+        if((id&&seenIds.has(id))||(nameJa&&seenNames.has(nameJa)))continue;
+        result.weapons.push(weapon);
+        if(id)seenIds.add(id);
+        if(nameJa)seenNames.add(nameJa);
+      }
+    }
+  }
+  return result;
 }
 
 export function loadSimulatorData(){
