@@ -81,13 +81,24 @@ async function loadMap(fileMap,keys=Object.keys(fileMap)){
 
   // 대형 원본 DB는 보존하고, 검증된 콜라보 무기/방어구 보정 레코드를 병합한다.
   // 경량 시뮬레이터와 전체 DB 모두에서 사용하며 일본명 기준 중복을 방지한다.
-  if(Array.isArray(result.weapons)||Array.isArray(result.armors)){
+  if(Array.isArray(result.weapons)||Array.isArray(result.armors)||Array.isArray(result.items)){
     const collab=await fetchJson("collabAdditions","./data/collab_additions_20261116.json");
     if(Array.isArray(result.armors)&&Array.isArray(collab?.armorOverrides)){
       const patches=new Map(collab.armorOverrides.map(x=>[x.id,x]));
       for(const armor of result.armors){
         const patch=patches.get(armor.id);
         if(patch&&Number.isFinite(patch.maxDefense))armor.maxDefense=patch.maxDefense;
+      }
+    }
+    if(Array.isArray(result.items)&&Array.isArray(collab?.items)){
+      const key=x=>String(x||"").normalize("NFKC").replace(/\s+/g,"");
+      const seenIds=new Set(result.items.map(x=>String(x.id||"")));
+      const seenNames=new Set(result.items.map(x=>key(x.nameJa)).filter(Boolean));
+      for(const item of collab.items){
+        if(seenIds.has(String(item.id||""))||seenNames.has(key(item.nameJa)))continue;
+        result.items.push(item);
+        seenIds.add(String(item.id||""));
+        seenNames.add(key(item.nameJa));
       }
     }
     if(Array.isArray(result.weapons)&&Array.isArray(collab?.weapons)){
