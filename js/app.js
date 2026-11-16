@@ -1,4 +1,4 @@
-import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,loadArmorProgression,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.23-collab-audit-20261116";
+import {loadSimulatorData,loadFullData,loadItemReference,loadSkillReference,loadMonsterReference,loadMonsterReferencesFallback,loadArmorProgression,FULL_DATA_KEYS,classifyImported} from "./data-loader.js?v=0.7.24-collab-audit-20261116";
 import {PARTS,PART_NAMES,slotsText,calculateBuild,searchBuilds} from "./engine.js?v=0.7.7-monster-filter1";
 import {enhanceRelicAppearance} from "./relic-enhancements.js?v=0.7.7-relic-attack-step3";
 import {mountRelicRewards} from "./relic-reward-workbench.js?v=0.7.7-relic-attack-step3";
