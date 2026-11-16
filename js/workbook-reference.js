@@ -123,7 +123,7 @@
     for(const id of ["catGroup","catRegion","catSearch"])$(id).addEventListener("input",renderCat);
     $("weakMonster").addEventListener("change",renderWeak);
     $("weakAttack").addEventListener("change",renderWeak);
-    const preferred=state.weak.find(x=>x.name==="테오 테스카토르");
+    const preferred=state.weak.find(x=>x.name==="테오·테스카토르");
     if(preferred)$("weakMonster").value=preferred.name;
     renderMotion();renderCat();renderBow();renderWeak();
     if(!state.motion.length)count("motionCount",0,0);
