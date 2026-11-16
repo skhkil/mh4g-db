@@ -1,6 +1,6 @@
 {
   "version": "2026-11-16",
-  "note": "원본 weapons/sim_weapons 용량 및 국내 DB 원문 보존을 위해 런타임에서 병합하는 일본 MH4G 콜라보 누락분. 기존과 중복될 경우 삽입하지 않음.",
+  "note": "일본 MH4G 콜라보 누락 무기와 메트로이드 제로슈트 기존 방어구 최종강화 방어력 보완. 원본 대형 JSON 파일은 보존하고 로더에서 중복 방지 병합·보정.",
   "weapons": [
     {
       "id": "weapon_collab_magi_amons_sword",
@@ -50,5 +50,88 @@
       "coatings": null,
       "reloadRecoilDrift": null
     }
-  ]
+  ],
+  "armorOverrides": [
+    {
+      "id": "armor_2f788866bac1",
+      "maxDefense": 142,
+      "upgradeDefense": [
+        88,
+        108,
+        124,
+        142
+      ]
+    },
+    {
+      "id": "armor_c2c0ae2e61c7",
+      "maxDefense": 142,
+      "upgradeDefense": [
+        88,
+        108,
+        124,
+        142
+      ]
+    },
+    {
+      "id": "armor_e1e42e851b50",
+      "maxDefense": 142,
+      "upgradeDefense": [
+        88,
+        108,
+        124,
+        142
+      ]
+    },
+    {
+      "id": "armor_86dc4255f6e9",
+      "maxDefense": 142,
+      "upgradeDefense": [
+        88,
+        108,
+        124,
+        142
+      ]
+    },
+    {
+      "id": "armor_cf20a44e4ec4",
+      "maxDefense": 92,
+      "upgradeDefense": [
+        47,
+        65,
+        78,
+        92
+      ]
+    },
+    {
+      "id": "armor_4da7bb2b916c",
+      "maxDefense": 92,
+      "upgradeDefense": [
+        47,
+        65,
+        78,
+        92
+      ]
+    },
+    {
+      "id": "armor_dfcd8b539a27",
+      "maxDefense": 92,
+      "upgradeDefense": [
+        47,
+        65,
+        78,
+        92
+      ]
+    },
+    {
+      "id": "armor_8b434c743983",
+      "maxDefense": 92,
+      "upgradeDefense": [
+        47,
+        65,
+        78,
+        92
+      ]
+    }
+  ],
+  "armorOverrideSource": "https://game-cap.com/mh4g/data/bougu_zerosutsubodi.html | https://kiranico.com/ja/mh4g/防具/脚/ゼロスーツタイツ"
 }
