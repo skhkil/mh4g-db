@@ -181,5 +181,35 @@
       "maxDefense": 92
     }
   ],
-  "armorOverrideSource": "https://game-cap.com/mh4g/data/bougu_zerosutsubodi.html | https://kiranico.com/ja/mh4g/防具/脚/ゼロスーツタイツ"
+  "armorOverrideSource": "https://game-cap.com/mh4g/data/bougu_zerosutsubodi.html | https://kiranico.com/ja/mh4g/防具/脚/ゼロスーツタイツ",
+  "items": [
+    {
+      "id": "item_collab_magi_balbadd_sword",
+      "name": "발바드의 보검",
+      "nameJa": "バルバッドの宝剣",
+      "nameEn": "Balbadd Sword",
+      "rare": null,
+      "maxStack": null,
+      "buyPrice": "-",
+      "sellPrice": "-",
+      "acquire": "이벤트 G★3 마기·불꽃 마인의 시련 보수",
+      "availability": "G급 특별 허가증",
+      "note": "아몬의 검 생산 소재. 한국어 표기는 일본어 번역이며 한글판 표기는 미확인.",
+      "source": "https://monhammer.com/archives/10118.html"
+    },
+    {
+      "id": "item_collab_jump_danzai_j_ticket",
+      "name": "단죄J티켓",
+      "nameJa": "断罪Jチケット",
+      "nameEn": "Judgment J Ticket",
+      "rare": null,
+      "maxStack": null,
+      "buyPrice": "-",
+      "sellPrice": "-",
+      "acquire": "이벤트 G★2 JUMP·쌍흑의 라이벌! 보수",
+      "availability": "G★1 허가증",
+      "note": "단죄의 총곤J 및 JUMP 전용 동반자 장비 생산 소재. 한국어 표기는 일본어 번역이며 한글판 표기는 미확인.",
+      "source": "https://monhammer.com/archives/7736.html"
+    }
+  ]
 }
