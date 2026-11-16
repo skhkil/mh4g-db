@@ -778,13 +778,15 @@
     "addedWeaponsViaOverlay": 3,
     "addedEventQuests": 3,
     "correctedEventQuestTitleJa": 1,
-    "correctedZeroSuitMaxDefense": true
+    "correctedZeroSuitMaxDefense": true,
+    "addedItemOverlay": 2
   },
   "outstanding": [
     "MH4G 일본어 원문을 기준으로 대조한 것으로 공식 한국판 이벤트 배포 여부와 번역명은 일부 미검증",
     "오토모 전용 장비는 헌터 방어구/무기 DB와 별개이며 현재 미통합",
     "기존 USJ 자보아자길 3D의 서로 다른 2개 이벤트 레코드는 현재 중복 저장됨(기존 참조 링크 보호를 위해 삭제하지 않음)",
-    "기존 대용량 무기/방어구 원본은 보존하고 로더에서 보강 데이터를 반영"
+    "기존 대용량 무기/방어구 원본은 보존하고 로더에서 보강 데이터를 반영",
+    "마기/단죄J 전용 소재 2건은 원본 대용량 items.json을 보존하고 런타임 보강 데이터에서만 등록"
   ],
   "sources": [
     "https://mh4info.com/quest/?no=3",
