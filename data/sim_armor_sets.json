@@ -29617,7 +29617,7 @@
       }
     ],
     "defense": 352,
-    "maxDefense": 352,
+    "maxDefense": 568,
     "slots": 7,
     "skills": {
       "skill_dfbf20468c93": 10,
@@ -29631,7 +29631,8 @@
       "thunder": 12,
       "ice": 12,
       "dragon": -16
-    }
+    },
+    "maxDefenseSource": "https://game-cap.com/mh4g/data/bougu_zerosutsubodi.html | https://kiranico.com/ja/mh4g/防具/脚/ゼロスーツタイツ"
   },
   {
     "id": "armor_set_collab_metroid_zero_gunner",
@@ -29669,7 +29670,7 @@
       }
     ],
     "defense": 188,
-    "maxDefense": 188,
+    "maxDefense": 368,
     "slots": 7,
     "skills": {
       "skill_dfbf20468c93": 10,
@@ -29683,6 +29684,7 @@
       "thunder": 16,
       "ice": 16,
       "dragon": -12
-    }
+    },
+    "maxDefenseSource": "https://game-cap.com/mh4g/data/bougu_zerosutsubodi.html | https://kiranico.com/ja/mh4g/防具/脚/ゼロスーツタイツ"
   }
 ]
