@@ -1,5 +1,5 @@
 {
-  "version": "0.7.7-chat4-event-major-reward1",
+  "version": "0.7.23-collab-audit-20261116",
   "generated": "2026-10-02T00:02:01",
   "note": "이벤트/에피소드 퀘스트의 고유 티켓·콜라보 소재 등 핵심 보상을 우선 표시한다. 고유 보상이 없는 일반 소재형 이벤트는 확인된 메인 보상에서 대표 소재를 표시한다.",
   "quests": {
@@ -276,6 +276,24 @@
         "대장로티켓S"
       ],
       "source": "MH4G 국내 인벤 + MH4G Japanese event data"
+    },
+    "event-g-collab-jump-dualblack": {
+      "rewardLabels": [
+        "断罪Jチケット"
+      ],
+      "source": "https://monhammer.com/archives/7736.html"
+    },
+    "event-g-collab-dengeki-whitekirin": {
+      "rewardLabels": [
+        "デンゲキクーポン"
+      ],
+      "source": "https://monhammer.com/archives/8729.html"
+    },
+    "event-g-collab-magi-firegenie": {
+      "rewardLabels": [
+        "バルバッドの宝剣"
+      ],
+      "source": "https://monhammer.com/archives/10118.html"
     }
   }
 }
