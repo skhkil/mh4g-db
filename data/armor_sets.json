@@ -32168,7 +32168,7 @@
       }
     ],
     "defense": 352,
-    "maxDefense": 352,
+    "maxDefense": 568,
     "slots": 7,
     "skills": {
       "skill_dfbf20468c93": 10,
@@ -32186,7 +32186,8 @@
     "monsterSearchTerms": [
       "메트로이드"
     ],
-    "source": "https://monhammer.com/archives/8492.html"
+    "source": "https://monhammer.com/archives/8492.html",
+    "maxDefenseSource": "https://game-cap.com/mh4g/data/bougu_zerosutsubodi.html | https://kiranico.com/ja/mh4g/防具/脚/ゼロスーツタイツ"
   },
   {
     "id": "armor_set_collab_metroid_zero_gunner",
@@ -32225,7 +32226,7 @@
       }
     ],
     "defense": 188,
-    "maxDefense": 188,
+    "maxDefense": 368,
     "slots": 7,
     "skills": {
       "skill_dfbf20468c93": 10,
@@ -32243,6 +32244,7 @@
     "monsterSearchTerms": [
       "메트로이드"
     ],
-    "source": "https://monhammer.com/archives/8492.html"
+    "source": "https://monhammer.com/archives/8492.html",
+    "maxDefenseSource": "https://game-cap.com/mh4g/data/bougu_zerosutsubodi.html | https://kiranico.com/ja/mh4g/防具/脚/ゼロスーツタイツ"
   }
 ]
