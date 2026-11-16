@@ -1,13 +1,13 @@
 {
-  "version": "0.7.7",
+  "version": "0.7.23-collab-audit-20261116",
   "demo": false,
   "source": "https://flashkiller.cafe24.com/mh4g/main.htm",
   "counts": {
     "armors": 3119,
-    "armor_sets": 594,
+    "armor_sets": 598,
     "decorations": 199,
     "skills": 143,
-    "weapons": 2314,
+    "weapons": 2318,
     "weapon_summary": 117,
     "melodies": 40,
     "items": 524,
@@ -19,7 +19,7 @@
     "dragon_sell": 49,
     "dragon_increase": 43,
     "compositions": 168,
-    "quests": 547
+    "quests": 598
   },
   "activationCount": 276,
   "weaponTreeCount": 302,
@@ -203,5 +203,17 @@
       "user-supplied MH4U mh4u.db"
     ],
     "policy": "MH4G Athena stats/materials + MH4U existence/English-name cross-check; quest/event acquisition linking is a later step."
+  },
+  "collaborationAudit": {
+    "date": "2026-11-16",
+    "referenceQuestCount": 52,
+    "coveredQuests": 52,
+    "addedArmorSets": 4,
+    "addedWeaponsOverlay": 3,
+    "addedQuests": 3,
+    "knownExistingDuplicateEvents": 1,
+    "report": "data/collaboration_audit_20261116.json",
+    "overlay": "data/collab_additions_20261116.json",
+    "sourceNote": "Japanese MH4/4G original collaboration event references; Korean release coverage not asserted"
   }
 }
