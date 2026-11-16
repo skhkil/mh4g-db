@@ -29476,5 +29476,213 @@
       "ice": -10,
       "dragon": -30
     }
+  },
+  {
+    "id": "armor_set_collab_metroid_barrier_blade",
+    "name": "바리아슈트 (배리어 슈트)",
+    "hunterType": "blade",
+    "rank": "g",
+    "gender": "남",
+    "collaboration": "메트로이드",
+    "nameJa": "バリアスーツ",
+    "aliases": [
+      "바리아슈트",
+      "배리어슈트",
+      "메트로이드"
+    ],
+    "pieces": [
+      {
+        "id": "armor_e17c715ce858",
+        "part": "head",
+        "name": "배리어 슈트 바이저"
+      },
+      {
+        "id": "armor_b78b4a6e803f",
+        "part": "body",
+        "name": "배리어 슈트 아머"
+      },
+      {
+        "id": "armor_75bafcaa6aaa",
+        "part": "arms",
+        "name": "배리어 슈트 가드"
+      },
+      {
+        "id": "armor_946c4e284892",
+        "part": "legs",
+        "name": "배리어 슈트 레그가드"
+      }
+    ],
+    "defense": 464,
+    "maxDefense": 608,
+    "slots": 7,
+    "skills": {
+      "skill_82438dbfdbd2": 10,
+      "skill_77b3da4beed3": 10,
+      "skill_27df943493ca": -15,
+      "skill_dc306dbb4ef6": 3
+    },
+    "resistances": {
+      "fire": 12,
+      "water": 12,
+      "thunder": 12,
+      "ice": 12,
+      "dragon": -16
+    }
+  },
+  {
+    "id": "armor_set_collab_metroid_barrier_gunner",
+    "name": "바리아슈트 (배리어 슈트)",
+    "hunterType": "gunner",
+    "rank": "g",
+    "gender": "남",
+    "collaboration": "메트로이드",
+    "nameJa": "バリアスーツ",
+    "aliases": [
+      "바리아슈트",
+      "배리어슈트",
+      "메트로이드"
+    ],
+    "pieces": [
+      {
+        "id": "armor_e39a9569b381",
+        "part": "head",
+        "name": "배리어 슈트 스코프"
+      },
+      {
+        "id": "armor_a76c6aaa395a",
+        "part": "body",
+        "name": "배리어 슈트 배리어"
+      },
+      {
+        "id": "armor_1093a7b103fa",
+        "part": "arms",
+        "name": "배리어 슈트 실드"
+      },
+      {
+        "id": "armor_f1516d6403e5",
+        "part": "legs",
+        "name": "배리어 슈트 쉘"
+      }
+    ],
+    "defense": 276,
+    "maxDefense": 400,
+    "slots": 7,
+    "skills": {
+      "skill_82438dbfdbd2": 10,
+      "skill_77b3da4beed3": 10,
+      "skill_27df943493ca": -14,
+      "skill_77ad65f34cd9": 3
+    },
+    "resistances": {
+      "fire": 16,
+      "water": 16,
+      "thunder": 16,
+      "ice": 16,
+      "dragon": -12
+    }
+  },
+  {
+    "id": "armor_set_collab_metroid_zero_blade",
+    "name": "제로슈트 (메트로이드)",
+    "hunterType": "blade",
+    "rank": "g",
+    "gender": "여",
+    "collaboration": "메트로이드",
+    "nameJa": "ゼロスーツ",
+    "aliases": [
+      "제로슈트",
+      "제로 슈트",
+      "메트로이드"
+    ],
+    "pieces": [
+      {
+        "id": "armor_2f788866bac1",
+        "part": "head",
+        "name": "제로 슈트 페이스"
+      },
+      {
+        "id": "armor_c2c0ae2e61c7",
+        "part": "body",
+        "name": "제로 슈트 보디"
+      },
+      {
+        "id": "armor_e1e42e851b50",
+        "part": "arms",
+        "name": "제로 슈트 글러브"
+      },
+      {
+        "id": "armor_86dc4255f6e9",
+        "part": "legs",
+        "name": "제로 슈트 부츠"
+      }
+    ],
+    "defense": 352,
+    "maxDefense": 352,
+    "slots": 7,
+    "skills": {
+      "skill_dfbf20468c93": 10,
+      "skill_2a87c14e4abc": -15,
+      "skill_bf24a5d55721": 10,
+      "skill_dc306dbb4ef6": 3
+    },
+    "resistances": {
+      "fire": 12,
+      "water": 12,
+      "thunder": 12,
+      "ice": 12,
+      "dragon": -16
+    }
+  },
+  {
+    "id": "armor_set_collab_metroid_zero_gunner",
+    "name": "제로슈트 (메트로이드)",
+    "hunterType": "gunner",
+    "rank": "g",
+    "gender": "여",
+    "collaboration": "메트로이드",
+    "nameJa": "ゼロスーツ",
+    "aliases": [
+      "제로슈트",
+      "제로 슈트",
+      "메트로이드"
+    ],
+    "pieces": [
+      {
+        "id": "armor_cf20a44e4ec4",
+        "part": "head",
+        "name": "제로 슈트 마스크"
+      },
+      {
+        "id": "armor_4da7bb2b916c",
+        "part": "body",
+        "name": "제로 슈트 웨어"
+      },
+      {
+        "id": "armor_dfcd8b539a27",
+        "part": "arms",
+        "name": "제로 슈트 핸드"
+      },
+      {
+        "id": "armor_8b434c743983",
+        "part": "legs",
+        "name": "제로 슈트 타이츠"
+      }
+    ],
+    "defense": 188,
+    "maxDefense": 188,
+    "slots": 7,
+    "skills": {
+      "skill_dfbf20468c93": 10,
+      "skill_2a87c14e4abc": -14,
+      "skill_bf24a5d55721": 10,
+      "skill_77ad65f34cd9": 3
+    },
+    "resistances": {
+      "fire": 16,
+      "water": 16,
+      "thunder": 16,
+      "ice": 16,
+      "dragon": -12
+    }
   }
 ]
