@@ -1,0 +1,65 @@
+{
+  "workbook": "MH4G.xlsx",
+  "extractedAt": "2026-11-16",
+  "interpretation": "엑셀 원문값을 정리한 참고 자료. 외부 검증/원래 계산 조건 확인 전 실제 피해량 또는 확정 확률로 사용 금지.",
+  "sheet": "활",
+  "scope": "MH4G 발굴 테이블 7~14행만 수록. MH4 표 제외.",
+  "records": [
+    {
+      "id": 1,
+      "charges": "확산2 확산2 관통4 연사5",
+      "arc": "",
+      "coatings": "폭렬형",
+      "sourceRow": 7
+    },
+    {
+      "id": 2,
+      "charges": "연사3 확산3 연사4 연사5",
+      "arc": "",
+      "coatings": "폭렬형",
+      "sourceRow": 8
+    },
+    {
+      "id": 3,
+      "charges": "확산3 연사4 관통4 확산5",
+      "arc": "",
+      "coatings": "방산형",
+      "sourceRow": 9
+    },
+    {
+      "id": 4,
+      "charges": "연사3 연사4 확산5 확산5",
+      "arc": "",
+      "coatings": "집중형",
+      "sourceRow": 10
+    },
+    {
+      "id": 5,
+      "charges": "연사3 관통2 연사4 관통4",
+      "arc": "",
+      "coatings": "강사형",
+      "sourceRow": 11
+    },
+    {
+      "id": 6,
+      "charges": "관통2 관통3 관통4 관통5",
+      "arc": "",
+      "coatings": "강사형",
+      "sourceRow": 12
+    },
+    {
+      "id": 7,
+      "charges": "관통3 확산4 연사5 연사5",
+      "arc": "",
+      "coatings": "강사형",
+      "sourceRow": 13
+    },
+    {
+      "id": 8,
+      "charges": "연사3 확산3 확산4",
+      "arc": "",
+      "coatings": "강사형",
+      "sourceRow": 14
+    }
+  ]
+}
