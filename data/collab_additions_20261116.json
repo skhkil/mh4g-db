@@ -54,83 +54,35 @@
   "armorOverrides": [
     {
       "id": "armor_2f788866bac1",
-      "maxDefense": 142,
-      "upgradeDefense": [
-        88,
-        108,
-        124,
-        142
-      ]
+      "maxDefense": 142
     },
     {
       "id": "armor_c2c0ae2e61c7",
-      "maxDefense": 142,
-      "upgradeDefense": [
-        88,
-        108,
-        124,
-        142
-      ]
+      "maxDefense": 142
     },
     {
       "id": "armor_e1e42e851b50",
-      "maxDefense": 142,
-      "upgradeDefense": [
-        88,
-        108,
-        124,
-        142
-      ]
+      "maxDefense": 142
     },
     {
       "id": "armor_86dc4255f6e9",
-      "maxDefense": 142,
-      "upgradeDefense": [
-        88,
-        108,
-        124,
-        142
-      ]
+      "maxDefense": 142
     },
     {
       "id": "armor_cf20a44e4ec4",
-      "maxDefense": 92,
-      "upgradeDefense": [
-        47,
-        65,
-        78,
-        92
-      ]
+      "maxDefense": 92
     },
     {
       "id": "armor_4da7bb2b916c",
-      "maxDefense": 92,
-      "upgradeDefense": [
-        47,
-        65,
-        78,
-        92
-      ]
+      "maxDefense": 92
     },
     {
       "id": "armor_dfcd8b539a27",
-      "maxDefense": 92,
-      "upgradeDefense": [
-        47,
-        65,
-        78,
-        92
-      ]
+      "maxDefense": 92
     },
     {
       "id": "armor_8b434c743983",
-      "maxDefense": 92,
-      "upgradeDefense": [
-        47,
-        65,
-        78,
-        92
-      ]
+      "maxDefense": 92
     }
   ],
   "armorOverrideSource": "https://game-cap.com/mh4g/data/bougu_zerosutsubodi.html | https://kiranico.com/ja/mh4g/防具/脚/ゼロスーツタイツ"
