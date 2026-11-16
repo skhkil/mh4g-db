@@ -947,3 +947,9 @@
 - **수치 주의:** 포격 LV값은 일반 모션배율과 다른 고정 피해 표현. 몬냥대의 `1/0.75/0.55`는 확률/추첨 조건 미검증이라 %로 변환하지 않음. 일부 무기 보정/포격/보우건 원문식을 최종 피해 계산에 적용하지 않음.
 - 가이드 코드는 `workbook-reference.html`, `css/workbook-reference.css`, `js/workbook-reference.js`로 격리. 기존 스킬 계산기, 장비/호석/퀘스트/육질 원본 숫자 DB를 이 단계에서 덮어쓰지 않음. 엑셀 원본은 개인 프로젝트 라이브러리에 보관하며 공개 GitHub에 XLSX 내부 이미지 43개나 개인 `Note` 시트를 복제하지 않음.
 - 데이터/스크립트 정적 문법, JSON 파싱, DOM ID 참조 점검을 수행함. GitHub Pages 실제 배포·모바일 화면·공식 피해량 계산과의 대조 테스트는 미완료.
+
+## 2026-11-16 · 발굴방어구 스킬 누락 / 자료실 오른쪽 패널 이동 수정
+- `참격술 (斬術) → 심검일체`은 `data/skills.json`에 원래 존재했으나, 수동조합의 발굴방어구 등록 창이 `relicWeaponDecorations` (발굴 **무기** 전용 스킬)만 필터해 표시한 것이 누락 원인.
+- `js/app.js` 발굴방어구 등록 스킬 목록을 당시 실물 발굴방어구에서 보고된 **19개 고정 복합스킬 계통** 별도 목록으로 수정. 일본 스킬명으로 실제 `data/skills.json` 항목을 매칭하며 `참격술 · 심검일체` 포함. 선택 시 참고 실물 스킬 포인트 입력, 사용자가 실제 보유 장비 수치를 최종 확인. 기존 보유 방어구 저장값은 자동 수정/삭제하지 않음. 참고: https://ameblo.jp/hunter-mon/entry-12094287772.html 및 https://game-cap.com/mh4g/data/make2352.html .
+- `index.html` 왼쪽 `📚 무기 모션 · 몬냥대`를 외부 페이지 링크에서 `data-page="workbook-reference"` 기반 **SPA 메뉴 버튼**으로 변경. 같은 오른쪽 메인 프레임 `#page-workbook-reference`에서 `workbook-reference.html?embedded=1`을 표시. 별도 페이지 상단 헤더 숨김/내부 콘텐츠 높이 자동 조절 및 CSS 연결. 기존 데이터/자동조합 엔진 원본 변경 없음.
+- 캐시 갱신: `js/app.js?v=0.7.22-relic-armor-workbook-spa-20261116`, `css/app.css?v=0.7.22-relic-armor-workbook-spa-20261116`. 정적 검증: JS V8 구문 파싱, 발굴방어구 19개 일본명과 실제 스킬 DB 19/19 매칭, 페이지 ID/SPA 버튼/임베드 모드/캐시 연결 확인. GitHub Pages 실제 PC·모바일 브라우저 E2E는 아직 미검증.
