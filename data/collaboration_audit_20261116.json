@@ -1,0 +1,795 @@
+{
+  "version": "2026-11-16",
+  "scope": "MH4/MH4G 일본판 콜라보 이벤트 참조 목록과 MH4G 이벤트 장비 조사",
+  "sourceQuestCount": 52,
+  "questCoverage": {
+    "included": 52,
+    "unmatched": 0,
+    "existingDuplicateRecords": 1
+  },
+  "questAudit": [
+    {
+      "referenceNameJa": "ファミ通・突進と回転の脅威",
+      "matchCount": 1,
+      "matchedQuestIds": [
+        "event-step2-jp-006"
+      ],
+      "matchedNames": [
+        "패미통·돌진과 회전의 위협"
+      ],
+      "status": "registered"
+    },
+    {
+      "referenceNameJa": "ケロロ軍曹・スカウト大作戦",
+      "matchCount": 1,
+      "matchedQuestIds": [
+        "event-step2-jp-003"
+      ],
+      "matchedNames": [
+        "케로로 중사·스카우트 대작전"
+      ],
+      "status": "registered"
+    },
+    {
+      "referenceNameJa": "ネギま！・闇の世界に忍ぶ影",
+      "matchCount": 1,
+      "matchedQuestIds": [
+        "event-step2-jp-004"
+      ],
+      "matchedNames": [
+        "네기마!·어둠의 세계에 숨은 그림자"
+      ],
+      "status": "registered"
+    },
+    {
+      "referenceNameJa": "モンハン部・ガブラス狩猟戦線",
+      "matchCount": 1,
+      "matchedQuestIds": [
+        "event-low-002"
+      ],
+      "matchedNames": [
+        "몬헌부: 가브라스 소탕전"
+      ],
+      "status": "registered"
+    },
+    {
+      "referenceNameJa": "JUMP・新たなライバル！",
+      "matchCount": 1,
+      "matchedQuestIds": [
+        "event-step2-jp-002"
+      ],
+      "matchedNames": [
+        "JUMP·새로운 라이벌!"
+      ],
+      "status": "registered"
+    },
+    {
+      "referenceNameJa": "カプ本・マスコット対決！",
+      "matchCount": 1,
+      "matchedQuestIds": [
+        "event-high-007"
+      ],
+      "matchedNames": [
+        "잃어버린 문명"
+      ],
+      "status": "registered"
+    },
+    {
+      "referenceNameJa": "犬夜叉・大妖の牙を巡る狩猟",
+      "matchCount": 1,
+      "matchedQuestIds": [
+        "event-step2-jp-007"
+      ],
+      "matchedNames": [
+        "이누야샤·대요괴의 이빨을 둘러싼 수렵"
+      ],
+      "status": "registered"
+    },
+    {
+      "referenceNameJa": "銀の匙・卵の試食パーティ",
+      "matchCount": 1,
+      "matchedQuestIds": [
+        "event-step2-jp-018"
+      ],
+      "matchedNames": [
+        "은수저·알 시식 파티"
+      ],
+      "status": "registered"
+    },
+    {
+      "referenceNameJa": "サンデー・闇に巣食う者",
+      "matchCount": 1,
+      "matchedQuestIds": [
+        "event-step2-jp-017"
+      ],
+      "matchedNames": [
+        "선데이·어둠에 둥지 튼 자"
+      ],
+      "status": "registered"
+    },
+    {
+      "referenceNameJa": "JUMP・極小鎧竜大熱戦",
+      "matchCount": 1,
+      "matchedQuestIds": [
+        "event-high-016"
+      ],
+      "matchedNames": [
+        "그라비모스 메이 크라이"
+      ],
+      "status": "registered"
+    },
+    {
+      "referenceNameJa": "マガジン・鋼龍飛翔！",
+      "matchCount": 1,
+      "matchedQuestIds": [
+        "event-high-032"
+      ],
+      "matchedNames": [
+        "강철의 선봉"
+      ],
+      "status": "registered"
+    },
+    {
+      "referenceNameJa": "OP・イャンクックを追え！",
+      "matchCount": 1,
+      "matchedQuestIds": [
+        "event-low-003"
+      ],
+      "matchedNames": [
+        "푸기의 왕"
+      ],
+      "status": "registered"
+    },
+    {
+      "referenceNameJa": "ファミ通・ケチャワチャ包囲網",
+      "matchCount": 1,
+      "matchedQuestIds": [
+        "event-step2-jp-016"
+      ],
+      "matchedNames": [
+        "패미통·케차와차 포위망"
+      ],
+      "status": "registered"
+    },
+    {
+      "referenceNameJa": "コロコロ・モンスターじゃい！",
+      "matchCount": 1,
+      "matchedQuestIds": [
+        "event-step2-jp-019"
+      ],
+      "matchedNames": [
+        "코로코로·몬스터다!"
+      ],
+      "status": "registered"
+    },
+    {
+      "referenceNameJa": "電撃・赤き飛竜の双雷",
+      "matchCount": 1,
+      "matchedQuestIds": [
+        "event-step2-jp-020"
+      ],
+      "matchedNames": [
+        "전격·붉은 비룡의 쌍뢰"
+      ],
+      "status": "registered"
+    },
+    {
+      "referenceNameJa": "武装戦線・男たちの覚悟！",
+      "matchCount": 1,
+      "matchedQuestIds": [
+        "event-step2-jp-005"
+      ],
+      "matchedNames": [
+        "무장전선·남자들의 각오!"
+      ],
+      "status": "registered"
+    },
+    {
+      "referenceNameJa": "クローズ・ヘッド達の激突！",
+      "matchCount": 1,
+      "matchedQuestIds": [
+        "event-step2-jp-013"
+      ],
+      "matchedNames": [
+        "크로우즈·헤드들의 격돌!"
+      ],
+      "status": "registered"
+    },
+    {
+      "referenceNameJa": "USJ・火竜達の舞い",
+      "matchCount": 1,
+      "matchedQuestIds": [
+        "event-step2-jp-001"
+      ],
+      "matchedNames": [
+        "USJ·화룡들의 춤"
+      ],
+      "status": "registered"
+    },
+    {
+      "referenceNameJa": "モンハン部・赤組白組応援歌",
+      "matchCount": 1,
+      "matchedQuestIds": [
+        "event-high-009"
+      ],
+      "matchedNames": [
+        "몬헌부: 두 빛깔의 거수"
+      ],
+      "status": "registered"
+    },
+    {
+      "referenceNameJa": "マリオ・キノコ好きブラザーズ",
+      "matchCount": 1,
+      "matchedQuestIds": [
+        "event-high-008"
+      ],
+      "matchedNames": [
+        "마리오: 오, 형제들이여!"
+      ],
+      "status": "registered"
+    },
+    {
+      "referenceNameJa": "JUMP・決戦、炎の王！！",
+      "matchCount": 1,
+      "matchedQuestIds": [
+        "event-step2-jp-010"
+      ],
+      "matchedNames": [
+        "JUMP·결전, 불꽃의 왕!!"
+      ],
+      "status": "registered"
+    },
+    {
+      "referenceNameJa": "OP・氷の国から来た牙獣",
+      "matchCount": 1,
+      "matchedQuestIds": [
+        "event-step2-jp-012"
+      ],
+      "matchedNames": [
+        "OP·얼음 나라에서 온 아수"
+      ],
+      "status": "registered"
+    },
+    {
+      "referenceNameJa": "JUMP・黒雷に染まる銀世界",
+      "matchCount": 1,
+      "matchedQuestIds": [
+        "event-step2-jp-009"
+      ],
+      "matchedNames": [
+        "JUMP·흑뢰로 물든 은세계"
+      ],
+      "status": "registered"
+    },
+    {
+      "referenceNameJa": "ゼルダの伝説・力と知恵と勇気",
+      "matchCount": 1,
+      "matchedQuestIds": [
+        "event-high-021"
+      ],
+      "matchedNames": [
+        "세 가지 덕목"
+      ],
+      "status": "registered"
+    },
+    {
+      "referenceNameJa": "ゼルダの伝説・決戦の猛炎覇竜",
+      "matchCount": 1,
+      "matchedQuestIds": [
+        "event-high-022"
+      ],
+      "matchedNames": [
+        "화염 결전"
+      ],
+      "status": "registered"
+    },
+    {
+      "referenceNameJa": "範馬刃牙・男一代",
+      "matchCount": 1,
+      "matchedQuestIds": [
+        "event-step2-jp-015"
+      ],
+      "matchedNames": [
+        "한마 바키·남자 일대"
+      ],
+      "status": "registered"
+    },
+    {
+      "referenceNameJa": "電撃・閃烈なる狩人達",
+      "matchCount": 1,
+      "matchedQuestIds": [
+        "event-step2-jp-021"
+      ],
+      "matchedNames": [
+        "전격·섬렬한 사냥꾼들"
+      ],
+      "status": "registered"
+    },
+    {
+      "referenceNameJa": "範馬刃牙・地上最強の食卓",
+      "matchCount": 1,
+      "matchedQuestIds": [
+        "event-step2-jp-014"
+      ],
+      "matchedNames": [
+        "한마 바키·지상 최강의 식탁"
+      ],
+      "status": "registered"
+    },
+    {
+      "referenceNameJa": "OP・最強の宴",
+      "matchCount": 1,
+      "matchedQuestIds": [
+        "event-step2-jp-011"
+      ],
+      "matchedNames": [
+        "OP·최강의 연회"
+      ],
+      "status": "registered"
+    },
+    {
+      "referenceNameJa": "USJ・蒼と金の熱き競演！",
+      "matchCount": 1,
+      "matchedQuestIds": [
+        "event-high-033"
+      ],
+      "matchedNames": [
+        "USJ: 뜨거운 티켓"
+      ],
+      "status": "registered"
+    },
+    {
+      "referenceNameJa": "USJ・ザボアザギル3D",
+      "matchCount": 2,
+      "matchedQuestIds": [
+        "event-high-017",
+        "event-step2-jp-008"
+      ],
+      "matchedNames": [
+        "USJ: 자보아자길 3D",
+        "USJ·자보아자길 3D"
+      ],
+      "status": "registered_with_duplicate"
+    },
+    {
+      "referenceNameJa": "ユニクロ・アイデアを求めて",
+      "matchCount": 1,
+      "matchedQuestIds": [
+        "event-low-001"
+      ],
+      "matchedNames": [
+        "유니클로: 아이디어를 찾아서"
+      ],
+      "status": "registered"
+    },
+    {
+      "referenceNameJa": "ユニクロ・果てしなき挑戦",
+      "matchCount": 1,
+      "matchedQuestIds": [
+        "event-high-018"
+      ],
+      "matchedNames": [
+        "유니클로: 소재가 필요해"
+      ],
+      "status": "registered"
+    },
+    {
+      "referenceNameJa": "マギ・黒き蝕を打ち晴らせ！",
+      "matchCount": 1,
+      "matchedQuestIds": [
+        "event-g-055"
+      ],
+      "matchedNames": [
+        "어둠의 촛불"
+      ],
+      "status": "registered"
+    },
+    {
+      "referenceNameJa": "七つの大罪・魔神の眷属",
+      "matchCount": 1,
+      "matchedQuestIds": [
+        "event-step2-jp-023"
+      ],
+      "matchedNames": [
+        "일곱 개의 대죄·마신의 권속"
+      ],
+      "status": "registered"
+    },
+    {
+      "referenceNameJa": "太鼓の達人・太鼓腹だドン！",
+      "matchCount": 1,
+      "matchedQuestIds": [
+        "event-g-036"
+      ],
+      "matchedNames": [
+        "태고의 달인: 배북 난타전"
+      ],
+      "status": "registered"
+    },
+    {
+      "referenceNameJa": "JUMP・双黒のライバル達！",
+      "matchCount": 1,
+      "matchedQuestIds": [
+        "event-g-collab-jump-dualblack"
+      ],
+      "matchedNames": [
+        "JUMP·쌍흑의 라이벌!"
+      ],
+      "status": "registered"
+    },
+    {
+      "referenceNameJa": "範馬刃牙・大いなる角竜",
+      "matchCount": 1,
+      "matchedQuestIds": [
+        "event-g-060"
+      ],
+      "matchedNames": [
+        "야생의 뿔"
+      ],
+      "status": "registered"
+    },
+    {
+      "referenceNameJa": "ソニック・千刃竜への疾走",
+      "matchCount": 1,
+      "matchedQuestIds": [
+        "event-high-019"
+      ],
+      "matchedNames": [
+        "초음속 셀레기오스"
+      ],
+      "status": "registered"
+    },
+    {
+      "referenceNameJa": "JUMP・灼熱燃闘！",
+      "matchCount": 1,
+      "matchedQuestIds": [
+        "event-g-079"
+      ],
+      "matchedNames": [
+        "JUMP·작열연투!"
+      ],
+      "status": "registered"
+    },
+    {
+      "referenceNameJa": "電撃の交差する白き稲妻！",
+      "matchCount": 1,
+      "matchedQuestIds": [
+        "event-g-collab-dengeki-whitekirin"
+      ],
+      "matchedNames": [
+        "전격·교차하는 하얀 번개!"
+      ],
+      "status": "registered"
+    },
+    {
+      "referenceNameJa": "範馬刃牙・牙剥く金獅子",
+      "matchCount": 1,
+      "matchedQuestIds": [
+        "event-g-077"
+      ],
+      "matchedNames": [
+        "원시의 난타전"
+      ],
+      "status": "registered"
+    },
+    {
+      "referenceNameJa": "どうぶつの森・つり大会開催！",
+      "matchCount": 1,
+      "matchedQuestIds": [
+        "event-high-010"
+      ],
+      "matchedNames": [
+        "동물의 숲: 낚시왕"
+      ],
+      "status": "registered"
+    },
+    {
+      "referenceNameJa": "ファミ通・特別取材、天廻龍！",
+      "matchCount": 1,
+      "matchedQuestIds": [
+        "event-step2-jp-022"
+      ],
+      "matchedNames": [
+        "패미통·특별취재, 천회룡!"
+      ],
+      "status": "registered"
+    },
+    {
+      "referenceNameJa": "ロックマン・平和を取り戻せ",
+      "matchCount": 1,
+      "matchedQuestIds": [
+        "event-g-035"
+      ],
+      "matchedNames": [
+        "평화를 지키는 자"
+      ],
+      "status": "registered"
+    },
+    {
+      "referenceNameJa": "メトロイド・特殊任務",
+      "matchCount": 1,
+      "matchedQuestIds": [
+        "event-g-053"
+      ],
+      "matchedNames": [
+        "메트로이드: 특수 임무"
+      ],
+      "status": "registered"
+    },
+    {
+      "referenceNameJa": "メトロイド・迫りくる骸蜘蛛",
+      "matchCount": 1,
+      "matchedQuestIds": [
+        "event-g-054"
+      ],
+      "matchedNames": [
+        "메트로이드: 다가오는 그림자"
+      ],
+      "status": "registered"
+    },
+    {
+      "referenceNameJa": "モンハン部・砂漠の応援特訓",
+      "matchCount": 1,
+      "matchedQuestIds": [
+        "event-g-040"
+      ],
+      "matchedNames": [
+        "몬헌부: 사막 응원 특훈"
+      ],
+      "status": "registered"
+    },
+    {
+      "referenceNameJa": "モンハン部・闘技場の熱血特訓",
+      "matchCount": 1,
+      "matchedQuestIds": [
+        "event-g-045"
+      ],
+      "matchedNames": [
+        "몬헌부: 재는 재로"
+      ],
+      "status": "registered"
+    },
+    {
+      "referenceNameJa": "マギ・炎の魔人からの試練",
+      "matchCount": 1,
+      "matchedQuestIds": [
+        "event-g-collab-magi-firegenie"
+      ],
+      "matchedNames": [
+        "마기·불꽃 마인의 시련"
+      ],
+      "status": "registered"
+    },
+    {
+      "referenceNameJa": "USJ・ティガレックス3D",
+      "matchCount": 1,
+      "matchedQuestIds": [
+        "event-g-052"
+      ],
+      "matchedNames": [
+        "USJ: 티가렉스 3D"
+      ],
+      "status": "registered"
+    },
+    {
+      "referenceNameJa": "USJ・蒼と金の饗宴！",
+      "matchCount": 1,
+      "matchedQuestIds": [
+        "event-g-051"
+      ],
+      "matchedNames": [
+        "USJ: 화려한 향연"
+      ],
+      "status": "registered"
+    }
+  ],
+  "featuredMH4GEventWeaponCoverage": [
+    {
+      "referenceNameJa": "アモンの剣",
+      "matchedIds": [
+        "weapon_collab_magi_amons_sword"
+      ],
+      "matchedKoreanNames": [
+        "아몬의 검"
+      ],
+      "status": "registered"
+    },
+    {
+      "referenceNameJa": "グレイトフルハム",
+      "matchedIds": [
+        "weapon_event_greatful_ham"
+      ],
+      "matchedKoreanNames": [
+        "그레이트풀햄"
+      ],
+      "status": "registered"
+    },
+    {
+      "referenceNameJa": "ハムオブハムズ",
+      "matchedIds": [
+        "weapon_event_ham_of_hams"
+      ],
+      "matchedKoreanNames": [
+        "햄오브햄즈"
+      ],
+      "status": "registered"
+    },
+    {
+      "referenceNameJa": "MH部熱血指導竹刀",
+      "matchedIds": [
+        "weapon_87c91de77d55"
+      ],
+      "matchedKoreanNames": [
+        "몬헌부열혈지도죽도"
+      ],
+      "status": "registered"
+    },
+    {
+      "referenceNameJa": "イナズマワークス",
+      "matchedIds": [
+        "weapon_e928e18e46dc"
+      ],
+      "matchedKoreanNames": [
+        "이나즈마워크스"
+      ],
+      "status": "registered"
+    },
+    {
+      "referenceNameJa": "刃折れの剣",
+      "matchedIds": [
+        "weapon_7fa6a6f4afbf"
+      ],
+      "matchedKoreanNames": [
+        "날이 부러진 검"
+      ],
+      "status": "registered"
+    },
+    {
+      "referenceNameJa": "MH部員特製扇子",
+      "matchedIds": [
+        "weapon_229b8b17f864"
+      ],
+      "matchedKoreanNames": [
+        "몬헌부원특제부채"
+      ],
+      "status": "registered"
+    },
+    {
+      "referenceNameJa": "範馬刃牙流格闘術",
+      "matchedIds": [
+        "weapon_9edfe0329514"
+      ],
+      "matchedKoreanNames": [
+        "범마인아류격투술"
+      ],
+      "status": "registered"
+    },
+    {
+      "referenceNameJa": "狩猟の達人",
+      "matchedIds": [
+        "weapon_a44b933ce264"
+      ],
+      "matchedKoreanNames": [
+        "수렵의 달인"
+      ],
+      "status": "registered"
+    },
+    {
+      "referenceNameJa": "チャージフォックス",
+      "matchedIds": [
+        "weapon_79304aad5ba5"
+      ],
+      "matchedKoreanNames": [
+        "차지폭스"
+      ],
+      "status": "registered"
+    },
+    {
+      "referenceNameJa": "断罪の銃棍J",
+      "matchedIds": [
+        "weapon_356e4db8c00f"
+      ],
+      "matchedKoreanNames": [
+        "단죄의 총곤J"
+      ],
+      "status": "registered"
+    },
+    {
+      "referenceNameJa": "アラジンの杖",
+      "matchedIds": [
+        "weapon_2f1b2b54be42"
+      ],
+      "matchedKoreanNames": [
+        "알라딘의 지팡이"
+      ],
+      "status": "registered"
+    },
+    {
+      "referenceNameJa": "アームキャノン",
+      "matchedIds": [
+        "weapon_1462d93a3659"
+      ],
+      "matchedKoreanNames": [
+        "암캐넌"
+      ],
+      "status": "registered"
+    }
+  ],
+  "metroidArmorSets": [
+    {
+      "id": "armor_set_collab_metroid_barrier_blade",
+      "name": "바리아슈트 (배리어 슈트)",
+      "hunterType": "blade",
+      "parts": [
+        "head",
+        "body",
+        "arms",
+        "legs"
+      ],
+      "slots": 7,
+      "baseDefense": 464,
+      "maxDefense": 608
+    },
+    {
+      "id": "armor_set_collab_metroid_barrier_gunner",
+      "name": "바리아슈트 (배리어 슈트)",
+      "hunterType": "gunner",
+      "parts": [
+        "head",
+        "body",
+        "arms",
+        "legs"
+      ],
+      "slots": 7,
+      "baseDefense": 276,
+      "maxDefense": 400
+    },
+    {
+      "id": "armor_set_collab_metroid_zero_blade",
+      "name": "제로슈트 (메트로이드)",
+      "hunterType": "blade",
+      "parts": [
+        "head",
+        "body",
+        "arms",
+        "legs"
+      ],
+      "slots": 7,
+      "baseDefense": 352,
+      "maxDefense": 568
+    },
+    {
+      "id": "armor_set_collab_metroid_zero_gunner",
+      "name": "제로슈트 (메트로이드)",
+      "hunterType": "gunner",
+      "parts": [
+        "head",
+        "body",
+        "arms",
+        "legs"
+      ],
+      "slots": 7,
+      "baseDefense": 188,
+      "maxDefense": 368
+    }
+  ],
+  "changes": {
+    "addedArmorSets": 4,
+    "addedWeaponsViaOverlay": 3,
+    "addedEventQuests": 3,
+    "correctedEventQuestTitleJa": 1,
+    "correctedZeroSuitMaxDefense": true
+  },
+  "outstanding": [
+    "MH4G 일본어 원문을 기준으로 대조한 것으로 공식 한국판 이벤트 배포 여부와 번역명은 일부 미검증",
+    "오토모 전용 장비는 헌터 방어구/무기 DB와 별개이며 현재 미통합",
+    "기존 USJ 자보아자길 3D의 서로 다른 2개 이벤트 레코드는 현재 중복 저장됨(기존 참조 링크 보호를 위해 삭제하지 않음)",
+    "기존 대용량 무기/방어구 원본은 보존하고 로더에서 보강 데이터를 반영"
+  ],
+  "sources": [
+    "https://mh4info.com/quest/?no=3",
+    "https://w.atwiki.jp/3dsmh4g/pages/173.html",
+    "https://monhammer.com/archives/6309.html",
+    "https://wikiwiki.jp/nenaiko/防具/バリアスーツ・ゼロスーツシリーズ"
+  ]
+}
