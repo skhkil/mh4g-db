@@ -79,11 +79,18 @@ async function loadMap(fileMap,keys=Object.keys(fileMap)){
   const rows=await Promise.all(selected.map(async k=>[k,await fetchJson(k,fileMap[k])]));
   const result=Object.fromEntries(rows);
 
-  // 일본판 MH4G 콜라보 무기 누락분: 대형 원본 JSON은 그대로 두고 동일 ID/일본명 중복 없이 병합.
-  // 시뮬레이터 경량 데이터 및 전체 무기 DB 조회 모두에 적용한다.
-  if(Array.isArray(result.weapons)){
+  // 대형 원본 DB는 보존하고, 검증된 콜라보 무기/방어구 보정 레코드를 병합한다.
+  // 경량 시뮬레이터와 전체 DB 모두에서 사용하며 일본명 기준 중복을 방지한다.
+  if(Array.isArray(result.weapons)||Array.isArray(result.armors)){
     const collab=await fetchJson("collabAdditions","./data/collab_additions_20261116.json");
-    if(Array.isArray(collab?.weapons)){
+    if(Array.isArray(result.armors)&&Array.isArray(collab?.armorOverrides)){
+      const patches=new Map(collab.armorOverrides.map(x=>[x.id,x]));
+      for(const armor of result.armors){
+        const patch=patches.get(armor.id);
+        if(patch&&Number.isFinite(patch.maxDefense))armor.maxDefense=patch.maxDefense;
+      }
+    }
+    if(Array.isArray(result.weapons)&&Array.isArray(collab?.weapons)){
       const key=x=>String(x||"").normalize("NFKC").replace(/\s+/g,"");
       const seenIds=new Set(result.weapons.map(x=>String(x.id||"")));
       const seenNames=new Set(result.weapons.map(x=>key(x.nameJa)).filter(Boolean));
