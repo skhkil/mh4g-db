@@ -1,0 +1,1377 @@
+{
+  "workbook": "MH4G.xlsx",
+  "extractedAt": "2026-11-16",
+  "interpretation": "엑셀 원문값을 정리한 참고 자료. 외부 검증/원래 계산 조건 확인 전 실제 피해량 또는 확정 확률로 사용 금지.",
+  "sheet": "모션배율",
+  "source": "http://gillisu.blogspot.kr/2015/05/22-22-1_4.html",
+  "records": [
+    {
+      "weapon": "대검",
+      "motion": "발도베기*",
+      "ratio": "48",
+      "detail": "",
+      "note": "발도술[힘] 기절치30 멸기치20",
+      "sourceRow": 6
+    },
+    {
+      "weapon": "대검",
+      "motion": "베어올리기",
+      "ratio": "46",
+      "detail": "",
+      "note": "팀원이 공중에 뜹니다",
+      "sourceRow": 7
+    },
+    {
+      "weapon": "대검",
+      "motion": "휘두르기",
+      "ratio": "36",
+      "detail": "",
+      "note": "",
+      "sourceRow": 8
+    },
+    {
+      "weapon": "대검",
+      "motion": "옆날치기",
+      "ratio": "18",
+      "detail": "",
+      "note": "기절치 22 멸기치 22",
+      "sourceRow": 9
+    },
+    {
+      "weapon": "대검",
+      "motion": "차지베기1*",
+      "ratio": "65",
+      "detail": "",
+      "note": "속성보정 1.2배,  발도술[힘] 기절치30 멸기치20",
+      "sourceRow": 10
+    },
+    {
+      "weapon": "대검",
+      "motion": "차지베기2*",
+      "ratio": "77",
+      "detail": "",
+      "note": "속성보정 1.5배,  발도술[힘] 기절치30 멸기치20",
+      "sourceRow": 11
+    },
+    {
+      "weapon": "대검",
+      "motion": "차지베기3*",
+      "ratio": "110",
+      "detail": "",
+      "note": "속성보정 2.0배,  발도술[힘] 기절치30 멸기치20",
+      "sourceRow": 12
+    },
+    {
+      "weapon": "대검",
+      "motion": "차지베기초과시*",
+      "ratio": "77",
+      "detail": "",
+      "note": "발도술[힘] 기절치30 멸기치20",
+      "sourceRow": 13
+    },
+    {
+      "weapon": "대검",
+      "motion": "파워차지베기0",
+      "ratio": "52",
+      "detail": "",
+      "note": "",
+      "sourceRow": 14
+    },
+    {
+      "weapon": "대검",
+      "motion": "파워휘두르기0",
+      "ratio": "48",
+      "detail": "",
+      "note": "",
+      "sourceRow": 15
+    },
+    {
+      "weapon": "대검",
+      "motion": "파워차지베기1",
+      "ratio": "70",
+      "detail": "",
+      "note": "속성보정 1.8배",
+      "sourceRow": 16
+    },
+    {
+      "weapon": "대검",
+      "motion": "파워휘두르기1",
+      "ratio": "52",
+      "detail": "",
+      "note": "",
+      "sourceRow": 17
+    },
+    {
+      "weapon": "대검",
+      "motion": "파워차지베기2",
+      "ratio": "85",
+      "detail": "",
+      "note": "속성보정 2.25배",
+      "sourceRow": 18
+    },
+    {
+      "weapon": "대검",
+      "motion": "파워휘두르기2",
+      "ratio": "66",
+      "detail": "",
+      "note": "단차공격후 연계되는 휘두르기도 66",
+      "sourceRow": 19
+    },
+    {
+      "weapon": "대검",
+      "motion": "파워차지베기3",
+      "ratio": "115",
+      "detail": "",
+      "note": "파워차지베기는 초과되더라도 115, 속성보정 3배",
+      "sourceRow": 20
+    },
+    {
+      "weapon": "대검",
+      "motion": "파워휘두르기3",
+      "ratio": "110",
+      "detail": "",
+      "note": "",
+      "sourceRow": 21
+    },
+    {
+      "weapon": "대검",
+      "motion": "단차 공격",
+      "ratio": "48",
+      "detail": "",
+      "note": "단차축적 대",
+      "sourceRow": 22
+    },
+    {
+      "weapon": "태도",
+      "motion": "발도베기*",
+      "ratio": "26",
+      "detail": "",
+      "note": "발도술[힘] 기절치30 멸기치20",
+      "sourceRow": 27
+    },
+    {
+      "weapon": "태도",
+      "motion": "세로베기",
+      "ratio": "23",
+      "detail": "",
+      "note": "",
+      "sourceRow": 28
+    },
+    {
+      "weapon": "태도",
+      "motion": "베어내리기",
+      "ratio": "24",
+      "detail": "",
+      "note": "",
+      "sourceRow": 29
+    },
+    {
+      "weapon": "태도",
+      "motion": "찌르기",
+      "ratio": "14",
+      "detail": "",
+      "note": "",
+      "sourceRow": 30
+    },
+    {
+      "weapon": "태도",
+      "motion": "베어올리기",
+      "ratio": "18",
+      "detail": "",
+      "note": "",
+      "sourceRow": 31
+    },
+    {
+      "weapon": "태도",
+      "motion": "좌우이동베기",
+      "ratio": "24",
+      "detail": "",
+      "note": "",
+      "sourceRow": 32
+    },
+    {
+      "weapon": "태도",
+      "motion": "기인베기1*(게이지없음)",
+      "ratio": "16",
+      "detail": "",
+      "note": "발도술[힘] 기절치30 멸기치20",
+      "sourceRow": 33
+    },
+    {
+      "weapon": "태도",
+      "motion": "기인베기1*",
+      "ratio": "28",
+      "detail": "",
+      "note": "발도술[힘] 기절치30 멸기치20",
+      "sourceRow": 34
+    },
+    {
+      "weapon": "태도",
+      "motion": "기인베기2*",
+      "ratio": "30",
+      "detail": "",
+      "note": "발도술[힘] 기절치30 멸기치20",
+      "sourceRow": 35
+    },
+    {
+      "weapon": "태도",
+      "motion": "기인베기3",
+      "ratio": "60",
+      "detail": "12+14+34",
+      "note": "",
+      "sourceRow": 36
+    },
+    {
+      "weapon": "태도",
+      "motion": "기인대회전베기",
+      "ratio": "42",
+      "detail": "",
+      "note": "명중시 기인게이지가 10초동안 줄어들지 않는다",
+      "sourceRow": 37
+    },
+    {
+      "weapon": "태도",
+      "motion": "기인전진베기(게이지없음)",
+      "ratio": "18",
+      "detail": "",
+      "note": "",
+      "sourceRow": 38
+    },
+    {
+      "weapon": "태도",
+      "motion": "기인전진베기",
+      "ratio": "30",
+      "detail": "",
+      "note": "",
+      "sourceRow": 39
+    },
+    {
+      "weapon": "태도",
+      "motion": "단차공격*",
+      "ratio": "26",
+      "detail": "",
+      "note": "단차축적 대, 발도술[힘] 기절치30 멸기치20",
+      "sourceRow": 40
+    },
+    {
+      "weapon": "태도",
+      "motion": "단차기인베기*",
+      "ratio": "30",
+      "detail": "",
+      "note": "단차축적 중, 발도술[힘] 기절치30 멸기치20",
+      "sourceRow": 41
+    },
+    {
+      "weapon": "태도",
+      "motion": "단차기인2연속베기",
+      "ratio": "48",
+      "detail": "12+36",
+      "note": "단차축적 중",
+      "sourceRow": 42
+    },
+    {
+      "weapon": "한손검",
+      "motion": "돌진베기*",
+      "ratio": "18",
+      "detail": "",
+      "note": "발도술[힘] 기절치30 멸기치20",
+      "sourceRow": 47
+    },
+    {
+      "weapon": "한손검",
+      "motion": "베어올리기",
+      "ratio": "14",
+      "detail": "",
+      "note": "",
+      "sourceRow": 48
+    },
+    {
+      "weapon": "한손검",
+      "motion": "베어내리기*",
+      "ratio": "14",
+      "detail": "",
+      "note": "발도술[힘] 기절치30 멸기치20",
+      "sourceRow": 49
+    },
+    {
+      "weapon": "한손검",
+      "motion": "횡베기",
+      "ratio": "13",
+      "detail": "",
+      "note": "",
+      "sourceRow": 50
+    },
+    {
+      "weapon": "한손검",
+      "motion": "검방패콤보",
+      "ratio": "30",
+      "detail": "10+20",
+      "note": "방패공격은 팀원이 날아간다, 기절치15+0 멸기치15+0",
+      "sourceRow": 51
+    },
+    {
+      "weapon": "한손검",
+      "motion": "수평베기",
+      "ratio": "21",
+      "detail": "",
+      "note": "",
+      "sourceRow": 52
+    },
+    {
+      "weapon": "한손검",
+      "motion": "베어올리고",
+      "ratio": "19",
+      "detail": "",
+      "note": "",
+      "sourceRow": 53
+    },
+    {
+      "weapon": "한손검",
+      "motion": "회전베기",
+      "ratio": "24",
+      "detail": "",
+      "note": "",
+      "sourceRow": 54
+    },
+    {
+      "weapon": "한손검",
+      "motion": "방패치기+방패치기",
+      "ratio": "24",
+      "detail": "8+16",
+      "note": "기절치10+15 멸기치15+25",
+      "sourceRow": 55
+    },
+    {
+      "weapon": "한손검",
+      "motion": "가드베기",
+      "ratio": "14",
+      "detail": "",
+      "note": "",
+      "sourceRow": 56
+    },
+    {
+      "weapon": "한손검",
+      "motion": "모아베기방패+모아베기검",
+      "ratio": "57",
+      "detail": "20+37",
+      "note": "차지시간에 관계없이 기절치15+0 멸기치25+0",
+      "sourceRow": 57
+    },
+    {
+      "weapon": "한손검",
+      "motion": "단차공격*",
+      "ratio": "20",
+      "detail": "",
+      "note": "단차축적 대, 발도술[힘] 기절치30 멸기치20",
+      "sourceRow": 59
+    },
+    {
+      "weapon": "한손검",
+      "motion": "단차돌진베기*",
+      "ratio": "20",
+      "detail": "",
+      "note": "단차축적 대, 발도술[힘] 기절치30 멸기치20",
+      "sourceRow": 60
+    },
+    {
+      "weapon": "한손검",
+      "motion": "단차베어올리기*",
+      "ratio": "18",
+      "detail": "",
+      "note": "단차축적 대, 발도술[힘] 기절치30 멸기치20",
+      "sourceRow": 61
+    },
+    {
+      "weapon": "쌍검",
+      "motion": "베어내기*",
+      "ratio": "28(32)",
+      "detail": "7*2+7*2(8*2+8*2)",
+      "note": "발도술[힘] 기절치8+2*2 멸기치20",
+      "sourceRow": 66
+    },
+    {
+      "weapon": "쌍검",
+      "motion": "귀인돌진연속참*",
+      "ratio": "48(54)",
+      "detail": "7*4+10*2(8*4+11*2)",
+      "note": "발도술[힘] 기절치8*4+8+8 멸기치5*4+5+5",
+      "sourceRow": 67
+    },
+    {
+      "weapon": "쌍검",
+      "motion": "베어올리기",
+      "ratio": "18(20)",
+      "detail": "",
+      "note": "발도술[힘] 기절치30 멸기치5",
+      "sourceRow": 68
+    },
+    {
+      "weapon": "쌍검",
+      "motion": "이단베기",
+      "ratio": "23",
+      "detail": "10+13",
+      "note": "발도술[힘] 기절치15+15 멸기치5+5",
+      "sourceRow": 69
+    },
+    {
+      "weapon": "쌍검",
+      "motion": "베어돌리기",
+      "ratio": "22",
+      "detail": "10+12",
+      "note": "",
+      "sourceRow": 70
+    },
+    {
+      "weapon": "쌍검",
+      "motion": "회전베기",
+      "ratio": "40",
+      "detail": "12+14*2",
+      "note": "",
+      "sourceRow": 71
+    },
+    {
+      "weapon": "쌍검",
+      "motion": "6연속베기",
+      "ratio": "56(62)",
+      "detail": "(6+8)*2+14*2",
+      "note": "",
+      "sourceRow": 72
+    },
+    {
+      "weapon": "쌍검",
+      "motion": "오른쪽 이연속 베기",
+      "ratio": "17",
+      "detail": "7+10",
+      "note": "",
+      "sourceRow": 74
+    },
+    {
+      "weapon": "쌍검",
+      "motion": "왼쪽 이연속 베기",
+      "ratio": "21",
+      "detail": "9+12",
+      "note": "",
+      "sourceRow": 75
+    },
+    {
+      "weapon": "쌍검",
+      "motion": "회전베기1",
+      "ratio": "30(33)",
+      "detail": "16+6+8(18+6+9)",
+      "note": "",
+      "sourceRow": 76
+    },
+    {
+      "weapon": "쌍검",
+      "motion": "회전베기2",
+      "ratio": "34(37)",
+      "detail": "18+6+10(20+6+11)",
+      "note": "",
+      "sourceRow": 77
+    },
+    {
+      "weapon": "쌍검",
+      "motion": "귀인연속베기",
+      "ratio": "84",
+      "detail": "8*2+6+8+8+6+20*2",
+      "note": "",
+      "sourceRow": 78
+    },
+    {
+      "weapon": "쌍검",
+      "motion": "난무",
+      "ratio": "97(105)",
+      "detail": "29+4*8+18*2",
+      "note": "",
+      "sourceRow": 79
+    },
+    {
+      "weapon": "쌍검",
+      "motion": "공중난무",
+      "ratio": "54(60)",
+      "detail": "12+15+15+12",
+      "note": "단차축적 소(1~3) 중(4)",
+      "sourceRow": 81
+    },
+    {
+      "weapon": "쌍검",
+      "motion": "회전난무피니시",
+      "ratio": "46(52)",
+      "detail": "23+23(26+26)",
+      "note": "단차축적 대,소",
+      "sourceRow": 83
+    },
+    {
+      "weapon": "쌍검",
+      "motion": "단차공격",
+      "ratio": "23(25)",
+      "detail": "10+13(11+14)",
+      "note": "단차축적 중",
+      "sourceRow": 84
+    },
+    {
+      "weapon": "해머",
+      "motion": "발도공격",
+      "ratio": "20",
+      "detail": "",
+      "note": "기절치15 멸기치10 팀원이 공중에 뜹니다",
+      "sourceRow": 89
+    },
+    {
+      "weapon": "해머",
+      "motion": "옆치기",
+      "ratio": "15",
+      "detail": "",
+      "note": "기절치22 멸기치5",
+      "sourceRow": 90
+    },
+    {
+      "weapon": "해머",
+      "motion": "쿵1",
+      "ratio": "42",
+      "detail": "",
+      "note": "기절치15 멸기치15",
+      "sourceRow": 91
+    },
+    {
+      "weapon": "해머",
+      "motion": "쿵2",
+      "ratio": "20",
+      "detail": "",
+      "note": "기절치15 멸기치15",
+      "sourceRow": 92
+    },
+    {
+      "weapon": "해머",
+      "motion": "따",
+      "ratio": "90",
+      "detail": "",
+      "note": "기절치50 멸기치10 팀원이 공중에 뜹니다. 심안효과",
+      "sourceRow": 93
+    },
+    {
+      "weapon": "해머",
+      "motion": "차지 공격1",
+      "ratio": "25",
+      "detail": "",
+      "note": "기절치15 멸기치15",
+      "sourceRow": 94
+    },
+    {
+      "weapon": "해머",
+      "motion": "차지 공격2",
+      "ratio": "40",
+      "detail": "",
+      "note": "기절치40 멸기치20 팀원이 공중에 뜹니다. 심안효과",
+      "sourceRow": 95
+    },
+    {
+      "weapon": "해머",
+      "motion": "차지 공격3",
+      "ratio": "91",
+      "detail": "15+76",
+      "note": "기절치5+27 멸기치5+40 팀원이 날아갑니다. 심안효과",
+      "sourceRow": 96
+    },
+    {
+      "weapon": "해머",
+      "motion": "차지 추가공격",
+      "ratio": "20",
+      "detail": "",
+      "note": "기절치15 멸기치10",
+      "sourceRow": 97
+    },
+    {
+      "weapon": "해머",
+      "motion": "차지공격3(회전드라이버)",
+      "ratio": "100",
+      "detail": "20+10*2+60",
+      "note": "기절치2+2*n+40 멸기치2+2*n+10 심안효과",
+      "sourceRow": 98
+    },
+    {
+      "weapon": "해머",
+      "motion": "차지공격3(회전홈런)",
+      "ratio": "150",
+      "detail": "20+10*4+90",
+      "note": "기절치2+2*n+50 멸기치2+2*n+10 심안효과",
+      "sourceRow": 99
+    },
+    {
+      "weapon": "해머",
+      "motion": "단차공격",
+      "ratio": "42",
+      "detail": "",
+      "note": "기절치15 멸기치10 단차축적 대",
+      "sourceRow": 100
+    },
+    {
+      "weapon": "해머",
+      "motion": "차지점프1",
+      "ratio": "65",
+      "detail": "",
+      "note": "기절치40 멸기치10 단차축적 중",
+      "sourceRow": 101
+    },
+    {
+      "weapon": "해머",
+      "motion": "차지점프2",
+      "ratio": "70",
+      "detail": "",
+      "note": "기절치40 멸기치10 단차축적 중",
+      "sourceRow": 102
+    },
+    {
+      "weapon": "해머",
+      "motion": "차지점프3",
+      "ratio": "80",
+      "detail": "",
+      "note": "기절치40 멸기치10 단차축적 중",
+      "sourceRow": 103
+    },
+    {
+      "weapon": "수렵피리",
+      "motion": "전방공격(발도공격)",
+      "ratio": "33",
+      "detail": "",
+      "note": "기절치20 멸기치20",
+      "sourceRow": 108
+    },
+    {
+      "weapon": "수렵피리",
+      "motion": "무기꺼내기연주",
+      "ratio": "30",
+      "detail": "",
+      "note": "기절치20 멸기치15",
+      "sourceRow": 109
+    },
+    {
+      "weapon": "수렵피리",
+      "motion": "찌르기",
+      "ratio": "10",
+      "detail": "",
+      "note": "절단공격",
+      "sourceRow": 110
+    },
+    {
+      "weapon": "수렵피리",
+      "motion": "후방공격",
+      "ratio": "45",
+      "detail": "",
+      "note": "기절치25 멸기치20",
+      "sourceRow": 111
+    },
+    {
+      "weapon": "수렵피리",
+      "motion": "내려치기",
+      "ratio": "55",
+      "detail": "10+45",
+      "note": "기절치15+45 멸기치20+55",
+      "sourceRow": 112
+    },
+    {
+      "weapon": "수렵피리",
+      "motion": "연음공격1",
+      "ratio": "12",
+      "detail": "",
+      "note": "기절치6 멸기치6",
+      "sourceRow": 113
+    },
+    {
+      "weapon": "수렵피리",
+      "motion": "연음공격2",
+      "ratio": "15",
+      "detail": "",
+      "note": "기절치8 멸기치8",
+      "sourceRow": 114
+    },
+    {
+      "weapon": "수렵피리",
+      "motion": "옆연주",
+      "ratio": "35",
+      "detail": "",
+      "note": "기절치22 멸기치22",
+      "sourceRow": 115
+    },
+    {
+      "weapon": "수렵피리",
+      "motion": "앞으로 연주",
+      "ratio": "20",
+      "detail": "",
+      "note": "기절치15 멸기치20",
+      "sourceRow": 116
+    },
+    {
+      "weapon": "수렵피리",
+      "motion": "후방연주1",
+      "ratio": "25",
+      "detail": "",
+      "note": "기절치22 멸기치22",
+      "sourceRow": 117
+    },
+    {
+      "weapon": "수렵피리",
+      "motion": "후방연주2",
+      "ratio": "30",
+      "detail": "",
+      "note": "기절치25 멸기치22",
+      "sourceRow": 118
+    },
+    {
+      "weapon": "수렵피리",
+      "motion": "추가연주(휘둘러)",
+      "ratio": "33",
+      "detail": "",
+      "note": "기절치22 멸기치22",
+      "sourceRow": 119
+    },
+    {
+      "weapon": "수렵피리",
+      "motion": "추가연주(좌우)",
+      "ratio": "35",
+      "detail": "",
+      "note": "기절치22 멸기치22",
+      "sourceRow": 120
+    },
+    {
+      "weapon": "수렵피리",
+      "motion": "추가연주(뒤)",
+      "ratio": "40",
+      "detail": "",
+      "note": "기절치25 멸기치22",
+      "sourceRow": 121
+    },
+    {
+      "weapon": "수렵피리",
+      "motion": "단차공격",
+      "ratio": "36",
+      "detail": "",
+      "note": "기절치20 멸기치20 단차축적 대",
+      "sourceRow": 122
+    },
+    {
+      "weapon": "랜스",
+      "motion": "발도공격*",
+      "ratio": "27",
+      "detail": "",
+      "note": "발도술[힘] 기철지30 멸기치20",
+      "sourceRow": 127
+    },
+    {
+      "weapon": "랜스",
+      "motion": "중단 찌르기1",
+      "ratio": "20",
+      "detail": "",
+      "note": "",
+      "sourceRow": 128
+    },
+    {
+      "weapon": "랜스",
+      "motion": "중단 찌르기2",
+      "ratio": "20",
+      "detail": "",
+      "note": "",
+      "sourceRow": 129
+    },
+    {
+      "weapon": "랜스",
+      "motion": "중단 찌르기3",
+      "ratio": "27",
+      "detail": "",
+      "note": "",
+      "sourceRow": 130
+    },
+    {
+      "weapon": "랜스",
+      "motion": "상단 찌르기1",
+      "ratio": "22",
+      "detail": "",
+      "note": "",
+      "sourceRow": 131
+    },
+    {
+      "weapon": "랜스",
+      "motion": "상단 찌르기2",
+      "ratio": "22",
+      "detail": "",
+      "note": "",
+      "sourceRow": 132
+    },
+    {
+      "weapon": "랜스",
+      "motion": "상단 찌르기3",
+      "ratio": "27",
+      "detail": "",
+      "note": "",
+      "sourceRow": 133
+    },
+    {
+      "weapon": "랜스",
+      "motion": "가드 찌르기",
+      "ratio": "20",
+      "detail": "",
+      "note": "",
+      "sourceRow": 134
+    },
+    {
+      "weapon": "랜스",
+      "motion": "후려치기",
+      "ratio": "20",
+      "detail": "",
+      "note": "",
+      "sourceRow": 135
+    },
+    {
+      "weapon": "랜스",
+      "motion": "방패공격",
+      "ratio": "14",
+      "detail": "",
+      "note": "기절치27 멸기치27",
+      "sourceRow": 136
+    },
+    {
+      "weapon": "랜스",
+      "motion": "단차공격",
+      "ratio": "30",
+      "detail": "",
+      "note": "단차축적 대",
+      "sourceRow": 137
+    },
+    {
+      "weapon": "랜스",
+      "motion": "돌진",
+      "ratio": "16",
+      "detail": "",
+      "note": "팀원이 날아간다",
+      "sourceRow": 138
+    },
+    {
+      "weapon": "랜스",
+      "motion": "돌진피니시",
+      "ratio": "50",
+      "detail": "",
+      "note": "",
+      "sourceRow": 139
+    },
+    {
+      "weapon": "랜스",
+      "motion": "돌진단차공격",
+      "ratio": "50",
+      "detail": "",
+      "note": "단차축적 대",
+      "sourceRow": 140
+    },
+    {
+      "weapon": "랜스",
+      "motion": "뒤돌아공격",
+      "ratio": "50",
+      "detail": "",
+      "note": "",
+      "sourceRow": 141
+    },
+    {
+      "weapon": "랜스",
+      "motion": "캔슬 찌르기",
+      "ratio": "22",
+      "detail": "",
+      "note": "",
+      "sourceRow": 142
+    },
+    {
+      "weapon": "랜스",
+      "motion": "카운터 찌르기",
+      "ratio": "50",
+      "detail": "",
+      "note": "",
+      "sourceRow": 143
+    },
+    {
+      "weapon": "건랜스",
+      "motion": "발도공격*",
+      "ratio": "32",
+      "detail": "",
+      "note": "발도술[힘] 기철지30 멸기치20",
+      "sourceRow": 148
+    },
+    {
+      "weapon": "건랜스",
+      "motion": "전진공격",
+      "ratio": "30",
+      "detail": "",
+      "note": "",
+      "sourceRow": 149
+    },
+    {
+      "weapon": "건랜스",
+      "motion": "전방 찌르기",
+      "ratio": "24",
+      "detail": "",
+      "note": "",
+      "sourceRow": 150
+    },
+    {
+      "weapon": "건랜스",
+      "motion": "베어올리기",
+      "ratio": "28",
+      "detail": "",
+      "note": "",
+      "sourceRow": 151
+    },
+    {
+      "weapon": "건랜스",
+      "motion": "가드 찌르기",
+      "ratio": "18",
+      "detail": "",
+      "note": "",
+      "sourceRow": 152
+    },
+    {
+      "weapon": "건랜스",
+      "motion": "내려치기",
+      "ratio": "40",
+      "detail": "",
+      "note": "",
+      "sourceRow": 153
+    },
+    {
+      "weapon": "건랜스",
+      "motion": "단차 찌르기*",
+      "ratio": "25",
+      "detail": "",
+      "note": "발도술[힘] 기철지30 멸기치20",
+      "sourceRow": 154
+    },
+    {
+      "weapon": "건랜스",
+      "motion": "단차 내려치기*",
+      "ratio": "44",
+      "detail": "",
+      "note": "발도술[힘] 기철지30 멸기치20",
+      "sourceRow": 155
+    },
+    {
+      "weapon": "건랜스",
+      "motion": "단차 리로드 내려치기*",
+      "ratio": "44",
+      "detail": "",
+      "note": "발도술[힘] 기철지30 멸기치20",
+      "sourceRow": 156
+    },
+    {
+      "weapon": "건랜스",
+      "motion": "포격 LV1",
+      "ratio": "통상:10+불속성4 / 방사:15+불속성9 / 확산:20+불속성6",
+      "detail": "",
+      "note": "",
+      "sourceRow": 159
+    },
+    {
+      "weapon": "건랜스",
+      "motion": "포격 LV2",
+      "ratio": "통상:14+불속성5 / 방사:21+불속성11 / 확산:30+불속성8",
+      "detail": "",
+      "note": "",
+      "sourceRow": 160
+    },
+    {
+      "weapon": "건랜스",
+      "motion": "포격 LV3",
+      "ratio": "통상:18+불속성6 / 방사:28+불속성14 / 확산:40+불속성10",
+      "detail": "",
+      "note": "",
+      "sourceRow": 161
+    },
+    {
+      "weapon": "건랜스",
+      "motion": "포격 LV4",
+      "ratio": "통상:21+불속성7 / 방사:32+불속성16 / 확산:44+불속성11",
+      "detail": "",
+      "note": "",
+      "sourceRow": 162
+    },
+    {
+      "weapon": "건랜스",
+      "motion": "포격 LV5",
+      "ratio": "통상:24+불속성8 / 방사:36+불속성18 / 확산:48+불속성12",
+      "detail": "",
+      "note": "",
+      "sourceRow": 163
+    },
+    {
+      "weapon": "슬래시액스",
+      "motion": "도끼 : 가로 베기*",
+      "ratio": "23",
+      "detail": "",
+      "note": "발도술[힘] 기철지30 멸기치20",
+      "sourceRow": 216
+    },
+    {
+      "weapon": "슬래시액스",
+      "motion": "도끼 : 세로 베기",
+      "ratio": "40",
+      "detail": "",
+      "note": "",
+      "sourceRow": 217
+    },
+    {
+      "weapon": "슬래시액스",
+      "motion": "도끼 : 베어올리기",
+      "ratio": "28",
+      "detail": "",
+      "note": "팀원이 공중에 뜹니다",
+      "sourceRow": 218
+    },
+    {
+      "weapon": "슬래시액스",
+      "motion": "도끼 : 휘두르기",
+      "ratio": "24",
+      "detail": "",
+      "note": "스테미너를 소비합니다",
+      "sourceRow": 219
+    },
+    {
+      "weapon": "슬래시액스",
+      "motion": "도끼 : 돌진 베기",
+      "ratio": "19",
+      "detail": "",
+      "note": "",
+      "sourceRow": 220
+    },
+    {
+      "weapon": "슬래시액스",
+      "motion": "도끼 : 변형 베기",
+      "ratio": "30",
+      "detail": "",
+      "note": "",
+      "sourceRow": 221
+    },
+    {
+      "weapon": "슬래시액스",
+      "motion": "검 : 변형 베기",
+      "ratio": "23",
+      "detail": "",
+      "note": "게이지 -4%",
+      "sourceRow": 222
+    },
+    {
+      "weapon": "슬래시액스",
+      "motion": "검 : 가로 베기",
+      "ratio": "25",
+      "detail": "",
+      "note": "게이지 -4%",
+      "sourceRow": 223
+    },
+    {
+      "weapon": "슬래시액스",
+      "motion": "검 : 세로 베기*",
+      "ratio": "30",
+      "detail": "",
+      "note": "게이지 -4% 발도술[힘] 기철지30 멸기치20",
+      "sourceRow": 224
+    },
+    {
+      "weapon": "슬래시액스",
+      "motion": "검 : 베어올리기",
+      "ratio": "25",
+      "detail": "",
+      "note": "게이지 -4%",
+      "sourceRow": 225
+    },
+    {
+      "weapon": "슬래시액스",
+      "motion": "검 : 2연속 베기",
+      "ratio": "64",
+      "detail": "28+36",
+      "note": "게이지 -4%",
+      "sourceRow": 226
+    },
+    {
+      "weapon": "슬래시액스",
+      "motion": "검 : 점프 속성해방찌르기",
+      "ratio": "28",
+      "detail": "",
+      "note": "게이지 -11%",
+      "sourceRow": 227
+    },
+    {
+      "weapon": "슬래시액스",
+      "motion": "검 : 속성해방찌르기2단쨰 이후",
+      "ratio": "91",
+      "detail": "13+7",
+      "note": "게이지 -3%*n",
+      "sourceRow": 228
+    },
+    {
+      "weapon": "슬래시액스",
+      "motion": "검 : 속성해방찌르기 피니시",
+      "ratio": "80",
+      "detail": "",
+      "note": "게이지 -20%",
+      "sourceRow": 229
+    },
+    {
+      "weapon": "슬래시액스",
+      "motion": "검 : 속성해방찌르기 중간캔슬",
+      "ratio": "50",
+      "detail": "",
+      "note": "게이지 -20%",
+      "sourceRow": 230
+    },
+    {
+      "weapon": "차지액스",
+      "motion": "검 : 돌진베기(발도공격)*",
+      "ratio": "22",
+      "detail": "",
+      "note": "발도술[힘] 기철지30 멸기치20",
+      "sourceRow": 246
+    },
+    {
+      "weapon": "차지액스",
+      "motion": "검 : 올려베기",
+      "ratio": "14",
+      "detail": "",
+      "note": "",
+      "sourceRow": 247
+    },
+    {
+      "weapon": "차지액스",
+      "motion": "검 : 되돌려베기",
+      "ratio": "17",
+      "detail": "",
+      "note": "",
+      "sourceRow": 248
+    },
+    {
+      "weapon": "차지액스",
+      "motion": "검 : 회전베기",
+      "ratio": "30",
+      "detail": "",
+      "note": "",
+      "sourceRow": 249
+    },
+    {
+      "weapon": "차지액스",
+      "motion": "검 : 차지 이연속 베기",
+      "ratio": "50",
+      "detail": "30+20",
+      "note": "",
+      "sourceRow": 250
+    },
+    {
+      "weapon": "차지액스",
+      "motion": "검 : 베어올리기",
+      "ratio": "16",
+      "detail": "",
+      "note": "",
+      "sourceRow": 251
+    },
+    {
+      "weapon": "차지액스",
+      "motion": "검 : 단차공격",
+      "ratio": "22",
+      "detail": "",
+      "note": "단차축적 대",
+      "sourceRow": 252
+    },
+    {
+      "weapon": "차지액스",
+      "motion": "검 : 방패치기",
+      "ratio": "20",
+      "detail": "8+12",
+      "note": "방패강화 시 스턴치15 멸기치10",
+      "sourceRow": 253
+    },
+    {
+      "weapon": "차지액스",
+      "motion": "도끼 : 발도변형베기*",
+      "ratio": "47(56)",
+      "detail": "",
+      "note": "발도술[힘] 기철지30 멸기치20",
+      "sourceRow": 254
+    },
+    {
+      "weapon": "차지액스",
+      "motion": "도끼 : 내려찍기",
+      "ratio": "47(56)",
+      "detail": "",
+      "note": "",
+      "sourceRow": 255
+    },
+    {
+      "weapon": "차지액스",
+      "motion": "도끼 : 베어올리기",
+      "ratio": "40(48)",
+      "detail": "",
+      "note": "팀원이 공중에 뜹니다",
+      "sourceRow": 256
+    },
+    {
+      "weapon": "차지액스",
+      "motion": "도끼 : 세로베기",
+      "ratio": "40(48)",
+      "detail": "",
+      "note": "",
+      "sourceRow": 257
+    },
+    {
+      "weapon": "차지액스",
+      "motion": "도끼 : 속성해방베기1",
+      "ratio": "26(31)",
+      "detail": "",
+      "note": "폭발",
+      "sourceRow": 258
+    },
+    {
+      "weapon": "차지액스",
+      "motion": "도끼 : 속성해방베기2",
+      "ratio": "98(117)",
+      "detail": "18+80(21+96)",
+      "note": "폭발*2",
+      "sourceRow": 259
+    },
+    {
+      "weapon": "차지액스",
+      "motion": "도끼 : 고출력속성해방베기(병있을시)",
+      "ratio": "90(108)",
+      "detail": "",
+      "note": "폭발*3",
+      "sourceRow": 260
+    },
+    {
+      "weapon": "차지액스",
+      "motion": "도끼 : 고출력속성해방베기(병없을시)",
+      "ratio": "50",
+      "detail": "",
+      "note": "",
+      "sourceRow": 261
+    },
+    {
+      "weapon": "차지액스",
+      "motion": "도끼 : 초고출력속성해방베기",
+      "ratio": "224+(폭발*병의 개수)",
+      "detail": "25+99+100",
+      "note": "팀원이 날아갑니다. 심안효과",
+      "sourceRow": 262
+    },
+    {
+      "weapon": "차지액스",
+      "motion": "도끼 : 단차공격",
+      "ratio": "44",
+      "detail": "",
+      "note": "단차축적 대",
+      "sourceRow": 264
+    },
+    {
+      "weapon": "차지액스",
+      "motion": "도끼 : 돌진베기 파생 단차공격",
+      "ratio": "50",
+      "detail": "",
+      "note": "단차축적 대",
+      "sourceRow": 265
+    },
+    {
+      "weapon": "조충곤",
+      "motion": "발도공격*",
+      "ratio": "28",
+      "detail": "",
+      "note": "발도술[힘] 기철지30 멸기치20",
+      "sourceRow": 282
+    },
+    {
+      "weapon": "조충곤",
+      "motion": "후려치기",
+      "ratio": "26(76)",
+      "detail": "26(18+30+28)",
+      "note": "",
+      "sourceRow": 283
+    },
+    {
+      "weapon": "조충곤",
+      "motion": "내려치기",
+      "ratio": "30(62)",
+      "detail": "30(24+38)",
+      "note": "",
+      "sourceRow": 284
+    },
+    {
+      "weapon": "조충곤",
+      "motion": "회피베기",
+      "ratio": "20",
+      "detail": "",
+      "note": "",
+      "sourceRow": 285
+    },
+    {
+      "weapon": "조충곤",
+      "motion": "찌르기",
+      "ratio": "15(30)",
+      "detail": "15(18+12)",
+      "note": "",
+      "sourceRow": 286
+    },
+    {
+      "weapon": "조충곤",
+      "motion": "연속베기",
+      "ratio": "46(62)",
+      "detail": "26+20(28+16+18)",
+      "note": "",
+      "sourceRow": 287
+    },
+    {
+      "weapon": "조충곤",
+      "motion": "비껴베기",
+      "ratio": "24(42)",
+      "detail": "24(16+26)",
+      "note": "",
+      "sourceRow": 288
+    },
+    {
+      "weapon": "조충곤",
+      "motion": "이단베기",
+      "ratio": "42(58)",
+      "detail": "18+24(16+14+28)",
+      "note": "",
+      "sourceRow": 289
+    },
+    {
+      "weapon": "조충곤",
+      "motion": "단차공격*",
+      "ratio": "24(30)",
+      "detail": "24(20+10)",
+      "note": "단차축적 중.  발도술[힘] 기철지30 멸기치20",
+      "sourceRow": 290
+    },
+    {
+      "weapon": "조충곤",
+      "motion": "마킹탄휘두르기",
+      "ratio": "12",
+      "detail": "",
+      "note": "",
+      "sourceRow": 291
+    },
+    {
+      "weapon": "조충곤",
+      "motion": "마킹탄",
+      "ratio": "0",
+      "detail": "",
+      "note": "",
+      "sourceRow": 292
+    },
+    {
+      "weapon": "조충곤",
+      "motion": "벌레공격",
+      "ratio": "45",
+      "detail": "",
+      "note": "벌레공격력으로 계산합니다. 타격형 벌레 기절치40",
+      "sourceRow": 293
+    },
+    {
+      "weapon": "조충곤",
+      "motion": "벌레차지공격",
+      "ratio": "80",
+      "detail": "",
+      "note": "벌레공격력으로 계산합니다. 타격형 벌레 기절치40",
+      "sourceRow": 294
+    }
+  ]
+}
