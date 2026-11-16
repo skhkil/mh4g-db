@@ -2977,6 +2977,40 @@ async function renderCharmGuide(){
   renderTable("#charmGuideResults",["호석 계열","첫 번째 스킬","두 번째 스킬","슬롯","근거"],rows);
 }
 
+// Workbook reference is hosted in the same-origin right-column pane.
+// Auto-size the embedded document so the parent page (not a nested frame) handles vertical scrolling.
+let workbookFrameObserver=null;
+function showWorkbookReferencePane(){
+ const frame=$("#workbookReferenceFrame");if(!frame)return;
+ const measure=()=>{
+  try{
+   const doc=frame.contentDocument;
+   const shell=doc?.querySelector(".shell");
+   if(!shell)return;
+   const height=Math.max(460,Math.ceil(shell.getBoundingClientRect().height)+24);
+   if(frame.style.height!==height+"px")frame.style.height=height+"px";
+  }catch(err){console.warn("Workbook frame resize unavailable",err)}
+ };
+ const attach=()=>{
+  workbookFrameObserver?.disconnect();
+  try{
+   const doc=frame.contentDocument;
+   const shell=doc?.querySelector(".shell");
+   if(shell&&typeof ResizeObserver==="function"){
+    workbookFrameObserver=new ResizeObserver(measure);
+    workbookFrameObserver.observe(shell);
+   }
+  }catch(err){console.warn("Workbook frame observer unavailable",err)}
+  measure();
+ };
+ if(frame.dataset.bound!=="1"){
+  frame.dataset.bound="1";
+  frame.addEventListener("load",attach);
+  window.addEventListener("resize",measure,{passive:true});
+ }
+ if(frame.contentDocument?.readyState==="complete")attach();
+ requestAnimationFrame(measure);
+}
 function renderPageData(page){
   if(page==="source")renderSourcePage();
   else if(page==="recommend")renderRecommendedLoadouts();
@@ -3002,7 +3036,8 @@ async function openPage(page){
   $$('.nav-main[data-page]').forEach(x=>x.classList.toggle('active',x.dataset.page===page&&(!x.dataset.sourceView||x.dataset.sourceView===sourceView)));
   $$('.page').forEach(p=>p.classList.remove('active'));
   const section=$(`#page-${page}`); if(section)section.classList.add('active');
-  const titles={simulator:["스킬 시뮬레이터","방어구 + 호석 + 장식주 조합을 계산합니다."],recommend:["추천 장비","무기종·진행도별 장비 구성을 확인합니다."],planner:["즐겨찾기 · 제작","저장한 장비·퀘스트와 제작 소재 체크리스트를 관리합니다."],armor:["방어구 상세","타입·등급·부위 조건으로 방어구를 조회합니다."],weapon:["무기 DB","무기 종류·파생·예리도와 제작 정보를 조회합니다."],"charm-guide":["호석","입수처별 호석 스킬 범위와 최대 슬롯을 검색합니다."],decoration:[decoView==="slot"?"장신구 · 소켓별":"장신구 · 종류별","슬롯·스킬 포인트·생산소재를 조회합니다."],skill:["스킬 DB","스킬 계통과 발동 조건·효과를 조회합니다."],item:["아이템 DB","아이템 입수방법과 효과를 조회합니다."],data:["데이터 관리","실제 JSON 데이터 상태와 업데이트 방법을 확인합니다."]};
+  if(page==="workbook-reference")showWorkbookReferencePane();
+  const titles={"workbook-reference":["전투·탐색 자료실","무기 모션배율 · 몬냥대 편린 · 발굴 활 · 몬스터 육질"],simulator:["스킬 시뮬레이터","방어구 + 호석 + 장식주 조합을 계산합니다."],recommend:["추천 장비","무기종·진행도별 장비 구성을 확인합니다."],planner:["즐겨찾기 · 제작","저장한 장비·퀘스트와 제작 소재 체크리스트를 관리합니다."],armor:["방어구 상세","타입·등급·부위 조건으로 방어구를 조회합니다."],weapon:["무기 DB","무기 종류·파생·예리도와 제작 정보를 조회합니다."],"charm-guide":["호석","입수처별 호석 스킬 범위와 최대 슬롯을 검색합니다."],decoration:[decoView==="slot"?"장신구 · 소켓별":"장신구 · 종류별","슬롯·스킬 포인트·생산소재를 조회합니다."],skill:["스킬 DB","스킬 계통과 발동 조건·효과를 조회합니다."],item:["아이템 DB","아이템 입수방법과 효과를 조회합니다."],data:["데이터 관리","실제 JSON 데이터 상태와 업데이트 방법을 확인합니다."]};
   const dynamic=pageTitleForState(page);
   const title=dynamic||titles[page]||["MH4G DB",""];
   if($("#pageTitle"))$("#pageTitle").textContent=title[0];
