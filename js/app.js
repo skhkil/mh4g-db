@@ -511,14 +511,14 @@ const RELIC_ARMOR_SKILL_EXAMPLES=Object.freeze({
 function renderRelicArmorEditor(part){
  const box=$("#ownedRelicArmorEditor");if(!box)return;
  const skillOptions=(data.skills||[])
-  .filter(x=>Object.hasOwn(RELIC_ARMOR_SKILL_EXAMPLES,String(x.nameJa||"").replace(/\\s/g,"")))
+  .filter(x=>Object.hasOwn(RELIC_ARMOR_SKILL_EXAMPLES,String(x.nameJa||"").replace(/\s/g,"")))
   .sort((a,b)=>a.name.localeCompare(b.name,"ko"))
   .map(x=>`<option value="${esc(x.id)}">${esc(x.name)} · ${esc(x.activations?.[0]?.name||"")} (${esc(x.nameJa)})</option>`).join("");
  box.innerHTML=`<div class="relic-armor-fields"><label>이름<input data-relic-field="name" type="text" placeholder="발굴 ${PART_NAMES[part]} 방어구"></label><label>방어력<input data-relic-field="defense" type="number" value="100" min="0" max="999"></label><label>고정 스킬<select data-relic-field="skill"><option value="">선택</option>${skillOptions}</select></label><label>스킬 포인트<input data-relic-field="points" type="number" value="3" min="-20" max="20"></label>${["fire","water","thunder","ice","dragon"].map((k,i)=>`<label>${["화","수","뇌","빙","용"][i]} 내성<input data-relic-field="res-${k}" type="number" value="0" min="-99" max="99"></label>`).join("")}</div><p class="muted">MH4G 발굴방어구 고정 복합스킬 19계통을 표시합니다. 스킬 선택 시 참고 실물 수치가 입력되며, 실제 보유 장비의 표기를 우선하세요. 고정 스킬은 탈착 불가, 일반 슬롯은 0으로 등록됩니다.</p><div class="relic-armor-dialog-actions"><button type="button" class="ghost small" data-close-relic-armor>취소</button><button type="button" class="primary small" data-save-relic-armor="${part}">저장</button></div>`;
  const skillSelect=box.querySelector('[data-relic-field="skill"]');
  skillSelect?.addEventListener("change",()=>{
   const selected=skillById.get(skillSelect.value);
-  const sample=RELIC_ARMOR_SKILL_EXAMPLES[String(selected?.nameJa||"").replace(/\\s/g,"")];
+  const sample=RELIC_ARMOR_SKILL_EXAMPLES[String(selected?.nameJa||"").replace(/\s/g,"")];
   const points=box.querySelector('[data-relic-field="points"]');
   if(points&&sample)points.value=String(sample);
  });
