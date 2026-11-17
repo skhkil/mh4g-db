@@ -1,4 +1,4 @@
-const DATA_VERSION = "0.7.24-collab-audit-20261116";
+const DATA_VERSION = "0.7.25-fatalis-xref-rewards-20261117";
 
 const FULL_FILES = {
   skills:"./data/skills.json",
@@ -112,6 +112,20 @@ async function loadMap(fileMap,keys=Object.keys(fileMap)){
         result.weapons.push(weapon);
         if(id)seenIds.add(id);
         if(nameJa)seenNames.add(nameJa);
+      }
+    }
+  }
+  // 밀라 4종의 원본 누락 보수만 안전하게 보완한다. 다른 몬스터의 보수는 보존.
+  if(Array.isArray(result.monsterRewards)){
+    const extra=await fetchJson("fatalisRewards","./data/monster_fatalis_rewards_20261117.json");
+    if(Array.isArray(extra)){
+      const key=x=>[x.monster,x.rank,x.method,x.item].join("|");
+      const existing=new Set(result.monsterRewards.map(key));
+      for(const row of extra){
+        if(!row.monster||!row.rank||!row.item)continue;
+        if(existing.has(key(row)))continue;
+        result.monsterRewards.push(row);
+        existing.add(key(row));
       }
     }
   }
