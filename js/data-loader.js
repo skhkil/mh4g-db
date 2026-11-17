@@ -1,4 +1,4 @@
-const DATA_VERSION = "0.7.25-fatalis-xref-rewards-20261117";
+const DATA_VERSION = "0.7.26-chaotic-gore-extreme-orb-20261117";
 
 const FULL_FILES = {
   skills:"./data/skills.json",
@@ -117,7 +117,8 @@ async function loadMap(fileMap,keys=Object.keys(fileMap)){
   }
   // 밀라 4종의 원본 누락 보수만 안전하게 보완한다. 다른 몬스터의 보수는 보존.
   if(Array.isArray(result.monsterRewards)){
-    const extra=await fetchJson("fatalisRewards","./data/monster_fatalis_rewards_20261117.json");
+    const [fatalis,chaotic]=await Promise.all([fetchJson("fatalisRewards","./data/monster_fatalis_rewards_20261117.json"),fetchJson("chaoticGoreRewards","./data/monster_chaotic_gore_rewards_20261117.json")]);
+    const extra=[...(Array.isArray(fatalis)?fatalis:[]),...(Array.isArray(chaotic)?chaotic:[])];
     if(Array.isArray(extra)){
       const key=x=>[x.monster,x.rank,x.method,x.item].join("|");
       const existing=new Set(result.monsterRewards.map(key));
