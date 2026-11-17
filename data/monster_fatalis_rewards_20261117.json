@@ -237,7 +237,7 @@
     "method": "뿔 파괴",
     "count": "",
     "item": "선조룡 강뿔",
-    "probability": "미확인"
+    "probability": "20%"
   },
   {
     "monster": "밀라보레아스 (조룡)",
@@ -245,7 +245,7 @@
     "method": "눈 파괴",
     "count": "",
     "item": "선조룡 영안",
-    "probability": "미확인"
+    "probability": "80%"
   },
   {
     "monster": "밀라보레아스 (조룡)",
@@ -253,7 +253,7 @@
     "method": "날개 파괴",
     "count": "",
     "item": "선조룡 강날개",
-    "probability": "미확인"
+    "probability": "100%"
   },
   {
     "monster": "밀라보레아스 (조룡)",
@@ -261,7 +261,7 @@
     "method": "가슴 파괴",
     "count": "",
     "item": "선조룡 중갑각",
-    "probability": "미확인"
+    "probability": "70%"
   },
   {
     "monster": "밀라보레아스 (조룡)",
@@ -269,7 +269,7 @@
     "method": "가슴 파괴",
     "count": "",
     "item": "선조룡 두툼흰비늘",
-    "probability": "미확인"
+    "probability": "30%"
   },
   {
     "monster": "밀라보레아스",
