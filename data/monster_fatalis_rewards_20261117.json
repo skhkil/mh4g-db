@@ -29,7 +29,7 @@
     "method": "머리 파괴",
     "count": "",
     "item": "흑룡 뿔",
-    "probability": "60%"
+    "probability": "20%"
   },
   {
     "monster": "밀라보레아스",
@@ -37,7 +37,7 @@
     "method": "머리 파괴",
     "count": "",
     "item": "흑룡 눈",
-    "probability": "40%"
+    "probability": "80%"
   },
   {
     "monster": "밀라보레아스",
@@ -45,7 +45,7 @@
     "method": "날개 파괴",
     "count": "",
     "item": "흑룡 익막",
-    "probability": "90%"
+    "probability": "100%"
   },
   {
     "monster": "밀라보레아스",
@@ -53,7 +53,7 @@
     "method": "가슴 파괴",
     "count": "",
     "item": "흑룡 갑각",
-    "probability": "90%"
+    "probability": "70%"
   },
   {
     "monster": "밀라보레아스",
@@ -61,7 +61,7 @@
     "method": "갈무리",
     "count": "9회",
     "item": "흑룡 중갑각",
-    "probability": "미확인"
+    "probability": "60%"
   },
   {
     "monster": "밀라보레아스",
@@ -69,7 +69,7 @@
     "method": "갈무리",
     "count": "9회",
     "item": "흑룡 두툼비늘",
-    "probability": "미확인"
+    "probability": "30%"
   },
   {
     "monster": "밀라보레아스",
@@ -77,47 +77,7 @@
     "method": "갈무리",
     "count": "9회",
     "item": "흑룡 강뿔",
-    "probability": "미확인"
-  },
-  {
-    "monster": "밀라보레아스",
-    "rank": "g",
-    "method": "뿔 파괴",
-    "count": "",
-    "item": "흑룡 강뿔",
-    "probability": "미확인"
-  },
-  {
-    "monster": "밀라보레아스",
-    "rank": "g",
-    "method": "눈 파괴",
-    "count": "",
-    "item": "흑룡 사안",
-    "probability": "미확인"
-  },
-  {
-    "monster": "밀라보레아스",
-    "rank": "g",
-    "method": "날개 파괴",
-    "count": "",
-    "item": "흑룡 강날개",
-    "probability": "미확인"
-  },
-  {
-    "monster": "밀라보레아스",
-    "rank": "g",
-    "method": "가슴 파괴",
-    "count": "",
-    "item": "흑룡 중갑각",
-    "probability": "미확인"
-  },
-  {
-    "monster": "밀라보레아스",
-    "rank": "g",
-    "method": "가슴 파괴",
-    "count": "",
-    "item": "흑룡 두툼비늘",
-    "probability": "미확인"
+    "probability": "10%"
   },
   {
     "monster": "밀라보레아스 (홍룡)",
@@ -310,5 +270,53 @@
     "count": "",
     "item": "선조룡 두툼흰비늘",
     "probability": "미확인"
+  },
+  {
+    "monster": "밀라보레아스",
+    "rank": "high",
+    "method": "가슴 파괴",
+    "count": "",
+    "item": "흑룡 비늘",
+    "probability": "30%"
+  },
+  {
+    "monster": "밀라보레아스",
+    "rank": "g",
+    "method": "뿔 파괴",
+    "count": "",
+    "item": "흑룡 사안",
+    "probability": "80%"
+  },
+  {
+    "monster": "밀라보레아스",
+    "rank": "g",
+    "method": "뿔 파괴",
+    "count": "",
+    "item": "흑룡 강뿔",
+    "probability": "20%"
+  },
+  {
+    "monster": "밀라보레아스",
+    "rank": "g",
+    "method": "날개 파괴",
+    "count": "",
+    "item": "흑룡 강날개",
+    "probability": "100%"
+  },
+  {
+    "monster": "밀라보레아스",
+    "rank": "g",
+    "method": "가슴 파괴",
+    "count": "",
+    "item": "흑룡 중갑각",
+    "probability": "70%"
+  },
+  {
+    "monster": "밀라보레아스",
+    "rank": "g",
+    "method": "가슴 파괴",
+    "count": "",
+    "item": "흑룡 두툼비늘",
+    "probability": "30%"
   }
 ]
