@@ -1,0 +1,186 @@
+[
+  {
+    "monster": "혼돈에 신음하는 고어·마가라",
+    "rank": "g",
+    "method": "갈무리",
+    "count": "",
+    "item": "흑식룡 두툼비늘",
+    "probability": "40%"
+  },
+  {
+    "monster": "혼돈에 신음하는 고어·마가라",
+    "rank": "g",
+    "method": "유실물",
+    "count": "",
+    "item": "흑식룡 두툼비늘",
+    "probability": "24%"
+  },
+  {
+    "monster": "혼돈에 신음하는 고어·마가라",
+    "rank": "g",
+    "method": "포획",
+    "count": "",
+    "item": "흑식룡 두툼비늘",
+    "probability": "37%"
+  },
+  {
+    "monster": "혼돈에 신음하는 고어·마가라",
+    "rank": "g",
+    "method": "날개 파괴 보수",
+    "count": "",
+    "item": "흑식룡 두툼비늘",
+    "probability": "25%"
+  },
+  {
+    "monster": "혼돈에 신음하는 고어·마가라",
+    "rank": "g",
+    "method": "갈무리",
+    "count": "3회",
+    "item": "흑식룡 강참혹발톱",
+    "probability": "18%"
+  },
+  {
+    "monster": "혼돈에 신음하는 고어·마가라",
+    "rank": "g",
+    "method": "좌날개다리",
+    "count": "",
+    "item": "흑식룡 강참혹발톱",
+    "probability": "75%"
+  },
+  {
+    "monster": "혼돈에 신음하는 고어·마가라",
+    "rank": "g",
+    "method": "우날개다리 · 날개 파괴",
+    "count": "",
+    "item": "흑식룡 강참혹발톱",
+    "probability": "60%"
+  },
+  {
+    "monster": "혼돈에 신음하는 고어·마가라",
+    "rank": "g",
+    "method": "꼬리",
+    "count": "",
+    "item": "흑식룡 질긴꼬리",
+    "probability": "65%"
+  },
+  {
+    "monster": "혼돈에 신음하는 고어·마가라",
+    "rank": "g",
+    "method": "갈무리",
+    "count": "3회",
+    "item": "혼돈의 용비늘",
+    "probability": "29%"
+  },
+  {
+    "monster": "혼돈에 신음하는 고어·마가라",
+    "rank": "g",
+    "method": "꼬리",
+    "count": "1회",
+    "item": "혼돈의 용비늘",
+    "probability": "33%"
+  },
+  {
+    "monster": "혼돈에 신음하는 고어·마가라",
+    "rank": "g",
+    "method": "유실물",
+    "count": "",
+    "item": "혼돈의 용비늘",
+    "probability": "24%"
+  },
+  {
+    "monster": "혼돈에 신음하는 고어·마가라",
+    "rank": "g",
+    "method": "포획",
+    "count": "",
+    "item": "혼돈의 용비늘",
+    "probability": "20%"
+  },
+  {
+    "monster": "혼돈에 신음하는 고어·마가라",
+    "rank": "g",
+    "method": "머리 파괴 보수",
+    "count": "",
+    "item": "혼돈의 용비늘",
+    "probability": "35%"
+  },
+  {
+    "monster": "혼돈에 신음하는 고어·마가라",
+    "rank": "g",
+    "method": "날개다리 파괴 보수",
+    "count": "",
+    "item": "혼돈의 용비늘",
+    "probability": "25%"
+  },
+  {
+    "monster": "혼돈에 신음하는 고어·마가라",
+    "rank": "g",
+    "method": "날개 파괴 보수",
+    "count": "",
+    "item": "혼돈의 용비늘",
+    "probability": "15%"
+  },
+  {
+    "monster": "혼돈에 신음하는 고어·마가라",
+    "rank": "g",
+    "method": "포획",
+    "count": "",
+    "item": "상극의 변이뿔",
+    "probability": "15%"
+  },
+  {
+    "monster": "혼돈에 신음하는 고어·마가라",
+    "rank": "g",
+    "method": "촉각(2회 파괴)",
+    "count": "",
+    "item": "상극의 변이뿔",
+    "probability": "100%"
+  },
+  {
+    "monster": "혼돈에 신음하는 고어·마가라",
+    "rank": "g",
+    "method": "갈무리",
+    "count": "3회",
+    "item": "이율의 혼돈날개",
+    "probability": "10%"
+  },
+  {
+    "monster": "혼돈에 신음하는 고어·마가라",
+    "rank": "g",
+    "method": "포획",
+    "count": "",
+    "item": "이율의 혼돈날개",
+    "probability": "28%"
+  },
+  {
+    "monster": "혼돈에 신음하는 고어·마가라",
+    "rank": "g",
+    "method": "날개 어느 한쪽이든",
+    "count": "",
+    "item": "이율의 혼돈날개",
+    "probability": "65%"
+  },
+  {
+    "monster": "혼돈에 신음하는 고어·마가라",
+    "rank": "g",
+    "method": "갈무리",
+    "count": "3회",
+    "item": "배반하는 쌍역린",
+    "probability": "3%"
+  },
+  {
+    "monster": "혼돈에 신음하는 고어·마가라",
+    "rank": "g",
+    "method": "꼬리",
+    "count": "1회",
+    "item": "배반하는 쌍역린",
+    "probability": "2%"
+  },
+  {
+    "monster": "혼돈에 신음하는 고어·마가라",
+    "rank": "g",
+    "method": "유실물",
+    "count": "",
+    "item": "배반하는 쌍역린",
+    "probability": "2%"
+  }
+]
